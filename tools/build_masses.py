@@ -570,7 +570,8 @@ if os.path.exists('own_trans.json'):
     for cid, t in json.load(open('own_trans.json')).items():
         TRANS[cid] = {'t': t, 'r': (TRANS.get(cid) or {}).get('r', ''), 's': 'own'}
 for cid, v in (FX.get('local_chants', {}) if os.path.exists('m39_fixes.json') else {}).items():
-    TRANS[cid] = {'t': v['t'], 'r': v['r'], 's': 'own'}
+    if v.get('t'): TRANS[cid] = {'t': v['t'], 'r': v['r'], 's': 'own'}
+    elif cid in TRANS and v.get('r'): TRANS[cid]['r'] = v['r']
 for cid, v in (FX.get('trans', {}) if os.path.exists('m39_fixes.json') else {}).items():
     TRANS[cid] = {'t': v['t'], 'r': v['r'], 's': 'douay'}
 # strip the missal's running rubrics that the 1959 English carried along (page references, prayers that follow)
