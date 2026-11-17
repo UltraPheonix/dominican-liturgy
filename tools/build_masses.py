@@ -428,6 +428,13 @@ if os.path.exists('m39_fixes.json'):
     for k, rs in FX.get('readings', {}).items():
         if k in masses:
             masses[k]['readings'] = [{'type': t, 'ref': r, 'm39': True} for t, r in rs]
+    for (old_r, new_r) in FX.get('generic', []):
+        for M in masses.values():
+            rs = M.get('readings') or []
+            refs = [r['ref'] for r in rs]
+            if all(o in refs for o in old_r):
+                for r in rs:
+                    if r['ref'] in old_r: r['ref'] = new_r[old_r.index(r['ref'])]; r['m39'] = True
     for k, (la, en, mo, dy) in FX.get('titles', {}).items():
         if k in masses:
             masses[k].update(title='%d %s — %s' % (dy, MON[mo], la), en='%s %d — %s' % (MEN[mo], dy, en), name_en=en, month=mo, day=dy)
@@ -438,6 +445,8 @@ chants = {}
 for c in allchants.values():
     chants[c['id']] = {'p': ptype(c) if ptype(c) in PARTS else c['code'], 'i': c['incipit'], 'pg': c['page']}
 chants.update(ROMAN_FILES)
+for cid, v in (FX.get('local_chants', {}) if os.path.exists('m39_fixes.json') else {}).items():
+    chants[cid] = {'p': v['p'], 'i': v['i'], 'pg': v['pg']}
 # English translations of the chants (St. Dominic Missal, 1959): text and scripture reference
 TRANS = {}
 for cid, t in json.load(open('dm_trans.json')).items():
@@ -461,6 +470,8 @@ if os.path.exists('manual_trans.json'):
     for cid, v in json.load(open('manual_trans.json')).items():
         if cid not in TRANS:
             TRANS[cid] = {'t': v['t'], 'r': v['r'] if not v['r'] in ('Alleluia', 'Sequence', 'Tract', 'Antiphon') else '', 's': 'own'}
+for cid, v in (FX.get('local_chants', {}) if os.path.exists('m39_fixes.json') else {}).items():
+    TRANS[cid] = {'t': v['t'], 'r': v['r'], 's': 'own'}
 data_trans = TRANS
 data = {'sections': sections, 'trans': data_trans, 'masses': masses, 'chants': chants,
         'kyriale': [c['id'] for c in kyriale], 'front': [c['id'] for c in front['chants']]}
