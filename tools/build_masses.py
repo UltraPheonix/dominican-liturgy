@@ -4,7 +4,7 @@ Every Mass lists its chants by part; each chant is a GregoBase ID of the Gradual
 'inferred': the chant is not printed in this Mass's place in the Graduale (it is used again from
 elsewhere in the book); it was found by the incipit the same day has in the Roman Graduale.
 """
-import json, re, sys, io, csv
+import json, re, sys, io, csv, os
 _o = sys.stdout; sys.stdout = io.StringIO()
 from build_temporale import norm, same
 sys.stdout = _o
@@ -14,7 +14,7 @@ groups, front, kyriale = G['groups'], G['front'], G['kyriale']
 temporale = json.load(open('temporale_align.json'))
 sdates = {int(k): v for k, v in json.load(open('sanct_dates.json')).items()}
 cal = json.load(open('calendar.json'))
-lines = gzip.open('sources/missale_op_1939_ocr.txt.gz', 'rt', encoding='utf8').read().split('\n')
+lines = open('/home/claude/dl/txt/M39r.txt', encoding='utf8').read().split('\n')
 _o = sys.stdout; sys.stdout = io.StringIO()
 from build_sanctorale import bydate, find_common, GUESS
 sys.stdout = _o
@@ -332,10 +332,19 @@ bitems.sort(key=liturgical)
 sections.insert(1, {'id': 'sanctorum', 'title': 'Proprium Sanctorum', 'en': 'Proper of the Saints', 'items': sitems})
 sections.insert(2, {'id': 'beati', 'title': 'Beati Ordinis (Missae pro opportunitate)', 'en': 'Dominican Blesseds', 'items': bitems})
 
+# ---- complete every Mass from the St. Dominic Missal (1959) ---------------------------
+import dm_merge
+st = dm_merge.merge(masses, sections, groups, allchants, core, json.load(open('sources_roman_lectiones.json')), None, None)
+print('St. Dominic Missal:', st)
+import complete
+ROMAN_FILES, st2 = complete.run(masses, sections, groups, allchants, temporale, os.environ.get('JGABC', '/home/claude/src/jgabc'), os.environ.get('SITE', 'site'))
+print('Completion from jgabc:', st2)
+
 # ---- chants used -----------------------------------------------------------------
 chants = {}
 for c in allchants.values():
     chants[c['id']] = {'p': ptype(c) if ptype(c) in PARTS else c['code'], 'i': c['incipit'], 'pg': c['page']}
+chants.update(ROMAN_FILES)
 data = {'sections': sections, 'masses': masses, 'chants': chants,
         'kyriale': [c['id'] for c in kyriale], 'front': [c['id'] for c in front['chants']]}
 import os

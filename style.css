@@ -69,6 +69,12 @@ details summary { cursor: pointer; color: var(--muted); }
 
 footer { max-width: 860px; margin: 0 auto 30px; padding: 12px 16px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
 
+.readings { margin: 22px 0 6px; border-top: 1px solid var(--line); padding-top: 10px; }
+.readings h2 { margin: 0 0 4px; font-size: 19px; font-weight: normal; font-variant: small-caps; letter-spacing: .05em; color: var(--rubric); }
+.reading h3 { font-size: 16px; font-weight: normal; font-style: italic; color: var(--rubric); margin: 10px 0 2px; }
+.reading p { margin: 2px 0 6px; text-align: justify; }
+.reading .en-text { color: var(--muted); font-size: 15px; }
+
 @media (max-width: 560px) {
   .site { padding: 10px 14px; }
   .t1 { font-size: 22px; }

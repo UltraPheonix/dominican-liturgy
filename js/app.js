@@ -43,7 +43,7 @@
     var bits = h.split('&'), out = {key: bits.shift(), over: {}};
     bits.forEach(function (b) {
       var kv = b.split('=');
-      if (PARTS.indexOf(kv[0]) >= 0) out.over[kv[0]] = kv[1] ? kv[1].split(',').map(Number) : [];
+      if (PARTS.indexOf(kv[0]) >= 0) out.over[kv[0]] = kv[1] ? kv[1].split(',').map(function (x) { return /^\d+$/.test(x) ? Number(x) : x; }) : [];
     });
     return out;
   }
@@ -62,7 +62,8 @@
   var gabcCache = {};
   function loadGabc(id) {
     if (!gabcCache[id]) {
-      gabcCache[id] = fetch('gabc/' + id + '.gabc').then(function (r) {
+      var path = /^r\d+$/.test(String(id)) ? 'gabc/r/' + String(id).slice(1) : 'gabc/' + id;
+      gabcCache[id] = fetch(path + '.gabc').then(function (r) {
         if (!r.ok) throw new Error('gabc/' + id + '.gabc: ' + r.status);
         return r.text();
       });
@@ -231,6 +232,7 @@
       m.note ? el('p', {class: 'note hide-print', text: m.note}) : null
     ]));
     PARTS.forEach(function (p) {
+      if (p === 'of') main.appendChild(drawReadings(m));
       (state.parts[p] || []).forEach(function (c, i) { main.appendChild(drawSlot(p, i, c)); });
     });
     // add a part / other chants printed with this Mass
@@ -266,6 +268,71 @@
     main.appendChild(add);
   }
 
+  // ---------------------------------------------------------------- readings
+  var bibleCache = {};
+  function bibleBook(lang, book) {
+    var key = lang + '/' + book;
+    if (!bibleCache[key]) bibleCache[key] = fetch('bible/' + lang + '/' + encodeURIComponent(book) + '.txt').then(function (r) {
+      if (!r.ok) throw new Error(book); return r.text();
+    }).then(function (t) {
+      var v = {};
+      t.split('\n').forEach(function (l) { var a = l.split('\t'); if (a.length >= 3) v[a[0] + ':' + a[1]] = a.slice(2).join(' '); });
+      return v;
+    });
+    return bibleCache[key];
+  }
+  // 'Ad Romanos 13: 11-14' or '3 Regum 19: 3-8'; several sections separated by ';', verse lists by ','
+  function parseRef(ref) {
+    var m = /^(\d)?\s*([^\d:]+?)\s+(\d+):\s*(.+)$/.exec(ref.trim());
+    if (!m) return null;
+    var book = m[2].trim() + (m[1] ? ' ' + m[1] : ''), ch = +m[3], out = [];
+    m[4].split(';').forEach(function (seg) {
+      seg = seg.trim();
+      var c = /^(\d+):\s*(.*)$/.exec(seg);
+      if (c) { ch = +c[1]; seg = c[2]; }
+      seg.split(',').forEach(function (r) {
+        var x = /^(\d+)[a-c]?(?:\s*-\s*(?:(\d+):)?(\d+)[a-c]?)?$/.exec(r.trim());
+        if (!x) return;
+        var a = +x[1], ch2 = x[2] ? +x[2] : ch, b = x[3] ? +x[3] : a;
+        out.push([ch, a, ch2, b]);
+        ch = ch2;
+      });
+    });
+    return {book: book, ranges: out};
+  }
+  function readingText(lang, ref) {
+    var p = parseRef(ref);
+    if (!p) return Promise.resolve('');
+    return bibleBook(lang, p.book).then(function (v) {
+      var words = [];
+      p.ranges.forEach(function (r) {
+        for (var c = r[0]; c <= r[2]; c++) {
+          for (var n = (c === r[0] ? r[1] : 1); n <= (c === r[2] ? r[3] : 200); n++) {
+            if (v[c + ':' + n] === undefined) { if (c < r[2]) break; else continue; }
+            words.push(v[c + ':' + n]);
+          }
+        }
+      });
+      return words.join(' ');
+    });
+  }
+  var READ_LA = {Lesson: 'Lectio', Epistle: 'Epistola', Gospel: 'Evangelium'};
+  function drawReadings(m) {
+    var box = el('section', {class: 'readings'});
+    var rs = m.readings || [];
+    if (!rs.length) return box;
+    box.appendChild(el('h2', {text: 'Lectiones'}));
+    rs.forEach(function (r) {
+      var la = el('p', {class: 'la'}), en = el('p', {class: 'en-text'});
+      box.appendChild(el('div', {class: 'reading'}, [
+        el('h3', null, [READ_LA[r.type] + ' — ' + r.ref, r.roman ? el('span', {class: 'badge warn', title: 'Reference from the Roman Missal (jgabc); not read from the Dominican Missal', text: 'Roman ref.'}) : null]),
+        la, en]));
+      readingText('la', r.ref).then(function (t) { la.textContent = t; }, function () { la.textContent = ''; });
+      readingText('en', r.ref).then(function (t) { en.textContent = t; }, function () { en.textContent = ''; });
+    });
+    return box;
+  }
+
   function drawSlot(part, index, c) {
     var slot = el('section', {class: 'part', 'data-part': part});
     var sel = chantOptions(part, c.id);
@@ -280,6 +347,7 @@
     }});
     slot.appendChild(el('div', {class: 'part-head hide-print'}, [
       el('h2', {text: PART_NAME[part]}), sel,
+      c.roman ? el('span', {class: 'badge warn', title: 'Not found in the Graduale O.P. on GregoBase: the melody of the Roman Graduale is shown', text: 'Roman melody'}) : null,
       c.inferred ? el('span', {class: 'badge info', title: 'Not printed with this Mass; the Graduale uses it again from p. ' + (D.chants[c.id] || {}).pg, text: 're-used'}) : null,
       toggle, remove
     ]));
@@ -288,7 +356,7 @@
     slot.appendChild(editor);
     slot.appendChild(el('p', {class: 'meta hide-print'}, [info]));
     sel.addEventListener('change', function () {
-      state.parts[part][index] = {id: sel.value ? Number(sel.value) : null, chosen: true};
+      state.parts[part][index] = {id: sel.value ? (/^\d+$/.test(sel.value) ? Number(sel.value) : sel.value) : null, chosen: true};
       drawMass(); writeHash();
     });
     if (!c.id) { chantBox.appendChild(el('p', {class: 'empty', text: 'Choose a chant from the list.'})); return slot; }
