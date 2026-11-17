@@ -501,6 +501,33 @@ if os.path.exists('wins2026.json'):
                 M['rank'] = o['cls']
     for k, cs in _col.items():
         if len(cs) == 1: masses[k]['color'] = cs.pop()
+    # the proper Preface of a Mass, where the Ordo's Preface for it is not simply that of the season
+    import datetime as _dt
+    def _easter(y):
+        a=y%19;b_=y//100;c=y%100;d=b_//4;e=b_%4;f=(b_+8)//25;g=(b_-f+1)//3;h=(19*a+b_-d-g+15)%30;i=c//4;k_=c%4;l=(32+2*e+2*i-h-k_)%7;m_=(a+11*h+22*l)//451
+        mo=(h+l-7*m_+114)//31; da=((h+l-7*m_+114)%31)+1; return _dt.date(y,mo,da)
+    def _season(ds):
+        d = _dt.date(*map(int, ds.split('-'))); f = (d - _easter(d.year)).days; md = d.month * 100 + d.day
+        if md >= 1225 or md <= 105: return 'Nativitate'
+        if 106 <= md <= 113: return 'Epiphania'
+        if -46 <= f <= -15: return 'Quadragesima'
+        if -14 <= f <= -3: return 'Sancta Cruce'
+        if -1 <= f <= 38: return 'Paschalis'
+        if 39 <= f <= 47: return 'Ascensione'
+        if 48 <= f <= 55: return 'Spiritu Sancto'
+        return None
+    _pref = {}
+    for o in ORDO:
+        if o.get('region') or not o.get('pref'): continue
+        k = _wins.get(o['date'])
+        if not k or k not in masses: continue
+        M = masses[k]
+        if not ((_w(o['name']) & _w(M['title'] + ' ' + (M.get('name_en') or ''))) or not re.match(r'^(S\d|G\d|C\d)', k)): continue
+        if o['pref'] in ('Communis', 'SS. Trinitate') or o['pref'] == _season(o['date']): continue
+        _pref.setdefault(k, set()).add(o['pref'])
+    for k, ps in _pref.items():
+        if len(ps) == 1: masses[k]['pref'] = ps.pop()
+    print('proper Prefaces from the Ordo:', sum(1 for M in masses.values() if M.get('pref')))
     print('colours from the Ordo:', sum(1 for M in masses.values() if M.get('color')))
 
 # ---- chants used -----------------------------------------------------------------

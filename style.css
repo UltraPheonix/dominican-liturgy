@@ -196,3 +196,9 @@ footer a { color: var(--muted); }
 #mass .reading { margin: 18px 0 26px; }
 #mass .reading h3 { font-variant: small-caps; letter-spacing: .04em; }
 @media print { body[data-print="choir"] #mass .reading { display: none; } }
+
+/* the Preface */
+#mass .preface .pf-text { margin-top: 10px; }
+#mass .preface .pf-text p { font-size: 15.5px; line-height: 1.55; }
+#mass .preface .pf-sanctus { font-style: italic; color: var(--muted); margin: 6px 0 0; }
+@media print { body[data-print="choir"] #mass .preface .pf-text .en-text { display: none; } }
