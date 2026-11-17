@@ -435,19 +435,62 @@ if os.path.exists('m39_fixes.json'):
             if all(o in refs for o in old_r):
                 for r in rs:
                     if r['ref'] in old_r: r['ref'] = new_r[old_r.index(r['ref'])]; r['m39'] = True
+    import copy as _copy
     for k, v in FX.get('new_masses', {}).items():
+        if 'copy' in v and v['copy'] in masses:
+            src = masses[v['copy']]
+            v = dict(v)
+            parts = {p: [x['id'] for x in ids] for p, ids in src['parts'].items()}
+            parts.update(v.get('parts', {}))
+            v['parts'] = parts
+            v.setdefault('req', list(src.get('req') or parts.keys()))
+            v.setdefault('extras', list(src.get('extras') or []))
         masses[k] = {'title': v['title'], 'en': v['en'], 'page': v['page'], 'conf': v['conf'], 'note': v['note'],
                      'parts': {p: [{'id': i} for i in ids] for p, ids in v['parts'].items()}, 'extras': v.get('extras', []),
                      'req': v['req'], 'jgabc': None, 'order': v.get('order'), 'prophecies': v.get('prophecies'), 'readings': [{'type': t, 'ref': r, 'm39': True} for t, r in v['readings']]}
+        for f_ in ('rank', 'month', 'day', 'name_en', 'color'):
+            if f_ in v: masses[k][f_] = v[f_]
+        masses[k]['season'] = {}
+        placed = False
         for s_ in sections:
             if v['after'] in s_['items'] and k not in s_['items']:
-                s_['items'].insert(s_['items'].index(v['after']) + 1, k)
+                s_['items'].insert(s_['items'].index(v['after']) + 1, k); placed = True
+        if not placed:
+            for s_ in sections:
+                if s_['id'] == v.get('section', 'tempore') and k not in s_['items']:
+                    s_['items'].append(k)
+                    if s_['id'] == 'sanctorum': s_['items'].sort(key=lambda kk: liturgical(kk))
+    for k, r in FX.get('ranks', {}).items():
+        if k in masses: masses[k]['rank'] = r
     for k, n in FX.get('notes', {}).items():
         if k in masses: masses[k]['note'] = n
     for k, (la, en, mo, dy) in FX.get('titles', {}).items():
         if k in masses:
             masses[k].update(title='%d %s — %s' % (dy, MON[mo], la), en='%s %d — %s' % (MEN[mo], dy, en), name_en=en, month=mo, day=dy)
             masses[k].pop('note', None)
+
+# ---- vestment colours from the 2026 Ordo (for the Mass the site chooses that day) ----
+if os.path.exists('wins2026.json'):
+    _wins = json.load(open('wins2026.json')); _col = {}
+    for o in ORDO:
+        if o.get('region') or not o.get('color'): continue
+        k = _wins.get(o['date'])
+        if not k or k not in masses: continue
+        M = masses[k]
+        temporal = not re.match(r'^(S\d|G\d|C\d)', k)
+        ok = bool(_w(o['name']) & _w(M['title'] + ' ' + (M.get('name_en') or ''))) or (temporal and re.match(r'^(Feria|Dominica|"|DIES|Sabbat|Vigilia|In |Octava)', o['name'].strip(), re.I))
+        if ok: _col.setdefault(k, set()).add(o['color'])
+    # feasts whose class is unknown: take it from the Ordo of the day they are celebrated
+    for o in ORDO:
+        if o.get('region') or o.get('cls') not in ('I', 'II', 'III'): continue
+        y_, m_, d_ = map(int, o['date'].split('-'))
+        for k, M in masses.items():
+            if M.get('month') == m_ - 1 and M.get('day') == d_ and not M.get('rank') and re.match(r'^(S\d|G\d)', k) and not k.endswith('b') \
+               and (_w(o['name']) & _w(M['title'] + ' ' + (M.get('name_en') or ''))):
+                M['rank'] = o['cls']
+    for k, cs in _col.items():
+        if len(cs) == 1: masses[k]['color'] = cs.pop()
+    print('colours from the Ordo:', sum(1 for M in masses.values() if M.get('color')))
 
 # ---- chants used -----------------------------------------------------------------
 chants = {}

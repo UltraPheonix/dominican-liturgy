@@ -290,11 +290,15 @@
   // ---------------------------------------------------------------- liturgical colour and class
   var COLORS = {white: '#ffffff', red: '#b3313d', green: '#5f8f5f', violet: '#6a3d8f', rose: '#d98aa6', black: '#111111'};
   var COLOR_LA = {white: 'White', red: 'Red', green: 'Green', violet: 'Violet', rose: 'Rose', black: 'Black'};
-  function massColor(key) {
+  function massColor(key, d) {
+    var dd = d || state.date, d0IsSunday = function () { return !dd || dd.getDay() === 0; };
     var m = D.masses[key], t = clean(m.title || '').replace(/^\d+ [A-Za-z.]+ — /, '') + ' ' + clean(m.en || '').replace(/^[A-Za-z]+ \d+ — /, '');
     if (/^(Adv3|Quad4)$/.test(key)) return 'rose';
+    if (m.color) return m.color;
+    if (/Vigilia|Vigil of/.test(t) && !/Pasch|Pentecost|Nativ/.test(t)) return 'violet';
     if (/^(Adv|7a|6a|5a|Quad|EmbWed|EmbFri|EmbSat|Litaniis|Dec24)/.test(key) && !/Quad6h|Quad5f/.test(key)) return key === 'Quad6f' ? 'black' : 'violet';
     if (/^(Pent0|Pasc6s)/.test(key)) return 'red';
+    if (/^(Pent1|Epi1)$/.test(key) && d0IsSunday()) return 'white';
     if (/^(Epi[1-6]|Pent\d)/.test(key) && !/^Pent0/.test(key)) return 'green';
     if (/Defunct|C114s|Mass for the Dead/.test(key + t)) return 'black';
     if (/Passione|Spiritu Sancto|C68s|C75s/.test(key + t)) return 'red';
@@ -305,7 +309,9 @@
   function temporalClass(key, d) {
     if (key === 'Epi' && d && !(d.getMonth() === 0 && d.getDate() === 6)) return 4;
     if (/^Dec25/.test(key) && d && d.getDate() !== 25) return 2;
-    if (/^(Adv[1-4]|Quad[1-6]|Pasc0|Pasc1|Pent0|Dec24|Dec25|Jan1|Epi|Asc|CorpusChristi|SCJ|ChristusRex|5aw)$/.test(key)) return 1;
+    if (/^(Pasc1|Epi[1-6]|Pent\d+)$/.test(key) && d && d.getDay() !== 0) return 4;
+    if (/^Adv[1-4]$/.test(key) && d && d.getDay() !== 0) return (d.getMonth() === 11 && d.getDate() >= 17) ? 2 : 3;
+    if (/^(Adv[1-4]|Quad[1-6]|Pasc0|Pasc1|Pent0|Pasc6s|Dec24|Dec25|Jan1|Epi|Asc|CorpusChristi|SCJ|ChristusRex|5aw)$/.test(key)) return 1;
     if (/^Quad6|^Pasc0|^Pent0/.test(key)) return 1;
     if (d && d.getDay() === 0) return 2;
     if (/^Adv/.test(key) && d && d.getMonth() === 11 && d.getDate() >= 17) return 2;
@@ -722,7 +728,7 @@
     var fk = feasts[0], fc = fk ? feastClass(fk) : 9;
     // the higher class wins; at equal class a Sunday or privileged feria wins, otherwise the feast
     var lentFeria = tk && /^(5a|Quad)/.test(tk) && d.getDay() !== 0;
-    var win = !fk ? tk : (!tk ? fk : (fc < tc ? fk : (tc < fc ? tk : (d.getDay() === 0 || tc <= 2 || lentFeria ? tk : fk))));
+    var win = !fk ? tk : (!tk ? fk : (fc >= 4 ? tk : (fc < tc ? fk : (tc < fc ? tk : (d.getDay() === 0 || tc <= 1 || lentFeria ? tk : fk)))));
     // a free Saturday outside Advent and Lent: the Mass of Our Lady on Saturday
     if (d.getDay() === 6 && win === tk && tc >= 4 && !/^(Adv|5a|Quad|7a|6a)/.test(tk || '') && D.masses.C79s) {
       temp = temp.concat(['C79s']); win = 'C79s';

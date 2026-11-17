@@ -1,5 +1,5 @@
 import re, json
-L = open('sources/ordo_op_2026.txt', encoding='utf8').read().split('\n')
+L = open('/home/claude/dl/txt/O26.txt', encoding='utf8').read().split('\n')
 E_RE = re.compile(r'^\s*(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+(\d{4})-(\d\d)-(\d\d)\s+Mass\s+(.*?)\s*(?:M33:.*?)?(M39:\s*([^\s]+(?:\s\(\d\))?(?:\s?S\d\s\(\d\))?))?\s*(?:M65:.*)?$')
 out, region = [], False
 i = 0
@@ -14,16 +14,16 @@ while i < len(L):
         j = i + 1
         while j < len(L) and L[j].startswith(' ' * 20) and L[j].strip() and not re.match(r'^\s*(cl\.|tr\.|Gloria|Mem\.)', L[j]):
             name += ' ' + L[j].strip(); j += 1
-        cls = ''
+        cls = ''; col = ''
         for k in range(i + 1, min(i + 5, len(L))):
-            c = re.match(r'^\s*cl\.\s*(I{1,3}|IV)\b', L[k])
-            if c: cls = c.group(1); break
+            c = re.match(r'^\s*cl\.\s*(I{1,3}|IV)\b\s*([WGRVB])?\b', L[k])
+            if c: cls = c.group(1); col = c.group(2) or ''; break
         tr = ''
         for k in range(i + 1, min(i + 6, len(L))):
             t = re.search(r'tr\.\s+(.*)$', L[k])
             if t: tr = t.group(1).strip(); break
         out.append({'date': '%s-%s-%s' % (m.group(2), m.group(3), m.group(4)), 'name': re.sub(r'\s+', ' ', name),
-                    'm39': (m.group(7) or '').strip(), 'cls': cls, 'en': tr, 'region': region})
+                    'm39': (m.group(7) or '').strip(), 'cls': cls, 'color': {'W': 'white', 'G': 'green', 'R': 'red', 'V': 'violet', 'B': 'black'}.get(col, ''), 'en': tr, 'region': region})
         region = False
     i += 1
 json.dump(out, open('ordo2026.json', 'w'), ensure_ascii=False, indent=0)
