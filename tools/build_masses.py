@@ -4,7 +4,6 @@ Every Mass lists its chants by part; each chant is a GregoBase ID of the Gradual
 'inferred': the chant is not printed in this Mass's place in the Graduale (it is used again from
 elsewhere in the book); it was found by the incipit the same day has in the Roman Graduale.
 """
-import gzip
 import json, re, sys, io, csv
 _o = sys.stdout; sys.stdout = io.StringIO()
 from build_temporale import norm, same
@@ -20,6 +19,8 @@ _o = sys.stdout; sys.stdout = io.StringIO()
 from build_sanctorale import bydate, find_common, GUESS
 sys.stdout = _o
 
+import resolve_m39 as R
+ORDO = [o for o in json.load(open('ordo2026.json')) if not o['region']]
 PARTS = ['in', 'gr', 'al', 'tr', 'se', 'of', 'co']
 allchants = {}
 for g in groups + [front]:
@@ -188,27 +189,123 @@ def feast_mass(f):
     return None, None, None
 
 
+import unicodedata as _ud
+
+
+def _w(s):
+    s = ''.join(c for c in _ud.normalize('NFD', s) if not _ud.combining(c)).lower().replace('j', 'i').replace('æ', 'ae')
+    return set(w for w in re.findall(r'[a-z]{4,}', s) if w not in ('sancti', 'sanctae', 'beati', 'beatae', 'virg', 'conf', 'mart', 'feria', 'missa', 'ordinis'))
+
+
+def ordo_page(f):
+    """The Missal page the 2026 Ordo gives for this feast (if it is celebrated in 2026)."""
+    for o in ORDO:
+        y, mo, d = map(int, o['date'].split('-'))
+        if mo - 1 == f['month'] and d == f['day'] and (_w(o['name']) & _w(f['name'])):
+            return o['m39']
+    return None
+
+
+TEMPORE_PAGES = lambda c: c['section'] == 'tempore'
+
+
+def missal_mass(f, prefer):
+    """Parts of the feast read from its page in the Missale O.P. 1939."""
+    ref = ordo_page(f)
+    if not ref:
+        return None
+    p = R.pdf_page(ref)
+    parts, commref, seg = R.resolve(p, f['day'], f['month'], prefer)
+    # a saint's Introit never comes from the Proper of the Time; a stray match there is OCR noise
+    parts['in'] = [h for h in parts.get('in', []) if h[0]['section'] != 'tempore']
+    if not parts['in']:
+        return None
+    return {'parts': parts, 'commref': commref, 'm39': ref}
+
+
 sitems, bitems = [], []
 for f in cal:
     if not f['beatus'] and TEMPORAL.search(f['name']):
         continue
-    gid, conf, ref = feast_mass(f)
-    if gid is None:
-        continue
-    g = groups[gid]
-    taken, extras = core(g)
+    prefer = tuple(proper_by_date.get((f['month'], f['day']), []))
+    mm = missal_mass(f, prefer)
+    season = {}
+    if mm:
+        intro, isc = mm['parts']['in'][0][0], mm['parts']['in'][0][2]
+        if prefer and groups[prefer[0]]['section'] == 'sanctorum' and not mm['commref']:
+            gid, conf = prefer[0], 'missal'
+        else:
+            gid, conf = intro['gid'], 'missal'
+        g = groups[gid]
+        taken, extras = core(g)
+        if g['section'] == 'commune' and gid != intro['gid']:
+            pass
+        # the Introit as the Missal gives it (e.g. without the Paschal alleluias)
+        if intro['gid'] != gid or not taken.get('in'):
+            if taken.get('in') and groups[gid]['section'] == 'sanctorum' and 'all' in allchants[taken['in'][0]['id']]['incipit']:
+                season.setdefault('pasch', {})['in'] = taken['in']
+            taken['in'] = [{'id': intro['id']}]
+        # parts the Missal labels clearly override the Graduale's default
+        for p, hits in mm['parts'].items():
+            if p == 'in':
+                continue
+            for c, se, sc in hits:
+                if sc < 2:
+                    continue
+                if p == 'al' and c['section'] == 'tempore':
+                    se = 'pasch'
+                if se == 'pasch':
+                    if p == 'al':
+                        season.setdefault('pasch', {}).setdefault('al', []).append({'id': c['id']})
+                    continue
+                elif se == 'lent' or p == 'tr':
+                    season.setdefault('lent', {}).setdefault('tr', []).append({'id': c['id']})
+                else:
+                    if p not in [k for k in taken if taken.get(k) and k + '_set' in taken]:
+                        taken[p] = []
+                        taken[p + '_set'] = True
+                    taken[p].append({'id': c['id']})
+        for k in [k for k in taken if k.endswith('_set')]:
+            del taken[k]
+        if season.get('pasch', {}).get('al') and len(season['pasch']['al']) > 2:
+            season['pasch']['al'] = season['pasch']['al'][:2]
+        if 'tr' in taken and taken.get('al'):
+            season.setdefault('lent', {})['tr'] = taken.pop('tr')
+        # one Gradual, Alleluia, Offertory and Communion: alternatives from the Common go to the extras
+        for p in ('gr', 'al', 'of', 'co'):
+            if len(taken.get(p, [])) > 1:
+                extras = [c['id'] for c in taken[p][1:]] + extras
+                taken[p] = taken[p][:1]
+        ref = mm['commref']
+        note = ('Chants as given on p. %s of the Missale O.P. 1939 (the page cited by the 2026 Ordo)' % mm['m39']) + \
+               ((', from the Common (Missal p. %s).' % ref) if ref else '.')
+        if gid in prefer:
+            attached.add(gid)
+    else:
+        gid, conf, ref = feast_mass(f)
+        if gid is None:
+            continue
+        g = groups[gid]
+        taken, extras = core(g)
+        note = {'proper': 'Proper Mass, Graduale p. %s (matched to this date in the Missale O.P. 1939).' % g['page'],
+                'common': 'The Missale O.P. 1939 gives Officium «%s» for this day: %s.' % (ref, masses.get(g.get('key'), {}).get('en', 'Graduale p. %s' % g['page'])),
+                'guess': 'Common chosen from the saint\'s title (%s): check the Ordo.' % (masses.get(g.get('key'), {}).get('en', ref))}[conf]
+        if conf == 'proper':
+            attached.add(gid)
+        for p in ('gr', 'al', 'of', 'co'):
+            if len(taken.get(p, [])) > 1:
+                extras = [c['id'] for c in taken[p][1:]] + extras
+                taken[p] = taken[p][:1]
+        if 'tr' in taken and taken.get('al'):
+            season.setdefault('lent', {})['tr'] = taken.pop('tr')
     date_la = '%d %s' % (f['day'], MON[f['month']])
     key = 'S%02d%02d' % (f['month'] + 1, f['day']) + ('b' if f['beatus'] else '')
     while key in masses:
         key += 'x'
-    note = {'proper': 'Proper Mass, Graduale p. %s (matched to this date in the Missale O.P. 1939).' % g['page'],
-            'common': 'The Missale O.P. 1939 gives Officium «%s» for this day: %s.' % (ref, masses.get(g.get('key'), {}).get('en', 'Graduale p. %s' % g['page'])),
-            'guess': 'Common chosen from the saint\'s title (%s): check the Ordo.' % (masses.get(g.get('key'), {}).get('en', ref))}[conf]
-    if conf == 'proper':
-        attached.add(gid)
     add(key, {'title': '%s — %s' % (date_la, f['name']), 'en': '%s %d — %s' % (MEN[f['month']], f['day'], f['name']),
               'rank': f['rank'], 'op': f['op'], 'page': g['page'], 'conf': conf, 'note': note,
-              'parts': taken, 'extras': extras if conf == 'proper' else [], 'month': f['month'], 'day': f['day']})
+              'parts': {k: v for k, v in taken.items() if v}, 'season': season,
+              'extras': extras, 'month': f['month'], 'day': f['day']})
     (bitems if f['beatus'] else sitems).append(key)
 # proper Masses of the Graduale not attached to a calendar date
 for g in groups:
@@ -242,12 +339,13 @@ for c in allchants.values():
 data = {'sections': sections, 'masses': masses, 'chants': chants,
         'kyriale': [c['id'] for c in kyriale], 'front': [c['id'] for c in front['chants']]}
 import os
-os.makedirs('../data', exist_ok=True)
-with open('../data/masses.js', 'w', encoding='utf8') as f:
+os.makedirs('site/data', exist_ok=True)
+with open('site/data/masses.js', 'w', encoding='utf8') as f:
     f.write('// Generated by build_masses.py from the Graduale O.P. (1950, GregoBase source 14), the Missale O.P. (1939)\n')
     f.write('// and the Calendarium O.P. reformatum. Do not edit by hand; edit the build scripts.\n')
     f.write('var DOMINICAN = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
 from collections import Counter
 print({s['id']: len(s['items']) for s in sections})
 print('sanctorale conf', Counter(masses[k]['conf'] for k in sitems + bitems))
+print('with seasonal variants', sum(1 for k in sitems+bitems if masses[k].get('season')))
 print('temporale inferred parts', sum(1 for k in items for p in masses[k]['parts'].values() for c in p if c.get('inferred')))
