@@ -425,7 +425,7 @@ if os.path.exists('m39_fixes.json'):
         for p, cid in parts.items():
             if k in masses:
                 ids = cid if isinstance(cid, list) else [cid]
-                if ids: masses[k]['parts'][p] = [{'id': c, 'm39': True} for c in ids]
+                if ids: masses[k]['parts'][p] = [dict({'id': c, 'm39': True}, **({'roman': True} if str(c).startswith('r') else {})) for c in ids]
                 else: masses[k]['parts'].pop(p, None)
                 if not ids and 'req' in masses[k]: masses[k]['req'] = [x for x in masses[k]['req'] if x != p]
     for k, rs in FX.get('readings', {}).items():
