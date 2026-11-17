@@ -380,7 +380,7 @@
       c = !isVigil(key) && (sun || cls === 1 || /Apost|App\.|Evang/.test(t) ||
           (cls === 2 && /\bDomini\b|Christi|Iesu|Jesu|Crucis|Transfigur|Baptism|Mari[aæe]|B\. ?M\. ?V|Virginis Mari|Our Lady/.test(t)));
     }
-    return {gloria: g, credo: c, dismiss: g ? 'ite' : 'ben'};
+    return {gloria: g, credo: c, dismiss: key === 'Quad6h' ? 'ben' : 'ite'};
   }
 
   // ---------------------------------------------------------------- the ring of the liturgical year
@@ -487,23 +487,42 @@
   // Dominicis (II class, Sundays); III in festis simplicibus (III class); IV Tempore Paschali; V in Sabbatis de B. Virgine;
   // VI infra octavas simplices et in Missis votivis; VIII profestis diebus (ferias). Parts not in GregoBase's Kyriale
   // are taken from the nearest Mass that has them.
-  var ORD_FALLBACK = {I: ['II'], II: ['I'], III: ['II'], IV: ['I'], V: ['II'], VI: ['V', 'II'], VIII: []};
+  var ORD_FALLBACK = {I: ['II'], II: ['I'], III: ['II'], IV: ['I'], V: ['II'], VI: ['V', 'II'], VIII: ['VI']};
   function easterOctave(d) { if (!d) return false; var f = diffDays(d, easter(d.getFullYear())); return f >= -1 && f <= 6; }
   function paschaltide(d) { if (!d) return false; var f = diffDays(d, easter(d.getFullYear())); return f >= 0 && f <= 55; }
+  // a feast or votive Mass of Our Lady
+  function isMarian(key) {
+    var m = D.masses[key] || {}, t = titleText(key).replace(/^.*?—\s*/, '');
+    if (key === 'C79s' || key === 'C82s') return true;
+    if (/^S\.\s*Mari(æ|ae)\s+ad Nives/i.test(t)) return true;                  // Our Lady of the Snows
+    if (/^B\.\s*Mari(æ|ae)\s+(Virg|V\.)/i.test(t)) return true;               // B. Mariæ Virg. Reginæ, …
+    if (/^Ss\.\s*Nominis\s+B/i.test(t)) return true;                         // Holy Name of Mary
+    if (/^(S|Ss|SS|B|Bb)\.\s/.test(t)) return false;                           // a saint or blessed (St Joseph, St Anne, Bl. Maria …)
+    return /\bMari(a|ae|æ|e)(?![a-zæ])|B\. ?M\. ?V|Virginis Mari|Our Lady|Deipar|Rosarii|Immaculat|Beatae Virginis/i.test(t + ' ' + (m.name_en || ''));
+  }
+  // The Kyriale O.P. after the rubrics of 1960 (Fr. A. Thompson, "The Gloria and Credo in the post-1960 Dominican Rite"):
+  // I class I (of Our Lady V); Sundays II; II class III (of Our Lady V); III class VI (of Our Lady, and her Saturdays, V);
+  // ferias and days of penance "Profestis diebus" (VIII in the GregoBase numbering, p. 145*).
   function autoKyriale(key, d) {
-    var temporal = isTemporal(key), t = titleText(key);
+    var temporal = isTemporal(key);
     var sec = (D.sections.filter(function (s) { return s.items.indexOf(key) >= 0; })[0] || {}).id;
-    var R = rubricsOf(key, d);
-    var sunday = d && d.getDay() === 0;
-    if (!R.gloria && !sunday && (temporal || isVigil(key))) return 'VIII';     // ferias, vigils, Ember days of Advent and Lent
-    if (key === 'C79s' || (sec === 'votivae' && /Mari/.test(t))) return 'V';
+    var R = rubricsOf(key, d), sunday = d && d.getDay() === 0;
+    if (!R.gloria && !sunday) return 'VIII';
+    if (isMarian(key)) return 'V';
     if (sec === 'votivae') return 'VI';
-    if (paschaltide(d) && !/^(Quad6s)$/.test(key)) return 'IV';
-    if (temporal && sunday && (SUNDAY_MASS.test(key) || /^(Quad[1-6]|Adv[1-4]|Pent1?\d*)$/.test(key)) && key !== 'Pent1') return 'II';   // in Dominicis
     var cls = temporal ? temporalClass(key, d) : feastClass(key);
+    if (temporal && sunday && !/^(Pasc0|Pent0)$/.test(key)) return 'II';      // all Sundays but Easter and Pentecost
     if (cls === 1) return 'I';
-    if (cls === 2 || (d && d.getDay() === 0)) return 'II';
-    return 'III';
+    if (sunday) return 'II';
+    if (cls === 2) return 'III';
+    if (cls === 3) return 'VI';
+    return R.gloria ? 'VI' : 'VIII';
+  }
+  // In Paschaltide the Easter Kyrie (IV) on feasts of the I and II class not of Our Lady, and on Sundays
+  function paschalKyrie(key, d) {
+    if (!paschaltide(d) || isMarian(key) || key === 'Quad6s') return false;
+    var cls = isTemporal(key) ? temporalClass(key, d) : feastClass(key);
+    return cls <= 2 || (d && d.getDay() === 0);
   }
   function ordinaryIds() {
     var o = {}, R = rubricsOf(state.key, state.date), d = state.date;
@@ -515,7 +534,7 @@
     if (!asp && d && d.getDay() === 0 && !R.requiem && state.key !== 'Quad6') { var f = diffDays(d, easter(d.getFullYear())); asp = (f >= 0 && f <= 49) ? 'vidi' : 'asperges'; }
     if (asp && asp !== 'none') o.as = asp === 'vidi' ? D.front[1] : D.front[0];
     if (state.ord === 'none') { if (R.credo && state.credo && state.credo !== 'none') o.cr = find('Credo ' + state.credo); return o; }
-    if (R.requiem) { o.ky = find('Kyrie (Requiem)'); o.it = find('Requiescant'); return o; }
+    if (R.requiem) { o.ky = find('Kyrie (Requiem)'); o.sa = find('Sanctus VIII'); o.ag = find('Agnus VIII'); o.it = find('Requiescant'); o.req = true; return o; }
     var num = state.ord || autoKyriale(state.key, d);
     var part = function (kind) {
       var chain = [num].concat(ORD_FALLBACK[num] || []), hit = null;
@@ -529,11 +548,14 @@
       return hit;
     };
     o.ky = (num === 'VIII' && find('Kyrie VIII - Profestis diebus')) || part('Kyrie');
+    if (!state.ord && paschalKyrie(state.key, d)) { o.ky = find('Kyrie IV') || o.ky; o.pk = true; }
     if (R.gloria) o.gl = part('Gloria');
     o.sa = part('Sanctus'); o.ag = part('Agnus');
     // Ite missa est when the Gloria is said (with two Alleluias in the Easter octave); otherwise Benedicamus Domino
-    if (R.gloria) o.it = (easterOctave(d) || state.key === 'Quad6s') ? find('Ite IV') : (part('Ite') || find('Ite I'));
-    else o.it = part('Benedicamus') || find('Benedicamus VIII');
+    // after 1960: Ite, missa est at every Mass (with two Alleluias in the Easter octave);
+    // Benedicamus Domino only when a procession follows at once (Maundy Thursday)
+    if (R.dismiss === 'ben') o.it = part('Benedicamus') || find('Benedicamus VIII');
+    else o.it = (easterOctave(d) || state.key === 'Quad6s') ? find('Ite IV') : (part('Ite') || find('Ite I'));
     if (R.credo && state.credo !== 'none') o.cr = find('Credo ' + (state.credo || 'I'));
     o.num = num;
     return o;
@@ -670,8 +692,10 @@
   function rubricLine(R) {
     var pn = prefaceOf(state.key, state.date), P = pn ? PREFACES[pn] : null, num = state.ord && state.ord !== 'none' ? state.ord : autoKyriale(state.key, state.date);
     if (state.key === 'Quad6f') return 'Lessons and Tracts · the Passion · the Solemn Prayers · the Adoration of the Cross · the Mass of the Presanctified';
-    if (R.requiem) return 'Mass for the Dead · without Gloria or Credo · Sequence Dies iræ · Preface for the Dead · Requiescant in pace';
-    return (state.ord === 'none' ? '' : 'Kyriale: Missa ' + num + ' · ') + (R.gloria ? 'Gloria' : 'no Gloria') + ' · ' + (R.credo ? 'Credo' : 'no Credo') +
+    if (R.requiem) return 'Mass for the Dead · Kyrie (Requiem) · without Gloria or Credo · Sequence Dies iræ · Preface for the Dead · Agnus Dei with dona eis requiem · Requiescant in pace';
+    var kyr = num === 'VIII' ? 'VIII (Profestis diebus)' : num;
+    if (!state.ord && paschalKyrie(state.key, state.date)) kyr += ', Kyrie IV';
+    return (state.ord === 'none' ? '' : 'Kyriale: Missa ' + kyr + ' · ') + (R.gloria ? 'Gloria' : 'no Gloria') + ' · ' + (R.credo ? 'Credo' : 'no Credo') +
       (P ? ' · ' + P.en : '') + ' · ' + (R.dismiss === 'ite' ? 'Ite, missa est' : 'Benedicamus Domino');
   }
 
@@ -743,12 +767,17 @@
     main.appendChild(add);
   }
 
+  function findKyriale(name) { var r = null; D.kyriale.forEach(function (id) { if (D.chants[id].i === name) r = id; }); return r; }
   function drawOrdinary(k, id) {
     var slot = el('section', {class: 'part', 'data-part': k, id: k === 'ky' || k === 'as' ? 'ordinary' : null});
     var box = el('div', {class: 'chant'});
     slot.appendChild(el('div', {class: 'part-head hide-print'}, [el('h2', {text: ORD_LABEL[k]}), el('span', {class: 'incipit', text: D.chants[id] ? clean(D.chants[id].i) : ''})]));
     slot.appendChild(el('h2', {class: 'print-only', text: ORD_LABEL[k] + (D.chants[id] ? ' · ' + clean(D.chants[id].i).replace(/^(Kyrie|Gloria|Credo|Sanctus|Agnus|Ite|Benedicamus)\s*/, '') : '')}));
     slot.appendChild(box);
+    if (k === 'ag' && rubricsOf(state.key, state.date).requiem)
+      slot.appendChild(el('p', {class: 'hint rubric', text: 'At a Mass for the Dead: “dona eis requiem” twice, and the third time “dona eis requiem sempiternam”.'}));
+    if (k === 'ky' && id === findKyriale('Kyrie IV') && state.ord !== 'IV')
+      slot.appendChild(el('p', {class: 'hint rubric', text: 'In Paschaltide the Easter Kyrie is sung on Sundays and on feasts of the I and II class.'}));
     box.appendChild(el('p', {class: 'loading', text: 'Loading…'}));
     loadGabc(id).then(function (t) { var g = splitGabc(t); renderInto(box, g.body, g.header, null); }, function (e) { showError(box, e); });
     return slot;
@@ -1090,9 +1119,20 @@
       jobs.push(readingText('la', r.ref).then(function (t) { o.la.textContent = t; }, function () {}));
       jobs.push(readingText('en', r.ref).then(function (t) { o.en.textContent = t; }, function () {}));
     };
-    var R = rubricsOf(state.key, state.date);
+    var R = rubricsOf(state.key, state.date), O = ordinaryIds(), OT = window.ORDINARY || {};
     box.appendChild(el('p', {class: 'c-rubric', text: rubricLine(R)}));
+    var ordSec = function (t) { if (!t) return; var o = sec(t.la_name, t.en_name, ''); o.la.textContent = t.la; o.en.textContent = t.tr || t.en; };
+    if (O.as) ordSec(O.as === D.front[1] ? OT.vidi : OT.as);
     massSequence(m, state.parts).forEach(function (it) {
+      if (it.t === 'ord') {
+        if (!O[it.k]) return;
+        if (it.k === 'ag') ordSec(R.requiem ? OT.agReq : OT.ag);
+        else if (it.k === 'it') {
+          var nm = (D.chants[O.it] || {}).i || '';
+          ordSec(/Requiescant/.test(nm) ? OT.req : /Benedicamus/.test(nm) ? OT.ben : (easterOctave(d) || state.key === 'Quad6s') ? OT.itePasch : OT.ite);
+        } else ordSec(OT[it.k]);
+        return;
+      }
       if (it.t === 'chant') { if (it.c.id) chantSec(it.p, it.c); }
       else if (it.t === 'read') readSec(it.r);
       else if (it.t === 'pref') {
@@ -1100,7 +1140,7 @@
         if (pn) { var P = prefaceText(pn, state.key, state.date), o = sec('Praefatio', P.en, ''); o.la.textContent = P.la; o.en.textContent = P.tr; }
       }
     });
-    box.appendChild(el('footer', {class: 'c-foot', text: 'Chants: Graduale O.P. (1950). Readings: Vulgate and Douay-Rheims. English of the chants: St. Dominic Missal (1959).'}));
+    box.appendChild(el('footer', {class: 'c-foot', text: 'Chants: Graduale O.P. (1950). Readings: Vulgate and Douay-Rheims. English of the chants: Douay-Rheims where the chant is the text of Scripture, otherwise our own translation.'}));
     return Promise.all(jobs);
   }
   function printAs(mode) {
@@ -1117,7 +1157,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {prefaceOf: prefaceOf, autoKyriale: autoKyriale, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts};
+  window.ProprOP = {prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts};
 
   function start() {
     fillMassSelect();
