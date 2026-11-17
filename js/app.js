@@ -255,7 +255,7 @@
     Object.keys(D.chants).filter(function (id) { return D.chants[id].p === part; })
       .sort(function (a, b) { return D.chants[a].i.localeCompare(D.chants[b].i); }).forEach(function (id) {
         var c = D.chants[id];
-        og.appendChild(el('option', {value: id, text: clean(c.i) + (c.roman ? ' — Roman Graduale' : ' — p. ' + c.pg), selected: String(current) === id ? 'selected' : null}));
+        og.appendChild(el('option', {value: id, text: clean(c.i) + (c.roman ? (/Franciscan/.test(c.i) ? ' — Franciscan Graduale' : ' — Roman Graduale') : ' — p. ' + c.pg), selected: String(current) === id ? 'selected' : null}));
       });
     sel.appendChild(og);
     return sel;
@@ -873,7 +873,9 @@
     var incipit = el('span', {class: 'incipit', text: clean(ch.i || '').replace(/\s*\(.*?\)\s*/g, ' ').replace(/\.\.\..*$/, '').replace(/(\s*all\.)+\s*$/i, '').replace(/\s+alleluia\s*$/i, '').trim()});
     var mode = el('span', {class: 'mode'});
     var head = el('div', {class: 'part-head hide-print'}, [el('h2', {text: PART_NAME[part]}), state.edit ? sel : incipit, mode]);
-    if (c.roman) head.appendChild(el('span', {class: 'badge warn', title: 'Not in the Graduale O.P. on GregoBase: the melody of the Roman Graduale', text: 'Roman melody'}));
+    if (c.roman) head.appendChild(/Franciscan/.test(ch.i || '') ?
+      el('span', {class: 'badge warn', title: 'Not in the Graduale O.P.: the melody of the Franciscan Graduale (Graduale Seraphicum)', text: 'Franciscan melody'}) :
+      el('span', {class: 'badge warn', title: 'Not in the Graduale O.P. on GregoBase: the melody of the Roman Graduale', text: 'Roman melody'}));
     if (state.edit) { head.appendChild(toggle); head.appendChild(remove); }
     slot.appendChild(head);
     slot.appendChild(el('h2', {class: 'print-only', text: PART_NAME[part]}));
