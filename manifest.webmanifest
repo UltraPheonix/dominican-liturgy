@@ -1,0 +1,11 @@
+{
+  "name": "Propria Missae O.P.",
+  "short_name": "Propria O.P.",
+  "description": "The chants and readings of the Dominican Rite for every day.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbfaf7",
+  "theme_color": "#111111",
+  "icons": [{"src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
+}
