@@ -435,6 +435,8 @@ if os.path.exists('m39_fixes.json'):
             if all(o in refs for o in old_r):
                 for r in rs:
                     if r['ref'] in old_r: r['ref'] = new_r[old_r.index(r['ref'])]; r['m39'] = True
+    for k, n in FX.get('notes', {}).items():
+        if k in masses: masses[k]['note'] = n
     for k, (la, en, mo, dy) in FX.get('titles', {}).items():
         if k in masses:
             masses[k].update(title='%d %s — %s' % (dy, MON[mo], la), en='%s %d — %s' % (MEN[mo], dy, en), name_en=en, month=mo, day=dy)
