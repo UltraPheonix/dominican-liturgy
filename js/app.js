@@ -162,7 +162,7 @@
       .replace(/(\))\s*\(\)/g, ')');
   }
 
-  var renderQueue = Promise.resolve();
+  var renderQueue = Promise.resolve(), glyphSeq = 0;
   function renderInto(container, body, header, part) {
     // one layout at a time keeps the page responsive and the order stable
     renderQueue = renderQueue.then(function () {
@@ -183,10 +183,40 @@
           score.performLayoutAsync(ctxt, function () {
             try {
               score.layoutChantLines(ctxt, width);
-              var svg = score.createSvgNode(ctxt);
-              svg.removeAttribute('width'); svg.removeAttribute('height');
+              // one drawing per staff line, so that a long chant can run across pages
+              var lines = score.createSvgNodeForEachLine(ctxt);
+              if (lines && !lines.length && lines.nodeType) lines = [lines];
               container.innerHTML = '';
-              container.appendChild(svg);
+              // exsurge defines its glyphs once, in the first line; give every line its own copy with
+              // its own names, so a line printed on another page still finds its clefs and neumes
+              var defs = null;
+              Array.prototype.forEach.call(lines, function (svg) { if (!defs) defs = svg.querySelector('defs'); });
+              Array.prototype.forEach.call(lines, function (svg) {
+                var uid = 'g' + (++glyphSeq) + '_';
+                var own = svg.querySelector('defs');
+                if (!own && defs) { own = defs.cloneNode(true); svg.insertBefore(own, svg.firstChild); }
+                if (own) Array.prototype.forEach.call(own.querySelectorAll('[id]'), function (n) { n.setAttribute('id', uid + n.getAttribute('id')); });
+                Array.prototype.forEach.call(svg.querySelectorAll('use'), function (u) {
+                  var h = u.getAttribute('xlink:href') || u.getAttribute('href');
+                  if (h && h.charAt(0) === '#') {
+                    u.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#' + uid + h.slice(1));
+                    u.setAttribute('href', '#' + uid + h.slice(1));
+                  }
+                });
+              });
+              Array.prototype.forEach.call(lines, function (svg) {
+                var w = parseFloat(svg.getAttribute('width')), h = parseFloat(svg.getAttribute('height'));
+                if (w && h && !svg.getAttribute('viewBox')) svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+                svg.removeAttribute('width'); svg.removeAttribute('height');
+                container.appendChild(el('div', {class: 'line'}, [svg]));
+                // fit the frame to what the line actually draws (exsurge places later lines above their frame)
+                try {
+                  var b = svg.getBBox(), vb = svg.getAttribute('viewBox').split(/\s+/).map(Number);
+                  // a stray element can report an absurd size: never let the frame grow beyond twice the line
+                  var hh = (b.height > 0 && b.height < vb[3] * 2) ? b.height + 6 : vb[3] + 6;
+                  if (isFinite(b.y) && Math.abs(b.y) < vb[3] * 2) svg.setAttribute('viewBox', [vb[0], (b.y - 3).toFixed(2), vb[2], hh.toFixed(2)].join(' '));
+                } catch (e) {}
+              });
             } catch (e) { showError(container, e); }
             resolve();
           });
@@ -463,7 +493,8 @@
   function drawOrdinary(k, id) {
     var slot = el('section', {class: 'part', 'data-part': k, id: k === 'ky' || k === 'as' ? 'ordinary' : null});
     var box = el('div', {class: 'chant'});
-    slot.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: ORD_LABEL[k]}), el('span', {class: 'incipit', text: D.chants[id] ? clean(D.chants[id].i) : ''})]));
+    slot.appendChild(el('div', {class: 'part-head hide-print'}, [el('h2', {text: ORD_LABEL[k]}), el('span', {class: 'incipit', text: D.chants[id] ? clean(D.chants[id].i) : ''})]));
+    slot.appendChild(el('h2', {class: 'print-only', text: ORD_LABEL[k] + (D.chants[id] ? ' · ' + clean(D.chants[id].i).replace(/^(Kyrie|Gloria|Credo|Sanctus|Agnus|Ite|Benedicamus)\s*/, '') : '')}));
     slot.appendChild(box);
     box.appendChild(el('p', {class: 'loading', text: 'Loading…'}));
     loadGabc(id).then(function (t) { var g = splitGabc(t); renderInto(box, g.body, g.header, null); }, function (e) { showError(box, e); });

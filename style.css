@@ -100,6 +100,7 @@ main { padding: 22px 44px 60px; max-width: 920px; width: 100%; }
 .linkbtn { border: 0; background: none; padding: 4px 6px; color: var(--rubric); text-decoration: underline; font-size: 15px; min-height: 32px; }
 .chant { margin: 8px 0 0; min-height: 40px; }
 .chant svg { width: 100%; height: auto; display: block; }
+.chant .line { break-inside: avoid; page-break-inside: avoid; }
 .gabc { width: 100%; font: 13px/1.4 ui-monospace, Menlo, Consolas, monospace; border: 1px solid var(--line); border-radius: 8px; padding: 8px; }
 .meta { color: var(--muted); font-size: 14px; margin: 2px 0 0; }
 .loading, .empty { color: var(--muted); font-style: italic; }
@@ -147,7 +148,8 @@ footer a { color: var(--muted); }
   .layout { display: block; }
   main { padding: 0; max-width: none; }
   .badge, .note, .source { display: none; }
-  .part, .reading { break-inside: avoid; page-break-inside: avoid; }
+  .part, .reading { break-inside: auto; page-break-inside: auto; }
+  .part h2.print-only { break-after: avoid; page-break-after: avoid; }
   .part h2.print-only { margin: 0; font-family: var(--caps); font-weight: 500; font-size: 13pt; letter-spacing: .08em; color: var(--rubric); }
   footer { display: none; }
 
@@ -159,7 +161,8 @@ footer a { color: var(--muted); }
   .ch-sub { font-family: var(--caps); font-size: 9.5pt; letter-spacing: .12em; color: #333; margin-top: 1mm; }
   .caps-head#chants { display: none; }
   body[data-print=choir] .readings { display: none; }
-  .part { padding-top: 3mm; border-top: 0; }
+  .part { padding-top: 4mm; border-top: 0; }
+  .chant { margin-top: 1mm; }
   .meta { display: none; }
 
   /* congregation sheet */

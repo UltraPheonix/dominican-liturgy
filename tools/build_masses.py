@@ -4,7 +4,7 @@ Every Mass lists its chants by part; each chant is a GregoBase ID of the Gradual
 'inferred': the chant is not printed in this Mass's place in the Graduale (it is used again from
 elsewhere in the book); it was found by the incipit the same day has in the Roman Graduale.
 """
-import json, re, sys, io, csv, os
+import json, re, sys, io, csv, os, unicodedata
 _o = sys.stdout; sys.stdout = io.StringIO()
 from build_temporale import norm, same
 sys.stdout = _o
@@ -340,6 +340,34 @@ import complete
 ROMAN_FILES, st2 = complete.run(masses, sections, groups, allchants, temporale, os.environ.get('JGABC', '/home/claude/src/jgabc'), os.environ.get('SITE', 'site'))
 print('Completion from jgabc:', st2)
 
+# ---- error check against the St. Dominic Missal: where its entry is clearly one Mass, it decides --------
+_dm = json.load(open('dm_masses.json'))['masses']
+def _fl(x): return re.sub(r'[^a-z]', '', unicodedata.normalize('NFD', (x or '').lower()).encode('ascii', 'ignore').decode().replace('j', 'i'))
+_fixed = 0
+for s_ in sections:
+    if s_['id'] not in ('sanctorum', 'beati'):
+        continue
+    for k in s_['items']:
+        M = masses[k]
+        if 'month' not in M or M['month'] > 11:
+            continue
+        key = '%02d%02d' % (M['month'] + 1, M['day'])
+        _nm = set(w[:5] for w in re.findall(r'[a-z]{4,}', _fl((M.get('name_en') or '') + ' ' + M['title']).replace('', '') if False else (unicodedata.normalize('NFD', ((M.get('name_en') or '') + ' ' + M['title']).lower()).encode('ascii', 'ignore').decode()))) - {'sanct', 'beati', 'beata', 'missa'}
+        def _ov(m):
+            return len(_nm & set(w[:5] for w in re.findall(r'[a-z]{4,}', unicodedata.normalize('NFD', m['title'].lower()).encode('ascii', 'ignore').decode())))
+        cands = sorted([m for m in _dm if m['kind'] == 'saint' and m['key'] == key and _ov(m) > 0 and m['parts']], key=lambda m: -_ov(m))
+        if not cands or (len(cands) > 1 and _ov(cands[0]) == _ov(cands[1])):
+            continue
+        d = cands[0]
+        if any(len(v) > (2 if p == 'al' else 1) for p, v in d['parts'].items()):
+            continue   # the parser merged two Masses here: leave it
+        for p, ids in d['parts'].items():
+            cur = [c['id'] for c in M['parts'].get(p, [])]
+            if [_fl(allchants[i]['incipit'])[:10] for i in ids if i in allchants] != [_fl(allchants[i]['incipit'])[:10] for i in cur if i in allchants]:
+                M['parts'][p] = [{'id': i} for i in ids if i in allchants][: (2 if p == 'al' else 1)]
+                _fixed += 1
+print('corrected from the St. Dominic Missal:', _fixed, 'chants')
+
 # ---- English names of the feasts, from the 2026 Ordo O.P. ---------------------------
 for k, M in masses.items():
     if 'month' not in M or M['month'] > 11 or M.get('name_en'):
@@ -388,6 +416,15 @@ for cid, t in json.load(open('dm_trans.json')).items():
         ref = m.group(2).strip().rstrip('.')
         t = (m.group(1) + ('℣. ' if m.group(1) else '') + m.group(3)).strip()
     TRANS[cid] = {'t': t, 'r': ref}
+# where the St. Dominic Missal has no English: the Douay-Rheims of the same verses, then our own translation
+if os.path.exists('douay_trans.json'):
+    for cid, v in json.load(open('douay_trans.json')).items():
+        if cid not in TRANS:
+            TRANS[cid] = {'t': re.sub(r'^℣\.\s*', '', v['t']), 'r': v['r'], 's': 'douay'}
+if os.path.exists('manual_trans.json'):
+    for cid, v in json.load(open('manual_trans.json')).items():
+        if cid not in TRANS:
+            TRANS[cid] = {'t': v['t'], 'r': v['r'] if not v['r'] in ('Alleluia', 'Sequence', 'Tract', 'Antiphon') else '', 's': 'own'}
 data_trans = TRANS
 data = {'sections': sections, 'trans': data_trans, 'masses': masses, 'chants': chants,
         'kyriale': [c['id'] for c in kyriale], 'front': [c['id'] for c in front['chants']]}

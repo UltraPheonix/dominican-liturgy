@@ -217,4 +217,104 @@ def run(masses, sections, groups, allchants, temporale, jgabc_dir, site_dir):
                     if new:
                         stats['roman_readings'] += 1
                         M['readings'] = sorted(rd + new, key=lambda r: {'Lesson': 0, 'Epistle': 1, 'Gospel': 2}[r['type']])
+    # ---- no Roman chant: every gap is filled from the Graduale O.P. ----------------------------
+    import difflib as _dl
+    toks = lambda x: [w for w in norm(re.sub(r'\(.*?\)', '', x or '')).split() if len(w) > 2]
+    MANUAL = {'deus enim': 4933}
+    def dominican_for(part, name):
+        t = toks(name)
+        key = ' '.join(norm(name or '').split()[:2])
+        if key in MANUAL and MANUAL[key] in allchants:
+            return MANUAL[key]
+        best, bs = None, 0
+        for c in allchants.values():
+            if ptype(c) != part:
+                continue
+            u = toks(c['incipit'])
+            if not t or not u:
+                continue
+            sc = _dl.SequenceMatcher(None, ' '.join(t[:3]), ' '.join(u[:3])).ratio()
+            if t[0][:5] == u[0][:5] and sc > bs:
+                best, bs = c['id'], sc
+        return best if bs >= 0.72 else None
+    TITLE_COMMON = [(r'\bMm\.|Martyrum|Sociorum|et Soc|Ss\.|SS\.', '21*'), (r'V\.\s*M\.|Virg\. et Mart', '45*'), (r'\bM\.', '7*'),
+                    (r'B\. ?M\. ?V|Mari', '79*'), (r'\bV\.', '55*'), (r'E\.\s*C\.', '32*'), (r'\bC\.', '42*')]
+    def common_group(k, M):
+        intro = (M['parts'].get('in') or [{}])[0].get('id')
+        for g in groups:
+            if g['section'] in ('commune', 'votivae') and intro is not None and any(c['id'] == intro for c in g['chants']):
+                return g
+        for pat, pg in TITLE_COMMON:
+            if re.search(pat, (M.get('title') or '') + ' ' + (M.get('en') or '')):
+                return gpage.get(pg)
+        return None
+    def common_part(g, part):
+        for c in (g or {'chants': []})['chants']:
+            if ptype(c) == part and not str(c['id']).startswith('r'):
+                return c['id']
+        return None
+    stats['roman_replaced'] = stats['roman_dropped'] = 0
+    for s in sections:
+        for k in s['items']:
+            M = masses[k]
+            buckets = [M['parts']] + [v for v in (M.get('season') or {}).values()]
+            for b in buckets:
+                for p in list(b):
+                    new = []
+                    for c in b[p]:
+                        if not str(c.get('id')).startswith('r'):
+                            new.append(c); continue
+                        name = roman_files.get(c['id'], {}).get('i', '')
+                        if k in temp_keys and p == 'gr' and re.match(r'^(Pasc|Pent0)', k):
+                            stats['roman_dropped'] += 1
+                            continue   # Paschaltide: the Alleluias take the place of the Gradual
+                        d = dominican_for(p, name) or common_part(common_group(k, M), p)
+                        if d:
+                            new.append({'id': d, 'inferred': True}); stats['roman_replaced'] += 1
+                        else:
+                            stats['roman_dropped'] += 1
+                    b[p] = new
+                    if not new:
+                        del b[p]
+            if re.match(r'^(Pasc[1-6]|Pent0)', k) and 'gr' in M.get('req', []) and not M['parts'].get('gr'):
+                M['req'] = [x for x in M['req'] if x != 'gr']
+    # gaps left by removing the Roman chants: the Commons of the saint's category, in the Graduale O.P.
+    POOLS = {
+        'martyrs': ['21*', '25*', '28*', '7*', '18*'], 'martyr': ['7*', '18*', '11*', '15*', '21*'],
+        'virgin': ['55*', '48*', '45*', '51*'], 'bvm': ['79*', '82*', '51*', '55*'], 'confessor': ['39*', '42*', '30*', '35*', '32*'],
+        'apostle': ['1*'], 'any': ['39*', '42*', '21*', '55*'],
+    }
+    def category(k, M):
+        t = (M.get('title') or '') + ' ' + (M.get('en') or '') + ' ' + (M.get('name_en') or '')
+        intro = (M['parts'].get('in') or [{}])[0].get('id')
+        ip = allchants[intro]['page'] if intro in allchants else ''
+        if re.search(r'B\. ?M|Mari|Our Lady|BVM', t) or ip in ('79*', '82*'): return 'bvm'
+        if re.search(r'Apost|Evang', t) or ip == '1*': return 'apostle'
+        if re.search(r'\bMm\.|Martyrs|Sociorum|et Soc|Martyrum', t) or ip in ('21*', '25*', '28*'): return 'martyrs'
+        if re.search(r'V\.\s*M\.|Virg\. et Mart|Virgin', t) or ip in ('45*', '48*', '55*', '51*'): return 'virgin'
+        if re.search(r'\bM\.|Martyr|Protomart', t) or ip in ('7*', '11*', '15*', '18*'): return 'martyr'
+        if re.search(r'\bC\.|Conf|Bishop|Doctor|Abb', t) or ip in ('30*', '32*', '35*', '39*', '42*'): return 'confessor'
+        return 'any'
+    for s in sections:
+        for k in s['items']:
+            if k in temp_keys:
+                continue
+            M = masses[k]
+            for p in M.get('req', []):
+                if M['parts'].get(p):
+                    continue
+                for pg in POOLS[category(k, M)]:
+                    d = common_part(gpage.get(pg), p)
+                    if d:
+                        M['parts'][p] = [{'id': d, 'inferred': True}]
+                        stats['roman_replaced'] += 1
+                        break
+    used_r = set()
+    for M in masses.values():
+        for b in [M['parts']] + [v for v in (M.get('season') or {}).values()]:
+            for v in b.values():
+                for c in v:
+                    if str(c.get('id')).startswith('r'):
+                        used_r.add(c['id'])
+    roman_files = {k: v for k, v in roman_files.items() if k in used_r}
     return roman_files, stats
