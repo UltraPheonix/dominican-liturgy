@@ -599,7 +599,7 @@
     var dialogue = null;
     D.kyriale.forEach(function (id) { if (D.chants[id].i === (solemn ? 'Ad Praefationem in tono solemni' : 'Ad Praefationem in tono feriali')) dialogue = id; });
     var box = el('section', {class: 'part preface', 'data-part': 'pf'});
-    box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: 'Praefatio'}), el('span', {class: 'incipit', text: P.name}),
+    box.appendChild(el('div', {class: 'part-head hide-print'}, [el('h2', {text: 'Praefatio'}), el('span', {class: 'incipit', text: P.name}),
       el('span', {class: 'mode', text: solemn ? 'tono solemni' : 'tono feriali'})]));
     box.appendChild(el('h2', {class: 'print-only', text: 'Praefatio · ' + P.name}));
     if (dialogue) {

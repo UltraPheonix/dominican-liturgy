@@ -1,6 +1,6 @@
 /* Offline support: the site's own files are kept, and every chant, reading and page that has been
    opened once stays available without a connection. Bump VERSION when the site changes. */
-var VERSION = 'propria-v3';
+var VERSION = 'propria-v4';
 var SHELL = ['./', 'index.html', 'about.html', 'style.css', 'versiculum.css', 'js/app.js', 'js/exsurge.min.js',
   'data/masses.js', 'data/prefaces.js', 'manifest.webmanifest', 'icon.svg', 'fonts/versiculum.ttf'];
 self.addEventListener('install', function (e) {

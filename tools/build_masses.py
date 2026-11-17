@@ -551,6 +551,11 @@ for cid, t in json.load(open('dm_trans.json')).items():
         ref = m.group(2).strip().rstrip('.')
         t = (m.group(1) + ('℣. ' if m.group(1) else '') + m.group(3)).strip()
     TRANS[cid] = {'t': t, 'r': ref}
+# Douay-Rheims first, for every chant whose verses are all found in the Vulgate (douay_all.json):
+# the 1959 English is kept only where the text is not scriptural
+if os.path.exists('douay_all.json'):
+    for cid, v in json.load(open('douay_all.json')).items():
+        TRANS[cid] = {'t': v['t'], 'r': v['r'], 's': 'douay'}
 # where the St. Dominic Missal has no English: the Douay-Rheims of the same verses, then our own translation
 if os.path.exists('douay_trans.json'):
     for cid, v in json.load(open('douay_trans.json')).items():
@@ -560,10 +565,25 @@ if os.path.exists('manual_trans.json'):
     for cid, v in json.load(open('manual_trans.json')).items():
         if cid not in TRANS:
             TRANS[cid] = {'t': v['t'], 'r': v['r'] if not v['r'] in ('Alleluia', 'Sequence', 'Tract', 'Antiphon') else '', 's': 'own'}
+# our own translations of the chants that are not wholly in the Vulgate (replacing the 1959 English)
+if os.path.exists('own_trans.json'):
+    for cid, t in json.load(open('own_trans.json')).items():
+        TRANS[cid] = {'t': t, 'r': (TRANS.get(cid) or {}).get('r', ''), 's': 'own'}
 for cid, v in (FX.get('local_chants', {}) if os.path.exists('m39_fixes.json') else {}).items():
     TRANS[cid] = {'t': v['t'], 'r': v['r'], 's': 'own'}
 for cid, v in (FX.get('trans', {}) if os.path.exists('m39_fixes.json') else {}).items():
     TRANS[cid] = {'t': v['t'], 'r': v['r'], 's': 'douay'}
+# strip the missal's running rubrics that the 1959 English carried along (page references, prayers that follow)
+_TAIL = [r'\s*Offertory Prayers,?\s*p\.?.*$', r'\s*Kyrie,?\s*p\.\s*\d+.*$', r'\s*(Omit Gloria\.?\s*)?(The Lord be with you\.?\s*)?Let us pray\..*$',
+         r'\s*Omit Gloria\..*$', r'\s*(Tract|Gradual|Alleluia|Sequence|Gospel|Epistle|Lesson|Postcommunion|Communion|Secret|Collect|Prayer|Preface)s?,?\s*p\.\s*\d+.*$',
+         r'\s*Postcommunion\b.*$', r'\s*The Lord be with you\.\s*$',
+         r'\s*\S{0,8}yrie\b[^.]{0,30}[.:;,-]*\s*p[.:]?\s*6\d\d.*$', r'(?i)\s*Offertory\s*(Prs\.?|prayers?)?[,.]?\s*(p[.:]?\s*\d+.*)?$',
+         r'\s*In Votive Masses during Paschaltide.*$']
+for _cid, _v in TRANS.items():
+    _t = _v.get('t', '')
+    for _p in _TAIL:
+        _t = re.sub(_p, '', _t, flags=re.S)
+    _v['t'] = _t.strip()
 data_trans = TRANS
 data = {'sections': sections, 'trans': data_trans, 'masses': masses, 'chants': chants,
         'kyriale': [c['id'] for c in kyriale], 'front': [c['id'] for c in front['chants']]}
