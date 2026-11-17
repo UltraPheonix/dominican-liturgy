@@ -340,12 +340,56 @@ import complete
 ROMAN_FILES, st2 = complete.run(masses, sections, groups, allchants, temporale, os.environ.get('JGABC', '/home/claude/src/jgabc'), os.environ.get('SITE', 'site'))
 print('Completion from jgabc:', st2)
 
+# ---- English names of the feasts, from the 2026 Ordo O.P. ---------------------------
+for k, M in masses.items():
+    if 'month' not in M or M['month'] > 11 or M.get('name_en'):
+        continue
+    for o in ORDO:
+        y, mo, d = map(int, o['date'].split('-'))
+        if mo - 1 == M['month'] and d == M['day'] and o.get('en') and (_w(o['name']) & _w(M['title'])):
+            M['name_en'] = re.split(r'\s{2,}', o['en'].strip())[0].rstrip('.')
+            break
+
+# ---- corrections identified by hand -----------------------------------------------
+FIX_TITLES = {'G494': ('Vigilia S. Ioannis Baptistae', 'Vigil of St John the Baptist', 5, 23),
+              'G502_3': ('Vigilia Ss. Petri et Pauli', 'Vigil of Sts Peter and Paul', 5, 28)}
+for k, (la, en, mo, dy) in FIX_TITLES.items():
+    if k in masses:
+        masses[k].update(title='%d %s — %s' % (dy, MON[mo], la), en='%s %d — %s' % (MEN[mo], dy, en), name_en=en, month=mo, day=dy, req=['in', 'gr', 'of', 'co'])
+        masses[k].pop('note', None)
+for s_ in sections:
+    if s_['id'] == 'votivae' and 'C76s' in s_['items']:
+        s_['items'].remove('C76s')
+    if s_['id'] == 'sanctorum':
+        s_['items'].sort(key=lambda k: liturgical(k))
+if 'Pasc6s' in masses:
+    al = [c for c in allchants.values() if c['code'] == 'al' and c['incipit'].lower().startswith('confitemini')]
+    if al and not masses['Pasc6s']['parts'].get('al'):
+        masses['Pasc6s']['parts']['al'] = [{'id': al[0]['id']}]
+if 'S0709' in masses and len(masses['S0709'].get('readings') or []) < 2:
+    masses['S0709']['readings'] = [{'type': 'Epistle', 'ref': 'Ad Hebræos 10: 32-38', 'roman': True}, {'type': 'Gospel', 'ref': 'Lucas 21: 9-19', 'roman': True}]
+
 # ---- chants used -----------------------------------------------------------------
 chants = {}
 for c in allchants.values():
     chants[c['id']] = {'p': ptype(c) if ptype(c) in PARTS else c['code'], 'i': c['incipit'], 'pg': c['page']}
 chants.update(ROMAN_FILES)
-data = {'sections': sections, 'masses': masses, 'chants': chants,
+# English translations of the chants (St. Dominic Missal, 1959): text and scripture reference
+TRANS = {}
+for cid, t in json.load(open('dm_trans.json')).items():
+    t = re.sub(r"(?:\s|^)(?:Y[fIl'1]?|J[I1l]|V/|Yf|y|Y|Ji|Yl|f|1/)\.\s*(?=[A-Z0-9])", ' ℣. ', ' ' + t).strip()
+    t = re.sub(r'\.\.+', '.', t).replace('.,', '.').strip(' ,')
+    t = re.sub(r'(?<=[a-z])\.(?=[a-z])', ' ', t)
+    t = re.sub(r'\s*(Gospel|Epistle|Lesson|Collect|Secret|Postcommunion|Prayer)[,.]\s*p\.\s*\d+\.?.*$', '', t)
+    t = re.sub(r"\s+['\"`]+\s*$", '', t).strip()
+    m = re.match(r'^((?:Alleluia, alleluia!\s*)?)(?:℣\.\s*)?((?:[1-4]\s?)?[A-Z][a-z]{1,7}\.?\s*\d+[,;.]\s*[\d\-,. ]*\d\.?)\s*(.*)$', t)
+    ref = ''
+    if m:
+        ref = m.group(2).strip().rstrip('.')
+        t = (m.group(1) + ('℣. ' if m.group(1) else '') + m.group(3)).strip()
+    TRANS[cid] = {'t': t, 'r': ref}
+data_trans = TRANS
+data = {'sections': sections, 'trans': data_trans, 'masses': masses, 'chants': chants,
         'kyriale': [c['id'] for c in kyriale], 'front': [c['id'] for c in front['chants']]}
 import os
 os.makedirs('site/data', exist_ok=True)

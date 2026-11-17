@@ -38,8 +38,9 @@
       <div class="actions">
         <a class="btn primary" href="#chants">Chants</a>
         <a class="btn" href="#readings">Readings</a>
-        <a class="btn" href="#ordinary">Kyriale</a>
-        <button type="button" class="btn" id="btnPrint">Print / PDF</button>
+        
+        <button type="button" class="btn" id="btnChoir">Choir PDF</button>
+        <button type="button" class="btn" id="btnCong">Congregation PDF</button>
       </div>
       <div id="dateResults" class="chips"></div>
 
@@ -52,36 +53,43 @@
           <label for="selMass">Mass</label>
           <select id="selMass"></select>
         </div>
-        <div class="field">
-          <label for="selSeason">Season</label>
-          <select id="selSeason">
-            <option value="auto">From the date</option>
-            <option value="annum">Per annum</option>
-            <option value="lent">Septuagesima to Easter (Tract)</option>
-            <option value="pasch">Paschaltide (Alleluias)</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="selOrd">Kyriale</label>
-          <select id="selOrd"></select>
-        </div>
-        <div class="field">
-          <label for="selCredo">Credo</label>
-          <select id="selCredo"></select>
-        </div>
-        <div class="field">
-          <label for="selAsp">Asperges</label>
-          <select id="selAsp">
-            <option value="">None</option>
-            <option value="asperges">Asperges me</option>
-            <option value="vidi">Vidi aquam (Paschaltide)</option>
-          </select>
-        </div>
-        <button type="button" class="btn small" id="btnShare">Share this Mass</button>
+        <details class="options wide">
+          <summary>Options</summary>
+          <div class="opt-grid">
+            <div class="field">
+              <label for="selSeason">Season</label>
+              <select id="selSeason">
+                <option value="auto">From the date</option>
+                <option value="annum">Per annum</option>
+                <option value="lent">Septuagesima to Easter</option>
+                <option value="pasch">Paschaltide</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="selOrd">Kyriale</label>
+              <select id="selOrd"></select>
+            </div>
+            <div class="field">
+              <label for="selCredo">Credo</label>
+              <select id="selCredo"></select>
+            </div>
+            <div class="field">
+              <label for="selAsp">Asperges</label>
+              <select id="selAsp">
+                <option value="">None</option>
+                <option value="asperges">Asperges me</option>
+                <option value="vidi">Vidi aquam</option>
+              </select>
+            </div>
+            <label class="switch wide"><input type="checkbox" id="chkEdit"> Edit chants (change, add or correct the GABC)</label>
+            <button type="button" class="btn small wide" id="btnShare">Share this Mass</button>
+          </div>
+        </details>
       </div>
     </aside>
 
     <main id="mass" aria-live="polite"></main>
+    <article id="cong" class="cong" aria-hidden="true"></article>
   </div>
 
   <footer class="hide-print">

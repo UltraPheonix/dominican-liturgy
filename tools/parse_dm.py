@@ -32,6 +32,51 @@ TEMP_WORDS = re.compile(r'SUNDAY|WEEK|DAY|VIGIL|ADVENT|LENT|EASTER|PENTECOST|EPI
 SKIP_HEAD = re.compile(r'PROPER OF|CONTENTS|ORDINARY|COMMON OF|PREFACE|CANON|PART [IV]+|MEMORY OF|COMMEMORATION OF', re.I)
 
 
+EN_ANY = re.compile(r'^\s*[·.]?\s*(Office|Introit|Collect|Prayer|Secret|Postcommunion|Epistle|Lesson|Gospel|Gradual|Responsory|Tract|Alleluia,\s*alleluia|Sequence|Offertory|Communion|Kyrie|Credo|Preface|Creed)\b')
+LA_ANY = re.compile(r'^\s*[·.~_]?\s*(Officium|Oratio|Lectio|Epistola|Graduale|Responsorium|Tractus|Alleluia,\s*alleluia\.|Sequentia|Evangelium|Offertorium|Secreta|Communio|Postcommunio|Praefatio)\b')
+
+
+def english_text(pno, i):
+    """The English paragraph starting at line i of page pno, which may run onto the next page."""
+    out = []
+    p, j = pno, i
+    first = True
+    while p < len(PAGES) and p <= pno + 1:
+        lines = PAGES[p].split('\n')
+        if not first:
+            j = 0
+            # skip the running header of the next page
+            while j < len(lines) and (not lines[j].strip() or RUNNING.search(lines[j]) or HEAD.match(lines[j]) or len(lines[j].strip()) < 4):
+                j += 1
+        while j < len(lines):
+            l = lines[j]
+            if not first or j > i:
+                if EN_ANY.match(l) or LA_ANY.match(l) or COMMON.match(l) or HEAD.match(l):
+                    return ' '.join(out)
+            if l.strip() == '' and out and j + 1 < len(lines) and lines[j + 1].strip() == '':
+                break  # the English half of the page ends
+            out.append(l.strip())
+            j += 1
+        first = False
+        p += 1
+    return ' '.join(out)
+
+
+def clean_en(t):
+    t = re.sub(r'\s+', ' ', t)
+    t = re.sub(r'^\s*[·.]?\s*(Office|Introit|Responsory|Gradual|Tract|Sequence|Offertory|Communion)\.\s*', '', t)
+    t = re.sub(r'^\s*Alleluia,\s*alleluia!\s*', 'Alleluia, alleluia! ', t)
+    t = re.sub(r'(\w)- (\w)', r'\1\2', t)                      # hyphenation at line ends
+    t = re.sub(r'\b0 (?=[A-Z])', 'O ', t)                          # "0 Lord" -> "O Lord"
+    t = re.sub(r'\s*(Kyrie and Gloria|Kyrie,? Gloria|Kyrie and Credo|Gloria and Credo|Credo)[^.]*\.?\s*p\.\s*\d+\.?', '', t)
+    t = re.sub(r'\s+[A-Z][A-Z ,\'.-]{8,}\s+\d{2,4}\s+', ' ', t)    # a running header caught mid-paragraph
+    t = re.sub(r'[·~_]|(?<=\s)[|]', '', t)
+    t = re.sub(r'\s+([,.;:!?])', r'\1', t)
+    t = re.sub(r'\by\.\s', '℣. ', t)
+    t = t.replace('Glory.', 'Glory be to the Father.')
+    return t.strip()
+
+
 def flat(s):
     s = s.replace('æ', 'ae').replace('œ', 'oe').replace('j', 'i').replace('J', 'i')
     s = ''.join(c for c in unicodedata.normalize('NFD', s) if not unicodedata.combining(c)).lower()
@@ -115,7 +160,7 @@ for pno, text in enumerate(PAGES):
             if rx.match(l):
                 ctx = ' '.join(lines[max(0, i - 2):i + 1]).lower()
                 season = 'pasch' if (p == 'al' and re.search(r'paschal\s*time|easter', ctx)) else ''
-                en_on_page.append((p, len(masses) - 1, season))
+                en_on_page.append((p, len(masses) - 1, season, clean_en(english_text(pno, i))))
         for p, rx in LA:
             if rx.match(l):
                 txt = rx.sub('', l, count=1) + ' ' + ' '.join(lines[i + 1:i + 3])
@@ -127,8 +172,8 @@ for pno, text in enumerate(PAGES):
     for tag, i1, i2, j1, j2 in sm.get_opcodes():
         for k in range(min(i2 - i1, j2 - j1)):
             if a[i1 + k] == b[j1 + k]:
-                p, mi, season = en_on_page[i1 + k]
-                masses[mi]['la'].append((p, la_on_page[j1 + k][1], season))
+                p, mi, season, en = en_on_page[i1 + k]
+                masses[mi]['la'].append((p, la_on_page[j1 + k][1], season, en))
             elif cur is not None and tag != 'equal':
                 pass
     # Latin labels left over on a page that belongs to a single Mass
@@ -142,7 +187,7 @@ for pno, text in enumerate(PAGES):
         mi = owners.pop() if owners else len(masses) - 1
         for j, (p, t) in enumerate(la_on_page):
             if j not in used:
-                masses[mi]['la'].append((p, t, ''))
+                masses[mi]['la'].append((p, t, '', ''))
 
 # ---- Latin incipit -> Graduale chant --------------------------------------------------------
 PARTS = ['in', 'gr', 'al', 'tr', 'se', 'of', 'co']
@@ -184,10 +229,13 @@ def match(part, text):
 
 
 unmatched = []
+trans = {}
 for m in masses:
     m['parts'], m['season'] = {}, {}
-    for p, text, season in m.pop('la'):
+    for p, text, season, en in m.pop('la'):
         cid = match(p, text)
+        if cid is not None and en and len(en) > 25 and cid not in trans:
+            trans[cid] = en
         if cid is None:
             unmatched.append((masses.index(m), m['title'][:30], p, text[:60]))
             continue
@@ -201,6 +249,8 @@ for m in masses:
                 lst.append(cid)
     m.pop('labels', None)
 
+json.dump(trans, open('dm_trans.json', 'w'), ensure_ascii=False, indent=0)
+print('English translations of chants', len(trans))
 json.dump({'masses': masses, 'unmatched': unmatched}, open('dm_masses.json', 'w'), ensure_ascii=False, indent=0)
 from collections import Counter
 print('masses', len(masses), Counter(m['kind'] for m in masses))

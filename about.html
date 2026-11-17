@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — Propria Missae O.P.</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@500;600&display=swap">
   <link rel="stylesheet" href="style.css">
   <style>
-    main { max-width: 760px; }
-    h1 { font-family: 'Crimson Text SemiBold', 'Crimson Text', serif; font-weight: normal; color: var(--rubric); }
-    h2 { font-weight: normal; font-variant: small-caps; letter-spacing: .05em; color: var(--rubric); margin-top: 28px; }
+    main { max-width: 760px; margin: 0 auto; }
+    h1 { font-family: var(--serif); font-weight: 500; font-size: 38px; margin: 18px 0 6px; }
+    h2 { font-family: var(--caps); font-weight: 500; font-size: 16px; letter-spacing: .18em; text-transform: uppercase; color: var(--rubric); margin-top: 30px; }
     li { margin: 4px 0; }
   </style>
 </head>
@@ -18,7 +19,7 @@
       <span class="cross" aria-hidden="true">✠</span>
       <div><div class="t1">Propria Missae</div><div class="t2">juxta ritum Sacri Ordinis Praedicatorum</div></div>
     </div>
-    <nav><a href="index.html">Back to the propers</a></nav>
+    <nav aria-label="Main"><a href="index.html">Back to the propers</a></nav>
   </header>
   <main>
     <h1>About this site</h1>
@@ -34,26 +35,27 @@
       empty there.</p>
 
     <h2>How each day's Mass was put together</h2>
-    <p>The Graduale prints each chant once, in the order of the year; when a later Mass uses the same chant, the book
-      only refers back to it. The assignments were therefore built in three steps, and the site marks how sure each
-      one is:</p>
+    <p>The Graduale prints each chant once, in the order of the year, and refers back to it when it is used again. So
+      every Mass was assembled from three books and checked against each other:</p>
     <ul>
-      <li><b>Proper of the Time.</b> Each Mass in the Graduale was matched to its day by its Introit. Where the
-        Dominican Mass differs from the Roman one (e.g. <i>Memento nostri</i> on the 4th Sunday of Advent), it was
-        checked against the <i>Missale O.P.</i> (1939). A chant marked <span class="badge info">re-used</span> is not
-        printed with that Mass; it was found elsewhere in the Graduale by the incipit the day has in the Roman
-        Graduale.</li>
-      <li><b>Proper of the Saints.</b> The feasts, dates and ranks are those of the <i>Calendarium O.P.
-        reformatum</i> (1960 rubrics). <span class="badge ok">Proper</span>: the Mass printed in the Sanctorale of
-        the Graduale, matched to its date through the Missale O.P. <span class="badge info">From the Common</span>:
-        the Missale names the Common Mass for that day. <span class="badge warn">Common: check Ordo</span>: the
-        Common was chosen from the saint's title (Confessor, Virgin, Martyr…) and should be checked against the
-        <a href="https://dominican-liturgy.blogspot.com/">Ordo</a>.</li>
-      <li><b>Commons and votive Masses</b> are as printed in the Graduale (pp. 1*–125*).</li>
+      <li><b>Proper of the Time.</b> Each Mass of the Graduale was matched to its day by its Introit, then checked against
+        the <i>St. Dominic Missal</i> (1959), which supplies any chant the Graduale only refers back to.</li>
+      <li><b>Proper of the Saints.</b> The feasts, dates and ranks are those of the <i>Calendarium O.P.</i> (1960 rubrics).
+        The chants are those the <i>St. Dominic Missal</i> assigns ("Mass: No. 13 except…" gives the Common and the proper
+        parts), or, where it could not be read, the page of the <i>Missale O.P.</i> (1939) that the 2026 Ordo cites.</li>
+      <li><b>The Mass of the day</b> is chosen by class, as in the rubrics of 1960, and agrees with the 2026 Ordo O.P.
+        on the days it was checked against. Saturdays without a feast have the Mass of Our Lady.</li>
+      <li><b>Seasons.</b> From Septuagesima a saint's Alleluia gives way to the Tract; in Paschaltide the Gradual gives
+        way to two Alleluias, and the optional <i>T.P. Alleluia</i> is sung only then.</li>
     </ul>
-    <p>Saints' Masses often have proper chants that the Graduale prints on the pages of a nearby feast; these are
-      listed under “Other chants printed on these pages” and can be added with one click. Precedence between a
-      Sunday and a feast is not calculated: follow the Ordo.</p>
+    <p>A chant marked <span class="badge warn">Roman melody</span> is not in the Graduale O.P. on GregoBase and is shown
+      from the Roman Graduale until it is transcribed. Readings come from the Vulgate and the Douay-Rheims; the English of
+      the chants on the congregation sheet is from the <i>St. Dominic Missal</i>.</p>
+
+    <h2>Printing</h2>
+    <p><b>Choir PDF</b> prints the chants of the Mass (and the Kyriale, if chosen) in square notation. <b>Congregation
+      PDF</b> prints every proper and reading in Latin with the English beside it. Both open your device's print dialog:
+      choose “Save as PDF”.</p>
 
     <h2>Credits</h2>
     <ul>

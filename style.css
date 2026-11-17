@@ -63,12 +63,28 @@ nav button:hover, nav a:hover { background: var(--soft); }
 .field.wide { grid-column: 1 / -1; }
 .field label { font-family: var(--caps); font-size: 13px; letter-spacing: .12em; color: var(--muted); }
 .panel .btn { grid-column: 1 / -1; }
+.options { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 8px; }
+.options summary { font-family: var(--caps); letter-spacing: .12em; font-size: 15px; color: var(--ink); min-height: 36px; display: flex; align-items: center; }
+.opt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; padding-top: 8px; }
+.opt-grid .wide, .wide { grid-column: 1 / -1; }
+.switch { display: flex; align-items: center; gap: 8px; font-size: 15px; color: var(--muted); min-height: 36px; }
+.switch input { width: 18px; height: 18px; accent-color: var(--rubric); }
+.incipit { font-style: italic; color: var(--ink); font-size: 18px; }
+.mode { margin-left: auto; font-family: var(--caps); font-size: 13px; letter-spacing: .1em; color: var(--muted); }
+.source { margin-top: 30px; padding-top: 10px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; font-style: italic; }
+.source a { color: var(--muted); }
+.r-cols { display: block; }
+@media (min-width: 1180px) {
+  .r-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  .reading .la { margin: 0; }
+}
 
 /* the Mass */
 main { padding: 22px 44px 60px; max-width: 920px; width: 100%; }
 .caps-head { font-family: var(--caps); font-size: 15px; letter-spacing: .18em; color: var(--rubric); margin: 26px 0 4px; text-transform: uppercase; font-weight: 500; }
 .mass-head { margin: 4px 0 4px; }
-.mass-head h1 { font-family: var(--serif); font-weight: 500; font-size: 32px; line-height: 1.12; margin: 0; }
+.mass-head { padding-bottom: 6px; }
+.mass-head h1 { font-family: var(--serif); font-weight: 500; font-size: 38px; line-height: 1.08; margin: 0; letter-spacing: .005em; }
 .mass-head .en { margin: 2px 0 0; color: var(--muted); font-style: italic; font-size: 18px; }
 .note { color: var(--muted); font-size: 16px; font-style: italic; margin: 6px 0 0; }
 .badge { display: inline-block; font-family: var(--caps); font-size: 12px; letter-spacing: .08em; padding: 1px 8px; border-radius: 10px; margin-left: 6px; vertical-align: 2px; border: 1px solid; font-style: normal; }
@@ -76,7 +92,8 @@ main { padding: 22px 44px 60px; max-width: 920px; width: 100%; }
 .badge.info { color: #34506e; border-color: #a9bdd2; }
 .badge.warn { color: #7a5000; border-color: #d9b56a; }
 
-.part { padding: 12px 0 4px; border-top: 1px solid var(--line); }
+.part { padding: 14px 0 6px; border-top: 1px solid var(--line); }
+.part:first-of-type { border-top: 0; }
 .part-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .part-head h2 { margin: 0 4px 0 0; font-family: var(--caps); font-weight: 500; font-size: 19px; letter-spacing: .08em; color: var(--rubric); }
 .chant-select { flex: 1; min-width: 200px; max-width: 440px; width: auto; font-size: 15px; padding: 5px 8px; }
@@ -119,6 +136,9 @@ footer a { color: var(--muted); }
   .t1 { font-size: 22px; }
 }
 
+/* the congregation sheet exists only in print */
+.cong { display: none; }
+
 @media print {
   @page { size: A4; margin: 14mm 14mm 16mm; }
   body { font-size: 12pt; }
@@ -126,7 +146,43 @@ footer a { color: var(--muted); }
   .print-only { display: block; }
   .layout { display: block; }
   main { padding: 0; max-width: none; }
-  .badge, .note { display: none; }
+  .badge, .note, .source { display: none; }
   .part, .reading { break-inside: avoid; page-break-inside: avoid; }
   .part h2.print-only { margin: 0; font-family: var(--caps); font-weight: 500; font-size: 13pt; letter-spacing: .08em; color: var(--rubric); }
+  footer { display: none; }
+
+  /* choir sheet */
+  .mass-head { display: none; }
+  .choir-head { text-align: center; padding-bottom: 4mm; margin-bottom: 2mm; border-bottom: 0.6pt solid #000; }
+  .choir-head .c-cross { color: var(--rubric); font-size: 14pt; }
+  .ch-title { font-family: var(--serif); font-size: 20pt; font-weight: 500; line-height: 1.1; }
+  .ch-sub { font-family: var(--caps); font-size: 9.5pt; letter-spacing: .12em; color: #333; margin-top: 1mm; }
+  .caps-head#chants { display: none; }
+  body[data-print=choir] .readings { display: none; }
+  .part { padding-top: 3mm; border-top: 0; }
+  .meta { display: none; }
+
+  /* congregation sheet */
+  body[data-print=congregation] .layout > main { display: none; }
+  body[data-print=congregation] .cong { display: block; }
+  .cong { font-family: var(--serif); font-size: 10.5pt; line-height: 1.38; color: #000; }
+  .c-head { text-align: center; margin-bottom: 5mm; padding-bottom: 4mm; border-bottom: 0.6pt solid #000; }
+  .c-cross { color: var(--rubric); font-size: 15pt; line-height: 1; }
+  .c-kicker { font-family: var(--caps); font-size: 9pt; letter-spacing: .2em; color: #333; margin: 1.5mm 0 1mm; }
+  .c-head h1 { font-family: var(--serif); font-weight: 500; font-size: 22pt; line-height: 1.1; margin: 0; }
+  .c-en { font-style: italic; font-size: 12.5pt; margin-top: 1mm; }
+  .c-date { font-family: var(--caps); font-size: 9.5pt; letter-spacing: .1em; color: #333; margin-top: 2mm; }
+  .c-sec { margin: 0 0 4mm; break-inside: avoid; page-break-inside: avoid; }
+  .c-sec.c-read { break-inside: auto; page-break-inside: auto; }
+  .c-sec h2 { break-after: avoid; page-break-after: avoid; }
+  .c-sec h2 { display: flex; align-items: baseline; gap: 3mm; margin: 0 0 1.2mm; padding-bottom: 0.8mm; border-bottom: 0.4pt solid #bbb; font-weight: 500; }
+  .c-lab { font-family: var(--caps); font-size: 11.5pt; letter-spacing: .1em; color: var(--rubric); }
+  .c-lab-en { font-family: var(--caps); font-size: 9.5pt; letter-spacing: .1em; color: #555; }
+  .c-ref { margin-left: auto; font-style: italic; font-size: 9.5pt; color: #444; }
+  .c-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .c-la, .c-en-text { text-align: justify; hyphens: auto; }
+  .c-la { -webkit-hyphens: auto; }
+  .c-en-text { font-style: italic; }
+  .c-missing { color: #777; font-size: 9pt; }
+  .c-foot { margin-top: 6mm; padding-top: 2mm; border-top: 0.4pt solid #bbb; font-size: 8pt; color: #555; text-align: center; }
 }

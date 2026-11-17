@@ -174,6 +174,16 @@ def run(masses, sections, groups, allchants, temporale, jgabc_dir, site_dir):
                                 M['parts'][p] = [{'id': core_parts[p], 'inferred': True}]
                                 stats['common_filled'] += 1
                         break
+            # still missing: jgabc's Mass of the same date (Roman Graduale), marked as such
+            if k not in temp_keys and 'month' in M and M['month'] < 12:
+                dk = '%s%d' % (MON3[M['month']], M['day'])
+                for p in req:
+                    if M['parts'].get(p) or not (RP.get(dk) or {}).get(p):
+                        continue
+                    c = RP[dk][p][0]
+                    d = dominican_by_incipit(p, c['name'] or '')
+                    M['parts'][p] = [{'id': d, 'inferred': True}] if d else [{'id': roman_chant(c['id'], c['name'], p), 'roman': True}]
+                    stats['dominican_found' if d else 'roman_chants'] += 1
             # seasonal Tract for saints (Septuagesima to Easter), from the same jgabc Mass
             if k not in temp_keys and M['parts'].get('al') and not (M.get('season') or {}).get('lent', {}).get('tr'):
                 src = (RP.get(jk) or {}).get('tr') or []

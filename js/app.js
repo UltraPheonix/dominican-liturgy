@@ -33,11 +33,22 @@
     (kids || []).forEach(function (c) { if (c) e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
     return e;
   };
-  var clean = function (s) { return String(s || '').replace(/<[^>]+>/g, ''); };
+  var SMALL = /^(et|in|de|a|ab|ad|ac|cum|e|ex|post|pro|sub|super|ante|per|of|the|and|to)$/i;
+  var clean = function (s) {
+    s = String(s || '').replace(/<[^>]+>/g, '');
+    var letters = s.replace(/[^A-Za-zÀ-ÿÆæŒœ]/g, '');
+    if (letters.length > 6 && letters.replace(/[^A-ZÀ-ÞÆŒ]/g, '').length / letters.length > 0.7) {
+      s = s.toLowerCase().replace(/[a-zà-ÿæœ]+/g, function (w, i) {
+        if (i > 0 && SMALL.test(w)) return w;
+        return w.charAt(0).toUpperCase() + w.slice(1);
+      }).replace(/\b(o\.p|b\.m\.v|s\.p\.n|ss|s|b|bb|n|d|c|e|v|m|mm|p)\./gi, function (x) { return x.toUpperCase(); });
+    }
+    return s;
+  };
 
   // ---------------------------------------------------------------- state & URL
   // #<massKey>[&in=id,id&gr=id...]  (only parts the user changed are stored)
-  var state = {key: null, parts: null, edited: {}, date: null, season: 'auto', ord: '', credo: '', asp: ''};
+  var state = {key: null, parts: null, edited: {}, date: null, season: 'auto', ord: '', credo: '', asp: '', edit: false};
 
   function readHash() {
     var h = decodeURIComponent(location.hash.slice(1));
@@ -385,17 +396,19 @@
   function drawMass() {
     var m = D.masses[state.key], main = $('#mass');
     main.innerHTML = '';
-    var badge = CONF[m.conf];
+    var latin = clean(m.title).replace(/^\d+ [A-Za-z.]+ — /, '');
+    var english = m.name_en || (isTemporal(state.key) ? clean(m.en || '') : '');
     main.appendChild(el('header', {class: 'mass-head'}, [
-      el('h1', {text: clean(m.title).replace(/^\d+ [A-Za-z.]+ — /, '')}),
-      el('p', {class: 'en'}, [
-        m.en ? clean(m.en) : '',
-        m.page ? el('span', {text: ' · Graduale O.P. p. ' + m.page}) : null,
-        badge ? el('span', {class: 'badge ' + badge.cls, text: badge.text}) : null
-      ]),
-      m.note ? el('p', {class: 'note hide-print', text: m.note}) : null
+      el('h1', {text: latin}),
+      english && english !== latin ? el('p', {class: 'en', text: english}) : null
     ]));
     var ord = ordinaryIds();
+    var d0 = state.date || new Date();
+    main.insertBefore(el('div', {class: 'choir-head print-only'}, [
+      el('div', {class: 'c-cross', text: '✠'}),
+      el('div', {class: 'ch-title', text: clean(m.title).replace(/^\d+ [A-Za-z.]+ — /, '')}),
+      el('div', {class: 'ch-sub', text: WEEKDAYS[d0.getDay()] + ', ' + d0.getDate() + ' ' + MONTHS[d0.getMonth()] + ' ' + d0.getFullYear() + ' · Graduale juxta ritum Ordinis Praedicatorum'})
+    ]), main.firstChild);
     main.appendChild(el('h2', {class: 'caps-head', id: 'chants', text: 'Proprium Missae'}));
     var ordSlot = function (k) { if (ord[k]) main.appendChild(drawOrdinary(k, ord[k])); };
     ordSlot('as');
@@ -410,8 +423,16 @@
     });
     ordSlot('it');
     if (!state.ord && !state.asp && !state.credo) {
-      main.appendChild(el('p', {class: 'note hide-print', id: 'ordinary'}, ['The Ordinary (Kyrie, Gloria, Credo, Sanctus, Agnus Dei) can be added from the Kyriale menu.']));
+      main.appendChild(el('p', {class: 'note hide-print', id: 'ordinary'}, ['To add the Kyrie, Gloria, Credo, Sanctus and Agnus Dei, choose a Mass of the Kyriale under Options.']));
     }
+    var src = {dm: 'Chants as assigned by the St. Dominic Missal (1959)', missal: 'Chants as given in the Missale O.P. (1939)',
+      proper: 'Proper Mass of the Graduale O.P.', common: 'Common named by the Missale O.P. (1939)', guess: 'Common chosen from the saint\'s title: check the Ordo',
+      shared: 'Chants re-used from elsewhere in the Graduale', manual: 'Dominican Mass, checked against the Missale O.P.'}[m.conf];
+    main.appendChild(el('p', {class: 'source hide-print'}, [
+      'Graduale O.P. (1950)' + (m.page ? ', p. ' + m.page : '') + (src ? ' · ' + src : '') + '. ',
+      el('a', {href: 'about.html', text: 'About the sources'})
+    ]));
+    if (!state.edit) return;
     var add = el('section', {class: 'add hide-print'});
     var partSel = el('select', {'aria-label': 'Part to add'});
     PARTS.forEach(function (p) { partSel.appendChild(el('option', {value: p, text: PART_EN[p]})); });
@@ -442,7 +463,7 @@
   function drawOrdinary(k, id) {
     var slot = el('section', {class: 'part', 'data-part': k, id: k === 'ky' || k === 'as' ? 'ordinary' : null});
     var box = el('div', {class: 'chant'});
-    slot.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: ORD_LABEL[k] + (D.chants[id] ? ' · ' + clean(D.chants[id].i).replace(/^(Kyrie|Gloria|Sanctus|Agnus|Ite|Credo|Benedicamus)\s*/, '') : '')})]));
+    slot.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: ORD_LABEL[k]}), el('span', {class: 'incipit', text: D.chants[id] ? clean(D.chants[id].i) : ''})]));
     slot.appendChild(box);
     box.appendChild(el('p', {class: 'loading', text: 'Loading…'}));
     loadGabc(id).then(function (t) { var g = splitGabc(t); renderInto(box, g.body, g.header, null); }, function (e) { showError(box, e); });
@@ -464,10 +485,10 @@
   }
   // 'Ad Romanos 13: 11-14' or '3 Regum 19: 3-8'; several sections separated by ';', verse lists by ','
   function parseRef(ref) {
-    var m = /^(\d)?\s*([^\d:]+?)\s+(\d+):\s*(.+)$/.exec(ref.trim());
+    var m = /^(\d)?\s*([^\d:]+?)(?:\s+(\d))?\s+(\d+):\s*(.+)$/.exec(ref.trim());
     if (!m) return null;
-    var book = m[2].trim() + (m[1] ? ' ' + m[1] : ''), ch = +m[3], out = [];
-    m[4].split(';').forEach(function (seg) {
+    var book = m[2].trim() + (m[1] ? ' ' + m[1] : (m[3] ? ' ' + m[3] : '')), ch = +m[4], out = [];
+    m[5].split(';').forEach(function (seg) {
       seg = seg.trim();
       var c = /^(\d+):\s*(.*)$/.exec(seg);
       if (c) { ch = +c[1]; seg = c[2]; }
@@ -507,7 +528,7 @@
       var la = el('p', {class: 'la'}), en = el('p', {class: 'en-text'});
       box.appendChild(el('div', {class: 'reading'}, [
         el('h3', null, [READ_LA[r.type], el('span', {class: 'ref', text: r.ref}), r.roman ? el('span', {class: 'badge warn', title: 'Reference from the Roman Missal (jgabc); not read from the Dominican Missal', text: 'Roman ref.'}) : null]),
-        la, en]));
+        el('div', {class: 'r-cols'}, [la, en])]));
       readingText('la', r.ref).then(function (t) { la.textContent = t; }, function () { la.textContent = ''; });
       readingText('en', r.ref).then(function (t) { en.textContent = t; }, function () { en.textContent = ''; });
     });
@@ -526,16 +547,17 @@
     var remove = el('button', {type: 'button', class: 'linkbtn', text: 'Remove', onclick: function () {
       state.parts[part].splice(index, 1); drawMass(); writeHash();
     }});
-    slot.appendChild(el('div', {class: 'part-head hide-print'}, [
-      el('h2', {text: PART_NAME[part]}), sel,
-      c.roman ? el('span', {class: 'badge warn', title: 'Not found in the Graduale O.P. on GregoBase: the melody of the Roman Graduale is shown', text: 'Roman melody'}) : null,
-      c.inferred ? el('span', {class: 'badge info', title: 'Not printed with this Mass; the Graduale uses it again from p. ' + (D.chants[c.id] || {}).pg, text: 're-used'}) : null,
-      toggle, remove
-    ]));
+    var ch = D.chants[c.id] || {};
+    var incipit = el('span', {class: 'incipit', text: clean(ch.i || '').replace(/\s*\(.*?\)\s*/g, ' ').replace(/\.\.\..*$/, '').replace(/(\s*all\.)+\s*$/i, '').replace(/\s+alleluia\s*$/i, '').trim()});
+    var mode = el('span', {class: 'mode'});
+    var head = el('div', {class: 'part-head hide-print'}, [el('h2', {text: PART_NAME[part]}), state.edit ? sel : incipit, mode]);
+    if (c.roman) head.appendChild(el('span', {class: 'badge warn', title: 'Not in the Graduale O.P. on GregoBase: the melody of the Roman Graduale', text: 'Roman melody'}));
+    if (state.edit) { head.appendChild(toggle); head.appendChild(remove); }
+    slot.appendChild(head);
     slot.appendChild(el('h2', {class: 'print-only', text: PART_NAME[part]}));
     slot.appendChild(chantBox);
     slot.appendChild(editor);
-    slot.appendChild(el('p', {class: 'meta hide-print'}, [info]));
+    if (state.edit) slot.appendChild(el('p', {class: 'meta hide-print'}, [info]));
     sel.addEventListener('change', function () {
       state.parts[part][index] = {id: sel.value ? (/^\d+$/.test(sel.value) ? Number(sel.value) : sel.value) : null, chosen: true};
       drawMass(); writeHash();
@@ -552,6 +574,7 @@
       var edited = state.edited[part + index];
       editor.value = edited != null ? edited : g.body;
       var h = g.header, meta = [];
+      if (h.mode) mode.textContent = 'Mode ' + (ROMAN[parseInt(h.mode, 10)] || h.mode);
       if (h.mode) meta.push('Mode ' + h.mode);
       if (h.commentary) meta.push(h.commentary);
       meta.push('Graduale O.P. p. ' + D.chants[c.id].pg);
@@ -702,7 +725,91 @@
   }
 
   // exposed for testing and for the browser console
-  window.ProprOP = {renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts};
+  // ---------------------------------------------------------------- the two PDFs
+  // the words of a chant, from its GABC
+  function gabcText(body) {
+    return body
+      .replace(/<sp>V\/<\/sp>\.?/g, '℣.').replace(/<sp>R\/<\/sp>\.?/g, '℟.').replace(/<sp>\*<\/sp>/g, '')
+      .replace(/\([^)]*\)/g, '')
+      .replace(/\[[^\]]*\]/g, '')
+      .replace(/<\/?[a-z]+>/gi, '')
+      .replace(/[{}*†_^|]/g, '')
+      .replace(/\s+/g, ' ')
+      .replace(/\s+([,.;:!?])/g, '$1')
+      .replace(/Gl[oó]ri\s*-?\s*a\.?\s*E\s*u\s*o\s*u\s*a\s*e\.?/g, 'Gloria Patri.')
+      .replace(/\s*E\s*u\s*o\s*u\s*a\s*e\.?\s*$/g, '')
+      .trim();
+  }
+  function paschal() { return currentSeason() === 'pasch' || /^(Pasc|Asc|AscVig|Litaniis|Pent0)/.test(state.key || ''); }
+  function trimTPText(t) {
+    if (paschal()) return t;
+    return t.replace(/\s*T\.\s?P\.\s*Alleluia,?\s*alleluia!?/g, '').replace(/,?\s*alleluia[!.]?\s*(?=(℣\.|Glory be|$))/gi, '. ').replace(/\.\s*\./g, '.').trim();
+  }
+  function chantLatin(id) {
+    return loadGabc(id).then(function (t) {
+      var b = splitGabc(t).body;
+      if (!paschal()) b = stripTP(b);
+      return gabcText(b);
+    }, function () { return ''; });
+  }
+  var PART_EN_FULL = {in: 'Introit', gr: 'Gradual', al: 'Alleluia', tr: 'Tract', se: 'Sequence', of: 'Offertory', co: 'Communion'};
+  var READ_EN = {Lesson: 'Lesson', Epistle: 'Epistle', Gospel: 'Gospel'};
+  function buildCongregation() {
+    var m = D.masses[state.key], box = $('#cong'), d = state.date || new Date(), jobs = [];
+    box.innerHTML = '';
+    var col = massColor(state.key);
+    var cls = m.rank || (isTemporal(state.key) ? ['', 'I', 'II', 'III', 'IV'][temporalClass(state.key, state.date)] : '');
+    var title = clean(m.title).replace(/^\d+ [A-Za-z.]+ — /, '');
+    var en = m.name_en || (isTemporal(state.key) ? clean(m.en || '') : '');
+    box.appendChild(el('header', {class: 'c-head'}, [
+      el('div', {class: 'c-cross', text: '✠'}),
+      el('div', {class: 'c-kicker', text: 'Missa juxta ritum Sacri Ordinis Praedicatorum'}),
+      el('h1', {text: title}),
+      en && en !== title ? el('div', {class: 'c-en', text: en}) : null,
+      el('div', {class: 'c-date', text: WEEKDAYS[d.getDay()] + ', ' + d.getDate() + ' ' + MONTHS[d.getMonth()] + ' ' + d.getFullYear() +
+        (cls ? ' · ' + cls + ' class' : '') + ' · ' + COLOR_LA[col]})
+    ]));
+    var sec = function (labLa, labEn, ref, isReading) {
+      var la = el('div', {class: 'c-la', lang: 'la'}), enb = el('div', {class: 'c-en-text', lang: 'en'});
+      box.appendChild(el('section', {class: 'c-sec' + (isReading ? ' c-read' : '')}, [
+        el('h2', null, [el('span', {class: 'c-lab', text: labLa}), el('span', {class: 'c-lab-en', text: labEn}), ref ? el('span', {class: 'c-ref', text: ref}) : null]),
+        el('div', {class: 'c-cols'}, [la, enb])
+      ]));
+      return {la: la, en: enb};
+    };
+    var chantSec = function (p, c) {
+      var tr = D.trans[c.id] || D.trans[String(c.id)];
+      var o = sec(PART_NAME[p], PART_EN_FULL[p], tr && tr.r ? tr.r : '');
+      if (tr) o.en.textContent = trimTPText(tr.t);
+      else o.en.appendChild(el('span', {class: 'c-missing', text: '(No English translation of this chant is available yet.)'}));
+      jobs.push(chantLatin(c.id).then(function (t) { o.la.textContent = t; }));
+    };
+    var readSec = function (r) {
+      var o = sec(READ_LA[r.type], READ_EN[r.type], r.ref, true);
+      jobs.push(readingText('la', r.ref).then(function (t) { o.la.textContent = t; }, function () {}));
+      jobs.push(readingText('en', r.ref).then(function (t) { o.en.textContent = t; }, function () {}));
+    };
+    var rs = m.readings || [];
+    (state.parts.in || []).forEach(function (c) { if (c.id) chantSec('in', c); });
+    rs.filter(function (r) { return r.type !== 'Gospel'; }).forEach(readSec);
+    ['gr', 'al', 'tr', 'se'].forEach(function (p) { (state.parts[p] || []).forEach(function (c) { if (c.id) chantSec(p, c); }); });
+    rs.filter(function (r) { return r.type === 'Gospel'; }).forEach(readSec);
+    ['of', 'co'].forEach(function (p) { (state.parts[p] || []).forEach(function (c) { if (c.id) chantSec(p, c); }); });
+    box.appendChild(el('footer', {class: 'c-foot', text: 'Chants: Graduale O.P. (1950). Readings: Vulgate and Douay-Rheims. English of the chants: St. Dominic Missal (1959).'}));
+    return Promise.all(jobs);
+  }
+  function printAs(mode) {
+    var go = function () {
+      document.body.setAttribute('data-print', mode);
+      var old = document.title;
+      document.title = clean(D.masses[state.key].title).replace(/^\d+ [A-Za-z.]+ — /, '') + (mode === 'choir' ? ' — Choir' : ' — Congregation');
+      setTimeout(function () { window.print(); document.title = old; }, 150);
+    };
+    if (mode === 'congregation') buildCongregation().then(go, go); else go();
+  }
+  window.addEventListener('afterprint', function () { document.body.removeAttribute('data-print'); });
+
+  window.ProprOP = {buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts};
 
   function start() {
     fillMassSelect();
@@ -718,7 +825,9 @@
     $('#selOrd').addEventListener('change', function (e) { state.ord = e.target.value; drawMass(); writeHash(); });
     $('#selCredo').addEventListener('change', function (e) { state.credo = e.target.value; drawMass(); writeHash(); });
     $('#selAsp').addEventListener('change', function (e) { state.asp = e.target.value; drawMass(); writeHash(); });
-    $('#btnPrint').addEventListener('click', function () { window.print(); });
+    $('#btnChoir').addEventListener('click', function () { printAs('choir'); });
+    $('#btnCong').addEventListener('click', function () { printAs('congregation'); });
+    $('#chkEdit').addEventListener('change', function (e) { state.edit = e.target.checked; drawMass(); });
     $('#btnShare').addEventListener('click', function () {
       var url = location.href, b = $('#btnShare');
       if (navigator.share) navigator.share({title: document.title, url: url}).catch(function () {});

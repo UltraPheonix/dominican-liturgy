@@ -133,29 +133,40 @@ def merge(masses, sections, groups, allchants, core, roman_lectiones, jgabc_dir,
     # ---- Temporale: align by Introit -----------------------------------------------------------------
     temp = next(s for s in sections if s['id'] == 'tempore')['items']
     dmt = [m for m in dm if m['kind'] == 'tempore' and m['parts'].get('in')]
-    ptr = 0
-    for key in temp:
+
+    def same_in(key, d):
+        a = (masses[key]['parts'].get('in') or [{}])[0].get('id')
+        if a is None or a not in allchants:
+            return False
+        fa = flat(allchants[a]['incipit'])[:10]
+        return any(b in allchants and flat(allchants[b]['incipit'])[:10] == fa for b in d['parts']['in'])
+    # order-preserving alignment of the two Temporales by Introit
+    n, mm = len(temp), len(dmt)
+    F = [[0] * (mm + 1) for _ in range(n + 1)]
+    B = [[None] * (mm + 1) for _ in range(n + 1)]
+    for i in range(1, n + 1):
+        for j in range(1, mm + 1):
+            o = [(F[i - 1][j - 1] + (2 if same_in(temp[i - 1], dmt[j - 1]) else -5), 'm'), (F[i - 1][j], 'a'), (F[i][j - 1], 'b')]
+            F[i][j], B[i][j] = max(o)
+    i, j, pairs = n, mm, []
+    while i > 0 and j > 0:
+        if B[i][j] == 'm':
+            pairs.append((temp[i - 1], dmt[j - 1])); i -= 1; j -= 1
+        elif B[i][j] == 'a':
+            i -= 1
+        else:
+            j -= 1
+    for key, d in pairs:
         M = masses[key]
-        intro = (M['parts'].get('in') or [{}])[0].get('id')
-        if intro is None:
-            continue
-        inc = flat(allchants[intro]['incipit'])[:12]
-        hit = None
-        for j in range(ptr, min(ptr + 8, len(dmt))):
-            ids = dmt[j]['parts']['in']
-            if intro in ids or any(flat(allchants[i]['incipit'])[:12] == inc for i in ids if i in allchants):
-                hit = j; break
-        if hit is None:
-            continue
-        ptr = hit + 1
-        d = dmt[hit]
         stats['tempore_matched'] += 1
+        single = len(d['parts'].get('in', [])) == 1
         for p, ids in d['parts'].items():
-            if p == 'in':
+            if p == 'in' or not single:
                 continue
             cur = M['parts'].get(p, [])
+            # the Missal corrects only what the Graduale did not print with this Mass
             if not cur or all(c.get('inferred') for c in cur):
-                M['parts'][p] = [{'id': i, 'dm': True} for i in ids[: (5 if p == 'gr' else 2 if p == 'al' else 1)]]
+                M['parts'][p] = [{'id': i2, 'dm': True} for i2 in ids[: (5 if p == 'gr' else 2 if p == 'al' else 1)]]
         rs = complete_readings(d)
         if rs:
             M['readings'] = rs
