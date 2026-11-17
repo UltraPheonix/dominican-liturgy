@@ -94,7 +94,24 @@ def run(masses, sections, groups, allchants, temporale, jgabc_dir, site_dir):
             return cands[0] if cands else None
         return None
 
-    stats = {'roman_chants': 0, 'roman_readings': 0, 'dominican_found': 0}
+    stats = {'roman_chants': 0, 'roman_readings': 0, 'dominican_found': 0, 'paschal_swapped': 0, 'common_filled': 0}
+    REQ_OVERRIDE = {'Pasc6s': ['in', 'al', 'tr', 'of', 'co'], 'Litaniis': ['in', 'al', 'of', 'co'], 'C114s': ['in', 'gr', 'tr', 'se', 'of', 'co'],
+                    'Quad6f': ['tr']}
+    READ_OVERRIDE = {'Quad6f': [('Lesson', 'Osee 6: 1-6'), ('Lesson', 'Exodus 12: 1-11'), ('Gospel', 'Joannes 18: 1-40; 19: 1-42')]}
+    if 'litaniis' in RL and 'Litaniis' not in RL:
+        RL['Litaniis'] = RL['litaniis']
+    if 'EmbSatSept' in RL and 'EmbSatSeptS' not in RL:
+        RL['EmbSatSeptS'] = RL['EmbSatSept']
+    alle = re.compile(r'all(?:eluia|\.)', re.I)
+
+    def plain_of(cid, part):
+        # the same chant without its Paschal alleluias, printed elsewhere in the Graduale
+        n = norm(re.sub(r'\(.*?\)', '', allchants[cid]['incipit']))
+        n = re.sub(r'\b(all|alleluia)\b.*$', '', n).strip()
+        for c in allchants.values():
+            if ptype(c) == part and c['id'] != cid and not alle.search(c['incipit']) and norm(c['incipit'])[:len(n)] == n and len(n) >= 6:
+                return c['id']
+        return None
     for s in sections:
         for k in s['items']:
             M = masses[k]
@@ -110,7 +127,21 @@ def run(masses, sections, groups, allchants, temporale, jgabc_dir, site_dir):
                 req = [p for p in req if p != 'gr']
             if M.get('page') in ('15*', '28*'):
                 req = [p for p in req if p != 'gr']
-            M['req'] = req
+            M['req'] = REQ_OVERRIDE.get(k, req)
+            req = M['req']
+            if k in READ_OVERRIDE:
+                M['readings'] = [{'type': t, 'ref': r, 'roman': True} for t, r in READ_OVERRIDE[k]]
+            # outside Paschaltide a saint's chant is sung without its Paschal alleluias
+            if k not in temp_keys and M.get('page') not in ('15*', '28*'):
+                for p in ('in', 'gr', 'of', 'co'):
+                    for i, c in enumerate(M['parts'].get(p) or []):
+                        cid = c.get('id')
+                        if isinstance(cid, int) and alle.search(allchants[cid]['incipit']):
+                            pl = plain_of(cid, p)
+                            if pl:
+                                M['parts'][p][i] = {'id': pl}
+                                M.setdefault('season', {}).setdefault('pasch', {})[p] = [{'id': cid}]
+                                stats['paschal_swapped'] += 1
             jk = jgabc_key(k, M)
             M['jgabc'] = jk
             # chants
@@ -129,6 +160,20 @@ def run(masses, sections, groups, allchants, temporale, jgabc_dir, site_dir):
                         ids.append({'id': roman_chant(c['id'], c['name'], p), 'roman': True}); stats['roman_chants'] += 1
                 if ids:
                     M['parts'][p] = ids if p == 'gr' and k in temp_keys else ids[:1]
+            # a part still missing from a saint's Mass: take it from the Common of its Introit
+            if k not in temp_keys:
+                intro = (M['parts'].get('in') or [{}])[0].get('id')
+                for gp in COMMON_KEYS:
+                    g = gpage.get(gp)
+                    if g and g['page'].endswith('*') and intro is not None and any(c['id'] == intro for c in g['chants']):
+                        core_parts = {}
+                        for c in g['chants']:
+                            core_parts.setdefault(ptype(c), c['id'])
+                        for p in req:
+                            if not M['parts'].get(p) and core_parts.get(p):
+                                M['parts'][p] = [{'id': core_parts[p], 'inferred': True}]
+                                stats['common_filled'] += 1
+                        break
             # seasonal Tract for saints (Septuagesima to Easter), from the same jgabc Mass
             if k not in temp_keys and M['parts'].get('al') and not (M.get('season') or {}).get('lent', {}).get('tr'):
                 src = (RP.get(jk) or {}).get('tr') or []
