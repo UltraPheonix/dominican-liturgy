@@ -449,7 +449,7 @@
     main.appendChild(el('h2', {class: 'caps-head', id: 'chants', text: 'Proprium Missae'}));
     var ordSlot = function (k) { if (ord[k]) main.appendChild(drawOrdinary(k, ord[k])); };
     ordSlot('as');
-    PARTS.forEach(function (p) {
+    (m.order || PARTS).forEach(function (p) {
       if (p === 'of') {
         main.appendChild(drawReadings(m));
         ordSlot('cr');
@@ -674,7 +674,7 @@
     if (fromE >= -46 && fromE < -42) return ['5a' + WD[dow]];
     if (fromE >= -42 && fromE < 0) {
       var q = Math.floor((fromE + 42) / 7) + 1;
-      return ['Quad' + q + WD[dow], 'Quad' + q];
+      return D.masses['Quad' + q + WD[dow]] ? ['Quad' + q + WD[dow]] : ['Quad' + q];
     }
     if (fromE >= 0 && fromE < 7) return ['Pasc0' + WD[dow]];
     if (fromE === 39) return ['Asc'];
@@ -829,6 +829,19 @@
     };
     var rs = m.readings || [];
     (state.parts.in || []).forEach(function (c) { if (c.id) chantSec('in', c); });
+    if (m.prophecies) {
+      // Holy Saturday: each prophecy is followed by its tract; then the Epistle, Alleluia and Gospel
+      var tr = (state.parts.tr || []).slice();
+      rs.filter(function (r) { return r.type === 'Lesson'; }).forEach(function (r, i) {
+        readSec(r);
+        if (i >= m.prophecies - tr.length && tr.length) chantSec('tr', tr.shift());
+      });
+      rs.filter(function (r) { return r.type === 'Epistle'; }).forEach(readSec);
+      (state.parts.al || []).forEach(function (c) { if (c.id) chantSec('al', c); });
+      rs.filter(function (r) { return r.type === 'Gospel'; }).forEach(readSec);
+      box.appendChild(el('footer', {class: 'c-foot', text: 'Chants: Graduale O.P. (1950). Readings: Vulgate and Douay-Rheims.'}));
+      return Promise.all(jobs);
+    }
     rs.filter(function (r) { return r.type !== 'Gospel'; }).forEach(readSec);
     ['gr', 'al', 'tr', 'se'].forEach(function (p) { (state.parts[p] || []).forEach(function (c) { if (c.id) chantSec(p, c); }); });
     rs.filter(function (r) { return r.type === 'Gospel'; }).forEach(readSec);

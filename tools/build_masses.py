@@ -435,6 +435,13 @@ if os.path.exists('m39_fixes.json'):
             if all(o in refs for o in old_r):
                 for r in rs:
                     if r['ref'] in old_r: r['ref'] = new_r[old_r.index(r['ref'])]; r['m39'] = True
+    for k, v in FX.get('new_masses', {}).items():
+        masses[k] = {'title': v['title'], 'en': v['en'], 'page': v['page'], 'conf': v['conf'], 'note': v['note'],
+                     'parts': {p: [{'id': i} for i in ids] for p, ids in v['parts'].items()}, 'extras': v.get('extras', []),
+                     'req': v['req'], 'jgabc': None, 'order': v.get('order'), 'prophecies': v.get('prophecies'), 'readings': [{'type': t, 'ref': r, 'm39': True} for t, r in v['readings']]}
+        for s_ in sections:
+            if v['after'] in s_['items'] and k not in s_['items']:
+                s_['items'].insert(s_['items'].index(v['after']) + 1, k)
     for k, n in FX.get('notes', {}).items():
         if k in masses: masses[k]['note'] = n
     for k, (la, en, mo, dy) in FX.get('titles', {}).items():
@@ -474,6 +481,8 @@ if os.path.exists('manual_trans.json'):
             TRANS[cid] = {'t': v['t'], 'r': v['r'] if not v['r'] in ('Alleluia', 'Sequence', 'Tract', 'Antiphon') else '', 's': 'own'}
 for cid, v in (FX.get('local_chants', {}) if os.path.exists('m39_fixes.json') else {}).items():
     TRANS[cid] = {'t': v['t'], 'r': v['r'], 's': 'own'}
+for cid, v in (FX.get('trans', {}) if os.path.exists('m39_fixes.json') else {}).items():
+    TRANS[cid] = {'t': v['t'], 'r': v['r'], 's': 'douay'}
 data_trans = TRANS
 data = {'sections': sections, 'trans': data_trans, 'masses': masses, 'chants': chants,
         'kyriale': [c['id'] for c in kyriale], 'front': [c['id'] for c in front['chants']]}
