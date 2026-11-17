@@ -1,0 +1,5 @@
+tools/*.json
+!tools/sources/*.json
+__pycache__/
+*.pyc
+.DS_Store

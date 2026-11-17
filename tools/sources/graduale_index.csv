@@ -1,0 +1,977 @@
+page,part_code,part,gregobase_id,incipit,file
+V,an,Antiphona,7347,Asperges me,gabc/7347.gabc
+VI,an,Antiphona,7348,Vidi aquam,gabc/7348.gabc
+IX,or,Other,7600,Gloria Patri - I,gabc/7600.gabc
+IX,or,Other,7551,Gloria Patri - II,gabc/7551.gabc
+IX,or,Other,8211,Gloria Patri - III,gabc/8211.gabc
+X,or,Other,7410,Gloria Patri - IV,gabc/7410.gabc
+X,or,Other,9643,Gloria Patri - V,gabc/9643.gabc
+X,or,Other,7409,Gloria Patri - VI,gabc/7409.gabc
+XI,or,Other,7848,Gloria Patri - VII,gabc/7848.gabc
+XI,or,Other,8042,Gloria Patri - VIII,gabc/8042.gabc
+XII,or,Other,7858,Alleluia <i>(modi communes post officium - I)</i>,gabc/7858.gabc
+XII,or,Other,9644,Alleluia <i>(modi communes post officium - II)</i>,gabc/9644.gabc
+XII,or,Other,9645,Alleluia <i>(modi communes post officium - III)</i>,gabc/9645.gabc
+XII,or,Other,9646,Alleluia <i>(modi communes post officium - IV)</i>,gabc/9646.gabc
+XII,or,Other,9647,Alleluia <i>(modi communes post officium - V)</i>,gabc/9647.gabc
+XII,or,Other,9648,Alleluia <i>(modi communes post officium - VI)</i>,gabc/9648.gabc
+XII,or,Other,9649,Alleluia <i>(modi communes post officium - VII)</i>,gabc/9649.gabc
+XII,or,Other,9650,Alleluia <i>(modi communes post officium - VIII)</i>,gabc/9650.gabc
+XIII,or,Other,9651,Alleluia <i>(modi communes post offertorium - I)</i>,gabc/9651.gabc
+XIII,or,Other,9652,Alleluia <i>(modi communes post offertorium - II)</i>,gabc/9652.gabc
+XIII,or,Other,9653,Alleluia <i>(modi communes post offertorium - III)</i>,gabc/9653.gabc
+XIII,or,Other,9654,Alleluia <i>(modi communes post offertorium - IV)</i>,gabc/9654.gabc
+XIII,or,Other,9655,Alleluia <i>(modi communes post offertorium - V)</i>,gabc/9655.gabc
+XIII,or,Other,9656,Alleluia <i>(modi communes post offertorium - VI)</i>,gabc/9656.gabc
+XIII,or,Other,9657,Alleluia <i>(modi communes post offertorium - VII)</i>,gabc/9657.gabc
+XIII,or,Other,9658,Alleluia <i>(modi communes post offertorium - VIII)</i>,gabc/9658.gabc
+1,in,Introitus,5367,Ad te levavi,gabc/5367.gabc
+2,re,Graduale (responsorium),5146,Universi,gabc/5146.gabc
+2,al,Alleluia,4904,Ostende nobis,gabc/4904.gabc
+3,of,Offertorium,4301,Ad te Domine,gabc/4301.gabc
+4,co,Communio,6204,Dominus dabit,gabc/6204.gabc
+4,in,Introitus,4278,Populus Sion,gabc/4278.gabc
+5,re,Graduale (responsorium),6456,Ex Sion species,gabc/6456.gabc
+5,al,Alleluia,6365,Laetatus sum,gabc/6365.gabc
+6,of,Offertorium,4305,Deus tu convertens,gabc/4305.gabc
+6,co,Communio,6773,Jerusalem surge,gabc/6773.gabc
+7,in,Introitus,4287,Gaudete in Domino,gabc/4287.gabc
+8,re,Graduale (responsorium),6651,Qui sedes Domine,gabc/6651.gabc
+9,al,Alleluia,5097,Excita Domine,gabc/5097.gabc
+9,of,Offertorium,4304,Benedixisti Domine,gabc/4304.gabc
+9,co,Communio,5719,Dicite: Pusillanimes,gabc/5719.gabc
+10,in,Introitus,4277,Prope es tu,gabc/4277.gabc
+11,re,Graduale (responsorium),5522,Ostende nobis,gabc/5522.gabc
+11,co,Communio,6607,Ecce Dominus veniet,gabc/6607.gabc
+12,in,Introitus,4276,Veni et ostende,gabc/4276.gabc
+12,re,Graduale (responsorium),5311,A summo caelo,gabc/5311.gabc
+13,re,Graduale (responsorium),6499,Domine Deus virtutum,gabc/6499.gabc
+14,re,Graduale (responsorium),9848,Excita Domine,gabc/9848.gabc
+15,hy,Hymnus,6986,Benedictus es,gabc/6986.gabc
+18,tr,Tractus,5251,Qui regis Israel,gabc/5251.gabc
+19,of,Offertorium,6555,Exsulta satis,gabc/6555.gabc
+19,co,Communio,5080,Exsultavit ut gigas,gabc/5080.gabc
+20,in,Introitus,4280,Memento nostri,gabc/4280.gabc
+21,re,Graduale (responsorium),6717,Prope est Dominus,gabc/6717.gabc
+22,al,Alleluia,4958,Veni Domine et noli,gabc/4958.gabc
+22,of,Offertorium,5817,Confortamini,gabc/5817.gabc
+23,co,Communio,6887,Ecce Virgo,gabc/6887.gabc
+23,in,Introitus,4286,Hodie scietis,gabc/4286.gabc
+23,re,Graduale (responsorium),5043,Hodie scietis,gabc/5043.gabc
+24,al,Alleluia,5554,Crastina die,gabc/5554.gabc
+25,of,Offertorium,5944,Tollite portas,gabc/5944.gabc
+25,co,Communio,7068,Revelabitur,gabc/7068.gabc
+26,in,Introitus,6135,Dominus dixit,gabc/6135.gabc
+26,re,Graduale (responsorium),6602,Tecum principium,gabc/6602.gabc
+27,al,Alleluia,6629,Dominus dixit,gabc/6629.gabc
+28,of,Offertorium,7062,Laetentur caeli,gabc/7062.gabc
+28,co,Communio,7236,In splendoribus,gabc/7236.gabc
+29,in,Introitus,6395,Lux fulgebit,gabc/6395.gabc
+29,re,Graduale (responsorium),5124,Benedictus qui venit,gabc/5124.gabc
+30,al,Alleluia,5841,Dominus regnavit decorem,gabc/5841.gabc
+31,of,Offertorium,4933,Deus firmavit,gabc/4933.gabc
+31,co,Communio,6171,Exsulta filia,gabc/6171.gabc
+31,in,Introitus,5324,Puer natus est,gabc/5324.gabc
+32,re,Graduale (responsorium),5602,Viderunt omnes,gabc/5602.gabc
+33,al,Alleluia,6593,Dies sanctificatus,gabc/6593.gabc
+33,se,Sequentia,4214,Laetabundus <i>(1950 version)</i>,gabc/4214.gabc
+33,se,Sequentia,4215,Laetabundus <i>(1985 version)</i>,gabc/4215.gabc
+35,of,Offertorium,5530,Tui sunt caeli,gabc/5530.gabc
+36,co,Communio,5158,Viderunt omnes,gabc/5158.gabc
+36,in,Introitus,5312,Dum medium,gabc/5312.gabc
+37,re,Graduale (responsorium),6753,Speciosus... Eructavit,gabc/6753.gabc
+38,co,Communio,6020,Tolle puerum,gabc/6020.gabc
+39,al,Alleluia,4775,Multifarie,gabc/4775.gabc
+40,in,Introitus,5934,In nomine Jesu <i>(ps. Laudate)</i>,gabc/5934.gabc
+40,re,Graduale (responsorium),5092,Laudate pueri,gabc/5092.gabc
+41,al,Alleluia,5593,Turris fortissima,gabc/5593.gabc
+42,of,Offertorium,6216,Ab ortu solis,gabc/6216.gabc
+42,co,Communio,5873,Benedic anima mea,gabc/5873.gabc
+43,in,Introitus,5006,Ecce advenit,gabc/5006.gabc
+44,re,Graduale (responsorium),7014,Omnes de Saba,gabc/7014.gabc
+44,al,Alleluia,6342,Vidimus stellam,gabc/6342.gabc
+45,of,Offertorium,6426,Reges Tharsis,gabc/6426.gabc
+46,co,Communio,5896,Vidimus stellam,gabc/5896.gabc
+46,in,Introitus,6877,Exsultat gaudio,gabc/6877.gabc
+47,re,Graduale (responsorium),4764,Unam petii... Beati,gabc/4764.gabc
+48,al,Alleluia,5536,Vere tu es Rex,gabc/5536.gabc
+48,of,Offertorium,6335,Tulerunt Jesum,gabc/6335.gabc
+48,co,Communio,5464,Descendit Jesus,gabc/5464.gabc
+49,in,Introitus,5228,Omnis terra,gabc/5228.gabc
+49,re,Graduale (responsorium),6504,Misit Dominus,gabc/6504.gabc
+50,al,Alleluia,6780,Laudate Deum omnes <i>(All)</i>,gabc/6780.gabc
+51,of,Offertorium,4862,Jubilate Deo universa,gabc/4862.gabc
+52,co,Communio,5103,Dicit Dominus,gabc/5103.gabc
+52,in,Introitus,5980,Adorate Deum,gabc/5980.gabc
+53,re,Graduale (responsorium),4967,Timebunt gentes,gabc/4967.gabc
+54,al,Alleluia,6766,Dominus regnavit exsultet,gabc/6766.gabc
+54,of,Offertorium,4758,Dextera Domini,gabc/4758.gabc
+55,co,Communio,7227,Mirabantur omnes,gabc/7227.gabc
+55,in,Introitus,7148,Circumdederunt me,gabc/7148.gabc
+56,re,Graduale (responsorium),5142,Adjutor in opportunitatibus,gabc/5142.gabc
+57,tr,Tractus,4725,De profundis,gabc/4725.gabc
+59,of,Offertorium,7242,Bonum est confiteri,gabc/7242.gabc
+59,co,Communio,4792,Illumina faciem,gabc/4792.gabc
+59,in,Introitus,4294,Exsurge,gabc/4294.gabc
+60,re,Graduale (responsorium),6179,Sciant gentes,gabc/6179.gabc
+61,tr,Tractus,5242,Commovisti,gabc/5242.gabc
+62,of,Offertorium,6795,Perfice gressus,gabc/6795.gabc
+63,co,Communio,4851,Introibo ad altare,gabc/4851.gabc
+63,in,Introitus,4916,Esto mihi,gabc/4916.gabc
+64,re,Graduale (responsorium),4883,Tu es Deus,gabc/4883.gabc
+65,tr,Tractus,6495,Jubilate Deo,gabc/6495.gabc
+66,of,Offertorium,6310,Benedictus es... in labiis,gabc/6310.gabc
+67,co,Communio,5897,Manducaverunt,gabc/5897.gabc
+67,an,Antiphona,4802,Exaudi nos,gabc/4802.gabc
+69,an,Antiphona,6719,Inter vestibulum,gabc/6719.gabc
+70,an,Antiphona,5601,Immutemur habitu,gabc/5601.gabc
+70,in,Introitus,4279,Misereris omnium,gabc/4279.gabc
+71,re,Graduale (responsorium),5398,Miserere mei Deus,gabc/5398.gabc
+72,tr,Tractus,6453,Domine non secundum,gabc/6453.gabc
+73,of,Offertorium,7207,Exaltabo te,gabc/7207.gabc
+74,co,Communio,6589,Qui meditabitur,gabc/6589.gabc
+75,in,Introitus,5731,Audivit Dominus,gabc/5731.gabc
+75,re,Graduale (responsorium),5760,Unam petii... Ut... protegar,gabc/5760.gabc
+76,of,Offertorium,4306,Domine vivifica,gabc/4306.gabc
+77,co,Communio,5572,Servite Domino,gabc/5572.gabc
+77,in,Introitus,5614,Invocabit me,gabc/5614.gabc
+78,re,Graduale (responsorium),5301,Angelis suis,gabc/5301.gabc
+79,tr,Tractus,5592,Qui habitat,gabc/5592.gabc
+83,of,Offertorium,5204,Scapulis suis,gabc/5204.gabc
+84,co,Communio,6971,Scapulis suis,gabc/6971.gabc
+84,in,Introitus,5313,Sicut oculi,gabc/5313.gabc
+85,of,Offertorium,6420,Levabo oculos,gabc/6420.gabc
+86,co,Communio,6687,Voce mea,gabc/6687.gabc
+86,in,Introitus,4894,Domine refugium,gabc/4894.gabc
+87,co,Communio,6660,Cum invocarem te,gabc/6660.gabc
+88,re,Graduale (responsorium),9849,Tribulationes cordis,gabc/9849.gabc
+89,in,Introitus,6706,De necessitatibus,gabc/6706.gabc
+90,re,Graduale (responsorium),4952,Salvum fac servum,gabc/4952.gabc
+90,of,Offertorium,4303,Benedic anima mea,gabc/4303.gabc
+91,co,Communio,6145,Erubescant et conturbentur,gabc/6145.gabc
+91,in,Introitus,5682,Intret oratio,gabc/5682.gabc
+92,co,Communio,6239,Domine Deus meus,gabc/6239.gabc
+93,in,Introitus,5181,Reminiscere,gabc/5181.gabc
+94,tr,Tractus,7055,De necessitatibus,gabc/7055.gabc
+95,tr,Tractus,4695,Confitemini,gabc/4695.gabc
+96,of,Offertorium,6142,Meditabor,gabc/6142.gabc
+97,co,Communio,6106,Intellige clamorem,gabc/6106.gabc
+97,in,Introitus,6261,Redime me,gabc/6261.gabc
+98,re,Graduale (responsorium),6039,Adjutor meus,gabc/6039.gabc
+99,co,Communio,4994,Domine Dominus noster,gabc/4994.gabc
+99,in,Introitus,5182,Tibi dixit,gabc/5182.gabc
+100,of,Offertorium,4947,Miserere mei... secundum,gabc/4947.gabc
+100,co,Communio,6592,Narrabo omnia,gabc/6592.gabc
+101,in,Introitus,6841,Ne derelinquas me,gabc/6841.gabc
+101,re,Graduale (responsorium),5230,Salvum fac populum,gabc/5230.gabc
+103,co,Communio,5956,Justus Dominus,gabc/5956.gabc
+103,in,Introitus,4297,Ego autem cum justitia,gabc/4297.gabc
+104,co,Communio,5604,Tu Domine servabis,gabc/5604.gabc
+104,in,Introitus,4282,Lex Domini,gabc/4282.gabc
+105,co,Communio,6842,Oportet te fili,gabc/6842.gabc
+105,in,Introitus,7217,Oculi mei,gabc/7217.gabc
+106,re,Graduale (responsorium),6941,Exsurge... non praevaleat,gabc/6941.gabc
+107,tr,Tractus,6168,Ad te levavi,gabc/6168.gabc
+109,of,Offertorium,6109,Justitiae Domini,gabc/6109.gabc
+109,co,Communio,6674,Passer invenit,gabc/6674.gabc
+110,in,Introitus,5209,In Deo laudabo,gabc/5209.gabc
+111,re,Graduale (responsorium),9850,Deus vitam meam,gabc/9850.gabc
+112,of,Offertorium,5299,Exaudi Deus,gabc/5299.gabc
+112,co,Communio,6077,Quis dabit,gabc/6077.gabc
+113,in,Introitus,6294,Ego clamavi,gabc/6294.gabc
+114,re,Graduale (responsorium),7082,Ab occultis meis,gabc/7082.gabc
+115,co,Communio,5994,Domine quis habitabit,gabc/5994.gabc
+115,in,Introitus,4296,Ego autem in Domino,gabc/4296.gabc
+116,re,Graduale (responsorium),6609,Miserere mei Domine,gabc/6609.gabc
+117,of,Offertorium,6189,Domine fac mecum,gabc/6189.gabc
+117,co,Communio,6934,Notas mihi,gabc/6934.gabc
+118,in,Introitus,6860,Fac mecum,gabc/6860.gabc
+118,of,Offertorium,5467,Intende voci,gabc/5467.gabc
+119,co,Communio,4868,Qui biberit,gabc/4868.gabc
+119,in,Introitus,5005,Verba mea,gabc/5005.gabc
+120,of,Offertorium,5995,Gressus meos,gabc/5995.gabc
+120,co,Communio,7175,Nemo te condemnavit,gabc/7175.gabc
+121,in,Introitus,5261,Laetare Jerusalem,gabc/5261.gabc
+122,re,Graduale (responsorium),4906,Laetatus sum,gabc/4906.gabc
+122,tr,Tractus,6057,Qui confidunt,gabc/6057.gabc
+123,of,Offertorium,5285,Laudate Dominum,gabc/5285.gabc
+124,co,Communio,5394,Jerusalem quae,gabc/5394.gabc
+124,in,Introitus,5739,Deus in nomine,gabc/5739.gabc
+125,of,Offertorium,6611,Jubilate Deo omnis terra,gabc/6611.gabc
+126,co,Communio,5429,Ab occultis meis,gabc/5429.gabc
+126,in,Introitus,5065,Exaudi Deus,gabc/5065.gabc
+127,re,Graduale (responsorium),5916,Exsurge... fer opem,gabc/5916.gabc
+128,co,Communio,6160,Laetabimur,gabc/6160.gabc
+129,in,Introitus,6129,Laetetur cor,gabc/6129.gabc
+129,co,Communio,6341,Lutum fecit,gabc/6341.gabc
+130,of,Offertorium,5835,Domine ad adjuvandum,gabc/5835.gabc
+130,in,Introitus,4281,Meditatio cordi,gabc/4281.gabc
+131,co,Communio,7057,Videns Dominus,gabc/7057.gabc
+132,in,Introitus,6049,Sitientes,gabc/6049.gabc
+132,re,Graduale (responsorium),6191,Tibi Domine,gabc/6191.gabc
+133,of,Offertorium,5008,Factus est Dominus,gabc/5008.gabc
+134,co,Communio,5335,Dominus regit me,gabc/5335.gabc
+134,in,Introitus,6158,Judica me,gabc/6158.gabc
+135,re,Graduale (responsorium),5344,Eripe me Domine de inimicis,gabc/5344.gabc
+136,tr,Tractus,5139,Saepe expugnaverunt,gabc/5139.gabc
+138,of,Offertorium,7814,Confitebor tibi ... in toto,gabc/7814.gabc
+138,co,Communio,5947,Hoc corpus,gabc/5947.gabc
+139,in,Introitus,5012,Miserere mihi... conculcavit,gabc/5012.gabc
+140,re,Graduale (responsorium),7231,Deus exaudi,gabc/7231.gabc
+141,co,Communio,6229,Dominus virtutum,gabc/6229.gabc
+141,in,Introitus,6466,Exspecta Dominum,gabc/6466.gabc
+142,re,Graduale (responsorium),6844,Discerne causam,gabc/6844.gabc
+142,co,Communio,6994,Redime me,gabc/6994.gabc
+143,in,Introitus,6899,Liberator meus,gabc/6899.gabc
+143,re,Graduale (responsorium),5837,Exaltabo te,gabc/5837.gabc
+145,of,Offertorium,5570,Eripe me de inimicis... Deus,gabc/5570.gabc
+146,co,Communio,7091,Lavabo,gabc/7091.gabc
+146,re,Graduale (responsorium),6741,Tollite hostias,gabc/6741.gabc
+147,in,Introitus,5812,Miserere mihi... tribulor,gabc/5812.gabc
+148,re,Graduale (responsorium),5768,Pacifice loquebantur,gabc/5768.gabc
+149,of,Offertorium,5675,Benedictus es... et non tradas,gabc/5675.gabc
+149,co,Communio,4833,Ne tradideris,gabc/4833.gabc
+150,an,Antiphona,6640,Pueri... tollentes,gabc/6640.gabc
+150,an,Antiphona,6173,Pueri... vestimenta,gabc/6173.gabc
+151,in,Introitus,6256,Domine ne longe,gabc/6256.gabc
+152,re,Graduale (responsorium),4872,Tenuisti manum,gabc/4872.gabc
+153,tr,Tractus,9851,Deus Deus meus,gabc/9851.gabc
+157,of,Offertorium,5089,Improperium... simul contristaretur,gabc/5089.gabc
+158,co,Communio,4841,Pater si non potest,gabc/4841.gabc
+158,in,Introitus,6958,Judica Domine,gabc/6958.gabc
+159,re,Graduale (responsorium),5882,Exsurge... et intende,gabc/5882.gabc
+160,of,Offertorium,5024,Eripe me de inimicis... Domine,gabc/5024.gabc
+161,co,Communio,6809,Erubescant et revereantur,gabc/6809.gabc
+161,re,Graduale (responsorium),6359,Ego autem dum mihi,gabc/6359.gabc
+162,of,Offertorium,7181,Custodi me,gabc/7181.gabc
+163,co,Communio,5409,Adversum me,gabc/5409.gabc
+164,in,Introitus,7108,In nomine Jesu <i>(ps. Domine)</i>,gabc/7108.gabc
+165,re,Graduale (responsorium),5549,Ne avertas,gabc/5549.gabc
+166,tr,Tractus,6980,Domine exaudi,gabc/6980.gabc
+168,of,Offertorium,6677,Domine exaudi,gabc/6677.gabc
+168,co,Communio,5336,Potum meum,gabc/5336.gabc
+169,in,Introitus,6834,Nos autem,gabc/6834.gabc
+170,re,Graduale (responsorium),6737,Christus factus est,gabc/6737.gabc
+170,co,Communio,7200,Dominus Jesus,gabc/7200.gabc
+171,tr,Tractus,5694,Domine audivi,gabc/5694.gabc
+173,tr,Tractus,7143,Eripe me Domine ab homine,gabc/7143.gabc
+176,im,im,9867,Popule meus,gabc/9867.gabc
+178,an,Antiphona,6369,Ecce lignum Crucis,gabc/6369.gabc
+179,an,Antiphona,6093,Tuam crucem,gabc/6093.gabc
+179,an,Antiphona,5371,Crucem tuam,gabc/5371.gabc
+180,an,Antiphona,6069,Adoremus Crucis,gabc/6069.gabc
+180,hy,Hymnus,7136,Crux fidelis,gabc/7136.gabc
+184,an,Antiphona,9868,Super omnia,gabc/9868.gabc
+185,tr,Tractus,5971,Cantemus Domino,gabc/5971.gabc
+186,tr,Tractus,6418,Vinea facta est,gabc/6418.gabc
+187,tr,Tractus,7107,Sicut cervus,gabc/7107.gabc
+193,al,Alleluia,5407,Confitemini... quoniam <i>(Sab. Sancto)</i>,gabc/5407.gabc
+193,tr,Tractus,7201,Laudate... omnes gentes,gabc/7201.gabc
+194,an,Antiphona,5281,Alleluia,gabc/5281.gabc
+195,an,Antiphona,7174,Vespere autem,gabc/7174.gabc
+196,in,Introitus,6541,Resurrexi,gabc/6541.gabc
+197,re,Graduale (responsorium),6471,Haec dies... Confitemini,gabc/6471.gabc
+198,al,Alleluia,7076,Pascha nostrum,gabc/7076.gabc
+198,se,Sequentia,4209,Victimae Paschali,gabc/4209.gabc
+199,of,Offertorium,5651,Terra tremuit,gabc/5651.gabc
+200,co,Communio,6187,Pascha nostrum,gabc/6187.gabc
+200,in,Introitus,7049,Introduxit vos,gabc/7049.gabc
+201,re,Graduale (responsorium),9852,Haec dies... Dicat nunc,gabc/9852.gabc
+202,al,Alleluia,9853,Nonne cor nostrum,gabc/9853.gabc
+202,of,Offertorium,4302,Angelus Domini descendit,gabc/4302.gabc
+203,co,Communio,7481,Surrexit Dominus,gabc/7481.gabc
+203,in,Introitus,9854,Aqua sapientiae,gabc/9854.gabc
+204,re,Graduale (responsorium),5670,Haec dies... Dicant nunc,gabc/5670.gabc
+205,al,Alleluia,5130,Surrexit Dominus et,gabc/5130.gabc
+206,of,Offertorium,4843,Intonuit de caelo,gabc/4843.gabc
+206,co,Communio,5184,Si consurrexistis,gabc/5184.gabc
+207,in,Introitus,6897,Venite benedicti,gabc/6897.gabc
+207,re,Graduale (responsorium),6124,Haec dies... Dextera,gabc/6124.gabc
+208,al,Alleluia,6484,Christus resurgens,gabc/6484.gabc
+209,of,Offertorium,4818,Portas caeli,gabc/4818.gabc
+209,co,Communio,5045,Christus resurgens,gabc/5045.gabc
+210,in,Introitus,6528,Victricem manum,gabc/6528.gabc
+211,re,Graduale (responsorium),6450,Haec dies... Lapidem,gabc/6450.gabc
+211,al,Alleluia,5632,In die,gabc/5632.gabc
+212,of,Offertorium,5745,In die solemnitatis,gabc/5745.gabc
+212,co,Communio,5283,Populus acquisitionis,gabc/5283.gabc
+213,in,Introitus,5722,Eduxit eos,gabc/5722.gabc
+214,re,Graduale (responsorium),6051,Haec dies... Benedictus,gabc/6051.gabc
+214,al,Alleluia,6824,Angelus Domini descendit,gabc/6824.gabc
+215,of,Offertorium,4932,Erit vobis,gabc/4932.gabc
+215,co,Communio,7085,Data est mihi,gabc/7085.gabc
+216,in,Introitus,5227,Eduxit Dominus,gabc/5227.gabc
+217,al,Alleluia,4755,Haec dies,gabc/4755.gabc
+217,al,Alleluia,6433,Laudate pueri,gabc/6433.gabc
+218,of,Offertorium,6857,Benedictus qui venit,gabc/6857.gabc
+218,co,Communio,5705,Omnes qui in Christo,gabc/5705.gabc
+219,in,Introitus,5508,Quasi modo,gabc/5508.gabc
+219,al,Alleluia,5461,Post dies octo,gabc/5461.gabc
+220,al,Alleluia,5535,Surrexit Dominus de,gabc/5535.gabc
+220,co,Communio,4846,Mitte manum... alleluia,gabc/4846.gabc
+221,in,Introitus,7213,Misericordia Domini,gabc/7213.gabc
+222,al,Alleluia,7120,Ego sum Pastor,gabc/7120.gabc
+222,al,Alleluia,6350,Surrexit Christus et illuxit,gabc/6350.gabc
+223,of,Offertorium,5884,Deus Deus meus,gabc/5884.gabc
+223,co,Communio,6143,Ego sum Pastor,gabc/6143.gabc
+223,in,Introitus,6146,Jubilate Deo,gabc/6146.gabc
+224,al,Alleluia,5498,Modicum,gabc/5498.gabc
+225,al,Alleluia,5767,Surrexit Pastor bonus,gabc/5767.gabc
+226,of,Offertorium,6999,Lauda anima mea,gabc/6999.gabc
+226,co,Communio,5924,Modicum,gabc/5924.gabc
+227,in,Introitus,6037,Cantate Domino,gabc/6037.gabc
+227,al,Alleluia,7022,Vado ad eum... sed quia,gabc/7022.gabc
+228,co,Communio,6726,Cum venerit,gabc/6726.gabc
+229,in,Introitus,6200,Vocem jucunditatis,gabc/6200.gabc
+230,al,Alleluia,5323,Usque modo,gabc/5323.gabc
+230,of,Offertorium,6100,Benedicite gentes,gabc/6100.gabc
+231,co,Communio,5304,Cantate Domino,gabc/5304.gabc
+232,an,Antiphona,5451,Exsurge Domine adjuva,gabc/5451.gabc
+234,in,Introitus,5645,Exaudivit,gabc/5645.gabc
+235,al,Alleluia,6693,Confitemini... quoniam <i>(in Rog.)</i>,gabc/6693.gabc
+236,of,Offertorium,5910,Confitebor Domino,gabc/5910.gabc
+237,co,Communio,5618,Petite,gabc/5618.gabc
+237,in,Introitus,5326,Omnes gentes plaudite <i>(Intr)</i>,gabc/5326.gabc
+238,al,Alleluia,6244,Exivi a Patre,gabc/6244.gabc
+239,in,Introitus,6603,Viri Galilaei,gabc/6603.gabc
+240,al,Alleluia,5352,Ascendit Deus,gabc/5352.gabc
+240,al,Alleluia,5526,Ascendens Christus <i>(Alleluia)</i>,gabc/5526.gabc
+241,of,Offertorium,4934,Viri Galilaei,gabc/4934.gabc
+242,co,Communio,5669,Psallite Domino,gabc/5669.gabc
+242,in,Introitus,4295,Exaudi Domine... tibi,gabc/4295.gabc
+243,al,Alleluia,6865,Dominus in Sina,gabc/6865.gabc
+244,of,Offertorium,6403,Ascendit Deus,gabc/6403.gabc
+244,co,Communio,4810,Pater cum essem,gabc/4810.gabc
+245,tr,Tractus,4813,Attende caelum,gabc/4813.gabc
+246,of,Offertorium,6932,Emitte Spiritum,gabc/6932.gabc
+247,co,Communio,5123,Ultimo festivitatis,gabc/5123.gabc
+248,in,Introitus,6767,Spiritus... replevit... all. all. all.,gabc/6767.gabc
+249,al,Alleluia,6596,Emitte Spiritum,gabc/6596.gabc
+249,al,Alleluia,6443,Veni Sancte Spiritus,gabc/6443.gabc
+250,se,Sequentia,4213,Veni Sancte Spiritus et emitte,gabc/4213.gabc
+251,of,Offertorium,5529,Confirma hoc,gabc/5529.gabc
+252,co,Communio,7482,Factus est repente,gabc/7482.gabc
+252,al,Alleluia,7233,Spiritus Sanctus,gabc/7233.gabc
+253,al,Alleluia,6667,Spiritus Domini,gabc/6667.gabc
+254,co,Communio,4850,Spiritus Sanctus,gabc/4850.gabc
+254,in,Introitus,6064,Accipite,gabc/6064.gabc
+255,al,Alleluia,5244,Loquebantur,gabc/5244.gabc
+255,al,Alleluia,6071,Non vos relinquam,gabc/6071.gabc
+256,co,Communio,6662,Spiritus qui a Patre,gabc/6662.gabc
+256,in,Introitus,6664,Deus dum egredereris,gabc/6664.gabc
+257,al,Alleluia,5665,Factus est repente,gabc/5665.gabc
+258,of,Offertorium,4854,Meditabor... alleluia,gabc/4854.gabc
+258,co,Communio,6488,Pacem meam... alleluia,gabc/6488.gabc
+258,al,Alleluia,6095,Paraclitus Spiritus,gabc/6095.gabc
+259,in,Introitus,6170,Repleatur os meum,gabc/6170.gabc
+260,al,Alleluia,7180,Dum complerentur,gabc/7180.gabc
+261,co,Communio,6930,Spiritus ubi vult,gabc/6930.gabc
+261,in,Introitus,6242,Caritas Dei... nostris alleluia,gabc/6242.gabc
+262,al,Alleluia,6552,Laudate Dominum,gabc/6552.gabc
+262,of,Offertorium,5134,Domine Deus salutis,gabc/5134.gabc
+263,co,Communio,6454,Non vos relinquam,gabc/6454.gabc
+264,in,Introitus,6120,Benedicta sit sancta,gabc/6120.gabc
+265,re,Graduale (responsorium),5268,Benedictus es,gabc/5268.gabc
+265,al,Alleluia,5989,Benedictus es,gabc/5989.gabc
+266,of,Offertorium,5149,Benedictus sit,gabc/5149.gabc
+266,co,Communio,4804,Benedicimus Deum,gabc/4804.gabc
+267,in,Introitus,5062,Cibavit eos... frumenti alleluia,gabc/5062.gabc
+268,re,Graduale (responsorium),5738,Oculi omnium,gabc/5738.gabc
+269,al,Alleluia,4939,Caro mea vere,gabc/4939.gabc
+269,se,Sequentia,4211,Lauda Sion,gabc/4211.gabc
+273,se,Sequentia,4212,Lauda Sion <i>(forma breviore)</i>,gabc/4212.gabc
+274,of,Offertorium,6619,Sacerdotes Domini,gabc/6619.gabc
+275,co,Communio,4700,Quotiescumque,gabc/4700.gabc
+276,in,Introitus,4293,Factus est,gabc/4293.gabc
+276,re,Graduale (responsorium),6295,Ad Dominum,gabc/6295.gabc
+277,al,Alleluia,4749,Deus judex,gabc/4749.gabc
+278,of,Offertorium,6227,Domine convertere,gabc/6227.gabc
+278,co,Communio,7094,Cantabo Domino,gabc/7094.gabc
+279,in,Introitus,5162,Cogitationes Cordis,gabc/5162.gabc
+280,re,Graduale (responsorium),5058,Dulcis et rectus,gabc/5058.gabc
+280,al,Alleluia,5588,Tollite jugum,gabc/5588.gabc
+281,tr,Tractus,5680,Misericors,gabc/5680.gabc
+282,of,Offertorium,5334,Improperium... simul mecum,gabc/5334.gabc
+283,of,Offertorium,5628,Holocaustum,gabc/5628.gabc
+284,co,Communio,5392,Unus militum,gabc/5392.gabc
+284,co,Communio,5051,Si quis sitit,gabc/5051.gabc
+285,in,Introitus,5226,Respice in me,gabc/5226.gabc
+286,re,Graduale (responsorium),6299,Jacta cogitatum,gabc/6299.gabc
+286,al,Alleluia,5400,Diligam te,gabc/5400.gabc
+287,of,Offertorium,6410,Sperent in te,gabc/6410.gabc
+288,co,Communio,9855,Ego clamavi,gabc/9855.gabc
+288,in,Introitus,5221,Dominus illuminatio,gabc/5221.gabc
+289,re,Graduale (responsorium),7127,Propitius esto,gabc/7127.gabc
+290,al,Alleluia,5448,Domine in virtute,gabc/5448.gabc
+291,of,Offertorium,5998,Illumina,gabc/5998.gabc
+291,co,Communio,6031,Dominus firmamentum,gabc/6031.gabc
+292,in,Introitus,5565,Exaudi Domine... adjutor,gabc/5565.gabc
+292,re,Graduale (responsorium),5564,Protector noster,gabc/5564.gabc
+293,al,Alleluia,5743,In te Domine,gabc/5743.gabc
+294,of,Offertorium,5686,Benedicam Dominum,gabc/5686.gabc
+294,co,Communio,6081,Unam petii,gabc/6081.gabc
+295,in,Introitus,7152,Dominus fortitudo,gabc/7152.gabc
+296,re,Graduale (responsorium),6922,Convertere,gabc/6922.gabc
+297,al,Alleluia,5523,Eripe me,gabc/5523.gabc
+297,co,Communio,5503,Circuibo,gabc/5503.gabc
+298,re,Graduale (responsorium),6052,Venite filii,gabc/6052.gabc
+298,al,Alleluia,6617,Te decet hymnus,gabc/6617.gabc
+299,of,Offertorium,5001,Sicut in holocaustis,gabc/5001.gabc
+300,co,Communio,6542,Inclina aurem tuam,gabc/6542.gabc
+300,re,Graduale (responsorium),5683,Esto mihi,gabc/5683.gabc
+301,al,Alleluia,4902,Attendite,gabc/4902.gabc
+301,of,Offertorium,6340,Populum humilem,gabc/6340.gabc
+302,co,Communio,5637,Gustate...,gabc/5637.gabc
+302,in,Introitus,6270,Ecce Deus,gabc/6270.gabc
+303,re,Graduale (responsorium),6622,Domine Dominus noster,gabc/6622.gabc
+304,al,Alleluia,4979,Propitius esto <i>(All.)</i>,gabc/4979.gabc
+304,co,Communio,5473,Primum quaerite,gabc/5473.gabc
+305,in,Introitus,6050,Dum clamarem,gabc/6050.gabc
+306,re,Graduale (responsorium),6572,Custodi me,gabc/6572.gabc
+307,al,Alleluia,7005,Exsultate Deo,gabc/7005.gabc
+307,co,Communio,7167,Acceptabis,gabc/7167.gabc
+308,in,Introitus,5659,Deus in loco,gabc/5659.gabc
+309,re,Graduale (responsorium),5863,In Deo speravit,gabc/5863.gabc
+309,al,Alleluia,5460,Domine Deus salutis,gabc/5460.gabc
+310,co,Communio,5144,Honora Dominum,gabc/5144.gabc
+311,in,Introitus,6354,Deus in adjutorium,gabc/6354.gabc
+311,re,Graduale (responsorium),4892,Benedicam Dominum,gabc/4892.gabc
+312,al,Alleluia,5977,Domine refugium,gabc/5977.gabc
+313,of,Offertorium,5655,Precatus est,gabc/5655.gabc
+314,co,Communio,6806,De fructu,gabc/6806.gabc
+315,in,Introitus,5000,Respice Domine,gabc/5000.gabc
+316,re,Graduale (responsorium),5270,Respice Domine,gabc/5270.gabc
+317,al,Alleluia,5068,Venite exsultemus,gabc/5068.gabc
+317,of,Offertorium,6005,In te speravi,gabc/6005.gabc
+317,co,Communio,6151,Panem de caelo,gabc/6151.gabc
+318,in,Introitus,6928,Protector noster,gabc/6928.gabc
+319,re,Graduale (responsorium),6112,Bonum est confiteri,gabc/6112.gabc
+320,al,Alleluia,6868,Quoniam Deus magnus,gabc/6868.gabc
+320,of,Offertorium,6481,Immittet Angelus,gabc/6481.gabc
+321,co,Communio,5825,Panis quem ego,gabc/5825.gabc
+321,in,Introitus,4285,Inclina Domine,gabc/4285.gabc
+322,re,Graduale (responsorium),7119,Bonum est confidere,gabc/7119.gabc
+323,al,Alleluia,7135,Timebunt gentes,gabc/7135.gabc
+324,of,Offertorium,5958,Exspectans,gabc/5958.gabc
+324,co,Communio,6212,Qui manducat,gabc/6212.gabc
+325,in,Introitus,5620,Miserere mihi... ad te,gabc/5620.gabc
+326,al,Alleluia,5157,Confitemini... et invocate,gabc/5157.gabc
+326,of,Offertorium,6744,Domine in auxilium,gabc/6744.gabc
+327,co,Communio,6241,Domine memorabor,gabc/6241.gabc
+327,in,Introitus,4284,Justus es Domine,gabc/4284.gabc
+328,re,Graduale (responsorium),7138,Beata gens,gabc/7138.gabc
+329,al,Alleluia,6033,Paratum cor meum,gabc/6033.gabc
+329,of,Offertorium,6545,Oravi Deum,gabc/6545.gabc
+330,co,Communio,4748,Vovete,gabc/4748.gabc
+331,in,Introitus,6539,Exsultate Deo,gabc/6539.gabc
+332,re,Graduale (responsorium),5616,Quis sicut Dominus,gabc/5616.gabc
+332,co,Communio,6323,Comedite pinguia,gabc/6323.gabc
+333,co,Communio,6054,Aufer a me,gabc/6054.gabc
+334,in,Introitus,5307,Venite adoremus,gabc/5307.gabc
+334,co,Communio,6792,Mense septimo,gabc/6792.gabc
+335,in,Introitus,4275,Da pacem,gabc/4275.gabc
+336,al,Alleluia,6493,Qui timent Dominum,gabc/6493.gabc
+336,of,Offertorium,5082,Sanctificavit,gabc/5082.gabc
+337,co,Communio,7153,Tollite hostias,gabc/7153.gabc
+338,in,Introitus,5388,Salus populi,gabc/5388.gabc
+338,re,Graduale (responsorium),5920,Dirigatur oratio mea,gabc/5920.gabc
+339,al,Alleluia,6041,Dextera Domini,gabc/6041.gabc
+339,of,Offertorium,5929,Si ambulavero,gabc/5929.gabc
+340,co,Communio,4828,Tu mandasti,gabc/4828.gabc
+341,in,Introitus,6970,Omnia quae fecisti,gabc/6970.gabc
+342,al,Alleluia,7103,Qui confidunt,gabc/7103.gabc
+342,of,Offertorium,5353,Super flumina,gabc/5353.gabc
+343,co,Communio,6042,Mememto verbi tui,gabc/6042.gabc
+343,in,Introitus,6357,In voluntate,gabc/6357.gabc
+344,re,Graduale (responsorium),6881,Domine refugium,gabc/6881.gabc
+345,al,Alleluia,6472,De profundis,gabc/6472.gabc
+346,of,Offertorium,7542,Vir erat,gabc/7542.gabc
+346,co,Communio,6778,In salutari,gabc/6778.gabc
+347,in,Introitus,6130,Si iniquitates <i>(Intr)</i>,gabc/6130.gabc
+348,re,Graduale (responsorium),6309,Ecce quam bonum. V. Sicut,gabc/6309.gabc
+348,al,Alleluia,6382,Qui sanat,gabc/6382.gabc
+349,co,Communio,7145,Dico vobis,gabc/7145.gabc
+349,of,Offertorium,5756,Recordare mei,gabc/5756.gabc
+350,in,Introitus,7204,Dicit Dominus Ego,gabc/7204.gabc
+350,re,Graduale (responsorium),7116,Liberasti nos,gabc/7116.gabc
+351,al,Alleluia,6791,Qui posuit fines,gabc/6791.gabc
+352,of,Offertorium,6740,De profundis,gabc/6740.gabc
+352,co,Communio,5918,Amen dico vobis quidquid,gabc/5918.gabc
+353,in,Introitus,6221,Terribilis est,gabc/6221.gabc
+354,re,Graduale (responsorium),6283,Locus iste,gabc/6283.gabc
+354,al,Alleluia,5217,Adorabo,gabc/5217.gabc
+355,tr,Tractus,6154,Domus mea,gabc/6154.gabc
+356,of,Offertorium,5927,Domine Deus... qui repertus,gabc/5927.gabc
+357,co,Communio,7050,Domus mea,gabc/7050.gabc
+358,in,Introitus,6514,Stabant,gabc/6514.gabc
+359,re,Graduale (responsorium),5248,Dolorosa,gabc/5248.gabc
+360,tr,Tractus,5406,Stabat sancta Maria,gabc/5406.gabc
+361,se,Sequentia,5877,Stabat Mater,gabc/5877.gabc
+364,of,Offertorium,5119,Recordare Virgo,gabc/5119.gabc
+365,co,Communio,6332,Felices sensus,gabc/6332.gabc
+365,in,Introitus,5757,Adjutor et protector,gabc/5757.gabc
+366,al,Alleluia,6599,De quacumque,gabc/6599.gabc
+367,al,Alleluia,4830,Fac nos innocuam,gabc/4830.gabc
+367,of,Offertorium,5712,Lauda Jerusalem,gabc/5712.gabc
+368,co,Communio,7212,Jacob autem,gabc/7212.gabc
+369,in,Introitus,4298,Dominus secus mare,gabc/4298.gabc
+370,co,Communio,6487,Dicit Andreas,gabc/6487.gabc
+370,al,Alleluia,7101,Dilexit Andream,gabc/7101.gabc
+371,co,Communio,7007,Venite post me,gabc/7007.gabc
+372,re,Graduale (responsorium),6266,Justus ut palma,gabc/6266.gabc
+373,al,Alleluia,6890,Beatus vir qui suffert,gabc/6890.gabc
+373,re,Graduale (responsorium),5515,Ecce sacerdos. V. Non est inv.,gabc/5515.gabc
+374,co,Communio,6516,Fidelis servus... alleluia,gabc/6516.gabc
+375,in,Introitus,6161,Venite audite,gabc/6161.gabc
+376,re,Graduale (responsorium),5577,Sapientia,gabc/5577.gabc
+377,of,Offertorium,4880,Ego dilecto,gabc/4880.gabc
+377,co,Communio,7228,Quae est ista,gabc/7228.gabc
+378,in,Introitus,6948,Gaudens gaudebo,gabc/6948.gabc
+379,re,Graduale (responsorium),5721,Benedicta es tu <i>(Grad)</i>,gabc/5721.gabc
+380,al,Alleluia,4982,Tota pulchra es Maria <i>(All)</i>,gabc/4982.gabc
+380,of,Offertorium,6526,Ave Maria,gabc/6526.gabc
+381,co,Communio,5179,Gloriosa dicta... Maria,gabc/5179.gabc
+381,re,Graduale (responsorium),4740,Unam petii... Ut... visitem,gabc/4740.gabc
+382,al,Alleluia,6759,Beati qui habitant,gabc/6759.gabc
+383,of,Offertorium,4770,Introibo in domum,gabc/4770.gabc
+383,co,Communio,6557,Beatus qui audit,gabc/6557.gabc
+385,co,Communio,5706,Mitte manum,gabc/5706.gabc
+385,in,Introitus,4969,Sederunt,gabc/4969.gabc
+386,re,Graduale (responsorium),5443,Sederunt,gabc/5443.gabc
+387,co,Communio,7087,Video caelos,gabc/7087.gabc
+387,al,Alleluia,4822,Video caelos,gabc/4822.gabc
+388,re,Graduale (responsorium),5351,Exiit sermo,gabc/5351.gabc
+388,al,Alleluia,5188,Hic est discipulus,gabc/5188.gabc
+389,co,Communio,5478,Exiit sermo,gabc/5478.gabc
+390,in,Introitus,5996,Ex ore infantium,gabc/5996.gabc
+390,re,Graduale (responsorium),4948,Anima nostra,gabc/4948.gabc
+391,al,Alleluia,5585,Herodes,gabc/5585.gabc
+392,al,Alleluia,5538,Hi sunt,gabc/5538.gabc
+392,co,Communio,4760,Vox in Rama,gabc/4760.gabc
+393,of,Offertorium,5070,Inveni David,gabc/5070.gabc
+395,al,Alleluia,6571,Disposui testamentum,gabc/6571.gabc
+395,re,Graduale (responsorium),5552,Exalent eum,gabc/5552.gabc
+396,al,Alleluia,6296,Tu es Petrus <i>(Alleluia)</i>,gabc/6296.gabc
+396,tr,Tractus,7023,Tu es Petrus <i>(Tractus)</i>,gabc/7023.gabc
+398,co,Communio,5396,Tu est Petrus,gabc/5396.gabc
+398,al,Alleluia,4858,Omnia detrimentum,gabc/4858.gabc
+399,re,Graduale (responsorium),9869,Gloriosus,gabc/9869.gabc
+399,of,Offertorium,6796,Praecepta Domini,gabc/6796.gabc
+400,al,Alleluia,6943,Sancti tui,gabc/6943.gabc
+401,of,Offertorium,5126,Laetamini in Domino <i>(Off.)</i>,gabc/5126.gabc
+401,co,Communio,7662,Multitudo languentium,gabc/7662.gabc
+402,al,Alleluia,6833,Optime Pater,gabc/6833.gabc
+403,in,Introitus,5438,Laetentur,gabc/5438.gabc
+404,re,Graduale (responsorium),6125,Qui operatus est,gabc/6125.gabc
+405,al,Alleluia,5497,Magnus sanctus Paulus,gabc/5497.gabc
+406,tr,Tractus,5125,Tu es vas electionis,gabc/5125.gabc
+407,al,Alleluia,5359,Beatus vir qui timet,gabc/5359.gabc
+409,in,Introitus,5331,Dedit illi,gabc/5331.gabc
+409,re,Graduale (responsorium),5861,Spera in Domino,gabc/5861.gabc
+411,al,Alleluia,6540,Pauper et inops,gabc/6540.gabc
+411,tr,Tractus,6325,Factus es spes mea,gabc/6325.gabc
+412,of,Offertorium,7088,Venite filii,gabc/7088.gabc
+413,co,Communio,6090,Contra spem,gabc/6090.gabc
+413,an,Antiphona,4722,Lumen ad revelationem,gabc/4722.gabc
+414,in,Introitus,5439,Suscepimus,gabc/5439.gabc
+415,re,Graduale (responsorium),6094,Suscepimus Deus,gabc/6094.gabc
+416,tr,Tractus,6067,Gaude Maria,gabc/6067.gabc
+417,co,Communio,6009,Responsum,gabc/6009.gabc
+418,re,Graduale (responsorium),5531,Adjuvabit eam,gabc/5531.gabc
+419,co,Communio,6300,Qui me dignatus est <i>(Com.)</i>,gabc/6300.gabc
+420,in,Introitus,5357,Vidi civitatem,gabc/5357.gabc
+421,re,Graduale (responsorium),6288,Flores apparuerunt,gabc/6288.gabc
+422,al,Alleluia,5674,Ostende mihi,gabc/5674.gabc
+422,tr,Tractus,7029,Tu gloria,gabc/7029.gabc
+424,of,Offertorium,6507,Ave gratia plena,gabc/6507.gabc
+424,co,Communio,5846,Visitasti terram,gabc/5846.gabc
+424,in,Introitus,6424,Justi decantaverunt,gabc/6424.gabc
+425,re,Graduale (responsorium),5025,Electi mei,gabc/5025.gabc
+426,al,Alleluia,5300,Sapientiam ipsorum,gabc/5300.gabc
+427,co,Communio,5178,Ego vos elegi... alleluia,gabc/5178.gabc
+427,of,Offertorium,5763,Adducam eos,gabc/5763.gabc
+428,in,Introitus,6267,Mihi autem absit <i>(V. Vivo ego)</i>,gabc/6267.gabc
+428,re,Graduale (responsorium),5010,Inflammatum est,gabc/5010.gabc
+429,al,Alleluia,5970,Surge aquilo,gabc/5970.gabc
+430,tr,Tractus,6182,Quid mihi est,gabc/6182.gabc
+431,of,Offertorium,6570,Anima mea,gabc/6570.gabc
+432,co,Communio,4714,Quam dulcia,gabc/4714.gabc
+435,al,Alleluia,6110,Joseph fili David,gabc/6110.gabc
+436,in,Introitus,6138,Benedicite Dominum,gabc/6138.gabc
+437,re,Graduale (responsorium),6214,Benedicite Dominum omnes Angeli,gabc/6214.gabc
+439,al,Alleluia,6556,Qui facit angelos,gabc/6556.gabc
+439,of,Offertorium,5330,Stetit Angelus <i>(Off)</i>,gabc/5330.gabc
+440,co,Communio,5241,Benedicite omnes Angeli,gabc/5241.gabc
+441,in,Introitus,5489,Rorate cæli… Et justitia,gabc/5489.gabc
+442,re,Graduale (responsorium),5441,Tollite portas,gabc/5441.gabc
+443,tr,Tractus,6982,Ave Maria,gabc/6982.gabc
+444,al,Alleluia,6155,Virga Jesse,gabc/6155.gabc
+445,of,Offertorium,4781,Ave Maria... et benedictus,gabc/4781.gabc
+445,co,Communio,5369,Ecce Virgo... alleluia,gabc/5369.gabc
+446,in,Introitus,5773,Tenuisti manum,gabc/5773.gabc
+446,re,Graduale (responsorium),5703,Deus qui,gabc/5703.gabc
+446.1,tr,Tractus,6931,Persequar,gabc/6931.gabc
+446.2,al,Alleluia,6336,Dedisti,gabc/6336.gabc
+446.3,of,Offertorium,5710,Lignum,gabc/5710.gabc
+446.3,co,Communio,6847,Brachia,gabc/6847.gabc
+446.4,al,Alleluia,5072,Gloriose Pater,gabc/5072.gabc
+447,al,Alleluia,6843,Oportebat pati,gabc/6843.gabc
+448,co,Communio,6089,Vincenti dabo,gabc/6089.gabc
+449,in,Introitus,4299,Dicit Dominus Sermones,gabc/4299.gabc
+450,of,Offertorium,4929,De necessitatibus,gabc/4929.gabc
+451,co,Communio,6637,Tu dominaris,gabc/6637.gabc
+451,al,Alleluia,5039,O beata Agnes,gabc/5039.gabc
+452,in,Introitus,4290,Gaudeamus... coronae Domini,gabc/4290.gabc
+453,al,Alleluia,6260,Diadema spineum,gabc/6260.gabc
+454,co,Communio,6199,Posuisti Domine <i>(Com.)</i>,gabc/6199.gabc
+454,al,Alleluia,6102,Primus ad Sion,gabc/6102.gabc
+455,of,Offertorium,5938,Repleti,gabc/5938.gabc
+455,co,Communio,7015,Ego sum vitis,gabc/7015.gabc
+456,al,Alleluia,5207,Felix ex fructu,gabc/5207.gabc
+458,in,Introitus,7243,Mihi adhaere Deo,gabc/7243.gabc
+459,re,Graduale (responsorium),7230,Quasi stella... quasi sol,gabc/7230.gabc
+460,tr,Tractus,6801,Defecit caro mea,gabc/6801.gabc
+461,al,Alleluia,5405,Sideribus cunctis,gabc/5405.gabc
+462,of,Offertorium,5660,Veritatem,gabc/5660.gabc
+463,co,Communio,4820,Benedicta,gabc/4820.gabc
+464,in,Introitus,4274,Clamaverunt ad te,gabc/4274.gabc
+465,al,Alleluia,6152,Stabunt justi,gabc/6152.gabc
+465,co,Communio,6774,Tanto tempore vobiscum sum <i>(Com.)</i>,gabc/6774.gabc
+466,of,Offertorium,5315,Meditabor... alleluia,gabc/5315.gabc
+467,in,Introitus,7245,Nos autem <i>(all. all.)</i>,gabc/7245.gabc
+468,al,Alleluia,6196,Dulce lignum,gabc/6196.gabc
+468,of,Offertorium,4811,Protege Domine,gabc/4811.gabc
+469,co,Communio,4990,Per lignum,gabc/4990.gabc
+470,in,Introitus,4980,Invocabit Dominum,gabc/4980.gabc
+471,al,Alleluia,4870,Fortitudo mea,gabc/4870.gabc
+471,of,Offertorium,5993,Domine quis habitabit,gabc/5993.gabc
+472,co,Communio,4898,Posuisti ut arcum,gabc/4898.gabc
+473,al,Alleluia,5176,In conspectu... Domine Deus,gabc/5176.gabc
+474,al,Alleluia,5453,Antoninus,gabc/5453.gabc
+475,in,Introitus,5197,Sitivit,gabc/5197.gabc
+476,al,Alleluia,6419,Ave virginum gemma,gabc/6419.gabc
+477,of,Offertorium,6024,Introibo ad altare,gabc/6024.gabc
+478,co,Communio,6658,Ego dilecto meo,gabc/6658.gabc
+480,co,Communio,5851,Semel juravi,gabc/5851.gabc
+481,in,Introitus,5033,Caritas Dei... nostris per,gabc/5033.gabc
+481,al,Alleluia,6501,De excelso,gabc/6501.gabc
+482,al,Alleluia,5437,Concaluit,gabc/5437.gabc
+483,of,Offertorium,5852,Viam mandatorum,gabc/5852.gabc
+483,co,Communio,4848,Cor meum,gabc/4848.gabc
+484,in,Introitus,7070,Adeamus <i>(ps. Levavi)</i>,gabc/7070.gabc
+485,re,Graduale (responsorium),6822,In me gratia,gabc/6822.gabc
+486,al,Alleluia,7208,Salve Mater,gabc/7208.gabc
+486,tr,Tractus,6712,Ego sum,gabc/6712.gabc
+487,co,Communio,5623,Valde mirabilis,gabc/5623.gabc
+490,al,Alleluia,5499,Juravit Dominus,gabc/5499.gabc
+491,al,Alleluia,9856,Mirabilis Dominus,gabc/9856.gabc
+491,in,Introitus,9857,Loquetur,gabc/9857.gabc
+492,re,Graduale (responsorium),9870,Justorum animae,gabc/9870.gabc
+493,al,Alleluia,9871,Justi epulentur,gabc/9871.gabc
+494,in,Introitus,9875,Ne timeas,gabc/9875.gabc
+495,re,Graduale (responsorium),9876,Fuit homo,gabc/9876.gabc
+496,in,Introitus,7870,De ventre,gabc/7870.gabc
+497,re,Graduale (responsorium),7871,Priusquam,gabc/7871.gabc
+497,al,Alleluia,7872,Inter natos,gabc/7872.gabc
+498,co,Communio,5886,Tu puer,gabc/5886.gabc
+499,in,Introitus,5050,Multae tribulationes,gabc/5050.gabc
+499,al,Alleluia,6911,Isti sunt duae olivae,gabc/6911.gabc
+500,of,Offertorium,5512,Gloriabuntur,gabc/5512.gabc
+501,co,Communio,4806,Etsi coram,gabc/4806.gabc
+502,in,Introitus,6167,Lex veritatis,gabc/6167.gabc
+502.1,re,Graduale (responsorium),5864,Propter fratres,gabc/5864.gabc
+502.1,al,Alleluia,7206,In multitudine,gabc/7206.gabc
+502.2,co,Communio,6938,Videte quoniam,gabc/6938.gabc
+502.2,of,Offertorium,5922,Doctrinam quasi antelucanum,gabc/5922.gabc
+502.3,in,Introitus,6111,Dicit Dominus Petro,gabc/6111.gabc
+503,co,Communio,5102,Simon Joannis,gabc/5102.gabc
+504,in,Introitus,6534,Nunc scio,gabc/6534.gabc
+505,al,Alleluia,5257,Beatus es Simon,gabc/5257.gabc
+505,in,Introitus,6636,Scio cui credidi,gabc/6636.gabc
+506,in,Introitus,7096,Redemisti nos,gabc/7096.gabc
+507,re,Graduale (responsorium),6560,Hic est qui venit,gabc/6560.gabc
+508,al,Alleluia,6391,Si testimonium,gabc/6391.gabc
+509,co,Communio,5189,Christus semel,gabc/5189.gabc
+509,of,Offertorium,4955,Calix benedictionis,gabc/4955.gabc
+510,al,Alleluia,5906,Magnificat <i>(Visit. B. M. V.)</i>,gabc/5906.gabc
+511,in,Introitus,5436,Sermo meus,gabc/5436.gabc
+512,re,Graduale (responsorium),6775,Testis mihi est,gabc/6775.gabc
+513,al,Alleluia,6558,Repleti fructu,gabc/6558.gabc
+514,of,Offertorium,6990,In conspectu Angelorum <i>(Off)</i>,gabc/6990.gabc
+514,co,Communio,4814,Imitatores,gabc/4814.gabc
+515,in,Introitus,5872,Sapientiam sanctorum,gabc/5872.gabc
+515,co,Communio,4728,Ego vos elegi,gabc/4728.gabc
+516,in,Introitus,6370,Emisi vos,gabc/6370.gabc
+516,re,Graduale (responsorium),5724,Deus sanguinem,gabc/5724.gabc
+518,al,Alleluia,6183,Repleti sumus,gabc/6183.gabc
+519,of,Offertorium,5935,In odorem,gabc/5935.gabc
+519,in,Introitus,6659,Laudate pueri,gabc/6659.gabc
+519,co,Communio,6790,Ecce quomodo,gabc/6790.gabc
+520,co,Communio,9877,Quicumque fecerit,gabc/9877.gabc
+522,in,Introitus,5983,Effusum est,gabc/5983.gabc
+523,re,Graduale (responsorium),5879,Deriventur,gabc/5879.gabc
+524,al,Alleluia,5816,Dispersit,gabc/5816.gabc
+524,of,Offertorium,6675,Quando orabas,gabc/6675.gabc
+525,co,Communio,6149,Religio munda,gabc/6149.gabc
+526,al,Alleluia,9878,Non vos me elegistis,gabc/9878.gabc
+528,al,Alleluia,5185,Solve jubente Deo,gabc/5185.gabc
+529,re,Graduale (responsorium),9881,Memor fui,gabc/9881.gabc
+529,in,Introitus,6022,Spiritus... super me,gabc/6022.gabc
+531,of,Offertorium,5833,Honora Dominum,gabc/5833.gabc
+531,al,Alleluia,6733,Ipse est directus,gabc/6733.gabc
+532,co,Communio,4703,Sacerdos magnus,gabc/4703.gabc
+533,in,Introitus,6482,In medio Ecclesiae all. all. all.,gabc/6482.gabc
+534,se,Sequentia,5838,In caelesti hierarchia,gabc/5838.gabc
+534,al,Alleluia,5397,Pie Pater,gabc/5397.gabc
+538,co,Communio,6615,Fidelis servus... all. alleluia,gabc/6615.gabc
+539,re,Graduale (responsorium),5191,Cantate Domino,gabc/5191.gabc
+539,in,Introitus,5113,Viderunt ingressus,gabc/5113.gabc
+540,al,Alleluia,6131,Candor est,gabc/6131.gabc
+541,of,Offertorium,9882,Gloria et divitiae,gabc/9882.gabc
+542,of,Offertorium,5076,Oratio mea,gabc/5076.gabc
+543,re,Graduale (responsorium),6885,Probasti Domine,gabc/6885.gabc
+543,in,Introitus,5471,Confessio,gabc/5471.gabc
+544,al,Alleluia,5870,Levita Laurentius,gabc/5870.gabc
+545,co,Communio,6620,Qui mihi ministrat,gabc/6620.gabc
+545,of,Offertorium,4708,Confessio,gabc/4708.gabc
+546,in,Introitus,5505,Justi epulentur,gabc/5505.gabc
+546,co,Communio,6548,Dico autem...qui vos persequuntur,gabc/6548.gabc
+547,of,Offertorium,7238,Beata es Virgo,gabc/7238.gabc
+548,al,Alleluia,5733,Hodie Maria,gabc/5733.gabc
+549,in,Introitus,6304,Dispersit,gabc/6304.gabc
+549,re,Graduale (responsorium),5366,Dispersit,gabc/5366.gabc
+550,in,Introitus,9883,In ecclesiis,gabc/9883.gabc
+551,re,Graduale (responsorium),5041,Eruditus,gabc/5041.gabc
+552,al,Alleluia,6422,Gaude fili,gabc/6422.gabc
+553,co,Communio,6929,Dilectus meus,gabc/6929.gabc
+553,of,Offertorium,6107,De terra longinqua,gabc/6107.gabc
+555,in,Introitus,5195,Adeamus <i>(ps. Erucvtavit)</i>,gabc/5195.gabc
+556,re,Graduale (responsorium),6605,Exsultabit cor meum,gabc/6605.gabc
+557,al,Alleluia,5121,Magnificat <i>(Immac. Cord. B. M. V.)</i>,gabc/5121.gabc
+558,tr,Tractus,9884,Nunc ergo,gabc/9884.gabc
+559,of,Offertorium,9885,Exsultavit spiritus meus,gabc/9885.gabc
+559,co,Communio,9886,Dixit Jesus,gabc/9886.gabc
+566,in,Introitus,4289,Gaudeamus... assumptione,gabc/4289.gabc
+567,al,Alleluia,7550,Nativitas gloriosae Virginis,gabc/7550.gabc
+568,of,Offertorium,8151,Felix namque es,gabc/8151.gabc
+569,co,Communio,7543,Beata viscera,gabc/7543.gabc
+573,co,Communio,7913,Per signum Crucis,gabc/7913.gabc
+581,of,Offertorium,7920,Obaudite me,gabc/7920.gabc
+582,co,Communio,7919,Florete,gabc/7919.gabc
+587,in,Introitus,4292,Gaudeamus... beati Francisci,gabc/4292.gabc
+596,al,Alleluia,20960,Judicabunt,gabc/20960.gabc
+608,in,Introitus,7395,Dignus est Agnus,gabc/7395.gabc
+608,gr,Graduale,7398,Dominabitur,gabc/7398.gabc
+609,al,Alleluia,7399,Potestas ejus,gabc/7399.gabc
+610,of,Offertorium,7400,Postula a me,gabc/7400.gabc
+610,co,Communio,7401,Sedebit Dominus,gabc/7401.gabc
+611,in,Introitus,4288,Gaudeamus... Sanctorum omnium,gabc/4288.gabc
+612,co,Communio,20961,Gaudete justi,gabc/20961.gabc
+612,re,Graduale (responsorium),20962,Timete Dominum,gabc/20962.gabc
+614,al,Alleluia,7980,Hic Martinus,gabc/7980.gabc
+615,al,Alleluia,11284,O radiosum lilium,gabc/11284.gabc
+1*,in,Introitus,4899,Mihi autem nimis,gabc/4899.gabc
+2*,re,Graduale (responsorium),9858,Constitues eos,gabc/9858.gabc
+3*,re,Graduale (responsorium),6831,In omnem terram,gabc/6831.gabc
+4*,re,Graduale (responsorium),6863,Nimis honorati sunt,gabc/6863.gabc
+4*,al,Alleluia,5348,Nimis honorati sunt,gabc/5348.gabc
+5*,of,Offertorium,5848,Mihi autem nimis,gabc/5848.gabc
+5*,of,Offertorium,6618,In omnem terram,gabc/6618.gabc
+6*,of,Offertorium,5091,Constitues eos,gabc/5091.gabc
+6*,co,Communio,5171,Vos qui secuti,gabc/5171.gabc
+7*,in,Introitus,6411,Laetabitur justus,gabc/6411.gabc
+8*,re,Graduale (responsorium),6960,Posuisti Domine <i>(Resp. Grad.)</i>,gabc/6960.gabc
+9*,al,Alleluia,6582,Laetabitur,gabc/6582.gabc
+9*,tr,Tractus,7125,Beatus vir qui timet <i>(Tract.)</i>,gabc/7125.gabc
+10*,of,Offertorium,6358,Posuisti Domine <i>(Off.)</i>,gabc/6358.gabc
+11*,co,Communio,6386,Magna est gloria <i>(Com.)</i>,gabc/6386.gabc
+11*,in,Introitus,5778,Sacerdotes Dei,gabc/5778.gabc
+12*,re,Graduale (responsorium),6727,Inveni David,gabc/6727.gabc
+13*,al,Alleluia,4966,Posuisti Domine <i>(All.)</i>,gabc/4966.gabc
+14*,tr,Tractus,6463,Desiderium,gabc/6463.gabc
+15*,in,Introitus,4864,Protexisti me,gabc/4864.gabc
+16*,al,Alleluia,5678,Justus ut palma,gabc/5678.gabc
+17*,co,Communio,6924,Qui vult venire,gabc/6924.gabc
+17*,of,Offertorium,5797,Gloria et honore,gabc/5797.gabc
+18*,in,Introitus,6794,In virtute tua,gabc/6794.gabc
+19*,of,Offertorium,6893,In virtute tua,gabc/6893.gabc
+20*,of,Offertorium,5269,Confitebuntur,gabc/5269.gabc
+20*,co,Communio,6576,Laetabitur justus,gabc/6576.gabc
+21*,in,Introitus,4889,Salus autem,gabc/4889.gabc
+22*,re,Graduale (responsorium),6650,Vindica Domine,gabc/6650.gabc
+23*,al,Alleluia,6538,Isti sunt qui venerunt,gabc/6538.gabc
+23*,tr,Tractus,4978,Qui seminant,gabc/4978.gabc
+24*,of,Offertorium,5206,Anima nostra,gabc/5206.gabc
+25*,co,Communio,6440,Posuerunt,gabc/6440.gabc
+25*,in,Introitus,6735,Intret in conspectu,gabc/6735.gabc
+26*,re,Graduale (responsorium),6720,Exsultabunt sancti,gabc/6720.gabc
+27*,al,Alleluia,4992,Te Martyrum,gabc/4992.gabc
+28*,al,Alleluia,5648,Sancti et justi,gabc/5648.gabc
+28*,in,Introitus,6578,Sancti tui,gabc/6578.gabc
+29*,of,Offertorium,4790,Mirabilis Deus,gabc/4790.gabc
+30*,in,Introitus,5925,Sacerdotes tui,gabc/5925.gabc
+30*,co,Communio,6276,Justorum animae <i>(Communio)</i>,gabc/6276.gabc
+31*,of,Offertorium,7170,Veritas mea,gabc/7170.gabc
+32*,co,Communio,5854,Beatus servus,gabc/5854.gabc
+32*,in,Introitus,5417,Statuit,gabc/5417.gabc
+33*,re,Graduale (responsorium),6123,Juravit Dominus,gabc/6123.gabc
+34*,of,Offertorium,5857,Justus ut palma,gabc/5857.gabc
+34*,al,Alleluia,6785,Inveni David,gabc/6785.gabc
+35*,in,Introitus,6549,In medio Ecclesiae all. all.,gabc/6549.gabc
+36*,al,Alleluia,6959,Posui adjutorium,gabc/6959.gabc
+36*,re,Graduale (responsorium),4733,Os justi,gabc/4733.gabc
+37*,tr,Tractus,7081,Quasi stella,gabc/7081.gabc
+39*,co,Communio,5425,Domine quinque talenta,gabc/5425.gabc
+39*,in,Introitus,4283,Justus ut palma,gabc/4283.gabc
+40*,re,Graduale (responsorium),7142,Domine praevenisti,gabc/7142.gabc
+41*,co,Communio,4856,Amen dico vobis quod vos,gabc/4856.gabc
+42*,in,Introitus,5885,Os justi,gabc/5885.gabc
+43*,al,Alleluia,6895,Justus germinabit,gabc/6895.gabc
+43*,of,Offertorium,6021,Desiderium animae,gabc/6021.gabc
+44*,al,Alleluia,7042,Amavit eum,gabc/7042.gabc
+45*,in,Introitus,8003,Loquebar,gabc/8003.gabc
+46*,re,Graduale (responsorium),5634,Specie tua,gabc/5634.gabc
+47*,al,Alleluia,4865,Aemulor,gabc/4865.gabc
+48*,in,Introitus,5273,Me exspectaverunt,gabc/5273.gabc
+48*,co,Communio,6271,Simile est,gabc/6271.gabc
+49*,al,Alleluia,4860,Adducentur,gabc/4860.gabc
+50*,co,Communio,6027,Quinque prudentes,gabc/6027.gabc
+51*,in,Introitus,4291,Gaudeamus... beatae N.,gabc/4291.gabc
+53*,re,Graduale (responsorium),6293,Propter veritatem,gabc/6293.gabc
+54*,al,Alleluia,5685,Veni electa mea,gabc/5685.gabc
+54*,of,Offertorium,5801,Filiae regum,gabc/5801.gabc
+55*,in,Introitus,5384,Dilexisti,gabc/5384.gabc
+55*,co,Communio,6238,Diffusa est,gabc/6238.gabc
+57*,al,Alleluia,5784,Diffusa est,gabc/5784.gabc
+57*,of,Offertorium,5009,Diffusa est,gabc/5009.gabc
+58*,al,Alleluia,5114,Specie tua,gabc/5114.gabc
+59*,co,Communio,5442,Principes,gabc/5442.gabc
+59*,tr,Tractus,6032,Veni sponsa Christi,gabc/6032.gabc
+61*,tr,Tractus,6647,Benedicant te,gabc/6647.gabc
+62*,in,Introitus,4726,Cibavit eos... frumenti,gabc/4726.gabc
+62*,tr,Tractus,6025,Parasti,gabc/6025.gabc
+64*,in,Introitus,7010,Juravit,gabc/7010.gabc
+65*,al,Alleluia,6861,Jesus autem,gabc/6861.gabc
+65*,re,Graduale (responsorium),4762,Spiritus Domini,gabc/4762.gabc
+66*,tr,Tractus,6708,Exsurge Domine Deus,gabc/6708.gabc
+67*,of,Offertorium,5292,Christus,gabc/5292.gabc
+68*,in,Introitus,5822,Humiliavit,gabc/5822.gabc
+69*,re,Graduale (responsorium),6502,Improperium,gabc/6502.gabc
+70*,tr,Tractus,5630,Vere languores,gabc/5630.gabc
+72*,of,Offertorium,7164,Insurrexerunt,gabc/7164.gabc
+73*,co,Communio,5170,Foderunt,gabc/5170.gabc
+73*,tr,Tractus,4836,Laudabo,gabc/4836.gabc
+74*,tr,Tractus,5465,Tuam crucem,gabc/5465.gabc
+75*,in,Introitus,4707,Spiritus... replevit... all. all.,gabc/4707.gabc
+76*,in,Introitus,5545,Cum sanctificatus,gabc/5545.gabc
+77*,tr,Tractus,4729,Caeli distillaverunt,gabc/4729.gabc
+78*,re,Graduale (responsorium),6394,In sole posuit,gabc/6394.gabc
+79*,in,Introitus,6966,Salve sancta parens,gabc/6966.gabc
+80*,re,Graduale (responsorium),6984,Benedicta et venerabilis,gabc/6984.gabc
+81*,co,Communio,5936,Ave Regina caelorum,gabc/5936.gabc
+82*,re,Graduale (responsorium),5083,Dilectus meus,gabc/5083.gabc
+82*,in,Introitus,6011,Salve radix sancta,gabc/6011.gabc
+83*,of,Offertorium,7216,Ave Regina caelorum,gabc/7216.gabc
+84*,co,Communio,7067,O quam speciosa,gabc/7067.gabc
+85*,in,Introitus,6476,Salvos nos fac,gabc/6476.gabc
+86*,re,Graduale (responsorium),6306,Ecce quam bonum. V. Quoniam,gabc/6306.gabc
+87*,al,Alleluia,5516,Aedificans,gabc/5516.gabc
+88*,of,Offertorium,5075,Det vobis,gabc/5075.gabc
+88*,co,Communio,6486,Unus panis,gabc/6486.gabc
+89*,in,Introitus,5064,Suscitabo,gabc/5064.gabc
+90*,re,Graduale (responsorium),6240,Pontifex sacerdos,gabc/6240.gabc
+91*,tr,Tractus,4829,Surge Domine,gabc/4829.gabc
+91*,al,Alleluia,5057,Sacerdos sit,gabc/5057.gabc
+92*,of,Offertorium,4988,Non participentur,gabc/4988.gabc
+93*,in,Introitus,7034,Deus misereatur,gabc/7034.gabc
+93*,co,Communio,7048,Veste sancta,gabc/7048.gabc
+94*,re,Graduale (responsorium),5090,Confiteantur tibi,gabc/5090.gabc
+95*,al,Alleluia,5892,Jubilate Deo,gabc/5892.gabc
+95*,tr,Tractus,6415,Annuntiate,gabc/6415.gabc
+97*,of,Offertorium,6547,Afferte,gabc/6547.gabc
+98*,tr,Tractus,7069,Notus in Judaea,gabc/7069.gabc
+98*,co,Communio,4900,Laudate Dominum,gabc/4900.gabc
+99*,al,Alleluia,6147,Fiat pax,gabc/6147.gabc
+100*,al,Alleluia,5831,Liberasti,gabc/5831.gabc
+100*,co,Communio,6139,Pacem meam... pacem,gabc/6139.gabc
+101*,re,Graduale (responsorium),6508,Exsurge quare obdormis,gabc/6508.gabc
+102*,al,Alleluia,5167,Miserere mei,gabc/5167.gabc
+102*,al,Alleluia,5479,Converte nos,gabc/5479.gabc
+103*,co,Communio,6829,Miserere mei,gabc/6829.gabc
+103*,of,Offertorium,4877,Respice in me,gabc/4877.gabc
+104*,in,Introitus,5337,Recordare,gabc/5337.gabc
+105*,al,Alleluia,5286,Salvabo populum,gabc/5286.gabc
+105*,al,Alleluia,5433,Confiteantur Domino,gabc/5433.gabc
+106*,of,Offertorium,6869,Stetit Pontifex,gabc/6869.gabc
+107*,al,Alleluia,4930,Averte faciem,gabc/4930.gabc
+108*,al,Alleluia,6408,Adjuva nos,gabc/6408.gabc
+108*,of,Offertorium,4697,Multiplicata sunt,gabc/4697.gabc
+109*,co,Communio,6279,Memor esto,gabc/6279.gabc
+110*,in,Introitus,4300,Deus Israel,gabc/4300.gabc
+111*,re,Graduale (responsorium),6249,Uxor tua,gabc/6249.gabc
+112*,tr,Tractus,5644,Ecce sic benedicetur,gabc/5644.gabc
+112*,al,Alleluia,5742,Mittat vobis,gabc/5742.gabc
+113*,co,Communio,5537,Ecce sic benedicetur,gabc/5537.gabc
+113*,al,Alleluia,5811,Benedicat vobis,gabc/5811.gabc
+114*,in,Introitus,6527,Requiem <i>(Officium)</i>,gabc/6527.gabc
+115*,re,Graduale (responsorium),6001,Requiem <i>(Resp.)</i>,gabc/6001.gabc
+115*,ky,Ordinarium (Kyriale),8711,Kyrie <i>(Requiem)</i>,gabc/8711.gabc
+116*,tr,Tractus,6367,Absolve,gabc/6367.gabc
+117*,re,Graduale (responsorium),6258,Si ambulem,gabc/6258.gabc
+118*,tr,Tractus,7107,Sicut cervus,gabc/7107.gabc
+119*,se,Sequentia,6704,Dies irae,gabc/6704.gabc
+123*,of,Offertorium,6575,Domine Jesu Christe,gabc/6575.gabc
+125*,co,Communio,6519,Lux aeterna,gabc/6519.gabc
+125*,ky,Ordinarium (Kyriale),7634,Requiescant,gabc/7634.gabc
+126*,ky,Ordinarium (Kyriale),5314,Kyrie I,gabc/5314.gabc
+126*,ky,Ordinarium (Kyriale),7293,Gloria I,gabc/7293.gabc
+128*,ky,Ordinarium (Kyriale),7294,Credo I,gabc/7294.gabc
+130*,ky,Ordinarium (Kyriale),7295,Sanctus I,gabc/7295.gabc
+131*,ky,Ordinarium (Kyriale),7296,Agnus I,gabc/7296.gabc
+131*,ky,Ordinarium (Kyriale),7297,Ite I,gabc/7297.gabc
+132*,ky,Ordinarium (Kyriale),7299,Kyrie II,gabc/7299.gabc
+132*,ky,Ordinarium (Kyriale),7300,Gloria II,gabc/7300.gabc
+134*,ky,Ordinarium (Kyriale),7301,Sanctus II,gabc/7301.gabc
+134*,ky,Ordinarium (Kyriale),7302,Agnus II,gabc/7302.gabc
+135*,ky,Ordinarium (Kyriale),7303,Ite II,gabc/7303.gabc
+135*,ky,Ordinarium (Kyriale),7304,Kyrie III,gabc/7304.gabc
+136*,ky,Ordinarium (Kyriale),7305,Gloria III,gabc/7305.gabc
+137*,ky,Ordinarium (Kyriale),7306,Sanctus III,gabc/7306.gabc
+138*,ky,Ordinarium (Kyriale),7307,Agnus III,gabc/7307.gabc
+138*,ky,Ordinarium (Kyriale),7308,Ite III,gabc/7308.gabc
+138*,ky,Ordinarium (Kyriale),7309,Kyrie IV,gabc/7309.gabc
+138*,ky,Ordinarium (Kyriale),7954,Benedicamus III,gabc/7954.gabc
+139*,ky,Ordinarium (Kyriale),7310,Ite IV,gabc/7310.gabc
+139*,ky,Ordinarium (Kyriale),7314,Kyrie V,gabc/7314.gabc
+140*,ky,Ordinarium (Kyriale),7315,Gloria V,gabc/7315.gabc
+142*,ky,Ordinarium (Kyriale),7316,Sanctus V,gabc/7316.gabc
+142*,ky,Ordinarium (Kyriale),7317,Agnus V,gabc/7317.gabc
+143*,ky,Ordinarium (Kyriale),7318,Ite V,gabc/7318.gabc
+143*,ky,Ordinarium (Kyriale),7319,Kyrie VI,gabc/7319.gabc
+143*,ky,Ordinarium (Kyriale),7320,Gloria VI,gabc/7320.gabc
+145*,ky,Ordinarium (Kyriale),7979,Kyrie VIII - Profestis diebus,gabc/7979.gabc
+145*,ky,Ordinarium (Kyriale),7321,Ite VI,gabc/7321.gabc
+145*,ky,Ordinarium (Kyriale),7324,Kyrie VIII,gabc/7324.gabc
+145*,ky,Ordinarium (Kyriale),7325,Sanctus VIII,gabc/7325.gabc
+146*,ky,Ordinarium (Kyriale),7326,Agnus VIII,gabc/7326.gabc
+146*,ky,Ordinarium (Kyriale),7327,Benedicamus VIII,gabc/7327.gabc
+146*,ky,Ordinarium (Kyriale),7339,Ad Orationes I,gabc/7339.gabc
+146*,ky,Ordinarium (Kyriale),7340,Ad Orationes II,gabc/7340.gabc
+147*,ky,Ordinarium (Kyriale),7341,Ad Evangelium,gabc/7341.gabc
+147*,ky,Ordinarium (Kyriale),7342,Ad Praefationem in tono solemni,gabc/7342.gabc
+147*,ky,Ordinarium (Kyriale),7343,Ad Praefationem in tono feriali,gabc/7343.gabc
+148*,ky,Ordinarium (Kyriale),7345,Ad Pater noster,gabc/7345.gabc
+148*,ky,Ordinarium (Kyriale),7346,Ad Pax Domini,gabc/7346.gabc
+152*,ky,Ordinarium (Kyriale),8040,Kyrie X,gabc/8040.gabc
+154*,ky,Ordinarium (Kyriale),7480,Credo II,gabc/7480.gabc
+158*,ky,Ordinarium (Kyriale),8039,Ite X,gabc/8039.gabc
+159*,ky,Ordinarium (Kyriale),7311,Gloria XI,gabc/7311.gabc
+160*,ky,Ordinarium (Kyriale),7312,Sanctus XI,gabc/7312.gabc
+161*,ky,Ordinarium (Kyriale),7313,Agnus XI,gabc/7313.gabc
+161*,ky,Ordinarium (Kyriale),7298,Kyrie XII,gabc/7298.gabc
+162*,ky,Ordinarium (Kyriale),7950,Kyrie XIII,gabc/7950.gabc
+162*,ky,Ordinarium (Kyriale),7951,Gloria XIII,gabc/7951.gabc
+164*,ky,Ordinarium (Kyriale),7952,Sanctus XIII,gabc/7952.gabc
+164*,ky,Ordinarium (Kyriale),7953,Agnus XIII,gabc/7953.gabc
+165*,ky,Ordinarium (Kyriale),7322,Sanctus XIV,gabc/7322.gabc
+165*,ky,Ordinarium (Kyriale),7323,Agnus XIV,gabc/7323.gabc

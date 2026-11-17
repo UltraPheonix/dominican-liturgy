@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Propria Missae O.P.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main { max-width: 760px; }
+    h1 { font-family: 'Crimson Text SemiBold', 'Crimson Text', serif; font-weight: normal; color: var(--rubric); }
+    h2 { font-weight: normal; font-variant: small-caps; letter-spacing: .05em; color: var(--rubric); margin-top: 28px; }
+    li { margin: 4px 0; }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="brand">
+      <span class="cross" aria-hidden="true">✠</span>
+      <div><div class="t1">Propria Missae</div><div class="t2">juxta ritum Sacri Ordinis Praedicatorum</div></div>
+    </div>
+    <nav><a href="index.html">Back to the propers</a></nav>
+  </header>
+  <main>
+    <h1>About this site</h1>
+    <p>This site shows the sung propers of the Dominican Rite Mass (Introit, Gradual, Alleluia or Tract, Sequence,
+      Offertory, Communion) for any day, in square notation, from the <i>Graduale juxta ritum Sacri Ordinis
+      Praedicatorum</i> (Rome, 1950, ed. Suarez). Each chant can be changed, edited as GABC, printed or saved as a PDF,
+      and shared as a link.</p>
+
+    <h2>Where the chants come from</h2>
+    <p>All 975 chants of the 1950 Graduale were transcribed into GABC by volunteers for
+      <a href="https://gregobase.selapa.net/source.php?id=14">GregoBase</a>; each chant on this site names its
+      transcriber and links to its GregoBase page. One chant (the Alleluia <i>Laetatus sum</i>, p. 5) is still
+      empty there.</p>
+
+    <h2>How each day's Mass was put together</h2>
+    <p>The Graduale prints each chant once, in the order of the year; when a later Mass uses the same chant, the book
+      only refers back to it. The assignments were therefore built in three steps, and the site marks how sure each
+      one is:</p>
+    <ul>
+      <li><b>Proper of the Time.</b> Each Mass in the Graduale was matched to its day by its Introit. Where the
+        Dominican Mass differs from the Roman one (e.g. <i>Memento nostri</i> on the 4th Sunday of Advent), it was
+        checked against the <i>Missale O.P.</i> (1939). A chant marked <span class="badge info">re-used</span> is not
+        printed with that Mass; it was found elsewhere in the Graduale by the incipit the day has in the Roman
+        Graduale.</li>
+      <li><b>Proper of the Saints.</b> The feasts, dates and ranks are those of the <i>Calendarium O.P.
+        reformatum</i> (1960 rubrics). <span class="badge ok">Proper</span>: the Mass printed in the Sanctorale of
+        the Graduale, matched to its date through the Missale O.P. <span class="badge info">From the Common</span>:
+        the Missale names the Common Mass for that day. <span class="badge warn">Common: check Ordo</span>: the
+        Common was chosen from the saint's title (Confessor, Virgin, Martyr…) and should be checked against the
+        <a href="https://dominican-liturgy.blogspot.com/">Ordo</a>.</li>
+      <li><b>Commons and votive Masses</b> are as printed in the Graduale (pp. 1*–125*).</li>
+    </ul>
+    <p>Saints' Masses often have proper chants that the Graduale prints on the pages of a nearby feast; these are
+      listed under “Other chants printed on these pages” and can be added with one click. Precedence between a
+      Sunday and a feast is not calculated: follow the Ordo.</p>
+
+    <h2>Credits</h2>
+    <ul>
+      <li>The page is built on the Propers tool of <a href="https://github.com/bbloomf/jgabc">jgabc</a> by
+        Benjamin Bloomfield (public domain), and draws the chant with
+        <a href="https://github.com/frmatthew/exsurge">exsurge</a> (MIT licence).</li>
+      <li>Missals, calendar and Ordo: <a href="https://dominican-liturgy.blogspot.com/">Dominican Liturgy</a>
+        (Fr. Augustine Thompson, O.P.).</li>
+      <li>Fonts: Crimson Text (SIL Open Font Licence) and Versiculum, as in jgabc.</li>
+    </ul>
+    <p>Corrections are welcome: the data is rebuilt by the scripts in <code>tools/</code> of the repository, where
+      a wrong assignment can be fixed once for every year.</p>
+  </main>
+</body>
+</html>

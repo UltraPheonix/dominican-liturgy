@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="la">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propria Missae — Ordo Praedicatorum</title>
+  <meta name="description" content="The chant propers of the Dominican Rite Mass from the Graduale O.P. (1950), drawn in square notation, for any day of the year.">
+  <link rel="stylesheet" href="versiculum.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site hide-print">
+    <div class="brand">
+      <span class="cross" aria-hidden="true">✠</span>
+      <div>
+        <div class="t1">Propria Missae</div>
+        <div class="t2">juxta ritum Sacri Ordinis Praedicatorum</div>
+      </div>
+    </div>
+    <nav>
+      <button type="button" id="btnPrint">Print / PDF</button>
+      <button type="button" id="btnShare">Share</button>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="pick hide-print" aria-label="Choose a Mass">
+    <div class="row">
+      <label for="date">Date</label>
+      <input type="date" id="date">
+      <button type="button" id="btnToday">Today</button>
+      <button type="button" id="btnNextSunday">Next Sunday</button>
+    </div>
+    <div id="dateResults" class="chips"></div>
+    <div class="row">
+      <label for="selMass">Mass</label>
+      <select id="selMass"></select>
+    </div>
+  </section>
+
+  <main id="mass"></main>
+
+  <footer class="hide-print">
+    Chants of the <i>Graduale juxta ritum Sacri Ordinis Praedicatorum</i> (1950) from
+    <a href="https://gregobase.selapa.net/source.php?id=14">GregoBase</a>; drawn with exsurge.
+    Built on the Propers tool of <a href="https://github.com/bbloomf/jgabc">jgabc</a>.
+  </footer>
+
+  <script src="js/exsurge.min.js"></script>
+  <script src="data/masses.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
