@@ -424,7 +424,10 @@ if os.path.exists('m39_fixes.json'):
     for k, parts in FX.get('parts', {}).items():
         for p, cid in parts.items():
             if k in masses:
-                masses[k]['parts'][p] = [{'id': cid, 'm39': True}]
+                ids = cid if isinstance(cid, list) else [cid]
+                if ids: masses[k]['parts'][p] = [{'id': c, 'm39': True} for c in ids]
+                else: masses[k]['parts'].pop(p, None)
+                if not ids and 'req' in masses[k]: masses[k]['req'] = [x for x in masses[k]['req'] if x != p]
     for k, rs in FX.get('readings', {}).items():
         if k in masses:
             masses[k]['readings'] = [{'type': t, 'ref': r, 'm39': True} for t, r in rs]
@@ -442,12 +445,13 @@ if os.path.exists('m39_fixes.json'):
             v = dict(v)
             parts = {p: [x['id'] for x in ids] for p, ids in src['parts'].items()}
             parts.update(v.get('parts', {}))
+            parts = {p: ids for p, ids in parts.items() if ids}
             v['parts'] = parts
             v.setdefault('req', list(src.get('req') or parts.keys()))
             v.setdefault('extras', list(src.get('extras') or []))
         masses[k] = {'title': v['title'], 'en': v['en'], 'page': v['page'], 'conf': v['conf'], 'note': v['note'],
                      'parts': {p: [{'id': i} for i in ids] for p, ids in v['parts'].items()}, 'extras': v.get('extras', []),
-                     'req': v['req'], 'jgabc': None, 'order': v.get('order'), 'prophecies': v.get('prophecies'), 'readings': [{'type': t, 'ref': r, 'm39': True} for t, r in v['readings']]}
+                     'req': v['req'], 'jgabc': None, 'order': v.get('order'), 'prophecies': v.get('prophecies'), 'ptr': v.get('ptr'), 'noAgnus': v.get('noAgnus'), 'readings': [{'type': t, 'ref': r, 'm39': True} for t, r in v['readings']]}
         for f_ in ('rank', 'month', 'day', 'name_en', 'color'):
             if f_ in v: masses[k][f_] = v[f_]
         masses[k]['season'] = {}
@@ -460,6 +464,13 @@ if os.path.exists('m39_fixes.json'):
                 if s_['id'] == v.get('section', 'tempore') and k not in s_['items']:
                     s_['items'].append(k)
                     if s_['id'] == 'sanctorum': s_['items'].sort(key=lambda kk: liturgical(kk))
+    for k, flds in FX.get('fields', {}).items():
+        if k in masses:
+            for f_, val in flds.items():
+                if val is None: masses[k].pop(f_, None)
+                else: masses[k][f_] = val
+            if flds.get('prophecies') or 'in' not in masses[k]['parts']:
+                masses[k]['req'] = [x for x in (masses[k].get('req') or []) if x in masses[k]['parts']]
     for k, r in FX.get('ranks', {}).items():
         if k in masses: masses[k]['rank'] = r
     for k, n in FX.get('notes', {}).items():
