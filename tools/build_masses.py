@@ -1,3 +1,4 @@
+import os
 """Assemble the site's data file (data/masses.js) from the aligned Temporale and Sanctorale.
 
 Every Mass lists its chants by part; each chant is a GregoBase ID of the Graduale O.P. (1950).
@@ -396,6 +397,41 @@ if 'Pasc6s' in masses:
         masses['Pasc6s']['parts']['al'] = [{'id': al[0]['id']}]
 if 'S0709' in masses and len(masses['S0709'].get('readings') or []) < 2:
     masses['S0709']['readings'] = [{'type': 'Epistle', 'ref': 'Ad Hebræos 10: 32-38', 'roman': True}, {'type': 'Gospel', 'ref': 'Lucas 21: 9-19', 'roman': True}]
+
+# ---- corrections from the Missale O.P. (1939), checked page by page (m39_fixes.json) ----
+def _normref(r):
+    """'Matthæus 5: 43-6,4' -> 'Matthæus 5: 43-48; 6: 1-4' style cross-chapter ranges; '1 Petri 5' -> 'Petri 1 5'."""
+    r = re.sub(r'^([1-4]) (Ad \w+|Petri|Joannis|Regum|Machabæorum|Paralipomenon)\b(.*)$', lambda m: m.group(2) + ' ' + m.group(1) + m.group(3), r.strip())
+    r = re.sub(r'^([1-4]) (Ad \w+) ', lambda m: m.group(2) + ' ' + m.group(1) + ' ', r)
+    m = re.match(r'^(.*?) (\d+): (\d+)-(\d+),(\d+)$', r)
+    if m and int(m.group(4)) < int(m.group(3)):
+        r = '%s %s: %s-99; %s: 1-%s' % (m.group(1), m.group(2), m.group(3), m.group(4), m.group(5))
+    r = re.sub(r'(\d+): (\d+)(\d\d)$', lambda m: '%s: %s-%s' % (m.group(1), m.group(2), m.group(3)) if int(m.group(2)) < int(m.group(3)) else m.group(0), r)
+    r = re.sub(r':(\d)', r': \1', r)
+    if '-99;' in r:
+        bk = re.match(r'^(.*?) \d+:', r).group(1); ch = int(re.search(r' (\d+): \d+-99;', r).group(1))
+        try:
+            last = max(int(l.split('\t')[1]) for l in open('site/bible/la/%s.txt' % bk, encoding='utf8') if l.split('\t')[0] == str(ch))
+            r = r.replace('-99;', '-%d;' % last)
+        except (OSError, ValueError):
+            pass
+    return r
+for M in masses.values():
+    for rd in M.get('readings') or []:
+        rd['ref'] = _normref(rd['ref'])
+if os.path.exists('m39_fixes.json'):
+    FX = json.load(open('m39_fixes.json'))
+    for k, parts in FX.get('parts', {}).items():
+        for p, cid in parts.items():
+            if k in masses:
+                masses[k]['parts'][p] = [{'id': cid, 'm39': True}]
+    for k, rs in FX.get('readings', {}).items():
+        if k in masses:
+            masses[k]['readings'] = [{'type': t, 'ref': r, 'm39': True} for t, r in rs]
+    for k, (la, en, mo, dy) in FX.get('titles', {}).items():
+        if k in masses:
+            masses[k].update(title='%d %s — %s' % (dy, MON[mo], la), en='%s %d — %s' % (MEN[mo], dy, en), name_en=en, month=mo, day=dy)
+            masses[k].pop('note', None)
 
 # ---- chants used -----------------------------------------------------------------
 chants = {}

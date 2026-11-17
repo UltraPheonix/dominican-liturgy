@@ -10,7 +10,7 @@ _o = sys.stdout; sys.stdout = io.StringIO()
 from build_temporale import groups
 sys.stdout = _o
 
-PAGES = os.environ.get('M39PAGES', 'sources/m39pages')
+PAGES = os.environ.get('M39PAGES', '/home/claude/dl/m39pages')
 NPDF = 463
 MONTHS = ['ianuarii', 'februarii', 'martii', 'aprilis', 'maii', 'iunii', 'iulii', 'augusti', 'septembris',
           'octobris', 'novembris', 'decembris']
