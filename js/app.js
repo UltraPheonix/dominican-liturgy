@@ -187,21 +187,28 @@
               var lines = score.createSvgNodeForEachLine(ctxt);
               if (lines && !lines.length && lines.nodeType) lines = [lines];
               container.innerHTML = '';
-              // exsurge defines its glyphs once, in the first line; give every line its own copy with
-              // its own names, so a line printed on another page still finds its clefs and neumes
-              var defs = null;
-              Array.prototype.forEach.call(lines, function (svg) { if (!defs) defs = svg.querySelector('defs'); });
+              // exsurge draws notes as references (<use>) to glyphs defined once, in the first line.
+              // Printing does not follow such references reliably, so every reference is replaced by a
+              // copy of the glyph itself: each line then carries its own notes, on screen and on paper.
+              var glyphs = {};
               Array.prototype.forEach.call(lines, function (svg) {
-                var uid = 'g' + (++glyphSeq) + '_';
-                var own = svg.querySelector('defs');
-                if (!own && defs) { own = defs.cloneNode(true); svg.insertBefore(own, svg.firstChild); }
-                if (own) Array.prototype.forEach.call(own.querySelectorAll('[id]'), function (n) { n.setAttribute('id', uid + n.getAttribute('id')); });
-                Array.prototype.forEach.call(svg.querySelectorAll('use'), function (u) {
-                  var h = u.getAttribute('xlink:href') || u.getAttribute('href');
-                  if (h && h.charAt(0) === '#') {
-                    u.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#' + uid + h.slice(1));
-                    u.setAttribute('href', '#' + uid + h.slice(1));
-                  }
+                Array.prototype.forEach.call(svg.querySelectorAll('defs [id]'), function (n) { glyphs[n.getAttribute('id')] = n; });
+              });
+              Array.prototype.forEach.call(lines, function (svg) {
+                Array.prototype.slice.call(svg.querySelectorAll('use')).forEach(function (u) {
+                  var h = u.getAttribute('xlink:href') || u.getAttribute('href') || '';
+                  var g = glyphs[h.replace(/^#/, '')];
+                  if (!g) { u.parentNode.removeChild(u); return; }
+                  var x = parseFloat(u.getAttribute('x')) || 0, y = parseFloat(u.getAttribute('y')) || 0;
+                  var wrap = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                  wrap.setAttribute('transform', 'translate(' + x + ',' + y + ')');
+                  if (u.getAttribute('class')) wrap.setAttribute('class', u.getAttribute('class'));
+                  if (u.getAttribute('fill')) wrap.setAttribute('fill', u.getAttribute('fill'));
+                  if (u.getAttribute('style')) wrap.setAttribute('style', u.getAttribute('style'));
+                  var copy = g.cloneNode(true);
+                  copy.removeAttribute('id');
+                  wrap.appendChild(copy);
+                  u.parentNode.replaceChild(wrap, u);
                 });
               });
               Array.prototype.forEach.call(lines, function (svg) {
@@ -453,7 +460,7 @@
     });
     ordSlot('it');
     if (!state.ord && !state.asp && !state.credo) {
-      main.appendChild(el('p', {class: 'note hide-print', id: 'ordinary'}, ['To add the Kyrie, Gloria, Credo, Sanctus and Agnus Dei, choose a Mass of the Kyriale under Options.']));
+      main.appendChild(el('p', {class: 'hint hide-print', id: 'ordinary'}, ['To add the Kyrie, Gloria, Credo, Sanctus and Agnus Dei, choose a Mass of the Kyriale under Options.']));
     }
     var src = {dm: 'Chants as assigned by the St. Dominic Missal (1959)', missal: 'Chants as given in the Missale O.P. (1939)',
       proper: 'Proper Mass of the Graduale O.P.', common: 'Common named by the Missale O.P. (1939)', guess: 'Common chosen from the saint\'s title: check the Ordo',
