@@ -293,6 +293,11 @@
         if (/^(7a|6a|5a)$/.test(key)) parts.tr = [];    // nor is the Tract said (XIII, 7)
       }
     }
+    if (key === 'C79s' && d) {
+      var md = (d.getMonth() + 1) * 100 + d.getDate(), fE = diffDays(d, easter(d.getFullYear()));
+      if (md >= 1225 || md <= 202) { parts.of = [{id: 8151}]; parts.co = [{id: 7543}]; }       // a Nativitate usque ad Purificationem
+      if (fE >= 39 && fE <= 48 && parts.al.length > 1) parts.al = [parts.al[0], {id: 5526}];  // tempore Ascensionis
+    }
     if (isEmber(key) && !/^Pent0/.test(key)) parts.al = [];
     if (isVigil(key) && !/^(Dec24|Jan5a)$/.test(key) && !(key === 'Dec24' && d && d.getDay() === 0)) parts.al = [];
     if (/Innocent/.test(titleText(key)) && d && d.getDay() !== 0) parts.al = [];
@@ -602,10 +607,19 @@
     return box;
   }
 
+  // readings that change with the season within one Mass
+  function seasonalReadings(key, d) {
+    if (key !== 'C79s' || !d) return null;
+    var md = (d.getMonth() + 1) * 100 + d.getDate(), fE = diffDays(d, easter(d.getFullYear()));
+    if (md >= 1225 || md <= 202) return [{type: 'Epistle', ref: 'Ad Titum 3: 4-7'}, {type: 'Gospel', ref: 'Lucas 2: 15-19'}];
+    if (fE >= 0 && fE <= 55) return [{type: 'Lesson', ref: 'Ecclesiasticus 24: 14-16'}, {type: 'Gospel', ref: 'Joannes 19: 25-27'}];
+    return null;
+  }
+
   // the order of the Mass: Introit, Kyrie, Gloria; the lessons, each followed by its gradual; after the Epistle
   // the Gradual, Alleluia or Tract and Sequence; the Gospel; Credo; Offertory; Sanctus, Agnus Dei; Communion; dismissal
   function massSequence(m, parts) {
-    var rs = m.readings || [], pre = rs.filter(function (r) { return r.type !== 'Gospel'; }), gos = rs.filter(function (r) { return r.type === 'Gospel'; });
+    var rs = seasonalReadings(state.key, state.date) || m.readings || [], pre = rs.filter(function (r) { return r.type !== 'Gospel'; }), gos = rs.filter(function (r) { return r.type === 'Gospel'; });
     var q = [], ch = function (p) { (parts[p] || []).forEach(function (c, i) { q.push({t: 'chant', p: p, i: i, c: c}); }); };
     var take = function (p, i) { var c = (parts[p] || [])[i]; if (c) q.push({t: 'chant', p: p, i: i, c: c}); };
     ch('in');
