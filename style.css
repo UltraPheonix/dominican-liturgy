@@ -256,3 +256,11 @@ button { cursor: pointer; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 @media (max-width: 960px) { .toc { display: none; } }
 .o-tr .ini { font-size: inherit; font-weight: inherit; float: none; line-height: inherit; color: inherit; }
+
+/* the Order of Mass */
+.part.ordo .o-rub { color: var(--rubric); font-style: italic; font-size: 15px; margin: 10px 0 4px; }
+.part.ordo .o-line { margin: 0 0 6px; }
+.part.ordo .o-line p { margin: 0; line-height: 1.5; }
+.part.ordo .o-line .la { font-size: 17px; }
+.part.ordo .o-line .en-text { color: var(--muted); font-size: 16px; }
+.part.ordo .o-mark { color: var(--rubric); }
