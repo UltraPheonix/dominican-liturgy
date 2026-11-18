@@ -1,0 +1,5420 @@
+[
+{
+"id": 0,
+"la": "Commemorátio Fratrum, Sorórum, Familiárium, Benefactórum defunctórum Ordinis nostri.",
+"n": 766,
+"w": "2026-11-01.Prima"
+},
+{
+"id": 1,
+"la": "Actiónes nostras, quǽsumus, Dómine, aspirándo prǽveni et adjuvándo proséquere: ut cuncta nostra orátio et operátio a te semper incípiat, et per te cœpta finiátur.",
+"n": 766,
+"w": "2026-11-01.Prima"
+},
+{
+"id": 2,
+"la": "Reguláribus disciplínis instruat nos Magíster caléstis.",
+"n": 319,
+"w": "2026-11-03.Prima"
+},
+{
+"id": 3,
+"la": "Diléctus Deo et homínibus, cujus memória in benedictióne est: símilem illum fecit in glória sanctórum.",
+"n": 275,
+"w": "2026-11-04.Laudes"
+},
+{
+"id": 4,
+"la": "℣. Justus germinábit sicut lílium.",
+"n": 236,
+"w": "2026-11-04.Laudes"
+},
+{
+"id": 5,
+"la": "℟. Et florébit in ætérnum ante Dóminum.",
+"n": 236,
+"w": "2026-11-04.Laudes"
+},
+{
+"id": 6,
+"la": "℟. Justus ut palma florébit * In domo Dómini.",
+"n": 184,
+"w": "2026-11-04.Nona"
+},
+{
+"id": 7,
+"la": "℟. Justum dedúxit Dóminus * Per vias rectas.",
+"n": 184,
+"w": "2026-11-04.Sexta"
+},
+{
+"id": 8,
+"la": "℣. Fiat misericórdia tua, Dómine, super nos.",
+"n": 163,
+"w": "2026-11-03.Laudes"
+},
+{
+"id": 9,
+"la": "℟. Quemádmodum sperávimus in te.",
+"n": 163,
+"w": "2026-11-03.Laudes"
+},
+{
+"id": 10,
+"la": "℣. In matutinis, Dómine, meditábor in te.",
+"n": 155,
+"w": "2026-11-03.Laudes"
+},
+{
+"id": 11,
+"la": "℟. Quia fuísti adjútor meus.",
+"n": 155,
+"w": "2026-11-03.Laudes"
+},
+{
+"id": 12,
+"la": "Ant. Allelúja. Resurréxit Dóminus, allelúja: sicut dixit vobis, allelúja, allelúja.",
+"n": 150,
+"w": "2027-03-28.Completorium"
+},
+{
+"id": 13,
+"la": "℣. Sicut cedrus Líbani multiplicábitur.",
+"n": 105,
+"w": "2026-11-04.Nona"
+},
+{
+"id": 14,
+"la": "℣. Elégit eam Deus, et præelégit eam.",
+"n": 102,
+"w": "2026-11-07.Laudes"
+},
+{
+"id": 15,
+"la": "℟. Et habitáre eam fecit in tabernáculo suo.",
+"n": 102,
+"w": "2026-11-07.Laudes"
+},
+{
+"id": 16,
+"la": "℟.br. Justus ut palma florébit * In domo Dómini.",
+"n": 92,
+"w": "2026-11-04.Nona"
+},
+{
+"id": 17,
+"la": "℟.br. Justum dedúxit Dóminus * Per vias rectas.",
+"n": 92,
+"w": "2026-11-04.Sexta"
+},
+{
+"id": 18,
+"la": "℟. Ut digni efficiámur promissióibus Christi.",
+"n": 88,
+"w": "2026-11-04.Laudes"
+},
+{
+"id": 19,
+"la": "Noctis tenébras détegis,",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 20,
+"la": "Lucísque lumen créderis,",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 21,
+"la": "Lumen beátum prǽdicans.",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 22,
+"la": "Precámur sancte Dómine,",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 23,
+"la": "Quiétam noctem tríbue.",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 24,
+"la": "Déxtera tua prótegat",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 25,
+"la": "Fámulos, qui te díligunt.",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 26,
+"la": "Defénsor noster áspice,",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 27,
+"la": "Insidiántes réprime,",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 28,
+"la": "Gubérna tuos fámulos,",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 29,
+"la": "Quos Sánguine mercátus es.",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 30,
+"la": "Meménto nostri, Dómine,",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 31,
+"la": "Qui es defénsor ánimæ,",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 32,
+"la": "Adésto nobis, Dómine.",
+"n": 80,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 33,
+"la": "℟. Resurréxit Dóminus, * Allelúja, allelúja.",
+"n": 72,
+"w": "2027-04-04.Tertia"
+},
+{
+"id": 34,
+"la": "℣. Coróna áurea super caput ejus.",
+"n": 67,
+"w": "2026-11-09.Laudes"
+},
+{
+"id": 35,
+"la": "℟. Expréssa signo sanctitátis.",
+"n": 67,
+"w": "2026-11-09.Laudes"
+},
+{
+"id": 36,
+"la": "℟. Ut digni efficiámur promissiónibus Christi.",
+"n": 65,
+"w": "2026-11-11.Laudes"
+},
+{
+"id": 37,
+"la": "Et non dicátis áliquid próprium: sed sint vobis ómnia commúnia. Et distribuátur unicuíque vestrum a præpósito vestro victus et teguméntum; non æquáliter ómnibus, quia non æquáliter valétis omnes: sed pótius unicuíque, prout cuique opus fúerit.",
+"n": 63,
+"w": "2026-11-03.Prima"
+},
+{
+"id": 38,
+"la": "Oratiónibus instáte horis et tempóribus constitútis. In oratório nemo áliquid agat, nisi ad quod factum est, unde et nomen accépit; ut si forte áliqui, étiam præter horas constitútas (si eis vacat) oráre volúerint, non eis sint impediménto qui ibi áliquid agéndum putáverint. Psalmis et hymnis cum orátis Deum: hoc versétur in corde, quod profértur in ore.",
+"n": 63,
+"w": "2026-12-09.Prima"
+},
+{
+"id": 39,
+"la": "℣. Excélsus super omnes gentes Dóminus.",
+"n": 59,
+"w": "2026-11-08.Laudes"
+},
+{
+"id": 40,
+"la": "María Mater grátiæ,",
+"n": 58,
+"w": "2026-11-07.Laudes"
+},
+{
+"id": 41,
+"la": "Carnem vestram domáte jejúniis et abstinéntia esce et potus: quantum valetúdo permíttit. Quanto autem áliquis non potest jejunáre; non tamen extra horam prándii áliquid alimentórum sumat: nisi cum ægrótat.",
+"n": 56,
+"w": "2026-11-13.Prima"
+},
+{
+"id": 42,
+"la": "Hæc ígitur sunt: qua: ut observétis præcípimus in monastério constitúti. Primum, propter quod in unum estis congregáti, ut unánimes habitétis in domo: et sit vobis ánima una et cor unum in Deo.",
+"n": 56,
+"w": "2026-11-16.Prima"
+},
+{
+"id": 43,
+"la": "Ant. Média vita in morte sumus: quem quǽrimus adjutórem, nisi te, Dómine, qui pro peccátis nostris juste irásceris? * Sancte Deus, Sancte fortis, Sancte et miséricors Salvátor, amáræ morti ne tradas nos.",
+"n": 56,
+"w": "2027-02-27.Completorium"
+},
+{
+"id": 44,
+"la": "Lites, aut nullas habeátis aut quam celérrime finiátis; ne ira crescat in ódium, et trabem fáciat de festúca et ánimam fáciat homicídam. Sic enim légitis. Qui odit fratrem suum: homicída est.",
+"n": 53,
+"w": "2026-11-26.Prima"
+},
+{
+"id": 45,
+"la": "Sancti per fidem vicérunt regna, operáti sunt justítiam, adépti sunt repromissiónes, in Christo Jesu Dómino nostro.",
+"n": 52,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 46,
+"la": "Ant. In tuo advéntu érue nos, Dómine.",
+"n": 52,
+"w": "2026-12-01.Nona"
+},
+{
+"id": 47,
+"la": "Ant. Tuam, Dómine, éxcite poténtiam, et veni ad salvándum nos.",
+"n": 52,
+"w": "2026-12-01.Sexta"
+},
+{
+"id": 48,
+"la": "℟. Bonum mihi, Dómine, quod humiliásti me.",
+"n": 52,
+"w": "2027-02-28.Tertia"
+},
+{
+"id": 49,
+"la": "℣. In mánibus portábunt te.",
+"n": 51,
+"w": "2027-02-14.Laudes"
+},
+{
+"id": 50,
+"la": "℟. Ne forte offéndas ad lápidem pedem tuum.",
+"n": 51,
+"w": "2027-02-14.Laudes"
+},
+{
+"id": 51,
+"la": "℣. Dicet Dómino: Suscéptor meus es tu.",
+"n": 51,
+"w": "2027-02-14.Tertia"
+},
+{
+"id": 52,
+"la": "℟. Sépties in die laudem dixi tibi, Dómine Deus meus.",
+"n": 50,
+"w": "2027-02-14.Nona"
+},
+{
+"id": 53,
+"la": "℟. Sancta María, Mater Christi, * Audi rogántes sérvulos.",
+"n": 48,
+"w": "2026-11-07.Tertia"
+},
+{
+"id": 54,
+"la": "Ant. O Rex glorióse inter Sanctos tuos, qui semper es laudábilis et tamen ineffábilis: tu in nobis es, Dómine, et nomen sanctum tuum invocátum est super nos: ne derelínquas nos Deus noster: ut in die judícii nos collocáre dignéris inter Sanctos et Eléctos tuos, Rex benedícte.",
+"n": 48,
+"w": "2027-03-13.Completorium"
+},
+{
+"id": 55,
+"la": "Non dicitur Qui tecum, neque Amen, neque Benedicámus Dómino, neque Fidélium.",
+"n": 44,
+"w": "2027-03-25.Completorium"
+},
+{
+"id": 56,
+"la": "Ant. Ave stella matutína, peccatórum medicína, mundi princeps et regína, sola Virgo digna dici: contra tela inimíci clipeum pone salútis, tuæ títulum virtútis. O sponsa Dei elécta, esto nobis via recta ad ætérna gáudia.",
+"n": 40,
+"w": "2026-11-07.Laudes"
+},
+{
+"id": 57,
+"la": "℣. Emítte Agnum, Dómine, dominatórem terræ.",
+"n": 40,
+"w": "2026-11-29.Laudes"
+},
+{
+"id": 58,
+"la": "℟. De Petra desérti ad montem fília Sion.",
+"n": 40,
+"w": "2026-11-29.Laudes"
+},
+{
+"id": 59,
+"la": "℟. Príncipes persecúti sunt me gratis, et a verbis tuis formidávit cor meum.",
+"n": 40,
+"w": "2027-03-14.Nona"
+},
+{
+"id": 60,
+"la": "℟. De ore leónis Líbera me, Dómine.",
+"n": 40,
+"w": "2027-03-14.Sexta"
+},
+{
+"id": 61,
+"la": "℟. Érue a frámea, Deus, ánimam meam.",
+"n": 40,
+"w": "2027-03-14.Tertia"
+},
+{
+"id": 62,
+"la": "Ant. Allelúja. Ascéndens Christus in altum, allelúja, captívam duxit captivitátem, allelúja, allelúja.",
+"n": 38,
+"w": "2027-05-05.Completorium"
+},
+{
+"id": 63,
+"la": "℟.br. Resurréxit Dóminus, * Allelúja, allelúja.",
+"n": 36,
+"w": "2027-04-04.Tertia"
+},
+{
+"id": 64,
+"la": "℣. Benedíctus qui venit in nómine Dómini.",
+"n": 31,
+"w": "2026-12-25.Nona"
+},
+{
+"id": 65,
+"la": "℟. Deus Dóminus, et illúxit nobis.",
+"n": 31,
+"w": "2026-12-25.Nona"
+},
+{
+"id": 66,
+"la": "℣. Et habitáre eam fecit in tabernáculo suo.",
+"n": 29,
+"w": "2026-11-07.Nona"
+},
+{
+"id": 67,
+"la": "℣. Ut digni efficiámur promissiónibus Christi.",
+"n": 29,
+"w": "2026-11-07.Sexta"
+},
+{
+"id": 68,
+"la": "℣. Et impetrátam nobis cælitus tu defer indulgéntiam.",
+"n": 29,
+"w": "2026-11-07.Tertia"
+},
+{
+"id": 69,
+"la": "Ant. Corde et ánimo Christo canámus glóriam, in hac sacra solemnitáte præcélsæ Genitrícis Dei Maríæ.",
+"n": 28,
+"w": "2026-12-08.Completorium"
+},
+{
+"id": 70,
+"la": "Ant. Evígila super nos, * ætérne Salvátor, ne nos apprehéndat cállidus tentátor, quia tu nobis factus es sempitérnus adjútor.",
+"n": 28,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 71,
+"la": "Ant. Evígila super nos, ætérne Salvátor, ne nos apprehéndat cállidus tentátor, quia tu nobis factus es sempitérnus adjútor.",
+"n": 28,
+"w": "2027-02-13.Completorium"
+},
+{
+"id": 72,
+"la": "℣. Ne projícias nos in témpore senectutis; cum defécerit virtus nostra, ne derelínquas nos, Dómine. Sancte Deus.",
+"n": 28,
+"w": "2027-02-27.Completorium"
+},
+{
+"id": 73,
+"la": "Ant. Allelúja. Spíritus Paráclitus, allelúja, docébit vos ómnia, allelúja, allelúja.",
+"n": 28,
+"w": "2027-05-15.Completorium"
+},
+{
+"id": 74,
+"la": "Ego quasi vitis fructificávi suavitátem odóris: et flores mei fructus honóris et honestátis.",
+"n": 27,
+"w": "2026-11-21.Laudes"
+},
+{
+"id": 75,
+"la": "℣. Declarátio sermónum tuórum dat intelléctum, Dómine.",
+"n": 26,
+"w": "2027-02-28.Nona"
+},
+{
+"id": 76,
+"la": "℟. Declára super nos, Deus:, tuam misericórdiam.",
+"n": 26,
+"w": "2027-02-28.Nona"
+},
+{
+"id": 77,
+"la": "* Da mihi intelléctum, Dómine.",
+"n": 26,
+"w": "2027-02-28.Sexta"
+},
+{
+"id": 78,
+"la": "℟. Da mihi intelléctum, Dómine.",
+"n": 26,
+"w": "2027-02-28.Sexta"
+},
+{
+"id": 79,
+"la": "* Bonum mihi lex oris tui super mília auri, et argénti.",
+"n": 26,
+"w": "2027-02-28.Tertia"
+},
+{
+"id": 80,
+"la": "℣. Manus tuæ fecérunt me, et plasmavérunt me: da mihi intelléctum, ut discam mandáta tua.",
+"n": 26,
+"w": "2027-02-28.Tertia"
+},
+{
+"id": 81,
+"la": "℟. Bonum mihi lex oris tui super mília auri, et argénti.",
+"n": 26,
+"w": "2027-02-28.Tertia"
+},
+{
+"id": 82,
+"la": "℟. Justus ut palma florébit in domo Dómini, * Alleluia, alleluia.",
+"n": 26,
+"w": "2027-04-21.Nona"
+},
+{
+"id": 83,
+"la": "℟. Justum dedúxit Dóminus per vias rectas, * Alleluia, alleluia.",
+"n": 26,
+"w": "2027-04-21.Sexta"
+},
+{
+"id": 84,
+"la": "℣. Errávi sicut ovis quæ períerat: * requíre servum tuum, Dómine, quia mandáta tua non sum oblítus.",
+"n": 25,
+"w": "2027-02-14.Nona"
+},
+{
+"id": 85,
+"la": "* Ut custódiam mandáta tua Dómine.",
+"n": 25,
+"w": "2027-02-14.Sexta"
+},
+{
+"id": 86,
+"la": "℣. A judíciis tuis non declinávi, quia tu legem posuísti mihi.",
+"n": 25,
+"w": "2027-02-14.Sexta"
+},
+{
+"id": 87,
+"la": "℟. Ut custódiam mandáta tua Dómine.",
+"n": 25,
+"w": "2027-02-14.Sexta"
+},
+{
+"id": 88,
+"la": "℟. Partícipem me fac, Deus, ómnium timéntium te.",
+"n": 25,
+"w": "2027-02-14.Tertia"
+},
+{
+"id": 89,
+"la": "* Et custodiéntium mandáta tua.",
+"n": 25,
+"w": "2027-02-14.Tertia"
+},
+{
+"id": 90,
+"la": "℣. Aspice in me, et miserére mei secúndum judícium diligéntium nomen tuum.",
+"n": 25,
+"w": "2027-02-14.Tertia"
+},
+{
+"id": 91,
+"la": "℟. Et custodiéntium mandáta tua.",
+"n": 25,
+"w": "2027-02-14.Tertia"
+},
+{
+"id": 92,
+"la": "℟. Partícipem me fac, Deus, ómnium timéntium te,",
+"n": 25,
+"w": "2027-02-14.Tertia"
+},
+{
+"id": 93,
+"la": "℣. Justus germinábit sicut lílium, alleluia.",
+"n": 25,
+"w": "2027-04-05.Laudes"
+},
+{
+"id": 94,
+"la": "℟. Et florébit in ætérnum ante Dóminum, alleluia.",
+"n": 25,
+"w": "2027-04-05.Laudes"
+},
+{
+"id": 95,
+"la": "℣. Sancta Dei Génetrix, semper Virgo María.",
+"n": 24,
+"w": "2026-11-07.Nona"
+},
+{
+"id": 96,
+"la": "℟. Intercéde pro nobis ad Dóminum, Deum nostrum.",
+"n": 24,
+"w": "2026-11-07.Nona"
+},
+{
+"id": 97,
+"la": "℟.br. Sancta María, Mater Christi, * Audi rogántes sérvulos.",
+"n": 24,
+"w": "2026-11-07.Tertia"
+},
+{
+"id": 98,
+"la": "℟. Audi rogántes sérvulos.",
+"n": 24,
+"w": "2026-11-07.Tertia"
+},
+{
+"id": 99,
+"la": "Donet Dóminus ut observétis hæc ómnia, tamquam spirituális pulchritúdinis amatóres; et bono Christi odóre de bona vestra conversatióne fragrántes: non sicut servi sub lege, sed sicut líberi sub grátia constitúti.",
+"n": 24,
+"w": "2026-12-05.Prima"
+},
+{
+"id": 100,
+"la": "Supplicatiónem servórum tuórum, Deus, miserátor exáudi: ut, qui in Solemnitáte Dei Genetrícis et Virginis congregámur, cius intercessiónibus a te de instántibus periculis eruámur.",
+"n": 24,
+"w": "2026-12-22.Laudes"
+},
+{
+"id": 101,
+"la": "Ant. Allelúja. Verbum caro factum est, allelúja, et habitávit in nobis, allelúia, allelúia.",
+"n": 24,
+"w": "2026-12-25.Completorium"
+},
+{
+"id": 102,
+"la": "℟. Ipse invocábit me, * Allelúja, allelúja.",
+"n": 24,
+"w": "2026-12-25.Nona"
+},
+{
+"id": 103,
+"la": "Glória tibi, Dómine,",
+"n": 24,
+"w": "2027-01-06.Laudes"
+},
+{
+"id": 104,
+"la": "℣. Eleváta est, magnificéntia tua, allelúja.",
+"n": 24,
+"w": "2027-05-05.Vespera"
+},
+{
+"id": 105,
+"la": "℟. Eleváta est, magnificéntia tua, * Allelúja, allelúja.",
+"n": 24,
+"w": "2027-05-06.Tertia"
+},
+{
+"id": 106,
+"la": "Adésto, Dómine, supplicatiónibus nostris: ut, qui ex iniquitáte nostra reos nos esse cognóscimus, beáti N. Mártyris tui intercessióne liberémur.",
+"n": 23,
+"w": "2027-01-15.Laudes"
+},
+{
+"id": 107,
+"la": "℟. Speciósa facta es * Et suávis.",
+"n": 22,
+"w": "2026-11-21.Nona"
+},
+{
+"id": 108,
+"la": "℟. Post partum, Virgo, * Invioláta permansísti.",
+"n": 22,
+"w": "2026-11-21.Sexta"
+},
+{
+"id": 109,
+"la": "℣. Inténde ánimæ meæ, et líbera eam.",
+"n": 20,
+"w": "2027-03-14.Laudes"
+},
+{
+"id": 110,
+"la": "℟. Propter inimícos meos éripe me.",
+"n": 20,
+"w": "2027-03-14.Laudes"
+},
+{
+"id": 111,
+"la": "* Lætábor ego super elóquia tua.",
+"n": 20,
+"w": "2027-03-14.Nona"
+},
+{
+"id": 112,
+"la": "℣. Quasi qui invénit spólia multa. Lætábor ego super elóquia tua.",
+"n": 20,
+"w": "2027-03-14.Nona"
+},
+{
+"id": 113,
+"la": "* Et a córnibus unicórnium humilitátem meam.",
+"n": 20,
+"w": "2027-03-14.Sexta"
+},
+{
+"id": 114,
+"la": "℣. Deliver, O God, my soul from the sword, my only one from the hand of the dog. Et a córnibus unicórnium humilitátem meam.",
+"n": 20,
+"w": "2027-03-14.Sexta"
+},
+{
+"id": 115,
+"la": "℣. Salva me ex ore leónis, et a córnibus unicórnium humilitátem meam. Et de manu canis únicam meam.",
+"n": 20,
+"w": "2027-03-14.Tertia"
+},
+{
+"id": 116,
+"la": "Ant. Animæ impiórum fremébant advérsum me: et gravátum est cor meum super eos.",
+"n": 20,
+"w": "2027-03-15.Prima"
+},
+{
+"id": 117,
+"la": "Ætérna Christi múnera",
+"n": 19,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 118,
+"la": "Et Mártyrum victórias,",
+"n": 19,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 119,
+"la": "Laudes feréntes débitas,",
+"n": 19,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 120,
+"la": "Lætis canámus méntibus.",
+"n": 19,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 121,
+"la": "Pænísque spretis córporis,",
+"n": 19,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 122,
+"la": "Vitam beátam póssident.",
+"n": 19,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 123,
+"la": "Tradúntur igni Mártyres",
+"n": 19,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 124,
+"la": "Et bestiárum déntibus:",
+"n": 19,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 125,
+"la": "Armáta sævit úngulis",
+"n": 19,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 126,
+"la": "Tortóris insáni manus.",
+"n": 19,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 127,
+"la": "Sed pérmanent immóbiles",
+"n": 19,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 128,
+"la": "Vitæ perénnis grátia.",
+"n": 19,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 129,
+"la": "℣. Elégit eam Deus, et præelégit eam, alleluia.",
+"n": 19,
+"w": "2027-04-05.Nona"
+},
+{
+"id": 130,
+"la": "℟. Et habitáre eam fecit in tabernáculo suo, alleluia.",
+"n": 19,
+"w": "2027-04-05.Nona"
+},
+{
+"id": 131,
+"la": "Deus, qui nos ánnua beáti Cleméntis Mártyris tui atque Pontíficis solemnitáte lætíficas: concéde propítius; ut cujus natalítia cólimus, virtútem quoque passiónis imitémur.",
+"n": 18,
+"w": "2026-11-23.Laudes"
+},
+{
+"id": 132,
+"la": "℣. Dedísti hereditátem.",
+"n": 18,
+"w": "2026-12-21.Laudes"
+},
+{
+"id": 133,
+"la": "℟. Timéntibus nomen tuum, Dómine.",
+"n": 18,
+"w": "2026-12-21.Laudes"
+},
+{
+"id": 134,
+"la": "Dómine, miserére.",
+"n": 18,
+"w": "2027-03-25.Laudes"
+},
+{
+"id": 135,
+"la": "Christus Dóminus factus est obédiens usque ad mortem.",
+"n": 18,
+"w": "2027-03-25.Laudes"
+},
+{
+"id": 136,
+"la": "Deus, qui Ecclésiám tuam beatórum Mártirum Hierónymi, Valentini, Francisci, Hyacínthi et sociórum sanguine fecundáre dignátus es: concéde propítius ut, quorum læti recolimus triúmphos, eórum précibus ac méritis adiuvémur.",
+"n": 17,
+"w": "2026-11-06.Laudes"
+},
+{
+"id": 137,
+"la": "℣. Intercéde pro nobis ad Dóminum Deum nostrum.",
+"n": 17,
+"w": "2026-11-21.Tertia"
+},
+{
+"id": 138,
+"la": "℣. In delíciis tuis, sancta Dei Génetrix.",
+"n": 16,
+"w": "2026-11-21.Nona"
+},
+{
+"id": 139,
+"la": "℣. Dei Génetrix, intercéde pro nobis.",
+"n": 16,
+"w": "2026-11-21.Sexta"
+},
+{
+"id": 140,
+"la": "Ant. Nésciens Mater Virgo virum, péperit sine dolóre Salvatórem sæculórum, ipsum Regem Angelórum sola Virgo lactábat úbere de cœlo pleno.",
+"n": 16,
+"w": "2026-12-26.Laudes"
+},
+{
+"id": 141,
+"la": "Ant. Eúntes in mundum univérsum prædicáte Evangélium omni creatúræ: qui credíderit et baptizátus fúerit, salvus erit, allelúja: qui vero non credíderit, condemnábitur, allelúja.",
+"n": 16,
+"w": "2027-05-08.Vespera"
+},
+{
+"id": 142,
+"la": "Qui timet Deum, fáciet bona: et qui cóntinens est justítiæ, apprehéndet illam, et obviábit illi quasi mater honorificáta.",
+"n": 15,
+"w": "2027-09-21.Laudes"
+},
+{
+"id": 143,
+"la": "Veni, redémptor géntium,",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 144,
+"la": "Osténde partum Vírginis:",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 145,
+"la": "Non ex viríli sémine,",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 146,
+"la": "Fructúsque ventris flóruit.",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 147,
+"la": "Alvus tuméscit Vírginis,",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 148,
+"la": "Claustrum pudóris pérmanet,",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 149,
+"la": "Vexílla virtútum micant,",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 150,
+"la": "Procédat e thálamo suo,",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 151,
+"la": "Pudóris aula régia,",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 152,
+"la": "Géminæ gigas substántiæ",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 153,
+"la": "Æquális ætérno Patri,",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 154,
+"la": "Infírma nostri córporis",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 155,
+"la": "Virtúte firmans pérpeti.",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 156,
+"la": "Fidéque jugi lúceat.",
+"n": 14,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 157,
+"la": "Deus, qui nobis nati Salvatóris diem celebráre concédis octávum: fac nos, quæsumus, eius perpétua divinitáte muníri, cuius sumus carnáli commércio reparáti:",
+"n": 14,
+"w": "2026-12-31.Vespera"
+},
+{
+"id": 158,
+"la": "Ant. In regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos, judicántes duódecim tribus Israël, dicit Dóminus.",
+"n": 14,
+"w": "2027-02-24.Vespera"
+},
+{
+"id": 159,
+"la": "℣. Emítte Spíritum tuum, et creabúntur, allelúja.",
+"n": 14,
+"w": "2027-05-16.Laudes"
+},
+{
+"id": 160,
+"la": "℟. Et renovábis fáciem terræ, allelúja.",
+"n": 14,
+"w": "2027-05-16.Laudes"
+},
+{
+"id": 161,
+"la": "Facta autem hac voce, convénit multitúdo, et mente confúsa est, quóniam audiébat unusquísque lingua sua illos loquéntes.",
+"n": 14,
+"w": "2027-05-16.Nona"
+},
+{
+"id": 162,
+"la": "Apparuérunt Apóstolis dispertítæ linguæ tamquam ignis, sedítque supra síngulos eórum Spíritus Sanctus.",
+"n": 14,
+"w": "2027-05-16.Sexta"
+},
+{
+"id": 163,
+"la": "Deus, qui Prædicatórum órđinem copiósa Sanctórum sóbole fecundare dignátus es, atque in ipsis heróica ómnium virtútum mérita sublímiter coronásti, da nobis illórum sequi vestígia: ut, quos hódie sub una celebritáte venerámur in terris, iis perpétua tandem festivitáte associémur in cælis.",
+"n": 13,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 164,
+"la": "Deus, qui beátum Albértum, Pontificem tuum atque Doctórem, in humana sapiéntia divínæ fidei subiciénda magnum effecisti: da nobis, quæsumus, ita ejus magistérii inhærére vestígiis, ut luce perfécta fruámur in cælis.",
+"n": 13,
+"w": "2026-11-15.Laudes"
+},
+{
+"id": 165,
+"la": "℣. Post partum, Virgo, invioláta permansísti.",
+"n": 13,
+"w": "2026-11-21.Tertia"
+},
+{
+"id": 166,
+"la": "℟. Dei Génetrix, intercéde pro nobis.",
+"n": 13,
+"w": "2026-11-21.Tertia"
+},
+{
+"id": 167,
+"la": "℟.br. Justus ut palma florébit in domo Dómini, * Alleluia, alleluia.",
+"n": 13,
+"w": "2027-04-21.Nona"
+},
+{
+"id": 168,
+"la": "℟.br. Justum dedúxit Dóminus per vias rectas, * Alleluia, alleluia.",
+"n": 13,
+"w": "2027-04-21.Sexta"
+},
+{
+"id": 169,
+"la": "Veneránda nobis, Dómine, hujus diéi festívitás opem cónferat salutárem, in qua sancta Dei Génatrix mortem súbiit temporálem, nec tamen mortis nélixibus déprimi pótuit, quæ Fílium tuum Dóminum nostrum de se génuít incarnátum:",
+"n": 13,
+"w": "2027-08-14.Vespera"
+},
+{
+"id": 170,
+"la": "Deus, humílium celsitúdo, qui beátum Martínum Confessórem tuum ad cæléstia regna transíre fecísti: ejus méritis et intercessióne concéde nos ejus humilitátem ita imitári in terris, ut cum ipso exaltári mereámur in cælis.",
+"n": 12,
+"w": "2026-11-05.Laudes"
+},
+{
+"id": 171,
+"la": "Cum Spíritu Paráclito,",
+"n": 12,
+"w": "2026-11-19.Laudes"
+},
+{
+"id": 172,
+"la": "Ant. Accínxit fortitúdine lumbos suos, et roborávit bráchium suum: gustávit, et vidit, quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus.",
+"n": 12,
+"w": "2026-11-19.Vespera"
+},
+{
+"id": 173,
+"la": "Festína, quǽsumus, Dómine, ne tardáveris: et auxílium nobis supérnæ virtútis impénde; ut advéntus tui consolatiónibus sublevéntur, qui in tua pietáte confídunt:",
+"n": 12,
+"w": "2026-12-16.Laudes"
+},
+{
+"id": 174,
+"la": "℟.br. Ipse invocábit me, * Allelúja, allelúja.",
+"n": 12,
+"w": "2026-12-25.Nona"
+},
+{
+"id": 175,
+"la": "Cunctos fidéles génerans.",
+"n": 12,
+"w": "2027-01-06.Laudes"
+},
+{
+"id": 176,
+"la": "Excépit formam hóminis:",
+"n": 12,
+"w": "2027-01-06.Laudes"
+},
+{
+"id": 177,
+"la": "Factúram morte rédimens,",
+"n": 12,
+"w": "2027-01-06.Laudes"
+},
+{
+"id": 178,
+"la": "Gáudia vitæ lárgiens.",
+"n": 12,
+"w": "2027-01-06.Laudes"
+},
+{
+"id": 179,
+"la": "Clarúmque nostris sénsibus",
+"n": 12,
+"w": "2027-01-06.Laudes"
+},
+{
+"id": 180,
+"la": "Noctem obscúram rémove:",
+"n": 12,
+"w": "2027-01-06.Laudes"
+},
+{
+"id": 181,
+"la": "Piam medélam tríbue.",
+"n": 12,
+"w": "2027-01-06.Laudes"
+},
+{
+"id": 182,
+"la": "Quem iam venísse nóvimus,",
+"n": 12,
+"w": "2027-01-06.Laudes"
+},
+{
+"id": 183,
+"la": "Tuum defénde pópulum.",
+"n": 12,
+"w": "2027-01-06.Laudes"
+},
+{
+"id": 184,
+"la": "Super te, Jerúsalem, oriétur Dóminus, et glória eius in te vidébitur. Et ambulábunt gentes in lúmine tuo, et reges in splendóre ortus tui.",
+"n": 12,
+"w": "2027-01-06.Sexta"
+},
+{
+"id": 185,
+"la": "Ant. Erunt primi novíssimi, et novíssimi primi: multi enim sunt vocáti, pauci vero elécti, dicit Dóminus.",
+"n": 12,
+"w": "2027-01-26.Vespera"
+},
+{
+"id": 186,
+"la": "Lætétur Ecclésia tua, Deus, beáti Ignatius Mártyris tui confísa suffrágiis: atque, ejus précibus gloriósis, et devóta permáneat et secúra consístat.",
+"n": 12,
+"w": "2027-02-01.Laudes"
+},
+{
+"id": 187,
+"la": "Præsta, quǽsumus, omnípotens Deus: ut nostræ mentis inténtio quo solemnitátis ventúræ gloriósus Auctor ingréssus est semper inténdat; et quo fide pergit, conversatióne perveniat.",
+"n": 12,
+"w": "2027-05-05.Laudes"
+},
+{
+"id": 188,
+"la": "℣. Ascéndo ad Patrem meum et Patrem vestrum, allelúja.",
+"n": 12,
+"w": "2027-05-06.Laudes"
+},
+{
+"id": 189,
+"la": "Mundána vincens gáudia.",
+"n": 12,
+"w": "2027-05-06.Laudes"
+},
+{
+"id": 190,
+"la": "Hinc te precántes quǽsumus,",
+"n": 12,
+"w": "2027-05-06.Laudes"
+},
+{
+"id": 191,
+"la": "Ignósce culpis ómnibus",
+"n": 12,
+"w": "2027-05-06.Laudes"
+},
+{
+"id": 192,
+"la": "Ad te supérna grátia.",
+"n": 12,
+"w": "2027-05-06.Laudes"
+},
+{
+"id": 193,
+"la": "Clarére nube Júdicis,",
+"n": 12,
+"w": "2027-05-06.Laudes"
+},
+{
+"id": 194,
+"la": "Pœnas repéllas débitas,",
+"n": 12,
+"w": "2027-05-06.Laudes"
+},
+{
+"id": 195,
+"la": "Reddas corónas pérditas.",
+"n": 12,
+"w": "2027-05-06.Laudes"
+},
+{
+"id": 196,
+"la": "Qui es futúrus prǽmium:",
+"n": 12,
+"w": "2027-05-06.Laudes"
+},
+{
+"id": 197,
+"la": "℟.br. Eleváta est, magnificéntia tua, * Allelúja, allelúja.",
+"n": 12,
+"w": "2027-05-06.Tertia"
+},
+{
+"id": 198,
+"la": "Ant. Rogábo Patrem meum, et álium Paráclitum dabit vobis, allelúja.",
+"n": 12,
+"w": "2027-05-13.Laudes"
+},
+{
+"id": 199,
+"la": "Præsta, quǽsumus, omnípotens Deus, ut claritátis tuæ super nos splendor effúlgeat, et lux tuæ lucis corda eórum, qui per grátiam tuam sunt renáti, Sancti Spíritus illustratióne confírmet.",
+"n": 12,
+"w": "2027-05-15.Laudes"
+},
+{
+"id": 200,
+"la": "Ant. Grátia super grátiam múlier sancta et pudorráta: omnis autem ponderátio non est digna continéntis ánimæ.",
+"n": 12,
+"w": "2027-07-26.Laudes"
+},
+{
+"id": 201,
+"la": "Deus, qui beátam Annam, Genetrícis tuæ matrem, ad cæléstis vitæ gáudia extulísti: fac nos, quæsumus, gloriósus ejus méritis ad ætérnam pertíngere beatitúdinem, ex cujus salutári puerpério pro salúte mundi humanam natúram assúmere dignátus es: Qui vivis.",
+"n": 12,
+"w": "2027-07-26.Laudes"
+},
+{
+"id": 202,
+"la": "Ant. Adest dies letítiæ, quo beátus Domínicus aulam cæléstis curim civis intrat magníficus.",
+"n": 12,
+"w": "2027-08-04.Laudes"
+},
+{
+"id": 203,
+"la": "Deus, qui beátum Hyacínthum, Confessórem tuum, in divérsis nationum pópulis óperum sanctitáte et miraculórum glória fecisti conspicuum: da nobis ut ejus in mélius reformémur exémples, et in advérsis protegámur auxiliis.",
+"n": 12,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 204,
+"la": "Præsta, quæsumus, Dómine, famíliæ tuæ supplicánti: ut, dum a cibis corporálibus se ábstinet, a vitiis quoque mente jejúnet.",
+"n": 12,
+"w": "2027-09-22.Laudes"
+},
+{
+"id": 205,
+"la": "Deus, qui beátum Raymúndum, Confessórem tuum, insígnem perfectiónis evangélicæ magístrum et apostólicæ auctoritátis fidélem assertórem esse voluísti: concéde propítius ut, ejus exémplo vivéntes in terris, cum ipso coronári mereámur in cælis.",
+"n": 12,
+"w": "2027-10-05.Laudes"
+},
+{
+"id": 206,
+"la": "Ant. Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem, fortitúdo et decor induméntum ejus, et ridébit in die novíssimo.",
+"n": 11,
+"w": "2026-11-19.Laudes"
+},
+{
+"id": 207,
+"la": "℟.br. Speciósa facta es * Et suávis.",
+"n": 11,
+"w": "2026-11-21.Nona"
+},
+{
+"id": 208,
+"la": "℟.br. Post partum, Virgo, * Invioláta permansísti.",
+"n": 11,
+"w": "2026-11-21.Sexta"
+},
+{
+"id": 209,
+"la": "℟. Invioláta permansísti.",
+"n": 11,
+"w": "2026-11-21.Sexta"
+},
+{
+"id": 210,
+"la": "℟.br. Sancta Dei Génitrix * Virgo semper María.",
+"n": 11,
+"w": "2026-11-21.Tertia"
+},
+{
+"id": 211,
+"la": "℟. Sancta Dei Génitrix * Virgo semper María.",
+"n": 11,
+"w": "2026-11-21.Tertia"
+},
+{
+"id": 212,
+"la": "℟. Virgo semper María Sancta Dei Génitrix,",
+"n": 11,
+"w": "2026-11-21.Tertia"
+},
+{
+"id": 213,
+"la": "Pro justítia agonizáre pro ánima tua, et usque ad mortem certa pro justítia.",
+"n": 11,
+"w": "2027-01-15.Nona"
+},
+{
+"id": 214,
+"la": "Custodívit illum ab inimícis, et a seductóribus tutávit illum, et certámen forte dedit illi, ut vínceret.",
+"n": 11,
+"w": "2027-01-15.Sexta"
+},
+{
+"id": 215,
+"la": "℟. Ut digni efficiámur promissióibus Christi, alleluia.",
+"n": 11,
+"w": "2027-04-21.Laudes"
+},
+{
+"id": 216,
+"la": "Largire nobis, clementissime Pater: ut, sicut beáta María Magdaléna, Dóminum nostrum Jesum Christum super ómnia diligendo, suorum obtinuit véniam peccatorum, ita nobis, apud misericórdiam tuam, sempitérnam impetret beatitúdinem.",
+"n": 11,
+"w": "2027-07-22.Laudes"
+},
+{
+"id": 217,
+"la": "Deus, qui beátum Joánnem Confessórem, grátiae tuæ ubertáte prævéntum, in húmili vitæ genere morum candóre florescere voluisti: da nobis, quæsumus, ita ejus vestigia pέρsequi, ut ad te puris mentibus pervenire mereámur.",
+"n": 11,
+"w": "2027-09-18.Laudes"
+},
+{
+"id": 218,
+"la": "Deus, qui beátum Ludovícum, Confessórem tuum, per córporis mortificatiónem et fidei præcónium Sanctórum glóriæ coæquásti: præsta ut, quod fide profitémur, pietáti opéribus júgiter impleámus.",
+"n": 11,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 219,
+"la": "Natúræ memor frágilis,",
+"n": 10,
+"w": "2026-11-19.Laudes"
+},
+{
+"id": 220,
+"la": "Te deprecámur, lárgius",
+"n": 10,
+"w": "2026-11-19.Laudes"
+},
+{
+"id": 221,
+"la": "Nostris ut adáuge sénsibus",
+"n": 10,
+"w": "2026-11-19.Laudes"
+},
+{
+"id": 222,
+"la": "Nescíre prorsus ómnia",
+"n": 10,
+"w": "2026-11-19.Laudes"
+},
+{
+"id": 223,
+"la": "Corruptiónis vúlnera.",
+"n": 10,
+"w": "2026-11-19.Laudes"
+},
+{
+"id": 224,
+"la": "Tibi, Patríque glória,",
+"n": 10,
+"w": "2026-11-19.Laudes"
+},
+{
+"id": 225,
+"la": "Qui audit me, non confundétur, et qui operántur in me, non peccábunt: qui elúcidant me, vitam ætérnam habébunt.",
+"n": 10,
+"w": "2026-11-21.Nona"
+},
+{
+"id": 226,
+"la": "Transíte ad me, omnes qui concupíscitis me, et a generatiónibus meis implémini: spíritus enim meus super mel dulcis, et hæréditas mea super mel et favum.",
+"n": 10,
+"w": "2026-11-21.Sexta"
+},
+{
+"id": 227,
+"la": "Concéde, quæsumus, omnipotens Deus: ut jejuniórum nobis sancta devótio et purificatiónem tribuat, et maiestáti tuæ nos reddat accéptos.",
+"n": 10,
+"w": "2027-03-04.Laudes"
+},
+{
+"id": 228,
+"la": "℟. Speciósa facta es et suávis, * Alleluia, alleluia.",
+"n": 10,
+"w": "2027-04-05.Nona"
+},
+{
+"id": 229,
+"la": "℟. Post partum, Virgo, invioláta permansísti, * Alleluia, alleluia.",
+"n": 10,
+"w": "2027-04-05.Sexta"
+},
+{
+"id": 230,
+"la": "℟. Sancta María, Mater Christi, audi rogántes sérvulos, * Alleluia, alleluia.",
+"n": 10,
+"w": "2027-04-10.Tertia"
+},
+{
+"id": 231,
+"la": "Præsta, quǽsumus, omnípotens Deus: ut, qui gloriósos Mártyres tuos N. et N. fortes in sua confessióne cognóvimus, pios apud te in nostra intercessióne sentiámus.",
+"n": 10,
+"w": "2027-07-10.Laudes"
+},
+{
+"id": 232,
+"la": "Infirmitátem nostram, quæsumus, Dómine, propítius réspice: et mala ómnia quæ juste merémur, sanctórum Mártyrum tuórum atque Pontíficum Cornelius and Cyprian intercessióne avérte.",
+"n": 10,
+"w": "2027-09-16.Laudes"
+},
+{
+"id": 233,
+"la": "Præsta, quæsumus, Dómine, sic nos ab épulis abstinére carnálibus, ut a vítiis irruéntibus páriter jejunémus.",
+"n": 10,
+"w": "2027-09-25.Laudes"
+},
+{
+"id": 234,
+"la": "℟. Stirps Jesse virgam prodúxit, virgáque florem:",
+"n": 9,
+"w": "2026-12-07.Vespera"
+},
+{
+"id": 235,
+"la": "Ant. Gaudeámus omnes fidéles, Salvátor noster natus est in mundo: hódie procéssit proles magnífici gérminis, et persevérat pudor virginitátis.",
+"n": 9,
+"w": "2026-12-26.Vespera"
+},
+{
+"id": 236,
+"la": "℣. Dómine diléxi decórem doums tuæ.",
+"n": 8,
+"w": "2026-11-09.Laudes"
+},
+{
+"id": 237,
+"la": "℟. Et locum habitatiónis glóriæ tuæ.",
+"n": 8,
+"w": "2026-11-09.Laudes"
+},
+{
+"id": 238,
+"la": "Fundaméntum enim áliud nemo potest pónere præter id quod pósitum est, quod est Christus Jesus.",
+"n": 8,
+"w": "2026-11-09.Nona"
+},
+{
+"id": 239,
+"la": "℣. Beáti, qui hábitant in domo tua, Dómine.",
+"n": 8,
+"w": "2026-11-09.Sexta"
+},
+{
+"id": 240,
+"la": "℟. In sæcula sæculórum laudábunt te.",
+"n": 8,
+"w": "2026-11-09.Sexta"
+},
+{
+"id": 241,
+"la": "Ant. Domum tuam, Dómine, decet sanctitúdo, qua in terris mícuit fratrum multitúdo.",
+"n": 8,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 242,
+"la": "Ant. Manum suam * apéruit ínopi, et palmas suas exténdit ad páuperem, fortitúdo et decor induméntum ejus, et ridébit in die novíssimo.",
+"n": 8,
+"w": "2026-11-19.Laudes"
+},
+{
+"id": 243,
+"la": "Ant. Lux de luce * apparuísti, Christ, cui Magi múnera ófferunt, allelúia, allelúia, allelúia.",
+"n": 8,
+"w": "2027-01-05.Completorium"
+},
+{
+"id": 244,
+"la": "Ant. Lux de luce apparuísti, Christ, cui Magi múnera ófferunt, allelúia, allelúia, allelúia.",
+"n": 8,
+"w": "2027-01-05.Completorium"
+},
+{
+"id": 245,
+"la": "Ant. Allelúja. Omnes de Saba vénient, allelúja: aurum et thus deferéntes, allelúja, allelúja.",
+"n": 8,
+"w": "2027-01-05.Completorium"
+},
+{
+"id": 246,
+"la": "℟. Et Jesus proficiébat sapiéntia et ætáte et grátia apud Deum et hómines.",
+"n": 8,
+"w": "2027-01-09.Vespera"
+},
+{
+"id": 247,
+"la": "Ant. Iste est qui pro lege Dei sui morti se trádidit: non dubitávit mori: ab iníquis interféctus est, et in ætérnum vivit cum Christo: Agnum secútus est, et accépit palmam.",
+"n": 8,
+"w": "2027-01-15.Vespera"
+},
+{
+"id": 248,
+"la": "In ómnibus exhibeámus nosmetípsos sicut Dei minístros, in multa patiéntia, in jejúniis multis, per arma justítiæ.",
+"n": 8,
+"w": "2027-02-14.Nona"
+},
+{
+"id": 249,
+"la": "Ant. Hæc autem scripta sunt, ut credátis quia Jesus est Christus Fílius Dei, et ut credéntes vitam habeátis in nómine ipsíus, allelúja.",
+"n": 8,
+"w": "2027-04-06.Vespera"
+},
+{
+"id": 250,
+"la": "℟. Ut digni efficiámur promissiónibus Christi, alleluia.",
+"n": 8,
+"w": "2027-04-20.Laudes"
+},
+{
+"id": 251,
+"la": "℣. Coróna áurea super caput ejus, alleluia.",
+"n": 8,
+"w": "2027-04-29.Laudes"
+},
+{
+"id": 252,
+"la": "℟. Expréssa signo sanctitátis, alleluia.",
+"n": 8,
+"w": "2027-04-29.Laudes"
+},
+{
+"id": 253,
+"la": "Ant. Iste est qui pro lege Dei sui morti se trádidit: non dubitávit mori: ab iníquis interféctus est, et in ætérnum vivit cum Christo: Agnum secútus est, et accépit palmam, alleluia.",
+"n": 8,
+"w": "2027-04-29.Vespera"
+},
+{
+"id": 254,
+"la": "℣. A summo cœlo egréssio ejus, allelúia.",
+"n": 8,
+"w": "2027-05-06.Laudes"
+},
+{
+"id": 255,
+"la": "℟. Et occúrsus ejus usque ad summum ejus, allelúia.",
+"n": 8,
+"w": "2027-05-06.Laudes"
+},
+{
+"id": 256,
+"la": "Ant. Allelúja. Panis quem ego dédero, allelúja, caro mea est pro mundi vita, allelúja, allelúja.",
+"n": 8,
+"w": "2027-05-26.Completorium"
+},
+{
+"id": 257,
+"la": "Ant. Hauriétis aquas in gáudio, allelúja, de fóntibus Salvatóris, allelúja, allelúja.",
+"n": 8,
+"w": "2027-06-03.Completorium"
+},
+{
+"id": 258,
+"la": "Ant. Sicut sol óriens mundo in altíssimis Dei, sic mulieris bonæ spécies in ornaméntum domus suæ.",
+"n": 8,
+"w": "2027-07-26.Laudes"
+},
+{
+"id": 259,
+"la": "Ant. Fundaménta ætérna supra petram sólidam, sic mandáta Dei in corde mulieris sanctæ.",
+"n": 8,
+"w": "2027-07-26.Laudes"
+},
+{
+"id": 260,
+"la": "Ant. Ædificátio civitátis confirmábit nomen, et super hanc múlier immaculáta computábitur.",
+"n": 8,
+"w": "2027-07-26.Laudes"
+},
+{
+"id": 261,
+"la": "Quasi stella matutína in médio nébulæ, et quasi luna plena in diébus suis lucet: et quasi sol refúlgens, sic ille effúlsit in templo Dei.",
+"n": 8,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 262,
+"la": "℟. Imple, Pater, quod dixísti, nos tuis juvans précibus.",
+"n": 8,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 263,
+"la": "Ant. Pauper in pecúlio, dives vita pura, paupertátis prétio cæli tenet jura.",
+"n": 8,
+"w": "2027-08-04.Laudes"
+},
+{
+"id": 264,
+"la": "Ant. Scala cælo próminens fratri revelátur, per quam Pater tránsiens sursum ferebátur.",
+"n": 8,
+"w": "2027-08-04.Laudes"
+},
+{
+"id": 265,
+"la": "Ant. Fulget in choro vírginum doctor veritátis, sertum honóris géminum gerens cum beátis,",
+"n": 8,
+"w": "2027-08-04.Laudes"
+},
+{
+"id": 266,
+"la": "Ant. Signo Crucis confrégit fluctus, quos eleváverunt flúmina in aquis multis.",
+"n": 8,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 267,
+"la": "Ant. In médio et in circúitu sedis Dei quátuor animália senas alas habéntia, óculis úndique plena, non cessant nocte ac die dicere: Sanctus, Sanctus, Sanctus Dóminus Deus omnipotens, qui erat, et qui est, et qui ventúrus est.",
+"n": 8,
+"w": "2027-09-21.Laudes"
+},
+{
+"id": 268,
+"la": "Ant. Tua sunt hæc, Christe, ópera, qui Sanctos tuos ita gloríficas, ut étiam dignitátis grátia in eis futúræ præíre mirácula fácias: tu insignes Evangélii prædicatóres animálium cæléstium admirábili figúra præsignásti: his namque cæléste munus collátum gloriósis indíciis es dignátus osténdere: hinc laus, hinc glória tibi résonet in sæcula.",
+"n": 8,
+"w": "2027-09-21.Vespera"
+},
+{
+"id": 269,
+"la": "Ant. Virgo María, non est tibi símilis nata in mundo inter mulíeres, florens un rosa, fragrans sicut lílium: ora pro nobis, sancta Dei Génetrix.",
+"n": 8,
+"w": "2027-10-06.Completorium"
+},
+{
+"id": 270,
+"la": "Obaudíte me, divíni fructus, et quasi rosa plantáta super rivos aquárum fructificáte. Quasi Líbanus odórem suavitátis habéte.",
+"n": 8,
+"w": "2027-10-06.Vespera"
+},
+{
+"id": 271,
+"la": "Ant. Pro denário vitæ æternæ ad laborándum in vinea tua me, Dómine, primo mane conduxísti.",
+"n": 8,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 272,
+"la": "* Et super hunc florem Requiéscit Spíritus almus.",
+"n": 7,
+"w": "2026-12-07.Vespera"
+},
+{
+"id": 273,
+"la": "℟. Et super hunc florem Requiéscit Spíritus almus.",
+"n": 7,
+"w": "2026-12-07.Vespera"
+},
+{
+"id": 274,
+"la": "℟. Requiéscit Spíritus almus.",
+"n": 7,
+"w": "2026-12-07.Vespera"
+},
+{
+"id": 275,
+"la": "Ant. Solemnitátem hodiérnam perpétuæ Vírginis Genetrícis Dei Maríæ solémniter celebrémus, qua celsitúdo throni procéssit, allelúja.",
+"n": 7,
+"w": "2026-12-22.Laudes"
+},
+{
+"id": 276,
+"la": "℟. Benedícens ergo illi, Noë ait: Nequáquam ultra maledícam terræ propter hóminem:",
+"n": 7,
+"w": "2027-01-30.Vespera"
+},
+{
+"id": 277,
+"la": "* Pax vobis, nolite timére: Pro salúte enim vestra misit me Dóminus ante vos.",
+"n": 7,
+"w": "2027-02-27.Vespera"
+},
+{
+"id": 278,
+"la": "℣. Elevavítque vocem cum fletu, quam audiérunt Ægypti omnísque domus Pharaónis. Et dixit frátribus suis.",
+"n": 7,
+"w": "2027-02-27.Vespera"
+},
+{
+"id": 279,
+"la": "℟. Pax vobis, nolite timére: Pro salúte enim vestra misit me Dóminus ante vos.",
+"n": 7,
+"w": "2027-02-27.Vespera"
+},
+{
+"id": 280,
+"la": "℟. Pro salúte enim vestra misit me Dóminus ante vos.",
+"n": 7,
+"w": "2027-02-27.Vespera"
+},
+{
+"id": 281,
+"la": "Ant. Hæc autem scripta sunt, * ut credátis quia Jesus est Christus Fílius Dei, et ut credéntes vitam habeátis in nómine ipsíus, allelúja.",
+"n": 7,
+"w": "2027-04-06.Vespera"
+},
+{
+"id": 282,
+"la": "Priúsquam te formárem in útero, novi te: et ántequam exíres de vulva, sanctificávi te, et prophétam in géntibus dedi te.",
+"n": 7,
+"w": "2027-06-23.Vespera"
+},
+{
+"id": 283,
+"la": "Omnípotens et misericors Deus, maiestatem tuam suppliciter exorámus: ut, sicut Unigénitum tuum per Visitationem et salutationem Genetrícis ejus púero clauso in útero revelásti, ita, méritis ejusdem Genetrícis et précibus, ipsum nos fácias reveláta facie perpétuo contemplári:",
+"n": 7,
+"w": "2027-07-02.Laudes"
+},
+{
+"id": 284,
+"la": "Quos præscívit et prædestinávit confórmes fieri imáginis Filii sui, ut sit ipse primogénitus in multis frátribus, hos et vocávit: et quos vocávit, hos et justificávit: quos autem justificávit, illos et glorificávit.",
+"n": 6,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 285,
+"la": "Sequéntia + sancti Evangélii secúndum ...",
+"n": 6,
+"w": "2026-11-12.Prima"
+},
+{
+"id": 286,
+"la": "Ant. Sustinúimus pacem, et non venit, Dómine: quæsívimus bona, et ecce turbátio: cognóvimus, Dómine, peccáta nostra; ne in ætérnum obliviscáris nos, Deus Israël.",
+"n": 6,
+"w": "2026-11-14.Vespera"
+},
+{
+"id": 287,
+"la": "Ant. Orémus omnes ad Dóminum Jesum Christum, ut confessóribus suis fontis venas apériat.",
+"n": 6,
+"w": "2026-11-23.Laudes"
+},
+{
+"id": 288,
+"la": "Ant. Invenérunt in modum templi marmórei habitáculum a Deo parátum.",
+"n": 6,
+"w": "2026-11-23.Vespera"
+},
+{
+"id": 289,
+"la": "℟. Et vocábitur Altíssimi Fílius.",
+"n": 6,
+"w": "2026-11-28.Vespera"
+},
+{
+"id": 290,
+"la": "Ant. Véterem hóminem * rénovans Salvátor venit ad baptísmum, ut natúram quæ corrúpta est, per aquam recuperáret: incorruptíbili veste circumamíctans nos.",
+"n": 6,
+"w": "2027-01-13.Laudes"
+},
+{
+"id": 291,
+"la": "Ant. Véterem hóminem rénovans Salvátor venit ad baptísmum, ut natúram quæ corrúpta est, per aquam recuperáret: incorruptíbili veste circumamíctans nos.",
+"n": 6,
+"w": "2027-01-13.Laudes"
+},
+{
+"id": 292,
+"la": "℟. Educ de cárcere ánimam meam,",
+"n": 6,
+"w": "2027-01-24.Nona"
+},
+{
+"id": 293,
+"la": "* Ut confiteátur nómini tuo, Dómine.",
+"n": 6,
+"w": "2027-01-24.Nona"
+},
+{
+"id": 294,
+"la": "℣. Périit fuga a me, et non est qui requírat ánimam meam.",
+"n": 6,
+"w": "2027-01-24.Nona"
+},
+{
+"id": 295,
+"la": "℟. Ut confiteátur nómini tuo, Dómine.",
+"n": 6,
+"w": "2027-01-24.Nona"
+},
+{
+"id": 296,
+"la": "℟. Educ de cárcere ánimam meam.",
+"n": 6,
+"w": "2027-01-24.Nona"
+},
+{
+"id": 297,
+"la": "℣. In te confirmátus sum ex útero: de ventre matris meæ tu es meus protéctor.",
+"n": 6,
+"w": "2027-01-24.Tertia"
+},
+{
+"id": 298,
+"la": "℣. Cumque sublevásset óculos, apparuérunt ei tres viri stantes juxta eum.",
+"n": 6,
+"w": "2027-02-06.Vespera"
+},
+{
+"id": 299,
+"la": "℟. Christus resúrgens ex mórtuis, jam non móritur, mors illi ultra non dominábitur:",
+"n": 6,
+"w": "2027-03-28.Vespera"
+},
+{
+"id": 300,
+"la": "* Quod enim vivit, vivit Deo, allelúja, allelúja.",
+"n": 6,
+"w": "2027-03-28.Vespera"
+},
+{
+"id": 301,
+"la": "℣. Dicant nunc Judæi quómodo mílites custodiéntes sepúlcrum perdidérunt Regem ad lápidis positiónem. Quare non servábant Petram justítia? Aut sepúltum reddant, aut resurgéntem adórent, nobiscum dicéntes.",
+"n": 6,
+"w": "2027-03-28.Vespera"
+},
+{
+"id": 302,
+"la": "℟. Quod enim vivit, vivit Deo, allelúja, allelúja.",
+"n": 6,
+"w": "2027-03-28.Vespera"
+},
+{
+"id": 303,
+"la": "Ant. Christus resúrgens ex mórtuis, jam non móritur, mors illi ultra non dominábitur: Quod enim vivit, vivit Deo, allelúja, allelúja.",
+"n": 6,
+"w": "2027-03-31.Vespera"
+},
+{
+"id": 304,
+"la": "Ant. Multa quidem * et ália signa fecit Jesus in conspéctu discipulórum suórum, allelúia, quæ non sunt scripta in libro hoc, allelúia.",
+"n": 6,
+"w": "2027-04-06.Laudes"
+},
+{
+"id": 305,
+"la": "Ant. Multa quidem et ália signa fecit Jesus in conspéctu discipulórum suórum, allelúia, quæ non sunt scripta in libro hoc, allelúia.",
+"n": 6,
+"w": "2027-04-06.Laudes"
+},
+{
+"id": 306,
+"la": "Ant. Ille me clarificábit, quia de meo accípiet, et annuntiábit vobis, allelúja.",
+"n": 6,
+"w": "2027-04-26.Vespera"
+},
+{
+"id": 307,
+"la": "Ant. Omnis qui petit áccipit: et qui quærit, ínvenit: et pulsánti aperiétur, allelúja.",
+"n": 6,
+"w": "2027-05-03.Vespera"
+},
+{
+"id": 308,
+"la": "Adésto sancta Trínitas,",
+"n": 6,
+"w": "2027-05-22.Vespera"
+},
+{
+"id": 309,
+"la": "Te caelórum milítia",
+"n": 6,
+"w": "2027-05-22.Vespera"
+},
+{
+"id": 310,
+"la": "Laudat, adórat, praédicat,",
+"n": 6,
+"w": "2027-05-22.Vespera"
+},
+{
+"id": 311,
+"la": "Tríplexque mundi máchina",
+"n": 6,
+"w": "2027-05-22.Vespera"
+},
+{
+"id": 312,
+"la": "Benedícit per saécula.",
+"n": 6,
+"w": "2027-05-22.Vespera"
+},
+{
+"id": 313,
+"la": "Te adorántes fámuli:",
+"n": 6,
+"w": "2027-05-22.Vespera"
+},
+{
+"id": 314,
+"la": "Vota precésque súpplicum",
+"n": 6,
+"w": "2027-05-22.Vespera"
+},
+{
+"id": 315,
+"la": "Alpha et Oméga quem dícimus,",
+"n": 6,
+"w": "2027-05-22.Vespera"
+},
+{
+"id": 316,
+"la": "Ant. Solémnitas gloriósæ * Vírginis Maríæ ex sémine Abrahæ, ortæ de tribu Juda, clara ex stirpe David.",
+"n": 6,
+"w": "2027-05-31.Laudes"
+},
+{
+"id": 317,
+"la": "Ant. Solémnitas gloriósæ Vírginis Maríæ ex sémine Abrahæ, ortæ de tribu Juda, clara ex stirpe David.",
+"n": 6,
+"w": "2027-05-31.Laudes"
+},
+{
+"id": 318,
+"la": "Quæsumus, omnipotens Deus: ut beátus Bárnabas Apóstolus tuum pro nobis implóret auxílium; ut, a nostris reátibus absolúti, a cunctis étiam perículis eruámur.",
+"n": 6,
+"w": "2027-06-11.Laudes"
+},
+{
+"id": 319,
+"la": "Deus, qui beatórum Mártyrum tuórum Joánnis et sociórum ejus gloriósum pro fide tua certámen æternitátis láurea decorásti: concéde propítius ut, eórum méritis et imitatione certátes in terris, cum ipsis coronári mereámur in cælis.",
+"n": 6,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 320,
+"la": "Ant. Láudibus excélsis omnis mundus exsúltet in solemnitáte sanctæ Mariæ Magdalænæ.",
+"n": 6,
+"w": "2027-07-22.Laudes"
+},
+{
+"id": 321,
+"la": "℣. Ora pro nobis, beáte Domínice.",
+"n": 6,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 322,
+"la": "Ipse est diréctus divínitus in pœniténtiam gentis, et tulit abominatiónes impietátis. Et gubernávit ad Dóminum cor ipsíus, et in diébus peccatórum corroborávit pietátem.",
+"n": 6,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 323,
+"la": "Et nos Hyacínthi précibus",
+"n": 6,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 324,
+"la": "Deus, qui nos beatórum tuórum Alfónsi et sociórum ejus triúmpho lætificas: da nobis, quæsumus, córum méritis et intercessióne, eándem in fide constántiam, et in ópere effacíam.",
+"n": 6,
+"w": "2027-09-10.Laudes"
+},
+{
+"id": 325,
+"la": "Cívibus summis gáudium sit Angelis,",
+"n": 6,
+"w": "2027-09-14.Laudes"
+},
+{
+"id": 326,
+"la": "Ant. Dum commítteret * bellum draco cum Michaéle Archángelo, audíta est vox míllia míllium dicéntium: Salus Deo nostro.",
+"n": 6,
+"w": "2027-09-28.Vespera"
+},
+{
+"id": 327,
+"la": "Ant. Dum commítteret bellum draco cum Michaéle Archángelo, audíta est vox míllia míllium dicéntium: Salus Deo nostro.",
+"n": 6,
+"w": "2027-09-28.Vespera"
+},
+{
+"id": 328,
+"la": "Ant. Mirábilem in altis Dóminum, Ludovice, dum affáris, repénte silent mirábiles elatiónes maris.",
+"n": 6,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 329,
+"la": "Quia postulásti tibi sapiéntiam, ecce feci tibi secúndum sermónes tuos, et dedi tibi cor sápiens et intéllegens.",
+"n": 6,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 330,
+"la": "Deus, qui gloriósam Matrem tuam nominári Mariám voluisti: concéde, quæsumus, ut, qui dulce Mariæ nomen implórant, perpétuum sésentiant suæ benedictionis auxílium:",
+"n": 6,
+"w": "2028-09-12.Laudes"
+},
+{
+"id": 331,
+"la": "℟. Ut digni eficiámur promissiónibus Christi.",
+"n": 5,
+"w": "2026-11-01.Laudes"
+},
+{
+"id": 332,
+"la": "Ant. Loquénte Jesu ad turbas, ecce princeps unus accéssit et adorábat eum dicens: Dómine, fília mea modo defúncta est; sed veni, impóne manum tuam super eam, et vivet, allelúja.",
+"n": 5,
+"w": "2026-11-01.Laudes"
+},
+{
+"id": 333,
+"la": "Ant. Confíde fília, fides tua te salvam fecit. Et sanáta est múlier ex illa hora, allelúja.",
+"n": 5,
+"w": "2026-11-01.Vespera"
+},
+{
+"id": 334,
+"la": "Ant. Dóminus, Deus Israël, eréxit cornu salútis nobis in domo Domínici púeri sui, ut serviámus illi in sanctitáte et justitia coram ipso ómnibus diébus nostris.",
+"n": 5,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 335,
+"la": "Ant. Austeritáte vitæ, oratiónis devotióne, amóre fraternitátis, doctrinæ effusióne, Albértus glorificávit Dóminum.",
+"n": 5,
+"w": "2026-11-15.Laudes"
+},
+{
+"id": 336,
+"la": "secúndum Matthǽum",
+"n": 5,
+"w": "2026-12-11.Prima"
+},
+{
+"id": 337,
+"la": "℟.br. Speciósa facta es et suávis, * Alleluia, alleluia.",
+"n": 5,
+"w": "2027-04-05.Nona"
+},
+{
+"id": 338,
+"la": "℟.br. Post partum, Virgo, invioláta permansísti, * Alleluia, alleluia.",
+"n": 5,
+"w": "2027-04-05.Sexta"
+},
+{
+"id": 339,
+"la": "℟.br. Sancta Dei Génitrix virgo semper María, * Alleluia, alleluia.",
+"n": 5,
+"w": "2027-04-05.Tertia"
+},
+{
+"id": 340,
+"la": "℟. Sancta Dei Génitrix virgo semper María, * Alleluia, alleluia.",
+"n": 5,
+"w": "2027-04-05.Tertia"
+},
+{
+"id": 341,
+"la": "℣. Sancta Dei Génetrix, semper Virgo María, alleluia.",
+"n": 5,
+"w": "2027-04-10.Nona"
+},
+{
+"id": 342,
+"la": "℟. Intercéde pro nobis ad Dóminum, Deum nostrum, alleluia.",
+"n": 5,
+"w": "2027-04-10.Nona"
+},
+{
+"id": 343,
+"la": "℟.br. Sancta María, Mater Christi, audi rogántes sérvulos, * Alleluia, alleluia.",
+"n": 5,
+"w": "2027-04-10.Tertia"
+},
+{
+"id": 344,
+"la": "Ant. Tristítia implévit * cor vestrum: et gáudium vestrum nemo tollet a vobis, allelúja, allelúja.",
+"n": 5,
+"w": "2027-04-19.Vespera"
+},
+{
+"id": 345,
+"la": "Ant. Tristítia implévit cor vestrum: et gáudium vestrum nemo tollet a vobis, allelúja, allelúja.",
+"n": 5,
+"w": "2027-04-19.Vespera"
+},
+{
+"id": 346,
+"la": "Ant. Ille me clarificábit, * quia de meo accípiet, et annuntiábit vobis, allelúja.",
+"n": 5,
+"w": "2027-04-26.Vespera"
+},
+{
+"id": 347,
+"la": "In médio Ecclésiæ apéruit os ejus, et implévit illum Dóminus spíritu sapiéntiæ et intelléctus, et stolam glóriæ índuit eum.",
+"n": 5,
+"w": "2027-09-21.Nona"
+},
+{
+"id": 348,
+"la": "Cibávit illum pane vitæ et intelléctus, et aqua sapiéntiæ salutáris potávit illum Dóminus, Deus noster.",
+"n": 5,
+"w": "2027-09-21.Sexta"
+},
+{
+"id": 349,
+"la": "Vidi álterum Angelum volántem per médium cæli, habéntem Evangélium ætérnum, ut evangelizáret sedéntibus super terram et super omnem gentem.",
+"n": 5,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 350,
+"la": "Deus, qui beátæ Joánnæ fámulæ tuæ grátiam supérnæ vocatiónis filii sui Domínici mirábiliter ostendisti: quæsumus ut, ipsam præmonstrátumque filium imitátes, pio utriúsque intervéntu ætéerna præmia consequámur.",
+"n": 5,
+"w": "2028-08-08.Laudes"
+},
+{
+"id": 351,
+"la": "Ant. Stant in conspéctu Dómini in exsultatíone, quos ordo hic exércuit múltiplici agóne.",
+"n": 4,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 352,
+"la": "Ant. Laborávit in terra desérta, ínvia et inaquósa: quiéscit nunc in pátria, cælórum tenens átria, phalanx religiósa.",
+"n": 4,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 353,
+"la": "Ant. Benedícunt spíritus et ánimæ justórum Dómino: sancti et húmiles corde laudant et superexáltant eum in sæcula.",
+"n": 4,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 354,
+"la": "Ant. Aquæ omnes, quæ super cælos sunt, et cæli cælórum laudent Dóminum in Sanctis ejus, quos progénuit ordo Prædicatórum.",
+"n": 4,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 355,
+"la": "Ant. Sanctos suos magnificávit Dóminus in salutári suo: ecce enim ex hoc beátos illos dicent omnes generatiónes.",
+"n": 4,
+"w": "2026-11-12.Vespera"
+},
+{
+"id": 356,
+"la": "Ant. Ite, et dicíte Joánni: Cæci vident et surdi áudiunt: claudi ámbulantur, leprósi mundántur.",
+"n": 4,
+"w": "2026-12-06.Vespera"
+},
+{
+"id": 357,
+"la": "In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? At illi dixérunt: Alii Joánnem Baptístam, alii autem Elíam, álii vero Jeremíam, aut unum ex prophétis. Dicit illis Jesus: Vos autem quem me esse dícitis? Respóndens Simon Petrus, dixit: Tu es Christus, Fílius Dei vivi. Respóndens autem Jesus, dixit ei: Beátus es, Simon Bar Jona: quia caro et sanguis non revelávit tibi, sed Pater meus, qui in cœlis est. Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam. Et tibi dabo claves regni cœlórum. Et quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis.",
+"n": 4,
+"w": "2026-12-11.Prima"
+},
+{
+"id": 358,
+"la": "Ant. Quómodo fiet istud, Angele Dei, quia virum in concipiéndo non pértuli? Audi, María, Virgo Christi: Spíritus Sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi.",
+"n": 4,
+"w": "2026-12-16.Vespera"
+},
+{
+"id": 359,
+"la": "Ant. Omnis vallis implébitur, et omnis mons et collis humiliábitur: et vidébit omnis caro salutáre Dei.",
+"n": 4,
+"w": "2026-12-19.Laudes"
+},
+{
+"id": 360,
+"la": "Propter Sion non tacébo, et propter Jerúsalem non quiéscam, donec egrediátur ut splendor justus ejus, et salvátor ejus ut lampas accendátur.",
+"n": 4,
+"w": "2026-12-24.Laudes"
+},
+{
+"id": 361,
+"la": "Ant. Gaudeámus omnes fidéles, * Salvátor noster natus est in mundo: hódie procéssit proles magnífici gérminis, et persevérat pudor virginitátis.",
+"n": 4,
+"w": "2026-12-29.Vespera"
+},
+{
+"id": 362,
+"la": "℟. Descéndit Jesus cum paréntibus, et venit Názareth: et erat súbditus illis. Et Mater ejus conservábat ómnia verba hæc in corde suo.",
+"n": 4,
+"w": "2027-01-09.Vespera"
+},
+{
+"id": 363,
+"la": "* Et Jesus proficiébat sapiéntia et ætáte et grátia apud Deum et hómines.",
+"n": 4,
+"w": "2027-01-09.Vespera"
+},
+{
+"id": 364,
+"la": "℣. Honóra patrem tuum et matrem tuam: sic præcéperat Dóminus Deus in Lege Móysi, et ita in Fílio suo exémplum nobis præbuit.",
+"n": 4,
+"w": "2027-01-09.Vespera"
+},
+{
+"id": 365,
+"la": "Ant. Te, qui in spíritu * et igne puríficas humána contágia, Deum et Redemptórem omnes glorificámus.",
+"n": 4,
+"w": "2027-01-13.Laudes"
+},
+{
+"id": 366,
+"la": "Ant. Te, qui in spíritu et igne puríficas humána contágia, Deum et Redemptórem omnes glorificámus.",
+"n": 4,
+"w": "2027-01-13.Laudes"
+},
+{
+"id": 367,
+"la": "Ant. Baptísta cóntremit, * et non audet tángere sanctum Dei vérticem, sed clamat cum tremóre: Sanctífica me, Salvátor.",
+"n": 4,
+"w": "2027-01-13.Laudes"
+},
+{
+"id": 368,
+"la": "Ant. Baptísta cóntremit, et non audet tángere sanctum Dei vérticem, sed clamat cum tremóre: Sanctífica me, Salvátor.",
+"n": 4,
+"w": "2027-01-13.Laudes"
+},
+{
+"id": 369,
+"la": "Ant. Magnum mystérium * declarátur hódie, quia Creátor ómnium in Jordáne expúrgat nostra facínora.",
+"n": 4,
+"w": "2027-01-13.Laudes"
+},
+{
+"id": 370,
+"la": "Ant. Magnum mystérium declarátur hódie, quia Creátor ómnium in Jordáne expúrgat nostra facínora.",
+"n": 4,
+"w": "2027-01-13.Laudes"
+},
+{
+"id": 371,
+"la": "Ant. In matutinis, Dómine, meditábor in te, quia factus adjútor meus.",
+"n": 4,
+"w": "2027-02-07.Laudes"
+},
+{
+"id": 372,
+"la": "Ant. Benedicámus Patrem et Fílium in sǽcula cum Sancto Spíritu.",
+"n": 4,
+"w": "2027-02-07.Laudes"
+},
+{
+"id": 373,
+"la": "Ant. Pater Abraham, miserére mei, et mitte Lázarum ut intíngat extrémum dígiti sui in aquam, ut refrigeret linguam meam.",
+"n": 4,
+"w": "2027-02-25.Laudes"
+},
+{
+"id": 374,
+"la": "Ant. Abiit Jesus trans mare Galilǽæ, quod est Tiberíadis: et sequebátur eum multitúdo magna, quia vidébant signa, quæ faciébat super his qui infirmabántur. Súbiit ergo in montem Jesus et ibi sedébat cum discípulis suis. Erat autem próximum Pascha dies festus Judæórum.",
+"n": 4,
+"w": "2027-03-07.Laudes"
+},
+{
+"id": 375,
+"la": "Ant. Quis ex vobis árguet me de peccáto? Si veritátem dico vobis, quare non créditis mihi? Qui ex Deo est, verba Dei audit: proptérea vos non audítis, quia ex Deo non estis.",
+"n": 4,
+"w": "2027-03-14.Laudes"
+},
+{
+"id": 376,
+"la": "Ant. Occúrrunt turbæ cum flóribus et palmis Redemptóri óbviam, et victóri triumphánti digna dant obséquia: Filium Dei ore gentes prǽdicant, et in laudem Christi voces tonant per núbila: Hosánna!",
+"n": 4,
+"w": "2027-03-21.Nona"
+},
+{
+"id": 377,
+"la": "℣. Qui passúrus advenísti propter nos.",
+"n": 4,
+"w": "2027-03-25.Laudes"
+},
+{
+"id": 378,
+"la": "℣. Qui, expánsis in cruce mánibus, traxísti ómnia ad te sǽcula.",
+"n": 4,
+"w": "2027-03-25.Laudes"
+},
+{
+"id": 379,
+"la": "℣. Qui prophétice prompsísti: Ero mors tua, o mors!",
+"n": 4,
+"w": "2027-03-25.Laudes"
+},
+{
+"id": 380,
+"la": "Ant. Nonne sit opórtuit pati Christum, et intráre in glóriam suam? Allelúja.",
+"n": 4,
+"w": "2027-03-29.Vespera"
+},
+{
+"id": 381,
+"la": "Ant. Corde et ánimo Christo canámus glóriam, in hac sacra solemnitáte præcélsæ Genitrícis Dei Maríæ, alleluia.",
+"n": 4,
+"w": "2027-04-05.Completorium"
+},
+{
+"id": 382,
+"la": "Ant. Adhuc multa hábeo * vobis dícere, sed non potéstis portáre modo: cum autem vénerit ille Spíritus veritátis, docébit vos omnem veritátem, allelúja.",
+"n": 4,
+"w": "2027-04-26.Laudes"
+},
+{
+"id": 383,
+"la": "Ant. Adhuc multa hábeo vobis dícere, sed non potéstis portáre modo: cum autem vénerit ille Spíritus veritátis, docébit vos omnem veritátem, allelúja.",
+"n": 4,
+"w": "2027-04-26.Laudes"
+},
+{
+"id": 384,
+"la": "Ant. Accínxit fortitúdine lumbos suos, et roborávit bráchium suum: gustávit, et vidit, quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus, alleluia.",
+"n": 4,
+"w": "2027-05-04.Vespera"
+},
+{
+"id": 385,
+"la": "Ant. Ascéndens Christus in altum, captívam duxit captivitátem, dedit dona homínibus, allelúja.",
+"n": 4,
+"w": "2027-05-05.Vespera"
+},
+{
+"id": 386,
+"la": "Ant. Solemnitátem hodiérnam * perpétuæ Vírginis Genetrícis Dei Maríæ solémniter celebrémus, qua celsitúdo throni procéssit, allelúja.",
+"n": 4,
+"w": "2027-05-08.Laudes"
+},
+{
+"id": 387,
+"la": "Ant. Si dilígitis me, mandáta mea serváte, allelúja, allelúja, allelúja.",
+"n": 4,
+"w": "2027-05-15.Laudes"
+},
+{
+"id": 388,
+"la": "Ant. Veni Sancte Spíritus: reple tuórum corda fidélium, et tui amóris in eis ignem accénde: qui per diversitátem linguárum multárum gentes in unitáte fídei congregásti, allelúia, allelúia, allelúia.",
+"n": 4,
+"w": "2027-05-15.Vespera"
+},
+{
+"id": 389,
+"la": "Ant. Véspere autem facto, cum sol occidísset, veniébant ad Jesum omnes male habéntes: at ille, síngulis manus impónens, curábat eos, allelúja.",
+"n": 4,
+"w": "2027-05-22.Laudes"
+},
+{
+"id": 390,
+"la": "Ant. Solémnitas est hódie * sanctæ Maríæ Vírginis, cujus vita ínclita cunctas illústrat ecclésias.",
+"n": 4,
+"w": "2027-05-31.Laudes"
+},
+{
+"id": 391,
+"la": "Ant. Solémnitas est hódie sanctæ Maríæ Vírginis, cujus vita ínclita cunctas illústrat ecclésias.",
+"n": 4,
+"w": "2027-05-31.Laudes"
+},
+{
+"id": 392,
+"la": "Ant. Regáli ex progénie * María exórta refúlget.",
+"n": 4,
+"w": "2027-05-31.Laudes"
+},
+{
+"id": 393,
+"la": "Ant. Regáli ex progénie María exórta refúlget.",
+"n": 4,
+"w": "2027-05-31.Laudes"
+},
+{
+"id": 394,
+"la": "Ant. Cum jucunditáte * Solemnitátem beátæ Maríæ celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.",
+"n": 4,
+"w": "2027-05-31.Laudes"
+},
+{
+"id": 395,
+"la": "Ant. Cum jucunditáte Solemnitátem beátæ Maríæ celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.",
+"n": 4,
+"w": "2027-05-31.Laudes"
+},
+{
+"id": 396,
+"la": "Ant. Laudáte Dóminum, quóniam confirmáta est super nos misericórdia ejus.",
+"n": 4,
+"w": "2027-06-03.Vespera"
+},
+{
+"id": 397,
+"la": "Ant. Beáti Mártires Christi Joánnés et Paulus dixérunt Juliáno: Nobis álius non est nisi unus Deus, Pater et Fílius et Spíritus Sanctus , alleluia.",
+"n": 4,
+"w": "2027-06-26.Laudes"
+},
+{
+"id": 398,
+"la": "℟. Cornélius Centúrio, vir religiósus, ac timens Deum, vidit maniféste Angelum Dei dicéntem sibi:",
+"n": 4,
+"w": "2027-06-28.Vespera"
+},
+{
+"id": 399,
+"la": "* Cornéli, mitte et accérsi Simónem, qui cognominátur Petrus; hic dicet tibi quid te opórteat fácere.",
+"n": 4,
+"w": "2027-06-28.Vespera"
+},
+{
+"id": 400,
+"la": "℣. Cum orásset Cornélius, nondum in Christo renátus, appáruit ei Angelus, dicens:",
+"n": 4,
+"w": "2027-06-28.Vespera"
+},
+{
+"id": 401,
+"la": "℟. Cornéli, mitte et accérsi Simónem, qui cognominátur Petrus; hic dicet tibi quid te opórteat fácere.",
+"n": 4,
+"w": "2027-06-28.Vespera"
+},
+{
+"id": 402,
+"la": "℟. Hic dicet tibi quid te opórteat fácere.",
+"n": 4,
+"w": "2027-06-28.Vespera"
+},
+{
+"id": 403,
+"la": "Magnificábitur Christus in córpore meo, sive per vitam, sive per mortem. Mihi enim vívere Christus est, et mori lucrum.",
+"n": 4,
+"w": "2027-06-30.Laudes"
+},
+{
+"id": 404,
+"la": "Ant. Ego enim jam delibor et tempus meae resolutionis instat. Bonum certamen certavi, cursum consummavi, fidem servavi. Súperest mihi coróna justitiæ, quam reddet mihi Dóminus in illa die justus judex.",
+"n": 4,
+"w": "2027-06-30.Laudes"
+},
+{
+"id": 405,
+"la": "Ant. Induit Dóminus Sanctos suos fortitudine, et testimónia ejus credibilia facta sunt nimis.",
+"n": 4,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 406,
+"la": "Ant. Dóleo super te, frater mi Jónatha, amábilis valde super amórem mulíerum: et sicut mater únicum amat fílium, ita te diligébam: sagítta Jónathæ numquam ábiit retrórsum, nec declinávit clypeus ejus de bello, et hasta ejus non est avérsa.",
+"n": 4,
+"w": "2027-07-10.Vespera"
+},
+{
+"id": 407,
+"la": "Ant. Hæc corde compúncta venit, ad pedes Jesu accésit: illos lácrimis rigávit et capíllis cápitis sui tersit.",
+"n": 4,
+"w": "2027-07-22.Laudes"
+},
+{
+"id": 408,
+"la": "Ant. Intercéde, súpplíca assídue pro nobis Jesu Dómino, María Magdaléna.",
+"n": 4,
+"w": "2027-07-22.Laudes"
+},
+{
+"id": 409,
+"la": "Ant. O bone Jesu, laus tibi! Remisísti peccatríci multa peccámina, quia te diléxit multum.",
+"n": 4,
+"w": "2027-07-22.Laudes"
+},
+{
+"id": 410,
+"la": "Ant. María ergo unxit pedes Jesu et extérsit capíllis suis: et domus impléta est ex odóre unguénti.",
+"n": 4,
+"w": "2027-07-22.Laudes"
+},
+{
+"id": 411,
+"la": "Ant. O mundi lampas et margarita præfulgida, quæ resurrectionem Christi nuntiando Apostolorum Apóstola fieri meruisti, María Magdaléna, semper pia exoratrix pro nobis adsis ad Deum, qui te elégit.",
+"n": 4,
+"w": "2027-07-22.Laudes"
+},
+{
+"id": 412,
+"la": "Ant. Duo hómines ascendérunt in templum ut orárent, unus pharisæus et alter publicánus: descéndit hic justificátus in domum suam ab illo, allelúja.",
+"n": 4,
+"w": "2027-07-25.Laudes"
+},
+{
+"id": 413,
+"la": "Ant. Colúmnæ áureæ super bases argénteas, et pedes firmí super plantas stábilis mulieris.",
+"n": 4,
+"w": "2027-07-26.Laudes"
+},
+{
+"id": 414,
+"la": "Ant. Gaude felix parens Hispánia, novæ prolis dans mundo gáudia: sed tu magis plaude Bonónia, tanti Patris dotáta glória: lauda tota Mater Ecclésia, novæ laudis agens solémnia.",
+"n": 4,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 415,
+"la": "℟. O spem miram, quam dedísti mortis hora te fléntibus, dum post mortem promisísti te profutúrum frátribus!",
+"n": 4,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 416,
+"la": "* Imple, Pater, quod dixísti, nos tuis juvans précibus.",
+"n": 4,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 417,
+"la": "℣. Qui tot signis claruísti in ægrórum corpóribus, nobis opem ferens Christi, ægris medére móribus.",
+"n": 4,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 418,
+"la": "Civis efféctus cǽlicus.",
+"n": 4,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 419,
+"la": "Cæli potítur glória:",
+"n": 4,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 420,
+"la": "Pro paupertátis cíngulo",
+"n": 4,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 421,
+"la": "Stola dotátur régia.",
+"n": 4,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 422,
+"la": "Cum virtútum frequéntia,",
+"n": 4,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 423,
+"la": "Ant. Transit pauper ad regni sólium, dux ad sceptrum, victor ad prǽmium, mors in vitam, labor in ótium, præsens cedit luctus in gáudium.",
+"n": 4,
+"w": "2027-08-03.Vespera"
+},
+{
+"id": 424,
+"la": "Ant. Linguæ, manus stúdio scalam hanc eréxit, uam Virgo cum Filio Mater sursum vexit.",
+"n": 4,
+"w": "2027-08-04.Laudes"
+},
+{
+"id": 425,
+"la": "Ant. Carnis viror, mentis martýrium, mundum replens linguæ præcónium, pauper Christi, post cursus státium, vitæ tibi mercántur pr'aemium.",
+"n": 4,
+"w": "2027-08-04.Laudes"
+},
+{
+"id": 426,
+"la": "Ant. O lumen Ecclésiæ, Doctor veritátis, Rosa patiéntiæ, Ebur castitátis, Aquam sapiéntiæ propinásti gratis : Prædicátor grátiæ, nos junge beátis.",
+"n": 4,
+"w": "2027-08-04.Vespera"
+},
+{
+"id": 427,
+"la": "Ant. Solémnitas tua, Dei Génetrix Virgo, gáudium annuntiávit univérso mundo: Ex te enim ortus est sol justítiæ, Christus Deus noster: qui, solvens maledictiónem, dedit benedictiónem; et confúndens mortem, donávit nobis vitam sempitérnam.",
+"n": 4,
+"w": "2027-08-05.Vespera"
+},
+{
+"id": 428,
+"la": "℟. Gloriósus apparuísti * In conspéctu Dómini.",
+"n": 4,
+"w": "2027-08-06.Tertia"
+},
+{
+"id": 429,
+"la": "Ant. Ascéndit Christus super cælos, et præparávit suæ castissimæ Matri immortalitátis locum: et hæc est illa præclára festívitás, ómnium Sanctórum festívitatibus incomparábilis, in qua gloriósa et felix, mirántibus cæléstis cúriæ ordínibus, ad æthéreum pervénit thálamum: quo pia sui mémorum ímmemor nequáquam exsístat.",
+"n": 4,
+"w": "2027-08-14.Vespera"
+},
+{
+"id": 430,
+"la": "℣. Ora pro nobis, beáte Hyacínthe.",
+"n": 4,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 431,
+"la": "Ant. Plácuít Deo in sanctitáte ánimæ suæ: introívit in átria ejus in exultatióne.",
+"n": 4,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 432,
+"la": "Ant. Quasi tuba exaltávit vocem suam, ut confitérentur tibi pópuli, Deus.",
+"n": 4,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 433,
+"la": "Ant. Benedicant mária et flúmina Dómino, qui aquas flúminis solidávit sub pedibus Hyacínthi.",
+"n": 4,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 434,
+"la": "Ant. Omnes pópuli laudent Dóminum, qui vivéntem et vita functum mirificávit servum suum Hyacínthum.",
+"n": 4,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 435,
+"la": "Ant. Prædicávit verbum Dei in omni pópulo, ad dandam sciéntiam salútis plebi ejus in remissiónem peccatórum eórum.",
+"n": 4,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 436,
+"la": "Ant. Prædicatórum órdisinis flos pulchérime, Hyacínthe, tua canéntes mérita tui nos ímbue odóris fragrántia.",
+"n": 4,
+"w": "2027-08-17.Vespera"
+},
+{
+"id": 437,
+"la": "Ant. Factus ergo presbyter, monastérium clericorum mox instituit: et cépit vivere secûndum regulam sub sanctis Apóstolis constitutam.",
+"n": 4,
+"w": "2027-08-28.Laudes"
+},
+{
+"id": 438,
+"la": "Ant. Sanctus autem Valérius ordinátor ejus exultabat ubérius hómúnem sibi talem datum divinitus, qui in doctrina sana ædificâre Ecclésiá esset idôneus.",
+"n": 4,
+"w": "2027-08-28.Laudes"
+},
+{
+"id": 439,
+"la": "Ant. Eodé tépore Fortunâtus, presbyter Manichæorum, versûtia plurimos seducêbat: quem sanctus Augustinus in conventu omnium disputans publice superâvit.",
+"n": 4,
+"w": "2027-08-28.Laudes"
+},
+{
+"id": 440,
+"la": "Ant. In diebus ejus obsessa est civitas Hipponênsis ab exercitu barbarorum: inter quæ mala fuérunt Augustíno lácrimæ suæ panes die ac nocte: atque sub hoc événtu ad extrémam horam véniens, obdormívit in pace.",
+"n": 4,
+"w": "2027-08-28.Laudes"
+},
+{
+"id": 441,
+"la": "Ant. Hódie gloriósus Pater Augustinus, dissoluta hujus habitationis domo, domum non manufactam accepit in cælis, quam sibi, cooperante Dei grátia, manu, lingua fabrefecit in terris: ubi jam quod sitivit intèrnum gustat ætèrnum, decorátus una stola, securusque de reliqua.",
+"n": 4,
+"w": "2027-08-28.Vespera"
+},
+{
+"id": 442,
+"la": "Ant. O Crux admirábilis, evacuátio vúlneris, restitútio sanitátis!",
+"n": 4,
+"w": "2027-09-14.Laudes"
+},
+{
+"id": 443,
+"la": "Ant. Crux benedícta nitet, Dóminus qua carne pepéndit atque cruóre suo vúlnera nostra lavit.",
+"n": 4,
+"w": "2027-09-14.Laudes"
+},
+{
+"id": 444,
+"la": "℣. Tuam Crucem adorámus, Dómine.",
+"n": 4,
+"w": "2027-09-14.Laudes"
+},
+{
+"id": 445,
+"la": "℟. Tuam gloriósam recólimus passiónem.",
+"n": 4,
+"w": "2027-09-14.Laudes"
+},
+{
+"id": 446,
+"la": "Ant. Virgo María, non est ulla símilem passa dolórem inter mulíeres, dum crucifíxum cernis mori Fílium. Ora pro nobis, pia Dei Génetrix.",
+"n": 4,
+"w": "2027-09-15.Completorium"
+},
+{
+"id": 447,
+"la": "Ant. Ingréssus Ráphaël Angelus ad Tobíam salutávit eum, dicens: Gaudium tibi semper sit. Cui Tobías ait: Quale gáudium mihi erit, qui in ténebris sedeo, et lumen cæli non video? Cui Angelus inquit: Forti animo esto, in próximo enim est, ut a Deo curéris.",
+"n": 4,
+"w": "2027-09-18.Vespera"
+},
+{
+"id": 448,
+"la": "Ant. Vidéntes autem turbæ timuérunt, et glorificavérunt Deum, qui dedit potestátem talem hominibus.",
+"n": 4,
+"w": "2027-09-19.Vespera"
+},
+{
+"id": 449,
+"la": "℣. Ora pro nobis, beáte Pater Francísce.",
+"n": 4,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 450,
+"la": "Ant. Sanctus Franciscus, præviis oratiónum stúdiis quid fáciat instructus, non sibi soli vivere, sed áliis proficere vult Dei zelo ductus.",
+"n": 4,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 451,
+"la": "Ant. Hic prædicádo circuit, et quem non homo dócuít, fit doctis in stupórem: virtútum verba loquitur, novúmque nova séquitur milítia ductórem.",
+"n": 4,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 452,
+"la": "Ant. Tres Ordines hic órdinat: primúmque Fratrum nóminat Minórum: pauperúmque fit Dominárum médius: sed Pæniténtum tértius sexum capit utrúmque.",
+"n": 4,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 453,
+"la": "Ant. Doctus doctrice grátia, doctus experiéntia quæ sunt perfectionis: hæc fratres docet ómnia, tam factis quam frequéntia melliflui sermónis.",
+"n": 4,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 454,
+"la": "Ant. Laudans laudáre mónuit, laus illi semper ádfuit, laus, inquam, Salvatóris: invitat aves, béstias et creatúras álias ad laudem Conditóris.",
+"n": 4,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 455,
+"la": "Ant. O Martyr desiderio Francisce, quanto stúdio compátiens hunc séqueris, quem passum libro réperis quem aperuisti! Tu cónthuens in áère Seraph in cruce pósitum, ex tunc in palmis, látère et pédibus effigiem fers plagárum Christi. Tu gregi tuo próvide, qui post felicem tránsitum, diræ prius et lívidæ, glorificátæ spéciem carnis prætentdisti.",
+"n": 4,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 456,
+"la": "Ant. Sanctus Franciscus, præviis oratiónum stúdiis quid faciat instructus, non sibi soli vivere, sed áliis proficere vult Dei zelo ductus.",
+"n": 4,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 457,
+"la": "Ant. O virum mirabilem in signis et prodigiis, languóres cum dæmóniis quóslibet pelléntem! Dat aurem suis ávium prædicans silvéstrium verbis intendéntem. O vitam laudabilem, qua fidem sic magnificat, sed et multos vivificat mórtuos defunctus! Francísce, nos cæléstium fac consórtes civium, quibus es coniunctus.",
+"n": 4,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 458,
+"la": "Ant. Corde et ánimo Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei María.",
+"n": 4,
+"w": "2027-10-06.Completorium"
+},
+{
+"id": 459,
+"la": "Ant. Hæc est Regína virginum, quæ génuit Regem, velut rosa decóra Virgo. Dei Génetrix, per quam repérimus Deum et hóminem, alma Virgo, intercéde pro nobis ómnibus.",
+"n": 4,
+"w": "2027-10-06.Vespera"
+},
+{
+"id": 460,
+"la": "Ant. Speciósa facta est et suávis in delíciis virginitátis sancta Dei Génetrix: quam vidéntes fíliæ Sion vernántem in flóribus rosárum et líliis convállium beatissimam prædicavérunt, et reginæ laudavérunt eam.",
+"n": 4,
+"w": "2027-10-06.Vespera"
+},
+{
+"id": 461,
+"la": "Ant. Lætáre, Virgo Mater, allelúja: surréxit Christus de sepúlcro, allelúja.",
+"n": 4,
+"w": "2027-10-07.Vespera"
+},
+{
+"id": 462,
+"la": "Ant. In tali servo Dóminum laudent grandes et pusilli: átria ejus in hymnis confitémini illi.",
+"n": 4,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 463,
+"la": "Ant. Ad te de luce vigilans sitívit ánima ejus, suspírans et ingéminans: O Deus, Deus meus!",
+"n": 4,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 464,
+"la": "Ant. Carmen trium puerórum flamma camíni tímuit: flammas quoque vi signórum Ludovicus cohibuit.",
+"n": 4,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 465,
+"la": "Ant. Ignis, grando, nix, belluæ spiritúsque procellárum sæpe non ausa tángere Ludovicum Deo carum.",
+"n": 4,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 466,
+"la": "Ant. Dóminus, Deus Israél, visitávit plebem suam in terris Indiárum, mittens ei púerum suum, qui præíret.",
+"n": 4,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 467,
+"la": "Ant. Oratióne et devotióne magis quam stúdio hæc sacra sciéntia comparatur.",
+"n": 4,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 468,
+"la": "Ant. Doce me, Dómine, radíces árboris meæ cælo et non terræ infigere: ne in fólíis verbórum, sed pótius in frúctibus bonórum óperum fidélis cognóscar.",
+"n": 4,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 469,
+"la": "Ant. Qui nos Filii tui vivificásti morte, carne enútris ac sánguine, Deus, a nobis benedicáris in sæcula.",
+"n": 4,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 470,
+"la": "Ant. Fac, Dómine, ut sim prædicatiónis templum, domus oratiónis et laudis tuæ in perpétuum.",
+"n": 4,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 471,
+"la": "Ant. Deus scientiárum, Dómine, te toto corde et ore laudámus atque benedícimus, quia de pátribus nostris magnum suscitásti doctórem.",
+"n": 4,
+"w": "2027-11-15.Vespera"
+},
+{
+"id": 472,
+"la": "Ant. Sic eum volo manére, donec véniam: tu me séquere.",
+"n": 4,
+"w": "2027-12-27.Laudes"
+},
+{
+"id": 473,
+"la": "Audívi númerum signatórum, centum quadragínta quátuor míllia signáti, ex omni tribu filiórum Israël.",
+"n": 3,
+"w": "2026-11-01.Sexta"
+},
+{
+"id": 474,
+"la": "Ant. Salvátor mundi * salva nos omnes: sancta Dei Génitrix, Virgo semper María, ora pro nobis: précibus quoque sanctórum Apostolórum, Mártyrum et Confessórum, atque sanctárum Vírginum supplíciter pétimus, ut a malis ómnibus eruámur, bonísque ómnibus nunc et semper pérfrui mereámur.",
+"n": 3,
+"w": "2026-11-01.Vespera"
+},
+{
+"id": 475,
+"la": "Ant. Salvátor mundi salva nos omnes: sancta Dei Génitrix, Virgo semper María, ora pro nobis: précibus quoque sanctórum Apostolórum, Mártyrum et Confessórum, atque sanctárum Vírginum supplíciter pétimus, ut a malis ómnibus eruámur, bonísque ómnibus nunc et semper pérfrui mereámur.",
+"n": 3,
+"w": "2026-11-01.Vespera"
+},
+{
+"id": 476,
+"la": "Ant. Audívi vocem * de cœlo dicéntem: Beáti mórtui qui in Dómino moriúntur.",
+"n": 3,
+"w": "2026-11-02.Vespera"
+},
+{
+"id": 477,
+"la": "Ant. Audívi vocem de cœlo dicéntem: Beáti mórtui qui in Dómino moriúntur.",
+"n": 3,
+"w": "2026-11-02.Vespera"
+},
+{
+"id": 478,
+"la": "℣. Ora pro nobis, beáte Vitális et Agrícolæ.",
+"n": 3,
+"w": "2026-11-04.Laudes"
+},
+{
+"id": 479,
+"la": "In illo témpore: Videns Jesus turbas, ascéndit in montem, et, cum sedisset, accessérunt ad eum discipuli ejus, et apériens os suum docébat eos dicens: Beáti páuperes spiritu, quóniam ipsórum est regnum cælórum. $Tu autem",
+"n": 3,
+"w": "2026-11-06.Prima"
+},
+{
+"id": 480,
+"la": "℣. Ora pro nobis, beáte Martíne.",
+"n": 3,
+"w": "2026-11-11.Laudes"
+},
+{
+"id": 481,
+"la": "Ant. O quantus luctus ómnium! * quanta præcípue laménta Monachórum, et Vírginum! quia et pium est gaudére Martíno et pium est flere Martínum.",
+"n": 3,
+"w": "2026-11-11.Laudes"
+},
+{
+"id": 482,
+"la": "Ant. O quantus luctus ómnium! quanta præcípue laménta Monachórum, et Vírginum! quia et pium est gaudére Martíno et pium est flere Martínum.",
+"n": 3,
+"w": "2026-11-11.Laudes"
+},
+{
+"id": 483,
+"la": "In illo témpore: Dixit Jesus discípulis suis: Vigiláte, quia nescítis qua hora Dóminus vester ventúrus sit. Illud autem scitóte quóniam, si sciret paterfamilias qua hora fur ventúrus esset, vigiláret útique et non síneret pérfodi domum suam. Tu autem.",
+"n": 3,
+"w": "2026-11-23.Prima"
+},
+{
+"id": 484,
+"la": "℟. Missus est Gábriel Angelus ad Maríam Vírginem desponsátam Joseph, núntians ei verbum: et expavéscit Virgo de lúmine. Ne tímeas, María, invenísti grátiam apud Dóminum: ecce concípies, et páries,",
+"n": 3,
+"w": "2026-11-28.Vespera"
+},
+{
+"id": 485,
+"la": "* Et vocábitur Altíssimi Fílius.",
+"n": 3,
+"w": "2026-11-28.Vespera"
+},
+{
+"id": 486,
+"la": "℣. Dabit ei Dóminus Deus sedem David, patris ejus, et regnábit in domo Jacob in ætérnum.",
+"n": 3,
+"w": "2026-11-28.Vespera"
+},
+{
+"id": 487,
+"la": "℣. Diléxit Andréam Dóminus.",
+"n": 3,
+"w": "2026-11-30.Laudes"
+},
+{
+"id": 488,
+"la": "℟. In odórem suavitátis.",
+"n": 3,
+"w": "2026-11-30.Laudes"
+},
+{
+"id": 489,
+"la": "Ant. Jerúsalem, réspice ad Oriéntem, et vide, allelúia.",
+"n": 3,
+"w": "2026-11-30.Vespera"
+},
+{
+"id": 490,
+"la": "Ant. Veri adoratóres adorábunt Patrem in spíritu et veritáte.",
+"n": 3,
+"w": "2027-03-05.Vespera"
+},
+{
+"id": 491,
+"la": "℣. Post partum, Virgo, invioláta permansísti, alleluia.",
+"n": 3,
+"w": "2027-04-05.Tertia"
+},
+{
+"id": 492,
+"la": "℟. Dei Génetrix, intercéde pro nobis, alleluia.",
+"n": 3,
+"w": "2027-04-05.Tertia"
+},
+{
+"id": 493,
+"la": "℣. Dedísti hereditátem, alleluia.",
+"n": 3,
+"w": "2027-05-11.Laudes"
+},
+{
+"id": 494,
+"la": "℟. Timéntibus nomen tuum, Dómine, alleluia.",
+"n": 3,
+"w": "2027-05-11.Laudes"
+},
+{
+"id": 495,
+"la": "Ant. Símile erit regnum cælórum decem virgínibus, quæ, accipiéntes lámpades suas, exiérunt óbviam sponso et sponsæ.",
+"n": 3,
+"w": "2027-06-09.Laudes"
+},
+{
+"id": 496,
+"la": "Surge, própera, amíca mea, colúmba mea, formósa mea, et veni. Jam enim hiems tránsiit, imber ábiit, et recéssit. Flores apparuérunt in terra nostra.",
+"n": 3,
+"w": "2027-07-02.Laudes"
+},
+{
+"id": 497,
+"la": "Ant. Visitatiónem hodiérnam perpétuæ Vírginis Genitrícis Dei Maríæ solémniter celebrémus, qua celsitúdo throni procéssit, allelúja.",
+"n": 3,
+"w": "2027-07-02.Laudes"
+},
+{
+"id": 498,
+"la": "Deus, qui inter summos sacerdótes fámulum tuum N. ineffábili tua dispositióne connumerári voluísti: præsta, quæsumus, ut, qui unigéniti Filii tui vices in terris gerébat, sanctórum tuórum Pontíficum consórtio perpétuo aggregétur.",
+"n": 3,
+"w": "2027-07-06.Laudes"
+},
+{
+"id": 499,
+"la": "Deus, qui inter apostólicos sacerdótes fámulum tuum N. pontificáli (vel sacerdotáli) fecísti dignitáte vigére, præsta, quæsumus, ut eórum quoque perpétuo aggregétur consórtio.",
+"n": 3,
+"w": "2027-07-06.Laudes"
+},
+{
+"id": 500,
+"la": "Inclína, Dómine, aurem tuam ad preces nostras, quibus misericórdiam tuam súpplices deprecámur: ut ánimam fámuli tui N., quam de hoc sæculo migráre jussísti, in pacis ac lucis regióne constitúas, et Sanctórum tuórum júbeas esse consórtem.",
+"n": 3,
+"w": "2027-07-06.Laudes"
+},
+{
+"id": 501,
+"la": "Quæsumus, Dómine, pro tua pietáte miserére ánimæ fámulæ tuæ N.: et a contágiis mortalitátis exútam, in ætérnæ salvatiónis partem restitue.",
+"n": 3,
+"w": "2027-07-06.Laudes"
+},
+{
+"id": 502,
+"la": "Deus, qui nos patrem et matrem honoráre præcepísti, miserére cleménter ánimæ patris mei (vel matris meæ): eiúsque peccáta dimitte, meque eum (vel eam) in ætérnæ claritátis gáudio fac vidére.",
+"n": 3,
+"w": "2027-07-06.Laudes"
+},
+{
+"id": 503,
+"la": "Deus indulgentiárum, Dómine, da animábus famulórum famularúmque tuárum, quorum anniversárium depositiónis diem commemorámus, refrigerií sedem, quiétis beatitúdinem et lúminis claritátem.",
+"n": 3,
+"w": "2027-07-06.Laudes"
+},
+{
+"id": 504,
+"la": "Deus indulgentiárum, Dómine, da ánimæ fámuli tui N. (vel fámulæ tuæ N.), cujus anniversárium depositiónis diem commemorámus, refrigerií sedem, quiétis beatitúdinem et lúminis claritátem.",
+"n": 3,
+"w": "2027-07-06.Laudes"
+},
+{
+"id": 505,
+"la": "Deus, véniae largitor et humánæ salútis auctor, quæsumus cleméntiam tuam: ut nostræ congregatiónis fratres, soróres, familiáres et benefactóres, qui ex hoc sáeculo transiérunt, beáta María semper Vírgine intercedénte cum ómnibus Sanctis tuis, ad perpétuæ beatitúdinis consórtium perveníre concédas.",
+"n": 3,
+"w": "2027-07-06.Laudes"
+},
+{
+"id": 506,
+"la": "Fidélium, Deus, ómnium cónditor et redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tribue peccatórum: ut indulgéntiam, quam semper optavérunt, piis supplicatió nibus consequántur:",
+"n": 3,
+"w": "2027-07-06.Laudes"
+},
+{
+"id": 507,
+"la": "Sancti vicérunt propter sánguinem Agni et propter verbum testimónii sui: et non dilexérunt ánimas suas usque ad mortem.",
+"n": 3,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 508,
+"la": "Flámini sancto résonent perénni",
+"n": 3,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 509,
+"la": "℣. Optimam partem elégit sibi María.",
+"n": 3,
+"w": "2027-07-22.Laudes"
+},
+{
+"id": 510,
+"la": "℣. Gloriósus apparuísti in conspéctu Dómini.",
+"n": 3,
+"w": "2027-09-29.Laudes"
+},
+{
+"id": 511,
+"la": "℟. Proptérea decórem índuit te Dóminus.",
+"n": 3,
+"w": "2027-09-29.Laudes"
+},
+{
+"id": 512,
+"la": "℣. Ora pro nobis, beáte Ludovíce.",
+"n": 3,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 513,
+"la": "Ant. Accingímini, et estóte fílii poténtes, et estóte paráti pugnáre in prœlio: quóniam mélius est nobis mori in bello, quam vidére mala gentis nostræ, et sanctórum. Sicut fúerit volúntas in cælo, sic fiat.",
+"n": 3,
+"w": "2027-10-23.Vespera"
+},
+{
+"id": 514,
+"la": "Ant. Solémnitas gloriósæ * Vírginis Maríæ ex sémine Abrahæ, ortæ de tribu Juda, clara ex stirpe David, alleluia.",
+"n": 3,
+"w": "2028-05-31.Laudes"
+},
+{
+"id": 515,
+"la": "Ant. Solémnitas gloriósæ Vírginis Maríæ ex sémine Abrahæ, ortæ de tribu Juda, clara ex stirpe David, alleluia.",
+"n": 3,
+"w": "2028-05-31.Laudes"
+},
+{
+"id": 516,
+"la": "Salvéte, cedri Líbani,",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 517,
+"la": "Implétis almo gérmine.",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 518,
+"la": "Vos Trinitátis glória",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 519,
+"la": "Ætérna circumpléctitur:",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 520,
+"la": "Vos Angelórum cúriæ",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 521,
+"la": "Cingunt choréa pérpetim,",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 522,
+"la": "Et írrigant puríssimi",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 523,
+"la": "Æternitátis rívuli.",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 524,
+"la": "O ínclytæ propágines,",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 525,
+"la": "Vestros juváte fílios:",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 526,
+"la": "Nos roboráte súrculos.",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 527,
+"la": "Simúlque dulci Flámini,",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 528,
+"la": "Læti quibúscum vívitis",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 529,
+"la": "In sempitérno lúmine.",
+"n": 2,
+"w": "2026-11-12.Laudes"
+},
+{
+"id": 530,
+"la": "In illo témpore: Respíciens Jesus vidit eos, qui mittébant múnera sua in gazophylácium, dívites.",
+"n": 2,
+"w": "2026-11-19.Prima"
+},
+{
+"id": 531,
+"la": "Ant. Erúmpant montes * jucunditátem, et colles justítiam, quia lux mundi Dóminus cum poténtia venit.",
+"n": 2,
+"w": "2026-12-15.Vespera"
+},
+{
+"id": 532,
+"la": "Ant. Erúmpant montes jucunditátem, et colles justítiam, quia lux mundi Dóminus cum poténtia venit.",
+"n": 2,
+"w": "2026-12-15.Vespera"
+},
+{
+"id": 533,
+"la": "Ant. Ponent Dómino * glóriam, et laudem ejus in ínsulis nuntiábunt, quia ecce véniet, et non tardábit.",
+"n": 2,
+"w": "2026-12-23.Laudes"
+},
+{
+"id": 534,
+"la": "Ant. Ponent Dómino glóriam, et laudem ejus in ínsulis nuntiábunt, quia ecce véniet, et non tardábit.",
+"n": 2,
+"w": "2026-12-23.Laudes"
+},
+{
+"id": 535,
+"la": "Ant. Cum esset desponsáta * Mater Jesu Maria Joseph, antequam convenírent, invénta est in útero habens quod enim in ea natum est de Spíritu Sancto est, allelúja.",
+"n": 2,
+"w": "2026-12-24.Laudes"
+},
+{
+"id": 536,
+"la": "Ant. Cum esset desponsáta Mater Jesu Maria Joseph, antequam convenírent, invénta est in útero habens quod enim in ea natum est de Spíritu Sancto est, allelúja.",
+"n": 2,
+"w": "2026-12-24.Laudes"
+},
+{
+"id": 537,
+"la": "Non vocáberis ultra Derelícta: et terra tua non vocábitur ámplius Desoláta: sed vocáberis, Volúntas mea in ea, et terra tua Inhabitáta.",
+"n": 2,
+"w": "2026-12-24.Nona"
+},
+{
+"id": 538,
+"la": "Et vidébunt gentes justum tuum, et cuncti reges ínclytum tuum: et vocábitur tibi nomen novum, quod os Dómini nominábit.",
+"n": 2,
+"w": "2026-12-24.Sexta"
+},
+{
+"id": 539,
+"la": "Pópulus, qui ambulábat in ténebris, vidit lucem magnam: habitántibus in regióne umbræ mortis, lux orta est eis.",
+"n": 2,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 540,
+"la": "℟. Judǽa et Jerúsalem, nolíte timére:",
+"n": 2,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 541,
+"la": "* Cras egrediémini, et Dóminus erit vobíscum.",
+"n": 2,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 542,
+"la": "℣. Constántes estóte: vidébitis auxílium Dómini super vos.",
+"n": 2,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 543,
+"la": "℟. Cras egrediémini, et Dóminus erit vobíscum.",
+"n": 2,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 544,
+"la": "℟. Et Dóminus erit vobíscum.",
+"n": 2,
+"w": "2026-12-24.Vespera"
+},
+{
+"id": 545,
+"la": "Ant. Intuens in cœlum beátus Stéphanus vidit glóriam Dei, et ait: Ecce vídeo cœlos apértos, et Fílium hóminis stantem a dextris Dei.",
+"n": 2,
+"w": "2026-12-26.Laudes"
+},
+{
+"id": 546,
+"la": "Ant. O quam gloriósus est beátus Stéphanus Martyr et Levíta, qui ante Apóstolos regna cæléstia possidére méruit et ad Patris déxteram Fílium vidére!",
+"n": 2,
+"w": "2026-12-26.Vespera"
+},
+{
+"id": 547,
+"la": "Catérva matrum pérsonat",
+"n": 2,
+"w": "2026-12-28.Laudes"
+},
+{
+"id": 548,
+"la": "Collísa deflens pígnora,",
+"n": 2,
+"w": "2026-12-28.Laudes"
+},
+{
+"id": 549,
+"la": "Quorum tyránnus mília",
+"n": 2,
+"w": "2026-12-28.Laudes"
+},
+{
+"id": 550,
+"la": "Christo sacrávit víctimas.",
+"n": 2,
+"w": "2026-12-28.Laudes"
+},
+{
+"id": 551,
+"la": "℟. Ducem ac praceptórem géntibus.",
+"n": 2,
+"w": "2027-01-10.Laudes"
+},
+{
+"id": 552,
+"la": "Ant. Caput dracónis * Salvátor contéruit in Jordáne flúmine, ab ejus potestáte omnes erípuit.",
+"n": 2,
+"w": "2027-01-13.Laudes"
+},
+{
+"id": 553,
+"la": "Ant. Caput dracónis Salvátor contéruit in Jordáne flúmine, ab ejus potestáte omnes erípuit.",
+"n": 2,
+"w": "2027-01-13.Laudes"
+},
+{
+"id": 554,
+"la": "Ant. Præcúrsor * Joánnes exúltat in Jordáne baptizáto Dómino: facta est orbis terrárum exultátio: facta est peccatórum nostrórum remíssio sanctificátis aquis: ipsi omnes clamémus: Miserére nobis.",
+"n": 2,
+"w": "2027-01-13.Laudes"
+},
+{
+"id": 555,
+"la": "Ant. Præcúrsor Joánnes exúltat in Jordáne baptizáto Dómino: facta est orbis terrárum exultátio: facta est peccatórum nostrórum remíssio sanctificátis aquis: ipsi omnes clamémus: Miserére nobis.",
+"n": 2,
+"w": "2027-01-13.Laudes"
+},
+{
+"id": 556,
+"la": "Ant. Fontes aquárum * sanctificáti sunt, Christo apparénte in glória. Orbis terrárum, hauríte aquas de fóntibus Salvatóris; sanctificávit enim nunc omnem creatúram Christus Deus noster.",
+"n": 2,
+"w": "2027-01-13.Vespera"
+},
+{
+"id": 557,
+"la": "Ant. Fontes aquárum sanctificáti sunt, Christo apparénte in glória. Orbis terrárum, hauríte aquas de fóntibus Salvatóris; sanctificávit enim nunc omnem creatúram Christus Deus noster.",
+"n": 2,
+"w": "2027-01-13.Vespera"
+},
+{
+"id": 558,
+"la": "℣. Ora pro nobis, beáte Vincénti.",
+"n": 2,
+"w": "2027-01-22.Laudes"
+},
+{
+"id": 559,
+"la": "Ant. Jesus hæc dicens, clamábat: * Qui habet aures audiéndi, áudiat.",
+"n": 2,
+"w": "2027-01-31.Sexta"
+},
+{
+"id": 560,
+"la": "Ant. Jesus hæc dicens, clamábat: Qui habet aures audiéndi, áudiat.",
+"n": 2,
+"w": "2027-01-31.Sexta"
+},
+{
+"id": 561,
+"la": "Ant. Quod autem cécidit * in terram bonam: hi sunt, qui in corde bono et óptimo verbum rétinent, et fructum áfferunt in patiéntia.",
+"n": 2,
+"w": "2027-02-06.Vespera"
+},
+{
+"id": 562,
+"la": "Ant. Quod autem cécidit in terram bonam: hi sunt, qui in corde bono et óptimo verbum rétinent, et fructum áfferunt in patiéntia.",
+"n": 2,
+"w": "2027-02-06.Vespera"
+},
+{
+"id": 563,
+"la": "Ant. Cæcus sedébat * secus viam, et clamábat: Miserére mei, fili David.",
+"n": 2,
+"w": "2027-02-07.Sexta"
+},
+{
+"id": 564,
+"la": "Ant. Cæcus sedébat secus viam, et clamábat: Miserére mei, fili David.",
+"n": 2,
+"w": "2027-02-07.Sexta"
+},
+{
+"id": 565,
+"la": "In illo témpore: Dixit Jesus discípulis suis: Cum jejunátis, nolíte fíeri sicut hypócritæ, tristes.",
+"n": 2,
+"w": "2027-02-10.Prima"
+},
+{
+"id": 566,
+"la": "Ant. Quare jejunávimus, * et non aspexísti? humiliávimus ánimas nostras, et nescísti?",
+"n": 2,
+"w": "2027-02-13.Laudes"
+},
+{
+"id": 567,
+"la": "Ant. Quare jejunávimus, et non aspexísti? humiliávimus ánimas nostras, et nescísti?",
+"n": 2,
+"w": "2027-02-13.Laudes"
+},
+{
+"id": 568,
+"la": "Ant. Relíquit eum tentátor, * et accessérunt Angeli, et ministrábant ei.",
+"n": 2,
+"w": "2027-02-14.Vespera"
+},
+{
+"id": 569,
+"la": "Ant. Relíquit eum tentátor, et accessérunt Angeli, et ministrábant ei.",
+"n": 2,
+"w": "2027-02-14.Vespera"
+},
+{
+"id": 570,
+"la": "Ant. Qui major est vestrum, * erit miníster vester: quia omnis qui se exáltat, humiliábitur, dicit Dóminus.",
+"n": 2,
+"w": "2027-02-23.Vespera"
+},
+{
+"id": 571,
+"la": "Ant. Qui major est vestrum, erit miníster vester: quia omnis qui se exáltat, humiliábitur, dicit Dóminus.",
+"n": 2,
+"w": "2027-02-23.Vespera"
+},
+{
+"id": 572,
+"la": "Ant. Sedére autem mecum non est meum dare vobis: sed quibus parátum est a Patre meo.",
+"n": 2,
+"w": "2027-02-24.Vespera"
+},
+{
+"id": 573,
+"la": "Ant. Unum * opus feci, et omnes admirámini, quia totum hóminem sanum feci in Sábbato.",
+"n": 2,
+"w": "2027-03-09.Vespera"
+},
+{
+"id": 574,
+"la": "Ant. Unum opus feci, et omnes admirámini, quia totum hóminem sanum feci in Sábbato.",
+"n": 2,
+"w": "2027-03-09.Vespera"
+},
+{
+"id": 575,
+"la": "Ant. Accéssit Jesus, * et tétigit lóculum. Hi autem qui portábant, stetérunt. Et ait: Adoléscens, tibi dico, surge. Et resédit qui erat mórtuus, et cœpit loqui.",
+"n": 2,
+"w": "2027-03-11.Laudes"
+},
+{
+"id": 576,
+"la": "Ant. Accéssit Jesus, et tétigit lóculum. Hi autem qui portábant, stetérunt. Et ait: Adoléscens, tibi dico, surge. Et resédit qui erat mórtuus, et cœpit loqui.",
+"n": 2,
+"w": "2027-03-11.Laudes"
+},
+{
+"id": 577,
+"la": "Ant. Ego sum * lux mundi: qui séquitur me, non ámbulat in ténebris, sed habébit lumen vitæ, dicit Dóminus.",
+"n": 2,
+"w": "2027-03-13.Laudes"
+},
+{
+"id": 578,
+"la": "Ant. Ego sum lux mundi: qui séquitur me, non ámbulat in ténebris, sed habébit lumen vitæ, dicit Dóminus.",
+"n": 2,
+"w": "2027-03-13.Laudes"
+},
+{
+"id": 579,
+"la": "Ant. Desidério desiderávi * hoc Pascha manducáre vobíscum, ántequam pátiar.",
+"n": 2,
+"w": "2027-03-20.Laudes"
+},
+{
+"id": 580,
+"la": "Ant. Desidério desiderávi hoc Pascha manducáre vobíscum, ántequam pátiar.",
+"n": 2,
+"w": "2027-03-20.Laudes"
+},
+{
+"id": 581,
+"la": "Ant. Tanto témpore * vobíscum eram docens in templo, et non me tenuístis: et modo flagellátum dúcitis ad crucifigéndum.",
+"n": 2,
+"w": "2027-03-24.Vespera"
+},
+{
+"id": 582,
+"la": "Ant. Tanto témpore vobíscum eram docens in templo, et non me tenuístis: et modo flagellátum dúcitis ad crucifigéndum.",
+"n": 2,
+"w": "2027-03-24.Vespera"
+},
+{
+"id": 583,
+"la": "Ante diem festum Paschæ, sciens Jesus quia venit hora ejus, ut tránseat ex hoc mundo ad Patrem: cum dilexísset suos, qui erant in mundo, in finem diléxit eos.",
+"n": 2,
+"w": "2027-03-25.Prima"
+},
+{
+"id": 584,
+"la": "℣. Agno miti básia cui lupus dedit venenósa.",
+"n": 2,
+"w": "2027-03-26.Laudes"
+},
+{
+"id": 585,
+"la": "℣. Vita in ligno móritur, inférnus et mors lugens spoliátur.",
+"n": 2,
+"w": "2027-03-26.Laudes"
+},
+{
+"id": 586,
+"la": "℣. Te qui vincíri voluísti, nosque a mortis vínculis eripuísti.",
+"n": 2,
+"w": "2027-03-26.Laudes"
+},
+{
+"id": 587,
+"la": "Ant. Hoc jam tértio * manifestávit se Jesus, postquam resurréxit a mórtuis, allelúja.",
+"n": 2,
+"w": "2027-03-31.Vespera"
+},
+{
+"id": 588,
+"la": "Ant. Hoc jam tértio manifestávit se Jesus, postquam resurréxit a mórtuis, allelúja.",
+"n": 2,
+"w": "2027-03-31.Vespera"
+},
+{
+"id": 589,
+"la": "Ant. Alias oves hábeo, * quæ non sunt ex hoc ovíli: et illas opórtet me addúcere, et vocem meam áudient, et fiet unum ovíle, et unus pastor, allelúia.",
+"n": 2,
+"w": "2027-04-17.Vespera"
+},
+{
+"id": 590,
+"la": "Ant. Alias oves hábeo, quæ non sunt ex hoc ovíli: et illas opórtet me addúcere, et vocem meam áudient, et fiet unum ovíle, et unus pastor, allelúia.",
+"n": 2,
+"w": "2027-04-17.Vespera"
+},
+{
+"id": 591,
+"la": "Ant. Iterum autem * vidébo vos, et gaudébit cor vestrum, allelúja, et gáudium vestrum nemo tollet a vobis, allelúja.",
+"n": 2,
+"w": "2027-04-18.Vespera"
+},
+{
+"id": 592,
+"la": "Ant. Iterum autem vidébo vos, et gaudébit cor vestrum, allelúja, et gáudium vestrum nemo tollet a vobis, allelúja.",
+"n": 2,
+"w": "2027-04-18.Vespera"
+},
+{
+"id": 593,
+"la": "Octáva Solémnitas sancti Joseph, Sponsi beátæ Maríæ Vírginis, Confessóris et universális Ecclésiæ Patróni.",
+"n": 2,
+"w": "2027-04-20.Prima"
+},
+{
+"id": 594,
+"la": "℣. Justus ut palma florébit in domo Dómini, allelúja.",
+"n": 2,
+"w": "2027-04-28.Laudes"
+},
+{
+"id": 595,
+"la": "℟. Sicut cedrus Líbani multiplicábitur, allelúja.",
+"n": 2,
+"w": "2027-04-28.Laudes"
+},
+{
+"id": 596,
+"la": "Deus, qui beátum Ludovícum Maríam Confessórem tuum Crucis mystérii et sacratíssimi Rosárii præcónem exímium effecísti, ac nova per eum família Ecclésiam fecundásti: ejus méritis et intercessióne concéde ut per unigéniti Fílii tui vitam, mortem ac resurrectiónem, salútis ætérnæ prǽmia consequámur.",
+"n": 2,
+"w": "2027-04-28.Laudes"
+},
+{
+"id": 597,
+"la": "Ant. Manum suam * apéruit ínopi, et palmas suas exténdit ad páuperem, fortitúdo et decor induméntum ejus, et ridébit in die novíssimo, alleluia.",
+"n": 2,
+"w": "2027-05-04.Laudes"
+},
+{
+"id": 598,
+"la": "Ant. Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem, fortitúdo et decor induméntum ejus, et ridébit in die novíssimo, alleluia.",
+"n": 2,
+"w": "2027-05-04.Laudes"
+},
+{
+"id": 599,
+"la": "Ant. O beáta * et benedícta et gloriósa Trínitas: Pater et Fílius et Spíritus Sanctus.",
+"n": 2,
+"w": "2027-05-22.Vespera"
+},
+{
+"id": 600,
+"la": "Ant. O beáta et benedícta et gloriósa Trínitas: Pater et Fílius et Spíritus Sanctus.",
+"n": 2,
+"w": "2027-05-22.Vespera"
+},
+{
+"id": 601,
+"la": "℣. Magnus Dóminus, et laudábilis nimis:",
+"n": 2,
+"w": "2027-05-23.Laudes"
+},
+{
+"id": 602,
+"la": "O Trínitas laudábilis,",
+"n": 2,
+"w": "2027-05-23.Laudes"
+},
+{
+"id": 603,
+"la": "In símplici substántia",
+"n": 2,
+"w": "2027-05-23.Laudes"
+},
+{
+"id": 604,
+"la": "Tu cáritas, tu púritas,",
+"n": 2,
+"w": "2027-05-23.Laudes"
+},
+{
+"id": 605,
+"la": "Decóre pollens pérpeti.",
+"n": 2,
+"w": "2027-05-23.Laudes"
+},
+{
+"id": 606,
+"la": "Fides, coróna súpplicum",
+"n": 2,
+"w": "2027-05-23.Laudes"
+},
+{
+"id": 607,
+"la": "Extérge sordes méntium,",
+"n": 2,
+"w": "2027-05-23.Laudes"
+},
+{
+"id": 608,
+"la": "Sorti misértus páuperum.",
+"n": 2,
+"w": "2027-05-23.Laudes"
+},
+{
+"id": 609,
+"la": "℣. Comédi favum cum melle meo, allelúja.",
+"n": 2,
+"w": "2027-05-27.Laudes"
+},
+{
+"id": 610,
+"la": "Ant. Corde et ánimo * Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Maríæ.",
+"n": 2,
+"w": "2027-05-31.Laudes"
+},
+{
+"id": 611,
+"la": "Ant. Corde et ánimo Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Maríæ.",
+"n": 2,
+"w": "2027-05-31.Laudes"
+},
+{
+"id": 612,
+"la": "Osténdat te nobis, Dómine Jesu, post hoc exsílium clemens et pia Virgo María Mater tua: quam beáti Sadócus et sócii inter hostiles infidélíum impetus incessánti voce salutántes, præoptátam martyrii palmam a te recipere meruérunt:",
+"n": 2,
+"w": "2027-06-02.Laudes"
+},
+{
+"id": 613,
+"la": "℣. Miserátor et miséricors Dóminus.",
+"n": 2,
+"w": "2027-06-04.Laudes"
+},
+{
+"id": 614,
+"la": "℟. Longánimis et multum miséricors.",
+"n": 2,
+"w": "2027-06-04.Laudes"
+},
+{
+"id": 615,
+"la": "In illo témpore: Dixit Jesus turbis: Si quis venit ad me, et non odit patrem suum, et matrem, et uxórem, et fílios, et fratres, et soróres, adhuc autem et ánimam suam, non potest meus esse discípulus.",
+"n": 2,
+"w": "2027-06-14.Prima"
+},
+{
+"id": 616,
+"la": "In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Ad níhilum valet ultra, nisi ut mittátur foras, et conculcétur ab homínibus. Vos estis lux mundi.",
+"n": 2,
+"w": "2027-06-18.Prima"
+},
+{
+"id": 617,
+"la": "Ant. Nonne iste est David * de quo canébant in choro, dicéntes: Saül percússit mile, et David decem míllia in míllibus suis?",
+"n": 2,
+"w": "2027-06-19.Vespera"
+},
+{
+"id": 618,
+"la": "Ant. Nonne iste est David de quo canébant in choro, dicéntes: Saül percússit mile, et David decem míllia in míllibus suis?",
+"n": 2,
+"w": "2027-06-19.Vespera"
+},
+{
+"id": 619,
+"la": "Deus, qui beátum Innocéntium Confessórem atque Pontíficem, sciéntiæ ac prudéntiæ donis decorátum, pacis et unitátis conciliatorem effecisti; ejus intercessióne nobis concéde cœléstia sapere, et ómnia bona concordi stúdio sectari.",
+"n": 2,
+"w": "2027-06-22.Laudes"
+},
+{
+"id": 620,
+"la": "Ant. Pro eo quod non credidísti verbis meis, eris tacens, et non póteris loqui usque in diem nativitátis ejus.",
+"n": 2,
+"w": "2027-06-23.Vespera"
+},
+{
+"id": 621,
+"la": "Pósuit os meum quasi gládium acútum, in umbra manus suæ protéxit me, et pósuit me sicut sagíttam eléctam.",
+"n": 2,
+"w": "2027-06-24.Nona"
+},
+{
+"id": 622,
+"la": "Ant. Irátus * rex Saül dixit: Mihi mille dedérunt, et fílio Isai dedérunt decem míllia.",
+"n": 2,
+"w": "2027-06-26.Vespera"
+},
+{
+"id": 623,
+"la": "Ant. Irátus rex Saül dixit: Mihi mille dedérunt, et fílio Isai dedérunt decem míllia.",
+"n": 2,
+"w": "2027-06-26.Vespera"
+},
+{
+"id": 624,
+"la": "Ant. Et accípiens * Jesus septem panes, grátias agens, benedíxit, et fregit, et dedit discípulis suis ut appónerent, et apposuérunt turbæ, allelúja.",
+"n": 2,
+"w": "2027-06-27.Vespera"
+},
+{
+"id": 625,
+"la": "Ant. Et accípiens Jesus septem panes, grátias agens, benedíxit, et fregit, et dedit discípulis suis ut appónerent, et apposuérunt turbæ, allelúja.",
+"n": 2,
+"w": "2027-06-27.Vespera"
+},
+{
+"id": 626,
+"la": "Ant. Beátus Petrus * Apóstolus vidit sibi Christum occúrrere, adórans eum, et ait: Dómine, quo vadis? Vénio Romam íterum crucifígi.",
+"n": 2,
+"w": "2027-06-28.Vespera"
+},
+{
+"id": 627,
+"la": "Ant. Beátus Petrus Apóstolus vidit sibi Christum occúrrere, adórans eum, et ait: Dómine, quo vadis? Vénio Romam íterum crucifígi.",
+"n": 2,
+"w": "2027-06-28.Vespera"
+},
+{
+"id": 628,
+"la": "Olivæ binæ pietátis únicae,",
+"n": 2,
+"w": "2027-06-29.Laudes"
+},
+{
+"id": 629,
+"la": "Fide devótos, spe robústos máxime,",
+"n": 2,
+"w": "2027-06-29.Laudes"
+},
+{
+"id": 630,
+"la": "Fonte replétos caritátis géminæ,",
+"n": 2,
+"w": "2027-06-29.Laudes"
+},
+{
+"id": 631,
+"la": "Sit Trinitáti sempitérna glória,",
+"n": 2,
+"w": "2027-06-29.Laudes"
+},
+{
+"id": 632,
+"la": "Honor, potéstas atque jubilátio,",
+"n": 2,
+"w": "2027-06-29.Laudes"
+},
+{
+"id": 633,
+"la": "In unitáte, cui manet impérium",
+"n": 2,
+"w": "2027-06-29.Laudes"
+},
+{
+"id": 634,
+"la": "Ex tunc et modo per ætérna sácula.",
+"n": 2,
+"w": "2027-06-29.Laudes"
+},
+{
+"id": 635,
+"la": "Angelus Dómini ástitit, et lumen refúlsit in habitáculo, percussóque látere Petri excitávit eum dicens: Surge velóciter. Et cecidérunt caténæ de má nibus ejus.",
+"n": 2,
+"w": "2027-06-29.Sexta"
+},
+{
+"id": 636,
+"la": "Bonum certámen certávi, cursum consummávi, fidem servávi. In réliquo repósita est mihi coróna justítiæ, quam reddet mihi Dóminus in illa die, justus judex.",
+"n": 2,
+"w": "2027-06-30.Nona"
+},
+{
+"id": 637,
+"la": "Scio enim cui crédidi, et certus sum quia potens est depósitum meum serváre in illum diem.",
+"n": 2,
+"w": "2027-06-30.Sexta"
+},
+{
+"id": 638,
+"la": "Ant. Visitatio gloriósæ Virginis Mariæ ex sémine Abrahæ, ortæ de tribu Juda, clara ex stirpe David.",
+"n": 2,
+"w": "2027-07-02.Vespera"
+},
+{
+"id": 639,
+"la": "Ant. Quis enim * in ómnibus, sicut David fidélis invéntus est in regno tuo, egrédiens, et regrédiens, et pergens ad impérium regis?",
+"n": 2,
+"w": "2027-07-03.Vespera"
+},
+{
+"id": 640,
+"la": "Ant. Quis enim in ómnibus, sicut David fidélis invéntus est in regno tuo, egrédiens, et regrédiens, et pergens ad impérium regis?",
+"n": 2,
+"w": "2027-07-03.Vespera"
+},
+{
+"id": 641,
+"la": "Deus, qui beátum Benedíctum Pontíficem benedictionis tuæ grátia ad cælum sublevasti: pópulum tuum, quǽsumus, nova benedictióne sanctífica; et a cunctis malis imminentibus, ejus méritis et précibus, tua virtúte defende.",
+"n": 2,
+"w": "2027-07-07.Laudes"
+},
+{
+"id": 642,
+"la": "Ant. Oves páscae Dómini introiérunt portas ejus in confessióe et átria ejus in hymnis.",
+"n": 2,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 643,
+"la": "Ant. Lábiis exsultatiónis laudábunt Dóminum: obstrúctum est os loquéntium iniqua.",
+"n": 2,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 644,
+"la": "Ant. Benedícite, sacerdótes Dómini, Dóminum: laudáte et superexaltáte eum in sǎcula.",
+"n": 2,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 645,
+"la": "Ant. Exsultábunt Sancti in glória, et lætabúntur in cubílibus suis.",
+"n": 2,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 646,
+"la": "Fílio sit laus párilis per ævum,",
+"n": 2,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 647,
+"la": "Ant. Dóminus, Deus Israél, visitávit et fecit redemptionem servórum suórum: glorificávit nomen eórum in ætérnum, et eréxit cornu salútis nobis.",
+"n": 2,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 648,
+"la": "Ant. Exaltávit Dóminus húmiles servos suos, et suscepit eos in tabernácula sancta, recordátus misericórdiæ suæ.",
+"n": 2,
+"w": "2027-07-09.Vespera"
+},
+{
+"id": 649,
+"la": "Deus, qui beátum Jacóbum, Confessórem atque Pontíficem, exímium veritátis præcónem et pacis conciliatórem effecísti: ejus nobis intercessióne concéde ut pacem et veritátem diligámus, et ad te, in quo pax summa est et pura véritas, perveniámus.",
+"n": 2,
+"w": "2027-07-13.Laudes"
+},
+{
+"id": 650,
+"la": "Deus, qui beátum Cesláum, virgíneo morum candóre præditum et salútis animárum zelo succénsus, in diversis nationum pópulis óperum sanctitáte et fidei propagatione miráblem effecísti: præsta, quæsumus, ut ejus intercessióne simus semper in fide stábiles, et ad te, qui solus es ætérnæ salútis auctor ac largítor, misericórdiæ tuæ múnere pervenire valeámus.",
+"n": 2,
+"w": "2027-07-17.Laudes"
+},
+{
+"id": 651,
+"la": "Ant. Dixítque David ad Dóminum, cum vidísset Angelum cædéntem pópulum: Ego sum qui peccávi, ego qui iníque egi; isti, qui oves sunt, quid fecérunt?",
+"n": 2,
+"w": "2027-07-17.Vespera"
+},
+{
+"id": 652,
+"la": "Præsta, quǽsumus, omnípotens Deus: ut, qui gloriósos Mártyres tuos Christóphorum et Cucuphátém fortes in sua confessióne cognóvimus, pios apud te in nostra intercessióne sentiámus.",
+"n": 2,
+"w": "2027-07-25.Laudes"
+},
+{
+"id": 653,
+"la": "Mártyrum tuórum nos, Dómine, Joséphi, et Melchióris et sociórum conféssio beáta commúniat: et fragilitáti nostræ subsídium dignánter exóret.",
+"n": 2,
+"w": "2027-07-27.Laudes"
+},
+{
+"id": 654,
+"la": "℣. Ora pro nobis, beáte Germáni.",
+"n": 2,
+"w": "2027-07-31.Laudes"
+},
+{
+"id": 655,
+"la": "Ant. Beátus ille servus, cum vénerit Dóminus ejus, et pulsáverit jánuam, et invénerit eum vigilántem.",
+"n": 2,
+"w": "2027-07-31.Laudes"
+},
+{
+"id": 656,
+"la": "Dulci prodúctum cántico,",
+"n": 2,
+"w": "2027-08-04.Laudes"
+},
+{
+"id": 657,
+"la": "Noster deprómat hódie",
+"n": 2,
+"w": "2027-08-04.Laudes"
+},
+{
+"id": 658,
+"la": "Vergénte mundi véspere,",
+"n": 2,
+"w": "2027-08-04.Laudes"
+},
+{
+"id": 659,
+"la": "Præco salútis míttitur.",
+"n": 2,
+"w": "2027-08-04.Laudes"
+},
+{
+"id": 660,
+"la": "Doctrínam evangélicam",
+"n": 2,
+"w": "2027-08-04.Laudes"
+},
+{
+"id": 661,
+"la": "Potum largítur óptimum.",
+"n": 2,
+"w": "2027-08-04.Laudes"
+},
+{
+"id": 662,
+"la": "Lex veritátis fuit in ore ejus, et iníquitas non est invénta in lábiis ejus: in pace et in æquitáte ambulávit mecum, et multos avértit ab iniquitáte.",
+"n": 2,
+"w": "2027-08-04.Nona"
+},
+{
+"id": 663,
+"la": "Spíritus meus, qui est in te, et verba mea quæ pósui in ore tuo, non recédent de ore tuo et de ore séminis tui, dicit Dóminus, ámodo et usque in sempitérnum.",
+"n": 2,
+"w": "2027-08-04.Sexta"
+},
+{
+"id": 664,
+"la": "℣. Emítte lucem tuam et veritátem tuam.",
+"n": 2,
+"w": "2027-08-06.Laudes"
+},
+{
+"id": 665,
+"la": "℟. Ipsa me deduxérunt, et adduxérunt in montem sanctum tuum et in tabernácula tua.",
+"n": 2,
+"w": "2027-08-06.Laudes"
+},
+{
+"id": 666,
+"la": "℟.br. Gloriósus apparuísti * In conspéctu Dómini.",
+"n": 2,
+"w": "2027-08-06.Tertia"
+},
+{
+"id": 667,
+"la": "℣. Proptérea decórem índuit te Dóminus.",
+"n": 2,
+"w": "2027-08-06.Tertia"
+},
+{
+"id": 668,
+"la": "℟. In conspéctu Dómini.",
+"n": 2,
+"w": "2027-08-06.Tertia"
+},
+{
+"id": 669,
+"la": "Ant. Quis tibi vidétur * próximus fuísse illi, qui íncidit in latrónes? Et ait illi: Qui fecit misericórdiam in illum. Vade, et tu fac simíliter, allelúia.",
+"n": 2,
+"w": "2027-08-08.Vespera"
+},
+{
+"id": 670,
+"la": "Ant. Quis tibi vidétur próximus fuísse illi, qui íncidit in latrónes? Et ait illi: Qui fecit misericórdiam in illum. Vade, et tu fac simíliter, allelúia.",
+"n": 2,
+"w": "2027-08-08.Vespera"
+},
+{
+"id": 671,
+"la": "Ant. Inclitus Martyr Tibúrtius, cum nudátis plantis super prunas ardéntes incéderet, Fabiáno præfécito dixit: Vidétur mihi quod super róseos flores incédam in nómine Dómini mei Jesu Christi.",
+"n": 2,
+"w": "2027-08-11.Laudes"
+},
+{
+"id": 672,
+"la": "Sancti Mártyris Tibúrtii nos, Dómine, fóveant continuáta præsídia: quia non désinis propítius intuéri; quos tálibus auxíliis concésseris adjuvári.",
+"n": 2,
+"w": "2027-08-11.Laudes"
+},
+{
+"id": 673,
+"la": "Ant. Tota pulchra es, * amíca mea, et mácula non est in te: favus distíllans lábia tua, mel et lac sub lingua tua, odor unguentórum tuórum super ómnia arómata: jam enim hiems tránsiit, imber ábiit et recéssit, flores apparuérunt, víneæ floréntes odórem dedérunt, et vox túrturis audíta est in terra nostra: surge, própera amíca mea, veni de Líbano, veni, coronáberis.",
+"n": 2,
+"w": "2027-08-14.Vespera"
+},
+{
+"id": 674,
+"la": "Ant. Tota pulchra es, amíca mea, et mácula non est in te: favus distíllans lábia tua, mel et lac sub lingua tua, odor unguentórum tuórum super ómnia arómata: jam enim hiems tránsiit, imber ábiit et recéssit, flores apparuérunt, víneæ floréntes odórem dedérunt, et vox túrturis audíta est in terra nostra: surge, própera amíca mea, veni de Líbano, veni, coronáberis.",
+"n": 2,
+"w": "2027-08-14.Vespera"
+},
+{
+"id": 675,
+"la": "Ant. Nonne decem mundáti sunt? et novem ubi sunt? Non est invéntus qui redíret, et daret glóriam Deo, nisi hic alienígena. Vade, quia fides tua te salvum fecit, allelúia.",
+"n": 2,
+"w": "2027-08-15.Vespera"
+},
+{
+"id": 676,
+"la": "Et cor Hyacínthi méritum:",
+"n": 2,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 677,
+"la": "Corúsca lustrat ágmina,",
+"n": 2,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 678,
+"la": "Bina decórus láurea.",
+"n": 2,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 679,
+"la": "Secréta, quæ hic nóverat,",
+"n": 2,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 680,
+"la": "Fluctus tuméntes édomat:",
+"n": 2,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 681,
+"la": "Aquæ stupéscunt flúminum,",
+"n": 2,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 682,
+"la": "Itérque præbent sólídum.",
+"n": 2,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 683,
+"la": "Vitæ resúrgunt mórtui,",
+"n": 2,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 684,
+"la": "Cæcis patéscunt lúmina,",
+"n": 2,
+"w": "2027-08-17.Laudes"
+},
+{
+"id": 685,
+"la": "In illo témpore: Dixit Jesus discípulis suis: Eúntes prædicáte, dicéntes: Quia appropinquávit regnum cælórum. Infirmos curáte, mórtuos suscitáte, leprósos mundáte, dæmones eícite: gratis accepístis, gratis date.",
+"n": 2,
+"w": "2027-08-17.Prima"
+},
+{
+"id": 686,
+"la": "Ecce servus meus, suscípiam eum: eléctus meus, complácuit sibi in illo ánima mea: dedi spíritum meum super eum.",
+"n": 2,
+"w": "2027-08-17.Sexta"
+},
+{
+"id": 687,
+"la": "Lætis canámus vóribus,",
+"n": 2,
+"w": "2027-08-17.Vespera"
+},
+{
+"id": 688,
+"la": "Deúmque, pulso núbilo,",
+"n": 2,
+"w": "2027-08-17.Vespera"
+},
+{
+"id": 689,
+"la": "Puris colámus méntibus.",
+"n": 2,
+"w": "2027-08-17.Vespera"
+},
+{
+"id": 690,
+"la": "Patris refúlget móribus:",
+"n": 2,
+"w": "2027-08-17.Vespera"
+},
+{
+"id": 691,
+"la": "Ducis secútus trámitem,",
+"n": 2,
+"w": "2027-08-17.Vespera"
+},
+{
+"id": 692,
+"la": "Mundi triúmphant príncipem.",
+"n": 2,
+"w": "2027-08-17.Vespera"
+},
+{
+"id": 693,
+"la": "Solátur et dat gáudia:",
+"n": 2,
+"w": "2027-08-17.Vespera"
+},
+{
+"id": 694,
+"la": "Miraculórum glória",
+"n": 2,
+"w": "2027-08-17.Vespera"
+},
+{
+"id": 695,
+"la": "Christi corúscat grátia.",
+"n": 2,
+"w": "2027-08-17.Vespera"
+},
+{
+"id": 696,
+"la": "℣. Ora pro nobis, beáta Joánnam Francíscam.",
+"n": 2,
+"w": "2027-08-21.Laudes"
+},
+{
+"id": 697,
+"la": "Ant. Dóminus possédit me * in inítio viárum suárum, ántequam quidquam fáceret a princípio: necdum erant abyssi, et ego parturiébar: quando præparábat cœlos, áderam, cum eo compónens ómnia.",
+"n": 2,
+"w": "2027-08-21.Vespera"
+},
+{
+"id": 698,
+"la": "Ant. Dóminus possédit me in inítio viárum suárum, ántequam quidquam fáceret a princípio: necdum erant abyssi, et ego parturiébar: quando præparábat cœlos, áderam, cum eo compónens ómnia.",
+"n": 2,
+"w": "2027-08-21.Vespera"
+},
+{
+"id": 699,
+"la": "℣. Ora pro nobis, beáte Augustíne.",
+"n": 2,
+"w": "2027-08-28.Laudes"
+},
+{
+"id": 700,
+"la": "Conémur totis víribus,",
+"n": 2,
+"w": "2027-08-28.Laudes"
+},
+{
+"id": 701,
+"la": "Jungámus preces précibus,",
+"n": 2,
+"w": "2027-08-28.Laudes"
+},
+{
+"id": 702,
+"la": "Ut Augustíni méritis",
+"n": 2,
+"w": "2027-08-28.Laudes"
+},
+{
+"id": 703,
+"la": "Cæli fruámur gáudiis.",
+"n": 2,
+"w": "2027-08-28.Laudes"
+},
+{
+"id": 704,
+"la": "Cum Spíritu Paráclito",
+"n": 2,
+"w": "2027-08-28.Laudes"
+},
+{
+"id": 705,
+"la": "Præsta, quǽsumus, omnípotens Deus: ut, qui beáti Marcélli, Mártyris tui, natalítia cólimus, a cunctis malis imminéntibus, ejus intercessióne, liberémur.",
+"n": 2,
+"w": "2027-09-04.Laudes"
+},
+{
+"id": 706,
+"la": "Deus, qui sancto Patriarchæ Domínico beátum Bertrándum, Confessórem tuum, sócium et imitatórem exímium adiúnxísti: ejus nobis pio intervéntu concéde ita ejúsdem sequi vestígia, ut assequámur et prǽmia.",
+"n": 2,
+"w": "2027-09-06.Laudes"
+},
+{
+"id": 707,
+"la": "Concede, quæsumus, omnípotens Deus: ut Ecclesiá tua, quæ beáti Nicolái Confessoris tui virtutum et miraculórum glória corúscat, ejus intercessióne et méritis, perpétua pace atque unitáte lætétur.",
+"n": 2,
+"w": "2027-09-10.Laudes"
+},
+{
+"id": 708,
+"la": "℣. Dícite in natiónibus.",
+"n": 2,
+"w": "2027-09-14.Laudes"
+},
+{
+"id": 709,
+"la": "℟. Quia Dóminus regnávit a ligno.",
+"n": 2,
+"w": "2027-09-14.Laudes"
+},
+{
+"id": 710,
+"la": "Nos a privátis, Christe, munda máculis:",
+"n": 2,
+"w": "2027-09-14.Laudes"
+},
+{
+"id": 711,
+"la": "Humanitátem miserátus frágitilem,",
+"n": 2,
+"w": "2027-09-14.Laudes"
+},
+{
+"id": 712,
+"la": "Pópulum cunctum Crucis per signáculum:",
+"n": 2,
+"w": "2027-09-14.Laudes"
+},
+{
+"id": 713,
+"la": "Morbo avérte córporis et ánimæ:",
+"n": 2,
+"w": "2027-09-14.Laudes"
+},
+{
+"id": 714,
+"la": "Sit coæquális laus Sancto Spíritui:",
+"n": 2,
+"w": "2027-09-14.Laudes"
+},
+{
+"id": 715,
+"la": "Nos autem prædicámus Christum crucifíxum: Judǽis quidem scándalum, géntibus autem stultítiam: ipsis autem vocátis Judǽis, atque Græcis Christum Dei virtútem, et Dei sapiéntiam:",
+"n": 2,
+"w": "2027-09-14.Nona"
+},
+{
+"id": 716,
+"la": "Verbum crucis pereúntibus stultítia est: iis autem qui salvi fiunt, id est nobis, virtus Dei est.",
+"n": 2,
+"w": "2027-09-14.Sexta"
+},
+{
+"id": 717,
+"la": "Ant. O Crux benedícta! * quia in te pepéndit Salvátor mundi, et in te triumphávit Rex Angelórum, allelúia.",
+"n": 2,
+"w": "2027-09-14.Vespera"
+},
+{
+"id": 718,
+"la": "Ant. O Crux benedícta! quia in te pepéndit Salvátor mundi, et in te triumphávit Rex Angelórum, allelúia.",
+"n": 2,
+"w": "2027-09-14.Vespera"
+},
+{
+"id": 719,
+"la": "℣. Defécit in dolóre vita mea.",
+"n": 2,
+"w": "2027-09-15.Laudes"
+},
+{
+"id": 720,
+"la": "Omnípotens sempitérne Deus, qui infírma mundi éligis, ut fórtia quæque confúndas: concéde propítius; ut, qui beátæ Euphémiæ Vírginis et Mártyris tuæ solémnia cólimus, ejus apud te patrocínia sentiámus.",
+"n": 2,
+"w": "2027-09-16.Laudes"
+},
+{
+"id": 721,
+"la": "In illo témpore: Dixit Jesus discípulis suis: Cum audiéritis prælia et seditiões, nolite terréri: opórtet primum hæc fieri, sed nondum statim finis. Tu autem.",
+"n": 2,
+"w": "2027-09-16.Prima"
+},
+{
+"id": 722,
+"la": "Deus, qui beátum Franciscum Confessórem tuum, supérnæ caritatis dulcedine perfúsus, verbi tui præcónem exímium effecísti: ejus intercessióne concéde ut, igne tui amóris incénsi, in tua dilectióne semper vivámus.",
+"n": 2,
+"w": "2027-09-20.Laudes"
+},
+{
+"id": 723,
+"la": "Ant. Archángeli Michaélis * interventióne suffúlti, te Dómine deprecámur, ut, quos honóre proséquimur, contingámus et mente, allelúia.",
+"n": 2,
+"w": "2027-09-29.Vespera"
+},
+{
+"id": 724,
+"la": "Ant. Archángeli Michaélis interventióne suffúlti, te Dómine deprecámur, ut, quos honóre proséquimur, contingámus et mente, allelúia.",
+"n": 2,
+"w": "2027-09-29.Vespera"
+},
+{
+"id": 725,
+"la": "℣. Muro tuo inexpugnábili tuæ custódi nos, Angele Dei.",
+"n": 2,
+"w": "2027-10-02.Laudes"
+},
+{
+"id": 726,
+"la": "℟. Et armis tuæ poténtiæ prótege nos semper.",
+"n": 2,
+"w": "2027-10-02.Laudes"
+},
+{
+"id": 727,
+"la": "Lætétur Ecclésia tua, Deus, beáti Leodegárii Mártyris tui atque Pontíficis confísa suffrágiis: atque, ejus précibus gloriósis, et devóta permáneat et secúra consístat.",
+"n": 2,
+"w": "2027-10-02.Laudes"
+},
+{
+"id": 728,
+"la": "Patre ditáta páupere:",
+"n": 2,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 729,
+"la": "Laudis propína pócula,",
+"n": 2,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 730,
+"la": "Sacro depréssa úbere.",
+"n": 2,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 731,
+"la": "Vili contéctus tégmine,",
+"n": 2,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 732,
+"la": "Carnem mundúmque cónterens,",
+"n": 2,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 733,
+"la": "Auréolam dum dócuit.",
+"n": 2,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 734,
+"la": "Spargit virtútum múnera,",
+"n": 2,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 735,
+"la": "Verórum Pater páuperum,",
+"n": 2,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 736,
+"la": "Nos páuperes fac spíritu:",
+"n": 2,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 737,
+"la": "Consórtes redde súpérum",
+"n": 2,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 738,
+"la": "Eréptos ab intéritu.",
+"n": 2,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 739,
+"la": "Nobis ætérna gáudia.",
+"n": 2,
+"w": "2027-10-04.Laudes"
+},
+{
+"id": 740,
+"la": "℣. Circúmdedit me lánceis suis.",
+"n": 2,
+"w": "2027-10-04.Tertia"
+},
+{
+"id": 741,
+"la": "Christe Redémtor ómnium.",
+"n": 2,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 742,
+"la": "Exsúltet cælum láudibus.",
+"n": 2,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 743,
+"la": "Signórum probant ópera:",
+"n": 2,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 744,
+"la": "Ætérna Christi múnera.",
+"n": 2,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 745,
+"la": "Repórtat dona glóriæ:",
+"n": 2,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 746,
+"la": "Hunc sequántur, huic jungántur",
+"n": 2,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 747,
+"la": "Lux accédit, nox recédit,",
+"n": 2,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 748,
+"la": "Ducit, relúcet, dévia",
+"n": 2,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 749,
+"la": "Devitándo, demonstrándo",
+"n": 2,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 750,
+"la": "Beáta nobis gáudia.",
+"n": 2,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 751,
+"la": "Nos condúcas et indúcas",
+"n": 2,
+"w": "2027-10-04.Vespera"
+},
+{
+"id": 752,
+"la": "℣. Ora pro nobis, beáte Raymúnde.",
+"n": 2,
+"w": "2027-10-05.Laudes"
+},
+{
+"id": 753,
+"la": "Sit Trinitáti glória,",
+"n": 2,
+"w": "2027-10-07.Vespera"
+},
+{
+"id": 754,
+"la": "Orántibus det grátiam,",
+"n": 2,
+"w": "2027-10-07.Vespera"
+},
+{
+"id": 755,
+"la": "Qua consequántur glóriam.",
+"n": 2,
+"w": "2027-10-07.Vespera"
+},
+{
+"id": 756,
+"la": "En Ludovíci láudibus",
+"n": 2,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 757,
+"la": "Festívus albésцит dies.",
+"n": 2,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 758,
+"la": "Stitit feróces tigrídes.",
+"n": 2,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 759,
+"la": "Hausit venéni pócula:",
+"n": 2,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 760,
+"la": "Heróicis virtútibus",
+"n": 2,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 761,
+"la": "Exhálát ore lúmina.",
+"n": 2,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 762,
+"la": "Sit Trinitáti júgiter",
+"n": 2,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 763,
+"la": "Laus et perénnis glória,",
+"n": 2,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 764,
+"la": "Quæ Ludovíci fúlgida",
+"n": 2,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 765,
+"la": "Respléndet in victória.",
+"n": 2,
+"w": "2027-10-09.Laudes"
+},
+{
+"id": 766,
+"la": "Pro Jesu Christo accépimus grátiam, et apostolátum ad obediéndum fídei in ómnibus géntibus pro nómine ejus, in quibus estis et vos vocáti Jesu Christi:",
+"n": 2,
+"w": "2027-10-09.Nona"
+},
+{
+"id": 767,
+"la": "O virum mirabilem in signis et prodigiis, languóres cum dæmóniis quóslibet pelléntem! Dat aurem suis ávium prædicans silvéstrium verbis intendéntem. O vitam laudabilem, qua fidem sic magnificat, sed et multos vivificat mórtuos defunctus! Francísce, nos cæléstium fac consórtes civium, quibus es coniunctus.",
+"n": 2,
+"w": "2027-10-09.Nona"
+},
+{
+"id": 768,
+"la": "In illo témpore: Dixit Jesus discípulis suis: Eúntes in mundum univérsum, prædicate Evangélium omni creatúræ.",
+"n": 2,
+"w": "2027-10-09.Prima"
+},
+{
+"id": 769,
+"la": "Tamétsi nihil sum: signa tamen apostolátus mei facta sunt super vos in omni patiéntia, in signis, et prodígiis, et virtútibus.",
+"n": 2,
+"w": "2027-10-09.Sexta"
+},
+{
+"id": 770,
+"la": "Ant. Sitivit in te, Dómine, ánima sponsæ tuæ, et lætáta est in his quæ dicta sunt illi.",
+"n": 2,
+"w": "2027-10-15.Laudes"
+},
+{
+"id": 771,
+"la": "Ant. Lætáre, Terésia, in eo qui te fecit: quóniam benedíxit Dóminus fíliis tuis, et ádipe fruménti sátiat te.",
+"n": 2,
+"w": "2027-10-15.Laudes"
+},
+{
+"id": 772,
+"la": "Ant. Dedit ei Dóminus sapiéntiam et prudentiam multam nimis et latitúdinem cordis, quasi arénam quæ est in litore maris.",
+"n": 2,
+"w": "2027-10-15.Laudes"
+},
+{
+"id": 773,
+"la": "℟. Anima mea * Exsultábit in Dómino.",
+"n": 2,
+"w": "2027-10-15.Sexta"
+},
+{
+"id": 774,
+"la": "O God, who dost permit us to keep the birthday of thy holy Martyrs Crispíni et Crispiniáni, grant that we may enjoy their fellowship in everlasting happiness.",
+"n": 2,
+"w": "2027-10-25.Laudes"
+},
+{
+"id": 775,
+"la": "℣. Sedes tua, Deus, in sǽculum séculi.",
+"n": 2,
+"w": "2027-10-31.Laudes"
+},
+{
+"id": 776,
+"la": "Ant. Beáti estis Sancti Dei omnes, qui meruístis consórtes fíeri cæléstium virtútum, et pérfrui ætérnæ claritátis glória: idéoque precámur, ut mémores nostri, intercédere dignémini pro nobis ad Dóminum Deum nostrum.",
+"n": 2,
+"w": "2027-10-31.Vespera"
+},
+{
+"id": 777,
+"la": "℣. Ora pro nobis, beáte Albérte.",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 778,
+"la": "Noctis tenébras díssipans,",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 779,
+"la": "Auróra, solis núntia,",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 780,
+"la": "Hortátur, ut post cánticum",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 781,
+"la": "Sequámur Albérti vias.",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 782,
+"la": "Ut dormiéntes súrgerent,",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 783,
+"la": "Christi fruéntes lúmine.",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 784,
+"la": "Deféndit a raptóribus,",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 785,
+"la": "Salvans, redúcens, álligans,",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 786,
+"la": "Pacis sequéster ímpiger,",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 787,
+"la": "Albérte, cunctis géntibus",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 788,
+"la": "Pacis supérnæ múnera",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 789,
+"la": "Indesinénter ímpetra.",
+"n": 2,
+"w": "2027-11-15.Laudes"
+},
+{
+"id": 790,
+"la": "Státuit ei testaméntum ætérnum, et dedit illi sacerdótium gentis, et beatificávit illum in glória.",
+"n": 2,
+"w": "2027-11-15.Nona"
+},
+{
+"id": 791,
+"la": "Quemádmodum erudítus es in iuventúte tua, et implétus es, quasi flumen, sapiéntia, ad ínsulas longe divulgátum est nomen tuum, et diléctus es in pace tua.",
+"n": 2,
+"w": "2027-11-15.Sexta"
+},
+{
+"id": 792,
+"la": "Nomen Albérti résonans ubique:",
+"n": 2,
+"w": "2027-11-15.Vespera"
+},
+{
+"id": 793,
+"la": "Sanctus ac Doctor mérito vocátur",
+"n": 2,
+"w": "2027-11-15.Vespera"
+},
+{
+"id": 794,
+"la": "Digna Guzmáni sóboles refúlsit;",
+"n": 2,
+"w": "2027-11-15.Vespera"
+},
+{
+"id": 795,
+"la": "Ac Dei verbum dócuit poténtis",
+"n": 2,
+"w": "2027-11-15.Vespera"
+},
+{
+"id": 796,
+"la": "Rite, doctrínæ rádiis supérnæ,",
+"n": 2,
+"w": "2027-11-15.Vespera"
+},
+{
+"id": 797,
+"la": "Méntium densas ténebras fugávit,",
+"n": 2,
+"w": "2027-11-15.Vespera"
+},
+{
+"id": 798,
+"la": "Panis et vini spécie laténtem",
+"n": 2,
+"w": "2027-11-15.Vespera"
+},
+{
+"id": 799,
+"la": "Extulit Christum rédamans, adórans:",
+"n": 2,
+"w": "2027-11-15.Vespera"
+},
+{
+"id": 800,
+"la": "Vírginem fervens cóluit Mariam",
+"n": 2,
+"w": "2027-11-15.Vespera"
+},
+{
+"id": 801,
+"la": "Et Paracléto páriter resúltet",
+"n": 2,
+"w": "2027-11-15.Vespera"
+},
+{
+"id": 802,
+"la": "℣. Ora pro nobis, beáta Cæcília.",
+"n": 2,
+"w": "2027-11-22.Laudes"
+},
+{
+"id": 803,
+"la": "Ant. Triduánas * a Dómino popósci indúcias, ut domum meam ecclésiam consecrárem.",
+"n": 2,
+"w": "2027-11-22.Vespera"
+},
+{
+"id": 804,
+"la": "Ant. Triduánas a Dómino popósci indúcias, ut domum meam ecclésiam consecrárem.",
+"n": 2,
+"w": "2027-11-22.Vespera"
+},
+{
+"id": 805,
+"la": "℣. Ora pro nobis, beáte Nicoláe.",
+"n": 2,
+"w": "2027-12-06.Laudes"
+},
+{
+"id": 806,
+"la": "Ant. In médio ecclésiæ apéruit os ejus et implévit eum Dóminus spiritu sapiéntiæ et intelléctus, stoláque glóriæ induit eum, allelúja, allelúja, allelúja.",
+"n": 2,
+"w": "2027-12-27.Vespera"
+},
+{
+"id": 807,
+"la": "Ant. Conféssor Dómini N., astántem plebem corróbora sancta intercessióne: ut, qui vitiórum póndere prémimur, beatitúdinis tuæ glória sublevémur, et te duce ætérna præmia consequámur.",
+"n": 2,
+"w": "2028-03-06.Vespera"
+},
+{
+"id": 808,
+"la": "Ant. In médio et in circúitu sedis Dei quátuor animália senas alas habéntia, óculis úndique plena, non cessant nocte ac die dicere: Sanctus, Sanctus, Sanctus Dóminus Deus omnipotens, qui erat, et qui est, et qui ventúrus est, alleluia.",
+"n": 2,
+"w": "2028-04-25.Laudes"
+},
+{
+"id": 809,
+"la": "Ant. Tua sunt hæc, Christe, ópera, qui Sanctos tuos ita gloríficas, ut étiam dignitátis grátia in eis futúræ præíre mirácula fácias: tu insignes Evangélii prædicatóres animálium cæléstium admirábili figúra præsignásti: his namque cæléste munus collátum gloriósis indíciis es dignátus osténdere: hinc laus, hinc glória tibi résonet in sæcula, alleluia.",
+"n": 2,
+"w": "2028-04-25.Vespera"
+},
+{
+"id": 810,
+"la": "Ant. Solémnitas tua, Dei Génetrix Virgo, gáudium annuntiávit univérso mundo: Ex te enim ortus est sol justítiæ, Christus Deus noster: qui, solvens maledictiónem, dedit benedictiónem; et confúndens mortem, donávit nobis vitam sempitérnam, alleluia.",
+"n": 2,
+"w": "2028-05-08.Vespera"
+},
+{
+"id": 811,
+"la": "Ant. Solémnitas est hódie * sanctæ Maríæ Vírginis, cujus vita ínclita cunctas illústrat ecclésias, alleluia.",
+"n": 2,
+"w": "2028-05-31.Laudes"
+},
+{
+"id": 812,
+"la": "Ant. Solémnitas est hódie sanctæ Maríæ Vírginis, cujus vita ínclita cunctas illústrat ecclésias, alleluia.",
+"n": 2,
+"w": "2028-05-31.Laudes"
+},
+{
+"id": 813,
+"la": "Ant. Regáli ex progénie * María exórta refúlget, alleluia.",
+"n": 2,
+"w": "2028-05-31.Laudes"
+},
+{
+"id": 814,
+"la": "Ant. Regáli ex progénie María exórta refúlget, alleluia.",
+"n": 2,
+"w": "2028-05-31.Laudes"
+},
+{
+"id": 815,
+"la": "Ant. Cum jucunditáte * Solemnitátem beátæ Maríæ celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum, alleluia.",
+"n": 2,
+"w": "2028-05-31.Laudes"
+},
+{
+"id": 816,
+"la": "Ant. Cum jucunditáte Solemnitátem beátæ Maríæ celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum, alleluia.",
+"n": 2,
+"w": "2028-05-31.Laudes"
+},
+{
+"id": 817,
+"la": "Ant. O beáte Jacóbe, ómnium corde et ore laudánde, o patróné singuláris et amábilis, intercède pro nobis ad Dóminum.",
+"n": 2,
+"w": "2028-07-25.Vespera"
+},
+{
+"id": 818,
+"la": "Ant. Respéxit Dóminus humilitátem servi sui, per quem esuriéntes Indos implévit bonis: et ex hoc beátum hunc dicent omnes generatiónes.",
+"n": 2,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 819,
+"la": "℣. Ora pro nobis, beáte Stéphane.",
+"n": 1,
+"w": "2026-12-26.Laudes"
+},
+{
+"id": 820,
+"la": "Ant. Intuens in cœlum * beátus Stéphanus vidit glóriam Dei, et ait: Ecce vídeo cœlos apértos, et Fílium hóminis stantem a dextris Dei.",
+"n": 1,
+"w": "2026-12-26.Laudes"
+},
+{
+"id": 821,
+"la": "Pósitis autem génibus, beátus Stéphanus clamávit voce magna, dicens: Dómine, ne státuas illis hoc peccátum.",
+"n": 1,
+"w": "2026-12-26.Nona"
+},
+{
+"id": 822,
+"la": "Cum esset Stéphanus plenus Spíritu Sancto, inténdens in cælum, vidit glóriam Dei, et Jesum stantem a dextris Dei.",
+"n": 1,
+"w": "2026-12-26.Sexta"
+},
+{
+"id": 823,
+"la": "℟. Læténtur omnes qui sperant in te, Dómine: in ætérnum exsultábunt, et habitábis in eis: et gloriabúntur in te omnes",
+"n": 1,
+"w": "2027-01-02.Vespera"
+},
+{
+"id": 824,
+"la": "℣. Dómine, in lúmine vultus tui ambulábunt, et in nómine tuo exsultábunt tota die.",
+"n": 1,
+"w": "2027-01-02.Vespera"
+},
+{
+"id": 825,
+"la": "℣. Emítte Agnum, Dómine, dominatórem terræ, alleluia.",
+"n": 1,
+"w": "2027-04-05.Laudes"
+},
+{
+"id": 826,
+"la": "℟. De Petra desérti ad montem fília Sion, alleluia.",
+"n": 1,
+"w": "2027-04-05.Laudes"
+},
+{
+"id": 827,
+"la": "Infirmitátem nostram, quæsumus, Dómine, propítius réspice: et mala ómnia quæ juste merémur, sanctórum Mártyrum tuórum atque Pontíficum N. et N. intercessióne avérte.",
+"n": 1,
+"w": "2027-05-29.Laudes"
+},
+{
+"id": 828,
+"la": "Ant. Cum palma ad regna pervenérunt Sancti, corónas decóris meruérunt de manu Dómini.",
+"n": 1,
+"w": "2027-06-02.Laudes"
+},
+{
+"id": 829,
+"la": "Deus, qui beátos Mártyres tuos Petrum Pontíficem eiúsque sócios, ad fidem géntibus prædicándam, pari firmitáte et caritáte donásti; præsta, quæsumus, eórum exémplo et intercessióne nos in tua fide permanére constántes.",
+"n": 1,
+"w": "2027-06-03.Laudes"
+},
+{
+"id": 830,
+"la": "Exáudi, quæsumus, Dómine, preces nostras, quas in beáti Medárdi Confessóris tui atque Pontíficis solemnitate deférimus: ut, qui tibi digne méruit famulári, ejus intercedéntibus méritis, ab ómnibus nos absólvas peccátis. Per.",
+"n": 1,
+"w": "2027-06-08.Laudes"
+},
+{
+"id": 831,
+"la": "Deus, qui beátam Diánam Virginem tuam admirábili spíritus fortitúdine donásti, eique in terénda evangélicæ perfectionis via beátas Cæciliam et Amátam cómites dedisti: concéde propítius ut eárum exémpló roboremur in árduis, et in adversís protegámur auxilio.",
+"n": 1,
+"w": "2027-06-09.Laudes"
+},
+{
+"id": 832,
+"la": "Deus, largitor caritatis, qui beátum Joánnem Confessórem atque Pontífficem in conservánda Ecclésiæ unitáte instaurandáque regulári disciplína virtúte roborásti, per ipsíus intercessiónem tríbue nobis idípsum sentíre et fácere in Christo Jesu Dómino nostro:i",
+"n": 1,
+"w": "2027-06-10.Laudes"
+},
+{
+"id": 833,
+"la": "Ant. Pro eo * quod non credidísti verbis meis, eris tacens, et non póteris loqui usque in diem nativitátis ejus.",
+"n": 1,
+"w": "2027-06-23.Vespera"
+},
+{
+"id": 834,
+"la": "Osténde mihi fáciem tuam, sonet vox tua in áuribus meis: vox enim tua dulcis, et fácies tua decóra.",
+"n": 1,
+"w": "2027-07-02.Nona"
+},
+{
+"id": 835,
+"la": "Ecce diléctus meus venit sáliens in móntibus, transiliens colles: similis est cápreæ hinnulóque cervórum.",
+"n": 1,
+"w": "2027-07-02.Sexta"
+},
+{
+"id": 836,
+"la": "* Virgo semper Mariá. Sancta Dei Génatrix.",
+"n": 1,
+"w": "2027-07-02.Tertia"
+},
+{
+"id": 837,
+"la": "℟. Virgo semper Mariá. Sancta Dei Génatrix.",
+"n": 1,
+"w": "2027-07-02.Tertia"
+},
+{
+"id": 838,
+"la": "Splendor illústrat púgilum triúmphos,",
+"n": 1,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 839,
+"la": "Excipit cæli dómibus, supréma",
+"n": 1,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 840,
+"la": "Mártyrum nomen: vólitat per oras",
+"n": 1,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 841,
+"la": "Fama victórum, meritósque digna",
+"n": 1,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 842,
+"la": "Mártyrum Christi veneránda proles,",
+"n": 1,
+"w": "2027-07-09.Laudes"
+},
+{
+"id": 843,
+"la": "Accessístis ad Sion montem, et civitátem Dei vivéntis, Jerúsalem cæléstem, et multórum míllium angelórum frequéntiam, et Ecclésiam primitivórum, qui conscrípti sunt in cælis.",
+"n": 1,
+"w": "2027-07-09.Nona"
+},
+{
+"id": 844,
+"la": "In illo témpore: Dixit Jesus discipulis suis: Beáti éritis, cum vos óderint hómines et cum separáverint vos, et exprobráverint et eiécerint nomen vestrum tamquam malum propter Filium hominis.",
+"n": 1,
+"w": "2027-07-09.Prima"
+},
+{
+"id": 845,
+"la": "Mártýrum virtus valídumque robur,",
+"n": 1,
+"w": "2027-07-09.Vespera"
+},
+{
+"id": 846,
+"la": "Palma victórum, decus et coróná,",
+"n": 1,
+"w": "2027-07-09.Vespera"
+},
+{
+"id": 847,
+"la": "Christe Rex, tanti mémorurum triúmphi",
+"n": 1,
+"w": "2027-07-09.Vespera"
+},
+{
+"id": 848,
+"la": "Hac die sacra pópulus fidélis",
+"n": 1,
+"w": "2027-07-09.Vespera"
+},
+{
+"id": 849,
+"la": "Míletes Christi, fidei colúmna,",
+"n": 1,
+"w": "2027-07-09.Vespera"
+},
+{
+"id": 850,
+"la": "Agmen invíctum celebráre digno",
+"n": 1,
+"w": "2027-07-09.Vespera"
+},
+{
+"id": 851,
+"la": "Inter hos noster júbilans triúmphum",
+"n": 1,
+"w": "2027-07-09.Vespera"
+},
+{
+"id": 852,
+"la": "Ordo præclári récolit Joánnis,",
+"n": 1,
+"w": "2027-07-09.Vespera"
+},
+{
+"id": 853,
+"la": "Férvidi sacro pietátis igne,",
+"n": 1,
+"w": "2027-07-09.Vespera"
+},
+{
+"id": 854,
+"la": "Pábulum præbent pópulo salútis:",
+"n": 1,
+"w": "2027-07-09.Vespera"
+},
+{
+"id": 855,
+"la": "℣. Ora pro nobis, beáte Joánnes cum sóciis tuis.",
+"n": 1,
+"w": "2027-07-09.Vespera"
+},
+{
+"id": 856,
+"la": "Ant. Commemoratiónem hodiérnam perpétuæ Virgínis Genetrícis Dei Mariæ solémniter celebrémus, qua celsitúdo throni procéssit, allelúja.",
+"n": 1,
+"w": "2027-07-16.Laudes"
+},
+{
+"id": 857,
+"la": "Ant. In diébus illis, * múlier quæ erat in civitáte peccátrix, ut cognóvit quod Jesus accúbuit in domo Simónis leprósi, áttulit alabástrum unguénti: et stans retro secus pedes Dómini Jesu, lácrimis cœpit rigáre pedes éjus, et capíllis cápitis sui tergébat: et osculabátur pedes éjus, et unguénto ungébat.",
+"n": 1,
+"w": "2027-07-22.Vespera"
+},
+{
+"id": 858,
+"la": "Ant. In diébus illis, múlier quæ erat in civitáte peccátrix, ut cognóvit quod Jesus accúbuit in domo Simónis leprósi, áttulit alabástrum unguénti: et stans retro secus pedes Dómini Jesu, lácrimis cœpit rigáre pedes éjus, et capíllis cápitis sui tergébat: et osculabátur pedes éjus, et unguénto ungébat.",
+"n": 1,
+"w": "2027-07-22.Vespera"
+},
+{
+"id": 859,
+"la": "Deus, qui beátum Mannem Confessórem tuum dispositiône mirábili in viam perfectiόνis traduxísti; eádem misericórdiæ grátia dirige actus nostros: ut possimus quærere quod jubes, et assequi quod promíttis.",
+"n": 1,
+"w": "2027-07-30.Laudes"
+},
+{
+"id": 860,
+"la": "Grant, we beseech thee, almighty God, that the venerable feast of Hippólyti Mártyris tui sociorúmque ejus Bishop may increase our devotion and promote our salvation.",
+"n": 1,
+"w": "2027-08-13.Laudes"
+},
+{
+"id": 861,
+"la": "Adésto, Dómine, supplicatiónibus nostris: ut, qui ex iniquitáte nostra reos nos esse cognóscimus, beáti Rufi Mártyris tui atque Pontíficis intercessióne liberémur.",
+"n": 1,
+"w": "2027-08-27.Laudes"
+},
+{
+"id": 862,
+"la": "In illo témpore: Sedente Jesu super montem Oliveti, accessérunt ad eum discípuli secréto, dicéntes: Dic nobis, quando hæc erunt? et quod signum advéntus tui, et consummatiónis sæculi?",
+"n": 1,
+"w": "2027-09-10.Prima"
+},
+{
+"id": 863,
+"la": "Da, quǽsumus, omnípotens Deus: ut, qui beatórum Mártyrum tuórum Cornelius and Cyprian solémnia cólimus, eórum apud te intercessiónibus adjuvémur.",
+"n": 1,
+"w": "2027-09-16.Vespera"
+},
+{
+"id": 864,
+"la": "Da, quǽsumus, omnípotens Deus: ut, qui beáti Lambérti, Mártyris tui, solémnia cólimus, ejus apud te intercessiónibus adjuvémur.",
+"n": 1,
+"w": "2027-09-17.Laudes"
+},
+{
+"id": 865,
+"la": "℣. Ora pro nobis, beáta Terésia.",
+"n": 1,
+"w": "2027-10-15.Laudes"
+},
+{
+"id": 866,
+"la": "℟.br. Anima mea * Exsultábit in Dómino.",
+"n": 1,
+"w": "2027-10-15.Sexta"
+},
+{
+"id": 867,
+"la": "℣. Et delectábitur super salutári suo.",
+"n": 1,
+"w": "2027-10-15.Sexta"
+},
+{
+"id": 868,
+"la": "℟. Exsultábit in Dómino.",
+"n": 1,
+"w": "2027-10-15.Sexta"
+},
+{
+"id": 869,
+"la": "Ant. Jerúsalem, * réspice ad Oriéntem, et vide, allelúia.",
+"n": 1,
+"w": "2027-11-29.Vespera"
+},
+{
+"id": 870,
+"la": "℣. Ora pro nobis, beáta Lúcia.",
+"n": 1,
+"w": "2027-12-13.Laudes"
+},
+{
+"id": 871,
+"la": "Lætétur Ecclésia tua, Deus, beáti Timothy Mártyris tui confísa suffrágiis: atque, ejus précibus gloriósis, et devóta permáneat et secúra consístat.",
+"n": 1,
+"w": "2028-01-24.Laudes"
+},
+{
+"id": 872,
+"la": "℟. Sancte N., Christi Conféssor, audi rogántes sérvulos.",
+"n": 1,
+"w": "2028-03-06.Vespera"
+},
+{
+"id": 873,
+"la": "℣. O sante N., sidus áureum, Dómini grátia servórum gémitus sólita súscipe cleméntia.",
+"n": 1,
+"w": "2028-03-06.Vespera"
+},
+{
+"id": 874,
+"la": "Ant. Sedére autem mecum * non est meum dare vobis: sed quibus parátum est a Patre meo.",
+"n": 1,
+"w": "2028-03-15.Vespera"
+},
+{
+"id": 875,
+"la": "Ant. Ecce pósitus est hic in signum cui contradicétur: et tuam ipsíus ánimam pertransíbit gládius, ut reveléntur ex multis córdibus cogitatiónes.",
+"n": 1,
+"w": "2028-04-07.Laudes"
+},
+{
+"id": 876,
+"la": "℣. María Virgo, per virtútem tot dolórum.",
+"n": 1,
+"w": "2028-04-07.Laudes"
+},
+{
+"id": 877,
+"la": "℟. Fac nos gaudére in regno cælórum.",
+"n": 1,
+"w": "2028-04-07.Laudes"
+},
+{
+"id": 878,
+"la": "Intervéniat pro nobis, quǽsumus, Dómine, Jesu Christe, nunc et in hora mortis nostræ apud tuam cleméntiam beáta Virgo María mater tua: cujus sacratíssimam ánimam in hora benedíctæ passiónis tuæ dolóris gládius pertransívit, et in gloriósa resurrectióne tua ingens gáudium lætificávit.",
+"n": 1,
+"w": "2028-04-07.Laudes"
+},
+{
+"id": 879,
+"la": "Ant. Corde et ánimo * Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Maríæ, alleluia.",
+"n": 1,
+"w": "2028-05-31.Laudes"
+},
+{
+"id": 880,
+"la": "Ant. Corde et ánimo Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Maríæ, alleluia.",
+"n": 1,
+"w": "2028-05-31.Laudes"
+},
+{
+"id": 881,
+"la": "Da, quǽsumus, omnípotens Deus: ut, qui beatórum Mártyrum tuórum N. et N. solémnia cólimus, eórum apud te intercessiónibus adjuvémur.",
+"n": 1,
+"w": "2028-07-10.Vespera"
+},
+{
+"id": 882,
+"la": "Deus, qui beatórum Pontificum Ignátii et Domínici ac sociórum sanguine Annamitarum terras rigári voluísti; intercedéntibus tantis Martýribus, fac eas christiána religióne florére.",
+"n": 1,
+"w": "2028-07-11.Laudes"
+},
+{
+"id": 883,
+"la": "℣. Ora pro nobis, beáte Camílli.",
+"n": 1,
+"w": "2028-07-18.Laudes"
+},
+{
+"id": 884,
+"la": "℣. Ora pro nobis, beáte Joánnes Baptísta.",
+"n": 1,
+"w": "2028-08-29.Laudes"
+},
+{
+"id": 885,
+"la": "Ant. Perpétuis * nos, Dómine, sancti Joánnis Baptístæ tuére præsídiis; et quanto fragilióres sumus, tanto magis necessáriis attólle suffrágiis.",
+"n": 1,
+"w": "2028-08-29.Vespera"
+},
+{
+"id": 886,
+"la": "Ant. Perpétuis nos, Dómine, sancti Joánnis Baptístæ tuére præsídiis; et quanto fragilióres sumus, tanto magis necessáriis attólle suffrágiis.",
+"n": 1,
+"w": "2028-08-29.Vespera"
+},
+{
+"id": 887,
+"la": "Ant. Nonne decem * mundáti sunt? et novem ubi sunt? Non est invéntus qui redíret, et daret glóriam Deo, nisi hic alienígena. Vade, quia fides tua te salvum fecit, allelúia.",
+"n": 1,
+"w": "2028-09-03.Vespera"
+},
+{
+"id": 888,
+"la": "Da, quǽsumus, omnípotens Deus: ut, qui beatórum Mártyrum tuórum Januarius and companions solémnia cólimus, eórum apud te intercessiónibus adjuvémur.",
+"n": 1,
+"w": "2028-09-19.Vespera"
+},
+{
+"id": 889,
+"la": "Dum Ludovíci glória",
+"n": 1,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 890,
+"la": "Corúscat inter sídera,",
+"n": 1,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 891,
+"la": "Fecúnda Sanctórum parens",
+"n": 1,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 892,
+"la": "Det júbilos Valéntia.",
+"n": 1,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 893,
+"la": "Lætis canóra vóci-bus",
+"n": 1,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 894,
+"la": "Pro Núminis cleméntia.",
+"n": 1,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 895,
+"la": "Hæc, Ludovíci párvuli",
+"n": 1,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 896,
+"la": "Prævénit in dulcédine",
+"n": 1,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 897,
+"la": "Lacténtis innocéntiam.",
+"n": 1,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 898,
+"la": "Armíaque pæniténtiæ",
+"n": 1,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 899,
+"la": "Perdúxit ad victóriam.",
+"n": 1,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 900,
+"la": "Simúlque sancto Flámini:",
+"n": 1,
+"w": "2028-10-09.Vespera"
+},
+{
+"id": 901,
+"la": "Adésto, Dómine, supplicatiónibus nostris: ut, qui ex iniquitáte nostra reos nos esse cognóscimus, beáti Quintíni Mártyris tui intercessióne liberémur.",
+"n": 1,
+"w": "2028-10-31.Laudes"
+},
+{
+"id": 902,
+"la": "Ant. Beáti estis * Sancti Dei omnes, qui meruístis consórtes fíeri cæléstium virtútum, et pérfrui ætérnæ claritátis glória: idéoque precámur, ut mémores nostri, intercédere dignémini pro nobis ad Dóminum Deum nostrum.",
+"n": 1,
+"w": "2028-10-31.Vespera"
+}
+]

@@ -264,3 +264,6 @@ footer a { color: var(--muted); }
   .office-page .o-hours { margin: 8px 0; }
 }
 @media print { .o-langs { display: none; } }
+
+.o-priest { display: flex; align-items: center; gap: 10px; font-size: 16px; margin: 0 0 14px; cursor: pointer; min-height: 44px; }
+.o-priest input { width: 20px; height: 20px; accent-color: var(--ink, #111); }

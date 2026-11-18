@@ -1,0 +1,218 @@
+diff --git a/web/cgi-bin/horas/specials/psalmi.pl b/web/cgi-bin/horas/specials/psalmi.pl
+index 1b9cc089..655fd647 100644
+--- a/web/cgi-bin/horas/specials/psalmi.pl
++++ b/web/cgi-bin/horas/specials/psalmi.pl
+@@ -117,6 +117,23 @@ sub psalmi_minor {
+     if ($hora eq 'Completorium' && $dayofweek == 6 && $winner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat/) {
+       $i = 12;
+     }
++
++    # Breviarium S.O.P. (1962), Rubricae generales nn. 150-153: Compline is of Sunday on Sundays and on feasts
++    # of the I and II class (also after I Vespers of a I class feast); after I Vespers of a Sunday it is of
++    # Saturday; otherwise of the current weekday.
++    if ($version =~ /Praedicatorum/ && $hora eq 'Completorium') {
++      # (Sunday's psalms also through Christmastide, in the octaves of Easter and Pentecost, in the Triduum
++      # and on All Souls)
++      our ($month, $day);
++      # (a feria, even a privileged one, keeps the psalms of its weekday)
++      my $feria = $winner{Rank} =~ /Feria|Vigilia|Quattuor|Hebdomad/i && $winner !~ /Pasc0|Pasc7/;
++      my $sundaypsalms = $dayofweek == 0 || ($rank >= 5 && !$feria)
++        || ($month == 12 && $day >= 25) || ($month == 1 && $day <= 13)
++        || $winner =~ /Quad6-[456]/ || $winner =~ /11-02/ || ($month == 11 && $day == 1);
++      $i = $sundaypsalms ? 0 : 2 * $dayofweek;
++      $i = 12 if $dayofweek == 6 && $winner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat/;
++      $i = 0 if $dayname[0] =~ /^(?:Pasc0|Pasc7)/ || ($dayname[0] =~ /^Pasc1/ && $dayofweek == 6 && $winner =~ /Pasc1-0/);    # the octaves of Easter and Pentecost
++    }
+     $ant = chompd($psalmi[$i]);
+     $psalms = chompd($psalmi[$i + 1]);
+     if (($version =~ /196/ && $psalms =~ /117/ && $laudes == 2) || $rule =~ /Prima=53/i) { $psalms =~ s/117/53/; }
+@@ -131,7 +148,7 @@ sub psalmi_minor {
+ 
+     #psalmi dominica rule for completorium
+     elsif (($rule =~ /Psalmi\s*(minores)*\s*Dominica/i || $communerule =~ /Psalmi\s*(minores)*\s*Dominica/i)
+-      && ($version !~ /1960/ || $rank >= 6))
++      && ($version !~ /1960|Praedicatorum/ || $rank >= 6))
+     {
+       $ant = chompd($psalmi[0]);
+       $psalms = chompd($psalmi[1]);
+@@ -471,6 +488,9 @@ sub psalmi_major {
+       || ( $version =~ /Trident/i
+         && $winner =~ /Sancti/
+         && ($hora eq 'Laudes' || $rank >= 2))
++      # Breviarium S.O.P. (1962), nn. 151-152: feasts of the I and II class take Lauds and Vespers
++      # "e Proprio vel Communi"
++      || ($version =~ /Praedicatorum/ && $winner =~ /Sancti/ && $rank >= 5)
+     ) {
+       ($w, $c) = getproprium("Ant $hora", $lang, 1);
+       setbuild2("Antiphona ex $commune") if $w;
+@@ -494,6 +514,8 @@ sub psalmi_major {
+       (
+            $rule =~ /Psalmi Dominica/i
+         || ($version =~ /cist/i && (($winner =~ /Sancti/i && $rank >= 2.2) || $antecapitulum))
++        # Breviarium S.O.P. (1962), nn. 151-152: on feasts of the I and II class Lauds take the Sunday psalms
++        || ($version =~ /Praedicatorum/ && $hora eq 'Laudes' && $winner =~ /Sancti/i && $rank >= 5)
+         || ($commune{Rule} && $commune{Rule} =~ /Psalmi Dominica/i)
+       )
+       && @antiphones
+diff --git a/web/www/Tabulae/Kalendaria/OP1962.txt b/web/www/Tabulae/Kalendaria/OP1962.txt
+index eb2a6fbb..e1124782 100644
+--- a/web/www/Tabulae/Kalendaria/OP1962.txt
++++ b/web/www/Tabulae/Kalendaria/OP1962.txt
+@@ -1,5 +1,6 @@
+ #This file only notes the differences to Rubrics 1960 - 1960
+ *January*
++01-16=01-16r=S. Marcelli Papae et Martyris=1=
+ 01-05=XXXXX
+ 01-15=01-15OP~01-15~01-15cc=B. Francisci de Capillas Mart OP=3=S. Pauli primi Eremitae et Confessoris=1=S. Mauri Abbatis=1=
+ 01-18=01-18OP~01-18r=S. Margaritae ab Hungaria Virginis OP=3=S Priscae Virginis=1=
+@@ -36,6 +37,7 @@
+ 
+ *May*
+ 05-08=05-08OP=BMV omnium gratiarum mediatricis=3=
++05-12=05-12r=Ss. Nerei, Achillei et Domitillae Virg. atque Pancratii Mm=1=
+ 05-13=05-13OP=B. Imeldy Virginis OP=3=1=
+ 05-14=XXXXX
+ 05-16=XXXXX
+@@ -52,7 +54,7 @@
+ 
+ *****June*
+ 06-02=06-02OP~06-02=BB Sadoc et soc MM OP=1=Ss. Marcellini Presbitery er Petri exorciste MM=1=
+-06-03=06-03OP=Bl. Peter Sanz, Bishop and Companions, Mm., O.P.=1=
++06-03=06-03OP=Ss. Petri Sanz Ep. et Soc. Mm. OP=3=
+ 06-05=XXXXX
+ 06-08=06-08OP=St. Medard, Bishop and Conf.=1=
+ 06-09=06-09OP~06-09=Bb Dianae, Ceaciliae et Amatae Virginis OP=1=Ss. Primi et Feliciani Martyrum=1=
+@@ -79,7 +81,7 @@
+ 07-21=07-21=S. Praxedis Virginis=1=
+ 07-23=07-23=S. Apollinaris Episcopi et Mart=1=
+ 07-25=07-25=S. Jacobi Apostoli=5
+-07-27=07-27OP=Bb. Josephi, Melchioris Epp OP=1=
++07-27=07-27OP=Bb. Josephi, Melchioris Epp OP=3=
+ 07-30=07-30OP~07-30=B. Mannes Conf. OP=1=S. Abdon et Senen Martyrum=1=
+ 07-31=07-31~07-31OP=S. Ignatii Confessoris=3=S. Germani Ep et Conf=1=
+ 
+@@ -91,6 +93,7 @@
+ 08-26=XXXXX
+ 08-27=08-27~08-27OP=S. Josephi Calasantini Confessoris=3=S.Rufi Ep. et Mart=1=
+ 08-28=08-28=S. Augustini Episcopi et Confessoris et Ecclesiae Doctoris=5=
++08-30=08-30=S. Rosae Limanae Virginis OP=3=
+ 
+ *September*
+ 09-01=09-01=S. Aegidii Abbatis=1=
+@@ -101,7 +104,7 @@
+ 09-10=09-10OP~09-10=Bb. Alfonsi Navarrete OP et soc. Mm.=3=S. Nicolai de Tolentino Confessoris=3=
+ 09-17=09-17~09-17cc=Impressionis Stigmatum S. Francisci=3=
+ 09-18=09-18OP=B. Joannis Massias Conf. OP=3=
+-09-20=09-20OP=B. Francisci de Possadas Conf. OP=1=
++09-20=09-20OP=B. Francisci de Possadas Conf. OP=3=
+ 09-22=09-22o=Ss. Martyrsi Mauritii et Sociorum=1=
+ 09-23=XXXXX
+ 09-26=XXXXX
+@@ -120,7 +123,7 @@
+ 10-17=XXXXX
+ 10-20=XXXXX
+ 10-21=10-21cc=Ss. Ursule et Soc Virg et Mart=1=
+-10-22=10-22OP=In Consecrated Churches: Anniversary of the Dedication of a Church=6=
++10-22=XXXXX
+ 10-23=XXXXX
+ 10-25=10-25OP=Ss. Crispini et Crispiniani Mm=1=
+ 10-26=XXXXX
+diff --git a/web/www/horas/Latin/CommuneOP/C8.txt b/web/www/horas/Latin/CommuneOP/C8.txt
+index 8e68a24e..4ee083b7 100644
+--- a/web/www/horas/Latin/CommuneOP/C8.txt
++++ b/web/www/horas/Latin/CommuneOP/C8.txt
+@@ -119,11 +119,11 @@ V. Dómine diléxi decórem doums tuæ.
+ R. Et locum habitatiónis glóriæ tuæ.
+ 
+ [Ant Laudes]
+-@Commune/C8:Ant Vespera:1
+-@Commune/C8:Ant Vespera:3
+-@Commune/C8:Ant Vespera:2
+-@Commune/C8:Ant Vespera:4
+-@Commune/C8:Ant Vespera:5
++@Commune/C8:Ant Vespera:1 s/;;.*//
++@Commune/C8:Ant Vespera:3 s/;;.*//
++@Commune/C8:Ant Vespera:2 s/;;.*//
++@Commune/C8:Ant Vespera:4 s/;;.*//
++@Commune/C8:Ant Vespera:5 s/;;.*//
+ 
+ [Ant 2]
+ @Commune/C8:Responsory6:1-2 s/R. // s/\n\*//
+diff --git a/web/www/horas/Latin/Psalterium/Common/Prayers.txt b/web/www/horas/Latin/Psalterium/Common/Prayers.txt
+index d6bca795..4df9c32d 100644
+--- a/web/www/horas/Latin/Psalterium/Common/Prayers.txt
++++ b/web/www/horas/Latin/Psalterium/Common/Prayers.txt
+@@ -102,7 +102,7 @@ v. Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaél
+ @:Confiteor_:s/Paulo/Paulo, beáto Patri nostro Bernárdo/ s/Paulum/Paulum, beátum Patrem nostrum Bernárdum/
+ 
+ [Confiteor] (rubrica Ordo Praedicatorum)
+-v. Confiteor Deo omnipotenti, et beáte Maríae semper Vírgini, et beáto Domínico Patri nostro, et omnibus Sanctis: quia peccavi nimis cogitatione, locutione, opere et omissione, me cupla: precor beátam Maríam semper Vírginem, et beátum Domínicum Patrem nostrum, et omnes Sanctos oráre pro me.
++v. Confíteor Deo omnipoténti, et beátæ Maríæ semper Vírgini, et beáto Domínico Patri nostro, et ómnibus Sanctis: quia peccávi nimis cogitatióne, locutióne, ópere et omissióne, mea culpa: precor beátam Maríam semper Vírginem, et beátum Domínicum Patrem nostrum, et omnes Sanctos oráre pro me.
+ 
+ [Misereatur]
+ v. Misereátur nostri omnípotens Deus, et dimíssis peccátis nostris, perdúcat nos ad vitam ætérnam. Amen.
+diff --git a/web/www/horas/Latin/SanctiOP/06-03OP.txt b/web/www/horas/Latin/SanctiOP/06-03OP.txt
+index 0b9635c6..3eb39b35 100644
+--- a/web/www/horas/Latin/SanctiOP/06-03OP.txt
++++ b/web/www/horas/Latin/SanctiOP/06-03OP.txt
+@@ -1,8 +1,8 @@
+ [Officium]
+-Bl. Petri Sanz Episcopi et Sociorum, Martyrum O.P.
++Ss. Petri Sanz Episcopi et Sociorum Martyrum O.P.
+ 
+ [Rank]
+-;;Simplex;;1.1;;vide C3
++;;Duplex;;3;;vide C3
+ 
+ [Oratio]
+ Deus, qui beátos Mártyres tuos Petrum Pontíficem eiúsque sócios, ad fidem géntibus prædicándam, pari firmitáte et caritáte donásti; præsta, quæsumus, eórum exémplo et intercessióne nos in tua fide permanére constántes.
+diff --git a/web/www/horas/Latin/SanctiOP/07-27OP.txt b/web/www/horas/Latin/SanctiOP/07-27OP.txt
+index fcf083bc..59ab8de9 100644
+--- a/web/www/horas/Latin/SanctiOP/07-27OP.txt
++++ b/web/www/horas/Latin/SanctiOP/07-27OP.txt
+@@ -2,7 +2,7 @@
+ Bb. Josephi, Melchioris Episcoporum O. P.  et Sociorum Martyrum
+ 
+ [Rank]
+-;;Simplex;;1.1;;vide C3
++;;Duplex;;3;;vide C3
+ 
+ [Oratio]
+ Mártyrum tuórum nos, Dómine, Joséphi, et Melchióris et sociórum conféssio beáta commúniat: et fragilitáti nostræ subsídium dignánter exóret.
+diff --git a/web/www/horas/Latin/SanctiOP/08-30.txt b/web/www/horas/Latin/SanctiOP/08-30.txt
+index 6a5f626f..1b9f1b86 100644
+--- a/web/www/horas/Latin/SanctiOP/08-30.txt
++++ b/web/www/horas/Latin/SanctiOP/08-30.txt
+@@ -3,6 +3,9 @@
+ [Officium]
+ S. Rosæ Limanæ Virginis O. P.
+ 
++[Rank]
++;;Duplex;;3;;vide C6a
++
+ [Invit]
+ Regem sempitérnum, veníte, adorémus, * Qui Rosam cordis sui digne pro méritis coronávit in cælis.
+ 
+diff --git a/web/www/horas/Latin/SanctiOP/09-20OP.txt b/web/www/horas/Latin/SanctiOP/09-20OP.txt
+index 0fccfed3..1faf4578 100644
+--- a/web/www/horas/Latin/SanctiOP/09-20OP.txt
++++ b/web/www/horas/Latin/SanctiOP/09-20OP.txt
+@@ -2,7 +2,7 @@
+ B. Francisci de Possadas Confessoris O. P.
+ 
+ [Rank]
+-;;Simplex;;1.1;;vide C5
++;;Duplex;;3;;vide C5
+ 
+ [Oratio]
+ Deus, qui beátum Franciscum Confessórem tuum, supérnæ caritatis dulcedine perfúsus, verbi tui præcónem exímium effecísti: ejus intercessióne concéde ut, igne tui amóris incénsi, in tua dilectióne semper vivámus.
+=== new file web/www/horas/Latin/SanctiOP/01-16r.txt
+@Sancti/01-16
+
+[Rank]
+;;Commemoratio;;1;;vide C2b
+=== new file web/www/horas/Latin/SanctiOP/05-12r.txt
+@Sancti/05-12
+
+[Rank]
+;;Commemoratio;;1;;vide C3a-1

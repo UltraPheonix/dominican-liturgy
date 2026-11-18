@@ -3,7 +3,7 @@ import glob, re, json, collections, sys
 from parse import parse
 LAT = re.compile(r'[áéíóúǽ]')
 lines = collections.Counter(); where = {}
-for f in sorted(glob.glob('/home/claude/dl/do_out/*/*.html')):
+for f in sorted(glob.glob(sys.argv[1] + '/*/*.html') if len(sys.argv) > 1 else glob.glob('/home/claude/dl/do_out/*/*.html')):
     r = parse(open(f, encoding='utf-8').read())
     for la, en in r['rows']:
         for l in en.split('\n'):

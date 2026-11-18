@@ -12,9 +12,9 @@
   ];
   var $ = function (s) { return document.querySelector(s); };
   var cache = {}, common = null, shards = {}, range = null;
-  var state = {date: null, hour: null, lang: 'both'};
+  var state = {date: null, hour: null, lang: 'both', priest: false};
 
-  try { state.lang = localStorage.getItem('officeLang') || 'both'; } catch (e) {}
+  try { state.lang = localStorage.getItem('officeLang') || 'both'; state.priest = localStorage.getItem('officePriest') === '1'; } catch (e) {}
 
   function pad(n) { return (n < 10 ? '0' : '') + n; }
   function iso(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
@@ -51,10 +51,17 @@
       return sh[k] || '';
     }).join('\n').split('\n');
   }
+  // the hour's rows, said with or without a priest
+  function rowsOf(day, hour) {
+    var rows = day.h[hour] || [], p = state.priest && day.p && day.p[hour];
+    if (!p) return rows;
+    if (p.all) return p.all;
+    return rows.map(function (row, i) { return p.i[i] || row; });
+  }
   function neededShards(day) {
     var need = {};
     Object.keys(day.h).forEach(function (h) {
-      day.h[h].forEach(function (row) {
+      rowsOf(day, h).forEach(function (row) {
         row.forEach(function (id) {
           blockText(id, day).replace(/^§(\d\d)\./gm, function (m, s) { need[s] = 1; return m; });
         });
@@ -135,7 +142,7 @@
         var full = titleOf(day, hour), t = full.split(' ~ ');
         $('#dayTitle').textContent = t[0];
         $('#dayMeta').textContent = (t[1] ? t[1] + ' · ' : '') + d.toLocaleDateString('en-GB', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'});
-        var rows = day.h[hour] || [];
+        var rows = rowsOf(day, hour);
         main.innerHTML = '<header class="o-head"><h2>' + esc(h[1]) + '</h2><p class="o-sub">' + esc(h[2]) + ' · ' + esc(t[0]) + '</p></header>' +
           rows.map(function (row) { return drawRow(row, day); }).join('') +
           '<p class="o-src">Text from Divinum Officium, <i>Ordo Praedicatorum – 1962</i> (MIT licence), following the Breviarium S.O.P. (1962). English is Divinum Officium’s; where a Dominican text has no English yet, the Latin stands alone.</p>';
@@ -156,6 +163,8 @@
       var on = b.getAttribute('data-l') === state.lang;
       b.classList.toggle('on', on); b.setAttribute('aria-pressed', on);
     });
+    var pr = $('#priest');
+    if (pr) pr.checked = state.priest;
   }
 
   function setHash() {
@@ -182,6 +191,12 @@
       var b = e.target.closest('button'); if (!b) return;
       state.lang = b.getAttribute('data-l');
       try { localStorage.setItem('officeLang', state.lang); } catch (er) {}
+      draw();
+    });
+    var pr = $('#priest');
+    if (pr) pr.addEventListener('change', function () {
+      state.priest = this.checked;
+      try { localStorage.setItem('officePriest', state.priest ? '1' : '0'); } catch (er) {}
       draw();
     });
     $('#prevDay').addEventListener('click', function () { state.date = addDays(state.date, -1); go(); });

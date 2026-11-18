@@ -337,7 +337,7 @@
     if (key === 'Epi' && d && !(d.getMonth() === 0 && d.getDate() === 6)) return 4;
     if (key === 'Jan1' && d && !(d.getMonth() === 0 && d.getDate() === 1)) return 4;
     if (key === 'Nat2' && d && d.getDay() !== 0 && !(d.getMonth() === 0 && d.getDate() === 2)) return 4;
-    if (/^Dec25/.test(key) && d && d.getDate() !== 25) return 2;
+    if (/^Dec25/.test(key) && d) return d.getDate() === 25 ? 1 : 2;
     if (/^(Pasc1|Epi[1-6]|Pent\d+)$/.test(key) && d && d.getDay() !== 0) return 4;
     if (/^Adv[1-4]$/.test(key) && d && d.getDay() !== 0) return (d.getMonth() === 11 && d.getDate() >= 17) ? 2 : 3;
     if (/^(Adv[1-4]|Quad[1-6]|Pasc0|Pasc1|Pent0|Pent1|Pasc6s|Dec24|Dec25|Jan1|Epi|Asc|CorpusChristi|SCJ|ChristusRex|5aw)$/.test(key)) return 1;
