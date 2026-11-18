@@ -586,6 +586,15 @@ for _cid, _v in TRANS.items():
         _t = re.sub(_p, '', _t, flags=re.S)
     _v['t'] = _t.strip()
 data_trans = TRANS
+# seasonal variants: every entry an {id} object, like the parts
+def _ent(x):
+    if isinstance(x, dict): return x
+    return dict({'id': x}, **({'roman': True} if str(x).startswith('r') else {}))
+for _m in masses.values():
+    for _sv in (_m.get('season') or {}).values():
+        if isinstance(_sv, dict):
+            for _p in list(_sv):
+                _sv[_p] = [_ent(x) for x in (_sv[_p] if isinstance(_sv[_p], list) else [_sv[_p]])]
 data = {'sections': sections, 'trans': data_trans, 'masses': masses, 'chants': chants,
         'kyriale': [c['id'] for c in kyriale], 'front': [c['id'] for c in front['chants']]}
 import os
