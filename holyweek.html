@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="la">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dominican Rite — Holy Week</title>
+  <meta name="description" content="The sung propers, readings and Kyriale of the Dominican Rite Mass for any day, in square notation, from the Graduale O.P. (1950).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@500;600&display=swap">
+  <link rel="stylesheet" href="versiculum.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#111111">
+</head>
+<body data-page="hw">
+<div class="frame">
+  <aside class="side hide-print" aria-label="Day, Mass and calendar">
+    <a class="brand" href="./" aria-label="Dominican Rite, today's Mass"><svg width="26" height="26" viewBox="0 0 40 40" aria-hidden="true"><rect x="17" y="3" width="6" height="34" fill="currentColor"/><rect x="3" y="17" width="34" height="6" fill="currentColor"/><circle cx="20" cy="4" r="3.6" fill="currentColor"/><circle cx="20" cy="36" r="3.6" fill="currentColor"/><circle cx="4" cy="20" r="3.6" fill="currentColor"/><circle cx="36" cy="20" r="3.6" fill="currentColor"/></svg>
+      <span><span class="t1">Dominican Rite</span><span class="t2">Missale · Breviarium</span></span></a>
+    <button type="button" class="en-toggle" aria-pressed="false" title="Show the English with the Latin">EN</button>
+    <nav class="nav" aria-label="Main"><a href="./">Mass</a><a href="office.html">Office</a><a href="holyweek.html" aria-current="page">Holy Week</a><a href="about.html">About</a></nav>
+
+    <div class="hw-rite" id="hwRite" role="group" aria-label="Rite">
+      <button type="button" data-r="1939"><span>Traditional</span><small>Missale O.P. 1939</small></button>
+      <button type="button" data-r="1959"><span>Reformed</span><small>St Dominic Missal 1959</small></button>
+    </div>
+    <nav class="hw-days" id="hwDays" aria-label="Days of Holy Week">
+      <button type="button" data-k="Quad6"><span>Dominica in Palmis</span><small>Palm Sunday</small></button>
+      <button type="button" data-k="Quad6m"><span>Feria II</span><small>Monday</small></button>
+      <button type="button" data-k="Quad6t"><span>Feria III</span><small>Tuesday</small></button>
+      <button type="button" data-k="Quad6w"><span>Feria IV</span><small>Wednesday</small></button>
+      <button type="button" data-k="Quad6h"><span>Feria V in Cena Domini</span><small>Maundy Thursday</small></button>
+      <button type="button" data-k="Quad6f"><span>Feria VI in Parasceve</span><small>Good Friday</small></button>
+      <button type="button" data-k="Quad6s"><span>Sabbato Sancto</span><small>Holy Saturday</small></button>
+    </nav>
+    <div hidden>
+    <section class="day" aria-live="polite">
+      <div class="day-date">
+        <button type="button" class="day-step" id="prevDay" aria-label="Previous day">‹</button>
+        <span id="dayDate"></span>
+        <button type="button" class="day-step" id="nextDay" aria-label="Next day">›</button>
+      </div>
+      <div class="day-meta" id="pills"></div>
+    </section>
+
+    <div id="dateResults" class="alts"></div>
+
+    </div>
+    <details class="opts">
+      <summary>Options</summary>
+      <div class="fields">
+          <div class="field" hidden><label for="selMass">Mass</label><select id="selMass"></select></div>
+          <div class="field" hidden><label for="date">Date</label><input type="date" id="date"></div>
+          <div class="field" hidden><label for="selSeason">Season</label>
+            <select id="selSeason">
+              <option value="auto">From the date</option>
+              <option value="annum">Per annum</option>
+              <option value="lent">Septuagesima to Easter</option>
+              <option value="pasch">Paschaltide</option>
+            </select></div>
+          <div class="field"><label for="selOrd">Kyriale</label><select id="selOrd"></select></div>
+          <div class="field" hidden><label for="selCredo">Credo</label><select id="selCredo"></select></div>
+          <div class="field" hidden><label for="selAsp">Asperges</label>
+            <select id="selAsp">
+              <option value="">Automatic (Sundays)</option>
+              <option value="none">None</option>
+              <option value="asperges">Asperges me</option>
+              <option value="vidi">Vidi aquam</option>
+            </select></div>
+          <div class="field"><label for="selOrdo">Order of Mass</label>
+            <select id="selOrdo">
+              <option value="">Propers only</option>
+              <option value="low">Low Mass</option>
+              <option value="sung">Sung Mass</option>
+              <option value="solemn">Solemn Mass</option>
+            </select></div>
+          <label class="switch"><input type="checkbox" id="chkEdit"> Edit chants (GABC)</label>
+          <button type="button" class="sbtn" id="btnShare">Share this day</button>
+          <div class="ctl-row">
+            <button type="button" class="sbtn" id="btnChoir">Choir PDF</button>
+            <button type="button" class="sbtn" id="btnCong">Congregation PDF</button>
+          </div>
+        </div>
+    </details>
+    <details class="cal collapse" hidden>
+      <summary>Calendar</summary>
+      <div id="cal"></div>
+    </details>
+    <p class="side-foot">A private project, not affiliated with the Order of Preachers. <a href="about.html">About the sources</a></p>
+  </aside>
+
+  <div class="content">
+    <div class="inner">
+      <main id="mass" aria-live="polite"></main>
+      <article id="cong" class="cong" aria-hidden="true"></article>
+    </div>
+  </div>
+</div>
+
+  <script src="js/exsurge.min.js"></script>
+  <script src="data/masses.js"></script>
+  <script src="data/prefaces.js"></script>
+  <script src="data/ordinary.js"></script>
+  <script src="data/ordo.js"></script>
+  <script src="data/orations.js"></script>
+  <script src="data/holyweek.js"></script>
+  <script src="data/holyweek_text.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cal.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

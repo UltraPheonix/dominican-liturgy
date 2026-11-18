@@ -67,6 +67,7 @@
   // #<massKey>[&in=id,id&gr=id...]  (only parts the user changed are stored)
   var state = {key: null, parts: null, edited: {}, date: null, season: 'auto', ord: '', credo: '', asp: '', ordo: '', hwr: '1959', edit: false};
 
+  var HWP = document.body && document.body.getAttribute('data-page') === 'hw';
   function readHash() {
     var h = decodeURIComponent(location.hash.slice(1));
     if (!h) return null;
@@ -92,7 +93,7 @@
     if (state.credo) bits.push('credo=' + state.credo);
     if (state.asp) bits.push('asp=' + state.asp);
     if (state.ordo) bits.push('ordo=' + state.ordo);
-    if (state.hwr !== '1959') bits.push('hw=' + state.hwr);
+    if (HWP || state.hwr !== '1959') bits.push('hw=' + state.hwr);
     history.replaceState(null, '', '#' + bits.join('&'));
   }
 
@@ -781,6 +782,13 @@
   function drawMass() {
     var m = D.masses[state.key], main = $('#mass');
     main.innerHTML = '';
+    if (!HWP && /^Quad6[mtwhfs]?$/.test(state.key)) {
+      main.appendChild(el('header', {class: 'mass-head'}, [el('h1', {text: clean(m.title).replace(/^\d+ [A-Za-z.]+ — /, '')}), el('p', {class: 'en', text: m.name_en || clean(m.en || '')})]));
+      main.appendChild(el('div', {class: 'hw-card'}, [
+        el('p', {text: 'Holy Week has its own section, with the whole rite of each day as the Missal gives it, in the traditional (1939) and the reformed (1959) form.'}),
+        el('a', {class: 'sbtn hw-go', href: 'holyweek.html#' + state.key, text: 'Open in Holy Week ›'})]));
+      return;
+    }
     var latin = clean(m.title).replace(/^\d+ [A-Za-z.]+ — /, '');
     var english = m.name_en || (isTemporal(state.key) ? clean(m.en || '') : '');
     main.appendChild(el('header', {class: 'mass-head'}, [
@@ -1386,10 +1394,6 @@
     $('#selCredo').addEventListener('change', function (e) { state.credo = e.target.value; drawMass(); writeHash(); });
     $('#selAsp').addEventListener('change', function (e) { state.asp = e.target.value; drawMass(); writeHash(); });
     $('#selOrdo').addEventListener('change', function (e) { state.ordo = e.target.value; drawMass(); writeHash(); });
-    var lb = $('#langs');
-    function markLang() { Array.prototype.forEach.call(lb.querySelectorAll('button'), function (b) { var on = b.getAttribute('data-l') === OPLang.get(); b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); }); }
-    if (lb && window.OPLang) { markLang(); lb.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; OPLang.set(b.getAttribute('data-l')); markLang(); }); }
-    $('#selHw').addEventListener('change', function (e) { state.hwr = e.target.value; drawMass(); writeHash(); });
     $('#btnChoir').addEventListener('click', function () { printAs('choir'); });
     $('#btnCong').addEventListener('click', function () { printAs('congregation'); });
     $('#chkEdit').addEventListener('change', function (e) { state.edit = e.target.checked; drawMass(); });
@@ -1404,11 +1408,33 @@
       lastW = window.innerWidth;
       clearTimeout(resizeTimer); resizeTimer = setTimeout(function () { if (state.key) drawMass(); }, 300);
     });
+    if (HWP) {
+      var hh = readHash() || {key: 'Quad6', opts: {}}, KEYS = ['Quad6', 'Quad6m', 'Quad6t', 'Quad6w', 'Quad6h', 'Quad6f', 'Quad6s'];
+      var stored = ''; try { stored = localStorage.getItem('hwRite') || ''; } catch (e) {}
+      state.hwr = hh.opts.hw === '1959' || hh.opts.hw === '1939' ? hh.opts.hw : (stored || '1939');
+      state.ordo = hh.opts.ordo || ''; state.ord = hh.opts.ord || ''; $('#selOrdo').value = state.ordo; $('#selOrd').value = state.ord;
+      var today = new Date(); today.setHours(0, 0, 0, 0);
+      var Ey = easter(today.getFullYear()); if (diffDays(today, Ey) > 0) Ey = easter(today.getFullYear() + 1);
+      var dayOf = function (k) { return addDays(Ey, KEYS.indexOf(k) - 7); };
+      var mark = function () {
+        Array.prototype.forEach.call(document.querySelectorAll('#hwDays button'), function (b) { var on = b.getAttribute('data-k') === state.key; b.classList.toggle('on', on); b.setAttribute('aria-current', on ? 'page' : 'false'); });
+        Array.prototype.forEach.call(document.querySelectorAll('#hwRite button'), function (b) { var on = b.getAttribute('data-r') === state.hwr; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); });
+      };
+      var openDay = function (k) { if (KEYS.indexOf(k) < 0) k = 'Quad6'; state.key = k; onDate(dayOf(k), true); showMass(k); mark(); window.scrollTo(0, 0); };
+      $('#hwDays').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) openDay(b.getAttribute('data-k')); });
+      $('#hwRite').addEventListener('click', function (e) {
+        var b = e.target.closest('button'); if (!b) return;
+        state.hwr = b.getAttribute('data-r'); try { localStorage.setItem('hwRite', state.hwr); } catch (er) {}
+        drawMass(); writeHash(); mark();
+      });
+      openDay(hh.key);
+      return;
+    }
     var h = readHash();
     if (h && D.masses[h.key]) {
       var o = h.opts;
       state.season = o.season || 'auto'; state.ord = o.ord || ''; state.credo = o.credo || ''; state.asp = o.asp || ''; state.ordo = o.ordo || ''; state.hwr = o.hw === '1939' ? '1939' : '1959';
-      $('#selSeason').value = state.season; $('#selOrd').value = state.ord; $('#selCredo').value = state.credo; $('#selAsp').value = state.asp; $('#selOrdo').value = state.ordo; $('#selHw').value = state.hwr;
+      $('#selSeason').value = state.season; $('#selOrd').value = state.ord; $('#selCredo').value = state.credo; $('#selAsp').value = state.asp; $('#selOrdo').value = state.ordo;
       state.key = h.key;
       onDate(o.d ? fromIso(o.d) : new Date(), true);
       showMass(h.key, h.over);

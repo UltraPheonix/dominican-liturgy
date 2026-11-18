@@ -16,7 +16,7 @@
   var chantMap = null;
 
   try {
-    state.lang = window.OPLang && OPLang.get() === 'en' ? 'en' : 'both';
+    state.lang = 'both';
     state.priest = localStorage.getItem('officePriest') === '1';
     state.chant = localStorage.getItem('officeChant') === '1';
   } catch (e) {}

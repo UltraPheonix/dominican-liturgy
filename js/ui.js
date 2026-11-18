@@ -7,9 +7,7 @@
   function get() {
     try {
       var v = localStorage.getItem(KEY);
-      if (v === 'tap' || v === 'both' || v === 'en') return v;
-      var o = localStorage.getItem('officeLang');
-      if (o === 'en') return 'en';
+      if (v === 'both' || v === 'en') return 'both';
     } catch (e) {}
     return 'tap';
   }
@@ -27,7 +25,16 @@
     },
     apply: function () { apply(get()); }
   };
-  if (document.body) apply(get()); else document.addEventListener('DOMContentLoaded', function () { apply(get()); });
+  // the EN switch at the top of the column: off = Latin, tap for English; on = Latin and English
+  function wire() {
+    apply(get());
+    Array.prototype.forEach.call(document.querySelectorAll('.en-toggle'), function (t) {
+      var mark = function () { var on = get() !== 'tap'; t.classList.toggle('on', on); t.setAttribute('aria-pressed', on); t.title = on ? 'Hide the English (tap a passage to show it)' : 'Show the English with the Latin'; };
+      mark();
+      t.addEventListener('click', function () { window.OPLang.set(get() === 'tap' ? 'both' : 'tap'); mark(); });
+    });
+  }
+  if (document.readyState !== 'loading') wire(); else document.addEventListener('DOMContentLoaded', wire);
 
   // English on tap: the smallest passage that has a translation opens or closes
   var PAIR = '.o-lp, .o-pair, .r-cols, .m-pair, .o-sec';

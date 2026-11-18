@@ -304,3 +304,44 @@ body:not(.en-tap) .tap-hint { display: none; }
 .m-tr .r { color: var(--rubric); font-style: normal; }
 .part.hw.hw-cont { border-top: 0; margin-top: 0; padding-top: 0; }
 .part.hw .hw-l .hw-ref { font-family: var(--serif, inherit); letter-spacing: 0; text-transform: none; font-variant: normal; font-size: .9em; }
+
+/* ---------------------------------------------------------------- column: EN switch, options, Holy Week */
+.side { position: relative; }
+.en-toggle { position: absolute; top: 26px; right: 22px; min-width: 44px; height: 30px; padding: 0 10px; border: 1px solid var(--cappa-line); border-radius: 15px;
+  background: none; color: var(--cappa-muted); font-family: var(--caps); letter-spacing: .12em; font-size: 13px; cursor: pointer; }
+.en-toggle:hover { color: var(--cappa-ink); border-color: var(--cappa-ink); }
+.en-toggle.on { background: var(--cappa-ink); color: var(--cappa); border-color: var(--cappa-ink); }
+.brand { padding-right: 56px; }
+.opts { border-top: 1px solid var(--cappa-line); padding-top: 4px; }
+.opts > summary { font-family: var(--caps); letter-spacing: .1em; font-size: 15px; color: var(--cappa-muted); min-height: 40px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; }
+.opts > summary::-webkit-details-marker { display: none; }
+.opts > summary::after { content: '▾'; font-size: 13px; transition: transform .15s; }
+.opts[open] > summary::after { transform: rotate(180deg); }
+.opts > summary:hover, .opts[open] > summary { color: var(--cappa-ink); }
+.opts .fields { padding-bottom: 10px; }
+.hw-rite { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--cappa-line); }
+.hw-rite button { background: none; border: 0; color: var(--cappa-muted); padding: 9px 8px; text-align: center; cursor: pointer; line-height: 1.2; }
+.hw-rite button + button { border-left: 1px solid var(--cappa-line); }
+.hw-rite button span { display: block; font-family: var(--caps); letter-spacing: .08em; font-size: 15px; }
+.hw-rite button small { display: block; font-style: italic; font-size: 12px; margin-top: 2px; }
+.hw-rite button.on { background: var(--cappa-ink); color: var(--cappa); }
+.hw-days { display: flex; flex-direction: column; }
+.hw-days button { text-align: left; background: none; border: 0; border-left: 2px solid var(--cappa-line); color: var(--cappa-muted); padding: 7px 0 7px 12px; cursor: pointer; line-height: 1.25; }
+.hw-days button span { display: block; font-size: 17px; }
+.hw-days button small { display: block; font-family: var(--caps); letter-spacing: .1em; font-size: 12px; }
+.hw-days button:hover { color: var(--cappa-ink); }
+.hw-days button.on { color: var(--cappa-ink); border-left-color: var(--cappa-ink); }
+.hw-card { border: 1px solid var(--line); padding: 16px 18px; margin: 18px 0; }
+.hw-card p { margin: 0 0 12px; }
+.hw-card .hw-go { display: inline-block; text-decoration: none; border: 1px solid var(--ink); color: var(--ink); padding: 8px 14px; font-family: var(--caps); letter-spacing: .08em; }
+.hw-card .hw-go:hover { background: var(--ink); color: var(--paper); }
+@media (max-width: 960px) {
+  .en-toggle { top: 16px; right: 16px; }
+  .hw-days { flex-direction: row; overflow-x: auto; gap: 4px; scrollbar-width: none; margin: 0 -18px; padding: 0 18px; }
+  .hw-days button { flex: none; border-left: 0; border-bottom: 2px solid var(--cappa-line); padding: 6px 10px; }
+  .hw-days button.on { border-bottom-color: var(--cappa-ink); }
+  .hw-days button span { font-size: 15px; white-space: nowrap; }
+}
+@media print { .en-toggle, .hw-card { display: none; } }
+.nav { gap: 14px; justify-content: space-between; }
+.nav a { white-space: nowrap; }
