@@ -422,7 +422,7 @@
       c = !isVigil(key) && (sun || cls === 1 || /Apost|App\.|Evang/.test(t) ||
           (cls === 2 && /\bDomini\b|Christi|Iesu|Jesu|Crucis|Transfigur|Baptism|Mari[aæe]|B\. ?M\. ?V|Virginis Mari|Our Lady/.test(t)));
     }
-    return {gloria: g, credo: c, dismiss: key === 'Quad6h' ? 'ben' : 'ite'};
+    return {gloria: g, credo: c, dismiss: 'ite'};   // Maundy Thursday too: Ite, missa est (St Dominic Missal 1959)
   }
 
   // ---------------------------------------------------------------- the ring of the liturgical year
@@ -680,7 +680,7 @@
     var hw = function (at) { if (HW) HW.sections.forEach(function (s, i) { if (s.at === at) q.push({t: 'hw', s: s}); }); };
     hw('start'); ch('pr'); hw('afterPr');
     if (O === 'low' && !m.prophecies) od('chalice');
-    if (!m.prophecies) od('foot');
+    if (!m.prophecies && !(HW && HW.noFoot)) od('foot');
     ch('in');
     if (!m.prophecies) { ord('ky'); ord('gl'); od('collect'); orat('or'); od('collectEnd'); }
     var gr = (parts.gr || []).length, tr = (parts.tr || []).length;
@@ -692,6 +692,7 @@
         if (i === m.prophecies) { ord('ky'); ord('gl'); od('collect'); orat('or'); od('collectEnd'); }
         q.push({t: 'read', r: r});
         if (i < m.prophecies && i >= m.prophecies - ptr) take('tr', k++);
+        hw('lesson' + i);
         if (i === pre.length - 1) { ch('al'); for (var j = k; j < tr; j++) take('tr', j); }
       });
     } else {
@@ -705,6 +706,7 @@
         else if (!last && gi < gr) take('gr', gi++);
         // Ember Wednesday of Pentecost: an Alleluia after each lesson (XIII, 3)
         if (m.alEach && !last && ai < al - 1) take('al', ai++);
+        hw('lesson' + i);
         if (last) {
           for (; gi < gr; gi++) take('gr', gi);
           for (; ai < al; ai++) take('al', ai);
@@ -818,6 +820,12 @@
     else { sec = O[k]; if (!sec) return null; lines = sec.lines; }
     // at a private Mass of Palm Sunday the Gospel of the blessing is the last Gospel
     var HW = window.HOLYWEEK && HOLYWEEK[state.key];
+    if (k === 'canon' && HW && HW.canon) {
+      lines = lines.map(function (l) {
+        var hit = l.la && Object.keys(HW.canon).filter(function (w) { return l.la.indexOf(w) === 0; })[0];
+        return hit ? {w: 'P', la: HW.canon[hit][0], en: HW.canon[hit][1]} : l;
+      });
+    }
     if (k === 'end' && HW && HW.lastGospel && state.ordo === 'low') {
       lines = lines.map(function (l) {
         if (/^Inítium sancti Evangélii/.test(l.la || '')) return {w: 'P', la: 'Sequéntia sancti Evangélii secúndum Matthǽum.', en: 'The continuation of the holy Gospel according to Matthew.'};
@@ -835,7 +843,7 @@
     box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: sec.la}), el('span', {class: 'incipit', text: sec.en})]));
     lines.forEach(function (l, i) {
       if (l.r) { box.appendChild(el('p', {class: 'o-rub', text: l.r})); return; }
-      if (l.read) { box.appendChild(drawReading({type: 'Gospel', ref: l.read})); return; }
+      if (l.read) { box.appendChild(drawReading({type: l.type || 'Gospel', ref: l.read})); return; }
       var near = function (j) { return lines[j] && lines[j].w === 'S'; };
       var mark = l.w === 'C' || /^(℟|℣|Ant\.)/.test(l.la) ? '' : l.w === 'S' ? '℟. ' : (l.w === 'D' || near(i + 1) || near(i - 1)) && l.la.length < 140 ? '℣. ' : '';
       box.appendChild(el('div', {class: 'r-cols o-line'}, [
@@ -917,14 +925,15 @@
       return words.join(' ');
     });
   }
-  var READ_LA = {Lesson: 'Lectio', Epistle: 'Epistola', Gospel: 'Evangelium'};
+  var READ_LA = {Lesson: 'Lectio', Epistle: 'Epistola', Gospel: 'Evangelium', Psalmus: 'Psalmus'};
   function drawReading(r) {
     var la = el('p', {class: 'la'}), en = el('p', {class: 'en-text'});
     var box = el('section', {class: 'reading', 'data-part': 'reading'}, [
       el('h3', null, [READ_LA[r.type], el('span', {class: 'ref', text: r.ref}), r.roman ? el('span', {class: 'badge warn', title: 'Reference from the Roman Missal (jgabc); not read from the Dominican Missal', text: 'Roman ref.'}) : null]),
       el('div', {class: 'r-cols'}, [la, en])]);
-    readingText('la', r.ref).then(function (t) { la.textContent = t; }, function () { la.textContent = ''; });
-    readingText('en', r.ref).then(function (t) { en.textContent = t; }, function () { en.textContent = ''; });
+    var psTitle = function (t) { return r.type === 'Psalmus' ? t.replace(/^(Ipsi David[^.]*|Canticum graduum|Psalmus David[^.]*|A Psalm for David[^.]*|A gradual canticle|A psalm of David[^.]*)\.\s*/i, '') : t; };
+    readingText('la', r.ref).then(function (t) { la.textContent = psTitle(t); }, function () { la.textContent = ''; });
+    readingText('en', r.ref).then(function (t) { en.textContent = psTitle(t); }, function () { en.textContent = ''; });
     return box;
   }
   function drawReadings(m) {
