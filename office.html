@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="la">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Officium Divinum — Ordo Praedicatorum</title>
+  <meta name="description" content="The Divine Office of the Dominican Rite for any day, in Latin and English, from the Breviarium O.P. (1909).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#111111">
+</head>
+<body class="office-page">
+  <header class="site hide-print">
+    <a class="brand" href="office.html" aria-label="Officium Divinum, today">
+      <span class="cross" aria-hidden="true">✠</span>
+      <span>
+        <span class="t1">Officium Divinum</span>
+        <span class="t2">juxta ritum Sacri Ordinis Praedicatorum</span>
+      </span>
+    </a>
+    <nav aria-label="Main">
+      <a href="index.html">Mass</a>
+      <a href="office.html" aria-current="page">Office</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside class="hero hide-print" aria-label="Day and hour">
+      <div class="o-day">
+        <button type="button" class="round" id="prevDay" aria-label="Previous day">‹</button>
+        <div class="o-day-t">
+          <div id="dayTitle" class="o-title"></div>
+          <div id="dayMeta" class="o-meta"></div>
+        </div>
+        <button type="button" class="round" id="nextDay" aria-label="Next day">›</button>
+      </div>
+      <div class="field"><label for="date">Date</label><input type="date" id="date"></div>
+      <div id="hours" class="o-hours" role="tablist" aria-label="Hours"></div>
+      <p class="o-note">The spoken Office, in Latin and English. The psalms are given whole from the Vulgate with the Douay-Rheims; the chant will follow.
+        This first edition has Compline and the little hours (Prime, Terce, Sext, None); Matins, Lauds and Vespers are in preparation.</p>
+      <p class="o-note small">A private project, not affiliated with the Order of Preachers. <a href="about.html">About</a></p>
+    </aside>
+    <main id="office" class="o-main" aria-live="polite"></main>
+  </div>
+
+  <script src="data/masses.js"></script>
+  <script src="js/app.js"></script>
+  <script src="data/office.js"></script>
+  <script src="js/office.js"></script>
+</body>
+</html>

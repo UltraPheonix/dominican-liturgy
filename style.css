@@ -202,3 +202,36 @@ footer a { color: var(--muted); }
 #mass .preface .pf-text p { font-size: 15.5px; line-height: 1.55; }
 #mass .preface .pf-sanctus { font-style: italic; color: var(--muted); margin: 6px 0 0; }
 @media print { body[data-print="choir"] #mass .preface .pf-text .en-text { display: none; } }
+
+/* ---------- the Office ---------- */
+.o-day { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.o-day-t { flex: 1; text-align: center; }
+.o-title { font-family: var(--caps); font-size: 20px; letter-spacing: .06em; line-height: 1.25; }
+.o-meta { color: var(--muted); font-style: italic; font-size: 16px; }
+.o-hours { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 14px 0; }
+.o-hours button { font-family: var(--caps); font-size: 15px; letter-spacing: .06em; padding: 8px 4px; border: 1px solid var(--line); background: transparent; cursor: pointer; color: inherit; }
+.o-hours button.on { background: var(--ink, #111); color: var(--paper, #fff); border-color: var(--ink, #111); }
+.o-note { font-size: 15px; color: var(--muted); line-height: 1.4; }
+.o-note.small { font-size: 14px; }
+.o-main { padding: 18px 28px 80px; max-width: 980px; }
+.o-head h2 { font-family: var(--caps); color: var(--rubric); font-weight: 500; letter-spacing: .12em; font-size: 28px; margin: 6px 0 0; }
+.o-sub { margin: 2px 0 18px; color: var(--muted); font-style: italic; }
+.o-h { font-family: var(--caps); color: var(--rubric); font-weight: 500; letter-spacing: .1em; font-size: 20px; margin: 26px 0 6px; border-top: 1px solid var(--line); padding-top: 10px; }
+.o-item { margin: 10px 0 14px; }
+.o-item h4 { margin: 12px 0 4px; font-family: var(--caps); font-weight: 500; color: var(--rubric); letter-spacing: .06em; font-size: 16px; }
+.o-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.o-pair p { margin: 0 0 6px; white-space: pre-line; }
+.o-en { color: var(--muted); font-size: 0.95em; }
+.o-verse p { margin-bottom: 4px; }
+.o-gp p { font-style: italic; }
+.o-stanza p { margin-bottom: 10px; }
+.o-rubric { color: var(--rubric); font-style: italic; font-size: 16px; margin: 8px 0; }
+.r { color: var(--rubric); }
+.rub { color: var(--rubric); font-style: italic; }
+.o-ps-head .o-en-t { color: var(--muted); font-family: var(--serif); letter-spacing: 0; }
+@media (max-width: 760px) {
+  .o-pair { grid-template-columns: 1fr; gap: 0; }
+  .o-en { margin-bottom: 8px; }
+  .o-main { padding: 12px 16px 60px; }
+  .o-hours { grid-template-columns: repeat(4, 1fr); }
+}
