@@ -109,6 +109,12 @@
       var l = lines[i];
       if (/^<r>Ant\.<\/r>/.test(l)) segs.push({s: i, e: i + 1, kind: 'an', key: K(plain(l).slice(4))});
       else if (/^<[rh]>Hymnus<\/[rh]>$/.test(l.trim())) hymnAt = i + 1;
+      else if (/^<r>℟\.<\/r>/.test(l) && /^\* /.test(lines[i + 1] || '')) {
+        var e3 = i + 1;
+        while (e3 < lines.length && lines[e3].trim()) e3++;
+        segs.push({s: i, e: e3, kind: 're', key: 're' + K(plain(l).slice(2))});
+        i = e3 - 1;
+      }
       else if (/^<r>℟\.br\.<\/r>/.test(l)) {
         var e = i + 1;
         while (e < lines.length && lines[e].trim()) e++;
@@ -151,8 +157,9 @@
             sunday: /^Dominica/.test(title), bvm: /Mari[æa]|B\. ?M\. ?V|Beatæ Vírginis/i.test(title),
             bvmSat: /Sancta Maria Sabbato|Sanctæ Mariæ in Sabbato/i.test(title)};
   }
-  var LABEL = {an: 'Ant.', hy: 'Hymn.', rb: 'R. br.'};
+  var LABEL = {an: 'Ant.', hy: 'Hymn.', rb: 'R. br.', re: 'R.'};
   function chantDiv(g) {
+    if (g.file) return '<div class="chant o-chant" data-id="' + esc(g.file) + '" data-mode="" data-tp="1" data-kind="hy"></div>';
     if (g.gabc || g.ben) {
       if (g.ben === null) return '';
       if (g.ben && g.ben.id) return '<div class="chant o-chant" data-id="' + g.ben.id + '" data-mode="" data-tp="0" data-kind="ben"></div>';
@@ -256,7 +263,9 @@
           i = g.e - 1;
           continue;
         }
-        var l = la.lines[i], va = ps.ant && isVerse(l) ? verseAttrs(l, ps, la) : '';
+        var l = la.lines[i];
+        if (/^<r>Ant\.<\/r>/.test(l)) ps.ant = null;      // an antiphon without its chant: its psalm stays read
+        var va = ps.ant && isVerse(l) ? verseAttrs(l, ps, la) : '';
         if (paired) {
           var e2 = en.lines[i];
           out += (!l.trim() && !e2.trim()) ? '<div class="o-gap"></div>' :

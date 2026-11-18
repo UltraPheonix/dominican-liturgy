@@ -28,6 +28,10 @@
     oremusSim: "(f3) O(h)ré(h)mus.(f.) (::)",
     amen: "<sp>R/</sp>. A(g)men.(h.) (::)",
     // Antiphonarium 1933, Toni communes VI: at the end of the Hours
+    // Matins (Fr Thompson's Antiphonale, Toni communes: Modus incohandi Officii lectionum)
+    labia: "(f3) Dó(h)mi(h)ne,(h) lá(h)bi(h)a(h) me(h)a(h) a(h)pé(g)ri(g)es.(h) (::) <sp>R/</sp>. Et(h) os(h) me(h)um(h) an(h)nun(h)ti(h)á(h)bit(h) lau(h)dem(h) tu(g)am.(h) (::)",
+    // Regulae 1965, art. III § IV: asking the blessing
+    iube: "(f3) <sp>V/</sp>. Iu(g)be,(g) dom(h)ne,(h) be(h)ne(g)dí(f)ce(e)re.(e.) (::)",
     benFin: "(c3) Be(f)ne(f)di(f)cá(f)mus(f) Dó(f)mi(e)no.(e) (::) <sp>R/</sp>. De(e)o(e) grá(e)ti(e)as.(f) (::)"
   };
   // Benedicamus at Lauds and Vespers (Antiphonarium 1933, Toni communes VI), GregoBase transcriptions
@@ -57,7 +61,7 @@
     while ((m = re.exec(t))) if (m[0].trim()) out.push(m[0].trim());
     return out;
   }
-  var FLEX = "'h gr g", ELEV = "g f 'h hr h";
+  var FLEX = "'h fr f", ELEV = "g f 'h hr h";
   // chapter: alternate flexio and elevatio, the last being a flexio
   function chapter(text) {
     var ms = members(text), g = '(f3) ';
@@ -65,7 +69,7 @@
       var fromEnd = ms.length - 1 - i, cad = fromEnd % 2 === 0 ? FLEX : ELEV;
       g += recite(m, cad, 'h') + (fromEnd === 0 ? ' (::) ' : (cad === FLEX ? ' (;) ' : ' (:) '));
     });
-    return g + '<sp>R/</sp>. De(h)o(h) grá(h)ti(h)as.(h.) (::)';
+    return g + '<sp>R/</sp>. De(g)o(g) grá(g)ti(g)as.(h.) (::)';
   }
   // the body of a prayer: alternate flexio and elevatio, the last being an elevatio
   function prayerBody(text) {
@@ -82,7 +86,7 @@
     var finalCad = solemn ? "h 'hg g" : "h 'h g";
     var m = /^(.*?(?:Fílium tuum|Deo Patre))[,:]?\s*(.*?(?:Spíritus Sancti,? Deus),?)\s*(per ómnia sǽcula sæculórum\.?)$/i.exec(t);
     if (m) {
-      g += recite(m[1], "'h g", 'h') + ' (;) ';
+      g += recite(m[1], FLEX, 'h') + ' (;) ';
       g += recite(m[2], ELEV, 'h') + ' (:) ';
       g += recite(m[3], finalCad, 'h');
     } else if (/sæculórum\.?$/.test(t)) {
@@ -91,6 +95,13 @@
       g += recite(t, "i h g 'hg g", 'h');               // Per Christum Dóminum nostrum
     }
     return g + ' (::) ' + FIXED.amen;
+  }
+  // the blessing before a lesson: two clauses of one accent each (Regulae art. III § IV, 1)
+  function blessing(text) {
+    var syl = P.analyse(plain(text)), half = Math.floor(syl.length / 2), cut = 0, best = 99;
+    syl.forEach(function (s, i) { if (s.last && i < syl.length - 2 && Math.abs(i + 1 - half) < best) { best = Math.abs(i + 1 - half); cut = i + 1; } });
+    var words = plain(text).split(/\s+/), wc = syl.slice(0, cut).filter(function (s) { return s.last; }).length;
+    return '(f3) ' + recite(words.slice(0, wc).join(' '), "'h fr f", 'h') + ' (;) ' + recite(words.slice(wc).join(' '), "'h fr f", 'h') + ' (::) ' + FIXED.amen;
   }
   function versicle(v, r, solemn) {
     var tail = solemn ? 'g. hGFE/fg/hg.' : null;
@@ -121,6 +132,20 @@
         var laus = /^Laus/.test(plain(lines[j]));
         segs.push({s: i, e: j + 1, kind: 'inc', gabc: FIXED.deus + ' ' + (laus ? FIXED.laus.replace(/^\(c3\) /, '') : FIXED.alleluia)});
         i = j; continue;
+      }
+      if (isV(l) && /^Dómine, lábia/.test(t) && i + 1 < n && isR(lines[i + 1])) {
+        segs.push({s: i, e: i + 2, kind: 'inc', gabc: FIXED.labia}); i++; continue;
+      }
+      if (isV(l) && /^Iube,? domne/.test(t) && i + 2 < n && /^<r>Benedictio\.<\/r>/.test(lines[i + 1]) && isR(lines[i + 2])) {
+        segs.push({s: i, e: i + 3, kind: 'bl', gabc: FIXED.iube + ' ' + blessing(body(lines[i + 1])).replace(/^\(f3\) /, '')}); i += 2; continue;
+      }
+      if (isV(l) && /^(Tu autem|Et ne nos indúcas)/.test(t) && i + 1 < n && isR(lines[i + 1])) {
+        segs.push({s: i, e: i + 2, kind: 'vs', gabc: versicle(t, body(lines[i + 1]), false)}); i++; continue;
+      }
+      if (/^Te Deum laudámus/.test(plain(l))) {
+        j = i;
+        while (j + 1 < n && plain(lines[j + 1])) j++;
+        segs.push({s: i, e: j + 1, kind: 'td', file: 'Ta1-5'}); i = j; continue;
       }
       if (isV(l) && /^Convérte nos/.test(t) && i + 1 < n && isR(lines[i + 1])) {
         segs.push({s: i, e: i + 2, kind: 'inc', gabc: FIXED.converte}); i++; continue;
