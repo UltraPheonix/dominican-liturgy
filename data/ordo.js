@@ -51,9 +51,9 @@ window.ORDO = {
     {r: 'The priest kisses the altar, turns to the people and says:'},
     {w: 'P', la: 'Dóminus vobíscum.', en: 'The Lord be with you.'},
     {w: 'S', la: 'Et cum spíritu tuo.', en: 'And with thy spirit.'},
-    {w: 'P', la: 'Orémus.', en: 'Let us pray.'},
-    {r: 'He reads (or sings) the Collect of the day, at the end of which is answered:'},
-    {w: 'S', la: 'Amen.', en: 'Amen.'},
+    {w: 'P', la: 'Orémus.', en: 'Let us pray.'}
+  ]},
+  collectEnd: {la: 'Epistola', en: 'Epistle', lines: [
     {m: 'm', r: 'The subdeacon then sings the Epistle; at its end the priest blesses him.'},
     {m: 'l', r: 'Then the Epistle, after which the server answers: Deo grátias.'}
   ]},
@@ -101,10 +101,10 @@ window.ORDO = {
     {w: 'P', la: 'Oráte, fratres, ut meum ac vestrum páriter in conspéctu Dómini sit accéptum sacrifícium.', en: 'Pray, brethren, that my sacrifice and yours may be equally acceptable in the sight of the Lord.'},
     {r: 'Turning back to the altar, he says:'},
     {w: 'P', la: 'Dómine, exáudi oratiónem meam: et clamor meus ad te véniat.', en: 'O Lord, hear my prayer; and let my cry come unto thee.'},
-    {r: 'Then, in a low voice, the Secret of the day.'},
+    {r: 'Then, in a low voice, the Secret of the day:'}
+  ]},
+  offertoryEnd: {la: 'Præfatio', en: 'Preface', lines: [
     {m: 'sm', r: 'Its conclusion and the dialogue before the Preface are sung (below).'},
-    {m: 'l', w: 'P', la: 'Per ómnia sǽcula sæculórum.', en: 'World without end.'},
-    {m: 'l', w: 'S', la: 'Amen.', en: 'Amen.'},
     {m: 'l', w: 'P', la: 'Dóminus vobíscum.', en: 'The Lord be with you.'},
     {m: 'l', w: 'S', la: 'Et cum spíritu tuo.', en: 'And with thy spirit.'},
     {m: 'l', w: 'P', la: 'Sursum corda.', en: 'Lift up your hearts.'},
@@ -179,9 +179,9 @@ window.ORDO = {
   post: {la: 'Postcommunio', en: 'Postcommunion', lines: [
     {w: 'P', la: 'Dóminus vobíscum.', en: 'The Lord be with you.'},
     {w: 'S', la: 'Et cum spíritu tuo.', en: 'And with thy spirit.'},
-    {w: 'P', la: 'Orémus.', en: 'Let us pray.'},
-    {r: 'The Postcommunion of the day, answered:'},
-    {w: 'S', la: 'Amen.', en: 'Amen.'},
+    {w: 'P', la: 'Orémus.', en: 'Let us pray.'}
+  ]},
+  postEnd: {la: 'Dimissio', en: 'Dismissal', lines: [
     {w: 'P', la: 'Dóminus vobíscum.', en: 'The Lord be with you.'},
     {w: 'S', la: 'Et cum spíritu tuo.', en: 'And with thy spirit.'},
     {m: 'm', r: 'The deacon sings the dismissal.'}

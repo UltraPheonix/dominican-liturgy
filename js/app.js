@@ -654,6 +654,7 @@
     // at a Low Mass the Ordinary is said, not sung
     var O = window.ORDO && state.ordo && state.key !== 'Quad6f' ? state.ordo : '', R = O ? rubricsOf(state.key, state.date) : {};
     var od = function (k) { if (O) q.push({t: 'ordo', k: k}); };
+    var orat = function (k) { var x = window.ORATIONS && ORATIONS[state.key]; if (x && x[k]) q.push({t: 'oratio', k: k, x: x[k], src: x.src}); };
     var ord = function (k) {
       if (O === 'low') { if (k === 'ky' || (k === 'gl' && R.gloria) || (k === 'cr' && R.credo) || k === 'sa' || (k === 'ag' && !m.noAgnus)) q.push({t: 'ordo', k: k + 'Low'}); }
       else q.push({t: 'ord', k: k});
@@ -662,14 +663,14 @@
     if (O === 'low' && !m.prophecies) od('chalice');
     if (!m.prophecies) od('foot');
     ch('in');
-    if (!m.prophecies) { ord('ky'); ord('gl'); od('collect'); }
+    if (!m.prophecies) { ord('ky'); ord('gl'); od('collect'); orat('or'); od('collectEnd'); }
     var gr = (parts.gr || []).length, tr = (parts.tr || []).length;
     if (m.prophecies) {
       // Holy Saturday, Vigil of Pentecost: prophecies, the last ones each followed by a tract; the Litany;
       // then the Mass begins with the Kyrie and Gloria
       var ptr = m.ptr != null ? m.ptr : tr, k = 0;
       pre.forEach(function (r, i) {
-        if (i === m.prophecies) { ord('ky'); ord('gl'); od('collect'); }
+        if (i === m.prophecies) { ord('ky'); ord('gl'); od('collect'); orat('or'); od('collectEnd'); }
         q.push({t: 'read', r: r});
         if (i < m.prophecies && i >= m.prophecies - ptr) take('tr', k++);
         if (i === pre.length - 1) { ch('al'); for (var j = k; j < tr; j++) take('tr', j); }
@@ -699,11 +700,11 @@
     gos.forEach(function (r) { q.push({t: 'read', r: r}); });
     if (gos.length) od('afterGospel');
     ch('ad');
-    ord('cr'); od('offerDial'); ch('of'); od('offertory'); q.push({t: 'pref'}); ord('sa');
+    ord('cr'); od('offerDial'); ch('of'); od('offertory'); orat('se'); od('offertoryEnd'); q.push({t: 'pref'}); ord('sa');
     od('canon'); od('pater');
     if (!m.noAgnus) ord('ag');
     od('communion');
-    ch('co'); od('post'); ch('an');
+    ch('co'); od('post'); orat('pc'); od('postEnd'); ch('an');
     if (O === 'low') od('dismiss'); else q.push({t: 'ord', k: 'it'});
     od('end');
     return q;
@@ -743,6 +744,7 @@
       if (it.t === 'chant') main.appendChild(drawSlot(it.p, it.i, it.c));
       else if (it.t === 'pref') { var pf = drawPreface(state.key, state.date, R); if (pf) main.appendChild(pf); }
       else if (it.t === 'ord') { if (ord[it.k]) main.appendChild(drawOrdinary(it.k, ord[it.k])); }
+      else if (it.t === 'oratio') main.appendChild(drawOratio(it));
       else if (it.t === 'ordo') { var os = drawOrdo(it.k, R); if (os) main.appendChild(os); }
       else {
         if (!readHead) { readHead = true; }
@@ -804,6 +806,15 @@
         el('p', {class: 'la', lang: 'la'}, [mark ? el('span', {class: 'o-mark', text: mark}) : null, l.la]),
         el('p', {class: 'en-text', lang: 'en'}, [mark ? el('span', {class: 'o-mark', text: mark}) : null, l.en])]));
     });
+    return box;
+  }
+  // the Collect, Secret or Postcommunion of the day
+  function drawOratio(it) {
+    var name = {or: ['Oratio', 'Collect'], se: ['Secreta', 'Secret'], pc: ['Postcommunio', 'Postcommunion']}[it.k];
+    var box = el('section', {class: 'part ordo oratio', 'data-part': 'oratio'});
+    box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: name[0]}), el('span', {class: 'incipit', text: name[1]})]));
+    box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: it.x[0]}), el('p', {class: 'en-text', lang: 'en', text: it.x[1]})]));
+    box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.']), el('p', {class: 'en-text', lang: 'en'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
     return box;
   }
   function findKyriale(name) { var r = null; D.kyriale.forEach(function (id) { if (D.chants[id].i === name) r = id; }); return r; }
