@@ -129,13 +129,20 @@
     var m = /<i>\s*T\.\s*P\.\s*<\/i>/.exec(gabc);
     if (!m) return gabc;
     var j = gabc.indexOf('(::)', m.index);
-    var k = j < 0 ? -1 : gabc.indexOf('(::)', j + 4);
+    // the Alleluia ends at the first double bar after it; if the T. P. marker itself carries the double bar
+    // ("<i>T. P.</i>(::) Al(...)"), at the next one
+    var k = j < 0 ? -1 : (/\w\(/.test(gabc.slice(m.index + m[0].length, j)) ? j : gabc.indexOf('(::)', j + 4));
     if (k < 0) return gabc.slice(0, m.index) + '(::)';
     return gabc.slice(0, m.index) + '(::)' + gabc.slice(k + 4);
   }
   function exsurgeGabc(gabc) {
     if (currentSeason() !== 'pasch' && !/^(Pasc|Asc|AscVig|Litaniis|Pent0)/.test(state.key || '')) gabc = stripTP(gabc);
     return gabc
+      // verbatim LaTeX the renderer cannot read: accented y, emphasised rubrics, braces
+      .replace(/<v>\\'y<\/v>/g, 'ý').replace(/<v>\\'Y<\/v>/g, 'Ý').replace(/<v>([A-Za-z])<\/v>/g, '$1')
+      .replace(/<v>\\emph\{([^}]*)\}<\/v>/g, '<i>$1</i>')
+      .replace(/<i>\{([^}]*)\}<\/i>/g, '<i>$1</i>')
+      .replace(/<i>(i+j)<\/i>\./g, '<i>$1.</i>')
       .replace(/<v>\\([VRA])bar<\/v>/g, function (m, b) { return b + '/.'; })
       .replace(/<sp>([VRA])\/<\/sp>\.?/g, function (m, b) { return b + '/.'; })
       .replace(/(\)\s+)([^()]*V\/\.\s*\d+\.?)(?=[ (])/g, '$1^$2^')
@@ -144,10 +151,10 @@
       })
       .replace(/\\emph{([^(}]+)\}/g, '_$1_')
       .replace(/(v[A-Z]__[A-Z])([^_])/g, '$1_3$2')
-      .replace(/([^)]\s+)([*†]|<i>i+j\.<\/i>)\(/g, '$1^$2^(')
+      .replace(/([^)]\s+)([*†]|<i>(?:i+j|Repet)\.<\/i>)\(/g, '$1^$2^(')
       .replace(/\^?(<i>[^(|]*? [^(|]*?<\/i>)\^?([^(|]*)/g, '^$1^$2')
       .replace(/\*(\([:;,]+\))\s+(<i>i+j\.<\/i>)\(/g, '{*} $2$1 (')
-      .replace(/(\s+)({?<i>i+j\.<\/i>}?)\(/g, '$1^$2^(')
+      .replace(/(\s+)({?<i>(?:i+j|Repet)\.<\/i>}?)\(/g, '$1^$2^(')
       .replace(/\[([^\]\s-áéíóú]+)\](?=\()/g, '|$1 ')
       .replace(/\[([^\]\s-]+)-?\](?=\()/g, '|$1')
       .replace(/(<b>[^<]+)œ́/g, '$1œ</b>́<b>')
@@ -159,7 +166,8 @@
       .replace(/<alt>.*?<\/alt>/gi, '')
       .replace(/\[[ou]ll:[01]?[{}][01]?\]/ig, '')
       .replace(/\s(<nlba>)?\^?\*\^?(?=\s*[^(])/g, ' $1*()')
-      .replace(/(\))\s*\(\)/g, ')');
+      .replace(/(\))\s*\(\)/g, ')')
+      .replace(/\^_([^_^]*)_\^/g, '^$1^');   // exsurge does not nest italics inside red text
   }
 
   var renderQueue = Promise.resolve(), glyphSeq = 0;
@@ -1182,7 +1190,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
+  window.ProprOP = {exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
 
   function start() {
     if (!document.getElementById('selMass')) return;   // loaded as a library (e.g. by the Office page)
