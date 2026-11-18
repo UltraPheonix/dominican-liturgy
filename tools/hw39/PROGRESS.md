@@ -46,3 +46,10 @@ Latin j -> i (site style). English: 1959 missal's where the text is the same, ot
 - 1939: all seven days transcribed (Holy Saturday via mksat.py). Next: Palm Sunday procession from Processionarium O.P. 1913 (/home/claude/dl/proc, pdf pp. 35-48 = book pp. 20-33), Triduum chants from Ecclesiasticum Officium Triduo ante Pascha 1927 (/home/claude/dl/tri), then proofreading, then 1959.
 - 1959: all seven days from the St Dominic Missal (*_59.src); until then the 1959 option shows the old data/holyweek.js.
 - Palm Sunday X: markers; check chants exist for every C: (parts in data/masses.js).
+
+## 2026-11-18 late: Exsultet done (Triduum O.P. 1927 pp. 258-268), site/gabc/op-exsultet-1..5.gabc
+- Split at the Missal's rubrics (grains of incense / lighting the candle / acolytes' candles / lamps). Chant text follows the
+  Triduum book (e.g. "íntonet", "divísos"), the Missal text above it keeps the Missal's wording.
+- Page files + NOTES.md in tools/chant/exs; checked against the note reader (vcheck.py): no pitch disagreements except
+  known reader noise (porrectus gfg read as fg/h).  N. placeholders = 3 notes each (book).
+- Still to do (order agreed with user): Litany + Mandatum, Triduum Office, Palm Sunday procession chants (last), then 1959.
