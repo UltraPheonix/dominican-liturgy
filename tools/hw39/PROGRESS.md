@@ -21,7 +21,7 @@ Latin j -> i (site style). English: 1959 missal's where the text is the same, ot
 
 ## Done (1939)
 - Quad6 Palm Sunday (pp.137-146) — proofread against the scan.  (TODO: add X: markers to its Mass section)
-- Quad6m Monday (146-148), Quad6t Tuesday (148-154, Passion of Mark) — from OCR+reference repair.
+- Quad6m Monday, Quad6t Tuesday (Passion of Mark), Quad6w Wednesday (Passion of Luke), Quad6h Thursday (absolution p.54, Mass, procession, Vespers) — OCR+reference repair, not yet proofread line by line.
 - Lenten 2nd/3rd orations: lent_or/lent_se/lent_pc.src (M39 pp. 63, 65).
 
 ## In progress
