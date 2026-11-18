@@ -666,7 +666,8 @@
   function massSequence(m, parts) {
     var HW = window.HOLYWEEK && HOLYWEEK[state.key];
     var rs = seasonalReadings(state.key, state.date) || (HW && HW.readings) || m.readings || [], pre = rs.filter(function (r) { return r.type !== 'Gospel'; }), gos = rs.filter(function (r) { return r.type === 'Gospel'; });
-    var q = [], ch = function (p) { (parts[p] || []).forEach(function (c, i) { q.push({t: 'chant', p: p, i: i, c: c}); }); };
+    var HW0 = window.HOLYWEEK && HOLYWEEK[state.key], skip = (HW0 && HW0.skipChants) || [];
+    var q = [], ch = function (p) { (parts[p] || []).forEach(function (c, i) { if (skip.indexOf(c.id) < 0) q.push({t: 'chant', p: p, i: i, c: c}); }); };
     var take = function (p, i) { var c = (parts[p] || [])[i]; if (c) q.push({t: 'chant', p: p, i: i, c: c}); };
     // with the Order of Mass (state.ordo: low, sung, solemn) its prayers and rubrics go between the chants;
     // at a Low Mass the Ordinary is said, not sung
@@ -727,9 +728,10 @@
     od('canon'); od('pater');
     if (!m.noAgnus) ord('ag');
     od('communion');
-    ch('co'); od('post'); orat('pc'); od('postEnd'); ch('an');
+    ch('co'); ch('an'); hw('afterCo'); od('post'); orat('pc'); od('postEnd');
     if (O === 'low') od('dismiss'); else q.push({t: 'ord', k: 'it'});
-    od('end'); hw('end');
+    if (!(HW && HW.noLastGospel)) od('end'); else od('endNoGospel');
+    hw('end');
     return q;
   }
   function rubricLine(R) {
@@ -817,7 +819,10 @@
   function drawOrdo(k, R) {
     var O = window.ORDO, sec, lines, mode = {low: 'l', sung: 's', solemn: 'm'}[state.ordo] || 'l';
     if (k === 'dismiss') { sec = {la: R.requiem ? 'Requiescant in pace' : R.dismiss === 'ite' ? 'Ite, missa est' : 'Benedicamus Domino', en: 'Dismissal'}; lines = O.dismiss[R.requiem ? 'req' : R.dismiss === 'ite' ? 'ite' : 'ben']; }
+    else if (k === 'endNoGospel') { sec = O.end; lines = O.end.lines.slice(0, O.end.lines.findIndex(function (l) { return /^At the Gospel side/.test(l.r || ''); })); }
     else { sec = O[k]; if (!sec) return null; lines = sec.lines; }
+    var HWk = window.HOLYWEEK && HOLYWEEK[state.key];
+    if (k === 'dismiss' && HWk && HWk.alleluiaDismiss) lines = lines.map(function (l) { return {w: l.w, la: l.la.replace(/\.$/, ', allelúia, allelúia.'), en: l.en.replace(/\.$/, ', alleluia, alleluia.')}; });
     // at a private Mass of Palm Sunday the Gospel of the blessing is the last Gospel
     var HW = window.HOLYWEEK && HOLYWEEK[state.key];
     if (k === 'canon' && HW && HW.canon) {
@@ -925,7 +930,7 @@
       return words.join(' ');
     });
   }
-  var READ_LA = {Lesson: 'Lectio', Epistle: 'Epistola', Gospel: 'Evangelium', Psalmus: 'Psalmus'};
+  var READ_LA = {Lesson: 'Lectio', Epistle: 'Epistola', Gospel: 'Evangelium', Psalmus: 'Psalmus', Canticum: 'Canticum'};
   function drawReading(r) {
     var la = el('p', {class: 'la'}), en = el('p', {class: 'en-text'});
     var box = el('section', {class: 'reading', 'data-part': 'reading'}, [
@@ -967,7 +972,7 @@
     var ch = D.chants[c.id] || {};
     var incipit = el('span', {class: 'incipit', text: clean(ch.i || '').replace(/\s*\(.*?\)\s*/g, ' ').replace(/\.\.\..*$/, '').replace(/(\s*all\.)+\s*$/i, '').replace(/\s+alleluia\s*$/i, '').trim()});
     var mode = el('span', {class: 'mode'});
-    var head = el('div', {class: 'part-head hide-print'}, [el('h2', {text: PART_NAME[part]}), state.edit ? sel : incipit, mode]);
+    var head = el('div', {class: 'part-head hide-print'}, [el('h2', {text: part === 'an' && state.key === 'Quad6s' ? 'Ad Laudes' : PART_NAME[part]}), state.edit ? sel : incipit, mode]);
     if (c.roman) head.appendChild(/Franciscan/.test(ch.i || '') ?
       el('span', {class: 'badge warn', title: 'Not in the Graduale O.P.: the melody of the Franciscan Graduale (Graduale Seraphicum)', text: 'Franciscan melody'}) :
       el('span', {class: 'badge warn', title: 'Not in the Graduale O.P. on GregoBase: the melody of the Roman Graduale', text: 'Roman melody'}));
