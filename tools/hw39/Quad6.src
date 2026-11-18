@@ -38,16 +38,20 @@ T: ^IN illo témpore : Cum appropinquásset Jesus Jerosólymis, et venísset Bé
 R: Perlecto Evangelio, Subdiaconus deferat librum osculandum Sacerdoti, et Acolythi versus sacristiam accedant; et tunc frater alba indutus crucem a Sacrista præparatam accipiat, et alius aquam benedictam : et illis præeuntibus, eo ordine, quo consuevit fieri, fiat Processio : qua finita, Prior cum ministris in sacristiam revertatur : ubi depositis vestimentis prioribus, assumptisque aliis coloris violacei, et Missa a Choro inchoata, procedant more solito ad altare.
  = When the Gospel has been read, the Subdeacon brings the book to the Priest to be kissed, and the Acolytes go towards the sacristy; then a brother vested in an alb takes the cross prepared by the Sacristan, and another the holy water; and with them going before, in the order in which it is usually done, the Procession is made. When it is finished, the Prior with the ministers returns to the sacristy, where, having put off the former vestments and put on others of violet colour, and the Mass having been begun by the Choir, they go to the altar in the usual way.
 
+INC: Quad6_proc
+
 == Ad Missam | The Mass
 H: AD MISSAM
  = THE MASS
 I: Statio ad S. Joannem in Laterano
  = Station at St John Lateran
+X: start
 L: Officium | Ps. 21
  = Introit | Ps. 21
 T: ^DOMINE ne longe fácias auxílium tuum a me : ad defensiónem meam áspice : líbera me de ore leónis, et a córnibus unicórnium humilitátem meam. {℣.} Deus Deus meus réspice in me : quare me dereliquísti? longe a salúte mea verba delictórum meórum. {D}ómine ne longe.
  = Lord, let not Your help be far from me. Look to my defence; deliver me from the lion's mouth, and my lowliness from the horns of the unicorns. {℣.} O God, my God, look on me! Why have You forsaken me? The voice of my sins keeps salvation far from me. {L}ord, let not, etc.
 C: in 0
+X: ky
 L: Oratio
  = Collect
 T: ^OMNIPOTENS sempitérne Deus, qui humáno géneri ad imitándum humilitátis exémplum, Salvatórem nostrum carnem súmere, et crucem subíre fecísti; concéde propítius : ut et patiéntiæ ipsíus habére documénta; et resurrectiónis consórtia mereámur : Per eúmdem Dóminum.
@@ -75,21 +79,26 @@ R: Hic Sacerdos non signet seipsum, nec librum, neque eum osculetur : quod et in
  = Here the Priest does not sign himself or the book, nor kiss it: which is also observed at the other Passions.
 T: Credo.
  = Creed.
+X: cr, offer
 T: {Offertorium Ps. 68} Impropérium exspectávit cor meum, et misériam : et sustínui qui simul contristarétur, et non fuit : consolántem me quæsívi, et non invéni : et dedérunt in escam meam fel, et in siti mea potavérunt me acéto.
  = {Offertory Ps. 68} My heart looked for reproach and misery; and I looked for someone to condole with me, and there was none; I sought for a comforter, and found him not. And they gave me gall for my meat, and in my thirst they gave me vinegar to drink.
 C: of 0
+X: offertory
 L: Secreta
  = Secret
 T: ^CONCEDE, quǽsumus Dómine, ut óculis tuæ majestátis munus oblátum, et grátiam nobis devotiónis obtíneat, et efféctum beátæ perennitátis acquírat. Per Dóminum.
  = Grant, we beseech You, O Lord, that this gift, offered in the presence of Your majesty, may obtain for us the grace of devotion, and bring us to everlasting joys: through our Lord.
 R: Præfatio *Qui salútem humáni.*
  = Preface *Qui salútem humáni* (of the Cross).
+X: offertoryEnd, pref, sa, canon
 T: {Communio Matth. 26} Pater, si non potest hic calix transíre nisi bibam illum, fiat volúntas tua.
  = {Communion Matt. 26} Father, if this cup cannot pass away unless I drink it, Your will be done.
 C: co 0
+X: post
 L: Postcommunio
  = Postcommunion
 T: ^PER hujus, Dómine, operatiónem mystérii, et vítia nostra purgéntur; et justa desidéria compleántur : Per Dóminum.
  = By virtue of this mystery, O Lord, may our sins be cleansed and our just desires be fulfilled: through our Lord.
 R: Si Missa privata legitur, in fine dicatur Evangelium *Cum appropinquásset Jesus,* ut supra in benedictione Palmarum, pag. 139
  = If the Mass is said privately, the Gospel *Cum appropinquásset Jesus* is said at the end, as above at the blessing of the Palms, p. 139.
+X: postEnd, dismiss, end

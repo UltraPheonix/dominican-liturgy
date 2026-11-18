@@ -667,6 +667,8 @@
   function massSequence(m, parts) {
     var HT = window.HW_TEXT && HW_TEXT[state.hwr] && HW_TEXT[state.hwr][state.key];
     var HW0 = window.HOLYWEEK && HOLYWEEK[state.key], skip = (HW0 && HW0.skipChants) || [];
+    var HW = state.hwr !== '1939' && window.HOLYWEEK && HOLYWEEK[state.key];
+    var rs = seasonalReadings(state.key, state.date) || (HW && HW.readings) || m.readings || [], pre = rs.filter(function (r) { return r.type !== 'Gospel'; }), gos = rs.filter(function (r) { return r.type === 'Gospel'; });
     var q = [], ch = function (p) { (parts[p] || []).forEach(function (c, i) { if (skip.indexOf(c.id) < 0) q.push({t: 'chant', p: p, i: i, c: c}); }); };
     var take = function (p, i) { var c = (parts[p] || [])[i]; if (c) q.push({t: 'chant', p: p, i: i, c: c}); };
     // with the Order of Mass (state.ordo: low, sung, solemn) its prayers and rubrics go between the chants;
@@ -914,7 +916,7 @@
     return out;
   }
   function hwChant(b) {
-    var c = (state.parts[b.p] || [])[b.i];
+    var c = b.t === 'G' ? {id: b.id} : (state.parts[b.p] || [])[b.i];
     if (!c || !c.id) return null;
     var box = el('div', {class: 'chant'}), done = false;
     var d = el('details', {class: 'hw-chant'}, [el('summary', {text: 'Cantus'}), box]);
@@ -928,7 +930,7 @@
   }
   function hwBlocks(blocks, into) {
     blocks.forEach(function (b) {
-      if (b.t === 'C') { var ch = hwChant(b); if (ch) into.appendChild(ch); return; }
+      if (b.t === 'C' || b.t === 'G') { var ch = hwChant(b); if (ch) into.appendChild(ch); return; }
       if (b.t === 'F') {
         var inner = el('div', {class: 'hw-fold-body'});
         hwBlocks(b.blocks, inner);

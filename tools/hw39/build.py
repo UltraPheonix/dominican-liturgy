@@ -50,6 +50,9 @@ def parse(path, lang_i=True):
         if tag == 'X':
             for x in body.split(','): target().append({'t': 'X', 'x': x.strip()})
             continue
+        if tag == 'G':
+            if os.path.exists(os.path.join(SITE, 'gabc', body.strip() + '.gabc')): target().append({'t': 'G', 'id': body.strip()})
+            continue
         if tag == 'C':
             p, i = body.split(); target().append({'t': 'C', 'p': p, 'i': int(i)}); continue
         if tag == 'P':
