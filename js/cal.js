@@ -44,3 +44,41 @@
     };
   };
 })();
+
+/* Dominican numbering of the Sundays: after the Octave of Trinity, of the Epiphany and of Easter
+   (Missale O.P. 1939: Dominica II post Octavam Trinitatis = the Roman 4th after Pentecost, etc.) */
+(function () {
+  'use strict';
+  var R = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV', 'XXV', 'XXVI'];
+  function num(s) { if (/^\d+$/.test(s)) return +s; var i = R.indexOf(s.toUpperCase()); return i > 0 ? i : 0; }
+  function ord(n) { var s = ['th', 'st', 'nd', 'rd'], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); }
+  var SEASON = {pentecosten: [2, 'post Octavam Trinitatis'], epiphaniam: [1, 'post Octavam Epiphaniæ'], pascha: [1, 'post Octavam Paschæ']};
+  function la(t) {
+    if (!t) return t;
+    return String(t)
+      .replace(/(Dominica\s+)?([IVXL]+|\d+)(\s+et\s+[Uu]ltima)?\s+[Pp]ost\s+(Pentecosten|Epiphaniam|Pascha)\b/g, function (m, dom, n, ult, s) {
+        var S = SEASON[s.toLowerCase()], k = num(n) - S[0];
+        if (ult && S[0] === 2) return (dom || '') + 'ultima ' + S[1];
+        if (s.toLowerCase() === 'pentecosten' && k === 0) return 'Dominica infra Octavam Corporis Christi';
+        if (k < 1) return m;
+        return (dom || '') + R[k] + ' ' + S[1];
+      });
+  }
+  function en(t) {
+    if (!t) return t;
+    return String(t).replace(/(\d+)(?:st|nd|rd|th)( Sunday)? after (Pentecost|Epiphany|Easter)/g, function (m, n, sun, s) {
+      var k = +n - (s === 'Pentecost' ? 2 : 1);
+      if (s === 'Pentecost' && k === 0) return 'Sunday within the Octave of Corpus Christi';
+      if (k < 1) return m;
+      return ord(k) + (sun || '') + ' after the Octave of ' + {Pentecost: 'Trinity', Epiphany: 'the Epiphany', Easter: 'Easter'}[s];
+    });
+  }
+  window.OPNames = {la: la, en: en};
+  // the Masses carry their titles in the Roman numbering of the sources
+  if (window.DOMINICAN && window.DOMINICAN.masses) {
+    Object.keys(window.DOMINICAN.masses).forEach(function (k) {
+      var m = window.DOMINICAN.masses[k];
+      m.title = la(m.title); if (m.en) m.en = en(m.en); if (m.name_en) m.name_en = en(m.name_en);
+    });
+  }
+})();

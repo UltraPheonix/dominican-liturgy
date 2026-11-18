@@ -49,6 +49,7 @@
   // ---------- markup ----------
   var TAGS = {r: '<span class="r">', c: '<span class="r ini">', n: '<span class="r vn">', k: '<span class="k">', h: '<span class="r">'};
   function fmt(line) {
+    if (window.OPNames) line = OPNames.en(OPNames.la(line));
     var s = esc(line).replace(/&lt;(\/?)([rcnkh])&gt;/g, function (m, close, t) { return close ? '</span>' : TAGS[t]; });
     return s.replace(/([✠✙])/g, '<span class="r">$1</span>').replace(/ \* /g, ' <span class="r">*</span> ')
       .replace(/ † /g, ' <span class="r">†</span> ').replace(/ \+ /g, ' <span class="r">✠</span> ');
@@ -316,7 +317,8 @@
 
   function titleOf(day, hour) {
     var t = (hour === 'Vespera' || hour === 'Completorium') && day.tv && day.tv.length ? day.tv : day.t;
-    return (t && t[0]) || '';
+    t = (t && t[0]) || '';
+    return window.OPNames ? OPNames.la(t) : t;
   }
 
   function draw() {

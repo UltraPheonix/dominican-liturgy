@@ -131,6 +131,11 @@ for k,m in D['masses'].items():
         if la: r[code]=[la.replace('J','I').replace('j','i'),en or '']
     if 'or' in r: out[k]=r
     else: miss.append((k,'no oratio in '+f))
+r={'src':'Tempora/Pent24-0'}
+for sec,code in (('Oratio','or'),('Secreta','se'),('Postcommunio','pc')):
+    la=get('Latin','Tempora/Pent24-0',sec); en=get('English','Tempora/Pent24-0',sec)
+    if la: r[code]=[la.replace('J','I').replace('j','i'),en or '']
+out['Pent24']=r
 open(SITE+'/data/orations.js','w').write('window.ORATIONS = '+json.dumps(out,ensure_ascii=False,separators=(',',':'))+';\n')
 print(len(out),'masses;',len(miss),'without:')
 for k,w in miss: print(' ',k,D['masses'][k]['title'][:50],'-',w)

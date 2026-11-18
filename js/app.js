@@ -5,6 +5,23 @@
 (function () {
   'use strict';
   var D = window.DOMINICAN;
+  // Masses made from others: the last Sunday after the Octave of Trinity, and the resumed Sundays after the Epiphany
+  (function () {
+    var M = D.masses, ROM = ['', 'I', 'II', 'III', 'IV', 'V', 'VI'], O = window.ORATIONS || {};
+    if (M.Pent23 && !M.Pent24) {
+      M.Pent24 = Object.assign({}, M.Pent23, {title: 'Dominica ultima post Octavam Trinitatis', en: 'Last Sunday after the Octave of Trinity',
+        readings: [{type: 'Epistle', ref: 'Ad Colossenses 1: 9-14'}, {type: 'Gospel', ref: 'Matthæus 24: 15-35'}]});
+    }
+    if (M.Pent2) { M.Pent2.title = 'Dominica infra Octavam Corporis Christi'; M.Pent2.en = 'Sunday within the Octave of Corpus Christi'; }
+    if (M.Pent3) { M.Pent3.title = 'Dominica I post Octavam Trinitatis'; M.Pent3.en = '1st Sunday after the Octave of Trinity'; }
+    [3, 4, 5, 6].forEach(function (n) {
+      var e = M['Epi' + n];
+      if (!e || !M.Pent23) return;
+      M['Epi' + n + 'r'] = Object.assign({}, M.Pent23, {title: 'Dominica ' + ROM[n - 1] + ' quæ superfuit post Octavam Epiphaniæ',
+        en: ['', '1st', '2nd', '3rd', '4th', '5th'][n - 1] + ' Sunday after the Octave of the Epiphany (resumed)', readings: e.readings});
+      if (O['Epi' + n]) O['Epi' + n + 'r'] = O['Epi' + n];
+    });
+  })();
   var PARTS = ['pr', 'in', 'gr', 'al', 'tr', 'se', 'ad', 'of', 'co', 'an'];
   var PART_NAME = {in: 'Introitus', gr: 'Graduale', al: 'Alleluia', tr: 'Tractus', se: 'Sequentia', of: 'Offertorium', co: 'Communio', an: 'Ad Vesperas', pr: 'Ante Missam', ad: 'Ad adorationem Crucis'};
   var PART_EN = {in: 'Introit', gr: 'Gradual', al: 'Alleluia', tr: 'Tract', se: 'Sequence', of: 'Offertory', co: 'Communion', an: 'Vespers', pr: 'Before Mass', ad: 'Adoration of the Cross'};
@@ -1041,8 +1058,14 @@
       // September Ember days: Wednesday, Friday, Saturday after the third Sunday of September
       var s1 = new Date(y, 8, 1), sun3 = addDays(s1, ((7 - s1.getDay()) % 7) + 14), ed = diffDays(d, sun3);
       if (ed === 3) keys.push('EmbWedSept'); if (ed === 5) keys.push('EmbFriSept'); if (ed === 6) keys.push('EmbSatSept');
+      // the last Sunday (Dominica ultima post Octavam Trinitatis) has its own Mass; the Sundays between the
+      // twenty-first after the Octave of Trinity and the last take the prayers and lessons of the Sundays left
+      // over after the Epiphany, the chants of the twenty-first (Missale O.P. 1939)
+      var dS = diffDays(adv1n, d) + dow;
       if (n === 1 || fromE < 63) keys.push('Pent1');
-      else keys.push(weeksLeft === 0 ? 'Pent23' : 'Pent' + Math.min(n, 23));
+      else if (dS <= 7) keys.push('Pent24');
+      else if (n >= 24) keys.push('Epi' + Math.max(3, Math.min(6, 8 - Math.round(dS / 7))) + 'r');
+      else keys.push('Pent' + Math.min(n, 23));
       return keys;
     }
     return [];
