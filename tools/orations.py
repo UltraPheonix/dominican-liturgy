@@ -136,6 +136,17 @@ for sec,code in (('Oratio','or'),('Secreta','se'),('Postcommunio','pc')):
     la=get('Latin','Tempora/Pent24-0',sec); en=get('English','Tempora/Pent24-0',sec)
     if la: r[code]=[la.replace('J','I').replace('j','i'),en or '']
 out['Pent24']=r
+# keep only prayers that the St Dominic Missal (1959) prints: a Roman text it lacks is not the Dominican one
+DMT=key(open('/home/claude/dl/txt/dm.txt',encoding='utf8',errors='replace').read())
+dropped=[]
+for k in list(out):
+    for c in ('or','se','pc'):
+        if c not in out[k]: continue
+        t=key(out[k][c][0]); wins=[t[i:i+18] for i in (0,18,36,54,72) if len(t)>=i+18]
+        if not wins or sum(DMT.find(w)>=0 for w in wins)/len(wins)<0.4:
+            dropped.append((k,c)); del out[k][c]
+    if not any(c in out[k] for c in ('or','se','pc')): del out[k]
+print('dropped (not in the St Dominic Missal):',len(dropped),dropped)
 open(SITE+'/data/orations.js','w').write('window.ORATIONS = '+json.dumps(out,ensure_ascii=False,separators=(',',':'))+';\n')
 print(len(out),'masses;',len(miss),'without:')
 for k,w in miss: print(' ',k,D['masses'][k]['title'][:50],'-',w)
