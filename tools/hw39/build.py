@@ -51,10 +51,16 @@ def parse(path, lang_i=True):
             for x in body.split(','): target().append({'t': 'X', 'x': x.strip()})
             continue
         if tag == 'G':
-            if os.path.exists(os.path.join(SITE, 'gabc', body.strip() + '.gabc')): target().append({'t': 'G', 'id': body.strip()})
+            gid, _, lab = body.partition('|'); gid = gid.strip()
+            if os.path.exists(os.path.join(SITE, 'gabc', gid + '.gabc')):
+                b = {'t': 'G', 'id': gid}
+                if lab.strip(): b['n'] = lab.strip()
+                target().append(b)
             continue
         if tag == 'C':
-            p, i = body.split(); target().append({'t': 'C', 'p': p, 'i': int(i)}); continue
+            c, _, lab = body.partition('|'); p, i = c.split(); b = {'t': 'C', 'p': p, 'i': int(i)}
+            if lab.strip(): b['n'] = lab.strip()
+            target().append(b); continue
         if tag == 'P':
             la = open(os.path.join(HERE, body + '_parts.txt'), encoding='utf8').read().strip().split('\n\n')
             en = open(os.path.join(HERE, body + '_en.txt'), encoding='utf8').read().strip().split('\n\n')

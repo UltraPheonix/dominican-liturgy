@@ -804,7 +804,7 @@
     ]), main.firstChild);
     var R = rubricsOf(state.key, state.date);
     main.appendChild(el('p', {class: 'rubric-line', text: rubricLine(R)}));
-    main.appendChild(el('h2', {class: 'caps-head', id: 'chants', text: state.ordo ? 'Ordo et Proprium Missae' : 'Proprium Missae'}));
+    if (!(HWP && window.HW_TEXT && HW_TEXT[state.hwr] && HW_TEXT[state.hwr][state.key])) main.appendChild(el('h2', {class: 'caps-head', id: 'chants', text: state.ordo ? 'Ordo et Proprium Missae' : 'Proprium Missae'}));
     if (ord.as) main.appendChild(drawOrdinary('as', ord.as));
     var readHead = false;
     massSequence(m, state.parts).forEach(function (it) {
@@ -923,18 +923,28 @@
     if (last < s.length) out.push(s.slice(last));
     return out;
   }
+  // Holy Week chant: drawn in place, as on the Mass pages, when it comes near the screen.
+  // Everything needed is kept on data- attributes, so a copied node still draws.
+  var hwIO = null;
+  function hwGo(wrap) {
+    if (wrap.getAttribute('data-done')) return; wrap.setAttribute('data-done', '1');
+    var box = wrap.querySelector('.chant'), id = wrap.getAttribute('data-id');
+    box.innerHTML = ''; box.appendChild(el('p', {class: 'loading', text: 'Loading…'}));
+    loadGabc(id).then(function (text) { box.innerHTML = ''; var g = splitGabc(text); renderInto(box, g.body, g.header, wrap.getAttribute('data-p') || undefined); })
+      .catch(function (e) { showError(box, e); });
+  }
+  function hwWatch(root) {
+    var ws = (root || document).querySelectorAll('.hw-chant:not([data-done])');
+    if (!('IntersectionObserver' in window)) { Array.prototype.forEach.call(ws, hwGo); return; }
+    if (!hwIO) hwIO = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { hwIO.unobserve(e.target); hwGo(e.target); } }); }, {rootMargin: '600px 0px'});
+    Array.prototype.forEach.call(ws, function (w) { hwIO.observe(w); });
+  }
   function hwChant(b) {
     var c = b.t === 'G' ? {id: b.id} : (state.parts[b.p] || [])[b.i];
     if (!c || !c.id) return null;
-    var box = el('div', {class: 'chant'}), done = false;
-    var d = el('details', {class: 'hw-chant'}, [el('summary', {text: 'Cantus'}), box]);
-    d.addEventListener('toggle', function () {
-      if (!d.open || done) return; done = true;
-      box.appendChild(el('p', {class: 'loading', text: 'Loading…'}));
-      loadGabc(c.id).then(function (text) { var g = splitGabc(text); renderInto(box, g.body, g.header, b.p); })
-        .catch(function (e) { showError(box, e); });
-    });
-    return d;
+    var wrap = el('div', {class: 'hw-chant', 'data-id': c.id, 'data-p': b.p || ''}, [b.n ? el('p', {class: 'hw-chant-n', text: b.n}) : null, el('div', {class: 'chant'})]);
+    setTimeout(function () { hwWatch(); }, 0);
+    return wrap;
   }
   function hwBlocks(blocks, into) {
     blocks.forEach(function (b) {

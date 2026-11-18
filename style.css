@@ -360,3 +360,6 @@ body:not(.en-tap) .tap-hint { display: none; }
 .report-row a, .report-row button { flex: 1 1 auto; text-align: center; padding: 8px 12px; border: 1px solid var(--ink); background: none; color: var(--ink); text-decoration: none; font: inherit; font-size: 15px; cursor: pointer; }
 .report-row .report-go { background: var(--ink); color: var(--paper); }
 @media print { .report-btn, .report-dlg { display: none !important; } }
+
+.hw-chant { margin: 10px 0 14px; }
+.hw-chant-n { font-family: var(--caps); letter-spacing: .1em; font-size: 14px; color: var(--rubric); margin: 0 0 2px; }
