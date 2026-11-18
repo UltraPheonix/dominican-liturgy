@@ -434,41 +434,15 @@
   }
   var WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  // the day, in the side column
   function drawRing() {
-    var d = state.date || new Date(), m = D.masses[state.key], L = liturgicalYear(d);
-    var size = 420, c = size / 2, r = c - 48, sw = 26;
-    var svg = sv('svg', {viewBox: '0 0 ' + size + ' ' + size, role: 'img',
-      'aria-label': 'The liturgical year, with ' + WEEKDAYS[d.getDay()] + ' ' + d.getDate() + ' ' + MONTHS[d.getMonth()] + ' marked'});
-    var pt = function (a, rad) { return [c + rad * Math.cos(a * Math.PI / 180), c + rad * Math.sin(a * Math.PI / 180)]; };
-    var ang = function (day) { return -90 + 360 * day / L.total; };
-    L.seg.forEach(function (sg) {
-      var a0 = ang(diffDays(sg[1], L.start)) + 0.5, a1 = ang(diffDays(sg[2], L.start)) - 0.5;
-      if (a1 <= a0) return;
-      var p0 = pt(a0, r), p1 = pt(a1, r), large = a1 - a0 > 180 ? 1 : 0;
-      var dpath = 'M ' + p0[0].toFixed(1) + ' ' + p0[1].toFixed(1) + ' A ' + r + ' ' + r + ' 0 ' + large + ' 1 ' + p1[0].toFixed(1) + ' ' + p1[1].toFixed(1);
-      if (sg[3] === 'white') svg.appendChild(sv('path', {d: dpath, fill: 'none', stroke: '#c9c9c9', 'stroke-width': sw + 2}));
-      svg.appendChild(sv('path', {d: dpath, fill: 'none', stroke: COLORS[sg[3]], 'stroke-width': sw}));
-      var am = (a0 + a1) / 2, lp = pt(am, r + sw / 2 + 14), rot = (am > -90 && am < 90) ? am + 90 : am - 90;
-      if (a1 - a0 > 24) svg.appendChild(sv('text', {x: lp[0].toFixed(1), y: lp[1].toFixed(1), 'text-anchor': 'middle', 'dominant-baseline': 'middle',
-        'font-size': 10.5, 'letter-spacing': 2, fill: '#575757', 'font-family': 'Cormorant SC, serif', transform: 'rotate(' + rot.toFixed(1) + ' ' + lp[0].toFixed(1) + ' ' + lp[1].toFixed(1) + ')'}, sg[0].toUpperCase()));
-    });
-    var at = ang(diffDays(d, L.start)), t = pt(at, r), p = pt(at, r + sw / 2 + 30), q = pt(at, r + sw / 2 + 2);
-    svg.appendChild(sv('line', {x1: p[0], y1: p[1], x2: q[0], y2: q[1], stroke: '#0d0d0d', 'stroke-width': 3}));
-    svg.appendChild(sv('circle', {cx: t[0], cy: t[1], r: 8, fill: '#ffffff', stroke: '#0d0d0d', 'stroke-width': 3}));
+    var d = state.date || new Date(), m = D.masses[state.key] || {};
     var today = diffDays(d, new Date()) === 0;
-    var title = clean(m ? m.title : '').replace(/^\d+ [A-Za-z.]+ — /, '');
-    var lines = wrap(title, 26).slice(0, 3);
-    var y0 = c - 74;
-    svg.appendChild(sv('text', {x: c, y: y0, 'text-anchor': 'middle', 'font-size': 13, 'letter-spacing': 3, fill: '#575757', 'font-family': 'Cormorant SC, serif'},
-      WEEKDAYS[d.getDay()].toUpperCase() + (today ? ' · TODAY' : '')));
-    svg.appendChild(sv('text', {x: c, y: y0 + 62, 'text-anchor': 'middle', 'font-size': 76, fill: '#0d0d0d', 'font-family': 'Cormorant Garamond, serif', 'font-weight': 600, style: 'font-variant-numeric: lining-nums'}, String(d.getDate())));
-    svg.appendChild(sv('text', {x: c, y: y0 + 100, 'text-anchor': 'middle', 'font-size': 22, 'font-style': 'italic', fill: '#575757', 'font-family': 'Cormorant Garamond, serif'}, MONTHS[d.getMonth()] + ' ' + d.getFullYear()));
-    lines.forEach(function (ln, i) {
-      svg.appendChild(sv('text', {x: c, y: y0 + 134 + i * 22, 'text-anchor': 'middle', 'font-size': 20, fill: '#9c1b26', 'font-family': 'Cormorant Garamond, serif', 'font-weight': 600}, ln));
-    });
-    var box = $('#ring');
-    box.innerHTML = '';
-    box.appendChild(svg);
+    var set = function (id, t) { var e = document.getElementById(id); if (e) e.textContent = t; };
+    set('dayDate', WEEKDAYS[d.getDay()].slice(0, 3) + ' ' + d.getDate() + ' ' + MONTHS[d.getMonth()].slice(0, 3) + ' ' + d.getFullYear() + (today ? ' · Today' : ''));
+    set('dayTitle', clean(m.title || '').replace(/^\d+ [A-Za-z.]+ — /, ''));
+    set('daySub', m.name_en || clean(m.en || '').replace(/^[A-Z][a-z]{2} \d+ — /, ''));
+    if (state.cal) state.cal.set(d);
   }
   function wrap(text, n) {
     var out = [], line = '';
@@ -479,15 +453,17 @@
     return out;
   }
   function drawPills() {
-    var m = D.masses[state.key], box = $('#pills'), col = massColor(state.key);
+    var m = D.masses[state.key], box = $('#pills'), col = massColor(state.key, state.date);
+    if (!box || !m) return;
     box.innerHTML = '';
     var dot = el('span', {class: 'dot' + (col === 'white' ? ' white' : ''), 'aria-hidden': 'true'});
     dot.style.background = COLORS[col];
-    box.appendChild(el('span', {class: 'pill'}, [dot, COLOR_LA[col]]));
     var cls = m.rank || (isTemporal(state.key) ? ['', 'I', 'II', 'III', 'IV'][temporalClass(state.key, state.date)] : '');
-    if (cls) box.appendChild(el('span', {class: 'pill', text: cls + ' class'}));
-    var se = {annum: 'Per annum', lent: 'Septuagesima–Lent', pasch: 'Paschaltide'}[currentSeason()];
-    if (!isTemporal(state.key)) box.appendChild(el('span', {class: 'pill', text: se}));
+    var bits = [COLOR_LA[col]];
+    if (cls) bits.push(cls + ' class');
+    if (!isTemporal(state.key)) bits.push({annum: 'Per annum', lent: 'Septuagesima–Lent', pasch: 'Paschaltide'}[currentSeason()]);
+    box.appendChild(dot);
+    box.appendChild(document.createTextNode(bits.join(' · ')));
   }
 
   // ---------------------------------------------------------------- the page
@@ -1061,7 +1037,7 @@
     var r = massesOf(d), box = $('#dateResults');
     box.innerHTML = '';
     var mk = function (k, label) {
-      return el('button', {type: 'button', class: 'chip' + (k === r.win ? ' win' : ''), onclick: function () { showMass(k); markChips(k); }},
+      return el('button', {type: 'button', 'data-k': k, class: 'alt' + (k === r.win ? ' win' : ''), onclick: function () { showMass(k); markChips(k); }},
         [el('small', {text: label}), clean(D.masses[k].title).replace(/^\d+ [A-Za-z.]+ — /, '')]);
     };
     var all = r.temp.concat(r.feasts).concat(r.beati);
@@ -1074,7 +1050,7 @@
     else { drawRing(); drawPills(); writeHash(); }
   }
   function markChips(k) {
-    Array.prototype.forEach.call(document.querySelectorAll('#dateResults .chip'), function (b) { b.classList.remove('win'); });
+    Array.prototype.forEach.call(document.querySelectorAll('#dateResults .alt'), function (b) { b.classList.toggle('win', b.getAttribute('data-k') === k); });
   }
   function shiftDay(n) { onDate(addDays(state.date || new Date(), n)); }
 
@@ -1200,9 +1176,14 @@
     $('#date').addEventListener('change', function (e) { if (e.target.value) onDate(fromIso(e.target.value)); });
     $('#prevDay').addEventListener('click', function () { shiftDay(-1); });
     $('#nextDay').addEventListener('click', function () { shiftDay(1); });
-    $('#navToday').addEventListener('click', function () { onDate(new Date()); });
-    $('#navCalendar').addEventListener('click', function () { var i = $('#date'); i.focus(); if (i.showPicker) try { i.showPicker(); } catch (e) {} });
-    $('#navMasses').addEventListener('click', function () { var s = $('#selMass'); s.focus(); if (s.showPicker) try { s.showPicker(); } catch (e) {} });
+    if (window.matchMedia && matchMedia('(max-width: 960px)').matches) Array.prototype.forEach.call(document.querySelectorAll('.side .collapse'), function (x) { x.removeAttribute('open'); });
+    if (window.OPCal && $('#cal')) {
+      state.cal = OPCal($('#cal'), {
+        date: new Date(),
+        onPick: function (d) { onDate(d); },
+        dot: function (d) { var w = massesOf(d).win, c = w ? massColor(w, d) : ''; return c === 'black' ? '#7a7a7a' : (c ? COLORS[c] : ''); }
+      });
+    }
     $('#selSeason').addEventListener('change', function (e) { state.season = e.target.value; showMass(state.key); });
     $('#selOrd').addEventListener('change', function (e) { state.ord = e.target.value; drawMass(); writeHash(); });
     $('#selCredo').addEventListener('change', function (e) { state.credo = e.target.value; drawMass(); writeHash(); });

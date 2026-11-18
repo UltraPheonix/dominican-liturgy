@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Officium Divinum — Ordo Praedicatorum</title>
+  <title>Dominican Rite — Office</title>
   <meta name="description" content="The Divine Office of the Dominican Rite for any day, in Latin and English, from the Breviarium S.O.P. (1962).">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@500;600&display=swap">
@@ -13,43 +13,46 @@
   <meta name="theme-color" content="#111111">
 </head>
 <body class="office-page">
-  <header class="site hide-print">
-    <a class="brand" href="office.html" aria-label="Officium Divinum, today">
-      <span class="cross" aria-hidden="true">✠</span>
-      <span>
-        <span class="t1">Officium Divinum</span>
-        <span class="t2">juxta ritum Sacri Ordinis Praedicatorum</span>
-      </span>
-    </a>
-    <nav aria-label="Main">
-      <a href="index.html">Mass</a>
-      <a href="office.html" aria-current="page">Office</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+<div class="frame">
+  <aside class="side hide-print" aria-label="Day, hour and calendar">
+    <a class="brand" href="./" aria-label="Dominican Rite, today's Mass"><svg width="26" height="26" viewBox="0 0 40 40" aria-hidden="true"><rect x="17" y="3" width="6" height="34" fill="currentColor"/><rect x="3" y="17" width="34" height="6" fill="currentColor"/><circle cx="20" cy="4" r="3.6" fill="currentColor"/><circle cx="20" cy="36" r="3.6" fill="currentColor"/><circle cx="4" cy="20" r="3.6" fill="currentColor"/><circle cx="36" cy="20" r="3.6" fill="currentColor"/></svg>
+      <span><span class="t1">Dominican Rite</span><span class="t2">Missale · Breviarium</span></span></a>
+    <nav class="nav" aria-label="Main"><a href="./">Mass</a><a href="office.html" aria-current="page">Office</a><a href="about.html">About</a></nav>
 
-  <div class="layout">
-    <aside class="hero hide-print" aria-label="Day and hour">
-      <div class="o-day">
-        <button type="button" class="round" id="prevDay" aria-label="Previous day">‹</button>
-        <div class="o-day-t">
-          <div id="dayTitle" class="o-title"></div>
-          <div id="dayMeta" class="o-meta"></div>
-        </div>
-        <button type="button" class="round" id="nextDay" aria-label="Next day">›</button>
+    <section class="day" aria-live="polite">
+      <div class="day-date">
+        <button type="button" class="day-step" id="prevDay" aria-label="Previous day">‹</button>
+        <span id="dayMeta"></span>
+        <button type="button" class="day-step" id="nextDay" aria-label="Next day">›</button>
       </div>
-      <div class="field"><label for="date">Date</label><input type="date" id="date"></div>
-      <div id="hours" class="o-hours" role="tablist" aria-label="Hours"></div>
-      <div id="langs" class="o-langs" role="group" aria-label="Language">
-        <button type="button" data-l="both">Both</button><button type="button" data-l="la">Latin</button><button type="button" data-l="en">English</button>
+      <h2 class="day-title" id="dayTitle"></h2>
+      <p class="day-sub" id="dayRank"></p>
+    </section>
+
+    <div class="ctl">
+      <div id="hours" class="hours" role="tablist" aria-label="Hours"></div>
+      <div id="langs" class="ctl-row" role="group" aria-label="Language">
+        <button type="button" class="sbtn" data-l="both">Both</button><button type="button" class="sbtn" data-l="la">Latin</button><button type="button" class="sbtn" data-l="en">English</button>
       </div>
-      <label class="o-priest"><input type="checkbox" id="priest"> A priest or deacon presides</label>
-      <p class="o-note">The spoken Office of the Dominican Rite for every day, Matins to Compline, following the Breviarium S.O.P. (1962) and the 1960 rubrics. The chant will follow.</p>
-      <p class="o-note small">A private project, not affiliated with the Order of Preachers. <a href="about.html">About</a></p>
-    </aside>
-    <main id="office" class="o-main" aria-live="polite"></main>
+      <label class="switch"><input type="checkbox" id="priest"> A priest or deacon presides</label>
+      <input type="date" id="date" class="visually-hidden" tabindex="-1" aria-hidden="true">
+    </div>
+
+    <details class="cal collapse" open>
+      <summary>Calendar</summary>
+      <div id="cal"></div>
+    </details>
+    <p class="side-foot">The spoken Office after the Breviarium S.O.P. (1962) and the 1960 rubrics. A private project, not affiliated with the Order of Preachers. <a href="about.html">About</a></p>
+  </aside>
+
+  <div class="content">
+    <div class="inner">
+      <main id="office" aria-live="polite"></main>
+    </div>
   </div>
+</div>
 
+  <script src="js/cal.js"></script>
   <script src="js/office.js"></script>
 </body>
 </html>

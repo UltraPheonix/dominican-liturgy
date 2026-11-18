@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Propria Missae — Ordo Praedicatorum</title>
+  <title>Dominican Rite — Mass</title>
   <meta name="description" content="The sung propers, readings and Kyriale of the Dominican Rite Mass for any day, in square notation, from the Graduale O.P. (1950).">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@500;600&display=swap">
@@ -14,103 +14,75 @@
   <meta name="theme-color" content="#111111">
 </head>
 <body>
-  <header class="site hide-print">
-    <a class="brand" href="./" aria-label="Propria Missae, today">
-      <span class="cross" aria-hidden="true">✠</span>
-      <span>
-        <span class="t1">Propria Missae</span>
-        <span class="t2">juxta ritum Sacri Ordinis Praedicatorum</span>
-      </span>
-    </a>
-    <nav aria-label="Main">
-      <button type="button" id="navToday">Today</button>
-      <button type="button" id="navCalendar">Calendar</button>
-      <button type="button" id="navMasses">All Masses</button>
-      <a href="office.html">Office</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+<div class="frame">
+  <aside class="side hide-print" aria-label="Day, Mass and calendar">
+    <a class="brand" href="./" aria-label="Dominican Rite, today's Mass"><svg width="26" height="26" viewBox="0 0 40 40" aria-hidden="true"><rect x="17" y="3" width="6" height="34" fill="currentColor"/><rect x="3" y="17" width="34" height="6" fill="currentColor"/><circle cx="20" cy="4" r="3.6" fill="currentColor"/><circle cx="20" cy="36" r="3.6" fill="currentColor"/><circle cx="4" cy="20" r="3.6" fill="currentColor"/><circle cx="36" cy="20" r="3.6" fill="currentColor"/></svg>
+      <span><span class="t1">Dominican Rite</span><span class="t2">Missale · Breviarium</span></span></a>
+    <nav class="nav" aria-label="Main"><a href="./" aria-current="page">Mass</a><a href="office.html">Office</a><a href="about.html">About</a></nav>
 
-  <div class="layout">
-    <aside class="hero hide-print" aria-label="Day and Mass">
-      <div class="ringnav">
-        <button type="button" class="round" id="prevDay" aria-label="Previous day">‹</button>
-        <div id="ring" class="ring"></div>
-        <button type="button" class="round" id="nextDay" aria-label="Next day">›</button>
+    <section class="day" aria-live="polite">
+      <div class="day-date">
+        <button type="button" class="day-step" id="prevDay" aria-label="Previous day">‹</button>
+        <span id="dayDate"></span>
+        <button type="button" class="day-step" id="nextDay" aria-label="Next day">›</button>
       </div>
-      <div id="pills" class="pills"></div>
-      <div class="actions">
-        <a class="btn primary" href="#chants">Chants</a>
-        <a class="btn" href="#readings">Readings</a>
-        
-        <button type="button" class="btn" id="btnChoir">Choir PDF</button>
-        <button type="button" class="btn" id="btnCong">Congregation PDF</button>
-      </div>
-      <div id="dateResults" class="chips"></div>
+      <div class="day-meta" id="pills"></div>
+    </section>
 
-      <div class="panel" id="panel">
-        <div class="field">
-          <label for="date">Date</label>
-          <input type="date" id="date">
+    <div id="dateResults" class="alts"></div>
+
+    <div class="ctl">
+      <div class="ctl-row">
+        <button type="button" class="sbtn" id="btnChoir">Choir PDF</button>
+        <button type="button" class="sbtn" id="btnCong">Congregation PDF</button>
+      </div>
+      <details class="more">
+        <summary>Mass and options</summary>
+        <div class="fields">
+          <div class="field"><label for="selMass">Mass</label><select id="selMass"></select></div>
+          <div class="field"><label for="date">Date</label><input type="date" id="date"></div>
+          <div class="field"><label for="selSeason">Season</label>
+            <select id="selSeason">
+              <option value="auto">From the date</option>
+              <option value="annum">Per annum</option>
+              <option value="lent">Septuagesima to Easter</option>
+              <option value="pasch">Paschaltide</option>
+            </select></div>
+          <div class="field"><label for="selOrd">Kyriale</label><select id="selOrd"></select></div>
+          <div class="field"><label for="selCredo">Credo</label><select id="selCredo"></select></div>
+          <div class="field"><label for="selAsp">Asperges</label>
+            <select id="selAsp">
+              <option value="">Automatic (Sundays)</option>
+              <option value="none">None</option>
+              <option value="asperges">Asperges me</option>
+              <option value="vidi">Vidi aquam</option>
+            </select></div>
+          <label class="switch"><input type="checkbox" id="chkEdit"> Edit chants (GABC)</label>
+          <button type="button" class="sbtn" id="btnShare">Share this Mass</button>
         </div>
-        <div class="field wide">
-          <label for="selMass">Mass</label>
-          <select id="selMass"></select>
-        </div>
-        <details class="options wide">
-          <summary>Options</summary>
-          <div class="opt-grid">
-            <div class="field">
-              <label for="selSeason">Season</label>
-              <select id="selSeason">
-                <option value="auto">From the date</option>
-                <option value="annum">Per annum</option>
-                <option value="lent">Septuagesima to Easter</option>
-                <option value="pasch">Paschaltide</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="selOrd">Kyriale</label>
-              <select id="selOrd"></select>
-            </div>
-            <div class="field">
-              <label for="selCredo">Credo</label>
-              <select id="selCredo"></select>
-            </div>
-            <div class="field">
-              <label for="selAsp">Asperges</label>
-              <select id="selAsp">
-                <option value="">Automatic (Sundays)</option>
-                <option value="none">None</option>
-                <option value="asperges">Asperges me</option>
-                <option value="vidi">Vidi aquam</option>
-              </select>
-            </div>
-            <label class="switch wide"><input type="checkbox" id="chkEdit"> Edit chants (change, add or correct the GABC)</label>
-            <button type="button" class="btn small wide" id="btnShare">Share this Mass</button>
-          </div>
-        </details>
-      </div>
-    </aside>
+      </details>
+    </div>
 
-    <main id="mass" aria-live="polite"></main>
-    <article id="cong" class="cong" aria-hidden="true"></article>
+    <details class="cal collapse" open>
+      <summary>Calendar</summary>
+      <div id="cal"></div>
+    </details>
+    <p class="side-foot">A private project, not affiliated with the Order of Preachers. <a href="about.html">About the sources</a></p>
+  </aside>
+
+  <div class="content">
+    <div class="inner">
+      <main id="mass" aria-live="polite"></main>
+      <article id="cong" class="cong" aria-hidden="true"></article>
+    </div>
   </div>
-
-  <footer class="hide-print">
-    Chants of the <i>Graduale juxta ritum Sacri Ordinis Praedicatorum</i> (1950) from
-    <a href="https://gregobase.selapa.net/source.php?id=14">GregoBase</a>; assignments from the
-    <i>Missale O.P.</i> (1939) and the <i>St. Dominic Missal</i> (1959); drawn with exsurge.
-    Built on the Propers tool of <a href="https://github.com/bbloomf/jgabc">jgabc</a>.
-    <br>This is a private project, not affiliated with or endorsed by the Order of Preachers (Dominican Order).
-    Where the sources disagree, the calendar and rubrics of 1960 are followed. <a href="about.html">More…</a>
-    <a href="about.html">About the sources</a>.
-  </footer>
+</div>
 
   <script src="js/exsurge.min.js"></script>
   <script src="data/masses.js"></script>
   <script src="data/prefaces.js"></script>
   <script src="data/ordinary.js"></script>
+  <script src="js/cal.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

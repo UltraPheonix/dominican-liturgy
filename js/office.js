@@ -17,6 +17,11 @@
   try { state.lang = localStorage.getItem('officeLang') || 'both'; state.priest = localStorage.getItem('officePriest') === '1'; } catch (e) {}
 
   function pad(n) { return (n < 10 ? '0' : '') + n; }
+  var WD = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], MO = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function shortDate(d) {
+    var t = new Date(); t.setHours(0, 0, 0, 0);
+    return WD[d.getDay()] + ' ' + d.getDate() + ' ' + MO[d.getMonth()] + ' ' + d.getFullYear() + (+d === +t ? ' · Today' : '');
+  }
   function iso(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
   function parseIso(s) { var m = /^(\d{4})-(\d\d)-(\d\d)$/.exec(s || ''); return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null; }
   function addDays(d, n) { var x = new Date(d); x.setDate(x.getDate() + n); return x; }
@@ -120,11 +125,12 @@
 
   function draw() {
     var main = $('#office'), d = state.date, key = iso(d);
+    if (state.cal) state.cal.set(d);
     $('#date').value = key;
     drawHours();
     if (range && (key < range.from || key > range.to)) {
       main.innerHTML = '<p class="o-msg">The Office is ready for every day from ' + range.from + ' to ' + range.to + '. This date is outside that range for now.</p>';
-      $('#dayTitle').textContent = ''; $('#dayMeta').textContent = d.toDateString();
+      $('#dayTitle').textContent = ''; $('#dayRank').textContent = ''; $('#dayMeta').textContent = shortDate(d);
       return;
     }
     main.innerHTML = '<p class="o-msg">…</p>';
@@ -141,9 +147,10 @@
         var hour = state.hour, h = HOURS.filter(function (x) { return x[0] === hour; })[0];
         var full = titleOf(day, hour), t = full.split(' ~ ');
         $('#dayTitle').textContent = t[0];
-        $('#dayMeta').textContent = (t[1] ? t[1] + ' · ' : '') + d.toLocaleDateString('en-GB', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'});
+        $('#dayRank').textContent = t[1] || '';
+        $('#dayMeta').textContent = shortDate(d);
         var rows = rowsOf(day, hour);
-        main.innerHTML = '<header class="o-head"><h2>' + esc(h[1]) + '</h2><p class="o-sub">' + esc(h[2]) + ' · ' + esc(t[0]) + '</p></header>' +
+        main.innerHTML = '<header class="o-head"><h1>' + esc(h[1]) + '</h1><p class="o-sub">' + esc(h[2]) + '</p></header>' +
           rows.map(function (row) { return drawRow(row, day); }).join('') +
           '<p class="o-src">Text from Divinum Officium, <i>Ordo Praedicatorum – 1962</i> (MIT licence), following the Breviarium S.O.P. (1962). English is Divinum Officium’s; where a Dominican text has no English yet, the Latin stands alone.</p>';
         document.title = h[2] + ' — ' + t[0];
@@ -156,7 +163,7 @@
   function drawHours() {
     $('#hours').innerHTML = HOURS.map(function (h) {
       var on = h[0] === state.hour;
-      return '<button type="button" role="tab" data-h="' + h[0] + '" aria-selected="' + on + '"' + (on ? ' class="on"' : '') + '>' + h[2] + '</button>';
+      return '<button type="button" role="tab" data-h="' + h[0] + '" aria-selected="' + on + '" class="sbtn' + (on ? ' on' : '') + '">' + h[2] + '</button>';
     }).join('');
     var lb = $('#langs');
     if (lb) Array.prototype.forEach.call(lb.querySelectorAll('button'), function (b) {
@@ -199,6 +206,8 @@
       try { localStorage.setItem('officePriest', state.priest ? '1' : '0'); } catch (er) {}
       draw();
     });
+    if (window.matchMedia && matchMedia('(max-width: 960px)').matches) Array.prototype.forEach.call(document.querySelectorAll('.side .collapse'), function (x) { x.removeAttribute('open'); });
+    if (window.OPCal && $('#cal')) state.cal = OPCal($('#cal'), {date: state.date, onPick: function (d) { state.date = d; go(); }});
     $('#prevDay').addEventListener('click', function () { state.date = addDays(state.date, -1); go(); });
     $('#nextDay').addEventListener('click', function () { state.date = addDays(state.date, 1); go(); });
     $('#date').addEventListener('change', function () { var d = parseIso(this.value); if (d) { state.date = d; go(); } });
