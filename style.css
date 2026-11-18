@@ -152,6 +152,8 @@ button { cursor: pointer; }
 .o-h-en { font-family: var(--serif); color: var(--muted); letter-spacing: 0; font-size: 16px; font-style: italic; margin-left: 6px; }
 .o-l, .o-la, .o-en { line-height: 1.5; }
 .o-l { margin: 0 0 3px; }
+.o-chant { margin: 6px 0 2px; }
+.o-tr { color: var(--muted); font-size: .95em; font-style: italic; margin: 0 0 12px; }
 .o-lp { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 0 0 3px; }
 .o-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .o-lp .o-en, .o-pair .o-en { color: var(--muted); font-size: .95em; }

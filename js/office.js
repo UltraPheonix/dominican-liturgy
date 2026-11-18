@@ -12,9 +12,14 @@
   ];
   var $ = function (s) { return document.querySelector(s); };
   var cache = {}, common = null, shards = {}, range = null;
-  var state = {date: null, hour: null, lang: 'both', priest: false};
+  var state = {date: null, hour: null, lang: 'both', priest: false, chant: false};
+  var chantMap = null;
 
-  try { state.lang = localStorage.getItem('officeLang') || 'both'; state.priest = localStorage.getItem('officePriest') === '1'; } catch (e) {}
+  try {
+    state.lang = localStorage.getItem('officeLang') || 'both';
+    state.priest = localStorage.getItem('officePriest') === '1';
+    state.chant = localStorage.getItem('officeChant') === '1';
+  } catch (e) {}
 
   function pad(n) { return (n < 10 ? '0' : '') + n; }
   var WD = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], MO = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -93,6 +98,66 @@
     return '<div class="' + lineClass(l) + '">' + fmt(l) + '</div>';
   }
 
+  // ---------- chant ----------
+  function plain(l) { return l.replace(/<[^>]+>/g, ''); }
+  // the chantable pieces of a Latin cell: antiphons, the hymn, the short responsory (as build/gb/build_chant.py)
+  function chantSegs(lines, head) {
+    var segs = [], K = window.OPChant ? OPChant.key : null;
+    if (!K || !chantMap) return segs;
+    var hymnAt = -1;
+    for (var i = 0; i < lines.length; i++) {
+      var l = lines[i];
+      if (/^<r>Ant\.<\/r>/.test(l)) segs.push({s: i, e: i + 1, kind: 'an', key: K(plain(l).slice(4))});
+      else if (/^<[rh]>Hymnus<\/[rh]>$/.test(l.trim())) hymnAt = i + 1;
+      else if (/^<r>℟\.br\.<\/r>/.test(l)) {
+        var e = i + 1;
+        while (e < lines.length && lines[e].trim()) e++;
+        segs.push({s: i, e: e, kind: 'rb', key: 'rb' + K(plain(l).slice(5))});
+        i = e - 1;
+      }
+      if (hymnAt < 0 && i === 0 && /Hymnus$/.test(head || '')) hymnAt = 0;
+      if (hymnAt >= 0 && i >= hymnAt - 1) {
+        var j = hymnAt;
+        while (j < lines.length && !lines[j].trim()) j++;
+        if (j < lines.length) {
+          var end = j, hk = 'hy' + K(plain(lines[j])), whole = chantMap[hk] && chantMap[hk][3];
+          if (whole) {
+            while (end < lines.length && !/^Amen\.?$/.test(plain(lines[end]).trim()) && !/^<r>℣\.<\/r>/.test(lines[end])) end++;
+            if (end < lines.length && /^Amen/.test(plain(lines[end]).trim())) end++;
+          } else {
+            // only the first stanza is notated: the others are sung to it and stay as text
+            while (end < lines.length && lines[end].trim()) end++;
+          }
+          segs.push({s: j, e: end, kind: 'hy', key: hk});
+          i = end - 1;
+        }
+        hymnAt = -1;
+      }
+    }
+    return segs.filter(function (g) { return chantMap[g.key]; });
+  }
+  var LABEL = {an: 'Ant.', hy: 'Hymn.', rb: 'R. br.'};
+  function chantDiv(g) {
+    var m = chantMap[g.key];
+    return '<div class="chant o-chant" data-id="' + esc(m[0]) + '" data-mode="' + esc(m[1]) + '" data-tp="' + m[2] + '" data-kind="' + g.kind + '"></div>';
+  }
+  function drawChants(main) {
+    Array.prototype.forEach.call(main.querySelectorAll('.o-chant[data-id]'), function (box) {
+      getText('data/chant/op/' + box.getAttribute('data-id') + '.gabc').then(function (g) {
+        var kind = box.getAttribute('data-kind'), tp = box.getAttribute('data-tp') === '1';
+        OPChant.render(box, g, {mode: box.getAttribute('data-mode'), label: LABEL[kind], keepTP: tp, dropCap: kind !== 'rb'});
+      }).catch(function () { box.textContent = ''; });
+    });
+  }
+  var textCache = {};
+  function getText(url) {
+    if (!textCache[url]) {
+      textCache[url] = fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); });
+      textCache[url].catch(function () { delete textCache[url]; });
+    }
+    return textCache[url];
+  }
+
   function drawRow(row, day) {
     var la = cell(row[0], day), en = cell(row[1], day), lang = state.lang, html = '';
     var same = en.lines.join('\n') === la.lines.join('\n');
@@ -100,7 +165,37 @@
       html += '<h3 class="o-h">' + esc(lang === 'en' ? (en.head || la.head) : (la.head || en.head)) +
         (lang === 'both' && en.head && la.head && en.head !== la.head ? ' <span class="o-h-en">' + esc(en.head) + '</span>' : '') + '</h3>';
     }
-    if (lang === 'la' || !en.lines.length || same) {
+    var segs = state.chant && lang !== 'en' ? chantSegs(la.lines, la.head) : [];
+    var at = {};
+    segs.forEach(function (g) { at[g.s] = g; });
+    var paired = lang === 'both' && !same && en.lines.length && la.lines.length === en.lines.length;
+    if (segs.length && (lang === 'la' || paired || !en.lines.length || same)) {
+      // chant in place of the Latin text; in "both", the English follows each chant as a translation
+      var out = '';
+      for (var i = 0; i < la.lines.length; i++) {
+        var g = at[i];
+        if (g) {
+          out += chantDiv(g);
+          if (paired) out += '<div class="o-tr">' + en.lines.slice(g.s, g.e).filter(function (x) { return x.trim(); }).map(fmt).join('<br>') + '</div>';
+          i = g.e - 1;
+          continue;
+        }
+        var l = la.lines[i];
+        if (paired) {
+          var e2 = en.lines[i];
+          out += (!l.trim() && !e2.trim()) ? '<div class="o-gap"></div>' :
+            '<div class="o-lp ' + lineClass(l) + '"><div class="o-la">' + fmt(l) + '</div><div class="o-en">' + fmt(e2) + '</div></div>';
+        } else out += drawLine(l);
+      }
+      html += '<div class="' + (paired ? 'o-lines' : 'o-col') + '">' + out + '</div>';
+    } else if (segs.length) {
+      // Latin and English of different lengths: chant in the Latin column
+      var col = '';
+      for (var k = 0; k < la.lines.length; k++) {
+        if (at[k]) { col += chantDiv(at[k]); k = at[k].e - 1; } else col += drawLine(la.lines[k]);
+      }
+      html += '<div class="o-pair"><div class="o-la">' + col + '</div><div class="o-en">' + en.lines.map(drawLine).join('') + '</div></div>';
+    } else if (lang === 'la' || !en.lines.length || same) {
       html += '<div class="o-col">' + la.lines.map(drawLine).join('') + '</div>';
     } else if (lang === 'en') {
       html += '<div class="o-col">' + en.lines.map(drawLine).join('') + '</div>';
@@ -134,7 +229,8 @@
       return;
     }
     main.innerHTML = '<p class="o-msg">…</p>';
-    Promise.all([getJSON(BASE + key.slice(0, 4) + '/' + key.slice(5) + '.json'), common ? null : getJSON(BASE + 'common.json')])
+    Promise.all([getJSON(BASE + key.slice(0, 4) + '/' + key.slice(5) + '.json'), common ? null : getJSON(BASE + 'common.json'),
+      state.chant && !chantMap ? getJSON('data/chant/office.json').then(function (m) { chantMap = m; }).catch(function () {}) : null])
       .then(function (r) {
         var day = r[0];
         if (r[1]) common = r[1];
@@ -154,6 +250,7 @@
           rows.map(function (row) { return drawRow(row, day); }).join('') +
           '<p class="o-src">Text from Divinum Officium, <i>Ordo Praedicatorum – 1962</i> (MIT licence), following the Breviarium S.O.P. (1962). English is Divinum Officium’s; where a Dominican text has no English yet, the Latin stands alone.</p>';
         document.title = h[2] + ' — ' + t[0];
+        if (state.chant) drawChants(main);
       })
       .catch(function () {
         main.innerHTML = '<p class="o-msg">The Office for this day could not be loaded. If you are offline, open the day once while online to keep it.</p>';
@@ -172,6 +269,8 @@
     });
     var pr = $('#priest');
     if (pr) pr.checked = state.priest;
+    var ch = $('#chant');
+    if (ch) ch.checked = state.chant;
   }
 
   function setHash() {
@@ -201,6 +300,12 @@
       draw();
     });
     var pr = $('#priest');
+    var ch = $('#chant');
+    if (ch) ch.addEventListener('change', function () {
+      state.chant = this.checked;
+      try { localStorage.setItem('officeChant', state.chant ? '1' : '0'); } catch (er) {}
+      draw();
+    });
     if (pr) pr.addEventListener('change', function () {
       state.priest = this.checked;
       try { localStorage.setItem('officePriest', state.priest ? '1' : '0'); } catch (er) {}

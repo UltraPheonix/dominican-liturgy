@@ -1,7 +1,7 @@
 /* Offline support: the site's own files are kept, and every chant, reading and page that has been
    opened once stays available without a connection. Bump VERSION when the site changes. */
-var VERSION = 'propria-v16';
-var SHELL = ['./', 'index.html', 'about.html', 'style.css', 'versiculum.css', 'js/app.js', 'js/exsurge.min.js',
+var VERSION = 'propria-v17';
+var SHELL = ['./', 'index.html', 'about.html', 'style.css', 'versiculum.css', 'js/app.js', 'js/exsurge.min.js', 'js/chant.js', 'data/chant/office.json',
   'data/masses.js', 'data/prefaces.js', 'data/ordinary.js', 'office.html', 'js/office.js', 'js/cal.js', 'data/office/common.json', 'data/office/range.json', 'manifest.webmanifest', 'icon.svg', 'fonts/versiculum.ttf'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(VERSION).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));
