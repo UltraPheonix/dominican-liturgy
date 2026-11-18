@@ -19,6 +19,17 @@ Latin j -> i (site style). English: 1959 missal's where the text is the same, ot
 - 1959: dmsplit.py LINE0 LINE1 splits /home/claude/dl/txt/dm.txt into English/Latin labelled sections.
   dm.txt lines: Mon 13428, Tue 13551, Wed 14015, Thu 14587, Fri 15367, Sat 16483.
 
+## UI (2026-11-18 evening)
+- holyweek.html = own tab (body data-page="hw"; app.js HWP branch: day list #hwDays, rite switch #hwRite, rite kept in localStorage hwRite).
+- Mass page shows a card linking to holyweek.html on Holy Week days. Sidebar: date + one <details class="opts">. EN switch .en-toggle (ui.js).
+- "Report an error" button on every page (ui.js, mail jcampion@friars.providence.edu).
+
+## Word-by-word proof of 1939 (tools: /home/claude/build/proof/proof.py DAY BP0 BP1; crop.py BP COL Y to view)
+- Mon–Sat: every word matches the Missal OCR except OCR noise. Fixed: Good Friday Agios rubric split into the book's 3 paragraphs
+  and the added "Sanctus Deus" line removed; "in unitáte Spíritus" (no ejúsdem). Kept on purpose: full texts where the book
+  gives only an incipit (Panem de cælo, Tantum ergo stanza, 2nd/3rd orations of p.63); "Per Dóminum" where the book misprints
+  "sitiámus : Dóminum" (Sat). Punctuation not yet checked automatically.
+
 ## Done (1939)
 - Quad6 Palm Sunday (pp.137-146) — proofread against the scan.  (TODO: add X: markers to its Mass section)
 - Quad6m Monday, Quad6t Tuesday (Passion of Mark), Quad6w Wednesday (Passion of Luke), Quad6h Thursday (absolution p.54, Mass, procession, Vespers) — OCR+reference repair, not yet proofread line by line.

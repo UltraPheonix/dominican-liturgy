@@ -345,3 +345,18 @@ body:not(.en-tap) .tap-hint { display: none; }
 @media print { .en-toggle, .hw-card { display: none; } }
 .nav { gap: 14px; justify-content: space-between; }
 .nav a { white-space: nowrap; }
+
+/* report an error */
+.report-btn { position: fixed; right: 14px; bottom: 14px; z-index: 50; padding: 6px 12px; border: 1px solid var(--line); border-radius: 16px;
+  background: var(--paper); color: var(--muted); font: italic 14px/1.2 inherit; font-family: inherit; box-shadow: 0 1px 4px rgba(0,0,0,.08); cursor: pointer; }
+.report-btn:hover { color: var(--rubric); border-color: var(--rubric); }
+.report-dlg { max-width: 420px; width: calc(100% - 32px); border: 1px solid var(--line); padding: 22px 24px 18px; background: var(--paper); color: var(--ink); }
+.report-dlg::backdrop { background: rgba(0,0,0,.35); }
+.report-dlg h2 { font-family: var(--caps); font-weight: 500; letter-spacing: .08em; color: var(--rubric); font-size: 21px; margin: 0 0 10px; }
+.report-dlg p { margin: 0 0 10px; line-height: 1.45; }
+.report-mail a { font-size: 18px; color: var(--ink); word-break: break-all; }
+.report-small { font-size: 14px; color: var(--muted); font-style: italic; }
+.report-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.report-row a, .report-row button { flex: 1 1 auto; text-align: center; padding: 8px 12px; border: 1px solid var(--ink); background: none; color: var(--ink); text-decoration: none; font: inherit; font-size: 15px; cursor: pointer; }
+.report-row .report-go { background: var(--ink); color: var(--paper); }
+@media print { .report-btn, .report-dlg { display: none !important; } }

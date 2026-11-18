@@ -48,4 +48,34 @@
     if (!p) return;
     p.classList.toggle('show-en');
   });
+
+  // Report an error: a small button always at the foot of the screen
+  var MAIL = 'jcampion@friars.providence.edu';
+  function report() {
+    if (document.getElementById('reportBtn')) return;
+    var b = document.createElement('button');
+    b.type = 'button'; b.id = 'reportBtn'; b.className = 'report-btn hide-print'; b.textContent = 'Report an error';
+    var d = document.createElement('dialog');
+    d.className = 'report-dlg'; d.setAttribute('aria-labelledby', 'reportTitle');
+    d.innerHTML = '<h2 id="reportTitle">Report an error</h2>' +
+      '<p>If you find a mistake in the text, the chant, the rubrics or the calendar, or something that does not work, please write to</p>' +
+      '<p class="report-mail"><a id="reportMail"></a></p>' +
+      '<p class="report-small">Please say which page and day, and what is wrong. A link to this page is added to the email for you.</p>' +
+      '<div class="report-row"><a class="report-go" id="reportGo">Write an email</a><button type="button" id="reportCopy">Copy address</button><button type="button" id="reportClose">Close</button></div>';
+    document.body.appendChild(b); document.body.appendChild(d);
+    var mail = d.querySelector('#reportMail'); mail.textContent = MAIL; mail.href = 'mailto:' + MAIL;
+    b.addEventListener('click', function () {
+      var t = (document.querySelector('h1') || {}).textContent || document.title;
+      d.querySelector('#reportGo').href = 'mailto:' + MAIL + '?subject=' + encodeURIComponent('Error on dominicanrite.com: ' + t.trim()) +
+        '&body=' + encodeURIComponent('Page: ' + location.href + '\n\nWhat is wrong:\n\n');
+      if (d.showModal) d.showModal(); else d.setAttribute('open', '');
+    });
+    d.querySelector('#reportClose').addEventListener('click', function () { d.close ? d.close() : d.removeAttribute('open'); });
+    d.addEventListener('click', function (e) { if (e.target === d && d.close) d.close(); });
+    d.querySelector('#reportCopy').addEventListener('click', function (e) {
+      var c = e.target;
+      if (navigator.clipboard) navigator.clipboard.writeText(MAIL).then(function () { c.textContent = 'Copied'; setTimeout(function () { c.textContent = 'Copy address'; }, 1500); });
+    });
+  }
+  if (document.readyState !== 'loading') report(); else document.addEventListener('DOMContentLoaded', report);
 })();

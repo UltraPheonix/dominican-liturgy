@@ -1,0 +1,104 @@
+T ctibus consequámur. Per eúmdem Dóminum.
+L Secunda et tertia Secreta, pag. 65
+L Praefatio
+T Qui salútem humáni l
+L Communio Ps. 101
+T Potum meum cum fletu temperábam : quia élevans allisísti me : et ego sicut fenum árui : tu autem Dómine in ætérnum pérmanes : tu exsúrgens miseréberis Sion, quia venit tempus miseréndi ejus.
+L Postcommunio
+T Teu sénsibus nostris, omnípofens Deus : ut per temporálem Fílii tui mortem, quam mystéria veneránda testántur; vitam te nobis dedísse perpétuam confidámus : Per eúmdem Dóminum.
+L Secunda et tertia Postcommunio,
+T pag. 65 Orémus. Humiliáte cápita vestra Deo.
+L Oratio super populum
+T ESPICE, qué&sumus Dómine, super hanc famíliam tuam : pro qua Dóminus noster Jesus Christus non dubitávit mánibus tradi nocéntium; et Crucis subíre torméntum : Qui tecum vivit.
+H FERIA QUINTA
+H IN CENA DOMINI
+R RATRES privatas Missas non
+T celebrent, sed omnes in Míssa conventuali communicent. Finita autem Nona, Prior cum Diacono, et Subdiacono, et Acolythis, absque sericis indumentis, æ cereis, ad gradus presbyterii veniat : ibique Diacono cum uno Acolythorum a dextris, et Subdiacono cum altero Acolythorum a sinistris, stantibus, incipiat sine nota Antiphonam Ne reminiscáris. Qua incepta, prosternat se cum ministris eo ordine, quo stabant, super aliquem pannum, ibi a Sacrista præparátum, et Cantore, ex cujus Choro fuerit Hebdomada, incipiente Psalmum Dómine, ne in furóre tuo árguas me, Fratres ipsum, et reliquos peenitentiales
+R prosequantur, prostrati super for-
+T mas, sine Glória Patri terminando singulos Psalmos, utroque Choro
+R Versus alternatim dicente. Subjuncta post Psalmos a toto Choro
+T Antiph. Ne reminiscáris, fiat abso-
+R lutio sicut in quarta T'eria in capite Jejunii est notatum, pag. 54 Facta absolutione, Prior cum mi-
+T nistris in sacristiam revertatur. Et
+R Missa inchoata a Choro, (quz sicut in festo "Toto Duplici celebretur) assumptis sericis indumentis, et cereis accensis, procedat more solito ad altare.
+T AD MISSAM
+H Statio ad S Joannem in Laterano
+L Officium Gal. 6
+T OS autem gloriári opórtet in Cruce Dómini nostri Jesu Christi : in quo est salus, vita, et resurréctio nostra : per quem salváti, et liberáti sumus. X. Ps. 66 Deus misereátur nostri, et benedícat nobis : illúminet vultum suum super nos, et misereátur nostri. Nos autem.
+R Non dicatur Glória Patri, nec
+T Flectámus génua, sed Glória in excélsis Deo dicatur. Orémus Oratio
+T EUS, a quo et Judas reátus sui pœnam, et confessiónis suæ latro prǽmium sumpsit; concéde nobis tuæ ⟦propiPraed. — 11 tiatiónis⟧{propitiatiónis} efféctum : ut sicut in passióne sua Jesus Christus Dóminus noster divérsa utrísque íntulit stipéndia meritórum; ita nobis, abláto vetustátis erróre, resurrectiónis suæ grátiam largiátur : ⟦Qui tecum vivit⟧{Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios. Fratres: Conveniéntibus vobis in unum, jam non est Domínicam cœnam manducáre. Unusquísque enim suam cœnam præsúmit ad manducándum.} et regnat. Hæc sola Oratio dicatur.
+L Léctio
+T Epístolæ beáti Pauli Apóstoli ad Corínthios l, c. 11
+T RATRES : Conveniéntibus vobis in unum, jam non est Domínicam cœnam manducáre. Unusquísque enim suam cœnam præsúmit ad manducándum. Et álius quidem ésurit: álius autem ébrius est. Numquid domos non habétis ad manducándum, et bibéndum? Aut ecclésiam Dei contémnitis, et confúnditis eos, qui non habent? Quid dicam vobis? Laudo vos? In hoc non laudo. Ego enim accépi a Dómino quod et trádidi vobis, quóniam Dóminus Jesus in qua nocte tradebátur, accépit panem, et grátias agens fregit, et dixit : Accípite, et manducáte : Hoc est Corpus meum, quod pro vobis tradétur : hoc fácite in meam commemoratiónem. Simíliter et cálicem, postquam cœnávit, dicens : Hic calix novum testaméntum est in meo Sánguine : hoc fácite, quotiescúmque bibétis, in meam commemoratiónem. Quotiescúmque enim manducábitis panem hunc, et cálicem bibétis : mortem Dómini annuntiábitis donec véniat. Itaque quicúmque manducáverit panem hunc, vel bíberit cálicem Dómini indígne : reus erit Córporis, et Sánguinis Dómini. Probet autem seípsum homo : et sic de pane illo edat, et de cálice bibat. Qui enim mandúcat, et bibit indígne, judícium sibi mandúcat, et bibit : non dijúdicans Corpus Dómini. Ideo inter vos multi infírmi et imbecílles, et dórmiunt multi. Quod si nosmetípsos dijudicarémus, non útique judicarémur. Dum judicámur autem, a Dómino corrípimur, ut non cum hoc mundo damnémur. XX. Phil. 2 Christus factus est pro nobis obédiens usque ad mortem, mortem autem Crucis. V. Propter quod et Deus exaltávit illum, et dedit illi nomen, quod est super omne nomen. »I* Sequéntia : ✠ sancti Evangélii secúndum Joánnem c. 13
+T NTE diem festum Paschæ, sciens Jesus quia venit hora ejus ut tránseat ex hoc mundo ad Patrem : cum dilexísset Suos, qui erant in mundo, in finem diléxit eos. Et cœna facta, cum diábolus jam misísset in cor ut tráderet eum Judas Simónis Iscariótæ sciens quia ómnia dedit ei Pater in manus, et quia a Deo exívit, et ad Deum vadit : surgit a cœna, et ponit vestiménta sua : E t cum accepísset línteum, præcínxit se. Deínde mittit aquam in pelvim, et cœpit laváre pedes discipulórum, et extérgere línteo, quo erat præcínctus. Venit ergo ad Simónem Petrum. Et dicit ei Petrus : Dómine, tu mihi lavas pedes? Respóndit Jesus, et dixit ei : Quod ego fácio, tu nescis modo, scies autem póstea. Dicit ei Petrus : Non lavábis mihi pedes in ætérnum. Respóndit ei Jesus : Si non lávero te, non habébis partem mecum. Dicit ei Simon Petrus : Dómine, non tantum pedes meos, sed et manus, et caput. Dicit ei Jesus : Qui lotus est, non índiget nisi ut pedes lavet, sed est mundus totus. Et vos mundi estis, sed non omnes. Sciébat enim quisnam esset qui tráderet eum : proptérea dixit, Non estis mundi omnes. Postquam ergo lavit pedes eórum, et accépit vestiménta sua : cum recubuísset íterum, dixit eis : Scitis quid fécerim vobis? Vos vocátis me Magíster, et Dómine : et bene dícitis : Sum étenim. Si ergo ego lavi pedes vestros, Dóminus, et Magíster : et vos debétis alter alteríus laváre pedes. Exémplum enim dedi vobis, ut quemádmodum ego feci vobis, ita et vos faciátis. Credo.
+L Offertorium Ps. 117
+T Déxtera Dómini fecit virtútem, déxtera Dómini exaltávit me : non móriar, sed vivam, et narrábo ópera Dómini.
+L Secreta
+T PSE tibi, quǽsumus, Dómine sancte, Pater omnípotens, ætérne Deus, sacrifícium nostrum reddat accéptum, qui discípulis suis in sui commemoratiónem hoc fíeri hodiérna traditióne monstrávit, Jesus Christus Fílius tuus, Dóminus noster : Qui tecum vivit.
+L Praefatio
+T Qui salátem humáni. Infra Canonem
+T OMMUNICANTES, et diem sacratíssimum celebrántes, quo Dóminus noster Jesus Christus pro nobis est tráditus : Sed et memóriam venerántes, in primis gloriósæ semper Vírginis Maríæ, Genetrícis ejúsdem Dei, et Dómini nostri Jesu Christi : Sed et beatórum Apostolórum ac Mártyrum tuórum, Petri, et Pauli, Andréæ, Jacóbi, Joánnis, Thomæ, Jacóbi, Philíppi, Bartholomǽi, Matthǽi, Simónis, et Tháddæi: Lini, Cleti, Cleméntis, Xysti, Cornélii, Cypriáni, Lauréntii, Chrysógoni, Joánnis, et Pauli, Cosmæ, et Damiáni : et ómnium Sanctórum tuórum : quorum méritis precibúsque concédas, ut in ómnibus protectiónis tuæ muniámur auxílio. Per eúmdem Christum Dóminum nostrum. Amen.
+T ANC ígitur oblatiónem servitútis nostræ, sed et cunctæ famíliæ tuæ, quam tibi offérimus ob diem, in qua Dóminus noster Jesus Christus trádidit discípulis suis Córporis et Sánguinis sui mystéria celebránda, quǽsumus Dómine ut placátus accípias, diésque nostros in tua pace dispónas, atque ab ætérna damnatióne nos éripi, et in electórum tuórum júbeas grege numerári. Per eúmdem Christum Dóminum nostrum. Amen. ⟦S ay⟧{_ _ Quam} oblatiónem tu Deus V7 in ómnibus, ⟦quésumus, bene»t⟧{quǽsumus, (Signat ter super Oblata,) bene +} díctam, adscrí «ptam, ra tam, rationábilem, acceptabilémque fácere dignéris ut nobis Cor pus, et San guis fiat dilectíssimi Fílii tui ! Dómini nostri Jesu Christi.
+T UI prídie quam pro nostra Q omniúmque salúte paterétur, hoc est, hódie, accépit j panem, ef reliqua ut in 1 Canone. Dicatur Agnus Dei, sed pax non t detur.
+R Y AC die duz hostie a Sacerdote consecrentur, quarum
+T unam sumat, alteram reservet pro die sequenti, in quo non conficitur Sacramentum. (Poterunt etiam, si opus fuerit, aliquæ parvæ hostiæ pro infirmis consecrari, et reservari L in pyxide.) Deinde Sacerdos sumat
+R totum Sanguinem, quo sumpto, ante ablutionem digitorum, EKHostiam in crastinum servandam ponat in calice diverso ab eo, in quo celebratum est : quem Diaconus
+T L patena et palla cooperiet, et in medio altaris collocabit, serico velo
+R albi coloris super eum expanso.
+T Deinde fiat communio Fratrum, hoc ordine : ita ut primo commu-
+R nicent omnes ministri simul, (Diacono, et Subdiacono habentibus stolas super dalmaticas, si sint Sacerdotes) simulque omnes pra manibus teneant mundam mappam ad hoc praparatam, inter Sacerdotem et ipsos communicantes extensam, illamque sub mento, dum communicant, ambabus manibus elevent. Post ministros, ceteri Fratres communicent, a majoribus inci-
+T piendo : Sacerdotibus cum stolis super cappas; ommibus vero binis, ac binis successive procedentibus ad altare; eodemque ordine in chorum revertantur : vel si altare sit intra chorum, prope presbyterium in duos choros ordinati maneant genuflexi. Porro postquam ministri : communicaverint, Acolythi flecten- . tes genua in supremo gradu altaris hinc et inde, versis vultibus ad : invicem, mappulam supradictam inter Priorem et Fratres communicantes teneant : Diaconus vero ad cornu Evangelii, et Subdiaconus ad cornu Epístolæ accedant, ad vinum sumendum de calice alio, quam ; sit calix, cum quo celebratur; post- . eaque aliis illud ministrent, tenendo pedem calicis dextera manu, et leva mundam et decentem mappulam, quacum Fratres post abiutionem oris labia detergant. Caveat autem Sacerdos, ne post factam
+R consecrationem unquam — Sacramento terga vertat, sed, tam pra- . bendo sacram communionem fta- .
+T tribus, quam dicendo Dóminus vobíscum, et dando benedictionem ante ultimum Evangelium, secedat
+R paululum a medio, ob reverentiam . Sacramenti, et ante et post quam- , libet predictarum actionum genuflectat : quod etiam ministri in suis . functionibus observabunt.
+L Communio Joan. 13
+T Dóminus Jesus, postquam cenávit cum discípulis suis, lavit pedes eórum, et ait illis : Scitis quid fécerim vobis ego Dóminus, et . Magister exémplum dedi vo- . bis, ut et vos ita faciátis. Interim cantetur Communio, Fratribus cereos accendentibus, et genuflexis manentibus. Absoluta vero omnium Fratrum communione, Prior more solito patena recolligat fragmenta, et si quæ super corporale invenerit, in calice excutiat, tumque primam ablutionem sumat, et secundam etiam super digitos recipiat; qua sumpta, calicem super corporale deponat, quem Subdiaconus a Se purgatum mox, præeúnte uno Acolythorum cum ampullis, in sacristiam deferat. Deinde Prior, si Missam finire voluerit, dicta
+L Communione,
+T accedat ad medium altaris, et facta genuflexione, verso vultu ad populum, seu Conventum, dicat Dóminus vobíscum. Deinde reversus ad librum dicat more solito : Orémus. Postcommunio Torren vitálibus aliméntis, quésumus Dómine Deus noster : ut quod témpore nostræ mortalitátis exséquimur; immortalitátis tuc —múnere consequámur : Per Dóminum nostrum.
+R Postea accedens ad medium, et genuflectens, dicat iterum Dóminus vobíscum, et deinde dicatur Ite
+T missa est. Et data benedictione, dicatur Evangelium In princípio erat.
+R Finita Missa, Acolythi cum candelabris, et cereis accensis vadant in sacristiam, Cruciferariumque inde habentem Crucem velatam, praeunte Thuriferario, comitentur, ac ante gradus presbyterii genuflexi sistant. Interim aliquibus ex antiquioribus Patribus, aut nobilioribus saecularibus, a Sacrista ad deferendum baldachinum invitatis, Prior stans ante altare geuuflexus thurificet Corpus Domini. Postea Diaconus imponat super humeros Prioris velum sericum albi coloris, cujus extremitates super ejusdem manus expandat; et dcinde facta genuflexione, de altari cali-
+T cem, in quo est corpus Domini, cum pvxide, continente alias parvas Hostias consecratas, supraposita,
+R tradat Priori inter manus : qui statim surgens vertat se ad popuIum. Tunc Cantor incipiat Hymnum
+T Pange lingua gloriósi Córporis mystérium, et Conventus prosequatur. Fiatque Processio ad locum præparátum, ubi reponendum esi pro crastino Corpus Christi, Priore incedente sub baldachino, fulcientibus eum hinc et inde per brachia Diacono et Subdiacono, et Thuriferario a latere, semper ante eum incensante Corpus Domini. Cum pervenerint ad locum, fratres ordinati in duos Choros hinc et inde se collocent, ac genuflexi cantent praefatum Hymnum. Interim Diaconus genuflexus a Priore stante accipiat calicem et pyxidem cum Sacramento, et mox se erigens ponat illum primo Super corporale in altari, ubi a Priore genuflexo incensetur ut su-
+R pra : deinde Diaconus reponat illum cum pyxide in capsula ibidem prze-
+T parata. Quo facto, Acolythi dicant *. Panem de czelo. ?:. Omne dele-
+R ctaméntum, et Prior erectus sub-
+T jungat :
+R Orémus Oratio
+T DES qui nobis sub Sacraménto mirábili, passiónis tuæ memóriam reliquísti : tríbue, quésumus, ita nos Córporis et Sánguinis tui sacra mystéria venerári; ut redemptiónis tuæ fructum in nobis júgiter sentiámus : Qui vivis . et regnas per ómnia.
+R Ac postea exstinctis cereis, vel ibidem accensis depositis, baldachino etiam et Cruce ibi relictis, revertantur omnes in chorum, ori dine quo venerunt. Prior autem, et ministri, praeunte Thuriferario cum Cruciferario ante Acolythos, in sacristiam revertantur. Si vero prius Vespera dicantur, : antequam Missa terminetur, facta ' communione, fiat Processio, ut supra : et finita Processione, Prior et ministri ad presbyterium, et Conventus in chorum, ordine quo venerunt, revertantur. Postquam vero omnes Fratres in : chorum venerint, absque Pater
+T noster, et absque Deus in adjutó-
+R rium, incipiantur Vespera per Antij
+T phonam Cálicem.
+R Dum autem Vesperae a Conventu « dicuntur, Prior cum ministris in : presbyterio in cornu Epistolae, Vesperas suas dicendo, sedeat usque- ;
+T quo inchoanda fuerit Antiphona ad Magnificat. Interim dum Véspere cantantur, Acolythi vel Sacrista denudent altare, relicta una sola linea mappa super illud, quæ etiam, finita Missa, auferatur. Ana Cálicem salutáris accípiam, et nomen Dómini invocábo. Ps. 115 Crédidi. Aia Cum his qui odérunt pacem, eram pacíficus : cum loquébar illis, impugnábant me gratis. Ps. 119 Ad Dóminum. Ana Ab hominibus iníquis libera me, Dómine. Ps. 139 Eripe me. Afia Custódi me a láqueo, quem statuérunt mihi, et a scándalis operántium iniquitátem. Ps. 140 Dómine clamávi. Ana Considerábam ad déxteram, et vidébam : et non erat qui cognósceret me. Ps. 141 Voce mea.
+R Dicta post ultimum Psalmum Antiphona, Prior stans ad altare in cornu Epistolae, Cantore ei deferente, incipiat ad Magnificat Antiphonam
+T Cenántibus autem illis, accépit Jesus panem, et benedíxit, ac fregit, dedítque discípulis suis.
+R Stetque in eodem loco cum ministris de more ordinatis, donec cantatum sit Canticum cum Antiphona; qua finita, Prior conversus ad Conventum, seu populum, dicat
+T Dóminus vobíscum.
+R Deinde reversus ad librum dicat
+T more solito Orémus. Refécti vitálibus aliméntis, ut supra. Postea dicat iterum Dóminus vobíscum, et deinde dicatur Ite Missa est. Et data benedictione, dicat Evangelium In princípio.
+H FERIA SEXTA
+H IN PARASCEVE
+H Statio ad S Crucem in Jerusalem
+R UM Sexta et Nona cantantur,
+T Prior et ministri induant se ad
+L Officium,
+T et Sacrista superficiem altaris mundis mappis cooperiat, et duos cereos more solito accendat. Finita Nona, legatur in superpelliceo a fratre, cui Cantor innuerit., ante gradus presbvterii Prophetia ex Osee Propheta sine ullo titulo, Hæc dicit Dóminus : In tribula-
+R tióne. Qua dum legitur, Prior et ministri induti paramentis nigri coloris, Prior quidem cum casula, Diaconus autem et Subdiaconus sine dalmaticis, cum stola tantum
+T et manipulo, et Acolythi sine Iuminaribus, procedant more solito ad
+R altare; et facta inclinatione profunda
+T ad medium illius cum ministris, Prior non dicat In nómine Patris, nec Confitémini Dómino quóniam
+R bonus, sed immediate sessum eat, et uno Acolythorum tenente librum, legat submissa voce Prophetiam Osee 6
+T JEC dicit Dóminus : In tribulatióne sua mane consúrgent ad me : Veníte, ct reverfámur ad Dóminum : quia ipse cepit, et sanábit nos : percútiet, et curábit nos. Vivificábit nos post duos dies : in die tértia suscitábit nos, et vivémus in conspéctu ejus. Sciémus, sequemúrque ut cognoscámus Dóminum : Quasi dilúculum praparátus est egréssus ejus, et véniet quasi imber nobis temporáneus, ct serótinus terræ.. Quid fáciam tibi, Ephraim? Quid fáciam tibi, Juda? Misericórdia vestra quasi nubes matutína : et quast ros mane pertránsiens. Propter hoc dolávi in prophétis, occídi eos in verbis oris mei : Et judícia tua quasi lux egrediéntur. Quia misericórdiam vólui, et non sacrij fícium, et sciéntiam Dei plus quam holocáusta.
+R t Finita Prophetia, cantetur
+L Tractus
+T Habacuc 3 Dómine audívi audítum tuum, et tímui : considerávi ópera tua, et expávi. X. In médio duórum animálitum innotescéris : dum appropinquáverint anni, cognoscéris : dum advénerit tempus, ostendéris. X». In eo, dum conturbáta fúerit ánima mea, in ira, misericórdia memor eris. ??. Deus a Líbano véniet, ef sanctus de monte umbróso et condénso. X. Opéruit czllos majéstas ejus : et laudis ejus plena est terra.
+R Postea Sacerdos ascendens gradus altaris, in cornu Epistolae absque
+T Dóminus vobíscum, et absque Fle-
+R ctámus génua, pramisso tantum Orémus, dicat Orationem :
+L Oratio
+T Dg a quo et Judas reátus sui pœnam, et confessiónis suæ latro prǽmium sumpsit; concéde nobis tuæ propitiatiónis efféctum : ut sicut in passióne sua Jesus Christus Dóminus noster divérsa utrísque íntulit stipéndia meritórum; ita nobis, abláto vetustátis erróre, resurrectiónis suæ grátiam largiátur : ⟦Qui tecum vivit⟧{Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios. Fratres: Conveniéntibus vobis in unum, jam non est Domínicam cœnam manducáre. Unusquísque enim suam cœnam præsúmit ad manducándum.} et regnat in unitáte Spíritus Sancti Deus : per ómnia sécula sæculórum.
+R Deinde a Subdiacono in eodem loco, quo et prior Prophetia lecta
