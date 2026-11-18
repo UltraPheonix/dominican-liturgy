@@ -1,10 +1,222 @@
 {
- "RC-miserere": {"part": "an", "mode": "8", "mvar": "G", "src": [["RC1965", "67"]], "inc": "Miserere mihi",
-  "gabc": "(c3) Mi(e)se(e)ré(f)re(ed) mi(ef)hi,(f) Dó(e)mi(de)ne,(e.) (,) et(f) ex(h)áu(gh)di(f) o(f)ra(fe)ti(d)ó(ef)nem(f) me(e.)am.(e.) (::)"},
- "RC-miserere-tp": {"part": "an", "mode": "8", "mvar": "G", "src": [["RC1965", "67"]], "inc": "Alleluia (Compline T.P.)",
-  "gabc": "(c3) Al(e)le(e)lú(f)ia,(ed.) (,) al(f)le(h)lú(gh)ia,(fED) al(ef)le(f)lú(e.)ia.(e.) (::)"},
- "RC-voce-mea": {"part": "an", "mode": "7", "mvar": "d", "src": [["RC1965", "80"]], "inc": "Voce mea",
-  "gabc": "(c3) Vo(i)ce(g) me(i./jki)a(i.) (,) ad(i) Dó(i)mi(g)num(hi) cla(f)má(e)vi,(e.) (,) ne(h)que(h) o(h)bli(h)vi(f)scé(h)tur(g.) (,) mi(f)se(e)ré(fh)ri(g) De(e.)us.(e.) (::)"},
- "RC-salva-nos": {"part": "an", "mode": "3", "mvar": "a", "src": [["RC1965", "92"]], "inc": "Salva nos",
-  "gabc": "(c4) Sal(g)va(hj) nos,(j.) *() Dó(jk)mi(j)ne,(ji) vi(h)gi(i)lán(h)tes,(g.) (,) cu(g)stó(i)di(j) nos(k) dor(j)mi(h)én(j)tes:(i.) (;) ut(i) vi(g)gi(i)lé(k)mus(j) cum(h) Chri(j)sto,(ij.) (,) et(h) re(h)qui(h)es(h)cá(gf)mus(gh) in(gf) pa(e.)ce.(e.) (::)"}
+ "RC-miserere": {
+  "part": "an",
+  "mode": "8",
+  "mvar": "G",
+  "src": [
+   [
+    "RC1965",
+    "67"
+   ]
+  ],
+  "inc": "Miserere mihi",
+  "gabc": "(c3) Mi(e)se(e)ré(f)re(ed) mi(ef)hi,(f) Dó(e)mi(de)ne,(e.) (,) et(f) ex(h)áu(gh)di(f) o(f)ra(fe)ti(d)ó(ef)nem(f) me(e.)am.(e.) (::)"
+ },
+ "RC-miserere-tp": {
+  "part": "an",
+  "mode": "8",
+  "mvar": "G",
+  "src": [
+   [
+    "RC1965",
+    "67"
+   ]
+  ],
+  "inc": "Alleluia (Compline T.P.)",
+  "gabc": "(c3) Al(e)le(e)lú(f)ia,(ed.) (,) al(f)le(h)lú(gh)ia,(fED) al(ef)le(f)lú(e.)ia.(e.) (::)"
+ },
+ "RC-voce-mea": {
+  "part": "an",
+  "mode": "7",
+  "mvar": "d",
+  "src": [
+   [
+    "RC1965",
+    "80"
+   ]
+  ],
+  "inc": "Voce mea",
+  "gabc": "(c3) Vo(i)ce(g) me(i./jki)a(i.) (,) ad(i) Dó(i)mi(g)num(hi) cla(f)má(e)vi,(e.) (,) ne(h)que(h) o(h)bli(h)vi(f)scé(h)tur(g.) (,) mi(f)se(e)ré(fh)ri(g) De(e.)us.(e.) (::)"
+ },
+ "RC-salva-nos": {
+  "part": "an",
+  "mode": "3",
+  "mvar": "a",
+  "src": [
+   [
+    "RC1965",
+    "92"
+   ]
+  ],
+  "inc": "Salva nos",
+  "gabc": "(c4) Sal(g)va(hj) nos,(j.) *() Dó(jk)mi(j)ne,(ji) vi(h)gi(i)lán(h)tes,(g.) (,) cu(g)stó(i)di(j) nos(k) dor(j)mi(h)én(j)tes:(i.) (;) ut(i) vi(g)gi(i)lé(k)mus(j) cum(h) Chri(j)sto,(ij.) (,) et(h) re(h)qui(h)es(h)cá(gf)mus(gh) in(gf) pa(e.)ce.(e.) (::)"
+ },
+ "OP33-incircuitupopulisuidomin": {
+  "part": "an",
+  "mode": "1",
+  "src": [
+   [
+    "AOP1933",
+    "192"
+   ]
+  ],
+  "inc": "In circúitu pópuli sui Dóminus",
+  "gabc": "(c4) In(d) cir(ef)cú(g)i(e)tu(gh) (::) pó(f)pu(e)li(d) su(e)i(dc) Dó(ffg)mi(f)nus,(f) (;) ex(f) hoc(ghg) nunc(h) et(f) us(ef)que(g) in(fe) sǽ(d)cu(d)lum.(d) (::)"
+ },
+ "OP33-deusmeusmisericordiatuap": {
+  "part": "an",
+  "mode": "3",
+  "src": [
+   [
+    "AOP1933",
+    "213"
+   ]
+  ],
+  "inc": "Deus meus misericórdia tua præ",
+  "gabc": "(c4) De(j)us(ji) me(hg)us(g) (::) mi(d)se(e)ri(f)cór(g)di(f)a(e) tu(fg)a(g) præ(h)vé(g)ni(f)et(g) me.(e) (::)"
+ },
+ "OP33-inlocopascuaeibidominusm": {
+  "part": "an",
+  "mode": "7",
+  "src": [
+   [
+    "AOP1933",
+    "228"
+   ]
+  ],
+  "inc": "In loco páscuæ ibi Dóminus me ",
+  "gabc": "(c3) In(g) lo(i)co(j) (::) pá(k)scu(l)æ(k) (;) i(kl)bi(ji) Dó(h)mi(g)nus(h) me(jIH) col(i)lo(h)cá(g)vit.(g) (::)"
+ },
+ "OP33-invocabimusnomentuumdomi": {
+  "part": "an",
+  "mode": "6",
+  "src": [
+   [
+    "AOP1933",
+    "234"
+   ]
+  ],
+  "inc": "Invocábimus nomen tuum, Dómine",
+  "gabc": "(c4) In(f)vo(gh)cá(ii)bi(h)mus(g) (::) no(g)men(gf) tu(g)um,(gh) Dó(f)mi(e)ne:(d) (;) nar(cd)rá(f)bi(g)mus(f) mi(f)ra(f)bí(fe)li(g)a(ghg) tu(f)a.(f) (::)"
+ },
+ "OP33-confitebornominituodomin": {
+  "part": "an",
+  "mode": "5",
+  "src": [
+   [
+    "AOP1933",
+    "239"
+   ]
+  ],
+  "inc": "Confitébor nómini tuo, Dómine,",
+  "gabc": "(c3) Con(h)fi(h)té(h)bor(gf) (::) nó(j)mi(i)ni(j) tu(k)o,(ji) Dó(h)mi(g)ne,(h) (;) su(h)per(k) mi(k)se(i)ri(j)cór(kl)di(kj)a(j) (;) et(hg) ve(h)ri(gf)tá(gh)te(g) tu(f)a.(f) (::)"
+ },
+ "OP33-educdecustodiaanimammeam": {
+  "part": "an",
+  "mode": "3",
+  "src": [
+   [
+    "AOP1933",
+    "264"
+   ]
+  ],
+  "inc": "Educ de custódia ánimam meam, ",
+  "gabc": "(c4) E(g)duc(h) (::) de(j) cu(j)stó(h)di(j) a(i) (;) á(g)ni(h)mam(h) me(h)am,(h) Dó(i)mi(hg)ne,(g) (;) ad(j) con(i)fi(g)tén(h)dum(gh) nó(hi)mi(g)ni(g) tu(e)o.(e) (::)"
+ },
+ "OP33-suavisdominusuniversiset": {
+  "part": "an",
+  "mode": "8",
+  "src": [
+   [
+    "AOP1933",
+    "289"
+   ]
+  ],
+  "inc": "Suávis Dóminus univérsis: et m",
+  "gabc": "(c4) Su(g)á(gj)vis(hg) (::) Dó(h)mi(g)nus(f) u(gh)ni(h)vér(g)sis:(g) (;) et(g) mi(f)se(h)ra(j)ti(i)ó(hk)nes(j) e(i)ius(i) (;) su(j)per(h) ó(j)mni(i)a(gf) ó(gh)pe(h)ra(h) e(g)ius.(g) (::)"
+ },
+ "OP33-quitimetdominuminmandati": {
+  "part": "an",
+  "mode": "4",
+  "src": [
+   [
+    "AOP1933",
+    "71"
+   ]
+  ],
+  "inc": "Qui timet Dóminum, in mandátis",
+  "gabc": "(c4) Qui(g) ti(e)met(f) (::) Dó(g)mi(h)num,(g) (;) in(g) man(gh)dá(h)tis(g) e(g)ius(ef) cu(gf)pit(de) ni(e)mis.(e) (::)"
+ },
+ "OP33-sitnomendominibenedictum": {
+  "part": "an",
+  "mode": "7",
+  "src": [
+   [
+    "AOP1933",
+    "72"
+   ]
+  ],
+  "inc": "Sit nomen Dómini benedíctum in",
+  "gabc": "(c3) Sit(kk) no(i)men(j) (::) Dó(kl)mi(k)ni(j) (;) be(ji)ne(h)dí(ij)ctum(kj) in(h) sǽ(g)cu(g)la.(g) (::)"
+ },
+ "OP33-adhaesitanimameaposttequ": {
+  "part": "an",
+  "mode": "8",
+  "src": [
+   [
+    "AOP1933",
+    "902"
+   ]
+  ],
+  "inc": "Adhǽsit ánima mea post te, qui",
+  "gabc": "(c4) Ad(g)hǽ(g)sit(g) (::) á(jj)ni(h)ma(g) me(j)a(h) post(j) te,(i) (;) qui(k)a(k) ca(jh)ro(j) me(j)a(i) i(j)gne(h) cre(g)má(i)ta(j) est(h) pro(g) te,(ij) De(h)us(h) me(g)us.(g) (::)"
+ },
+ "OP33-quaerenteseumteneretimue": {
+  "part": "an",
+  "mode": "3",
+  "src": [
+   [
+    "AOP1933",
+    "436"
+   ]
+  ],
+  "inc": "Quæréntes eum tenére, timuérun",
+  "gabc": "(c4) Quæ(g)rén(g)tes(h) (::) e(j)um(j) te(h)né(j)re,(i) (;) ti(g)mu(h)é(h)runt(i) tur(h)bam,(g) (;) qui(i)a(i) si(h)cut(h) pro(h)phé(ji)tam(g) (;) e(hgF)um(g) ha(gf)bé(e)bant.(e) (::)"
+ },
+ "OP33-dominesifuisseshiclazaru": {
+  "part": "an",
+  "mode": "1",
+  "src": [
+   [
+    "AOP1933",
+    "455"
+   ]
+  ],
+  "inc": "Dómine, si fuísses hic, Lázaru",
+  "gabc": "(c4) Dó(f)mi(gh)ne,(h) (::) si(f) fu(h)ís(g)ses(h) hic,(gh) (;) Lá(e)za(f)rus(g) non(e) es(gh)set(fe) mór(ded)tu(c)us:(d) (:) ec(g)ce(e) iam(ghFE) fœ(df)tet(fc) (;) qua(dc)tri(f)du(gh)á(h)nus(ghg) in(ef) mo(g)nu(fe)mén(d)to.(d) (::)"
+ },
+ "OP33-confundanturomnesquioder": {
+  "part": "an",
+  "mode": "8",
+  "src": [
+   [
+    "AOP1933",
+    "214"
+   ]
+  ],
+  "inc": "Confundántur omnes qui odérunt",
+  "gabc": "(c3) Con(g)fun(g)dán(h)tur(h) (::) o(g)mnes(g) (;) qui(ih) o(j)dé(i)runt(hi) Si(h)on.(g) (::)"
+ },
+ "OP33-votameadominoreddamcoram": {
+  "part": "an",
+  "mode": "3",
+  "src": [
+   [
+    "AOP1933",
+    "168"
+   ]
+  ],
+  "inc": "Vota mea Dómino reddam coram o",
+  "gabc": "(c4) Vo(g)ta(h) me(ij)a(i) (::) Dó(j)mi(i)no(hi) red(h)dam(g) (;) co(gh)ram(h) o(j)mni(hGF) pó(gh)pu(g)lo(gf) e(e)ius.(e) (::)"
+ }
 }
