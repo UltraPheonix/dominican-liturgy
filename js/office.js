@@ -149,6 +149,43 @@
       }).catch(function () { box.textContent = ''; });
     });
   }
+  // psalms: the tone of the antiphon, its first verse notated, the others pointed
+  function drawPsalms(main) {
+    if (!window.OPPsalm) return;
+    var groups = {};
+    Array.prototype.forEach.call(main.querySelectorAll('.o-pv[data-ps]'), function (el) {
+      (groups[el.getAttribute('data-ps')] = groups[el.getAttribute('data-ps')] || []).push(el);
+    });
+    Object.keys(groups).forEach(function (k) {
+      var m = chantMap[k];
+      if (!m) return;
+      getText('data/chant/op/' + m[0] + '.gabc').then(function (g) {
+        var mode = parseInt(m[1], 10);
+        if (!(mode >= 1 && mode <= 8)) return;
+        var tone = OPPsalm.toneOf(mode, OPPsalm.chooseDiff(mode, g));
+        if (!tone) return;
+        groups[k].forEach(function (el) {
+          var cant = el.getAttribute('data-cant') === '1', first = el.getAttribute('data-first') === '1';
+          var pv = OPPsalm.pointVerse(el.getAttribute('data-t'), tone, {inton: first || cant});
+          var num = el.getAttribute('data-num') || '';
+          if (first) {
+            var row = el.classList.contains('o-la') ? el.parentNode : el;
+            var lab = document.createElement('div');
+            lab.className = 'o-tone';
+            lab.textContent = 'Tonus ' + tone.name.replace('IVA', 'IV') + (tone.diff ? ' ' + tone.diff : '');
+            var box = document.createElement('div');
+            box.className = 'chant o-chant';
+            row.parentNode.insertBefore(lab, row);
+            row.parentNode.insertBefore(box, row);
+            OPChant.render(box, OPPsalm.verseGabc(pv, tone), {dropCap: false, keepTP: true});
+          }
+          // the first verse is read from the notes above; the others are pointed
+          el.innerHTML = first ? num : (num ? num + ' ' : '') + OPPsalm.verseHtml(pv, esc);
+          el.classList.add('o-pointed');
+        });
+      }).catch(function () {});
+    });
+  }
   var textCache = {};
   function getText(url) {
     if (!textCache[url]) {
@@ -158,7 +195,19 @@
     return textCache[url];
   }
 
-  function drawRow(row, day) {
+  // a psalm or canticle verse (or its doxology)
+  function isVerse(l) { return /^<n>\d+:\d+[a-z]?<\/n>/.test(l) || /^<r>[℣℟]\.<\/r>\s*(Glória Patri|Sicut erat)/.test(l); }
+  function verseAttrs(l, ps, la) {
+    var t = plain(l.replace(/^<n>[^<]*<\/n>\s*/, '').replace(/^<r>[℣℟]\.<\/r>\s*/, '')).trim();
+    var num = (/^(<n>[^<]*<\/n>|<r>[℣℟]\.<\/r>)\s*/.exec(l) || ['', ''])[1];
+    var a = ' data-ps="' + esc(ps.ant) + '" data-t="' + esc(t) + '" data-num="' + esc(num) + '"';
+    if (ps.first) { a += ' data-first="1"'; ps.first = false; }
+    if (ps.cant) a += ' data-cant="1"';
+    return a;
+  }
+
+  function drawRow(row, day, ps) {
+    ps = ps || {};
     var la = cell(row[0], day), en = cell(row[1], day), lang = state.lang, html = '';
     var same = en.lines.join('\n') === la.lines.join('\n');
     if (la.head || en.head) {
@@ -166,26 +215,30 @@
         (lang === 'both' && en.head && la.head && en.head !== la.head ? ' <span class="o-h-en">' + esc(en.head) + '</span>' : '') + '</h3>';
     }
     var segs = state.chant && lang !== 'en' ? chantSegs(la.lines, la.head) : [];
+    ps.cant = /Benedictus|Magnificat/.test(la.head || '');
+    var psalmCell = state.chant && lang !== 'en' && chantMap && (segs.length || ps.ant) && la.lines.some(isVerse);
     var at = {};
     segs.forEach(function (g) { at[g.s] = g; });
     var paired = lang === 'both' && !same && en.lines.length && la.lines.length === en.lines.length;
-    if (segs.length && (lang === 'la' || paired || !en.lines.length || same)) {
+    if ((segs.length || psalmCell) && (lang === 'la' || paired || !en.lines.length || same)) {
       // chant in place of the Latin text; in "both", the English follows each chant as a translation
       var out = '';
       for (var i = 0; i < la.lines.length; i++) {
         var g = at[i];
         if (g) {
+          if (g.kind === 'an') { ps.ant = g.key; ps.first = true; }
           out += chantDiv(g);
           if (paired) out += '<div class="o-tr">' + en.lines.slice(g.s, g.e).filter(function (x) { return x.trim(); }).map(fmt).join('<br>') + '</div>';
           i = g.e - 1;
           continue;
         }
-        var l = la.lines[i];
+        var l = la.lines[i], va = ps.ant && isVerse(l) ? verseAttrs(l, ps, la) : '';
         if (paired) {
           var e2 = en.lines[i];
           out += (!l.trim() && !e2.trim()) ? '<div class="o-gap"></div>' :
-            '<div class="o-lp ' + lineClass(l) + '"><div class="o-la">' + fmt(l) + '</div><div class="o-en">' + fmt(e2) + '</div></div>';
-        } else out += drawLine(l);
+            '<div class="o-lp ' + lineClass(l) + '"><div class="o-la' + (va ? ' o-pv"' + va : '"') + '>' + fmt(l) + '</div><div class="o-en">' + fmt(e2) + '</div></div>';
+        } else if (va) out += '<div class="' + lineClass(l) + ' o-pv"' + va + '>' + fmt(l) + '</div>';
+        else out += drawLine(l);
       }
       html += '<div class="' + (paired ? 'o-lines' : 'o-col') + '">' + out + '</div>';
     } else if (segs.length) {
@@ -247,10 +300,10 @@
         $('#dayMeta').textContent = shortDate(d);
         var rows = rowsOf(day, hour);
         main.innerHTML = '<header class="o-head"><h1>' + esc(h[1]) + '</h1><p class="o-sub">' + esc(h[2]) + '</p></header>' +
-          rows.map(function (row) { return drawRow(row, day); }).join('') +
+          (function () { var ps = {}; return rows.map(function (row) { return drawRow(row, day, ps); }).join(''); })() +
           '<p class="o-src">Text from Divinum Officium, <i>Ordo Praedicatorum – 1962</i> (MIT licence), following the Breviarium S.O.P. (1962). English is Divinum Officium’s; where a Dominican text has no English yet, the Latin stands alone.</p>';
         document.title = h[2] + ' — ' + t[0];
-        if (state.chant) drawChants(main);
+        if (state.chant) { drawChants(main); drawPsalms(main); }
       })
       .catch(function () {
         main.innerHTML = '<p class="o-msg">The Office for this day could not be loaded. If you are offline, open the day once while online to keep it.</p>';

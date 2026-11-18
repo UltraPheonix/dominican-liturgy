@@ -153,6 +153,9 @@ button { cursor: pointer; }
 .o-l, .o-la, .o-en { line-height: 1.5; }
 .o-l { margin: 0 0 3px; }
 .o-chant { margin: 6px 0 2px; }
+.o-tone { color: var(--rubric, #b3121f); font-style: italic; font-size: .9em; margin: 8px 0 0; }
+.o-pointed b { font-weight: 600; }
+.o-pointed i { font-style: italic; }
 .o-tr { color: var(--muted); font-size: .95em; font-style: italic; margin: 0 0 12px; }
 .o-lp { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 0 0 3px; }
 .o-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
