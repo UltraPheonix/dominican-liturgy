@@ -264,3 +264,26 @@ button { cursor: pointer; }
 .part.ordo .o-line .la { font-size: 17px; }
 .part.ordo .o-line .en-text { color: var(--muted); font-size: 16px; }
 .part.ordo .o-mark { color: var(--rubric); }
+.part.hw .r { color: var(--rubric); }
+.part.hw .r.ini { font-size: 1.5em; line-height: 1; font-weight: 600; }
+.part.hw .hw-r p { color: var(--rubric); font-style: italic; font-size: 15px; }
+.part.hw .hw-r .k { color: var(--ink, #1a1a1a); font-style: normal; }
+.part.hw .hw-r { margin: 10px 0 6px; }
+.part.hw .hw-h p, .part.hw .hw-l p, .part.hw .hw-i p { text-align: center; }
+.part.hw .hw-h p { font-family: var(--caps); letter-spacing: .08em; margin-top: 8px; }
+.part.hw .hw-h .la { font-size: 19px; }
+.part.hw .hw-l p { color: var(--rubric); font-family: var(--caps); letter-spacing: .06em; margin-top: 10px; }
+.part.hw .hw-i p { font-style: italic; }
+.part.hw .hw-src { margin: 0 0 8px; }
+.part.hw details.hw-chant { margin: 2px 0 12px; }
+.part.hw details.hw-chant > summary, .part.hw details.hw-fold > summary { cursor: pointer; font-family: var(--caps); letter-spacing: .08em; color: var(--rubric); font-size: 15px; min-height: 36px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.part.hw details.hw-fold { border-top: 1px solid var(--rule, rgba(0,0,0,.12)); border-bottom: 1px solid var(--rule, rgba(0,0,0,.12)); margin: 10px 0; padding: 2px 0; }
+.part.hw details.hw-fold > summary .la { color: var(--rubric); }
+.part.hw details.hw-fold > summary .en-text { color: var(--muted); font-family: inherit; letter-spacing: 0; text-transform: none; font-style: italic; font-size: 14px; }
+.part.hw details.hw-fold[open] > summary { margin-bottom: 6px; }
+.part.hw details.hw-fold > summary { list-style: none; }
+.part.hw details.hw-fold > summary::-webkit-details-marker { display: none; }
+.part.hw details.hw-fold > summary::after { content: 'Tap to read ▾'; margin-left: auto; font-family: var(--caps); font-style: normal; font-size: 13px; letter-spacing: .08em; color: var(--muted); }
+.part.hw details.hw-fold[open] > summary::after { content: 'Close ▴'; }
+
+/* Holy Week as printed */

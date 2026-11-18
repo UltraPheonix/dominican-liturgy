@@ -65,7 +65,7 @@
 
   // ---------------------------------------------------------------- state & URL
   // #<massKey>[&in=id,id&gr=id...]  (only parts the user changed are stored)
-  var state = {key: null, parts: null, edited: {}, date: null, season: 'auto', ord: '', credo: '', asp: '', ordo: '', edit: false};
+  var state = {key: null, parts: null, edited: {}, date: null, season: 'auto', ord: '', credo: '', asp: '', ordo: '', hwr: '1959', edit: false};
 
   function readHash() {
     var h = decodeURIComponent(location.hash.slice(1));
@@ -92,6 +92,7 @@
     if (state.credo) bits.push('credo=' + state.credo);
     if (state.asp) bits.push('asp=' + state.asp);
     if (state.ordo) bits.push('ordo=' + state.ordo);
+    if (state.hwr !== '1959') bits.push('hw=' + state.hwr);
     history.replaceState(null, '', '#' + bits.join('&'));
   }
 
@@ -664,6 +665,16 @@
   // the order of the Mass: Introit, Kyrie, Gloria; the lessons, each followed by its gradual; after the Epistle
   // the Gradual, Alleluia or Tract and Sequence; the Gospel; Credo; Offertory; Sanctus, Agnus Dei; Communion; dismissal
   function massSequence(m, parts) {
+    // Holy Week: the rite transcribed exactly as the chosen book prints it
+    var HT = window.HW_TEXT && HW_TEXT[state.hwr] && HW_TEXT[state.hwr][state.key];
+    if (HT) return HT.map(function (sec, n) { return {t: 'hwtext', s: sec, n: n}; });
+    if (state.hwr === '1939' && /^Quad6/.test(state.key)) {
+      var hq = [{t: 'hwnote'}];
+      ['pr', 'in', 'gr', 'al', 'tr', 'se', 'ad', 'of', 'co', 'an'].forEach(function (p) {
+        (parts[p] || []).forEach(function (c, i) { hq.push({t: 'chant', p: p, i: i, c: c}); });
+      });
+      return hq;
+    }
     var HW = window.HOLYWEEK && HOLYWEEK[state.key];
     var rs = seasonalReadings(state.key, state.date) || (HW && HW.readings) || m.readings || [], pre = rs.filter(function (r) { return r.type !== 'Gospel'; }), gos = rs.filter(function (r) { return r.type === 'Gospel'; });
     var HW0 = window.HOLYWEEK && HOLYWEEK[state.key], skip = (HW0 && HW0.skipChants) || [];
@@ -771,6 +782,8 @@
       else if (it.t === 'ord') { if (ord[it.k]) main.appendChild(drawOrdinary(it.k, ord[it.k])); }
       else if (it.t === 'oratio') main.appendChild(drawOratio(it));
       else if (it.t === 'hw') main.appendChild(drawSection(it.s, R));
+      else if (it.t === 'hwtext') main.appendChild(drawHwText(it.s, it.n));
+      else if (it.t === 'hwnote') main.appendChild(el('p', {class: 'hint rubric', text: 'This day of Holy Week is still being transcribed from the Missale O.P. (1939); its chants follow.'}));
       else if (it.t === 'ordo') { var os = drawOrdo(it.k, R); if (os) main.appendChild(os); }
       else {
         if (!readHead) { readHead = true; }
@@ -864,6 +877,54 @@
     box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: name[0]}), el('span', {class: 'incipit', text: name[1]})]));
     box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: it.x[0]}), el('p', {class: 'en-text', lang: 'en', text: it.x[1]})]));
     box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.']), el('p', {class: 'en-text', lang: 'en'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
+    return box;
+  }
+  // Holy Week transcribed as printed. Markup: {red}, *black inside a rubric*, ^initial
+  function hwInline(s, rubric) {
+    var out = [], re = rubric ? /\{([^}]*)\}|\*([^*]*)\*|\^(\S)/g : /\{([^}]*)\}|\^(\S)/g, last = 0, m;
+    while ((m = re.exec(s))) {
+      if (m.index > last) out.push(s.slice(last, m.index));
+      if (m[1] != null) out.push(el('span', {class: 'r', text: m[1]}));
+      else if (rubric && m[2] != null) out.push(el('span', {class: 'k', text: m[2]}));
+      else out.push(el('span', {class: 'r ini', text: rubric ? m[3] : m[2]}));
+      last = re.lastIndex;
+    }
+    if (last < s.length) out.push(s.slice(last));
+    return out;
+  }
+  function hwChant(b) {
+    var c = (state.parts[b.p] || [])[b.i];
+    if (!c || !c.id) return null;
+    var box = el('div', {class: 'chant'}), done = false;
+    var d = el('details', {class: 'hw-chant'}, [el('summary', {text: 'Cantus'}), box]);
+    d.addEventListener('toggle', function () {
+      if (!d.open || done) return; done = true;
+      box.appendChild(el('p', {class: 'loading', text: 'Loading…'}));
+      loadGabc(c.id).then(function (text) { var g = splitGabc(text); renderInto(box, g.body, g.header, b.p); })
+        .catch(function (e) { showError(box, e); });
+    });
+    return d;
+  }
+  function hwBlocks(blocks, into) {
+    blocks.forEach(function (b) {
+      if (b.t === 'C') { var ch = hwChant(b); if (ch) into.appendChild(ch); return; }
+      if (b.t === 'F') {
+        var inner = el('div', {class: 'hw-fold-body'});
+        hwBlocks(b.blocks, inner);
+        into.appendChild(el('details', {class: 'hw-fold'}, [el('summary', null, [el('span', {class: 'la', text: b.la}), el('span', {class: 'en-text', text: b.en})]), inner]));
+        return;
+      }
+      var R = b.t === 'R', cls = {H: 'hw-h', I: 'hw-i', L: 'hw-l', R: 'hw-r', T: 'hw-t'}[b.t];
+      into.appendChild(el('div', {class: 'r-cols o-line ' + cls}, [
+        el('p', {class: 'la', lang: 'la'}, hwInline(b.la, R)),
+        el('p', {class: 'en-text', lang: 'en'}, hwInline(b.en || '', R))]));
+    });
+  }
+  function drawHwText(sec, n) {
+    var box = el('section', {class: 'part ordo hw', 'data-part': 'hw'});
+    box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: sec.la}), el('span', {class: 'incipit', text: sec.en})]));
+    if (n === 0 && sec.src) box.appendChild(el('p', {class: 'meta hw-src', text: sec.src}));
+    hwBlocks(sec.blocks, box);
     return box;
   }
   function findKyriale(name) { var r = null; D.kyriale.forEach(function (id) { if (D.chants[id].i === name) r = id; }); return r; }
@@ -1295,6 +1356,7 @@
     $('#selCredo').addEventListener('change', function (e) { state.credo = e.target.value; drawMass(); writeHash(); });
     $('#selAsp').addEventListener('change', function (e) { state.asp = e.target.value; drawMass(); writeHash(); });
     $('#selOrdo').addEventListener('change', function (e) { state.ordo = e.target.value; drawMass(); writeHash(); });
+    $('#selHw').addEventListener('change', function (e) { state.hwr = e.target.value; drawMass(); writeHash(); });
     $('#btnChoir').addEventListener('click', function () { printAs('choir'); });
     $('#btnCong').addEventListener('click', function () { printAs('congregation'); });
     $('#chkEdit').addEventListener('change', function (e) { state.edit = e.target.checked; drawMass(); });
@@ -1312,8 +1374,8 @@
     var h = readHash();
     if (h && D.masses[h.key]) {
       var o = h.opts;
-      state.season = o.season || 'auto'; state.ord = o.ord || ''; state.credo = o.credo || ''; state.asp = o.asp || ''; state.ordo = o.ordo || '';
-      $('#selSeason').value = state.season; $('#selOrd').value = state.ord; $('#selCredo').value = state.credo; $('#selAsp').value = state.asp; $('#selOrdo').value = state.ordo;
+      state.season = o.season || 'auto'; state.ord = o.ord || ''; state.credo = o.credo || ''; state.asp = o.asp || ''; state.ordo = o.ordo || ''; state.hwr = o.hw === '1939' ? '1939' : '1959';
+      $('#selSeason').value = state.season; $('#selOrd').value = state.ord; $('#selCredo').value = state.credo; $('#selAsp').value = state.asp; $('#selOrdo').value = state.ordo; $('#selHw').value = state.hwr;
       state.key = h.key;
       onDate(o.d ? fromIso(o.d) : new Date(), true);
       showMass(h.key, h.over);
