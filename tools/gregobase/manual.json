@@ -1,0 +1,10 @@
+{
+ "RC-miserere": {"part": "an", "mode": "8", "mvar": "G", "src": [["RC1965", "67"]], "inc": "Miserere mihi",
+  "gabc": "(c3) Mi(e)se(e)ré(f)re(ed) mi(ef)hi,(f) Dó(e)mi(de)ne,(e.) (,) et(f) ex(h)áu(gh)di(f) o(f)ra(fe)ti(d)ó(ef)nem(f) me(e.)am.(e.) (::)"},
+ "RC-miserere-tp": {"part": "an", "mode": "8", "mvar": "G", "src": [["RC1965", "67"]], "inc": "Alleluia (Compline T.P.)",
+  "gabc": "(c3) Al(e)le(e)lú(f)ia,(ed.) (,) al(f)le(h)lú(gh)ia,(fED) al(ef)le(f)lú(e.)ia.(e.) (::)"},
+ "RC-voce-mea": {"part": "an", "mode": "7", "mvar": "d", "src": [["RC1965", "80"]], "inc": "Voce mea",
+  "gabc": "(c3) Vo(i)ce(g) me(i./jki)a(i.) (,) ad(i) Dó(i)mi(g)num(hi) cla(f)má(e)vi,(e.) (,) ne(h)que(h) o(h)bli(h)vi(f)scé(h)tur(g.) (,) mi(f)se(e)ré(fh)ri(g) De(e.)us.(e.) (::)"},
+ "RC-salva-nos": {"part": "an", "mode": "3", "mvar": "a", "src": [["RC1965", "92"]], "inc": "Salva nos",
+  "gabc": "(c4) Sal(g)va(hj) nos,(j.) *() Dó(jk)mi(j)ne,(ji) vi(h)gi(i)lán(h)tes,(g.) (,) cu(g)stó(i)di(j) nos(k) dor(j)mi(h)én(j)tes:(i.) (;) ut(i) vi(g)gi(i)lé(k)mus(j) cum(h) Chri(j)sto,(ij.) (,) et(h) re(h)qui(h)es(h)cá(gf)mus(gh) in(gf) pa(e.)ce.(e.) (::)"}
+}

@@ -12,23 +12,23 @@
   var window = typeof self !== 'undefined' ? self : (typeof globalThis !== 'undefined' ? globalThis : {});
 
   var TONES = {
-    'I':   {clef: 'c4', inton: 'f gh', tenor: 'h', flex: "'h gr g", med: "'ixi hr h 'g hr h",
+    'I':   {clef: 'c4', inton: 'f gh', tenor: 'h', flex: "'h gr g", med: "'ixi hr h 'g hr h", sol: "hg gixi h 'hg gh", solAnt: 'h',
             term: {D: "g f 'gh gr gFED", g: "g f 'gh gr g", a: "g f 'g hr h"}, def: 'D'},
-    'II':  {clef: 'f3', inton: 'e f', tenor: 'h', flex: "'h fr f", med: "'i hr h",
+    'II':  {clef: 'f3', inton: 'e f', tenor: 'h', flex: "'h fr f", med: "'i hr h", sol: "hg hi i 'hi hr h", solInton: 'e f eh',
             term: {D: "g 'e fr f"}, def: 'D'},
-    'III': {clef: 'c4', inton: 'g hj', tenor: 'j', flex: "'j hr h", med: "'k jr j 'i jr j",
+    'III': {clef: 'c4', inton: 'g hj', tenor: 'j', flex: "'j hr h", med: "'k jr j 'i jr j", sol: "'jk jr j 'ih hj", solAnt: 'j',
             term: {a: "h 'j jr ih", a2: "ji hi 'h gr gh"}, def: 'a'},
-    'IV':  {clef: 'c4', inton: 'h gh', tenor: 'h', flex: "'h gr g", med: "g h 'i hr h",
+    'IV':  {clef: 'c4', inton: 'h gh', tenor: 'h', flex: "'h gr g", med: "g h 'i hr h", sol: "hg gi i 'hi hr h",
             term: {E: "g h ih 'gf e"}, ant: {E: 'g'}, def: 'E'},
-    'IVA': {clef: 'c3', inton: 'i hi', tenor: 'i', flex: "'i hr h", med: "h i 'j ir i",
+    'IVA': {clef: 'c3', inton: 'i hi', tenor: 'i', flex: "'i hr h", med: "h i 'j ir i", sol: "ih hj j 'ij ir i",
             term: {A: "h i j 'h fr f"}, def: 'A'},
     'V':   {clef: 'c3', inton: 'd f', tenor: 'h', flex: "'h fr f", med: "'i hr h",
             term: {a: "'i gr g 'h fr f"}, def: 'a'},
-    'VI':  {clef: 'c4', inton: 'f gh', tenor: 'h', flex: "'h gr g", med: "'ixi hr h 'g hr h",
+    'VI':  {clef: 'c4', inton: 'f gh', tenor: 'h', flex: "'h gr g", med: "'ixi hr h 'g hr h", sol: "hg gixi h 'hg gh", solAnt: 'h',
             term: {F: "f gh 'g fr f"}, def: 'F'},
-    'VII': {clef: 'c3', inton: 'h hi', tenor: 'i', flex: "'i hr h", med: "'k jr j 'i jr j",
+    'VII': {clef: 'c3', inton: 'h hi', tenor: 'i', flex: "'i hr h", med: "'k jr j 'i jr j", sol: "'ik jr j 'ji ij", solAnt: 'j',
             term: {a: "'j ir i 'h hr gf", d: "'j ir i 'h hr gi"}, def: 'd'},
-    'VIII':{clef: 'c4', inton: 'g h', tenor: 'j', flex: "'j hr h", med: "'k jr j",
+    'VIII':{clef: 'c4', inton: 'g h', tenor: 'j', flex: "'j hr h", med: "'k jr j", sol: "ih ij j 'ij ir i", solClef: 'c3', solTenor: 'i', solInton: 'f g fi',
             term: {G: "i j 'h gr g", c: "h j 'k jr j"}, def: 'G'},
     'PER': {clef: 'c4', inton: 'ixhi', tenor: 'h', flex: "'h gr g", med: "i h 'g fr f",
             inton2: 'ixhi', tenor2: 'g', term: {'': "d 'f fr ed"}, def: ''}
@@ -199,8 +199,18 @@
       syl.forEach(function (s, i) { out.push({t: s.t, first: s.first, last: s.last, note: f.notes[i], role: f.roles[i]}); });
       if (mark) out.push({mark: mark});
     }
-    var fl = opts.noFlex ? -1 : flexAt(h1);
-    if (fl > 0) {
+    var fl = opts.noFlex || opts.solemn ? -1 : flexAt(h1);
+    if (opts.inton && /^\s*Magn[ií]ficat\s*$/i.test(h1.replace(/[^A-Za-zÀ-ÿ ]/g, ''))) {
+      // the first verse of the Magnificat: the intonation only, without a mediation
+      var ms = analyse(h1), it0 = (T.solInton && opts.solemn ? T.solInton : T.inton).split(' ');
+      if (opts.solemn && T.solClef) out.solClef = T.solClef;
+      ms.forEach(function (x, i) { out.push({t: x.t, first: x.first, last: x.last, note: it0[i] || (opts.solemn && T.solTenor) || T.tenor, role: i < it0.length ? 'int' : 'ten'}); });
+      out.push({mark: '*'});
+    } else if (opts.solemn && T.sol) {
+      // the solemn mediation of the Gospel canticles: its own staff where the clef differs (VIII)
+      run(h1, parseCadence(T.sol, T.solAnt), T.solTenor || T.tenor, opts.inton ? (T.solInton || T.inton) : null, '*');
+      if (T.solClef) out.solClef = T.solClef;
+    } else if (fl > 0) {
       run(h1.slice(0, fl), parseCadence(T.flex), T.tenor, opts.inton ? T.inton : null, '†');
       run(h1.slice(fl).trim(), parseCadence(T.med), T.tenor, null, '*');
     } else run(h1, parseCadence(T.med), T.tenor, opts.inton ? T.inton : null, '*');
@@ -210,9 +220,9 @@
 
   // GABC of a pointed verse (the first verse, notated)
   function verseGabc(pv, tone) {
-    var g = '(' + tone.T.clef + ') ', word = '';
+    var g = '(' + (pv.solClef || tone.T.clef) + ') ', word = '';
     pv.forEach(function (s) {
-      if (s.mark) { g += s.mark === '*' ? '*(:) ' : '†(,) '; return; }
+      if (s.mark) { g += s.mark === '*' ? '*(:) ' + (pv.solClef ? '(' + tone.T.clef + ') ' : '') : '†(,) '; return; }
       var t = s.t.replace(/[()]/g, '');
       g += t + '(' + s.note + ')' + (s.last ? ' ' : '');
     });

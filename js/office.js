@@ -162,11 +162,11 @@
       getText('data/chant/op/' + m[0] + '.gabc').then(function (g) {
         var mode = parseInt(m[1], 10);
         if (!(mode >= 1 && mode <= 8)) return;
-        var tone = OPPsalm.toneOf(mode, OPPsalm.chooseDiff(mode, g));
+        var tone = OPPsalm.toneOf(mode, m[4] || OPPsalm.chooseDiff(mode, g));
         if (!tone) return;
         groups[k].forEach(function (el) {
           var cant = el.getAttribute('data-cant') === '1', first = el.getAttribute('data-first') === '1';
-          var pv = OPPsalm.pointVerse(el.getAttribute('data-t'), tone, {inton: first || cant});
+          var pv = OPPsalm.pointVerse(el.getAttribute('data-t'), tone, {inton: first || cant, solemn: cant});
           var num = el.getAttribute('data-num') || '';
           if (first) {
             var row = el.classList.contains('o-la') ? el.parentNode : el;
