@@ -153,6 +153,7 @@ button { cursor: pointer; }
 .o-l, .o-la, .o-en { line-height: 1.5; }
 .o-l { margin: 0 0 3px; }
 .o-chant { margin: 6px 0 2px; }
+.o-note { color: var(--muted); font-size: .8em; font-style: italic; margin: -2px 0 8px; }
 .o-tone { color: var(--rubric, #b3121f); font-style: italic; font-size: .9em; margin: 8px 0 0; }
 .o-pointed b { font-weight: 600; }
 .o-pointed i { font-style: italic; }

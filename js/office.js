@@ -134,18 +134,42 @@
         hymnAt = -1;
       }
     }
-    return segs.filter(function (g) { return chantMap[g.key]; });
+    segs = segs.filter(function (g) { return chantMap[g.key]; });
+    if (window.OPTones && toneCtx) {
+      OPTones.segments(lines, head, toneCtx).forEach(function (t) {
+        if (!segs.some(function (g) { return t.s < g.e && g.s < t.e; })) segs.push(t);
+      });
+      segs.sort(function (a, b) { return a.s - b.s; });
+    }
+    return segs;
+  }
+  var toneCtx = null;
+  function makeToneCtx(day, hour) {
+    var title = titleOf(day, hour), m = /\b(I{1,3}|IV)\. classis/.exec(title);
+    var rank = m ? {I: 1, II: 2, III: 3, IV: 4}[m[1]] : 4;
+    return {hour: hour, solemn: hour === 'Laudes' || hour === 'Vespera', priest: state.priest, rank: rank,
+            sunday: /^Dominica/.test(title), bvm: /Mari[æa]|B\. ?M\. ?V|Beatæ Vírginis/i.test(title),
+            bvmSat: /Sancta Maria Sabbato|Sanctæ Mariæ in Sabbato/i.test(title)};
   }
   var LABEL = {an: 'Ant.', hy: 'Hymn.', rb: 'R. br.'};
   function chantDiv(g) {
+    if (g.gabc || g.ben) {
+      if (g.ben === null) return '';
+      if (g.ben && g.ben.id) return '<div class="chant o-chant" data-id="' + g.ben.id + '" data-mode="" data-tp="0" data-kind="ben"></div>';
+      return '<div class="chant o-chant" data-g="' + esc((g.ben && g.ben.gabc) || g.gabc) + '" data-kind="' + g.kind + '"></div>';
+    }
     var m = chantMap[g.key];
-    return '<div class="chant o-chant" data-id="' + esc(m[0]) + '" data-mode="' + esc(m[1]) + '" data-tp="' + m[2] + '" data-kind="' + g.kind + '"></div>';
+    return '<div class="chant o-chant" data-id="' + esc(m[0]) + '" data-mode="' + esc(m[1]) + '" data-tp="' + m[2] + '" data-kind="' + g.kind + '"></div>' +
+      (m[5] === 'R' ? '<p class="o-note">Roman melody (Antiphonale Romanum, 1912): the Dominican one is not yet transcribed here.</p>' : '');
   }
   function drawChants(main) {
+    Array.prototype.forEach.call(main.querySelectorAll('.o-chant[data-g]'), function (box) {
+      OPChant.render(box, box.getAttribute('data-g'), {dropCap: false, keepTP: true});
+    });
     Array.prototype.forEach.call(main.querySelectorAll('.o-chant[data-id]'), function (box) {
       getText('data/chant/op/' + box.getAttribute('data-id') + '.gabc').then(function (g) {
         var kind = box.getAttribute('data-kind'), tp = box.getAttribute('data-tp') === '1';
-        OPChant.render(box, g, {mode: box.getAttribute('data-mode'), label: LABEL[kind], keepTP: tp, dropCap: kind !== 'rb'});
+        OPChant.render(box, g, {mode: box.getAttribute('data-mode'), label: LABEL[kind], keepTP: tp, dropCap: kind !== 'rb' && kind !== 'ben'});
       }).catch(function () { box.textContent = ''; });
     });
   }
@@ -300,7 +324,7 @@
         $('#dayMeta').textContent = shortDate(d);
         var rows = rowsOf(day, hour);
         main.innerHTML = '<header class="o-head"><h1>' + esc(h[1]) + '</h1><p class="o-sub">' + esc(h[2]) + '</p></header>' +
-          (function () { var ps = {}; return rows.map(function (row) { return drawRow(row, day, ps); }).join(''); })() +
+          (function () { var ps = {}; toneCtx = state.chant ? makeToneCtx(day, hour) : null; return rows.map(function (row) { return drawRow(row, day, ps); }).join(''); })() +
           '<p class="o-src">Text from Divinum Officium, <i>Ordo Praedicatorum – 1962</i> (MIT licence), following the Breviarium S.O.P. (1962). English is Divinum Officium’s; where a Dominican text has no English yet, the Latin stands alone.</p>';
         document.title = h[2] + ' — ' + t[0];
         if (state.chant) { drawChants(main); drawPsalms(main); }
