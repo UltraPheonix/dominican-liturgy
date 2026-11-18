@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Officium Divinum — Ordo Praedicatorum</title>
-  <meta name="description" content="The Divine Office of the Dominican Rite for any day, in Latin and English, from the Breviarium O.P. (1909).">
+  <meta name="description" content="The Divine Office of the Dominican Rite for any day, in Latin and English, from the Breviarium S.O.P. (1962).">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@500;600&display=swap">
   <link rel="stylesheet" href="style.css">
@@ -40,16 +40,15 @@
       </div>
       <div class="field"><label for="date">Date</label><input type="date" id="date"></div>
       <div id="hours" class="o-hours" role="tablist" aria-label="Hours"></div>
-      <p class="o-note">The spoken Office, in Latin and English. The psalms are given whole from the Vulgate with the Douay-Rheims; the chant will follow.
-        This first edition has Compline and the little hours (Prime, Terce, Sext, None); Matins, Lauds and Vespers are in preparation.</p>
+      <div id="langs" class="o-langs" role="group" aria-label="Language">
+        <button type="button" data-l="both">Both</button><button type="button" data-l="la">Latin</button><button type="button" data-l="en">English</button>
+      </div>
+      <p class="o-note">The spoken Office of the Dominican Rite for every day, Matins to Compline, following the Breviarium S.O.P. (1962) and the 1960 rubrics. The chant will follow.</p>
       <p class="o-note small">A private project, not affiliated with the Order of Preachers. <a href="about.html">About</a></p>
     </aside>
     <main id="office" class="o-main" aria-live="polite"></main>
   </div>
 
-  <script src="data/masses.js"></script>
-  <script src="js/app.js"></script>
-  <script src="data/office.js"></script>
   <script src="js/office.js"></script>
 </body>
 </html>

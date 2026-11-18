@@ -1,262 +1,196 @@
-/* Officium Divinum juxta ritum S. Ordinis Praedicatorum — the spoken Office (Latin and English).
-   Data: data/office.js (OFFICE), built by tools/build_office.py from the Breviarium O.P. (Cormier, 1909).
-   The day's celebration and its rank come from the Missal page's calendar (js/app.js, loaded as a library). */
+/* The Divine Office of the Dominican Rite (Breviarium S.O.P., 1962).
+   The text of each day is generated ahead of time from Divinum Officium's
+   "Ordo Praedicatorum - 1962" data (MIT licence) and checked against the
+   1962 Breviary; this file only fetches and displays it. */
 (function () {
   'use strict';
-  var O = window.OFFICE, D = window.DOMINICAN, P = window.ProprOP;
-  var $ = function (s, e) { return (e || document).querySelector(s); };
-  var el = function (tag, attrs, kids) {
-    var e = document.createElement(tag);
-    if (attrs) Object.keys(attrs).forEach(function (k) {
-      if (attrs[k] == null) return;
-      if (k === 'text') e.textContent = attrs[k];
-      else if (k === 'html') e.innerHTML = attrs[k];
-      else if (k.slice(0, 2) === 'on') e.addEventListener(k.slice(2), attrs[k]);
-      else e.setAttribute(k, attrs[k]);
-    });
-    (kids || []).forEach(function (c) { if (c) e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
-    return e;
-  };
-  var HOURS = [['matutinum', 'Ad Matutinum', 'Matins'], ['laudes', 'Ad Laudes', 'Lauds'], ['prima', 'Ad Primam', 'Prime'],
-    ['tertia', 'Ad Tertiam', 'Terce'], ['sexta', 'Ad Sextam', 'Sext'], ['nona', 'Ad Nonam', 'None'],
-    ['vesperae', 'Ad Vesperas', 'Vespers'], ['completorium', 'Ad Completorium', 'Compline']];
-  var DOW = ['dominica', 'feria2', 'feria3', 'feria4', 'feria5', 'feria6', 'sabbato'];
-  var DOWX = null; var DOW_LA = ['Dominica', 'Feria secunda', 'Feria tertia', 'Feria quarta', 'Feria quinta', 'Feria sexta', 'Sabbato'];
-  var state = {date: null, hour: null};
+  var BASE = 'data/office/';
+  var HOURS = [
+    ['Matutinum', 'Ad Matutinum', 'Matins'], ['Laudes', 'Ad Laudes', 'Lauds'], ['Prima', 'Ad Primam', 'Prime'],
+    ['Tertia', 'Ad Tertiam', 'Terce'], ['Sexta', 'Ad Sextam', 'Sext'], ['Nona', 'Ad Nonam', 'None'],
+    ['Vespera', 'Ad Vesperas', 'Vespers'], ['Completorium', 'Ad Completorium', 'Compline']
+  ];
+  var $ = function (s) { return document.querySelector(s); };
+  var cache = {}, common = null, shards = {}, range = null;
+  var state = {date: null, hour: null, lang: 'both'};
 
-  // ---------- Bible (Vulgate and Douay-Rheims), verse by verse ----------
-  var bible = {};
-  function book(lang, name) {
-    var k = lang + '/' + name;
-    if (!bible[k]) bible[k] = fetch('bible/' + lang + '/' + encodeURIComponent(name) + '.txt').then(function (r) { return r.text(); }).then(function (t) {
-      var v = {};
-      t.split('\n').forEach(function (l) { var p = l.split('\t'); if (p.length >= 3) v[p[0] + ':' + p[1]] = p.slice(2).join(' '); });
-      return v;
-    });
-    return bible[k];
-  }
-  // "Psalmi 118: 1-16" or "Psalmi 4" or "Lucas 1: 68-79" → [[c,v]...]
-  function verses(ref, v) {
-    var m = ref.match(/^(.*?)\s+(\d+)(?::\s*(.+))?$/), out = [];
-    if (!m) return out;
-    var ch = +m[2];
-    if (!m[3]) { for (var n = 1; n < 400; n++) if (v[ch + ':' + n] !== undefined) out.push([ch, n]); return out; }
-    m[3].split(',').forEach(function (part) {
-      var r = part.trim().match(/^(\d+)(?:-(\d+))?$/);
-      if (!r) return;
-      for (var n = +r[1]; n <= +(r[2] || r[1]); n++) if (v[ch + ':' + n] !== undefined) out.push([ch, n]);
-    });
-    return out;
-  }
-  function bookOf(ref) { return ref.replace(/\s+\d+(?::.*)?$/, ''); }
+  try { state.lang = localStorage.getItem('officeLang') || 'both'; } catch (e) {}
 
-  // ---------- the calendar: the day's celebration ----------
-  function easter(y) { return P.easter(y); }
-  function days(a, b) { return Math.round((a - b) / 864e5); }
-  function season(d) {
-    var y = d.getFullYear(), e = easter(y), f = days(d, e), md = (d.getMonth() + 1) * 100 + d.getDate();
-    var xmas = new Date(y, 11, 25), adv1 = new Date(y, 11, 25 - ((xmas.getDay() || 7) + 21));
-    if (d >= adv1 && md < 1225) return 'adventus';
-    if (md >= 1225 || md <= 113) return 'nativitas';
-    if (f >= -63 && f < -46) return 'septuagesima';
-    if (f >= -46 && f < -14) return 'quadragesima';
-    if (f >= -14 && f < 0) return 'passio';
-    if (f >= 0 && f <= 55) return 'pascha';
-    return 'annum';
-  }
-  function dayInfo(d) {
-    var r = P.massesOf(d), key = r.win, m = D.masses[key] || {};
-    var temporal = P.isTemporal(key);
-    var cls = temporal ? P.temporalClass(key, d) : P.feastClass(key);
-    return {key: key, title: m.title || '', en: m.name_en || m.en || '', cls: cls, temporal: temporal, season: season(d),
-      dow: d.getDay(), sunday: d.getDay() === 0, feast: !temporal && cls <= 3};
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function iso(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function parseIso(s) { var m = /^(\d{4})-(\d\d)-(\d\d)$/.exec(s || ''); return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null; }
+  function addDays(d, n) { var x = new Date(d); x.setDate(x.getDate() + n); return x; }
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function getJSON(url) {
+    if (!cache[url]) {
+      cache[url] = fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+      cache[url].catch(function () { delete cache[url]; });
+    }
+    return cache[url];
   }
 
-  // ---------- assembling an hour ----------
-  function ord(name) { return (O.ordinarium || {})[name]; }
-  // replace Alleluia at the end of "Deus in adjutorium" from Septuagesima to Holy Week
-  function adapt(it, info) {
-    if (!it || !it.la) return it;
-    var c = JSON.parse(JSON.stringify(it));
-    var penit = /septuagesima|quadragesima|passio/.test(info.season);
-    if (penit && c.alleluia) {
-      c.la = c.la.replace(/\s*Allel[uú]ia\.?\s*$/, ' Laus tibi, Dómine, Rex ætérnæ glóriæ.');
-      c.en = (c.en || '').replace(/\s*Alleluia\.?\s*$/, ' Praise be to thee, O Lord, King of eternal glory.');
-    }
-    if (info.season === 'pascha' && c.paschal) { c.la += ' Allelúia.'; c.en += ' Alleluia.'; }
-    return c;
-  }
-  // seasons as the Psalter's rubrics divide them
-  function offSeason(d) {
-    var y = d.getFullYear(), e = easter(y), f = days(d, e), md = (d.getMonth() + 1) * 100 + d.getDate();
-    var xmas = new Date(y, 11, 25), adv1 = new Date(y, 11, 25 - ((xmas.getDay() || 7) + 21));
-    if (d >= adv1 && md < 1225) return 'adventus';
-    if (md >= 1225 || md <= 113) return 'nativitas';
-    if (f < -63) return 'annum';
-    if (f < -46) return 'septuagesima';
-    if (f < -42) return 'cineres';                 // Ash Wednesday to Saturday
-    if (f < -14) return 'quadragesima';
-    if (f < -3) return 'passio';
-    if (f < 0) return 'triduum';
-    if (f < 7) return 'octavaPaschae';
-    if (f < 39) return 'pascha';
-    if (f < 49) return 'ascensio';
-    if (f < 56) return 'pentecostes';
-    return 'annum';
-  }
-  function complineKey(d, s) {
-    var f = days(d, easter(d.getFullYear()));
-    if (f >= -43 && f < -21) return 'lent1';       // from the Saturday after Ash Wednesday to Lent III
-    if (f >= -22 && f < -15) return 'lent3';
-    if (f === -4) return 'holyweds';
-    if (f >= -15 && f < -4) return 'passio';
-    if (f >= 6 && f < 38) return 'pascha';
-    if (f >= 38 && f < 48) return 'ascensio';
-    if (f >= 48 && f < 55) return 'pentecostes';
-    return 'annum';
-  }
-  var NOTE = function (en) { return {t: 'rub', la: en, en: en}; };
-  function collectItem(info) {
-    var c = (O.collects || {})[info.key];
-    if (c) return {t: 'or', la: c.la, en: c.en || ''};
-    return NOTE('The collect of the day (as at Lauds) follows here.');
-  }
-  function hourItems(hour, info) {
-    var d = state.date || new Date(), s = offSeason(d), feast = info.feast && !info.sunday, sun = info.sunday || feast, out = [];
-    var special = {triduum: 'The Office of the Sacred Triduum has its own form, which is not yet on this page.',
-                   octavaPaschae: 'Within the octave of Easter the little hours and Compline have their own form; the ordinary Paschal form is shown meanwhile.'};
-    if (hour === 'completorium') {
-      if (s === 'triduum') return [NOTE(special.triduum)];
-      var ck = complineKey(d, s);
-      if (s === 'octavaPaschae') { out.push(NOTE(special.octavaPaschae)); ck = 'pascha'; }
-      O.compline[ck].forEach(function (it) {
-        if (ck === 'pentecostes' && it.t === 'ps' && it.ref === 'Psalmi 90' && days(d, easter(d.getFullYear())) >= 49) return;  // not in the octave of Pentecost
-        out.push(it.ref && !it.t ? ord(it.ref) : it);
-      });
-      return out.map(function (it) { return adapt(it, info); });
-    }
-    if (s === 'triduum') return [NOTE(special.triduum)];
-    var base = {adventus: 'adventus', nativitas: 'annum', annum: 'annum', septuagesima: 'annum', cineres: 'quadragesima', quadragesima: 'quadragesima',
-                passio: 'passio', octavaPaschae: 'pascha', pascha: 'pascha', ascensio: 'pascha', pentecostes: 'pascha'}[s];
-    if (feast) out.push(NOTE('On a feast the antiphons, chapter and short responsory are those of the feast (Proper or Common of the Saints), which are not yet on this page; the festal form of the Psalter is shown meanwhile.'));
-    else if (s === 'nativitas' || s === 'ascensio' || s === 'pentecostes' || s === 'octavaPaschae')
-      out.push(NOTE('This season has its own antiphons, chapters and responsories in the Proper of the Season; until they are added, those of the Psalter are shown.'));
-    if (hour === 'prima') {
-      var penitSun = sun && /septuagesima|cineres|quadragesima|passio/.test(s);
-      var key = penitSun ? 'penit_1' : base + '_' + (sun ? 1 : 0);
-      (O.prime[key] || O.prime['annum_' + (sun ? 1 : 0)]).forEach(function (it) {
-        if (it.t === 'proper') { out.push(NOTE('Antiphon: the first antiphon of Lauds of the Sunday (Proper of the Season).')); return; }
-        if (base === 'passio' && it.t === 'resp') return;          // ℟. Jesu Christe not said from Passion Sunday to Low Sunday
-        if (it.t === 'ps' && it.ref === 'QUICUMQUE') { out.push({t: 'quicumque'}); return; }
-        if (it.t === 'or' && /In hac hora|Dómine Deus omnípotens/.test(it.la)) { out.push(it); return; }
-        out.push(it.ref && !it.t ? ord(it.ref) : it);
-      });
-      return out.map(function (it) { return adapt(it, info); });
-    }
-    // Terce, Sext, None
-    var L = O.little[hour][base] || O.little[hour].annum, part = (sun ? L.sun : L.fer) || {};
-    var pick = function (k) { return (part && part[k] !== undefined) ? part[k] : L[k]; };
-    var names = {tertia: 'Ad Tertiam', sexta: 'Ad Sextam', nona: 'Ad Nonam'};
-    out.push({t: 'h', la: names[hour]}, NOTE('Pater noster and Ave María are said silently.'), ord('Deus in adjutorium'), O.littleHymns[hour]);
-    O.littlePsalms[hour].forEach(function (p) { out.push({t: 'ps', ref: p[0], title: 'Psalmus 118 · ' + p[1]}); });
-    var ant = pick('ant');
-    if (ant) out.push(ant);
-    else out.push(NOTE('Antiphon: from Lauds of the Sunday (' + {tertia: 'the second', sexta: 'the third', nona: 'the fifth'}[hour] + ' antiphon), in the Proper of the Season.'));
-    var ch = pick('chap'); if (ch) out.push(ch);
-    var rs = pick('resp'); if (rs) out.push(rs); else if (base === 'quadragesima' || base === 'passio') out.push(NOTE('Responsory and versicle of the Sunday.'));
-    var vs = pick('vers'); if (vs) out.push(vs);
-    if (!sun && base !== 'pascha') {
-      var sat = d.getDay() === 6;
-      if (!(sat && hour === 'nona')) out.push(ord('Kyrie preces'));
-    }
-    out.push(ord('Dominus vobiscum'), ord('Oremus'), collectItem(info), ord('Dominus vobiscum'), ord('Benedicamus'));
-    return out.map(function (it) { return adapt(it, info); });
-  }
-
-  // ---------- drawing ----------
-  function pair(la, en, cls) {
-    return el('div', {class: 'o-pair ' + (cls || '')}, [el('p', {class: 'o-la', html: mark(la)}), el('p', {class: 'o-en', html: mark(en || '')})]);
-  }
-  // red ℣. ℟. ✠ * and rubrics in [brackets]
-  function mark(s) {
-    return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;')
-      .replace(/(℣\.|℟\.|✠|\*|†)/g, '<span class="r">$1</span>')
-      .replace(/\[([^\]]+)\]/g, '<span class="rub">$1</span>');
-  }
-  function drawPsalm(box, it, info) {
-    var head = el('h4', {class: 'o-ps-head'}, [it.title || ('Psalmus ' + it.ref.replace(/^Psalmi\s+/, '')), it.en_title ? el('span', {class: 'o-en-t', text: ' ' + it.en_title}) : null]);
-    var body = el('div', {class: 'o-psalm'});
-    box.appendChild(el('section', {class: 'o-item o-ps'}, [head, body]));
-    var b = bookOf(it.ref);
-    Promise.all([book('la', b), book('en', b)]).then(function (r) {
-      var la = r[0], en = r[1], vs = verses(it.ref, la);
-      // drop the psalm's title (verse 1 when it is a heading such as "Psalmus David")
-      if (/^Psalmi/.test(b) && !/:/.test(it.ref) && vs.length && /^(In finem|Psalmus|Psalmi|Canticum|Intellectus|Oratio|Alleluja|Allel[uú]ia|David|Ipsi David|Huic David|Laus cantici|Pro|Ad|Titulus|Confessio|In|Hymnus)\b/.test(la[vs[0].join(':')] || '') && (la[vs[0].join(':')] || '').length < 160 && it.keepTitle !== true) {
-        if (!/[a-z]\s*:\s/.test((la[vs[0].join(':')] || '').slice(0, 60)) || /Psalmus|psalmus|Canticum|Intellectus/.test(la[vs[0].join(':')])) vs.shift();
-      }
-      vs.forEach(function (cv) { body.appendChild(pair(la[cv.join(':')], en[cv.join(':')], 'o-verse')); });
-      if (it.gloria !== false && !info.noGloria) body.appendChild(pair(ord('Gloria Patri').la, ord('Gloria Patri').en, 'o-verse o-gp'));
-    });
-  }
-  function drawItem(box, it, info) {
-    if (!it) return;
-    switch (it.t) {
-      case 'h': box.appendChild(el('h3', {class: 'o-h', text: it.la})); break;
-      case 'rub': box.appendChild(el('p', {class: 'o-rubric', text: it.en || it.la})); break;
-      case 'ps': drawPsalm(box, it, info); break;
-      case 'quicumque':
-        var qb = el('section', {class: 'o-item o-ps'}, [el('h4', {class: 'o-ps-head', text: 'Symbolum S. Athanasii · Quicumque'})]);
-        (O.quicumque || []).forEach(function (v) { qb.appendChild(pair(v[0], v[1], 'o-verse')); });
-        qb.appendChild(pair(ord('Gloria Patri').la, ord('Gloria Patri').en, 'o-verse o-gp'));
-        box.appendChild(qb); break;
-      case 'hymn':
-        var hb = el('section', {class: 'o-item o-hymn'}, [el('h4', {text: 'Hymnus' + (it.name ? ' · ' + it.name : '')})]);
-        (it.la || []).forEach(function (st, i) { hb.appendChild(pair(st, (it.en || [])[i] || '', 'o-stanza')); });
-        box.appendChild(hb); break;
-      default:
-        var lab = {ant: 'Ant.', chap: 'Capitulum', or: 'Oratio', inv: 'Invitatorium', lect: 'Lectio', resp: '℟. br.'}[it.t];
-        var sec = el('section', {class: 'o-item o-' + (it.t || 'txt')});
-        if (lab && it.t !== 'ant') sec.appendChild(el('h4', {text: lab + (it.ref ? ' · ' + it.ref : '')}));
-        sec.appendChild(pair((it.t === 'ant' ? '<b>Ant.</b> ' : '') + it.la, (it.t === 'ant' ? 'Ant. ' : '') + (it.en || '')));
-        if (it.t === 'ant') sec.querySelector('.o-la').innerHTML = '<span class="r">Ant.</span> ' + mark(it.la);
-        box.appendChild(sec);
-    }
-  }
-  function drawHour(hour) {
-    state.hour = hour;
-    var info = dayInfo(state.date), box = $('#office');
-    box.innerHTML = '';
-    var h = HOURS.filter(function (x) { return x[0] === hour; })[0];
-    box.appendChild(el('header', {class: 'o-head'}, [
-      el('h2', {text: h[1]}), el('p', {class: 'o-sub', text: h[2] + ' · ' + DOW_LA[info.dow] + ' · ' + (info.title.replace(/^.*?—\s*/, '') || '')})]));
-    hourItems(hour, info).forEach(function (it) { if (it && it.t === 'h' && it.la === h[1]) return; drawItem(box, it, info); });
-    document.querySelectorAll('#hours button').forEach(function (b) { b.classList.toggle('on', b.dataset.h === hour); });
-    history.replaceState(null, '', '#' + hour + '&d=' + iso(state.date));
-  }
-  function iso(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
-  function fromIso(s) { var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
-  function defaultHour() {
+  // a sensible default hour for the time of day
+  function hourNow() {
     var h = new Date().getHours();
-    return h < 6 ? 'matutinum' : h < 8 ? 'laudes' : h < 9 ? 'prima' : h < 11 ? 'tertia' : h < 14 ? 'sexta' : h < 16 ? 'nona' : h < 20 ? 'vesperae' : 'completorium';
+    return h < 5 ? 'Matutinum' : h < 8 ? 'Laudes' : h < 9 ? 'Prima' : h < 11 ? 'Tertia' : h < 14 ? 'Sexta'
+      : h < 16 ? 'Nona' : h < 20 ? 'Vespera' : 'Completorium';
   }
-  function setDate(d) {
-    state.date = d;
-    $('#date').value = iso(d);
-    var info = dayInfo(d);
-    $('#dayTitle').textContent = info.title.replace(/^.*?—\s*/, '') || DOW_LA[d.getDay()];
-    $('#dayMeta').textContent = DOW_LA[d.getDay()] + ' · ' + d.toLocaleDateString('en-GB', {day: 'numeric', month: 'long', year: 'numeric'}) + ' · ' + (info.cls ? ['', 'I', 'II', 'III', 'IV'][info.cls] + ' class' : '');
-    drawHour(state.hour || defaultHour());
+
+  // ---------- markup ----------
+  var TAGS = {r: '<span class="r">', c: '<span class="r ini">', n: '<span class="r vn">', k: '<span class="k">', h: '<span class="r">'};
+  function fmt(line) {
+    var s = esc(line).replace(/&lt;(\/?)([rcnkh])&gt;/g, function (m, close, t) { return close ? '</span>' : TAGS[t]; });
+    return s.replace(/([✠✙])/g, '<span class="r">$1</span>').replace(/ \* /g, ' <span class="r">*</span> ')
+      .replace(/ † /g, ' <span class="r">†</span> ').replace(/ \+ /g, ' <span class="r">✠</span> ');
   }
+  function blockText(id, day) { return (day.b && day.b[id]) || (common && common[id]) || ''; }
+  function expand(text) {
+    return text.split('\n').map(function (l) {
+      if (l.charAt(0) !== '§') return l;
+      var k = l.slice(1), sh = shards[k.slice(0, 2)] || {};
+      return sh[k] || '';
+    }).join('\n').split('\n');
+  }
+  function neededShards(day) {
+    var need = {};
+    Object.keys(day.h).forEach(function (h) {
+      day.h[h].forEach(function (row) {
+        row.forEach(function (id) {
+          blockText(id, day).replace(/^§(\d\d)\./gm, function (m, s) { need[s] = 1; return m; });
+        });
+      });
+    });
+    return Object.keys(need);
+  }
+
+  // a cell: its heading (the first <h> line) and its body lines
+  function cell(id, day) {
+    var lines = id ? expand(blockText(id, day)) : [], head = '';
+    if (lines.length && /^<h>/.test(lines[0])) head = lines.shift().replace(/<\/?h>/g, '').trim();
+    while (lines.length && !lines[0].trim()) lines.shift();
+    return {head: head, lines: lines};
+  }
+
+  function lineClass(l) {
+    if (/^<n>\d+:\d+/.test(l)) return 'o-l vs';
+    if (/^<r>[^<]*<\/r>$/.test(l)) return 'o-l rub';
+    return 'o-l';
+  }
+  function drawLine(l) {
+    if (!l.trim()) return '<div class="o-gap"></div>';
+    return '<div class="' + lineClass(l) + '">' + fmt(l) + '</div>';
+  }
+
+  function drawRow(row, day) {
+    var la = cell(row[0], day), en = cell(row[1], day), lang = state.lang, html = '';
+    var same = en.lines.join('\n') === la.lines.join('\n');
+    if (la.head || en.head) {
+      html += '<h3 class="o-h">' + esc(lang === 'en' ? (en.head || la.head) : (la.head || en.head)) +
+        (lang === 'both' && en.head && la.head && en.head !== la.head ? ' <span class="o-h-en">' + esc(en.head) + '</span>' : '') + '</h3>';
+    }
+    if (lang === 'la' || !en.lines.length || same) {
+      html += '<div class="o-col">' + la.lines.map(drawLine).join('') + '</div>';
+    } else if (lang === 'en') {
+      html += '<div class="o-col">' + en.lines.map(drawLine).join('') + '</div>';
+    } else if (la.lines.length === en.lines.length) {
+      // line by line, so that each verse sits beside its translation
+      html += '<div class="o-lines">' + la.lines.map(function (l, i) {
+        var e = en.lines[i];
+        if (!l.trim() && !e.trim()) return '<div class="o-gap"></div>';
+        return '<div class="o-lp ' + lineClass(l) + '"><div class="o-la">' + fmt(l) + '</div><div class="o-en">' + fmt(e) + '</div></div>';
+      }).join('') + '</div>';
+    } else {
+      html += '<div class="o-pair"><div class="o-la">' + la.lines.map(drawLine).join('') +
+        '</div><div class="o-en">' + en.lines.map(drawLine).join('') + '</div></div>';
+    }
+    return '<section class="o-sec">' + html + '</section>';
+  }
+
+  function titleOf(day, hour) {
+    var t = (hour === 'Vespera' || hour === 'Completorium') && day.tv && day.tv.length ? day.tv : day.t;
+    return (t && t[0]) || '';
+  }
+
+  function draw() {
+    var main = $('#office'), d = state.date, key = iso(d);
+    $('#date').value = key;
+    drawHours();
+    if (range && (key < range.from || key > range.to)) {
+      main.innerHTML = '<p class="o-msg">The Office is ready for every day from ' + range.from + ' to ' + range.to + '. This date is outside that range for now.</p>';
+      $('#dayTitle').textContent = ''; $('#dayMeta').textContent = d.toDateString();
+      return;
+    }
+    main.innerHTML = '<p class="o-msg">…</p>';
+    Promise.all([getJSON(BASE + key.slice(0, 4) + '/' + key.slice(5) + '.json'), common ? null : getJSON(BASE + 'common.json')])
+      .then(function (r) {
+        var day = r[0];
+        if (r[1]) common = r[1];
+        return Promise.all(neededShards(day).filter(function (s) { return !shards[s]; }).map(function (s) {
+          return getJSON(BASE + 'psalter/' + s + '.json').then(function (j) { shards[s] = j; });
+        })).then(function () { return day; });
+      })
+      .then(function (day) {
+        if (iso(state.date) !== key) return;
+        var hour = state.hour, h = HOURS.filter(function (x) { return x[0] === hour; })[0];
+        var full = titleOf(day, hour), t = full.split(' ~ ');
+        $('#dayTitle').textContent = t[0];
+        $('#dayMeta').textContent = (t[1] ? t[1] + ' · ' : '') + d.toLocaleDateString('en-GB', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'});
+        var rows = day.h[hour] || [];
+        main.innerHTML = '<header class="o-head"><h2>' + esc(h[1]) + '</h2><p class="o-sub">' + esc(h[2]) + ' · ' + esc(t[0]) + '</p></header>' +
+          rows.map(function (row) { return drawRow(row, day); }).join('') +
+          '<p class="o-src">Text from Divinum Officium, <i>Ordo Praedicatorum – 1962</i> (MIT licence), following the Breviarium S.O.P. (1962). English is Divinum Officium’s; where a Dominican text has no English yet, the Latin stands alone.</p>';
+        document.title = h[2] + ' — ' + t[0];
+      })
+      .catch(function () {
+        main.innerHTML = '<p class="o-msg">The Office for this day could not be loaded. If you are offline, open the day once while online to keep it.</p>';
+      });
+  }
+
+  function drawHours() {
+    $('#hours').innerHTML = HOURS.map(function (h) {
+      var on = h[0] === state.hour;
+      return '<button type="button" role="tab" data-h="' + h[0] + '" aria-selected="' + on + '"' + (on ? ' class="on"' : '') + '>' + h[2] + '</button>';
+    }).join('');
+    var lb = $('#langs');
+    if (lb) Array.prototype.forEach.call(lb.querySelectorAll('button'), function (b) {
+      var on = b.getAttribute('data-l') === state.lang;
+      b.classList.toggle('on', on); b.setAttribute('aria-pressed', on);
+    });
+  }
+
+  function setHash() {
+    var h = '#' + state.hour + '&d=' + iso(state.date);
+    if (location.hash !== h) history.replaceState(null, '', h);
+  }
+  function go() { setHash(); draw(); window.scrollTo(0, 0); }
+
+  function readHash() {
+    var m = /^#(\w+)(?:&d=(\d{4}-\d\d-\d\d))?/.exec(location.hash);
+    state.hour = m && HOURS.some(function (h) { return h[0] === m[1]; }) ? m[1] : hourNow();
+    state.date = (m && parseIso(m[2])) || new Date(new Date().setHours(0, 0, 0, 0));
+  }
+
   function start() {
-    var nav = $('#hours');
-    HOURS.forEach(function (h) { nav.appendChild(el('button', {type: 'button', 'data-h': h[0], text: h[2], onclick: function () { drawHour(h[0]); }})); });
-    $('#date').addEventListener('change', function (e) { if (e.target.value) setDate(fromIso(e.target.value)); });
-    $('#prevDay').addEventListener('click', function () { var d = new Date(state.date); d.setDate(d.getDate() - 1); setDate(d); });
-    $('#nextDay').addEventListener('click', function () { var d = new Date(state.date); d.setDate(d.getDate() + 1); setDate(d); });
-    var m = location.hash.match(/^#(\w+)(?:&d=(\d{4}-\d\d-\d\d))?/);
-    if (m && HOURS.some(function (h) { return h[0] === m[1]; })) state.hour = m[1];
-    setDate(m && m[2] ? fromIso(m[2]) : new Date());
+    if (!$('#office')) return;
+    readHash();
+    $('#hours').addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      state.hour = b.getAttribute('data-h'); go();
+    });
+    var lb = $('#langs');
+    if (lb) lb.addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      state.lang = b.getAttribute('data-l');
+      try { localStorage.setItem('officeLang', state.lang); } catch (er) {}
+      draw();
+    });
+    $('#prevDay').addEventListener('click', function () { state.date = addDays(state.date, -1); go(); });
+    $('#nextDay').addEventListener('click', function () { state.date = addDays(state.date, 1); go(); });
+    $('#date').addEventListener('change', function () { var d = parseIso(this.value); if (d) { state.date = d; go(); } });
+    window.addEventListener('hashchange', function () { readHash(); draw(); });
+    getJSON(BASE + 'range.json').then(function (r) { range = r; }).catch(function () {}).then(function () { setHash(); draw(); });
   }
-  window.OfficeOP = {hourItems: hourItems, dayInfo: dayInfo, season: season, drawHour: drawHour};
+
+  window.OfficeOP = {iso: iso, state: function () { return state; }, cell: cell};
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();
