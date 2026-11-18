@@ -337,10 +337,26 @@
     if (d && d.getDay() === 0) return 2;
     if (/^Adv/.test(key) && d && d.getMonth() === 11 && d.getDate() >= 17) return 2;
     if (/^(Adv3[wfs]|EmbWedSept|EmbFriSept|EmbSatSept|Quad1[wfs]|Pent0)/.test(key)) return 2;
+    if (/^(7a|6a|5a)$/.test(key) && d && d.getDay() !== 0) return 4;   // ferias of Septuagesima to Quinquagesima week
+    if (key === 'AscVig') return 2;
     if (/^(5a|Quad)/.test(key)) return 3;
     return 4;
   }
-  function feastClass(key) { return {I: 1, II: 2, III: 3}[D.masses[key].rank] || 4; }
+  // vigils of the II class (rubrics of 1960): St John the Baptist, Sts Peter and Paul, the Assumption
+  var VIGIL_CLASS = {G494: 2, G502_3: 2, S0814: 2};
+  function feastClass(key) { return VIGIL_CLASS[key] || {I: 1, II: 2, III: 3}[D.masses[key].rank] || 4; }
+  // the Annunciation and St Joseph when impeded (rubrics of 1960, nn. 95-96): the Annunciation falling from Palm Sunday
+  // to Low Sunday goes to the Monday after Low Sunday; St Joseph falling in Holy Week goes to the Saturday before Palm
+  // Sunday; either falling on a Sunday of Lent goes to the Monday
+  function feastDate(key, y) {
+    var m = D.masses[key], d = new Date(y, m.month, m.day);
+    if (key !== 'S0325' && key !== 'S0319') return d;
+    var E = easter(y), f = diffDays(d, E);
+    if (key === 'S0325' && f >= -7 && f <= 7) return addDays(E, 8);
+    if (key === 'S0319' && f >= -7 && f <= -1) return addDays(E, -8);
+    if (d.getDay() === 0) return addDays(d, 1);
+    return d;
+  }
 
   // ---------------------------------------------------------------- rubrics of the Mass
   // Missale O.P. (1939), Rubricae generales: IX (Gloria), XIII (Gradual, Alleluia, Tract, Sequence),
@@ -1007,7 +1023,14 @@
     var feasts = [];
     D.sections.forEach(function (s) {
       if (s.id !== 'sanctorum') return;
-      s.items.forEach(function (k) { var m = D.masses[k]; if (m.month === d.getMonth() && m.day === d.getDate()) feasts.push(k); });
+      s.items.forEach(function (k) {
+        var m = D.masses[k];
+        if (k === 'S0325' || k === 'S0319') { if (diffDays(d, feastDate(k, d.getFullYear())) === 0) feasts.push(k); return; }
+        if (m.month === d.getMonth() && m.day === d.getDate()) {
+          if (VIGIL_CLASS[k] && d.getDay() === 0) return;      // a vigil falling on Sunday is omitted
+          feasts.push(k);
+        }
+      });
     });
     var beati = (D.sections.filter(function (s) { return s.id === 'beati'; })[0] || {items: []}).items
       .filter(function (k) { var m = D.masses[k]; return m.month === d.getMonth() && m.day === d.getDate(); });
@@ -1015,7 +1038,7 @@
     feasts.sort(function (a, b) { return feastClass(a) - feastClass(b); });
     var fk = feasts[0], fc = fk ? feastClass(fk) : 9;
     // the higher class wins; at equal class a Sunday or privileged feria wins, otherwise the feast
-    var lentFeria = tk && /^(5a|Quad)/.test(tk) && d.getDay() !== 0;
+    var lentFeria = tk && /^(5a.|Quad)/.test(tk) && d.getDay() !== 0;
     var win = !fk ? tk : (!tk ? fk : (fc >= 4 ? tk : (fc < tc ? fk : (tc < fc ? tk : (d.getDay() === 0 || tc <= 1 || lentFeria ? tk : fk)))));
     // a free Saturday outside Advent and Lent: the Mass of Our Lady on Saturday
     if (d.getDay() === 6 && win === tk && tc >= 4 && !/^(Adv|5a|Quad|7a|6a)/.test(tk || '') && D.masses.C79s) {
