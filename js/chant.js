@@ -39,6 +39,8 @@
 
   function prepare(gabc, keepTP) {
     if (!keepTP) gabc = stripTP(gabc);
+    // the Roman books print the psalm ending (E u o u a e) after the antiphon: the psalm tone is shown with the psalm itself
+    gabc = gabc.replace(/\s*E\([^)]*\)\s*u\([^)]*\)\s*o\([^)]*\)\s*u\([^)]*\)\s*a\([^)]*\)\s*e\.?\([^)]*\)(\s*\([:;,]*\))?/g, '');
     return gabc
       .replace(/<v>\\'y<\/v>/g, 'ý').replace(/<v>\\'Y<\/v>/g, 'Ý').replace(/<v>([A-Za-z])<\/v>/g, '$1')
       .replace(/<v>\\emph\{([^}]*)\}<\/v>/g, '<i>$1</i>')
@@ -99,6 +101,20 @@
       div.className = 'line';
       div.appendChild(svg);
       container.appendChild(div);
+      // the staff stops at the last sign instead of running empty to the margin
+      try {
+        Array.prototype.forEach.call(svg.querySelectorAll('.chantLine'), function (ln) {
+          var right = 0;
+          Array.prototype.forEach.call(ln.querySelectorAll(':scope > .ChantNotationElement'), function (el) {
+            var m = /translate\(([-\d.e]+)/.exec(el.getAttribute('transform') || ''), tx = m ? parseFloat(m[1]) : 0;
+            var nb = el.querySelector('.Notations') || el, bb = nb.getBBox();
+            if (bb.width) right = Math.max(right, tx + bb.x + bb.width);
+          });
+          if (right > 0) Array.prototype.forEach.call(ln.querySelectorAll('.staffLine'), function (sl) {
+            if (parseFloat(sl.getAttribute('x2')) > right + 1) sl.setAttribute('x2', right.toFixed(2));
+          });
+        });
+      } catch (e) {}
       try {
         var b = svg.getBBox(), vb = svg.getAttribute('viewBox').split(/\s+/).map(Number);
         var hh = (b.height > 0 && b.height < vb[3] * 2) ? b.height + 6 : vb[3] + 6;

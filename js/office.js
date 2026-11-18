@@ -200,18 +200,33 @@
           var pv = OPPsalm.pointVerse(el.getAttribute('data-t'), tone, {inton: first || cant, solemn: cant});
           var num = el.getAttribute('data-num') || '';
           if (first) {
+            // the first verse is sung from the notes, its translation beneath, as with the antiphon
             var row = el.classList.contains('o-la') ? el.parentNode : el;
-            var lab = document.createElement('div');
-            lab.className = 'o-tone';
-            lab.textContent = 'Tonus ' + tone.name.replace('IVA', 'IV') + (tone.diff ? ' ' + tone.diff : '');
+            var tname = 'Tonus ' + tone.name.replace('IVA', 'IV') + (tone.diff ? ' ' + tone.diff : '');
+            var prev = row.previousElementSibling, ph = prev && (prev.querySelector('.o-la') || prev);
+            if (ph && /^(Psalmus|Canticum)/.test(ph.textContent.trim()) && !ph.querySelector('.o-tone')) {
+              ph.insertAdjacentHTML('beforeend', ' <span class="o-tone">' + tname + '</span>');
+            } else {
+              var lab = document.createElement('div');
+              lab.className = 'o-tone o-tone-b';
+              lab.textContent = tname;
+              row.parentNode.insertBefore(lab, row);
+            }
             var box = document.createElement('div');
             box.className = 'chant o-chant';
-            row.parentNode.insertBefore(lab, row);
             row.parentNode.insertBefore(box, row);
+            var en = row.querySelector('.o-en');
+            if (en && en !== el) {
+              var tr = document.createElement('div');
+              tr.className = 'o-tr';
+              tr.innerHTML = en.innerHTML;
+              row.parentNode.insertBefore(tr, row);
+            }
+            row.style.display = 'none';
             OPChant.render(box, OPPsalm.verseGabc(pv, tone), {dropCap: false, keepTP: true});
+            return;
           }
-          // the first verse is read from the notes above; the others are pointed
-          el.innerHTML = first ? num : (num ? num + ' ' : '') + OPPsalm.verseHtml(pv, esc);
+          el.innerHTML = (num ? fmt(num) + ' ' : '') + OPPsalm.verseHtml(pv, esc);
           el.classList.add('o-pointed');
         });
       }).catch(function () {});

@@ -154,10 +154,12 @@ button { cursor: pointer; }
 .o-l { margin: 0 0 3px; }
 .o-chant { margin: 6px 0 2px; }
 .o-note { color: var(--muted); font-size: .8em; font-style: italic; margin: -2px 0 8px; }
-.o-tone { color: var(--rubric, #b3121f); font-style: italic; font-size: .9em; margin: 8px 0 0; }
-.o-pointed b { font-weight: 600; }
+.o-tone { color: var(--rubric, #b3121f); font-style: italic; font-size: .85em; margin-left: .6em; opacity: .85; }
+.o-tone-b { display: block; margin: 8px 0 0; }
+.o-pointed b { font-weight: inherit; color: var(--rubric, #b3121f); }
 .o-pointed i { font-style: italic; }
-.o-tr { color: var(--muted); font-size: .95em; font-style: italic; margin: 0 0 12px; }
+.o-tr { color: var(--muted); font-size: .95em; font-style: italic; margin: 0 0 14px; }
+.o-tr .r.vn { font-style: normal; }
 .o-lp { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 0 0 3px; }
 .o-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .o-lp .o-en, .o-pair .o-en { color: var(--muted); font-size: .95em; }
