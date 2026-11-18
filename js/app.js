@@ -690,6 +690,7 @@
         else if (x === 'canon') { od('canon'); od('pater'); ord('ag'); od('communion'); }
         else if (x === 'dismiss') { if (O === 'low') od('dismiss'); else q.push({t: 'ord', k: 'it'}); }
         else if (x === 'endNoGospel') od('endNoGospel');
+        else if (x === 'canonNoAg') { od('canon'); od('pater'); od('communion'); }
         else od(x);
       };
       HT.forEach(function (sec, n) {

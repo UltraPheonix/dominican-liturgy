@@ -32,6 +32,6 @@ Latin j -> i (site style). English: 1959 missal's where the text is the same, ot
   R "Post Kyrie eléison, non dicatur" + "Dóminus vobíscum, sed Orémus. Flectámus génua. Leváte." DM English in dm_wed.json.
 
 ## To do
-- 1939: Holy Saturday (179-191) remains. Good Friday done (Quad6f.src + Quad6f_b/c/d.src; joannes_parts/en).
+- 1939: all seven days transcribed (Holy Saturday via mksat.py). Next: Palm Sunday procession from Processionarium O.P. 1913 (/home/claude/dl/proc, pdf pp. 35-48 = book pp. 20-33), Triduum chants from Ecclesiasticum Officium Triduo ante Pascha 1927 (/home/claude/dl/tri), then proofreading, then 1959.
 - 1959: all seven days from the St Dominic Missal (*_59.src); until then the 1959 option shows the old data/holyweek.js.
 - Palm Sunday X: markers; check chants exist for every C: (parts in data/masses.js).
