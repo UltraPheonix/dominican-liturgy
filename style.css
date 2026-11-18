@@ -287,3 +287,20 @@ button { cursor: pointer; }
 .part.hw details.hw-fold[open] > summary::after { content: 'Close ▴'; }
 
 /* Holy Week as printed */
+
+/* English: on tap (default), with the Latin, or alone — js/ui.js */
+body.en-tap .o-en, body.en-tap .o-tr, body.en-tap .r-cols > .en-text, body.en-tap .m-tr { display: none; }
+body.en-tap .show-en .o-en, body.en-tap .show-en .o-tr, body.en-tap .show-en.r-cols > .en-text, body.en-tap .show-en .r-cols > .en-text, body.en-tap .show-en .m-tr { display: block; }
+body.en-tap .o-lp, body.en-tap .o-pair, body.en-tap .r-cols { grid-template-columns: 1fr !important; display: block; }
+body.en-tap .o-lp, body.en-tap .o-pair, body.en-tap .r-cols, body.en-tap .o-sec { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+body.en-tap .show-en .o-en, body.en-tap .show-en .o-tr, body.en-tap .show-en .en-text, body.en-tap .show-en .m-tr { animation: en-in .18s ease-out; }
+@keyframes en-in { from { opacity: 0; } to { opacity: 1; } }
+body.en-only .o-lp > .o-la, body.en-only .o-pair > .o-la, body.en-only .r-cols > .la { display: none; }
+body.en-only .o-lp, body.en-only .o-pair, body.en-only .r-cols { grid-template-columns: 1fr !important; }
+body.en-only .o-lp > .o-en, body.en-only .o-pair > .o-en, body.en-only .r-cols > .en-text { color: var(--ink); font-size: 1em; }
+.tap-hint { font-style: italic; color: var(--muted); font-size: 14px; margin: 4px 0 0; }
+body:not(.en-tap) .tap-hint { display: none; }
+.m-tr { color: var(--muted); font-size: 16px; font-style: italic; margin: 6px 0 4px; line-height: 1.5; }
+.m-tr .r { color: var(--rubric); font-style: normal; }
+.part.hw.hw-cont { border-top: 0; margin-top: 0; padding-top: 0; }
+.part.hw .hw-l .hw-ref { font-family: var(--serif, inherit); letter-spacing: 0; text-transform: none; font-variant: normal; font-size: .9em; }

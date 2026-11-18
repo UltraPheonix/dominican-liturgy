@@ -33,8 +33,9 @@
     <div class="ctl">
       <div id="hours" class="hours" role="tablist" aria-label="Hours"></div>
       <div id="langs" class="ctl-row" role="group" aria-label="Language">
-        <button type="button" class="sbtn" data-l="both">Both</button><button type="button" class="sbtn" data-l="la">Latin</button><button type="button" class="sbtn" data-l="en">English</button>
+        <button type="button" class="sbtn" data-l="tap">Latin</button><button type="button" class="sbtn" data-l="both">Latin &amp; English</button><button type="button" class="sbtn" data-l="en">English</button>
       </div>
+      <p class="tap-hint">Tap any Latin passage to show its English.</p>
       <label class="switch"><input type="checkbox" id="chant"> Chant (Antiphonarium O.P.)</label>
       <label class="switch"><input type="checkbox" id="priest"> A priest or deacon presides</label>
       <input type="date" id="date" class="visually-hidden" tabindex="-1" aria-hidden="true">
@@ -58,6 +59,7 @@
   <script src="js/chant.js" defer></script>
   <script src="js/psalm.js" defer></script>
   <script src="js/tones.js" defer></script>
+  <script src="js/ui.js"></script>
   <script src="js/cal.js"></script>
   <script src="js/office.js"></script>
 </body>

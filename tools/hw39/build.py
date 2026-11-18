@@ -17,8 +17,17 @@ def speakers(s):
     s = re.sub(r'(?<![{\w])([CS✠*])(?=\s)', r'{\1}', s)
     return s
 
+def readsrc(path):
+    out = []
+    for raw in open(path, encoding='utf8').read().split('\n'):
+        if raw.startswith('INC: '):
+            out += readsrc(os.path.join(HERE, raw[5:].strip() + '.src'))
+        else:
+            out.append(raw)
+    return out
+
 def parse(path, lang_i=True):
-    lines = open(path, encoding='utf8').read().split('\n')
+    lines = readsrc(path)
     out, stack = [], []
     cur = None
     def target():
@@ -38,6 +47,9 @@ def parse(path, lang_i=True):
             la, en = [x.strip() for x in body.split('|')]
             f = {'t': 'F', 'la': latin_i(la), 'en': en, 'blocks': []}
             target().append(f); stack.append(f); continue
+        if tag == 'X':
+            for x in body.split(','): target().append({'t': 'X', 'x': x.strip()})
+            continue
         if tag == 'C':
             p, i = body.split(); target().append({'t': 'C', 'p': p, 'i': int(i)}); continue
         if tag == 'P':
@@ -66,15 +78,19 @@ def check(blocks, where=''):
                 raise SystemExit('unbalanced markup: ' + v[:80])
 
 PAGES = {'Quad6': '137–146', 'Quad6m': '146–148', 'Quad6t': '148–154', 'Quad6w': '154–160', 'Quad6h': '160–166', 'Quad6f': '166–179', 'Quad6s': '179–191'}
+PAGES59 = {}
 data = {'1939': {}}
-for day in ['Quad6', 'Quad6m', 'Quad6t', 'Quad6w', 'Quad6h', 'Quad6f', 'Quad6s']:
-    p = os.path.join(HERE, day + '.src')
+data['1959'] = {}
+for rite, suf in (('1939', ''), ('1959', '_59')):
+  for day in ['Quad6', 'Quad6m', 'Quad6t', 'Quad6w', 'Quad6h', 'Quad6f', 'Quad6s']:
+    p = os.path.join(HERE, day + suf + '.src')
     if os.path.exists(p):
         secs = parse(p)
         for s in secs: check(s['blocks'])
-        secs[0]['src'] = 'Missale Ordinis Prædicatorum (1939), pp. ' + PAGES[day]
-        data['1939'][day] = secs
+        if rite == '1939': secs[0]['src'] = 'Missale Ordinis Prædicatorum (1939), pp. ' + PAGES[day]
+        else: secs[0]['src'] = 'St Dominic Missal (1959), pp. ' + PAGES59.get(day, '')
+        data[rite][day] = secs
 open(os.path.join(SITE, 'data/holyweek_text.js'), 'w', encoding='utf8').write(
-    '// Holy Week transcribed from the Missale O.P. (1939), as printed (Latin j written i). Built by tools/hw39/build.py.\n'
+    '// Holy Week transcribed as printed: Missale O.P. (1939) and St Dominic Missal (1959) (Latin j written i). Built by tools/hw39/build.py.\n'
     'window.HW_TEXT = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
-print({d: sum(len(s['blocks']) for s in v) for d, v in data['1939'].items()})
+print({r: {d: sum(len(s['blocks']) for s in v) for d, v in data[r].items()} for r in data})

@@ -74,7 +74,7 @@
     bits.forEach(function (b) {
       var kv = b.split('=');
       if (PARTS.indexOf(kv[0]) >= 0) out.over[kv[0]] = kv[1] ? kv[1].split(',').map(function (x) { return /^\d+$/.test(x) ? Number(x) : x; }) : [];
-      else if (['d', 'season', 'ord', 'credo', 'asp'].indexOf(kv[0]) >= 0) out.opts[kv[0]] = kv[1] || '';
+      else if (['d', 'season', 'ord', 'credo', 'asp', 'ordo', 'hw'].indexOf(kv[0]) >= 0) out.opts[kv[0]] = kv[1] || '';
     });
     return out;
   }
@@ -665,18 +665,7 @@
   // the order of the Mass: Introit, Kyrie, Gloria; the lessons, each followed by its gradual; after the Epistle
   // the Gradual, Alleluia or Tract and Sequence; the Gospel; Credo; Offertory; Sanctus, Agnus Dei; Communion; dismissal
   function massSequence(m, parts) {
-    // Holy Week: the rite transcribed exactly as the chosen book prints it
     var HT = window.HW_TEXT && HW_TEXT[state.hwr] && HW_TEXT[state.hwr][state.key];
-    if (HT) return HT.map(function (sec, n) { return {t: 'hwtext', s: sec, n: n}; });
-    if (state.hwr === '1939' && /^Quad6/.test(state.key)) {
-      var hq = [{t: 'hwnote'}];
-      ['pr', 'in', 'gr', 'al', 'tr', 'se', 'ad', 'of', 'co', 'an'].forEach(function (p) {
-        (parts[p] || []).forEach(function (c, i) { hq.push({t: 'chant', p: p, i: i, c: c}); });
-      });
-      return hq;
-    }
-    var HW = window.HOLYWEEK && HOLYWEEK[state.key];
-    var rs = seasonalReadings(state.key, state.date) || (HW && HW.readings) || m.readings || [], pre = rs.filter(function (r) { return r.type !== 'Gospel'; }), gos = rs.filter(function (r) { return r.type === 'Gospel'; });
     var HW0 = window.HOLYWEEK && HOLYWEEK[state.key], skip = (HW0 && HW0.skipChants) || [];
     var q = [], ch = function (p) { (parts[p] || []).forEach(function (c, i) { if (skip.indexOf(c.id) < 0) q.push({t: 'chant', p: p, i: i, c: c}); }); };
     var take = function (p, i) { var c = (parts[p] || [])[i]; if (c) q.push({t: 'chant', p: p, i: i, c: c}); };
@@ -689,6 +678,37 @@
       if (O === 'low') { if (k === 'ky' || (k === 'gl' && R.gloria) || (k === 'cr' && R.credo) || k === 'sa' || (k === 'ag' && !m.noAgnus)) q.push({t: 'ordo', k: k + 'Low'}); }
       else q.push({t: 'ord', k: k});
     };
+    if (HT) {
+      // Holy Week: the rite transcribed exactly as the chosen book prints it; the Ordinary and the
+      // Order of Mass go where the book's markers (X) say
+      var X = function (x) {
+        if (x === 'start') { if (O === 'low') od('chalice'); od('foot'); }
+        else if (/^(ky|gl|cr|sa|ag)$/.test(x)) { if (!(x === 'ag' && m.noAgnus)) ord(x); }
+        else if (x === 'gradualEnd') { if (O && O !== 'low') od('chalice'); }
+        else if (x === 'offer') od('offerDial');
+        else if (x === 'pref') q.push({t: 'pref'});
+        else if (x === 'canon') { od('canon'); od('pater'); ord('ag'); od('communion'); }
+        else if (x === 'dismiss') { if (O === 'low') od('dismiss'); else q.push({t: 'ord', k: 'it'}); }
+        else if (x === 'endNoGospel') od('endNoGospel');
+        else od(x);
+      };
+      HT.forEach(function (sec, n) {
+        var chunk = [], started = false;
+        var flush = function () {
+          if (!chunk.length) return;
+          q.push({t: 'hwtext', s: {la: sec.la, en: sec.en, src: sec.src, blocks: chunk, cont: started}, n: n});
+          started = true; chunk = [];
+        };
+        sec.blocks.forEach(function (b) { if (b.t === 'X') { flush(); X(b.x); } else chunk.push(b); });
+        flush();
+      });
+      return q;
+    }
+    if (state.hwr === '1939' && /^Quad6/.test(state.key)) {
+      q.push({t: 'hwnote'});
+      ['pr', 'in', 'gr', 'al', 'tr', 'se', 'ad', 'of', 'co', 'an'].forEach(function (p) { (parts[p] || []).forEach(function (c, i) { q.push({t: 'chant', p: p, i: i, c: c}); }); });
+      return q;
+    }
     var hw = function (at) { if (HW) HW.sections.forEach(function (s, i) { if (s.at === at) q.push({t: 'hw', s: s}); }); };
     hw('start'); ch('pr'); hw('afterPr');
     if (O === 'low' && !m.prophecies) od('chalice');
@@ -915,15 +935,20 @@
         return;
       }
       var R = b.t === 'R', cls = {H: 'hw-h', I: 'hw-i', L: 'hw-l', R: 'hw-r', T: 'hw-t'}[b.t];
+      if (b.t === 'L') {
+        var lab = function (s) { var p = s.split(' | '); return [p[0], p[1] ? el('span', {class: 'hw-ref', text: ' ' + p[1]}) : null]; };
+        into.appendChild(el('div', {class: 'r-cols o-line hw-l'}, [el('p', {class: 'la', lang: 'la'}, lab(b.la)), el('p', {class: 'en-text', lang: 'en'}, lab(b.en || ''))]));
+        return;
+      }
       into.appendChild(el('div', {class: 'r-cols o-line ' + cls}, [
         el('p', {class: 'la', lang: 'la'}, hwInline(b.la, R)),
         el('p', {class: 'en-text', lang: 'en'}, hwInline(b.en || '', R))]));
     });
   }
   function drawHwText(sec, n) {
-    var box = el('section', {class: 'part ordo hw', 'data-part': 'hw'});
-    box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: sec.la}), el('span', {class: 'incipit', text: sec.en})]));
-    if (n === 0 && sec.src) box.appendChild(el('p', {class: 'meta hw-src', text: sec.src}));
+    var box = el('section', {class: 'part ordo hw' + (sec.cont ? ' hw-cont' : ''), 'data-part': 'hw'});
+    if (!sec.cont) box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: sec.la}), el('span', {class: 'incipit', text: sec.en})]));
+    if (n === 0 && !sec.cont && sec.src) box.appendChild(el('p', {class: 'meta hw-src', text: sec.src}));
     hwBlocks(sec.blocks, box);
     return box;
   }
@@ -1041,6 +1066,8 @@
     slot.appendChild(head);
     slot.appendChild(el('h2', {class: 'print-only', text: PART_NAME[part]}));
     slot.appendChild(chantBox);
+    var trc = c.id && (D.trans[c.id] || D.trans[String(c.id)]);
+    if (trc && trc.t) { slot.classList.add('m-pair'); slot.appendChild(el('div', {class: 'm-tr hide-print', text: trimTPText(trc.t)})); }
     slot.appendChild(editor);
     if (state.edit) slot.appendChild(el('p', {class: 'meta hide-print'}, [info]));
     sel.addEventListener('change', function () {
@@ -1356,6 +1383,9 @@
     $('#selCredo').addEventListener('change', function (e) { state.credo = e.target.value; drawMass(); writeHash(); });
     $('#selAsp').addEventListener('change', function (e) { state.asp = e.target.value; drawMass(); writeHash(); });
     $('#selOrdo').addEventListener('change', function (e) { state.ordo = e.target.value; drawMass(); writeHash(); });
+    var lb = $('#langs');
+    function markLang() { Array.prototype.forEach.call(lb.querySelectorAll('button'), function (b) { var on = b.getAttribute('data-l') === OPLang.get(); b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); }); }
+    if (lb && window.OPLang) { markLang(); lb.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; OPLang.set(b.getAttribute('data-l')); markLang(); }); }
     $('#selHw').addEventListener('change', function (e) { state.hwr = e.target.value; drawMass(); writeHash(); });
     $('#btnChoir').addEventListener('click', function () { printAs('choir'); });
     $('#btnCong').addEventListener('click', function () { printAs('congregation'); });

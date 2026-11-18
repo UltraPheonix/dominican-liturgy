@@ -16,7 +16,7 @@
   var chantMap = null;
 
   try {
-    state.lang = localStorage.getItem('officeLang') || 'both';
+    state.lang = window.OPLang && OPLang.get() === 'en' ? 'en' : 'both';
     state.priest = localStorage.getItem('officePriest') === '1';
     state.chant = localStorage.getItem('officeChant') === '1';
   } catch (e) {}
@@ -367,7 +367,7 @@
     }).join('');
     var lb = $('#langs');
     if (lb) Array.prototype.forEach.call(lb.querySelectorAll('button'), function (b) {
-      var on = b.getAttribute('data-l') === state.lang;
+      var on = b.getAttribute('data-l') === (window.OPLang ? OPLang.get() : 'tap');
       b.classList.toggle('on', on); b.setAttribute('aria-pressed', on);
     });
     var pr = $('#priest');
@@ -398,8 +398,9 @@
     var lb = $('#langs');
     if (lb) lb.addEventListener('click', function (e) {
       var b = e.target.closest('button'); if (!b) return;
-      state.lang = b.getAttribute('data-l');
-      try { localStorage.setItem('officeLang', state.lang); } catch (er) {}
+      var m = b.getAttribute('data-l');
+      if (window.OPLang) OPLang.set(m);
+      state.lang = m === 'en' ? 'en' : 'both';
       draw();
     });
     var pr = $('#priest');

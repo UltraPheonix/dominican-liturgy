@@ -1,0 +1,67 @@
+# Missale O.P. (1939), pp. 148–154: Feria tertia Hebdomadæ Sanctæ.
+== Ad Missam | The Mass
+H: FERIA TERTIA
+ = TUESDAY IN HOLY WEEK
+I: Statio ad sanctam Priscam
+ = Station at St Prisca
+X: start
+L: Officium | Gal. 6
+ = Introit | Gal. 6
+T: ^NOS autem gloriári opórtet in Cruce Dómini nostri Jesu Christi : in quo est salus, vita, et resurréctio nostra : per quem salváti, et liberáti sumus. {℣. Ps. 66} Deus misereátur nostri, et benedícat nobis : illúminet vultum suum super nos, et misereátur nostri. {N}os autem.
+ = But it behoves us to glory in the cross of our Lord Jesus Christ; in whom is our salvation, life and resurrection; by whom we are saved and delivered. {℣. Ps. 66} May God have pity on us and bless us; may He let His face shine upon us, and may He have pity on us. {B}ut it behoves.
+C: in 0
+X: ky
+T: Dóminus vobíscum. Orémus. Flectámus génua. Leváte.
+ = The Lord be with you. Let us pray. Let us kneel. Arise.
+L: Oratio
+ = Collect
+T: ^OMNIPOTENS sempitérne Deus : da nobis ita Domínicæ passiónis sacraménta perágere; ut indulgéntiam percípere mereámur : Per eúmdem Dóminum.
+ = Almighty and everlasting God, grant that we may so celebrate the mysteries of our Lord's passion that we may deserve to obtain Your pardon: through the same Lord.
+R: Secunda et tertia Oratio, pag. 63
+ = The second and third Collects, p. 63:
+INC: lent_or
+T: {L}éctio Jeremíæ Prophétæ. {c. 11}
+ = The Lesson from the Prophet Jeremias. {Ch. 11}
+T: ^IN diébus illis : Dixit Jeremías : Dómine demonstrásti mihi, et cognóvi : tunc ostendísti mihi stúdia eórum. Et ego quasi agnus mansuétus, qui portátur ad víctimam : et non cognóvi quia cogitavérunt super me consília, dicéntes : Mittámus lignum in panem ejus, et eradámus eum de terra vivéntium, et nomen ejus non memorétur ámplius. Tu autem Dómine Sábaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis : Tibi enim revelávi causam meam, Dómine Deus meus.
+ = In those days, Jeremias said: O Lord, You have shown me, and I have known; then You did show me their doings. And I was as a meek lamb that is carried to be a victim; and I knew not that they had devised counsels against me, saying: Let us put wood on his bread, and cut him off from the land of the living, and let his name be remembered no more. But You, O Lord of Sabaoth, who judge justly, and try the reins and the hearts, let me see Your revenge on them; for to You have I revealed my cause, O Lord my God.
+T: {℟. Ps. 34} Ego autem, dum mihi molésti essent, induébam me cilício, et humiliábam in jejúnio ánimam meam : et orátio mea in sinu meo convertétur. {℣.} Júdica Dómine nocéntes me, expúgna impugnántes me : apprehénde arma et scutum, et exsúrge in adjutórium mihi.
+ = {℟. Ps. 34} But I, when they troubled me, put on haircloth, and humbled my soul in fasting; and my prayer will be returned into my bosom. {℣.} Judge, O Lord, those who hurt me; defeat those who assault me; take up Your armour and shield, and come to my assistance.
+C: gr 0
+F: Pássio Dómini nostri Jesu Christi secúndum Marcum | The Passion of our Lord Jesus Christ according to Mark
+T: {P}ássio Dómini nostri Jesu Christi secúndum Marcum. {c. 14 et 15}
+ = The Passion of our Lord Jesus Christ according to Mark. {Ch. 14 and 15}
+P: marcus
+F/
+X: offer
+T: {Offertorium Ps. 139} Custódi me Dómine de manu peccatóris : et ab homínibus iníquis éripe me.
+ = {Offertory Ps. 139} Preserve me, O Lord, from the hand of the sinner; and from unjust men deliver me.
+C: of 0
+X: offertory
+L: Secreta
+ = Secret
+T: ^SACRIFICIA nos, quǽsumus Dómine, propénsius ista restáurent, quæ medicinálibus sunt institúta jejúniis. Per Dóminum.
+ = May these sacrifices, O Lord, we beseech You, which are accompanied with healing fasts, mercifully build us up anew: through our Lord.
+R: Secunda et tertia Secreta, pag. 65
+ = The second and third Secrets, p. 65:
+INC: lent_se
+R: Præfatio *Qui salútem humáni.*
+ = Preface *Qui salútem humáni* (of the Cross).
+X: offertoryEnd, pref, sa, canon
+T: {Communio Ps. 68} Advérsum me exercebántur qui sedébant in porta, et in me psallébant qui bibébant vinum : ego vero oratiónem meam ad te Dómine : tempus benepláciti Deus, in multitúdine misericórdiæ tuæ.
+ = {Communion Ps. 68} They who sat in the gate spoke against me, and they who drank wine made songs against me; but I made my prayer to You, O Lord; it is the time, O God, to show Your good will in the multitude of Your mercy.
+C: co 0
+X: post
+L: Postcommunio
+ = Postcommunion
+T: ^SANCTIFICATIONIBUS tuis, omnípotens Deus, et vítia nostra curéntur; et remédia nobis sempitérna provéniant : Per Dóminum.
+ = Through Your graces, almighty God, may our sins be blotted out, and everlasting blessings be brought to us: through our Lord.
+R: Secunda et tertia Postcommunio, pag. 65
+ = The second and third Postcommunions, p. 65:
+INC: lent_pc
+T: Orémus. Humiliáte cápita vestra Deo.
+ = Let us pray. Bow down your heads to God.
+L: Oratio super populum
+ = Prayer over the people
+T: ^TUA nos misericórdia, Deus, et ab omni subreptióne vetustátis expúrget; et capáces sanctæ novitátis effíciat : Per Dóminum.
+ = May Your mercy, O God, purify us from the corruption of the old man, and enable us to put on the new: through our Lord.
+X: postEnd, dismiss, end

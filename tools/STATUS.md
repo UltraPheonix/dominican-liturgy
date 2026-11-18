@@ -1,5 +1,8 @@
 # Where the work stands (2026-11-18)
 
+**Holy Week (current priority): see tools/hw39/PROGRESS.md.**
+
+
 ## Done
 - Office chant: every hour incl. Matins (all but the lessons); layout cleaned; 15 more 1933 antiphons read from
   the scan (tools/omr). ~90 pieces still on the Roman melody (labelled).
