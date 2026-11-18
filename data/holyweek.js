@@ -255,5 +255,9 @@ window.HOLYWEEK = {
         {r: 'While the Benedictus is sung there is the customary incensation. The antiphon Et valde is repeated, and the celebrant says:'}
       ]}
     ]
-  }
+  },
+  // Monday, Tuesday and Wednesday of Holy Week: lessons as in the St Dominic Missal; the Passion without salutations
+  Quad6m: {readings: [{type: 'Epistle', ref: 'Isaias 50: 5-10'}, {type: 'Gospel', ref: 'Joannes 12: 1-9'}], sections: []},
+  Quad6t: {readings: [{type: 'Epistle', ref: 'Jeremias 11: 18-20'}, {type: 'Gospel', ref: 'Marcus 14: 32-72; 15: 1-46', passion: true}], sections: []},
+  Quad6w: {readings: [{type: 'Lesson', ref: 'Isaias 62: 11; 63: 1-7'}, {type: 'Epistle', ref: 'Isaias 53: 1-12'}, {type: 'Gospel', ref: 'Lucas 22: 39-71; 23: 1-53', passion: true}], sections: []}
 };
