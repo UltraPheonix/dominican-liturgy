@@ -53,3 +53,10 @@ Latin j -> i (site style). English: 1959 missal's where the text is the same, ot
 - Page files + NOTES.md in tools/chant/exs; checked against the note reader (vcheck.py): no pitch disagreements except
   known reader noise (porrectus gfg read as fg/h).  N. placeholders = 3 notes each (book).
 - Still to do (order agreed with user): Litany + Mandatum, Triduum Office, Palm Sunday procession chants (last), then 1959.
+
+## 2026-11-19 morning: Mandatum done (Triduum O.P. 1927 pp. 112-123) -> Quad6h_mand.src (INC at end of Quad6h)
+- 13 antiphons transcribed: site/gabc/op-mand-01..13 (tools/chant/mand, NOTES.md). Clefs: II = f3, VI = c2, VII (Diligamus, Maneant) = c2.
+- Sermo Domini = John 13:1-17:26 from site bible (la + Douay), folded.
+- NEXT (user agreed): UI overhaul (settings/Options panel, English placement, general tidiness) -> ask user questions first.
+- Still open for Holy Week 1939: Ablutio altarium on Thursday (Triduum pp. ~95-111, antiphons at each altar), Triduum Office,
+  Palm Sunday procession chants, check Holy Saturday tracts vs Triduum book; then 1959.
