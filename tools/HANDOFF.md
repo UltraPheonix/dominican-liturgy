@@ -14,7 +14,7 @@ Don't say "abortion rights". He may do manual work: give him concrete lists.
 
 ## Order of work
 1 NOW: orations for 183 Masses lacking them (list: tools/orat39/MISSING.md). 2 booklet polish. 3 Holy Week leftovers:
-washing of altars (Triduum Paredes 1927 pp~95-111) -> Triduum Office (Tenebrae, Lauds, Hours, Vespers, Compline; Office tab AND
+washing of altars DONE 2026-11-19 (tools/chant/abl/NOTES.md) -> Triduum Office (Tenebrae, Lauds, Hours, Vespers, Compline; Office tab AND
 holyweek page) -> check Holy Saturday tracts vs Triduum book -> Holy Sat Sanctus/Ite -> Palm Sunday procession chants
 (Processionarium 1913) LAST. 4 1959 rite. 5 Mass section: site-wide 1939/1962 switch ("both, switch everywhere"), strictly
 Dominican texts, Dominican Sunday numbering, consistency, Compline/Hours fixes. NB orations.js came from Divinum Officium
@@ -80,5 +80,5 @@ SOLEMNIS/FERIALIS, ANTE AGNUS DEI, TONI ITE MISSA EST, ...).
 hw39/*.src -> hw39/build.py -> data/holyweek_text.js. Tags == H I L R T C G F: F/ P INC X; " = " English; G:/C: "id | label".
 Chant OMR on scans: tools/omrtools (heads.py, zs.py, blobs.py, prep.py, rcheck.py on :8767). Clefs: zoom to decide
 (mode II often f3). gabc letters are positions (d = bottom line). chant/hymn.py (stanzas to stanza-1 melody), gb2site.py.
-Sources Joseph uploaded earlier (ask him to re-attach when needed): Triduum Paredes 1927, Processionarium, Hebdomada Sancta 1959,
+Sources: all on musicasacra (dominican-liturgy.blogspot.com sidebar lists exact URLs: Triduum 1927 = media.musicasacra.com/dominican/officium-hedomadae-sanctae-1927-paredes.pdf, Processionarium 1913 = processionarium-1913-Cormier.pdf, Antiphonarium 1933, Matutinum 1936, M39.pdf); GregoBase sources 11-14, 20, 21, 35, 36 = Dominican books (gabc to cross-check). Earlier list: Triduum Paredes 1927, Processionarium, Hebdomada Sancta 1959,
 Matutinum 1936, Antiphonarium 1933, Missale OP 1939/1933, St Dominic Missal 1959, Graduale OP 1950 Pars Prior/Posterior.

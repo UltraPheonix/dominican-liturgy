@@ -95,3 +95,7 @@ TODO: (a) finish OCR fixes (build_or.py ocr_fix just added, untested; run python
       (e) 59 not found: post-1939 Blesseds (need the current Dominican Proper), votives/commons, moved dates;
       (f) proof every prayer against the Missal page, then merge new_or.json into site/data/orations.js.
 See tools/orat39/MISSING.md for the per-Mass list.
+
+## 2026-11-19 evening: Washing of the altars done (Triduum 1927 pp. 82-111) -> Quad6h_abl.src + gabc/op-abl-*, tools/chant/abl.
+- 1927 book OCR index (page headings): /home/claude/dl/tri_index.txt (pdf page = book page/2 + 1; Thursday Matins pdf 2-17, Lauds 17-23, Hours 24-29, Ps. pœnit. 30-33, Compline 67; Friday Matins 69-84, Lauds 84-90, Hours 90-91; ...).
+- NEXT: Triduum Office (Tenebrae etc.) - the Office tab + holyweek page; then Holy Sat tracts check, Sanctus/Ite; Palm Sunday procession (Processionarium 1913).
