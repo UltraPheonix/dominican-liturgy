@@ -16,6 +16,10 @@ def src(k):
     if k == 'S0118': where = 'supplement (S. Margarita ab Hungaria), p. 1'
     else: where = 'p. %s' % P[k]
     return 'Missale O.P. (1939), %s; English after the St Dominic Missal (1959), checked against the Latin' % where
+X = json.load(open(os.path.join(HERE, 'extra_or.json')))
+for k, e in X.items():
+    P[k] = e.pop('page')
+N.update(X)
 added = []
 for k, e in N.items():
     if k in O and k not in force: continue
