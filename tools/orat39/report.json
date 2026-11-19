@@ -409,325 +409,297 @@
 "p": "or",
 "unk": [],
 "fix": [],
-"r": 0,
+"r": "final",
 "la": "Deus, qui ad conteréndos Ecclésiæ tuæ hostes, et ad divínum cultum reparándum, beátum Pium Pontíficem máximum elígere dignátus es: fac nos ipsíus deféndi præsídiis, et ita tuis inhærére obséquiis; ut ómnium hóstium superátis insídiis, perpétua pace lætémur: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": ""
+"en": "O God, who for the crushing of the enemies of Your Church and for the restoring of divine worship were pleased to choose blessed Pius as supreme Pontiff; grant that we may be defended by his protection and so cleave to Your service that, overcoming the snares of all our enemies, we may rejoice in everlasting peace; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0505",
 "p": "se",
 "unk": [],
 "fix": [],
-"r": 0.97,
+"r": "final",
 "la": "Súscipe, quǽsumus Dómine, Ecclésiæ tuæ preces et oblatiónes: ut intercedénte beáto Pio Confessóre tuo atque Pontífice, in conspéctu tuo in odórem suavitátis ascéndant: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "Receive, we beseech You, O Lord, Your Church's prayers and gifts; so that at the intercession of blessed Pius, Your confessor and pontiff, they may mount as an odor of sweetness in Your sight; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "Receive, we beseech You, O Lord, the prayers and offerings of Your Church; that through the intercession of blessed Pius, Your confessor and pontiff, they may rise as an odor of sweetness in Your sight; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0505",
 "p": "pc",
 "unk": [],
-"fix": [
-[
-"eep",
-"keep"
-]
-],
-"r": 0.96,
+"fix": [],
+"r": "final",
 "la": "Spíritum, Dómine Deus, iustítiæ ac fortitúdinis benígnus infúnde fidélibus tuis; quos beáti Pii Confessóris tui atque Pontíficis zelo ac constántia, ab ómnium hóstium incursióne tuéri dignátus es: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "O Lord God, pour forth the spirit of justice and fortitude upon Your faithful, whom You did deign to eep from the assaults of every foe through the zeal and steadfastness of the blessed Pius, Your confessor and pontiff; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "O Lord God, graciously pour forth the spirit of justice and fortitude upon Your faithful, whom You have deigned to protect from the assaults of all their enemies through the zeal and steadfastness of blessed Pius, Your confessor and pontiff; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0507",
 "p": "or",
 "unk": [],
 "fix": [],
-"r": 0.96,
+"r": "final",
 "la": "Deus, pro cujus honóre gloriósus Póntifex Stanisláus gládiis impiórum occúbuit: præsta quǽsumus, ut omnes, qui ejus implórant auxílium; petitiónis suæ salutárem consequántur efféctum: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "O God, for whose honor the glorious bishop Stanislaus was slain by the swords of. wicked men; grant, we beseech You, that such as seek his help may obtain a happy issue of their prayer; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "O God, for whose honor the glorious bishop Stanislaus fell beneath the swords of wicked men; grant, we beseech You, that all who implore his help may obtain the saving fruit of their petition; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0507",
 "p": "se",
 "unk": [],
 "fix": [],
-"r": 0.97,
+"r": "final",
 "la": "Accépta sit in conspéctu tuo, Dómine, nostra devótio, et beáti Stanislái Mártyris tui atque Pontíficis nobis fiat supplicatióne salutáris, pro cujus solemnitáte defértur: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "May our homage be so acceptable in Your sight, O Lord, that at the pleading of blessed Stanislaus, Your martyr and bishop on whose feast day it is offered, it may further our salvation; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "May our devotion be acceptable in Your sight, O Lord, and may it become salutary for us through the pleading of blessed Stanislaus, Your martyr and bishop, on whose feast it is offered; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0507",
 "p": "pc",
 "unk": [],
 "fix": [],
-"r": 0.65,
+"r": "final",
 "la": "Satiásti Dómine famíliam tuam munéribus sacris: beáti Stanislái Mártyris tui atque Pontíficis, quǽsumus, semper interventióne nos réfove; cujus solémnia celebrámus: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": ""
+"en": "You have filled Your household, O Lord, with sacred gifts; ever refresh us, we beseech You, by the intercession of blessed Stanislaus, Your martyr and bishop, whose feast we celebrate; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0509",
 "p": "or",
 "unk": [],
 "fix": [],
-"r": 0.91,
+"r": "final",
 "la": "Deus, qui pópulo tuo ætérnæ salútis beátum Gregórium minístrum tribuísti: præsta quǽsumus, ut quem doctórem vitæ habúimus in terris; intercessórem habére mereámur in cælis: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "O God, You gave to Your people blessed N., as a minister of eternal salvation; grant we beseech You, that he whom we had on earth as a teacher of life, we may deserve to have as an intercessor in heaven; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "O God, who gave to Your people blessed Gregory as a minister of eternal salvation; grant, we beseech You, that we may deserve to have as an intercessor in heaven him whom we had on earth as a teacher of life; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0509",
 "p": "se",
 "unk": [],
 "fix": [],
-"r": 0.93,
+"r": "final",
 "la": "Omnípotens sempitérne Deus, múnera tuæ majestáti obláta, per intercessiónem beáti Gregórii Confessóris tui atque Pontíficis, ad perpétuam nobis fac proveníre salútem: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "Almighty and eternal God, through the intercession of blessed Athanasius, Your confessor and bishop, let these gifts offered to Your majesty, be profitable to our eternal salvation; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "Almighty and eternal God, through the intercession of blessed Gregory, Your confessor and bishop, make the gifts offered to Your majesty avail us unto everlasting salvation; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0509",
 "p": "pc",
 "unk": [],
 "fix": [],
-"r": 0.89,
-"la": "Sacraménta salútis nostræ suscipiéntes,concéde,quǽsumus omnípotens Deus: ut beáti Gregórii Confessóris tui atque Pontíficis nos ubíque orátio ádjuvet; in cujus veneratióne hæc tuæ obtúlimus majestáti: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "We have now received the sacraments of our salvation, almighty God; grant, we beseech You, that by the prayer of blessed Athanasius, Your confessor and bishop, in whose honor we have offered them to Your majesty, we may be strengthened in every place; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"r": "final",
+"la": "Sacraménta salútis nostræ suscipiéntes, concéde, quǽsumus omnípotens Deus: ut beáti Gregórii Confessóris tui atque Pontíficis nos ubíque orátio ádjuvet; in cujus veneratióne hæc tuæ obtúlimus majestáti: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+"en": "Receiving the sacraments of our salvation, we beseech You, almighty God, that we may everywhere be helped by the prayer of blessed Gregory, Your confessor and bishop, in whose veneration we have offered these gifts to Your majesty; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0518",
 "p": "or",
 "unk": [],
 "fix": [],
-"r": 0.96,
+"r": "final",
 "la": "Deus, qui hunc diem beáti Venántii Mártyris tui triúmpho consecrásti; exáudi preces pópuli tui: et præsta, ut qui ejus mérita venerámur; fídei constántiam imitémur: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "O God, who has consecrated this day by the victory of blessed Venantius, Your martyr, graciously hear the prayers of Your people; and grant that a we honor his holy life we may imitate his courageous faith; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "O God, who have consecrated this day by the triumph of blessed Venantius, Your martyr; hear the prayers of Your people, and grant that we who venerate his merits may imitate the constancy of his faith; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0518",
 "p": "se",
 "unk": [],
 "fix": [],
-"r": 0.98,
+"r": "final",
 "la": "Hanc oblatiónem, omnípotens Deus, beáti Venántii Mártyris tui mérita tibi reddant accéptam: ut ipsíus subsídiis adjúti, glóriæ ejus consórtes efficiámur: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "May the merits of blessed Venantius, Your martyr, make this offering acceptable to You, O God almighty; that by his aid we may be made: sharers of His glory; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "May the merits of blessed Venantius, Your martyr, make this offering acceptable to You, almighty God; that, helped by his aid, we may be made sharers of his glory; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0518",
 "p": "pc",
 "unk": [],
 "fix": [],
-"r": 0.96,
+"r": "final",
 "la": "Súmpsimus, Dómine, ætérnæ vitæ sacraménta, te humíliter deprecántes: ut beáto Venántio Mártyre tuo pro nobis deprecánte; véniam nobis concílient, et grátiam: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "We have partaken, O Lord, of the sacraments of eternal life, and humbly beseech You that at the intercession of blessed Venantius, Your martyr, they may obtain for us both forgiveness and grace; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "We have received, O Lord, the sacraments of eternal life, and humbly beseech You that, blessed Venantius, Your martyr, pleading for us, they may obtain for us pardon and grace; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0519",
 "p": "or",
 "unk": [],
 "fix": [],
-"r": 0,
+"r": "final",
 "la": "Deus, qui beátum Petrum Cælestínum ad summi Pontificátus ápicem sublimásti; quique illum humilitáti postpónere docuísti: concéde propítius, ut ejus exémplo cuncta mundi despícere; et ad promíssa humílibus prǽmia perveníre felíciter mereámur: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": ""
+"en": "O God, who raised blessed Peter Celestine to the height of the supreme pontificate, and taught him to set it aside for the sake of humility; mercifully grant that by his example we may despise all things of the world and happily deserve to attain the rewards promised to the humble; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0519",
 "p": "se",
 "unk": [],
 "fix": [],
-"r": 0.99,
+"r": "final",
 "la": "Sancti tui, quǽsumus Dómine, nos ubíque lætíficent: ut dum eórum mérita recólimus, patrocínia sentiámus: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "Let Your saints, O Lord, everywhere make us glad; that while we remember their merits we may experience their help; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "May Your saints, we beseech You, O Lord, everywhere make us glad; that while we recall their merits we may feel their patronage; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0519",
 "p": "pc",
 "unk": [],
 "fix": [],
-"r": 0.9,
+"r": "final",
 "la": "Præsta, quǽsumus omnípotens Deus: ut de percéptis munéribus grátias exhibéntes; intercedénte beáto Petro Cælestíno Confessóre tuo atque Pontífice, benefícia potióra sumámus: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "Grant, we beseech You, almighty God, that giving thanks for Your gifts received, we may, through the intercession of blessed Sylvester, Your confessor and bishop, welcome gifts still greater; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "Grant, we beseech You, almighty God, that giving thanks for the gifts we have received, we may, through the intercession of blessed Peter Celestine, Your confessor and pontiff, receive still greater benefits; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0526",
 "p": "or",
 "unk": [],
 "fix": [],
-"r": 0.99,
+"r": "final",
 "la": "Deus, qui beátum Philíppum Confessórem tuum Sanctórum tuórum glória sublimásti: concéde propítius, ut cujus solemnitáte lætámur; ejus virtútum proficiámus exémplo: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "O God, You have raised up blessed Philip, Your confessor, to the glory of the saints; mercifully grant that as we rejoice in his feast, we may follow after the example of his virtues; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "O God, who raised blessed Philip, Your confessor, to the glory of Your saints; mercifully grant that we who rejoice in his feast may profit by the example of his virtues; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0526",
 "p": "se",
 "unk": [],
 "fix": [],
-"r": 0.99,
+"r": "final",
 "la": "Sacrifíciis præséntibus, quǽsumus Dómine, inténde placátus: et præsta, ut illo nos igne Spíritus Sanctus inflámmet, quo beáti Philíppi cor mirabíliter penetrávit: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte eiúsdem Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "Look down with mercy, O Lord, we pray, upon these present sacrifices; and grant that the Holy Spirit may enkindle us with the same fire that wondrously pierced the heart of blessed Philip: $.rough our Lord. Through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the same Holy Spirit, God, world without end."
+"en": "Look graciously, O Lord, we beseech You, upon these present sacrifices, and grant that the Holy Spirit may enkindle us with that fire with which He wondrously pierced the heart of blessed Philip; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the same Holy Spirit, God, world without end."
 },
 {
 "k": "S0526",
 "p": "pc",
 "unk": [],
 "fix": [],
-"r": 0.97,
+"r": "final",
 "la": "Cæléstibus, Dómine, pasti delíciis: quǽsumus, ut beáti Philíppi Confessóris tui méritis et imitatióne; semper eádem, per quæ veráciter vívimus, appetámus: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "Fed with heavenly delights, O Lord, we pray that by the merits of blessed Philip, Your confessor, and in imitation of him we may ever seek after those things, whereby we truly live; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "Fed with heavenly delights, O Lord, we beseech You that by the merits and imitation of blessed Philip, Your confessor, we may ever seek after those things by which we truly live; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0604",
 "p": "or",
 "unk": [],
 "fix": [],
-"r": 0,
+"r": "final",
 "la": "Deus, qui beátum Francíscum novi Órdinis Institutórem orándi stúdio, et pœniténtiæ amóre decorásti: da fámulis tuis in ejus imitatióne ita profícere; ut semper orántes, et corpus in servitútem redigéntes, ad cæléstem glóriam perveníre mereántur: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": ""
+"en": "O God, who adorned blessed Francis, founder of a new Order, with zeal for prayer and love of penance; grant to Your servants so to advance in imitating him that, praying always and bringing the body into subjection, they may deserve to attain heavenly glory; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0604",
 "p": "se",
 "unk": [],
 "fix": [],
-"r": 0.99,
+"r": "final",
 "la": "Præsta nobis, quǽsumus omnípotens Deus, ut nostræ humilitátis oblátio, et pro tuórum tibi grata sit honóre Sanctórum, et nos córpore páriter et mente puríficet: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "Grant, we pray You, almighty God, that the offering of our lowliness may, for the honor of Ypur saints, be pleasing to You, and cleanse us in body and soul; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "Grant us, we beseech You, almighty God, that the offering of our lowliness may be pleasing to You in honor of Your saints, and may purify us alike in body and mind; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0604",
 "p": "pc",
 "unk": [],
-"fix": [
-[
-"i.y",
-"i"
-],
-[
-"cdnfessor",
-"confessor"
-]
-],
-"r": 0.94,
+"fix": [],
+"r": "final",
 "la": "Quǽsumus omnípotens Deus: ut qui cæléstia aliménta percépimus; intercedénte beáto Francísco Confessóre tuo, per hæc contra ómnia advérsa muniámur: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "We beseech You, almighty God, that we who have received this heavenly food m;:i.y,through the pleading of blessed Vincent, Your. cdnfessor, be shielded from all adversity; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "We beseech You, almighty God, that we who have received the food of heaven may, through the intercession of blessed Francis, Your confessor, be thereby defended against all adversity; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0614",
 "p": "or",
 "unk": [],
-"fix": [
-[
-"seech",
-"speech"
-]
-],
-"r": 0.95,
-"la": "Deus, qui pópulo tuo ætérnæ salútis beátum Basilíum minístrum tribuísti: præsta quǽsumus, ut quem doctórem vitæ habúimus in terris; intercessórem habére mereámur in cælis: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "O God, who gave to Your people blessed Basil as a minister of eternal salvation; grant, we be-. seech You, that he whom we had. on earth as a teacher  of life, we may deserve to have as an intercessor in  heaven; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"fix": [],
+"r": "final",
+"la": "Deus, qui pópulo tuo ætérnæ salútis beátum Basílium minístrum tribuísti: præsta quǽsumus, ut quem doctórem vitæ habúimus in terris; intercessórem habére mereámur in cælis: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+"en": "O God, who gave to Your people blessed Basil as a minister of eternal salvation; grant, we beseech You, that we may deserve to have as an intercessor in heaven him whom we had on earth as a teacher of life; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0614",
 "p": "se",
 "unk": [],
 "fix": [],
-"r": 0,
-"la": "Sancti Basilíi Confessóris tui atque Pontíficis, quǽsumus Dómine, ánnua solémnitas pietáti tuæ nos reddat accéptos: ut per hæc piæ placatiónis offícia, et illum beáta retribútio comitétur, et nobis grátiæ tuæ dona concíliet: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": ""
+"r": "final",
+"la": "Sancti Basílii Confessóris tui atque Pontíficis, quǽsumus Dómine, ánnua solémnitas pietáti tuæ nos reddat accéptos: ut per hæc piæ placatiónis offícia, et illum beáta retribútio comitétur, et nobis grátiæ tuæ dona concíliet: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+"en": "May the yearly feast of Saint Basil, Your confessor and bishop, make us acceptable to Your loving kindness, O Lord, we beseech You; that by these offices of holy propitiation a blessed reward may attend him, and the gifts of Your grace may be won for us; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0614",
 "p": "pc",
 "unk": [],
-"fix": [
-[
-"rewarder",
-"rewarded"
-],
-[
-"etc",
-"et"
-]
-],
-"r": 0.98,
-"la": "Deus, fidélium remunerátor animárum: præsta, ut beáti Basilíi Confessóris tui atque Pontíficis, cujus venerándam celebrámus festivitátem; précibus indulgéntiam consequámur: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "O God, the rewarder of faithful souls, grant through the prayers of blessed Basil, Your confessor and bishop, whose feast day we keep, that we may obtain Your merciful forgiveness: through, etc-. Through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"fix": [],
+"r": "final",
+"la": "Deus, fidélium remunerátor animárum: præsta, ut beáti Basílii Confessóris tui atque Pontíficis, cujus venerándam celebrámus festivitátem; précibus indulgéntiam consequámur: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+"en": "O God, the rewarder of faithful souls, grant that through the prayers of blessed Basil, Your confessor and bishop, whose venerable feast we celebrate, we may obtain pardon; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0702",
 "p": "or",
 "unk": [],
 "fix": [],
-"r": 0,
+"r": "final",
 "la": "Omnípotens et miséricors Deus, majestátem tuam supplíciter exorámus: ut sicut Unigénitum tuum per Visitatiónem et salutatiónem Genitrícis ejus púero clauso in útero revelásti; ita méritis ejúsdem Genitrícis, et précibus, ipsum nos fácias reveláta fácie perpétuo contemplári: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum.",
-"en": ""
+"en": "Almighty and merciful God, we humbly entreat Your majesty that, as You revealed Your only-begotten Son to the child enclosed in the womb through the visitation and greeting of His Mother, so by the merits and prayers of the same Mother You would grant us to contemplate Him for ever with unveiled face; who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0702",
 "p": "se",
 "unk": [],
 "fix": [],
-"r": 0,
+"r": "final",
 "la": "Omnípotens sempitérne Deus, qui de ómnibus in te confidéntibus curam semper habes: præsta quǽsumus, ut per oblatiónem, quam tibi offérimus, visitatiónem spirituálem beátæ Maríæ Vírginis in nostris necessitátibus semper sentiámus: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": ""
+"en": "Almighty and eternal God, who ever have care of all who trust in You; grant, we beseech You, that through the offering which we make to You we may always feel in our needs the spiritual visitation of the blessed Virgin Mary; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0702",
 "p": "pc",
 "unk": [],
 "fix": [],
-"r": 0.43,
+"r": "final",
 "la": "Omnípotens sempitérne Deus, qui commemoratiónem Visitatiónis beatíssimæ Maríæ Matris Dei fíeri voluísti: præsta quǽsumus, ut per hoc sacrifícium, quod súmpsimus; ab ejus visitatiónis grátia nullátenus excidámus: Per eúndem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.",
-"en": ""
+"en": "Almighty and eternal God, who willed that the commemoration of the Visitation of most blessed Mary, Mother of God, should be kept; grant, we beseech You, that through this sacrifice which we have received we may never fall away from the grace of her visitation; through the same Jesus Christ, Your Son, our Lord, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0709",
 "p": "or",
 "unk": [],
 "fix": [],
-"r": 0,
+"r": "final",
 "la": "Deus, qui beatórum Mártyrum tuórum Joánnis et sociórum ejus, gloriósum pro fide tua certámen æternitátis láurea decorásti: concéde propítius, ut eórum méritis et imitatióne certántes in terris; cum ipsis coronári mereámur in cælis: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": ""
+"en": "O God, who crowned with the laurel of eternity the glorious struggle for Your faith of Your blessed martyrs John and his companions; mercifully grant that, striving on earth by their merits and imitation, we may deserve to be crowned with them in heaven; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0709",
 "p": "se",
 "unk": [],
 "fix": [],
-"r": 0,
+"r": "final",
 "la": "Réspice Dómine de sanctuário tuo, et de excélso cælórum habitáculo, sacrifícium, quod immolámus: et sánguine sanctórum Mártyrum tuórum clamánte, corda nostra igne caritátis flamméscant, et ad te preces nostræ in odórem suavitátis ascéndant: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": ""
+"en": "Look down, O Lord, from Your sanctuary and from the lofty dwelling place of heaven upon the sacrifice which we offer; and, the blood of Your holy martyrs crying out, may our hearts glow with the fire of charity, and our prayers rise to You as an odor of sweetness; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0709",
 "p": "pc",
 "unk": [],
 "fix": [],
-"r": 0,
+"r": "final",
 "la": "Deus, virtútis auctor ac largítor, per sanctórum Mártyrum tuórum fidem et constántiam concéde: ut nos ad sacrum convívium accedéntes, eódem accendámur ardóre; quo ipsi pro veritáte Córporis et Sánguinis tui, vitam tibi in holocáustum obtulére. Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.",
-"en": ""
+"en": "O God, author and giver of strength, grant through the faith and constancy of Your holy martyrs that we who approach the sacred banquet may be kindled with the same ardor with which they offered their lives to You as a holocaust for the truth of Your Body and Blood; who live and reign with God the Father, in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0711",
 "p": "or",
 "unk": [],
 "fix": [],
-"r": 1.0,
+"r": "final",
 "la": "Deus, qui beatórum Pontíficum Ignátii et Domínici ac sociórum sánguine Annamitárum terras rigári voluísti; intercedéntibus tantis Martýribus, fac eas christiána religióne florére: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "O God, who willed the lands of Annam to be watered by the blood of the blessed bishops Ignatius, Dominic and their companions; through the pleadings of these great martyrs let it blossom with the Christian religion; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "O God, who willed that the lands of Annam should be watered by the blood of the blessed bishops Ignatius and Dominic and their companions; through the intercession of these great martyrs make them flourish with the Christian religion; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0711",
 "p": "se",
 "unk": [],
 "fix": [],
-"r": 0.98,
+"r": "final",
 "la": "Fortitúdinis auctor ac largítor omnípotens Deus, múnera tuæ majestáti obláta sanctífica: et intercedéntibus beátis Martýribus, quorum hódie solémnia celebrámus, córdium nostrórum medére languóribus: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-"en": "Almighty God, author and giver of fortitude, sanctify these gifts made to Your majesty; and at the intercession of the blessed martyrs whose feast we celebrate today, heal and quicken our languid hearts; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+"en": "Almighty God, author and giver of fortitude, sanctify the gifts offered to Your majesty; and through the intercession of the blessed martyrs whose feast we celebrate today, heal the weaknesses of our hearts; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0711",
 "p": "pc",
 "unk": [],
 "fix": [],
-"r": 0.57,
+"r": "final",
 "la": "Tríbuant nobis, quǽsumus Dómine, tua Sacraménta constántiam; quæ beátos Mártyres aluérunt ad victóriam. Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.",
-"en": ""
+"en": "May Your sacraments, O Lord, we beseech You, give us that constancy with which they nourished the blessed martyrs unto victory; who live and reign with God the Father, in the unity of the Holy Spirit, God, world without end."
 },
 {
 "k": "S0718",

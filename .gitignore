@@ -3,3 +3,4 @@ tools/*.json
 __pycache__/
 *.pyc
 .DS_Store
+tools/orat39/proof/

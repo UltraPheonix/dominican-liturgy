@@ -20,19 +20,19 @@ holyweek page) -> check Holy Saturday tracts vs Triduum book -> Holy Sat Sanctus
 Dominican texts, Dominican Sunday numbering, consistency, Compline/Hours fixes. NB orations.js came from Divinum Officium
 (maybe Roman) -> eventually verify all against Missale OP 1939.
 
-## NOW: orations (tools/orat39)
-lin.py: Missale OP 1939.pdf -> m39lin.txt (in repo, clean text layer). seg.py -> m39masses.json (month 0-based, day, title,
-pr{or,se,pc}, comm=Common page). match.py -> matched.json (124/183). accent.py (accdict.json in repo; from DO+site texts).
-build_or.py -> new_or.json + report.json: accented Latin (Missal j-spelling kept, no accent on initial capital), full conclusion,
-English from St Dominic Missal 1959 (dm_prayers.json) if same prayer (ratio>=.8), You-style conclusions.
-Status: 106 complete-ish (new_or_draft.json is BEFORE last fixes). ocr_fix/word-join/running-head removal just added to
-build_or.py, UNTESTED (was slow: get_close_matches over 75k keys -> restrict/cache). Then: manual_acc.json for rare names/words
-(see report.json unk); ~111 prayers need English (translate faithfully, You-style like DM); 14 incomplete (read pages);
-4 "ut in Comm. pag N*" (take Common prayers, insert saint's name, decline it); 59 not in 1939 (post-1939 Blesseds etc:
-ask Joseph / current Dominican Proper / O26 Ordo text tools/sources/ordo_op_2026.txt). Proof each vs Missal page image,
-then merge into data/orations.js (format {"KEY":{"src":..,"or":[la,en],"se":[..],"pc":[..]}}; site Latin uses I not J,
-conclusions "Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus,
-per ómnia sǽcula sæculórum."). S1112 already done by hand. Missal is DIFFERENT from DM 1959 sometimes (S1112 Secret).
+## NOW: orations (tools/orat39) — updated 2026-11-19 11:50
+Missal PDF: Joseph's Drive "Dominican Chant Propers – Source Materials/3 Missal/M39.pdf" (id 1oowwnWoHvX46HV82VFg2pN58gaEa67QW, 50 MB,
+private: ask him to set "anyone with link" briefly, then curl drive.usercontent.google.com/download?id=..&export=download&confirm=t).
+Pipeline: lin.py -> m39lin.txt; seg.py -> m39masses.json; match.py -> matched.json; build_or.py (15 s) -> new_or.json + report.json.
+build_or.py inputs (hand-made, all in repo): ocr_sub.json (garbled -> right word), manual_acc.json (accents; overrides accdict),
+overrides.json (raw Latin per KEY/kind when the text layer is broken), en_final.json (hand-checked English BODY, conclusion is
+added from the Latin). Fuzzy OCR matching is OFF (it changed right words: trahant->trahat, Guala->gula). REJECT in build_or.py:
+S0508b, S1119b, G481 were wrong date matches -> 103 Masses. DM English is often the WRONG prayer/saint even at ratio 1.0 -> every
+English is written/checked by hand into en_final.json. Done: 27 Masses (S0118..S0711, file order). report.json r='final' marks them.
+proofimg.py M39.pdf [KEYS] -> proof/KEY.png (crops of the 3 prayers; proof/ not committed) + proof/where.json (pdf pages).
+TODO: fix crops S0804 or, S0512b se/pc, S0205 pc, S1015 or; proof all 103 Latin vs images; English for the other 76;
+merge (J->I, site conclusions "Per eúndem ...") into data/orations.js, bump sw.js; then the other 80 Masses:
+14 incomplete, 4 "ut in Comm.", ~62 not in 1939 (O26 Ordo text tools/sources/ordo_op_2026.txt; list for Joseph).
 
 ## Booklets (done, live): booklet.html?b=choir|priest|cong#<mass hash e.g. S1112&d=2026-11-12&ord=X&credo=I>
 js/booklet.js own paginator (units->cols->A4 pages), booklet.css; buttons on Mass page. html lang="en" (EB Garamond locl

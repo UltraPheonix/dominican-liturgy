@@ -96,6 +96,7 @@ def latin(t):
     t = fix_spaced(t)
     # the drop-cap word in capitals
     t = re.sub(r'^([A-Z]{2,})', lambda m: m.group(1).capitalize(), t)
+    t = re.sub(r',(?=\S)', ', ', t)
     t = re.sub(r'\s*:\s*', ': ', t); t = re.sub(r'\s*;\s*', '; ', t); t = re.sub(r'\s+', ' ', t)
     # the conclusion, in full
     concl = None
