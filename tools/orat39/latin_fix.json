@@ -332,5 +332,37 @@
     "saturémur: Qui vivis"
    ]
   ]
+ },
+ "S1023b": {
+  "or": [
+   [
+    "Dómino nostro. Qui tecum",
+    "Dómino nostro: Qui tecum"
+   ]
+  ]
+ },
+ "S1026b": {
+  "pc": [
+   [
+    "currámus. Qui vivis",
+    "currámus: Qui vivis"
+   ]
+  ]
+ },
+ "S1126b": {
+  "pc": [
+   [
+    "ej usque précibus",
+    "ejúsque précibus"
+   ]
+  ]
+ },
+ "G566": {
+  "or": [
+   [
+    "auxílium. Qui vivis",
+    "auxílium: Qui vivis"
+   ]
+  ]
  }
 }
