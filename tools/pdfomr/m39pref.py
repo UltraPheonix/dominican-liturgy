@@ -19,7 +19,7 @@ def syllables(w):
     while i < n:
         if isv(w, i):
             j = i + 1
-            if j < n and isv(w, j) and (base(w[i]) + base(w[j])) in ('ae', 'oe', 'au'): j += 1
+            if j < n and isv(w, j) and (base(w[i]) + base(w[j])) in ('ae', 'oe', 'au') and w[j] not in 'éóúÉ': j += 1   # Mi-cha-é-lis
             vs.append((i, j)); i = j
         else: i += 1
     if len(vs) <= 1: return [0]

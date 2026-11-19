@@ -2,7 +2,7 @@
 Each block keeps the book's words; Latin j is written i (site style)."""
 import json, re, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
-SITE = '/home/claude/build/site'
+SITE = os.environ.get('SITE', os.path.join(HERE, '..', '..'))
 
 def latin_i(s):
     return s.replace('j', 'i').replace('J', 'I')

@@ -118,7 +118,7 @@ def read_staff(g, L, x_lo, x_hi):
     O = ndi.binary_opening(C, structure=np.ones((int(s * OPN), int(s * OPN))))
     lab, n = ndi.label(O); items = []
     hw = s * 0.52   # the width of a note head
-    for sl in ndi.find_objects(lab):
+    for cid, sl in enumerate(ndi.find_objects(lab)):
         ys, xs = sl; h = ys.stop - ys.start; w = xs.stop - xs.start
         if w < s * 0.33 or h < s * 0.3 or w > s * 4.5: continue
         if h > s * 2.2 and w < s * 0.8: continue   # a bar line, not a stack of notes
@@ -144,7 +144,7 @@ def read_staff(g, L, x_lo, x_hi):
                     x_ = xs.start + xa + x_lo
                     LL = local_lines(g, L, x_ + int(hw / 2))
                     sl2 = (LL[3] - LL[0]) / 3
-                    items.append([x_, 'note', int(round((LL[3] - cy) / (sl2 / 2))), int(xb - xa)])
+                    items.append([x_, 'note', int(round((LL[3] - cy) / (sl2 / 2))), int(xb - xa), cid, q, nsl, round((cy - y0 - ys.start) / s, 2)])
     # bar lines: thin vertical strokes (from the un-opened mask) not part of a note
     lab2, n2 = ndi.label(C)
     for sl in ndi.find_objects(lab2):
