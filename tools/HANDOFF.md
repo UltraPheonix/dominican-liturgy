@@ -49,8 +49,24 @@ turns u->v for lang=la!). J() = Missal j-spelling. Art in art/ (same every day).
 (gabc/opX-*, registered in app.js). Explicit Credo choice now always sung. Priest chants transcribed by OMR from his PDF
 (tools/pdfomr/omr.py): gabc/op-praef-dominic-solemn, op-pater-solemn, op-pax-domini (f3) -> flag "sing through".
 Polish todo: consecration words set apart in Canon (inside Qui pridie line), congregation 17pp vs his 14, page fill,
-Benedicamus heading, readings use Vulgate + standard openings (first words may differ from Missal), other Prefaces only
-dialogue+text (generate tone later). Reference: his 3 PDFs' text in tools/booklet/ref/, skill dominican-mass-books.
+Benedicamus heading, readings use Vulgate + standard openings (first words may differ from Missal). Reference: his 3 PDFs' text in tools/booklet/ref/, skill dominican-mass-books.
+
+## Prefaces (DONE + LIVE 2026-11-19, sw propria-v48)
+All 20 sung Prefaces of the Missale O.P. 1939 Appendix (pdf pp. 445-461) OMR'd -> gabc/op-m39-praef-<slug>-<solemn|ferial>.gabc:
+tools/pdfomr/m39app.py (staves/heads; skew-fitted line removal, gutter-aware staff ends, THR 115) + m39pref.py (pieces, text from
+data/prefaces.js, 1:1 note-to-syllable pairing per staff; hand fixes in m39pref_fix.json {title: {syllable idx: notes, "Nbar"}};
+report m39pref_report.txt). Proof: proofstaff.py TITLE [idx,..] -> /tmp/cp/ps_N.png; /tmp-style checks: every shared formula
+(dialogue, Et ideo, Per quem) cross-checked across all Prefaces, each disagreement looked at on the scan; the remaining ones are
+real print variants (Habemus Ha(g) in Epiphany+Joseph; Paschal ferial vs Requiem endings). St Dominic: 294/297 vs the old
+transcription, the 3 differences verified as the 1939 print. Requiem Preface = ferial tone. Sacred Heart + St Thomas: no chant in
+the Appendix -> tools/pdfomr/adapt_pref.py fits them to the solemn tone (marked "adapted" on site + booklet).
+St Francis Preface (Appendix p. 25-26) added to prefaces.js, S1004. BVM Preface text corrected to the Missal (exsultantibus
+animis laudare; mundo lumen aeternum). app.js prefaceChant(): solemn tone on I/II class, ferial where the Appendix has one
+(Lent, Cross, Paschal, Common); fixes the variable words (BVM feast word on h; Paschal hoc/hac..die/nocte; Spiritu Sancto hodierna
+die only in the octave). Shown on the Mass page and in the priest booklet when sung.
+NEXT for the priest booklet: Pater (solemn+ferial), Pax, Ite/Benedicamus, Gloria/Credo intonations, oration tones (Collect/Postc +
+Secret ending), Epistle/Gospel tones, all from the Appendix (same OMR tools; pieces already split by m39pref.py: CANTUS
+SOLEMNIS/FERIALIS, ANTE AGNUS DEI, TONI ITE MISSA EST, ...).
 
 ## Holy Week tooling
 hw39/*.src -> hw39/build.py -> data/holyweek_text.js. Tags == H I L R T C G F: F/ P INC X; " = " English; G:/C: "id | label".

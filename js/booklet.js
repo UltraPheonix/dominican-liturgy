@@ -457,9 +457,11 @@
     var P = A.prefaceText(name, S.key, S.date), solemn = R.gloria && !R.requiem;
     heading('Præfatio', P.name);
     if (BOOK === 'priest') {
-      if (S.ordo !== 'low' && name === 'Dominico' && solemn) {
-        art('tiepolo_arch', {size: 'small'});
-        chant('op-praef-dominic-solemn', {noDrop: true, glyph: 1 / 19, size: 14});
+      var PC = A.prefaceChant(name, S.key, S.date);
+      if (S.ordo !== 'low' && PC) {
+        if (name === 'Dominico') art('tiepolo_arch', {size: 'small'});
+        chant(PC.id, {noDrop: true, glyph: 1 / 19, size: 14, fix: PC.fix});
+        if (PC.adapted) rubric('No chant is printed in the Missal for this Preface; its text is here fitted to the solemn tone.', {left: true});
       } else {
         if (S.ordo !== 'low') chant(A.findKyriale(solemn ? 'Ad Praefationem in tono solemni' : 'Ad Praefationem in tono feriali'), {noDrop: true, glyph: 1 / 19, size: 14});
         para(P.la, {cls: 'pr', max: 360});

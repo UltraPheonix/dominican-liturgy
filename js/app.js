@@ -650,6 +650,38 @@
     }
     return {name: p.name, en: p.en, la: la, tr: en};
   }
+  // the Preface sung from the Missale O.P. (1939), Appendix: solemn tone on days of the I and II class, ferial tone
+  // otherwise where the Appendix gives one (Lent, Holy Cross, Paschaltide, the Common); the Requiem Preface is ferial.
+  // The Sacred Heart and St Thomas have no chant there: they are fitted to the solemn tone (tools/pdfomr/adapt_pref.py)
+  var PREF_SLUG = {'Nativitate': 'nativitate', 'Epiphania': 'epiphania', 'Quadragesima': 'quadragesima', 'Sancta Cruce': 'cruce', 'Paschalis': 'paschalis',
+    'Ascensione': 'ascensione', 'Spiritu Sancto': 'spiritu-sancto', 'SS. Trinitate': 'trinitate', 'D. N. Iesu Christo': 'christo-rege',
+    'B. Maria Virgine': 'bmv', 'S. Ioseph': 'ioseph', 'Apostolis': 'apostolis', 'Dominico': 'dominico', 'Francisco': 'francisco', 'Communis': 'communis',
+    'Defunctorum': 'defunctorum', 'Corde Iesu': 'corde-iesu', 'S. Thoma Aquinate': 'thoma'};
+  var PREF_FERIAL = {'Quadragesima': 1, 'Sancta Cruce': 1, 'Paschalis': 1, 'Communis': 1, 'Defunctorum': 1};
+  var BVM_SYL = {'Annuntiatióne': 'An-nun-ti-a-ti-ó-ne', 'Visitatióne': 'Vi-si-ta-ti-ó-ne', 'Assumptióne': 'As-sump-ti-ó-ne', 'Nativitáte': 'Na-ti-vi-tá-te',
+    'Præsentatióne': 'Præ-sen-ta-ti-ó-ne', 'Conceptióne immaculáta': 'Con-cep-ti-ó-ne im-ma-cu-lá-ta', 'Transfixióne': 'Trans-fi-xi-ó-ne',
+    'Solemnitáte': 'So-lem-ni-tá-te', 'Veneratióne': 'Ve-ne-ra-ti-ó-ne', 'Festivitáte': 'Fe-sti-vi-tá-te'};
+  function prefaceChant(name, key, d) {
+    var slug = PREF_SLUG[name]; if (!slug) return null;
+    var c = isTemporal(key) ? temporalClass(key, d) : feastClass(key);
+    var tone = name === 'Defunctorum' ? 'ferial' : (c <= 2 || !PREF_FERIAL[name] ? 'solemn' : 'ferial');
+    var f = d ? diffDays(d, easter(d.getFullYear())) : 10;
+    if (name === 'Paschalis' && tone === 'solemn') slug = 'paschalis-die';
+    var fix = function (b) {
+      if (name === 'Paschalis' && tone === 'solemn') {
+        if (f === -1) b = b.replace('di(h)e(h)', 'noc(h)te(h)');
+        else if (!(f >= 0 && f <= 6)) b = b.replace('hac(h)', 'hoc(h)').replace(' di(h)e(h)', '');
+      }
+      if (name === 'Spiritu Sancto' && !(f >= 48 && f <= 55)) b = b.replace(/ho\(g\)di\(g\)ér\(g\)na\(g\) di\(g\)e\(g\) \(;\) /, '');
+      if (name === 'B. Maria Virgine') {
+        var t = titleText(key) + ' ' + key, w = BVM_WORD.filter(function (x) { return x[0].test(t); })[0];
+        var syl = BVM_SYL[w ? w[1] : 'Festivitáte'] || BVM_SYL['Festivitáte'];
+        b = b.replace('Fe(h)sti(h)vi(h)tá(h)te(h)', syl.split(' ').map(function (wd) { return wd.split('-').map(function (s) { return s + '(h)'; }).join(''); }).join(' '));
+      }
+      return b;
+    };
+    return {id: 'op-m39-praef-' + slug + '-' + tone, tone: tone, adapted: name === 'Corde Iesu' || name === 'S. Thoma Aquinate', fix: fix};
+  }
   function drawPreface(key, d, R) {
     var name = prefaceOf(key, d);
     if (!name) return null;
@@ -660,10 +692,16 @@
     box.appendChild(el('div', {class: 'part-head hide-print'}, [el('h2', {text: 'Praefatio'}), el('span', {class: 'incipit', text: P.name}),
       el('span', {class: 'mode', text: solemn ? 'tono solemni' : 'tono feriali'})]));
     box.appendChild(el('h2', {class: 'print-only', text: 'Praefatio · ' + P.name}));
-    if (dialogue && state.ordo !== 'low') {
+    var PC = prefaceChant(name, key, d);
+    if (PC && state.ordo !== 'low') {
       var cb = el('div', {class: 'chant'});
       box.appendChild(cb);
-      loadGabc(dialogue).then(function (t) { var g = splitGabc(t); renderInto(cb, g.body, g.header, null); }, function (e) { showError(cb, e); });
+      loadGabc(PC.id).then(function (t) { var g = splitGabc(t); renderInto(cb, PC.fix(g.body), g.header, null); }, function (e) { showError(cb, e); });
+      box.appendChild(el('p', {class: 'rubric', text: 'Missale O.P. (1939), Appendix, ' + (PC.tone === 'solemn' ? 'solemn' : 'ferial') + ' tone' + (PC.adapted ? '; no chant is printed there for this Preface, so its text is fitted to the solemn tone.' : '.')}));
+    } else if (dialogue && state.ordo !== 'low') {
+      var cb2 = el('div', {class: 'chant'});
+      box.appendChild(cb2);
+      loadGabc(dialogue).then(function (t) { var g = splitGabc(t); renderInto(cb2, g.body, g.header, null); }, function (e) { showError(cb2, e); });
     }
     box.appendChild(el('div', {class: 'r-cols pf-text'}, [el('p', {class: 'la', lang: 'la', text: P.la}), el('p', {class: 'en-text', lang: 'en', text: P.tr})]));
     box.appendChild(el('p', {class: 'pf-sanctus', text: 'Sanctus, Sanctus, Sanctus…'}));
@@ -1398,7 +1436,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {D: D, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
+  window.ProprOP = {D: D, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
 
   function start() {
     if (!document.getElementById('selMass')) return;   // loaded as a library (e.g. by the Office page)

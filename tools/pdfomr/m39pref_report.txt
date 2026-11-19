@@ -2,19 +2,19 @@
 ## PRAEFATIO SOLEMNIS DE EPIPHANIA  [Epiphania]  12/12 staves 1:1, 0 syllables hand-corrected; unread: -
 ## PRAEFATIO SOLEMNIS DE QUADRAGESIMA  [Quadragesima]  12/14 staves 1:1, 5 syllables hand-corrected; unread: -
 ## PRAEFATIO FERIALIS DE QUADRAGESIMA  [Quadragesima]  14/14 staves 1:1, 0 syllables hand-corrected; unread: -
-## PRAEFATIO SOLEMNIS DE CRUCE.  [Sancta Cruce]  14/15 staves 1:1, 2 syllables hand-corrected; unread: -
+## PRAEFATIO SOLEMNIS DE CRUCE.  [Sancta Cruce]  14/15 staves 1:1, 3 syllables hand-corrected; unread: -
 ## PRAEFATIO FERIALIS DE CRUCE.  [Sancta Cruce]  12/15 staves 1:1, 24 syllables hand-corrected; unread: -
-## PRAEFATIO SOLEMNIS IN DIE PASCHAE  [Paschalis]  12/13 staves 1:1, 1 syllables hand-corrected; unread: -
+## PRAEFATIO SOLEMNIS IN DIE PASCHAE  [Paschalis]  12/13 staves 1:1, 2 syllables hand-corrected; unread: -
 ## PRjEFATIO FERIALIS TEMPORE PASCHALI.  [Paschalis]  11/12 staves 1:1, 2 syllables hand-corrected; unread: -
 ## PRAEFATIO SOLEMNIS DE ASCENSIONE  [Ascensione]  9/13 staves 1:1, 28 syllables hand-corrected; unread: -
-## PRAEFATIO SOLEMNIS DE SPIRITU SANCTO.  [Spiritu Sancto]  13/13 staves 1:1, 0 syllables hand-corrected; unread: -
-## PRAEFATIO SOLEMNIS DE SS. TRINITATE  [SS. Trinitate]  16/17 staves 1:1, 2 syllables hand-corrected; unread: -
+## PRAEFATIO SOLEMNIS DE SPIRITU SANCTO.  [Spiritu Sancto]  13/13 staves 1:1, 1 syllables hand-corrected; unread: -
+## PRAEFATIO SOLEMNIS DE SS. TRINITATE  [SS. Trinitate]  16/17 staves 1:1, 3 syllables hand-corrected; unread: -
 ## PRAEFATIO SOLEMNIS D. N. JESU CHRISTI REGIS  [D. N. Iesu Christo]  17/18 staves 1:1, 1 syllables hand-corrected; unread: -
 ## PRAEFATIO SOLEMNIS DE B. MARIA VIRGINE.  [B. Maria Virgine]  16/17 staves 1:1, 10 syllables hand-corrected; unread: -
-## PR^EFATIO SOLEMNIS DE S. JOSEPH  [S. Ioseph]  18/18 staves 1:1, 2 syllables hand-corrected; unread: -
+## PR^EFATIO SOLEMNIS DE S. JOSEPH  [S. Ioseph]  18/18 staves 1:1, 3 syllables hand-corrected; unread: -
 ## PRAEFATIO SOLEMNIS DE APOSTOLIS  [Apostolis]  11/12 staves 1:1, 14 syllables hand-corrected; unread: -
 ## PRAEFATIO SOLEMNIS DE S. DOMINICO  [Dominico]  17/17 staves 1:1, 0 syllables hand-corrected; unread: -
 ## PRAEFATIO SOLEMNIS DE S. P. N. FRANCISCO  [Francisco]  18/19 staves 1:1, 1 syllables hand-corrected; unread: -
-## PRAEFATIO COMMUNIS IN CANTU SOLEMNI  [Communis]  11/12 staves 1:1, 2 syllables hand-corrected; unread: -
+## PRAEFATIO COMMUNIS IN CANTU SOLEMNI  [Communis]  11/12 staves 1:1, 3 syllables hand-corrected; unread: -
 ## PR EFA TIO COMMUNIS IN CANTU FERIALI  [Communis]  12/12 staves 1:1, 0 syllables hand-corrected; unread: -
 ## PRAEFATIO PRO DEFUNCTIS  [Defunctorum]  15/16 staves 1:1, 2 syllables hand-corrected; unread: -
