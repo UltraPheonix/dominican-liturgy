@@ -1024,7 +1024,7 @@
   function drawHwText(sec, n) {
     var box = el('section', {class: 'part ordo hw' + (sec.cont ? ' hw-cont' : ''), 'data-part': 'hw'});
     if (!sec.cont) box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: sec.la}), el('span', {class: 'incipit', text: sec.en})]));
-    if (n === 0 && !sec.cont && sec.src) box.appendChild(el('p', {class: 'meta hw-src', text: sec.src}));
+    if (!sec.cont && sec.src) box.appendChild(el('p', {class: 'meta hw-src', text: sec.src}));
     hwBlocks(sec.blocks, box);
     return box;
   }

@@ -41,6 +41,8 @@ def parse(path, lang_i=True):
         if tag == '==':
             la, en = [x.strip() for x in body.split('|')]
             out.append({'la': latin_i(la), 'en': en, 'blocks': []}); cur = None; continue
+        if tag == 'S':
+            out[-1]['src'] = body.strip(); continue
         if tag == 'F/':
             stack.pop(); continue
         if tag == 'F':
@@ -96,7 +98,8 @@ for rite, suf in (('1939', ''), ('1959', '_59')):
     if os.path.exists(p):
         secs = parse(p)
         for s in secs: check(s['blocks'])
-        if rite == '1939': secs[0]['src'] = 'Missale Ordinis Prædicatorum (1939), pp. ' + PAGES[day]
+        first = next((x for x in secs if not x.get('src')), secs[0])
+        if rite == '1939': first['src'] = 'Missale Ordinis Prædicatorum (1939), pp. ' + PAGES[day]
         else: secs[0]['src'] = 'St Dominic Missal (1959), pp. ' + PAGES59.get(day, '')
         data[rite][day] = secs
 open(os.path.join(SITE, 'data/holyweek_text.js'), 'w', encoding='utf8').write(
