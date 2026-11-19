@@ -14,7 +14,7 @@ Don't say "abortion rights". He may do manual work: give him concrete lists.
 
 ## Order of work
 1 NOW: orations for 183 Masses lacking them (list: tools/orat39/MISSING.md). 2 booklet polish. 3 Holy Week leftovers:
-washing of altars DONE 2026-11-19 (tools/chant/abl/NOTES.md) -> Triduum Office (Tenebrae, Lauds, Hours, Vespers, Compline; Office tab AND
+washing of altars DONE 2026-11-19 (tools/chant/abl/NOTES.md); Thursday Tenebrae (Matins+Lauds, psalms sung to tones) DONE (tools/chant/ten/NOTES.md) -> NEXT Thursday Hours (Prime..None, Pretiosa; ant Christus factus est GB 6883; Ps 53 + 118 sections, tone VIII G to verify), Compline, Vespers psalm tones; then Friday/Saturday Tenebrae -> rest of Triduum Office (Tenebrae, Lauds, Hours, Vespers, Compline; Office tab AND
 holyweek page) -> check Holy Saturday tracts vs Triduum book -> Holy Sat Sanctus/Ite -> Palm Sunday procession chants
 (Processionarium 1913) LAST. 4 1959 rite. 5 Mass section: site-wide 1939/1962 switch ("both, switch everywhere"), strictly
 Dominican texts, Dominican Sunday numbering, consistency, Compline/Hours fixes. NB orations.js came from Divinum Officium

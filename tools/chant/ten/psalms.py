@@ -12,7 +12,7 @@ def _scan():
                     pass
                 i = 0
                 while i < len(la):
-                    m = re.match(r'<r>Psalmus (\d+)</r>|<r>(Canticum Moysis|Canticum Zachariæ)</r>', la[i])
+                    m = re.match(r'<r>Psalmus (\d+(?:\([\d-]+\))?)</r>|<r>(Canticum [^<]+)</r>', la[i])
                     if m:
                         name = m.group(1) or m.group(2)
                         j = i + 1; vs = []
@@ -31,7 +31,7 @@ def _scan():
                                 pairs2 = []
                                 for n, v in enumerate(vs):
                                     e = en[eidx + n] if eidx + n < len(en) else ''
-                                    pairs2.append((re.sub(r'^<n>[\d:]+</n>\s*', '', la[v]), re.sub(r'^<n>[\d:]+</n>\s*', '', e)))
+                                    pairs2.append((re.sub(r'^<n>[\d:]+</n>\s*(<n>\([^)]*\)</n>\s*)?', '', la[v]), re.sub(r'^<n>[\d:]+</n>\s*(<n>\([^)]*\)</n>\s*)?', '', e)))
                                 CACHE[name] = pairs2
                         i = j
                     else: i += 1
