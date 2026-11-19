@@ -113,6 +113,14 @@ def latin(t):
     for w0 in list(unk):
         if flat(w0) in MANUAL:
             a = re.sub(r'\b' + re.escape(w0) + r'\b', MANUAL[flat(w0)] if w0[0].islower() else MANUAL[flat(w0)].capitalize(), a); unk.remove(w0)
+    # hand accents win over the dictionary (it holds some unaccented forms: restaurare, Raymundi)
+    def _man(m):
+        w0 = m.group(0); r0 = MANUAL.get(flat(w0))
+        if not r0: return w0
+        if w0[0].isupper(): r0 = r0[0].upper() + r0[1:]
+        if 'j' in w0.lower() and 'i' in r0: r0 = ''.join('j' if (c in 'iI' and i < len(w0) and w0[i] in 'jJ') else c for i, c in enumerate(r0))
+        return r0
+    a = re.sub(r"[A-Za-zÀ-ÿæœǽÆŒǼ]+", _man, a)
     a = re.sub(r'^([ÁÉÍÓÚ])', lambda m: {'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 'Ú': 'U'}[m.group(1)], a)
     a = re.sub(r'(?<=[:;] )([ÁÉÍÓÚ])', lambda m: m.group(1), a)
     if not re.search(r'[.:;]$', a): a += ':' if concl and concl.startswith('Per') else '.'
@@ -161,19 +169,28 @@ def clean_en(t, ec):
 if __name__ == '__main__':
     M = json.load(open('matched.json'))
     OV = json.load(open('overrides.json'))
+    EF = json.load(open('en_final.json'))
     for k, d in OV.items():
         for kind, txt in d.items(): M[k]['pr'][kind] = txt
     out, report = {}, []
+    REJECT = {'S0508b', 'S1119b', 'G481'}  # wrong date matches: post-1939 Blesseds / a votive Mass
     for k, m in M.items():
+        if k in REJECT: continue
         if not (len(m['pr']) == 3 and all(m['pr'].values())): continue
         e = {'src': 'Missale O.P. (1939), p. ' + str(m.get('page') or '') + '; English: St Dominic Missal (1959)'}
         for kind in ('or', 'se', 'pc'):
             la, ec, unk = latin(m['pr'][kind])
             r, en = english(kind, flat(m['pr'][kind]))
-            if en and r >= 0.8: en, fx = clean_en(en, ec)
+            if kind in EF.get(k, {}):
+                # hand-checked English (en_final.json): the body only; the conclusion follows the Latin
+                b0 = EF[k][kind].rstrip(' .;:,')
+                en, fx = (b0 + '; ' + ec[0].lower() + ec[1:] if ec else b0 + '.'), []
+                if ec == EQT or ec == EQV: en = b0 + '; ' + ec[0].lower() + ec[1:]
+                r = 'final'
+            elif en and r >= 0.8: en, fx = clean_en(en, ec)
             else: en, fx = '', []
             e[kind] = [la, en]
-            report.append({'k': k, 'p': kind, 'unk': unk, 'fix': fx, 'r': round(r, 2), 'la': la, 'en': en})
+            report.append({'k': k, 'p': kind, 'unk': unk, 'fix': fx, 'r': r if isinstance(r, str) else round(r, 2), 'la': la, 'en': en})
         out[k] = e
     json.dump(out, open('new_or.json', 'w'), ensure_ascii=False, indent=0)
     json.dump(report, open('report.json', 'w'), ensure_ascii=False, indent=0)
