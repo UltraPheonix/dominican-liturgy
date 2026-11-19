@@ -617,6 +617,7 @@
     if (m.pref && PREFACES[m.pref]) return m.pref;
     if (key === 'SCJ') return 'Corde Iesu';
     if (key === 'ChristusRex') return 'D. N. Iesu Christo';
+    if (key === 'S1004') return 'Francisco';   // Missale O.P. 1939, Appendix: in all Masses of St Francis
     if (key === 'C79s' || /in Sabbato/.test(m.title || '')) {
       // Saturday of Our Lady: from Christmas to the Purification the Mass Vultum tuum with the Preface of the Nativity
       var md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
