@@ -80,3 +80,18 @@ Latin j -> i (site style). English: 1959 missal's where the text is the same, ot
 - A Credo chosen under Options is now sung even when the rubrics don't require it.
 - Orations added for S1112. ~180 Masses still lack orations (fill from dm.txt) -> next.
 - Test: python3 tools/booklet/book.py choir "S1112&d=2026-11-12&ord=X&credo=I" out.pdf (server on :8768 in site/).
+
+## 2026-11-19 07:50: Orations (IN PROGRESS, nothing merged into site/data/orations.js yet except S1112)
+183 Masses lacked orations. Pipeline in tools/orat39:
+1. lin.py   : Missale OP 1939.pdf -> m39lin.txt (text layer, blocks by column, drop caps joined). Clean!
+2. seg.py   : -> m39masses.json (455 Masses: month(0-based), day, title, pr{or,se,pc}, comm = Common page if "ut in Comm.")
+3. match.py : site Mass -> 1939 Mass (date +-2 days, name, saint's name in the Collect) -> matched.json (124 of 183)
+4. accent.py: accent dictionary from Divinum Officium + site texts (accdict.json, rebuilt automatically)
+5. build_or.py: Latin accented + full conclusion; English from St Dominic Missal (dm_prayers.json) when same prayer
+   -> new_or.json + report.json (unknown Latin words, English spelling fixes). 106 Masses complete.
+TODO: (a) finish OCR fixes (build_or.py ocr_fix just added, untested; run python3 build_or.py)
+      (b) manual_acc.json {flat word: accented} for ~100 rare words/names; (c) ~111 prayers need English (translate);
+      (d) Masses "ut in Comm. p. N*": take the Common's prayers and put the saint's name in;
+      (e) 59 not found: post-1939 Blesseds (need the current Dominican Proper), votives/commons, moved dates;
+      (f) proof every prayer against the Missal page, then merge new_or.json into site/data/orations.js.
+See tools/orat39/MISSING.md for the per-Mass list.
