@@ -3,7 +3,7 @@ DAY = sys.argv[1]; F = json.load(open('/home/claude/build/ten/final_%s.json' % D
 PAGES = json.load(open('/home/claude/build/ten/pages_%s.json' % DAY))
 MODE = json.load(open('/home/claude/build/ten/modes_%s.json' % DAY))
 def ispell(s): return s.replace('j', 'i').replace('J', 'I')
-PART = {'t': 'Antiphona', 'u': 'Antiphona', 'v': 'Versus', 'l': 'Lectio', 'k': 'Versus'}
+PART = {'c': 'Antiphona', 't': 'Antiphona', 'u': 'Antiphona', 'v': 'Versus', 'l': 'Lectio', 'k': 'Versus'}
 for code, d in F.items():
     clef, body = d['gabc'].split(' ', 1)
     toks = re.findall(r'([^()]*)\(([^)]*)\)(\s*)', body)

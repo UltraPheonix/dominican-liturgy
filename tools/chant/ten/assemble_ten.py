@@ -8,13 +8,13 @@ DAY = sys.argv[1] if len(sys.argv) > 1 else 'h'
 CLEF = dict(t01='c3', t02='c3', t03='c3', t04='c3', t05='c4', t06='c4', t07='c3', t08='c3', t09='c3', v01='c3', v02='c4', v03='c4',
             l01='c4', l02='c4', l03='c4', k04='c4', k05='c4', k06='c4', k08='c4', k10='c4', k13='c4', k19='c4')
 GB = {'l01': 8261, 'l02': 8262, 'l03': 8263, 'u01': 7158, 'u02': 5691, 'u03': 5695, 'u04': 4698, 'u05': 5605, 'u06': 6734}
-HAND = {'k01': '(c4) Ký(dh)ri(g)e,(g) (;) e(h)léi(gfd)son.(e) (::)', 'k07': '(c4) Chri(dh)ste,(g) (;) e(h)léi(gfd)son.(e) (::)'}
+HAND = {'c01': '(c3) Chri(e)stus(f) fac(h)tus(h) est(h) (::) pro(h) no(h)bis(h) o(h)bé(h)di(h)ens(h) us(h)que(h) ad(h) mor(i)tem,(h) (;) mor(h)tem(h) au(g)tem(h) cru(f)cis.(e) (::)', 'k01': '(c4) Ký(dh)ri(g)e,(g) (;) e(h)léi(gfd)son.(e) (::)', 'k07': '(c4) Chri(dh)ste,(g) (;) e(h)léi(gfd)son.(e) (::)'}
 GBSRC = {'l': 'Officium Hebdomadæ Sanctæ O.P. (1965)', 'u': 'Antiphonarium O.P. (1933)'}
 def text_of(code): return [p[4] for p in pieces.P if p[0] == code][0]
 res = {}
 REFRAIN = None
 for code in [p[0] for p in pieces.P]:
-    if code in ('b01',): continue
+    if code in ('b01',) or code.startswith('q') or code.startswith('p'): continue
     if code in HAND or code in ('k02', 'k03', 'k09', 'k11', 'k14', 'k15', 'k16', 'k12', 'k17', 'k18'):
         continue
     out = [list(t) for t in R[code]['out']]

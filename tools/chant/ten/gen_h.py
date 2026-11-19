@@ -5,13 +5,15 @@ def w(*l): out.extend(l)
 def T(la, en): w('T: ' + la, ' = ' + en)
 def R(la, en): w('R: ' + la, ' = ' + en)
 TONE = {68: ('VIII', 'c'), 69: ('VIII', 'c'), 70: ('VIII', 'c'), 71: ('VII', 'd'), 72: ('VIII', 'c'), 73: ('I', 'a'), 74: ('VII', 'd'), 75: ('VIII', 'c'),
-        76: ('VII', 'a'), 50: ('VIII', 'G'), 89: ('II', 'D'), 62: ('VIII', 'G'), 'Canticum Moysis': ('IVA', 'A'), 148: ('II', 'D'), 'Canticum Zachariæ': ('I', 'g')}
+        76: ('VII', 'a'), 53: ('VIII', 'G'), '118(1-16)': ('VIII', 'G'), '118(17-32)': ('VIII', 'G'), '118(33-48)': ('VIII', 'G'), '118(49-64)': ('VIII', 'G'),
+        '118(65-80)': ('VIII', 'G'), '118(81-96)': ('VIII', 'G'), '118(97-112)': ('VIII', 'G'), '118(113-128)': ('VIII', 'G'), '118(129-144)': ('VIII', 'G'),
+        '118(145-160)': ('VIII', 'G'), '118(161-176)': ('VIII', 'G'), 50: ('VIII', 'G'), 89: ('II', 'D'), 62: ('VIII', 'G'), 'Canticum Moysis': ('IVA', 'A'), 148: ('II', 'D'), 'Canticum Zachariæ': ('I', 'g')}
 PSPEC = []
 def ps(n, title_la, title_en, sung=True):
     vs = psalms.psalm(n)
     w('F: %s | %s' % (title_la, title_en))
     if sung:
-        tn, d = TONE[n]; pid = 'op-ten-h-ps-%s' % (str(n) if isinstance(n, int) else ('moysis' if 'Moysis' in n else 'zachariae'))
+        tn, d = TONE[n]; pid = 'op-ten-h-ps-%s' % (str(n) if isinstance(n, int) else ('moysis' if 'Moysis' in n else 'zachariae' if 'Zach' in n else n.replace('(', '-').replace(')', '')))
         PSPEC.append(dict(id=pid, name=title_la, tone=tn, diff=d, solemn=(n == 'Canticum Zachariæ'), verses=[la for la, en in vs],
                           src='Ecclesiasticum Officium O.P. Triduo ante Pascha (1927): tone and ending as the book gives them on the first verse',
                           tr='set to the Dominican psalm tone (Tonorum communium regulae)'))
@@ -138,6 +140,65 @@ T('^Réspice, quǽsumus, Dómine, super hanc famíliam tuam, pro qua Dóminus no
 R('Non dicatur *Qui tecum,* neque *Amen,* neque *Benedicámus Dómino,* neque *Fidélium,* sed dicto post Orationem *Pater noster,* facto signo a Prælato, surgant omnes, et lumen a Sacrista proferatur. Et sic hoc triduo Matutinum terminetur.',
   '*Qui tecum,* *Amen,* *Benedicámus Dómino* and *Fidélium* are not said; but after the Prayer the *Pater noster* is said, and at a sign from the Prelate all rise, and the light is brought out by the Sacristan. And so Matins ends on these three days.')
 R('Hac die non fiant prostrationes ad Horas, propter solemnitatem Cenæ, nisi in hac Hora Laudum tantum.', 'On this day there are no prostrations at the Hours, because of the solemnity of the Supper, except at this Hour of Lauds only.')
+# ---------------------------------------------------------------- the Little Hours
+w('== Ad Horas | The Little Hours', 'S: Ecclesiasticum Officium O.P. Triduo ante Pascha (1927), pp. 44-56')
+R('Usque ad Completorium Sabbati exclusive, non dicatur *Deus, in adjutórium,* in principio Horarum; nec *Convérte nos,* ad Completorium; nec *Glória Patri,* in fine Psalmorum et Canticorum, nisi in Vesperis Sabbati; nec Capitulum, nec Hymnus, nec ℟., nec Versiculus, nec *Dóminus vobíscum,* nec *Orémus,* nec *Qui tecum vivit,* nec *Benedicámus Dómino,* nec *Fidélium,* post Horas. More tamen solito dicatur *Pater noster.*',
+  'Until Compline of Holy Saturday exclusive, *Deus, in adjutórium* is not said at the beginning of the Hours; nor *Convérte nos* at Compline; nor *Glória Patri* at the end of the Psalms and Canticles, except at Vespers of Holy Saturday; nor the Chapter, Hymn, Responsory or Versicle, nor *Dóminus vobíscum,* *Orémus,* *Qui tecum vivit,* *Benedicámus Dómino* or *Fidélium* after the Hours. But the *Pater noster* is said as usual.')
+R('Antiphonæ vero *Salve Regína,* et *Pie Pater Domínice,* cum Versiculis et Orationibus in terminatione Horarum dici solitis omittantur usque ad Pascha exclusive.',
+  'The antiphons *Salve Regína* and *Pie Pater Domínice,* with the Versicles and Prayers usually said at the end of the Hours, are left out until Easter exclusive.')
+RESP_OR = ('^Réspice, quǽsumus, Dómine, super hanc famíliam tuam, pro qua Dóminus noster Jesus Christus non dubitávit mánibus tradi nocéntium, et crucis subíre torméntum.',
+           'Look down, we beseech thee, O Lord, upon this thy family, for which our Lord Jesus Christ did not hesitate to be delivered into the hands of the wicked, and to undergo the torment of the Cross.')
+CF = ('Christus factus est pro nobis obédiens usque ad mortem, mortem autem crucis.', 'Christ became obedient for us unto death, even the death of the Cross.')
+def hour(h_la, h_en, pss, first=False):
+    w('H: ' + h_la, ' = ' + h_en)
+    R('Dicto *Pater noster,*%s postquam versis vultibus ad Altare Fratres se signaverint, inchoëtur:' % (' et *Credo in Deum,*' if first else ''),
+      'When the *Pater noster*%s has been said, and the brethren, turned towards the altar, have signed themselves, there is begun:' % (' and the *Credo*' if first else ''))
+    T('{Aña} Christus factus est. {Ps. %s}' % pss[0][1], '{Ant.} Christ became obedient… {Ps. %s}' % pss[0][1])
+    for n, num, inc in pss: ps(n, 'Psalmus %s %s' % (num, inc), 'Psalm %s' % num)
+    ANT('c01', CF[0], CF[1], 'Antiphona · VIII')
+    if first: R('Dicta post Psalmos Antiphona, absque *Kýrie, eléison,* et Precibus, et sine Psalmo *Miserére,* dicatur Oratio:',
+                'When the Antiphon has been said after the Psalms, without *Kýrie, eléison,* the Preces and the Psalm *Miserére,* the Prayer is said:')
+    w('L: Oratio', ' = Prayer'); T(*RESP_OR)
+hour('AD PRIMAM', 'PRIME', [(53, '53', 'Deus, in nómine tuo'), ('118(1-16)', '118, i', 'Beáti immaculáti'), ('118(17-32)', '118, ii', 'Retríbue servo tuo')], True)
+R('*Confíteor* non dicatur usque ad Completorium Sabbati exclusive.', 'The *Confíteor* is not said until Compline of Holy Saturday exclusive.')
+w('H: AD PRETIOSAM', ' = AT THE PRETIOSA')
+R('Pronuntiatis Luna et quæ de Kalendario et Martyrologio pronuntianda sunt, et responso *Deo grátias,* dicatur *Pretiósa,* hoc modo:',
+  'When the Moon and what is to be announced from the Calendar and the Martyrology have been read, and *Deo grátias* answered, the *Pretiósa* is said in this way:')
+T('{℣.} Pretiósa est in conspéctu Dómini. {℟.} Mors sanctórum ejus.', '{℣.} Precious in the sight of the Lord. {℟.} Is the death of his saints.')
+R('Oratio absque *Orémus*', 'The Prayer, without *Orémus*')
+T('^Sancta María et omnes Sancti intercédant pro nobis ad Dóminum: ut mereámur adjuvári ab eo, qui vivit et regnat per ómnia sǽcula sæculórum. {℟.} Amen.',
+  'May holy Mary and all the Saints intercede for us with the Lord, that we may be worthy to be helped by him who lives and reigns for ever and ever. {℟.} Amen.')
+T('{℣.} Deus, in adjutórium meum inténde. {℟.} Dómine, ad adjuvándum me festína.', '{℣.} O God, come to my assistance. {℟.} O Lord, make haste to help me.')
+R('Hic ℣. *Deus, in adjutórium,* cum ℟. *Dómine, ad adjuvándum,* ter dicatur. Deinde, omisso *Glória Patri,* subjungatur:',
+  'Here the ℣. *Deus, in adjutórium* with the ℟. *Dómine, ad adjuvándum* is said three times. Then, the *Glória Patri* being left out, is added:')
+T('Kýrie, eléison. Christe, eléison. Kýrie, eléison. Pater noster… {℣.} Et ne nos indúcas in tentatiónem. {℟.} Sed líbera nos a malo.',
+  'Lord, have mercy. Christ, have mercy. Lord, have mercy. Our Father… {℣.} And lead us not into temptation. {℟.} But deliver us from evil.')
+T('{℣.} Réspice, Dómine, in servos tuos, et in ópera tua, et dírige fílios eórum. {℟.} Et sit splendor Dómini Dei nostri super nos, et ópera mánuum nostrárum dírige super nos: et opus mánuum nostrárum dírige.',
+  '{℣.} Look upon thy servants, O Lord, and upon thy works, and direct their children. {℟.} And let the brightness of the Lord our God be upon us, and direct thou the works of our hands over us: yea, the work of our hands do thou direct.')
+R('Oratio absque *Orémus*', 'The Prayer, without *Orémus*')
+T('^Dirígere et sanctificáre dignéris, Dómine sancte, Pater omnípotens, ætérne Deus, hódie corda et córpora nostra in lege tua, et in opéribus mandatórum tuórum: ut hic, et in ætérnum, te auxiliánte, semper salvi esse mereámur: Per Christum Dóminum nostrum. {℟.} Amen.',
+  'Vouchsafe, O holy Lord, almighty Father, eternal God, to direct and sanctify this day our hearts and bodies in thy law and in the works of thy commandments, that here and for ever, by thy help, we may be worthy to be always saved: Through Christ our Lord. {℟.} Amen.')
+T('Jube, domne, benedícere. {Benedictio} Divínum auxílium máneat semper nobíscum. {℟.} Amen.', 'Pray, father, a blessing. {Blessing} May the divine help remain with us always. {℟.} Amen.')
+w('L: Evangelium', ' = Gospel')
+T('^Secúndum Joánnem. Cap. 13. Ante diem festum Paschæ, sciens Jesus quia venit hora ejus ut tránseat ex hoc mundo ad Patrem: cum dilexísset suos, qui erant in mundo, in finem diléxit eos. Tu autem, Dómine, miserére nostri. {℟.} Deo grátias.',
+  'According to John, chapter 13. Before the festival day of the Pasch, Jesus, knowing that his hour was come that he should pass out of this world to the Father, having loved his own who were in the world, he loved them unto the end. But thou, O Lord, have mercy on us. {℟.} Thanks be to God.')
+R('Commemoratio Fratrum, Sororum, Familiarium, Benefactorum defunctorum Ordinis nostri.', 'Commemoration of the departed brethren, sisters, familiars and benefactors of our Order.')
+T('Requiéscant in pace. {℟.} Amen.', 'May they rest in peace. {℟.} Amen.')
+T('{Ps. 116} Laudáte Dóminum, omnes gentes: * laudáte eum, omnes pópuli. Quóniam confirmáta est super nos misericórdia ejus: * et véritas Dómini manet in ætérnum.',
+  '{Ps. 116} O praise the Lord, all ye nations: praise him, all ye people. For his mercy is confirmed upon us: and the truth of the Lord remaineth for ever.')
+R('Deinde, omisso *Glória Patri,* sequitur:', 'Then, the *Glória Patri* being left out, there follows:')
+T('{℣.} Osténde nobis, Dómine, misericórdiam tuam. {℟.} Et salutáre tuum da nobis. {℣.} Dóminus vobíscum. {℟.} Et cum spíritu tuo. Orémus.',
+  '{℣.} Show us, O Lord, thy mercy. {℟.} And grant us thy salvation. {℣.} The Lord be with you. {℟.} And with thy spirit. Let us pray.')
+w('L: Oratio', ' = Prayer')
+T('^Actiónes nostras, quǽsumus, Dómine, aspirándo prǽveni et adjuvándo proséquere: ut cuncta nostra operátio a te semper incípiat, et per te cœpta finiátur. Per Christum Dóminum nostrum. {℟.} Amen.',
+  'Go before our actions, we beseech thee, O Lord, by thy inspiration, and further them by thy help, that every work of ours may always begin with thee, and through thee be ended. Through Christ our Lord. {℟.} Amen.')
+T('{℣.} Adjutórium nostrum in nómine Dómini. {℟.} Qui fecit cælum et terram.', '{℣.} Our help is in the name of the Lord. {℟.} Who made heaven and earth.')
+R('Non dicatur *Fidélium ánimæ.*', '*Fidélium ánimæ* is not said.')
+hour('AD TERTIAM', 'TERCE', [('118(33-48)', '118, iii', 'Legem pone'), ('118(49-64)', '118, iv', 'Memor esto'), ('118(65-80)', '118, v', 'Bonitátem fecísti')])
+hour('AD SEXTAM', 'SEXT', [('118(81-96)', '118, vi', 'Defécit'), ('118(97-112)', '118, vii', 'Quómodo diléxi'), ('118(113-128)', '118, viii', 'Iníquos ódio hábui')])
+hour('AD NONAM', 'NONE', [('118(129-144)', '118, ix', 'Mirabília'), ('118(145-160)', '118, x', 'Clamávi'), ('118(161-176)', '118, xi', 'Príncipes')])
+R('Fratres privatas Missas non celebrent, sed omnes in Missa conventuali communicent. Sacrista vero ante Nonam omnia altaria detegat, præter majus, (quod dum Vesperæ cantantur detegatur, una sola mappa super ipsum usque post finem Missæ relicta, qua finita removeatur) et usque ad horam Tertiam Sabbati sequentis detecta remaneant, præter majus, quod in crastino hora Officii cooperiatur.',
+  'The brethren do not celebrate private Masses, but all receive Communion at the conventual Mass. Before None the Sacristan strips all the altars except the high altar (which is stripped while Vespers are sung, a single cloth being left on it until after the end of the Mass, and removed when the Mass is over); and they remain bare until the hour of Terce on the following Saturday, except the high altar, which is covered on the morrow at the time of the Office.')
 open('/home/claude/dominican-liturgy/tools/hw39/Quad6h_ten.src', 'w').write('\n'.join(out) + '\n')
 import subprocess
 print(subprocess.run(['node', '/home/claude/build/ten/gen_ps.js'], input=json.dumps(PSPEC, ensure_ascii=False), capture_output=True, text=True))
