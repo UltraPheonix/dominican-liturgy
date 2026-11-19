@@ -4,9 +4,21 @@ out = []
 def w(*l): out.extend(l)
 def T(la, en): w('T: ' + la, ' = ' + en)
 def R(la, en): w('R: ' + la, ' = ' + en)
-def ps(n, title_la, title_en):
+TONE = {68: ('VIII', 'c'), 69: ('VIII', 'c'), 70: ('VIII', 'c'), 71: ('VII', 'd'), 72: ('VIII', 'c'), 73: ('I', 'a'), 74: ('VII', 'd'), 75: ('VIII', 'c'),
+        76: ('VII', 'a'), 50: ('VIII', 'G'), 89: ('II', 'D'), 62: ('VIII', 'G'), 'Canticum Moysis': ('IVA', 'A'), 148: ('II', 'D'), 'Canticum Zachariæ': ('I', 'g')}
+PSPEC = []
+def ps(n, title_la, title_en, sung=True):
+    vs = psalms.psalm(n)
     w('F: %s | %s' % (title_la, title_en))
-    for la, en in psalms.psalm(n): T(la, en)
+    if sung:
+        tn, d = TONE[n]; pid = 'op-ten-h-ps-%s' % (str(n) if isinstance(n, int) else ('moysis' if 'Moysis' in n else 'zachariae'))
+        PSPEC.append(dict(id=pid, name=title_la, tone=tn, diff=d, solemn=(n == 'Canticum Zachariæ'), verses=[la for la, en in vs],
+                          src='Ecclesiasticum Officium O.P. Triduo ante Pascha (1927): tone and ending as the book gives them on the first verse',
+                          tr='set to the Dominican psalm tone (Tonorum communium regulae)'))
+        w('G: %s | Tonus %s %s' % (pid, tn.replace('IVA', 'IV A'), d))
+        w('F: Textus et versio | Text and translation')
+    for la, en in vs: T(la, en)
+    if sung: w('F/')
     w('F/')
 def ant(code, inc, ps_ref, la, en, mode=''):
     T('{Aña} %s {%s}' % (inc, ps_ref), '{Ant.} %s {%s}' % (en.split(' ')[0] + '…', ps_ref.replace('Ps.', 'Ps.')))
@@ -29,14 +41,14 @@ NOCT = [
   ('t03', 70, 'Deus meus, éripe me de manu peccatóris.', 'Deliver me, O my God, out of the hand of the sinner.', 'Antiphona 3 · VIII')],
   ('v01', '{℣.} Exsúrge, Dómine. {℟.} Et júdica causam meam.', '{℣.} Arise, O Lord. {℟.} And judge my cause.')),
  ('IN II NOCTURNO', 'SECOND NOCTURN', [
-  ('t04', 71, 'Liberávit Dóminus páuperem a poténte: et ínopem, cui non erat adjútor.', 'The Lord hath delivered the poor from the mighty, and the needy that had no helper.', 'Antiphona 4 · VIII'),
+  ('t04', 71, 'Liberávit Dóminus páuperem a poténte: et ínopem, cui non erat adjútor.', 'The Lord hath delivered the poor from the mighty, and the needy that had no helper.', 'Antiphona 4 · VII'),
   ('t05', 72, 'Cogitavérunt ímpii, et locúti sunt nequítiam: iniquitátem in excélso locúti sunt.', 'The wicked have thought and spoken wickedness: they have spoken iniquity on high.', 'Antiphona 5 · VIII'),
-  ('t06', 73, 'Exsúrge, Dómine, et júdica causam meam.', 'Arise, O Lord, and judge my cause.', 'Antiphona 6')],
+  ('t06', 73, 'Exsúrge, Dómine, et júdica causam meam.', 'Arise, O Lord, and judge my cause.', 'Antiphona 6 · I')],
   ('v02', '{℣.} Deus meus, éripe me de manu peccatóris. {℟.} Et de manu contra legem agéntis et iníqui.', '{℣.} Deliver me, O my God, out of the hand of the sinner. {℟.} And out of the hand of the transgressor of the law and of the unjust.')),
  ('IN III NOCTURNO', 'THIRD NOCTURN', [
-  ('t07', 74, 'Dixi iníquis: Nolíte loqui advérsus Deum iniquitátem.', 'I said to the wicked: Speak not iniquity against God.', 'Antiphona 7 · VIII'),
+  ('t07', 74, 'Dixi iníquis: Nolíte loqui advérsus Deum iniquitátem.', 'I said to the wicked: Speak not iniquity against God.', 'Antiphona 7 · VII'),
   ('t08', 75, 'Terra trémuit et quiévit, dum resúrgeret in judícium Deus.', 'The earth trembled and was still, when God arose in judgement.', 'Antiphona 8 · VIII'),
-  ('t09', 76, 'In die tribulatiónis meæ Deum exquisívi mánibus meis.', 'In the day of my trouble I sought God with my hands.', 'Antiphona 9 · VIII')],
+  ('t09', 76, 'In die tribulatiónis meæ Deum exquisívi mánibus meis.', 'In the day of my trouble I sought God with my hands.', 'Antiphona 9 · VII')],
   ('v03', '{℣.} Homo pacis meæ, in quo sperávi. {℟.} Ampliávit advérsum me supplantatiónem.', '{℣.} The man of my peace, in whom I trusted. {℟.} Hath greatly supplanted me.')),
 ]
 PSN = {68: 'Salvum me fac, Deus', 69: 'Deus, in adjutórium', 70: 'In te, Dómine, sperávi', 71: 'Deus, judícium tuum', 72: 'Quam bonus Israël Deus', 73: 'Ut quid, Deus', 74: 'Confitébimur tibi', 75: 'Notus in Judǽa', 76: 'Voce mea ad Dóminum'}
@@ -71,11 +83,11 @@ R('Hoc triduo, finito IX ℟., non dicatur ℣. ante Laudes, sed statim inchoët
   'On these three days, when the ninth Responsory is finished, no Versicle is said before Lauds, but the first Antiphon of Lauds is begun at once.')
 # ---------------------------------------------------------------- Lauds
 w('== Ad Laudes | Lauds', 'H: AD LAUDES', ' = LAUDS', 'S: Ecclesiasticum Officium O.P. Triduo ante Pascha (1927), pp. 31-44')
-LA = [('u01', 50, 'Psalmus 50 Miserére', 'Psalm 50', 'Justificéris, Dómine, in sermónibus tuis, et vincas cum judicáris.', 'That thou mayest be justified, O Lord, in thy words, and mayest overcome when thou art judged.', 'Antiphona 1'),
-      ('u02', 89, 'Psalmus 89 Dómine, refúgium', 'Psalm 89', 'Dóminus tamquam ovis ad víctimam ductus est, et non apéruit os suum.', 'The Lord was led as a sheep to the slaughter, and he opened not his mouth.', 'Antiphona 2'),
-      ('u03', 62, 'Psalmus 62 Deus, Deus meus', 'Psalm 62', 'Contrítum est cor meum in médio mei: contremuérunt ómnia ossa mea.', 'My heart is broken within me; all my bones tremble.', 'Antiphona 3'),
-      ('u04', 'Canticum Moysis', 'Canticum Moysis (Exod. 15) Cantémus Dómino', 'Canticle of Moses (Exod. 15)', 'Exhortátus es in virtúte tua, et in refectióne sancta tua, Dómine.', 'Thou hast encouraged us in thy strength, and in thy holy refreshment, O Lord.', 'Antiphona 4'),
-      ('u05', 148, 'Psalmus 148 Laudáte Dóminum de cælis', 'Psalm 148', 'Oblátus est, quia ipse vóluit: et peccáta nostra ipse portávit.', 'He was offered because it was his own will, and he bore our sins.', 'Antiphona 5')]
+LA = [('u01', 50, 'Psalmus 50 Miserére', 'Psalm 50', 'Justificéris, Dómine, in sermónibus tuis, et vincas cum judicáris.', 'That thou mayest be justified, O Lord, in thy words, and mayest overcome when thou art judged.', 'Antiphona 1 · VIII'),
+      ('u02', 89, 'Psalmus 89 Dómine, refúgium', 'Psalm 89', 'Dóminus tamquam ovis ad víctimam ductus est, et non apéruit os suum.', 'The Lord was led as a sheep to the slaughter, and he opened not his mouth.', 'Antiphona 2 · II'),
+      ('u03', 62, 'Psalmus 62 Deus, Deus meus', 'Psalm 62', 'Contrítum est cor meum in médio mei: contremuérunt ómnia ossa mea.', 'My heart is broken within me; all my bones tremble.', 'Antiphona 3 · VIII'),
+      ('u04', 'Canticum Moysis', 'Canticum Moysis (Exod. 15) Cantémus Dómino', 'Canticle of Moses (Exod. 15)', 'Exhortátus es in virtúte tua, et in refectióne sancta tua, Dómine.', 'Thou hast encouraged us in thy strength, and in thy holy refreshment, O Lord.', 'Antiphona 4 · IV'),
+      ('u05', 148, 'Psalmus 148 Laudáte Dóminum de cælis', 'Psalm 148', 'Oblátus est, quia ipse vóluit: et peccáta nostra ipse portávit.', 'He was offered because it was his own will, and he bore our sins.', 'Antiphona 5 · II')]
 for code, p, tla, ten, la, en, lab in LA:
     inc = {'u01': 'Justificéris', 'u02': 'Dóminus', 'u03': 'Contrítum est', 'u04': 'Exhortátus es', 'u05': 'Oblátus est'}[code]
     T('{Aña} %s. {%s}' % (inc, tla.split(' ', 2)[0] + ' ' + tla.split(' ', 2)[1] if code != 'u04' else 'Cant. Moysis'), '{Ant.} %s {%s}' % (en.split(',')[0].split(':')[0] + '…', ten))
@@ -118,7 +130,7 @@ for k in K:
     else: w('G: op-ten-h-%s | %s' % (k[1], k[2]))
 R('Finito Versu *Mortem autem crucis,* prosternant se omnes super formas, et dicant *Pater noster,* secreto, et facto signo a Prælato dicant mediocri voce alternatim Psalmum 50 *Miserére mei Deus.*',
   'When the Verse *Mortem autem crucis* is finished, all prostrate themselves on the forms and say the *Pater noster* silently, and at a sign from the Prelate they say Psalm 50 *Miserére mei Deus* alternately in a moderate voice.')
-ps(50, 'Psalmus 50 Miserére', 'Psalm 50')
+ps(50, 'Psalmus 50 Miserére', 'Psalm 50', sung=False)
 R('Deinde, absque *Dóminus vobíscum,* et absque *Orémus,* dicatur:', 'Then, without *Dóminus vobíscum* and without *Orémus,* is said:')
 w('L: Oratio', ' = Prayer')
 T('^Réspice, quǽsumus, Dómine, super hanc famíliam tuam, pro qua Dóminus noster Jesus Christus non dubitávit mánibus tradi nocéntium, et crucis subíre torméntum.',
@@ -127,4 +139,6 @@ R('Non dicatur *Qui tecum,* neque *Amen,* neque *Benedicámus Dómino,* neque *F
   '*Qui tecum,* *Amen,* *Benedicámus Dómino* and *Fidélium* are not said; but after the Prayer the *Pater noster* is said, and at a sign from the Prelate all rise, and the light is brought out by the Sacristan. And so Matins ends on these three days.')
 R('Hac die non fiant prostrationes ad Horas, propter solemnitatem Cenæ, nisi in hac Hora Laudum tantum.', 'On this day there are no prostrations at the Hours, because of the solemnity of the Supper, except at this Hour of Lauds only.')
 open('/home/claude/dominican-liturgy/tools/hw39/Quad6h_ten.src', 'w').write('\n'.join(out) + '\n')
+import subprocess
+print(subprocess.run(['node', '/home/claude/build/ten/gen_ps.js'], input=json.dumps(PSPEC, ensure_ascii=False), capture_output=True, text=True))
 print(len(out))

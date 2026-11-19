@@ -7,3 +7,8 @@ Day h = Maundy Thursday: Matins (Tenebrae) pdf pp. 2R-17R, Lauds 17R-24L.
 - writeg_ten.py h -> gabc; gen_h.py -> src (psalms la/en from data/office via psalms.py; lessons 4-9 typed from the 1927 page,
   English mine in lessons_h.json; responsories = op-abl-r01..r09, the same chant as the Tenebrae printing).
 - Matins antiphons t01-t09 + versicles proofed on the scan (full.py/zz.py). Benedictus is notated in full in the book: shown as text.
+- Psalms are sung: gen_ps.js sets each psalm to the Dominican tone with js/psalm.js (same engine as the Office tab). Tone + ending
+  per psalm (gen_h.py TONE) chosen by matching the book's notated first verse (pieces p68..p53, OMR) against every tone/ending
+  (/tmp/match.js logic): N1 VIII c; Ps71 VII d, Ps72 VIII c, Ps73 I a; Ps74 VII d, Ps75 VIII c, Ps76 VII a; Lauds 50 VIII G,
+  89 II D, 62 VIII G, Cant. Moysis IV A, 148 II D, Benedictus I g solemn (every verse intoned). Ps 50 after the Kyrie is said
+  (mediocri voce) -> text only. Known small difference: the book's mediant in Ps 71 v.1 ("regi da") differs from the 1965 rules.
