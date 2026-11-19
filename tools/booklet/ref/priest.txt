@@ -1,0 +1,1598 @@
+
+=========== PAGE 1
+0   48 G | M i s s a l e
+0  114  i| juxta ritum Sacri Ordinis Prædicatorum
+0  367   | Die 12 Novembris 2026
+0  401   | In Festivitate
+0  433   | Omnium Sanctorum
+0  464   | Ordinis Prædicatorum
+0  507 Gi| Totum Duplex II classis
+0  584   | Missa solemnis · Gloria · Credo · Præfatio de S. P. N. Dominico
+0  747 G | Textus ex Missali S. Ordinis Prædicatorum (Romæ, 1939), pp. 192–210, 619–620
+
+=========== PAGE 2
+0   51 G | Præparatio
+0  240 Gi| The priest, having come to the middle of the altar to cele-
+0  254 Gi| brate, makes a profound bow, then standing signs himself
+0  267 Gi| with the sign of the Cross, saying in a clear and audible
+0  281 Gi| voice:
+0  300 G | S. In nómine Patris, ) et Fílii, et Spíritus Sancti.
+0  314   | Amen.
+0  332 G | S. Confitémini Dómino quóniam bonus.
+0  349 G | M. Quóniam in sǽculum misericórdia ejus.
+0  364 G | S. Confíteor Deo omnipoténti, et beátæ Maríæ
+0  381   | semper Vírgini, et beáto Domínico Patri nostro,
+0  396   | et ómnibus Sanctis, et vobis, Fratres, quia peccávi
+0  410   | nimis, cogitatióne, locutióne, ópere et omissióne,
+0  425   | mea culpa: precor vos oráre pro me.
+0  442 G | M. Misereátur tui omnípotens Deus, et dimíttat tibi
+0  456   | ómnia peccáta tua: líberet te ab omni malo, salvet
+0  471   | et confírmet in omni ópere bono, et perdúcat te ad
+0  485   | vitam ætérnam.
+0  503 G | S. Amen.
+0  520 G | M. Confíteor Deo omnipoténti, et beátæ Maríæ
+0  535   | semper Vírgini, et beáto Domínico Patri nostro, et
+0  549   | ómnibus Sanctis, et tibi, Pater, quia peccávi nimis,
+0  564   | cogitatióne, locutióne, ópere et omissióne, mea
+0  578   | culpa: precor te oráre pro me.
+0  595 G | S. Misereátur vestri omnípotens Deus, et dimíttat
+0  610   | vobisómniapeccátavestra: líberetvosabomnimalo,
+0  624   | salvet et confírmet in omni ópere bono, et perdúcat
+0  639   | vos ad vitam ætérnam.
+0  656 G | M. Amen.
+0  674 G | S. Absolutiónem et remissiónem ómnium pecca-
+0  688   | tórum vestrórum tríbuat vobis omnípotens et mis-
+0  703   | éricors Dóminus.
+0  720 G | M. Amen.
+0  737 G | S. Adjutórium nostrum in nómine Dómini.
+0  755 G | M. Qui fecit cælum et terram.
+0  801 G | Missale · In Festivitate Omnium Sanctorum O. P.
+1   55 Gi| Going up to the altar, bowing, he says secretly:
+1   71 G | Aufer a nobis, Dómine, cunctas iniquitátes nostras:
+1   88   | ut ad Sancta sanctórum puris mereámur méntibus
+1  103   | introíre. Per Christum Dóminum nostrum. Amen.
+1  123 Gi| He kisses the altar and, signing himself, goes to the book.
+1  157 G | Officium
+1  177 Gi| Ps. 32
+1  336 G | Gaudeámus omnes in Dómino, diem festum cele-
+1  353   | brántes sub honóre Sanctórum ómnium: de quo-
+1  367   | rum solemnitáte gaudent Angeli, et colláudant
+1  382   | Fílium Dei. >V Ps. 32 Exsultáte justi in Dómino: rec-
+1  396   | tos decet collaudátio. >V Glória Patri. and Gaudeá-
+1  411 G | mus is repeated.
+1  443 G | Kyrie
+1  492 Gi| Alternately with the ministers:
+1  511   | Kýrie, eléison.
+1  511   | Kýrie, eléison.
+1  511   | Kýrie, eléison.
+1  526   | Christe, eléison. Christe, eléison. Christe, eléison.
+1  540   | Kýrie, eléison. Kýrie, eléison. Kýrie, eléison.
+1  573 G | Gloria in excelsis
+1  622 Gi| At the middle of the altar the priest intones, in the tone for
+1  635 Gi| solemn feasts:
+1  657   | I
+1  657   | I
+1  664   | I
+1  664   | I
+1  668   | I
+1  668   | I
+1  668   | I
+1  671   | eI
+1  671   | o.I
+1  693   | Gló-
+1  693   | ri-
+1  693   | a
+1  693   | in
+1  693   | xcé
+1  693   | lsis
+1  693   | De-
+1  713 Gi| And continues secretly with the ministers:
+1  732   | Et in terra pax homínibus bonæ voluntátis. Laudá-
+1  746   | mus te. Benedícimus te. Adorámus te. Glori-
+1  761   | ficámus te. Grátias ágimus tibi propter magnam
+1  801 G | •
+1  801 G | 2
+
+=========== PAGE 3
+0   54   | glóriam tuam. Dómine Deus, Rex cæléstis, Deus
+0   68   | Pater omnípotens. Dómine Fili unigénite, Jesu
+0   83   | Christe. Dómine Deus, Agnus Dei, Fílius Patris.
+0   97   | Qui tollis peccáta mundi, miserére nobis. Qui tol-
+0  112   | lis peccáta mundi, súscipe deprecatiónem nostram.
+0  126   | Qui sedes ad déxteram Patris, miserére nobis. Quó-
+0  140   | niam tu solus Sanctus. Tu solus Dóminus. Tu solus
+0  155   | Altíssimus, Jesu Christe. Cum Sancto Spíritu ) in
+0  169   | glória Dei Patris. Amen.
+0  202 G | Oratio
+0  251 Gi| Turned to the people, he sings:
+0  276   | I
+0  276   | I
+0  276   | Ǎ
+0  276   | I
+0  276   | I
+0  276   | I
+0  276   | I
+0  280   | <
+0  280   | I
+0  280   | Ğ
+0  280   | I
+0  280   | I
+0  280   | I
+0  280   | I
+0  312   | Dó
+0  312   | mi
+0  312   | nus
+0  312   | vo-
+0  312   | bí
+0  312   | scum.
+0  312 G | =R. Et
+0  312   | cum
+0  312   | spí-
+0  312   | ri-
+0  312   | tu
+0  312   | tu-
+0  312   | o.
+0  332 Gi| At the book: Orémus. He sings the Collect on a single note;
+0  346 Gi| at the end the choir answers Amen.
+0  365 G | Orémus.
+0  380 G | Deus, qui Prædicatórum Ordinem copiósa Sanc-
+0  397   | tórum sóbole fecundáre dignátus es, atque in ip-
+0  412   | sis heróica ómnium virtútum mérita sublímiter
+0  426   | coronásti: da nobis illórum sequi vestígia; ut quos
+0  441   | hódie sub una celebritáte venerámur in terris, iis
+0  455   | perpétua tandem festivitáte associémur in cælis. Per
+0  470   | Dóminum nostrum Jesum Christum Fílium tuum,
+0  484   | qui tecum vivit et regnat in unitáte Spíritus Sancti
+0  498   | Deus, per ómnia sǽcula sæculórum. =R Amen.
+0  531 G | Epistola
+0  551 Gi| 2 Cor. 6, 4–10
+0  728 Gi| The subdeacon sings the Epistle. The priest, with the deacon
+0  742 Gi| at the sedilia, reads the Epistle, Responsory and Alleluia
+0  755 Gi| secretly.
+0  801 G | Missale · In Festivitate Omnium Sanctorum O. P.
+1   54 G | Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios.
+1   69 G | Fratres:
+1   71   | Exhibeámus nosmetípsos sicut Dei
+1   86   | minístros in multa patiéntia, in tribulatiónibus, in
+1  100   | necessitátibus, in angústiis, in plagis, in carcéribus,
+1  115   | in seditiónibus, in labóribus, in vigíliis, in jejúniis, in
+1  129   | castitáte, in sciéntia, in longanimitáte, in suavitáte,
+1  143   | in Spíritu Sancto: in caritáte non ficta, in verbo
+1  158   | veritátis, in virtúte Dei: per arma justítiæ a dextris,
+1  172   | et a sinístris: per glóriam, et ignobilitátem: per in-
+1  187   | fámiam, et bonam famam: ut seductóres, et veráces:
+1  201   | sicut qui ignóti, et cógniti: quasi moriéntes, et
+1  216   | ecce vívimus: ut castigáti, et non mortificáti: quasi
+1  230   | tristes, semper autem gaudéntes: sicut egéntes, mul-
+1  245   | tos autem locupletántes: tamquam nihil habéntes,
+1  259   | et ómnia possidéntes.
+1  291 G | Responsorium
+1  311 Gi| Ps. 33
+1  352 G | Timéte Dóminum omnes sancti ejus: quóniam
+1  369   | nihil deest timéntibus eum. >V Inquiréntes autem
+1  383   | Dóminum non defícient omni bono.
+1  401 G | Allelúia, allelúia.
+1  401 G | >V Sap. 3 Judicábunt sancti
+1  415   | natiónes, et dominabúntur pópulis, et regnábit il-
+1  429   | lórum Rex in ætérnum. Allelúia.
+1  462 G | Evangelium
+1  482 Gi| Matth. 19, 27–29
+1  676 Gi| The deacon, having received the blessing, sings the Gospel.
+1  690 Gi| Before the Gospel is read, the priest says secretly:
+1  709   | Dóminus sit in corde meo et in lábiis meis, ad pro-
+1  723   | nuntiándum sanctum Evangélium pacis.
+1  741 G | S. Dóminus vobíscum. M. Et cum spíritu tuo.
+1  758 G | S. Sequéntia ) sancti Evangélii secúndum
+1  801 G | •
+1  801 G | 3
+
+=========== PAGE 4
+0   54 G | Matthǽum. M. Glória tibi, Dómine.
+0   69 G | In illo témpore: Dixit Petrus ad Jesum: Ecce nos
+0   86   | relíquimus ómnia, et secúti sumus te: quid ergo
+0  100   | erit nobis? Jesus autem dixit illis: Amen dico vo-
+0  115   | bis, quod vos, qui secúti estis me, in regeneratióne
+0  129   | cum séderit Fílius hóminis in sede majestátis suæ,
+0  143   | sedébitis et vos super sedes duódecim, judicántes
+0  158   | duódecim tribus Israël. Et omnis, qui relíquerit
+0  172   | domum, vel fratres, aut soróres, aut patrem, aut
+0  187   | matrem, aut uxórem, aut fílios, aut agros propter
+0  201   | nomen meum, céntuplum accípiet, et vitam ætér-
+0  216   | nam possidébit.
+0  236 Gi| After the Gospel, having kissed the book, he says:
+0  256   | Per evangélica dicta deleántur nostra delícta.
+0  288 G | Credo
+0  337 Gi| At the middle of the altar the priest intones:
+0  362   | I
+0  366   | I
+0  366   | I
+0  370   | I
+0  373   | I
+0  373   | I
+0  377   | uI
+0  398   | Cre
+0  398   | do
+0  398   | in
+0  398   | num
+0  398   | De-
+0  398   | um.
+0  419 Gi| And continues secretly with the ministers:
+0  438   | Patrem omnipoténtem, factórem cæli et terræ, vis-
+0  453   | ibílium ómnium et invisibílium.
+0  453   | Et in unum
+0  467   | Dóminum Jesum Christum, Fílium Dei unigéni-
+0  481   | tum. Et ex Patre natum ante ómnia sǽcula. Deum
+0  496   | de Deo, lumen de lúmine, Deum verum de Deo
+0  510   | vero. Génitum, non factum, consubstantiálem Pa-
+0  525   | tri: per quem ómnia facta sunt. Qui propter nos
+0  539   | hómines et propter nostram salútem descéndit de
+0  554   | cælis. (Here all genuflect.) Et incarnátus est de
+0  568   | Spíritu Sancto ex María Vírgine: et homo
+0  583   | factus est. Crucifíxus étiam pro nobis: sub Pón-
+0  597   | tio Piláto passus, et sepúltus est. Et resurréxit tértia
+0  611   | die, secúndum Scriptúras. Et ascéndit in cælum:
+0  626   | sedet ad déxteram Patris. Et íterum ventúrus est
+0  640   | cum glória judicáre vivos et mórtuos: cujus regni
+0  655   | non erit finis. Et in Spíritum Sanctum, Dóminum
+0  669   | et vivificántem: qui ex Patre Filióque procédit. Qui
+0  684   | cum Patre et Fílio simul adorátur et conglorificá-
+0  698   | tur: qui locútus est per Prophétas. Et unam, sanc-
+0  713   | tam, cathólicam et apostólicam Ecclésiam. Confí-
+0  727   | teor unum baptísma in remissiónem peccatórum.
+0  741   | Et exspécto resurrectiónem mortuórum. Et vitam
+0  756 G | ) ventúri sǽculi. Amen.
+0  801 G | Missale · In Festivitate Omnium Sanctorum O. P.
+1   51 G | Offertorium
+1   71 Gi| Ps. 67
+1  117 Gi| Turnedtothepeople, hesingsDóminusvobíscum(asabove),
+1  131 Gi| and at the book Orémus.
+1  148 G | Mirábilis Deus in sanctis suis, Deus Israël ipse
+1  165   | dabit virtútem et fortitúdinem plebi suæ, benedíc-
+1  179   | tus Deus.
+1  200 Gi| Taking the chalice with the paten and host, he says secretly:
+1  219   | Quid retríbuam Dómino pro ómnibus quæ
+1  234   | retríbuit mihi?
+1  234   | Cálicem salutáris accípiam, et
+1  248   | nomen Dómini invocábo.
+1  269 Gi| And raising the chalice with the host, he says:
+1  285 G | Súscipe, sancta Trínitas, hanc oblatiónem, quam
+1  302   | tibi óffero in memóriam passiónis Dómini nostri
+1  317   | Jesu Christi: et præsta, ut in conspéctu tuo tibi pla-
+1  331   | cens ascéndat, et meam et ómnium fidélium salútem
+1  346   | operétur ætérnam.
+1  366 Gi| He puts on incense and incenses the offerings and the altar
+1  380 Gi| in the usual way. Then he washes his fingers, saying:
+1  399   | Lavábo inter innocéntes manus meas: et circúmd-
+1  414   | abo altáre tuum, Dómine: ut áudiam vocem laudis,
+1  428   | et enárrem univérsa mirabília tua. Dómine, diléxi
+1  443   | decórem domus tuæ, et locum habitatiónis glóriæ
+1  457   | tuæ.
+1  478 Gi| Bowing at the middle of the altar, he says:
+1  497   | In spíritu humilitátis et in ánimo contríto suscipiá-
+1  511   | mur, Dómine, a te: et sic fiat sacrifícium nostrum,
+1  526   | ut a te suscipiátur hódie, et pláceat tibi, Dómine
+1  540   | Deus.
+1  561 Gi| Turned to the people, he says:
+1  580   | Oráte, fratres, ut meum ac vestrum páriter in con-
+1  595   | spéctu Dómini sit accéptum sacrifícium.
+1  615 Gi| And turning back to the altar, he says secretly:
+1  635   | Dómine, exáudi oratiónem meam, et clamor meus
+1  649   | ad te véniat.
+1  801 G | •
+1  801 G | 4
+
+=========== PAGE 5
+0   51 G | Secreta
+0   95 G | Múnera tibi, Dómine, nostræ devotiónis offérimus:
+0  112   | quæ et pro cunctórum tibi grata sint honóre
+0  127   | justórum, et nobis salutária, te miseránte, reddántur.
+0  141   | Per Dóminum nostrum Jesum Christum Fílium
+0  155   | tuum, qui tecum vivit et regnat in unitáte Spíritus
+0  170   | Sancti Deus,
+0  202 G | Præfatio solemnis de S.
+0  220 G | Dominico
+0  240 Gi| Tonus solemnis · Missale O. P., Appendix pp. 23–24
+0  472 Gi| This Preface is said in all Masses of our Holy Father St
+0  485 Gi| Dominic … It is also said on the feast of All Saints of the
+0  499 Gi| Order of Preachers.
+0  523   | <
+0  523   | I
+0  527   | I
+0  527   | I
+0  527   | I
+0  527   | I
+0  527   | I
+0  527   | Ǎ 
+0  531   | I
+0  531   | I
+0  538   | erI
+0  556   | ó
+0  556   | mni-
+0  556   | a
+0  556   | sǽ
+0  556   | cu-
+0  556   | la
+0  556   | sæ
+0  556   | cu-
+0  556   | ló-
+0  575   | <
+0  575   | I
+0  575   | Ğ 
+0  579   | I
+0  579   | I
+0  583   | I
+0  583   | I
+0  583   | I
+0  608   | rum.
+0  608 G | =R. A
+0  608   | men.
+0  608   | Dó
+0  608   | mi
+0  608   | nus
+0  608   | vo-
+0  627   | <
+0  627   | ǈ
+0  631   | I
+0  635   | 
+0  660   | bí
+0  660   | scum.
+0  679   | <
+0  679   | I
+0  679   | ǈ
+0  683   | I
+0  683   | I
+0  683   | I 
+0  687   | I
+0  687   | I
+0  712 G | =R. Et
+0  712   | cum
+0  712   | spí-
+0  712   | ri-
+0  712   | tu
+0  712   | tu-
+0  712   | o.
+0  731   | <
+0  731   | IĞ
+0  731   | I
+0  731   | IĞ
+0  731   | I
+0  731   | ǈ
+0  731   | 
+0  735   | Ğ
+0  735   | Ǎ
+0  735   | I
+0  735   | Ğ
+0  735   | I
+0  735   | Ǎ
+0  764   | Su
+0  764   | rsum
+0  764   | co
+0  764   | rda.
+0  764 G | =R. Ha
+0  764   | bé
+0  764   | mus
+0  764   | ad
+0  764   | Dó
+0  764   | mi
+0  764   | num.
+0  801 G | Missale · In Festivitate Omnium Sanctorum O. P.
+1   48   | <
+1   48   | I
+1   48   | I
+1   48   | IĞ
+1   48   | I 9
+1   48   | I
+1   48   | I
+1   52   | Ǎ
+1   52   | I
+1   52   | Ǎ
+1   52   | Ğ
+1   52   | I
+1   52   | 
+1   55   | Ğ
+1   55   | Ğ
+1   80   | Grá-
+1   80   | ti-
+1   80   | as
+1   80   | a
+1   80   | gá
+1   80   | mus
+1   80   | Dó
+1   80   | mi-
+1   80   | no
+1   80   | De-
+1   80   | o
+1   80   | no
+1   80   | stro.
+1   99   | I
+1   99   | I
+1   99   | I
+1  103   | <
+1  103   | IĞ
+1  103   | I
+1  103   | I
+1  103   | I
+1  103   | ǈ
+1  103   | Ğ 
+1  107   | Ğ
+1  107   | I
+1  107   | Ǎ
+1  135 G | =R. Di
+1  135   | gnum
+1  135   | et
+1  135   | ju
+1  135   | stum
+1  135   | est.
+1  135   | Ve-
+1  135   | re
+1  135   | di
+1  135   | gnum
+1  135   | et
+1  135   | ju-
+1  154   | I
+1  154   | I
+1  154   | I 
+1  158   | <
+1  158   | I
+1  158   | I *
+1  158   | Ğ
+1  158   | I
+1  158   | I
+1  158   | I 9
+1  161   | Ǎ
+1  161   | Ğ
+1  161   | I
+1  165   | Ğ
+1  190   | stum
+1  190   | est,
+1  190   | æ
+1  190   | quum
+1  190   | et
+1  190   | sa-
+1  190   | lu-
+1  190   | tá-
+1  190   | re:
+1  190   | Nos
+1  190   | ti-
+1  190   | bi
+1  190   | sem-
+1  209   | I
+1  209   | I
+1  209   | I
+1  209   | I
+1  209   | I *
+1  209   | I
+1  209   | I
+1  209   | I
+1  209   | I
+1  209   | I 
+1  213   | <
+1  213   | I
+1  213   | ǈ
+1  213   | I
+1  213   | I *
+1  216   | Ğ
+1  245   | per
+1  245   | et
+1  245   | u
+1  245   | bí
+1  245   | que
+1  245   | grá-
+1  245   | ti-
+1  245   | as
+1  245   | á
+1  245   | ge-
+1  245   | re,
+1  245   | Dó
+1  245   | mi
+1  245   | ne
+1  245   | san-
+1  264   | I *
+1  264   | I
+1  264   | I
+1  264   | I
+1  264   | I
+1  264   | I
+1  264   | I *
+1  264   | I
+1  264   | Ğ
+1  264   | I 
+1  267   | <
+1  267   | ǈ
+1  267   | I
+1  271   | Ğ
+1  271   | I
+1  300   | cte,
+1  300   | Pa-
+1  300   | ter
+1  300   | o
+1  300   | mní
+1  300   | pot-
+1  300   | ens,
+1  300   | æ-
+1  300   | té
+1  300   | rne
+1  300   | De-
+1  300   | us.
+1  300   | Qui
+1  300   | in
+1  319   | I
+1  319   | I
+1  319   | I
+1  319   | I
+1  319   | I
+1  319   | I
+1  319   | I
+1  319   | I
+1  319   | I
+1  319   | I
+1  319   | I
+1  319   | I
+1  319   | I
+1  319   | I
+1  319   | I * 
+1  322   | <
+1  354   | tu-
+1  354   | æ
+1  354   | sa
+1  354   | nctæ
+1  354   | E
+1  354   | cclé-
+1  354   | si-
+1  354   | æ
+1  354   | de
+1  354   | có-
+1  354   | rem
+1  354   | ac
+1  354   | tu-
+1  354   | tá
+1  354   | men
+1  373   | I
+1  373   | I
+1  373   | I
+1  373   | I
+1  373   | I
+1  373   | I
+1  373   | I
+1  377   | <
+1  377   | ǈ
+1  377   | I *
+1  377   | I
+1  377   | I
+1  377   | I
+1  377   | I 
+1  381   | Ğ
+1  409   | a
+1  409   | po
+1  409   | stó-
+1  409   | li-
+1  409   | cam
+1  409   | vi-
+1  409   | vé
+1  409   | ndi
+1  409   | fo
+1  409   | rmam
+1  409   | per
+1  409   | be-
+1  409   | a-
+1  409   | tís-
+1  432   | <
+1  432   | I
+1  432   | I
+1  432   | I
+1  432   | I
+1  432   | I
+1  432   | I
+1  432   | I
+1  432   | Ğ
+1  432   | I
+1  432   | I *
+1  432   | I
+1  432   | I
+1  432   | I
+1  435   | Ǎ 
+1  464   | si
+1  464   | mum
+1  464   | Pa
+1  464   | tri-
+1  464   | á
+1  464   | rcham
+1  464   | Do
+1  464   | mí-
+1  464   | ni-
+1  464   | cum
+1  464   | re
+1  464   | no
+1  464   | vá-
+1  464   | re
+1  483   | I
+1  483   | I
+1  483   | I *
+1  483   | I
+1  483   | I
+1  483   | I
+1  483   | I
+1  483   | I
+1  483   | I
+1  483   | I
+1  483   | I
+1  483   | I 
+1  487   | <
+1  487   | I
+1  490   | Ğ
+1  490   | I
+1  490   | I
+1  494   | Ğ
+1  519   | vo-
+1  519   | lu-
+1  519   | í
+1  519   | sti:
+1  519   | I
+1  519   | pse
+1  519   | e
+1  519   | nim,
+1  519   | Ge
+1  519   | ni
+1  519   | trí-
+1  519   | cis
+1  519   | Fí-
+1  519   | li-
+1  519   | i
+1  519   | tu-
+1  519   | i
+1  538   | I
+1  538   | I
+1  538   | I
+1  538   | I
+1  538   | I
+1  538   | I
+1  538   | I
+1  538   | I
+1  538   | I
+1  538   | I * 
+1  541   | <
+1  541   | I
+1  541   | ǈ
+1  541   | I *
+1  545   | Ğ
+1  545   | I
+1  574   | se
+1  574   | mper
+1  574   | o
+1  574   | pe
+1  574   | su
+1  574   | ffú
+1  574   | ltus,
+1  574   | præ
+1  574   | di-
+1  574   | ca-
+1  574   | ti-
+1  574   | ó
+1  574   | ne
+1  574   | su-
+1  574   | a
+1  593   | I
+1  593   | I
+1  593   | I
+1  593   | I
+1  593   | I
+1  593   | I
+1  593   | I *
+1  593   | I
+1  593   | I 
+1  596   | <
+1  596   | I
+1  596   | ǈ
+1  596   | I
+1  596   | I *
+1  600   | Ğ
+1  600   | I
+1  628   | co
+1  628   | mpé
+1  628   | scu-
+1  628   | it
+1  628   | hǽ-
+1  628   | re-
+1  628   | ses,
+1  628   | fí
+1  628   | de-
+1  628   | i
+1  628   | pú
+1  628   | gi-
+1  628   | les
+1  628   | gé
+1  628   | nti-
+1  647   | I
+1  647   | I
+1  647   | I
+1  647   | I
+1  647   | I
+1  651   | <
+1  651   | ǈ
+1  651   | I
+1  651   | I *
+1  651   | I
+1  651   | I
+1  651   | I
+1  651   | I
+1  651   | I
+1  651   | Ğ
+1  651   | I
+1  654   | Ğ
+1  683   | um
+1  683   | in
+1  683   | sa-
+1  683   | lú-
+1  683   | tem
+1  683   | i
+1  683   | nstí-
+1  683   | tu-
+1  683   | it,
+1  683   | et
+1  683   | i
+1  683   | nnú
+1  683   | me-
+1  683   | ras
+1  683   | á
+1  683   | ni-
+1  702   | I
+1  702   | I
+1  702   | I
+1  702   | I
+1  702   | I
+1  702   | I
+1  702   | I 
+1  706   | <
+1  706   | I
+1  706   | I
+1  706   | I
+1  709   | Ǎ
+1  709   | Ğ
+1  709   | I
+1  709   | I
+1  713   | Ğ
+1  738   | mas
+1  738   | Chri
+1  738   | sto
+1  738   | lu
+1  738   | cri-
+1  738   | fé-
+1  738   | cit.
+1  738   | Sa
+1  738   | pi-
+1  738   | é
+1  738   | nti-
+1  738   | am
+1  738   | e-
+1  738   | jus
+1  738   | nar-
+1  801 G | •
+1  801 G | 5
+
+=========== PAGE 6
+0   51   | <
+0   51   | ǈ
+0   51   | I
+0   51   | I *
+0   51   | I
+0   51   | I
+0   51   | I
+0   51   | Ğ
+0   51   | I *
+0   51   | I
+0   51   | I
+0   55   | Ğ
+0   55   | Ǎ
+0   55   | Ğ 
+0   58   | Ğ
+0   83   | rant
+0   83   | pó
+0   83   | pu-
+0   83   | li,
+0   83   | e-
+0   83   | jú
+0   83   | sque
+0   83   | lau
+0   83   | des
+0   83   | nú
+0   83   | nti-
+0   83   | at
+0   83   | E
+0   83   | cclé-
+0  100   | I
+0  100   | I
+0  100   | I
+0  100   | I
+0  104   | <
+0  104   | ǈ
+0  104   | I *
+0  104   | ǈ
+0  104   | I
+0  104   | I * 
+0  107   | I
+0  107   | I
+0  107   | I
+0  107   | I
+0  107   | Ğ
+0  111   | Ğ
+0  136   | si-
+0  136   | a.
+0  136   | Et
+0  136   | í
+0  136   | de-
+0  136   | o
+0  136   | cum
+0  136   | A
+0  136   | nge-
+0  136   | lis
+0  136   | et
+0  136   | A
+0  136   | rchá
+0  136   | nge-
+0  136   | lis,
+0  153   | I 
+0  156   | <
+0  156   | I
+0  156   | Ğ
+0  156   | I *
+0  156   | I
+0  156   | I
+0  156   | I
+0  160   | Ǎ
+0  160   | Ğ
+0  160   | I
+0  160   | I
+0  160   | I
+0  163   | Ğ
+0  188   | cum
+0  188   | Thro
+0  188   | nis
+0  188   | et
+0  188   | Do
+0  188   | mi-
+0  188   | na-
+0  188   | ti-
+0  188   | ó
+0  188   | ni
+0  188   | bus:
+0  188   | Cu
+0  188   | mque
+0  205   | I
+0  205   | I
+0  205   | I
+0  205   | I
+0  205   | I
+0  205   | I
+0  205   | I
+0  205   | I
+0  205   | I 
+0  209   | <
+0  209   | I
+0  209   | ǈ
+0  209   | I
+0  209   | I *
+0  212   | Ğ
+0  212   | I
+0  241   | o
+0  241   | mni
+0  241   | mi-
+0  241   | lí-
+0  241   | ti-
+0  241   | a
+0  241   | cæ-
+0  241   | lé
+0  241   | stis
+0  241   | ex-
+0  241   | é
+0  241   | rci-
+0  241   | tus
+0  241   | hy
+0  241   | mnum
+0  801 G | Missale · In Festivitate Omnium Sanctorum O. P.
+1   48   | I
+1   48   | I
+1   48   | I
+1   48   | I
+1   51   | <
+1   51   | ǈ
+1   51   | I
+1   51   | I *
+1   51   | Ğ
+1   51   | I
+1   51   | I
+1   55   | Ğ
+1   55   | Ǎ
+1   55   | Ğ
+1   55   | I
+1   58   | Ğ
+1   83   | gló-
+1   83   | ri-
+1   83   | æ
+1   83   | tu-
+1   83   | æ
+1   83   | cá
+1   83   | ni
+1   83   | mus,
+1   83   | si
+1   83   | ne
+1   83   | fi-
+1   83   | ne
+1   83   | di-
+1   83   | cé
+1   83   | ntes.
+1  116 G | Sanctus
+1  165 Gi| With hands joined and bowing moderately, he says secretly
+1  179 Gi| with the ministers:
+1  198   | Sanctus, Sanctus, Sanctus Dóminus Deus Sábaoth.
+1  213   | Pleni sunt cæli et terra glória tua. Hosánna in ex-
+1  227   | célsis. ) Benedíctus qui venit in nómine Dómini.
+1  241   | Hosánna in excélsis.
+1  801 G | •
+1  801 G | 6
+
+=========== PAGE 7
+0  601 G | Per ipsum, et cum ipso, et in ipso
+
+=========== PAGE 8
+0   91 G | C a n o n M i s s æ
+0  126 G | T
+0  155 G | e ígitur, clementíssime Pater, per Jesum
+0  180 G | Christum Fílium tuum Dóminum nos-
+0  205 G | trum, súpplices rogámus ac pétimus, (he
+0  231 G | kissesthealtar)utiaccéptahábeasetbenedí-
+0  256 G | cas, hæc ) dona, hæc ) múnera, hæc ) sancta sacrifícia
+0  282 G | illibáta: in primis, quæ tibi offérimus pro Ecclésia tua
+0  307 G | sancta cathólica: quam pacificáre, custodíre, adunáre et
+0  332 G | régere dignéris toto orbe terrárum: una cum fámulo tuo
+0  358 G | Papa nostro N. et Antístite nostro N. et Rege nostro N.
+0  383 G | et ómnibus orthodóxis, atque cathólicæ et apostólicæ
+0  409 G | fídei cultóribus.
+0  440 G | M
+0  444   | eménto, Dómine, famulórum famularúmque tuárum N. et
+0  463 G | N. (He joins his hands and prays a little for those he intends
+0  483 G | to pray for; then, with hands extended, he continues:) et ómnium
+0  502   | circumstántium, quorum tibi fides cógnita est, et nota devótio, pro
+0  522   | quibus tibi offérimus: vel qui tibi ófferunt hoc sacrifícium laudis,
+0  541   | pro se suísque ómnibus: pro redemptióne animárum suárum, pro
+0  561   | spe salútis et incolumitátis suæ: tibíque reddunt vota sua ætérno Deo,
+0  580   | vivo et vero.
+
+=========== PAGE 9
+0   91 G | C
+0   95   | ommunicántes, et memóriam venerántes, in primis gloriósæ
+0  114   | semper Vírginis Maríæ, Genitrícis Dei et Dómini nostri Jesu
+0  134   | Christi: sed et beatórum Apostolórum ac Mártyrum tuórum, Petri et
+0  153   | Pauli,Andréæ,Jacóbi,Joánnis,Thomæ,Jacóbi,Philíppi,Bartholomǽi,
+0  172   | Matthǽi,SimónisetThaddǽi: Lini, Cleti, Cleméntis, Xysti,Cornélii,
+0  192   | Cypriáni,Lauréntii,Chrysógoni,JoánnisetPauli,CosmæetDamiáni,
+0  211   | et ómnium Sanctórum tuórum; quorum méritis precibúsque concé-
+0  231   | das, ut in ómnibus protectiónis tuæ muniámur auxílio. Per eúmdem
+0  250   | Christum Dóminum nostrum. Amen.
+0  272 Gi| Holding his hands spread over the offerings, he says:
+0  291 G | H
+0  295   | anc ígitur oblatiónem servitútis nostræ, sed et cunctæ famíliæ
+0  315   | tuæ, quǽsumus, Dómine, ut placátus accípias: diésque nostros
+0  334   | in tua pace dispónas, atque ab ætérna damnatióne nos éripi, et in
+0  353   | electórum tuórum júbeas grege numerári. Per Christum Dóminum
+0  373   | nostrum. Amen.
+0  391 G | Q
+0  395   | uam oblatiónem tu, Deus, in ómnibus, quǽsumus, bene)díc-
+0  415   | tam, adscrí)ptam, ra)tam, rationábilem, acceptabilémque
+0  434   | fácere dignéris: ut nobis Cor)pus et San)guis fiat dilectíssimi Fílii
+0  454   | tui Dómini nostri Jesu Christi.
+
+=========== PAGE 10
+0   91 G | Q
+0   95   | ui prídie quam paterétur, accépit panem in sanctas ac venerá-
+0  114   | biles manus suas, et elevátis óculis in cælum ad te Deum Patrem
+0  134   | suum omnipoténtem, tibi grátias agens, bene)díxit, fregit, dedítque
+0  153   | discípulis suis, dicens: Accípite, et manducáte ex hoc omnes.
+0  209   | Hoc est enim Corpus meum.
+0  279 Gi| Genuflecting he adores, rises, shows the Host to the people, lays it on the corporal, and
+0  293 Gi| genuflecting adores again.
+0  312 G | S
+0  316   | ímili modo postquam cenátum est, accípiens et hunc præclárum
+0  335   | Cálicem in sanctas ac venerábiles manus suas: item tibi grátias
+0  355   | agens, bene)díxit, dedítque discípulis suis, dicens: Accípite, et bíbite
+0  374   | ex eo omnes.
+0  431   | Hic est enim Calix Sánguinis mei, novi et
+0  457   | ætérni testaménti: mystérium fídei: qui
+0  483   | pro vobis et pro multis effundétur in
+0  508   | remissiónem peccatórum.
+0  580   | Hæc quotiescúmque fecéritis, in mei memóriam faciétis.
+0  602 Gi| Genuflecting he adores, rises, shows the Chalice to the people, sets it down, covers it, and
+0  616 Gi| genuflecting adores again.
+
+=========== PAGE 11
+0   91 G | U
+0   95   | nde et mémores, Dómine, nos servi tui, sed et plebs tua sancta,
+0  114   | ejúsdemChristiFíliituiDómininostritambeátæpassiónis, nec
+0  134   | non et ab ínferis resurrectiónis, sed et in cælos gloriósæ ascensiónis:
+0  153   | offérimus præcláræ majestáti tuæ de tuis donis ac datis hóstiam )
+0  172   | puram, hóstiam ) sanctam, hóstiam ) immaculátam, Panem )
+0  192   | sanctum vitæ ætérnæ, et Cálicem ) salútis perpétuæ.
+0  210 G | S
+0  214   | upra quæ propítio ac seréno vultu respícere dignéris: et accépta
+0  234   | habére, sícuti accépta habére dignátus es múnera púeri tui justi
+0  253   | Abel, et sacrifícium Patriárchæ nostri Abrahæ: et quod tibi óbtulit
+0  273   | summus sacérdos tuus Melchísedech, sanctum sacrifícium, immac-
+0  292   | ulátam hóstiam.
+0  314 Gi| Bowing profoundly, he says:
+0  333 G | S
+0  337   | úpplices te rogámus, omnípotens Deus: jube hæc perférri per
+0  356   | manus sancti Angeli tui in sublíme altáre tuum, in conspéctu
+0  376   | divínæ majestátis tuæ: ut quotquot ex hac altáris participatióne
+0  395   | sacrosánctum Fílii tui Cor)pus et Sán)guinem sumpsérimus, omni
+0  415   | benedictióne ) cælésti et grátia repleámur. Per eúmdem Christum
+0  434   | Dóminum nostrum. Amen.
+0  452 G | M
+0  457   | eménto étiam, Dómine, famulórum famularúmque tuárum
+0  476 G | N. et N., qui nos præcessérunt cum signo fídei, et dórmiunt
+0  495   | in somno pacis. (He prays a little for the dead.) Ipsis, Dómine, et
+0  515   | ómnibus in Christo quiescéntibus, locum refrigérii, lucis et pacis, ut
+0  534   | indúlgeas, deprecámur. Per eúmdem Christum Dóminum nostrum.
+0  554   | Amen.
+0  576 Gi| Striking his breast and raising his voice a little, he says:
+
+=========== PAGE 12
+0   91 G | N
+0   95   | obis quoque peccatóribus fámulis tuis, de multitúdine miser-
+0  114   | atiónum tuárum sperántibus, partem áliquam et societátem
+0  134   | donáre dignéris, cum tuis sanctis Apóstolis et Martýribus: cum
+0  153   | Joánne, Stéphano, Matthía, Bárnaba, Ignátio, Alexándro, Marcellíno,
+0  172   | Petro, Felicitáte, Perpétua, Agatha, Lúcia, Agnéte, Cæcília, Anastásia,
+0  192   | et ómnibus Sanctis tuis: intra quorum nos consórtium, non æstimá-
+0  211   | tor mériti, sed véniæ, quǽsumus, largítor admítte. Per Christum
+0  231   | Dóminum nostrum.
+0  249 G | P
+0  253   | er quem hæc ómnia, Dómine, semper bona creas, sancti)ficas,
+0  273   | vivi)ficas, bene)dícis et præstas nobis.
+0  295 Gi| He uncovers the chalice, genuflects, takes the Host, and signing three times over the
+0  308 Gi| chalice with it, says:
+0  331   | Per ip)sum, et cum ip)so, et in ip)so, est tibi Deo Patri ) om-
+0  351   | nipoténti, in unitáte Spíritus ) Sancti, omnis honor et glória.
+
+=========== PAGE 13
+0   82 G | Pater noster
+0  102 Gi| Missale O. P., Appendix pp. 31–32
+0  148 Gi| In the solemn tone. The choir answers Sed líbera nos a
+0  161 Gi| malo; the priest says Amen secretly.
+0  189   | <
+0  189   | I
+0  192   | I
+0  192   | I
+0  192   | I
+0  192   | I
+0  192   | I
+0  192   | Ǎ
+0  192   | I 
+0  193 G | P
+0  196   | I
+0  196   | I
+0  196   | I
+0  203   | erI
+0  221   | ó
+0  221   | mni-
+0  221   | a
+0  221   | sǽ
+0  221   | cu-
+0  221   | la
+0  221   | sæ
+0  221   | cu-
+0  221   | ló-
+0  221   | rum.
+0  221 G | =R. A-
+0  243   | <
+0  246   | I
+0  246   | I
+0  246   | I
+0  246   | I
+0  246   | I
+0  246   | I
+0  246   | I
+0  246   | I
+0  246   | I
+0  246   | I
+0  246   | I
+0  250   | Ğ
+0  250   | I
+0  250   | I 
+0  275   | men.
+0  275   | O
+0  275   | ré
+0  275   | mus.
+0  275   | Præ
+0  275   | cé
+0  275   | ptis
+0  275   | sa-
+0  275   | lu-
+0  275   | tá-
+0  275   | ri
+0  275   | bus
+0  275   | mó
+0  275   | ni-
+0  297   | <
+0  297   | I 9
+0  297   | I
+0  297   | I
+0  297   | I
+0  297   | I
+0  297   | I
+0  297   | I
+0  297   | I
+0  297   | I
+0  297   | I 9
+0  300   | I
+0  300   | I
+0  300   | I
+0  300   | I
+0  300   | I 
+0  304   | I
+0  329   | ti,
+0  329   | et
+0  329   | di-
+0  329   | ví
+0  329   | na
+0  329   | i
+0  329   | nsti-
+0  329   | tu-
+0  329   | ti-
+0  329   | ó
+0  329   | ne
+0  329   | fo
+0  329   | rmá-
+0  329   | ti,
+0  329   | au
+0  329   | dé-
+0  347   | I
+0  351   | <
+0  351   | I
+0  351   | I
+0  351   | I *
+0  351   | I
+0  351   | I
+0  351   | I 9 
+0  354   | I
+0  354   | I
+0  354   | I
+0  354   | I
+0  354   | I
+0  358   | I
+0  383   | mus
+0  383   | dí-
+0  383   | ce-
+0  383   | re.
+0  383   | Pa-
+0  383   | ter
+0  383   | no
+0  383   | ster,
+0  383   | qui
+0  383   | es
+0  383   | in
+0  383   | cæ-
+0  383   | lis:
+0  401   | I
+0  405   | <
+0  405   | I
+0  405   | I
+0  405   | I
+0  405   | I
+0  405   | I
+0  405   | I 
+0  408   | I
+0  408   | I
+0  408   | Ǎ
+0  408   | Ğ
+0  408   | I
+0  412   | I
+0  412   | Ğ
+0  437   | sa
+0  437   | ncti-
+0  437   | fi-
+0  437   | cé-
+0  437   | tur
+0  437   | no
+0  437   | men
+0  437   | tu-
+0  437   | um.
+0  437   | A
+0  437   | dvé
+0  437   | ni-
+0  437   | at
+0  437   | re-
+0  459   | <
+0  459   | I
+0  459   | I
+0  459   | I *
+0  459   | I 
+0  462   | I
+0  462   | I
+0  462   | I
+0  462   | I
+0  462   | I
+0  462   | I
+0  462   | I
+0  466   | I
+0  466   | I
+0  466   | Ğ
+0  491   | gnum
+0  491   | tu-
+0  491   | um.
+0  491   | Fi-
+0  491   | at
+0  491   | vo-
+0  491   | lú
+0  491   | ntas
+0  491   | tu-
+0  491   | a,
+0  491   | si-
+0  491   | cut
+0  491   | in
+0  491   | cæ-
+0  513   | <
+0  513   | Ǎ *
+0  513   | I
+0  513   | I
+0  513   | I
+0  513   | I
+0  513   | I
+0  516   | Ğ
+0  516   | I
+0  516   | I
+0  516   | I
+0  516   | I 
+0  520   | Ğ
+0  520   | I
+0  545   | lo,
+0  545   | et
+0  545   | in
+0  545   | te
+0  545   | rra.
+0  545   | Pa
+0  545   | nem
+0  545   | no
+0  545   | strum
+0  545   | quo-
+0  545   | ti-
+0  545   | di-
+0  545   | á-
+0  563   | I
+0  567   | <
+0  567   | I *
+0  567   | I
+0  567   | I
+0  567   | I
+0  567   | I
+0  567   | I
+0  567   | I 
+0  570   | I
+0  570   | I
+0  570   | I
+0  570   | I
+0  570   | I
+0  574   | I
+0  574   | I
+0  599   | num
+0  599   | da
+0  599   | no
+0  599   | bis
+0  599   | hó
+0  599   | di-
+0  599   | e.
+0  599   | Et
+0  599   | di
+0  599   | mí
+0  599   | tte
+0  599   | no
+0  599   | bis
+0  599   | dé
+0  599   | bi-
+0  621   | <
+0  621   | I
+0  621   | I *
+0  621   | I
+0  621   | I
+0  621   | I
+0  624   | I
+0  624   | I
+0  624   | I
+0  624   | I
+0  624   | I
+0  624   | I
+0  624   | I
+0  624   | I
+0  628   | I
+0  628   | I
+0  653   | ta
+0  653   | no
+0  653   | stra,
+0  653   | si-
+0  653   | cut
+0  653   | et
+0  653   | nos
+0  653   | di
+0  653   | mí
+0  653   | tti
+0  653   | mus
+0  653   | de
+0  653   | bi-
+0  653   | tó-
+0  653   | ri-
+0  675   | <
+0  675   | I
+0  678   | I
+0  678   | I
+0  678   | I
+0  678   | I
+0  678   | I
+0  678   | I
+0  678   | I
+0  678   | I
+0  678   | Ǎ 
+0  682   | I
+0  682   | I
+0  682   | I
+0  689   | EtI
+0  707   | bus
+0  707   | no
+0  707   | stris.
+0  707   | ne
+0  707   | nos
+0  707   | i
+0  707   | ndú
+0  707   | cas
+0  707   | in
+0  707   | te
+0  707   | nta-
+0  707   | ti-
+0  707   | ó-
+0  729   | <
+0  732   | I
+0  732   | I
+0  732   | I
+0  732   | I
+0  732   | Ǎ
+0  736   | I
+0  736   | I
+0  736   | I
+0  736   | I
+0  761   | nem.
+0  761 G | =R. Sed
+0  761   | lí
+0  761   | be-
+0  761   | ra
+0  761   | nos
+0  761   | a
+0  761   | ma-
+0  761   | lo.
+0  801 G | Missale · In Festivitate Omnium Sanctorum O. P.
+1   85 Gi| Secretly:
+1  102 G | Líbera nos, quǽsumus, Dómine, ab ómnibus malis,
+1  119   | prætéritis, præséntibus et futúris: et intercedénte
+1  133   | beáta et gloriósa semper Vírgine Dei Genitríce
+1  148   | María, cum beátis Apóstolis tuis Petro et Paulo,
+1  162   | atque Andréa, et ómnibus Sanctis, da propítius
+1  177   | pacem in diébus nostris: ut ope misericórdiæ tuæ
+1  191   | adjúti, et a peccáto simus semper líberi, et ab omni
+1  206   | perturbatióne secúri. Per eúmdem Dóminum nos-
+1  220   | trum Jesum Christum Fílium tuum, qui tecum vivit
+1  235   | et regnat in unitáte Spíritus Sancti Deus,
+1  267 G | Pax Domini
+1  287 Gi| Missale O. P., Appendix p. 32
+1  339   | <
+1  339   | I
+1  343   | I
+1  343   | I
+1  343   | I
+1  343   | I
+1  343   | I
+1  343   | Ǎ
+1  343   | I
+1  343   | 
+1  346   | I
+1  346   | I
+1  346   | I
+1  346   | I
+1  353   | PerI
+1  371   | ó
+1  371   | mni-
+1  371   | a
+1  371   | sǽ
+1  371   | cu-
+1  371   | la
+1  371   | sæ
+1  371   | cu-
+1  371   | ló-
+1  371   | rum.
+1  371 G | =R. A
+1  371   | men.
+1  394   | <
+1  394   | I 
+1  394   | I
+1  397   | I
+1  397   | I
+1  397   | I
+1  397   | Ǎ
+1  397   | I 
+1  401   | Ğ
+1  401   | I 
+1  401   | Ğ
+1  401   | I
+1  401   | I
+1  426   | Pax
+1  426   | Dó
+1  426   | mi-
+1  426   | ni
+1  426   | sit
+1  426   | se
+1  426   | mper
+1  426   | vo-
+1  426   | bí
+1  426   | scum.
+1  426 G | =R. Et
+1  426   | cum
+1  449   | <
+1  452   | I
+1  452   | I
+1  452   | I
+1  456   | I
+1  456   | I
+1  481   | spí-
+1  481   | ri-
+1  481   | tu
+1  481   | tu-
+1  481   | o.
+1  513 G | Agnus Dei
+1  559   | Agnus Dei, qui tollis peccáta mundi: miserére nobis.
+1  574   | Agnus Dei, qui tollis peccáta mundi: miserére nobis.
+1  588   | Agnus Dei, qui tollis peccáta mundi: dona nobis
+1  603   | pacem.
+1  623 Gi| He puts a particle of the Host into the chalice, saying:
+1  640 G | Hæc sacrosáncta commíxtio córporis et sánguinis
+1  657   | Dómini nostri Jesu Christi fiat mihi, et ómnibus
+1  672   | suméntibus salus mentis et córporis: et ad vitam
+1  686   | ætérnam promeréndam atque capesséndam præ-
+1  701   | parátio salutáris. Per eúmdem Christum Dóminum
+1  715   | nostrum. Amen.
+1  736 Gi| At Solemn Mass he gives the Pax to the deacon in the man-
+1  749 Gi| ner of the Order. Then, bowing, he says:
+1  801 G | •
+1  801 G | 13
+
+=========== PAGE 14
+0   51 G | Dómine Jesu Christe, Fili Dei vivi, qui ex voluntáte
+0   68   | Patris, cooperánte Spíritu Sancto, per mortem tuam
+0   83   | mundum vivificásti: líbera me per hoc sacrosánc-
+0   97   | tum Corpus et Sánguinem tuum ab ómnibus in-
+0  112   | iquitátibus meis et univérsis malis: et fac me tuis
+0  126   | semper inhærére mandátis, et a te numquam sepa-
+0  140   | rári permíttas. Qui cum eódem Deo Patre et Spíritu
+0  155   | Sancto vivis et regnas Deus in sǽcula sæculórum.
+0  169   | Amen.
+0  190 Gi| Receiving the Body and Blood, he says:
+0  209   | Corpus et Sanguis Dómini nostri Jesu Christi custó-
+0  224   | diant me in vitam ætérnam. Amen.
+0  244 Gi| If there are communicants, after the Confíteor and absolu-
+0  258 Gi| tion, he shows the Host, saying:
+0  277   | Ecce Agnus Dei, ecce qui tollit peccáta mundi.
+0  295   | Dómine, non sum dignus, ut intres sub tectum
+0  309   | meum: sed tantum dic verbo, et sanábitur ánima
+0  324   | mea. (three times)
+0  344 Gi| And to each he says:
+0  364   | Corpus Dómini nostri Jesu Christi custódiat te in
+0  378   | vitam ætérnam. Amen.
+0  399 Gi| While purifying the chalice, he says:
+0  416 G | Quod ore súmpsimus, Dómine, pura mente capiá-
+0  432   | mus: ut de córpore et sánguine Dómini nostri Jesu
+0  447   | Christi fiat nobis remédium sempitérnum. Amen.
+0  479 G | Communio
+0  499 Gi| Ps. 32
+0  677 G | Gaudéte justi in Dómino, allelúia: rectos decet col-
+0  693   | laudátio, allelúia.
+0  801 G | Missale · In Festivitate Omnium Sanctorum O. P.
+1   51 G | Postcommunio
+1  101 Gi| Dóminus vobíscum (as above). Orémus. On a single note.
+1  114 Gi| At the end, form II (in fine):
+1  139   | I
+1  139   | I
+1  139   | I
+1  139   | I
+1  139   | I
+1  139   | I 
+1  143   | <
+1  143   | I
+1  143   | I
+1  143   | I
+1  143   | I
+1  143   | I
+1  146   | I
+1  175   | Dó
+1  175   | mi
+1  175   | nus
+1  175   | vo
+1  175   | bí
+1  175   | scum.
+1  175 G | =R. Et
+1  175   | cum
+1  175   | spí-
+1  175   | ri-
+1  175   | tu
+1  175   | tu-
+1  188  i| In fine
+1  194   | I
+1  194   | I
+1  198   | <
+1  198   | I
+1  230   | o.
+1  230 G | =R. A
+1  230   | men.
+1  247 G | Orémus.
+1  262 G | Da,quǽsumus,Dómine,fidélibuspópulisómnium
+1  279   | Sanctórum semper veneratióne lætári: et eórum per-
+1  294   | pétua supplicatióne muníri. Per Dóminum nos-
+1  308   | trum Jesum Christum Fílium tuum, qui tecum vivit
+1  322   | et regnat in unitáte Spíritus Sancti Deus, per ómnia
+1  337   | sǽcula sæculórum. =R Amen.
+1  369 G | Conclusio
+1  419 Gi| The priest to the people: Dóminus vobíscum. The deacon
+1  432 Gi| sings Ite, missa est (tone of Mass X); the choir answers Deo
+1  446 Gi| grátias.
+1  468 Gi| Bowing at the middle of the altar, he says secretly:
+1  485 G | Pláceat tibi, sancta Trínitas, obséquium servitútis
+1  502   | meæ: et præsta, ut sacrifícium, quod óculis tuæ
+1  517   | majestátis indígnus óbtuli, tibi sit acceptábile, mi-
+1  531   | híque et ómnibus pro quibus illud óbtuli, sit, te
+1  546   | miseránte, propitiábile. Per Christum Dóminum
+1  560   | nostrum. Amen.
+1  581 Gi| Turned to the people, he blesses them:
+1  600   | Benedíctio Dei omnipoténtis, Patris, ) et Fílii, et
+1  614   | Spíritus Sancti, descéndat super vos et máneat sem-
+1  629   | per. =R Amen.
+1  801 G | •
+1  801 G | 14
+
+=========== PAGE 15
+0   51 G | Ultimum Evangelium
+0   71 Gi| Joann. 1, 1–14
+0  260 G | S. Dóminus vobíscum. M. Et cum spíritu tuo.
+0  278 G | S. Inítium ) sancti Evangélii secúndum Joánnem.
+0  292 G | M. Glória tibi, Dómine.
+0  307 G | In princípio erat Verbum, et Verbum erat apud
+0  324   | Deum, et Deus erat Verbum. Hoc erat in princí-
+0  339   | pio apud Deum. Omnia per ipsum facta sunt: et
+0  622 G | Credits & Sources
+0  662 G | Texts. Missale S. Ordinis Prædicatorum (Rome, 1939): Ordo Missæ pp. 192–210; Proper of the feast pp. 619–620.
+0  671 G | Chant. Priest’s chants transcribed for this booklet from the Appendix of the 1939 Missal (Præfatio solemnis de S. Dominico pp. 23–24; Pater noster in tono
+0  681 G | solemni pp. 30–31; Pax Domini p. 32). Dóminus vobíscum and Per ómnia from the Graduale O. P. (1950) pp. 146*–148*, GABC by Anthony VanBerkum, OP
+0  690 G | (GregoBase). Gloria and Credo intonations from Ordinarium X and Credo I of the same Graduale, so that the choir continues in the same melody. The Missal
+0  700 G | gives no notated tone for the Collect, Secret and Postcommunion; they are marked recto tono.
+0  709 G | Art. All images are public-domain works from the open-access collection of the Art Institute of Chicago (CC0): Neri da Rimini, antiphonary leaf with St
+0  719 G | Dominic in the initial “G” (1310/15); G. B. Tiepolo, Virgin and Child with Saints Dominic and Hyacinth (1730–35); F. Ghissi, The Crucifixion (c. 1370);
+0  728 G | illuminated border from a Florentine laudario (c. 1340); historiated initials from Rimini (1300/10), France (c. 1300) and by Don Silvestro dei Gherarducci
+0  737 G | (1392/99); Lo Spagna, St Catherine of Siena; A. Vivarini, St Peter Martyr; Sano di Pietro, Virgin and Child with Saints and Angels; A. Dürer, The Last Supper
+0  747 G | (1510); M. Raimondi, St Paul Preaching at Athens; J. de Gheyn II, St Matthew; P. Farinati, St John the Evangelist; circle of G. Clovio, The Four Evangelists.
+0  756 G | Captions give the work shown on each page.
+0  766 G | Edition. Engraved with Gregorio; set in EB Garamond. Colours of Providence College.
+0  801 G | Missale · In Festivitate Omnium Sanctorum O. P.
+1   54   | sine ipso factum est nihil, quod factum est: in ipso
+1   68   | vita erat, et vita erat lux hóminum: et lux in téne-
+1   83   | bris lucet, et ténebræ eam non comprehendérunt.
+1   97   | Fuit homo missus a Deo, cui nomen erat Joánnes.
+1  112   | Hic venit in testimónium, ut testimónium per-
+1  126   | hibéret de lúmine, ut omnes créderent per illum.
+1  140   | Non erat ille lux, sed ut testimónium perhibéret
+1  155   | de lúmine. Erat lux vera, quæ illúminat omnem
+1  169   | hóminem veniéntem in hunc mundum. In mundo
+1  184   | erat, et mundus per ipsum factus est, et mundus
+1  198   | eum non cognóvit. In própria venit, et sui eum
+1  213   | non recepérunt. Quotquot autem recepérunt eum,
+1  227   | dedit eis potestátem fílios Dei fíeri, his qui credunt
+1  242   | in nómine ejus: qui non ex sanguínibus, neque
+1  256   | ex voluntáte carnis, neque ex voluntáte viri, sed
+1  270   | ex Deo nati sunt. (Here all genuflect.) Et Ver-
+1  285   | bum caro factum est, et habitávit in nobis: et
+1  299   | vídimus glóriam ejus, glóriam quasi Unigéniti a Pa-
+1  314   | tre, plenum grátiæ et veritátis.
+1  331 G | M. Deo grátias.
+1  801 G | •
+1  801 G | 15

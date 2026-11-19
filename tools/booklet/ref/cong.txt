@@ -1,0 +1,714 @@
+
+=========== PAGE 1
+0   50 G | H o l y M a s s
+0  112  i| according to the Rite of the Order of Preachers
+0  438   | Thursday, 12 November 2026
+0  471   | Feast of All Saints
+0  505   | of the Order of Preachers
+0  549 Gi| In Festivitate Omnium Sanctorum Ordinis Prædicatorum
+0  562  i| Totum Duplex II classis · Solemn Mass
+0  633   | Today the Order of Preachers keeps in one feast all its saints and blessed: the friars, nuns, sisters and
+0  645   | laity who followed St Dominic in preaching the Gospel for the salvation of souls. The Mass takes
+0  656   | its chants from the feast of All Saints; the Collect, Epistle and Gospel are proper to the day, and the
+0  668   | Preface is that of our Holy Father St Dominic.
+
+=========== PAGE 2
+0   53 G | Prayers at the Foot of the Altar
+0  291 G | All kneel
+0  311 Gi| While the choir sings the Introit, the priest and ministers say the preparatory prayers at the foot of the altar. In the Dominican rite
+0  323 Gi| there is no Psalm 42; the confession is short.
+0  342 G | S. Confitémini Dómino quóniam bonus.
+0  355 G | M. Quóniam in sǽculum misericórdia ejus.
+0  372 G | S. Confíteor Deo omnipoténti, et beátæ Maríæ semper
+0  385   | Vírgini, etbeátoDomínicoPatrinostro, etómnibusSanc-
+0  399   | tis, et vobis, Fratres, quia peccávi nimis, cogitatióne, lo-
+0  412   | cutióne, ópere et omissióne, mea culpa: precor vos oráre
+0  426   | pro me.
+0  442 G | M. Misereátur tui omnípotens Deus, et dimíttat tibi óm-
+0  456   | nia peccáta tua: líberet te ab omni malo, salvet et con-
+0  469   | fírmet in omni ópere bono, et perdúcat te ad vitam ætér-
+0  483   | nam.
+0  497 G | S. Amen.
+0  513 G | M. Confíteor Deo omnipoténti, et beátæ Maríæ sem-
+0  527   | per Vírgini, et beáto Domínico Patri nostro, et ómnibus
+0  540   | Sanctis, et tibi, Pater, quia peccávi nimis, cogitatióne, lo-
+0  554   | cutióne, ópere et omissióne, mea culpa: precor te oráre
+0  567   | pro me.
+0  584 G | S. Misereátur vestri omnípotens Deus, et dimíttat vobis
+0  597   | ómnia peccáta vestra: líberet vos ab omni malo, salvet et
+0  611   | confírmet in omni ópere bono, et perdúcat vos ad vitam
+0  624   | ætérnam. M. Amen.
+0  638 G | S. Absolutiónem et remissiónem ómnium peccatórum
+0  652   | vestrórum tríbuat vobis omnípotens et miséricors Dómi-
+0  665   | nus. M. Amen.
+0  679 G | S. Adjutórium nostrum in nómine Dómini. M. Qui fecit
+0  692   | cælum et terram.
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1  342  i| P. Give praise to the Lord, for he is good.
+1  355  i| M. For his mercy endures for ever.
+1  372  i| P. I confess to almighty God, to blessed Mary ever Virgin,
+1  385   | to blessed Dominic our Father, to all the Saints, and to
+1  399   | you, brethren, that I have sinned exceedingly in thought,
+1  412   | word, deed and omission, through my fault: I pray you,
+1  426   | pray for me.
+1  442  i| M.MayalmightyGodhavemercyonyouandforgiveyou
+1  456   | all your sins, deliver you from all evil, save and confirm
+1  469   | you in every good work, and bring you to life everlasting.
+1  483  i| P. Amen.
+1  513  i| M. I confess to almighty God, to blessed Mary ever Vir-
+1  527   | gin, to blessed Dominic our Father, to all the Saints, and
+1  540   | to you, Father, that I have sinned exceedingly in thought,
+1  554   | word, deed and omission, through my fault: I pray you,
+1  567   | pray for me.
+1  584  i| P. May almighty God have mercy on you, forgive you all
+1  597   | your sins, deliver you from all evil, save and confirm you
+1  611   | in every good work, and bring you to life everlasting. M.
+1  624   | Amen.
+1  638  i| P. May the almighty and merciful Lord grant you pardon
+1  652   | and remission of all your sins. M. Amen.
+1  665  i| P. Our help is in the name of the Lord. M. Who made
+1  679   | heaven and earth.
+1  802 G | •
+1  802 G | 2
+
+=========== PAGE 3
+0   53 G | Introit · Officium
+0   70 Gi| Ps. 32
+0  259 G | All stand
+0  277   | Gaudeámus omnes in Dómino, diem festum celebrántes
+0  290   | sub honóre Sanctórum ómnium: de quorum solem-
+0  304   | nitáte gaudent Angeli, et colláudant Fílium Dei.
+0  317 G | >V Exsultáte justi in Dómino: rectos decet collaudátio.
+0  331 G | >V Glória Patri. Gaudeámus…
+0  361 G | Kyrie
+0  404   | Kýrie, eléison. (ter)
+0  417   | Christe, eléison. (ter)
+0  431   | Kýrie, eléison. (ter)
+0  461 G | Gloria
+0  504   | Glória in excélsis Deo. Et in terra pax homínibus bonæ
+0  517   | voluntátis. Laudámus te. Benedícimus te. Adorámus
+0  531   | te. Glorificámus te. Grátias ágimus tibi propter mag-
+0  545   | nam glóriam tuam. Dómine Deus, Rex cæléstis, Deus
+0  558   | Pater omnípotens. Dómine Fili unigénite, Jesu Christe.
+0  572   | Dómine Deus, Agnus Dei, Fílius Patris. Qui tollis pec-
+0  585   | cáta mundi, miserére nobis. Qui tollis peccáta mundi,
+0  599   | súscipe deprecatiónem nostram. Qui sedes ad déxteram
+0  612   | Patris, miserére nobis. Quóniam tu solus Sanctus. Tu
+0  626   | solus Dóminus. Tu solus Altíssimus, Jesu Christe. Cum
+0  639   | Sancto Spíritu in glória Dei Patris. Amen.
+0  683 G | Collect · Oratio
+0  726 G | S. Dóminus vobíscum. =R Et cum spíritu tuo. Orémus.
+0  739   | Deus, qui Prædicatórum Ordinem copiósa Sanctórum
+0  753   | sóbole fecundáre dignátus es, atque in ipsis heróica óm-
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1  277   | Let us all rejoice in the Lord, keeping festival in honour
+1  290   | of all the Saints, at whose solemnity the Angels rejoice
+1  304   | and join in praising the Son of God. >V Rejoice in the
+1  317   | Lord, O you just: praise befits the upright. >V Glory be
+1  331   | to the Father. Let us all rejoice…
+1  404   | Lord, have mercy. (thrice)
+1  417   | Christ, have mercy. (thrice)
+1  431   | Lord, have mercy. (thrice)
+1  504   | Glory to God in the highest. And on earth peace to men
+1  517   | ofgoodwill. Wepraisethee. Weblessthee. Weadorethee.
+1  531   | We glorify thee. We give thee thanks for thy great glory.
+1  545   | O Lord God, heavenly King, God the Father almighty. O
+1  558   | Lord Jesus Christ, the only-begotten Son. O Lord God,
+1  572   | Lamb of God, Son of the Father. Who takest away the
+1  585   | sins of the world, have mercy on us. Who takest away
+1  599   | the sins of the world, receive our prayer. Who sittest at
+1  612   | the right hand of the Father, have mercy on us. For thou
+1  626   | alone art holy. Thou alone art Lord. Thou alone, O Jesus
+1  639   | Christ, art most high, with the Holy Spirit, in the glory
+1  653   | of God the Father. Amen.
+1  726  i| P. The Lord be with you. =R And with thy spirit. Let us
+1  739   | pray.
+1  753   | O God, who didst deign to make the Order of Preachers
+1  802 G | •
+1  802 G | 3
+
+=========== PAGE 4
+0   54   | nium virtútum mérita sublímiter coronásti: da nobis
+0   67   | illórum sequi vestígia; ut quos hódie sub una celebritáte
+0   81   | venerámur in terris, iis perpétua tandem festivitáte asso-
+0   94   | ciémur in cælis. Per Dóminum nostrum Jesum Christum
+0  108   | Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus
+0  122   | Sancti Deus, per ómnia sǽcula sæculórum. =R Amen.
+0  179 G | Epistle · Epistola
+0  195 Gi| 2 Cor. 6, 4–10
+0  413 G | All sit
+0  430   | Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios.
+0  444   | Fratres: Exhibeámus nosmetípsos sicut Dei minístros
+0  458   | in multa patiéntia, in tribulatiónibus, in necessitátibus,
+0  471   | in angústiis, in plagis, in carcéribus, in seditiónibus, in
+0  485   | labóribus, in vigíliis, in jejúniis, in castitáte, in sciéntia,
+0  498   | in longanimitáte, in suavitáte, in Spíritu Sancto: in car-
+0  512   | itáte non ficta, in verbo veritátis, in virtúte Dei: per arma
+0  525   | justítiæ a dextris, et a sinístris: per glóriam, et ignobil-
+0  539   | itátem: per infámiam, et bonam famam: ut seductóres,
+0  552   | et veráces: sicut qui ignóti, et cógniti: quasi moriéntes,
+0  566   | et ecce vívimus: ut castigáti, et non mortificáti: quasi
+0  579   | tristes, semper autem gaudéntes: sicut egéntes, multos
+0  593   | autem locupletántes: tamquam nihil habéntes, et ómnia
+0  607   | possidéntes.
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1   54   | fruitful with a plentiful offspring of Saints, and didst
+1   67   | crown in them, on high, the heroic merits of every virtue:
+1   81   | grant us to follow in their footsteps, that we who today
+1   94   | venerate them on earth in a single feast may at length
+1  108   | be joined to them in an everlasting festival in heaven.
+1  122   | Through our Lord Jesus Christ thy Son, who liveth and
+1  135   | reigneth with thee in the unity of the Holy Spirit, God,
+1  149   | world without end. =R Amen.
+1  430   | Lesson from the Epistle of blessed Paul the Apostle to
+1  444   | the Corinthians.
+1  458   | Brethren: In all things let us exhibit ourselves as the min-
+1  471   | isters of God, in much patience, in tribulation, in neces-
+1  485   | sities, in distresses, in stripes, in prisons, in seditions, in
+1  498   | labours, in watchings, in fastings, in chastity, in knowl-
+1  512   | edge, in longsuffering, in sweetness, in the Holy Ghost,
+1  525   | in charity unfeigned, in the word of truth, in the power
+1  539   | of God; by the armour of justice on the right hand and
+1  552   | on the left; by honour and dishonour, by evil report and
+1  566   | good report; as deceivers, and yet true; as unknown, and
+1  579   | yet known; as dying, and behold we live; as chastised, and
+1  593   | not killed; as sorrowful, yet always rejoicing; as needy, yet
+1  607   | enriching many; as having nothing, and possessing all
+1  620   | things.
+1  802 G | •
+1  802 G | 4
+
+=========== PAGE 5
+0   53 G | Gradual and Alleluia · Responsorium
+0   70 Gi| Ps. 33 · Sap. 3
+0  305   | Timéte Dóminum omnes sancti ejus: quóniam nihil
+0  318   | deest timéntibus eum. >V Inquiréntes autem Dóminum
+0  332   | non defícient omni bono.
+0  348   | Allelúia. >V Judicábunt sancti natiónes, et dominabúntur
+0  362   | pópulis, et regnábit illórum Rex in ætérnum. Allelúia.
+0  392 G | Gospel · Evangelium
+0  409 Gi| Matth. 19, 27–29
+0  640 G | All stand
+0  658 G | >V Dóminus vobíscum. =R Et cum spíritu tuo.
+0  671   | Sequéntia sancti Evangélii secúndum Matthǽum.
+0  685 G | =R Glória tibi, Dómine.
+0  698   | In illo témpore: Dixit Petrus ad Jesum: Ecce nos
+0  712   | relíquimus ómnia, et secúti sumus te: quid ergo erit no-
+0  726   | bis? Jesus autem dixit illis: Amen dico vobis, quod vos,
+0  739   | qui secúti estis me, in regeneratióne cum séderit Fílius
+0  753   | hóminisinsedemajestátissuæ, sedébitisetvossupersedes
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1  305   | Fear the Lord, all you his saints: for there is no want to
+1  318   | them that fear him. >V But they that seek the Lord shall
+1  332   | not be deprived of any good.
+1  348   | Alleluia. >V The saints shall judge nations and rule over
+1  362   | peoples, and their King shall reign for ever. Alleluia.
+1  658 G | >V The Lord be with you. =R And with thy spirit.
+1  671   | The continuation of the holy Gospel according to
+1  685   | Matthew. =R Glory be to thee, O Lord.
+1  698   | At that time, Peter answering, said to Jesus: Behold we
+1  712   | have left all things, and have followed thee: what there-
+1  726   | fore shall we have? And Jesus said to them: Amen, I
+1  739   | say to you, that you, who have followed me, in the re-
+1  753   | generation, when the Son of man shall sit on the seat of
+1  802 G | •
+1  802 G | 5
+
+=========== PAGE 6
+0   54   | duódecim, judicántes duódecim tribus Israël. Et omnis,
+0   67   | qui relíquerit domum, vel fratres, aut soróres, aut patrem,
+0   81   | aut matrem, aut uxórem, aut fílios, aut agros propter
+0   94   | nomen meum, céntuplum accípiet, et vitam ætérnam
+0  108   | possidébit.
+0  127 Gi| The sermon may follow; all sit.
+0  159 G | Creed · Credo
+0  204 G | All stand; kneel at Et incarnatus est
+0  222   | Credo in unum Deum, Patrem omnipoténtem, factórem
+0  235   | cæli et terræ, visibílium ómnium et invisibílium. Et in
+0  249   | unum Dóminum Jesum Christum, Fílium Dei unigéni-
+0  262   | tum. Et ex Patre natum ante ómnia sǽcula. Deum de
+0  276   | Deo, lumen de lúmine, Deum verum de Deo vero. Géni-
+0  290   | tum, non factum, consubstantiálem Patri: per quem
+0  303   | ómnia facta sunt. Qui propter nos hómines et propter
+0  317   | nostram salútem descéndit de cælis.
+0  333   | Et incarnátus est de Spíritu Sancto ex María
+0  347   | Vírgine: et homo factus est.
+0  363   | Crucifíxus étiam pro nobis: sub Póntio Piláto passus, et
+0  377   | sepúltus est. Etresurréxit tértia die, secúndumScriptúras.
+0  390   | Et ascéndit in cælum: sedet ad déxteram Patris. Et íterum
+0  404   | ventúrus est cum glória judicáre vivos et mórtuos: cujus
+0  417   | regni non erit finis. Et in Spíritum Sanctum, Dóminum
+0  431   | et vivificántem: qui ex Patre Filióque procédit. Qui cum
+0  445   | Patre et Fílio simul adorátur et conglorificátur: qui locú-
+0  458   | tus est per Prophétas. Et unam, sanctam, cathólicam et
+0  472   | apostólicam Ecclésiam. Confíteor unum baptísma in
+0  485   | remissiónem peccatórum. Et exspécto resurrectiónem
+0  499   | mortuórum. Et vitam ventúri sǽculi. Amen.
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1   54   | his majesty, you also shall sit on twelve seats judging the
+1   67   | twelve tribes of Israel. And every one that hath left house,
+1   81   | or brethren, or sisters, or father, or mother, or wife, or
+1   94   | children, or lands for my name’s sake, shall receive an
+1  108   | hundredfold, and shall possess life everlasting.
+1  222   | I believe in one God, the Father almighty, maker of
+1  235   | heaven and earth, and of all things visible and invisible.
+1  249   | And in one Lord Jesus Christ, the only-begotten Son
+1  262   | of God, born of the Father before all ages. God of God,
+1  276   | light of light, true God of true God. Begotten, not made,
+1  290   | consubstantial with the Father, by whom all things were
+1  303   | made. Who for us men and for our salvation came down
+1  317   | from heaven.
+1  333   | And was incarnate by the Holy Spirit of the
+1  347   | Virgin Mary: and was made man.
+1  363   | Hewascrucifiedalsoforus, sufferedunderPontiusPilate,
+1  377   | and was buried. And on the third day he rose again ac-
+1  390   | cording to the Scriptures. And he ascended into heaven,
+1  404   | and sitteth at the right hand of the Father. And he shall
+1  417   | come again with glory to judge the living and the dead; of
+1  431   | whose kingdom there shall be no end. And in the Holy
+1  445   | Spirit, the Lord and giver of life, who proceedeth from
+1  458   | the Father and the Son. Who together with the Father
+1  472   | and the Son is adored and glorified; who spoke by the
+1  485   | Prophets. And one, holy, catholic and apostolic Church.
+1  499   | I confess one baptism for the remission of sins. And I
+1  512   | look for the resurrection of the dead, and the life of the
+1  526   | world to come. Amen.
+1  802 G | •
+1  802 G | 6
+
+=========== PAGE 7
+0   53 G | Offertory · Offertorium
+0   70 Gi| Ps. 67
+0  296 G | All sit
+0  313 G | S. Dóminus vobíscum. =R Et cum spíritu tuo. Orémus.
+0  327   | Mirábilis Deus in sanctis suis, Deus Israël ipse dabit
+0  340   | virtútem et fortitúdinem plebi suæ, benedíctus Deus.
+0  384 G | S. Súscipe, sancta Trínitas, hanc oblatiónem, quam tibi
+0  398   | ófferoinmemóriampassiónisDómininostriJesuChristi:
+0  411   | et præsta, ut in conspéctu tuo tibi placens ascéndat, et
+0  425   | meam et ómnium fidélium salútem operétur ætérnam.
+0  441 G | S. Oráte, fratres, ut meum ac vestrum páriter in con-
+0  455   | spéctu Dómini sit accéptum sacrifícium.
+0  485 G | Secret · Secreta
+0  528   | Múnera tibi, Dómine, nostræ devotiónis offérimus: quæ
+0  541   | et pro cunctórum tibi grata sint honóre justórum, et
+0  555   | nobis salutária, te miseránte, reddántur. Per Dóminum
+0  568   | nostrum… per ómnia sǽcula sæculórum. =R Amen.
+0  598 G | Preface of St Dominic · Præfatio
+0  644 G | All stand
+0  661 G | >V Dóminus vobíscum. =R Et cum spíritu tuo.
+0  675 G | >V Sursum corda. =R Habémus ad Dóminum.
+0  688 G | >V Grátias agámus Dómino Deo nostro. =R Dignum et
+0  702   | justum est.
+0  732   | Vere dignum et justum est, æquum et salutáre, nos tibi
+0  745   | semper et ubíque grátias ágere: Dómine sancte, Pater
+0  759   | omnípotens, ætérne Deus. Qui in tuæ sanctæ Ecclésiæ
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1  313  i| P. The Lord be with you. =R And with thy spirit. Let us
+1  327   | pray.
+1  340   | God is wonderful in his saints: the God of Israel himself
+1  354   | will give power and strength to his people. Blessed be
+1  367   | God.
+1  384  i| P. Receive, O holy Trinity, this offering which I make to
+1  398   | thee in memory of the passion of our Lord Jesus Christ;
+1  411   | and grant that it may ascend pleasing in thy sight, and
+1  425   | work the eternal salvation of myself and of all the faithful.
+1  441  i| P. Pray, brethren, that my sacrifice and yours alike may
+1  455   | be acceptable in the sight of the Lord.
+1  528   | We offer thee, O Lord, the gifts of our devotion: may
+1  541   | they be pleasing to thee for the honour of all the just,
+1  555   | and by thy mercy be made profitable for our salvation.
+1  568   | Through our Lord… world without end. =R Amen.
+1  661 G | >V The Lord be with you. =R And with thy spirit.
+1  675 G | >V Lift up your hearts. =R We have lifted them up to the
+1  688   | Lord.
+1  702 G | >V Let us give thanks to the Lord our God. =R It is meet
+1  715   | and just.
+1  732   | It is truly meet and just, right and for our salvation, that
+1  745   | we should at all times and in all places give thanks to thee,
+1  759   | O holy Lord, Father almighty, everlasting God: who, for
+1  802 G | •
+1  802 G | 7
+
+=========== PAGE 8
+0   54   | decórem ac tutámen apostólicam vivéndi formam per
+0   67   | beatíssimum Patriárcham Domínicum renováre voluísti.
+0   81   | Ipse enim, Genitrícis Fílii tui semper ope suffúltus, prædi-
+0   94   | catióne sua compéscuit hǽreses, fídei púgiles géntium
+0  108   | in salútem instítuit, et innúmeras ánimas Christo lucri-
+0  122   | fécit. Sapiéntiam ejus narrant pópuli, ejúsque laudes
+0  135   | núntiat Ecclésia. Et ídeo cum Angelis et Archángelis,
+0  149   | cum Thronis et Dominatiónibus, cumque omni milítia
+0  162   | cæléstis exércitus, hymnum glóriæ tuæ cánimus, sine fine
+0  176   | dicéntes:
+0  219 G | Sanctus
+0  470 G | All kneel
+0  487   | Sanctus, Sanctus, Sanctus Dóminus Deus Sábaoth. Pleni
+0  501   | sunt cæli et terra glória tua. Hosánna in excélsis. Benedíc-
+0  514   | tus qui venit in nómine Dómini. Hosánna in excélsis.
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1   54   | the beauty and defence of thy holy Church, didst will to
+1   67   | renew the apostolic form of life through the most blessed
+1   81   | Patriarch Dominic. For he, ever upheld by the help of the
+1   94   | Mother of thy Son, by his preaching restrained heresies,
+1  108   | raised up champions of the faith for the salvation of the
+1  122   | nations, and won countless souls for Christ. The peoples
+1  135   | tell of his wisdom, and the Church proclaims his praise.
+1  149   | And therefore with the Angels and Archangels, with the
+1  162   | Thrones and Dominions, and with all the host of the
+1  176   | heavenly army, we sing the hymn of thy glory, evermore
+1  189   | saying:
+1  487   | Holy, Holy, Holy, Lord God of Hosts. Heaven and earth
+1  501   | are full of thy glory. Hosanna in the highest. Blessed is
+1  514   | he who cometh in the name of the Lord. Hosanna in the
+1  528   | highest.
+1  802 G | •
+1  802 G | 8
+
+=========== PAGE 9
+0   53 G | The Canon of the Mass
+0  371 Gi| The priest says the Canon in silence.
+0  390   | Te ígitur, clementíssime Pater, per Jesum Christum
+0  404   | Fílium tuum Dóminum nostrum, súpplices rogámus ac
+0  417   | pétimus, uti accépta hábeas et benedícas, hæc dona, hæc
+0  431   | múnera, hæc sancta sacrifícia illibáta: in primis, quæ tibi
+0  444   | offérimus pro Ecclésia tua sancta cathólica: quam paci-
+0  458   | ficáre, custodíre, adunáre et régere dignéris toto orbe ter-
+0  471   | rárum: una cum fámulo tuo Papa nostro N. et Antístite
+0  485   | nostro N. et Rege nostro N. et ómnibus orthodóxis,
+0  498   | atque cathólicæ et apostólicæ fídei cultóribus.
+0  515   | Meménto, Dómine, famulórum famularúmque tuárum
+0  528 G | N. et N. et ómnium circumstántium, quorum tibi fides
+0  542   | cógnita est, et nota devótio, pro quibus tibi offérimus:
+0  556   | vel qui tibi ófferunt hoc sacrifícium laudis, pro se suísque
+0  569   | ómnibus: pro redemptióne animárum suárum, pro spe
+0  583   | salútis et incolumitátis suæ: tibíque reddunt vota sua
+0  596   | ætérno Deo, vivo et vero.
+0  613   | Communicántes, et memóriam venerántes, in primis glo-
+0  626   | riósæ semper Vírginis Maríæ, Genitrícis Dei et Dómini
+0  640   | nostri Jesu Christi: sed et beatórum Apostolórum ac
+0  653   | Mártyrum tuórum, Petri et Pauli, Andréæ, Jacóbi, Joán-
+0  667   | nis, Thomæ, Jacóbi, Philíppi, Bartholomǽi, Matthǽi,
+0  680   | Simónis et Thaddǽi: Lini, Cleti, Cleméntis, Xysti,
+0  694   | Cornélii, Cypriáni, Lauréntii, Chrysógoni, Joánnis
+0  708   | et Pauli, Cosmæ et Damiáni, et ómnium Sanctórum
+0  721   | tuórum; quorum méritis precibúsque concédas, ut in
+0  735   | ómnibus protectiónis tuæ muniámur auxílio. Per eúm-
+0  748   | dem Christum Dóminum nostrum. Amen.
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1  390   | Therefore, most merciful Father, we humbly pray and
+1  404   | beseech thee, through Jesus Christ thy Son our Lord, to
+1  417   | accept and bless these gifts, these offerings, these holy
+1  431   | and unblemished sacrifices, which we offer thee first for
+1  444   | thy holy catholic Church: deign to grant her peace, to
+1  458   | guard, unite and govern her throughout the whole world,
+1  471   | together with thy servant N. our Pope, N. our Bishop,
+1  485 G | N. our King, N. our King, and all who hold and teach
+1  498   | the catholic and apostolic faith.
+1  515   | Remember, O Lord, thy servants and handmaids N. and
+1  528 G | N., and all here present, whose faith and devotion are
+1  542   | known to thee; for whom we offer, or who offer to thee,
+1  556   | this sacrifice of praise for themselves and all their own,
+1  569   | for the redemption of their souls, for the hope of their
+1  583   | salvation and safety, and who pay their vows to thee, the
+1  596   | eternal, living and true God.
+1  613   | In communion with, and venerating the memory first
+1  626   | of the glorious ever-Virgin Mary, Mother of our God
+1  640   | and Lord Jesus Christ; and also of thy blessed Apos-
+1  653   | tles and Martyrs, Peter and Paul, Andrew, James, John,
+1  667   | Thomas, James, Philip, Bartholomew, Matthew, Simon
+1  680   | and Thaddeus; Linus, Cletus, Clement, Sixtus, Cor-
+1  694   | nelius, Cyprian, Lawrence, Chrysogonus, John and Paul,
+1  708   | Cosmas and Damian, and of all thy Saints: by whose
+1  721   | merits and prayers grant that in all things we may be de-
+1  735   | fended by the help of thy protection. Through the same
+1  748   | Christ our Lord. Amen.
+1  802 G | •
+1  802 G | 9
+
+=========== PAGE 10
+0   54   | Hanc ígitur oblatiónem servitútis nostræ, sed et cunctæ
+0   67   | famíliæ tuæ, quǽsumus, Dómine, ut placátus accípias:
+0   81   | diésque nostros in tua pace dispónas, atque ab ætérna
+0   94   | damnatióne nos éripi, et in electórum tuórum júbeas
+0  108   | grege numerári.
+0  108   | Per Christum Dóminum nostrum.
+0  122   | Amen.
+0  138   | Quam oblatiónem tu, Deus, in ómnibus, quǽsumus,
+0  152   | benedíctam, adscríptam, ratam, rationábilem, accept-
+0  165   | abilémque fácere dignéris: ut nobis Corpus et Sanguis
+0  179   | fiat dilectíssimi Fílii tui Dómini nostri Jesu Christi.
+0  209   | Qui prídie quam paterétur, accépit panem in sanctas
+0  222   | ac venerábiles manus suas, et elevátis óculis in cælum
+0  236   | ad te Deum Patrem suum omnipoténtem, tibi grátias
+0  249   | agens, benedíxit, fregit, dedítque discípulis suis, dicens:
+0  263   | Accípite, et manducáte ex hoc omnes. Hoc est enim
+0  277   | Corpus meum.
+0  293   | Símili modo postquam cenátum est, accípiens et hunc
+0  307   | præclárum Cálicem in sanctas ac venerábiles manus suas:
+0  320   | item tibi grátias agens, benedíxit, dedítque discípulis suis,
+0  334   | dicens: Accípite, et bíbite ex eo omnes. Hic est enim
+0  347   | Calix Sánguinis mei, novi et ætérni testaménti:
+0  361   | mystérium fídei: qui pro vobis et pro multis
+0  374   | effundétur in remissiónem peccatórum. Hæc
+0  388   | quotiescúmque fecéritis, in mei memóriam faciétis.
+0  418   | Unde et mémores, Dómine, nos servi tui, sed et plebs
+0  432   | tua sancta, ejúsdem Christi Fílii tui Dómini nostri tam
+0  445   | beátæ passiónis, nec non et ab ínferis resurrectiónis, sed
+0  459   | et in cælos gloriósæ ascensiónis: offérimus præcláræ ma-
+0  472   | jestáti tuæ de tuis donis ac datis hóstiam puram, hóstiam
+0  486   | sanctam, hóstiam immaculátam, Panem sanctum vitæ
+0  499   | ætérnæ, et Cálicem salútis perpétuæ.
+0  529   | Supra quæ propítio ac seréno vultu respícere dignéris: et
+0  543   | accépta habére, sícuti accépta habére dignátus es mún-
+0  557   | era púeri tui justi Abel, et sacrifícium Patriárchæ nos-
+0  570   | tri Abrahæ: et quod tibi óbtulit summus sacérdos tuus
+0  584   | Melchísedech, sanctum sacrifícium, immaculátam hós-
+0  597   | tiam.
+0  614   | Súpplices te rogámus, omnípotens Deus: jube hæc per-
+0  627   | férri per manus sancti Angeli tui in sublíme altáre tuum,
+0  641   | in conspéctu divínæ majestátis tuæ: ut quotquot ex hac
+0  654   | altáris participatióne sacrosánctum Fílii tui Corpus et
+0  668   | Sánguinem sumpsérimus, omni benedictióne cælésti et
+0  681   | grátia repleámur. Per eúmdem Christum Dóminum nos-
+0  695   | trum. Amen.
+0  712   | Meménto étiam, Dómine, famulórum famularúmque
+0  725   | tuárum N. et N., qui nos præcessérunt cum signo fídei,
+0  739   | et dórmiunt in somno pacis. Ipsis, Dómine, et óm-
+0  752   | nibus in Christo quiescéntibus, locum refrigérii, lucis
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1   54   | This oblation, therefore, of our service and of thy whole
+1   67   | family, we beseech thee, O Lord, graciously to accept;
+1   81   | order our days in thy peace, and bid us be rescued from
+1   94   | eternal damnation and numbered among the flock of
+1  108   | thine elect. Through Christ our Lord. Amen.
+1  138   | Which oblation do thou, O God, we beseech thee, deign
+1  152   | to make in all things blessed, approved, ratified, reason-
+1  165   | able and acceptable, that it may become for us the Body
+1  179   | and Blood of thy most beloved Son, our Lord Jesus
+1  192   | Christ.
+1  209   | Who, the day before he suffered, took bread into his holy
+1  222   | andvenerablehands, andwithhiseyeslifteduptoheaven,
+1  236   | to thee, God, his almighty Father, giving thanks to thee,
+1  249   | he blessed it, broke it, and gave it to his disciples, saying:
+1  263   | Take and eat ye all of this. For this is my Body.
+1  293   | In like manner, after he had supped, taking also this pre-
+1  307   | cious chalice into his holy and venerable hands, again giv-
+1  320   | ing thanks to thee, he blessed it and gave it to his disciples,
+1  334   | saying: Take and drink ye all of this. For this is the
+1  347   | Chalice of my Blood, of the new and eternal
+1  361   | testament: the mystery of faith: which shall
+1  374   | be shed for you and for many unto the remis-
+1  388   | sion of sins. As often as you shall do these things, you
+1  402   | shall do them in memory of me.
+1  418   | Wherefore, O Lord, we thy servants, and likewise thy
+1  432   | holy people, mindful of the blessed passion of the same
+1  445   | Christ thy Son our Lord, of his resurrection from the
+1  459   | dead, and of his glorious ascension into heaven, offer
+1  472   | to thy most excellent majesty, from thine own gifts and
+1  486   | bounty, a pure victim, a holy victim, a spotless victim, the
+1  499   | holy Bread of eternal life and the Chalice of everlasting
+1  513   | salvation.
+1  529   | Upon which deign to look with a propitious and serene
+1  543   | countenance, and to accept them, as thou didst deign to
+1  557   | accept the gifts of thy just servant Abel, and the sacrifice
+1  570   | of our Patriarch Abraham, and that which thy high priest
+1  584   | Melchisedech offered to thee, a holy sacrifice, a spotless
+1  597   | victim.
+1  614   | We humbly beseech thee, almighty God, command these
+1  627   | to be carried by the hands of thy holy Angel to thine altar
+1  641   | on high, in the sight of thy divine majesty; that as many
+1  654   | of us as, by partaking at this altar, shall receive the most
+1  668   | sacred Body and Blood of thy Son, may be filled with
+1  681   | every heavenly blessing and grace. Through the same
+1  695   | Christ our Lord. Amen.
+1  712   | Remember also, O Lord, thy servants and handmaids N.
+1  725   | and N., who have gone before us with the sign of faith
+1  739   | and sleep in the sleep of peace. To these, O Lord, and to
+1  752   | all who rest in Christ, grant, we beseech thee, a place of
+1  802 G | •
+1  802 G | 10
+
+=========== PAGE 11
+0   54   | et pacis, ut indúlgeas, deprecámur. Per eúmdem Chris-
+0   67   | tum Dóminum nostrum. Amen.
+0   84   | Nobis quoque peccatóribus fámulis tuis, de multitúdine
+0   97   | miseratiónum tuárum sperántibus, partem áliquam et
+0  111   | societátem donáre dignéris, cum tuis sanctis Apóstolis et
+0  125   | Martýribus: cum Joánne, Stéphano, Matthía, Bárnaba,
+0  138   | Ignátio, Alexándro, Marcellíno, Petro, Felicitáte, Perpé-
+0  152   | tua, Agatha, Lúcia, Agnéte, Cæcília, Anastásia, et óm-
+0  165   | nibus Sanctis tuis: intra quorum nos consórtium, non
+0  179   | æstimátor mériti, sed véniæ, quǽsumus, largítor admítte.
+0  192   | Per Christum Dóminum nostrum.
+0  209   | Per quem hæc ómnia, Dómine, semper bona creas, sanc-
+0  222   | tíficas, vivíficas, benedícis et præstas nobis. Per ipsum, et
+0  236   | cum ipso, et in ipso, est tibi Deo Patri omnipoténti, in
+0  249   | unitáte Spíritus Sancti, omnis honor et glória, per ómnia
+0  263   | sǽcula sæculórum. =R Amen.
+0  293 G | Pater noster
+0  336   | Orémus. Præcéptis salutáribus móniti, et divína institu-
+0  350   | tióne formáti, audémus dícere:
+0  363   | Pater noster, qui es in cælis: sanctificétur nomen tuum.
+0  377   | Advéniat regnum tuum. Fiat volúntas tua, sicut in cælo,
+0  390   | et in terra. Panem nostrum quotidiánum da nobis hódie.
+0  404   | Et dimítte nobis débita nostra, sicut et nos dimíttimus
+0  417   | debitóribus nostris. Et ne nos indúcas in tentatiónem.
+0  431 G | =R Sed líbera nos a malo.
+0  447 G | >V Per ómnia sǽcula sæculórum. =R Amen.
+0  461 G | >V Pax Dómini sit semper vobíscum. =R Et cum spíritu
+0  474   | tuo.
+0  504 G | Agnus Dei
+0  547   | AgnusDei,quitollispeccátamundi: miserérenobis. (bis)
+0  561   | Agnus Dei, qui tollis peccáta mundi: dona nobis pacem.
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1   54   | refreshment, light and peace. Through the same Christ
+1   67   | our Lord. Amen.
+1   84   | To us sinners also, thy servants, who hope in the mul-
+1   97   | titude of thy mercies, deign to grant some part and fel-
+1  111   | lowship with thy holy Apostles and Martyrs: with John,
+1  125   | Stephen, Matthias, Barnabas, Ignatius, Alexander, Mar-
+1  138   | cellinus, Peter, Felicity, Perpetua, Agatha, Lucy, Agnes,
+1  152   | Cecilia, Anastasia, and all thy Saints; into whose com-
+1  165   | pany admit us, we beseech thee, not weighing our merits
+1  179   | but granting us pardon. Through Christ our Lord.
+1  209   | Through whom, O Lord, thou dost ever create, sanctify,
+1  222   | quicken, bless and bestow upon us all these good things.
+1  236   | Through him, and with him, and in him, is to thee, God
+1  249   | the Father almighty, in the unity of the Holy Spirit, all
+1  263   | honour and glory, world without end. =R Amen.
+1  336   | Let us pray. Admonished by saving precepts and formed
+1  350   | by divine instruction, we make bold to say:
+1  363   | Our Father, who art in heaven, hallowed be thy name.
+1  377   | Thy kingdom come. Thy will be done on earth as it is in
+1  390   | heaven. Give us this day our daily bread. And forgive us
+1  404   | our trespasses, as we forgive those who trespass against
+1  417   | us. And lead us not into temptation. =R But deliver us
+1  431   | from evil.
+1  447 G | >V World without end. =R Amen.
+1  461 G | >V The peace of the Lord be always with you.
+1  461 G | =R And
+1  474   | with thy spirit.
+1  547   | Lamb of God, who takest away the sins of the world,
+1  561   | have mercy on us. (twice)
+1  574   | Lamb of God, who takest away the sins of the world,
+1  588   | grant us peace.
+1  802 G | •
+1  802 G | 11
+
+=========== PAGE 12
+0   53 G | Communion of the Faithful
+0  303 G | All kneel
+0  321 G | >V Ecce Agnus Dei, ecce qui tollit peccáta mundi.
+0  334   | Dómine, non sum dignus, ut intres sub tectum meum:
+0  348   | sed tantum dic verbo, et sanábitur ánima mea. (ter)
+0  394 Gi| Those receiving Holy Communion kneel and receive on the tongue; the priest says to each: Corpus Dómini nostri Jesu Christi custódiat
+0  406 Gi| te in vitam ætérnam. Amen. (May the Body of our Lord Jesus Christ keep thee unto life everlasting. Amen.)
+0  438 G | Communion Antiphon · Communio
+0  455 Gi| Ps. 32
+0  496   | Gaudéte justi in Dómino, allelúia: rectos decet collaudá-
+0  509   | tio, allelúia.
+0  539 G | Postcommunion · Postcommunio
+0  585 G | All stand
+0  602 G | >V Dóminus vobíscum. =R Et cum spíritu tuo. Orémus.
+0  616   | Da, quǽsumus, Dómine, fidélibus pópulis ómnium
+0  629   | Sanctórum semper veneratióne lætári: et eórum perpé-
+0  643   | tua supplicatióne muníri. Per Dóminum nostrum… per
+0  656   | ómnia sǽcula sæculórum. =R Amen.
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1  321 G | >V BeholdtheLambofGod, beholdhimwhotakethaway
+1  334   | the sins of the world.
+1  348   | Lord, I am not worthy that thou shouldst enter under my
+1  362   | roof; but only say the word, and my soul shall be healed.
+1  375  i| (thrice)
+1  496   | Rejoice in the Lord, O you just, alleluia: praise befits the
+1  509   | upright, alleluia.
+1  602 G | >V The Lord be with you. =R And with thy spirit. Let us
+1  616   | pray.
+1  629   | Grant, we beseech thee, O Lord, that thy faithful people
+1  643   | may ever rejoice in the veneration of all the Saints, and
+1  656   | be defended by their unceasing intercession. Through
+1  670   | our Lord… world without end. =R Amen.
+1  802 G | •
+1  802 G | 12
+
+=========== PAGE 13
+0   53 G | Dismissal and Blessing
+0   96 G | >V Dóminus vobíscum. =R Et cum spíritu tuo.
+0  109 G | >V Ite, missa est. =R Deo grátias.
+0  128 G | All kneel
+0  146   | Benedíctio Dei omnipoténtis, Patris, et Fílii, et Spíritus
+0  159   | Sancti, descéndat super vos et máneat semper. =R Amen.
+0  203 G | Last Gospel
+0  220 Gi| Joann. 1, 1–14
+0  451 G | All stand; kneel at Et Verbum caro factum est
+0  469 G | >V Dóminus vobíscum. =R Et cum spíritu tuo. >V Inítium
+0  482   | sancti Evangélii secúndum Joánnem.
+0  482 G | =R Glória tibi,
+0  496   | Dómine.
+0  510   | In princípio erat Verbum, et Verbum erat apud Deum,
+0  523   | et Deus erat Verbum. Hoc erat in princípio apud Deum.
+0  537   | Omnia per ipsum facta sunt: et sine ipso factum est ni-
+0  550   | hil, quod factum est: in ipso vita erat, et vita erat lux
+0  564   | hóminum: et lux in ténebris lucet, et ténebræ eam non
+0  577   | comprehendérunt. Fuit homo missus a Deo, cui nomen
+0  591   | erat Joánnes. Hic venit in testimónium, ut testimónium
+0  604   | perhibéretdelúmine, utomnes créderentperillum. Non
+0  618   | erat ille lux, sed ut testimónium perhibéret de lúmine.
+0  632   | Eratluxvera,quæillúminatomnemhóminemveniéntem
+0  645   | in hunc mundum. In mundo erat, et mundus per ipsum
+0  659   | factusest, etmunduseumnoncognóvit. Inprópriavenit,
+0  672   | et sui eum non recepérunt. Quotquot autem recepérunt
+0  686   | eum, dedit eis potestátem fílios Dei fíeri, his qui credunt
+0  699   | in nómine ejus: qui non ex sanguínibus, neque ex volun-
+0  713   | táte carnis, neque ex voluntáte viri, sed ex Deo nati sunt.
+0  726   | Et Verbum caro factum est, et habitávit in nobis:
+0  740   | et vídimus glóriam ejus, glóriam quasi Unigéniti a Patre,
+0  753   | plenum grátiæ et veritátis. =R Deo grátias.
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1   96 G | >V The Lord be with you. =R And with thy spirit.
+1  109 G | >V Go, the Mass is ended. =R Thanks be to God.
+1  146   | May the blessing of almighty God, the Father, and the
+1  159   | Son, and the Holy Spirit, descend upon you and remain
+1  173   | for ever. =R Amen.
+1  469 G | >V The Lord be with you. =R And with thy spirit. >V The
+1  482   | beginningoftheholyGospelaccordingtoJohn. =R Glory
+1  496   | be to thee, O Lord.
+1  510   | In the beginning was the Word, and the Word was with
+1  523   | God, and the Word was God. The same was in the be-
+1  537   | ginning with God. All things were made by him: and
+1  550   | without him was made nothing that was made. In him
+1  564   | was life, and the life was the light of men. And the light
+1  577   | shineth in darkness, and the darkness did not compre-
+1  591   | hend it. There was a man sent from God, whose name
+1  604   | was John. This man came for a witness, to give testimony
+1  618   | of the light, that all men might believe through him. He
+1  632   | was not the light, but was to give testimony of the light.
+1  645   | That was the true light, which enlighteneth every man
+1  659   | that cometh into this world. He was in the world, and
+1  672   | the world was made by him, and the world knew him
+1  686   | not. He came unto his own, and his own received him
+1  699   | not. But as many as received him, he gave them power
+1  713   | to be made the sons of God, to them that believe in his
+1  726   | name. Who are born, not of blood, nor of the will of
+1  740   | the flesh, nor of the will of man, but of God. And the
+1  753   | Word was made flesh, and dwelt among us, and we
+1  802 G | •
+1  802 G | 13
+
+=========== PAGE 14
+0  652 G | Credits & Sources
+0  690 G | Texts. Latin from the Missale S. Ordinis Prædicatorum (Rome, 1939). The Epistle, Gospel and Last Gospel in English are from the Douay-Rheims Bible
+0  700 G | (Challoner revision); the other English translations were made for this booklet.
+0  709 G | Art. All images are public-domain works from the open-access collection of the Art Institute of Chicago (CC0): Neri da Rimini, antiphonary leaf with St
+0  719 G | Dominic in the initial “G” (1310/15); G. B. Tiepolo, Virgin and Child with Saints Dominic and Hyacinth (1730–35); F. Ghissi, The Crucifixion (c. 1370);
+0  728 G | illuminated border from a Florentine laudario (c. 1340); historiated initials from Rimini (1300/10), France (c. 1300) and by Don Silvestro dei Gherarducci
+0  737 G | (1392/99); Lo Spagna, St Catherine of Siena; A. Vivarini, St Peter Martyr; Sano di Pietro, Virgin and Child with Saints and Angels; A. Dürer, The Last Supper
+0  747 G | (1510); M. Raimondi, St Paul Preaching at Athens; J. de Gheyn II, St Matthew; P. Farinati, St John the Evangelist; circle of G. Clovio, The Four Evangelists.
+0  756 G | Captions give the work shown on each page.
+0  766 G | Edition. Set in EB Garamond (Georg Duffner). Colours of Providence College: Providence Black, Providence Gold and Harkins Yellow.
+0  802 G | All Saints of the Order of Preachers · 12 November 2026
+1   54   | saw his glory, the glory as it were of the only begotten of
+1   67   | the Father, full of grace and truth. =R Thanks be to God.
+1  802 G | •
+1  802 G | 14
