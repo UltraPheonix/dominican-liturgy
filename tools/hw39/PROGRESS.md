@@ -60,3 +60,9 @@ Latin j -> i (site style). English: 1959 missal's where the text is the same, ot
 - NEXT (user agreed): UI overhaul (settings/Options panel, English placement, general tidiness) -> ask user questions first.
 - Still open for Holy Week 1939: Ablutio altarium on Thursday (Triduum pp. ~95-111, antiphons at each altar), Triduum Office,
   Palm Sunday procession chants, check Holy Saturday tracts vs Triduum book; then 1959.
+
+## 2026-11-19: UI overhaul (user choices: split options by purpose, English under Latin, top bar, content first)
+- All pages: <header class="top"> (brand, tabs, EN, gear) + <aside class="sheet" id="sheet"> (Options: Day/Chants/Show/Advanced),
+  day bar + tools (Share/PDF) at head of .inner. Old sidebar (.frame/.side) gone. tools/restructure.py did the HTML move.
+- English: always below the Latin, smaller italic grey (no more two columns).
+- Holy Week: rite switch + day tabs at the head of the page.

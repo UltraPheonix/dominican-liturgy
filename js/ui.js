@@ -78,4 +78,30 @@
     });
   }
   if (document.readyState !== 'loading') report(); else document.addEventListener('DOMContentLoaded', report);
+
+  // the Options sheet (gear in the top bar)
+  function sheetWire() {
+    var g = document.getElementById('gear'), sh = document.getElementById('sheet'), bk = document.getElementById('sheetBack'), x = document.getElementById('sheetX');
+    if (!g || !sh) return;
+    if (!sh.querySelector('.side-foot')) {
+      var f = document.createElement('p'); f.className = 'side-foot';
+      f.innerHTML = 'A private project, not affiliated with the Order of Preachers. <a href="about.html">About the sources</a>';
+      sh.appendChild(f);
+    }
+    function set(open) {
+      sh.hidden = !open; if (bk) bk.hidden = !open; g.setAttribute('aria-expanded', open);
+      document.body.classList.toggle('sheet-open', open);
+      if (open) { sh.setAttribute('tabindex', '-1'); sh.focus(); }
+      else g.focus();
+    }
+    g.addEventListener('click', function () { set(sh.hidden); });
+    if (x) x.addEventListener('click', function () { set(false); });
+    if (bk) bk.addEventListener('click', function () { set(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !sh.hidden) set(false); });
+    // choosing a day closes the sheet, so the Mass or Hour is seen at once
+    sh.addEventListener('change', function (e) { if (e.target.id === 'date' || e.target.id === 'selMass') setTimeout(function () { set(false); }, 120); });
+    sh.addEventListener('click', function (e) { if (e.target.closest('.cal-day, .alt')) setTimeout(function () { set(false); }, 120); });
+  }
+  if (document.readyState !== 'loading') sheetWire(); else document.addEventListener('DOMContentLoaded', sheetWire);
 })();
+
