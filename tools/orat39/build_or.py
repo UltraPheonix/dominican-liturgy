@@ -167,6 +167,7 @@ def clean_en(t, ec):
     return t, fixes
 if __name__ == '__main__':
     M = json.load(open('matched.json'))
+    M.update(json.load(open('manual_match.json')))  # hand matches: same Mass under another date in the 1939 Missal
     OV = json.load(open('overrides.json'))
     EF = json.load(open('en_final.json'))
     LF = json.load(open('latin_fix.json'))  # corrections from proofing against the Missal page images

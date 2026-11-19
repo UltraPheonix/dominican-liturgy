@@ -46,6 +46,7 @@ def find(raw, near=None, lo=0, hi=None):
         if e >= 0: return a, e + m
     return a, a + len(f)
 M = json.load(open(os.path.join(os.path.dirname(__file__) or '.', 'matched.json')))
+M.update(json.load(open(os.path.join(os.path.dirname(__file__) or '.', 'manual_match.json'))))
 # the pdf page where each Mass begins (from its line in m39lin.txt)
 LIN = open('m39lin.txt').read().split('\n'); PG = []; cur = 0
 for l in LIN:
@@ -88,7 +89,8 @@ for k in keys:
         if c.n != 3: c = fitz.Pixmap(fitz.csRGB, c)
         c.set_origin(0, y); out.copy(c, c.irect); y += c.height + 12
     out.save('proof/%s.png' % k)
-json.dump(where, open('proof/where.json', 'w'), indent=0)
+W0 = json.load(open('proof/where.json')) if os.path.exists('proof/where.json') else {}
+W0.update(where); json.dump(W0, open('proof/where.json', 'w'), indent=0)
 json.dump(OUTSIDE, open('proof/outside.json', 'w'))
 print('found only outside the Mass pages:', OUTSIDE)
 print(len(where), 'Masses;', sum(1 for w in where.values() for v in w.values() if v is None), 'prayers not located')

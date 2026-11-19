@@ -33,7 +33,12 @@ Sacred Heart, S. Joseph Opificis (1 Maii), B.M.V. Regina (31 Maii), then Commune
 Hand-made inputs: ocr_sub.json, manual_acc.json (accents, override accdict), overrides.json (raw Latin), latin_fix.json (proof
 corrections, applied to accented output), en_final.json. Fuzzy OCR OFF. REJECT: S0508b, S1119b, G481 (wrong date matches).
 proofimg.py M39.pdf [KEYS] -> proof/KEY.png crops (prayers searched within the Mass's own pages).
-NEXT (80 Masses still without orations; MISSING.md): 15 "prayers incomplete" (read pages; usually "ut in Commune"),
+PAUSED 12:20 (Joseph: UI + priest booklet first). 18 more merged (dfc4e8d, v42: extra_final.json read from page images -> extra.py
+-> extra_or.json -> merge.py). WIP: manual_match.json (S0215 S0511 S0225b S0303b S0419b S0503b S1010b S1012b S1127b S1007
+found under other dates; S0819b lacks pc; S0111b Scammacca at m39lin 45655 not segmented) built by build_or.py, crops made,
+NOT yet proofed/English/merged. 4 unk: AEEmiliae dociles enutriamur invitantem. Still missing also: S0504 Monica, S0703, S0729,
+S0812, S1202, S0903, S0910, S0428, S0508 Mediatrix, S0814, S0113, S1113, Pasc6s, Quad3h, Quad6s, votives C..s, G470/475/587.
+OLD NEXT (80 Masses still without orations; MISSING.md): 15 "prayers incomplete" (read pages; usually "ut in Commune"),
 4 "from Common p. N*" (S0122 S0411 S1211 S0928b: Common prayers + saint's name declined), 3 rejected + ~59 not found
 (votives/Commons C..s, Holy Week Quad6f/Pasc6s, post-1939 Blesseds: supplements in M39.pdf, Commune section, then O26 Ordo
 tools/sources/ordo_op_2026.txt; give Joseph a list of anything with no Dominican source).
