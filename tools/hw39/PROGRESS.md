@@ -66,3 +66,17 @@ Latin j -> i (site style). English: 1959 missal's where the text is the same, ot
   day bar + tools (Share/PDF) at head of .inner. Old sidebar (.frame/.side) gone. tools/restructure.py did the HTML move.
 - English: always below the Latin, smaller italic grey (no more two columns).
 - Holy Week: rite switch + day tabs at the head of the page.
+
+## 2026-11-19 07:30: Booklets (user: "steps 1 2 3 asap" = Choir Book, Congregation Booklet, Priest Missal)
+- Priest chants read from the All Saints priest PDF (tools/pdfomr/omr.py, head splitter for joined neumes):
+  site/gabc/op-pater-solemn, op-pax-domini, op-praef-dominic-solemn (f3). tools/chant/resyl.py = liturgical re-syllabifier.
+- NEXT: booklet.html + js/booklet.js (browser print, A4), Choir Book -> Congregation -> Priest.
+
+## 2026-11-19 08:30: Booklets working (booklet.html?b=choir|priest|cong#<mass hash>)
+- js/booklet.js lays out A4 pages itself (units -> columns -> pages; page numbers known for contents/footers).
+  Choir Book (1 col, chants only + Modus respondendi), Priest's Missal (2 cols, Canon in border pages), Congregation (Latin|English).
+- booklet.html is lang="en": EB Garamond's Latin locl turns u into v!  J() gives the Missal's j-spelling.
+- Ordinarium X: Gloria/Sanctus/Agnus = Vatican VIII melodies (gabc/opX-*), added to D.kyriale in app.js.
+- A Credo chosen under Options is now sung even when the rubrics don't require it.
+- Orations added for S1112. ~180 Masses still lack orations (fill from dm.txt) -> next.
+- Test: python3 tools/booklet/book.py choir "S1112&d=2026-11-12&ord=X&credo=I" out.pdf (server on :8768 in site/).

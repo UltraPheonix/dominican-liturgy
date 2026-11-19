@@ -5,6 +5,12 @@
 (function () {
   'use strict';
   var D = window.DOMINICAN;
+  // Ordinarium X (Grad. O.P. pp. 152*-158*): its Gloria, Sanctus and Agnus are the Vatican Mass VIII melodies
+  (function () {
+    var add = [['opX-gloria', 'Gloria X', '153*'], ['opX-sanctus', 'Sanctus X', '157*'], ['opX-agnus', 'Agnus X', '158*']];
+    if (!D || !D.kyriale) return;
+    add.forEach(function (a) { if (!D.chants[a[0]]) { D.chants[a[0]] = {p: 'ky', i: a[1], pg: a[2]}; var at = D.kyriale.indexOf(8039); D.kyriale.splice(at < 0 ? D.kyriale.length : at, 0, a[0]); } });
+  })();
   // Masses made from others: the last Sunday after the Octave of Trinity, and the resumed Sundays after the Epiphany
   (function () {
     var M = D.masses, ROM = ['', 'I', 'II', 'III', 'IV', 'V', 'VI'], O = window.ORATIONS || {};
@@ -68,6 +74,7 @@
   var state = {key: null, parts: null, edited: {}, date: null, season: 'auto', ord: '', credo: '', asp: '', ordo: '', hwr: '1959', edit: false};
 
   var HWP = document.body && document.body.getAttribute('data-page') === 'hw';
+  var BOOKP = document.body && document.body.getAttribute('data-page') === 'book';
   function readHash() {
     var h = decodeURIComponent(location.hash.slice(1));
     if (!h) return null;
@@ -122,7 +129,8 @@
 
   // ---------------------------------------------------------------- exsurge
   // The chant context and the GABC adjustments are those of jgabc (util.js, propers.js).
-  function makeContext() {
+  function makeContext(o) {
+    o = o || {};
     var ctxt = new exsurge.ChantContext(exsurge.TextMeasuringStrategy.Canvas);
     ctxt.condenseLineAmount = 1;
     ctxt.lineBreaking = 'optimal';
@@ -130,9 +138,11 @@
     ctxt.textColor = 'currentColor';
     ctxt.staffLineColor = ctxt.neumeLineColor = ctxt.dividerLineColor = 'currentColor';
     ctxt.negativeFillColor = 'var(--paper, #fff)';
-    ctxt.setFont("'Crimson Text', serif", 19.2 / 0.9);
+    ctxt.setFont(o.font || "'Crimson Text', serif", o.size || 19.2 / 0.9);
     ctxt.spaceBetweenSystems = 0;
-    ctxt.textStyles.dropCap.size = 64;
+    ctxt.textStyles.dropCap.size = o.dropSize || 64;
+    if (o.dropFont) ctxt.textStyles.dropCap.font = o.dropFont;
+    if (o.dropColor) ctxt.textStyles.dropCap.color = o.dropColor;
     ctxt.textStyles.annotation.size = 12.8;
     ctxt.minLyricWordSpacing *= 0.7;
     ctxt.accidentalSpaceMultiplier = 1.5;
@@ -141,7 +151,9 @@
     ctxt.specialCharProperties['font-weight'] = '400';
     var defaultSpecialCharText = ctxt.specialCharText;
     ctxt.specialCharText = function (ch) { return defaultSpecialCharText(ch).toLowerCase(); };
-    ctxt.setRubricColor('var(--rubric, #b3121f)');
+    ctxt.setRubricColor(o.rubric || 'var(--rubric, #b3121f)');
+    if (o.lines) ctxt.staffLineColor = o.lines;
+    if (o.glyph) ctxt.setGlyphScaling(o.glyph);
     return ctxt;
   }
   // Outside Paschaltide the optional "T. P. Alleluia" at the end of a chant is not sung
@@ -191,22 +203,23 @@
   }
 
   var renderQueue = Promise.resolve(), glyphSeq = 0;
-  function renderInto(container, body, header, part) {
+  function renderInto(container, body, header, part, o) {
+    o = o || {};
     // one layout at a time keeps the page responsive and the order stable
     renderQueue = renderQueue.then(function () {
       return new Promise(function (resolve) {
         try {
-          var ctxt = makeContext();
+          var ctxt = makeContext(o);
           var gabc = exsurgeGabc(body);
           var mappings = exsurge.Gabc.createMappingsFromSource(ctxt, gabc);
-          var dropCap = header['initial-style'] !== '0';
+          var dropCap = o.noDrop ? false : header['initial-style'] !== '0';
           var score = new exsurge.ChantScore(ctxt, mappings, dropCap);
-          if (dropCap && PART_ABBR[part]) {
+          if (dropCap && PART_ABBR[part] && !o.noAnno) {
             var mode = ROMAN[parseInt(header.mode, 10)] || '';
             score.annotation = mode ? new exsurge.Annotations(ctxt, '%' + PART_ABBR[part] + '%', '%' + mode + '%')
                                     : new exsurge.Annotations(ctxt, '%' + PART_ABBR[part] + '%');
           }
-          var width = Math.min(container.clientWidth || 600, 720);
+          var width = o.width || Math.min(container.clientWidth || 600, 720);
           ctxt.width = width;
           score.performLayoutAsync(ctxt, function () {
             try {
@@ -473,8 +486,9 @@
     return out;
   }
   function drawPills() {
-    var m = D.masses[state.key], box = $('#pills'), col = massColor(state.key, state.date);
+    var m = D.masses[state.key], box = $('#pills');
     if (!box || !m) return;
+    var col = massColor(state.key, state.date);
     box.innerHTML = '';
     var dot = el('span', {class: 'dot' + (col === 'white' ? ' white' : ''), 'aria-hidden': 'true'});
     dot.style.background = COLORS[col];
@@ -576,7 +590,8 @@
     // Benedicamus Domino only when a procession follows at once (Maundy Thursday)
     if (R.dismiss === 'ben') o.it = part('Benedicamus') || find('Benedicamus VIII');
     else o.it = (easterOctave(d) || state.key === 'Quad6s') ? find('Ite IV') : (part('Ite') || find('Ite I'));
-    if (R.credo && state.credo !== 'none') o.cr = find('Credo ' + (state.credo || 'I'));
+    // a Credo chosen under Options is sung even on a day whose rubrics do not require it
+    if ((R.credo && state.credo !== 'none') || (state.credo && state.credo !== 'none')) o.cr = find('Credo ' + (state.credo || 'I'));
     o.num = num;
     return o;
   }
@@ -780,6 +795,7 @@
   }
 
   function drawMass() {
+    if (BOOKP) return;
     var m = D.masses[state.key], main = $('#mass');
     main.innerHTML = '';
     if (!HWP && /^Quad6[mtwhfs]?$/.test(state.key)) {
@@ -1381,7 +1397,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
+  window.ProprOP = {D: D, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
 
   function start() {
     if (!document.getElementById('selMass')) return;   // loaded as a library (e.g. by the Office page)
@@ -1404,8 +1420,11 @@
     $('#selCredo').addEventListener('change', function (e) { state.credo = e.target.value; drawMass(); writeHash(); });
     $('#selAsp').addEventListener('change', function (e) { state.asp = e.target.value; drawMass(); writeHash(); });
     $('#selOrdo').addEventListener('change', function (e) { state.ordo = e.target.value; drawMass(); writeHash(); });
-    $('#btnChoir').addEventListener('click', function () { printAs('choir'); });
-    $('#btnCong').addEventListener('click', function () { printAs('congregation'); });
+    // the booklets (Choir Book, Priest's Missal, Congregation Booklet) open as A4 pages ready to print
+    var openBook = function (b) { writeHash(); window.open('booklet.html?b=' + b + location.hash, '_blank'); };
+    $('#btnChoir').addEventListener('click', function () { openBook('choir'); });
+    $('#btnCong').addEventListener('click', function () { openBook('cong'); });
+    if ($('#btnPriest')) $('#btnPriest').addEventListener('click', function () { openBook('priest'); });
     $('#chkEdit').addEventListener('change', function (e) { state.edit = e.target.checked; drawMass(); });
     $('#btnShare').addEventListener('click', function () {
       var url = location.href, b = $('#btnShare');
@@ -1441,6 +1460,16 @@
       return;
     }
     var h = readHash();
+    if (BOOKP) {
+      var ob = (h && h.opts) || {};
+      state.season = ob.season || 'auto'; state.ord = ob.ord || ''; state.credo = ob.credo || ''; state.asp = ob.asp || ''; state.ordo = ob.ordo || ''; state.hwr = ob.hw === '1939' ? '1939' : '1959';
+      var bd = ob.d ? fromIso(ob.d) : new Date(); bd.setHours(0, 0, 0, 0);
+      if (h && D.masses[h.key]) state.key = h.key;
+      onDate(bd, !!(h && D.masses[h.key]));
+      if (h && D.masses[h.key]) showMass(h.key, h.over);
+      if (window.OPBook) OPBook.build(window.ProprOP);
+      return;
+    }
     if (h && D.masses[h.key]) {
       var o = h.opts;
       state.season = o.season || 'auto'; state.ord = o.ord || ''; state.credo = o.credo || ''; state.asp = o.asp || ''; state.ordo = o.ordo || ''; state.hwr = o.hw === '1939' ? '1939' : '1959';
