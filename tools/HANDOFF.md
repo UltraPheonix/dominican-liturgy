@@ -64,6 +64,12 @@ St Francis Preface (Appendix p. 25-26) added to prefaces.js, S1004. BVM Preface 
 animis laudare; mundo lumen aeternum). app.js prefaceChant(): solemn tone on I/II class, ferial where the Appendix has one
 (Lent, Cross, Paschal, Common); fixes the variable words (BVM feast word on h; Paschal hoc/hac..die/nocte; Spiritu Sancto hodierna
 die only in the octave). Shown on the Mass page and in the priest booklet when sung.
+Prayer + reading tones (DONE 2026-11-19, v49): js/mtones.js (OPMassTones.oration / reading / epistleTitle) after Harrison O.P.,
+How to Sing Plain Chant (1920) ch. VI 2, 5, 6 (media.musicasacra.com/dominican/howtosing.pdf; = Regulae Cantus): prayers fa-mi
+inflexion, fa-mi-fa mediation, long conclusion + termination per(h) om(i)...lo(hg)rum(g); Epistle mediation RE/FA/MI, termination
+podatus FA-SOL ... RE ... MI, questions on MI, conclusion in two phrases; Gospel termination FA->MI at the last accent. Used in the
+priest booklet when sung (Collect, Postcommunion, Epistle with its title, Gospel). The Office (js/tones.js) uses Regulae 1965 simple
+body (fa-re) = Harrison's "prayers at all other times": consistent. Data gap seen: ORATIONS.S1004 has no Collect.
 NEXT for the priest booklet: Pater (solemn+ferial), Pax, Ite/Benedicamus, Gloria/Credo intonations, oration tones (Collect/Postc +
 Secret ending), Epistle/Gospel tones, all from the Appendix (same OMR tools; pieces already split by m39pref.py: CANTUS
 SOLEMNIS/FERIALIS, ANTE AGNUS DEI, TONI ITE MISSA EST, ...).

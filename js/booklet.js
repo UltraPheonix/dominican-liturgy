@@ -379,7 +379,13 @@
         ordoSec(it.k);
         return;
       }
-      if (it.t === 'oratio') { para(it.x[0], {cls: 'pr'}); para('℟. Amen.', {cls: 'pr'}); return; }
+      if (it.t === 'oratio') {
+        // sung in the solemn tone of the prayers (Harrison 1920); said at a Low Mass
+        var og = null;
+        try { og = sung && window.OPMassTones ? OPMassTones.oration(J(it.x[0])) : null; } catch (e) { console.warn('tone', e); }
+        if (og) { gabcInline(og, {size: 14, glyph: 1 / 19}); return; }
+        para(it.x[0], {cls: 'pr'}); para('℟. Amen.', {cls: 'pr'}); return;
+      }
       if (it.t === 'chant') {
         var p = it.p, id = it.c.id; if (!id) return;
         heading(PART_LA[p] || p, chantRef(id));
@@ -435,12 +441,21 @@
   function reading(r, cong) {
     var v = TX['r:' + r.ref] || ['', ''], h = readingHead(r), gos = r.type === 'Gospel';
     var laT = v[0] || '', enT = v[1] || '';
-    var la = (h.open ? h.open + ' ' : '') + laT, en = (h.openEn ? h.openEn + ' ' : '') + enT;
+    var dupOpen = h.open && laT.replace(/[^A-Za-z ]/g, '').toLowerCase().indexOf(h.open.replace(/[^A-Za-z ]/g, '').toLowerCase().trim()) === 0;
+    var la = (h.open && !dupOpen ? h.open + ' ' : '') + laT, en = (h.openEn ? h.openEn + ' ' : '') + enT;
     if (!cong) {
       heading(gos ? 'Evangelium' : (r.type === 'Lesson' ? 'Lectio' : 'Epistola'), shortRef(r.ref));
       // the Gospel's greeting and title are in the Order of Mass just before
-      if (!gos) para(h.la, {cls: 'pr i'});
-      para(la, {cls: 'pr', max: 360});
+      if (BOOK === 'priest' && S.ordo !== 'low' && window.OPMassTones && la) {
+        // the Epistle and Gospel tones of the Order (Harrison 1920, ch. VI 5-6)
+        var tg = null, rg = null;
+        try { tg = gos ? null : OPMassTones.epistleTitle(J(h.la)); rg = OPMassTones.reading(J(la), gos); } catch (e) { console.warn('tone', e); }
+        if (tg) gabcInline(tg, {size: 14, glyph: 1 / 19});
+        if (rg) gabcInline(rg, {size: 14, glyph: 1 / 19}); else para(la, {cls: 'pr', max: 360});
+      } else {
+        if (!gos) para(h.la, {cls: 'pr i'});
+        para(la, {cls: 'pr', max: 360});
+      }
       para(gos ? '℟. Laus tibi, Christe.' : '℟. Deo grátias.', {cls: 'pr'});
       return;
     }
