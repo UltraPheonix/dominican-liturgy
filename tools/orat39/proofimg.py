@@ -22,31 +22,53 @@ for i in range(len(d)):
             OFF.append(len(S)); BL.append((i, k, fitz.Rect(b[:4]))); S += L(b[4])
 import bisect
 def blk(o): return bisect.bisect_right(OFF, o) - 1
-def find(raw, start=0, lim=None):
+import difflib
+def find(raw, near=None, lo=0, hi=None):
+    """all places where the prayer's opening occurs; keep the one most like the whole prayer (names included),
+    preferring one just after the Collect (near)."""
     body = re.split(r'\b(Per Dominum|Per eumdem|Qui vivis|Qui tecum)', raw)[0]
     f = L(body)
-    for n in (40, 25, 15):
-        for sk in (0, 3, 8):
-            a = S.find(f[sk:sk + n], start, lim)
-            if a >= 0:
-                a -= sk
-                for m in (25, 15, 10):
-                    e = S.find(f[-m:], a)
-                    if e >= 0 and e - a < len(f) * 1.6 + 400: return a, e + m
-    return None
+    cands = set()
+    for n, sk in ((30, 0), (20, 5), (15, 12)):
+        q = f[sk:sk + n]; i = S.find(q)
+        while i >= 0 and len(cands) < 400:
+            cands.add(i - sk); i = S.find(q, i + 1)
+    if hi is not None: cands = {a for a in cands if lo <= a < hi}
+    best = None
+    for a in cands:
+        r = difflib.SequenceMatcher(None, S[a:a + len(f) + 20], f, autojunk=False).ratio()
+        if near is not None and 0 <= a - near < 25000: r += 0.02
+        if not best or r > best[0]: best = (r, a)
+    if not best or best[0] < 0.6: return None
+    a = best[1]
+    for m in (25, 15, 10):
+        e = S.find(f[-m:], a, a + len(f) + 400)
+        if e >= 0: return a, e + m
+    return a, a + len(f)
 M = json.load(open(os.path.join(os.path.dirname(__file__) or '.', 'matched.json')))
+# the pdf page where each Mass begins (from its line in m39lin.txt)
+LIN = open('m39lin.txt').read().split('\n'); PG = []; cur = 0
+for l in LIN:
+    if l.startswith('@@PAGE '): cur = int(l.split()[1])
+    PG.append(cur)
+POFF = {}
+for j, (p, c, rc) in enumerate(BL): POFF.setdefault(p, OFF[j])
+def poff(p): return POFF.get(p, len(S))
 keys = sys.argv[2:] or list(M)
 os.makedirs('proof', exist_ok=True)
 where = {}
+OUTSIDE = []
 for k in keys:
     m = M[k]
     if not (len(m['pr']) == 3 and all(m['pr'].values())): continue
     if k in ('S0508b', 'S1119b', 'G481'): continue
-    crops = []; w = {}; st = 0; lim = None
+    crops = []; w = {}; near = None
+    p0 = PG[m['start']] if m.get('start') is not None else None
     for kind in ('or', 'se', 'pc'):
-        r = find(m['pr'][kind], st, lim)
-        if r and kind == 'or': st, lim = r[0], r[0] + 25000
-        if not r and kind != 'or': r = find(m['pr'][kind])
+        r = find(m['pr'][kind], near, poff(p0), poff(p0 + 3)) if p0 is not None else None
+        if not r:
+            r = find(m['pr'][kind], near); OUTSIDE.append((k, kind, p0, r and blk(r[0]) and BL[blk(r[0])][0]))
+        if r and kind == 'or': near = r[0]
         if not r: w[kind] = None; continue
         b0, b1 = blk(r[0]), blk(r[1] - 1)
         w[kind] = [BL[b0][0], BL[b1][0]]
@@ -67,4 +89,6 @@ for k in keys:
         c.set_origin(0, y); out.copy(c, c.irect); y += c.height + 12
     out.save('proof/%s.png' % k)
 json.dump(where, open('proof/where.json', 'w'), indent=0)
+json.dump(OUTSIDE, open('proof/outside.json', 'w'))
+print('found only outside the Mass pages:', OUTSIDE)
 print(len(where), 'Masses;', sum(1 for w in where.values() for v in w.values() if v is None), 'prayers not located')

@@ -123,11 +123,9 @@ def latin(t):
         return r0
     a = re.sub(r"[A-Za-zÀ-ÿæœǽÆŒǼ]+", _man, a)
     a = re.sub(r'^([ÁÉÍÓÚ])', lambda m: {'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 'Ú': 'U'}[m.group(1)], a)
-    a = re.sub(r'(?<=[:;] )([ÁÉÍÓÚ])', lambda m: m.group(1), a)
+    # no accent on a capital initial vowel anywhere (Missal and site: Ordinis, Angelo, Agatha)
+    a = re.sub(r'\b([ÁÉÍÓÚǼ])', lambda m: {'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 'Ú': 'U', 'Ǽ': 'Æ'}[m.group(1)], a)
     if not re.search(r'[.:;]$', a): a += ':' if concl and concl.startswith('Per') else '.'
-    if concl and concl.startswith('Per') and a.endswith('.'): a = a[:-1] + ':'
-    if concl == QV and a.endswith(':'): a = a[:-1] + '.'
-    if concl == QT and a.endswith('.'): a = a[:-1] + ':'
     return (a + ' ' + concl if concl else a), ec, unk
 
 P = json.load(open('dm_prayers.json'))
@@ -171,6 +169,7 @@ if __name__ == '__main__':
     M = json.load(open('matched.json'))
     OV = json.load(open('overrides.json'))
     EF = json.load(open('en_final.json'))
+    LF = json.load(open('latin_fix.json'))  # corrections from proofing against the Missal page images
     for k, d in OV.items():
         for kind, txt in d.items(): M[k]['pr'][kind] = txt
     out, report = {}, []
@@ -181,6 +180,9 @@ if __name__ == '__main__':
         e = {'src': 'Missale O.P. (1939), p. ' + str(m.get('page') or '') + '; English: St Dominic Missal (1959)'}
         for kind in ('or', 'se', 'pc'):
             la, ec, unk = latin(m['pr'][kind])
+            for a0, b0 in LF.get(k, {}).get(kind, []):
+                assert a0 in la, (k, kind, a0)
+                la = la.replace(a0, b0)
             r, en = english(kind, flat(m['pr'][kind]))
             if kind in EF.get(k, {}):
                 # hand-checked English (en_final.json): the body only; the conclusion follows the Latin
