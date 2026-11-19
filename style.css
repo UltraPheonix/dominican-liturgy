@@ -369,3 +369,25 @@ body.sheet-open { overflow: hidden; }
 .sheet .side-foot { margin: 18px 0 0; }
 @media (min-width: 761px) { .hw-days { flex-wrap: wrap; overflow: visible; } .hw-days button { padding: 6px 8px 7px; } .hw-days button small { font-size: 14px; } }
 .sheet:focus { outline: none; }
+
+/* ================================================================ night mode + date popover */
+.theme-btn { width: 32px; height: 32px; border: 1px solid var(--cappa-line); border-radius: 16px; background: none; color: var(--cappa-muted);
+  display: inline-flex; align-items: center; justify-content: center; padding: 0; }
+.theme-btn:hover { color: var(--cappa-ink); border-color: var(--cappa-ink); }
+@media screen {
+  html[data-theme="dark"] { --paper: #121212; --ink: #e6e3dc; --muted: #a09c94; --line: #34322f; --soft: #1c1b19; --rubric: #e0707a; color-scheme: dark; }
+  html[data-theme="dark"] .chant svg { filter: invert(.9) hue-rotate(180deg); }
+  html[data-theme="dark"] .chant-select { background: var(--soft); }
+  html[data-theme="dark"] .report-btn { background: var(--soft); color: var(--ink); border-color: var(--line); }
+  html[data-theme="dark"] img:not([src$=".svg"]) { filter: brightness(.85); }
+}
+.daybar { position: relative; }
+.day-pick { cursor: pointer; border-bottom: 1px dotted var(--muted); }
+.day-pick:hover, .day-pick[aria-expanded="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+.date-pop { position: absolute; top: 40px; left: 0; z-index: 50; width: 300px; max-width: calc(100vw - 32px); background: var(--cappa); color: var(--cappa-ink);
+  padding: 12px 12px 10px; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,.3); font-family: var(--serif); letter-spacing: 0; }
+.date-pop[hidden] { display: none; }
+.date-today { margin-top: 8px; width: 100%; min-height: 34px; background: none; border: 1px solid var(--cappa-line); color: var(--cappa-ink);
+  font-family: var(--caps); letter-spacing: .1em; font-size: 14px; }
+.date-today:hover { border-color: var(--cappa-ink); }
+@media print { .date-pop, .theme-btn { display: none !important; } }
