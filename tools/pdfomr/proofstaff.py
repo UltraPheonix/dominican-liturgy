@@ -6,12 +6,14 @@ from PIL import Image, ImageDraw, ImageFont
 from m39app import main
 S = pickle.load(open('/tmp/m39pref_spans.pkl', 'rb'))
 want = sys.argv[1]; allst = len(sys.argv) > 2
+only = [int(v) for v in sys.argv[2].split(',')] if allst and sys.argv[2] != 'all' else None
 font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', 34)
 cache = {}; imgs = []
 for p in S:
     if want not in p['title'] or not p['_spans']: continue
     for (pg, sd, L, X, lo, hi, how) in p['_spans']:
         if how == '1:1' and not allst: continue
+        if only and not any(lo <= v <= hi for v in only): continue
         if (pg, sd) not in cache: cache[(pg, sd)] = main('/home/claude/dl_m39/M39.pdf', pg, sd)[1]
         g = cache[(pg, sd)]; s = (L[3] - L[0]) / 3
         im0 = Image.fromarray(g.astype('uint8')).convert('RGB'); d0 = ImageDraw.Draw(im0)

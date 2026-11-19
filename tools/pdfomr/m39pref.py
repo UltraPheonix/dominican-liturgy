@@ -11,6 +11,7 @@ from syl import isv as _isv, base
 def isv(w, i):
     # 'i' after the u of qu/gu is a vowel (Qui-a), not the consonantal i between vowels
     if base(w[i]) == 'i' and i >= 2 and base(w[i - 1]) == 'u' and base(w[i - 2]) in 'qg': return True
+    if i == 0 and base(w[0]) == 'i' and len(w) > 1 and base(w[1]) == 'i': return True   # i-ís-dem
     return _isv(w, i)
 def syllables(w):
     """start indices of the syllables of a Latin word, as the chant books divide them (Sur-sum, sanc-tæ, Ec-clé-si-æ, ex-ér-ci-tus, dí-gnum)"""
@@ -147,9 +148,11 @@ def groups_gabc(notes):
         j = i; grp = [notes[i]]
         while j + 1 < len(notes) and abs(notes[j + 1][0] - notes[i][0]) < 9: j += 1; grp.append(notes[j])
         grp.sort(key=lambda t: t[1])
-        out += [chr(ord('d') + p) for _, p in grp]
+        for x_, p in grp:   # the same head read twice a few pixels apart
+            if out and out[-1][1] == p and x_ - out[-1][0] < 16: continue
+            out.append((x_, p))
         i = j + 1
-    r = ''.join(out)
+    r = ''.join(chr(ord('d') + p) for _, p in out)
     h = len(r) // 2
     if len(r) >= 2 and len(r) % 2 == 0 and r[:h] == r[h:]: r = r[:h]   # one neume read twice
     return r
@@ -269,13 +272,15 @@ def build(piece):
         if str(i) + 'bar' in fx: b = fx[str(i) + 'bar'] or None
         piece['_notes'].append((c[0].rstrip(), nn, b))
         g.append('%s(%s)' % (c[0].rstrip(), nn) + (' (%s)' % b if b else '') + (' ' if c[3] else ''))
+    warn = ['%d:%s' % (i, t[0]) for i, t in enumerate(piece['_notes']) if t[1] == '?']   # still unread after the fixes
+    piece['_fixed'] = len(fx)
     return key, ''.join(g).replace('  ', ' '), how, warn
 REPORT = []
 OUT = {}
 for p in pieces:
     if 'PRAEFATIO' not in p['title'].upper().replace('^', 'A').replace('J', 'A').replace(' ', '').replace('PREFATIO', 'PRAEFATIO'): continue
     key, gabc, how, warn = build(p)
-    sol = 'FERIAL' not in p['title'].upper()
+    sol = 'FERIAL' not in p['title'].upper() and 'DEFUNCTIS' not in p['title'].upper()   # the Requiem Preface is in the ferial tone
     name = (key or p['title']) + (' (tonus solemnis)' if sol else ' (tonus ferialis)')
     OUT[name] = gabc
     if gabc:
@@ -286,9 +291,9 @@ for p in pieces:
         if 'DIE PASCH' in p['title'].upper(): slug = 'paschalis-die'
         fn = 'op-m39-praef-%s-%s.gabc' % (slug, 'solemn' if sol else 'ferial')
         hdr = 'name:Praefatio %s (%s);\noffice-part:Praefatio;\ncommentary:Missale O.P. (1939), Appendix (OMR, proofed);\n%%%%\n(f3) ' % (key, 'tonus solemnis' if sol else 'tonus ferialis')
-        open(os.path.join(ROOT, 'gabc', fn), 'w').write(hdr + gabc.strip() + ' (::)\n')
+        open(os.path.join(ROOT, 'gabc', fn), 'w').write(hdr + gabc.strip() + ('' if gabc.strip().endswith('(::)') else ' (::)') + '\n')
         p['_fn'] = fn
-    REPORT.append('## %s  [%s]  %d/%d staves 1:1; %d syllables without notes: %s' % (p['title'], key, how.count('1:1'), len(how), len(warn), ' | '.join(warn[:30])))
+    REPORT.append('## %s  [%s]  %d/%d staves 1:1, %d syllables hand-corrected; unread: %s' % (p['title'], key, how.count('1:1'), len(how), p.get('_fixed', 0), ' | '.join(warn[:30]) or '-'))
 json.dump(OUT, open('/tmp/m39pref_gabc.json', 'w'), ensure_ascii=False, indent=1)
 pickle.dump([{k: p.get(k) for k in ('title', '_spans', '_notes', '_fn', '_nx')} for p in pieces], open('/tmp/m39pref_spans.pkl', 'wb'))
 open(os.path.join(HERE, 'm39pref_report.txt'), 'w').write('\n'.join(REPORT) + '\n')

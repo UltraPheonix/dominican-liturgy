@@ -3,6 +3,131 @@
   "128": "f",
   "129": "fe",
   "130": "ef",
-  "134": "f"
+  "134": "f",
+  "41": "fgh"
+ },
+ "PRAEFATIO SOLEMNIS DE QUADRAGESIMA": {
+  "53": "fg",
+  "54": "f",
+  "225": "fg",
+  "226": "f",
+  "16": "ef"
+ },
+ "PRAEFATIO FERIALIS DE CRUCE.": {
+  "0": "c",
+  "1": "e",
+  "2": "f",
+  "3": "f",
+  "4": "g",
+  "5": "f",
+  "6": "f",
+  "7": "e",
+  "8": "f",
+  "9": "fe",
+  "10": "e",
+  "11": "e",
+  "12": "f",
+  "10bar": "::",
+  "12bar": "::",
+  "178": "h",
+  "179": "h",
+  "180": "h",
+  "181": "h",
+  "182": "g",
+  "183": "f",
+  "184": "g",
+  "185": "g",
+  "242": "g"
+ },
+ "PRAEFATIO SOLEMNIS DE CRUCE.": {
+  "138": "f",
+  "48": "fg"
+ },
+ "PRjEFATIO FERIALIS TEMPORE PASCHALI.": {
+  "6": "f",
+  "50": "fh"
+ },
+ "PRAEFATIO SOLEMNIS DE ASCENSIONE": {
+  "0": "c",
+  "153": "h",
+  "154": "h",
+  "155": "h",
+  "156": "h",
+  "157": "h",
+  "158": "gf",
+  "159": "fg",
+  "160": "g",
+  "161": "g",
+  "162": "gh",
+  "163": "g",
+  "164": "g",
+  "165": "fe",
+  "166": "ef",
+  "167": "g",
+  "168": "fg",
+  "169": "f",
+  "170": "f",
+  "171": "gf",
+  "172": "ef",
+  "173": "f",
+  "174": "f",
+  "225": "fg",
+  "226": "f",
+  "26": "fgh",
+  "31": "fgh",
+  "48": "fg"
+ },
+ "PRAEFATIO SOLEMNIS DE SS. TRINITATE": {
+  "281": "g",
+  "64": "gh"
+ },
+ "PRAEFATIO SOLEMNIS D. N. JESU CHRISTI REGIS": {
+  "229": "f"
+ },
+ "PRAEFATIO SOLEMNIS DE S. P. N. FRANCISCO": {
+  "186": "h"
+ },
+ "PRAEFATIO SOLEMNIS DE B. MARIA VIRGINE.": {
+  "104": "h",
+  "105": "h",
+  "106": "h",
+  "107": "h",
+  "108": "h",
+  "109": "h",
+  "26": "fgh",
+  "29": "fe",
+  "221": "ef",
+  "223": "fg"
+ },
+ "PRAEFATIO COMMUNIS IN CANTU SOLEMNI": {
+  "46": "ef",
+  "49": "f"
+ },
+ "PRAEFATIO PRO DEFUNCTIS": {
+  "73": "h",
+  "53": "fg"
+ },
+ "PRAEFATIO SOLEMNIS DE APOSTOLIS": {
+  "149": "g",
+  "150": "g",
+  "151": "fe",
+  "152": "ef",
+  "153": "g",
+  "154": "fg",
+  "155": "f",
+  "156": "gf",
+  "157": "ef",
+  "158": "f",
+  "159": "f",
+  "16": "ef",
+  "64": "gh",
+  "175": "ef"
+ },
+ "PR^EFATIO SOLEMNIS DE S. JOSEPH": {
+  "28": "fg",
+  "29": "fe"
+ },
+ "PRAEFATIO SOLEMNIS IN DIE PASCHAE": {
+  "163": "fg"
  }
 }
