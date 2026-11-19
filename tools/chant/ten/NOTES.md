@@ -12,3 +12,7 @@ Day h = Maundy Thursday: Matins (Tenebrae) pdf pp. 2R-17R, Lauds 17R-24L.
   (/tmp/match.js logic): N1 VIII c; Ps71 VII d, Ps72 VIII c, Ps73 I a; Ps74 VII d, Ps75 VIII c, Ps76 VII a; Lauds 50 VIII G,
   89 II D, 62 VIII G, Cant. Moysis IV A, 148 II D, Benedictus I g solemn (every verse intoned). Ps 50 after the Kyrie is said
   (mediocri voce) -> text only. Known small difference: the book's mediant in Ps 71 v.1 ("regi da") differs from the 1965 rules.
+- Thursday Hours (gen_h.py 'Ad Horas'): ant Christus factus est is sung on the psalm tone itself in 1927 (c01, hand gabc, c3);
+  Ps 53 + 118 sections in VIII G (matched on the book's first verses of Prime, Terce, Sext, None).
+- Thursday Vespers (vespers_h.py edits Quad6h.src in place): 115 II D, 119/139/140 VIII G, 141 VII a, Magnificat I g solemn.
+- Thursday Compline (gen_compl_h.py -> Quad6h_compl.src): Ps 4, 90, 133 VIII G; Nunc dimittis VIII G without intonation (book).

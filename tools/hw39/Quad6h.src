@@ -135,6 +135,8 @@ T: {Aña} Cálicem salutáris accípiam, et nomen Dómini invocábo. {Ps. 115} C
  = {Ant.} I will take the chalice of salvation, and I will call upon the name of the Lord. {Ps. 115} I have believed.
 G: op-hv-calicem | Antiphona
 F: Psalmus 115 Crédidi | Psalm 115
+G: op-hv-ps-115 | Tonus II D
+F: Textus et versio | Text and translation
 T: Crédidi, propter quod locútus sum: * ego autem humiliátus sum nimis.
  = I have believed, therefore have I spoken; * but I have been humbled exceedingly.
 T: Ego dixi in excéssu meo: * Omnis homo mendax.
@@ -152,10 +154,13 @@ T: Dirupísti víncula mea: * tibi sacrificábo hóstiam laudis, et nomen Dómin
 T: Vota mea Dómino reddam in conspéctu omnis pópuli eius: * in átriis domus Dómini, in médio tui, Ierúsalem.
  = I will pay my vows to the Lord in the sight of all his people: * in the courts of the house of the Lord, in the midst of thee, O Jerusalem.
 F/
+F/
 T: {Aña} Cum his qui odérunt pacem, eram pacíficus : cum loquébar illis, impugnábant me gratis. {Ps. 119} Ad Dóminum.
  = {Ant.} With them that hated peace I was peaceable; when I spoke to them, they fought against me without cause. {Ps. 119} In my trouble.
 G: op-hv-cumhis | Antiphona
 F: Psalmus 119 Ad Dóminum | Psalm 119
+G: op-hv-ps-119 | Tonus VIII G
+F: Textus et versio | Text and translation
 T: Ad Dóminum cum tribulárer clamávi: * et exaudívit me.
  = In my trouble I cried to the Lord: * and he heard me.
 T: Dómine, líbera ánimam meam a lábiis iníquis, * et a lingua dolósa.
@@ -169,10 +174,13 @@ T: Heu mihi, quia incolátus meus prolongátus est: habitávi cum habitántibus 
 T: Cum his, qui odérunt pacem, eram pacíficus: * cum loquébar illis, impugnábant me gratis.
  = With them that hated peace I was peaceable: * when I spoke to them they fought against me without cause.
 F/
+F/
 T: {Aña} Ab homínibus iníquis líbera me, Dómine. {Ps. 139} Eripe me.
  = {Ant.} From unjust men deliver me, O Lord. {Ps. 139} Deliver me.
 G: op-hv-abhominibus | Antiphona
 F: Psalmus 139 Eripe me | Psalm 139
+G: op-hv-ps-139 | Tonus VIII G
+F: Textus et versio | Text and translation
 T: Éripe me, Dómine, ab hómine malo: * a viro iníquo éripe me.
  = Deliver me, O Lord, from the evil man: * rescue me from the unjust man.
 T: Qui cogitavérunt iniquitátes in corde: * tota die constituébant prǽlia.
@@ -202,10 +210,13 @@ T: Cognóvi quia fáciet Dóminus iudícium ínopis: * et vindíctam páuperum.
 T: Verúmtamen iusti confitebúntur nómini tuo: * et habitábunt recti cum vultu tuo.
  = But as for the just, they shall give glory to thy name: * and the upright shall dwell with thy countenance.
 F/
+F/
 T: {Aña} Custódi me a láqueo, quem statuérunt mihi, et a scándalis operántium iniquitátem. {Ps. 140} Dómine clamávi.
  = {Ant.} Keep me from the snare which they have laid for me, and from the stumbling-blocks of them that work iniquity. {Ps. 140} O Lord, I have cried.
 G: op-hv-custodi | Antiphona
 F: Psalmus 140 Dómine clamávi | Psalm 140
+G: op-hv-ps-140 | Tonus VIII G
+F: Textus et versio | Text and translation
 T: Dómine, clamávi ad te, exáudi me: * inténde voci meæ, cum clamávero ad te.
  = I have cried to thee, O Lord, hear me: * hearken to my voice, when I cry to thee.
 T: Dirigátur orátio mea sicut incénsum in conspéctu tuo: * elevátio mánuum meárum sacrifícium vespertínum.
@@ -229,10 +240,13 @@ T: Custódi me a láqueo, quem statuérunt mihi: * et a scándalis operántium i
 T: Cadent in retiáculo eius peccatóres: * singuláriter sum ego donec tránseam.
  = The wicked shall fall in his net: * I am alone until I pass.
 F/
+F/
 T: {Aña} Considerábam ad déxteram, et vidébam : et non erat qui cognósceret me. {Ps. 141} Voce mea.
  = {Ant.} I looked on my right hand and beheld, and there was no one that would know me. {Ps. 141} I cried with my voice.
 G: op-hv-considerabam | Antiphona
 F: Psalmus 141 Voce mea | Psalm 141
+G: op-hv-ps-141 | Tonus VII a
+F: Textus et versio | Text and translation
 T: Voce mea ad Dóminum clamávi: * voce mea ad Dóminum deprecátus sum:
  = I cried to the Lord with my voice: * with my voice I made supplication to the Lord.
 T: Effúndo in conspéctu eius oratiónem meam, * et tribulatiónem meam ante ipsum pronúntio.
@@ -254,12 +268,15 @@ T: Líbera me a persequéntibus me: * quia confortáti sunt super me.
 T: Educ de custódia ánimam meam ad confiténdum nómini tuo: * me exspéctant iusti, donec retríbuas mihi.
  = Bring my soul out of prison, that I may praise thy name: * the just wait for me, until thou reward me.
 F/
+F/
 R: Dicta post ultimum Psalmum Antiphona, Prior stans ad altare in cornu Epistolæ, Cantore ei deferente, incipiat ad *Magnificat* Antiphonam
  = The Antiphon having been said after the last Psalm, the Prior, standing at the altar at the Epistle corner, the Cantor bringing it to him, begins the Antiphon at the *Magnificat:*
 T: Cœnántibus autem illis, accépit Jesus panem, et benedíxit, ac fregit, dedítque discípulis suis.
  = And while they were at supper, Jesus took bread, and blessed, and broke, and gave to His disciples.
 G: op-hv-cenantibus | Antiphona
 F: Canticum Magníficat | The Magnificat
+G: op-hv-ps-mag | Tonus I g
+F: Textus et versio | Text and translation
 T: Magníficat ✠ * ánima mea Dóminum.
  = My soul ✠ * doth magnify the Lord.
 T: Et exsultávit spíritus meus: * in Deo, salutári meo.
@@ -281,6 +298,7 @@ T: Suscépit Israël púerum suum: * recordátus misericórdiæ suæ.
 T: Sicut locútus est ad patres nostros: * Ábraham, et sémini eius in sǽcula.
  = As he spoke to our fathers, * to Abraham and to his seed for ever.
 F/
+F/
 R: Stetque in eodem loco cum ministris de more ordinatis, donec cantatum sit Canticum cum Antiphona; qua finita, Prior conversus ad Conventum, seu populum, dicat
  = And he stands in the same place with the ministers arranged in the usual way until the Canticle with the Antiphon has been sung; when it is finished, the Prior, turning to the Community or the people, says:
 T: Dóminus vobíscum.
@@ -289,3 +307,5 @@ R: Deinde reversus ad librum dicat more solito *Orémus. Refécti vitálibus ali
  = Then, returning to the book, he says in the usual way *Orémus. Refécti vitálibus aliméntis,* as above. Afterwards he says again *Dóminus vobíscum,* and then *Ite Missa est* is said. And the blessing having been given, he says the Gospel *In princípio.*
 INC: Quad6h_abl
 INC: Quad6h_mand
+
+INC: Quad6h_compl

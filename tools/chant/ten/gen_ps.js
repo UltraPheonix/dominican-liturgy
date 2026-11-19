@@ -6,7 +6,7 @@ for (const s of spec) {
   let clef = null, body = [];
   s.verses.forEach((v, i) => {
     v = v.replace(/\s*✠\s*/g, ' ').replace(/\s+/g, ' ').trim();
-    const pv = P.pointVerse(v, tone, {inton: i === 0 || s.solemn, solemn: !!s.solemn});
+    const pv = P.pointVerse(v, tone, {inton: (i === 0 && !s.noInton) || s.solemn, solemn: !!s.solemn});
     let g = P.verseGabc(pv, tone);
     const m = /^\(([cf]b?[1-4])\)\s*/.exec(g); if (m) { if (!clef) clef = m[1]; g = g.slice(m[0].length); }
     body.push(g);
