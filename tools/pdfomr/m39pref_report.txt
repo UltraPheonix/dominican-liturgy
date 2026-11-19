@@ -18,3 +18,6 @@
 ## PRAEFATIO COMMUNIS IN CANTU SOLEMNI  [Communis]  11/12 staves 1:1, 3 syllables hand-corrected; unread: -
 ## PR EFA TIO COMMUNIS IN CANTU FERIALI  [Communis]  12/12 staves 1:1, 0 syllables hand-corrected; unread: -
 ## PRAEFATIO PRO DEFUNCTIS  [Defunctorum]  15/16 staves 1:1, 2 syllables hand-corrected; unread: -
+## CANTUS SOLEMNIS  [Pater]  9/9 staves 1:1, 0 syllables hand-corrected; unread: -
+## CANTUS FERIALIS  [Pater]  7/9 staves 1:1, 18 syllables hand-corrected; unread: -
+## ANTE AGNUS DEI  [Pax]  2/2 staves 1:1, 0 syllables hand-corrected; unread: -

@@ -352,16 +352,19 @@
         if (it.k === 'canon') { canonPages(); curCols = 2; return; }
         if (it.k === 'pater' && sung) {
           heading('Pater noster', null);
-          rubric('Having said Per ómnia sǽcula sæculórum, the priest sings:', {left: true});
-          chant('op-pater-solemn', {noDrop: true, glyph: 1 / 19, size: 14});
+          // Missale O.P. 1939, Appendix: the ferial chant in feasts of three lessons, on ferias and in Masses for the Dead
+          var pc = A.isTemporal(S.key) ? A.temporalClass(S.key, S.date) : A.feastClass(S.key), ptSol = !R.requiem && pc <= 3;
+          rubric('The priest sings (' + (ptSol ? 'solemn' : 'ferial') + ' chant):', {left: true});
+          chant(ptSol ? 'op-m39-pater-solemn' : 'op-m39-pater-ferial', {noDrop: true, glyph: 1 / 19, size: 14});
           var s = ordoLines('pater');
           var after = false;
           s.lines.forEach(function (l) {
             if (/^Líbera nos/.test(l.la || '')) after = true;
             if (!after) return;
             if (l.r) { rubric(l.r, {left: true}); return; }
-            if (/^Pax Dómini/.test(l.la || '')) { chant('op-pax-domini', {noDrop: true, glyph: 1 / 19, size: 14}); return; }
-            if (/^Per ómnia sǽcula sæculórum\.?\s*(℟\.\s*)?Amen\.?$/.test(l.la || '') || /^℟\. Et cum spíritu tuo/.test(l.la || '')) return;
+            // the Pax chant (Appendix) begins with Per omnia ... Amen and ends with Et cum spiritu tuo
+            if (/^Pax\s*✠?\s*Dómini/.test(l.la || '')) { chant('op-m39-pax', {noDrop: true, glyph: 1 / 19, size: 14}); return; }
+            if (/^Per ómnia sǽcula sæculórum\.?\s*(℟\.\s*)?(Amen\.?)?$/.test(l.la || '') || /^(℟\.\s*)?Amen\.?$/.test(l.la || '') || /^(℟\.\s*)?Et cum spíritu tuo/.test(l.la || '')) return;
             para(l.la, {mark: mk(l), cls: 'pr'});
           });
           return;

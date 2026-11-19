@@ -181,7 +181,14 @@ DIALOGUE = 'Per ómnia sǽcula sæculórum. Amen. Dóminus vobíscum. Et cum sp�
 KEYS = [('NATIVITATE', 'Nativitate'), ('EPIPHANIA', 'Epiphania'), ('QUADRAGESIMA', 'Quadragesima'), ('CRUCE', 'Sancta Cruce'), ('PASCH', 'Paschalis'),
         ('ASCENSIONE', 'Ascensione'), ('SPIRITU', 'Spiritu Sancto'), ('TRINITATE', 'SS. Trinitate'), ('REGIS', 'D. N. Iesu Christo'), ('MARIA', 'B. Maria Virgine'),
         ('JOSEPH', 'S. Ioseph'), ('APOSTOLIS', 'Apostolis'), ('DOMINICO', 'Dominico'), ('FRANCISCO', 'Francisco'), ('COMMUNIS', 'Communis'), ('DEFUNCTIS', 'Defunctorum')]
+PATER = ('Per ómnia sǽcula sæculórum. Amen. Orémus. Præcéptis salutáribus móniti, et divína institutióne formáti, audémus dícere: '
+         'Pater noster, qui es in cælis: sanctificétur nomen tuum. Advéniat regnum tuum. Fiat volúntas tua, sicut in cælo, et in terra. '
+         'Panem nostrum quotidiánum da nobis hódie. Et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris. '
+         'Et ne nos indúcas in tentatiónem. Sed líbera nos a malo.')
+OTHER = {'CANTUS SOLEMNIS': ('Pater', PATER), 'CANTUS FERIALIS': ('Pater', PATER),
+         'ANTE AGNUS DEI': ('Pax', 'Per ómnia sǽcula sæculórum. Amen. Pax Dómini sit semper vobíscum. Et cum spíritu tuo.')}
 def text_for(title):
+    if title.strip() in OTHER: return OTHER[title.strip()]
     for k, v in KEYS:
         if k in title.upper().replace('^', 'A'):
             la = PREF[v]['la']
@@ -278,7 +285,7 @@ def build(piece):
 REPORT = []
 OUT = {}
 for p in pieces:
-    if 'PRAEFATIO' not in p['title'].upper().replace('^', 'A').replace('J', 'A').replace(' ', '').replace('PREFATIO', 'PRAEFATIO'): continue
+    if 'PRAEFATIO' not in p['title'].upper().replace('^', 'A').replace('J', 'A').replace(' ', '').replace('PREFATIO', 'PRAEFATIO') and p['title'].strip() not in OTHER: continue
     key, gabc, how, warn = build(p)
     sol = 'FERIAL' not in p['title'].upper() and 'DEFUNCTIS' not in p['title'].upper()   # the Requiem Preface is in the ferial tone
     name = (key or p['title']) + (' (tonus solemnis)' if sol else ' (tonus ferialis)')
@@ -287,10 +294,14 @@ for p in pieces:
         slug = {'Nativitate': 'nativitate', 'Epiphania': 'epiphania', 'Quadragesima': 'quadragesima', 'Sancta Cruce': 'cruce', 'Paschalis': 'paschalis',
                 'Ascensione': 'ascensione', 'Spiritu Sancto': 'spiritu-sancto', 'SS. Trinitate': 'trinitate', 'D. N. Iesu Christo': 'christo-rege',
                 'B. Maria Virgine': 'bmv', 'S. Ioseph': 'ioseph', 'Apostolis': 'apostolis', 'Dominico': 'dominico', 'Francisco': 'francisco', 'Communis': 'communis',
-                'Defunctorum': 'defunctorum'}[key]
+                'Defunctorum': 'defunctorum', 'Pater': 'pater', 'Pax': 'pax'}[key]
         if 'DIE PASCH' in p['title'].upper(): slug = 'paschalis-die'
         fn = 'op-m39-praef-%s-%s.gabc' % (slug, 'solemn' if sol else 'ferial')
-        hdr = 'name:Praefatio %s (%s);\noffice-part:Praefatio;\ncommentary:Missale O.P. (1939), Appendix (OMR, proofed);\n%%%%\n(f3) ' % (key, 'tonus solemnis' if sol else 'tonus ferialis')
+        part = 'Praefatio'
+        if key == 'Pater': fn = 'op-m39-pater-%s.gabc' % ('solemn' if sol else 'ferial'); part = 'Pater noster'
+        if key == 'Pax': fn = 'op-m39-pax.gabc'; part = 'Pax Domini'; sol = False
+        name = (part if key in ('Pater', 'Pax') else 'Praefatio ' + key) + ' (%s)' % ('tonus solemnis' if sol else 'tonus ferialis')
+        hdr = 'name:%s;\noffice-part:%s;\ncommentary:Missale O.P. (1939), Appendix (OMR, proofed);\n%%%%\n(f3) ' % (name, part)
         open(os.path.join(ROOT, 'gabc', fn), 'w').write(hdr + gabc.strip() + ('' if gabc.strip().endswith('(::)') else ' (::)') + '\n')
         p['_fn'] = fn
     REPORT.append('## %s  [%s]  %d/%d staves 1:1, %d syllables hand-corrected; unread: %s' % (p['title'], key, how.count('1:1'), len(how), p.get('_fixed', 0), ' | '.join(warn[:30]) or '-'))

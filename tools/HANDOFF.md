@@ -70,7 +70,9 @@ inflexion, fa-mi-fa mediation, long conclusion + termination per(h) om(i)...lo(h
 podatus FA-SOL ... RE ... MI, questions on MI, conclusion in two phrases; Gospel termination FA->MI at the last accent. Used in the
 priest booklet when sung (Collect, Postcommunion, Epistle with its title, Gospel). The Office (js/tones.js) uses Regulae 1965 simple
 body (fa-re) = Harrison's "prayers at all other times": consistent. Data gap seen: ORATIONS.S1004 has no Collect.
-NEXT for the priest booklet: Pater (solemn+ferial), Pax, Ite/Benedicamus, Gloria/Credo intonations, oration tones (Collect/Postc +
+Pater solemn+ferial and Pax OMR'd from the Appendix too (gabc/op-m39-pater-solemn|ferial, op-m39-pax; the old op-pater-solemn
+read from a booklet had ~10 wrong notes, e.g. lo(df) for lo(fe)); booklet: ferial Pater in 3-lesson feasts/ferias/Requiem (class 4).
+NEXT for the priest booklet: Ite/Benedicamus, Gloria/Credo intonations, oration tones (Collect/Postc +
 Secret ending), Epistle/Gospel tones, all from the Appendix (same OMR tools; pieces already split by m39pref.py: CANTUS
 SOLEMNIS/FERIALIS, ANTE AGNUS DEI, TONI ITE MISSA EST, ...).
 
