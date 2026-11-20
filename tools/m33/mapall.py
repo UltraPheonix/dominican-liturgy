@@ -90,6 +90,7 @@ def introit_any(inc, near=None):
             if best is None or d < best[0]: best = (d, i)
     return best[1] if best else None
 REF = re.compile(r'Officium\s+([A-Z][^,]{2,30}?),?\s+(?:ut\s+)?(?:in|de)\s+Comm[^\n]*?pag\.\s*(\d+\*?)')
+DP = json.load(open('/home/claude/m33/dpmap.json'))
 PAGEMAP = {'Epi1': 80, 'Quad1t': 106, 'Quad4s': 148, 'Quad5f': 382, 'Pasc0w': 294, 'Pent4': 344, 'Pasc6s': 316}
 def first_introit(p):
     i0 = LINE_OF_PAGE.get(p)
@@ -98,6 +99,8 @@ def first_introit(p):
         i0 += 1
     return None
 def map_key(k, m):
+    if DP.get(k) is not None:
+        st = DP[k]; return {'key': k, 'how': 'dp', 'readings': readings_from(st), 'start': st}
     if k in PAGEMAP:
         st = first_introit(PAGEMAP[k])
         if st is not None: return {'key': k, 'how': 'page %d' % PAGEMAP[k], 'readings': readings_from(st), 'start': st}

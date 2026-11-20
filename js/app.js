@@ -723,7 +723,7 @@
     var HT = window.HW_TEXT && HW_TEXT[state.hwr] && HW_TEXT[state.hwr][state.key];
     var HW0 = window.HOLYWEEK && HOLYWEEK[state.key], skip = (HW0 && HW0.skipChants) || [];
     var HW = state.hwr !== '1939' && window.HOLYWEEK && HOLYWEEK[state.key];
-    var rs = seasonalReadings(state.key, state.date) || (HW && HW.readings) || m.readings || [], pre = rs.filter(function (r) { return r.type !== 'Gospel'; }), gos = rs.filter(function (r) { return r.type === 'Gospel'; });
+    var rs = seasonalReadings(state.key, state.date) || (HW && HW.readings) || m33Readings(state.key, m.readings) || [], pre = rs.filter(function (r) { return r.type !== 'Gospel'; }), gos = rs.filter(function (r) { return r.type === 'Gospel'; });
     var q = [], ch = function (p) { (parts[p] || []).forEach(function (c, i) { if (skip.indexOf(c.id) < 0) q.push({t: 'chant', p: p, i: i, c: c}); }); };
     var take = function (p, i) { var c = (parts[p] || [])[i]; if (c) q.push({t: 'chant', p: p, i: i, c: c}); };
     // with the Order of Mass (state.ordo: low, sung, solemn) its prayers and rubrics go between the chants;
@@ -1093,12 +1093,29 @@
     });
   }
   var READ_LA = {Lesson: 'Lectio', Epistle: 'Epistola', Gospel: 'Evangelium', Psalmus: 'Psalmus', Canticum: 'Canticum'};
+  // the Missal's own text (title + opening formula) where tools/m33 read it from the 1933 Missal
+  function m33Readings(key, rs) {
+    var M = window.READINGS33 && READINGS33[key]; rs = rs || [];
+    if (!M) return rs;
+    var cat = function (r) { return r.type === 'Gospel' ? 'G' : 'E'; }, used = {};
+    return rs.map(function (r) {
+      var c = cat(r), n = used[c] = (used[c] || 0) + 1, k = 0;
+      var hit = M.filter(function (x) { return cat(x) === c; })[n - 1];
+      if (!hit || hit.ref.slice(0, 4) !== (r.ref || '').slice(0, 4)) return r;
+      return {type: r.type, ref: hit.ref, title: hit.title, title_en: hit.title_en, la: hit.la, en: hit.en, p33: hit.p33};
+    });
+  }
   function drawReading(r) {
     var la = el('p', {class: 'la'}), en = el('p', {class: 'en-text'});
     var box = el('section', {class: 'reading', 'data-part': 'reading'}, [
       el('h3', null, [READ_LA[r.type], el('span', {class: 'ref', text: r.ref}), r.roman ? el('span', {class: 'badge warn', title: 'Reference from the Roman Missal (jgabc); not read from the Dominican Missal', text: 'Roman ref.'}) : null]),
       el('div', {class: 'r-cols'}, [la, en])]);
     var psTitle = function (t) { return r.type === 'Psalmus' ? t.replace(/^(Ipsi David[^.]*|Canticum graduum|Psalmus David[^.]*|A Psalm for David[^.]*|A gradual canticle|A psalm of David[^.]*)\.\s*/i, '') : t; };
+    if (r.la) {
+      la.textContent = r.la; en.textContent = r.en || '';
+      box.insertBefore(el('p', {class: 'src', text: r.title + (r.title_en ? ' — ' + r.title_en : '') + ' (Missale O.P. 1933)'}), box.children[1]);
+      return box;
+    }
     readingText('la', r.ref).then(function (t) { la.textContent = psTitle(t); }, function () { la.textContent = ''; });
     readingText('en', r.ref).then(function (t) { en.textContent = psTitle(t); }, function () { en.textContent = ''; });
     return box;
@@ -1436,7 +1453,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {D: D, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
+  window.ProprOP = {D: D, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
 
   function start() {
     if (!document.getElementById('selMass')) return;   // loaded as a library (e.g. by the Office page)

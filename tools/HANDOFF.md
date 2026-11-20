@@ -102,4 +102,28 @@ title + opening formula e.g. "In illo témpore", "Fratres"). Known site-propers 
 Pending after: #9 propers audit vs M33 (intr/grad/all/tract/off/comm + orations; data/orations.js partly Roman DO i-spelling);
 #10 full introits (ant+verse+full Gloria Patri in tone+ant repeat; no GP Passiontide/Requiem); #11 Office audit (Compline first:
 "Jube domne", missing chants; then all Hours); #12 UI cleanup; #13 Good Friday Tenebrae (tools/chant/ten/fri/pieces_f.py; OMR via
-tools/chant/ten). Masses not in M33 → leave blank + list for user. Every push: bump sw.js VERSION (now propria-v55), message user.
+tools/chant/ten). Masses not in M33 → leave blank + list for user. Every push: bump sw.js VERSION (now propria-v56), message user.
+
+## M33 — STATE 2026-11-20 08:00 (LIVE, sw propria-v56). START HERE.
+Rebuild everything with ONE command: `bash tools/m33/run.sh` (sets up /home/claude/m33, M33.pdf, PyMuPDF, DO clone; writes data/readings33.js).
+DONE: all 34 unmatched dpmap keys fixed by hand (dpmap.json; gaps.py lists candidates between neighbours). mapall uses dpmap ('dp') for
+tempore/commune/votive. parse.py introit regex accepts "Officium." readings.py: opening match must have a consistent gap (no stray
+earlier verse, e.g. Pent8 no longer starts at Luke 15:31); word-for-word gaps keep the Missal's real words (Jesus vs eum).
+build_readings.py clean_tokens repairs garbled words (Pha4risaeis, discij|L pulis); fix_prefix maps tokens correctly.
+data/readings33.js (394 masses, readings flagged 'weak' left out) -> js/app.js m33Readings() (pairs by Epistle/Gospel order, only when
+the book matches) -> drawReading shows Missal text + title (+ "Missale O.P. 1933"); js/booklet.js uses r.la/r.en when present.
+cmp.py vs old site refs: 628 agree / 317 disagree (dis.json). KNOWN BUGS to fix next (step 1 not finished):
+ a) stray first verse still in refs: 5as/5af "Isaias 57:21, 58:9-14" (formula "Haec dicit Dominus Deus" -> "Hæc dicit Dóminus: Deus."),
+    Quad2t "Regum 3 16:1, 17:8-16" (drops "Eliam Thesbiten"), Quad4t "Exodus 31:12, 32:7-14" (drops "Descende"), Pasc2w "Lucas 2:1, 3:21",
+    Adv3f "Isaias 10:24, 11:1-5" ("Dicit Dominus Deus egredietur" lost "Haec ... : Egredietur"), Quad6h 1 Cor 11:18. Cause: the pop-back loop
+    and op block in readings.align when the Missal's incipit words differ from the Vulgate; fix = in the opening region use the OCR tokens.
+ b) Ember Saturdays/Pent0s/Adv3s/Quad1s: "Daniel 3:49-52" lesson flagged weak (the Benedictus es hymn, not a reading) - drop it.
+ c) check Dec25_1 (Isaias 9 lesson: Dominican prophecy, keep?), Dec25_3 gospel Matt 2 (= last Gospel, drop), Jan1 (Titus 3 / Luke 2:15 =
+    Dawn Mass: wrong anchor), Epi1 gospel "Regum 2" (weak), ChristusRex/Pent23 swapped?, C1s/C51s/C55s/C79s commons, 246 sanctoral.
+ Verify on the page: python3 -c "import fitz;d=fitz.open('/tmp/M33.pdf');d[PAGE].get_pixmap(dpi=110).save('/tmp/p.png')" then view.
+Then steps (2) is done (switch live) -> (3) propers audit vs M33 -> (4) full introits -> (5) Office/Compline -> (6) UI -> (7) GF Tenebrae.
+Masses with no readings in M33 (blank): Pasc6s Quad6f Quad6s S0115 S0205 S0421 S0524 S0618 S0727 S0805 S1121 S0113 S0915 G515 G555 G566
+G587 + 18 "b" (2nd) Masses: S0110b S0111b S0130b S0303b S0401b S0409b S0419b S0422b S0521b S0528b S0708b S0727b S0811b S0905b S0907b
+S1012b S1013b S1107b S1127b S1209b.
+PROMPT TO CONTINUE (paste into a new Claude session): "Repo UltraPheonix/dominican-liturgy (add_repo push, clone /home/claude/dominican-liturgy).
+Read tools/HANDOFF.md last section 'M33 — STATE'. Run bash tools/m33/run.sh, then fix KNOWN BUGS a-c, rerun, push. Same rules as before."

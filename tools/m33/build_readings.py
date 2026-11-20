@@ -13,6 +13,20 @@ def clean_tokens(pre):
     # junk from the drop-cap and the margin: single letters, digits
     while toks and (len(norm(toks[0]).replace(' ', '')) <= 1 or not re.search(r'[a-zA-Z]{2}', toks[0])): toks.pop(0)
     out = []
+    i = 0; T2 = []
+    while i < len(toks):
+        t = toks[i]; n = norm(t).replace(' ', '')
+        if n not in R.LEX:
+            t2 = re.sub(r'[0-9|]', '', t); n2 = norm(t2).replace(' ', '')
+            if n2 in R.LEX: t = t2; n = n2
+            elif i + 1 < len(toks):
+                nx = toks[i + 1]
+                for c in range(0, 4):
+                    base = re.sub(r'[^A-Za-zæœÆŒ]+$', '', t[:len(t) - c] if c else t)
+                    j = norm(base + nx).replace(' ', '')
+                    if j in R.LEX and base: t = base + nx; i += 1; break
+        T2.append(t); i += 1
+    toks = T2
     for t in toks:
         n = norm(t).replace(' ', '')
         if out and norm(out[-1]).replace(' ', '') + n in R.LEX and n not in R.LEX: out[-1] = re.sub(r'\W+$', '', out[-1]) + t; continue
@@ -32,10 +46,9 @@ def fix_prefix(pre):
         m = re.match(r'^\w{0,3}?' + re.escape(f[1:]) + r'\b', t) if len(f) > 4 else (re.match(r'^' + f + r'\b', t))
         if not m and f.startswith('in '): m = re.match(r'^(\w{0,3} )?' + re.escape(f[3:]) + r'\b', t)
         if m:
-            rest_n = t[m.end():].split()
-            # take the remaining OCR tokens (same count from the end)
-            toks = pre.split()
-            rest = toks[len(toks) - len(rest_n):] if rest_n else []
+            need = len(t[:m.end()].split()); toks = pre.split(); c = 0; q = 0
+            while q < len(toks) and c < need: c += len(norm(toks[q]).split()); q += 1
+            rest = toks[q:]
             rest = [R.accent(x) for x in rest if norm(x)]
             if rest: rest[0] = rest[0][0].upper() + rest[0][1:]
             return (la + ': ' + ' '.join(rest)).strip(), e, len(rest)

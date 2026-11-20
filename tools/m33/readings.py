@@ -82,18 +82,20 @@ def align(raw, head=''):
     lo = max(0, b0 - 40)
     sm2 = difflib.SequenceMatcher(None, ow[:a0], vw[lo:b0], autojunk=False)
     FORMW = {'fratres', 'in', 'illo', 'tempore', 'diebus', 'illis', 'carissimi', 'carissime', 'haec', 'dicit', 'dominus', 'deus'}
+    A0, B0 = a0, b0; op = None
     for bl in sm2.get_matching_blocks():
         if bl.size and bl.a <= 10 and not all(ow[bl.a + q] in FORMW for q in range(bl.size)):
-            b0 = lo + bl.b - bl.a + bl.a if False else lo + bl.b; a0 = bl.a; break
+            og = A0 - (bl.a + bl.size); vg = B0 - (lo + bl.b + bl.size)
+            if -2 <= vg - og <= 6: op = B(bl.a, lo + bl.b, bl.size); b0 = lo + bl.b; a0 = bl.a; break
     pre = toks[:a0]
     k = b0
-    while pre and k > 0 and (fuzzy(norm(pre[-1]).replace(' ', ''), vw[k - 1]) or (len(pre) == 1 and norm(pre[-1]).replace(' ', '')[-2:] == vw[k - 1][-2:] and len(norm(pre[-1])) <= len(vw[k - 1]) + 3)):
+    while pre and k > 0 and not all(norm(t).replace(' ', '') in FORMW for t in pre) and (fuzzy(norm(pre[-1]).replace(' ', ''), vw[k - 1]) or (len(pre) == 1 and norm(pre[-1]).replace(' ', '')[-2:] == vw[k - 1][-2:] and len(norm(pre[-1])) <= len(vw[k - 1]) + 3)):
         pre.pop(); k -= 1
     vstart = k
     prefix = ' '.join(accent(t) for t in pre)
     words = []; used = []
     last = None
-    blocks = [B(a0, b0, 0)] + [b for b in blocks if b.b >= b0 and b.a >= a0]
+    blocks = [B(a0, b0, 0)] + ([op] if op else []) + [b for b in blocks if b.b >= B0 and b.a >= A0]
     for j, bl in enumerate(blocks):
         if j == 0:
             words += [V[x][0] for x in range(vstart, bl.b + bl.size)]; used += [V[x][2] for x in range(vstart, bl.b + bl.size)]
@@ -105,6 +107,11 @@ def align(raw, head=''):
             if gv > 8 and go <= 3: omitted = True                               # verses left out by the Missal
             elif go == 0: pass                                                   # words the Missal leaves out
             elif clean and go <= 4 and go != gv: words += [accent(t) for t in og]   # the Missal's own words
+            elif go == gv and go <= 4:                                           # word for word: the Missal's word where it is a real word
+                for q, t in enumerate(og):
+                    x = pa.b + pa.size + q; nt = norm(t).replace(' ', '')
+                    if nt in LEX and not fuzzy(nt, vw[x]): words.append(accent(t))
+                    else: words.append(V[x][0]); used.append(V[x][2])
             elif gv == 0: pass                                                   # stray text (another column, a rubric)
             else: words += [V[x][0] for x in range(pa.b + pa.size, bl.b)]; used += [V[x][2] for x in range(pa.b + pa.size, bl.b)]
             words += [V[x][0] for x in range(bl.b, bl.b + bl.size)]; used += [V[x][2] for x in range(bl.b, bl.b + bl.size)]

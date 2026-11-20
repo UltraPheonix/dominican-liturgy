@@ -223,7 +223,7 @@
     seq.forEach(function (it) {
       if (it.t === 'read') {
         if (it.r.type === 'Gospel') S._gos = it.r;
-        jobs.push(Promise.all([A.readingText('la', it.r.ref), A.readingText('en', it.r.ref)]).then(function (v) { TX['r:' + it.r.ref] = v; }));
+        jobs.push((it.r.la ? Promise.resolve([it.r.la, it.r.en || '']) : Promise.all([A.readingText('la', it.r.ref), A.readingText('en', it.r.ref)])).then(function (v) { TX['r:' + it.r.ref] = v; }));
       }
       if (it.t === 'chant') jobs.push(A.chantLatin(it.c.id).then(function (t) { TX['c:' + it.c.id] = t; }));
     });

@@ -5,7 +5,7 @@ def norm(s):
     s = s.lower().replace('æ', 'ae').replace('œ', 'oe').replace('j', 'i').replace('v', 'u')
     return re.sub(r'[^a-z]+', ' ', s).strip()
 # join lines into a stream with soft hyphen / hyphen joins
-HEAD = [('introit', r'^(Officium|Introitus)(\s*$|\s+[A-Z]|\s+(Psalm|Ps)\.)'), ('oratio', r'^(Oratio|Collecta)\b'), ('lesson', r'^\W{0,3}(Lectio|Lectio)\b'),
+HEAD = [('introit', r'^(Officium|Introitus)[.■]?(\s*$|\s+[A-Z]|\s+(Psalm|Ps)\.)'), ('oratio', r'^(Oratio|Collecta)\b'), ('lesson', r'^\W{0,3}(Lectio|Lectio)\b'),
         ('gospel', r'^.{0,5}?(Sequentia sancti Evangelii|Initium sancti Evangelii|Passio Domini)'),
         ('gradual', r'^(.{0,5}?\b(Psalm|Ps)\.\s*\d|Graduale\b|\W{0,3}(&|Tk|1\$|\$|R|IJ|Bf|fy|Ę)\.\s*(Psalm|Ps\.|Isa|Eccli|Joann|Matth|Luc|Dan|Exo|Ap|Jer|Sap|Prov|Cant|Job|Judith|Esther|Gal|Rom|Phil|Hab|Zach|Tob|II|I )|Psalm\.)'),
         ('alleluia', r'^Alleluia,? alleluia\.'), ('tract', r'^Tractus\b'), ('sequence', r'^Sequentia(?! sancti)'),
