@@ -15,6 +15,10 @@ O=json.load(open('$W/readings33b.json')); out={}
 for k,v in O.items():
     rs=[{x:r[x] for x in ('type','ref','title','title_en','la','en','p33')} for r in v['readings'] if 'weak' not in r['flag']]
     if rs: out[k]=rs
+import os
+F='$R/tools/m33/fixes.json'          # hand corrections: {"MassKey": [ full list of readings ]} replaces that Mass
+if os.path.exists(F):
+    fx=json.load(open(F)); out.update(fx); print(len(fx),'hand fixes applied from tools/m33/fixes.json')
 open('$R/data/readings33.js','w').write('/* Epistles and Gospels as printed in the Missale O.P. (1933), read from the scan (tools/m33). p33 = pdf page. */\nvar READINGS33 = '+json.dumps(out,ensure_ascii=False,separators=(',',':'))+';\n')
 print(len(out),'masses -> data/readings33.js')
 PY
