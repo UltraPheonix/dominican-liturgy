@@ -82,3 +82,24 @@ Chant OMR on scans: tools/omrtools (heads.py, zs.py, blobs.py, prep.py, rcheck.p
 (mode II often f3). gabc letters are positions (d = bottom line). chant/hymn.py (stanzas to stanza-1 melody), gb2site.py.
 Sources: all on musicasacra (dominican-liturgy.blogspot.com sidebar lists exact URLs: Triduum 1927 = media.musicasacra.com/dominican/officium-hedomadae-sanctae-1927-paredes.pdf, Processionarium 1913 = processionarium-1913-Cormier.pdf, Antiphonarium 1933, Matutinum 1936, M39.pdf); GregoBase sources 11-14, 20, 21, 35, 36 = Dominican books (gabc to cross-check). Earlier list: Triduum Paredes 1927, Processionarium, Hebdomada Sancta 1959,
 Matutinum 1936, Antiphonarium 1933, Missale OP 1939/1933, St Dominic Missal 1959, Graduale OP 1950 Pars Prior/Posterior.
+
+## M33 audit (Missale O.P. 1933) — IN PROGRESS (session handoff 2026-11-20)
+Source PDF: https://media.churchmusicassociation.org/dominican/M33.pdf (download to /tmp/M33.pdf).
+Tools in tools/m33/ (paths inside scripts point at /home/claude/m33 + /home/claude/dominican-liturgy; edit or symlink).
+Pipeline: seg.py(PyMuPDF blocks→lines.json [pdfpage,'T'|'L',line]; gz copy here) → parse.py(norm, kind regexes) →
+sanct.py(sanct.json date→page) → mapall.py(map.json, mass→M33 line ranges; PAGEMAP overrides) → readings.py(align to bible/la Vulgate:
+prefix formula, omitted verses, insertions) → build_readings.py(readings33.json: type,ref,title,title_en,la,en,p33,flag,first) →
+dofix.py(fix garbled openings vs Divinum Officium Latin missa texts, git clone DO to /home/claude/do; →readings33b.json, gz here).
+State: 393/432 masses have readings; vs old site refs 606 agree/162 disagree — most disagreements = my mis-anchoring (collect/introit).
+FIX IN PROGRESS: dpmap.py = order-based DP alignment of site sections (tempore/commune/votivae from data/masses.js) to M33 introit
+headings in pdf ranges tempore 44–385, sanctorale 392–643 (keep date map), commune 645–677, votive 678–745, defunct 737–744, suppl 756+.
+dpmap.json output; sim() threshold 0.55. Unmatched after DP (check page images / garbled OCR): Adv2 Adv3f Adv3s Dec25_1 Jan5a Epi1 6a
+Quad1t Quad2h Quad2s Quad3t Quad3h Quad5m Quad5f Pasc0t Pasc0w Pasc2w Pent0s Pent2 Pent4 Pent12 EmbSatSeptS Pent18 Pent21 ChristusRex
+AscVig Dedicatio C1s C28s C32s C51s C64s C114s. Fallback for these: introit_any fuzzy over whole range / PAGEMAP manual page.
+Then: feed dpmap into mapall (replace anchor for those keys) → rerun build_readings + dofix → recheck disagreements → write
+data/readings33.js {massKey:[{type,ref,title,title_en,la,en}]} → js/app.js drawReading/readingText + js/booklet.js use it (Missal
+title + opening formula e.g. "In illo témpore", "Fratres"). Known site-propers errors: Epi1 Holy Family M33 introit "Gaudeat Pater tuus".
+Pending after: #9 propers audit vs M33 (intr/grad/all/tract/off/comm + orations; data/orations.js partly Roman DO i-spelling);
+#10 full introits (ant+verse+full Gloria Patri in tone+ant repeat; no GP Passiontide/Requiem); #11 Office audit (Compline first:
+"Jube domne", missing chants; then all Hours); #12 UI cleanup; #13 Good Friday Tenebrae (tools/chant/ten/fri/pieces_f.py; OMR via
+tools/chant/ten). Masses not in M33 → leave blank + list for user. Every push: bump sw.js VERSION (now propria-v55), message user.
