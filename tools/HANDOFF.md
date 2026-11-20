@@ -98,7 +98,7 @@ Quad1t Quad2h Quad2s Quad3t Quad3h Quad5m Quad5f Pasc0t Pasc0w Pasc2w Pent0s Pen
 AscVig Dedicatio C1s C28s C32s C51s C64s C114s. Fallback for these: introit_any fuzzy over whole range / PAGEMAP manual page.
 Then: feed dpmap into mapall (replace anchor for those keys) → rerun build_readings + dofix → recheck disagreements → write
 data/readings33.js {massKey:[{type,ref,title,title_en,la,en}]} → js/app.js drawReading/readingText + js/booklet.js use it (Missal
-title + opening formula e.g. "In illo témpore", "Fratres"). Known site-propers errors: Epi1 Holy Family M33 introit "Gaudeat Pater tuus".
+title + opening formula e.g. "In illo témpore", "Fratres"). Epi1 Holy Family introit CHECKED on the scan (pdf p. 81): "Exsultat gaudio pater Justi, gaudeat..." = site, correct (OCR had lost the drop-cap line).
 Pending after: #9 propers audit vs M33 (intr/grad/all/tract/off/comm + orations; data/orations.js partly Roman DO i-spelling);
 #10 full introits (ant+verse+full Gloria Patri in tone+ant repeat; no GP Passiontide/Requiem); #11 Office audit (Compline first:
 "Jube domne", missing chants; then all Hours); #12 UI cleanup; #13 Good Friday Tenebrae (tools/chant/ten/fri/pieces_f.py; OMR via
