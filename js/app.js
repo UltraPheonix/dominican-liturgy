@@ -29,9 +29,9 @@
     });
   })();
   var PARTS = ['pr', 'in', 'gr', 'al', 'tr', 'se', 'ad', 'of', 'co', 'an'];
-  var PART_NAME = {in: 'Introitus', gr: 'Graduale', al: 'Alleluia', tr: 'Tractus', se: 'Sequentia', of: 'Offertorium', co: 'Communio', an: 'Ad Vesperas', pr: 'Ante Missam', ad: 'Ad adorationem Crucis'};
-  var PART_EN = {in: 'Introit', gr: 'Gradual', al: 'Alleluia', tr: 'Tract', se: 'Sequence', of: 'Offertory', co: 'Communion', an: 'Vespers', pr: 'Before Mass', ad: 'Adoration of the Cross'};
-  var PART_ABBR = {in: 'Intr.', gr: 'Resp.', al: 'Allel.', tr: 'Tract.', se: 'Seq.', of: 'Offert.', co: 'Comm.'};
+  var PART_NAME = {in: 'Officium', gr: 'Responsorium', al: 'Alleluia', tr: 'Tractus', se: 'Sequentia', of: 'Offertorium', co: 'Communio', an: 'Ad Vesperas', pr: 'Ante Missam', ad: 'Ad adorationem Crucis'};
+  var PART_EN = {in: 'Office', gr: 'Responsory', al: 'Alleluia', tr: 'Tract', se: 'Sequence', of: 'Offertory', co: 'Communion', an: 'Vespers', pr: 'Before Mass', ad: 'Adoration of the Cross'};
+  var PART_ABBR = {in: 'Off.', gr: 'Resp.', al: 'Allel.', tr: 'Tract.', se: 'Seq.', of: 'Offert.', co: 'Comm.'};
   var ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
   var CONF = {
     introit: null,
@@ -1378,7 +1378,7 @@
       return gabcText(b);
     }, function () { return ''; });
   }
-  var PART_EN_FULL = {in: 'Introit', gr: 'Gradual', al: 'Alleluia', tr: 'Tract', se: 'Sequence', of: 'Offertory', co: 'Communion', an: 'Vespers antiphon', pr: 'Before Mass', ad: 'Adoration of the Cross'};
+  var PART_EN_FULL = {in: 'Office', gr: 'Responsory', al: 'Alleluia', tr: 'Tract', se: 'Sequence', of: 'Offertory', co: 'Communion', an: 'Vespers antiphon', pr: 'Before Mass', ad: 'Adoration of the Cross'};
   var READ_EN = {Lesson: 'Lesson', Epistle: 'Epistle', Gospel: 'Gospel'};
   function buildCongregation() {
     var m = D.masses[state.key], box = $('#cong'), d = state.date || new Date(), jobs = [];
