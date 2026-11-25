@@ -54,7 +54,7 @@
     return s.replace(/([✠✙])/g, '<span class="r">$1</span>').replace(/ \* /g, ' <span class="r">*</span> ')
       .replace(/ † /g, ' <span class="r">†</span> ').replace(/ \+ /g, ' <span class="r">✠</span> ');
   }
-  function blockText(id, day) { return complineSeason((day.b && day.b[id]) || (common && common[id]) || ''); }
+  function blockText(id, day) { if (id === '@preces-la') return PRECES.la; if (id === '@preces-en') return PRECES.en; return complineSeason((day.b && day.b[id]) || (common && common[id]) || ''); }
   // Compline in Christmastide (Completorium O.P. 1949 pp. 38-39 and the Antiphonarium 1933): In manus with Alleluia daily
   // to the Octave of the Epiphany; at the Nunc dimittis 'Alleluia. Verbum caro' to the Epiphany, then 'Alleluia. Omnes de Saba'.
   function complineSeason(t) {
@@ -82,10 +82,35 @@
   // the hour's rows, said with or without a priest
   function rowsOf(day, hour) {
     var rows = day.h[hour] || [], p = state.priest && day.p && day.p[hour];
-    if (!p) return rows;
-    if (p.all) return p.all;
-    return rows.map(function (row, i) { return p.i[i] || row; });
+    if (p) rows = p.all ? p.all : rows.map(function (row, i) { return p.i[i] || row; });
+    if (hour === 'Completorium' && complinePreces(day)) {
+      var at = -1;
+      rows.forEach(function (r, i) { if (at < 0 && /^<h>Oratio/.test(blockText(r[0], day))) at = i; });
+      if (at > 0) rows = rows.slice(0, at).concat([['@preces-la', '@preces-en']], rows.slice(at));
+    }
+    return rows;
   }
+  // Preces at Compline (Completorium O.P. 1949 pp. 19-20): on ferias and simple days, not on Sundays, feasts or within the
+  // octaves of Christmas, Easter and Pentecost. Until the pre-1955 calendar is in, "simple" = a feria or a day of the IV class.
+  function complinePreces(day) {
+    var t = titleOf(day, 'Completorium'), d = state.date; if (!d) return false;
+    var md = (d.getMonth() + 1) * 100 + d.getDate(), f = Math.round((d - easterOf(d.getFullYear())) / 864e5);
+    if (md >= 1224 || md <= 101 || (f >= -1 && f <= 7) || (f >= 48 && f <= 56) || (f >= -4 && f <= -2)) return false;
+    if (/^Dominica/.test(t) || /Sabbato/.test(t) && d.getDay() === 6 && /Dominica/.test(t)) return false;
+    return (/^(Feria|Sabbato)/.test(t) && !/Sanct(æ|ae) Mari(æ|ae)/.test(t)) || /(^|[^I])IV\. classis/.test(t);
+  }
+  var PRECES = {
+    la: '<h>Preces</h>\n<n>After the antiphon of the Nunc dimittis:</n>\n<r>Cantor:</r> Kýrie, eléison. <r>Chorus:</r> Christe, eléison. Kýrie, eléison.\n' +
+      '<n>All bow, or prostrate according to the season; the Pater noster is said silently; then the Hebdomadarian, rising a little, aloud:</n>\n' +
+      '<r>℣.</r> Et ne nos indúcas in tentatiónem.\n<r>℟.</r> Sed líbera nos a malo.\n<r>℣.</r> In pace in idípsum.\n<r>℟.</r> Dórmiam et requiéscam.\n' +
+      '<n>Then the Credo is said silently; the Hebdomadarian, standing upright and turned to the altar, aloud:</n>\n' +
+      '<r>℣.</r> Carnis resurrectiónem.\n<r>℟.</r> Vitam ætérnam. Amen.\n<r>℣.</r> Dignáre, Dómine, nocte ista.\n<r>℟.</r> Sine peccáto nos custodíre.',
+    en: '<h>Preces</h>\n<n>After the antiphon of the Nunc dimittis:</n>\n<r>Cantor:</r> Lord, have mercy. <r>Choir:</r> Christ, have mercy. Lord, have mercy.\n' +
+      '<n>All bow, or prostrate according to the season; the Our Father is said silently; then the Hebdomadarian, rising a little, aloud:</n>\n' +
+      '<r>℣.</r> And lead us not into temptation.\n<r>℟.</r> But deliver us from evil.\n<r>℣.</r> In peace, in the selfsame.\n<r>℟.</r> I will sleep and I will rest.\n' +
+      '<n>Then the Creed is said silently; the Hebdomadarian, standing upright and turned to the altar, aloud:</n>\n' +
+      '<r>℣.</r> The resurrection of the body.\n<r>℟.</r> And life everlasting. Amen.\n<r>℣.</r> Vouchsafe, O Lord, this night.\n<r>℟.</r> To keep us without sin.'
+  };
   function neededShards(day) {
     var need = {};
     Object.keys(day.h).forEach(function (h) {
@@ -163,6 +188,10 @@
       var tl = g.key === 'hytelucisanteterminum' && teLucisTune(toneCtx, state.date);
       if (tl) g.file = 'C49-telucis-' + tl;
       if (g.kind === 'an' && g.key === 'alleluiaalleluiaalleluia') { g.file = '6913'; g.mode = '8'; }   // C49 p. 63 (Antiphonarium 1933)
+      if (g.key === 'hyiesunostraredemptio') {   // Paschaltide hymn: stanzas 5-6 by period (C49 pp. 64-66)
+        var E = easterOf(state.date.getFullYear()), f = Math.round((state.date - E) / 864e5);
+        g.file = '5793-' + (f < 39 ? 'res' : f < 49 ? 'asc' : 'pent'); g.mode = '4';
+      }
     });
     if (window.OPTones && toneCtx) {
       OPTones.segments(lines, head, toneCtx).forEach(function (t) {
@@ -184,6 +213,12 @@
   // Te lucis at Compline: the tune by rank and season (Completorium O.P. 1949, pp. 9-17). The old ranks are read from the title
   // when it gives them (Totum Duplex...); until the pre-1955 calendar is in, the 1960 class stands in for them.
   // Seasons with a tune of their own (Christmastide, Lent to the Octave of the Sacred Heart) keep the default melody for now.
+  function easterOf(y) {
+    var a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25),
+      g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30, i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7,
+      m = Math.floor((a + 11 * h + 22 * l) / 451), mo = Math.floor((h + l - 7 * m + 114) / 31), da = ((h + l - 7 * m + 114) % 31) + 1;
+    return new Date(y, mo - 1, da, 12);
+  }
   function teLucisTune(ctx, date) {
     var t = ctx.title || '', y = date.getFullYear(), md = (date.getMonth() + 1) * 100 + date.getDate(), wd = date.getDay();
     var E = (function () { var a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25),

@@ -146,7 +146,8 @@
       if (isV(l) && /^[IJ]ube,? domne/.test(t) && i + 2 < n && /^<r>Benedictio\.<\/r>/.test(lines[i + 1]) && isR(lines[i + 2])) {
         segs.push({s: i, e: i + 3, kind: 'bl', gabc: FIXED.iube + ' ' + blessing(body(lines[i + 1])).replace(/^\(f3\) /, '')}); i += 2; continue;
       }
-      if (isV(l) && /^(Tu autem|Et ne nos indúcas)/.test(t) && i + 1 < n && isR(lines[i + 1])) {
+      // the versicles of the Preces are sung to the simple tone (Completorium O.P. 1949 pp. 19-20)
+      if (isV(l) && /^(Tu autem|Et ne nos indúcas|In pace in idípsum|Carnis resurrectiónem|Dignáre, Dómine, (nocte|die) ist)/.test(t) && i + 1 < n && isR(lines[i + 1])) {
         segs.push({s: i, e: i + 2, kind: 'vs', gabc: versicle(t, body(lines[i + 1]), false)}); i++; continue;
       }
       if (/^Te Deum laudámus/.test(plain(l))) {
