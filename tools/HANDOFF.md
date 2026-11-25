@@ -214,3 +214,23 @@ resurrectionem, Dignare Domine... when "Preces dicendae fuerint") -> check commo
 Breviarium 1909 / Antiphonarium 1933 (GregoBase source 11 has the Antiphonarium 1933: query gb.sqlite by incipit, source=11), Little Hours
 hymns/chapters/short responsories, Prime (Pretiosa, martyrology), preces at Lauds/Vespers/Prime. Then step 4 (GF Tenebrae), step 5 (plan only).
 Test: python3 -m http.server 8768; /tmp scripts were: playwright page with localStorage officeChant=1, list .o-chant data-id per hour.
+
+## Clean-up pass 2026-11-25 afternoon (sw v65-v70). START HERE NEXT (Joseph's list: Mass chants, tones, Office).
+DONE: Mass: no Alleluia from Septuagesima (app.js massParts); Tracts infra Septuagesimam for Commons and saints Jan-Apr
+(propers_fix.json 'lent_tr', from M33); Paschal Alleluias stripped outside Paschaltide incl. unmarked ones and E.T.P./Extra T.P. endings
+(app.js seasonalGabc/stripAlleluia/etp; KEEP_AL for Epi2 of, CorpusChristi/C62s in, S0806 co, C75s); only one Alleluia outside
+Paschaltide; Tract dropped outside Lent when an Alleluia exists (SCJ); Sundays always solemn Preface (Trinity on ordinary Sundays,
+isSundayMass/keyPreface); a Mass picked from the list opens on its own next date (showMass -> nextDateOf). Chant layout: tidyGabc
+(one clef per staff, no doubled double bars), fullIntroit no clef before the repeat. Reading titles in their own columns.
+Office: tools/chant/office_audit.py (Antiphonarium 1933 replaces OMR/Roman melodies; Roman without OP source dropped; log
+office_audit.txt). Compline: Te lucis tunes by rank/season + Christmas tune (C49-telucis-nat, transcribed from C49 p.38-39 and checked
+by rendering), In manus with Alleluia and Verbum caro / Omnes de Saba in Christmastide (office.js complineSeason), Jesu nostra redemptio
+split by period (5793-res/asc/pent), Preces (office.js complinePreces/PRECES; simple tone in tones.js).
+CHECK: tools/check/year.py (Mass, every day of a year: Alleluia in Lent, missing Tract, Tract outside Lent, Sunday ferial Preface,
+Alleluia left in in/of/co) — clean for 2026, 2027, 2029, 2032.
+OPEN: S0915 Seven Sorrows: M33 sings 'Stabat sancta Maria' as an Alleluia (and 2nd Alleluia 'O vos omnes'), site has the Tract form only.
+Seasonal Te lucis still missing: Epiphany octave, Holy Name, Ascension, Pentecost, Corpus Christi, SCJ, BVM (C49 pp.40ff); Office of the
+Dead and other pieces left as text after dropping Roman melodies; Kyrie of the Preces not notated; Vespers/Lauds/Little Hours/Matins
+audit (Joseph's Office list B-F); rubric engine (pre-1955 ranks) for Compline psalms, preces, Te lucis ranks.
+GitHub Pages: a 'pages build and deployment' run can fail with a GitHub 500 ("Failed to create deployment") when pushes come fast;
+the next push or `gh run rerun <id> -R UltraPheonix/dominican-liturgy` redeploys.
