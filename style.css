@@ -396,3 +396,6 @@ body.sheet-open { overflow: hidden; }
 .date-today:hover { border-color: var(--cappa-ink); }
 @media print { .date-pop, .theme-btn { display: none !important; } }
 .prose .dedication { border-left: 3px solid var(--rubric); padding: 4px 0 4px 16px; margin: 0 0 28px; color: var(--ink); }
+/* reading titles head their own column; the source is a small note on the reference line */
+.reading .r-title { display: block; font-style: italic; margin-bottom: .35em; }
+.reading h3 .src { font-family: var(--serif); font-size: 13px; letter-spacing: 0; color: var(--muted); margin-left: .6em; }

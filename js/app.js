@@ -137,7 +137,10 @@
     var noGP = /^Quad[56]/.test(key || '') || /^\s*\([cf]b?[1-4]\)\s*R[eé]\(/.test(body) || /^(?:C114|S1102)/.test(key || '');
     var mode = parseInt(header && header.mode, 10), gp = GP[mode];
     if (!noGP && !gp) return body;
-    return verse + (noGP ? '' : ' ' + gp.replace(/\s+$/, '')) + ' (' + clef + ') ' + ant;
+    // the Gloria Patri and the repeat continue on the same staff: a clef is drawn again only where it changes
+    var gpClef = gp && (/^\s*\(([cf]b?[1-4])\)/.exec(gp) || [])[1];
+    if (gpClef === clef) gp = gp.replace(/^\s*\([cf]b?[1-4]\)\s*/, '');
+    return verse + (noGP ? '' : ' ' + gp.replace(/\s+$/, '')) + (gpClef && gpClef !== clef && !noGP ? ' (' + clef + ') ' : ' ') + ant;
   }
   function splitGabc(text) {
     var i = text.indexOf('%%');
@@ -227,8 +230,14 @@
     if (!lent && KEEP_AL[key] && KEEP_AL[key].split(' ').indexOf(part) >= 0) return gabc;
     return stripAlleluia(gabc);
   }
+  // one clef at the head of the chant; repeated identical clefs and doubled double bars are dropped
+  function tidyGabc(g) {
+    var cur = null;
+    g = g.replace(/\(([cf]b?[1-4])\)/g, function (m, c) { if (c === cur) return '()'; cur = c; return m; });
+    return g.replace(/\(\)\s*(?=\()/g, '').replace(/\(::\)(\s*\(\))*(\s*\(::\))+/g, '(::)').replace(/\([:;,]\d?\)\s*\(::\)/g, '(::)');
+  }
   function exsurgeGabc(gabc, part) {
-    gabc = seasonalGabc(gabc, part);
+    gabc = tidyGabc(seasonalGabc(gabc, part));
     return gabc
       // verbatim LaTeX the renderer cannot read: accented y, emphasised rubrics, braces
       .replace(/<v>\\'y<\/v>/g, 'ý').replace(/<v>\\'Y<\/v>/g, 'Ý').replace(/<v>([A-Za-z])<\/v>/g, '$1')
@@ -1196,8 +1205,10 @@
       el('div', {class: 'r-cols'}, [la, en])]);
     var psTitle = function (t) { return r.type === 'Psalmus' ? t.replace(/^(Ipsi David[^.]*|Canticum graduum|Psalmus David[^.]*|A Psalm for David[^.]*|A gradual canticle|A psalm of David[^.]*)\.\s*/i, '') : t; };
     if (r.la) {
-      la.textContent = r.la; en.textContent = r.en || '';
-      box.insertBefore(el('p', {class: 'src', text: r.title + (r.title_en ? ' — ' + r.title_en : '') + ' (Missale O.P. 1933)'}), box.children[1]);
+      // the title heads each column (Latin over the Latin, English over the English); the source goes on the reference line
+      la.appendChild(el('span', {class: 'r-title', text: r.title || ''})); la.appendChild(document.createTextNode(r.la));
+      en.appendChild(el('span', {class: 'r-title', text: r.title_en || ''})); en.appendChild(document.createTextNode(r.en || ''));
+      box.querySelector('h3').appendChild(el('span', {class: 'src', text: 'Missale O.P. 1933'}));
       return box;
     }
     readingText('la', r.ref).then(function (t) { la.textContent = psTitle(t); }, function () { la.textContent = ''; });
