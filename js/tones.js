@@ -9,8 +9,8 @@
   // ---------------------------------------------------------------- fixed melodies
   var FIXED = {
     // Antiphonarium 1933, Toni communes I: Modus inchoandi Horas
-    deus: "(c3) De(f)us,(f) in(f) ad(f)iu(f)tó(g)ri(f)um(f) me(f)um(f) in(f)tén(e)de.(f) (::) " +
-          "<sp>R/</sp>. Dó(f)mi(f)ne,(f) ad(f) ad(f)iu(f)ván(f)dum(f) me(f) fe(f)stí(e)na.(f) (::) " +
+    deus: "(c3) De(f)us,(f) in(f) ad(f)ju(f)tó(g)ri(f)um(f) me(f)um(f) in(f)tén(e)de.(f) (::) " +
+          "<sp>R/</sp>. Dó(f)mi(f)ne,(f) ad(f) ad(f)ju(f)ván(f)dum(f) me(f) fe(f)stí(e)na.(f) (::) " +
           "Gló(f)ri(f)a(f) Pa(f)tri,(f) et(f) Fí(f)li(e)o,(e) (,) et(e) Spi(e)rí(e)tu(e)i(e) Sanc(e)to.(f) (:) " +
           "Si(f)cut(f) e(f)rat(f) in(f) prin(f)cí(f)pi(f)o,(f) et(f) nunc(f) et(f) sem(f)per,(e) (,) et(e) in(e) sǽ(f)cu(f)la(f) sæ(f)cu(f)ló(f)rum.(f) A(f)men.(e) (::)",
     alleluia: "Al(f)le(fg)lú(gf)ia.(e) (::)",
@@ -31,7 +31,7 @@
     // Matins (Fr Thompson's Antiphonale, Toni communes: Modus incohandi Officii lectionum)
     labia: "(f3) Dó(h)mi(h)ne,(h) lá(h)bi(h)a(h) me(h)a(h) a(h)pé(g)ri(g)es.(h) (::) <sp>R/</sp>. Et(h) os(h) me(h)um(h) an(h)nun(h)ti(h)á(h)bit(h) lau(h)dem(h) tu(g)am.(h) (::)",
     // Regulae 1965, art. III § IV: asking the blessing
-    iube: "(f3) <sp>V/</sp>. Iu(g)be,(g) dom(h)ne,(h) be(h)ne(g)dí(f)ce(e)re.(e.) (::)",
+    iube: "(f3) <sp>V/</sp>. Ju(g)be,(g) dom(h)ne,(h) be(h)ne(g)dí(f)ce(e)re.(e.) (::)",
     benFin: "(c3) Be(f)ne(f)di(f)cá(f)mus(f) Dó(f)mi(e)no.(e) (::) <sp>R/</sp>. De(e)o(e) grá(e)ti(e)as.(f) (::)"
   };
   // Benedicamus at Lauds and Vespers (Antiphonarium 1933, Toni communes VI), GregoBase transcriptions
@@ -112,7 +112,7 @@
   }
 
   // ---------------------------------------------------------------- segments of a Latin cell
-  var SKIP_VS = /^(Deus ✠? ?in adiutórium|Dómine, exáudi|Benedicámus|Fidélium|Glória Patri|Dóminus vobíscum|Iube,? domne|Tu autem|Adiutórium nostrum|Convérte nos|Benedícat|Divínum auxílium)/;
+  var SKIP_VS = /^(Deus ✠? ?in ad[ij]utórium|Dómine, exáudi|Benedicámus|Fidélium|Glória Patri|Dóminus vobíscum|[IJ]ube,? domne|Tu autem|Ad[ij]utórium nostrum|Convérte nos|Benedícat|Divínum auxílium)/;
   function isV(l) { return /^<r>℣\.<\/r>/.test(l); }
   function isR(l) { return /^<r>℟\.<\/r>/.test(l); }
   function body(l) { return plain(l.replace(/^<r>[^<]*<\/r>\s*/, '')); }
@@ -125,7 +125,7 @@
       var l = lines[i], t = body(l);
       if (/^<r>Commemoratio/.test(l)) { inComm = true; continue; }
       // opening of the Hour
-      if (isV(l) && /^Deus in adiutórium/.test(t)) {
+      if (isV(l) && /^Deus ?✠? ?in ad[ij]utórium/.test(t)) {
         j = i + 1;
         while (j < n && !/^(Allelúia|Laus tibi)/.test(plain(lines[j]))) j++;
         if (j >= n) continue;
@@ -136,7 +136,7 @@
       if (isV(l) && /^Dómine, lábia/.test(t) && i + 1 < n && isR(lines[i + 1])) {
         segs.push({s: i, e: i + 2, kind: 'inc', gabc: FIXED.labia}); i++; continue;
       }
-      if (isV(l) && /^Iube,? domne/.test(t) && i + 2 < n && /^<r>Benedictio\.<\/r>/.test(lines[i + 1]) && isR(lines[i + 2])) {
+      if (isV(l) && /^[IJ]ube,? domne/.test(t) && i + 2 < n && /^<r>Benedictio\.<\/r>/.test(lines[i + 1]) && isR(lines[i + 2])) {
         segs.push({s: i, e: i + 3, kind: 'bl', gabc: FIXED.iube + ' ' + blessing(body(lines[i + 1])).replace(/^\(f3\) /, '')}); i += 2; continue;
       }
       if (isV(l) && /^(Tu autem|Et ne nos indúcas)/.test(t) && i + 1 < n && isR(lines[i + 1])) {
@@ -196,7 +196,7 @@
         segs.push({s: i + 1, e: i + 3, kind: 'cap', gabc: chapter(lines[i + 1])}); i += 2; continue;
       }
       // versicle and response
-      if (isV(l) && i + 1 < n && isR(lines[i + 1]) && !SKIP_VS.test(t) && !/^Dómine,? ad adiuvándum/.test(body(lines[i + 1]))) {
+      if (isV(l) && i + 1 < n && isR(lines[i + 1]) && !SKIP_VS.test(t) && !/^Dómine,? ad ad[ij]uvándum/.test(body(lines[i + 1]))) {
         var solV = !inComm && !(head === 'Incipit');
         segs.push({s: i, e: i + 2, kind: 'vs', gabc: versicle(t, body(lines[i + 1]), solV)}); i++; continue;
       }

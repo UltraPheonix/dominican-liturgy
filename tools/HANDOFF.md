@@ -102,7 +102,7 @@ title + opening formula e.g. "In illo témpore", "Fratres"). Epi1 Holy Family in
 Pending after: #9 propers audit vs M33 (intr/grad/all/tract/off/comm + orations; data/orations.js partly Roman DO i-spelling);
 #10 full introits (ant+verse+full Gloria Patri in tone+ant repeat; no GP Passiontide/Requiem); #11 Office audit (Compline first:
 "Jube domne", missing chants; then all Hours); #12 UI cleanup; #13 Good Friday Tenebrae (tools/chant/ten/fri/pieces_f.py; OMR via
-tools/chant/ten). Masses not in M33 → leave blank + list for user. Every push: bump sw.js VERSION (now propria-v58), message user.
+tools/chant/ten). Masses not in M33 → leave blank + list for user. Every push: bump sw.js VERSION (now propria-v59), message user.
 
 ## M33 — STATE 2026-11-20 08:00 (LIVE, sw propria-v56). START HERE.
 Rebuild everything with ONE command: `bash tools/m33/run.sh` (sets up /home/claude/m33, M33.pdf, PyMuPDF, DO clone; writes data/readings33.js).
@@ -143,3 +143,19 @@ Introit tone (data/introit_gp.js = Graduale O.P. 1950 pp. IX-XI, GregoBase 7600 
 + antiphon again. No GP for Quad5*/Quad6*, Requiem (C114*, S1102*); files that already print "sine Gloria Patri, sed repetitur" left as
 they are. Applied on the Mass page (drawSlot) and in booklets (booklet.js chant(), old rubric line removed). Checked all 177 introits
 (node) + rendered Epi1/Quad5/C114s/booklet in Chrome. Congregation text view now uses the Missal readings too.
+
+## Step 5 (Office) — Compline DONE (sw v59). Source: Completorii Libellus O.P. (Suarez 1949) =
+media.churchmusicassociation.org/dominican/completorium-1949-suarez.pdf (scan, no text; 78 pdf pages = 2 book pages each;
+pdf idx 7-11 Ordo, 12-17 Te lucis tunes, 16-17 Custodi/Salva nos/Preces/Visita, 18-? weekday psalms, 66-67 procession).
+tools/office/compline49.py rewrites the shared Compline blocks in data/office/common.json: Jube domne + "tribuat nobis omnipotens
+et misericors Dominus"; Lectio 1 Petri 5 with Tu autem; Adjutorium, Pater secreto, Dominican Confiteor/Misereatur (Hebdomadarian +
+choir, "et vobis fratres"/"et tibi Pater"), Converte nos; Capitulum Jerem. 14 + Responsory In manus (Dominican form, with/without
+Alleluia); Visita with Dominus vobiscum/Domine exaudi; Benedictio by the Prior "super vos" (absent: super nos); procession: Salve
+Regina (Dominican text, "salute"), Concede nos, O lumen, Ora pro nobis, Concede quaesumus, Fidelium animae, Pater+Credo secreto.
+Chant: C49-inmanus.gabc (OMR by eye from C49 p.8, Gloria Patri added; = Gillet 5758 melody), C49-telucis-viii.gabc (Gillet 4779
+st.1-2 + ordinary doxology Praesta Pater; 4779 has the Marian stanza Maria mater gratiae, which was shown EVERY day before).
+tools/office/jspell.py: consonantal i -> j in all Office text (Vulgate j-words), js/tones.js regexes accept i/j.
+OFFICE STILL TO DO (big): the Office data is Divinum Officium "Ordo Praedicatorum 1962" (classes I-IV, 1960 rubrics): pre-1955
+ranks (Totum Duplex, Duplex, Semiduplex, Simplex), Compline Sunday psalms on Doubles I/II cl., feasts of the Lord, BVM, Apostles
+etc. (C49 p.7), Preces at Compline/Hours, Te lucis tunes by rank/season (C49 pp.9-17), Marian Te lucis doxology on BVM feasts,
+weekday psalm antiphons (C49 p.22ff) vs current. Needs either DO pre-1955 OP data or a rubric layer; then audit every Hour.
