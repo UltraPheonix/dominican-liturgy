@@ -166,3 +166,9 @@ at the right edge on phones (more days to swipe). FOUND, NOT DONE (needs a decis
 OP 1962), and Holy Week has a "Reformed 1959" toggle — all conflict with "pre-1955 OP rite only". Pre-1955 needs the old ranks
 (Totum Duplex / Duplex / Semiduplex / Simplex, Sundays I/II class), octaves, commemorations, preces: a rubric engine of its own.
 Remaining after that: step 3 propers audit vs M33, step 7 Good Friday Tenebrae.
+
+## Step 3 started: tools/m33/propers_audit.py -> tools/m33/propers_audit.md = 43 possible Introit/Gradual/Offertory/Communion
+mismatches site vs M33 OCR (after filtering drop caps / scripture refs). Many are OCR or anchoring noise (Commons share pages), but
+some look real, e.g. Quad4h Communion: site "Lutum fecit" (= Wednesday's), M33 p.147 "Domine memorabor justitiae tuae solius";
+Quad2h Communion site "Qui manducat", M33 p.121 "Justus Dominus..."; ChristusRex Communion; AscVig Communion. Check each on the pdf
+page, then fix the chant id in tools/sources (masses.js is generated).
