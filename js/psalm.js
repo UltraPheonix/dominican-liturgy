@@ -16,8 +16,9 @@
             term: {D: "g f 'gh gr gFED", g: "g f 'gh gr g", a: "g f 'g hr h"}, def: 'D'},
     'II':  {clef: 'f3', inton: 'e f', tenor: 'h', flex: "'h fr f", med: "'i hr h", sol: "hg hi i 'hi hr h", solInton: 'e f eh',
             term: {D: "g 'e fr f"}, def: 'D'},
-    'III': {clef: 'c4', inton: 'g hj', tenor: 'j', flex: "'j hr h", med: "'k jr j 'i jr j", sol: "'jk jr j 'ih hj", solAnt: 'j',
-            term: {a: "h 'j jr ih", a2: "ji hi 'h gr gh"}, def: 'a'},
+    // III: C49 p. 18 Nunc dimíttis ... tú(k)um(j), Dó(i)mi(i)ne(j) * ... tú(j)um(i) in(h) pá(j)ce(ih); p. 26 ó(j)re(h) mé(j)o(ih)
+    'III': {clef: 'c4', inton: 'g hj', tenor: 'j', flex: "'j hr h", med: "'k jr j 'i ir j", sol: "'jk jr j 'ih hj", solAnt: 'j',
+            term: {a: "'j ir h 'j jr ih", a2: "ji hi 'h gr gh"}, def: 'a'},
     'IV':  {clef: 'c4', inton: 'h gh', tenor: 'h', flex: "'h gr g", med: "g h 'i hr h", sol: "hg gi i 'hi hr h",
             term: {E: "g h ih 'gf e"}, ant: {E: 'g'}, def: 'E'},
     'IVA': {clef: 'c3', inton: 'i hi', tenor: 'i', flex: "'i hr h", med: "h i 'j ir i", sol: "ih hj j 'ij ir i",
