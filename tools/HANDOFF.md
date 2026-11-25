@@ -298,3 +298,33 @@ Steps:
 - 1909 layout (vol. 1 pdf idx): 10-23 De anno, 24-37 Calendarium (ranks: Totum Duplex, Duplex, Semiduplex, Simplex, Tres Lectiones),
   40-70 Rubricae generales (+ Index rubricarum p. 40), 70 Modus terminandi orationes, 76 Index alphabeticus, 82 Psalmorum index,
   88- Psalterium (Dominica ad Matutinum p. 3 … Sabbato), then Proprium de Tempore, etc.
+
+## MASTER PLAN (Joseph, 2026-11-25 22:10): chant everything possible in BOTH Offices; no inferred melodies in 1954
+Rule: in the 1954 Office use only melodies printed in a Dominican book (AM 1933, C49, Matutinum 1936, GB 1950) — do not
+reconstruct. (v81's tones for the chapter office of Prime were reconstructions and were reverted in v82: the AM 1933 prints
+no melody for Pretiosa … Dirigere, the Rule or Ps 116.) Preces: Dominicans have them only at Prime and Compline (AM 1933
+p. 147, C49 p. 19) — both done (v77, v79).
+Sources (media.churchmusicassociation.org/dominican/):
+- antiphonarium-1933-gillet.pdf (day Hours only; GB source 11), completorium-1949-suarez.pdf (GB 13),
+  matutinum-1936-gillet.pdf (GB 12: 123 pp.; Toni communes pp. 1–21 = Domine labia, Invitatory/Venite tones I, II, IV A,
+  IV B (Christmas), V, VI, VII, VIII…, Matins versicles, responsory rubrics, Benedictiones ante lectiones, lesson tones,
+  Te Deum p. 230; then Matins of 14 solemnities only: Christmas 21, Epiphany 49, Ascension 61, Pentecost 78, Corpus 84,
+  St Joseph 102, Immaculate Conception 124, St Thomas 133, St Catherine 147, Peter & Paul 152, St Dominic 173,
+  Assumption 185, Rosary 198, All Saints 209). GB has 38 pieces of it (Venite IV A = 10539, Te Deum 4207).
+- antiphonarium-1862-jandel-t1/t2.pdf (GB 35/36, ~125 pieces): the full Antiphonary incl. Matins, old psalter → 1909 Office,
+  and the only source for ordinary Matins antiphons/responsories where the 1954 texts agree.
+- Breviarium-1909-1/2-optimized.pdf (scans; Joseph is supplying a text PDF) → 1909 texts and rubrics.
+Order of work:
+ A. 1954 Matins frame from Matutinum 1936 Toni communes: Domine labia, invitatory + Venite in the tone of the invitatory
+    (transcribe I, II, IV B, V–VIII; IV A = GB 10539), Matins versicles, absolutions/blessings, lesson tones, Te Deum (done).
+ B. 1954 Matins of the 14 solemnities (≈250 pieces: GB 12 + transcription from the scans with /tmp/c49-style tools:
+    notes2.py/staff measuring; see the C49 notes above).
+ C. Missing hymns (~29 Matins hymns; tools/chant audit in HANDOFF v77 note): only from a printed Dominican source.
+ D. 1909 Office: texts from Joseph's PDF → parser → data/office1909/ (format as data/office/; psalm verses from
+    data/office/psalter); rubric engine from Rubricae generales; then chant: 1862 Antiphonary (GB 35/36 + transcription),
+    tones/hymns from 1933 books where identical. Enable the switch (office.html: remove `disabled` on option 1909).
+ E. Rubric engine with the 1954 rule set replaces the 1962-based data (Compline psalms by rank, preces days, Te lucis ranks,
+    octaves, Rosary on the 1st Sunday of October, etc.).
+Tools: OCR with tesseract 'latf'/'lat' (tessdata from raw.githubusercontent.com/tesseract-ocr/tessdata_fast|best into
+/usr/share/tesseract-ocr/5/tessdata/), tools/b09/ocr09.py; screenshot/test helpers live in /tmp/pg (recreate: playwright +
+/usr/bin/google-chrome, `python3 -m http.server 8768` in the repo).
