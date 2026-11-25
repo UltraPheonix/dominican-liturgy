@@ -328,3 +328,7 @@ Order of work:
 Tools: OCR with tesseract 'latf'/'lat' (tessdata from raw.githubusercontent.com/tesseract-ocr/tessdata_fast|best into
 /usr/share/tesseract-ocr/5/tessdata/), tools/b09/ocr09.py; screenshot/test helpers live in /tmp/pg (recreate: playwright +
 /usr/bin/google-chrome, `python3 -m http.server 8768` in the repo).
+- Extra source (Joseph's Drive "Dominican Chant Propers – Source Materials/Antiphons" = CMAA a1/a2a/a2b/a3/a4.pdf): the provisional
+  O.P. Antiphonarium pro Liturgia Horarum (post-1970). Each chant carries a siglum: AG (AM 1933), AJ (Jandel 1867-70),
+  MG (Matutinum 1936), AN (Nocturnale S.O.P., ed. Ammosaulicus, Bonn 2006 — traditional O.P. Matins; not yet obtained).
+  Pieces with AG/AJ/MG/AN sigla and the same text may be used as printed Dominican melodies (transcribe from the scans).
