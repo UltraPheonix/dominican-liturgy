@@ -68,9 +68,12 @@
     epi: ['Glória tibi, Dómine,\nQui apparuísti hódie,\nCum Patre et Sancto Spíritu,\nIn sempitérna sǽcula.', 'Glory to thee, O Lord,\nWho hast appeared this day,\nWith the Father and the Holy Spirit,\nUnto everlasting ages.'],
     hf: ['Jesu, tuis obédiens\nQui factus es paréntibus,\nCum Patre summo ac Spíritu\nSemper tibi sit glória.', 'O Jesu, who wast subject to\nThy parents, glory be to thee,\nWith the most high Father and the Spirit,\nFor evermore.'],
     scj: ['Glória tibi, Dómine,\nQui Corde fundis grátiam,\nCum Patre et Sancto Spíritu,\nIn sempitérna sǽcula.', 'Glory to thee, O Lord,\nWho pourest forth grace from thy Heart,\nWith the Father and the Holy Spirit,\nUnto everlasting ages.'],
+    pii: ['Pii Maríæ sérvuli,\nChristi redémpti sánguine,\nTantum dolórem flébili\nRecogitáte lúmine.', 'Ye servants of Mary,\nRedeemed by the blood of Christ,\nWith tearful eyes call to mind\nSo great a sorrow.'],
+    sit: ['Sit summa Christo glória,\nAmára cujus pássio\nÆtérna nobis gáudia\nMatrísque det compássio.', 'To Christ be highest glory,\nWhose bitter Passion\nAnd his Mother\'s compassion\nGive us joys eternal.'],
+    sceptra: ['Glória tibi, Dómine,\nQui sceptra mundi témperas,\nCum Patre et Sancto Spíritu,\nIn sempitérna sǽcula.', 'Glory to thee, O Lord,\nWho rulest the sceptres of the world,\nWith the Father and the Holy Spirit,\nUnto everlasting ages.'],
     maria: ['María, Mater grátiæ,\nMater misericórdiæ,\nTu nos ab hoste prótege,\nEt hora mortis súscipe.', 'Mary, Mother of grace,\nMother of mercy,\nShield us from the enemy,\nAnd receive us at the hour of death.']
   };
-  var DOXOF = {nat: ['natus'], hn: ['natus'], hn2: ['natus'], cc: ['natus'], epi: ['epi'], hf: ['hf'], scj: ['scj'], bvma: ['maria', 'natus'], bvmb: ['maria', 'natus']};
+  var DOXOF = {domtr: ['epi'], mdol: ['pii', 'sit'], ros: ['maria', 'natus'], ck: ['sceptra'], nat: ['natus'], hn: ['natus'], hn2: ['natus'], cc: ['natus'], epi: ['epi'], hf: ['hf'], scj: ['scj'], bvma: ['maria', 'natus'], bvmb: ['maria', 'natus']};
   // Te lucis: the doxology of the feast or season in place of Praesta, Pater (C49 pp. 38-45, 70-79)
   function teLucisText(t, day) {
     if (!/e lucis ante términum|efore the ending of the day/.test(t) || !day) return t;
@@ -364,7 +367,7 @@
     return new Date(y, mo - 1, da, 12);
   }
   var BVM = /B(eat(æ|ae)|\.)\s*Mari(æ|ae)|Mari(æ|ae) Virgin|Sanct(æ|ae) Mari(æ|ae) (in )?Sabbato|Immaculat|Septem Dolor/;
-  var TLMODE = {adv: '4', sab: '8', dom: '8', fer: '8', i: '7', tdii: '4', td: '7', d: '3', sd: '8', nat: '4', epi: '4', hn: '4', hf: '2', tri: '1', cc: '8', scj: '1', bvma: '1', bvmb: '2'};
+  var TLMODE = {crc: '6', tom: '1', pb: '8', mm: '2', spd: '7', domtr: '7', mdol: '2', ros: '6', ang: '8', fra: '5', ter: '2', ck: '1', os: '1', alb: '8', adv: '4', sab: '8', dom: '8', fer: '8', i: '7', tdii: '4', td: '7', d: '3', sd: '8', nat: '4', epi: '4', hn: '4', hf: '2', tri: '1', cc: '8', scj: '1', bvma: '1', bvmb: '2'};
   function teLucisTune(ctx, date) {
     var t = ctx.title || '', y = date.getFullYear(), md = (date.getMonth() + 1) * 100 + date.getDate(), wd = date.getDay();
     var E = (function () { var a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25),
@@ -385,6 +388,15 @@
     if (f >= 55 && f <= 58) return 'tri';                      // both Compline of Trinity Sunday, and Monday and Tuesday after
     if (f >= 59 && f <= 66) return 'cc';                       // Corpus Christi and its octave
     if (f >= 67 && f <= 75) return 'scj';                      // the Sacred Heart and its octave
+    // the saints (pp. 83-117): the tune of the feast's own hymn
+    var SAINTS = [[/Catharin(æ|ae) de Ricci/, 'crc'], [/Thom(æ|ae) (de )?Aquin/, 'tom'], [/Pretiosissimi Sanguinis/, 'pb'], [/Mari(æ|ae) Magdalen/, 'mm'],
+                  [/Transfiguratione/, 'domtr'], [/(S\. P\. N\.|Sancti Patris Nostri) Dominici|S\. Dominici Confessoris|Translatione S\. P\. N\. Dominici/, 'spd'],
+                  [/Septem Dolor|Compassione/, 'mdol'], [/Rosarii/, 'ros'], [/Angelorum Custodum/, 'ang'], [/Christi Regis/, 'ck'],
+                  [/Omnium Sanctorum/, 'os'], [/Alberti Magni/, 'alb']];
+    for (var si = 0; si < SAINTS.length; si++) if (SAINTS[si][0].test(t)) return SAINTS[si][1];
+    if (md === 1004 && /Francisci/.test(t)) return 'fra';
+    if (md === 1015 && /Teresi/.test(t)) return 'ter';
+    if (md >= 1101 && md <= 1108) return 'os';                    // through the octave of All Saints, saints' feasts included
     // Christmastide (pp. 36-39: the Christmas tune with 'Gloria tibi, Domine, qui natus es de Virgine') from the eve;
     // Epiphany and its octave (pp. 42-44: the same tune, 'qui apparuisti hodie'), from the eve
     if (md >= 1224 || md <= 104) return 'nat';

@@ -11,6 +11,10 @@ NATUS = "Gló-ri-a ti-bi, Dó-mi-ne, Qui na-tus es de Vír-gi-ne, Cum Pa-tre~et 
 MARIA = "Ma-rí-a, Ma-ter grá-ti-æ, Ma-ter mi-se-ri-cór-di-æ, Tu nos ab ho-ste pró-te-ge, Et ho-ra mor-tis sú-sci-pe."
 FAMILIA = "Je-su, tu-is o-bé-di-ens Qui fa-ctus es pa-rén-ti-bus, Cum Pa-tre sum-mo~ac Spí-ri-tu Sem-per ti-bi sit gló-ri-a."
 CORDE = "Gló-ri-a ti-bi, Dó-mi-ne, Qui Cor-de fun-dis grá-ti-am, Cum Pa-tre~et San-cto Spí-ri-tu, In sem-pi-tér-na sǽ-cu-la."
+PII = "Pi-i Ma-rí-æ sér-vu-li, Chri-sti red-ém-pti sán-gui-ne, Tan-tum do-ló-rem flé-bi-li Re-co-gi-tá-te lú-mi-ne."
+SIT = "Sit sum-ma Chri-sto gló-ri-a, A-má-ra cu-jus pás-si-o Æ-tér-na no-bis gáu-di-a Ma-trís-que det com-pás-si-o."
+SCEPTRA = "Gló-ri-a ti-bi, Dó-mi-ne, Qui scep-tra mun-di tém-pe-ras, Cum Pa-tre~et San-cto Spí-ri-tu, In sem-pi-tér-na sǽ-cu-la."
+APPAR = "Gló-ri-a ti-bi, Dó-mi-ne, Qui~ap-pa-ru-í-sti hó-di-e, Cum Pa-tre~et San-cto Spí-ri-tu, In sem-pi-tér-na sǽ-cu-la."
 TUNES = {  # key: (GregoBase id, stanzas after the first two, Amen if the source has none)
     'hn':   (6485, [NATUS], None),             # Holy Name (p. 40) = Jesu dulcis memoria, IV
     'hn2':  (7169, [NATUS], 'A(fgf)men.(ef)'),  # Holy Name, tonus alter (p. 41) = Jesu decus angelicum, II
@@ -19,8 +23,23 @@ TUNES = {  # key: (GregoBase id, stanzas after the first two, Amen if the source
     'cc':   (5303, [NATUS], 'A(ghg)men.(fg)'),  # Corpus Christi (p. 71) = Verbum supernum prodiens, VIII
     'bvma': (4884, [MARIA, NATUS], None),       # B.V.M., I and II class (p. 75): the Antiphonarium's own tune, I
     'bvmb': (5081, [MARIA, NATUS], 'A(hih)men.(gh)'),  # B.V.M., Totum Duplex (p. 76) = Aurora soli praevia, II
+    # the saints (pp. 83-117): again the melody of the feast's own hymn
+    'crc':  (7032, [PRAESTA], None),            # St Catherine de' Ricci (p. 84) = Caelestis aulae nuntius, VI
+    'tom':  (6180, [PRAESTA], None),            # St Thomas, and his patronage (pp. 85, 116) = Lauda Mater... Thomae, I
+    'pb':   (6830, [PRAESTA], None),            # Precious Blood (p. 96) = Salvete Christi vulnera, VIII
+    'mm':   (6136, [PRAESTA], None),            # St Mary Magdalene (p. 97) = Lauda Mater Ecclesia, II
+    'spd':  (4696, [PRAESTA], None),            # St Dominic (p. 98) = Gaude Mater Ecclesia, VII
+    'domtr':(4696, [APPAR], None),              # Transfiguration (p. 99): St Dominic's tune, 'qui apparuisti hodie'
+    'mdol': (5254, [PII, SIT], None),           # Seven Sorrows and Compassion (pp. 86, 101-102) = Summae Deus clementiae, II
+    'ros':  (7032, [MARIA, NATUS], None),       # Rosary (pp. 104-105) = Caelestis aulae nuntius, VI
+    'ang':  (5798, [PRAESTA], None),            # Guardian Angels (p. 106) = Orbis patrator optime, VIII
+    'fra':  (6595, [PRAESTA], None),            # St Francis (p. 108) = Plaude turba paupercula, V
+    'ter':  (4866, [PRAESTA], None),            # St Teresa (p. 111) = Haec est dies, II
+    'ck':   (5550, [SCEPTRA], None),            # Christ the King (p. 113) = Vexilla Christus inclita, I
+    'os':   (6475, [PRAESTA], None),            # All Saints and its octave; All Saints O.P. (pp. 114-115) = Jesu Salvator saeculi, I
+    'alb':  (5975, [PRAESTA], None),            # St Albert (p. 117) = Noctis tenebras dissipans, VIII
 }
-MODE = {'hn': '4', 'hn2': '2', 'hf': '2', 'tri': '1', 'cc': '8', 'bvma': '1', 'bvmb': '2'}
+MODE = {'crc': '6', 'tom': '1', 'pb': '8', 'mm': '2', 'spd': '7', 'domtr': '7', 'mdol': '2', 'ros': '6', 'ang': '8', 'fra': '5', 'ter': '2', 'ck': '1', 'os': '1', 'alb': '8', 'hn': '4', 'hn2': '2', 'hf': '2', 'tri': '1', 'cc': '8', 'bvma': '1', 'bvmb': '2'}
 db = sqlite3.connect(DB)
 def build(key, gid, extra, amen):
     g = db.execute('select gabc from gregobase_chants where id=?', (gid,)).fetchone()[0]
@@ -36,7 +55,10 @@ def build(key, gid, extra, amen):
         else: seq.append(('n', n))
     while seq and seq[-1][0] == 'b': seq.pop()
     m = re.search(r'A\(([^)]*)\)men\.?\(([^)]*)\)', g)
-    amen = amen or ('A(%s)men.(%s)' % m.groups())
+    if not amen and m: amen = 'A(%s)men.(%s)' % m.groups()
+    if not amen:   # the usual Amen on the final: a torculus on it, then the note below rising to it
+        fin = [n for k, n in seq if k == 's'][-1][-1]; L = 'abcdefghijklm'; i = L.index(fin)
+        amen = 'A(%s%s%s)men.(%s%s)' % (fin, L[i + 1], fin, L[i - 1], fin)
     out = ['(%s)' % clef]
     for si, st in enumerate([S1, S2] + extra):
         syls = []
