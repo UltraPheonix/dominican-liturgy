@@ -140,7 +140,12 @@
     // the Gloria Patri and the repeat continue on the same staff: a clef is drawn again only where it changes
     var gpClef = gp && (/^\s*\(([cf]b?[1-4])\)/.exec(gp) || [])[1];
     if (gpClef === clef) gp = gp.replace(/^\s*\([cf]b?[1-4]\)\s*/, '');
-    return verse + (noGP ? '' : ' ' + gp.replace(/\s+$/, '')) + (gpClef && gpClef !== clef && !noGP ? ' (' + clef + ') ' : ' ') + ant;
+    // the repeat is written as in the Graduale: 'Ant.' and the incipit up to the asterisk (Joseph, 25 Nov.)
+    // (the Dominican Graduale marks the end of the intonation with a double bar instead of an asterisk)
+    var star = ant.search(/\*\s*\(/); if (star < 0) { star = ant.search(/\(::\)/); if (star === ant.search(/\(::\)\s*$/)) star = -1; }
+    var inc = star > 0 ? ant.slice(0, star).replace(/\s+$/, '') + ' (::)' : ant;
+    inc = inc.replace(/^(\s*)([^\s(]+)\(/, '$1<i>Ant.</i>() $2(');
+    return verse + (noGP ? '' : ' ' + gp.replace(/\s+$/, '')) + (gpClef && gpClef !== clef && !noGP ? ' (' + clef + ') ' : ' ') + inc;
   }
   function splitGabc(text) {
     var i = text.indexOf('%%');
