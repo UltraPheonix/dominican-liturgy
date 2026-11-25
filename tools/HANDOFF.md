@@ -102,7 +102,7 @@ title + opening formula e.g. "In illo témpore", "Fratres"). Epi1 Holy Family in
 Pending after: #9 propers audit vs M33 (intr/grad/all/tract/off/comm + orations; data/orations.js partly Roman DO i-spelling);
 #10 full introits (ant+verse+full Gloria Patri in tone+ant repeat; no GP Passiontide/Requiem); #11 Office audit (Compline first:
 "Jube domne", missing chants; then all Hours); #12 UI cleanup; #13 Good Friday Tenebrae (tools/chant/ten/fri/pieces_f.py; OMR via
-tools/chant/ten). Masses not in M33 → leave blank + list for user. Every push: bump sw.js VERSION (now propria-v60), message user.
+tools/chant/ten). Masses not in M33 → leave blank + list for user. Every push: bump sw.js VERSION (now propria-v61), message user.
 
 ## M33 — STATE 2026-11-20 08:00 (LIVE, sw propria-v56). START HERE.
 Rebuild everything with ONE command: `bash tools/m33/run.sh` (sets up /home/claude/m33, M33.pdf, PyMuPDF, DO clone; writes data/readings33.js).
@@ -172,3 +172,4 @@ mismatches site vs M33 OCR (after filtering drop caps / scripture refs). Many ar
 some look real, e.g. Quad4h Communion: site "Lutum fecit" (= Wednesday's), M33 p.147 "Domine memorabor justitiae tuae solius";
 Quad2h Communion site "Qui manducat", M33 p.121 "Justus Dominus..."; ChristusRex Communion; AscVig Communion. Check each on the pdf
 page, then fix the chant id in tools/sources (masses.js is generated).
+- Compline chant (v61): short lesson Fratres: Sobrii + Tu autem and the Adjutorium notated from C49 p.2 (js/tones.js FIXED.lectioCompl / adjutorium).

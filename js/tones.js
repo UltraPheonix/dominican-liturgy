@@ -32,6 +32,13 @@
     labia: "(f3) Dó(h)mi(h)ne,(h) lá(h)bi(h)a(h) me(h)a(h) a(h)pé(g)ri(g)es.(h) (::) <sp>R/</sp>. Et(h) os(h) me(h)um(h) an(h)nun(h)ti(h)á(h)bit(h) lau(h)dem(h) tu(g)am.(h) (::)",
     // Regulae 1965, art. III § IV: asking the blessing
     iube: "(f3) <sp>V/</sp>. Ju(g)be,(g) dom(h)ne,(h) be(h)ne(g)dí(f)ce(e)re.(e.) (::)",
+    // Completorium O.P. 1949, pp. 2: the short lesson of Compline and the Adjutorium, as notated in the book
+    lectioCompl: "(c3) Fra(h)tres:(h) Só(h)bri(h)i(h) es(h)tó(h)te(h) et(h) vi(h)gi(h)lá(h)te:(g) (,) qui(h)a(h) ad(h)ver(h)sá(h)ri(h)us(h) ve(h)ster(h) " +
+      "di(h)á(h)bo(h)lus(h) (,) tam(h)quam(h) le(h)o(h) rú(h)gi(h)ens(h) (,) cír(h)cu(h)it,(h) quæ(h)rens(g) quem(f) dé(h)vo(h)ret:(h) (,) " +
+      "cu(h)i(h) re(h)sí(h)sti(h)te(h) for(h)tes(h) in(f) fi(g)de.(c) (:) Tu(h) au(h)tem,(h) Dó(h)mi(f)ne,(f) (,) mi(h)se(h)ré(h)re(f) no(g)stri.(c) (::) " +
+      "<sp>R/</sp>. De(g)o(g) grá(g)ti(g)as.(h) (::)",
+    adjutorium: "(c3) <sp>V/</sp>. Ad(h)ju(h)tó(h)ri(h)um(h) no(h)strum(h) in(h) nó(h)mi(h)ne(h) Dó(h)mi(g)ni.(g) (::) " +
+      "<sp>R/</sp>. Qui(h) fe(h)cit(h) cæ(h)lum(h) et(h) ter(h)ram.(g) (::)",
     benFin: "(c3) Be(f)ne(f)di(f)cá(f)mus(f) Dó(f)mi(e)no.(e) (::) <sp>R/</sp>. De(e)o(e) grá(e)ti(e)as.(f) (::)"
   };
   // Benedicamus at Lauds and Vespers (Antiphonarium 1933, Toni communes VI), GregoBase transcriptions
@@ -146,6 +153,12 @@
         j = i;
         while (j + 1 < n && plain(lines[j + 1])) j++;
         segs.push({s: i, e: j + 1, kind: 'td', file: 'Ta1-5'}); i = j; continue;
+      }
+      if (/^Fratres: Sóbrii estóte/.test(plain(l)) && i + 1 < n && isR(lines[i + 1]) && /Deo grátias/.test(plain(lines[i + 1]))) {
+        segs.push({s: i, e: i + 2, kind: 'cap', gabc: FIXED.lectioCompl}); i++; continue;
+      }
+      if (isV(l) && /^Ad[ij]utórium nostrum/.test(t) && ctx.hour === 'Completorium' && i + 1 < n && isR(lines[i + 1])) {
+        segs.push({s: i, e: i + 2, kind: 'inc', gabc: FIXED.adjutorium}); i++; continue;
       }
       if (isV(l) && /^Convérte nos/.test(t) && i + 1 < n && isR(lines[i + 1])) {
         segs.push({s: i, e: i + 2, kind: 'inc', gabc: FIXED.converte}); i++; continue;
