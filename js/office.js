@@ -54,7 +54,24 @@
     return s.replace(/([✠✙])/g, '<span class="r">$1</span>').replace(/ \* /g, ' <span class="r">*</span> ')
       .replace(/ † /g, ' <span class="r">†</span> ').replace(/ \+ /g, ' <span class="r">✠</span> ');
   }
-  function blockText(id, day) { return (day.b && day.b[id]) || (common && common[id]) || ''; }
+  function blockText(id, day) { return complineSeason((day.b && day.b[id]) || (common && common[id]) || ''); }
+  // Compline in Christmastide (Completorium O.P. 1949 pp. 38-39 and the Antiphonarium 1933): In manus with Alleluia daily
+  // to the Octave of the Epiphany; at the Nunc dimittis 'Alleluia. Verbum caro' to the Epiphany, then 'Alleluia. Omnes de Saba'.
+  function complineSeason(t) {
+    var d = state.date; if (!d || !t || !/In manus tuas|Into thy hands|Salva nos, \*|Protect us, \*/.test(t)) return t;
+    var md = (d.getMonth() + 1) * 100 + d.getDate(); if (!(md >= 1225 || md <= 113)) return t;
+    t = t.replace('In manus tuas, Dómine, * Comméndo spíritum meum.\nIn manus.\n<r>℣.</r> Redemísti me, Dómine, Deus veritátis. * Comméndo.',
+                  'In manus tuas, Dómine, comméndo spíritum meum, * Allelúia, allelúia.\nIn manus.\n<r>℣.</r> Redemísti me, Dómine, Deus veritátis. * Allelúia, allelúia.')
+      .replace('Into thy hands, O Lord, * I commend my spirit. Into thy hands.\n<r>℣.</r> Thou hast redeemed us, O Lord, God of truth. * I commend.',
+               'Into thy hands, O Lord, I commend my spirit, * Alleluia, alleluia. Into thy hands.\n<r>℣.</r> Thou hast redeemed us, O Lord, God of truth. * Alleluia, alleluia.');
+    var epi = md >= 106 && md <= 113;
+    var la = epi ? ['Allelúia. Omnes de Saba vénient, * allelúia: aurum et thus deferéntes, allelúia, allelúia.', 'Allelúia. Omnes de Saba vénient, allelúia: aurum et thus deferéntes, allelúia, allelúia.']
+                 : ['Allelúia. * Verbum caro factum est, allelúia: et habitávit in nobis, allelúia, allelúia.', 'Allelúia. Verbum caro factum est, allelúia: et habitávit in nobis, allelúia, allelúia.'];
+    var en = epi ? ['Alleluia. All they from Saba shall come, * alleluia, bringing gold and frankincense, alleluia, alleluia.', 'Alleluia. All they from Saba shall come, alleluia, bringing gold and frankincense, alleluia, alleluia.']
+                 : ['Alleluia. * The Word was made flesh, alleluia, and dwelt among us, alleluia, alleluia.', 'Alleluia. The Word was made flesh, alleluia, and dwelt among us, alleluia, alleluia.'];
+    return t.replace(/(<r>Ant\.<\/r> )Salva nos, \* Dómine[^\n]*/, '$1' + la[0]).replace(/(<r>Ant\.<\/r> )Salva nos, Dómine[^\n]*/, '$1' + la[1])
+      .replace(/(<r>Ant\.<\/r> )Protect us, \* Lord[^\n]*/, '$1' + en[0]).replace(/(<r>Ant\.<\/r> )Protect us, Lord[^\n]*/, '$1' + en[1]);
+  }
   function expand(text) {
     return text.split('\n').map(function (l) {
       if (l.charAt(0) !== '§') return l;
@@ -178,6 +195,9 @@
     var advent = /Advent/.test(t) || (date >= adv1 && md < 1225), perAnnum = (md >= 113 && date < ash) || (date >= scjOct && date < adv1);
     var tempore = /^(Dominica|Feria|Sabbato|Hebdomada)/.test(t) && !/Sanct(æ|ae) Mari(æ|ae) Sabbato/.test(t);
     var old = /Totum Duplex|Duplex|Semiduplex|Simplex/.exec(t);
+    // Christmastide (Completorium 1949 p. 38-39: the Christmas tune with 'Gloria tibi, Domine, qui natus es de Virgine'),
+    // sung daily through the octaves, saints' feasts included, a I class feast other than Christmas excepted
+    if ((md >= 1225 || md <= 113) && !(/(^|[^I])I\. classis/.test(t) && md !== 1225)) return 'nat';
     if (tempore && !old) return advent ? (wd === 6 || wd === 0 ? 'adv' : 'fer') : perAnnum ? (wd === 6 ? 'sab' : wd === 0 ? 'dom' : 'fer') : null;
     if (/(^|[^I])I\. classis/.test(t)) return 'i';
     {
