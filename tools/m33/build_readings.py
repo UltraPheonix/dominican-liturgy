@@ -137,13 +137,18 @@ OUT = {}; REP = []
 for k, mp in MAP.items():
     rs = []
     for r in mp['readings']:
-        body = R.join(r['body']); al = R.align(body, r['head'])
+        body = R.join(r['body'])
+        # the reading ends where the chant or the prayers begin (Ember Saturdays: lesson, then the Alleluia verse, then Dominus vobiscum)
+        body = re.split(r'\s(?:Alleluia\.?\s*(?:7P|W|V|℣|Y)\.?\s|Dominus vobiscum\.|Graduale\s|Tractus\s|Hymnus\s)', body)[0]
+        al = R.align(body, r['head'])
         if not al: REP.append((k, 'noalign', r['head'][:60])); continue
         if al['matched'] < 0.6 * al['n']: REP.append((k, 'weak %d/%d' % (al['matched'], al['n']), r['head'][:50], al['book']))
+        if re.match(r'\W*dicit\s+Dominus', al['prefix'] or al['text'][:20]):   # the drop cap "HÆC" lost by the OCR
+            if al['prefix']: al['prefix'] = 'Hæc ' + al['prefix'].lstrip(" '\"")
         pre, pre_en, nrest = fix_prefix(al['prefix'])
         la_h, en_h = heading(al['book'], r['kind'])
         body_t = al['text']
-        if pre.endswith(':') or re.search(r'[:.?!]$', pre): body_t = body_t[0].upper() + body_t[1:]
+        if re.search(r'[.?!]$', pre) or (pre.endswith(':') and (not nrest or re.match(r'\W*[A-ZÆŒÁÉÍÓÚ]', al.get('ocr0', '')))): body_t = body_t[0].upper() + body_t[1:]
         elif pre and re.search(r'\b(dicens|dicéntes|ait|dixit)\W*$', pre) is None and False: pass
         text = (pre + ' ' if pre else '') + body_t
         text = re.sub(r'^(\w)', lambda m: m.group(1).upper(), text.strip())
@@ -151,11 +156,47 @@ for k, mp in MAP.items():
         if pre_en and not nrest: en = pre_en + ': ' + (en[0].lower() + en[1:] if en[:2] not in ('I ', 'O ') and not en[:1].isupper() else en)
         elif pre_en: en = pre_en + ': ' + en
         text = tidy(text, r['kind'], al['book'])
+        text = re.sub(r'^Dilectíssimi[.:]\s*', 'Dilectíssimi: ', text)
+        text = re.sub(r'^Dicit Dóminus Deus:\s*(\w)', lambda m: 'Hæc dicit Dóminus Deus: ' + m.group(1).upper(), text)
+        for fl, fe in (('Hæc dicit Dóminus Deus', 'Thus saith the Lord God'), ('Hæc dicit Dóminus', 'Thus saith the Lord'), ('In illo témpore', 'At that time'),
+                       ('In diébus illis', 'In those days'), ('Fratres', 'Brethren'), ('Caríssimi', 'Dearly beloved'), ('Caríssime', 'Dearly beloved'), ('Dilectíssimi', 'Dearly beloved')):
+            if text.startswith(fl + ':'):
+                en = re.sub(r'^And ', '', en)
+                if not en.startswith(fe): en = fe + ': ' + (en[0].lower() + en[1:] if en[:2] not in ('I ', 'O ') and en[:1] != en[:1].lower() and not re.match(r'(God|Lord|Jesus|Christ|Moses|Israel)\b', en) else en)
+                break
         text = re.sub(r'([.?!]) ([a-zæœáéíóú])', lambda m: m.group(1) + ' ' + m.group(2).upper(), text)
+        text = re.sub(r'^amaríssim\w*:?\s*(\w)', lambda m: 'Caríssime: ' + m.group(1).upper(), text)   # drop cap C lost
+        text = re.sub(r'^occíde sacérdos', 'Ecce sacérdos', text); text = re.sub(r'^Justus Cor suum', 'Justus cor suum', text)
+        m0 = re.match(r'^(\S{2,7})\s+dicit (Dóminus(?: Deus)?):?\s*(\w)', text)
+        if m0 and norm(m0.group(1)).replace(' ', '') not in ('haec', 'sic', 'ita', 'quia', 'et', 'nunc', 'propterea', 'ideo'):   # "WALC dicit", "Esec dicit"
+            text = 'Hæc dicit ' + m0.group(2) + ': ' + m0.group(3).upper() + text[m0.end():]
+            fe = 'Thus saith the Lord God' if 'Deus' in m0.group(2) else 'Thus saith the Lord'
+            if not en.startswith('Thus saith'): en = fe + ': ' + en
+        if text.startswith('Caríssime: ') and not en.startswith('Dearly beloved'): en = 'Dearly beloved: ' + en
+        en = re.sub(r'^(At that time|In those days|Brethren|Dearly beloved|Thus saith the Lord(?: God)?): (?:And|But|Now|For) (\w)', lambda m: m.group(1) + ': ' + m.group(2).upper(), en)
+        en = re.sub(r'^(In those days|At that time): (?:\1|in those days|at that time),?\s+(\w)', lambda m: m.group(1) + ': ' + m.group(2).upper(), en, flags=re.I)
+        if not re.match(r'Et\b', text): en = re.sub(r'^(And|But) (\w)', lambda m: m.group(2).upper(), en)
         flag = []
         if al['midverse'] and not pre: flag.append('starts mid-verse')
-        if al['matched'] < 0.6 * al['n']: flag.append('weak')
-        rs.append({'flag': flag, 'type': 'Gospel' if r['kind'] == 'gospel' else ('Epistle' if 'Epíst' in la_h else 'Lesson'), 'ref': ref_str(al['book'], al['verses']),
+        if al['matched'] < 0.6 * al['n']:
+            # a cento (verses gathered from several places, words changed) or a badly matched reading: if the scan itself reads
+            # cleanly, print the Missal's text as it stands rather than fill it out with the Vulgate
+            ot, _, _ = fix_prefix(re.sub(r'\s+([:;,.?!])', r'\1', body)); ot = tidy(ot, r['kind'], al['book'])
+            ot = re.sub(r'\s+([:;,.?!])', r'\1', ot); ot = re.sub(r'\s*\b[Hh]ic genuflectitur\.?\s*', ' ', ot)
+            w = [norm(x).replace(' ', '') for x in ot.split()]; w = [x for x in w if x]
+            good = sum(1 for x in w if x in R.LEX) / max(1, len(w))
+            run = mx = 0; hit = 0; chs = []
+            for i in range(len(w) - 2):                     # every stretch of the scan text must be in this book of the Bible
+                ks = [key for key in R.vulg.TRI.get(' '.join(w[i:i + 3]), ()) if key[0] == al['book']]
+                if ks:
+                    run = 0; hit += 1; c = min(key[1] for key in ks)
+                    if len(ks) <= 2: chs.append(c)
+                else: run += 1; mx = max(mx, run)
+            if good >= 0.99 and len(w) > 15 and mx <= 8 and hit >= 0.7 * (len(w) - 2):
+                text = ot; en = ''; flag.append('scan text %.2f' % good)
+                cc = collections.Counter(chs); al['verses_ref'] = al['book'] + ' ' + ', '.join(str(c) for c in sorted(cc, key=chs.index) if cc[c] >= 4)
+            else: flag.append('weak')
+        rs.append({'flag': flag, 'type': 'Gospel' if r['kind'] == 'gospel' else ('Epistle' if 'Epíst' in la_h else 'Lesson'), 'ref': al.get('verses_ref') or ref_str(al['book'], al['verses']),
                    'title': la_h, 'title_en': en_h, 'first': [al['book']] + list(al['verses'][0]) if al['verses'] else None, 'la': text, 'en': en, 'p33': r['page']})
     OUT[k] = {'how': mp['how'], 'readings': rs}
 # the same reading printed in several places: where one copy came out badly (two columns mixed in the scan), use the best copy
@@ -172,6 +213,14 @@ for g in byfirst.values():
     best = max(g, key=score)
     for r in g:
         if r is not best and r['flag'] and not best['flag']: r.update({x: best[x] for x in ('la', 'en', 'ref', 'title', 'title_en')}); r['flag'] = ['from another copy']; fixed += 1
+byopen = collections.defaultdict(list)      # the same reading whose reference came out differently: match by its first words
+for k, v in OUT.items():
+    for r in v['readings']: byopen[(r['type'], ' '.join(norm(r['la']).split()[:9]))].append(r)
+for g in byopen.values():
+    best = max(g, key=score)
+    for r in g:
+        if r is not best and r['flag'] and not best['flag'] and r['ref'].split(' ')[0] == best['ref'].split(' ')[0]:
+            r.update({x: best[x] for x in ('la', 'en', 'ref', 'title', 'title_en')}); r['flag'] = ['from another copy']; fixed += 1
 print('consensus fixed', fixed)
 json.dump(OUT, open('/home/claude/m33/readings33.json', 'w'), ensure_ascii=False, indent=0)
 for x in REP: print(x)

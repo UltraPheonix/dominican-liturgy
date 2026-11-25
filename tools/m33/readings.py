@@ -1,3 +1,4 @@
+import re
 import json, re, collections, difflib
 from collections import namedtuple
 B = namedtuple('B', 'a b size')
@@ -55,9 +56,50 @@ def join(ls):
         else: s += (' ' if s else '') + l
     return re.sub(r'\s+', ' ', s).strip()
 HINT = [('matth', 'Matthæus'), ('marcum', 'Marcus'), ('lucam', 'Lucas'), ('joannem', 'Joannes'), ('romanos', 'Ad Romanos'), ('corinth', 'Ad Corinthios'), ('galatas', 'Ad Galatas'), ('ephes', 'Ad Ephesios'), ('philipp', 'Ad Philippenses'), ('coloss', 'Ad Colossenses'), ('thessal', 'Ad Thessalonicenses'), ('timoth', 'Ad Timotheum'), ('titum', 'Ad Titum'), ('hebr', 'Ad Hebræos'), ('isaiae', 'Isaias'), ('jeremiae', 'Jeremias'), ('ezechiel', 'Ezechiel'), ('daniel', 'Daniel'), ('actuum', 'Actus Apostolorum'), ('apocal', 'Apocalypsis'), ('petri', 'Petri'), ('jacobi', 'Jacobi'), ('eccli', 'Ecclesiasticus'), ('prov', 'Proverbia'), ('cant', 'Canticum Canticorum'), ('exodi', 'Exodus'), ('genesis', 'Genesis'), ('regum', 'Regum'), ('joel', 'Joel'), ('osee', 'Osee'), ('zachar', 'Zacharias'), ('malach', 'Malachias')]
+LEXL = collections.defaultdict(list)
+for _w in LEX: LEXL[_w[:1]].append(_w)
 def align(raw, head=''):
+    raw = re.sub(r'(\w)[\u00ad-]\s+(\w)', r'\1\2', raw)          # words broken at a line end: "di- cens"
+    raw = re.sub(r'^\W*[Aa]d\s?[A-Z][a-zæœ]+\.(?:\s*c\.?\s*[\d.]+(?:\s*et\s*[\d.]+)?)?[^A-Za-z]*(?:Et\s+)?', '', raw)       # the Epistle's heading run into the text: "AdEphesios. 'WRatres"
+    raw = re.sub(r'^\W*\w?\W*R[Aa][Tt][Rr][Ee][Ss]\b', 'Fratres', raw)    # drop-cap F read as W, R, ...
+    def hy(m):                                                         # a hyphen read as "4L", "jL", "JjL", "j2": "civi4L tatem", "Ange4L Jus"
+        a, b = m.group(1), m.group(2)
+        for b2 in (b.lower(), 'l' + b[1:].lower() if b[:1] in 'JI' else None):
+            if b2 and norm(a + b2).replace(' ', '') in LEX: return a + b2
+        return m.group(0)
+    raw = re.sub(r'([A-Za-zæœ]+?)(?:[jJ]{0,2}\|?[L2]|4L|\^?4L)[,.]?\s+([A-Za-zæœ]+)', hy, raw)
+    def inlex(x): return norm(x).replace(' ', '') in LEX
+    rt = raw.split(); out = []; i = 0
+    while i < len(rt):                                                 # other OCR marks in or after a word: "spi<dL> ritum", "Ddmi< ni", "Z^Ptayi"
+        t = rt[i]
+        if re.search(r'[<>^|$]', t) and len(norm(t).replace(' ', '')) <= 2: i += 1; continue   # "'O>"
+        if re.search(r'[0-9<>^|$]', t) and not inlex(t):
+            m = re.match(r'^(\W*)(.*?)([,.:;!?]*)$', t); lead, core, trail = m.groups()
+            a = re.sub(r'[^A-Za-zæœÆŒ]', '', core.split('<')[0].split('>')[0]) if re.search(r'[<>]', core) else re.sub(r'[^A-Za-zæœÆŒ]', '', core)
+            done = False
+            for a2 in (a, re.sub(r'[jJdL]{1,3}$', '', a), re.sub(r'(?<=[DdTt])d', 'o', a), re.sub(r'[0-9]', '', a)):
+                if i + 1 < len(rt) and a2 and inlex(a2 + re.sub(r'\W', '', rt[i + 1])):
+                    out.append(lead + a2 + rt[i + 1]); i += 2; done = True; break
+            if done: continue
+            a3 = a.replace('d', 'o') if not inlex(a) else a
+            if i > 0 and not inlex(a) and not inlex(a3) and len(a) >= 4:                 # still not a word: the nearest Vulgate word of that shape
+                nx = re.sub(r'\W', '', rt[i + 1]) if i + 1 < len(rt) else ''
+                for cand in ((a + nx, 2), (a, 1)):
+                    cl = difflib.get_close_matches(norm(cand[0]).replace(' ', ''), LEXL.get(norm(a)[:1], []), 1, 0.8)
+                    if cl: out.append(lead + accent(cl[0]) + trail); i += cand[1]; done = True; break
+                if done: continue
+            out.append(lead + (a if inlex(a) or not inlex(a3) else a3) + trail if a else ''); i += 1; continue
+        out.append(t); i += 1
+    raw = ' '.join(x for x in out if x)
     toks = []
     for t in raw.split():
+        n = norm(t).replace(' ', '')
+        if n and n not in LEX and re.search(r'\d', t):                                  # D6minum -> Dominum
+            t2 = t.replace('6', 'o').replace('0', 'o').replace('1', 'i')
+            if norm(t2).replace(' ', '') in LEX: t = t2; n = norm(t2).replace(' ', '')
+        if n not in LEX and (len(n) <= 3 or not re.search(r'[aeiouy]', n)) and re.search(r'[^A-Za-z.,:;!?\u00c0-\u024f]|^.{1,3}$', t.strip('.,:;')):
+            continue                                                                   # stray marks: "jjl.", "<J1L,", "X"
+        if re.fullmatch(r'[A-Z]', t) and toks and not re.search(r'[.:?!]$', toks[-1]): continue   # a drop-cap remnant mid-sentence
         if norm(t): toks.append(t)
         elif toks: toks[-1] += t
     ow = [norm(t).replace(' ', '') for t in toks]
@@ -73,6 +115,12 @@ def align(raw, head=''):
     sm = difflib.SequenceMatcher(None, ow, vw, autojunk=False)
     blocks = [b for b in sm.get_matching_blocks() if b.size >= 3]
     if not blocks: return None
+    # drop short stray runs at either end that sit far away in the chapter (a formula like "factus est sermo Domini ad" found in
+    # another verse): the Vulgate gap to the next run is much longer than the Missal's
+    while len(blocks) > 1 and blocks[0].size < 8 and (blocks[1].b - blocks[0].b - blocks[0].size) > (blocks[1].a - blocks[0].a - blocks[0].size) + 12:
+        blocks = blocks[1:]
+    while len(blocks) > 1 and blocks[-1].size < 8 and (blocks[-1].b - blocks[-2].b - blocks[-2].size) > (blocks[-1].a - blocks[-2].a - blocks[-2].size) + 12:
+        blocks = blocks[:-1]
     # keep the largest consistent run of blocks (drop strays far away in the chapter)
     a0, b0 = blocks[0].a, blocks[0].b
     out = []; en_vs = []; omitted = False
@@ -86,10 +134,10 @@ def align(raw, head=''):
     for bl in sm2.get_matching_blocks():
         if bl.size and bl.a <= 10 and not all(ow[bl.a + q] in FORMW for q in range(bl.size)):
             og = A0 - (bl.a + bl.size); vg = B0 - (lo + bl.b + bl.size)
-            if -2 <= vg - og <= 6: op = B(bl.a, lo + bl.b, bl.size); b0 = lo + bl.b; a0 = bl.a; break
+            break   # the opening stays the Missal's own words (no early match against the Vulgate)
     pre = toks[:a0]
     k = b0
-    while pre and k > 0 and not all(norm(t).replace(' ', '') in FORMW for t in pre) and (fuzzy(norm(pre[-1]).replace(' ', ''), vw[k - 1]) or (len(pre) == 1 and norm(pre[-1]).replace(' ', '')[-2:] == vw[k - 1][-2:] and len(norm(pre[-1])) <= len(vw[k - 1]) + 3)):
+    while pre and k > 0 and not all(norm(t).replace(' ', '') in FORMW for t in pre) and ((lambda p, v: p == v or (p not in LEX and fuzzy(p, v)))(norm(pre[-1]).replace(' ', ''), vw[k - 1]) or (len(pre) == 1 and norm(pre[-1]).replace(' ', '')[-2:] == vw[k - 1][-2:] and len(norm(pre[-1])) <= len(vw[k - 1]) + 3)):
         pre.pop(); k -= 1
     vstart = k
     prefix = ' '.join(accent(t) for t in pre)
@@ -110,7 +158,7 @@ def align(raw, head=''):
             elif go == gv and go <= 4:                                           # word for word: the Missal's word where it is a real word
                 for q, t in enumerate(og):
                     x = pa.b + pa.size + q; nt = norm(t).replace(' ', '')
-                    if nt in LEX and not fuzzy(nt, vw[x]): words.append(accent(t))
+                    if nt in LEX and not fuzzy(nt, vw[x]) and not re.search(r'[\^<>|$0-9]', t): words.append(accent(t))
                     else: words.append(V[x][0]); used.append(V[x][2])
             elif gv == 0: pass                                                   # stray text (another column, a rubric)
             else: words += [V[x][0] for x in range(pa.b + pa.size, bl.b)]; used += [V[x][2] for x in range(pa.b + pa.size, bl.b)]
@@ -122,7 +170,7 @@ def align(raw, head=''):
     first_v = V[vstart][2]; last_v = V[eb - 1][2]
     words[-1] = re.sub(r'[,;:]$', '.', words[-1])
     return {'book': book, 'from': first_v, 'to': last_v, 'prefix': prefix, 'text': ' '.join(words), 'omitted': omitted,
-            'tail_left': len(ow) - ea, 'verses': sorted(set(used)), 'midverse': vstart > 0 and V[vstart - 1][2] == V[vstart][2], 'pre_ocr': ' '.join(toks[:a0]), 'matched': sum(b.size for b in blocks), 'n': len(ow)}
+            'tail_left': len(ow) - ea, 'verses': sorted(set(used)), 'midverse': vstart > 0 and V[vstart - 1][2] == V[vstart][2], 'pre_ocr': ' '.join(toks[:a0]), 'ocr0': toks[len(prefix.split())] if prefix and len(prefix.split()) < len(toks) else '', 'matched': sum(b.size for b in blocks), 'n': len(ow)}
 if __name__ == '__main__':
     import sys
     for key in sys.argv[1:]:

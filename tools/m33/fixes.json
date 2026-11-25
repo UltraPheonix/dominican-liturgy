@@ -1,1 +1,158 @@
-{}
+{
+ "Dec24": [
+  {
+   "type": "Lesson",
+   "ref": "Isaias 62: 1-4",
+   "title": "Léctio Isaíæ Prophétæ.",
+   "title_en": "Lesson from the Prophet Isaias.",
+   "la": "Hæc dicit Dóminus Deus: Propter Sion non tacébo, et propter Jerúsalem non quiéscam, donec egrediátur ut splendor justus ejus, et salvátor ejus ut lampas accendátur. Et vidébunt gentes justum tuum, et cuncti reges ínclytum tuum: et vocábitur tibi nomen novum, quod os Dómini nominábit. Et eris coróna glóriæ in manu Dómini, et diadéma regni in manu Dei tui. Non vocáberis ultra Derelícta: et terra tua non vocábitur ámplius Desoláta: sed vocáberis Volúntas mea in ea, et terra tua Inhabitáta: quia complácuit Dómino in te.",
+   "en": "Thus saith the Lord God: For Sion’s sake I will not hold my peace, and for the sake of Jerusalem, I will not rest till her just one come forth as brightness, and her saviour be lighted as a lamp. And the Gentiles shall see thy just one, and all kings thy glorious one: and thou shalt be called by a new name, which the mouth of the Lord shall name. And thou shalt be a crown of glory in the hand of the Lord, and a royal diadem in the hand of thy God. Thou shalt no more be called Forsaken: and thy land shall no more be called Desolate: but thou shalt be called My pleasure in her, and thy land inhabited. Because the Lord hath been well pleased with thee:",
+   "p33": 61
+  },
+  {
+   "type": "Epistle",
+   "ref": "Ad Romanos 1: 1-6",
+   "title": "Léctio Epístolæ beáti Pauli Apóstoli ad Romános.",
+   "title_en": "Lesson from the Epistle of blessed Paul the Apostle to the Romans.",
+   "la": "Paulus, servus Jesu Christi, vocátus Apóstolus, segregátus in Evangélium Dei, quod ante promíserat per prophétas suos in Scriptúris sanctis de Fílio suo, qui factus est ei ex sémine David secúndum carnem, qui prædestinátus est Fílius Dei in virtúte secúndum spíritum sanctificatiónis ex resurrectióne mortuórum Jesu Christi Dómini nostri: per quem accépimus grátiam, et apostolátum ad obediéndum fídei in ómnibus géntibus pro nómine ejus, in quibus estis et vos vocáti Jesu Christi Dómini nostri.",
+   "en": "Paul, a servant of Jesus Christ, called to be an apostle, separated unto the gospel of God, Which he had promised before, by his prophets, in the holy scriptures, Concerning his Son, who was made to him of the seed of David, according to the flesh, Who was predestinated the Son of God in power, according to the spirit of sanctification, by the resurrection of our Lord Jesus Christ from the dead; By whom we have received grace and apostleship for obedience to the faith, in all nations, for his name; Among whom are you also the called of Jesus Christ:",
+   "p33": 61
+  },
+  {
+   "type": "Gospel",
+   "ref": "Matthæus 1: 18-21",
+   "title": "Sequéntia sancti Evangélii secúndum Matthǽum.",
+   "title_en": "Continuation of the holy Gospel according to Matthew.",
+   "la": "Cum esset desponsáta mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu sancto. Joseph autem vir ejus cum esset justus, et nollet eam tradúcere, vóluit occúlte dimíttere eam. Hæc autem eo cogitánte, ecce ángelus Dómini appáruit in somnis ei, dicens: Joseph fili David, noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu sancto est. Páriet autem fílium: et vocábis nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum.",
+   "en": "When as Mary the mother of Jesus was espoused to Joseph, before they came together, she was found with child, of the Holy Ghost. Whereupon Joseph her husband, being a just man, and not willing publicly to expose her, was minded to put her away privately. But while he thought on these things, behold the angel of the Lord appeared to him in his sleep, saying: Joseph, son of David, fear not to take unto thee Mary thy wife, for that which is conceived in her, is of the Holy Ghost. And she shall bring forth a son: and thou shalt call his name JESUS. For he shall save his people from their sins.",
+   "p33": 61
+  }
+ ],
+ "Dec25_1": [
+  {
+   "type": "Lesson",
+   "ref": "Isaias 9: 2, 6-7",
+   "title": "Léctio Isaíæ Prophétæ.",
+   "title_en": "Lesson from the Prophet Isaias.",
+   "la": "Hæc dicit Dóminus: Pópulus, qui ambulábat in ténebris, vidit lucem magnam: habitántibus in regióne umbræ mortis, lux orta est Párvulus enim natus est nobis, et fílius datus est nobis, et factus est principátus super húmerum ejus: et vocábitur nomen ejus, Admirábilis, Consiliárius, Deus, Fortis, Pater futúri sǽculi, Princeps pacis. Multiplicábitur ejus impérium, et pacis non erit finis: super sólium David, et super regnum ejus sedébit, ut confírmet illud et corróboret in judício et justítia, ámodo et usque in sempitérnum.",
+   "en": "Thus saith the Lord: The people that walked in darkness, have seen a great light: to them that dwelt in the region of the shadow of death, light is risen. For a CHILD IS BORN to us, and a son is given to us, and the government is upon his shoulder: and his name shall be called, Wonderful, Counsellor, God the Mighty, the Father of the world to come, the Prince of Peace. His empire shall be multiplied, and there shall be no end of peace: he shall sit upon the throne of David, and upon his kingdom; to establish it and strengthen it with judgment and with justice, from henceforth and for ever: the zeal of the Lord of hosts will perform this.",
+   "p33": 64,
+   "la_fixed": "Hæc dicit Dóminus: Pópulus, qui ambulábat in ténebris, vidit lucem magnam: habitántibus in regióne umbræ mortis, lux orta est Párvulus enim natus est nobis, et fílius datus est nobis, et factus est principátus super húmerum ejus: et vocábitur nomen ejus, Admirábilis, Consiliárius, Deus, Fortis, Pater futúri sǽculi, Princeps pacis. Multiplicábitur ejus impérium, et pacis non erit finis: super sólium David, et super regnum ejus sedébit, ut confírmet illud et corróboret in judício et justítia, ámodo et usque in sempitérnum.",
+   "do": null,
+   "do_sim": 0
+  },
+  {
+   "type": "Epistle",
+   "ref": "Ad Titum 2: 11-15",
+   "title": "Léctio Epístolæ beáti Pauli Apóstoli ad Titum.",
+   "title_en": "Lesson from the Epistle of blessed Paul the Apostle to Titus.",
+   "la": "Caríssime: Appáruit grátia Dei Salvatóris nostri ómnibus homínibus, erúdiens nos, ut abnegántes impietátem, et sæculária desidéria: sóbrie, et juste, et pie vivámus in hoc sǽculo, exspectántes beátam spem, et advéntum glóriæ magni Dei, et Salvatóris nostri Jesu Christi: qui dedit semetípsum pro nobis, ut nos redímeret ab omni iniquitáte, et mundáret sibi pópulum acceptábilem, sectatórem bonórum óperum. Hæc lóquere, et exhortáre: In Christo Jesu Dómino nostro.",
+   "en": "Dearly beloved: The grace of God our Saviour hath appeared to all men; Instructing us, that, denying ungodliness and worldly desires, we should live soberly, and justly, and godly in this world, Looking for the blessed hope and coming of the glory of the great God and our Saviour Jesus Christ, Who gave himself for us, that he might redeem us from all iniquity, and might cleanse to himself a people acceptable, a pursuer of good works. These things speak, and exhort: in Christ Jesus our Lord.",
+   "p33": 64
+  },
+  {
+   "type": "Gospel",
+   "ref": "Lucas 2: 1-14",
+   "title": "Sequéntia sancti Evangélii secúndum Lucam.",
+   "title_en": "Continuation of the holy Gospel according to Luke.",
+   "la": "In illo témpore: Exiit edíctum a Cǽsare Augústo, ut describerétur univérsus orbis. Hæc descríptio prima facta est a prǽside Sýriæ Cyríno: et ibant omnes ut profiteréntur sínguli in suam civitátem. Ascéndit autem et Joseph a Galilǽa de civitáte Názareth in Judǽam, in civitátem David, quæ vocátur Béthlehem: eo quod esset de domo, et família David, ut profiterétur cum María desponsáta sibi uxóre prægnánte. Factum est autem, cum essent ibi, impléti sunt dies ut páreret. Et péperit Fílium suum primogénitum, et pannis eum invólvit, et reclinávit eum in præsépio: quia non erat eis locus in diversório. Et pastóres erant in regióne eádem vigilántes, et custodiéntes vigílias noctis super gregem suum. Et ecce ángelus Dómini stetit juxta illos, et cláritas Dei circumfúlsit illos, et timuérunt timóre magno. Et dixit illis ángelus: Nolíte timére: ecce enim evangelízo vobis gáudium magnum, quod erit omni pópulo: quia natus est vobis hódie Salvátor, qui est Christus Dóminus, in civitáte David. Et hoc vobis signum: inveniétis infántem pannis involútum, et pósitum in præsépio. Et súbito facta est cum ángelo multitúdo milítiæ cæléstis laudántium Deum, et dicéntium: Glória in altíssimis Deo, et in terra pax homínibus bonæ voluntátis.",
+   "en": "At that time: There went out a decree from Caesar Augustus, that the whole world should be enrolled. This enrolling was first made by Cyrinus, the governor of Syria. And all went to be enrolled, every one into his own city. And Joseph also went up from Galilee, out of the city of Nazareth into Judea, to the city of David, which is called Bethlehem: because he was of the house and family of David, To be enrolled with Mary his espoused wife, who was with child. And it came to pass, that when they were there, her days were accomplished, that she should be delivered. And she brought forth her firstborn son, and wrapped him up in swaddling clothes, and laid him in a manger; because there was no room for them in the inn. And there were in the same country shepherds watching, and keeping the night watches over their flock. And behold an angel of the Lord stood by them, and the brightness of God shone round about them; and they feared with a great fear. And the angel said to them: Fear not; for, behold, I bring you good tidings of great joy, that shall be to all the people: For, this day, is born to you a Saviour, who is Christ the Lord, in the city of David. And this shall be a sign unto you. You shall find the infant wrapped in swaddling clothes, and laid in a manger. And suddenly there was with the angel a multitude of the heavenly army, praising God, and saying: Glory to God in the highest; and on earth peace to men of good will.",
+   "p33": 65
+  }
+ ],
+ "Jan1": [
+  {
+   "type": "Epistle",
+   "ref": "Ad Titum 2: 11-15",
+   "title": "Léctio Epístolæ beáti Pauli Apóstoli ad Titum.",
+   "title_en": "Lesson from the Epistle of blessed Paul the Apostle to Titus.",
+   "la": "Caríssime: Appáruit grátia Dei Salvatóris nostri ómnibus homínibus, erúdiens nos, ut abnegántes impietátem, et sæculária desidéria: sóbrie, et juste, et pie vivámus in hoc sǽculo, exspectántes beátam spem, et advéntum glóriæ magni Dei, et Salvatóris nostri Jesu Christi: qui dedit semetípsum pro nobis, ut nos redímeret ab omni iniquitáte, et mundáret sibi pópulum acceptábilem, sectatórem bonórum óperum. Hæc lóquere, et exhortáre: In Christo Jesu Dómino nostro.",
+   "en": "Dearly beloved: The grace of God our Saviour hath appeared to all men; Instructing us, that, denying ungodliness and worldly desires, we should live soberly, and justly, and godly in this world, Looking for the blessed hope and coming of the glory of the great God and our Saviour Jesus Christ, Who gave himself for us, that he might redeem us from all iniquity, and might cleanse to himself a people acceptable, a pursuer of good works. These things speak, and exhort: in Christ Jesus our Lord.",
+   "p33": 73
+  },
+  {
+   "type": "Gospel",
+   "ref": "Lucas 2: 21",
+   "title": "Sequéntia sancti Evangélii secúndum Lucam.",
+   "title_en": "Continuation of the holy Gospel according to Luke.",
+   "la": "In illo témpore: Postquam consummáti sunt dies octo, ut circumciderétur puer, vocátum est nomen ejus Jesus, quod vocátum est ab ángelo priúsquam in útero conciperétur.",
+   "en": "At that time: After eight days were accomplished, that the child should be circumcised, his name was called JESUS, which was called by the angel, before he was conceived in the womb.",
+   "p33": 73,
+   "la_fixed": "In illo témpore: Postquam consummáti sunt dies octo, ut circumciderétur puer, vocátum est nomen ejus Jesus, quod vocátum est ab ángelo priúsquam in útero conciperétur.",
+   "do": "Tempora/Nat2-0.txt",
+   "do_sim": 1.0
+  }
+ ],
+ "Dec25_3": [
+  {
+   "type": "Lesson",
+   "ref": "Isaias 52: 6-10",
+   "title": "Léctio Isaíæ Prophétæ.",
+   "title_en": "Lesson from the Prophet Isaias.",
+   "la": "Hæc dicit Dóminus: Propter hoc sciet pópulus meus nomen meum in die illa: quia ego ipse qui loquébar, ecce adsum. Quam pulchri super montes pedes annuntiántis et prædicántis pacem: annuntiántis bonum, prædicántis salútem, dicéntis Sion: Regnábit Deus tuus! Vox speculatórum tuórum: levavérunt vocem, simul laudábunt: quia óculo ad óculum vidébunt cum convérterit Dóminus Sion. Gaudéte, et laudáte simul desérta Jerúsalem: quia consolátus est Dóminus pópulum suum, redémit Jerúsalem. Parávit Dóminus bráchium sanctum suum in óculis ómnium géntium: et vidébunt omnes fines terræ salutáre Dei nostri.",
+   "en": "Thus saith the Lord: Therefore my people shall know my name in that day: for I myself that spoke, behold I am here. How beautiful upon the mountains are the feet of him that bringeth good tidings, and that preacheth peace: of him that sheweth forth good, that preacheth salvation, that saith to Sion: Thy God shall reign! The voice of thy watchmen: they have lifted up their voice, they shall praise together: for they shall see eye to eye when the Lord shall convert Sion. Rejoice, and give praise together, O ye deserts of Jerusalem: for the Lord hath comforted his people: he hath redeemed Jerusalem. The Lord hath prepared his holy arm in the sight of all the Gentiles: and all the ends of the earth shall see the salvation of our God.",
+   "p33": 68
+  },
+  {
+   "type": "Epistle",
+   "ref": "Ad Hebræos 1: 1-12",
+   "title": "Léctio Epístolæ beáti Pauli Apóstoli ad Hebrǽos.",
+   "title_en": "Lesson from the Epistle of blessed Paul the Apostle to the Hebrews.",
+   "la": "Multifáriam, multísque modis olim Deus loquens pátribus in prophétis: novíssime, diébus istis locútus est nobis in Fílio, quem constítuit herédem universórum, per quem fecit et sǽcula: qui cum sit splendor glóriæ, et figúra substántiæ ejus, portánsque ómnia verbo virtútis suæ, purgatiónem peccatórum fáciens, sedet ad déxteram majestátis in excélsis: tanto mélior ángelis efféctus, quanto differéntius præ illis nomen hereditávit. Cui enim dixit aliquándo angelórum: Fílius meus es tu, ego hódie génui te? Et rursum: Ego ero illi in patrem, et ipse erit mihi in fílium? Et cum íterum introdúcit primogénitum in orbem terræ, dicit: Et adórent eum omnes ángeli Dei. Et ad ángelos quidem dicit: Qui facit ángelos suos spíritus, et minístros suos flammam ignis. Ad Fílium autem: Thronus tuus Deus in sǽculum sǽculi: virga æquitátis, virga regni tui. Dilexísti justítiam, et odísti iniquitátem: proptérea unxit te Deus, Deus tuus, óleo exsultatiónis præ particípibus tuis. Et: Tu in princípio Dómine terram fundásti: et ópera mánuum tuárum sunt cæli. Ipsi períbunt, tu autem permanébis, et omnes ut vestiméntum veteráscent: et velut amíctum mutábis eos, et mutabúntur: tu autem idem ipse es, et anni tui non defícient.",
+   "en": "God, who, at sundry times and in divers manners, spoke in times past to the fathers by the prophets, last of all, In these days hath spoken to us by his Son, whom he hath appointed heir of all things, by whom also he made the world. Who being the brightness of his glory, and the figure of his substance, and upholding all things by the word of his power, making purgation of sins, sitteth on the right hand of the majesty on high. Being made so much better than the angels, as he hath inherited a more excellent name than they. For to which of the angels hath he said at any time, Thou art my Son, to day have I begotten thee? And again, I will be to him a Father, and he shall be to me a Son? And again, when he bringeth in the first begotten into the world, he saith: And let all the angels of God adore him. And to the angels indeed he saith: He that maketh his angels spirits, and his ministers a flame of fire. But to the Son: Thy throne, O God, is for ever and ever: a sceptre of justice is the sceptre of thy kingdom. Thou hast loved justice, and hated iniquity: therefore God, thy God, hath anointed thee with the oil of gladness above thy fellows. And: Thou in the beginning, O Lord, didst found the earth: and the works of thy hands are the heavens. They shall perish, but thou shalt continue: and they shall all grow old as a garment. And as a vesture shalt thou change them, and they shall be changed: but thou art the selfsame, and thy years shall not fail.",
+   "p33": 68
+  },
+  {
+   "type": "Gospel",
+   "ref": "Joannes 1: 1-14",
+   "title": "Inítium sancti Evangélii secúndum Joánnem.",
+   "title_en": "The beginning of the holy Gospel according to John.",
+   "la": "In princípio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum. Hoc erat in princípio apud Deum. Omnia per ipsum facta sunt: et sine ipso factum est nihil, quod factum est. In ipso vita erat, et vita erat lux hóminum: et lux in ténebris lucet, et ténebræ eam non comprehendérunt. Fuit homo missus a Deo, cui nomen erat Joánnes. Hic venit in testimónium ut testimónium perhibéret de lúmine, ut omnes créderent per illum. Non erat ille lux, sed ut testimónium perhibéret de lúmine. Erat lux vera, quæ illúminat omnem hóminem veniéntem in hunc mundum. In mundo erat, et mundus per ipsum factus est, et mundus eum non cognóvit. In própria venit, et sui eum non recepérunt. Quotquot autem recepérunt eum, dedit eis potestátem fílios Dei fíeri, his, qui credunt in nómine ejus: qui non ex sanguínibus, neque ex voluntáte carnis, neque ex voluntáte viri, sed ex Deo nati sunt. Et Verbum caro factum est, et habitávit in nobis: et vídimus glóriam ejus, glóriam quasi Unigéniti a Patre plenum grátiæ, et veritátis.",
+   "en": "In the beginning was the Word, and the Word was with God, and the Word was God. The same was in the beginning with God. All things were made by him: and without him was made nothing that was made. In him was life, and the life was the light of men. And the light shineth in darkness, and the darkness did not comprehend it. There was a man sent from God, whose name was John. This man came for a witness, to give testimony of the light, that all men might believe through him. He was not the light, but was to give testimony of the light. That was the true light, which enlighteneth every man that cometh into this world. He was in the world, and the world was made by him, and the world knew him not. He came unto his own, and his own received him not. But as many as received him, he gave them power to be made the sons of God, to them that believe in his name. Who are born, not of blood, nor of the will of the flesh, nor of the will of man, but of God. And the Word was made flesh, and dwelt among us, (and we saw his glory, the glory as it were of the only begotten of the Father,) full of grace and truth.",
+   "p33": 69
+  }
+ ],
+ "Jan5a": [
+  {
+   "type": "Epistle",
+   "ref": "Ad Galatas 4: 1-7",
+   "title": "Léctio Epístolæ beáti Pauli Apóstoli ad Gálatas.",
+   "title_en": "Lesson from the Epistle of blessed Paul the Apostle to the Galatians.",
+   "la": "Fratres: Quanto témpore heres párvulus est, nihil differt a servo, cum sit dóminus ómnium: sed sub tutóribus, et actóribus est usque ad præfinítum tempus a patre: ita et nos cum essémus párvuli, sub eleméntis mundi erámus serviéntes. At ubi venit plenitúdo témporis, misit Deus Fílium suum factum ex mulíere, factum sub lege, ut eos, qui sub lege erant, redímeret, ut adoptiónem filiórum reciperémus. Quóniam autem estis fílii, misit Deus Spíritum Fílii sui in corda vestra clamántem: Abba, Pater. Itaque jam non est servus, sed fílius: quod si fílius, et heres per Deum.",
+   "en": "Brethren: as long as the heir is a child, he differeth nothing from a servant, though he be lord of all; But is under tutors and governors until the time appointed by the father: So we also, when we were children, were serving under the elements of the world. But when the fulness of the time was come, God sent his Son, made of a woman, made under the law: That he might redeem them who were under the law: that we might receive the adoption of sons. And because you are sons, God hath sent the Spirit of his Son into your hearts, crying: Abba, Father. Therefore now he is not a servant, but a son. And if a son, an heir also through God.",
+   "p33": 75
+  },
+  {
+   "type": "Gospel",
+   "ref": "Matthæus 2: 19-23",
+   "title": "Sequéntia sancti Evangélii secúndum Matthǽum.",
+   "title_en": "Continuation of the holy Gospel according to Matthew.",
+   "la": "In illo témpore: Defúncto Heróde, ecce ángelus Dómini appáruit in somnis Joseph in Ægýpto, dicens: Surge, et áccipe púerum, et matrem ejus, et vade in terram Israël: defúncti sunt enim, qui quærébant ánimam púeri. Qui consúrgens, accépit púerum, et matrem ejus, et venit in terram Israël. Audiens autem quod Archeláus regnáret in Judǽa pro Heróde patre suo, tímuit illo ire: et admónitus in somnis, secéssit in partes Galilǽæ. Et véniens habitávit in civitáte, quæ vocátur Názareth: ut adimplerétur quod dictum est per prophétas: Quóniam Nazarǽus vocábitur.",
+   "en": "At that time: When Herod was dead, behold an angel of the Lord appeared in sleep to Joseph in Egypt, Saying: Arise, and take the child and his mother, and go into the land of Israel. For they are dead that sought the life of the child. Who arose, and took the child and his mother, and came into the land of Israel. But hearing that Archelaus reigned in Judea in the room of Herod his father, he was afraid to go thither: and being warned in sleep retired into the quarters of Galilee. And coming he dwelt in a city called Nazareth: that it might be fulfilled which was said by prophets: That he shall be called a Nazarene.",
+   "p33": 75
+  }
+ ],
+ "Epi1": [
+  {
+   "type": "Epistle",
+   "ref": "Ad Colossenses 3: 12-17",
+   "title": "Léctio Epístolæ beáti Pauli Apóstoli ad Colossénses.",
+   "title_en": "Lesson from the Epistle of blessed Paul the Apostle to the Colossians.",
+   "la": "Fratres: Indúite vos sicut elécti Dei, sancti, et dilécti, víscera misericórdiæ, benignitátem, humilitátem, modéstiam, patiéntiam: supportántes ínvicem, et donántes vobismetípsis si quis advérsus áliquem habet querélam: sicut et Dóminus donávit vobis, ita et vos. Super ómnia autem hæc, caritátem habéte, quod est vínculum perfectiónis: et pax Christi exsúltet in córdibus vestris, in qua et vocáti estis in uno córpore: et grati estóte. Verbum Christi hábitet in vobis abundánter, in omni sapiéntia, docéntes, et commonéntes vosmetípsos, psalmis, hymnis, et cánticis spirituálibus, in grátia cantántes in córdibus vestris Deo. Omne, quodcúmque fácitis in verbo aut in ópere, ómnia in nómine Dómini Jesu Christi, grátias agéntes Deo et Patri per ipsum.",
+   "en": "Brethren: Put ye on therefore, as the elect of God, holy, and beloved, the bowels of mercy, benignity, humility, modesty, patience: Bearing with one another, and forgiving one another, if any have a complaint against another: even as the Lord hath forgiven you, so do you also. But above all these things have charity, which is the bond of perfection: And let the peace of Christ rejoice in your hearts, wherein also you are called in one body: and be ye thankful. Let the word of Christ dwell in you abundantly, in all wisdom: teaching and admonishing one another in psalms, hymns, and spiritual canticles, singing in grace in your hearts to God. All whatsoever you do in word or in work, do all in the name of the Lord Jesus Christ, giving thanks to God and the Father by him.",
+   "p33": 80,
+   "la_fixed": "Fratres: Indúite vos sicut elécti Dei, sancti, et dilécti, víscera misericórdiæ, benignitátem, humilitátem, modéstiam, patiéntiam: supportántes ínvicem, et donántes vobismetípsis si quis advérsus áliquem habet querélam: sicut et Dóminus donávit vobis, ita et vos. Super ómnia autem hæc, caritátem habéte, quod est vínculum perfectiónis: et pax Christi exsúltet in córdibus vestris, in qua et vocáti estis in uno córpore: et grati estóte. Verbum Christi hábitet in vobis abundánter, in omni sapiéntia, docéntes, et commonéntes vosmetípsos, psalmis, hymnis, et cánticis spirituálibus, in grátia cantántes in córdibus vestris Deo. Omne, quodcúmque fácitis in verbo aut in ópere, ómnia in nómine Dómini Jesu Christi, grátias agéntes Deo et Patri per ipsum.",
+   "do": "Tempora/Epi1-0.txt",
+   "do_sim": 0.98
+  },
+  {
+   "type": "Gospel",
+   "ref": "Lucas 2: 42-52",
+   "title": "Sequéntia sancti Evangélii secúndum Lucam.",
+   "title_en": "Continuation of the holy Gospel according to Luke.",
+   "la": "Cum factus esset Jesus annórum duódecim, ascendéntibus illis Jerosólymam secúndum consuetúdinem diéi festi, consummatísque diébus, cum redírent, remánsit puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus. Existimántes autem illum esse in comitátu, venérunt iter diéi, et requirébant eum inter cognátos, et notos. Et non inveniéntes, regréssi sunt in Jerúsalem, requiréntes eum. Et factum est, post tríduum invenérunt illum in templo sedéntem in médio doctórum, audiéntem illos, et interrogántem eos. Stupébant autem omnes, qui eum audiébant, super prudéntia, et respónsis ejus. Et vidéntes admiráti sunt. Et dixit mater ejus ad illum: Fili, quid fecísti nobis sic? ecce pater tuus, et ego doléntes quærebámus te. Et ait ad illos: Quid est quod me quærebátis? nesciebátis quia in his, quæ Patris mei sunt, opórtet me esse? Et ipsi non intellexérunt verbum quod locútus est ad eos. Et descéndit cum eis, et venit Názareth: et erat súbditus illis. Et mater ejus conservábat ómnia verba hæc in corde suo. Et Jesus proficiébat sapiéntia, et ætáte, et grátia apud Deum, et hómines.",
+   "en": "When Jesus was twelve years old, they going up into Jerusalem, according to the custom of the feast, And having fulfilled the days, when they returned, the child Jesus remained in Jerusalem; and his parents knew it not. And thinking that he was in the company, they came a day’s journey, and sought him among their kinsfolks and acquaintance. And not finding him, they returned into Jerusalem, seeking him. And it came to pass, that, after three days, they found him in the temple, sitting in the midst of the doctors, hearing them, and asking them questions. And all that heard him were astonished at his wisdom and his answers. And seeing him, they wondered. And his mother said to him: Son, why hast thou done so to us? behold thy father and I have sought thee sorrowing. And he said to them: How is it that you sought me? did you not know, that I must be about my father’s business? And they understood not the word that he spoke unto them. And he went down with them, and came to Nazareth, and was subject to them. And his mother kept all these words in her heart. And Jesus advanced in wisdom, and age, and grace with God and men.",
+   "p33": 81
+  }
+ ]
+}

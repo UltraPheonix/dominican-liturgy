@@ -102,7 +102,7 @@ title + opening formula e.g. "In illo témpore", "Fratres"). Epi1 Holy Family in
 Pending after: #9 propers audit vs M33 (intr/grad/all/tract/off/comm + orations; data/orations.js partly Roman DO i-spelling);
 #10 full introits (ant+verse+full Gloria Patri in tone+ant repeat; no GP Passiontide/Requiem); #11 Office audit (Compline first:
 "Jube domne", missing chants; then all Hours); #12 UI cleanup; #13 Good Friday Tenebrae (tools/chant/ten/fri/pieces_f.py; OMR via
-tools/chant/ten). Masses not in M33 → leave blank + list for user. Every push: bump sw.js VERSION (now propria-v56), message user.
+tools/chant/ten). Masses not in M33 → leave blank + list for user. Every push: bump sw.js VERSION (now propria-v57), message user.
 
 ## M33 — STATE 2026-11-20 08:00 (LIVE, sw propria-v56). START HERE.
 Rebuild everything with ONE command: `bash tools/m33/run.sh` (sets up /home/claude/m33, M33.pdf, PyMuPDF, DO clone; writes data/readings33.js).
@@ -127,3 +127,13 @@ G587 + 18 "b" (2nd) Masses: S0110b S0111b S0130b S0303b S0401b S0409b S0419b S04
 S1012b S1013b S1107b S1127b S1209b.
 PROMPT TO CONTINUE (paste into a new Claude session): "Repo UltraPheonix/dominican-liturgy (add_repo push, clone /home/claude/dominican-liturgy).
 Read tools/HANDOFF.md last section 'M33 — STATE'. Run bash tools/m33/run.sh, then fix KNOWN BUGS a-c, rerun, push. Same rules as before."
+
+## M33 — 2026-11-25 (sw propria-v57). Step 1 (readings) DONE except the leftovers below.
+run.sh no longer reruns dpmap.py (hand anchors in dpmap.json kept; Jan1 = line 9859, p.73). readings.py: stray short runs far away dropped;
+opening = Missal's own words; hyphen/OCR junk repair ("civi4L tatem", "Ddmi< nus"); drop caps (Fratres, Hæc dicit, Caríssime).
+build_readings.py: reading cut at Alleluia/Dominus vobiscum; same reading copied from a clean copy (by first words); scan-text mode for
+centos when the scan is clean; English formula prefixes. vfix.py = hand-checked readings (page images) -> fixes.json (Dec24, Dec25_1/3,
+Jan1, Jan5a, Epi1); run.sh runs it. run.sh drops any reading with scan junk (site shows the Vulgate there).
+Leftover weak/dropped (show Vulgate): Ecce sacerdos cento (C32s S0510 S0519 S0606 S1104 S1111 S1117 S0530b S0803b S1023b S1126b),
+Apoc 14:13 (S1102*), S0531 S0914 S0919 S1002 G475 Quad6t, and ~9 with scan junk (Quad4h Pent0m S0324 S0325 S0424 S0921 S1208 ...).
+User order of remaining work: step 4 (full introits) -> 5 (Office, Compline first) -> 6 (UI) -> 3 (propers audit) -> 7 (GF Tenebrae).
