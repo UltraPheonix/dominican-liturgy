@@ -234,3 +234,31 @@ Dead and other pieces left as text after dropping Roman melodies; Kyrie of the P
 audit (Joseph's Office list B-F); rubric engine (pre-1955 ranks) for Compline psalms, preces, Te lucis ranks.
 GitHub Pages: a 'pages build and deployment' run can fail with a GitHub 500 ("Failed to create deployment") when pushes come fast;
 the next push or `gh run rerun <id> -R UltraPheonix/dominican-liturgy` redeploys.
+
+## Compline perfected against Completorium O.P. 1949 (C49) — 2026-11-25 (v72–v76)
+Source scans: /tmp/c49/C49.pdf; OCR (tesseract ita) of pp. 1–119 in /tmp/c49/ocr/pNNN.txt (+ .png at 300 dpi);
+/tmp/c49/clean.py A B prints the text of pages A–B. Page n ↔ pdf index (n-22)//2+18 (left half even, right half odd).
+Done:
+- Opening (pp. 1–4): Jube/Noctem, lesson, Adjutorium, Converte, Deus in adjutorium, Laus tibi/Alleluia measured (js/tones.js FIXED, f3).
+- Prayer tone (p. 20): colon = metrum, semicolon = flexa, flexa at the last comma of a long member; simple conclusion ends
+  sæculó(h)rum(f); Dominus vobiscum before Visita and Benedicamus (dvPriest in office.js); Benedicamus f3 h…f f / g g g g h.
+- Psalm tones: III mediant 'k jr j 'i ir j, termination "'j ir h 'j jr ih" (p. 18, 26); Immittet = C49 variant (IIIb), Voce mea VII d,
+  Adjutor meus mapped (6656), Holy Saturday/Easter Alleluias (6688, C49-alleluia1, ending G).
+- Te lucis tunes: tools/chant/telucis_seasonal.py builds C49-telucis-{hn,hn2,hf,tri,cc,scj,bvma,bvmb,epi}: each feast's tune is the
+  melody of its own hymn in the Antiphonarium 1933 (Jesu dulcis memoria, Jesu decus, O lux beata Caelitum, Adesto, Verbum supernum,
+  4884, Aurora soli praevia); Sacred Heart transcribed (pp. 72–73). teLucisTune() chooses by date/title; teLucisText() swaps the
+  doxology (Qui natus / qui apparuisti / Jesu tuis obediens / Qui Corde / Maria Mater gratiae + Qui natus).
+- Lent (pp. 46–48): lentText() adds R. In pace (Sat, Sun, feasts) / In manus; Passiontide In manus without Gloria (C49-inmanus-pass).
+- Holy Week (pp. 55–60): Wednesday without Salve; Thursday/Friday per C49 (Ps 50 on Friday); Holy Saturday = HOLYSAT rows;
+  Easter–Friday four Alleluias; Spiritum nobis to Tuesday (xform() '@x:<hash>:<how>' rows).
+- Our Lady (pp. 74–105): maryText(): Virgo Maria / Sancta Dei Genitrix / Ecce Virgo; Sub tuum on Compassion, Mediatrix, Assumption,
+  Holy Name of Mary, Seven Sorrows; Ecce ancilla on the Annunciation.
+OPEN (Compline):
+- Sanctoral Te lucis tunes pp. 83–117 (Septem Fundatores Nunc dimittis ant., Catherine de Ricci, Thomas, Annunciation, Antoninus,
+  Translation of St Dominic, Precious Blood, Mary Magdalene, St Dominic & Transfiguration, Augustine, Rose, Seven Sorrows, Rosary,
+  Guardian Angels, Francis, Louis Bertrand, Teresa, Christ the King, All Saints (+ octave), All Saints O.P., Thomas patronage,
+  Albert): match each to its feast hymn as above (most are), transcribe the rest.
+- Our Lady in Lent (Christe qui lux + 2 stanzas, p. 77) and in Paschaltide (Jesu nostra + 2 stanzas, p. 78).
+- Proper antiphons without chant: Sancta Dei Genitrix (Ib, p. 81), Compassion/Seven Sorrows Virgo Maria non est ulla (pp. 86, 101).
+- Good Friday Ps 50 should be said without chant; Christus factus est incipit only at the start of the Triduum psalms.
+- Kyrie of the preces notated (p. 19); Salve/O lumen against pp. 118–122.

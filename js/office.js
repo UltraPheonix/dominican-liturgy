@@ -55,7 +55,7 @@
       .replace(/ † /g, ' <span class="r">†</span> ').replace(/ \+ /g, ' <span class="r">✠</span> ');
   }
   function blockText(id, day) { if (id === '@preces-la') return PRECES.la; if (id === '@preces-en') return PRECES.en;
-    var mx = /^@x:([^:]+):(\w+)$/.exec(id); if (mx) return xform(blockText(mx[1], day), mx[2]); return complineSeason(lentText(teLucisText((day.b && day.b[id]) || (common && common[id]) || '', day), day)); }
+    var mx = /^@x:([^:]+):(\w+)$/.exec(id); if (mx) return xform(blockText(mx[1], day), mx[2]); return complineSeason(maryText(lentText(teLucisText((day.b && day.b[id]) || (common && common[id]) || '', day), day), day)); }
   // Compline in Christmastide (Completorium O.P. 1949 pp. 38-39 and the Antiphonarium 1933): In manus with Alleluia daily
   // to the Octave of the Epiphany; at the Nunc dimittis 'Alleluia. Verbum caro' to the Epiphany, then 'Alleluia. Omnes de Saba'.
   // C49 pp. 20-21: the Hebdomadarius (a priest) says Dominus vobiscum before the prayer and the Benedicamus
@@ -106,8 +106,38 @@
     var en = /Chapter/.test(t) ? 1 : 0;
     return t + RESP.head[en] + RESP[k][en];
   }
+  // feasts of Our Lady (C49 pp. 74-80, 81, 86-94, 101-105): the psalms of Sunday under Virgo Maria (or a proper antiphon),
+  // at the Nunc dimittis Corde et animo, or Sub tuum on the feasts that the book names
+  var MARY = {
+    vm: ['Virgo María, non est tibi símilis nata in mundo inter mulíeres, florens ut rosa, fragrans sicut lílium: ora pro nobis, sancta Dei Génitrix.',
+         'O Virgin Mary, none like thee hath been born in the world among women, blooming as the rose, fragrant as the lily: pray for us, holy Mother of God.'],
+    sdg: ['Sancta Dei Génitrix, Virgo semper María, intercéde pro nobis ad Dóminum Deum nostrum.', 'Holy Mother of God, Mary ever Virgin, intercede for us with the Lord our God.'],
+    ev: ['Ecce Virgo concípiet, et páriet Fílium, et vocábitur nomen ejus Emmánuel.', 'Behold, a Virgin shall conceive, and bear a Son, and his name shall be called Emmanuel.'],
+    st: ['Sub tuum præsídium confúgimus, sancta Dei Génitrix: nostras deprecatiónes ne despícias in necessitátibus, sed a perículis cunctis líbera nos semper, Virgo benedícta.',
+         'We fly to thy patronage, O holy Mother of God: despise not our petitions in our necessities, but deliver us always from all dangers, O blessed Virgin.'],
+    ea: ['Ecce ancílla Dómini: fiat mihi secúndum verbum tuum.', 'Behold the handmaid of the Lord: be it done unto me according to thy word.']
+  };
+  function maryAnts(day) {
+    var d = state.date; if (!d || !day) return null;
+    var title = makeToneCtx(day, 'Completorium').title; if (!BVM.test(title) && !/Purificatione|Annuntiatione/.test(title)) return null;
+    var md = (d.getMonth() + 1) * 100 + d.getDate(), f = Math.round((new Date(d.getFullYear(), d.getMonth(), d.getDate()) - easterOf(d.getFullYear())) / 864e5);
+    if (/Purificatione/.test(title) || md === 202 || md === 201) return {ps: 'sdg'};
+    if (/Annuntiatione/.test(title) || md === 325 || md === 324) return {ps: 'ev', nd: 'ea'};
+    var sub = /Assumpt|Nominis Mari|Septem Dolor|Mediatric/.test(title) || [814, 815, 911, 912, 914, 915, 530, 531].indexOf(md) >= 0 || f === -10 || f === -9;
+    return {ps: 'vm', nd: sub ? 'st' : null};
+  }
+  function maryText(t, day) {
+    if (!/<r>Ant\.<\/r> (Miserére|Have mercy)|<r>Ant\.<\/r> (Corde et ánimo|With heart and soul)/.test(t)) return t;
+    var m = maryAnts(day); if (!m) return t;
+    var en = /Have mercy|With heart and soul|<h>Psalms|Psalm \d/.test(t) ? 1 : 0;
+    var nw = {vm: 2, sdg: 1, ev: 2, st: 2, ea: 1}[m.ps], star = function (x) { var w = x.split(' '); return w.slice(0, nw).join(' ') + ' * ' + w.slice(nw).join(' '); };
+    t = t.replace(/<r>Ant\.<\/r> (Miserére \* mihi|Have mercy \* on me)[^\n]*/, '<r>Ant.</r> ' + star(MARY[m.ps][en]))
+         .replace(/<r>Ant\.<\/r> (Miserére mihi|Have mercy on me)[^\n]*/, '<r>Ant.</r> ' + MARY[m.ps][en]);
+    if (m.nd) t = t.replace(/<r>Ant\.<\/r> (Corde et ánimo|With heart and soul)[^\n]*/g, '<r>Ant.</r> ' + MARY[m.nd][en]);
+    return t;
+  }
   function complineSeason(t) {
-    t = dvPriest(t);
+    t = dvPriest(t).replace('florens un rosa', 'florens ut rosa');
     var d = state.date; if (!d || !t || !/In manus tuas|Into thy hands|Salva nos, \*|Protect us, \*/.test(t)) return t;
     var md = (d.getMonth() + 1) * 100 + d.getDate(); if (!(md >= 1225 || md <= 113)) return t;
     t = t.replace('In manus tuas, Dómine, * Comméndo spíritum meum.\nIn manus.\n<r>℣.</r> Redemísti me, Dómine, Deus veritátis. * Comméndo.',
