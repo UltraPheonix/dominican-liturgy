@@ -37,6 +37,7 @@ F['Jan5a'] = [rd('Epistle', 'Ad Galatas', [(4, 1, 7)], 75, ('Fratres', 'Brethren
               rd('Gospel', 'Matthæus', [(2, 19, 23)], 75, ('In illo témpore', 'At that time'), [(r'^Defúncto autem', 'Defúncto')], [(r'^But when Herod was dead', 'When Herod was dead')])]
 F['Epi1'] = [x for x in O['Epi1']['readings'] if x['type'] != 'Gospel'] + [
     rd('Gospel', 'Lucas', [(2, 42, 52)], 81, la_subs=[(r'^Et cum factus esset annórum duódecim', 'Cum factus esset Jesus annórum duódecim')], en_subs=[(r'^And when he was twelve years old', 'When Jesus was twelve years old')])]
+F['C76s'] = [dict(r) for r in O['C75s']['readings']]   # M33 p. 43*: Holy Spirit in Septuagesima, 'cetera ut supra'
 for k, v in F.items():
     for r in v: r.pop('flag', None); r.pop('first', None)
 json.dump(F, open(R + 'tools/m33/fixes.json', 'w'), ensure_ascii=False, indent=1)

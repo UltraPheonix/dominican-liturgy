@@ -173,3 +173,13 @@ some look real, e.g. Quad4h Communion: site "Lutum fecit" (= Wednesday's), M33 p
 Quad2h Communion site "Qui manducat", M33 p.121 "Justus Dominus..."; ChristusRex Communion; AscVig Communion. Check each on the pdf
 page, then fix the chant id in tools/sources (masses.js is generated).
 - Compline chant (v61): short lesson Fratres: Sobrii + Tu autem and the Adjutorium notated from C49 p.2 (js/tones.js FIXED.lectioCompl / adjutorium).
+
+## Step 3 (propers audit) DONE 2026-11-25 (sw v62). All 43 lines + a stricter re-audit (propers_audit.py now checks in/gr/of/co by
+words 2-6 of the gabc text) checked on the page images. Fixes: tools/m33/propers_fix.json -> propers_apply.py (patches data/masses.js,
+idempotent; build_masses.py calls it before writing; '_add_chants' adds new chant entries, e.g. r3596 = Roman-melody Dilexisti gradual,
+no OP melody in GregoBase). Fixed: Jan5a (Lux fulgebit, Benedictus qui venit), Quad1t gr Dirigatur, Quad2h in Deus in adjutorium,
+Quad4h co Domine memorabor, Pent6 of Perfice gressus, AscVig of Ascendit Deus + co Pater cum essem, C11s C18s C30s C35s C39s C42s C45s
+C48s C55s C76s(=Holy Spirit in Septuagesima, M33 p.43*) C82s C104s, G369 (Vigil of Andrew: of Gloria et honore, no Alleluia), G502_3
+(no Alleluia). Afferentur (C45s/C48s) = r1107 Roman melody (none in Graduale O.P.). M33 anchors fixed in dpmap.json: G470 (=S. Pius V
+p.478), G481 (=S. Philip Neri p.493), G502_3 (p.512), C79s (Mass III p.693), ChristusRex (p.618), C76s. absent.json = Masses not in M33
+(C1s Commune Apostolorum: no such Mass in the 1933 Commune; chants kept from the Graduale, readings blank). run.sh: cmp.py optional.

@@ -1,49 +1,102 @@
-# Propers vs Missale O.P. 1933 (OCR) — 43 possible mismatches
+# Propers vs Missale O.P. 1933 — audit (step 3)
 
-The OCR loses drop caps and mixes columns, so each line needs a look at the pdf page before anything is changed.
+propers_audit.py compares words 2-6 of every Introit/Gradual/Offertory/Communion the site sings with the OCR after the heading in M33.
+All 43 lines of the first pass and every line below were checked on the page images. Real mismatches are corrected in
+propers_fix.json (applied by propers_apply.py, also from build_masses.py); M33 anchors in dpmap.json. What is left below is
+OCR noise (lost drop caps, mixed columns, NOHEAD = heading not read) or Masses absent from M33 (C1s Commune Apostolorum).
 
-| Mass | part | site chant | M33 (OCR) | pdf page |
+| Mass | part | site | M33 OCR | pdf p. |
 |---|---|---|---|---|
-| Adv3s | in | Veni et ostende |  Psalm. 79 ENI’ os^nde nobis faciem | 57 |
-| Dec25_1 | in | Dominus dixit |  rt±LLtt±j Psalm. 2 | 65 |
-| Jan5a | in | Dum medium |  h bilis, Deus, Princeps pacis, «uoc^ s’ filius :  | 76 |
-| Epi1 | in | Exsultat gaudio |  Prov. 23 gaudeat Pater tuus et Mater | 81 |
-| 6a | in | Exsurge |  .ZV.KJ U> AVVJI 1^7« M V4MA ** v KZ**X>* x**»w —v | 93 |
-| Quad1t | in | Domine refugium |  Psalm. 89 refu&ium ^tus es | 107 |
-| Quad2h | co | Qui manducat | Justus Domi- r- terra salsuginis, et inhabitabili. | 121 |
-| Quad4h | co | Lutum fecit | Domine memo­ rabor justitiae tuae solius : Deus do | 147 |
-| Quad6m | in | Judica Domine |  sI et exsurge in adjutorium | 168 |
-| Pasc0h | co | Populus acquisitionis | Christus resur­ gens ex mortuis jam non moritur, | 296 |
-| Pent4 | in | Dominus illuminatio |  Psalm. 26 iUuminati° mea, et | 345 |
-| Pent10 | in | Dum clamarem |  Psalm. 54 UM c^amarem ad Dominum, | 352 |
-| ChristusRex | in | Dignus est Agnus |  cogitationes pacis, et non | 375 |
-| ChristusRex | co | Sedebit Dominus | Amen dico vo­ bis, quidquid orantes petitis, credi | 376 |
-| AscVig | co | Inclina aurem tuam | Pater, cum es­ sem cum eis, ego servabam eos, quos | 312 |
-| C1s | of | Mihi autem nimis | In omnem terram exivit sonus eorum : et in fines | 698 |
-| C11s | of | Inveni David | Gloria et ho­ nore coronasti eum : et constituisti | 653 |
-| C11s | co | Posuisti Domine (Com.) | Qui vult venire post me, abneget semetipsum, et to | 653 |
-| C18s | co | Laetabitur justus | Magna est gloria ejus in salutari tuo : gloriam | 656 |
-| C28s | in | Sancti tui |  1 ___________ benedicam nomini tuo in saeculum, e | 660 |
-| C30s | co | Justorum animae (Communio) | Beatus servus, quem cum venerit dominus, invenerit | 662 |
-| C35s | of | Justus ut palma | Veritas mea, et misericordia mea cum ipso : et in | 664 |
-| C39s | of | In virtute tua | Justus ut palma florebit : sicut cedrus, quae in | 665 |
-| C42s | co | Beatus servus | Amen dico vobis, quod vos, qui reliquistis omnia, | 667 |
-| C45s | of | Diffusa est | Afferentur regi virgines post eam : proximae ejus | 669 |
-| C48s | of | Diffusa est | Afferentur regi virgines post eam : proximae ejus | 670 |
-| C48s | co | Simile est | Quinque pru­ dentes virgines acceperunt oleum in | 670 |
-| C55s | of | Filiae regum | Diffusa est gratia in labiis tuis : propterea bene | 673 |
-| C55s | co | Diffusa est | Quinque pru­ dentes virgines acceperunt oleum in | 673 |
-| C62s | co | Quotiescumque | Benedicimus Deum caeli, et coram omnibus vi­ | 679 |
-| C76s | of | Desiderium animae | Benedicite gentes Dominum Deum nostrum, et | 145 |
-| C76s | co | Amen dico vobis quod vos | Lutum fecit ex sputo Dominus, et linivit oculos me | 145 |
-| C79s | of | Recordare Virgo | Felix namque es sacra | 693 |
-| C79s | co | Ave Regina caelorum | Beata viscera Mariae Vir­ | 693 |
-| C104s | co | Memor esto | Multitudo lan­ guentium, et qui vexabantur a spiri | 719 |
-| C114s | in | Requiem (Officium) |  —a EQUIEM aeternam dona eis | 737 |
-| G470 | of | Domine quis habitabit | Ad te Domine levavi animam meam : Deus meus in | 101 |
-| G470 | co | Posuisti ut arcum | Acceptabis sacrificium justitiae, oblationes, et h | 101 |
-| G481 | of | Viam mandatorum | Domine Deus salutis meae, in die clamavi, et nocte | 332 |
-| G481 | co | Cor meum | Non vos relin­ quam orphanos : veniam ad vos ite­ | 332 |
-| G502_3 | in | Dicit Dominus Petro |  populi ego sum, dicit | 133 |
-| G502_3 | of | Mihi autem nimis | Si ambula­ vero in medio tribulationis, vivificabi | 134 |
-| G502_3 | co | Simon Joannis | Tu mandasti mandata tua custodiri nimis: utinam | 134 |
+| Adv2 | gr | NOHEAD | 51 | | |
+| Adv2 | co | NOHEAD | 51 | | |
+| Adv3 | gr | NOHEAD | 52 | | |
+| Adv3w | gr | tollite portas principes uestras eleuamini | prope est dominus omnibus inuocantibus eum omni bus qui inuocant | 54 |
+| Adv3f | in | prope domine omnes uiae tuae | gnoui de testimoniis tuis rittttttt quia in aeternum tu es | 55 |
+| Dec24 | gr | NOHEAD | 61 | | |
+| Dec25_1 | gr | NOHEAD | 65 | | |
+| Dec25_2 | gr | NOHEAD | 67 | | |
+| Dec25_3 | gr | NOHEAD | 69 | | |
+| Nat1 | gr | NOHEAD | 71 | | |
+| Nat1 | of | NOHEAD | 71 | | |
+| Nat1 | co | NOHEAD | 71 | | |
+| Jan1 | gr | NOHEAD | 74 | | |
+| Jan5a | in | lux fulgebit hodie super nos | h bilis deus princeps pacis uoc s filius et heres | 76 |
+| Jan5a | gr | NOHEAD | 76 | | |
+| Epi | gr | NOHEAD | 79 | | |
+| Epi1 | gr | unam petii domino hanc requiram | beati qui habitant in domo tua domine in saecula saeculorum | 81 |
+| Epi1 | of | NOHEAD | 81 | | |
+| Epi3 | gr | NOHEAD | 87 | | |
+| Epi4 | gr | NOHEAD | 88 | | |
+| Epi5 | gr | NOHEAD | 89 | | |
+| 6a | gr | NOHEAD | 93 | | |
+| 5aw | gr | NOHEAD | 98 | | |
+| 5ah | gr | NOHEAD | 100 | | |
+| 5af | gr | NOHEAD | 101 | | |
+| Quad1w | in | reminiscere miserationum tuarum domine misericordiae | eminiscere m sunt ne unquam dominen tur nobis inimici nostri | 108 |
+| Quad1f | gr | NOHEAD | 111 | | |
+| Quad1s | gr | NOHEAD | 113 | | |
+| Quad2 | gr | NOHEAD | 116 | | |
+| Quad2w | co | NOHEAD | 120 | | |
+| Quad2h | gr | NOHEAD | 121 | | |
+| Quad2h | co | qui manducat meam carnem bibit | psalm iustus domi r terra salsuginis et inhabitabili bene uidit | 121 |
+| Quad3 | gr | NOHEAD | 127 | | |
+| Quad3t | gr | NOHEAD | 130 | | |
+| Quad3h | gr | oculi omnium sperant domine das | attendite popule meus legem meam inclinate aurem ue stram in | 133 |
+| Quad4w | gr | NOHEAD | 143 | | |
+| Quad4h | gr | NOHEAD | 146 | | |
+| Quad5 | gr | NOHEAD | 151 | | |
+| Quad5m | gr | NOHEAD | 152 | | |
+| Quad5w | gr | NOHEAD | 155 | | |
+| Quad5f | gr | NOHEAD | 382 | | |
+| Quad6 | of | NOHEAD | 163 | | |
+| Quad6 | co | NOHEAD | 163 | | |
+| Quad6m | in | iudica domine nocentes expugna impugnantes | si et exsurge in adiutorium meum domine uirtus salutis meae | 168 |
+| Quad6m | gr | NOHEAD | 168 | | |
+| Quad6t | gr | ego autem dum mihi molesti | deus misereatur nostri et benedicat nobis illuminet uultum suum super | 169 |
+| Quad6w | of | NOHEAD | 174 | | |
+| Quad6w | co | NOHEAD | 174 | | |
+| Quad6h | gr | christus factus est pro nobis | uoce mea dicta post ultimum psalmum antiphona prior stans ad | 183 |
+| Pasc0 | co | NOHEAD | 291 | | |
+| Pasc0w | co | NOHEAD | 295 | | |
+| Pasc0h | co | populus acquisitionis annuntiate uirtutes eius | rom christus resur gens ex mortuis iam non moritur alleluia | 296 |
+| Pasc6s | of | NOHEAD | 321 | | |
+| Pasc6s | co | NOHEAD | 321 | | |
+| Pent0s | gr | NOHEAD | 330 | | |
+| CorpusChristi | gr | NOHEAD | 337 | | |
+| Pent4 | gr | NOHEAD | 345 | | |
+| Pent7 | co | NOHEAD | 349 | | |
+| Pent8 | gr | NOHEAD | 350 | | |
+| Pent11 | gr | NOHEAD | 354 | | |
+| Pent13 | gr | NOHEAD | 356 | | |
+| Pent14 | gr | NOHEAD | 357 | | |
+| Pent15 | gr | NOHEAD | 358 | | |
+| Pent19 | gr | NOHEAD | 370 | | |
+| Pent20 | gr | NOHEAD | 371 | | |
+| Pent22 | gr | NOHEAD | 374 | | |
+| ChristusRex | in | NOHEAD | 618 | | |
+| Pent23 | gr | NOHEAD | 376 | | |
+| Dedicatio | gr | NOHEAD | 648 | | |
+| C1s | gr | NOHEAD | 697 | | |
+| C1s | of | mihi autem nimis honorati sunt | psalm in omnem terram exiuit sonus eorum et in fines | 698 |
+| C18s | gr | NOHEAD | 655 | | |
+| C28s | co | NOHEAD | 660 | | |
+| C35s | gr | NOHEAD | 663 | | |
+| C42s | gr | domine praeuenisti eum benedictionibus dulcedinis | ascendit deus in iu bilatione et dominus in uoce tubae | 666 |
+| C64s | gr | spiritus domini super propter quod | dicite filiae sion ecce rex tuus uenit tibi mansuetus isa | 683 |
+| C68s | gr | NOHEAD | 684 | | |
+| C75s | gr | NOHEAD | 689 | | |
+| C76s | gr | NOHEAD | 690 | | |
+| C76s | of | NOHEAD | 690 | | |
+| C76s | co | NOHEAD | 690 | | |
+| C79s | gr | benedicta uenerabilis uirgo maria quae | surrexit dominus et occurrens mulieribus ait auete tunc accesserunt et | 693 |
+| C82s | gr | dilectus meus mihi ego illi | sicut dies uerni circum dabant eam flores rosarum et lilia | 695 |
+| C85s | gr | NOHEAD | 700 | | |
+| C93s | gr | NOHEAD | 703 | | |
+| C110s | gr | NOHEAD | 722 | | |
+| C114s | gr | requiem aeternam dona eis domine | si ambulem in medio umbrae mortis non timebo mala quo | 737 |
+| G420 | gr | NOHEAD | 436 | | |
+| G446 | gr | NOHEAD | 456 | | |
+| G470 | gr | iustus palma florebit sicut cedrus | diligam te domine for titudo mea dominus firmamentum meum et | 478 |
+| G481 | gr | NOHEAD | 493 | | |
+| G494 | gr | NOHEAD | 507 | | |
+| G505 | gr | NOHEAD | 515 | | |
