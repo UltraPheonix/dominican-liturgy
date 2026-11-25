@@ -268,3 +268,23 @@ OPEN (Compline):
   Quem terra, Jam Christus astra, Pange lingua … lauream, Urbs beata, Huius obtentu, …): not in the Antiphonarium 1933 —
   take them from Matutinum O.P. 1936 (CMAA site) when doing Matins. Preces at Lauds/Vespers/Prime are not in the 1962-based
   data at all: they come with the pre-1955 rubric engine.
+
+## PLAN — the 1909 Dominican Office (Breviarium S.O.P., Cormier 1909) as a second rubric set — 2026-11-25 (not started)
+Research: the 1909 edition is the last printing of the medieval Dominican Office: its own psalter (e.g. Sunday Prime has
+Ps 21, 22, 23, 24, 25 as of old + 53, 118; Matins, Lauds and the little hours by the old cursus), before the Order took the
+Pius X psalter (Divino afflatu 1911) in the 1920s. Calendar with Totum Duplex / Duplex / Semiduplex / Simplex / iij lectionum,
+Rubricae generales (pdf b1 pp. 40-70: occurrence, concurrence, octaves, commemorations), Psalterium per hebdomadam (pp. 85-),
+Proprium de Tempore, Proprium Sanctorum, Commune; two volumes (b1 1577 pp., b2 ~1300 pp.), scanned, no text layer.
+Sources: Breviarium-1909-1/2-optimized.pdf (CMAA site); Antiphonarium O.P. 1862 (Jandel, 2 vols) for the chant of the old
+psalter (the 1933 Antiphonarium follows the new psalter); the 1933 books still serve for hymns, tones and common pieces.
+OCR: tesseract 'lat' (tessdata_best, installed from raw.githubusercontent.com) on 300 dpi half-pages (two columns) works well.
+Steps:
+ 1. OCR both volumes by column → tools/b09/ocr/*.txt; parser to blocks (rubric, antiphon, psalm ref, hymn, lesson, prayer).
+ 2. Ordinary + Psalter: every Hour for each weekday (1909 cursus), psalm texts reused from the current psalter data (same Vulgate),
+    antiphons/versicles/chapters from the OCR; checked against the scans.
+ 3. Calendar 1909 (ranks, octaves, O.P. saints as of 1909) and a rubric engine: occurrence/concurrence per the Rubricae generales,
+    translation, commemorations, 9 or 3 lessons, Vespers I/II split, preces, Te lucis/hymn tunes by rank. The same engine,
+    with the 1954 rule set, then replaces the 1962-based data for the "1954" Office (the pending rubric-engine task).
+ 4. Proper of Time, then Sanctoral and Commons (OCR → data/office1909/), English from Divinum Officium where texts coincide.
+ 5. Chant: 1862 Antiphonarium (OCR of pages + GregoBase where present; transcription where not), tones from the 1933 books.
+ 6. UI: an "Office: 1909 / 1954" switch in Options; same pages, same chant rendering; checker for a whole year.
