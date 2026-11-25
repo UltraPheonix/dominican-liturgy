@@ -142,6 +142,23 @@
     for (i = 0; i < n; i++) {
       var l = lines[i], t = body(l);
       if (/^<r>Commemoratio/.test(l)) { inComm = true; continue; }
+      // Prime, in chapter: Deus in adjutorium three times, then Gloria Patri (the formula of the opening of the Hours)
+      if (isV(l) && /^Deus ?✠? ?in ad[ij]utórium/.test(t) && i + 7 < n && isR(lines[i + 1]) && /^Deus ?✠? ?in ad[ij]utórium/.test(body(lines[i + 2])) &&
+          /^Deus ?✠? ?in ad[ij]utórium/.test(body(lines[i + 4])) && /^Glória Patri/.test(body(lines[i + 6])) && /^Sicut erat/.test(body(lines[i + 7]))) {
+        var gi = FIXED.deus.indexOf('Gló(h)'), vr = FIXED.deus.slice(0, gi).replace(/^\(f3\) /, '');
+        segs.push({s: i, e: i + 8, kind: 'inc', gabc: '(f3) ' + vr + vr + vr + FIXED.deus.slice(gi).replace(/A\(h\)men\.\(g\) \(::\)$/, 'A(h)men.(g) (::)')});
+        i += 7; continue;
+      }
+      // Kyrie of the chapter office of Prime (as in the Preces, C49 p. 19)
+      if (/^<c>K<\/c>ýrie, eléison\. Christe, eléison\. Kýrie, eléison\.$/.test(l)) { segs.push({s: i, e: i + 1, kind: 'vs', gabc: FIXED.kyrieC}); continue; }
+      // Sancta Maria et omnes Sancti (Prime, after Pretiosa): the simple tone of prayers, with its conclusion
+      if (/^<c>S<\/c>ancta María et omnes Sancti/.test(l) && i + 1 < n && isR(lines[i + 1]) && /Amen/.test(body(lines[i + 1]))) {
+        segs.push({s: i, e: i + 2, kind: 'or', gabc: '(f3) ' + conclusion(plain(l), false)}); i++; continue;
+      }
+      // the blessing before the Rule or the Gospel at Prime (no 'Benedictio.' label in the text)
+      if (isV(l) && /^[IJ]ube,? domne/.test(t) && i + 2 < n && !/^</.test(lines[i + 1]) && isR(lines[i + 2]) && /Amen/.test(body(lines[i + 2]))) {
+        segs.push({s: i, e: i + 3, kind: 'bl', gabc: FIXED.iube + ' ' + blessing(plain(lines[i + 1])).replace(/^\(f3\) /, '')}); i += 2; continue;
+      }
       // opening of the Hour
       if (isV(l) && /^Deus ?✠? ?in ad[ij]utórium/.test(t)) {
         j = i + 1;
@@ -173,7 +190,7 @@
       if (/^Fratres: Sóbrii estóte/.test(plain(l)) && i + 1 < n && isR(lines[i + 1]) && /Deo grátias/.test(plain(lines[i + 1]))) {
         segs.push({s: i, e: i + 2, kind: 'cap', gabc: FIXED.lectioCompl}); i++; continue;
       }
-      if (isV(l) && /^Ad[ij]utórium nostrum/.test(t) && ctx.hour === 'Completorium' && i + 1 < n && isR(lines[i + 1])) {
+      if (isV(l) && /^Ad[ij]utórium nostrum ?✠? ?in nómine/.test(t) && (ctx.hour === 'Completorium' || ctx.hour === 'Prima') && i + 1 < n && isR(lines[i + 1])) {
         segs.push({s: i, e: i + 2, kind: 'inc', gabc: FIXED.adjutorium}); i++; continue;
       }
       if (isV(l) && /^Convérte nos/.test(t) && i + 1 < n && isR(lines[i + 1])) {
@@ -185,8 +202,9 @@
         var pre = dv ? (sol ? FIXED.dvSol : FIXED.dvSim) : (sol ? FIXED.deSol : FIXED.deSim);
         // is a prayer coming?
         j = i + 2;
-        if (j < n && /Orémus/.test(plain(lines[j]))) {
-          var k = j + 1, bodyTxt = [], concl = null;
+        var noOr = j < n && /^<c>[A-Z]<\/c>/.test(lines[j]) && !/Orémus/.test(plain(lines[j]));   // Prime in chapter: the prayer without Oremus
+        if (j < n && (/Orémus/.test(plain(lines[j])) || noOr)) {
+          var k = noOr ? j : j + 1, bodyTxt = [], concl = null;
           while (k < n && !isR(lines[k]) && plain(lines[k])) {
             var pl = plain(lines[k]);
             if (/^(Per |Qui vivis|Qui tecum|Qui cum Patre|Qui vivit)/.test(pl) && /sæculórum|nostrum\.?$/.test(pl)) concl = pl;
@@ -194,7 +212,7 @@
             k++;
           }
           if (k < n && isR(lines[k]) && /Amen/.test(plain(lines[k]))) {
-            var g = pre + ' ' + (sol ? FIXED.oremusSol : FIXED.oremusSim).replace(/^\(f3\) /, '') + ' ' +
+            var g = pre + ' ' + (noOr ? '' : (sol ? FIXED.oremusSol : FIXED.oremusSim).replace(/^\(f3\) /, '') + ' ') +
               prayerBody(bodyTxt.join(' ')) + (concl ? conclusion(concl, sol) : FIXED.amen);
             segs.push({s: i, e: k + 1, kind: 'or', gabc: g}); i = k; continue;
           }
@@ -205,7 +223,8 @@
       if (/^(<c>O<\/c>)?rémus\.?$|^Orémus\.?$/.test(plain(l)) || plain(l) === 'Orémus.') {
         var k2 = i + 1, bt = [], cc = null;
         while (k2 < n && !isR(lines[k2]) && plain(lines[k2])) {
-          var p2 = plain(lines[k2]);
+          var p2 = plain(lines[k2]), mi = /^(.*[:;,.]) (Qui vivis et regnas in sǽcula sæculórum\.)$/.exec(p2);
+          if (mi) { bt.push(mi[1]); cc = mi[2]; k2++; continue; }
           if (/^(Per |Qui vivis|Qui tecum|Qui cum Patre|Qui vivit)/.test(p2) && /sæculórum|nostrum\.?$/.test(p2)) cc = p2; else bt.push(p2);
           k2++;
         }
