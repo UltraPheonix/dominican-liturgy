@@ -11,6 +11,8 @@ def apply(data):
         parts = data['masses'][k].setdefault('parts', {})
         for p, ids in v.items():
             if p == 'p33': continue
+            if p == 'lent_tr':   # Tract 'infra Septuagesimam' (the Alleluia is then dropped by the app)
+                data['masses'][k].setdefault('season', {}).setdefault('lent', {})['tr'] = [{'id': i, 'm33': v['p33']} for i in ids]; n += 1; continue
             if not ids: parts.pop(p, None); n += 1; continue
             parts[p] = [{'id': i, 'm33': v['p33']} for i in ids]; n += 1
             for i in ids: assert str(i) in data['chants'], (k, p, i)

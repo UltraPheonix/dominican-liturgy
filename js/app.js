@@ -190,8 +190,45 @@
     if (k < 0) return gabc.slice(0, m.index) + '(::)';
     return gabc.slice(0, m.index) + '(::)' + gabc.slice(k + 4);
   }
-  function exsurgeGabc(gabc) {
-    if (currentSeason() !== 'pasch' && !/^(Pasc|Asc|AscVig|Litaniis|Pent0)/.test(state.key || '')) gabc = stripTP(gabc);
+  // Seasonal form of a sung proper (XIII, 1-7):
+  //  - "E. T. P." / "Extra T. P.": outside Paschaltide the printed alternative ending replaces the last words and the Alleluia;
+  //  - outside Paschaltide the Alleluia that the Graduale adds for Paschaltide (often unmarked) is not sung in the Introit,
+  //    Offertory and Communion, except where it belongs to the chant all year (KEEP_AL, checked in the Missale O.P. 1933);
+  //  - from Septuagesima to Easter no Alleluia at all.
+  var B = '(?:\\s*\\([,;:]\\d?\\))?';
+  var AL = B + '\\s*(?:T\\.\\s?P\\.\\s*)?[Aa]l\\([^)]*\\)\\s*le\\([^)]*\\)\\s*l[úu]\\([^)]*\\)\\s*[ij]a[.,;:!]?\\([^)]*\\)' + B;
+  function stripAlleluia(g) {
+    var re = new RegExp('([^\\s()]+?)([,;:]?)(\\([^)]*\\)(?:\\s*\\([^)]*\\))*?)((?:' + AL + ')+)\\s*(\\(::\\)|$)?', 'g'), end = g.replace(/\s+$/, '').length;
+    g = g.replace(re, function (m, syl, p, notes, run, bar, off) {
+      if (bar === undefined && off + m.replace(/\s+$/, '').length < end) return syl + p + notes + ' (;) ';   // inside the chant
+      return syl + (/[.!?]$/.test(syl) ? '' : '.') + notes + ' (::)';
+    });
+    return g.replace(new RegExp('\\(::\\)(?:' + AL + ')+\\s*(\\(::\\)|$)', 'g'), '(::)').replace(/\(;\)\s*(\([:;,]\d?\))/g, '$1').replace(/\s+\(;\)\s*$/, ' (::)').replace(/\(::\)(\s*\(::\))+/g, '(::)');
+  }
+  // "E. T. P." / "Extra T. P.": the ending sung outside Paschaltide replaces the last words and the Alleluia
+  function etp(g, pasch) {
+    var m = /<i>\s*(?:E\.?\s*T\.?\s*P\.?|Extra\s*T\.?\s*P\.?):?\s*<\/i>(?:\([^)]*\))?\s*/.exec(g); if (!m) return g;
+    var head = g.slice(0, m.index).replace(/\s+$/, ''), tail = g.slice(m.index + m[0].length).replace(/^\*\s*(\([^)]*\))?\s*/, '');
+    if (pasch) return head;
+    var n = tail.split(/\s+/).filter(function (w) { return /[A-Za-zÀ-ÿæœ]\(/.test(w); }).length;
+    var toks = stripAlleluia(head).replace(/\s*\(::\)\s*$/, '').split(/\s+/);
+    while (n > 0 && toks.length) { var t = toks.pop(); if (/[A-Za-zÀ-ÿæœ]\(/.test(t)) n--; }
+    while (toks.length && /^(\*?\([^)]*\)|\*)$/.test(toks[toks.length - 1])) toks.pop();
+    return toks.join(' ') + ' ' + tail;
+  }
+
+  var KEEP_AL = {Epi2: 'of', C75s: 'in of co', S0806: 'co', CorpusChristi: 'in', C62s: 'in'};
+  function seasonalGabc(gabc, part) {
+    var key = state.key || '', pasch = paschal(), lent = !pasch && currentSeason() === 'lent';
+    gabc = etp(gabc, pasch);
+    if (pasch) return gabc;
+    gabc = stripTP(gabc);
+    if (!/^(in|of|co)$/.test(part || '')) return gabc;
+    if (!lent && KEEP_AL[key] && KEEP_AL[key].split(' ').indexOf(part) >= 0) return gabc;
+    return stripAlleluia(gabc);
+  }
+  function exsurgeGabc(gabc, part) {
+    gabc = seasonalGabc(gabc, part);
     return gabc
       // verbatim LaTeX the renderer cannot read: accented y, emphasised rubrics, braces
       .replace(/<v>\\'y<\/v>/g, 'ý').replace(/<v>\\'Y<\/v>/g, 'Ý').replace(/<v>([A-Za-z])<\/v>/g, '$1')
@@ -233,7 +270,7 @@
       return new Promise(function (resolve) {
         try {
           var ctxt = makeContext(o);
-          var gabc = exsurgeGabc(body);
+          var gabc = exsurgeGabc(body, part);
           var mappings = exsurge.Gabc.createMappingsFromSource(ctxt, gabc);
           var dropCap = o.noDrop ? false : header['initial-style'] !== '0';
           var score = new exsurge.ChantScore(ctxt, mappings, dropCap);
@@ -347,7 +384,8 @@
       ['in', 'of', 'co'].forEach(function (p) { if (se.pasch[p]) parts[p] = se.pasch[p].slice(); });
     }
     if (s !== 'lent' && !temporal) parts.tr = parts.al.length ? [] : parts.tr;
-    if (s === 'lent' && !temporal && parts.tr.length) parts.al = [];   // from Septuagesima the Tract replaces the Alleluia (XIII, 7)
+    if (s === 'lent') parts.al = [];   // from Septuagesima no Alleluia at all; the Tract (if any) takes its place (XIII, 7)
+    if (s !== 'pasch' && !temporal && parts.al.length > 1 && !/Tempore Paschali/.test(m.title || '')) parts.al = parts.al.slice(0, 1);   // the second Alleluia is the Paschal one
     var d = state.date;
     if (ferialUseOfSunday(key, d)) {
       if (/^Pasc/.test(key)) {
@@ -524,11 +562,23 @@
   }
 
   // ---------------------------------------------------------------- the page
+  function occursOn(key, d) { var r = massesOf(d); return r.temp.concat(r.feasts, r.beati).indexOf(key) >= 0; }
+  function nextDateOf(key) {
+    var d0 = new Date(); d0.setHours(12, 0, 0, 0);
+    for (var i = 0; i < 400; i++) { var d = addDays(d0, i); if (occursOn(key, d)) return d; }
+    return null;
+  }
   function showMass(key, over) {
     var m = D.masses[key];
     if (!m) return;
     state.key = key;
     state.edited = {};
+    // a Mass picked from the list is shown for the next day it is said (a Sunday Mass on its Sunday, with its Alleluia
+    // and its Preface), not for whatever day happens to be selected
+    if (!state.date || !occursOn(key, state.date)) {
+      state.date = nextDateOf(key);
+      if ($('#date')) $('#date').value = state.date ? iso(state.date) : '';
+    }
     var def = massParts(key);
     state.parts = {};
     PARTS.forEach(function (p) {
@@ -647,10 +697,22 @@
       return (md >= 1225 || (md && md <= 202)) ? 'Nativitate' : 'B. Maria Virgine';
     }
     if (key === 'Pent1') return d && d.getDay() !== 0 ? 'Communis' : 'SS. Trinitate';
-    var s = d ? seasonPreface(d) : null;
+    var s = d ? seasonPreface(d) : keyPreface(key);
     if (s) return s;
-    if (d && d.getDay() === 0 && temporal) return 'SS. Trinitate';
+    if (isSundayMass(key, d)) return 'SS. Trinitate';
     return 'Communis';
+  }
+  // a Sunday Mass sung on its Sunday (or opened without a date): never the ferial Preface or tone
+  var SUNDAY_KEY = /^(Adv[1-4]|Nat[12]|Epi[1-6]r?|7a|6a|5a|Quad[1-6]|Pasc[0-6]|Pent\d+)$/;
+  function isSundayMass(key, d) { return SUNDAY_KEY.test(key) && (!d || d.getDay() === 0); }
+  function keyPreface(key) {
+    if (/^Nat/.test(key)) return 'Nativitate';
+    if (/^Quad[1-4]/.test(key)) return 'Quadragesima';
+    if (/^Quad[56]/.test(key)) return 'Sancta Cruce';
+    if (/^Pasc[0-5]/.test(key)) return 'Paschalis';
+    if (/^Pasc6/.test(key)) return 'Ascensione';
+    if (/^Pent0/.test(key)) return 'Spiritu Sancto';
+    return null;
   }
   var BVM_WORD = [[/Annuntiat/, 'Annuntiatióne', 'Annunciation'], [/Visitat/, 'Visitatióne', 'Visitation'], [/Assumpt/, 'Assumptióne', 'Assumption'],
     [/Nativit/, 'Nativitáte', 'Nativity'], [/Pr(ae|æ)sentat/, 'Præsentatióne', 'Presentation'], [/Concept/, 'Conceptióne immaculáta', 'Immaculate Conception'],
@@ -687,7 +749,7 @@
   function prefaceChant(name, key, d) {
     var slug = PREF_SLUG[name]; if (!slug) return null;
     var c = isTemporal(key) ? temporalClass(key, d) : feastClass(key);
-    var tone = name === 'Defunctorum' ? 'ferial' : (c <= 2 || !PREF_FERIAL[name] ? 'solemn' : 'ferial');
+    var tone = name === 'Defunctorum' ? 'ferial' : (c <= 2 || isSundayMass(key, d) || !PREF_FERIAL[name] ? 'solemn' : 'ferial');
     var f = d ? diffDays(d, easter(d.getFullYear())) : 10;
     if (name === 'Paschalis' && tone === 'solemn') slug = 'paschalis-die';
     var fix = function (b) {
@@ -1389,7 +1451,7 @@
       .replace(/\s*E\s*u\s*o\s*u\s*a\s*e\.?\s*$/g, '')
       .trim();
   }
-  function paschal() { return currentSeason() === 'pasch' || /^(Pasc|Asc|AscVig|Litaniis|Pent0)/.test(state.key || ''); }
+  function paschal() { return currentSeason() === 'pasch' || /^(Pasc|Asc|AscVig|Litaniis|Pent0)/.test(state.key || '') || (state.key && D.masses[state.key] && /Tempore Paschali/.test(D.masses[state.key].title || '')); }
   function trimTPText(t) {
     if (paschal()) return t;
     return t.replace(/\s*T\.\s?P\.\s*Alleluia,?\s*alleluia!?/g, '').replace(/,?\s*alleluia[!.]?\s*(?=(℣\.|Glory be|$))/gi, '. ').replace(/\.\s*\./g, '.').trim();
@@ -1397,7 +1459,7 @@
   function chantLatin(id) {
     return loadGabc(id).then(function (t) {
       var b = splitGabc(t).body;
-      if (!paschal()) b = stripTP(b);
+      b = seasonalGabc(b, (D.chants[id] || {}).p);
       return gabcText(b);
     }, function () { return ''; });
   }
