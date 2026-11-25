@@ -332,3 +332,8 @@ Tools: OCR with tesseract 'latf'/'lat' (tessdata from raw.githubusercontent.com/
   O.P. Antiphonarium pro Liturgia Horarum (post-1970). Each chant carries a siglum: AG (AM 1933), AJ (Jandel 1867-70),
   MG (Matutinum 1936), AN (Nocturnale S.O.P., ed. Ammosaulicus, Bonn 2006 — traditional O.P. Matins; not yet obtained).
   Pieces with AG/AJ/MG/AN sigla and the same text may be used as printed Dominican melodies (transcribe from the scans).
+- Joseph's Google Drive (Drive connector) has the 1909 Breviary as "cropped" PDFs (shared by olotac@gmail.com):
+  prior pp. 1-768 = 1HRo3g0vtYa72N_ad4Nn50aIKH8HFVbnU (235 MB); prior pp. 769-1577 = 1Qd4tK1MbESCGPcrv_b4YiV2VmYmIJu0S (250 MB);
+  posterior pp. 1-481 = 1tRQFd_fEUhJEJrulKKcuQXsVK2dF7sOT (141 MB); posterior pp. 482-end not found. Text layer not yet checked
+  (too large for the Drive tool's base64 download: ask Joseph to attach them, or use the CMAA scans + tools/b09/ocr09.py).
+  Also matutinum-1936-gillet (1).pdf = 1w2PdWfEHZACazKofEG8YlPY1C9wz73nd. No Nocturnale S.O.P. (2006) in the Drive.
