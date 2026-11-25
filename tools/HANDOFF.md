@@ -102,7 +102,7 @@ title + opening formula e.g. "In illo témpore", "Fratres"). Epi1 Holy Family in
 Pending after: #9 propers audit vs M33 (intr/grad/all/tract/off/comm + orations; data/orations.js partly Roman DO i-spelling);
 #10 full introits (ant+verse+full Gloria Patri in tone+ant repeat; no GP Passiontide/Requiem); #11 Office audit (Compline first:
 "Jube domne", missing chants; then all Hours); #12 UI cleanup; #13 Good Friday Tenebrae (tools/chant/ten/fri/pieces_f.py; OMR via
-tools/chant/ten). Masses not in M33 → leave blank + list for user. Every push: bump sw.js VERSION (now propria-v59), message user.
+tools/chant/ten). Masses not in M33 → leave blank + list for user. Every push: bump sw.js VERSION (now propria-v60), message user.
 
 ## M33 — STATE 2026-11-20 08:00 (LIVE, sw propria-v56). START HERE.
 Rebuild everything with ONE command: `bash tools/m33/run.sh` (sets up /home/claude/m33, M33.pdf, PyMuPDF, DO clone; writes data/readings33.js).
@@ -159,3 +159,10 @@ OFFICE STILL TO DO (big): the Office data is Divinum Officium "Ordo Praedicatoru
 ranks (Totum Duplex, Duplex, Semiduplex, Simplex), Compline Sunday psalms on Doubles I/II cl., feasts of the Lord, BVM, Apostles
 etc. (C49 p.7), Preces at Compline/Hours, Te lucis tunes by rank/season (C49 pp.9-17), Marian Te lucis doxology on BVM feasts,
 weekday psalm antiphons (C49 p.22ff) vs current. Needs either DO pre-1955 OP data or a rubric layer; then audit every Hour.
+
+## Step 6 UI (sw v60): Report-an-error button hides while scrolling, smaller on phones (it covered the chant); Holy Week day tabs fade
+at the right edge on phones (more days to swipe). FOUND, NOT DONE (needs a decision / big): the Mass calendar and the Office use the
+1960 rubrics (I-IV class, "III class" shown in headers; data/ordo.js "Missale O.P. 1933, with the rubrics of 1960"; Office = DO
+OP 1962), and Holy Week has a "Reformed 1959" toggle — all conflict with "pre-1955 OP rite only". Pre-1955 needs the old ranks
+(Totum Duplex / Duplex / Semiduplex / Simplex, Sundays I/II class), octaves, commemorations, preces: a rubric engine of its own.
+Remaining after that: step 3 propers audit vs M33, step 7 Good Friday Tenebrae.

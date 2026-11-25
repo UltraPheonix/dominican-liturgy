@@ -267,6 +267,9 @@ body:not(.en-tap) .tap-hint { display: none; }
 .report-btn { position: fixed; right: 14px; bottom: 14px; z-index: 50; padding: 6px 12px; border: 1px solid var(--line); border-radius: 16px;
   background: var(--paper); color: var(--muted); font: italic 14px/1.2 inherit; font-family: inherit; box-shadow: 0 1px 4px rgba(0,0,0,.08); cursor: pointer; }
 .report-btn:hover { color: var(--rubric); border-color: var(--rubric); }
+.report-btn { transition: opacity .25s, transform .25s; }
+.report-btn.rb-away { opacity: 0; transform: translateY(12px); pointer-events: none; }   /* out of the way while reading/scrolling */
+@media (max-width: 600px) { .report-btn { right: 10px; bottom: 10px; padding: 4px 10px; font-size: 12.5px; opacity: .85; } }
 .report-dlg { max-width: 420px; width: calc(100% - 32px); border: 1px solid var(--line); padding: 22px 24px 18px; background: var(--paper); color: var(--ink); }
 .report-dlg::backdrop { background: rgba(0,0,0,.35); }
 .report-dlg h2 { font-family: var(--caps); font-weight: 500; letter-spacing: .08em; color: var(--rubric); font-size: 21px; margin: 0 0 10px; }
@@ -343,6 +346,7 @@ body.sheet-open { overflow: hidden; }
 .hw-rite button.on { background: var(--ink); color: var(--paper); }
 .hw-days { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--line); }
 .hw-days::-webkit-scrollbar { display: none; }
+@media (max-width: 600px) { .hw-days { -webkit-mask-image: linear-gradient(to right, #000 82%, transparent); mask-image: linear-gradient(to right, #000 82%, transparent); } }
 .hw-days button { flex: none; background: none; border: 0; border-bottom: 2px solid transparent; color: var(--muted); padding: 6px 10px 7px; text-align: left; line-height: 1.2; margin-bottom: -1px; }
 .hw-days button span { display: none; }
 .hw-days button small { display: block; font-family: var(--caps); letter-spacing: .08em; font-size: 15px; }

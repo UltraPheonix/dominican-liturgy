@@ -55,6 +55,12 @@
     if (document.getElementById('reportBtn')) return;
     var b = document.createElement('button');
     b.type = 'button'; b.id = 'reportBtn'; b.className = 'report-btn hide-print'; b.textContent = 'Report an error';
+    // hidden while the page is being scrolled, back when the reader stops (it covered the chant on phones)
+    var rbT = null;
+    window.addEventListener('scroll', function () {
+      b.classList.add('rb-away'); clearTimeout(rbT);
+      rbT = setTimeout(function () { b.classList.remove('rb-away'); }, 1500);
+    }, {passive: true});
     var d = document.createElement('dialog');
     d.className = 'report-dlg'; d.setAttribute('aria-labelledby', 'reportTitle');
     d.innerHTML = '<h2 id="reportTitle">Report an error</h2>' +
