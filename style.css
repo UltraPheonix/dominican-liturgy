@@ -314,6 +314,7 @@ body:not(.en-tap) .tap-hint { display: none; }
 .sheet .field { display: flex; flex-direction: column; gap: 3px; }
 .sheet .field label { font-size: 15px; color: var(--cappa-ink); }
 .sheet .sh-date { width: 100%; padding: 7px 9px; border: 1px solid var(--cappa-line); background: #1c1c1c; color: var(--cappa-ink); color-scheme: dark; }
+.sheet .sh-sel { width: 100%; padding: 7px 9px; border: 1px solid var(--cappa-line); background: #1c1c1c; color: var(--cappa-ink); color-scheme: dark; font: inherit; font-size: .9em; }
 .sh-cal { margin-top: 4px; }
 body.sheet-open { overflow: hidden; }
 

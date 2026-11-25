@@ -4,7 +4,8 @@
    1962 Breviary; this file only fetches and displays it. */
 (function () {
   'use strict';
-  var BASE = 'data/office/';
+  // two Offices: the Breviary as in force in 1954 (data/office/) and the Breviary of 1909 (Cormier: the medieval Dominican psalter, data/office1909/)
+  var BASES = {'1954': 'data/office/', '1909': 'data/office1909/'}, BASE = BASES['1954'];
   var HOURS = [
     ['Matutinum', 'Ad Matutinum', 'Matins'], ['Laudes', 'Ad Laudes', 'Lauds'], ['Prima', 'Ad Primam', 'Prime'],
     ['Tertia', 'Ad Tertiam', 'Terce'], ['Sexta', 'Ad Sextam', 'Sext'], ['Nona', 'Ad Nonam', 'None'],
@@ -12,13 +13,15 @@
   ];
   var $ = function (s) { return document.querySelector(s); };
   var cache = {}, common = null, shards = {}, range = null;
-  var state = {date: null, hour: null, lang: 'both', priest: false, chant: false};
+  var state = {date: null, hour: null, lang: 'both', priest: false, chant: false, rite: '1954'};
   var chantMap = null;
 
   try {
     state.lang = 'both';
     state.priest = localStorage.getItem('officePriest') === '1';
     state.chant = localStorage.getItem('officeChant') === '1';
+    state.rite = localStorage.getItem('officeRite') === '1909' && !(document.querySelector('#rite option[value="1909"]') || {}).disabled ? '1909' : '1954';
+    BASE = BASES[state.rite];
   } catch (e) {}
 
   function pad(n) { return (n < 10 ? '0' : '') + n; }
@@ -55,7 +58,8 @@
       .replace(/ † /g, ' <span class="r">†</span> ').replace(/ \+ /g, ' <span class="r">✠</span> ');
   }
   function blockText(id, day) { if (id === '@preces-la') return PRECES.la; if (id === '@preces-en') return PRECES.en; if (id === '@precesP-la') return PRECESP.la; if (id === '@precesP-en') return PRECESP.en;
-    var mx = /^@x:([^:]+):(\w+)$/.exec(id); if (mx) return xform(blockText(mx[1], day), mx[2]); return complineSeason(maryText(lentText(teLucisText((day.b && day.b[id]) || (common && common[id]) || '', day), day), day)); }
+    var mx = /^@x:([^:]+):(\w+)$/.exec(id); if (mx) return xform(blockText(mx[1], day), mx[2]); var raw = (day.b && day.b[id]) || (common && common[id]) || ''; if (state.rite === '1909') return raw;
+    return complineSeason(maryText(lentText(teLucisText(raw, day), day), day)); }
   // Compline in Christmastide (Completorium O.P. 1949 pp. 38-39 and the Antiphonarium 1933): In manus with Alleluia daily
   // to the Octave of the Epiphany; at the Nunc dimittis 'Alleluia. Verbum caro' to the Epiphany, then 'Alleluia. Omnes de Saba'.
   // C49 pp. 20-21: the Hebdomadarius (a priest) says Dominus vobiscum before the prayer and the Benedicamus
@@ -206,6 +210,7 @@
     return t;
   }
   function rowsOf(day, hour) {
+    if (state.rite === '1909') return day.h[hour] || [];   // the 1909 Office is generated complete
     var fE = state.date ? Math.round((new Date(state.date.getFullYear(), state.date.getMonth(), state.date.getDate()) - easterOf(state.date.getFullYear())) / 864e5) : 99;
     if (hour === 'Completorium' && fE === -1 && common) return HOLYSAT;
     var rows = day.h[hour] || [], p = state.priest && day.p && day.p[hour];
@@ -630,7 +635,7 @@
         var rows = rowsOf(day, hour);
         main.innerHTML = '<header class="o-head"><h1>' + esc(h[1]) + '</h1><p class="o-sub">' + esc(h[2]) + '</p></header>' +
           (function () { var ps = {}; toneCtx = state.chant ? makeToneCtx(day, hour) : null; return rows.map(function (row) { return drawRow(row, day, ps); }).join(''); })() +
-          '<p class="o-src">Text from Divinum Officium, <i>Ordo Praedicatorum – 1962</i> (MIT licence), following the Breviarium S.O.P. (1962). English is Divinum Officium’s; where a Dominican text has no English yet, the Latin stands alone.</p>';
+          (state.rite === '1909' ? '<p class="o-src">Text from the Breviarium juxta ritum S. Ordinis Prædicatorum (Cormier, 1909); English from Divinum Officium where the texts agree.</p>' : '<p class="o-src">Text from Divinum Officium, <i>Ordo Praedicatorum – 1962</i> (MIT licence), adapted to the Dominican books of 1933–1954. English is Divinum Officium’s; where a Dominican text has no English yet, the Latin stands alone.</p>');
         document.title = h[2] + ' — ' + t[0];
         if (state.chant) { drawChants(main); drawPsalms(main); }
       })
@@ -649,6 +654,16 @@
       var on = b.getAttribute('data-l') === (window.OPLang ? OPLang.get() : 'tap');
       b.classList.toggle('on', on); b.setAttribute('aria-pressed', on);
     });
+    var rt = $('#rite');
+    if (rt) {
+      rt.value = state.rite;
+      rt.addEventListener('change', function () {
+        state.rite = this.value === '1909' ? '1909' : '1954'; BASE = BASES[state.rite];
+        try { localStorage.setItem('officeRite', state.rite); } catch (er) {}
+        cache = {}; common = null; shards = {}; range = null;
+        getJSON(BASE + 'range.json').then(function (r) { range = r; }).catch(function () {}).then(draw);
+      });
+    }
     var pr = $('#priest');
     if (pr) pr.checked = state.priest;
     var ch = $('#chant');

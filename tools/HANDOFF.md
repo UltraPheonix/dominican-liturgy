@@ -288,3 +288,13 @@ Steps:
  4. Proper of Time, then Sanctoral and Commons (OCR → data/office1909/), English from Divinum Officium where texts coincide.
  5. Chant: 1862 Antiphonarium (OCR of pages + GregoBase where present; transcription where not), tones from the 1933 books.
  6. UI: an "Office: 1909 / 1954" switch in Options; same pages, same chant rendering; checker for a whole year.
+### 1909 — state at pause (2026-11-25 21:55)
+- Done: Office switch in Options (#rite select, office.html; js/office.js BASES {'1954': data/office/, '1909': data/office1909/},
+  state.rite in localStorage 'officeRite'; for 1909 rowsOf()/blockText() return the generated data untouched (no 1954 fix-ups)).
+  The 1909 option is disabled ("in preparation") until data/office1909/ exists — remove `disabled` in office.html then.
+- Psalm verses for all 150 psalms (Latin + English) can be rebuilt from data/office/psalter/*.json (<n>ps:v</n> lines).
+- OCR route (if no text PDF): tools/b09/ocr09.py (tesseract 'latf' = tessdata_fast lat, psm 3, 250 dpi; ~2.5 s/page; both
+  volumes ≈ 1 h on 2 cores). Started then stopped: Joseph is supplying a 1909 Breviary PDF with a text layer — use that instead.
+- 1909 layout (vol. 1 pdf idx): 10-23 De anno, 24-37 Calendarium (ranks: Totum Duplex, Duplex, Semiduplex, Simplex, Tres Lectiones),
+  40-70 Rubricae generales (+ Index rubricarum p. 40), 70 Modus terminandi orationes, 76 Index alphabeticus, 82 Psalmorum index,
+  88- Psalterium (Dominica ad Matutinum p. 3 … Sabbato), then Proprium de Tempore, etc.
