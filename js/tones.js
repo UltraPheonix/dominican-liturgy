@@ -162,7 +162,7 @@
       if (isV(l) && /^Carnis resurrectiónem/.test(t) && i + 1 < n && isR(lines[i + 1]) && /^Vitam ætérnam\. Amen/.test(body(lines[i + 1]))) {
         segs.push({s: i, e: i + 2, kind: 'vs', gabc: versicle(t, null, false).replace(/ \(::\)$/, ' (::) ') + FIXED.vitamC}); i++; continue;
       }
-      if (isV(l) && /^(Tu autem|Et ne nos indúcas|In pace in idípsum|Carnis resurrectiónem|Dignáre, Dómine, (nocte|die) ist)/.test(t) && i + 1 < n && isR(lines[i + 1])) {
+      if (isV(l) && /^(Tu autem|Et ne nos indúcas|In pace in idípsum|Vivet ánima mea|Errávi sicut ovis|Carnis resurrectiónem|Dignáre, Dómine, (nocte|die) ist)/.test(t) && i + 1 < n && isR(lines[i + 1])) {
         segs.push({s: i, e: i + 2, kind: 'vs', gabc: versicle(t, body(lines[i + 1]), false)}); i++; continue;
       }
       if (/^Te Deum laudámus/.test(plain(l))) {

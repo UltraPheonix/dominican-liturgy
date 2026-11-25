@@ -54,7 +54,7 @@
     return s.replace(/([✠✙])/g, '<span class="r">$1</span>').replace(/ \* /g, ' <span class="r">*</span> ')
       .replace(/ † /g, ' <span class="r">†</span> ').replace(/ \+ /g, ' <span class="r">✠</span> ');
   }
-  function blockText(id, day) { if (id === '@preces-la') return PRECES.la; if (id === '@preces-en') return PRECES.en;
+  function blockText(id, day) { if (id === '@preces-la') return PRECES.la; if (id === '@preces-en') return PRECES.en; if (id === '@precesP-la') return PRECESP.la; if (id === '@precesP-en') return PRECESP.en;
     var mx = /^@x:([^:]+):(\w+)$/.exec(id); if (mx) return xform(blockText(mx[1], day), mx[2]); return complineSeason(maryText(lentText(teLucisText((day.b && day.b[id]) || (common && common[id]) || '', day), day), day)); }
   // Compline in Christmastide (Completorium O.P. 1949 pp. 38-39 and the Antiphonarium 1933): In manus with Alleluia daily
   // to the Octave of the Epiphany; at the Nunc dimittis 'Alleluia. Verbum caro' to the Epiphany, then 'Alleluia. Omnes de Saba'.
@@ -229,6 +229,12 @@
       return r;
     });
     if (p) rows = p.all ? p.all : rows.map(function (row, i) { return p.i[i] || row; });
+    // Preces at Prime (Antiphonarium O.P. 1933 p. 147): on the same days as at Compline, before the prayer
+    if (hour === 'Prima' && complinePreces(day)) {
+      var atP = -1;
+      rows.forEach(function (r, i) { if (atP < 0 && /^<h>Oratio/.test(blockText(r[0], day))) atP = i; });
+      if (atP > 0) rows = rows.slice(0, atP).concat([['@precesP-la', '@precesP-en']], rows.slice(atP));
+    }
     if (hour === 'Completorium' && complinePreces(day)) {
       var at = -1;
       rows.forEach(function (r, i) { if (at < 0 && /^<h>Oratio/.test(blockText(r[0], day))) at = i; });
@@ -245,6 +251,25 @@
     if (/^Dominica/.test(t) || /Sabbato/.test(t) && d.getDay() === 6 && /Dominica/.test(t)) return false;
     return (/^(Feria|Sabbato)/.test(t) && !/Sanct(æ|ae) Mari(æ|ae)/.test(t)) || /(^|[^I])IV\. classis/.test(t);
   }
+  var CONF = {
+    la: '<n>All bow profoundly, or prostrate as the season requires, and the Confession is made, the Prelate beginning:</n>\n<c>C</c>onfíteor Deo omnipoténti, et beátæ Maríæ semper Vírgini, et beáto Domínico Patri nostro, et ómnibus Sanctis, et vobis, fratres: quia peccávi nimis cogitatióne, locutióne, ópere et omissióne, mea culpa: precor vos oráre pro me.\n<n>Chorus:</n>\n<c>M</c>isereátur tui omnípotens Deus, et dimíttat tibi ómnia peccáta tua: líberet te ab omni malo, salvet, et confírmet in omni ópere bono, et perdúcat te ad vitam ætérnam.\n<r>℟.</r> Amen.\n<n>Chorus:</n>\n<c>C</c>onfíteor Deo omnipoténti, et beátæ Maríæ semper Vírgini, et beáto Domínico Patri nostro, et ómnibus Sanctis, et tibi, Pater: quia peccávi nimis cogitatióne, locutióne, ópere et omissióne, mea culpa: precor te oráre pro me.\n<n>Prælatus:</n>\n<c>M</c>isereátur vestri omnípotens Deus, et dimíttat vobis ómnia peccáta vestra: líberet vos ab omni malo, salvet, et confírmet in omni ópere bono, et perdúcat vos ad vitam ætérnam.\n<r>℟.</r> Amen.\n',
+    en: '<n>All bow profoundly, or prostrate as the season requires, and the Confession is made, the Prelate beginning:</n>\n<c>I</c> confess to almighty God, to blessed Mary ever Virgin, to blessed Dominic our Father, to all the Saints, and to you, brethren, that I have sinned exceedingly in thought, word, deed and omission, through my fault: I beseech you to pray for me.\n<n>Choir:</n>\n<c>M</c>ay almighty God have mercy upon thee, forgive thee all thy sins, deliver thee from all evil, save and confirm thee in every good work, and bring thee to life everlasting.\n<r>℟.</r> Amen.\n<n>Choir:</n>\n<c>I</c> confess to almighty God, to blessed Mary ever Virgin, to blessed Dominic our Father, to all the Saints, and to thee, Father, that I have sinned exceedingly in thought, word, deed and omission, through my fault: I beseech thee to pray for me.\n<n>Prelate:</n>\n<c>M</c>ay almighty God have mercy upon you, forgive you all your sins, deliver you from all evil, save and confirm you in every good work, and bring you to life everlasting.\n<r>℟.</r> Amen.\n'
+  };
+  var PRECESP = {
+    la: '<h>Preces</h>\n<n>Antiphonarium O.P. 1933 p. 147: as at Compline, with these versicles after Sed libera nos, and the Confession after the Credo.</n>\n<r>Cantor:</r> Kýrie, eléison. <r>Chorus:</r> Christe, eléison. Kýrie, eléison.\n' +
+      '<n>All bow, or prostrate according to the season; the Pater noster is said silently; then the Hebdomadarian, rising a little, aloud:</n>\n' +
+      '<r>℣.</r> Et ne nos indúcas in tentatiónem.\n<r>℟.</r> Sed líbera nos a malo.\n<r>℣.</r> Vivet ánima mea, et laudábit te.\n<r>℟.</r> Et judícia tua adjuvábunt me.\n' +
+      '<r>℣.</r> Errávi sicut ovis quæ périit.\n<r>℟.</r> Quære servum tuum, Dómine, quia mandáta tua non sum oblítus.\n' +
+      '<n>Then the Credo is said silently; the Hebdomadarian, standing upright and turned to the altar, aloud:</n>\n<r>℣.</r> Carnis resurrectiónem.\n<r>℟.</r> Vitam ætérnam. Amen.\n' + 'CONF' +
+      '<r>℣.</r> Dignáre, Dómine, die isto.\n<r>℟.</r> Sine peccáto nos custodíre.',
+    en: '<h>Preces</h>\n<n>As at Compline, with these versicles after But deliver us from evil, and the Confession after the Creed.</n>\n<r>Cantor:</r> Lord, have mercy. <r>Choir:</r> Christ, have mercy. Lord, have mercy.\n' +
+      '<n>All bow, or prostrate according to the season; the Our Father is said silently; then the Hebdomadarian, rising a little, aloud:</n>\n' +
+      '<r>℣.</r> And lead us not into temptation.\n<r>℟.</r> But deliver us from evil.\n<r>℣.</r> My soul shall live and shall praise thee.\n<r>℟.</r> And thy judgments shall help me.\n' +
+      '<r>℣.</r> I have gone astray like a sheep that is lost.\n<r>℟.</r> Seek thy servant, O Lord, for I have not forgotten thy commandments.\n' +
+      '<n>Then the Creed is said silently; the Hebdomadarian, standing upright and turned to the altar, aloud:</n>\n<r>℣.</r> The resurrection of the body.\n<r>℟.</r> And life everlasting. Amen.\n' + 'CONF' +
+      '<r>℣.</r> Vouchsafe, O Lord, this day.\n<r>℟.</r> To keep us without sin.'
+  };
+  PRECESP.la = PRECESP.la.replace('CONF', CONF.la); PRECESP.en = PRECESP.en.replace('CONF', CONF.en);
   var PRECES = {
     la: '<h>Preces</h>\n<n>After the antiphon of the Nunc dimittis:</n>\n<r>Cantor:</r> Kýrie, eléison. <r>Chorus:</r> Christe, eléison. Kýrie, eléison.\n' +
       '<n>All bow, or prostrate according to the season; the Pater noster is said silently; then the Hebdomadarian, rising a little, aloud:</n>\n' +
