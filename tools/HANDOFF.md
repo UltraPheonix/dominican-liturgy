@@ -254,10 +254,10 @@ Done:
 - Our Lady (pp. 74–105): maryText(): Virgo Maria / Sancta Dei Genitrix / Ecce Virgo; Sub tuum on Compassion, Mediatrix, Assumption,
   Holy Name of Mary, Seven Sorrows; Ecce ancilla on the Annunciation.
 OPEN (Compline):
-- Sanctoral Te lucis tunes pp. 83–117 (Septem Fundatores Nunc dimittis ant., Catherine de Ricci, Thomas, Annunciation, Antoninus,
-  Translation of St Dominic, Precious Blood, Mary Magdalene, St Dominic & Transfiguration, Augustine, Rose, Seven Sorrows, Rosary,
-  Guardian Angels, Francis, Louis Bertrand, Teresa, Christ the King, All Saints (+ octave), All Saints O.P., Thomas patronage,
-  Albert): match each to its feast hymn as above (most are), transcribe the rest.
+- v78 saints' tunes done (crc tom pb mm spd domtr mdol ros ang fra ter ck os alb; keys must not clash with the rank keys
+  dom/sd/d/td…). Still to do: St Antoninus (p. 90, VII), St Augustine (p. 99, VIII), St Rose (p. 100), St Louis Bertrand (p. 110),
+  St Teresa alternative tune (p. 112, VI); Septem Fundatores' Nunc dimittis antiphon (p. 83); the Rosary is matched by title only
+  (1954: first Sunday of October with octave — needs the calendar engine).
 - Our Lady in Lent (Christe qui lux + 2 stanzas, p. 77) and in Paschaltide (Jesu nostra + 2 stanzas, p. 78).
 - Proper antiphons without chant: Sancta Dei Genitrix (Ib, p. 81), Compassion/Seven Sorrows Virgo Maria non est ulla (pp. 86, 101).
 - Good Friday Ps 50 should be said without chant; Christus factus est incipit only at the start of the Triduum psalms.
