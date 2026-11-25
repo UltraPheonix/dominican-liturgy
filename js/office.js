@@ -310,7 +310,7 @@
       if (hymnAt < 0 && i === 0 && /Hymnus$/.test(head || '')) hymnAt = 0;
       if (hymnAt >= 0 && i >= hymnAt - 1) {
         var j = hymnAt;
-        while (j < lines.length && !lines[j].trim()) j++;
+        while (j < lines.length && (!lines[j].trim() || /^<n>[\s\S]*<\/n>$/.test(lines[j].trim()))) j++;   // a rubric before the hymn stays as text
         if (j < lines.length) {
           var end = j, hk = 'hy' + K(plain(lines[j])), whole = chantMap[hk] && chantMap[hk][3];
           if (whole) {

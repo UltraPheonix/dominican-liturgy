@@ -33,6 +33,10 @@
     labia: "(f3) Dó(h)mi(h)ne,(h) lá(h)bi(h)a(h) me(h)a(h) a(h)pé(g)ri(g)es.(h) (::) <sp>R/</sp>. Et(h) os(h) me(h)um(h) an(h)nun(h)ti(h)á(h)bit(h) lau(h)dem(h) tu(g)am.(h) (::)",
     // Regulae 1965, art. III § IV: asking the blessing
     iube: "(f3) Ju(g)be,(g) dom(h)ne,(h) be(h)ne(f)dí(g)ce(c)re.(c) (::)",
+    // Completorium O.P. 1949 p. 19: the Kyrie of the Preces (cantor, then choir)
+    kyrieC: "(f3) Ký(h)ri(h)e,(h) e(h)léi(h)son.(i.) (::) Chri(h)ste,(h) e(h)léi(h)son.(i) (,) Ký(h)ri(h)e,(h) e(h)léi(hg)son.(g) (::)",
+    // p. 20: Vitam aeternam. Amen.
+    vitamC: "<sp>R/</sp>. Vi(h)tam(h) æ(h)tér(h)nam.(g) A(f)men.(h) (::)",
     // Completorium O.P. 1949 p. 1: the blessing of Compline
     noctem: "(f3) Noc(h)tem(h) qui(h)é(h)tam(h) et(h) fi(h)nem(h) per(h)féc(h)tum(h) trí(h)bu(h)at(f) (;) no(h)bis(h) om(h)ní(h)po(h)tens(h) et(h) mi(h)sé(h)ri(h)cors(h) Dó(h)mi(f)nus.(f) (::) <sp>R/</sp>. A(g)men.(h) (::)",
     // Completorium O.P. 1949, pp. 2: the short lesson of Compline and the Adjutorium, as notated in the book
@@ -154,6 +158,10 @@
         segs.push({s: i, e: i + 3, kind: 'bl', gabc: FIXED.iube + ' ' + (/^Noctem quiétam/.test(body(lines[i + 1])) ? FIXED.noctem : blessing(body(lines[i + 1]))).replace(/^\(f3\) /, '')}); i += 2; continue;
       }
       // the versicles of the Preces are sung to the simple tone (Completorium O.P. 1949 pp. 19-20)
+      if (/^<r>Cantor:<\/r> Kýrie, eléison\./.test(l)) { segs.push({s: i, e: i + 1, kind: 'vs', gabc: FIXED.kyrieC}); continue; }
+      if (isV(l) && /^Carnis resurrectiónem/.test(t) && i + 1 < n && isR(lines[i + 1]) && /^Vitam ætérnam\. Amen/.test(body(lines[i + 1]))) {
+        segs.push({s: i, e: i + 2, kind: 'vs', gabc: versicle(t, null, false).replace(/ \(::\)$/, ' (::) ') + FIXED.vitamC}); i++; continue;
+      }
       if (isV(l) && /^(Tu autem|Et ne nos indúcas|In pace in idípsum|Carnis resurrectiónem|Dignáre, Dómine, (nocte|die) ist)/.test(t) && i + 1 < n && isR(lines[i + 1])) {
         segs.push({s: i, e: i + 2, kind: 'vs', gabc: versicle(t, body(lines[i + 1]), false)}); i++; continue;
       }

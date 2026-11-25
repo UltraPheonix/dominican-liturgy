@@ -262,3 +262,9 @@ OPEN (Compline):
 - Proper antiphons without chant: Sancta Dei Genitrix (Ib, p. 81), Compassion/Seven Sorrows Virgo Maria non est ulla (pp. 86, 101).
 - Good Friday Ps 50 should be said without chant; Christus factus est incipit only at the start of the Triduum psalms.
 - Kyrie of the preces notated (p. 19); Salve/O lumen against pp. 118–122.
+- v77: Preces fully chanted (Kyrie p. 19 = FIXED.kyrieC; Vitam aeternam. Amen = FIXED.vitamC; versicles 'h fr f').
+  A rubric (<n>…</n>) before a hymn no longer stops the hymn being notated. Veni Creator (7240), Quicumque Christum (6903) mapped.
+  Hymn audit (2026–27): every Compline hymn has chant. Still without chant: ~29 Matins hymns (Nocte surgentes, Summi largitor,
+  Quem terra, Jam Christus astra, Pange lingua … lauream, Urbs beata, Huius obtentu, …): not in the Antiphonarium 1933 —
+  take them from Matutinum O.P. 1936 (CMAA site) when doing Matins. Preces at Lauds/Vespers/Prime are not in the 1962-based
+  data at all: they come with the pre-1955 rubric engine.
