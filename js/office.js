@@ -54,13 +54,30 @@
     return s.replace(/([✠✙])/g, '<span class="r">$1</span>').replace(/ \* /g, ' <span class="r">*</span> ')
       .replace(/ † /g, ' <span class="r">†</span> ').replace(/ \+ /g, ' <span class="r">✠</span> ');
   }
-  function blockText(id, day) { if (id === '@preces-la') return PRECES.la; if (id === '@preces-en') return PRECES.en; return complineSeason((day.b && day.b[id]) || (common && common[id]) || ''); }
+  function blockText(id, day) { if (id === '@preces-la') return PRECES.la; if (id === '@preces-en') return PRECES.en; return complineSeason(teLucisText((day.b && day.b[id]) || (common && common[id]) || '', day)); }
   // Compline in Christmastide (Completorium O.P. 1949 pp. 38-39 and the Antiphonarium 1933): In manus with Alleluia daily
   // to the Octave of the Epiphany; at the Nunc dimittis 'Alleluia. Verbum caro' to the Epiphany, then 'Alleluia. Omnes de Saba'.
   // C49 pp. 20-21: the Hebdomadarius (a priest) says Dominus vobiscum before the prayer and the Benedicamus
   function dvPriest(t) {
     return t.replace(/Dómine, exáudi oratiónem meam\.\n<r>℟\.<\/r> Et clamor meus ad te véniat\.\n(?=<c>O<\/c>rémus\.\n<c>V<\/c>ísita|<r>℣\.<\/r> Benedicámus)/, 'Dóminus vobíscum.\n<r>℟.</r> Et cum spíritu tuo.\n')
             .replace(/Lord, hear my prayer\.\n<r>℟\.<\/r> And let my cry come unto thee\.\n(?=<c>L<\/c>et us pray\.\n<c>V<\/c>isit|<r>℣\.<\/r> Let us bless)/, 'The Lord be with you.\n<r>℟.</r> And with thy spirit.\n');
+  }
+  var DOX = {
+    natus: ['Glória tibi, Dómine,\nQui natus es de Vírgine,\nCum Patre et Sancto Spíritu,\nIn sempitérna sǽcula.', 'Glory to thee, O Lord,\nWho wast born of the Virgin,\nWith the Father and the Holy Spirit,\nUnto everlasting ages.'],
+    epi: ['Glória tibi, Dómine,\nQui apparuísti hódie,\nCum Patre et Sancto Spíritu,\nIn sempitérna sǽcula.', 'Glory to thee, O Lord,\nWho hast appeared this day,\nWith the Father and the Holy Spirit,\nUnto everlasting ages.'],
+    hf: ['Jesu, tuis obédiens\nQui factus es paréntibus,\nCum Patre summo ac Spíritu\nSemper tibi sit glória.', 'O Jesu, who wast subject to\nThy parents, glory be to thee,\nWith the most high Father and the Spirit,\nFor evermore.'],
+    scj: ['Glória tibi, Dómine,\nQui Corde fundis grátiam,\nCum Patre et Sancto Spíritu,\nIn sempitérna sǽcula.', 'Glory to thee, O Lord,\nWho pourest forth grace from thy Heart,\nWith the Father and the Holy Spirit,\nUnto everlasting ages.'],
+    maria: ['María, Mater grátiæ,\nMater misericórdiæ,\nTu nos ab hoste prótege,\nEt hora mortis súscipe.', 'Mary, Mother of grace,\nMother of mercy,\nShield us from the enemy,\nAnd receive us at the hour of death.']
+  };
+  var DOXOF = {nat: ['natus'], hn: ['natus'], hn2: ['natus'], cc: ['natus'], epi: ['epi'], hf: ['hf'], scj: ['scj'], bvma: ['maria', 'natus'], bvmb: ['maria', 'natus']};
+  // Te lucis: the doxology of the feast or season in place of Praesta, Pater (C49 pp. 38-45, 70-79)
+  function teLucisText(t, day) {
+    if (!/e lucis ante términum|efore the ending of the day/.test(t) || !day) return t;
+    var k = teLucisTune(makeToneCtx(day, 'Completorium'), state.date), ds = k && DOXOF[k];
+    if (!ds) return t;
+    var en = /efore the ending/.test(t) ? 1 : 0;
+    var rep = ds.map(function (d) { var x = DOX[d][en]; return '<h>' + x.charAt(0) + '</h>' + x.slice(1); }).join('\n\n') + '\nAmen.';
+    return t.replace(/<h>P<\/h>ræsta, Pater omnípotens,[\s\S]*?Amen\./, rep).replace(/<h>O<\/h> Father, that we ask be done,[\s\S]*?Amen\./, rep);
   }
   function complineSeason(t) {
     t = dvPriest(t);
@@ -192,7 +209,7 @@
     segs = segs.filter(function (g) { return chantMap[g.key]; });
     if (toneCtx && toneCtx.hour === 'Completorium') segs.forEach(function (g) {
       var tl = g.key === 'hytelucisanteterminum' && teLucisTune(toneCtx, state.date);
-      if (tl) g.file = 'C49-telucis-' + tl;
+      if (tl) { g.file = 'C49-telucis-' + tl; g.mode = TLMODE[tl] || ''; }
       if (g.kind === 'an' && g.key === 'alleluiaalleluiaalleluia') { g.file = '6913'; g.mode = '8'; }   // C49 p. 63 (Antiphonarium 1933)
       if (g.key === 'hyiesunostraredemptio') {   // Paschaltide hymn: stanzas 5-6 by period (C49 pp. 64-66)
         var E = easterOf(state.date.getFullYear()), f = Math.round((state.date - E) / 864e5);
@@ -225,6 +242,8 @@
       m = Math.floor((a + 11 * h + 22 * l) / 451), mo = Math.floor((h + l - 7 * m + 114) / 31), da = ((h + l - 7 * m + 114) % 31) + 1;
     return new Date(y, mo - 1, da, 12);
   }
+  var BVM = /B(eat(æ|ae)|\.)\s*Mari(æ|ae)|Mari(æ|ae) Virgin|Sanct(æ|ae) Mari(æ|ae) (in )?Sabbato|Immaculat|Septem Dolor/;
+  var TLMODE = {adv: '4', sab: '8', dom: '8', fer: '8', i: '7', tdii: '4', td: '7', d: '3', sd: '8', nat: '4', epi: '4', hn: '4', hf: '2', tri: '1', cc: '8', scj: '1', bvma: '1', bvmb: '2'};
   function teLucisTune(ctx, date) {
     var t = ctx.title || '', y = date.getFullYear(), md = (date.getMonth() + 1) * 100 + date.getDate(), wd = date.getDay();
     var E = (function () { var a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25),
@@ -236,9 +255,22 @@
     var advent = /Advent/.test(t) || (date >= adv1 && md < 1225), perAnnum = (md >= 113 && date < ash) || (date >= scjOct && date < adv1);
     var tempore = /^(Dominica|Feria|Sabbato|Hebdomada)/.test(t) && !/Sanct(æ|ae) Mari(æ|ae) Sabbato/.test(t);
     var old = /Totum Duplex|Duplex|Semiduplex|Simplex/.exec(t);
-    // Christmastide (Completorium 1949 p. 38-39: the Christmas tune with 'Gloria tibi, Domine, qui natus es de Virgine'),
-    // sung daily through the octaves, saints' feasts included, a I class feast other than Christmas excepted
-    if ((md >= 1225 || md <= 113) && !(/(^|[^I])I\. classis/.test(t) && md !== 1225)) return 'nat';
+    // feasts with a tune of their own (C49 pp. 40-45, 70-76): the melody of the feast's hymn, with its doxology
+    var f = Math.round((new Date(y, date.getMonth(), date.getDate()) - E) / 864e5);
+    var hn = (function () { for (var k = 2; k <= 5; k++) if (new Date(y, 0, k).getDay() === 0) return k; return 2; })();
+    var hf = (function () { for (var k = 7; k <= 12; k++) if (new Date(y, 0, k).getDay() === 0) return k; return 12; })();
+    if (/Nominis Jesu/.test(t) || md === 100 + hn || md === 100 + hn - 1) return 'hn';
+    if (/Famili(æ|ae)/.test(t) || md === 100 + hf || md === 100 + hf - 1) return 'hf';
+    if (f >= 55 && f <= 58) return 'tri';                      // both Compline of Trinity Sunday, and Monday and Tuesday after
+    if (f >= 59 && f <= 66) return 'cc';                       // Corpus Christi and its octave
+    if (f >= 67 && f <= 75) return 'scj';                      // the Sacred Heart and its octave
+    // Christmastide (pp. 36-39: the Christmas tune with 'Gloria tibi, Domine, qui natus es de Virgine') from the eve;
+    // Epiphany and its octave (pp. 42-44: the same tune, 'qui apparuisti hodie'), from the eve
+    if (md >= 1224 || md <= 104) return 'nat';
+    if (md >= 105 && md <= 113) return 'epi';
+    // feasts of Our Lady (pp. 74-80): I and II class and an octave day, one tune; Totum Duplex, within an octave
+    // and her Saturday office, the other; both with the stanza 'Maria, Mater gratiae'
+    if (BVM.test(t)) return /(^|[^I])I{1,2}\. classis/.test(t) ? 'bvma' : 'bvmb';
     if (tempore && !old) return advent ? (wd === 6 || wd === 0 ? 'adv' : 'fer') : perAnnum ? (wd === 6 ? 'sab' : wd === 0 ? 'dom' : 'fer') : null;
     if (/(^|[^I])I\. classis/.test(t)) return 'i';
     {
