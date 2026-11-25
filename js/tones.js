@@ -8,18 +8,19 @@
 
   // ---------------------------------------------------------------- fixed melodies
   var FIXED = {
-    // Antiphonarium 1933, Toni communes I: Modus inchoandi Horas
-    deus: "(c3) De(f)us,(f) in(f) ad(f)ju(f)tó(g)ri(f)um(f) me(f)um(f) in(f)tén(e)de.(f) (::) " +
-          "<sp>R/</sp>. Dó(f)mi(f)ne,(f) ad(f) ad(f)ju(f)ván(f)dum(f) me(f) fe(f)stí(e)na.(f) (::) " +
-          "Gló(f)ri(f)a(f) Pa(f)tri,(f) et(f) Fí(f)li(e)o,(e) (,) et(e) Spi(e)rí(e)tu(e)i(e) Sanc(e)to.(f) (:) " +
-          "Si(f)cut(f) e(f)rat(f) in(f) prin(f)cí(f)pi(f)o,(f) et(f) nunc(f) et(f) sem(f)per,(e) (,) et(e) in(e) sǽ(f)cu(f)la(f) sæ(f)cu(f)ló(f)rum.(f) A(f)men.(e) (::)",
-    alleluia: "Al(f)le(fg)lú(gf)ia.(e) (::)",
-    laus: "(c3) Laus(h) ti(h)bi,(h) Dó(h)mi(g)ne,(g) (,) rex(g) æ(g)tér(h)næ(h) gló(h)ri(g)æ.(g) (::)",
-    converte: "(c3) Con(h)vér(h)te(h) nos,(h) De(h)us,(h) sa(h)lu(h)tá(h)ris(h) no(g)ster.(h) (::) " +
+    // Completorium O.P. 1949 pp. 1-4 (measured from the page images: F clef on the 3rd line, as printed);
+    // the same formulas as the Antiphonarium 1933, Toni communes I: Modus inchoandi Horas
+    deus: "(f3) De(h)us,(h) in(h) ad(h)ju(h)tó(i)ri(h)um(h) me(h)um(h) in(h)tén(g)de.(h) (::) " +
+          "<sp>R/</sp>. Dó(h)mi(h)ne,(h) ad(h) ad(h)ju(h)ván(h)dum(h) me(h) fe(h)stí(g)na.(h) (::) " +
+          "Gló(h)ri(h)a(h) Pa(h)tri,(h) et(h) Fí(h)li(g)o,(g) (,) et(g) Spi(g)rí(g)tu(g)i(g) Sanc(g)to.(h) (:) " +
+          "Si(h)cut(h) e(h)rat(h) in(h) prin(h)cí(h)pi(h)o,(h) et(h) nunc,(h) et(h) sem(h)per,(g) (,) et(g) in(g) sǽ(h)cu(h)la(h) sæ(h)cu(h)ló(h)rum.(h) A(h)men.(g) (::)",
+    alleluia: "Al(h)le(hi)lú(hg)ia.(g) (::)",
+    laus: "(f3) Laus(h) ti(h)bi,(h) Dó(h)mi(g)ne,(g) (,) Rex(g) æ(g)tér(h)næ(h) gló(h)ri(g)æ.(g) (::)",
+    converte: "(f3) <sp>V/</sp>. Con(h)vér(h)te(h) nos,(h) De(h)us,(h) sa(h)lu(h)tá(h)ris(h) no(g)ster.(h) (::) " +
               "<sp>R/</sp>. Et(h) a(h)vér(h)te(h) i(h)ram(h) tu(h)am(h) a(h) no(g)bis.(h) (::)",
     // Regulae 1965, art. III § III: before the prayer
     dvSol: "(f3) Dó(g)mi(h)nus(h) vo(gh)bís(hg)cum.(g.) (::) <sp>R/</sp>. Et(g) cum(h) spí(h)ri(g)tu(g) tu(h)o.(h.) (::)",
-    dvSim: "(f3) Dó(h)mi(h)nus(h) vo(h)bís(h)cum.(f.) (::) <sp>R/</sp>. Et(g) cum(g) spí(h)ri(h)tu(h) tu(h)o.(h.) (::)",
+    dvSim: "(f3) Dó(h)mi(h)nus(h) vo(h)bís(h)cum.(f.) (::) <sp>R/</sp>. Et(g) cum(g) spí(g)ri(g)tu(g) tu(g)o.(h.) (::)",
     deSol: "(f3) Dó(g)mi(h)ne,(h) ex(h)áu(h)di(h) o(h)ra(h)ti(h)ó(g)nem(h) me(hg)am.(g.) (::) " +
            "<sp>R/</sp>. Et(g) cla(h)mor(h) me(h)us(h) ad(g) te(g) vé(h)ni(h)at.(h.) (::)",
     deSim: "(f3) Dó(h)mi(h)ne,(h) ex(h)áu(h)di(h) o(h)ra(h)ti(h)ó(h)nem(h) me(h)am.(f.) (::) " +
@@ -31,15 +32,17 @@
     // Matins (Fr Thompson's Antiphonale, Toni communes: Modus incohandi Officii lectionum)
     labia: "(f3) Dó(h)mi(h)ne,(h) lá(h)bi(h)a(h) me(h)a(h) a(h)pé(g)ri(g)es.(h) (::) <sp>R/</sp>. Et(h) os(h) me(h)um(h) an(h)nun(h)ti(h)á(h)bit(h) lau(h)dem(h) tu(g)am.(h) (::)",
     // Regulae 1965, art. III § IV: asking the blessing
-    iube: "(f3) <sp>V/</sp>. Ju(g)be,(g) dom(h)ne,(h) be(h)ne(g)dí(f)ce(e)re.(e.) (::)",
+    iube: "(f3) Ju(g)be,(g) dom(h)ne,(h) be(h)ne(f)dí(g)ce(c)re.(c) (::)",
+    // Completorium O.P. 1949 p. 1: the blessing of Compline
+    noctem: "(f3) Noc(h)tem(h) qui(h)é(h)tam(h) et(h) fi(h)nem(h) per(h)féc(h)tum(h) trí(h)bu(h)at(f) (;) no(h)bis(h) om(h)ní(h)po(h)tens(h) et(h) mi(h)sé(h)ri(h)cors(h) Dó(h)mi(f)nus.(f) (::) <sp>R/</sp>. A(g)men.(h) (::)",
     // Completorium O.P. 1949, pp. 2: the short lesson of Compline and the Adjutorium, as notated in the book
-    lectioCompl: "(c3) Fra(h)tres:(h) Só(h)bri(h)i(h) es(h)tó(h)te(h) et(h) vi(h)gi(h)lá(h)te:(g) (,) qui(h)a(h) ad(h)ver(h)sá(h)ri(h)us(h) ve(h)ster(h) " +
+    lectioCompl: "(f3) Fra(h)tres:(h) Só(h)bri(h)i(h) es(h)tó(h)te(h) et(h) vi(h)gi(h)lá(h)te:(f) (,) qui(h)a(h) ad(h)ver(h)sá(h)ri(h)us(h) ve(h)ster(h) " +
       "di(h)á(h)bo(h)lus(h) (,) tam(h)quam(h) le(h)o(h) rú(h)gi(h)ens(h) (,) cír(h)cu(h)it,(h) quæ(h)rens(g) quem(f) dé(h)vo(h)ret:(h) (,) " +
       "cu(h)i(h) re(h)sí(h)sti(h)te(h) for(h)tes(h) in(f) fi(g)de.(c) (:) Tu(h) au(h)tem,(h) Dó(h)mi(f)ne,(f) (,) mi(h)se(h)ré(h)re(f) no(g)stri.(c) (::) " +
       "<sp>R/</sp>. De(g)o(g) grá(g)ti(g)as.(h) (::)",
-    adjutorium: "(c3) <sp>V/</sp>. Ad(h)ju(h)tó(h)ri(h)um(h) no(h)strum(h) in(h) nó(h)mi(h)ne(h) Dó(h)mi(g)ni.(g) (::) " +
-      "<sp>R/</sp>. Qui(h) fe(h)cit(h) cæ(h)lum(h) et(h) ter(h)ram.(g) (::)",
-    benFin: "(c3) Be(f)ne(f)di(f)cá(f)mus(f) Dó(f)mi(e)no.(e) (::) <sp>R/</sp>. De(e)o(e) grá(e)ti(e)as.(f) (::)"
+    adjutorium: "(f3) <sp>V/</sp>. Ad(h)ju(h)tó(h)ri(h)um(h) no(h)strum(h) in(h) nó(h)mi(h)ne(h) Dó(h)mi(f)ni.(f) (::) " +
+      "<sp>R/</sp>. Qui(h) fe(h)cit(h) cæ(h)lum(h) et(h) ter(h)ram.(f) (::)",
+    benFin: "(f3) Be(h)ne(h)di(h)cá(h)mus(h) Dó(h)mi(f)no.(f) (::) <sp>R/</sp>. De(g)o(g) grá(g)ti(g)as.(h) (::)"
   };
   // Benedicamus at Lauds and Vespers (Antiphonarium 1933, Toni communes VI), GregoBase transcriptions
   var BEN = {I: '4206', BVM: '4227', II: '7984', domMaior: '7985', III: '7986', domMinor: '7986', simplex: '7993', feria: '7994'};
@@ -82,16 +85,20 @@
   function prayerBody(text) {
     var ms = members(text), g = '';
     ms.forEach(function (m, i) {
-      var fromEnd = ms.length - 1 - i, cad = fromEnd % 2 === 0 ? ELEV : FLEX;
-      g += recite(m, cad, 'h') + (cad === FLEX ? ' (;) ' : ' (:) ');
+      var cad = /;$/.test(m) && i < ms.length - 1 ? FLEX : ELEV;   // C49 p. 20: a colon takes the metrum, a semicolon the flexa
+      // a long member takes a flexa at its last comma (C49 p. 20: habitatiónem í(h)stam,(f) ... custó(h)di(f)ant,(f))
+      var cut = -1, re = /,\s+/g, mm, nsyl = function (x) { return P.analyse(plain(x)).length; };
+      if (cad === ELEV && nsyl(m) >= 24) while ((mm = re.exec(m))) { if (nsyl(m.slice(0, mm.index)) >= 10 && nsyl(m.slice(mm.index)) >= 8) cut = mm.index + 1; }
+      if (cut > 0) g += recite(m.slice(0, cut), FLEX, 'h') + ' (,) ' + recite(m.slice(cut).trim(), cad, 'h') + ' (:) ';
+      else g += recite(m, cad, 'h') + (cad === FLEX ? ' (;) ' : ' (:) ');
     });
     return g;
   }
   // conclusions of prayers (Regulae art. III § III, 3)
   function conclusion(text, solemn) {
     var t = plain(text), g = '';
-    var finalCad = solemn ? "h 'hg g" : "h 'h g";
-    var m = /^(.*?(?:Fílium tuum|Deo Patre))[,:]?\s*(.*?(?:Spíritus Sancti,? Deus),?)\s*(per ómnia sǽcula sæculórum\.?)$/i.exec(t);
+    var finalCad = solemn ? "h 'hg g" : "h 'h f";  // C49 p. 21: sæculó(h)rum(f)
+    var m = /^(.*?(?:Fílium tuum|Deo Patre))[,:]?\s*(.*?(?:Spíritus Sancti,? Deus)[,:]?)\s*(per ómnia sǽcula sæculórum\.?)$/i.exec(t);
     if (m) {
       g += recite(m[1], FLEX, 'h') + ' (;) ';
       g += recite(m[2], ELEV, 'h') + ' (:) ';
@@ -137,14 +144,14 @@
         while (j < n && !/^(Allelúia|Laus tibi)/.test(plain(lines[j]))) j++;
         if (j >= n) continue;
         var laus = /^Laus/.test(plain(lines[j]));
-        segs.push({s: i, e: j + 1, kind: 'inc', gabc: FIXED.deus + ' ' + (laus ? FIXED.laus.replace(/^\(c3\) /, '') : FIXED.alleluia)});
+        segs.push({s: i, e: j + 1, kind: 'inc', gabc: FIXED.deus + ' ' + (laus ? FIXED.laus.replace(/^\(f3\) /, '') : FIXED.alleluia)});
         i = j; continue;
       }
       if (isV(l) && /^Dómine, lábia/.test(t) && i + 1 < n && isR(lines[i + 1])) {
         segs.push({s: i, e: i + 2, kind: 'inc', gabc: FIXED.labia}); i++; continue;
       }
       if (isV(l) && /^[IJ]ube,? domne/.test(t) && i + 2 < n && /^<r>Benedictio\.<\/r>/.test(lines[i + 1]) && isR(lines[i + 2])) {
-        segs.push({s: i, e: i + 3, kind: 'bl', gabc: FIXED.iube + ' ' + blessing(body(lines[i + 1])).replace(/^\(f3\) /, '')}); i += 2; continue;
+        segs.push({s: i, e: i + 3, kind: 'bl', gabc: FIXED.iube + ' ' + (/^Noctem quiétam/.test(body(lines[i + 1])) ? FIXED.noctem : blessing(body(lines[i + 1]))).replace(/^\(f3\) /, '')}); i += 2; continue;
       }
       // the versicles of the Preces are sung to the simple tone (Completorium O.P. 1949 pp. 19-20)
       if (isV(l) && /^(Tu autem|Et ne nos indúcas|In pace in idípsum|Carnis resurrectiónem|Dignáre, Dómine, (nocte|die) ist)/.test(t) && i + 1 < n && isR(lines[i + 1])) {

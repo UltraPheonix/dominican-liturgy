@@ -57,7 +57,13 @@
   function blockText(id, day) { if (id === '@preces-la') return PRECES.la; if (id === '@preces-en') return PRECES.en; return complineSeason((day.b && day.b[id]) || (common && common[id]) || ''); }
   // Compline in Christmastide (Completorium O.P. 1949 pp. 38-39 and the Antiphonarium 1933): In manus with Alleluia daily
   // to the Octave of the Epiphany; at the Nunc dimittis 'Alleluia. Verbum caro' to the Epiphany, then 'Alleluia. Omnes de Saba'.
+  // C49 pp. 20-21: the Hebdomadarius (a priest) says Dominus vobiscum before the prayer and the Benedicamus
+  function dvPriest(t) {
+    return t.replace(/Dómine, exáudi oratiónem meam\.\n<r>℟\.<\/r> Et clamor meus ad te véniat\.\n(?=<c>O<\/c>rémus\.\n<c>V<\/c>ísita|<r>℣\.<\/r> Benedicámus)/, 'Dóminus vobíscum.\n<r>℟.</r> Et cum spíritu tuo.\n')
+            .replace(/Lord, hear my prayer\.\n<r>℟\.<\/r> And let my cry come unto thee\.\n(?=<c>L<\/c>et us pray\.\n<c>V<\/c>isit|<r>℣\.<\/r> Let us bless)/, 'The Lord be with you.\n<r>℟.</r> And with thy spirit.\n');
+  }
   function complineSeason(t) {
+    t = dvPriest(t);
     var d = state.date; if (!d || !t || !/In manus tuas|Into thy hands|Salva nos, \*|Protect us, \*/.test(t)) return t;
     var md = (d.getMonth() + 1) * 100 + d.getDate(); if (!(md >= 1225 || md <= 113)) return t;
     t = t.replace('In manus tuas, Dómine, * Comméndo spíritum meum.\nIn manus.\n<r>℣.</r> Redemísti me, Dómine, Deus veritátis. * Comméndo.',
