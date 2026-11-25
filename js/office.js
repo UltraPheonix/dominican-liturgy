@@ -54,7 +54,8 @@
     return s.replace(/([✠✙])/g, '<span class="r">$1</span>').replace(/ \* /g, ' <span class="r">*</span> ')
       .replace(/ † /g, ' <span class="r">†</span> ').replace(/ \+ /g, ' <span class="r">✠</span> ');
   }
-  function blockText(id, day) { if (id === '@preces-la') return PRECES.la; if (id === '@preces-en') return PRECES.en; return complineSeason(teLucisText((day.b && day.b[id]) || (common && common[id]) || '', day)); }
+  function blockText(id, day) { if (id === '@preces-la') return PRECES.la; if (id === '@preces-en') return PRECES.en;
+    var mx = /^@x:([^:]+):(\w+)$/.exec(id); if (mx) return xform(blockText(mx[1], day), mx[2]); return complineSeason(lentText(teLucisText((day.b && day.b[id]) || (common && common[id]) || '', day), day)); }
   // Compline in Christmastide (Completorium O.P. 1949 pp. 38-39 and the Antiphonarium 1933): In manus with Alleluia daily
   // to the Octave of the Epiphany; at the Nunc dimittis 'Alleluia. Verbum caro' to the Epiphany, then 'Alleluia. Omnes de Saba'.
   // C49 pp. 20-21: the Hebdomadarius (a priest) says Dominus vobiscum before the prayer and the Benedicamus
@@ -78,6 +79,32 @@
     var en = /efore the ending/.test(t) ? 1 : 0;
     var rep = ds.map(function (d) { var x = DOX[d][en]; return '<h>' + x.charAt(0) + '</h>' + x.slice(1); }).join('\n\n') + '\nAmen.';
     return t.replace(/<h>P<\/h>ræsta, Pater omnípotens,[\s\S]*?Amen\./, rep).replace(/<h>O<\/h> Father, that we ask be done,[\s\S]*?Amen\./, rep);
+  }
+  // Lent and Passiontide (C49 pp. 46-48): from the Saturday after Ash Wednesday to the Saturday before Passion Sunday,
+  // R. In pace on Saturdays, Sundays and feasts, R. In manus on other days; from then to Wednesday in Holy Week,
+  // R. In manus without Gloria Patri when of the season, with it on saints' feasts
+  function lentResp(day) {
+    var d = state.date; if (!d) return null;
+    var E = easterOf(d.getFullYear()), f = Math.round((new Date(d.getFullYear(), d.getMonth(), d.getDate()) - E) / 864e5);
+    if (f < -43 || f > -4) return null;
+    var title = makeToneCtx(day, 'Completorium').title, feast = !/^(Feria|Dominica|Sabbato|Hebdomada)/.test(title);
+    if (f <= -16) return (d.getDay() === 6 || d.getDay() === 0 || feast) ? 'pace' : 'manus';
+    return feast ? 'manus' : 'manusPass';
+  }
+  var RESP = {
+    head: ['\n\n<h>Responsorium</h>\n<n>On a Double or Totum Duplex it is sung by two Friars standing in the middle of the choir; otherwise by the Friar appointed, in his stall.</n>\n', '\n\n<h>Responsory</h>\n'],
+    pace: ['<n>It is begun by the Friar who sings its verse; the choir sits for the verse.</n>\n<r>℟.br.</r> In pace in idípsum * Dórmiam et requiéscam.\n<r>℣.</r> Si dédero somnum óculis meis, et pálpebris meis dormitatiónem. * Dórmiam.\n<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto.\n<r>℟.</r> In pace in idípsum dórmiam et requiéscam.',
+           '<r>℟.</r> In peace in the selfsame * I will sleep and I will rest.\n<r>℣.</r> If I shall give sleep to mine eyes, or slumber to mine eyelids. * I will sleep.\n<r>℣.</r> Glory be to the Father, and to the Son, and to the Holy Ghost.\n<r>℟.</r> In peace in the selfsame I will sleep and I will rest.'],
+    manus: ['<r>℟.br.</r> In manus tuas, Dómine, * Comméndo spíritum meum.\nIn manus.\n<r>℣.</r> Redemísti me, Dómine, Deus veritátis. * Comméndo.\n<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. In manus.',
+            '<r>℟.</r> Into thy hands, O Lord, * I commend my spirit. Into thy hands.\n<r>℣.</r> Thou hast redeemed us, O Lord, God of truth. * I commend.\n<r>℣.</r> Glory be to the Father, and to the Son, and to the Holy Ghost. Into thy hands.'],
+    manusPass: ['<r>℟.br.</r> In manus tuas, Dómine, * Comméndo spíritum meum.\nIn manus.\n<r>℣.</r> Redemísti me, Dómine, Deus veritátis. * Comméndo spíritum meum.\n<r>℟.</r> In manus tuas, Dómine, comméndo spíritum meum.',
+                '<r>℟.</r> Into thy hands, O Lord, * I commend my spirit. Into thy hands.\n<r>℣.</r> Thou hast redeemed us, O Lord, God of truth. * I commend my spirit.\n<r>℟.</r> Into thy hands, O Lord, I commend my spirit.']
+  };
+  function lentText(t, day) {
+    if (!/(Capitulum|Chapter)<\/h>\n<r>Jer(em)?\. 14<\/r>/.test(t) || /Responsor/.test(t)) return t;
+    var k = lentResp(day); if (!k) return t;
+    var en = /Chapter/.test(t) ? 1 : 0;
+    return t + RESP.head[en] + RESP[k][en];
   }
   function complineSeason(t) {
     t = dvPriest(t);
@@ -103,8 +130,71 @@
     }).join('\n').split('\n');
   }
   // the hour's rows, said with or without a priest
+  // Holy Saturday (C49 pp. 58-60): Compline as usual to the psalms, under the one antiphon Allelúia; after Ecce nunc the
+  // Nunc dimittis at once with its antiphon of four Alleluias; Dominus vobiscum and the prayer Spiritum nobis
+  var HOLYSAT = [['36189bfff7', 'bd62e26baf'], ['15ad8f25a1', 'a0e021ed94'], ['d4cc46ba42', '90fd4abbec'], ['35d01ad901', 'c9e02f1e9a'],
+                 ['@x:e83ddd5568:hs', '@x:c1162e3e14:hs'], ['96b66025d7', 'e6f33d5910'], ['@x:ce328a6ba1:hs', '@x:7f9d6b930f:hs'],
+                 ['@x:dff7e0c6b0:hs', '@x:0a624972d8:hs'], ['@x:690c2baea0:sn', '@x:c55577a1eb:sn'], ['e5045c9ece', '7f9023f752'], ['dd930c0583', '8065596881']];
+  var SPIRITUM = ['<c>S</c>píritum nobis, Dómine, tuæ caritátis infúnde: ut quos sacraméntis Paschálibus satiásti, tua fácias pietáte concórdes.\nPer Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte ejúsdem Spíritus Sancti Deus: per ómnia sǽcula sæculórum.',
+                  '<c>P</c>our forth upon us, O Lord, the Spirit of thy love: that those whom thou hast fed with the paschal sacraments may by thy loving-kindness be made of one mind.\n<h>T</h>hrough Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the same Holy Ghost, God, world without end.'];
+  var AL4 = ['Allelúia, allelúia, allelúia, allelúia.', 'Alleluia, alleluia, alleluia, alleluia.'];
+  function xform(t, how) {
+    if (how === 'hs') {
+      t = t.replace(/<r>Ant\.<\/r> Allelúia, \* allelúia, allelúia\./, '<r>Ant.</r> Allelúia.').replace(/<r>Ant\.<\/r> Alleluia, \* alleluia, alleluia\./, '<r>Ant.</r> Alleluia.')
+           .replace(/\n<r>Ant\.<\/r> Allel[uú]ia, allel[uú]ia, allel[uú]ia\.$/, '');
+      if (/Nunc dimittis/.test(t)) {
+        var en = /Canticle/.test(t) ? 1 : 0;
+        t = t.replace(/\n<r>Ant\.<\/r> [^\n]*\n(<r>Cantic)/, en ? '\n<n>After the last psalm the Nunc dimittis follows at once.</n>\n$1' : '\n<n>Post Psalmum Ecce nunc sequitur immediate Canticum.</n>\n$1').replace(/<r>Ant\.<\/r> [^\n]*$/, '<r>Ant.</r> ' + AL4[en]);
+      }
+    }
+    if (how === 'al4') t = t.replace(/(<r>Ant\.<\/r> )Allelúia, (\* )?allelúia, allelúia\./g, function (m, a, st) { return a + 'Allelúia, ' + (st || '') + 'allelúia, allelúia, allelúia.'; })
+                            .replace(/(<r>Ant\.<\/r> )Alleluia, (\* )?alleluia, alleluia\./g, function (m, a, st) { return a + 'Alleluia, ' + (st || '') + 'alleluia, alleluia, alleluia.'; });
+    if (how === 'tri133' || how === 'tri133en') t = t.replace(/\n<r>Ant\.<\/r> Christus[^\n]*$/, how === 'tri133en' ? '\n<n>After Ecce nunc the Nunc dimittis follows at once.</n>' : '\n<n>Finito Psalmo Ecce nunc, immediate sequitur Canticum.</n>');
+    if (how === 'tri1' || how === 'tri1en') t = t.replace(/<r>Special Completorium<\/r>\n\n/, how === 'tri1en' ?
+        '<h>Psalms</h>\n<n>Jube domne, the blessing, the lesson, Adjutorium, Confiteor, Converte nos and Deus in adjutorium are omitted. When the Friars, bowing profoundly, have said the Pater noster silently, at a sign from the Prior all stand, turn to the altar and sign themselves; the antiphon is begun at once, and the psalms of Sunday are said in a moderate voice, without Gloria Patri.</n>\n' :
+        '<h>Psalmi</h>\n<n>Non dicitur Jube, domne, neque Lectio, Adjutorium, Confiteor, Convérte nos aut Deus, in adjutorium. Fratribus profunde inclinatis et Pater noster submissa voce dicto, ad signum Prioris omnes erecti versis vultibus ad altare se signant; statim inchoatur Antiphona, et dicuntur Psalmi de Dominica voce mediocri, sine Glória Patri.</n>\n');
+    if (/^tri(Thu|Fri)(en)?$/.test(how)) {
+      var fri = /Fri/.test(how), E2 = /en$/.test(how);
+      var before = (fri ? (E2 ? '<n>All prostrate again and say the Pater noster silently; then both choirs say alternately, without chant:</n>\n<r>Psalm 50</r>\n§05.78bd93ec68\n' : '<n>Iterum prosternunt se et dicunt secreto Pater noster; deinde ab utroque Choro alternatim sine cantu:</n>\n<r>Psalmus 50</r>\n§05.53ee802b60\n') : '') +
+                   (E2 ? '<n>At once, with nothing before it, the Hebdomadarian says the prayer:</n>\n' : '<n>Sine intervallo, absque Dóminus vobíscum et absque Orémus, dicit Hebdomadarius Orationem:</n>\n');
+      var after = E2 ? '<n>Amen is not answered; Dominus vobiscum, Benedicamus Domino and the blessing are omitted; the Salve Regina is not sung and there is no sprinkling with holy water. Bowing profoundly, the Friars say the Pater noster and the Credo silently, and at a sign from the Prior all rise.</n>'
+                     : '<n>Non respondetur Amen, nec dicitur Dóminus vobíscum, neque Benedicámus Dómino; benedictio non datur, omittitur Antiphona Salve, Regína, nec fit aquæ benedictæ aspersio; sed Fratres profunde inclinati dicunt Pater noster et Credo in Deum, factoque signo a Priore surgunt omnes.</n>';
+      t = t.replace(/\n(<c>[RL]<\/c>)/, '\n' + before + '$1').replace(/torméntum:/, 'torméntum.').replace(/\n<n>Non dicitur <k>Qui tecum[\s\S]*$/, '\n' + after);
+      if (E2) t = t.replace(/(\n<c>L<\/c>ook down[^\n]*)(\n<n>[\s\S]*)?$/, '$1\n' + after);
+    }
+    if (how === 'fer4' || how === 'fer4en') t = how === 'fer4en'
+      ? '<n>Wednesday in Holy Week (C49 p. 55): there are no prostrations and no preces; holy water is sprinkled during the psalms or the Nunc dimittis. The blessing is given, but the Salve Regina is not sung: at once Fidelium animae is said, and the Friars, bowing profoundly, say the Pater noster and the Credo.</n>'
+      : '<n>Feria IV Majoris Hebdomadæ (C49 p. 55): absque prostrationibus et absque Precibus; dum cantantur Psalmi vel Canticum, aqua benedicta aspergitur. Benedictio datur; non cantatur Antiphona Salve, Regína, sed statim subditur Fidélium ánimæ; quo dicto Fratres profunde inclinati dicunt Pater noster et Credo in Deum.</n>';
+    if (how === 'sn') {
+      var e = /Prayer/.test(t) ? 1 : 0;
+      t = t.replace(/<r>℣\.<\/r> [^\n]*\n<r>℟\.<\/r> [^\n]*\n/, e ? '<r>℣.</r> The Lord be with you.\n<r>℟.</r> And with thy spirit.\n' : '<r>℣.</r> Dóminus vobíscum.\n<r>℟.</r> Et cum spíritu tuo.\n')
+           .replace(/(<c>[OL]<\/c>(rémus|et us pray)\.\n)[\s\S]*(\n<r>℟\.<\/r> Amen\.)/, '$1' + SPIRITUM[e] + '$3');
+    }
+    return t;
+  }
   function rowsOf(day, hour) {
+    var fE = state.date ? Math.round((new Date(state.date.getFullYear(), state.date.getMonth(), state.date.getDate()) - easterOf(state.date.getFullYear())) / 864e5) : 99;
+    if (hour === 'Completorium' && fE === -1 && common) return HOLYSAT;
     var rows = day.h[hour] || [], p = state.priest && day.p && day.p[hour];
+    // the last days of Holy Week (pp. 55-58)
+    if (hour === 'Completorium' && (fE === -3 || fE === -2)) rows = rows.map(function (r, i) {
+      var t = blockText(r[0], day), d = fE === -2 ? 'Fri' : 'Thu';
+      if (/Special Completorium/.test(t)) return ['@x:' + r[0] + ':tri1', '@x:' + r[1] + ':tri1en'];
+      if (/Psalmus 133/.test(t)) return ['@x:' + r[0] + ':tri133', '@x:' + r[1] + ':tri133en'];
+      if (/Canticum Simeonis/.test(t)) return ['@x:' + r[0] + ':tri' + d, '@x:' + r[1] + ':tri' + d + 'en'];
+      if (/Hodie post Completorium/.test(t)) return null;
+      return r;
+    }).filter(Boolean);
+    if (hour === 'Completorium' && fE === -4) rows = rows.map(function (r) {
+      return /^<h>Ad processionem/.test(blockText(r[0], day)) ? ['@x:' + r[0] + ':fer4', '@x:' + r[1] + ':fer4en'] : r;
+    });
+    // Easter Sunday to Friday (pp. 61-62): the psalms under four Alleluias; to Tuesday, the prayer Spiritum nobis
+    if (hour === 'Completorium' && fE >= 0 && fE <= 5) rows = rows.map(function (r) {
+      var t = blockText(r[0], day);
+      if (/<r>Ant\.<\/r> Allelúia, (\* )?allelúia, allelúia\./.test(t)) return ['@x:' + r[0] + ':al4', '@x:' + r[1] + ':al4'];
+      if (fE <= 2 && /<h>Oratio<\/h>/.test(t) && /ísita, quǽsumus/.test(t)) return ['@x:' + r[0] + ':sn', '@x:' + r[1] + ':sn'];
+      return r;
+    });
     if (p) rows = p.all ? p.all : rows.map(function (row, i) { return p.i[i] || row; });
     if (hour === 'Completorium' && complinePreces(day)) {
       var at = -1;
@@ -210,6 +300,7 @@
     if (toneCtx && toneCtx.hour === 'Completorium') segs.forEach(function (g) {
       var tl = g.key === 'hytelucisanteterminum' && teLucisTune(toneCtx, state.date);
       if (tl) { g.file = 'C49-telucis-' + tl; g.mode = TLMODE[tl] || ''; }
+      if (g.key === 'rbinmanustuasdominecommendospiritummeum' && lentResp(curDay) === 'manusPass') { g.file = 'C49-inmanus-pass'; g.mode = '4'; g.kind = 'rb'; }
       if (g.kind === 'an' && g.key === 'alleluiaalleluiaalleluia') { g.file = '6913'; g.mode = '8'; }   // C49 p. 63 (Antiphonarium 1933)
       if (g.key === 'hyiesunostraredemptio') {   // Paschaltide hymn: stanzas 5-6 by period (C49 pp. 64-66)
         var E = easterOf(state.date.getFullYear()), f = Math.round((state.date - E) / 864e5);
@@ -224,7 +315,7 @@
     }
     return segs;
   }
-  var toneCtx = null;
+  var toneCtx = null, curDay = null;
   function makeToneCtx(day, hour) {
     var title = titleOf(day, hour), m = /\b(I{1,3}|IV)\. classis/.exec(title);
     var rank = m ? {I: 1, II: 2, III: 3, IV: 4}[m[1]] : 4;
@@ -375,6 +466,7 @@
 
   function drawRow(row, day, ps) {
     ps = ps || {};
+    curDay = day;
     var la = cell(row[0], day), en = cell(row[1], day), lang = state.lang, html = '';
     var same = en.lines.join('\n') === la.lines.join('\n');
     if (la.head || en.head) {
