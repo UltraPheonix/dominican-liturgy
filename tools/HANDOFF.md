@@ -196,3 +196,21 @@ S1003 (Thérèse, suppl. p. 782 "in Missionibus"), S1007 (Rosary = Dominica I Oc
 Col 1/Matt 24 has no site key). run.sh: sanctoral readings stop at the first Gospel (next undated Mass leaked in). absent.json: post-1933
 Masses (titles with year >= 1934), S0501 Joseph Opificis, S0531 Regina, S0903 Pius X, S0428 Paul of the Cross, S0902b Ingrid, C1s.
 js/app.js m33Readings: the M33 text now wins even when the book differs (Dominican readings), site ref only where M33 gave nothing.
+
+## Step 3 Office audit — IN PROGRESS (paused 2026-11-25 14:25, sw v64). START HERE NEXT.
+DONE (Compline): Te lucis tunes by rank/season, C49 pp. 9-17 = data/chant/op/C49-telucis-{adv,sab,dom,fer,i,tdii,td,d,sd}.gabc (melody =
+GregoBase 9952 9951 9953 9954 9955 9956 9957 9958 9959, Antiphonarium 1933; spot-checked vs C49 p.16; stanzas 2-3 by tools/chant/hymn.py,
+Amen = torculus/pes on the final as C49 prints). js/office.js teLucisTune(ctx, date): tempore Sat/Sun of Advent -> adv, Sat/Sun per annum
+(Oct. Epiph.-Lent, Oct. SCJ-Advent) -> sab/dom, ferias -> fer; feasts: I cl -> i, Totum Duplex II cl/Apostles -> tdii, Totum Duplex -> td,
+Duplex -> d, Semiduplex and below -> sd; reads old ranks from the title when the rubric engine supplies them, else 1960 class II->tdii,
+III->d, IV->sd. Returns null (default C49-telucis-viii = GB 4779, Antiph. add. p.13) for Christmastide and Lent->Oct. SCJ: those seasons have
+PROPER Te lucis tunes in C49 (Officium de Tempore from p.36: Christmas p.38-39, Holy Name p.40-41, ...) -> TODO transcribe/find in GregoBase.
+Weekday Compline antiphons (C49 p.22-35) = Antiphonarium 1933 melodies: Mon 6965 (=Ta1-319 ok), Tue now 6718 (was Jandel 1862 18778, lacked
+"in aeternum"), Wed 6087 (=Ta3-373 ok), Thu 6656 (=Ta2a-262 ok), Fri 5746 (=RC-voce-mea same melody), Sat now 9974 (Ta3-696 had junk text),
+Sun 9950 (=RC-miserere same). TP at Compline: 'Alleluia, alleluia, alleluia' -> 6913 (C49 p.63), only in Compline (office.js).
+NOTE C49 p.63: Saturday after Easter -> Sunday psalms; other TP days Sunday OR weekday psalms "juxta rubricam (pag. 7)" -> rubric engine.
+NEXT in step 3: preces at Compline (C49 p.19-20: Kyrie, Pater secreto, Et ne nos, In pace in idipsum (GB 6043 = C49 p.46?), Credo, Carnis
+resurrectionem, Dignare Domine... when "Preces dicendae fuerint") -> check common.json Compline preces block; then the other Hours against
+Breviarium 1909 / Antiphonarium 1933 (GregoBase source 11 has the Antiphonarium 1933: query gb.sqlite by incipit, source=11), Little Hours
+hymns/chapters/short responsories, Prime (Pretiosa, martyrology), preces at Lauds/Vespers/Prime. Then step 4 (GF Tenebrae), step 5 (plan only).
+Test: python3 -m http.server 8768; /tmp scripts were: playwright page with localStorage officeChant=1, list .o-chant data-id per hour.

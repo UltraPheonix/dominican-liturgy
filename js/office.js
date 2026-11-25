@@ -142,6 +142,11 @@
       }
     }
     segs = segs.filter(function (g) { return chantMap[g.key]; });
+    if (toneCtx && toneCtx.hour === 'Completorium') segs.forEach(function (g) {
+      var tl = g.key === 'hytelucisanteterminum' && teLucisTune(toneCtx, state.date);
+      if (tl) g.file = 'C49-telucis-' + tl;
+      if (g.kind === 'an' && g.key === 'alleluiaalleluiaalleluia') { g.file = '6913'; g.mode = '8'; }   // C49 p. 63 (Antiphonarium 1933)
+    });
     if (window.OPTones && toneCtx) {
       OPTones.segments(lines, head, toneCtx).forEach(function (t) {
         if (!segs.some(function (g) { return t.s < g.e && g.s < t.e; })) segs.push(t);
@@ -154,13 +159,35 @@
   function makeToneCtx(day, hour) {
     var title = titleOf(day, hour), m = /\b(I{1,3}|IV)\. classis/.exec(title);
     var rank = m ? {I: 1, II: 2, III: 3, IV: 4}[m[1]] : 4;
-    return {hour: hour, solemn: hour === 'Laudes' || hour === 'Vespera', priest: state.priest, rank: rank,
+    return {hour: hour, title: title, solemn: hour === 'Laudes' || hour === 'Vespera', priest: state.priest, rank: rank,
             sunday: /^Dominica/.test(title), bvm: /Mari[æa]|B\. ?M\. ?V|Beatæ Vírginis/i.test(title),
             bvmSat: /Sancta Maria Sabbato|Sanctæ Mariæ in Sabbato/i.test(title)};
   }
+
+  // Te lucis at Compline: the tune by rank and season (Completorium O.P. 1949, pp. 9-17). The old ranks are read from the title
+  // when it gives them (Totum Duplex...); until the pre-1955 calendar is in, the 1960 class stands in for them.
+  // Seasons with a tune of their own (Christmastide, Lent to the Octave of the Sacred Heart) keep the default melody for now.
+  function teLucisTune(ctx, date) {
+    var t = ctx.title || '', y = date.getFullYear(), md = (date.getMonth() + 1) * 100 + date.getDate(), wd = date.getDay();
+    var E = (function () { var a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25),
+      g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30, i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7,
+      m = Math.floor((a + 11 * h + 22 * l) / 451), mo = Math.floor((h + l - 7 * m + 114) / 31), da = ((h + l - 7 * m + 114) % 31) + 1;
+      return new Date(y, mo - 1, da); })();
+    var dd = function (n) { var x = new Date(E); x.setDate(x.getDate() + n); return x; }, ash = dd(-46), scjOct = dd(68 + 8);
+    var dec25 = new Date(y, 11, 25), adv1 = new Date(dec25); adv1.setDate(25 - (dec25.getDay() || 7) - 21);
+    var advent = /Advent/.test(t) || (date >= adv1 && md < 1225), perAnnum = (md >= 113 && date < ash) || (date >= scjOct && date < adv1);
+    var tempore = /^(Dominica|Feria|Sabbato|Hebdomada)/.test(t) && !/Sanct(æ|ae) Mari(æ|ae) Sabbato/.test(t);
+    var old = /Totum Duplex|Duplex|Semiduplex|Simplex/.exec(t);
+    if (tempore && !old) return advent ? (wd === 6 || wd === 0 ? 'adv' : 'fer') : perAnnum ? (wd === 6 ? 'sab' : wd === 0 ? 'dom' : 'fer') : null;
+    if (/(^|[^I])I\. classis/.test(t)) return 'i';
+    {
+      if (old) return old[0] === 'Totum Duplex' ? (/II\. classis|Apostol/.test(t) ? 'tdii' : 'td') : old[0] === 'Duplex' ? 'd' : 'sd';
+      return ctx.rank === 2 ? 'tdii' : ctx.rank === 3 ? 'd' : 'sd';
+    }
+  }
   var LABEL = {an: 'Ant.', hy: 'Hymn.', rb: 'R. br.', re: 'R.'};
   function chantDiv(g) {
-    if (g.file) return '<div class="chant o-chant" data-id="' + esc(g.file) + '" data-mode="" data-tp="1" data-kind="hy"></div>';
+    if (g.file) return '<div class="chant o-chant" data-id="' + esc(g.file) + '" data-mode="' + esc(g.mode || '') + '" data-tp="1" data-kind="' + (g.kind || 'hy') + '"></div>';
     if (g.gabc || g.ben) {
       if (g.ben === null) return '';
       if (g.ben && g.ben.id) return '<div class="chant o-chant" data-id="' + g.ben.id + '" data-mode="" data-tp="0" data-kind="ben"></div>';
