@@ -116,6 +116,29 @@
     }
     return gabcCache[id];
   }
+  // The Introit sung in full: antiphon, psalm verse, the whole Glória Patri in the Introit tone of its mode (Graduale O.P. pp. IX-XI,
+  // data/introit_gp.js), then the antiphon again. In Passiontide and at Masses for the dead there is no Glória Patri: the antiphon is
+  // repeated straight after the verse. The books print only "Glória Patri. E u o u a e"; GregoBase files differ in how they mark the verse.
+  function fullIntroit(body, header, key) {
+    var GP = window.INTROIT_GP; if (!GP || !body) return body;
+    var clef = (/^\s*\(([cf]b?[1-4])\)/.exec(body) || [])[1]; if (!clef) return body;
+    if (/repetitur|<i>[^<]*Ant\.?<\/i>/i.test(body)) return body;                   // the book already shows the repetition
+    var vm = /(<sp>V\/<\/sp>\.?|\bV\/\.|<i>Ps\.<\/i>)/.exec(body), ant;
+    var g = /\(::\)\s*(?:<eu>)?\s*Gl[oó]\([^)]*\)\s*ri\([^)]*\)\s*a[.,]?\(/.exec(body);
+    if (vm) ant = body.slice(0, vm.index).replace(/\s*\(::\)\s*$/, '');
+    else {                                                // no verse sign: the antiphon ends at the double bar before the verse's own
+      var bars = [], re = /\(::\)/g, m; while ((m = re.exec(body)) && (!g || m.index <= g.index)) bars.push(m.index);
+      if (bars.length < 2) return body; ant = body.slice(0, bars[bars.length - 2]);
+    }
+    ant = ant.replace(/^\s*\([cf]b?[1-4]\)\s*/, '').replace(/\s+$/, '');
+    if (!/\(::\)\s*$/.test(ant)) ant += ' (::)';
+    var verse = g ? body.slice(0, g.index) + '(::)' : body.replace(/\s+$/, '');
+    if (!/\(::\)\s*$/.test(verse)) return body;
+    var noGP = /^Quad[56]/.test(key || '') || /^\s*\([cf]b?[1-4]\)\s*R[eé]\(/.test(body) || /^(?:C114|S1102)/.test(key || '');
+    var mode = parseInt(header && header.mode, 10), gp = GP[mode];
+    if (!noGP && !gp) return body;
+    return verse + (noGP ? '' : ' ' + gp.replace(/\s+$/, '')) + ' (' + clef + ') ' + ant;
+  }
   function splitGabc(text) {
     var i = text.indexOf('%%');
     var head = i >= 0 ? text.slice(0, i) : '', body = i >= 0 ? text.slice(i + 2) : text;
@@ -1186,12 +1209,13 @@
       if (h.transcriber) meta.push('transcribed by ' + h.transcriber);
       info.textContent = meta.join(' · ') + ' · ';
       info.appendChild(el('a', {href: 'https://gregobase.selapa.net/chant.php?id=' + c.id, target: '_blank', rel: 'noopener', text: 'GregoBase ' + c.id}));
-      renderInto(chantBox, editor.value, h, part);
+      var shown = function () { return part === 'in' ? fullIntroit(editor.value, h, state.key) : editor.value; };
+      renderInto(chantBox, shown(), h, part);
       var timer;
       editor.addEventListener('input', function () {
         state.edited[part + index] = editor.value;
         clearTimeout(timer);
-        timer = setTimeout(function () { renderInto(chantBox, editor.value, h, part); }, 400);
+        timer = setTimeout(function () { renderInto(chantBox, shown(), h, part); }, 400);
       });
     }).catch(function (e) { showError(chantBox, e); });
     return slot;
@@ -1412,6 +1436,7 @@
     };
     var readSec = function (r) {
       var o = sec(READ_LA[r.type], READ_EN[r.type], r.ref, true);
+      if (r.la) { o.la.textContent = r.la; o.en.textContent = r.en || ''; return; }   // as printed in the Missale O.P. (1933)
       jobs.push(readingText('la', r.ref).then(function (t) { o.la.textContent = t; }, function () {}));
       jobs.push(readingText('en', r.ref).then(function (t) { o.en.textContent = t; }, function () {}));
     };
@@ -1453,7 +1478,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {D: D, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
+  window.ProprOP = {D: D, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
 
   function start() {
     if (!document.getElementById('selMass')) return;   // loaded as a library (e.g. by the Office page)

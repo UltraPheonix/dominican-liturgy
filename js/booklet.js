@@ -107,6 +107,7 @@
     pending.push(A.loadGabc(id).then(function (t) {
       var g = A.splitGabc(t), body = g.body;
       if (o.fix) body = o.fix(body);
+      if (o.part === 'in' && A.fullIntroit) body = A.fullIntroit(body, g.header, A.state && A.state().key);
       return A.renderInto(box, body, g.header, o.part || null, chantCtx({width: w, size: o.size, glyph: o.glyph, drop: o.drop, noDrop: o.noDrop})).then(function () {
         if (o.initial) initialImage(box, o.initial);
       });
@@ -270,7 +271,6 @@
         var file = ini[p], first = (TX['c:' + id] || '').trim().charAt(0).toUpperCase();
         var useIni = file && ((p === 'in' && first === 'G') || (p === 'al' && first === 'A'));
         chant(id, {part: p, initial: useIni ? file : null, drop: useIni ? 54 : 50});
-        if (p === 'in') rubric('The antiphon ' + incipit(id) + ' is repeated after the Glória Patri.', {nokeep: true});
         if (p === 'al' && !/Allel[uú]ia\.?\s*$/.test((TX['c:' + id] || '').trim())) rubric('After the verse the Allelúia is repeated.', {nokeep: true});
         if (p === 'of' && !A.paschal() && /T\.\s*P\./.test(TX['c:' + id] || '')) rubric('Outside Paschaltide, sung without the Allelúia.', {nokeep: true});
         return;
