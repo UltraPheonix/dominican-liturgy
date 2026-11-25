@@ -16,6 +16,8 @@ for k,v in O.items():
     import re
     def ok(r): return not re.search(r'[a-zà-ÿæœǽ][A-ZÀ-ÞÆŒ]|[<>^|0-9]', r['la']) and re.match(r'[A-ZÀ-ÞÆŒ]', r['la'])   # scan junk left: keep the Vulgate
     rs=[{x:r[x] for x in ('type','ref','title','title_en','la','en','p33')} for r in v['readings'] if 'weak' not in r['flag'] and ok(r)]
+    if k.startswith('S') and any(r['type']=='Gospel' for r in rs):   # sanctoral: the next (undated) Mass in the book can follow; stop at the first Gospel
+        rs=rs[:[r['type'] for r in rs].index('Gospel')+1]
     if rs: out[k]=rs
 import os
 F='$R/tools/m33/fixes.json'          # hand corrections: {"MassKey": [ full list of readings ]} replaces that Mass

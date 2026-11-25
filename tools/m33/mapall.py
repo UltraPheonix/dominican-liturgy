@@ -4,6 +4,7 @@ import readings as R
 from anchor import SITE
 P2 = json.load(open('/home/claude/m33/printed2pdf.json'))
 E = json.load(open('/home/claude/m33/sanct.json'))
+SENT = json.load(open('/home/claude/m33/sanct_entry.json'))
 ANCH = json.load(open('/home/claude/m33/anchors.json'))
 INTR = json.load(open('/home/claude/m33/introits.json'))
 def pdf_of(printed):
@@ -108,6 +109,7 @@ def map_key(k, m):
     res = {'key': k, 'how': None, 'readings': []}
     if re.match(r'S\d{4}', k):
         date = k[1:5]; cands = [e for e in E if e['date'] == date]
+        if k in SENT: cands = [e for e in E if e['line'] == SENT[k]]   # hand-checked entry (calendar moved since 1933)
         if not cands: res['how'] = 'no-date'; return res
         e = max(cands, key=lambda e: nameScore(e['name'], m['title']) * 10 - cands.index(e))
         j = E.index(e); end = E[j + 1]['line'] if j + 1 < len(E) else len(L)

@@ -1118,15 +1118,14 @@
   var READ_LA = {Lesson: 'Lectio', Epistle: 'Epistola', Gospel: 'Evangelium', Psalmus: 'Psalmus', Canticum: 'Canticum'};
   // the Missal's own text (title + opening formula) where tools/m33 read it from the 1933 Missal
   function m33Readings(key, rs) {
+    // the 1933 Missal wins (checked in tools/m33); a part it does not give (scan unreadable) keeps the site's reference
     var M = window.READINGS33 && READINGS33[key]; rs = rs || [];
     if (!M) return rs;
-    var cat = function (r) { return r.type === 'Gospel' ? 'G' : 'E'; }, used = {};
-    return rs.map(function (r) {
-      var c = cat(r), n = used[c] = (used[c] || 0) + 1, k = 0;
-      var hit = M.filter(function (x) { return cat(x) === c; })[n - 1];
-      if (!hit || hit.ref.slice(0, 4) !== (r.ref || '').slice(0, 4)) return r;
-      return {type: r.type, ref: hit.ref, title: hit.title, title_en: hit.title_en, la: hit.la, en: hit.en, p33: hit.p33};
-    });
+    var g = function (r) { return r.type === 'Gospel'; }, ng = function (r) { return !g(r); };
+    var pick = function (a) { return {type: a.type, ref: a.ref, title: a.title, title_en: a.title_en, la: a.la, en: a.en, p33: a.p33}; };
+    var pre = M.filter(ng).length ? M.filter(ng).map(pick) : rs.filter(ng);
+    var gos = M.filter(g).length ? M.filter(g).map(pick) : rs.filter(g);
+    return pre.concat(gos);
   }
   function drawReading(r) {
     var la = el('p', {class: 'la'}), en = el('p', {class: 'en-text'});

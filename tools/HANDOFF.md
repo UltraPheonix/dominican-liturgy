@@ -183,3 +183,16 @@ C48s C55s C76s(=Holy Spirit in Septuagesima, M33 p.43*) C82s C104s, G369 (Vigil 
 (no Alleluia). Afferentur (C45s/C48s) = r1107 Roman melody (none in Graduale O.P.). M33 anchors fixed in dpmap.json: G470 (=S. Pius V
 p.478), G481 (=S. Philip Neri p.493), G502_3 (p.512), C79s (Mass III p.693), ChristusRex (p.618), C76s. absent.json = Masses not in M33
 (C1s Commune Apostolorum: no such Mass in the 1933 Commune; chants kept from the Graduale, readings blank). run.sh: cmp.py optional.
+
+## Step 2 leftovers (readings) DONE 2026-11-25 (sw v63). All in tools/m33/vfix.py (page images checked): Ecce sacerdos cento (C32s S0510 S0519
+S0606 S1104 S1111 S1117 S0530b S0803b S1023b S1126b), Apoc 14:13 (S1102_3), S0914 S0919 S1002 G475(=B. Imelda, suppl. p.2) Quad6t, drop-cap
+junk (Quad4w Quad4h Pent0m S0324/S0325 S0424 S0921 S1208), recurring scan words (GLOBAL list: Optávi, parábolam hanc, Jesus, Amen...;
+vocabulary check = every la word must exist in bible/la), verses lost at column breaks (Epi Matt 2:5-9, Quad2s Luke 15:14-20, Quad4f John 11:7,
+Quad6h 1 Cor 11:27-28, Quad6t Mark 14:5-8, Quad6w Luke 23:23-32), Matt 25:14-23 garbled (Statuit gospel), Quad1w = 3 Reg 19:3-8.
+Anchors: sanct_entry.json (S-key -> M33 sanctoral entry line, for saints whose date moved: S0118 S0214 S0215 S0511 S0703 S1009 S1010b S0216b
+S0503b S0819b) used by mapall.py; dpmap.json adds S0508 (= B.M.V. Mediatrix, suppl. p.4, dated 31 May in M33), S0703, S0910 (Navarrete 1 Jun),
+S1003 (Thérèse, suppl. p. 782 "in Missionibus"), S1007 (Rosary = Dominica I Octobris p.595), S1102/_2/_3 (three Masses p.623-626), S1113
+(anniversary = In anniversario defunctorum, pro pluribus), Pent23 (= Dominica XXI post Oct. Trin., p.375; Dominica XXII et ultima p.376 =
+Col 1/Matt 24 has no site key). run.sh: sanctoral readings stop at the first Gospel (next undated Mass leaked in). absent.json: post-1933
+Masses (titles with year >= 1934), S0501 Joseph Opificis, S0531 Regina, S0903 Pius X, S0428 Paul of the Cross, S0902b Ingrid, C1s.
+js/app.js m33Readings: the M33 text now wins even when the book differs (Dominican readings), site ref only where M33 gave nothing.
