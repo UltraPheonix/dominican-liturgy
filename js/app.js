@@ -917,7 +917,7 @@
     od('canon'); od('pater');
     if (!m.noAgnus) ord('ag');
     od('communion');
-    ch('co'); ch('an'); hw('afterCo'); od('post'); orat('pc'); od('postEnd');
+    ch('co'); ch('an'); hw('afterCo'); od('post'); orat('pc'); orat('sp'); od('postEnd');
     if (O === 'low') od('dismiss'); else q.push({t: 'ord', k: 'it'});
     if (!(HW && HW.noLastGospel)) od('end'); else od('endNoGospel');
     hw('end');
@@ -1058,9 +1058,11 @@
   }
   // the Collect, Secret or Postcommunion of the day
   function drawOratio(it) {
-    var name = {or: ['Oratio', 'Collect'], se: ['Secreta', 'Secret'], pc: ['Postcommunio', 'Postcommunion']}[it.k];
+    var name = {or: ['Oratio', 'Collect'], se: ['Secreta', 'Secret'], pc: ['Postcommunio', 'Postcommunion'], sp: ['Oratio super populum', 'Prayer over the People']}[it.k];
     var box = el('section', {class: 'part ordo oratio', 'data-part': 'oratio'});
-    box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: name[0]}), el('span', {class: 'incipit', text: name[1]})]));
+    box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: name[0]}), el('span', {class: 'incipit', text: it.k === 'sp' && it.x[2] ? name[1] + ' · ' + it.x[2] : name[1]})]));
+    // Lenten ferias: after the Postcommunion the priest says Oremus and the deacon Humiliate capita vestra Deo
+    if (it.k === 'sp') box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: 'Orémus. ℣. Humiliáte cápita vestra Deo.'}), el('p', {class: 'en-text', lang: 'en', text: 'Let us pray. ℣. Bow down your heads before God.'})]));
     box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: it.x[0]}), el('p', {class: 'en-text', lang: 'en', text: it.x[1]})]));
     box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.']), el('p', {class: 'en-text', lang: 'en'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
     return box;

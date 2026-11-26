@@ -383,6 +383,7 @@
         return;
       }
       if (it.t === 'oratio') {
+        if (it.k === 'sp') { heading('Oratio super populum', null); para('Orémus. ℣. Humiliáte cápita vestra Deo.', {cls: 'pr'}); }
         // sung in the solemn tone of the prayers (Harrison 1920); said at a Low Mass
         var og = null;
         try { og = sung && window.OPMassTones ? OPMassTones.oration(J(it.x[0])) : null; } catch (e) { console.warn('tone', e); }
@@ -562,6 +563,7 @@
       }
       if (it.t === 'oratio') {
         if (it.k === 'se') { heading('Secret · Secreta', null); }
+        if (it.k === 'sp') { heading('Prayer over the People · Oratio super populum', null); posture('All bow'); pair('Orémus. ℣. Humiliáte cápita vestra Deo.', 'Let us pray. ℣. Bow down your heads before God.'); }
         pair(it.x[0], it.x[1]); pair('℟. Amen.', '℟. Amen.');
         return;
       }
