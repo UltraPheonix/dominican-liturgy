@@ -8,8 +8,23 @@ E = html.escape
 
 def slug(n): return 'tit-' + n.lower()
 
+# the words of prayers and chants named in the rubrics (said or not said), set in bold in both columns
+INC = ['Gloria in excelsis Deo', 'Gloria in excelsis', 'Gloria Patri', 'Gloria tibi Domine', 'Te Deum laudamus', 'Kyrie eleison',
+  'Christe eleison', 'Credo', 'Oremus', 'Dominus vobiscum', 'Et cum spiritu tuo', 'Domine exaudi orationem meam: et clamor meus ad te veniat',
+  'Domine exaudi orationem meam', 'Orate fratres', 'Per omnia saecula saeculorum', 'Per Dominum nostrum', 'Qui vivis et regnas cum Deo Patre',
+  'Per eumdem Dominum nostrum', 'Per eumdem Dominum', 'Qui tecum vivit', 'in unitate ejusdem Spiritus Sancti', 'Ite Missa est', 'Ite missa est',
+  'Benedicamus Domino', 'Deo gratias', 'Requiescant in pace', 'Amen', 'Placeat', 'In principio erat Verbum', 'In principio',
+  'Initium sancti Evangelii', 'Cum natus esset Jesus', 'Sequentia sancti Evangelii secundum', 'Memento', 'Communicantes', 'Hanc igitur',
+  'Cum sanctificatus fuero', 'Omnipotens sempiterne Deus, qui vivorum', 'Omnipotens', 'Deus qui de beatae Mariae', 'Deus qui caritatis',
+  'Deus, qui caritatis', 'Deus qui salutis', 'Deus qui pro nobis Filium', 'A cunctis', 'Deus, qui inter summos', 'Deus, qui inter apostolicos',
+  'Deus, qui inter Apostolicos', 'Deus, cui proprium', 'Quaesumus Domine, ut animae', 'Deus, veniae largitor', 'Inclina, Domine',
+  'Quaesumus, Domine, pro tua', 'Fidelium Deus', 'Animabus, quaesumus', 'Propitiare, quaesumus', 'Deus, qui nos Patrem',
+  'Deus Indulgentiarum', 'Deus, cujus miseratione', 'pontificali', 'sacerdotali', 'Gloria']
+INC_RE = re.compile('(?<![\\w>])(' + '|'.join(re.escape(x) for x in sorted(INC, key=len, reverse=True)) + ')(?![\\w<])')
+def mark(t): return INC_RE.sub(r'<b class="rb-inc">\1</b>', E(t))
+
 def pair(la, en):
-    return ('<div class="rb-pair"><p class="rb-la" lang="la">%s</p><p class="rb-en" lang="en">%s</p></div>' % (E(la), E(en)))
+    return ('<div class="rb-pair"><p class="rb-la" lang="la">%s</p><p class="rb-en" lang="en">%s</p></div>' % (mark(la), mark(en)))
 
 body = []
 toc = []
@@ -50,6 +65,8 @@ page = '''<!DOCTYPE html>
     .rb .rb-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin: 0 0 14px; }
     .rb .rb-pair p { margin: 0; line-height: 1.5; text-align: justify; hyphens: auto; }
     .rb .rb-en { color: var(--muted); font-style: italic; }
+    .rb .rb-inc { font-weight: 600; color: var(--ink); }
+    .rb .rb-en .rb-inc { font-style: normal; }
     @media (max-width: 760px) { .rb .rb-pair { grid-template-columns: 1fr; gap: 4px; } .rb .rb-en { font-size: .92em; } }
     @media print { .rb .rb-toc { display: none; } .rb .rb-pair { break-inside: avoid; } }
   </style>
