@@ -428,6 +428,11 @@
         if (/^(7a|6a|5a)$/.test(key)) parts.tr = [];    // nor is the Tract said (XIII, 7)
       }
     }
+    // Tempore Ascensionis (Ascension to the Vigil of Pentecost) the second Alleluia is the one the Missal gives for it
+    if (!temporal && s === 'pasch' && se.asc && se.asc.al && parts.al.length > 1 && d) {
+      var fA = diffDays(d, easter(d.getFullYear()));
+      if (fA >= 39 && fA <= 48) parts.al = [parts.al[0], se.asc.al[0]];
+    }
     if (key === 'C79s' && d) {
       var md = (d.getMonth() + 1) * 100 + d.getDate(), fE = diffDays(d, easter(d.getFullYear()));
       if (md >= 1225 || md <= 202) { parts.of = [{id: 8151}]; parts.co = [{id: 7543}]; }       // a Nativitate usque ad Purificationem
@@ -787,10 +792,25 @@
   var BVM_SYL = {'Annuntiatióne': 'An-nun-ti-a-ti-ó-ne', 'Visitatióne': 'Vi-si-ta-ti-ó-ne', 'Assumptióne': 'As-sump-ti-ó-ne', 'Nativitáte': 'Na-ti-vi-tá-te',
     'Præsentatióne': 'Præ-sen-ta-ti-ó-ne', 'Conceptióne immaculáta': 'Con-cep-ti-ó-ne im-ma-cu-lá-ta', 'Transfixióne': 'Trans-fi-xi-ó-ne',
     'Solemnitáte': 'So-lem-ni-tá-te', 'Veneratióne': 'Ve-ne-ra-ti-ó-ne', 'Festivitáte': 'Fe-sti-vi-tá-te'};
+  // Missale O.P. 1939, Appendix: the Prefaces "cum cantu solemni" on Sundays and in all feasts Simplex and above and
+  // through their octaves; "cum cantu feriali" in profestis diebus and feasts of three lessons. The Pater noster the
+  // same: "Cantus ferialis dicitur in festis trium Lectionum et in diebus ferialibus, et in Missis Defunctorum".
+  // Ferias, vigils and Ember days (outside the octave of Pentecost) are profestis dies; so are Monday to Wednesday of
+  // Holy Week (the Preface of the Cross, ferial "a Dominica Passionis usque ad Cenam Domini exclusive"). Votive Masses
+  // are ferial unless sung pro causa publica (Rubr. gen. XV, 2). Feasts of three lessons are not yet told apart
+  // from the 1960 classes (tools/RANKS_PLAN.md): every Mass of a Saint or Blessed counts as Simplex or above.
+  function solemnDay(key, d) {
+    if (isRequiem(key)) return false;
+    if (isSundayMass(key, d)) return true;
+    if (D.sections.some(function (x) { return x.id === 'votivae' && x.items.indexOf(key) >= 0; })) return false;
+    if (isVigil(key) || (isEmber(key) && !/^Pent0/.test(key))) return false;
+    if (!isTemporal(key)) return true;
+    if (/^(Quad6[mtw]|5aw)$/.test(key)) return false;   // Ash Wednesday: "in capite Jejunii" ferial
+    return temporalClass(key, d) === 1;
+  }
   function prefaceChant(name, key, d) {
     var slug = PREF_SLUG[name]; if (!slug) return null;
-    var c = isTemporal(key) ? temporalClass(key, d) : feastClass(key);
-    var tone = name === 'Defunctorum' ? 'ferial' : (c <= 2 || isSundayMass(key, d) || !PREF_FERIAL[name] ? 'solemn' : 'ferial');
+    var tone = name === 'Defunctorum' ? 'ferial' : (!PREF_FERIAL[name] || solemnDay(key, d) ? 'solemn' : 'ferial');
     var f = d ? diffDays(d, easter(d.getFullYear())) : 10;
     if (name === 'Paschalis' && tone === 'solemn') slug = 'paschalis-die';
     var fix = function (b) {
@@ -811,7 +831,7 @@
   function drawPreface(key, d, R) {
     var name = prefaceOf(key, d);
     if (!name) return null;
-    var P = prefaceText(name, key, d), solemn = R.gloria && !R.requiem;
+    var P = prefaceText(name, key, d), PC0 = prefaceChant(name, key, d), solemn = PC0 ? PC0.tone === 'solemn' : solemnDay(key, d);
     var dialogue = null;
     D.kyriale.forEach(function (id) { if (D.chants[id].i === (solemn ? 'Ad Praefationem in tono solemni' : 'Ad Praefationem in tono feriali')) dialogue = id; });
     var box = el('section', {class: 'part preface', 'data-part': 'pf'});
@@ -1585,7 +1605,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {D: D, dismissGabc: dismissGabc, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
+  window.ProprOP = {D: D, dismissGabc: dismissGabc, solemnDay: solemnDay, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
 
   function start() {
     if (!document.getElementById('selMass')) return;   // loaded as a library (e.g. by the Office page)

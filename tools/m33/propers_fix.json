@@ -397,7 +397,13 @@
   ],
   "co": [
    4856
-  ]
+  ],
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
  },
  "S0303b": {
   "p33": 664,
@@ -437,7 +443,13 @@
   ],
   "co": [
    4856
-  ]
+  ],
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
  },
  "S0613": {
   "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
@@ -450,7 +462,13 @@
   ],
   "al": [
    6895
-  ]
+  ],
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
  },
  "S0712": {
   "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
@@ -487,7 +505,13 @@
   ],
   "co": [
    4856
-  ]
+  ],
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
  },
  "S0612b": {
   "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
@@ -497,7 +521,13 @@
   ],
   "co": [
    4856
-  ]
+  ],
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
  },
  "S0724b": {
   "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
@@ -638,5 +668,469 @@
   "al": [
    "r853"
   ]
+ },
+ "S0324": {
+  "pasch_al": [
+   6556,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 401 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0402": {
+  "pasch_al": [
+   6582,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 405 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0404": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0405": {
+  "pasch_al": [
+   5072,
+   6843
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 408 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0411": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0323b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0413b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0417b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. nec Virg. nec Mart. 35* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0419b": {
+  "pasch_al": [
+   6582,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. 22* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0420": {
+  "pasch_al": [
+   5039,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 414 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0421": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0424": {
+  "pasch_al": [
+   6260,
+   6350
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 417 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0425": {
+  "pasch_al": [
+   6102,
+   5632
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 419 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0426b": {
+  "pasch_al": [
+   6582,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. 22* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0427b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0429": {
+  "pasch_al": [
+   5207,
+   5767
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 422 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0430": {
+  "pasch_al": [
+   5405,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 424 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0502": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 427 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0503b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 429 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0504": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 431 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0505": {
+  "pasch_al": [
+   4870,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 432 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0507": {
+  "pasch_al": [
+   6582,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 436 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0508": {
+  "pasch_al": [
+   7208,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 453 (B. M. V. omnium gratiarum Mediatricis, 31 Maii) (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0509": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 438 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0510": {
+  "pasch_al": [
+   5453,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 439 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0511": {
+  "pasch_al": [
+   6152,
+   5632
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 425 (SS. Philippi et Jacobi, 1 Maii) (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0512b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0514b": {
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0515": {
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0518": {
+  "pasch_al": [
+   5678,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 446 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0519": {
+  "pasch_al": [
+   7042,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 447 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0520b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0524": {
+  "pasch_al": [
+   5397,
+   6484
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Missa votiva de S. Dominico, Feria iij, 66* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "al": [
+   5397
+  ]
+ },
+ "S0526": {
+  "pasch_al": [
+   6501,
+   5437
+  ],
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 452 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0527": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0528b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0530b": {
+  "pasch_al": [
+   6785,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. Pont. 18* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0531": {
+  "pasch_al": [
+   7208,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; supplement (B. M. V. Reginae): second Alleluia only (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0605b": {
+  "pasch_al": [
+   6895,
+   5632
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 459 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0606": {
+  "pasch_al": [
+   6785,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. Pont. 18* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0611": {
+  "pasch_al": [
+   5348,
+   5352
+  ],
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 462 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0618": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0620b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0620bx": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "C15s": {
+  "pasch_al": [
+   5678,
+   5767
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Mart. Pont. tempore Paschali 7* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "C28s": {
+  "pasch_al": [
+   5648,
+   5632
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. plur. Mart. tempore Paschali 15* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0409b": {
+  "pasch_al": [
+   5678,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Mart. non Pont. tempore Paschali 11* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "pasch": {
+   "in": [
+    4864
+   ],
+   "of": [
+    5269
+   ],
+   "co": [
+    6576
+   ]
+  }
+ },
+ "S0410b": {
+  "pasch_al": [
+   5678,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Mart. non Pont. tempore Paschali 11* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "pasch": {
+   "in": [
+    4864
+   ],
+   "of": [
+    5269
+   ],
+   "co": [
+    6576
+   ]
+  }
+ },
+ "S0422b": {
+  "pasch_al": [
+   5678,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Mart. non Pont. tempore Paschali 11* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "pasch": {
+   "in": [
+    4864
+   ],
+   "of": [
+    5269
+   ],
+   "co": [
+    6576
+   ]
+  }
+ },
+ "S0603": {
+  "pasch_al": [
+   5648,
+   5632
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. plur. Mart. tempore Paschali 15* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "pasch": {
+   "in": [
+    6578
+   ],
+   "of": [
+    4790
+   ],
+   "co": [
+    6440
+   ]
+  }
+ },
+ "G475": {
+  "al": [
+   6419
+  ],
+  "of": [
+   6024
+  ],
+  "co": [
+   6658
+  ],
+  "gr": [],
+  "pasch_al": [
+   6419,
+   9853
+  ],
+  "asc_al": 5526,
+  "p39": "p. 442-443",
+  "_why": "B. Imelda (13 Maii), Missale O.P. 1939 pp. 442-443 and Graduale O.P. 1950 pp. 475-478: Alleluia Ave virginum gemma, Off. Introibo, Comm. Ego dilecto; always in Paschaltide (Tempore Resurr. secundum Alleluia Nonne cor nostrum; Ascens. Ascendens Christus), so no Gradual"
  }
 }

@@ -302,7 +302,7 @@
         return;
       }
       if (it.t === 'pref') {
-        var solemn = R.gloria && !R.requiem;
+        var pn = A.prefaceOf(S.key, S.date), pcc = pn && A.prefaceChant(pn, S.key, S.date), solemn = pcc ? pcc.tone === 'solemn' : A.solemnDay(S.key, S.date);
         heading('Ad Præfationem', (solemn ? 'In tono solemni' : 'In tono feriali') + ' · p. 147*');
         chant(A.findKyriale(solemn ? 'Ad Praefationem in tono solemni' : 'Ad Praefationem in tono feriali'), {noDrop: true});
         return;
@@ -353,7 +353,7 @@
         if (it.k === 'pater' && sung) {
           heading('Pater noster', null);
           // Missale O.P. 1939, Appendix: the ferial chant in feasts of three lessons, on ferias and in Masses for the Dead
-          var pc = A.isTemporal(S.key) ? A.temporalClass(S.key, S.date) : A.feastClass(S.key), ptSol = !R.requiem && pc <= 3;
+          var ptSol = A.solemnDay(S.key, S.date);
           rubric('The priest sings (' + (ptSol ? 'solemn' : 'ferial') + ' chant):', {left: true});
           chant(ptSol ? 'op-m39-pater-solemn' : 'op-m39-pater-ferial', {noDrop: true, glyph: 1 / 19, size: 14});
           var s = ordoLines('pater');
@@ -473,7 +473,7 @@
   }
   function preface() {
     var name = A.prefaceOf(S.key, S.date); if (!name) return;
-    var P = A.prefaceText(name, S.key, S.date), solemn = R.gloria && !R.requiem;
+    var P = A.prefaceText(name, S.key, S.date), PC0 = A.prefaceChant(name, S.key, S.date), solemn = PC0 ? PC0.tone === 'solemn' : A.solemnDay(S.key, S.date);
     heading('Præfatio', P.name);
     if (BOOK === 'priest') {
       var PC = A.prefaceChant(name, S.key, S.date);
