@@ -59,3 +59,6 @@ DONE 2026-11-26 sw v90: A1 (first prayer after the heading; 'Oratio,' accepted; 
 ## H. UI / site
 30. UI clean-up (17 small fixes proposed 2026-11-26, dropped — re-propose).
 31. Site-wide check script for the Office (like tools/check/year.py for Mass): unknown words, run-ons, wrong prayers, placeholders.
+
+## GOAL (Joseph, 2026-11-26): the user can chant and say the ENTIRE 1909 Office and the entire 1953/54 Office,
+## including Tenebrae and the special services (Triduum, Office of the Dead, Little Office B.V.M., processions, etc.).

@@ -51,7 +51,7 @@ def celebrable(d, s, w, rk):
     if s == 'pass' and (d - (easter(d.year) - datetime.timedelta(days=7))).days >= 0: return False
     if s in ('quad', 'pass', 'cin'): return rk >= 3
     return rk >= 1
-PAIRS = {('d', 'o'), ('c', 'e'), ('a', 'e'), ('i', 'e'), ('i', 'l'), ('l', 'i'), ('n', 'u'), ('u', 'n'), ('t', 'f'), ('r', 'c'), ('e', 'c'), ('o', 'a'),
+PAIRS = {('b', 'o'), ('d', 'e'), ('d', 'a'), ('b', 'a'), ('h', 'o'), ('f', 'i'), ('t', 'i'), ('r', 'i'), ('d', 'o'), ('c', 'e'), ('a', 'e'), ('i', 'e'), ('i', 'l'), ('l', 'i'), ('n', 'u'), ('u', 'n'), ('t', 'f'), ('r', 'c'), ('e', 'c'), ('o', 'a'),
          ('a', 'o'), ('k', 'e'), ('h', 'b'), ('b', 'h'), ('i', 't'), ('f', 's'), ('s', 'f'), ('e', 'a'), ('m', 'n'), ('n', 'm')}
 def ocr_word(x, LD):
     """an OCR word not in the dictionary: one substitution of a usual OCR confusion (pastdris -> pastóris, concade -> concéde);

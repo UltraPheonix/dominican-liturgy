@@ -196,6 +196,9 @@ def is_head(l):
     if len(l) > 60 or FULLDAY.search(l): return False
     let = [c for c in l if c.isalpha()]
     return len(let) >= 4 and sum(c.isupper() for c in let) >= 0.6 * len(let)
+def caps_line(l):
+    let = [c for c in l if c.isalpha()]
+    return len(let) >= 4 and sum(c.isupper() for c in let) >= 0.6 * len(let)
 def text_sancti(vol, a, b):
     import gzip
     pages = gzip.open(os.path.join(HERE, 'text/%s.txt.gz' % vol), 'rt').read().split('\f### ')[1:]
@@ -204,7 +207,9 @@ def text_sancti(vol, a, b):
         i, body = pg.split('\n', 1)
         for c in body.split('\n||\n'):
             ls = [l.strip() for l in c.split('\n') if l.strip()]
-            while ls and (is_head(ls[0]) or re.match(r'^[\W\d]{1,8}$', ls[0])): ls = ls[1:]
+            # a 'DIE II. DECEMBRIS. B.' line at the top of a column is the running head unless the saint's title (capitals) follows it
+            while ls and (is_head(ls[0]) or re.match(r'^[\W\d]{1,8}$', ls[0]) or
+                          (FULLDAY.search(ls[0]) and len(ls[0]) < 60 and len(ls) > 1 and not caps_line(ls[1]))): ls = ls[1:]
             out.append('\n'.join(ls))
     t = '\n'.join(out); t = re.sub(r'-\n(\S)', r'\1', t); t = re.sub(r'\s+', ' ', t)
     t = R.fix_ocr(t)
