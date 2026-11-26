@@ -29,6 +29,7 @@ def fix(t, cov=0.6):
     """a short piece (antiphon, versicle, part of a responsory): the book's words, spelled after the matching Divinum Officium
     piece where there is one (conform), else word repairs only"""
     t = O.clean(t); t = O.dropcap(t) if re.match(r'^[a-zà-ÿ]|^[A-Z]{3,}|^.{0,3}[\\^/]', t) else t
+    if VOL[0]: t = W.merge(t, VOL[0])
     ref = O.fix_short(t, cov)
     u = conform(t, ref)[0] if ref and ref != t else LC.fix_text(t)
     return re.sub(r'\s+', ' ', u).strip(' ,;:')
@@ -193,14 +194,16 @@ def parse(ch):
             al, vr = nocturn(S[k]); nants.append(al); nvr.append(vr)
     if nants and all(len(a) == 3 for a in nants) and len(nants) == 3:
         put('mat', 'nants', nants); P['mat']['nvr'] = nvr
-    elif nants: Q.append('mat.nants: %s antiphons read %s' % (len(nants), [len(a) for a in nants]))
+    elif nants and any(nants): Q.append('mat.nants: %s antiphons read %s' % (len(nants), [len(a) for a in nants]))
     # lessons and responsories (matins.py machinery, repaired against the Vulgate / Divinum Officium)
     ls = []
     for k in ('n1', 'n2', 'n3'):
         got = split_lessons(S.get(k, ''), {'n1': 1, 'n2': 4, 'n3': 7}[k])
         if got and len(got) != 3: Q.append('%s: %d lessons read' % (k, len(got)))
         for n, lt, rt in got:
-            x = M.build_lesson(n, O.clean(lt))
+            lt = W.merge(O.clean(lt), VOL[0]) if VOL[0] else O.clean(lt)
+            x = M.build_lesson(n, lt)
+            if x.get('src') == 'OCR' and x.get('la'): x['la'] = LC.fix_text(x['la'])
             if x.get('src') != 'OCR' and x.get('la'):
                 body = M.lesson_parts(O.clean(lt))[1]
                 hm = re.search(r'\s((?:Homilía|Sermo|Ex Tractátu|Ex libro)[^.]*\.(?:\s*\([^)]*\))?)\s', ' ' + body + ' ')

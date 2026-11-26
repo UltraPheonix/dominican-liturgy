@@ -1,5 +1,5 @@
 {
- "_about": "Proper Offices corrected BY EYE against the page images of the Breviarium S.O.P. 1909 (pdftoppm of the text PDFs). An entry here replaces what proper.py read and is trusted (no 'q'). Keys: v1.ant, v1.magn, oratio, v1.cap [ref, text], v1.resp [a, b, verse, repeat after the verse, repeat after the Gloria], mat.invit, mat.nants [[3],[3],[3]], mat.nvr [[V,R]x3], resp {n: [a, b, [verses], gloria]} with gloria = true | false | [repeat after the verse, repeat after the Gloria or false], al [V, R] (before Lauds), laud.ant [5], laud.bened, v2.ant, v2.magn. 'pages' = pdf pages read.",
+ "_about": "Proper Offices corrected BY EYE against the page images of the Breviarium S.O.P. 1909 (pdftoppm of the text PDFs). An entry here replaces what proper.py read and is trusted (no 'q'). Keys: v1.ant, v1.magn, oratio, v1.cap [ref, text], v1.resp [a, b, verse, repeat after the verse, repeat after the Gloria], mat.invit, mat.nants [[3],[3],[3]], mat.nvr [[V,R]x3], resp {n: [a, b, [verses], gloria]} with gloria = true | false | [repeat after the verse, repeat after the Gloria or false], al [V, R] (before Lauds), laud.ant [5], laud.bened, v2.ant, v2.magn. 'pages' = pdf pages read. ALSO: 'sub' = [[wrong, right], ...] replacements applied to the machine reading (propers1909.json) of the feast, and 'ok': true = every piece of the machine reading, after 'sub', was then verified against the page ('not_ok': [piece keys still doubtful]).",
  "S. Andréæ Apóstoli": {
   "pages": "v1 pdf 772-777 (book pp. 686-691)",
   "v1.magn": "Ámbulans Jesus juxta mare Galilǽæ vidit Petrum et Andréam fratrem ejus, et ait illis: Veníte post me, fáciam vos fíeri piscatóres hóminum. At illi, relíctis rétibus et navi, secúti sunt eum.",
@@ -293,5 +293,184 @@
   "laud.bened": "Copiósæ caritátis Nicoláe Póntifex, qui cum Deo gloriáris in cæli palátio: condescénde, supplicámus, ad te suspirántibus, ut exútos gravi carne pértrahas ad súperos.",
   "v2.ant": "Beátus Nicoláus adhuc puérulus multo jejúnio macerábat corpus.",
   "v2.magn": "O Christi píetas omni prosequénda laude, quæ sui fámuli Nicolái mérita longe latéque declárat! Nam ex tumba ejus óleum manat, cunctósque lánguidos sanat."
+ },
+ "B. Joánnis a Vercéllis Conf. O.P.": {
+  "pages": "v1 pdf 778-779 (book pp. 692-693)",
+  "ok": true,
+  "oratio": "Deus, qui beátum Joánnem mirábili prudéntia et fortitúdine claréscere voluísti: ipso interveniénte, concéde ut família tua semper et ubíque salúbri regímine gubernétur. Per Dóminum.",
+  "sub": [
+   [
+    "Jos quem",
+    "Joánnes, quem"
+   ],
+   [
+    "dioecesis",
+    "diœcésis"
+   ],
+   [
+    "przstantissimi",
+    "præstantíssimi"
+   ],
+   [
+    "præbuísse adoléscens",
+    "præbuísset, adoléscens"
+   ],
+   [
+    "Uni. versitáte",
+    "Universitáte"
+   ],
+   [
+    "dócuit, In",
+    "dócuit. In"
+   ],
+   [
+    "Ver. célis",
+    "Vercéllis"
+   ],
+   [
+    "Praedicatorum nomen",
+    "Prædicatórum nomen"
+   ],
+   [
+    "coenóbio",
+    "cœnóbio"
+   ],
+   [
+    "gessit Quo",
+    "gessit. Quo"
+   ],
+   [
+    "Bononiénsis ii e Prior",
+    "Bononiénsis cœnóbii Prior"
+   ],
+   [
+    "Lombardías",
+    "Lombárdiæ"
+   ],
+   [
+    "praeféctus",
+    "præféctus"
+   ],
+   [
+    "N Magístrum",
+    "In Magístrum"
+   ],
+   [
+    "qu& Capítula",
+    "quæ Capítula"
+   ],
+   [
+    "disciplínam | fórtiter",
+    "disciplínam fórtiter"
+   ],
+   [
+    "magni sémei hábitus",
+    "magni semper hábitus"
+   ],
+   [
+    "Christian reipúblicæ",
+    "Christiánæ reipúblicæ"
+   ],
+   [
+    "Itáliae",
+    "Itáliæ"
+   ],
+   [
+    "hzréticae",
+    "hæréticæ"
+   ],
+   [
+    "sacra expeditiónis Cruce — signatórum",
+    "sacræ expeditiónis Cruce signatórum"
+   ],
+   [
+    "Génuze",
+    "Génuæ"
+   ],
+   [
+    "Floréntiae. et Bonóni; a",
+    "Floréntiæ et Bonóniæ a"
+   ],
+   [
+    "fidissimus",
+    "fidíssimus"
+   ],
+   [
+    "ANCTI",
+    "Sancti"
+   ],
+   [
+    "legiferi",
+    "legíferi"
+   ],
+   [
+    "relíquia solémni",
+    "relíquiæ solémni"
+   ],
+   [
+    "repósitee",
+    "repósitæ"
+   ],
+   [
+    "Praedicatorum ut",
+    "Prædicatórum ut"
+   ],
+   [
+    "jussu. Praedicatórum família",
+    "jussu Prædicatórum famíliæ"
+   ],
+   [
+    "retínuit, Ex",
+    "retínuit. Ex"
+   ],
+   [
+    "interdixit",
+    "interdíxit"
+   ],
+   [
+    "itíinerum",
+    "itínerum"
+   ],
+   [
+    "praedicatióne",
+    "prædicatióne"
+   ],
+   [
+    "déstitit, Doctrínæ",
+    "déstitit. Doctrínæ"
+   ],
+   [
+    "Concórdize",
+    "Concórdiæ"
+   ],
+   [
+    "custodiénda sédulus",
+    "custodiéndæ sédulus"
+   ],
+   [
+    "ccenóbio",
+    "cœnóbio"
+   ],
+   [
+    "kaléndas —Decémbris",
+    "kaléndas Decémbris"
+   ],
+   [
+    "Octogésimo",
+    "octogésimo"
+   ],
+   [
+    "beáto [ Joánni",
+    "beáto Joánni"
+   ],
+   [
+    "præstitum",
+    "prǽstitum"
+   ],
+   [
+    "deléctus est, Apostólicus",
+    "deléctus est, Apostólicus"
+   ]
+  ]
  }
 }

@@ -1044,6 +1044,17 @@ def with_proper(F, o, title):
     P = PROP.get(title); X = PFIX.get(title) or {}
     if not P and not X: return F, o
     P = P or {}
+    if X.get('sub') or X.get('ok'):      # the machine reading, corrected by eye: 'sub' = [wrong, right] replacements; 'ok' = every piece then verified
+        def sb(v):
+            if isinstance(v, str):
+                for a_, b_ in X.get('sub', []): v = v.replace(a_, b_)
+                return v
+            if isinstance(v, dict): return {k: sb(x) for k, x in v.items()}
+            if isinstance(v, list): return [sb(x) for x in v]
+            return v
+        P = sb(P)
+        if X.get('ok'): P = dict(P, q=[q for q in P.get('q', []) if q.split(':')[0] in X.get('not_ok', [])])
+        if X.get('ok'): P['lessons'] = [dict(x, src='DO 1.00 (verified by eye)') if ('lectio %s' % x.get('n')) not in X.get('not_ok', []) else x for x in P.get('lessons', [])]
     bad = set(x.split(':')[0] for x in P.get('q', []))
     F = dict(F)
     def get(sec, k):
