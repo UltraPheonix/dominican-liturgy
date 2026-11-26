@@ -23,7 +23,8 @@ N.update(X)
 added = []
 for k, e in N.items():
     if k in O and k not in force: continue
-    O[k] = {'src': src(k)}
+    keep = {x: O[k][x] for x in ('sp',) if k in O and x in O[k]}
+    O[k] = {'src': src(k)}; O[k].update(keep)
     for kind in ('or', 'se', 'pc'):
         O[k][kind] = [i_spelling(e[kind][0]), e[kind][1]]
     added.append(k)

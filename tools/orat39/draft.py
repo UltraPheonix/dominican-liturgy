@@ -5,7 +5,7 @@ import sys, re, json
 sys.argv, args = sys.argv[:1], sys.argv[1:]
 from build_or import latin, english, clean_en, flat
 L = open('m39lin.txt').read().split('\n')
-HEAD = {'or': re.compile(r'^Oratio\s*$'), 'se': re.compile(r'^Secreta\b'), 'pc': re.compile(r'^Postcommunio\b')}
+HEAD = {'or': re.compile(r'^Oratio\s*$'), 'se': re.compile(r'^Secreta\b'), 'pc': re.compile(r'^(Pro pluribus )?Postcommunio\b')}
 STOP = re.compile(r'^(Secreta|Postcommunio|Praefatio|Graduale|Lectio|Léctio|Communio|Offertorium|Evangelium|Sequentia|Tractus|Alleluia|Die \d|Festa |Oratio|Commemoratio|Secunda|Oremus|Humiliate|Dominica|Feria|DOMINICA|FERIA|Officium|In Vigilia|@@PAGE)')
 def grab(i, kind):
     j = i
@@ -24,11 +24,17 @@ def grab(i, kind):
     return t, k
 cand = {}
 for a in args:
-    key, line = a.split(':'); i = int(line) - 1
-    pr = {}
-    for kind in ('or', 'se', 'pc'):
-        t, i2 = grab(i, kind)
-        if t: pr[kind] = t; i = i2
+    key, line = a.split(':'); pr = {}
+    if '@' in line:  # explicit: or@L,se@L,pc@L
+        for part in line.split(','):
+            kind, l0 = part.split('@'); t, _ = grab(int(l0) - 1, kind)
+            if t: pr[kind] = t
+        line = line.split(',')[0].split('@')[1]
+    else:
+        i = int(line) - 1
+        for kind in ('or', 'se', 'pc'):
+            t, i2 = grab(i, kind)
+            if t: pr[kind] = t; i = i2
     cand[key] = {'start': int(line) - 1, 'pr': pr}
     print('=====', key)
     for kind in ('or', 'se', 'pc'):

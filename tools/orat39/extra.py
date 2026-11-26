@@ -19,7 +19,7 @@ def concl(t):
     m = re.search(r'(Per Dóminum|Per eúndem|Qui vivis|Qui vivit|Qui tecum|qui tecum)[^.]*\.$', t)
     if not m: raise SystemExit('no conclusion: ' + t[-60:])
     s = m.group(1); body = t[:m.start()]
-    if s == 'Per Dóminum': c, e = NS['PD'], NS['EPD']
+    if s == 'Per Dóminum': c, e = (NS['PDS'], NS['EPDS']) if 'ejúsdem' in m.group(0) else (NS['PD'], NS['EPD'])
     elif s == 'Per eúndem': c, e = NS['PE'], NS['EPE']
     elif s == 'Qui vivis': c, e = NS['QV'], NS['EQV']
     else: c, e = NS['QT'], NS['EQT']
