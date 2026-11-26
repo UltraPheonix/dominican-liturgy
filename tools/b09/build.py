@@ -807,7 +807,7 @@ def resp9(r, lang):
     if lang == 'en': a, b, vs = ant_en(a), ant_en(b), [ant_en(v) for v in vs]
     out = ['<r>℟.</r> %s * %s' % (a, b)]
     for v in vs: out.append('<r>℣.</r> %s %s' % (v, rep_v if lang == 'la' else ''))
-    if g: out.append(('<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. %s' % rep_g) if lang == 'la' else '<r>℣.</r> Glory be to the Father, and to the Son, and to the Holy Ghost.')
+    if g and not (isinstance(g, tuple) and g[1] is False): out.append(('<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. %s' % rep_g) if lang == 'la' else '<r>℣.</r> Glory be to the Father, and to the Son, and to the Holy Ghost.')
     return '\n'.join(x.rstrip() for x in out)
 def v1resp(r, lang):
     """the Responsory of I Vespers: (a, b, verse, repeat after verse, repeat after Gloria)"""
@@ -1032,32 +1032,50 @@ PROP = {}
 try:
     for _k, _v in json.load(open(os.path.join(HERE, 'propers1909.json'), encoding='utf-8')).items(): PROP[_k.split('|', 1)[1]] = _v
 except FileNotFoundError: pass
+PFIX = {}
+try: PFIX = json.load(open(os.path.join(HERE, 'propers_fix.json'), encoding='utf-8'))
+except FileNotFoundError: pass
 def with_proper(F, o, title):
-    """the feast's own pieces (proper.py, from the scanned Sanctorale) over its Common; a piece with doubtful words (listed in 'q')
-    is not used"""
-    P = PROP.get(title)
-    if not P: return F, o
+    """the feast's own pieces over its Common: first those corrected by eye against the page images (propers_fix.json), then those
+    read by proper.py from the scanned Sanctorale, a piece with doubtful words (its 'q' list) or a partly doubtful set never used
+    (the nine responsories are taken together or not at all)"""
+    P = PROP.get(title); X = PFIX.get(title) or {}
+    if not P and not X: return F, o
+    P = P or {}
     bad = set(x.split(':')[0] for x in P.get('q', []))
-    F = dict(F); ok = lambda sec, k: (P.get(sec) or {}).get(k) and '%s.%s' % (sec, k) not in bad
-    for sec, keys in (('v1', ('ant', 'ants', 'magn')), ('laud', ('ant', 'bened')), ('v2', ('ant', 'magn'))):
+    F = dict(F)
+    def get(sec, k):
+        if '%s.%s' % (sec, k) in X: return X['%s.%s' % (sec, k)]
+        v = (P.get(sec) or {}).get(k)
+        return v if v and '%s.%s' % (sec, k) not in bad else None
+    for sec, keys in (('v1', ('ant', 'ants', 'magn', 'resp')), ('laud', ('ant', 'bened')), ('v2', ('ant', 'magn'))):
         for k in keys:
-            if ok(sec, k) and isinstance(F.get(sec), dict): F[sec] = dict(F[sec], **{k: P[sec][k]})
-    M_ = dict(F['mat'])
-    if ok('mat', 'invit') and len(P['mat']['invit']) < 200: M_['invit'] = P['mat']['invit'].replace(', Qui', ', * Qui') if '*' not in P['mat']['invit'] else P['mat']['invit']
-    if ok('mat', 'nants') and not F.get('_tp') and len(M_.get('noct', [])) == 3:
-        nv = P['mat'].get('nvr') or [None] * 3
-        M_['noct'] = [(M_['noct'][i][0], P['mat']['nants'][i], tuple(nv[i]) if nv[i] else M_['noct'][i][2]) for i in range(3)]
-    if not F.get('_tp') and isinstance(M_.get('resp'), list) and len(M_['resp']) == 9:
-        rs = list(M_['resp'])
+            v = get(sec, k)
+            if v and isinstance(F.get(sec), dict):
+                if k == 'ant' and sec != 'laud' and isinstance(v, str): F[sec] = dict(F[sec], ant=v)
+                else: F[sec] = dict(F[sec], **{k: tuple(v) if k == 'resp' else v})
+    if X.get('al'): F['al'] = tuple(X['al'])
+    M_ = dict(F['mat']); tp = F.get('_tp')
+    iv = get('mat', 'invit')
+    if iv and len(iv) < 200 and '*' in iv: M_['invit'] = iv.replace(': *', ', *') if False else iv
+    na = get('mat', 'nants')
+    if na and not tp and len(M_.get('noct', [])) == 3:
+        nv = X.get('mat.nvr') or (P.get('mat') or {}).get('nvr') or [None] * 3
+        M_['noct'] = [(M_['noct'][i][0], na[i], tuple(nv[i]) if nv[i] else M_['noct'][i][2]) for i in range(3)]
+    if not tp and isinstance(M_.get('resp'), list) and len(M_['resp']) == 9:
+        rs = {}
         for x in P.get('lessons', []):
             r = x.get('resp'); n = x.get('n')
             if r and isinstance(n, int) and 1 <= n <= 9 and 'resp %d' % n not in bad and r.get('a') and r.get('b'):
-                rs[n - 1] = (r['a'].rstrip('.,:;') + ',' if not r['a'].rstrip()[-1:] in ':,' else r['a'], r['b'], r.get('v') or [], bool(r.get('gloria')))
-        M_['resp'] = rs
+                rs[n] = (r['a'], r['b'], r.get('v') or [], bool(r.get('gloria')))
+        for n, r in (X.get('resp') or {}).items():
+            rs[int(n)] = (r[0], r[1], r[2], tuple(r[3]) if isinstance(r[3], list) else r[3])
+        printed = set(x.get('n') for x in P.get('lessons', []) if x.get('resp')) | set(int(n) for n in (X.get('resp') or {}))
+        if printed and printed <= set(rs):          # every responsory the book prints for the feast is clean
+            M_['resp'] = [rs.get(n, M_['resp'][n - 1]) for n in range(1, 10)]
     F['mat'] = M_
     if P.get('lessons'):
         o = dict(o or {}); o['lessons'] = P['lessons']
-        if 'mat.invit' in bad: o.pop('invit', None)
     return F, o
 def feast_day(d):
     """the winning feast of a day with a Common to render it: dict(fe, cn, F, o, rk) or None"""

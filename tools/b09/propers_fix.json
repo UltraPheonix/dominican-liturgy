@@ -1,0 +1,28 @@
+{
+"_about": "Proper Offices corrected BY EYE against the page images of the Breviarium S.O.P. 1909 (pdftoppm of the text PDFs). An entry here replaces what proper.py read and is trusted (no 'q'). Keys: v1.ant, v1.magn, v1.resp [a, b, verse, repeat], mat.invit, mat.nants [[3],[3],[3]], mat.nvr [[V,R]x3], resp {n: [a, b, [verses], gloria]} with gloria = true | false | [repeat after the verse, repeat after the Gloria or false], al [V, R] (before Lauds), laud.ant [5], laud.bened, v2.ant, v2.magn. 'pages' = pdf pages read.",
+"S. Andréæ Apóstoli": {
+ "pages": "v1 pdf 772-777 (book pp. 686-691)",
+ "v1.magn": "Ámbulans Jesus juxta mare Galilǽæ vidit Petrum et Andréam fratrem ejus, et ait illis: Veníte post me, fáciam vos fíeri piscatóres hóminum. At illi, relíctis rétibus et navi, secúti sunt eum.",
+ "mat.invit": "Adorémus victoriosíssimum Regem Christum: * Qui victórem per crucis trophǽum coronávit beátum Andréam Apóstolum.",
+ "mat.nants": [["Vidit Dóminus Petrum et Andréam, et vocávit eos.", "Veníte post me, dicit Dóminus, fáciam vos fíeri piscatóres hóminum.", "Relíctis rétibus suis, secúti sunt Dóminum Redemptórem."],
+  ["Diléxit Andréam Dóminus in odórem suavitátis, allelúja.", "Dignum sibi Dóminus computávit mártyrem, quem vocávit Apóstolum, dum esset in mari, allelúja.", "Christus me misit ad istam provínciam, ubi non parvum pópulum acquisívi."],
+  ["Videns Andréas crucem, cum gáudio dicébat: Quia amátor tuus semper fui, et desiderávi amplécti te, o bona crux.", "Récipe me ab homínibus, et redde me Magístro meo: ut per te me recípiat, qui per te me redémit.", "Bíduo vivens pendébat in cruce pro Christi nómine beátus Andréas, et docébat pópulum."]],
+ "mat.nvr": [["In omnem terram exívit sonus eórum.", "Et in fines orbis terræ verba eórum."], ["Constítues eos príncipes super omnem terram.", "Mémores erunt nóminis tui Dómine."], ["Nimis honoráti sunt amíci tui Deus.", "Nimis confortátus est principátus eórum."]],
+ "resp": {
+  "1": ["Cum perambuláret Dóminus juxta mare secus litus Galilǽæ, vidit Petrum et Andréam rétia mitténtes in mare, et vocávit eos dicens:", "Veníte post me, fáciam vos piscatóres hóminum.", ["Erant enim piscatóres: et ait illis."], false],
+  "2": ["Mox ut vocem Dómini prædicántis audívit beátus Andréas, relíctis rétibus, quorum usu actúque vivébat, ætérnæ vitæ secútus est", "Prǽmia largiéntem.", ["Ad uníus jussiónis vocem Petrus et Andréas, relíctis rétibus, secúti sunt Redemptórem."], false],
+  "3": ["Homo Dei ducebátur, ut crucifígerent eum: pópulus autem clamábat voce magna dicens:", "Ínnocens ejus sanguis sine causa damnátur.", ["Cumque carnífices dúcerent eum, ut crucifigerétur, factus est concúrsus populórum clamántium et dicéntium."], true],
+  "4": ["Doctor bonus, et amícus Dei Andréas dúcitur ad crucem: aspíciens a longe, vidit crucem: Salve crux,", "Súscipe discípulum ejus, qui pepéndit in te magíster meus Christus.", ["Salve crux, quæ in córpore Christi dedicáta es: et ex membris ejus tamquam margarítis ornáta."], false],
+  "5": ["O bona crux, quæ decórem et pulchritúdinem de membris Dómini suscepísti, áccipe me ab homínibus, et redde me Magístro meo:", "Ut per te me recípiat, qui per te me redémit.", ["Secúrus et gaudens vénio ad te: ita et tu exsúltans suscípias me."], ["Ut per te me recípiat.", false]],
+  "6": ["Salve crux, quæ in córpore Christi dedicáta es, et ex membris ejus tamquam margarítis ornáta:", "Súscipe discípulum ejus, qui pepéndit in te.", ["O bona crux, diu desideráta, et jam concupiscénti ánimo præparáta."], true],
+  "7": ["Expándi manus meas tota die in cruce ad pópulum non credéntem, sed contradicéntem mihi:", "Qui ámbulant vias non bonas, sed post peccáta sua.", ["Exaltáre, qui júdicas terram: redde retributiónem supérbis."], ["Qui ámbulant.", false]],
+  "8": ["Diléxit Andréam Dóminus in odórem suavitátis: dum pendéret in cruce, dignum sibi computávit mártyrem, quem vocávit Apóstolum, dum esset in mari:", "Et ídeo amícus Dei appellátus est.", ["Vir iste in pópulo suo mitíssimus appáruit: sanctitáte autem et grátia plenus."], ["Et ídeo.", false]],
+  "9": ["Videns crucem Andréas exclamávit dicens:", "O crux inenarrábilis, o crux inæstimábilis, o crux, quæ per totum mundum fulges, Non me dimíttas errántem, sicut ovem non habéntem pastórem.", ["Bíduo vivens pendébat in cruce pro Christi nómine beátus Andréas, et docébat pópulum, et dicébat."], ["O crux.", "Non me dimíttas errántem."]]
+ },
+ "al": ["Diléxit Andréam Dóminus.", "In odórem suavitátis."],
+ "laud.ant": ["Salve crux pretiósa, súscipe discípulum ejus, qui pepéndit in te magíster meus Christus.", "Beátus Andréas orábat dicens: Dómine, Rex ætérnæ glóriæ, súscipe me pendéntem in patíbulo.", "Andréas Christi fámulus, dignus Dei Apóstolus, germánus Petri, et in passióne sócius.", "Maximílla, Christo amábilis, tulit corpus Apóstoli: óptimo loco cum aromátibus sepelívit.", "Qui persequebántur justum, demersísti eos Dómine in profúndum: et in ligno crucis dux justi fuísti."],
+ "laud.bened": "Concéde nobis hóminem justum, redde nobis hóminem sanctum: ne interfícias hóminem Deo carum, justum, mansuétum et pium.",
+ "v2.ant": "Salve crux pretiósa, súscipe discípulum ejus, qui pepéndit in te magíster meus Christus.",
+ "v2.magn": "Cum pervenísset beátus Andréas ad locum ubi crux paráta erat, exclamávit et dixit: O bona crux, diu desideráta, et jam concupiscénti ánimo præparáta, secúrus et gaudens vénio ad te: ita et tu exsúltans suscípias me discípulum ejus, qui pepéndit in te."
+}
+}

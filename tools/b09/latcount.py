@@ -2,15 +2,34 @@
 (DO has a few OCR forms, e.g. 'pastdris'); cached in /tmp/b09/latcnt.json"""
 import os, re, json, collections
 import latdict as LD
-CACHE = '/tmp/b09/latcnt.json'
+CACHE = '/tmp/b09/latcnt3.json'
+REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+WORD = r"[A-Za-zÀ-ÿæœǽÆŒ]+"
 def build():
+    """Divinum Officium Latin + the Vulgate (bible/la) + the chant texts of GregoBase (tools/gregobase/gb.sqlite; many Dominican
+    antiphons and responsories) + the site's 1954 Office Latin: a word seen there is a real word"""
+    import glob, sqlite3
     C = collections.Counter()
     for dp, dn, fn in os.walk(LD.ROOT):
         for f in fn:
             if f.endswith('.txt'):
                 try: t = open(os.path.join(dp, f), encoding='utf-8').read()
                 except Exception: continue
-                C.update(LD.base(w) for w in re.findall(r"[A-Za-zÀ-ÿæœǽÆŒ]+", t))
+                C.update(LD.base(w) for w in re.findall(WORD, t))
+    for f in glob.glob(os.path.join(REPO, 'bible/la/*.txt')):
+        C.update(LD.base(w) for w in re.findall(WORD, open(f, encoding='utf-8').read()))
+    C2 = collections.Counter()
+    try:
+        db = sqlite3.connect(os.path.join(REPO, 'tools/gregobase/gb.sqlite'))
+        for (g,) in db.execute('select gabc from gregobase_chants'):
+            if g: C2.update(LD.base(w) for w in re.findall(WORD, re.sub(r'<[^>]*>|\{|\}', '', re.sub(r'\([^)]*\)', '', g))))
+    except Exception as e: print('gregobase:', e)
+    for f in glob.glob(os.path.join(REPO, 'data/office/20*/*.json')) + [os.path.join(REPO, 'data/office/common.json')]:
+        try: t = open(f, encoding='utf-8').read()
+        except Exception: continue
+        C2.update(LD.base(w) for w in re.findall(WORD, re.sub(r'<[^>]*>', ' ', t)))
+    for w, n in C2.items():
+        if n >= 2: C[w] += n    # chant transcriptions have typos of their own: a form must occur twice
     json.dump(C, open(CACHE, 'w')); return C
 N = json.load(open(CACHE)) if os.path.exists(CACHE) else build()
 

@@ -14,13 +14,17 @@ SEC = [('v1', r'Ad I\. Vesperas|Ad i\. Vesperas|In I\. Vesperis'), ('mat', r'Ad 
        ('hor', r'Ad (?:Primam|Tertiam|Horas)'), ('v2', r'(?:Ad|In) I[iI]\. Vesper(?:as|is)'), ('oct', r'Per Octavam|Infra Octavam|Ad Memóriam')]
 
 def known(t):
-    ws = re.findall(r"[A-Za-zÀ-ÿǽæœÆŒ0-9$£^\\]+", t)
-    bad = [w for w in ws if (len(w) > 2 and LC.N.get(LD.base(w), 0) < 2) or re.search(r'[0-9$£^\\]', w)]
+    """the doubtful words of a piece: not (twice) in the reference corpora, or holding a character no Latin word has"""
+    bad = []
+    for w in t.split():
+        core = w.strip('.,;:!()«»"\'*—-')
+        if not core: continue
+        if re.search(r'[^A-Za-zÀ-ÿǽæœÆŒǼ]', core): bad.append(core); continue
+        if len(core) > 2 and LC.N.get(LD.base(core), 0) < 2: bad.append(core)
     return bad
 def fix(t, cov=0.6):
     t = O.clean(t); t = O.dropcap(t) if re.match(r'^[a-zà-ÿ]|^[A-Z]{3,}|^.{0,3}[\\^/]', t) else t
-    u = O.fix_short(t, cov)
-    if not u: u = LC.fix_text(t)
+    u = LC.fix_text(O.fix_short(t, cov) or t)
     return re.sub(r'\s+', ' ', u).strip(' ,;:')
 def sections(ch):
     """{name: text} cut at the section labels, in the order of the book"""

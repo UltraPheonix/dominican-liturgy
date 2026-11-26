@@ -542,3 +542,13 @@ NOT YET WIRED into build.py. To wire: in feast_day, P = propers.get(md|title); F
 v1.ant|ants, v1.magn, mat.invit, mat.noct[i] = (psalms of the Common, P.mat.nants[i], P.mat.nvr[i] or the Common's), laud.ant (5), laud.bened,
 v2.ant, v2.magn; lessons: o['lessons'] = P['lessons'] (good_lessons keeps src vulgate/DO ≥ 0.75); responsories: P.lessons[n].resp
 (a, b, v, gloria) → tuple for resp9 when present, else the Common's by order. Use a piece only when it has no entry in 'q'.
+### 2026-11-26 20:45 — St Andrew complete and verified by eye; method for every proper Office (branch commons1909-v2, NOT live)
+- tools/b09/propers_fix.json = pieces corrected BY EYE against the page images (pdftoppm -f N -l N -r 110 -gray -png /tmp/b09/v1.pdf;
+  110 dpi is readable; book page = pdf page - 86 in the Sanctorale of vol. 1). build.with_proper: propers_fix first, then
+  propers1909.json pieces that have no 'q'; the nine responsories all-or-nothing. St Andrew (30 Nov) = model entry: invitatory,
+  9 nocturn antiphons + versicles, 9 responsories with their printed repeats, ante Laudes ℣, 5 Lauds antiphons, Benedictus, II Vespers.
+- latcount.py now also counts the Vulgate, GregoBase chant texts and the 1954 Office Latin (fewer false 'doubtful' words).
+  NB a wrong real word passes the check (OCR 'rátibus' for 'rétibus'): only the page image settles a text.
+- pip install of a Latin lemmatiser was refused by the sandbox policy; not needed.
+NEXT: same eye pass feast by feast, Totum Duplex first (list: grep rank in propers1909.json), then the 7 unsplit stretches; then
+Commons TP responsories; audits; merge; tools/push.sh.
