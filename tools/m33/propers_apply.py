@@ -17,7 +17,7 @@ def apply(data):
             if p == 'pasch_al':   # the two Alleluias of Paschaltide (gradual dropped)
                 data['masses'][k].setdefault('season', {}).setdefault('pasch', {})['al'] = [{'id': i, 'm39': tag} for i in ids]; n += 1; continue
             if not ids: parts.pop(p, None); n += 1; continue
-            parts[p] = [{'id': i, 'm33': tag} for i in ids]; n += 1
+            parts[p] = [dict({'id': i, 'm33': tag}, **({'roman': True} if data['chants'].get(str(i), {}).get('roman') else {})) for i in ids]; n += 1
             for i in ids: assert str(i) in data['chants'], (k, p, i)
         if 'req' in data['masses'][k]: data['masses'][k]['req'] = [p for p in data['masses'][k]['req'] if p in parts]
     return n

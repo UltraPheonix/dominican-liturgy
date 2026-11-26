@@ -177,6 +177,12 @@
    "i": "Dilexisti (Roman melody)",
    "pg": "GR [45]",
    "roman": true
+  },
+  "r853": {
+   "p": "al",
+   "i": "Stabat sancta Maria (Roman melody)",
+   "pg": "GR 596",
+   "roman": true
   }
  },
  "Quad1t": {
@@ -624,6 +630,13 @@
   ],
   "co": [
    4856
+  ]
+ },
+ "S0915": {
+  "p39": "313-314 (M39, In Compassione)",
+  "_why": "M39/M33: \"In Festo VII Dolorum B.M.V. loco Tractus dicitur sequens Alleluia, alleluia. V. Stabat sancta Maria\" (one Alleluia verse; O vos omnes is the Tract verse). No O.P. melody available: Roman melody.",
+  "al": [
+   "r853"
   ]
  }
 }
