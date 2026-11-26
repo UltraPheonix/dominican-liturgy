@@ -257,7 +257,12 @@ def pstitle(num, lang):
 
 # ---------- blocks ----------
 COMMON = {}
+NMT = [None]   # title of the feast being built: its 'N.' (Common lessons, responsories) get the saint's name
 def put(la, en_):
+    if NMT[0] and 'N.' in la:
+        import names1909 as _nm
+        la = _nm.fill(la, NMT[0])
+        if en_ and 'N.' in en_: en_ = _nm.fill_en(en_, NMT[0])
     ids = []
     for t in (la, en_ if en_ is not None else la):
         i = hashlib.sha1(t.encode()).hexdigest()[:10]; COMMON[i] = t; ids.append(i)
@@ -674,6 +679,7 @@ def effective_calendar():
 
 # ---------- 1909 Commune Sanctorum -> whole feast Offices ----------
 import commons1909 as CM
+import names1909 as NM
 LP = [[112], [116], [145], [146], [147]]          # 'Laudate pueri cum ceteris' (In Totis Duplicibus ad I. Vesperas, psalter p. 230)
 CLES = json.load(open(os.path.join(HERE, 'commonlessons1909.json'))) if os.path.exists(os.path.join(HERE, 'commonlessons1909.json')) else {}
 RUNHEAD = re.compile(r'\s(?:(?:Commúne|Commune|Apostolórum|Mártyr(?:is|um)|Confessór(?:is|um)|Pontíf(?:icis|icum)|Vírgin(?:is|um)|Doctóris|Abbátis)\s?){1,4}\.\s(?=[a-zæœáéíóúý])')
@@ -1031,7 +1037,7 @@ def feast_day(d):
             rk = RV.get(c['rank'] or '', 0)
             if rk >= 1 and (season(d)[3] or celebrable(d, s, w, rk)):
                 cn = feast_common(d, re.sub(r'\s*\(translatum\)', '', c['title']))
-                if cn: r = dict(fe=c, cn=cn, F=common_full(cn, tp_of(d)), o=proper_entry(d, re.sub(r'\s*\(translatum\)', '', c['title'])), rk=rk)
+                if cn: r = dict(fe=c, cn=cn, F=NM.fill_all(common_full(cn, tp_of(d)), c['title']), o=proper_entry(d, re.sub(r'\s*\(translatum\)', '', c['title'])), rk=rk)
                 break
     FD_CACHE[d] = r; return r
 def day_rank(d):
@@ -1049,7 +1055,7 @@ def comm_ant(c, hour):
     try:
         cn = feast_common(c['_d'], c['title'])
         if not cn or cn not in CM.C: return None
-        F = common_full(cn, tp_of(c['_d'])); o = proper_entry(c['_d'], c['title'])
+        F = NM.fill_all(common_full(cn, tp_of(c['_d'])), c['title']); o = proper_entry(c['_d'], c['title'])
         if hour == 'Laudes': a = clean_proper(o, 'bened') or F['laud'].get('bened'); v = F['laud'].get('vr')
         elif c.get('_v1'): a = clean_proper(o, 'magn1') or F['v1'].get('magn'); v = F['v1'].get('vr')
         else: a = clean_proper(o, 'magn2') or F.get('v2', {}).get('magn') or F['v1'].get('magn'); v = F.get('v2', {}).get('vr') or F['v1'].get('vr')
@@ -1065,6 +1071,7 @@ def comm_rows(entries):
             if c['rank'] in (None, ''): continue
             orat = san_oratio(c['_d'], c['title'])
             if orat and re.search(r'prævení', orat): orat = None
+            if orat: orat = NM.fill(orat, c['title'])
             la = '<h>Commemoratio</h>\n<n>%s%s</n>' % (c['title'], '' if orat else ' (Oratio in præparatione)')
             en_ = '<h>Commemoration</h>\n<n>%s%s</n>' % (c['title'], '' if orat else ' (prayer in preparation)')
             av = comm_ant(c, hour)
@@ -1103,6 +1110,7 @@ def main():
             for h in ('Prima', 'Tertia', 'Sexta', 'Nona'): H[h] = little(d, ss, w, h)
             prop = False; t = ''
         FX = feast_day(d) if not hard_proper(d) else None
+        NMT[0] = FX['fe']['title'] if FX else None
         if FX:
             fe, F, o, rk = FX['fe'], FX['F'], FX['o'], FX['rk']; fs = office_season(d, s); NF += 1
             orat = feast_oratio(d, fe, F)
@@ -1139,7 +1147,9 @@ def main():
         if TX and TX['fe']['rank'] != 'Memoria' and (rn > rt or (rn == rt and not FX)):
             Fn = TX['F']; orn = feast_oratio(dn, TX['fe'], Fn)
             cmv = comm_rows(([dict(FX['fe'], _d=d)] if FX else []) + others(d, FX['fe']['title'] if FX else ''))
+            NMT[0] = TX['fe']['title']   # I Vespers of tomorrow's feast: its name
             H['Vespera'] = feast_vespers(d, office_season(dn, season(dn)[0]), w, Fn, TX['fe'], TX['o'], 1, orn, cmv)
+            NMT[0] = FX['fe']['title'] if FX else None
         elif FX and TX and rn == rt and FX['fe']['rank'] != 'Tres Lectiones':
             Fn = TX['F']; orn = feast_oratio(dn, TX['fe'], Fn)
             cmv = comm_rows([dict(FX['fe'], _d=d)] + others(d, FX['fe']['title']))
