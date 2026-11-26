@@ -183,6 +183,11 @@
    "i": "Stabat sancta Maria (Roman melody)",
    "pg": "GR 596",
    "roman": true
+  },
+  "op-g50-laudes": {
+   "p": "se",
+   "i": "Laudes ergo",
+   "pg": "537"
   }
  },
  "Quad1t": {
@@ -255,7 +260,12 @@
   "p33": 438,
   "lent_tr": [
    6182
-  ]
+  ],
+  "co": [
+   5178
+  ],
+  "p39": "G50 p. 427",
+  "_why_g50": "G50 p. 427: Communio Ego vos elegi (printed, with T.P. Alleluia)"
  },
  "S0120": {
   "p33": 421,
@@ -974,7 +984,24 @@
   "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Missa votiva de S. Dominico, Feria iij, 66* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
   "al": [
    5397
-  ]
+  ],
+  "in": [
+   6482
+  ],
+  "gr": [
+   4733
+  ],
+  "se": [
+   "op-g50-laudes"
+  ],
+  "of": [
+   6021
+  ],
+  "co": [
+   6615
+  ],
+  "p39": "G50 p. 480",
+  "_why_g50": "G50 p. 480: Omnia ut in die 4 Augusti notatur pro Missis votivis ejusdem, servata temporum varietate (p. 538)"
  },
  "S0526": {
   "pasch_al": [
@@ -1026,7 +1053,15 @@
    5632
   ],
   "asc_al": 5352,
-  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 459 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 459 (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "gr": [
+   7142
+  ],
+  "co": [
+   5854
+  ],
+  "p39": "G50 p. 488",
+  "_why_g50": "G50 p. 488: Post Trinitatem Responsorium Domine, pag. 40*; Communio Beatus servus, pag. 32*"
  },
  "S0606": {
   "pasch_al": [
@@ -1041,7 +1076,12 @@
    5348,
    5352
   ],
-  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 462 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 462 (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "of": [
+   6618
+  ],
+  "p39": "G50 p. 489",
+  "_why_g50": "G50 p. 489: Offertorium In omnem, pag. 5*"
  },
  "S0618": {
   "pasch_al": [
@@ -1369,5 +1409,106 @@
   ],
   "p39": "G50",
   "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0804": {
+  "co": [
+   6615
+  ],
+  "p39": "G50 p. 538",
+  "_why_g50": "G50 p. 538: Communio Fidelis servus (printed, with T.P. Alleluia)"
+ },
+ "S0925": {
+  "co": [
+   6615
+  ],
+  "se": [
+   "op-g50-laudes"
+  ],
+  "p39": "G50 p. 538",
+  "_why_g50": "G50 p. 538: in the Commemoration and votive Masses, after V. Pie Pater the Sequence from * Laudes"
+ },
+ "S0908": {
+  "in": [
+   4289
+  ],
+  "al": [
+   7550
+  ],
+  "p39": "G50 p. 566-567",
+  "_why_g50": "G50 p. 566-567: Officium Gaudeamus (Nativitate); Alleluia V. Nativitas gloriosae"
+ },
+ "S0815": {
+  "in": [
+   4289
+  ],
+  "gr": [
+   6293
+  ],
+  "p39": "G50 p. 548",
+  "_why_g50": "G50 p. 548: Missa Gaudeamus, ut in Nativitate ejusdem, cum nomine Assumptionis, praeter Alleluia Hodie Maria"
+ },
+ "S0805": {
+  "al": [
+   "7550s"
+  ],
+  "of": [
+   8151
+  ],
+  "co": [
+   7543
+  ],
+  "p39": "G50 p. 539",
+  "_why_g50": "G50 p. 539: Missa Gaudeamus, ut in Nativitate B. M. V., cum nomine Solemnitatis"
+ },
+ "S0722": {
+  "in": [
+   4291
+  ],
+  "p39": "G50 p. 526",
+  "_why_g50": "G50 p. 526: Officium Gaudeamus, pag. 51*"
+ },
+ "S0626": {
+  "gr": [
+   6309
+  ],
+  "p39": "G50 p. 499",
+  "_why_g50": "G50 p. 499: Responsorium Ecce quam bonum, pag. 348"
+ },
+ "S0927": {
+  "gr": [
+   6309
+  ],
+  "in": [
+   5872
+  ],
+  "of": [
+   5512
+  ],
+  "co": [
+   6440
+  ],
+  "p39": "G50 p. 580",
+  "_why_g50": "G50 p. 580: Officium Sapientiam, pag. 515; Responsorium Ecce quam bonum, pag. 348; Offertorium Gloriabuntur, pag. 500; Communio Posuerunt, pag. 25*"
+ },
+ "S0921": {
+  "co": [
+   4728
+  ],
+  "p39": "G50 p. 579",
+  "_why_g50": "G50 p. 579: Communio Ego vos elegi, pag. 515"
+ },
+ "S1008": {
+  "al": [
+   5114
+  ],
+  "p39": "G50 p. 595",
+  "_why_g50": "G50 p. 595: Missa Gaudeamus, de Communi unius sanctae Mulieris, praeter Alleluia V. Specie tua, pag. 58*"
+ },
+ "G566": {
+  "of": [
+   4781
+  ],
+  "p39": "G50 p. 572",
+  "_why_g50": "G50 p. 572: Offertorium Ave Maria, pag. 445"
  }
 }
