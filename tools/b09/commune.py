@@ -8,15 +8,18 @@ COMMONS = [('bvm', 1306, 1316), ('ded', 1316, 1331), ('apost', 1331, 1341), ('ev
            ('mart', 1355, 1357), ('mm', 1357, 1373), ('conf_pont', 1373, 1384), ('doct', 1384, 1386), ('conf', 1386, 1390),
            ('abb', 1390, 1392), ('virg_mart', 1392, 1403), ('virg', 1403, 1406), ('mart_fem', 1406, 1409), ('nec', 1409, 1418),
            ('apost_tp', 1418, 1421), ('mart_tp', 1421, 1424), ('mm_tp', 1424, 1427), ('conf_tp', 1427, 1430), ('virg_tp', 1430, 1432)]
-HOURS = [('vesp1', r'Ad I\. Vesperas'), ('mat', r'Ad Matutinum'), ('laud', r'Ad Laudes'), ('prima', r'Ad Primam'), ('tertia', r'Ad Tertiam'),
-         ('sexta', r'Ad Sextam'), ('nona', r'Ad Nonam'), ('vesp2', r'Ad (?:II\. )?Vesperas'), ('compl', r'Ad Completorium')]
+HOURS = [('vesp1', r'Ad [I1l]\.? Vesperas'), ('mat', r'Ad Matutinum'), ('laud', r'Ad Laudes'), ('prima', r'Ad Primam'), ('tertia', r'Ad Tertiam'),
+         ('sexta', r'Ad Sextam'), ('nona', r'Ad Nonam'), ('vesp2', r'Ad (?:I[iI1l]\.?|Secundas) Vesperas'), ('compl', r'Ad Completorium')]
 PSNAME = {'laudate pueri': 112, 'laudate dominum omnes': 116, 'dixit dominus': 109, 'confitebor': 110, 'beatus vir': 111, 'credidi': 115,
           'in convertendo': 125, 'nisi dominus': 126, 'domine probasti': 138, 'lauda jerusalem': 147, 'lauda anima': 145, 'laudate dominum quoniam': 146,
           'dominus regnavit': 92, 'jubilate': 99, 'deus deus meus': 62, 'benedicite': 210, 'laudate dominum de caelis': 148,
           'caeli enarrant': 18, 'domine dominus noster': 8, 'domini est terra': 23, 'eructavit': 44, 'deus noster refugium': 45, 'fundamenta': 86}
+OCRD = str.maketrans({'l': '1', 'I': '1', 'i': '1', 'o': '0', 'O': '0', 's': '5', 'S': '5', 'a': '8', 'á': '8', 'z': '2', 'Z': '2', 'g': '9', 'q': '9'})
 def psalms_from(txt):
-    m = re.match(r'Psalmus\s+(\d+)', txt)
-    if m: return [int(m.group(1))]
+    m = re.match(r'Psalmus\s+([\dlIioOsSaázZgq]{1,3}(?:\s[\dlIioOsSaázZgq])?)\s*[\.\*,]', txt)
+    if m:
+        x = m.group(1).replace(' ', '').translate(OCRD)
+        if x.isdigit() and 1 <= int(x) <= 150: return [int(x)]
     low = O.R.nb(txt[:60])
     for k, v in PSNAME.items():
         if low.startswith(O.R.nb('Psalmus ' + k)) or O.R.nb(k) in low[:40]:
@@ -36,6 +39,12 @@ def parse_common(t):
         seen.add(h)
         nx = pos[i + 1][0] if i + 1 < len(pos) else len(t)
         out[h] = items(t[e:nx], h)
+        if h == 'laud':
+            lm = re.search(r'^\s*\S{0,4}\s*Per Horas Antiphonae\.\s*(.+?)(?=Capitulum|Ad Benedíctus|Hymnus)', t[e:nx])
+            if lm:
+                parts = re.split(r'(?:^|\s)(?:[1lI2-5sS]|ii|iii|iv|v|f|fe|3|tf)\s?[\.\-]\s', ' ' + re.sub(r'Psalmus [^.]*?(?:pag\.\s*[\d\s]+\.?)', '', lm.group(1)))
+                parts = [p for p in (O.clean(x) for x in parts) if len(p) > 8]
+                out[h].insert(0, ['laudes', [O.fix_short(p) for p in parts[:5]]])
     return out
 TOK = re.compile(r'(Super Psalm(?:os|um)(?: Laudum)?(?: sola)?\s*A\w{1,3}\.|Ad Benedíctus\s*A\w{1,3}\.|Ad Magníficat\s*A\w{1,3}\.|Invitatorium\.|\bA(?:na|ha|fia|tia|iia)\.|'
                  r'Psalmus\s+\d+\.|Psalmus\s+[A-ZÁÉÍÓÚ][^.]{2,40}\.(?:,? cum céteris)?|Ps\.\s+[A-ZÁÉÍÓÚ][^.]{2,40}\.|Capitulum\.|Hymnus\.|Hymnus\s+[A-ZÁÉÍÓÚ][^.]{2,40}\.|'
