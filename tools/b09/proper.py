@@ -7,6 +7,8 @@ everything else stays with the Common (build.py merges).
 import os, re, sys, json, collections
 import offices as O, matins as M, latdict as LD, latcount as LC
 from conform import conform
+import witness as W
+VOL = [None]   # the volume being read (for the second witness)
 HERE = os.path.dirname(os.path.abspath(__file__)); OUT = os.path.join(HERE, 'propers1909.json')
 CAP = 'A-ZÁÉÍÓÚÝÆŒǼ'
 ANT = r'(?:Ana|Aria|Aha|Aña|Arra|Ant|Atia|Ada|Aiia|An a|Ami|Aúa|Aja|Afa|Aiía|Aüa|Añia|Ana?)\s?[.,*:;]?\s'
@@ -30,15 +32,20 @@ def fix(t, cov=0.6):
     ref = O.fix_short(t, cov)
     u = conform(t, ref)[0] if ref and ref != t else LC.fix_text(t)
     return re.sub(r'\s+', ' ', u).strip(' ,;:')
+NOCT = re.compile(r'\b[Ii1l][nN]\s[IiLlH1!\]]{1,4}[.,]?\s?N[oO0]ctur[nm][oO0]', re.I)
 def sections(ch):
-    """{name: text} cut at the section labels, in the order of the book"""
-    pos = []
-    last = 0
+    """{name: text} cut at the section labels, in the order of the book; the three nocturns by the order of their headings
+    (the numeral is often misread)"""
+    pos = []; last = 0
     for name, pat in SEC:
+        if name in ('n1', 'n2', 'n3'): continue
         m = re.search(pat, ch[last:])
         if m: pos.append((last + m.start(), last + m.end(), name)); last = last + m.end()
+    lo = next((e for s0, e, n in pos if n == 'mat'), 0); hi = next((s0 for s0, e, n in pos if n in ('laud', 'hor', 'v2', 'oct') and s0 > lo), len(ch))
+    for k, m in enumerate(list(NOCT.finditer(ch, lo, hi))[:3]): pos.append((m.start(), m.end(), 'n%d' % (k + 1)))
+    pos.sort()
     out = {}
-    for i, (s, e, name) in enumerate(pos):
+    for i, (s0, e, name) in enumerate(pos):
         out[name] = ch[e:pos[i + 1][0] if i + 1 < len(pos) else len(ch)]
     out['head'] = ch[:pos[0][0]] if pos else ch
     return out
@@ -114,17 +121,21 @@ def split_at_junk(t):
     return t, None
 RV = {1: '[ij1l]', 2: '[il1][ij1l]', 3: '[il1]{2}[ij1l]|in', 4: '[il1]v', 5: 'v', 6: 'v[ij1l]', 7: 'v[il1][ij1l]', 8: 'v[il1]{2}[ij1l]|vin', 9: '[il1]x'}
 RNUM = {'i': 1, 'j': 1, 'ii': 2, 'ij': 2, 'iii': 3, 'iij': 3, 'in': 3, 'iv': 4, 'v': 5, 'vi': 6, 'vj': 6, 'vii': 7, 'vij': 7, 'viii': 8, 'viij': 8, 'ix': 9}
-def split_lessons(t):
-    """[(n, lesson text, responsory text or None)] of one nocturn"""
-    marks = [(m.start(), m.end(), RNUM.get(m.group(1).lower().replace('l', 'i').replace('1', 'i'))) for m in re.finditer(r'Lectio ([ivxjl1n]+)\s?[.\-/,]\s?', t)]
+LMARK = re.compile(r'(?:^|\s)L[eé]ctio\s[ivxjlYyVI1n]{1,5}\s?[.,/]\s?')
+RMARK = re.compile(r'(?<=[.,;:!?»\u2014] )(?:[^\s\w]?[A-Za-z℟$£7]{0,3}[.,*»]{0,2}\s?)?[ivxjl]{1,5}\s?[.,]\s+(?=[' + CAP + '])')
+def split_lessons(t, first=1):
+    """[(n, lesson text, responsory text or None)] of one nocturn. The numerals are often misread, so the lessons are numbered by
+    their order in the nocturn (first, first+1, first+2); a responsory begins at the ℟ sign with its numeral after a lesson"""
+    marks = [m for m in LMARK.finditer(t)]
     out = []
-    for k, (s0, e0, n) in enumerate(marks):
-        if not n: continue
-        x = t[e0:marks[k + 1][0] if k + 1 < len(marks) else len(t)]
-        x = re.split(r'\s(?:Lectio sancti Evang|De Ep[ií]stola|De Act|De libro|Sermo sancti|\(Ex Act|Ex Act)', x)[0] if k + 1 < len(marks) else x
-        m = re.search(r'(?<=[\s.,;:!?»\'])(?:\S{1,3}\s?\S{0,2}\s)?(?:%s)\s?[.<•*,:\']+\s*(?=[%s])' % (RV[n], CAP), x[120:])
-        if m: out.append((n, x[:120 + m.start()], x[120 + m.end():]))
-        else: out.append((n, x, None))
+    for k, m in enumerate(marks):
+        x = t[m.end():marks[k + 1].start() if k + 1 < len(marks) else len(t)]
+        if k + 1 < len(marks): x = re.split(r'\s(?:L[eé]ctio sancti Evang|De Ep[ií]stola|De Act|De libro|Sermo sancti|\(Ex Act|Ex Act)', x)[0]
+        r = None
+        for r_ in RMARK.finditer(x):
+            if r_.start() > 100 and re.search(r'\*|℣', x[r_.end():r_.end() + 400]) and not re.search(r'(?i)cap|lib|hom|serm|tract|epist$', x[max(0, r_.start() - 12):r_.start()]): r = r_; break
+        if r: out.append((first + k, x[:r.start()], x[r.end():]))
+        else: out.append((first + k, x, None))
     return out
 def resp_of(n, rt):
     """Matins responsory: Divinum Officium's text and structure where it is the same responsory, else the OCR split at * / ℣ / —"""
@@ -164,6 +175,9 @@ def parse(ch):
             if isinstance(x, str):
                 b = known(x)
                 if b: Q.append('%s.%s: %s' % (sec, k, ' '.join(b[:6])))
+                elif VOL[0]:
+                    dv = W.differences(x, VOL[0])
+                    if dv: Q.append('%s.%s: witness %s' % (sec, k, ' ; '.join(dv[:4])))
     if 'v1' in S:
         t = S['v1']; a = ants_of(re.split(r'\sCapitulum|\sAd Magn', t)[0])
         if len(a) == 1: put('v1', 'ant', fix(a[0]))
@@ -183,7 +197,9 @@ def parse(ch):
     # lessons and responsories (matins.py machinery, repaired against the Vulgate / Divinum Officium)
     ls = []
     for k in ('n1', 'n2', 'n3'):
-        for n, lt, rt in split_lessons(S.get(k, '')):
+        got = split_lessons(S.get(k, ''), {'n1': 1, 'n2': 4, 'n3': 7}[k])
+        if got and len(got) != 3: Q.append('%s: %d lessons read' % (k, len(got)))
+        for n, lt, rt in got:
             x = M.build_lesson(n, O.clean(lt))
             if x.get('src') != 'OCR' and x.get('la'):
                 body = M.lesson_parts(O.clean(lt))[1]
@@ -194,12 +210,19 @@ def parse(ch):
                 if cf < 0.9: x.pop('en', None)                                        # the reference's English no longer fits
             b = known(x.get('la', ''))
             if b: Q.append('lectio %d: %s' % (n, ' '.join(b[:8])))
+            elif VOL[0]:
+                dv = W.differences(x.get('la', ''), VOL[0])
+                if dv: Q.append('lectio %d: witness %s' % (n, ' ; '.join(dv[:4])))
             if rt:
-                x['resp'] = resp_of(n, rt)
+                x['resp'] = resp_of(n, rt); rr = ' '.join([x['resp']['a'], x['resp']['b']] + x['resp']['v'])
+                b = known(rr)
+                if b: Q.append('resp %d: %s' % (n, ' '.join(b[:8])))
+                elif VOL[0]:
+                    dv = W.differences(rr, VOL[0])
+                    if dv: Q.append('resp %d: witness %s' % (n, ' ; '.join(dv[:4])))
                 if x['resp']['src'] == 'OCR':
-                    b = known(' '.join([x['resp']['a'], x['resp']['b']] + x['resp']['v']))
-                    if b: Q.append('resp %d: %s' % (n, ' '.join(b[:8])))
-            else: Q.append('resp %d: not found' % n)
+                    pass
+            else: P.setdefault('info', []).append('no responsory read after lesson %d (from the Common, or missed)' % n)
             ls.append(x)
     if ls: P['lessons'] = ls
     if 'laud' in S:
@@ -288,7 +311,7 @@ def chunks_cal(vol, a, b, start, stop=None):
         yield md, ti, rk, t[s0:end]
 VOLS = {'v1': (768, 1577, '11-29', '06-15'), 'v2': (476, 1369, '04-13', '12-02')}
 if __name__ == '__main__':
-    vol = sys.argv[1]; a, b, st, en = VOLS[vol]
+    vol = sys.argv[1]; a, b, st, en = VOLS[vol]; VOL[0] = vol
     only = sys.argv[2] if len(sys.argv) > 2 else None
     D = json.load(open(OUT)) if os.path.exists(OUT) and not only else {}
     for md, ti, rk, ch in chunks_cal(vol, a, b, st, en):

@@ -561,3 +561,15 @@ Commons TP responsories; audits; merge; tools/push.sh.
   (matins.build_lesson, repair_resp, fix_short) replaces text by the Roman one at coverage ≥ 0.65 — e.g. St Andrew lesson iv, R. i).
   proper.py now conforms antiphons, responsories and lessons. The Temporale already built (lessons1909.json, offices1909.json
   T: entries, live in Advent) went through the OLD pipeline → re-run it through conform and re-check (TODO).
+### 2026-11-26 22:40 — state (branch commons1909-v2, NOT live; main = v99 + Mass chat)
+Pipeline for the Sanctorale now: tools/b09/ocr/*.txt.gz (tesseract re-OCR) → offices.text_ocr → proper.chunks_cal (calendar
+alignment; 241 feasts) → proper.parse (sections; nocturns by order of headings; lessons numbered by order; responsory at the
+sign+numeral; conform = book's words, reference's spelling; 'q' = unknown words + witness.py = disagreements with the PDFs' old
+text layer, e.g. words tesseract drops at the gutter) → propers1909.json → build.with_proper (propers_fix.json first; a piece with
+a 'q' is not used; responsories all-or-nothing; lessons gated on unknown words) → data/office1909.
+Counts: 241 feasts, 14 with nothing doubtful; responsories 524 (53 clean); lessons 1253. 5 stretches still unsplit: 12-07…,
+12-31…, 03-25…, v1 after 06-11 and v2 after 12-02 (ends of the Sanctorale).
+'TP Commons with 7 responsories' was an artefact of my audit (len('by_noct')) — nothing to fix.
+THE REMAINING WORK IS THE EYE PASS: per feast, read 'q' in propers1909.json, open the page images (pdftoppm … -r 110), and write the
+verified pieces into propers_fix.json (model: S. Andréæ Apóstoli). Then audits, headless test (OK now: no console errors on
+11-30, 12-06, 01-25, 06-24), merge into main, tools/push.sh.

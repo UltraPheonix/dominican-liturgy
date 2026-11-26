@@ -1075,7 +1075,10 @@ def with_proper(F, o, title):
             M_['resp'] = [rs.get(n, M_['resp'][n - 1]) for n in range(1, 10)]
     F['mat'] = M_
     if P.get('lessons'):
-        o = dict(o or {}); o['lessons'] = P['lessons']
+        hard = set(x.split(':')[0] for x in P.get('q', []) if 'witness' not in x)   # unknown words; (the second witness is too noisy on long lessons)
+        o = dict(o or {})
+        o['lessons'] = [x if ('lectio %s' % x.get('n')) not in hard and not re.search(r'[℟℣]|\b[NRK]\. ?[ivx]+\b', x.get('la', '')) else dict(x, src='doubtful')
+                        for x in P['lessons']]
     return F, o
 def feast_day(d):
     """the winning feast of a day with a Common to render it: dict(fe, cn, F, o, rk) or None"""
