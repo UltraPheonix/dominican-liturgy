@@ -492,6 +492,8 @@ rest → 3 test, bump, push → 4 branch: re-apply archive, fix N./proper Office
 - Oratio super populum: tools/orat39/sp_final.py -> ORATIONS[key].sp = [la, en, page] for the 36 Lenten ferias (not Ember Sat.);
   app.js drawOratio/orat('sp') after the Postcommunion with Orémus. Humiliáte cápita vestra Deo; booklets too.
 - Booklet: votive/Common Masses without a date print for today (was a crash).
+- E21 DONE: DO orations checked against M33 (own Mass, tools/m33/map.json) and M39 text layers; 63 Masses replaced from page images
+  (/tmp/fin*.py -> /tmp/apply_fin.py style: Latin + English into extra_final/en_final, page from @@PAGE numbers). do_check.json = record.
 ### 1909 saints' prayers fixed (2026-11-26 13:40, sw v97). Two chats now push to main (Mass chat + Office chat):
 push with tools/push.sh (fetch, rebase, sw VERSION = origin's + 1, retry). Prayer pipeline: offices.py (text_sancti cuts running heads;
 first 'Oratio[.,]' after the heading; vigil prayer → oratio_v1) → build.py final_prayer (clean_prayer: cut at conclusion/next rubric,

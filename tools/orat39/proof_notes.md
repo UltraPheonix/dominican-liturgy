@@ -5,3 +5,6 @@
 - S0530b Secret (B. Andreæ Franchi): addressed to the Father ("te deprecamur, Domine") but the Missal prints "Qui vivis."; kept as printed.
 - S0222 / Cathedra Romana Collect: addressed to the Father but the Missal prints "Qui vivis." (p. 356); kept as printed.
 - S0815 Assumption: the 1939 Missal has the pre-1950 Mass (Gaudeamus; Collect Veneranda). The 1950 Mass (Signum magnum) is not in M39.pdf.
+- S0421 St Anselm Collect: the Missal prints "pópulo tuæ ætérnæ salútis" (misprint); printed as "pópulo tuo".
+- S0428 St Paul of the Cross: only a commemoration in the 1939 Missal (28 Apr., under Bl. Louis-Marie de Montfort), printed without conclusions; "Qui vivis" supplied (all three prayers are addressed to Christ).
+- S0113 (13 Jan.): the 1939 Missal has the Octave of the Epiphany; its prayers are used. C114s = Requiem "in die obitus"; S1113 = Anniversary "pro pluribus".
