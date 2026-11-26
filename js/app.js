@@ -1112,7 +1112,7 @@
       else if (it.t === 'pref') { var pf = drawPreface(state.key, state.date, R); if (pf) main.appendChild(pf); }
       else if (it.t === 'ord') { if (ord[it.k]) main.appendChild(drawOrdinary(it.k, ord[it.k])); }
       else if (it.t === 'oratio') main.appendChild(drawOratio(it));
-      else if (it.t === 'hw') main.appendChild(drawSection(it.s, R));
+      else if (it.t === 'hw') { var hws = drawSection(it.s, R); if (hws) main.appendChild(hws); }
       else if (it.t === 'hwtext') main.appendChild(drawHwText(it.s, it.n));
       else if (it.t === 'hwnote') main.appendChild(el('p', {class: 'hint rubric', text: 'This day of Holy Week is still being transcribed from the Missale O.P. (1939); its chants follow.'}));
       else if (it.t === 'ordo') { var os = drawOrdo(it.k, R); if (os) main.appendChild(os); }
@@ -1214,7 +1214,7 @@
   function drawSection(sec, R) {
     var mode = modeOf(), lines = sec.lines, k = sec.k;
     lines = lines.filter(function (l) { return showLine(l, R); });
-    if (sec.strip && !lines.length) return null;
+    if (!lines.length) return null;
     var b0 = gospelBook();
     if (k === 'gospel' && b0 && EV_LA[b0]) lines = lines.map(function (l) { return /secúndum N\./.test(l.la || '') ? {w: l.w, la: l.la.replace('N.', EV_LA[b0] + '.'), en: l.en.replace(/according to N\./, 'according to ' + EV_EN[b0] + '.')} : l; });
     if (mode !== 'l' && /^(collect|offerDial|post|postEnd|gospel)$/.test(k || '')) lines = singLines(lines);
@@ -1265,15 +1265,33 @@
     if (!cond) return true;
     var inc = function (p, re) { return ((state.parts || {})[p] || []).some(function (c) { var x = D.chants[c.id]; return x && re.test(x.i || ''); }); };
     var or = window.ORATIONS && ORATIONS[state.key];
-    var on = {tab: state.sac === 'tab', exp: state.sac === 'exp', sac: !!state.sac, pope: state.prel === 'pope', bp: state.prel === 'bp',
-              prel: state.prel === 'pope' || state.prel === 'bp', mo: state.prel === 'mo', one: servOf() === 'one', full: servOf() === 'full', req: !!(R && R.requiem),
-              flect: flectamusDay(state.key, state.date), sp: !!(or && or.sp), adjuva: inc('tr', /^Domine non secundum/), veni: inc('al', /^Veni Sancte Spiritus/), nogl: !(R && R.gloria)};
+    var dr = dayRank(state.key, state.date), gl = !!(R && R.gloria), sd = dr.sun || dr.dup;
+    var sept = !!(state.date && inSeptLent(state.date)), chgl = gl && sd, chky = !gl && sept;
+    var fr = fullRub(), sac = fr ? state.sac : '', prel = fr ? state.prel : '';   // the circumstances are chosen only with the full rubrics
+    var on = {tab: sac === 'tab', exp: sac === 'exp', sac: !!sac, pope: prel === 'pope', bp: prel === 'bp',
+              prel: prel === 'pope' || prel === 'bp', mo: prel === 'mo', one: servOf() === 'one', full: servOf() === 'full', req: !!(R && R.requiem),
+              flect: flectamusDay(state.key, state.date), sp: !!(or && or.sp), adjuva: inc('tr', /^Domine non secundum/), veni: inc('al', /^Veni Sancte Spiritus/), nogl: !gl,
+              sun: dr.sun, dup: dr.dup, td: dr.td, sd: sd, thur: dr.thur, sol: dr.sol, sept: sept, chgl: chgl, chky: chky, chin: !chgl && !chky};
     return cond.split(',').every(function (c) { var neg = c.charAt(0) === '!', v = !!on[neg ? c.slice(1) : c]; return neg ? !v : v; });
   }
   // the full directions of the Missal (Ritus servandus), or the basic Order of Mass with its few directions
   function fullRub() { return state.rub === 'full'; }
   function rubPref() { try { return localStorage.getItem('rubrics') === 'full' ? 'full' : ''; } catch (e) { return ''; } }
   function secLines(sec) { return fullRub() && sec.adv ? sec.adv : sec.lines; }
+  // the rank of the day, for the directions that depend on it (Missale O.P. 1939, Kalendarium, data/kalendar39.js); an approximation
+  // until the full classification of days is built
+  var KALRANK = null;
+  function dayRank(key, d) {
+    if (!KALRANK) { KALRANK = {}; var K = window.KAL39 || {}; Object.keys(K).forEach(function (md) { K[md].forEach(function (e) { if (e[2] && !KALRANK[e[2]]) KALRANK[e[2]] = e[1]; }); }); }
+    var rank = KALRANK[key] || '', m = D.masses[key] || {}, t = titleText(key);
+    if (isTemporal(key) && temporalClass(key, d) === 1 && /^(Dec25(_\d)?|Jan1|Epi|Pasc0|Asc|Pent0|CorpusChristi|SCJ|ChristusRex)$/.test(key)) rank = 'Totum Duplex';
+    var sun = isSundayMass(key, d) || !!(d && d.getDay() === 0);
+    var td = /Totum Duplex/.test(rank), dup = td || /^Duplex/.test(rank);
+    var vot = D.sections.some(function (x) { return x.id === 'votivae' && x.items.indexOf(key) >= 0; }) && /Dominic|Thom|Sacrament|Corporis|Mari/.test(t);
+    var thur = sun || dup || /Simplex|Semiduplex|Novem|Octava sol/.test(rank) || vot || (isTemporal(key) && temporalClass(key, d) <= 2);
+    var sol = /^(Dec25(_\d)?|Pasc0|Asc|Pent0|CorpusChristi|S0815|S0804|S1101)$/.test(key);
+    return {rank: rank, sun: sun, dup: dup, td: td, thur: thur, sol: sol};
+  }
   function showLine(l, R) { return (!l.m || l.m.indexOf(modeOf()) >= 0) && holds(l['if'], R); }
   // a direction of the rubrics: the short form always shown; when it rests on paragraphs of the Missal, tapping it opens them (English)
   var COND_LABEL = {tab: 'Tabernacle', exp: 'Exposition', sac: 'Blessed Sacrament', pope: 'The Pope present', bp: 'Prelate present', prel: 'Prelate present', mo: 'Master of the Order', one: 'One acolyte', req: 'Requiem'};
@@ -1355,7 +1373,6 @@
       // said in a low voice as far as "Deus"; "Per omnia saecula saeculorum" is sung aloud at the beginning of the Preface
       var sl = it.x[0].replace(/,?\s*per ómnia sǽcula sæculórum\.?\s*$/i, ','), se = it.x[1].replace(/,?\s*world without end\.?\s*$/i, ',');
       box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: sl}), el('p', {class: 'en-text', lang: 'en', text: se}), ]));
-      box.appendChild(el('p', {class: 'o-rub', text: 'Per ómnia sǽcula sæculórum is sung aloud at the Preface.'}));
       return box;
     }
     box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: it.x[0]}), el('p', {class: 'en-text', lang: 'en', text: it.x[1]})]));
