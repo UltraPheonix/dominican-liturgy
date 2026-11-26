@@ -21,10 +21,53 @@ INC = ['Gloria in excelsis Deo', 'Gloria in excelsis', 'Gloria Patri', 'Gloria t
   'Quaesumus, Domine, pro tua', 'Fidelium Deus', 'Animabus, quaesumus', 'Propitiare, quaesumus', 'Deus, qui nos Patrem',
   'Deus Indulgentiarum', 'Deus, cujus miseratione', 'pontificali', 'sacerdotali', 'Gloria']
 INC_RE = re.compile('(?<![\\w>])(' + '|'.join(re.escape(x) for x in sorted(INC, key=len, reverse=True)) + ')(?![\\w<])')
-def mark(t): return INC_RE.sub(r'<b class="rb-inc">\1</b>', E(t))
+def mark(t, rx=None): return (rx or INC_RE).sub(r'<b class="rb-inc">\1</b>', E(t))
+# the words of the prayers quoted in the Ritus (the Order of Mass, the ministers, Communion), bold in both columns
+INC2 = INC + ["In nomine Patris, et Filii, et Spiritus Sancti. Amen", "In nomine Patris, et Filii, et Spiritus Sancti", "In nomine Patris, et Filii, etc.",
+  "In nomine Patris, etc.", "In nomine Patris", "Confitemini Domino quoniam bonus", "Confitemini Domino, quoniam bonus", "Confitemini, etc.",
+  "Quoniam in saeculum misericordia ejus", "Confiteor Deo, etc.", "Confiteor Deo", "Confiteor", "mea culpa", "Misereatur tui", "Misereatur vestri",
+  "Misereatur, etc.", "Absolutionem, etc.", "Absolutionem", "et tibi, Pater", "vobis fratres", "tibi Pater", "vos fratres", "te Pater",
+  "Adjutorium nostrum in nomine Domini", "Adjutorium, etc.", "Adjutorium", "Qui fecit caelum et terram", "Aufer a nobis, etc.", "Aufer a nobis",
+  "Per Christum Dominum nostrum", "Per Christum", "Actiones nostras, quaesumus Domine, aspirando praeveni, et adjuvando prosequere: ut cuncta nostra operatio a te semper incipiat, et per te coepta finiatur. Per Christum Dominum nostrum. Amen.",
+  "Actiones nostras", "Da Domine virtutem manibus meis ad abstergendam omnem maculam, ut sine pollutione mentis et corporis valeam tibi servire. Amen.",
+  "Impone Domine capiti meo galeam salutis, ad expugnandos omnes diabolicos incursus. Amen.",
+  "Dealba me Domine, et munda cor meum, ut in sanguine Agni dealbatus, gaudiis perfruar sempiternis. Amen.",
+  "Praecinge me Domine cingulo puritatis, et exstingue in lumbis meis humorem libidinis, ut maneat in me virtus continentiae et castitatis. Amen.",
+  "Merear Domine portare manipulum fletus et doloris, ut cum exsultatione recipiam mercedem laboris. Amen.",
+  "Redde mihi Domine, obsecro, stolam immortalitatis, quam perdidi in praevaricatione primi parentis, et quamvis indignus accedo ad tuum sacrum mysterium, merear tamen gaudium sempiternum. Amen.",
+  "Domine, qui dixisti: Jugum meum suave est, et onus meum leve: fac ut istud portare sic valeam, quod consequar tuam gratiam. Amen.",
+  "Adoramus te", "Gratias agimus tibi", "Jesu Christe, suscipe deprecationem nostram", "Jesu Christe", "in excelsis", "Flectamus genua", "Levate",
+  "Dominus sit in corde meo, et in labiis meis, ad pronuntiandum sanctum Evangelium pacis",
+  "Dominus sit in corde tuo, et in labiis tuis, ad pronuntiandum sanctum Evangelium pacis", "Dominus sit in corde meo", "Jube domne benedicere",
+  "Sequentia sancti Evangelii", "Sequentia", "Initium sancti Evangelii", "Initium, etc.", "Gloria tibi Domine", "Et procidentes adoraverunt eum",
+  "Et procidens adoravit eum", "In nomine Jesu omne genu flectatur", "Adjuva nos Deus salutaris noster", "Veni Sancte Spiritus", "Veni sancte Spiritus",
+  "exspiravit", "emisit spiritum", "Et incarnatus est, etc.", "Et incarnatus est", "Homo factus est", "simul adoratur, etc.", "simul adoratur",
+  "Et vitam venturi saeculi", "in unum", "Jesum Christum", "Per Evangelica dicta deleantur nostra delicta", "Per Evangelica dicta, etc.",
+  "Per Evangelica dicta", "Credo in unum Deum", "Quid retribuam Domino pro omnibus, quae retribuit mihi?", "Quid retribuam",
+  "Calicem salutaris accipiam, et nomen Domini invocabo", "Calicem salutaris", "Immola Deo sacrificium laudis, et redde Altissimo vota tua",
+  "Suscipe sancta Trinitas", "Suscipe, etc.", "Lavabo inter innocentes", "Domine dilexi decorem domus tuae, et locum habitationis gloriae tuae",
+  "Lavabo, etc.", "In spiritu humilitatis", "In spiritu, etc.", "et placeat tibi", "ut meum, ac vestrum pariter in conspectu Domini sit acceptum sacrificium",
+  "Domine exaudi orationem meam, et clamor meus ad te veniat", "Sursum corda", "Habemus ad Dominum", "Gratias agamus Domino Deo nostro", "Gratias agamus",
+  "Deo nostro", "Dignum et justum est", "supplici confessione dicentes", "supplici confessione, etc.", "Sanctus, Sanctus, Sanctus", "Sanctus, etc.",
+  "Benedictus, qui venit", "Benedictus qui venit", "Te igitur", "In primis", "Memento Domine", "Per eumdem Christum", "Quam oblationem",
+  "Qui pridie", "elevatis oculis in caelum", "benedixit", "Accipite, et bibite", "Accipite", "Simili modo", "accipiens et hunc praeclarum Calicem",
+  "Item tibi gratias agens", "Hic est enim calix Sanguinis mei", "Haec quotiescumque feceritis, in mei memoriam facietis", "Unde et memores",
+  "Hostiam puram", "Panem sanctum", "Calicem salutis", "Supra quae", "Supplices te rogamus", "ut quotquot", "altaris participatione",
+  "benedictione caelesti", "Per eumdem", "Memento etiam", "Nobis quoque peccatoribus", "Per quem haec omnia", "sanctificas", "et praestas nobis",
+  "Per ipsum", "Deo Patri", "Oremus. Praeceptis salutaribus moniti", "Praeceptis salutaribus moniti", "Pater noster", "Et ne nos inducas in tentationem",
+  "Sed libera nos a malo", "Libera nos, quaesumus Domine", "Da propitius pacem", "da propitius pacem", "et ab omni perturbatione securi", "Pax Domini sit semper vobiscum",
+  "Pax Domini", "Agnus Dei, etc.", "Agnus Dei", "Haec sacrosancta commixtio, etc.", "Haec sacrosancta commixtio", "Pax tibi, et Ecclesiae sanctae Dei",
+  "Domine Jesu Christe, Fili Dei vivi", "Domine Jesu Christe, etc.", "Corpus et Sanguis Domini nostri Jesu Christi custodiant me in vitam aeternam. Amen",
+  "Corpus et Sanguis Domini nostri, etc.", "Corpus Domini nostri Jesu Christi custodiat te in vitam aeternam. Amen", "Quod ore sumpsimus",
+  "Humiliate capita vestra Deo", "Humiliate capita, etc.", "Placeat tibi sancta Trinitas", "Benedictio Dei omnipotentis, Patris, et Filii, et Spiritus Sancti descendat super vos, et maneat semper. Amen",
+  "Benedictio Dei omnipotentis", "Patris, et Filii, etc.", "Et Verbum caro factum est", "et habitavit in nobis", "In principio erat Verbum",
+  "Benedicite omnia opera", "Benedicite", "Benedictus Deus", "Pater, et Filius, et Spiritus Sanctus", "Asperges me", "Ostende nobis, etc.", "Exaudi nos, etc.",
+  "Salve sancta parens", "Te decet", "Requiem aeternam", "miserere nobis", "dona nobis pacem", "dona eis requiem", "sempiternam", "Domine exaudi orationem meam"]
+INC2_RE = re.compile('(?<![\\w>])(' + '|'.join(re.escape(x) for x in sorted(set(INC2), key=len, reverse=True)) + ')(?![\\w<])')
 
-def pair(la, en):
-    return ('<div class="rb-pair"><p class="rb-la" lang="la">%s</p><p class="rb-en" lang="en">%s</p></div>' % (mark(la), mark(en)))
+
+def pair(la, en, pid=None, rx=None):
+    return ('<div class="rb-pair"' + (' id="%s"' % pid if pid else '') + '><p class="rb-la" lang="la">%s</p><p class="rb-en" lang="en">%s</p></div>' % (mark(la, rx), mark(en, rx)))
 
 import glob, importlib
 # the other rubrics of the Missal (Ritus servandus etc.): one module per part, tools/rubrics/ritus_*.py, each defining a tuple
@@ -43,10 +86,12 @@ def part_html(P, toc, body):
     for num, hla, hen, paras in chs:
         cid = pid + '-' + (num or 'p').lower()
         if hla: sub.append('<li><a href="#%s"><span class="rb-n">%s</span> %s <span class="rb-toc-en">%s</span></a></li>' % (cid, num, E(hla), E(hen)))
-        body.append('<section class="rb-sec" id="%s">%s%s</section>' % (cid, ('<h3 class="rb-h3"><span class="rb-n">%s</span> %s<span class="rb-h-en">%s</span></h3>' % (num, E(hla), E(hen))) if hla else '', ''.join(pair(a, b) for a, b in paras)))
+        body.append('<section class="rb-sec" id="%s">%s%s</section>' % (cid, ('<h3 class="rb-h3"><span class="rb-n">%s</span> %s<span class="rb-h-en">%s</span></h3>' % (num, E(hla), E(hen))) if hla else '', ''.join(pair(a, b, cid + '-' + str(i + 1), INC2_RE) for i, (a, b) in enumerate(paras))))
+        for i, (a, b) in enumerate(paras): RUBTEXT[cid + '-' + str(i + 1)] = [hen or en, b]
     toc.append('<li class="rb-part"><a href="#%s">%s <span class="rb-toc-en">%s</span></a>%s</li>' % (pid, E(la), E(en), ('<ol>' + ''.join(sub) + '</ol>') if sub else ''))
 body = []
 toc = []
+RUBTEXT = {}  # paragraph id -> [English heading, English text], for the directions on the Mass page (data/rubtext.js)
 for P in load(ORDER_BEFORE):
     body.append('<h2 class="rb-ph" id="%s">%s<span class="rb-h-en">%s</span></h2>' % (P[0], E(P[1]), E(P[2])))
     part_html(P, toc, body)
@@ -56,7 +101,8 @@ body.append('<section class="rb-sec" id="prooemium">' + pair(*PROLOGUE) + '</sec
 for n, la, en, paras in TITLES:
     gen_toc.append('<li><a href="#%s"><span class="rb-n">%s</span> %s <span class="rb-toc-en">%s</span></a></li>' % (slug(n), n, E(la), E(en)))
     body.append('<section class="rb-sec" id="%s"><h2><span class="rb-n">%s</span> %s<span class="rb-h-en">%s</span></h2>%s</section>'
-                % (slug(n), n, E(la), E(en), ''.join(pair(a, b) for a, b in paras)))
+                % (slug(n), n, E(la), E(en), ''.join(pair(a, b, slug(n) + '-' + str(i + 1)) for i, (a, b) in enumerate(paras))))
+    for i, (a, b) in enumerate(paras): RUBTEXT[slug(n) + '-' + str(i + 1)] = [en, b]
 la, en, paras = COLOURS
 gen_toc.append('<li><a href="#colores">%s <span class="rb-toc-en">%s</span></a></li>' % (E(la), E(en)))
 toc.append('<li class="rb-part"><a href="#generales">Rubricae generales Missarum <span class="rb-toc-en">General rubrics of the Mass</span></a><ol>' + ''.join(gen_toc) + '</ol></li>')
@@ -128,4 +174,8 @@ page = '''<!DOCTYPE html>
 </html>
 ''' % (''.join(toc), '\n    '.join(body))
 open(os.path.join(ROOT, 'rubrics.html'), 'w', encoding='utf8').write(page)
+import json
+open(os.path.join(ROOT, 'data', 'rubtext.js'), 'w', encoding='utf8').write(
+    '/* The rubrics of the Missale O.P. (1939) in English, by paragraph (ids as in rubrics.html); built by tools/rubrics/build_rubrics.py.\n'
+    '   The Mass page loads this when a direction is opened. */\nwindow.RUBTEXT = ' + json.dumps(RUBTEXT, ensure_ascii=False, separators=(',', ':')) + ';\n')
 print('rubrics.html', len(page))
