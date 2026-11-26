@@ -318,6 +318,21 @@
    "p": "co",
    "i": "Angeli, Archangeli",
    "pg": "605"
+  },
+  "op-g50-venite-filii-in": {
+   "p": "in",
+   "i": "Venite, filii",
+   "pg": "562"
+  },
+  "op-g50-desiderium-pauperum-of": {
+   "p": "of",
+   "i": "Desiderium pauperum",
+   "pg": "562"
+  },
+  "op-g50-sinite-parvulos-co": {
+   "p": "co",
+   "i": "Sinite parvulos",
+   "pg": "563"
   }
  },
  "Quad1t": {
@@ -1899,16 +1914,22 @@
  },
  "S0827": {
   "in": [
-   "r3821"
+   "op-g50-venite-filii-in"
   ],
   "of": [
-   "r3868"
+   "op-g50-desiderium-pauperum-of"
   ],
   "co": [
-   "r3371"
+   "op-g50-sinite-parvulos-co"
   ],
   "p39": "G50 p. 562-563",
-  "_why_g50": "G50 p. 562-563: Officium Venite filii, Offertorium Desiderium pauperum, Communio Sinite parvulos (not yet transcribed)"
+  "_why_g50": "G50 p. 562-563: Officium Venite filii; Responsorium Os justi, pag. 36*; Alleluia V. Beatus vir qui suffert, pag. 373; Offertorium Desiderium pauperum; Communio Sinite parvulos (transcribed from the scan)",
+  "gr": [
+   4733
+  ],
+  "al": [
+   6890
+  ]
  },
  "S0910": {
   "of": [
