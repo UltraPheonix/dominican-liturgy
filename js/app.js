@@ -1340,13 +1340,14 @@
     var ch = D.chants[c.id] || {};
     var incipit = el('span', {class: 'incipit', text: clean(ch.i || '').replace(/\s*\(.*?\)\s*/g, ' ').replace(/\.\.\..*$/, '').replace(/(\s*all\.)+\s*$/i, '').replace(/\s+alleluia\s*$/i, '').trim()});
     var mode = el('span', {class: 'mode'});
-    var head = el('div', {class: 'part-head hide-print'}, [el('h2', {text: part === 'an' && state.key === 'Quad6s' ? 'Ad Laudes' : PART_NAME[part]}), state.edit ? sel : incipit, mode]);
+    var partName = part === 'an' && state.key === 'Quad6s' ? 'Ad Laudes' : PART_NAME[part];
+    var head = el('div', {class: 'part-head hide-print'}, [el('h2', {text: partName}), state.edit ? sel : incipit, mode]);
     if (c.roman) head.appendChild(/Franciscan/.test(ch.i || '') ?
       el('span', {class: 'badge warn', title: 'Not in the Graduale O.P.: the melody of the Franciscan Graduale (Graduale Seraphicum)', text: 'Franciscan melody'}) :
       el('span', {class: 'badge warn', title: 'Not in the Graduale O.P. on GregoBase: the melody of the Roman Graduale', text: 'Roman melody'}));
     if (state.edit) { head.appendChild(toggle); head.appendChild(remove); }
     slot.appendChild(head);
-    slot.appendChild(el('h2', {class: 'print-only', text: PART_NAME[part]}));
+    slot.appendChild(el('h2', {class: 'print-only', text: partName}));
     slot.appendChild(chantBox);
     var trc = c.id && (D.trans[c.id] || D.trans[String(c.id)]);
     if (trc && trc.t) { slot.classList.add('m-pair'); slot.appendChild(el('div', {class: 'm-tr hide-print', text: trimTPText(trc.t)})); }
