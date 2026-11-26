@@ -479,3 +479,16 @@ Errors found (audit scripts: /tmp/audit.py-style, rebuild in tools/b09/audit1909
 TODO: 1 fix san_oratio (match by name, cut at next heading; Andrew feast vs vigil) → 2 clean prayers vs DO SanctiOP/Sancti, scans for the
 rest → 3 test, bump, push → 4 branch: re-apply archive, fix N./proper Offices/proper resp/TP resp/24 readings/lessons → 5 live when clean
 → 6 Holy Week+Triduum line by line, Christmas–Epiphany, precedence, chant.
+
+## MASS CHAT (2026-11-26, sw v90–v97). Office chat owns data/office*, tools/b09, js/office.js, js/tones.js, office.html.
+- Orations (TODO E20) DONE except tools/orat39/MISSING.md (26 with no pre-1955 Dominican source: post-1939 Blesseds, Pius X,
+  Salve radix, G587; Good Friday/Holy Saturday prayers live in the Holy Week text). Workflow: `python3 draft.py KEY:LINE`
+  (LINE in m39lin.txt; or KEY:or@L,se@L,pc@L) -> accented drafts + /tmp/cand.json; `python3 proof2.py M39.pdf` -> /tmp/proof/KEY.png
+  crops; read the crops, type the Latin as printed (j-spelling, short conclusion) into extra_final.json with 'p' (printed page;
+  pdf->page map from the numbers after @@PAGE lines), English body into en_final.json; `python3 extra.py; python3 merge.py
+  [--force KEYS]` (merge keeps 'sp'). extra.py: conclusions Qui vivit / cum eodem Deo Patre / Per Dominum ejusdem / written-out.
+  Partial DO sets replaced by the Missal's (Dec25_2 Nat2 5as Dedicatio S0120 S0211 S0224 S0319 S0324 S0425 S0630 S0824 S0825
+  S0914 S1004 S1024 S1109 S1118 C15s C25s C28s). M39.pdf = media.churchmusicassociation.org/dominican/M39.pdf (same as Drive copy).
+- Oratio super populum: tools/orat39/sp_final.py -> ORATIONS[key].sp = [la, en, page] for the 36 Lenten ferias (not Ember Sat.);
+  app.js drawOratio/orat('sp') after the Postcommunion with Orémus. Humiliáte cápita vestra Deo; booklets too.
+- Booklet: votive/Common Masses without a date print for today (was a crash).

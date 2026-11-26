@@ -34,8 +34,8 @@
 19. Jandel 1862 Antiphonary (GB 35/36 + transcription) for the 1909 Office; 1933 books where texts are identical.
 
 ## E. Mass
-20. Orations still missing (tools/orat39/MISSING.md; ~60 left: Holy Week Quad6f/Pasc6s, votives C..s, post-1939 Blesseds,
-    S0504 S0703 S0729 S0812 S1202 S0903 S0910 S0428 S0508 S0814 S0113 S1113 Quad3h …); WIP manual_match.json (10 keys) to proof+merge.
+20. DONE 2026-11-26 (Mass chat): orations from Missale O.P. 1939 for all Masses that have a pre-1955 Dominican source; the 26 left
+    are listed in tools/orat39/MISSING.md (no source). Oratio super populum added on the 36 Lenten ferias.
 21. Verify all orations from Divinum Officium against Missale O.P. 1939 (possible Roman forms).
 22. AUDIT.md: 21 chant differences vs St Dominic Missal 1959 to check against the book (S. Nicolas, St John Baptist, etc.).
 23. S0915 Seven Sorrows: 'Stabat sancta Maria' as Alleluia + 'O vos omnes' (M33).
