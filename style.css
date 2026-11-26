@@ -500,3 +500,31 @@ body.en-only .m-tr, body.en-only .reading .r-cols > .en-text, body.en-only .orat
 html[data-theme="dark"] .jump a.on, html[data-theme="dark"] .hours .sbtn.on, html[data-theme="dark"] .hw-days button.on { background: rgba(224, 112, 122, .14); }
 .part .said .said-rub { color: var(--rubric); font-style: italic; font-size: .92em; }
 .rb-sec, .rb-ph, #generales { scroll-margin-top: calc(var(--toph, 54px) + 70px); }
+/* the form of Mass: the long label where there is room */
+.seg .sm { display: none; }
+@media (max-width: 560px) { .seg .lg { display: none; } .seg .sm { display: inline; } .seg button { padding: 7px 10px; } }
+/* the circumstances of the Mass, under the bar when an Order of Mass is shown */
+.rubopts { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 2px 0 10px; font-size: 15px; }
+.rubopts[hidden] { display: none; }
+.rubopts .ro { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); }
+.rubopts .ro[hidden] { display: none; }
+.rubopts .ro span { font-family: var(--caps); letter-spacing: .06em; font-size: 13px; }
+.rubopts select { border: 1px solid var(--line); border-radius: 999px; padding: 3px 26px 3px 10px; font-size: 15px; background-color: var(--paper); color: var(--ink, inherit); min-height: 32px; }
+@media (max-width: 560px) { .rubopts { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; } .rubopts .ro { flex-direction: column; align-items: stretch; gap: 2px; } .rubopts select { width: 100%; } }
+/* directions of the rubrics in the Order of Mass: tap to open the Missal's own words */
+.part.ordo .o-rub.rx { margin: 10px 0 4px; }
+.o-rub.rx summary { list-style: none; cursor: pointer; color: var(--rubric); }
+.o-rub.rx summary::-webkit-details-marker { display: none; }
+.o-rub.rx summary::after { content: ' ⓘ'; font-style: normal; font-size: .8em; opacity: .55; }
+.o-rub.rx[open] summary::after { opacity: 1; }
+.rx-full { margin: 6px 0 10px; padding: 8px 12px; border-left: 2px solid var(--rubric); background: rgba(156, 27, 38, .04); font-style: normal; color: var(--ink, #222); font-size: 15px; line-height: 1.5; }
+.rx-p { margin: 0 0 8px; }
+.rx-h { font-family: var(--caps); letter-spacing: .06em; color: var(--rubric); font-size: 13px; }
+.rx-wait { color: var(--muted); font-style: italic; margin: 0; }
+.rx-go { color: var(--rubric); font-size: 14px; }
+.o-cond { display: inline-block; font-family: var(--caps); font-style: normal; letter-spacing: .06em; font-size: 12px; color: var(--paper); background: var(--rubric); border-radius: 999px; padding: 0 8px; margin-right: 6px; vertical-align: 1px; }
+.part.ordo.rubstrip { border-top: 0; padding: 4px 0 0; }
+.part.ordo.rubstrip .o-rub { margin: 4px 0; }
+@media print { .rubopts, .o-rub.rx summary::after, .rx-go { display: none !important; } }
+[data-theme="dark"] .rx-full { background: rgba(255, 255, 255, .04); color: inherit; }
+.rx-p b { font-weight: 600; }

@@ -316,13 +316,13 @@
     creditsUnit();
   }
   // ================================================================== ORDO helpers (priest, congregation)
-  var MODE = function () { return {low: 'l', sung: 's', solemn: 'm'}[S.ordo] || 'm'; };
+  var MODE = function () { return {low: 'l', sung: 's', solemn: 'm', conv: 'c'}[S.ordo] || 'm'; };
   function ordoLines(k) {
     var O = window.ORDO, sec, lines;
     if (k === 'dismiss') { lines = O.dismiss[R.requiem ? 'req' : R.dismiss === 'ite' ? 'ite' : 'ben']; sec = {la: 'Dimissio', en: 'Dismissal'}; }
     else { sec = O[k]; if (!sec) return null; lines = sec.lines; }
     var md = MODE();
-    lines = (lines || []).filter(function (l) { return !l.m || l.m.indexOf(md) >= 0; });
+    lines = (lines || []).filter(function (l) { return (!l.m || l.m.indexOf(md) >= 0) && (!l['if'] || l['if'] === 'full' || l['if'] === '!prel' || l['if'] === '!sac'); });
     return {la: sec.la, en: sec.en, lines: lines};
   }
   var WHO = {P: 'S.', S: 'M.', D: 'D.', C: ''};

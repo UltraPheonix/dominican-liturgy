@@ -87,7 +87,7 @@ def part_html(P, toc, body):
         cid = pid + '-' + (num or 'p').lower()
         if hla: sub.append('<li><a href="#%s"><span class="rb-n">%s</span> %s <span class="rb-toc-en">%s</span></a></li>' % (cid, num, E(hla), E(hen)))
         body.append('<section class="rb-sec" id="%s">%s%s</section>' % (cid, ('<h3 class="rb-h3"><span class="rb-n">%s</span> %s<span class="rb-h-en">%s</span></h3>' % (num, E(hla), E(hen))) if hla else '', ''.join(pair(a, b, cid + '-' + str(i + 1), INC2_RE) for i, (a, b) in enumerate(paras))))
-        for i, (a, b) in enumerate(paras): RUBTEXT[cid + '-' + str(i + 1)] = [hen or en, b]
+        for i, (a, b) in enumerate(paras): RUBTEXT[cid + '-' + str(i + 1)] = [hen or en, mark(b, INC2_RE)]
     toc.append('<li class="rb-part"><a href="#%s">%s <span class="rb-toc-en">%s</span></a>%s</li>' % (pid, E(la), E(en), ('<ol>' + ''.join(sub) + '</ol>') if sub else ''))
 body = []
 toc = []
@@ -102,7 +102,7 @@ for n, la, en, paras in TITLES:
     gen_toc.append('<li><a href="#%s"><span class="rb-n">%s</span> %s <span class="rb-toc-en">%s</span></a></li>' % (slug(n), n, E(la), E(en)))
     body.append('<section class="rb-sec" id="%s"><h2><span class="rb-n">%s</span> %s<span class="rb-h-en">%s</span></h2>%s</section>'
                 % (slug(n), n, E(la), E(en), ''.join(pair(a, b, slug(n) + '-' + str(i + 1)) for i, (a, b) in enumerate(paras))))
-    for i, (a, b) in enumerate(paras): RUBTEXT[slug(n) + '-' + str(i + 1)] = [en, b]
+    for i, (a, b) in enumerate(paras): RUBTEXT[slug(n) + '-' + str(i + 1)] = [en, mark(b)]
 la, en, paras = COLOURS
 gen_toc.append('<li><a href="#colores">%s <span class="rb-toc-en">%s</span></a></li>' % (E(la), E(en)))
 toc.append('<li class="rb-part"><a href="#generales">Rubricae generales Missarum <span class="rb-toc-en">General rubrics of the Mass</span></a><ol>' + ''.join(gen_toc) + '</ol></li>')
@@ -176,6 +176,6 @@ page = '''<!DOCTYPE html>
 open(os.path.join(ROOT, 'rubrics.html'), 'w', encoding='utf8').write(page)
 import json
 open(os.path.join(ROOT, 'data', 'rubtext.js'), 'w', encoding='utf8').write(
-    '/* The rubrics of the Missale O.P. (1939) in English, by paragraph (ids as in rubrics.html); built by tools/rubrics/build_rubrics.py.\n'
+    '/* The rubrics of the Missale O.P. (1939) in English, by paragraph (ids as in rubrics.html), as HTML with the prayers in bold; built by tools/rubrics/build_rubrics.py.\n'
     '   The Mass page loads this when a direction is opened. */\nwindow.RUBTEXT = ' + json.dumps(RUBTEXT, ensure_ascii=False, separators=(',', ':')) + ';\n')
 print('rubrics.html', len(page))
