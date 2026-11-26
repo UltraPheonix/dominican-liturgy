@@ -30,7 +30,7 @@ import glob, importlib
 # the other rubrics of the Missal (Ritus servandus etc.): one module per part, tools/rubrics/ritus_*.py, each defining a tuple
 # (id, Latin title, English title, [(number, Latin heading, English heading, [(Latin, English), ...]), ...]); ORDER = Missal order
 ORDER_BEFORE = ['ritus_defectibus', 'ritus_praeparatio', 'ritus_modus', 'ritus_varia', 'ritus_ministri', 'ritus_communio']
-ORDER_AFTER = ['ritus_vestes']
+ORDER_AFTER = []
 def load(names):
     out = []
     for n in names:

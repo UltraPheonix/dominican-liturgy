@@ -499,3 +499,4 @@ body.en-only .m-tr, body.en-only .reading .r-cols > .en-text, body.en-only .orat
 .o-lp .o-en, .o-pair .o-en { font-size: 15px; }
 html[data-theme="dark"] .jump a.on, html[data-theme="dark"] .hours .sbtn.on, html[data-theme="dark"] .hw-days button.on { background: rgba(224, 112, 122, .14); }
 .part .said .said-rub { color: var(--rubric); font-style: italic; font-size: .92em; }
+.rb-sec, .rb-ph, #generales { scroll-margin-top: calc(var(--toph, 54px) + 70px); }
