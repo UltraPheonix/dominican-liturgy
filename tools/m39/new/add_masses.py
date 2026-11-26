@@ -1,5 +1,5 @@
 """Add 1939 feasts to the site: tools/m39/new/spec_*.json (+ or_*.json orations) ->
-data/masses.js (Mass from its Common, as the Missale O.P. 1939 directs), data/readings33.js + tools/m33/fixes.json (readings copied
+data/masses.js (Mass from its Common, as the Missale O.P. 1939 directs), data/readings33.js + tools/m33/fixes_m39.json (applied last by tools/m33/run.sh) (readings copied
 from the Common, or the Gospel the Missal names), tools/orat39/extra_final.json + en_final.json (orations, then extra.py + merge.py),
 tools/m39/k_build.py FIX (calendar -> Mass key). Idempotent. Run from the repo root: python3 tools/m39/new/add_masses.py"""
 import json, glob, os, re, subprocess, copy
@@ -10,7 +10,7 @@ F = 'data/masses.js'; s = open(F, encoding='utf8').read(); head, js = s.split('v
 D = json.loads(js.rstrip().rstrip(';'))
 RF = 'data/readings33.js'; rs = open(RF, encoding='utf8').read(); rhead, rjs = rs.split('var READINGS33 = ', 1)
 RD = json.loads(rjs.rstrip().rstrip(';'))
-FX = json.load(open('tools/m33/fixes.json')) if os.path.exists('tools/m33/fixes.json') else {}
+FX = json.load(open('tools/m33/fixes_m39.json')) if os.path.exists('tools/m33/fixes_m39.json') else {}
 XF = json.load(open('tools/orat39/extra_final.json')); EF = json.load(open('tools/orat39/en_final.json'))
 SPEC = [x for f in sorted(glob.glob(H + '/spec_*.json')) for x in json.load(open(f))]
 OR = {}
@@ -61,7 +61,7 @@ for x in SPEC:
     fix[(x['d'], x['kal'])] = k; n += 1
 open(F, 'w', encoding='utf8').write(head + 'var DOMINICAN = ' + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + ';\n')
 open(RF, 'w', encoding='utf8').write(rhead + 'var READINGS33 = ' + json.dumps(RD, ensure_ascii=False, separators=(',', ':')) + ';\n')
-json.dump(FX, open('tools/m33/fixes.json', 'w'), ensure_ascii=False, indent=1)
+json.dump(FX, open('tools/m33/fixes_m39.json', 'w'), ensure_ascii=False, indent=1)
 json.dump(XF, open('tools/orat39/extra_final.json', 'w'), ensure_ascii=False, indent=1)
 json.dump(EF, open('tools/orat39/en_final.json', 'w'), ensure_ascii=False, indent=1)
 json.dump({'%s|%s' % a: b for a, b in fix.items()}, open(H + '/kfix.json', 'w'), ensure_ascii=False, indent=0)

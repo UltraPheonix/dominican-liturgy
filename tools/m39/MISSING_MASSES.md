@@ -1,15 +1,13 @@
 # 1939 calendar vs site Masses (tools/m39/k_build.py, 390 entries)
 
-## Feasts of the 1939 calendar with no site Mass (31)
+## Feasts of the 1939 calendar with no site Mass (27)
 These need their Mass from the Missale O.P. 1939 (own Mass or Common + proper orations).
 
-- 0104 Octava SS. Innocentium MM. — Tres Lectiones
 - 0118 Cathedra Romana S. Petri — Totum Duplex
 - 0203 S. Blasii Ep. et Mart. — Tres Lectiones
 - 0204 Anniversarium Patrum et Matrum — Novem Lectiones
 - 0312 S. Gregorii Magni Papæ, Conf. et Eccl. Doct. — Duplex
 - 0318 S. Cyrilli Ep. Hierosolymitani Conf. et Eccl. Doct. — Duplex
-- 0401 Impressio SS. Stigmatum S. Catharinæ Sen. Virg. O. P. — Duplex
 - 0503 Inventio S. Crucis — Totum Duplex II classis
 - 0506 S. Joannis ante Portam Latinam — Totum Duplex
 - 0508 Apparitio S. Michaelis Arch. — Totum Duplex
@@ -28,8 +26,6 @@ These need their Mass from the Missale O.P. 1939 (own Mass or Common + proper or
 - 0922 SS. Mauritii et Sociorum MM. — Tres Lectiones
 - 0925 Commemoratio S. P. N. Dominici in Suriano — Totum Duplex
 - 1009 SS. Dionysii Ep. et Sociorum MM. — Duplex
-- 1022 In Ecclesiis consecratis: Dedicatio propriæ Ecclesiæ — Totum Duplex I classis
-- 1029 Octava Dedicationis propriæ Ecclesiæ — Simplex
 - 1031 Commemoratio Sanctorum, quorum Reliquiæ in Ecclesiis nostris asservantur — Totum Duplex
 - 1210 Pro Italia et insulis adjac.: Translatio almæ domus Lauretanæ — Totum Duplex
 - 1229 S. Thomæ Ep. et Mart. — Duplex
