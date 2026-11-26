@@ -14,13 +14,14 @@ X = json.load(open('extra_final.json'))
 E = json.load(open('en_final.json'))
 def concl(t):
     t = t.strip().replace('eúmdem', 'eúndem')
-    m = re.search(r'(Per Dóminum|Per eúndem|Qui vivis|Qui tecum|qui tecum)[^.]*\.$', t)
+    m = re.search(r'(Per Dóminum|Per eúndem|Qui vivis|Qui vivit|Qui tecum|qui tecum)[^.]*\.$', t)
     if not m: raise SystemExit('no conclusion: ' + t[-60:])
     s = m.group(1); body = t[:m.start()]
     if s == 'Per Dóminum': c, e = NS['PD'], NS['EPD']
     elif s == 'Per eúndem': c, e = NS['PE'], NS['EPE']
     elif s == 'Qui vivis': c, e = NS['QV'], NS['EQV']
     else: c, e = NS['QT'], NS['EQT']
+    if s == 'Qui vivit': return body + 'Qui vivit et regnat cum Deo Patre in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.', 'Who lives and reigns with God the Father in the unity of the Holy Spirit, God, world without end.'
     if s == 'qui tecum': return body + 'qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum.', e
     return body + c, e
 out = {}
