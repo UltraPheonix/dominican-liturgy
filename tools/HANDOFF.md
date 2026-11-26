@@ -516,3 +516,15 @@ on offices.text_sancti(vol, a, b) (page index = pdf page - 1; St Andrew is v1 ~7
 v1/mat(noct ants, vr, lessons, resp)/laud/v2, repair wording with fix_short vs DO Sancti, test on St Andrew against DO Sancti/11-30,
 then Dec 8 and the other Totum Duplex feasts. Then: TP Commons with 7 responsories, 24 doubtful readings, audits
 (/tmp/audit.py etc. — recreate from the descriptions in the AUDIT section if /tmp is gone), headless test, merge to main, tools/push.sh.
+### Proper Offices — state 2026-11-26 19:10 (branch commons1909-v2)
+tools/b09/proper.py reads ONE feast well when its chunk is right (St Andrew, v1 pages 769-790: v1 ant+magn, invitatory, 3×3 nocturn
+antiphons, versicles, 9 lessons (Vulgate/DO repaired) + 9 responsories split at * / ℣ / —; `python3 /tmp/pshow.py`-style dump =
+proper.chunks + proper.parse). Run on all: propers1909.json has only 131 chunks, 4 complete — the weak link is the chunking by
+'Die N. Mensis' headings (offices.SHEAD): the OCR garbles many headings (Dec 8 not found; merged Offices with 20+ lessons).
+NEXT: chunk by the CALENDAR instead — walk calendar1909 entries in date order and find each feast's heading in text_sancti by fuzzy
+match of its title words (ANDRE/E Apóstoli ~ Andréæ Apóstoli), searching forward from the previous feast; then proper.parse per chunk;
+then a 'q' list per feast = pieces with unknown words → read the page image and put corrections in propers_fix.json (by hand).
+Then build.py: P = propers[md] merged over the Common (cmerge shape: v1.ant/ants/magn, mat.invit, mat.noct[i] = (psalms, nants[i], nvr[i]),
+mat.resp from lessons[].resp when all 9 are there, laud.ant/bened, v2.ant/magn; lessons → o['lessons']).
+Known small bugs: Lauds antiphons lose the 5th when its number is lost; v2 ant may keep 'Psalmus Dixit…' tail; last antiphon of a
+nocturn keeps its versicle when the ℣ sign is read as a word.
