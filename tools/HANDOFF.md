@@ -407,3 +407,12 @@ NEXT: (1) Commune Sanctorum (find in v1/v2 after the Sanctorale) → full feast 
   lessons of the Common + proper parts); (2) apply Rubricae generales exactly (v1 pdf 40–70; concurrence/Vespers, octaves,
   Saturday BVM Office, simplex/memoria rules); (3) Temporale proper days (Christmas–Epiphany, Holy Week/Triduum, Easter week,
   Ascension–Corpus) from offices1909 T: entries; (4) summer historiae; (5) check vs scans; (6) chant.
+### 1909 — Commune (WIP, 2026-11-26 09:50)
+- Commune Sanctorum v1 pdf: BVM 1306–1315, Dedication 1316–1330, Apostles 1331–1340, Evangelists 1341–42, Mart. Pont. 1343–54,
+  Mart. non Pont. 1355–56, plur. Mart. 1357–72, Conf. Pont. 1373–83, Doct. 1384–85, Conf. non Pont. 1386–89, Abbot 1390–91,
+  Virg. Mart. 1392–1402, Virg. 1403–05, S. Mart. tantum 1406–08, nec Virg. nec Mart. 1409–17, Paschaltide forms 1418–32;
+  then Officium S. P. Dominici / B.M.V. / Defunctorum 1433–1510 (same in v2 1140–1317).
+- tools/b09/commune.py → communes1909.json: first-pass item streams per Hour (ant/ps/cap/hymn/vr/bened/magn/lessons). NOT USED by
+  build yet: too noisy (II Vespers often merged into None — heading 'Ad ii. Vesperas' case; Lauds antiphon lists missed; several
+  Commons empty because the OCR heading regex missed them). Fix the parser (or transcribe each Common's psalm/antiphon scheme from
+  the page images — ~110 pages) before rendering feast Offices from it.
