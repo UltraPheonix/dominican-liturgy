@@ -308,6 +308,11 @@
    "p": "al",
    "i": "Franciscus pauper",
    "pg": "576"
+  },
+  "op-g50-mihi-autem-voce": {
+   "p": "in",
+   "i": "Mihi autem absit (V. Voce mea)",
+   "pg": "575"
   }
  },
  "Quad1t": {
@@ -1912,7 +1917,10 @@
    "op-g50-franciscus-al"
   ],
   "p39": "G50 p. 576",
-  "_why_g50": "G50 p. 576: Alleluia V. Franciscus pauper (printed; transcribed from the scan)"
+  "_why_g50": "G50 p. 576: Alleluia V. Franciscus pauper (printed; transcribed from the scan)",
+  "in": [
+   "op-g50-mihi-autem-voce"
+  ]
  },
  "S0829": {
   "al": [
