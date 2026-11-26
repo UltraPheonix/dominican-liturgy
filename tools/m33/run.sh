@@ -26,7 +26,7 @@ if os.path.exists(F):
 for k in json.load(open('$R/tools/m33/absent.json')): out.pop(k, None)   # not in the 1933 Missal: no readings
 F2='$R/tools/m33/fixes_m39.json'     # Masses added from the Missale O.P. 1939 (tools/m39/new/add_masses.py): kept as built there
 if os.path.exists(F2): fx2=json.load(open(F2)); out.update(fx2); print(len(fx2),'Masses from tools/m33/fixes_m39.json')
-TXT=[('Locútus est Domi; ad Achaz','Locútus est Dóminus ad Achaz')]   # OCR slips seen when the readings were set to the tones
+TXT=[('Locútus est Domi; ad Achaz','Locútus est Dóminus ad Achaz'),('Dixit Jesus discípulis suis Vos estis sal','Dixit Jesus discípulis suis: Vos estis sal')]   # OCR slips seen when the readings were set to the tones
 for rs in out.values():
     for r in rs:
         for x,y in TXT:

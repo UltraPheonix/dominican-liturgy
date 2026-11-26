@@ -261,7 +261,12 @@
   "p33": 421,
   "lent_tr": [
    4978
-  ]
+  ],
+  "al": [
+   6943
+  ],
+  "p39": "G50 p. 400",
+  "_why_g50": "G50 p. 400: Alleluia V. Sancti tui (printed)"
  },
  "S0222": {
   "p33": 442,
@@ -691,7 +696,12 @@
    6824
   ],
   "asc_al": 5526,
-  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
  },
  "S0405": {
   "pasch_al": [
@@ -699,7 +709,12 @@
    6843
   ],
   "asc_al": 5352,
-  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 408 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 408 (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
  },
  "S0411": {
   "pasch_al": [
@@ -707,7 +722,12 @@
    6824
   ],
   "asc_al": 5526,
-  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
  },
  "S0323b": {
   "pasch_al": [
@@ -755,7 +775,12 @@
    6824
   ],
   "asc_al": 5526,
-  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
  },
  "S0424": {
   "pasch_al": [
@@ -803,7 +828,12 @@
    5130
   ],
   "asc_al": 5526,
-  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 424 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 424 (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   7243
+  ],
+  "p39": "G50 p. 458",
+  "_why_g50": "G50 p. 458: Officium Mihi adhaerere (printed)"
  },
  "S0502": {
   "pasch_al": [
@@ -811,7 +841,12 @@
    6824
   ],
   "asc_al": 5526,
-  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 427 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 427 (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "of": [
+   5315
+  ],
+  "p39": "G50 p. 466",
+  "_why_g50": "G50 p. 466: Missa In medio, pag. 35*, praeter Offertorium Meditabar (printed)"
  },
  "S0503b": {
   "pasch_al": [
@@ -867,7 +902,12 @@
    6824
   ],
   "asc_al": 5526,
-  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 439 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 439 (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "of": [
+   5315
+  ],
+  "p39": "G50 p. 474 / Missale O.P. 1939",
+  "_why_g50": "G50 p. 474 / Missale O.P. 1939: Offertorium Meditabar (p. 466)"
  },
  "S0511": {
   "pasch_al": [
@@ -949,7 +989,12 @@
    6824
   ],
   "asc_al": 5526,
-  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
  },
  "S0528b": {
   "pasch_al": [
@@ -1004,7 +1049,12 @@
    6824
   ],
   "asc_al": 5526,
-  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
  },
  "S0620b": {
   "pasch_al": [
@@ -1132,5 +1182,192 @@
   "asc_al": 5526,
   "p39": "p. 442-443",
   "_why": "B. Imelda (13 Maii), Missale O.P. 1939 pp. 442-443 and Graduale O.P. 1950 pp. 475-478: Alleluia Ave virginum gemma, Off. Introibo, Comm. Ego dilecto; always in Paschaltide (Tempore Resurr. secundum Alleluia Nonne cor nostrum; Ascens. Ascendens Christus), so no Gradual"
+ },
+ "S0117": {
+  "gr": [
+   4733
+  ],
+  "p39": "G50 p. 394",
+  "_why_g50": "G50 p. 394: Responsorium Os justi, pag. 36*"
+ },
+ "S0123": {
+  "al": [
+   6833
+  ],
+  "p39": "G50 p. 402",
+  "_why_g50": "G50 p. 402: Alleluia V. Optime pater (printed)"
+ },
+ "S0118_2": {
+  "gr": [
+   5552
+  ],
+  "p39": "G50 p. 395",
+  "_why_g50": "G50 p. 395: Responsorium Exaltent eum (printed)"
+ },
+ "S0719": {
+  "gr": [
+   4733
+  ],
+  "al": [
+   5359
+  ],
+  "p39": "G50 p. 522",
+  "_why_g50": "G50 p. 522: Responsorium Os justi, pag. 36*; Alleluia V. Beatus vir qui timet, pag. 407"
+ },
+ "S0731": {
+  "gr": [
+   7142
+  ],
+  "p39": "G50 p. 528",
+  "_why_g50": "G50 p. 528: Missa Os justi, de Communi unius Conf. non Pont., pag. 42*"
+ },
+ "S0825": {
+  "gr": [
+   7142
+  ],
+  "p39": "G50 p. 561",
+  "_why_g50": "G50 p. 561: Responsorium Domine praevenisti, pag. 40*"
+ },
+ "S1226": {
+  "se": [
+   4214
+  ],
+  "p39": "G50 p. 387",
+  "_why_g50": "G50 p. 387: Sequentia Laetabundus, pag. 33"
+ },
+ "S1227": {
+  "in": [
+   6549
+  ],
+  "se": [
+   4214
+  ],
+  "p39": "G50 p. 388-389",
+  "_why_g50": "G50 p. 388-389: Officium In medio, pag. 35*; Sequentia Laetabundus, pag. 33"
+ },
+ "S1228": {
+  "al": [
+   5585
+  ],
+  "p39": "G50 p. 391-392",
+  "_why_g50": "G50 p. 391-392: Alleluia V. Herodes (Hi sunt only on a Sunday and on the Octave)"
+ },
+ "S0327": {
+  "gr": [
+   5703
+  ],
+  "lent_tr": [
+   6931
+  ],
+  "p39": "G50 p. 445*-446*",
+  "_why_g50": "G50 p. 445*-446*: Responsorium Deus qui praecinxit; Tractus Persequar"
+ },
+ "S1028": {
+  "gr": [
+   6863
+  ],
+  "p39": "G50 p. 606",
+  "_why_g50": "G50 p. 606: III. Responsorium Nimis honorati sunt, pag. 4*"
+ },
+ "S1104": {
+  "gr": [
+   6727
+  ],
+  "of": [
+   7170
+  ],
+  "p39": "G50 p. 613",
+  "_why_g50": "G50 p. 613: Responsorium Inveni David, pag. 12*; Offertorium Veritas mea, pag. 31*"
+ },
+ "S0127": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0129": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0209": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0223": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0307": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0714": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0820": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0828": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S1018": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S1115": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S1124": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S1204": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0506": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
  }
 }
