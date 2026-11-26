@@ -7,10 +7,17 @@ from build_or import latin, english, clean_en, flat
 L = open('m39lin.txt').read().split('\n')
 HEAD = {'or': re.compile(r'^Oratio\s*$'), 'se': re.compile(r'^Secreta\b'), 'pc': re.compile(r'^(Pro pluribus )?Postcommunio\b')}
 STOP = re.compile(r'^(Secreta|Postcommunio|Praefatio|Graduale|Lectio|Léctio|Communio|Offertorium|Evangelium|Sequentia|Tractus|Alleluia|Die \d|Festa |Oratio|Commemoratio|Secunda|Oremus|Humiliate|Dominica|Feria|DOMINICA|FERIA|Officium|In Vigilia|@@PAGE)')
+COMM = re.compile(r'^(De S|De SS|De B|Des\.|De sancta|De Ss|Commemoratio)')
 def grab(i, kind):
     j = i
-    while j < len(L) and not HEAD[kind].match(L[j].strip()): j += 1
-    if j - i > 400: return None, i
+    while j < len(L):
+        s0 = L[j].strip()
+        if j > i + 3 and re.match(r'^Die \d', s0): return None, i   # next day: this Mass has no proper prayer here
+        if HEAD[kind].match(s0):
+            prev = [x.strip() for x in L[max(0, j - 2):j] if x.strip()]
+            if not (prev and COMM.match(prev[-1])): break
+        j += 1
+    if j - i > 400 or j >= len(L): return None, i
     out = []; k = j + 1
     while k < len(L):
         s = L[k].strip()
@@ -36,7 +43,8 @@ for a in args:
             t, i2 = grab(i, kind)
             if t: pr[kind] = t; i = i2
     cand[key] = {'start': int(line) - 1, 'pr': pr}
-    print('=====', key)
+    hd=[x.strip() for x in L[int(line)-1:int(line)+6] if x.strip()][:4]
+    print('=====', key, '|', ' / '.join(hd))
     for kind in ('or', 'se', 'pc'):
         if kind not in pr: print(kind, 'NOT FOUND'); continue
         la, ec, unk = latin(pr[kind])
