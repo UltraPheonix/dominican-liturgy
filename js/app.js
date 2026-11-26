@@ -521,7 +521,9 @@
       c = !isVigil(key) && (sun || cls === 1 || /Apost|App\.|Evang/.test(t) ||
           (cls === 2 && /\bDomini\b|Christi|Iesu|Jesu|Crucis|Transfigur|Baptism|Mari[aæe]|B\. ?M\. ?V|Virginis Mari|Our Lady/.test(t)));
     }
-    return {gloria: g, credo: c, dismiss: 'ite'};   // Maundy Thursday too: Ite, missa est (St Dominic Missal 1959)
+    // Missale O.P. 1939, Rubricae generales XVI, 1: "Ite Missa est dicitur quotiescumque dictum est Gloria in excelsis. Et dum
+    // non dicitur, ejus loco dicitur Benedicamus Domino" (Maundy Thursday: Ite Missa est, p. 166)
+    return {gloria: g, credo: c, dismiss: g ? 'ite' : 'ben'};
   }
 
   // ---------------------------------------------------------------- the ring of the liturgical year
@@ -681,9 +683,7 @@
     if (!state.ord && paschalKyrie(state.key, d)) { o.ky = find('Kyrie IV') || o.ky; o.pk = true; }
     if (R.gloria) o.gl = part('Gloria');
     o.sa = part('Sanctus'); o.ag = part('Agnus');
-    // Ite missa est when the Gloria is said (with two Alleluias in the Easter octave); otherwise Benedicamus Domino
-    // after 1960: Ite, missa est at every Mass (with two Alleluias in the Easter octave);
-    // Benedicamus Domino only when a procession follows at once (Maundy Thursday)
+    // Ite missa est when the Gloria is said (with two Alleluias in the Easter octave); otherwise Benedicamus Domino (XVI, 1)
     if (R.dismiss === 'ben') o.it = part('Benedicamus') || find('Benedicamus VIII');
     else o.it = (easterOctave(d) || state.key === 'Quad6s') ? find('Ite IV') : (part('Ite') || find('Ite I'));
     // a Credo chosen under Options is sung even on a day whose rubrics do not require it
@@ -1141,9 +1141,10 @@
   function findKyriale(name) { var r = null; D.kyriale.forEach(function (id) { if (D.chants[id].i === name) r = id; }); return r; }
   function drawOrdinary(k, id) {
     var slot = el('section', {class: 'part', 'data-part': k, id: k === 'ky' || k === 'as' ? 'ordinary' : null});
-    var box = el('div', {class: 'chant'});
-    slot.appendChild(el('div', {class: 'part-head hide-print'}, [el('h2', {text: ORD_LABEL[k]}), el('span', {class: 'incipit', text: D.chants[id] ? clean(D.chants[id].i) : ''})]));
-    slot.appendChild(el('h2', {class: 'print-only', text: ORD_LABEL[k] + (D.chants[id] ? ' · ' + clean(D.chants[id].i).replace(/^(Kyrie|Gloria|Credo|Sanctus|Agnus|Ite|Benedicamus)\s*/, '') : '')}));
+    var box = el('div', {class: 'chant'}), nm = D.chants[id] ? D.chants[id].i : '';
+    var label = k === 'it' && /^Benedicamus/.test(nm) ? 'Benedicamus Domino' : k === 'it' && /^Requiescant/.test(nm) ? 'Requiescant in pace' : ORD_LABEL[k];
+    slot.appendChild(el('div', {class: 'part-head hide-print'}, [el('h2', {text: label}), el('span', {class: 'incipit', text: D.chants[id] ? clean(D.chants[id].i) : ''})]));
+    slot.appendChild(el('h2', {class: 'print-only', text: label + (D.chants[id] ? ' · ' + clean(D.chants[id].i).replace(/^(Kyrie|Gloria|Credo|Sanctus|Agnus|Ite|Benedicamus)\s*/, '') : '')}));
     slot.appendChild(box);
     if (k === 'ag' && rubricsOf(state.key, state.date).requiem)
       slot.appendChild(el('p', {class: 'hint rubric', text: 'At a Mass for the Dead: “dona eis requiem” twice, and the third time “dona eis requiem sempiternam”.'}));
