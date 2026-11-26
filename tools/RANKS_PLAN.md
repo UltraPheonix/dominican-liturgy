@@ -1,4 +1,5 @@
 # Plan: pre-1955 ranks for the Mass calendar (TODO E24) — 2026-11-26, Mass chat
+> 2026-11-26 19:10: superseded by tools/ENGINE.md (shared Mass + Office feast engine). Kept for the Mass-side details.
 
 Now: data/masses.js `rank` = 1960 classes (I–IV), js/app.js feastClass()/temporalClass()/massesOf() use the 1960 rules,
 headers print "III class", data/ordo.js says "with the rubrics of 1960". The rite rule is pre-1955 O.P. only.

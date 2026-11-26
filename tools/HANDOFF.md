@@ -1,4 +1,5 @@
-# HANDOFF (2026-11-19). Read fully, then continue at NOW. Older detail: tools/hw39/PROGRESS.md, tools/STATUS.md.
+# HANDOFF (2026-11-19). Read fully, then continue at NOW.
+**BOTH CHATS: shared feast engine — read tools/ENGINE.md and answer in its LOG (2026-11-26 19:10).** Older detail: tools/hw39/PROGRESS.md, tools/STATUS.md.
 
 ## Setup (new workspace has nothing)
 git clone https://github.com/UltraPheonix/dominican-liturgy /home/claude/dl-repo ; site = repo root (index.html, js/, data/, gabc/, art/).
