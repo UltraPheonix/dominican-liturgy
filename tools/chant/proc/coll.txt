@@ -1,6 +1,6 @@
-# Collegerunt, Processionarium O.P. 1913 pp. 27-28 (pdf 43-44), Ant. toni ij, f3
+# Collegerunt, Processionarium O.P. 1913 pp. 27-28 (pdf 43-44), Ant. toni ij, c3 (C clef: no punctum before it, unlike Ave Rex)
 # P43 s0
-(f3) Col(fc/bc,)le(e/ef/f::)ge(hiGF/hGF/f,e/gef;cbc,efe,)runt(f/hi/gf;) Pon(fc)tí(e)+
+(c3) Col(fc/bc,)le(e/ef/f::)ge(hiGF/hGF/f,e/gef;cbc,efe,)runt(f/hi/gf;) Pon(fc)tí(e)+
 # P43 s1
 fi(ef)ces(f) (,) et(g) Pha(f)ri(g)sæ(e)i(f) (;) con(fhiGF,hGF) cí(e)li(ec,eDCB) um,(cb) (:) et(fe)
 # P43 s2  (? di/cé/bant split uncertain)

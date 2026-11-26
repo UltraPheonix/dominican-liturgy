@@ -1,0 +1,15 @@
+# Ingrediente, Processionarium O.P. 1913 p. 32 (pdf 48), R. toni ij, f3 (punctum before clef)
+# P48 s0
+(f3) In(f)gre(e)di(f)én(f)te(h) (::) Dó(hgh)mi(fg)no(fe) (;) in(e) sanc(f)tam(h) (,) ci(hGFE/fg)+
+# P48 s1 (vi: h + porrectus i-g-h + g, check)
+vi(f,h/igh/g)tá(f/ghGF/g)tem,(gf) (:) He(h)bræ(ij)ó(ji/ig)rum(hi) (,) pú(hi)e(ghGF/g)ri(gf) (;) re(fg)+
+# P48 s2
+sur(f)rec(f)ti(f)ó(f)nem(fe) vi(fg)tæ(f) (;) pro(f/ghGFE)nun(f)ti(hg,hih)án(hGF/g)tes,(fe) (::) *() Cum(ef)
+# P48 s3
+ra(h)mis(hg) (,) pal(f)má(fh,iHG/h/ihi)rum(ih) (;) Ho(h)sán(hi)na(h) (,) cla(h)má(hGFE/fg)bant(f) (;) in(f)
+# P48 s4
+ex(hf/ghg)cél(f/ghGF/g)sis.(gf) (::) <sp>V/</sp> Cum(ef/h)que(hi/h) (,) au(h)dís(ij)sent(i) (;) qui(h)a(h) (,) ve(hi)nit(h) (,)
+# P48 s5
+Ie(h)sus(hg) (,) Ie(hi)ro(gh)só(f)ly(f/g/h/g)mam,(gf) (:) e(f)xi(ef)é(fg)runt(f) (;) ób(f/ghGFE)vi(f)am(hg/hih) (,)
+# P48 s6
+e(hGF/g)i.(fe) (::) *() Cum(ef) ra(h)mis.(hg) (::)

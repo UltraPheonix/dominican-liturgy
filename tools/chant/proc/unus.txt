@@ -1,6 +1,6 @@
-# V. Unus autem, Processionarium O.P. 1913 p. 28 (pdf 44), f3
+# V. Unus autem, Processionarium O.P. 1913 p. 28 (pdf 44), c3 (C clef: no punctum before it, unlike Ave Rex)
 # P44 s0 (verse; ? au/tem split)
-(f3) <sp>V/</sp> U(e)nus(f) (,) au(fe/f/hi)tem(gf) (,) ex(e) ip(g/igh)sis,(gf) (;) Cá(f)i(fe)phas(ec) (,) nó(ef)mi(f/ghGF/g)+
+(c3) <sp>V/</sp> U(e)nus(f) (,) au(fe/f/hi)tem(gf) (,) ex(e) ip(g/igh)sis,(gf) (;) Cá(f)i(fe)phas(ec) (,) nó(ef)mi(f/ghGF/g)+
 # P44 s1
 ne,(gf) (;) cum(e) es(fg)set(g) (,) Pón(fg)ti(f)fex(fe) (;) an(fg)ni(g) (,) il(fg)lí(e)us,(cd,ceDC,dCB/cb) (;) pro(b)+
 # P44 s2
