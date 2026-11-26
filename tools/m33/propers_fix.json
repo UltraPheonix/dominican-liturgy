@@ -267,6 +267,11 @@
    "p": "al",
    "i": "In omnem terram",
    "pg": "578"
+  },
+  "op-g50-exsultabunt-of": {
+   "p": "of",
+   "i": "Exsultabunt sancti",
+   "pg": "570"
   }
  },
  "Quad1t": {
@@ -1843,10 +1848,10 @@
  },
  "S0910": {
   "of": [
-   "r3612"
+   "op-g50-exsultabunt-of"
   ],
   "p39": "G50 p. 570",
-  "_why_g50": "G50 p. 570: Offertorium Exsultabunt (not yet transcribed)"
+  "_why_g50": "G50 p. 570: Offertorium Exsultabunt (printed; transcribed from the scan)"
  },
  "S0917": {
   "al": [
