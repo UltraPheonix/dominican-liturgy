@@ -508,3 +508,4 @@ rest → 3 test, bump, push → 4 branch: re-apply archive, fix N./proper Office
 push with tools/push.sh (fetch, rebase, sw VERSION = origin's + 1, retry). Prayer pipeline: offices.py (text_sancti cuts running heads;
 first 'Oratio[.,]' after the heading; vigil prayer → oratio_v1) → build.py final_prayer (clean_prayer: cut at conclusion/next rubric,
 drop-cap, æ, OCR confusions vs DO word counts latcount.py; fix_short again; conclusion restored). Left: see TODO.md A3.
+- 2026-11-26 (v120-v123): 1959 Holy Week chants done from hs1959 (see hw39/PROGRESS.md); Passion chants blocked on a source (asked Joseph).

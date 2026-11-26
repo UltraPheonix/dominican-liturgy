@@ -115,3 +115,13 @@ See tools/orat39/MISSING.md for the per-Mass list.
 - G blocks added after each text in 1939 Quad6 'Ad Processionem' (holyweek_text.js patched; Quad6_proc.src has matching G lines).
 - Second pass at 600 dpi confirmed the doubtful spots (so-lymam f,iie; contra cd/eDB/da with a below the ledger; Domino h,iHF; dicebant ce(e/fh) bant(fgf); autem au(fe/f/hi)). Remaining judgement: sternebant 'bant(g/g)' two puncta as printed.
 - Good Friday Improperia verses are inside 9867 (Popule meus incl. Agios, Quia eduxi, Quid ultra): nothing missing there.
+
+## 2026-11-26 Mass chat: 1959 Holy Week chants (Cantus Gregoriani ... Hebdomadae Sanctae O.P., Rome 1959 = /tmp/dl59/hs1959.pdf)
+- tools/chant/hs59/*.txt -> build.py -> gabc/op59-*.gabc; patch_palm/thu/fri/sat.py insert {g:'op59-..', n:label} lines into data/holyweek.js (idempotent).
+- Palm Sunday: distribution Ant 1/Ps 23, Ant 2/Ps 46; procession Ant 1-4, Gloria laus (+v1-3), Ant 5 + Ps 147, Ant 6, Ave Rex, Ingrediente, De ore leonis (1913 melodies reused where identical).
+- Thursday Communion: Ps 22, 71, 103, 150 (tone as notated + psalter verses). Friday Communion: Adoramus (I), Per lignum (VIII), Salvator mundi (VII), Ps 21.
+- Vigil: Lumen Christi / Deo gratias procession (p. 33, was missing from the St Dominic Missal text), Lauds Ant Alleluia (VI) + Ps 150 tone VI,
+  Et valde (VIII) + Benedictus tone VIII from the Triduum 1927 p. 324 (as hs1959 p. 35 directs).
+- Holy Saturday Vespers (pp. 31-32): op59-hodie, op59-ps115, op59-principes built for the Office chat; not on any page.
+- No Mandatum in hs1959 or the St Dominic Missal for 1959: nothing missing.
+- Passion tones: no Dominican source in hand (1913, 1927, 1939, 1959, 1965 books, Harrison 1920 all lack them). Waiting on Joseph for a scan of a Cantus Passionis O.P.
