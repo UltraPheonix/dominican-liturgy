@@ -1,0 +1,421 @@
+# Calendarium of the 1909 Breviary (vol. 1 pdf 24-37), transcribed from the page images. MM-DD | title | rank ; further lines = commemorations
+01-01|Circumcisio Dómini|Totum Duplex
+01-02|Octava S. Stéphani Protomártyris|Tres Lectiones
+01-03|Octava S. Joánnis Apóstoli et Evangelístæ|Tres Lectiones
+01-04|Octava SS. Innocéntium Mártyrum|Tres Lectiones
+01-05|Vigília|
+01-06|Epiphanía Dómini|Totum Duplex
+01-10|B. Gundisálvi Conf. O.P.|Totum Duplex
+01-13|Octava Epiphaníæ|Simplex
+01-14|S. Hilárii Ep., Conf. et Eccl. Doct.|Duplex
+01-15|SS. Nóminis Jesu|Totum Duplex
+01-15|S. Mauri Abbátis|Memoria
+01-16|B. Stéphanæ de Quinzánis V. O.P.|Duplex
+01-16|S. Marcélli Papæ et Mart.|Memoria
+01-17|S. Antónii Abbátis|Totum Duplex
+01-18|Cáthedra Romána S. Petri|Duplex
+01-18|S. Priscæ Virg. et Mart.|Memoria
+01-19|B. Andréæ a Peschiéra Conf. O.P.|Duplex
+01-19|S. Felícis Presb. et Mart.|Memoria
+01-20|SS. Fabiáni Papæ et Sebastiáni MM.|Totum Duplex
+01-21|S. Agnétis Virg. et Mart.|Totum Duplex
+01-22|S. Vincéntii Mart.|Totum Duplex
+01-23|S. Raymúndi Conf. O.P.|Totum Duplex
+01-23|S. Emerentiánæ Virg. et Mart.|Memoria
+01-24|B. Marcolíni Conf. O.P.|Duplex
+01-24|S. Timóthei Ep. et Mart.|Memoria
+01-25|Convérsio S. Pauli Apóst.|Totum Duplex
+01-26|B. Margarítæ de Hungária Virg. O.P.|Duplex
+01-26|S. Polycárpi Ep. et Mart.|Memoria
+01-27|S. Joánnis Chrysóstomi Ep. Conf. et Eccl. Doct.|Duplex
+01-27|S. Juliáni Ep. et Conf.|Memoria
+01-28|Translátio S. Thomæ Aquinátis Conf. et Eccl. Doct. O.P.|Totum Duplex
+01-28|S. Agnétis secúndo|Memoria
+01-29|S. Francísci Salésii Ep. Conf. et Eccl. Doct.|Duplex
+01-29|Octava S. Vincéntii Mart.|Memoria
+01-29|S. Pauli primi Eremítæ|Memoria
+01-30|S. Martínæ Virg. et Mart.|Simplex
+01-30|Octava S. Raymúndi Conf. O.P.|Simplex
+01-31|S. Petri Nolásco Conf.|Duplex
+02-01|S. Ignátii Ep. et Mart.|Duplex
+02-02|Purificátio B. Maríæ Virg.|Totum Duplex
+02-03|S. Blásii Ep. et Mart.|Simplex
+02-04|S. Andréæ Corsíni Ep. et Conf.|Duplex
+02-04|Anniversárium Patrum et Matrum|Novem Lectiones
+02-05|S. Ágathæ Virg. et Mart.|Duplex
+02-06|S. Dorothéæ Virg. et Mart.|Duplex
+02-06|SS. Vedásti et Amándi Confessórum|Memoria
+02-07|S. Romuáldi Abbátis|Duplex
+02-08|S. Joánnis de Matha Conf.|Duplex
+02-09|B. Bernárdi Scammácca Conf. O.P.|Duplex
+02-09|S. Apollóniæ Virg. et Mart.|Memoria
+02-10|S. Scholásticæ Virg.|Duplex
+02-11|Desponsátio B. Maríæ Virg.|Totum Duplex
+02-11|S. Joseph Conf. et Sponsi B. Maríæ Virg.|Memoria
+02-12|B. Reginaldi Conf. O.P.|Duplex
+02-13|S. Catharínæ de Ríciis V. O.P.|Totum Duplex
+02-14|B. Nicolái Páleæ Conf. O.P.|Duplex
+02-15|B. Jordáni Saxónis Conf. O.P.|Duplex
+02-16|B. Gregórii Papæ X Conf.|Duplex
+02-17|Septem Confessórum Ordinis Servórum B. Maríæ Fundatórum|Duplex
+02-18|B. Lauréntii a Ripafrácta Conf. O.P.|Duplex
+02-19|B. Álvari Cordubénsis Conf. O.P.|Duplex
+02-20|Octava S. Catharínæ de Ríciis Virg. O.P.|Simplex
+02-21|B. Aimónis Taparélli Conf. O.P.|Duplex
+02-21|S. Valentíni Mart.|Memoria
+02-22|Cáthedra Antiochéna S. Petri|Duplex
+02-23|S. Petri Damiáni Ep. Conf. et Eccl. Doct.|Duplex
+02-23|Vigília|
+02-24|S. Matthíæ Apóstoli|Totum Duplex
+02-25|B. Constántii a Fabriáno Conf. O.P.|Duplex
+02-28|B. Villánæ de Bottis Vid. O.P.|Duplex
+03-01|B. Christóphori a Mediolano Conf. O.P.|Duplex
+03-01|S. Albíni Ep. et Conf.|Memoria
+03-02|B. Henríci Susónis Conf. O.P.|Duplex
+03-04|S. Casimíri Conf.|Duplex
+03-06|B. Jordáni a Pisis Conf. O.P.|Duplex
+03-07|S. Thomæ Aquinátis Conf. et Eccl. Doct. O.P.|Totum Duplex
+03-08|S. Joánnis de Deo Conf.|Duplex
+03-09|S. Francíscæ Románæ Vid.|Duplex
+03-10|B. Petri de Jeremía Conf. O.P.|Duplex
+03-12|S. Gregórii Magni Papæ, Conf. et Eccl. Doct.|Totum Duplex
+03-14|Octava S. Thomæ Aquinátis O.P.|Solemnis
+03-17|S. Patrítii Ep. Conf.|Duplex
+03-18|B. Sibyllínæ de Biscóssis Virg. O.P.|Duplex
+03-19|S. Joseph Conf. Sponsi B. Maríæ Virg.|Totum Duplex
+03-21|S. Benedícti Abbátis|Duplex
+03-22|B. Ambrósii Sansedónii Conf. O.P.|Duplex
+03-24|S. Gabriélis Archángeli|Totum Duplex
+03-25|Annuntiátio B. M. Virg.|Totum Duplex
+03-26|Octava S. Joseph|Solemnis
+04-01|Octava Annuntiatiónis B. Maríæ Virg.|Solemnis
+04-02|S. Francísci de Paula Conf.|Duplex
+04-03|Impréssio sacrórum Stigmatum S. Catharínæ Senen. Virg. O.P.|Duplex
+04-04|S. Ambrósii Ep. Conf. et Eccl. Doct.|Totum Duplex
+04-05|S. Vincéntii Ferrérii Conf. O.P.|Totum Duplex
+04-09|B. Antónii Pavónii Mart. O.P.|Duplex
+04-10|B. Antónii Neyrot Mart. O.P.|Duplex
+04-11|S. Leónis Magni Papæ, Conf. et Eccl. Doct.|Totum Duplex
+04-12|Octava S. Vincéntii O.P.|Simplex
+04-13|B. Margarítæ de Castéllo Virg. O.P.|Duplex
+04-14|B. Petri Gonzalez Conf. O.P.|Duplex
+04-15|S. Hermenegíldi Mart.|Duplex
+04-16|SS. Tibúrtii, Valeriáni et Máximi MM.|Tres Lectiones
+04-17|B. Claræ Gambacúrtæ Vid. O.P.|Duplex
+04-20|S. Agnétis de Monte Politiáno Virg. O.P.|Totum Duplex
+04-21|B. Bartholomǽi Mart. O.P.|Duplex
+04-23|S. Geórgii Mart.|Simplex
+04-24|SS. Corónæ spíneæ Dómini|Totum Duplex
+04-24|S. Adalbérti Ep. et Mart.|Memoria
+04-25|S. Marci Evangelístæ|Totum Duplex
+04-26|BB. Domínici et Gregórii Confessórum O.P.|Duplex
+04-27|Octava S. Agnétis Virg. O.P.|Simplex
+04-28|S. Pauli a Cruce Conf.|Duplex
+04-28|S. Vitális Mart.|Memoria
+04-29|S. Petri Mártyris O.P.|Totum Duplex
+04-30|S. Catharínæ Senénsis Virg. O.P.|Totum Duplex
+05-01|SS. Philíppi et Jacóbi Apostolórum|Totum Duplex
+05-02|S. Athanásii Ep. Conf. et Eccl. Doct.|Duplex
+05-03|Invéntio sanctæ Crucis|Totum Duplex
+05-03|SS. Alexándri, Evéntii et Theodúli MM.|Memoria
+05-04|S. Mónicæ Vid.|Duplex
+05-05|S. Pii Quinti Papæ et Conf. O.P.|Totum Duplex
+05-06|S. Joánnis ante Portam Latínam|Duplex
+05-06|Octava S. Petri Mart. O.P.|Simplex
+05-07|Octava S. Catharínæ Senénsis O.P.|Solemnis
+05-08|Apparítio S. Michaélis Archángeli|Totum Duplex
+05-09|S. Gregórii Nazianzéni Ep. Conf. et Eccl. Doct.|Duplex
+05-10|S. Antoníni Ep. Conf. O.P.|Totum Duplex
+05-10|SS. Gordiáni et Epímachi MM.|Memoria
+05-11|S. Stanislái Ep. Mart.|Duplex
+05-12|B. Joánnæ de Lusitánia Virg. O.P.|Duplex
+05-12|Octava S. Pii Quinti O.P.|Simplex
+05-12|SS. Nérei, Achíllei et Pancrátii MM.|Memoria
+05-13|B. Alberti a Bérgomo Conf. O.P.|Duplex
+05-14|B. Ægídii Conf. O.P.|Duplex
+05-15|Convérsio S. Augustíni Ep. Conf. et Eccl. Doct.|Duplex
+05-16|S. Joánnis Nepomucéni Mart.|Duplex
+05-17|B. Andréæ Abellónii Conf. O.P.|Duplex
+05-17|Octava S. Antoníni O.P.|Simplex
+05-18|S. Venántii Mart.|Simplex
+05-19|S. Petri Cælestíni Papæ et Conf.|Duplex
+05-19|S. Pudentiánæ Virg.|Memoria
+05-20|B. Colúmbæ Virg. O.P.|Duplex
+05-21|S. Bernardíni Senénsis Conf.|Simplex
+05-22|S. Servátii Ep. et Conf.|Totum Duplex
+05-23|B. Ludovíci Maríæ Grignon de Montfort Conf. O.P.|Duplex
+05-24|B. Maríæ Virg., título Auxílium Christianórum|Totum Duplex
+05-25|Translátio S. P. N. Domínici Conf.|Totum Duplex
+05-25|S. Maríæ de Pazzis Virg.|Memoria
+05-25|S. Urbáni Papæ Mart.|Memoria
+05-26|S. Philíppi Néri Conf.|Totum Duplex
+05-27|BB. Petri Sanz Ep. et Sociórum MM. O.P.|Duplex
+05-28|B. Maríæ Bartholomǽæ Virg. O.P.|Duplex
+05-29|BB. Guillélmi O.P. et Sociórum MM.|Duplex
+05-31|B. Jacóbi Salomónii Conf. O.P.|Duplex
+05-31|S. Petronillæ Virg.|Memoria
+06-01|BB. Alphónsi Navarréte O.P. et Sociórum MM.|Duplex
+06-02|BB. Sadoc et Sociórum MM. O.P.|Duplex
+06-02|SS. Marcellíni Presbyteri et Petri Exorcístæ MM.|Memoria
+06-04|Translátio S. Petri Mart. O.P.|Totum Duplex
+06-05|S. Francísci Caracciolo Conf.|Duplex
+06-06|S. Norbérti Ep. et Conf.|Duplex
+06-08|S. Angelæ Meríciæ Virg.|Duplex
+06-08|S. Medárdi Ep. et Conf.|Memoria
+06-09|BB. Dianæ, Cæcíliæ et Amátæ Vírginum O.P.|Duplex
+06-09|SS. Primi et Feliciáni MM.|Memoria
+06-10|B. Joánnis Domínici Ep. et Conf. O.P.|Duplex
+06-11|S. Bárnabæ Apóstoli|Totum Duplex
+06-12|B. Stéphani Bandélli Conf. O.P.|Duplex
+06-12|SS. Basilídis, Cyríni, Nabóris et Nazárii MM.|Memoria
+06-13|S. Antónii de Pádua Conf.|Duplex
+06-14|S. Basílii Ep. et Conf. et Eccl. Doct.|Duplex
+06-15|SS. Viti, Modésti et Crescéntiæ MM.|Tres Lectiones
+06-16|S. Martiális Ep. et Conf.|Tres Lectiones
+06-16|SS. Quirici et Julíttæ MM.|Memoria
+06-18|B. Osánnæ Mantuánæ Virg. O.P.|Duplex
+06-19|SS. Gervásii et Protásii MM.|Simplex
+06-20|SS. Marci et Marcelliáni MM.|Tres Lectiones
+06-22|B. Innocéntii Quinti Papæ et Conf. O.P.|Duplex
+06-23|Decem míllium Mártyrum|Duplex
+06-23|Vigília|
+06-24|Natívitas S. Joánnis Baptístæ|Totum Duplex
+06-26|SS. Joánnis et Pauli MM.|Simplex
+06-28|S. Leónis Secúndi Papæ et Conf.|Memoria
+06-28|Vigília|
+06-29|SS. Petri et Pauli Apostolórum|Totum Duplex
+06-30|Commemorátio S. Pauli Apóstoli|Duplex
+07-01|Octava S. Joánnis Baptístæ|Simplex
+07-02|Visitátio B. Maríæ V.|Totum Duplex
+07-03|B. Marci Mutinénsis Conf. O.P.|Duplex
+07-03|SS. Procéssi et Martiniáni MM.|Memoria
+07-05|S. Antónii Maríæ Zaccaría Conf.|Duplex
+07-06|Octava SS. Petri et Pauli Apostolórum|Solemnis
+07-07|B. Benedícti Undécimi Papæ et Conf. O.P.|Duplex
+07-09|SS. Joánnis O.P. et Sociórum MM.|Totum Duplex
+07-09|Octava Visitatiónis B. Maríæ Virg.|Simplex
+07-10|Septem Fratrum MM.|Memoria
+07-11|BB. Ignátii Delgado, Domínici Henares O.P. et Sociórum MM.|Duplex
+07-11|S. Procópii Abbátis|Memoria
+07-12|S. Joánnis Gualbérti Abbátis|Duplex
+07-12|Anniversárium sepultórum in Cœmetériis nostris|Novem Lectiones
+07-13|B. Jacóbi a Varágine Ep. et Conf. O.P.|Duplex
+07-14|S. Bonaventúræ Ep. Conf. et Eccl. Doct.|Totum Duplex
+07-15|S. Henríci Imperatóris Conf.|Duplex
+07-16|Commemorátio B. Maríæ Virg. de Monte Carmélo|Totum Duplex
+07-16|Octava SS. Joánnis et Sociórum MM.|Simplex
+07-17|S. Aléxii Conf.|Tres Lectiones
+07-18|B. Ceslái Conf. O.P.|Duplex
+07-19|S. Vincéntii a Paulo Conf.|Duplex
+07-20|S. Margarítæ Virg. et Mart.|Simplex
+07-21|S. Hierónymi Æmiliáni Conf.|Duplex
+07-21|S. Praxédis Virg.|Memoria
+07-22|S. Maríæ Magdalénæ|Totum Duplex
+07-23|B. Joánnæ Urbevetánæ Virg. O.P.|Duplex
+07-23|S. Libórii Ep. et Conf.|Memoria
+07-23|S. Apollináris Ep. et Mart.|Memoria
+07-24|S. Camílli de Lellis Conf.|Duplex
+07-24|S. Christínæ Virg. et Mart.|Memoria
+07-24|Vigília|
+07-25|S. Jacóbi Apóstoli|Totum Duplex
+07-25|SS. Christóphori et Cucuphátis MM.|Memoria
+07-26|S. Annæ Matris B. Maríæ Virg.|Totum Duplex
+07-27|B. Augustíni de Bugélla Conf. O.P.|Duplex
+07-28|B. Antónii ab Ecclésia Conf. O.P.|Duplex
+07-28|SS. Nazárii, Celsi et Pantaleónis MM.|Memoria
+07-29|S. Marthæ Virg.|Duplex
+07-29|Octava S. Maríæ Magdalénæ|Simplex
+07-29|SS. Felícis, Simplícii, Faustíni et Beatrícis MM.|Memoria
+07-30|B. Mannis Conf. O.P.|Duplex
+07-30|SS. Abdon et Sennen MM.|Memoria
+07-31|S. Ignátii Conf.|Duplex
+07-31|S. Germáni Ep. et Conf.|Memoria
+08-01|S. Petri Apóstoli ad Víncula|Duplex
+08-01|SS. Machabæórum MM.|Memoria
+08-02|B. Joánnæ de Aza Matris S. P. N. Domínici|Duplex
+08-02|S. Stéphani Papæ et Mart.|Memoria
+08-03|Invéntio Córporis S. Stéphani Protomártyris|Simplex
+08-04|S. P. N. Domínici Conf.|Totum Duplex
+08-05|S. Maríæ ad Nives|Duplex
+08-06|Transfigurátio Dómini|Totum Duplex
+08-06|SS. Xysti Papæ, Felícis et Agapíti MM.|Memoria
+08-07|S. Cajetáni Conf.|Duplex
+08-07|S. Donáti Ep. et Mart.|Memoria
+08-08|B. Augustíni Luceríni Ep. et Conf. O.P.|Duplex
+08-08|SS. Cyríaci, Largi et Smarágdi MM.|Memoria
+08-09|B. Joánnis de Salérno Conf. O.P.|Duplex
+08-09|Vigília|
+08-10|S. Lauréntii Mart.|Totum Duplex
+08-11|Octava S. P. N. Domínici|Solemnis
+08-11|S. Tibúrtii Mart.|Memoria
+08-12|S. Claræ Virg.|Duplex
+08-13|SS. Hippólyti et Sociórum MM.|Duplex
+08-14|S. Emýgdii Ep. et Mart.|Duplex
+08-14|S. Eusébii Presbýteri et Conf.|Memoria
+08-14|Vigília|
+08-15|Assúmptio B. Maríæ Virg.|Totum Duplex
+08-16|S. Hyacínthi Conf. O.P.|Totum Duplex
+08-17|B. Æmíliæ Bicchiéri Virg. O.P.|Duplex
+08-17|Octava S. Lauréntii|Simplex
+08-18|S. Rochi Conf.|Duplex
+08-18|S. Agapíti Mart.|Memoria
+08-19|S. Alphónsi Maríæ de Ligório Ep. Conf. et Eccl. Doct.|Duplex
+08-20|S. Bernárdi Abbátis et Eccl. Doct.|Duplex
+08-21|S. Joánnæ Francíscæ Frémiot de Chantal Vid.|Duplex
+08-22|Octava Assumptiónis B. Maríæ Virg.|Solemnis
+08-22|SS. Timóthei et Symphoriáni MM.|Memoria
+08-23|B. Jacóbi a Mevánia Conf. O.P.|Duplex
+08-23|Octava S. Hyacínthi O.P.|Simplex
+08-23|Vigília|
+08-24|S. Bartholomǽi Apóstoli|Totum Duplex
+08-25|S. Ludovíci Gálliæ Regis Conf.|Duplex
+08-26|S. Philíppi Benítii Conf.|Duplex
+08-27|S. Joséphi Calasánctii Conf.|Duplex
+08-27|S. Rufi Ep. et Mart.|Memoria
+08-28|S. Augustíni Ep. Conf. et Eccl. Doct.|Totum Duplex
+08-29|Decollátio S. Joánnis Baptístæ|Duplex
+08-29|S. Sabínæ Mart.|Memoria
+08-30|S. Rosæ a Lima Virg. O.P.|Totum Duplex
+08-30|SS. Felícis et Adáucti MM.|Memoria
+08-31|S. Raymúndi Nonnáti Conf.|Duplex
+09-01|S. Philuménæ Virg. et Mart.|Duplex
+09-01|S. Ægídii Abbátis|Memoria
+09-02|S. Stéphani Hungáriæ Regis Conf.|Duplex
+09-03|B. Gualæ Ep. et Conf. O.P.|Duplex
+09-04|Octava S. Augustíni|Solemnis
+09-05|B. Catharínæ a Raconísio Virg. O.P.|Duplex
+09-05|Anniversárium Familiárium et Benefactórum defunctórum Ord. N.|Novem Lectiones
+09-06|B. Bertrándi a Garrígua Conf. O.P.|Duplex
+09-06|Octava S. Rosæ a Lima O.P.|Simplex
+09-07|S. Rosæ a Vitérbio Virg.|Duplex
+09-07|S. Marcélli Mart.|Memoria
+09-08|Natívitas B. Maríæ Virg.|Totum Duplex
+09-09|S. Gorgónii Mart.|Memoria
+09-10|S. Nicolái a Tolentíno Conf.|Duplex
+09-11|SS. Proti et Hyacínthi MM.|Memoria
+09-14|Exaltátio sanctæ Crucis|Totum Duplex
+09-15|Commemorátio S. P. N. Domínici Conf. in Suriáno|Totum Duplex
+09-15|Octava Nativitátis B. Maríæ Virg.|Simplex
+09-15|S. Nicomédis Mart.|Memoria
+09-16|B. Imeldæ Virg. O.P.|Duplex
+09-16|S. Euphémiæ Virg. et Mart.|Memoria
+09-17|Impréssio Stigmatum S. Francísci|Duplex
+09-17|S. Lambérti Ep. et Mart.|Memoria
+09-18|SS. Cornélii Papæ et Cypriáni Ep. MM.|Duplex
+09-19|SS. Januárii Ep. et Sociórum MM.|Duplex
+09-20|B. Francísci de Possádas Conf. O.P.|Duplex
+09-20|Vigília|
+09-21|S. Matthǽi Apóstoli et Evangelístæ|Totum Duplex
+09-22|SS. Mauritii et Sociórum MM.|Simplex
+09-23|S. Theclæ Virg. feminárum Protomártyris|Duplex
+09-24|B. Maríæ Virg. de Mercéde|Totum Duplex
+09-25|S. Thomæ de Villanova Ep. et Conf.|Duplex
+09-26|B. Dalmátii Monérii Conf. O.P.|Duplex
+09-27|SS. Cosmæ et Damiáni MM.|Simplex
+09-28|S. Joséphi a Cupertíno Conf.|Duplex
+09-28|S. Wenceslái Mart.|Memoria
+09-29|S. Michaélis Archángeli|Totum Duplex
+09-30|S. Hierónymi Presbyteri, Conf. et Eccl. Doct.|Totum Duplex
+10-01|SS. Eustáchii et Sociórum MM.|Duplex
+10-01|S. Remígii Ep. et Conf.|Memoria
+10-02|SS. Angelórum Custódum|Totum Duplex
+10-03|B. Joánnis Massías Conf. O.P.|Duplex
+10-04|S. P. N. Francísci Conf.|Totum Duplex
+10-05|B. Raymúndi a Cápua Conf. O.P.|Duplex
+10-05|SS. Plácidi et Sociórum MM.|Memoria
+10-06|S. Brunónis Conf.|Duplex
+10-06|Octava S. Michaélis|Simplex
+10-07|B. Matthǽi Carrérii Conf. O.P.|Duplex
+10-08|S. Birgíttæ Víduæ|Simplex
+10-09|SS. Dionýsii Ep. et Sociórum MM.|Totum Duplex
+10-10|S. Ludovíci Bertrándi Conf. O.P.|Totum Duplex
+10-11|Octava S. P. N. Francísci|Solemnis
+10-11|S. Leodegárii Ep. et Mart.|Memoria
+10-12|B. Jacóbi ab Ulma Conf. O.P.|Duplex
+10-13|S. Eduárdi Regis et Conf.|Duplex
+10-14|B. Magdalénæ de Panatériis Virg. O.P.|Duplex
+10-14|S. Callísti Papæ et Mart.|Memoria
+10-15|S. Terésiæ Virg.|Totum Duplex
+10-17|Octava S. Ludovíci Bertrándi|Simplex
+10-18|S. Lucæ Evangelístæ|Totum Duplex
+10-19|S. Petri ab Alcántara Conf.|Duplex
+10-20|S. Marci Papæ et Conf.|Tres Lectiones
+10-20|SS. Sérgii, Bacchi, Marcélli et Apulei MM.|Memoria
+10-21|SS. Ursulæ et Sociárum VV. et MM.|Totum Duplex
+10-22|B. Petri a Tiferno Conf. O.P.|Duplex
+10-22|S. Hilariónis Abbátis|Memoria
+10-23|B. Bartholomǽi de Bregántia Ep. et Conf. O.P.|Duplex
+10-24|S. Raphaélis Archángeli|Totum Duplex
+10-25|SS. Crispíni et Crispiniáni MM.|Tres Lectiones
+10-26|B. Damiáni a Finário Conf. O.P.|Duplex
+10-27|Vigília|
+10-28|SS. Simónis et Judæ Apostolórum|Totum Duplex
+10-29|B. Benvenútæ Bojáni Virg. O.P.|Duplex
+10-30|Commemorátio Sanctórum, quorum Relíquiæ in Ecclésiis nostris asservántur|Totum Duplex
+10-31|S. Quintíni Mart.|Memoria
+10-31|Vigília|
+11-01|Festívitas Ómnium Sanctórum|Totum Duplex
+11-02|Commemorátio Ómnium Fidélium Defunctórum|Novem Lectiones
+11-03|B. Simónis Ballácchii Conf. O.P.|Duplex
+11-04|S. Cároli Ep. et Conf.|Duplex
+11-05|B. Martíni de Porres Conf. O.P.|Duplex
+11-06|BB. Hierónymi, Valentíni, Francísci, Hyacínthi et Sociórum MM. O.P.|Duplex
+11-07|B. Petri de Rúffia Mart. O.P.|Duplex
+11-08|Octava Ómnium Sanctórum|Solemnis
+11-09|Festívitas Ómnium Sanctórum Ordinis Prædicatórum|Totum Duplex
+11-09|S. Theodóri Mart.|Memoria
+11-10|SS. Quátuor Coronatórum MM.|Tres Lectiones
+11-10|Anniversárium Ómnium Fratrum et Sorórum defunctórum Ordinis nostri|Novem Lectiones
+11-11|S. Martíni Ep. et Conf.|Totum Duplex
+11-11|S. Mennæ Mart.|Memoria
+11-12|Dedicátio Basílicæ SS. Salvatóris|Duplex
+11-13|S. Dídaci Conf.|Simplex
+11-13|S. Brítii Ep. et Conf.|Memoria
+11-14|B. Joánnis Lícii Conf. O.P.|Duplex
+11-15|B. Alberti Magni Ep. et Conf. O.P.|Totum Duplex
+11-16|B. Lúciæ a Nárnia Virg. O.P.|Duplex
+11-17|S. Gregórii Thaumatúrgi Ep. et Conf.|Duplex
+11-18|Dedicátio Basilicárum SS. Petri et Pauli Apostolórum|Duplex
+11-18|Octava S. Martíni|Simplex
+11-19|S. Elísabeth Víduæ|Duplex
+11-20|S. Felícis de Valois Conf.|Duplex
+11-21|Præsentátio B. Maríæ Virg.|Totum Duplex
+11-22|S. Cæcíliæ Virg. et Mart.|Duplex
+11-23|S. Cleméntis Papæ et Mart.|Duplex
+11-24|S. Joánnis a Cruce Conf.|Duplex
+11-24|S. Chrysógoni Mart.|Memoria
+11-25|S. Catharínæ Virg. et Mart.|Totum Duplex
+11-26|S. Andréæ Avellíni Conf.|Duplex
+11-27|B. Margarítæ de Sabáudia Vid. O.P.|Duplex
+11-27|SS. Vitális et Agrícolæ MM.|Memoria
+11-29|B. Jacóbi de Benefáctis Ep. et Conf. O.P.|Duplex
+11-29|S. Saturníni Ep. et Mart.|Memoria
+11-29|Vigília|
+11-30|S. Andréæ Apóstoli|Totum Duplex
+12-02|B. Joánnis a Vercéllis Conf. O.P.|Duplex
+12-02|Octava S. Catharínæ Virg. et Mart.|Simplex
+12-02|S. Bibiánæ Virg. et Mart.|Memoria
+12-03|S. Francísci Xavérii Conf.|Duplex
+12-04|S. Bárbaræ Virg. et Mart.|Duplex
+12-06|S. Nicolái Ep. et Conf.|Totum Duplex
+12-07|Ordinátio S. Ambrósii Ep. Conf. et Eccl. Doct.|Duplex
+12-07|Octava S. Andréæ Apóstoli|Memoria
+12-07|Vigília|
+12-08|Concéptio immaculáta B. Maríæ Virg.|Totum Duplex
+12-10|Translátio almæ Domus Lauretánæ|Totum Duplex
+12-11|S. Dámasi Papæ et Conf.|Memoria
+12-13|S. Lúciæ Virg. et Mart.|Totum Duplex
+12-15|Octava Conceptiónis immaculátæ B. Maríæ Virg.|Solemnis
+12-16|B. Sebastiáni Maggi Conf. O.P.|Duplex
+12-18|Exspectátio partus B. Maríæ Virg.|Totum Duplex
+12-20|S. Domínici Sylénsis Abbátis|Duplex
+12-20|Vigília|
+12-21|S. Thomæ Apóstoli|Totum Duplex
+12-22|B. Maríæ Mancíni Víduæ O.P.|Duplex
+12-24|Vigília|
+12-25|Natívitas D. N. Jesu Christi|Totum Duplex
+12-26|S. Stéphani Protomártyris|Totum Duplex
+12-27|S. Joánnis Apóstoli et Evangelístæ|Totum Duplex
+12-28|SS. Innocéntium MM.|Simplex
+12-29|S. Thomæ Ep. et Mart.|Simplex
+12-31|S. Silvéstri Papæ et Conf.|Simplex

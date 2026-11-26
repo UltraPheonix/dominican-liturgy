@@ -36,6 +36,30 @@ for k, o in OFF.items():
     ti = re.sub(r'\bViro\.', 'Virg.', ti); ti = re.sub(r'\bCONE\.', 'Conf.', ti); ti = re.sub(r'\bCONF\b', 'Conf', ti)
     ti = ' '.join(w if not (w.isupper() and len(w) > 3) else w.capitalize() for w in ti.split())
     if md not in SAN or r > SAN[md]['r']: SAN[md] = {'r': r, 'rank': rn, 'title': ti, 'oratio': o['oratio']}
+CAL = {}
+for l in open(os.path.join(HERE, 'calendar1909.txt'), encoding='utf-8'):
+    if l.startswith('#') or '|' not in l: continue
+    md, ti, rk = (l.rstrip('\n').split('|') + ['', ''])[:3]
+    CAL.setdefault(md, []).append({'title': ti, 'rank': rk or None})
+RV = {'Totum Duplex': 4, 'Solemnis': 3, 'Duplex': 3, 'Semiduplex': 2, 'Simplex': 1, 'Tres Lectiones': 1, 'Novem Lectiones': 0, 'Memoria': 0}
+def celebrable(d, s, w, rk):
+    """provisional precedence (Rubricae generales to be applied fully): privileged Sundays (Advent, Septuagesima–Passiontide)
+    and the ferias of Ash Wednesday and Holy Week exclude every feast; other Sundays yield to Duplex and Totum Duplex; Lenten
+    ferias admit Duplex and Totum Duplex; other ferias admit every feast of three or more lessons"""
+    if w == 0: return s not in ('adv', 'sept', 'quad', 'pass') and rk >= 3
+    if s in ('cin',) and d.weekday() == 2: return False
+    if s == 'pass' and (d - (easter(d.year) - datetime.timedelta(days=7))).days >= 0: return False
+    if s in ('quad', 'pass', 'cin'): return rk >= 3
+    return rk >= 1
+def san_oratio(d, title):
+    """the prayer of a saint from the extracted Sanctorale (offices.py), matched by date and name"""
+    md = d.strftime('%m-%d'); best, br = None, 0.0
+    tn = nb(title)
+    for k, o in OFF.items():
+        if not k.startswith('S:' + md + ':') or not o.get('oratio'): continue
+        r_ = difflib.SequenceMatcher(None, tn[:40], nb(o.get('title', ''))[:40]).ratio()
+        if r_ > br: best, br = o['oratio'], r_
+    return best if br >= 0.45 else None
 def okey(d):
     """key of the extracted Proprium de Tempore (offices.py) for a date"""
     s, wk, n, prop = season(d); w = (d.weekday() + 1) % 7; E = easter(d.year)
@@ -535,8 +559,36 @@ def proper_day(d):
     r = note_row('Officium hujus diéi totum próprium est (Proprium de Tempore): in præparatione.', 'The Office of this day is entirely proper (Proper of Time): in preparation.')
     return {h: [r] for h in ('Matutinum', 'Laudes', 'Prima', 'Tertia', 'Sexta', 'Nona', 'Vespera', 'Completorium')}
 
+def hard_proper(d):
+    """days whose proper Office excludes every feast: Christmas to the Epiphany octave, Holy Thursday to Low Saturday,
+    Ascension Day, Pentecost and its octave, Corpus Christi"""
+    s = season(d)[0]
+    if s in ('nat', 'tri'): return True
+    if s == 'pent':
+        k = (d - easter(d.year)).days
+        return k == 39 or 49 <= k <= 56 or k == 60
+    return False
+ECAL = {}
+def effective_calendar():
+    """the calendar entries of each date, with impeded Duplex and Totum Duplex feasts transferred to the next free day
+    (Rubricae generales: translatio); a transferred feast is marked '(translatum)'"""
+    d = FROM - datetime.timedelta(days=40); pending = []
+    while d <= TO:
+        s, wk, n, prop = season(d); w = (d.weekday() + 1) % 7
+        ents = [dict(c) for c in CAL.get(d.strftime('%m-%d'), [])]
+        main_ = ents[0] if ents else None
+        if main_ and RV.get(main_['rank'] or '', 0) >= 3 and main_['rank'] != 'Solemnis' and s not in ('nat',) and (hard_proper(d) or (not prop and not celebrable(d, s, w, RV[main_['rank']]))):
+            pending.append(dict(main_, title=main_['title'] + ' (translatum)')); ents = ents[1:]
+            ents.append(dict(main_, rank='Memoria'))
+        free = not hard_proper(d) and (not ents or RV.get(ents[0]['rank'] or '', 0) < 3)
+        if pending and free and (prop or celebrable(d, s, w, 3)):
+            pending.sort(key=lambda c: (-RV.get(c['rank'] or '', 0), 0 if re.search(r'Dómini|B\. M', c['title']) else 1)); ents.insert(0, pending.pop(0))
+        if d >= FROM: ECAL[d] = ents
+        d += datetime.timedelta(days=1)
+
 TEDEUM = None
 def main():
+    effective_calendar()
     global TEDEUM
     for k, v in lib.items():
         if '<r>Te Deum</r>\n<c>T</c>e Deum laudámus' in v and k in pair:
@@ -552,21 +604,37 @@ def main():
             for h in ('Prima', 'Tertia', 'Sexta', 'Nona'): H[h] = little(d, s, w, h)
             t = title(d, s, wk, num)
         rank = 'Psalterium et Proprium de Tempore (Sanctorale in præparatione)'
-        sa = SAN.get(d.strftime('%m-%d'))
-        if sa and not prop:
+        cal = ECAL.get(d, [])
+        if cal and prop and not hard_proper(d) and RV.get(cal[0]['rank'] or '', 0) >= 1:
+            ss = 'pasch' if (d - easter(d.year)).days < 49 else 'pt'
+            H = {'Matutinum': matins(d, ss, w), 'Laudes': lauds(d, ss, w), 'Vespera': vespers(d, ss, w), 'Completorium': compline(d, ss, w)}
+            for h in ('Prima', 'Tertia', 'Sexta', 'Nona'): H[h] = little(d, ss, w, h)
+            prop = False; t = ''
+        if cal and not prop:
             w_ = (d.weekday() + 1) % 7
-            privileged = (w_ == 0 and s in ('adv', 'sept', 'quad', 'pass')) or s in ('cin', 'pass') and w_ != 0 and False
-            feast = sa['r'] >= 3 and not privileged and not (w_ == 0 and sa['r'] < 4)
-            rk = (sa['rank'] or '').title()
-            orat = sa['oratio']
-            if feast:
-                t = '%s ~ %s' % (sa['title'], rk) ; rank = None
-                note = note_row('Hodie: %s (%s). Officium proprium vel de Communi in præparatione; intérim Psalterium de Tempore cum Oratióne Sancti.' % (sa['title'], rk),
-                                'Today: %s (%s). The proper or Common Office is in preparation; meanwhile the Psalter of the day with the Saint’s prayer.' % (sa['title'], rk))
+            win, comms = None, []
+            for i, c in enumerate(cal):
+                rk = RV.get(c['rank'] or '', 0)
+                if win is None and rk >= 1 and celebrable(d, s, w_, rk): win = c
+                else: comms.append(c)
+            if win:
+                rk = win['rank']; t = '%s ~ %s' % (win['title'], rk); rank = None
+                note = note_row('Hodie: %s (%s). Officium proprium vel de Communi in præparatione; intérim Psalterium de Tempore cum Oratióne Sancti.' % (win['title'], rk),
+                                'Today: %s (%s). The proper or Common Office is in preparation; meanwhile the Psalter of the day with the Saint’s prayer.' % (win['title'], rk))
                 for h in H: H[h].insert(0, note)
-            mem = put('<h>%s</h>\n<n>%s</n>\n<c>O</c>rémus.\n<c>%s</c>%s\n<r>℟.</r> Amen.' % ('Oratio de Sancto' if feast else 'Commemoratio', sa['title'], orat[0], orat[1:]),
-                      '<h>%s</h>\n<n>%s</n>\n<c>L</c>et us pray.\n%s\n<r>℟.</r> Amen.' % ('Prayer of the Saint' if feast else 'Commemoration', sa['title'], en(orat) or orat))
-            for h in ('Laudes', 'Vespera'): H[h].insert(len(H[h]) - 1, mem)
+                orat = san_oratio(d, win['title'])
+                if orat:
+                    mem = put('<h>Oratio de Sancto</h>\n<n>%s</n>\n<c>O</c>rémus.\n<c>%s</c>%s\n<r>℟.</r> Amen.' % (win['title'], orat[0], orat[1:]),
+                              '<h>Prayer of the Saint</h>\n<n>%s</n>\n<c>L</c>et us pray.\n%s\n<r>℟.</r> Amen.' % (win['title'], en(orat) or orat))
+                    for h in ('Laudes', 'Vespera'): H[h].insert(len(H[h]) - 1, mem)
+            for c in comms:
+                if c['rank'] in (None, ''): continue
+                orat = san_oratio(d, c['title'])
+                la = '<h>Commemoratio</h>\n<n>%s%s</n>' % (c['title'], '' if orat else ' (Oratio in præparatione)')
+                en_ = '<h>Commemoration</h>\n<n>%s%s</n>' % (c['title'], '' if orat else ' (prayer in preparation)')
+                if orat: la += '\n<c>O</c>rémus.\n<c>%s</c>%s\n<r>℟.</r> Amen.' % (orat[0], orat[1:]); en_ += '\n<c>L</c>et us pray.\n%s\n<r>℟.</r> Amen.' % (en(orat) or orat)
+                mem = put(la, en_)
+                for h in ('Laudes', 'Vespera'): H[h].insert(len(H[h]) - 1, mem)
         day = {'t': [t if rank is None else '%s ~ %s' % (t, rank)], 'tv': [], 'h': H, 'p': {}, 'b': {}}
         os.makedirs(os.path.join(OUT, str(d.year)), exist_ok=True)
         json.dump(day, open(os.path.join(OUT, str(d.year), d.strftime('%m-%d') + '.json'), 'w'), ensure_ascii=False, separators=(',', ':'))

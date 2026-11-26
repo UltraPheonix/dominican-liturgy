@@ -388,3 +388,22 @@ STILL MISSING in Advent: Matins lessons + responsories (Isaiah; Sunday sermons/h
   commemoration antiphon "Nolite timere" (p273), Vigil of Christmas (p280–283). Sanctoral not yet (Dec 8 etc.).
 NEXT ORDER: Advent lessons → Christmas–Epiphany (pdf 284–373) → Sundays after Epiphany (374–415) → Septuagesima–Lent → Passiontide
   + Holy Week + Triduum (Joseph: must be perfect; check every line vs scans) → Paschaltide → after Pentecost; then vol. 2.
+### 1909 — 2026-11-26 09:45 (sw propria-v87): whole-year skeleton
+- Advent Matins: tools/b09/matins.py → lessons1909.json; repair.py merges OCR word by word with the Vulgate (bible/la) or DO
+  (the 1909 text decides: matched words take the reference spelling; real variants kept; ≤3-word OCR gaps filled; no verse snapping).
+- tools/b09/offices.py (tempora1 v1 284–768, tempora2 v2 242–476, sancti1 v1 768–1577, sancti2 v2 476–1369) → offices1909.json:
+  generic extraction per Office (invit, laudes[5], bened, magn1/magn2, oratio, ants, lessons+resp, rank). Keys: pe2-3, sept1-0, cin-3,
+  quad2-4, pass1-0, tri-4/5/6, ew-1.., pasch0-0 (Low Sunday).., asc-*, pt<n>-0 (Sundays after Trinity by number; ferial lessons after
+  Trinity follow the summer 'historiae' and are NOT keyed yet), T:<title> (feasts of the Temporale), S:MM-DD:n (Sanctorale; noisy).
+  Known gaps: Lent I Sunday + Laetare headings lost; Easter Sunday; pt ferias; many sanctoral headings lost by OCR.
+- tools/b09/calendar1909.txt: the Calendarium TRANSCRIBED FROM THE PAGE IMAGES (v1 pdf 24–37), 421 lines MM-DD|title|rank.
+- build.py: okey(d) → offices1909 key; TP() falls back to extracted propers (invit, Lauds ants, Bened/Magn, prayer of the week,
+  First-Vespers Magnificat/prayer on Saturday); day_lessons + sunday_resp_source ('historia' responsories); ECAL = calendar with
+  provisional precedence (celebrable(): privileged Sundays Adv/Sept–Pass and Ash Wed/Holy Week exclude feasts; ordinary Sundays yield
+  to Duplex+; Lent ferias admit Duplex+), transfer of impeded Duplex/Totum Duplex (hard_proper days: Christmas–Epiph. octave,
+  Holy Thu–Low Sat, Ascension, Pentecost octave, Corpus Christi). A winning feast: title/rank + notice + its prayer (san_oratio:
+  matched from offices1909 S: entries by date+name) at Lauds/Vespers; other entries as Commemorations (prayer if found).
+NEXT: (1) Commune Sanctorum (find in v1/v2 after the Sanctorale) → full feast Offices (festal psalms, antiphons, chapters, hymns,
+  lessons of the Common + proper parts); (2) apply Rubricae generales exactly (v1 pdf 40–70; concurrence/Vespers, octaves,
+  Saturday BVM Office, simplex/memoria rules); (3) Temporale proper days (Christmas–Epiphany, Holy Week/Triduum, Easter week,
+  Ascension–Corpus) from offices1909 T: entries; (4) summer historiae; (5) check vs scans; (6) chant.
