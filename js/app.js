@@ -1014,7 +1014,7 @@
     if (l && window.OPLang) { var lv = OPLang.get(); Array.prototype.forEach.call(l.children, function (b) { var on = b.getAttribute('data-v') === lv; b.classList.toggle('on', on); b.setAttribute('aria-checked', on); }); }
   }
   // a strip of links to the parts of the Mass, kept in view while scrolling; the part on screen is marked
-  var JUMP = {in: 1, ky: 1, gl: 1, oratio: 1, reading: 1, gr: 1, al: 1, tr: 1, se: 1, cr: 1, of: 1, pf: 1, sa: 1, ag: 1, co: 1, it: 1, as: 1};
+  var JUMP = {hw: 1, in: 1, ky: 1, gl: 1, oratio: 1, reading: 1, gr: 1, al: 1, tr: 1, se: 1, cr: 1, of: 1, pf: 1, sa: 1, ag: 1, co: 1, it: 1, as: 1};
   var jumpObs = null;
   function buildJump(main) {
     var nav = $('#jump'); if (!nav) return;
@@ -1025,7 +1025,9 @@
       if (!p || !JUMP[p]) return;
       var h = sec.querySelector('.part-head h2, h3');
       var t = h ? (h.firstChild && h.firstChild.nodeType === 3 ? h.firstChild.nodeValue : h.textContent) : '';
-      t = (t || '').trim(); if (!t) return;
+      t = (t || '').trim();
+      if (!t && p === 'oratio') t = {or: 'Oratio', se: 'Secreta', pc: 'Postcommunio', sp: 'Super populum'}[sec.getAttribute('data-k')] || '';
+      if (!t) return;
       if (p === 'pf') t = 'Praefatio';
       sec.id = sec.id || 'p-' + n;
       secs.push(sec);
@@ -1243,7 +1245,7 @@
   }
   function drawOratio(it) {
     var name = {or: ['Oratio', 'Collect'], se: ['Secreta', 'Secret'], pc: ['Postcommunio', 'Postcommunion'], sp: ['Oratio super populum', 'Prayer over the People']}[it.k];
-    var box = el('section', {class: 'part ordo oratio', 'data-part': 'oratio'});
+    var box = el('section', {class: 'part ordo oratio', 'data-part': 'oratio', 'data-k': it.k});
     // with the Order of Mass shown, the Collect and Postcommunion go under its heading (Oratio, Postcommunio)
     if (!(state.ordo && window.ORDO && (it.k === 'or' || it.k === 'pc'))) box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: name[0]}), el('span', {class: 'incipit', text: it.k === 'sp' && it.x[2] ? name[1] + ' · ' + it.x[2] : name[1]})]));
     else box.classList.add('cont');
@@ -1528,7 +1530,13 @@
         var antw = tx.split('℣.')[0].trim().split(/\s+/).slice(0, 3).join(' ').replace(/[,.;:]$/, '');
         tx = tx.replace(/Ant\.\s*\S+\s*$/, 'Ant. ' + antw + '…');
         var lp = el('p', {class: 'la', lang: 'la'});
-        tx.split(/(℣\.|℟\.|Ant\.)/).forEach(function (x) { if (x) lp.appendChild(/^(℣\.|℟\.|Ant\.)$/.test(x) ? el('span', {class: 'o-mark', text: x + ' '}) : document.createTextNode(x.replace(/^\s+/, ''))); });
+        // the book's own directions in the chant (sine Gloria Patri, repetitur…) stay red, as rubrics
+        tx.split(/(℣\.|℟\.|Ant\.|sine Gl[oó]ria Patri,?\s*sed repetitur:?|sine Gl[oó]ria Patri\.?|(?:et )?repetitur:?|Ps\.)/).forEach(function (x) {
+          if (!x) return;
+          if (/^(℣\.|℟\.|Ant\.|Ps\.)$/.test(x)) lp.appendChild(el('span', {class: 'o-mark', text: x + ' '}));
+          else if (/^(sine|(et )?repetitur)/.test(x)) lp.appendChild(el('span', {class: 'said-rub', text: x + ' '}));
+          else lp.appendChild(document.createTextNode(x.replace(/^\s+/, '')));
+        });
         chantBox.appendChild(lp);
         return;
       }
@@ -1827,10 +1835,7 @@
       var b = e.target.closest('button'); if (!b) return;
       state.ordo = b.getAttribute('data-v') || ''; $('#selOrdo').value = state.ordo; drawMass(); writeHash();
     });
-    if ($('#segLang')) $('#segLang').addEventListener('click', function (e) {
-      var b = e.target.closest('button'); if (!b || !window.OPLang) return;
-      OPLang.set(b.getAttribute('data-v')); markBar();
-    });
+
     if ($('#btnPM')) {
       var pmb = $('#btnPM'), pml = $('#pmList');
       var pmClose = function () { pml.hidden = true; pmb.setAttribute('aria-expanded', 'false'); };

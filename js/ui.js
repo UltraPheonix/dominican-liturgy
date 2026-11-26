@@ -116,7 +116,9 @@
   function applyTheme(t) { document.documentElement.setAttribute('data-theme', t); }
   applyTheme(theme());
   function themeWire() {
-    var tools = document.querySelector('.top-tools'); if (!tools || document.getElementById('themeBtn')) return;
+    var tools = document.querySelector('.top-tools'), inn = document.querySelector('.top .top-in');
+    if (!tools && inn) { tools = document.createElement('div'); tools.className = 'top-tools'; inn.appendChild(tools); }
+    if (!tools || document.getElementById('themeBtn')) return;
     var b = document.createElement('button');
     b.type = 'button'; b.id = 'themeBtn'; b.className = 'theme-btn';
     var mark = function () { var d = theme() === 'dark'; b.setAttribute('aria-pressed', d); b.title = d ? 'Day mode' : 'Night mode'; b.setAttribute('aria-label', b.title);
@@ -163,4 +165,45 @@
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !pop.hidden) { close(); lab.focus(); } });
   }
   if (document.readyState !== 'loading') datePopWire(); else document.addEventListener('DOMContentLoaded', datePopWire);
+})();
+
+/* One header and one language switch on every page (Mass, Office, Holy Week, Rubrics, About) */
+(function () {
+  var NAV = [['./', 'Mass', /(^|\/)(index\.html)?$/], ['office.html', 'Office', /office\.html$/], ['holyweek.html', 'Holy Week', /holyweek\.html$/],
+    ['rubrics.html', 'Rubrics', /rubrics\.html$/], ['about.html', 'About', /about\.html$/]];
+  function wire() {
+    var nav = document.querySelector('.top .nav'), path = location.pathname;
+    if (nav && !document.body.classList.contains('booklet')) {
+      nav.innerHTML = '';
+      NAV.forEach(function (n) {
+        var a = document.createElement('a'); a.href = n[0]; a.textContent = n[1];
+        if (n[2].test(path)) a.setAttribute('aria-current', 'page');
+        nav.appendChild(a);
+      });
+    }
+    var inn = document.querySelector('.top .top-in');
+    if (inn && !inn.querySelector('.top-tools')) { var t = document.createElement('div'); t.className = 'top-tools'; inn.appendChild(t); }
+    // the language switch: Latin (tap a passage for its English) / Latin + English, under the title of the page
+    var old = document.querySelector('.top .en-toggle');
+    var seg = document.querySelector('.seg[data-lang]');
+    if (old && !seg) {
+      seg = document.createElement('div'); seg.className = 'seg'; seg.setAttribute('data-lang', ''); seg.setAttribute('role', 'radiogroup'); seg.setAttribute('aria-label', 'Language');
+      seg.innerHTML = '<button type="button" role="radio" data-v="tap">Latin</button><button type="button" role="radio" data-v="both">Latin + English</button>';
+      var bar = document.createElement('div'); bar.className = 'pagebar hide-print'; bar.appendChild(seg);
+      var slot = document.getElementById('hwbar') || document.getElementById('hours');
+      if (slot && slot.id === 'hwbar') slot.insertBefore(seg, slot.firstChild);
+      else if (slot) slot.parentNode.insertBefore(bar, slot);
+      else { var db = document.querySelector('.daybar'); if (db) db.parentNode.insertBefore(bar, db.nextSibling); }
+    }
+    if (old) old.remove();
+    if (!seg || !window.OPLang) return;
+    var mark = function () { var v = window.OPLang.get(); Array.prototype.forEach.call(seg.children, function (b) { var on = b.getAttribute('data-v') === v; b.classList.toggle('on', on); b.setAttribute('aria-checked', on); }); };
+    mark();
+    if (!seg.hasAttribute('data-wired')) {
+      seg.setAttribute('data-wired', '');
+      seg.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; window.OPLang.set(b.getAttribute('data-v')); });
+    }
+    document.addEventListener('oplang', mark);
+  }
+  if (document.readyState !== 'loading') wire(); else document.addEventListener('DOMContentLoaded', wire);
 })();

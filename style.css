@@ -471,3 +471,31 @@ body.en-only .m-tr, body.en-only .reading .r-cols > .en-text, body.en-only .orat
 @media (min-width: 820px) { body.en-both .part.m-pair:has(.said) { display: grid; grid-template-columns: 1fr 1fr; column-gap: 26px; }
   body.en-both .part.m-pair:has(.said) > .part-head, body.en-both .part.m-pair:has(.said) > h2 { grid-column: 1 / -1; }
   body.en-both .part.m-pair:has(.said) > .m-tr { margin-top: 6px; } }
+
+/* ---- one look for every page ---- */
+/* the bar under the title (language on the Office; rite, language and print on Holy Week) */
+.pagebar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 4px 0 14px; }
+/* Holy Week: the rite as the same pill switch */
+.hw-pick { margin-bottom: 6px; }
+.hw-rite { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--paper); }
+.hw-rite button { padding: 6px 16px; }
+.hw-rite button span { font-size: 14px; letter-spacing: .06em; }
+.hw-rite button small { font-size: 11.5px; }
+.hw-rite button.on { background: var(--rubric); color: var(--paper); }
+/* tabs that choose a day or an Hour: the same chips as the strip of parts */
+.hw-days { gap: 2px; border-bottom: 1px solid var(--line); padding: 6px 0; margin: 6px 0 8px; }
+.hw-days button { border: 0; border-radius: 999px; padding: 5px 11px; margin: 0; }
+.hw-days button small { font-size: 13.5px; letter-spacing: .06em; }
+.hw-days button.on { color: var(--rubric); background: rgba(160, 30, 30, .08); border: 0; }
+.hours { display: flex; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; gap: 2px; border-bottom: 1px solid var(--line); padding: 6px 0; margin: 0 0 18px; }
+.hours::-webkit-scrollbar { display: none; }
+.hours .sbtn { flex: 0 0 auto; border: 0; border-radius: 999px; min-height: 32px; padding: 5px 11px; color: var(--muted); font-family: var(--caps); font-size: 13.5px; letter-spacing: .06em; background: none; }
+.hours .sbtn:hover { color: var(--rubric); border: 0; }
+.hours .sbtn.on { color: var(--rubric); background: rgba(160, 30, 30, .08); border: 0; }
+@media (max-width: 600px) { .hours, .hw-days { margin-left: -16px; margin-right: -16px; padding-left: 12px; padding-right: 12px; } }
+/* translations of the Order of Mass and of the Office: upright and quiet, as on the propers */
+.o-tr, .o-lp .o-en, .o-pair .o-en { font-style: normal; color: var(--muted); }
+.o-tr { font-size: 15.5px; line-height: 1.55; border-left: 2px solid var(--line); padding-left: 11px; }
+.o-lp .o-en, .o-pair .o-en { font-size: 15px; }
+html[data-theme="dark"] .jump a.on, html[data-theme="dark"] .hours .sbtn.on, html[data-theme="dark"] .hw-days button.on { background: rgba(224, 112, 122, .14); }
+.part .said .said-rub { color: var(--rubric); font-style: italic; font-size: .92em; }

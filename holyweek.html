@@ -74,7 +74,12 @@
       <button type="button" data-k="Quad6f"><span>Feria VI in Parasceve</span><small>Good Friday</small></button>
       <button type="button" data-k="Quad6s"><span>Sabbato Sancto</span><small>Holy Saturday</small></button>
     </nav></div>
-      <div class="tools hide-print"><button type="button" class="tbtn" id="btnShare">Share</button><button type="button" class="tbtn" id="btnChoir">Choir PDF</button><button type="button" class="tbtn" id="btnCong">Congregation PDF</button></div>
+      <div id="mhead"></div>
+      <div class="massbar hide-print" id="hwbar">
+        <div class="pmenu"><button type="button" class="pm-btn" id="btnPM" aria-expanded="false" aria-controls="pmList">Print &amp; share <span aria-hidden="true">▾</span></button>
+          <div class="pm-list" id="pmList" hidden><button type="button" id="btnShare">Share this day</button><button type="button" id="btnChoir">Choir Book</button><button type="button" id="btnCong">Congregation Booklet</button></div></div>
+      </div>
+      <nav class="jump hide-print" id="jump" aria-label="Parts of the rite"></nav>
       <main id="mass" aria-live="polite"></main>
       <article id="cong" class="cong" aria-hidden="true"></article>
     </div>
