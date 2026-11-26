@@ -868,14 +868,16 @@
       var cb = el('div', {class: 'chant'});
       box.appendChild(cb);
       loadGabc(PC.id).then(function (t) { var g = splitGabc(t); renderInto(cb, PC.fix(g.body), g.header, null); }, function (e) { showError(cb, e); });
-      box.appendChild(el('p', {class: 'rubric', text: 'Missale O.P. (1939), Appendix, ' + (PC.tone === 'solemn' ? 'solemn' : 'ferial') + ' tone' + (PC.adapted ? '; no chant is printed there for this Preface, so its text is fitted to the solemn tone.' : '.')}));
+      if (PC.adapted) box.appendChild(el('p', {class: 'rubric', text: 'No chant is printed in the Missale O.P. for this Preface: its text is fitted to the solemn tone.'}));
     } else if (dialogue && state.ordo !== 'low') {
       var cb2 = el('div', {class: 'chant'});
       box.appendChild(cb2);
       loadGabc(dialogue).then(function (t) { var g = splitGabc(t); renderInto(cb2, g.body, g.header, null); }, function (e) { showError(cb2, e); });
     }
-    box.appendChild(el('div', {class: 'r-cols pf-text'}, [el('p', {class: 'la', lang: 'la', text: P.la}), el('p', {class: 'en-text', lang: 'en', text: P.tr})]));
-    box.appendChild(el('p', {class: 'pf-sanctus', text: 'Sanctus, Sanctus, Sanctus…'}));
+    // when the Preface is sung the chant already carries the Latin: only the English is added
+    var sungPf = !!((PC || dialogue) && state.ordo !== 'low');
+    box.appendChild(el('div', {class: 'r-cols pf-text' + (sungPf ? ' pf-sung' : '')}, [sungPf ? null : el('p', {class: 'la', lang: 'la', text: P.la}), el('p', {class: 'en-text', lang: 'en', text: P.tr})]));
+    if (!sungPf) box.appendChild(el('p', {class: 'pf-sanctus', text: 'Sanctus, Sanctus, Sanctus…'}));
     return box;
   }
 
@@ -1053,9 +1055,9 @@
     }
     var src = {dm: 'Chants as assigned by the St. Dominic Missal (1959)', missal: 'Chants as given in the Missale O.P. (1939)',
       proper: 'Proper Mass of the Graduale O.P.', common: 'Common named by the Missale O.P. (1939)', guess: 'Common chosen from the saint\'s title: check the Ordo',
-      shared: 'Chants re-used from elsewhere in the Graduale', manual: 'Dominican Mass, checked against the Missale O.P.'}[m.conf];
+      shared: 'Chants re-used from elsewhere in the Graduale', g50: 'Mass as the Graduale O.P. gives it on the day', manual: 'Dominican Mass, checked against the Missale O.P.'}[m.conf];
     main.appendChild(el('p', {class: 'source hide-print'}, [
-      'Graduale O.P. (1950)' + (m.page ? ', p. ' + m.page : '') + (src ? ' · ' + src : '') + '. ',
+      'Graduale O.P. (1950)' + (m.page ? ', p. ' + m.page : '') + (src ? ' · ' + src : '') + '. Readings and prayers: Missale O.P. (1933/1939)' + (isSung() ? '; reading tones: Harrison O.P. (1920)' : '') + '. ',
       el('a', {href: 'about.html', text: 'About the sources'})
     ]));
     if (!state.edit) return;
@@ -1379,7 +1381,6 @@
       try { tg = gos || !r.title ? null : OPMassTones.epistleTitle(r.title); rg = OPMassTones.reading(r.la, gos); } catch (e) { console.warn('tone', e); }
       if (rg) {
         box.querySelector('.r-cols').remove();
-        box.querySelector('h3').appendChild(el('span', {class: 'src', text: 'Missale O.P. 1933 · tone: Harrison O.P. 1920'}));
         if (tg) box.appendChild(gabcBox(tg));
         box.appendChild(gabcBox(rg));
         box.appendChild(el('p', {class: 'en-text tone-en', lang: 'en'}, [el('span', {class: 'r-title', text: gos ? '' : (r.title_en || '')}), r.en || '']));
@@ -1390,7 +1391,6 @@
       // the title heads each column (Latin over the Latin, English over the English); the source goes on the reference line
       la.appendChild(el('span', {class: 'r-title', text: r.title || ''})); la.appendChild(document.createTextNode(r.la));
       en.appendChild(el('span', {class: 'r-title', text: r.title_en || ''})); en.appendChild(document.createTextNode(r.en || ''));
-      box.querySelector('h3').appendChild(el('span', {class: 'src', text: 'Missale O.P. 1933'}));
       return box;
     }
     readingText('la', r.ref).then(function (t) { la.textContent = psTitle(t); }, function () { la.textContent = ''; });

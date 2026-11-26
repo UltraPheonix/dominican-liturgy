@@ -1,0 +1,18 @@
+St Francis (S1004) — work in progress, read from g.pdf pdf pages 615-622 (printed 587-594)
+Introit = GregoBase 4292 (source 14 p587), matches scan.
+Responsorium Quasi stella (c4, mode V), pdf 616:
+(c4) QUA(ffg)SI(f) (::) stel(ghfgFED,ge/fg)la(f) (,) ma(f)tu(hf/gh/j/jvkjk)tí(jij)na(hg) (,) in(h) mé(hj/jh)di(f)o(f/ixiHGh) né(f)bu(fgf)læ;(f) (:) et(f) qua(ghg)si(h) lu(jkJH)na(iHG) ple(hji/ihi)na(ixih) (,) in(f) di(gh)é(hih)bus(gj/jk) (,) su(j)is(jh/ijIHG/hiHG) lu(f)cet.(f/fc,fghGF/egh,fhgh/g/gf) (::) <sp>V/</sp>. Et(d) qua(fe)si(eh) sol(h) re(h)fúl(h)gens,(ih/he,hih/ih/he,hi/klKI/jHF,hg/ijh,jIH/hGF) (:) sic(f/hi) il(i)le(ih/jki/h/hf) (:) ef(h/hfh)fúl(h)sit(hf/hi,hijh/hi/ih) (::) in(d) tem(dfED)plo(ef) (,) De(fhGF/h)i.(h/hf/fd/fef/e/ed) (::)
+Alleluia O Patriarcha (c4, mode VI), pdf 616-617:
+AL(d)LE(ff/ghf/gh/ixig)lú(h/hf/gef)ia.(f) (::) (iHG/hj/j) (,) (iyfj/kijHGF) (,) (ixiHF/gDC/df) (,) (ghf/gef) (::)
+V/. O(df/feg/EC/df/f) (,) Pa(f)tri(gh)ár(ixhi)cha(gf) páu(iHG)pe(hj)rum,(j) (;) Fran(k/kJI)cí(j/jh/hg)sce,(f) (,) tu(g)is(fe) pré(d)ci(f)bus,(f) (:) au(ixi/ih)ge(gh) tu(g)ó(h)rum(i) nú(j)me(iHG)rum,(f) (;) in(d) ca(ff/gdf/f/fc)ri(d)tá(f)te(f) Chri(ixgh/igh/hf)sti:(f) (:) quos(jj) can(f)cel(j)lá(kj/mLJ/iykJI/jh/ixf/gh/i/jijh/ixfgh/ighg)tis(f) má(h)ni(j)bus,(j) (;) cæ(jk)cú(kJIH/i/jij)ti(f)ens,(f) (;) ut(h) mó(j)ri(k)ens(mLJ) Ja(ixiHG/hf/gef,cf/ghf/iHG/hj,j/jhjf/iyhj/j/kij,ixhjIHGF/gef,gh/igh)cob,(f) (::) be(d)ne(f/f)di(ixghf/gh/ig)xí(h/hf/gef)sti.(f) (,) [jubilus as above] (::)
+Sequence Sanctitatis nova signa (c4, mode VI), syllabic; done to stanza 9 (pdf 617-619):
+SANC(d)TI(f)TÁ(g)TIS(e) no(g)va(h) si(f)gna(f) (::) pro(h)di(j)é(ixi)runt(h) lau(g)de(h) di(j)gna,(j) (;) mi(k)ra(ixi) val(j)de(h) et(i) be(g)ní(h)gna,(h) (;) in(f) Fran(e)cí(g)sco(ih) cré(g)di(f)ta.(f) (::)
+Re(d)gu(f)lá(g)tis(e) no(g)vi(h) gre(f)gis,(f) (;) ju(h)ra(j) dan(ixi)tur(h) no(g)væ(h) le(j)gis:(j) (;) re(k)no(ixi)ván(j)tur(h) jus(i)sa(g) Re(h)gis,(h) (;) per(f) Fran(e)cí(g)scum(ixih) trá(g)di(f)ta.(f) (::)
+No(f)vus(e) or(d)do,(c) no(c)va(d) vi(e)ta(f) (;) mun(g)do(f) sur(e)git(d) in(c)au(d)dí(d)ta:(c) (;) re(f)stau(e)rá(f)vit(g) lex(g) san(h)cí(f)ta(g) (;) sta(c)tum(d) e(e)van(fg)gé(hg)li(f)cum.(f) (::)
+Le(f)gi(e) Chri(d)sti(c) pa(c)ris(d) for(e)mæ(f) (;) re(g)for(f)má(e)tur(d) jus(c) con(d)fór(d)me:(c) (;) te(f)net(e) ri(f)tus(g) da(g)tæ(h) nor(f)mæ(g) (;) cul(c)men(d) a(e)po(fg)stó(hg)li(f)cum.(f) (::)
+Cor(h)da(ixi) ru(h)dis,(f) ve(g)stis(h) du(g)ra,(f) (;) cin(e)git,(f) te(d)git(c) si(f)ne(g) cu(h)ra:(g) (;) pa(h)nis(h) da(j)tur(g) in(h) men(g)sú(h)ra,(f) (;) cál(g)ce(g)us(h) ab(d)jí(ed)ci(e)tur.(f) (::)
+Pau(h)per(ixi)tá(h)tem(f) tan(g)tum(h) quæ(g)rit,(f) (;) de(e) ter(f)ré(d)nis(c) ni(f)hil(g) ge(h)rit:(g) (;) hic(h) Fran(h)cí(j)scus(g) cun(h)cta(g) te(h)rit;(f) (;) ló(g)cu(g)lus(h) de(d)spí(ed)ci(e)tur.(f) (::)
+Quæ(f)rit(d) lo(e)ca(c) la(d)cri(bxb)má(d)rum,(c) (;) pro(f)mit(e) vo(f)ces(g) cor(f) a(e)má(d)rum,(c) (;) ge(g)mit(g) mæ(h)stus(f) tem(g)pus(g) ca(h)rum(f) (;) pér(h)di(h)tum(j) in(g) sǽ(hf)cu(g)lo.(h) (::)
+Mon(f)tis(d) an(e)tro(c) se(d)que(bxb)strá(d)tus(c) (;) plo(f)rat,(e) o(f)rat(g) hu(f)mi(e) stra(d)tus:(c) (;) tan(g)dem(g) men(h)te(f) se(g)re(g)ná(h)tus(f) (;) lá(h)ti(h)tat(j) er(g)gá(hf)stu(g)lo.(h) (::)
+I(f)bi(g) va(h)cat(h) ru(g)pe(h) tec(ixih)tus,(g) (;) ad(f) di(h)ví(j)na(j) sur(iyi)sum(j) vec(ji)tus,(j) (;) sper(h)nit(ixi) i(j)ma(h) ju(i)dex(g) rec(hg)tus,(f) (;) é(g)li(f)git(e) ... [continue pdf 619 line D onward]
+Still to read: rest of sequence (pdf 619 bottom - 622), Offertory Magnificabitur (pdf 622), Communion (pdf 623?).

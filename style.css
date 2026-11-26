@@ -109,6 +109,8 @@ button { cursor: pointer; }
 .reading .en-text, .r-cols > .en-text { margin: 2px 0 0; text-align: left; color: var(--muted); font-size: .86em; font-style: italic; line-height: 1.45; }
 .r-cols { display: block; }
 .preface .pf-text { margin-top: 10px; }
+.preface .pf-text.pf-sung { display: block; }
+.preface .pf-text.pf-sung .en-text { font-size: 15px; }
 .preface .pf-text p { font-size: 16px; line-height: 1.55; }
 .preface .pf-sanctus { font-style: italic; color: var(--muted); margin: 6px 0 0; }
 .add { margin-top: 34px; border-top: 1px solid var(--line); padding-top: 12px; font-size: 16px; }
@@ -264,12 +266,12 @@ body:not(.en-tap) .tap-hint { display: none; }
 .part.hw .hw-l .hw-ref { font-family: var(--serif, inherit); letter-spacing: 0; text-transform: none; font-variant: normal; font-size: .9em; }
 
 /* report an error */
-.report-btn { position: fixed; right: 14px; bottom: 14px; z-index: 50; padding: 6px 12px; border: 1px solid var(--line); border-radius: 16px;
+.report-btn { position: static; display: block; margin: 28px auto 40px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 16px;
   background: var(--paper); color: var(--muted); font: italic 14px/1.2 inherit; font-family: inherit; box-shadow: 0 1px 4px rgba(0,0,0,.08); cursor: pointer; }
 .report-btn:hover { color: var(--rubric); border-color: var(--rubric); }
 .report-btn { transition: opacity .25s, transform .25s; }
-.report-btn.rb-away { opacity: 0; transform: translateY(12px); pointer-events: none; }   /* out of the way while reading/scrolling */
-@media (max-width: 600px) { .report-btn { right: 10px; bottom: 10px; padding: 4px 10px; font-size: 12.5px; opacity: .85; } }
+.report-btn.rb-away { }   /* out of the way while reading/scrolling */
+@media (max-width: 600px) { .report-btn { padding: 4px 12px; font-size: 13px; } }
 .report-dlg { max-width: 420px; width: calc(100% - 32px); border: 1px solid var(--line); padding: 22px 24px 18px; background: var(--paper); color: var(--ink); }
 .report-dlg::backdrop { background: rgba(0,0,0,.35); }
 .report-dlg h2 { font-family: var(--caps); font-weight: 500; letter-spacing: .08em; color: var(--rubric); font-size: 21px; margin: 0 0 10px; }

@@ -113,8 +113,14 @@ for k, (parts, why) in FIX.items():
     e = PX.setdefault(k, {}); e.update(parts); e['p39'] = why.split(':')[0]; e['_why_g50'] = why
 json.dump(PX, open(PF, 'w', encoding='utf8'), ensure_ascii=False, indent=1)
 PX.setdefault('_add_chants', {}).update(EXTRA_CHANTS)
+PX['_trans'] = json.load(open(R + '/tools/g50/trans.json', encoding='utf8'))
 json.dump(PX, open(PF, 'w', encoding='utf8'), ensure_ascii=False, indent=1)
 n = propers_apply.apply(D)
+import re as _re
+for k, (parts, why) in FIX.items():   # the page where the Graduale gives this Mass (the footer of the Mass page)
+    mm = _re.match(r"G50 pp?\. ([0-9*]+(?:\([0-9]\))?(?:-[0-9*]+(?:\([0-9]\))?)?)", why)
+    if mm and not k.startswith('C'):
+        D['masses'][k]['page'] = _re.sub(r'\((\d)\)', lambda q: '⁰¹²³⁴⁵⁶⁷⁸⁹'[int(q.group(1))], mm.group(1)); D['masses'][k]['conf'] = 'g50'
 for k, mt in META.items(): D['masses'][k].update(mt)
 for k, ss in SEASON.items():
     for sn, parts in ss.items():

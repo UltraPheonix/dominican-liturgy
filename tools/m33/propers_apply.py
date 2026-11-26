@@ -6,6 +6,7 @@ def apply(data):
     fx = json.load(open(os.path.join(H, 'propers_fix.json'), encoding='utf8'))
     n = 0
     for cid, c in fx.get('_add_chants', {}).items(): data['chants'].setdefault(cid, c)
+    for cid, t in fx.get('_trans', {}).items(): data.setdefault('trans', {})[cid] = t
     for k, v in fx.items():
         if k.startswith('_') or k not in data['masses']: continue
         parts = data['masses'][k].setdefault('parts', {})
