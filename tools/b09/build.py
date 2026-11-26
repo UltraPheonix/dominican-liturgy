@@ -102,17 +102,7 @@ for f in sorted(glob.glob(os.path.join(REPO, 'data/office/20*/*.json'))):
     for rows in d['h'].values():
         for r in rows:
             if len(r) == 2: pair.setdefault(r[0], r[1])
-OLDSH = {}
-def inline_old(t):
-    """a block borrowed from the 1954 data may point to a 1954 psalm shard (§NN.hash): put the psalm text in instead"""
-    def rep(m):
-        sh = m.group(1)
-        if sh not in OLDSH:
-            f = os.path.join(REPO, 'data/office/psalter', sh + '.json')
-            OLDSH[sh] = json.load(open(f)) if os.path.exists(f) else {}
-        return OLDSH[sh].get(sh + '.' + m.group(2), m.group(0))
-    return re.sub(r'^§(\d\d)\.(\S+)$', lambda m: m.group(0) if m.group(2)[:1] in 'LE' and m.group(2)[1:2].isdigit() else rep(m), t, flags=re.M)
-def L(i): return inline_old(lib[i]), inline_old(lib[pair[i]])
+def L(i): return lib[i], lib[pair[i]]
 HYMN = {}
 for k, v in lib.items():
     m = re.search(r'(?:<r>Hymnus</r>|<h>Hymnus</h>)\n(<c>.</c>[^\n]+)', v)
@@ -583,7 +573,7 @@ def effective_calendar():
     """the calendar entries of each date, with impeded Duplex and Totum Duplex feasts transferred to the next free day
     (Rubricae generales: translatio); a transferred feast is marked '(translatum)'"""
     d = FROM - datetime.timedelta(days=40); pending = []
-    while d <= TO + datetime.timedelta(days=1):
+    while d <= TO:
         s, wk, n, prop = season(d); w = (d.weekday() + 1) % 7
         ents = [dict(c) for c in CAL.get(d.strftime('%m-%d'), [])]
         main_ = ents[0] if ents else None
@@ -596,412 +586,6 @@ def effective_calendar():
         if d >= FROM: ECAL[d] = ents
         d += datetime.timedelta(days=1)
 
-# ---------- 1909 Commune Sanctorum -> whole feast Offices ----------
-import commons1909 as CM
-LP = [[112], [116], [145], [146], [147]]          # 'Laudate pueri cum ceteris' (In Totis Duplicibus ad I. Vesperas, psalter p. 230)
-CLES = json.load(open(os.path.join(HERE, 'commonlessons1909.json'))) if os.path.exists(os.path.join(HERE, 'commonlessons1909.json')) else {}
-RUNHEAD = re.compile(r'\s(?:(?:Commúne|Commune|Apostolórum|Mártyr(?:is|um)|Confessór(?:is|um)|Pontíf(?:icis|icum)|Vírgin(?:is|um)|Doctóris|Abbátis)\s?){1,4}\.\s(?=[a-zæœáéíóúý])')
-RUNHEAD2 = re.compile(r'(?<=[.:;!?])\s(?:(?:Commúne|Commune|Apostolórum|Mártyr(?:is|um)|Confessór(?:is|um)|Pontíf(?:icis|icum)|Vírgin(?:is|um)|Doctóris|Abbátis)\s?){2,4}\.(?=\s[A-Z])')
-def unhead(t):
-    """drop a page's running head (e.g. 'Mártyris Pontíficis.') that the OCR left inside a lesson"""
-    if not isinstance(t, str): return t
-    t = RUNHEAD.sub(' ', t)
-    return RUNHEAD2.sub(' ', t)
-for _ls in CLES.values():
-    for _x in _ls: _x['la'] = unhead(_x.get('la'))
-AI = ' [AI translation]'
-def cmerge(a, b):
-    out = dict(a)
-    for k, v in b.items():
-        if k in ('base', 'overlay'): continue
-        if v == 'by_noct': out[k + '_by_noct'] = True; continue
-        if isinstance(v, dict) and isinstance(out.get(k), dict):
-            m = dict(out[k])
-            for kk, vv in v.items():
-                if vv == 'by_noct': m[kk + '_by_noct'] = True
-                else: m[kk] = vv
-            out[k] = m
-        else: out[k] = v
-    return out
-def cres(cn):
-    c = CM.C[cn]
-    return cmerge(cres(c['base']), c) if c.get('base') else cmerge({}, c)
-def common_full(cn, tp):
-    F = cres(cn); F['_cn'] = cn
-    if tp and cn in CM.TP_OF:
-        F = cmerge(F, cres(CM.TP_OF[cn])); F['_tp'] = True
-    return F
-def lesson_chain(cn):
-    out, c = [], cn
-    while c:
-        out.append(c); c = CM.C[c].get('base')
-    return out
-def common_of(t):
-    if re.search(r'Vigíl|Anniversár|Defunct', t): return None
-    if re.search(r'Dedicát|Dedicat', t): return 'ded'
-    if re.search(r'Sponsi|Patris B', t): return 'conf'
-    if re.search(r'Matris B', t): return 'nec'
-    if re.search(r'B\. ?Maríæ|B\. ?M\. ?V|Maríæ Virg|Maríæ ad Nives|Deíparæ|Rosárii|Lauretán', t): return 'bvm'
-    if re.search(r'Dómini|Nóminis Jesu|Jesu Christi|Crucis|Trinit|Ómnium|Archáng|Angelórum|Michaél|Baptíst|Relíqui|S\. P\. N\. Domínici|Epiph|Sacrament|Cordis|Sepult', t): return None
-    if re.search(r'Stigmatum S\. Francísci', t): return 'conf'
-    if re.search(r'Catharínæ', t) and re.search(r'Stigmat', t): return 'virg'
-    if re.search(r'Cáthedra|ante Portam', t): return 'apost'
-    if re.search(r'Maríæ Magdal', t): return 'nec'
-    if re.search(r'Apóst|Apostol', t): return 'apost'
-    if re.search(r'Evang', t): return 'evang'
-    if re.search(r'\bMM\.|Mártyrum|Sociórum|Sóciis', t): return 'mm'
-    if re.search(r'V(?:irg)?\. et M(?:art)?\.|feminárum Protomárt', t): return 'virg_mart'
-    if re.search(r'\bVirg\.|\bV\. O\.P|Vírginum', t): return 'virg'
-    if re.search(r'Mart\.|Mártyris', t) and re.search(r'\bEp\.|Papæ|Pont', t): return 'mart_pont'
-    if re.search(r'Mart\.|Protomárt|Mártyris', t): return 'mart'
-    if re.search(r'Doct', t): return 'doct'
-    if re.search(r'Abb', t): return 'abb'
-    if re.search(r'Conf\.', t) and re.search(r'\bEp\.|Papæ|Pont', t): return 'conf_pont'
-    if re.search(r'Conf\.|Confessórum|Regis', t): return 'conf'
-    if re.search(r'Vid\.|Víduæ|Pœnit|Reg[íi]næ', t): return 'nec'
-    return None
-def feast_common(d, t):
-    """the Common of a calendar entry; an octave day takes the Common of its feast"""
-    m = re.match(r'(?:Dies )?Octava (.+)$', t)
-    if m:
-        key = nb(m.group(1))[:12]
-        for back in range(7, 9):
-            for c in CAL.get((d - datetime.timedelta(days=back)).strftime('%m-%d'), []):
-                if key and key[:10] in nb(c['title']): return common_of(c['title'])
-        return None
-    return common_of(t)
-def alla(t):
-    if not t or 'allelúja' in t.lower(): return t
-    return re.sub(r'[\s.:;,!?]*$', '', t) + ', allelúja.'
-def tp_of(d):
-    k = (d - easter(d.year)).days; return 0 <= k <= 55
-# hymns: every hymn of the 1954 library, matched on its whole incipit (several hymns share 18 letters)
-HYALL = []
-for k, v in lib.items():
-    if k not in pair: continue
-    for m in re.finditer(r'(?:<r>Hymnus</r>|<h>Hymnus</h>)\n(?:<n>[^\n]*</n>\n)?((?:<c>.</c>)[\s\S]*?Amen\.)', v):
-        la = m.group(1); e = hymn_body(lib[pair[k]]); HYALL.append((nb(re.sub(r'<[^>]+>', '', la)), la, e or la))
-def stanza(lines): return '<h>%s</h>%s' % (lines[0][0], '\n'.join([lines[0][1:]] + lines[1:]))
-TP_LA = {'resurr': [['Quǽsumus, Auctor ómnium,', 'In hoc Paschali gáudio,', 'Ab omni mortis ímpetu', 'Tuum defénde pópulum.'],
-                    ['Glória tibi, Dómine,', 'Qui surrexísti a mórtuis,', 'Cum Patre et Sancto Spíritu,', 'In sempitérna sǽcula.', 'Amen.']],
-         'ascens': [['Tu esto nostrum gáudium,', 'Qui es futúrus prǽmium:', 'Sit nostra in te glória', 'Per cuncta semper sǽcula.'],
-                    ['Glória tibi, Dómine,', 'Qui scandis supra sídera,', 'Cum Patre et Sancto Spíritu,', 'In sempitérna sǽcula.', 'Amen.']],
-         'bvm': [['María Mater grátiæ,', 'Mater misericórdiæ,', 'Tu nos ab hoste prótege,', 'Et hora mortis súscipe.'],
-                 ['Glória tibi, Dómine,', 'Qui natus es de Vírgine,', 'Cum Patre et Sancto Spíritu,', 'In sempitérna sǽcula.', 'Amen.']]}
-TP_EN = {'resurr': [['Paschal triumph, paschal joy,', 'Only sin can this destroy;', 'From the death of sin set free,', 'Souls re-born, dear Lord, in Thee.'],
-                    ['Hymns of glory, songs of praise,', 'Father, unto thee we raise;', 'Risen Lord, all praise to thee,', 'Ever with the Spirit be.', 'Amen.']],
-         'ascens': [['Be thou our joy, who art to be our reward:', 'may our glory be in thee', 'through all the ages for ever.' + AI],
-                    ['Glory be to thee, O Lord,', 'who mountest above the stars,', 'with the Father and the Holy Spirit,', 'for everlasting ages.' + AI, 'Amen.']],
-         'bvm': [['Mary, Mother of grace,', 'Mother of mercy,', 'shield us from the enemy', 'and receive us at the hour of death.' + AI],
-                 ['Glory be to thee, O Lord,', 'who wast born of the Virgin,', 'with the Father and the Holy Spirit,', 'for everlasting ages.' + AI, 'Amen.']]}
-def swap_doxology(t, which, lang):
-    """replace the hymn's last stanza (its doxology) by the Paschal / Marian stanzas"""
-    st = t.rstrip().split('\n\n')
-    if len(st) < 3: return t
-    new = [stanza(s) for s in (TP_LA if lang == 'la' else TP_EN)[which]]
-    have = {nb(re.sub(r'<[^>]+>', '', x))[:30] for x in st[:-1]}
-    new = [x for x in new if nb(re.sub(r'<[^>]+>', '', x))[:30] not in have]   # a hymn that already has 'María Mater grátiæ'
-    return '\n\n'.join(st[:-1] + new)
-def hymn9(spec, d=None, dox=None):
-    """a 1909 hymn: spec = incipit or (incipit, word the right variant contains); dox = 'tp' | 'bvm' | None"""
-    inc, must = (spec if isinstance(spec, tuple) else (spec, None))
-    if inc in CM.HYMN_TEXT: la, e = CM.HYMN_TEXT[inc]
-    else:
-        q = nb(inc); c = [(la, e) for n, la, e in HYALL if n.startswith(q[:36])]
-        if must: c = [x for x in c if nb(must) in nb(x[0])] or c
-        la, e = c[0] if c else hymn(inc)
-    if dox == 'tp' and d is not None:
-        k = (d - easter(d.year)).days; which = 'ascens' if 39 <= k <= 48 else 'resurr'
-        la, e = swap_doxology(la, which, 'la'), swap_doxology(e, which, 'en')
-    elif dox == 'bvm': la, e = swap_doxology(la, 'bvm', 'la'), swap_doxology(e, 'bvm', 'en')
-    return la, e
-def resp9(r, lang):
-    """Matins responsory (a, b, [verses], gloria); gloria: False | True | (repeat after verse, repeat after Gloria)"""
-    a, b, vs, g = r
-    rep_v = rep_g = None
-    if isinstance(g, tuple): rep_v, rep_g = g
-    dflt = ' '.join(b.split()[:3]).rstrip(',:;.') + '.'
-    rep_v = rep_v or dflt; rep_g = rep_g or rep_v
-    if lang == 'en': a, b, vs = ant_en(a), ant_en(b), [ant_en(v) for v in vs]
-    out = ['<r>℟.</r> %s * %s' % (a, b)]
-    for v in vs: out.append('<r>℣.</r> %s %s' % (v, rep_v if lang == 'la' else ''))
-    if g: out.append(('<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. %s' % rep_g) if lang == 'la' else '<r>℣.</r> Glory be to the Father, and to the Son, and to the Holy Ghost.')
-    return '\n'.join(x.rstrip() for x in out)
-def v1resp(r, lang):
-    """the Responsory of I Vespers: (a, b, verse, repeat after verse, repeat after Gloria)"""
-    a, b, v, rv, rg = r
-    if lang == 'la': return '<r>℟.</r> %s * %s\n<r>℣.</r> %s %s\n<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. %s\n\n' % (a, b, v, rv, rg)
-    return '<r>℟.</r> %s * %s\n<r>℣.</r> %s\n<r>℣.</r> Glory be to the Father, and to the Son, and to the Holy Ghost.\n\n' % (ant_en(a), ant_en(b), ant_en(v))
-def chapter_of(F, part):
-    c = F[part]['cap'] if isinstance(F.get(part), dict) else None
-    while isinstance(c, str): c = F[c]['cap']
-    return c
-def cap_hymn9(cap, hy, vr, d, dox=None, resp=None, head=('Capitulum Hymnus Versus', 'Chapter Hymn Verse')):
-    ref, txt = cap; hla, hen = hymn9(hy, d, dox)
-    e = en(txt) or txt
-    la = '<h>%s</h>\n<r>%s</r>\n<c>%s</c>%s\n<r>℟.</r> Deo grátias.\n\n%s<r>Hymnus</r>\n%s\n\n%s' % (head[0], ref, txt[0], txt[1:], v1resp(resp, 'la') if resp else '', hla, VR(vr, 'la'))
-    en_ = '<h>%s</h>\n<r>%s</r>\n<c>%s</c>%s\n<r>℟.</r> Thanks be to God.\n\n%s<r>Hymn</r>\n%s\n\n%s' % (head[1], ref, e[0], e[1:], v1resp(resp, 'en') if resp else '', hen, VR(vr, 'en'))
-    return put(la, en_)
-def good_lessons(ls):
-    out = {}
-    for x in ls or []:
-        try: n = int(x.get('n'))
-        except Exception: continue
-        m = re.match(r'(?:vulgate|DO) ([\d.]+)', str(x.get('src', '')))
-        if n in out or not m or float(m.group(1)) < 0.75 or len(x.get('la', '')) < 80: 
-            out.setdefault(n, None); continue
-        out[n] = dict(x, n=n)
-    return out
-def lesson9(n, x, bl, rsp, lang_note):
-    la = ['<h>Lectio %s</h>' % ROMN[n], '<r>℣.</r> Jube, domne, benedícere.', '<r>Benedictio.</r> ' + bl[0], '<r>℟.</r> Amen.']
-    en_ = ['<h>Lesson %d</h>' % n, '<r>℣.</r> Pray, sir, a blessing.', '<r>Blessing.</r> ' + bl[1], '<r>℟.</r> Amen.']
-    if x:
-        if x.get('ref'): la.append('<r>%s</r>' % x['ref']); en_.append('<r>%s</r>' % x['ref'])
-        if x.get('gospel'):
-            la.append('<c>%s</c>%s' % (x['gospel'][0], x['gospel'][1:])); en_.append(ant_en(x['gospel']))
-            if x.get('homily_head'): la.append('<r>%s</r>' % x['homily_head']); en_.append('<r>%s</r>' % x['homily_head'])
-        t = x['la']; la.append('<c>%s</c>%s' % (t[0], t[1:])); en_.append(x.get('en') or t)
-    else:
-        la.append('<n>%s</n>' % lang_note[0]); en_.append('<n>%s</n>' % lang_note[1])
-    la.append('Tu autem, Dómine, miserére nostri.\n<r>℟.</r> Deo grátias.'); en_.append('But thou, O Lord, have mercy on us.\n<r>℟.</r> Thanks be to God.')
-    if rsp:
-        la.append('\n<h>Responsorium %s</h>\n' % ROMN[n] + resp9(rsp, 'la')); en_.append('\n<h>Responsory</h>\n' + resp9(rsp, 'en'))
-    return put('\n'.join(la), '\n'.join(en_))
-FEAST_NOTE = []
-def noct_of_feria(w): return {0: 0, 1: 0, 4: 0, 2: 1, 5: 1, 3: 2, 6: 2}[w]
-def feast_matins(d, s, w, F, fe, o, rk):
-    tp = F.get('_tp'); M_ = F['mat']; three = fe['rank'] == 'Tres Lectiones'
-    rows = [put('<h>Ante Matutinum</h>\n<n>Pater noster et Credo in Deum secreto.</n>', '<h>Before Matins</h>\n<n>Our Father and the Apostles\' Creed silently.</n>'),
-            lib_row('mat_incipit', lambda t, l: laus(t, l, s))]
-    inv = (o or {}).get('invit') if (o or {}).get('invit') and len(o['invit']) < 160 and '*' in o['invit'] else None
-    if three and not tp: inv = inv or (M_.get('tl') or {}).get('invit')
-    rows.append(invit_row(inv or M_['invit'], 9))
-    hla, hen = hymn9(M_['hymn'], d, 'tp' if tp and F.get('v1', {}).get('tp_stanzas') else ('bvm' if F['_cn'] == 'bvm' else None))
-    rows.append(put('<h>Hymnus</h>\n' + hla, '<h>Hymn</h>\n' + hen))
-    PL = good_lessons((o or {}).get('lessons')); has_proper = bool((o or {}).get('lessons'))
-    CL = {}
-    for c in lesson_chain(F['_cn']):
-        for x in CLES.get(c, []): CL.setdefault(x['n'], x)
-    bset = M_.get('benedictiones')
-    def bless(n, noc):
-        if bset: return bset[n - 1], en(bset[n - 1]) or bset[n - 1]
-        return BEN[noc][(n - 1) % 3], BEN_EN[noc][(n - 1) % 3]
-    def lesson_src(n):
-        if PL.get(n): return PL[n]
-        if has_proper and n in PL and n in (4, 5, 6): return None    # a proper legend exists but its text is not clean yet
-        return CL.get(n)
-    NOTE = ('Lectio (in præparatione).', 'Lesson (in preparation).')
-    if tp:
-        noc = noct_of_feria(w); ps, ants, v = M_['noct'][noc]
-        if M_.get('op_rule') and re.search(r'O\.\s?P|Ord', fe['title']):
-            ps0, ants0, _ = M_['noct'][0]; rows += psalm_rows([ps0], None, ('In Nocturno', 'Nocturn'), single=None) if False else []
-            rows += psalm_rows([[p] for p in ps0], [alla(a) for a in ants0], ('In Nocturno', 'Nocturn')); rows.append(vr_row(M_['op_v']))
-        else:
-            rows += psalm_rows([[p] for p in ps], None, ('In Nocturno', 'Nocturn'), single=M_['ant']); rows.append(vr_row([alla(v[0]), alla(v[1])]))
-        rs = M_['resp']
-        if M_.get('resp_by_noct') or not isinstance(rs, list) or len(rs) != 3:
-            base9 = cres(F['_cn'])['mat']['resp']; rs = [(a, alla(b), vv, g) for a, b, vv, g in base9[3 * noc:3 * noc + 3]]
-        for i in range(3):
-            n = [1, 4, 5][i]; x = lesson_src(n) if i else (lesson_src(1) or lesson_src(4))
-            rows.append(lesson9(i + 1, x, bless(3 * noc + i + 1, noc), rs[i], NOTE))
-        rows.append(put('<h>Te Deum</h>\n<r>Canticum SS. Ambrosii et Augustini</r>\n%s' % TEDEUM[0], '<h>Te Deum</h>\n%s' % TEDEUM[1]))
-        return rows
-    if three:
-        tl = M_.get('tl') or {}
-        allps = [p for noc in M_['noct'] for p in noc[0]]
-        rows += psalm_rows([[p] for p in allps], None, ('In Nocturno', 'Nocturn'), single=tl.get('ant') or M_['noct'][0][1][0])
-        rows.append(vr_row(M_['noct'][0][2]))
-        noc = noct_of_feria(w); rs = M_['resp'][3 * noc:3 * noc + 3]
-        if F['_cn'] in ('virg', 'virg_mart'): rs = M_['resp'][6:9]
-        for i in range(3):
-            x = PL.get(i + 1) or (PL.get(4 + i) if i == 2 else None)
-            rows.append(lesson9(i + 1, x, bless(i + 1, 0), rs[i], NOTE))
-        return rows
-    for ni in range(3):
-        ps, ants, v = M_['noct'][ni]
-        head = ('In %s Nocturno' % ['I', 'II', 'III'][ni], '%s Nocturn' % ['First', 'Second', 'Third'][ni])
-        rows += psalm_rows([[p] for p in ps], ants, head)
-        rows.append(vr_row(v))
-        for k in range(3):
-            n = 3 * ni + k + 1
-            rows.append(lesson9(n, lesson_src(n), bless(n, ni), M_['resp'][n - 1], NOTE))
-    if not (rk == 1 and s in ('sept', 'cin', 'quad', 'pass')):
-        rows.append(put('<h>Te Deum</h>\n<r>Canticum SS. Ambrosii et Augustini</r>\n%s' % TEDEUM[0], '<h>Te Deum</h>\n%s' % TEDEUM[1]))
-    return rows
-def clean_proper(o, k, maxlen=420):
-    v = (o or {}).get(k)
-    if not v or not isinstance(v, str) or len(v) > maxlen or re.search(r'Psalm|pag\.|Capitul|Hymnus|Ana\.|\bT\.|\?\.', v): return None
-    return v
-def feast_oratio(d, fe, F):
-    o = san_oratio(d, fe['title'])
-    if o and re.search(r'prævení|vigíli', o, re.I): o = None
-    return o or F.get('oratio')
-def feast_lauds(d, s, w, F, fe, o, rk, oratio, comms):
-    tp = F.get('_tp'); La = F['laud']; three = fe['rank'] == 'Tres Lectiones'
-    v = F['al']
-    inc_la, inc_en = L(LIB['incipit'])
-    rows = [put(laus(inc_la.replace('<h>Incipit</h>\n', '<h>Incipit</h>\n' + VR(v, 'la') + '\n'), 'la', s), laus(inc_en.replace('<h>Start</h>\n', '<h>Start</h>\n' + VR(v, 'en') + '\n'), 'en', s))]
-    ants = La['ant'] if not F.get('add_alleluia') else [alla(a) for a in La['ant']]
-    pl = (o or {}).get('laudes')
-    if isinstance(pl, list) and len(pl) == 5 and all(isinstance(a, str) and len(a) < 300 for a in pl) and not tp: ants = pl
-    groups = P['LAUDS_SUN_SEPT'] if s in ('sept', 'quad', 'pass', 'cin') else P['LAUDS_SUN']
-    rows += psalm_rows(groups, None, single=ants[0]) if three else psalm_rows(groups, ants)
-    vr = La['vr'] if not F.get('add_alleluia') else [alla(x) for x in La['vr']]
-    dox = 'tp' if tp and La.get('tp_stanzas') else ('bvm' if F['_cn'] == 'bvm' else None)
-    rows.append(cap_hymn9(chapter_of(F, 'laud'), La['hymn'], vr, d, dox))
-    b = clean_proper(o, 'bened') or (alla(La['bened']) if F.get('add_alleluia') else La['bened'])
-    rows.append(gospel_row('b', b))
-    rows.append(oratio_row(False, oratio))
-    rows += comms('Laudes')
-    rows.append(lib_row('conclusio'))
-    return rows, ants
-NOMINA = re.compile(r'^(Deus|De[io]|Dómin|Christ|Jesu|Jesus|María|Marí|Spirit|Spírit|Patr|Fíli|Sanct|Israël|Jerúsalem|Sion)')
-def lc1(x):
-    """lower-case the first letter of a joined clause, except a sacred or proper name"""
-    return x if not x or NOMINA.match(x) else x[0].lower() + x[1:]
-def rbr(r1, r2, rv, alle, lang):
-    """short responsory of the Hours; alle = the Totum Duplex form with a double Allelúja"""
-    if lang == 'en':
-        return '<r>℟.br.</r> %s\n<r>℣.</r> %s' % (ant_en(r1 + ' ' + r2), ant_en(rv))
-    if alle and 'allelúja' not in r2.lower():
-        R = (r1.rstrip(' ,:;') + ' ' + lc1(r2)).rstrip(' .,:;')
-        return '<r>℟.br.</r> %s, * Allelúja, allelúja. %s.\n<r>℣.</r> %s Allelúja.\n<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. %s.' % (R, R, rv.rstrip(' .,:;') + '.', R)
-    rep1 = r1.rstrip(' ,:;'); rep2 = r2.rstrip(' .,:;')
-    return '<r>℟.br.</r> %s * %s %s, %s.\n<r>℣.</r> %s %s.\n<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. %s, %s.' % (r1, r2, rep1, lc1(rep2), rv, rep2, rep1, lc1(rep2))
-def feast_little(d, s, w, hour, F, fe, ants, oratio, rk):
-    tp = F.get('_tp')
-    rows = [lib_row('incipit', lambda t, l: laus(t, l, s))]
-    dox = 'bvm' if F['_cn'] == 'bvm' else None
-    hla, hen = hymn9(P['HOUR_HYMN'][hour], d, dox); rows.append(put('<h>Hymnus</h>\n' + hla, '<h>Hymn</h>\n' + hen))
-    a = ants[{'Prima': 0, 'Tertia': 1, 'Sexta': 2, 'Nona': 4}[hour]]
-    groups = P['PRIME_PS'] if hour == 'Prima' else P['HOUR_PS'][hour]
-    rows += psalm_rows(groups, None, single=a)
-    if hour == 'Prima':
-        pv = 'Qui natus es de Vírgine María.' if F['_cn'] == 'bvm' else 'Qui surrexísti a mórtuis.' if tp else 'Qui sedes ad déxteram Patris.'
-        cap = ('1 Tim 1', 'Regi sæculórum immortáli et invisíbili, soli Deo honor et glória in sǽcula sæculórum. Amen.')
-        la = '<h>Capitulum Responsorium Versus</h>\n<r>%s</r>\n<c>%s</c>%s\n<r>℟.</r> Deo grátias.\n\n' % (cap[0], cap[1][0], cap[1][1:])
-        la += '<r>℟.br.</r> Jesu Christe, Fili Dei vivi, * Miserére nobis%s. Jesu Christe.\n<r>℣.</r> %s Miserére nobis.\n<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. Jesu Christe.\n\n' % (', allelúja, allelúja' if tp else '', pv)
-        la += '<r>℣.</r> Exsúrge, Dómine, ádjuva nos%s.\n<r>℟.</r> Et líbera nos propter nomen tuum%s.' % ((', allelúja',) * 2 if tp else ('', ''))
-        en_ = '<h>Chapter Responsory Verse</h>\n<r>%s</r>\n%s\n<r>℟.</r> Thanks be to God.\n\n<r>℟.br.</r> Jesus Christ, Son of the living God, * Have mercy on us.\n<r>℣.</r> %s\n\n<r>℣.</r> Arise, O Lord, help us.\n<r>℟.</r> And deliver us for thy name\'s sake.' % (cap[0], en(cap[1]) or cap[1], ant_en(pv))
-        rows.append(put(la, en_))
-        rest = little(d, s, w, 'Prima')
-        i = next((k for k, r in enumerate(rest) if 'Capitulum Responsorium' in COMMON[r[0]]), None)
-        rows += rest[i + 1:] if i is not None else []
-        return rows
-    t = F[{'Tertia': 't', 'Sexta': 's', 'Nona': 'n'}[hour]]
-    ref, txt = t[0], t[1]
-    if isinstance(txt, str) and txt in ('v1', 'laud'): txt = chapter_of(F, txt)[1]
-    r1, r2, rv, V, R = t[2:]
-    alle = rk >= 4 and s not in ('sept', 'cin', 'quad', 'pass') and not tp
-    if F.get('add_alleluia') and tp: r2 = 'Allelúja, allelúja.' if 'allelúja' not in r2.lower() else r2; V, R = alla(V), alla(R)
-    e = en(txt) or txt
-    la = '<h>Capitulum Responsorium Versus</h>\n<r>%s</r>\n<c>%s</c>%s\n<r>℟.</r> Deo grátias.\n\n%s\n\n%s' % (ref, txt[0], txt[1:], rbr(r1, r2, rv, alle, 'la'), VR([V, R], 'la'))
-    en_ = '<h>Chapter Responsory Verse</h>\n<r>%s</r>\n%s\n<r>℟.</r> Thanks be to God.\n\n%s\n\n%s' % (ref, e, rbr(r1, r2, rv, alle, 'en'), VR([V, R], 'en'))
-    rows.append(put(la, en_))
-    rows.append(oratio_row(False, oratio))
-    rows.append(lib_row('conclusio'))
-    return rows
-def feast_vespers(d, s, w, F, fe, o, which, oratio, comms, ants_l=None, split_from=None):
-    """which = 1 (I Vespers, on the eve) or 2; split_from = (F, fe, o, oratio) of the following feast when Vespers are divided
-    'a capitulo de sequenti'"""
-    tp = F.get('_tp'); rk = RV.get(fe['rank'] or '', 0)
-    rows = [lib_row('incipit', lambda t, l: laus(t, l, s))]
-    if which == 1:
-        V1 = F['v1']; ant = V1['ant'] if not F.get('add_alleluia') else alla(V1['ant'])
-        if rk >= 4 and V1.get('ps', 'lp') == 'lp': rows += psalm_rows(LP, None, single=ant)
-        elif rk >= 2: g, _ = P['VESP'][str(w)]; rows += psalm_rows(g, None, single=ant)
-        else: g, a = P['VESP'][str(w)]; rows += psalm_rows(g, a)
-    else:
-        V2 = F['v2']; ant = V2.get('ant') or (ants_l[0] if ants_l else F['laud']['ant'][0])
-        if F.get('add_alleluia'): ant = alla(ant)
-        rows += psalm_rows([[p] for p in V2.get('ps') or cres(F['_cn'])['v2']['ps']], None, single=ant)
-    if split_from:
-        F, fe, o, oratio = split_from; which = 1; tp = F.get('_tp'); rk = RV.get(fe['rank'] or '', 0)
-        rows.append(note_row('A capítulo de sequénti: %s.' % fe['title'], 'From the chapter, of the following feast: %s.' % fe['title']))
-    part = 'v1' if which == 1 else 'v2'
-    X = F[part]
-    vr = X.get('vr') or F['v1']['vr']
-    if F.get('add_alleluia'): vr = [alla(x) for x in vr]
-    hy = X.get('hymn') or F['v1']['hymn']
-    dox = 'tp' if tp and (X.get('tp_stanzas') or F['v1'].get('tp_stanzas')) else None
-    rows.append(cap_hymn9(chapter_of(F, part) if X.get('cap') else chapter_of(F, 'v1'), hy, vr, d, dox, resp=F['v1'].get('resp') if which == 1 and rk >= 3 else None))
-    m = clean_proper(o, 'magn1' if which == 1 else 'magn2') or X.get('magn')
-    if F.get('add_alleluia'): m = alla(m)
-    rows.append(gospel_row('m', m))
-    rows.append(oratio_row(False, oratio))
-    rows += comms('Vespera')
-    rows.append(lib_row('conclusio'))
-    return rows
-def proper_entry(d, title):
-    """the extracted Sanctorale entry (offices.py) of a feast, matched by date and name"""
-    md = d.strftime('%m-%d'); best, br = None, 0.0; tn = nb(title)
-    for k, o in OFF.items():
-        if not k.startswith('S:' + md + ':'): continue
-        r_ = difflib.SequenceMatcher(None, tn[:40], nb(o.get('title', ''))[:40]).ratio()
-        if r_ > br: best, br = o, r_
-    return best if br >= 0.45 else None
-
-def office_season(d, s):
-    """the season used for a feast's Office on a day whose Tempore is wholly proper but admits feasts"""
-    if s in ('pent', 'tri', 'nat'): return 'pasch' if (d - easter(d.year)).days < 49 else 'pt'
-    return s
-FD_CACHE = {}
-def feast_day(d):
-    """the winning feast of a day with a Common to render it: dict(fe, cn, F, o, rk) or None"""
-    if d in FD_CACHE: return FD_CACHE[d]
-    r = None; s = season(d)[0]; w = (d.weekday() + 1) % 7
-    if not hard_proper(d):
-        for c in ECAL.get(d, []):
-            rk = RV.get(c['rank'] or '', 0)
-            if rk >= 1 and (season(d)[3] or celebrable(d, s, w, rk)):
-                cn = feast_common(d, re.sub(r'\s*\(translatum\)', '', c['title']))
-                if cn: r = dict(fe=c, cn=cn, F=common_full(cn, tp_of(d)), o=proper_entry(d, re.sub(r'\s*\(translatum\)', '', c['title'])), rk=rk)
-                break
-    FD_CACHE[d] = r; return r
-def day_rank(d):
-    """rank of the Office of a day for concurrence (Vespers)"""
-    if hard_proper(d): return 6
-    s = season(d)[0]; w = (d.weekday() + 1) % 7
-    for c in ECAL.get(d, []):
-        rk = RV.get(c['rank'] or '', 0)
-        if rk >= 1 and (season(d)[3] or celebrable(d, s, w, rk)): return rk
-    if w == 0: return 5 if s in ('adv', 'sept', 'quad', 'pass') else 2.5
-    return 0
-def comm_ant(c, hour):
-    """antiphon and versicle of a commemoration: the feast's proper Benedictus / Magnificat antiphon where clean, else its
-    Common's (Lauds: Benedictus antiphon and Lauds versicle; Vespers: of I Vespers for tomorrow's feast, else of II Vespers)"""
-    try:
-        cn = feast_common(c['_d'], c['title'])
-        if not cn or cn not in CM.C: return None
-        F = common_full(cn, tp_of(c['_d'])); o = proper_entry(c['_d'], c['title'])
-        if hour == 'Laudes': a = clean_proper(o, 'bened') or F['laud'].get('bened'); v = F['laud'].get('vr')
-        elif c.get('_v1'): a = clean_proper(o, 'magn1') or F['v1'].get('magn'); v = F['v1'].get('vr')
-        else: a = clean_proper(o, 'magn2') or F.get('v2', {}).get('magn') or F['v1'].get('magn'); v = F.get('v2', {}).get('vr') or F['v1'].get('vr')
-        if not a or not v: return None
-        if F.get('_tp') or F.get('add_alleluia'): a, v = alla(a), [alla(x) for x in v]
-        return a, v
-    except (KeyError, TypeError):
-        return None
-def comm_rows(entries):
-    def f(hour):
-        out = []
-        for c in entries:
-            if c['rank'] in (None, ''): continue
-            orat = san_oratio(c['_d'], c['title'])
-            if orat and re.search(r'prævení', orat): orat = None
-            la = '<h>Commemoratio</h>\n<n>%s%s</n>' % (c['title'], '' if orat else ' (Oratio in præparatione)')
-            en_ = '<h>Commemoration</h>\n<n>%s%s</n>' % (c['title'], '' if orat else ' (prayer in preparation)')
-            av = comm_ant(c, hour)
-            if av:
-                a, v = av
-                la += '\n<r>Ant.</r> %s\n%s' % (a, VR(v, 'la')); en_ += '\n<r>Ant.</r> %s\n%s' % (ant_en(a), VR(v, 'en'))
-            if orat: la += '\n<c>O</c>rémus.\n<c>%s</c>%s\n<r>℟.</r> Amen.' % (orat[0], orat[1:]); en_ += '\n<c>L</c>et us pray.\n%s\n<r>℟.</r> Amen.' % (en(orat) or orat)
-            out.append(put(la, en_))
-        return out
-    return f
-def others(d, win_title):
-    return [dict(c, _d=d) for c in ECAL.get(d, []) if c['title'] != win_title]
-
 TEDEUM = None
 def main():
     effective_calendar()
@@ -1011,7 +595,7 @@ def main():
             m = re.search(r'<r>Te Deum</r>\n(<c>T</c>e Deum laudámus[\s\S]*)$', v); e = re.search(r'<r>Te Deum</r>\n(<c>W</c>e praise thee[\s\S]*)$', lib[pair[k]])
             if m: TEDEUM = (m.group(1), e.group(1) if e else m.group(1)); break
     if not TEDEUM: raise SystemExit('no Te Deum')
-    n = 0; d = FROM; NF = 0
+    n = 0; d = FROM
     while d <= TO:
         s, wk, num, prop = season(d); w = (d.weekday() + 1) % 7
         if prop: H = proper_day(d); t = {'nat': 'Tempus Nativitatis', 'tri': 'Triduum Sacrum et Octava Paschæ', 'pent': 'Ab Ascensione ad Octavam Corporis Christi'}[s]
@@ -1026,17 +610,7 @@ def main():
             H = {'Matutinum': matins(d, ss, w), 'Laudes': lauds(d, ss, w), 'Vespera': vespers(d, ss, w), 'Completorium': compline(d, ss, w)}
             for h in ('Prima', 'Tertia', 'Sexta', 'Nona'): H[h] = little(d, ss, w, h)
             prop = False; t = ''
-        FX = feast_day(d) if not hard_proper(d) else None
-        if FX:
-            fe, F, o, rk = FX['fe'], FX['F'], FX['o'], FX['rk']; fs = office_season(d, s); NF += 1
-            orat = feast_oratio(d, fe, F)
-            cm = comm_rows(others(d, fe['title']))
-            H['Matutinum'] = feast_matins(d, fs, w, F, fe, o, rk)
-            H['Laudes'], ants_l = feast_lauds(d, fs, w, F, fe, o, rk, orat, cm)
-            for h in ('Prima', 'Tertia', 'Sexta', 'Nona'): H[h] = feast_little(d, fs, w, h, F, fe, ants_l, orat, rk)
-            H['Completorium'] = compline(d, fs, w)
-            t = '%s ~ %s' % (fe['title'], fe['rank']); rank = None
-        elif cal and not prop:
+        if cal and not prop:
             w_ = (d.weekday() + 1) % 7
             win, comms = None, []
             for i, c in enumerate(cal):
@@ -1045,8 +619,8 @@ def main():
                 else: comms.append(c)
             if win:
                 rk = win['rank']; t = '%s ~ %s' % (win['title'], rk); rank = None
-                note = note_row('Hodie: %s (%s). Officium proprium in præparatione; intérim Psalterium de Tempore cum Oratióne Sancti.' % (win['title'], rk),
-                                'Today: %s (%s). The proper Office is in preparation; meanwhile the Psalter of the day with the Saint’s prayer.' % (win['title'], rk))
+                note = note_row('Hodie: %s (%s). Officium proprium vel de Communi in præparatione; intérim Psalterium de Tempore cum Oratióne Sancti.' % (win['title'], rk),
+                                'Today: %s (%s). The proper or Common Office is in preparation; meanwhile the Psalter of the day with the Saint’s prayer.' % (win['title'], rk))
                 for h in H: H[h].insert(0, note)
                 orat = san_oratio(d, win['title'])
                 if orat:
@@ -1055,25 +629,12 @@ def main():
                     for h in ('Laudes', 'Vespera'): H[h].insert(len(H[h]) - 1, mem)
             for c in comms:
                 if c['rank'] in (None, ''): continue
-                mem = comm_rows([dict(c, _d=d)])('Laudes')[0]
+                orat = san_oratio(d, c['title'])
+                la = '<h>Commemoratio</h>\n<n>%s%s</n>' % (c['title'], '' if orat else ' (Oratio in præparatione)')
+                en_ = '<h>Commemoration</h>\n<n>%s%s</n>' % (c['title'], '' if orat else ' (prayer in preparation)')
+                if orat: la += '\n<c>O</c>rémus.\n<c>%s</c>%s\n<r>℟.</r> Amen.' % (orat[0], orat[1:]); en_ += '\n<c>L</c>et us pray.\n%s\n<r>℟.</r> Amen.' % (en(orat) or orat)
+                mem = put(la, en_)
                 for h in ('Laudes', 'Vespera'): H[h].insert(len(H[h]) - 1, mem)
-        # Vespers by concurrence: I Vespers of tomorrow's feast, II Vespers of today's, or divided a capitulo
-        dn = d + datetime.timedelta(days=1); TX = feast_day(dn) if not hard_proper(dn) else None
-        rt, rn = day_rank(d), day_rank(dn)
-        if TX and TX['fe']['rank'] != 'Memoria' and (rn > rt or (rn == rt and not FX)):
-            Fn = TX['F']; orn = feast_oratio(dn, TX['fe'], Fn)
-            cmv = comm_rows(([dict(FX['fe'], _d=d)] if FX else []) + others(d, FX['fe']['title'] if FX else ''))
-            H['Vespera'] = feast_vespers(d, office_season(dn, season(dn)[0]), w, Fn, TX['fe'], TX['o'], 1, orn, cmv)
-        elif FX and TX and rn == rt and FX['fe']['rank'] != 'Tres Lectiones':
-            Fn = TX['F']; orn = feast_oratio(dn, TX['fe'], Fn)
-            cmv = comm_rows([dict(FX['fe'], _d=d)] + others(d, FX['fe']['title']))
-            H['Vespera'] = feast_vespers(d, office_season(d, s), w, FX['F'], FX['fe'], FX['o'], 2, None, cmv, ants_l, split_from=(Fn, TX['fe'], TX['o'], orn))
-        elif FX and FX['fe']['rank'] != 'Tres Lectiones' and rt >= rn:
-            nxt = ([dict(TX['fe'], _d=dn, _v1=True)] if TX else [])
-            H['Vespera'] = feast_vespers(d, office_season(d, s), w, FX['F'], FX['fe'], FX['o'], 2, orat, comm_rows(nxt + others(d, FX['fe']['title'])), ants_l)
-        elif FX:
-            H['Vespera'] = vespers(d, office_season(d, s), w)
-            mem = comm_rows([dict(FX['fe'], _d=d)])('Vespera')[0]; H['Vespera'].insert(len(H['Vespera']) - 1, mem)
         day = {'t': [t if rank is None else '%s ~ %s' % (t, rank)], 'tv': [], 'h': H, 'p': {}, 'b': {}}
         os.makedirs(os.path.join(OUT, str(d.year)), exist_ok=True)
         json.dump(day, open(os.path.join(OUT, str(d.year), d.strftime('%m-%d') + '.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
@@ -1082,5 +643,5 @@ def main():
     os.makedirs(os.path.join(OUT, 'psalter'), exist_ok=True)
     for k, v in SH.items(): json.dump(v, open(os.path.join(OUT, 'psalter', k + '.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
     json.dump({'from': FROM.isoformat(), 'to': TO.isoformat()}, open(os.path.join(OUT, 'range.json'), 'w'))
-    print(n, 'days;', NF, 'feasts from the Commons;', len(COMMON), 'blocks;', len(SH), 'shards')
+    print(n, 'days;', len(COMMON), 'blocks;', len(SH), 'shards')
 if __name__ == '__main__': main()

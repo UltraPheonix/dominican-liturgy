@@ -442,3 +442,25 @@ line by line from the scans (then Christmas–Epiphany, then exact precedence).
   Mart.+Ep./Papæ→mart_pont, Mart.→mart, MM.→mm, Ep./Papæ Conf.→conf_pont, Doct.→doct, Conf.→conf, Abb.→abb, Virg. et Mart.→
   virg_mart, Virg.→virg, Mart. (woman)→mart_fem, Vid./others→nec, B.M.V.→bvm, Dedicatio→ded; _tp forms in Paschaltide).
   Test: St Andrew 2026-11-30 (Totum Duplex? check calendar) with /tmp/pg/t1909.py-style headless run; bump sw, commit, push.
+
+## ROLLED BACK 2026-11-26 (sw propria-v89): 1909 Commons work kept in archive/, NOT live. READ BEFORE TOUCHING 1909.
+Joe asked for this work to come off the site and be kept for later. Two commits were undone by a revert commit (history kept):
+- d2b9bff "1909 Breviary: type the remaining Commons and the Paschaltide forms" (tools/b09/commons1909.py: the rest of the
+  Commons hand-typed from the 1909 scans, with their Paschaltide forms).
+- f5aaba3 "1909 Office: saints' days built from the Commons (292 feasts), sw v88" (build.py maps each feast title to its Common,
+  handles rank, fills feast_hours; new tools/b09/common_lessons.py -> commonlessons1909.json = the Commons' Matins lessons;
+  data/office1909/ regenerated for 2026-11..2027-12).
+The site is now exactly as at ccd3989 except sw.js (v89, so phones drop the cached v88 pages) and this note.
+Archive: archive/1909-commons-2026-11-26.json (not loaded by the site; sw.js does not list it). It holds both commit ids, the base
+commit and, per file (386 files), its git patch against ccd3989. Restore: `git cherry-pick d2b9bff f5aaba3`, or join every
+"patch" and `git apply` it on ccd3989 (checked 2026-11-26: it reproduces f5aaba3 exactly). Then bump sw.js VERSION.
+Known gaps in that work, to fix before it goes live again:
+- 284 saints' days had at least one Matins lesson showing "in preparation".
+- About 69 to 244 passages still had scan (OCR) errors.
+- Matins responsories always came from the Common, even where a feast has its own (St Andrew).
+- "N." printed where the saint's name should go.
+- Dec 8 and other feasts with their own Office used the Common of Our Lady.
+- 24 doubtful readings went live as read; each needs checking against its scan page.
+- Unclear whether St Andrew's vigil prayer (Nov 30) was right.
+Not started and not committed: the UI clean-up (17 small fixes proposed to Joe on 2026-11-26, then dropped), the Mass prayers
+from the 1933 Missal (need the page images), and the Options Mass list being blank on the last Sunday after Trinity.

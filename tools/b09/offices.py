@@ -57,9 +57,7 @@ def parse_office(chunk):
         if mg: o['magn2'] = fix_short(mg[-1])
     ors = [x for x in re.finditer(r'Oratio\.\s*(.+?' + CONC + r')\.?', chunk)]
     if ors:
-        # a first prayer that asks for the coming feast (cujus prævenímus festivitátem) is the Vigil's: take the next one
-        cand = [m for m in ors if not re.search(r'prævení|vigíli', m.group(1), re.I)] or ors
-        t = clean(cand[0].group(1)); o['oratio'] = fix_short(t, 0.6)
+        t = clean(ors[0].group(1)); o['oratio'] = fix_short(t, 0.6)
     lm = re.search(r'Ad Laudes(?: Et Per Horas)? Antiphonae\.\s*(.+?)(?=Capitulum|Psalmi|Ad Benedíctus|Hymnus)', chunk)
     if lm:
         parts = re.split(r'(?:^|\s)(?:[1lI2-5s]|ii|iii|iv|v)[\.\-]\s', ' ' + lm.group(1))
