@@ -348,6 +348,36 @@
    "p": "al",
    "i": "Stabat sancta Maria",
    "pg": "573"
+  },
+  "op-g50-veni-de-libano-in": {
+   "p": "in",
+   "i": "Veni de Libano",
+   "pg": "586"
+  },
+  "op-g50-confiteor-tibi-gr": {
+   "p": "gr",
+   "i": "Confiteor tibi",
+   "pg": "586"
+  },
+  "op-g50-quasi-rosa-al": {
+   "p": "al",
+   "i": "Quasi rosa",
+   "pg": "586"
+  },
+  "op-g50-jam-hiems-tr": {
+   "p": "tr",
+   "i": "Jam hiems",
+   "pg": "586"
+  },
+  "op-g50-magnificat-of": {
+   "p": "of",
+   "i": "Magnificat anima mea",
+   "pg": "586"
+  },
+  "op-g50-circumduxit-co": {
+   "p": "co",
+   "i": "Circumduxit eam",
+   "pg": "586"
   }
  },
  "Quad1t": {
@@ -2040,5 +2070,27 @@
   ],
   "p39": "G50 p. 332",
   "_why_g50": "G50 p. 332: Post Lect. Responsorium I. Beata gens, pag. 328; Post Epistolam Responsorium II. Quis sicut"
+ },
+ "S1003": {
+  "in": [
+   "op-g50-veni-de-libano-in"
+  ],
+  "gr": [
+   "op-g50-confiteor-tibi-gr"
+  ],
+  "al": [
+   "op-g50-quasi-rosa-al"
+  ],
+  "lent_tr": [
+   "op-g50-jam-hiems-tr"
+  ],
+  "of": [
+   "op-g50-magnificat-of"
+  ],
+  "co": [
+   "op-g50-circumduxit-co"
+  ],
+  "p39": "G50 pp. 586(1)-586(6)",
+  "_why_g50": "G50 pp. 586(1)-586(6): Officium Veni de Libano; Responsorium Confiteor tibi; Alleluia V. Quasi rosa; infra Septuagesimam Tractus Jam hiems; Offertorium Magnificat; Communio Circumduxit (each checked against the scan)"
  }
 }
