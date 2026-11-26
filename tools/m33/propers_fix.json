@@ -378,6 +378,31 @@
    "p": "co",
    "i": "Circumduxit eam",
    "pg": "586"
+  },
+  "op-g50-quasi-stella-fr-gr": {
+   "p": "gr",
+   "i": "Quasi stella matutina",
+   "pg": "588"
+  },
+  "op-g50-o-patriarcha-al": {
+   "p": "al",
+   "i": "O Patriarcha pauperum",
+   "pg": "588"
+  },
+  "op-g50-sanctitatis-se": {
+   "p": "se",
+   "i": "Sanctitatis nova signa",
+   "pg": "589"
+  },
+  "op-g50-magnificabitur-of": {
+   "p": "of",
+   "i": "Magnificabitur Christus",
+   "pg": "594"
+  },
+  "op-g50-non-sunt-co": {
+   "p": "co",
+   "i": "Non sunt condignae",
+   "pg": "595"
   }
  },
  "Quad1t": {
@@ -2303,6 +2328,53 @@
    "t": "Alleluia. ℣. Holy Mary, Queen of heaven and Mistress of the world, stood sorrowful by the cross of our Lord Jesus Christ.",
    "r": "",
    "s": "own"
+  },
+  "op-g50-quasi-stella-fr-gr": {
+   "t": "As the morning star in the midst of a cloud, and as the moon at the full, he shineth in his days. ℣. And as the sun when it shineth, so did he shine in the temple of God.",
+   "r": "Ecclus. 50, 6-7",
+   "s": "douay"
+  },
+  "op-g50-o-patriarcha-al": {
+   "t": "Alleluia. ℣. O Francis, patriarch of the poor, by thy prayers increase the number of thy children in the charity of Christ: those whom thou didst bless with crossed hands, as Jacob dying.",
+   "r": "",
+   "s": "own"
+  },
+  "op-g50-sanctitatis-se": {
+   "t": "New signs of holiness have appeared, worthy of praise, wonderful and gracious, entrusted to Francis. To the rule of a new flock the laws of a new covenant are given; through Francis the King's commands are renewed. A new order, a new life, unheard of, rises in the world; a holy law restores the state of the Gospel. To the pattern of Christ's law the right is brought into conformity: it keeps the rite of the rule given, the height of the apostolic life. A rough cord, a hard garment girds and covers him without care; bread is given by measure, the shoe is cast away. Poverty alone he seeks, he keeps nothing of earth; Francis treads all things down; the purse is despised. He seeks places of tears, his bitter heart pours out its cries, sorrowing he mourns the precious time lost in the world. Withdrawn into a mountain cave he weeps, he prays lying on the ground; at last, his mind made serene, he hides in the cell. There he rests, sheltered by the rock, borne upward to things divine; an upright judge, he scorns things below and chooses the heavenly. He curbs the flesh under discipline, transformed into the likeness of Christ; he takes his food from the Scripture, he drives away earthly things. Then from on high comes a seraph-prince, behold the King and Monarch: the patriarch trembles, struck with fear at the vision. He bears the signs of Christ and gives the wounds to him, while with sorrowing heart he silently wonders at the passion. The sacred body is sealed, wounded in hand and foot; the right side is pierced and reddened with blood. They speak words of hidden things, many things to come are made plain; the saint sees the power of the words by the mystical breath. At once wondrous nails appear, black without, golden within; pain pierces, heavy sharp points torture. The craftsman's art has no part in the opening of the limbs; nature did not print them, nor the torment of the hammer. By the signs of the cross which thou didst bear, by which thou didst triumph over the world, flesh and foe thou didst overcome with glorious victory. Francis, may we be defended, protected in adversity, that we may enjoy our reward in heavenly glory. Loving father, holy father, may thy devoted people, with thy help and the company of thy brethren, win the rewards. Make them companions of those on high, whom thou dost form by thy way of life: may the flock of Minors attain eternal joys. Amen. Alleluia.",
+   "r": "Thomas of Celano",
+   "s": "own"
+  },
+  "op-g50-magnificabitur-of": {
+   "t": "Christ shall be magnified in my body, whether it be by life or by death. For to me, to live is Christ: and to die is gain.",
+   "r": "Phil. 1, 20-21",
+   "s": "douay"
+  },
+  "op-g50-non-sunt-co": {
+   "t": "The sufferings of this time are not worthy to be compared with the glory to come, that shall be revealed in us.",
+   "r": "Rom. 8, 18",
+   "s": "douay"
   }
+ },
+ "S1004": {
+  "in": [
+   4292
+  ],
+  "gr": [
+   "op-g50-quasi-stella-fr-gr"
+  ],
+  "al": [
+   "op-g50-o-patriarcha-al"
+  ],
+  "se": [
+   "op-g50-sanctitatis-se"
+  ],
+  "of": [
+   "op-g50-magnificabitur-of"
+  ],
+  "co": [
+   "op-g50-non-sunt-co"
+  ],
+  "p39": "G50 pp. 587-595",
+  "_why_g50": "G50 pp. 587-595: Officium Gaudeamus; Responsorium Quasi stella; Alleluia V. O Patriarcha pauperum; Sequentia Sanctitatis nova signa; Offertorium Magnificabitur; Communio Non sunt condignae (transcribed from the scan)"
  }
 }
