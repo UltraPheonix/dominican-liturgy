@@ -528,3 +528,17 @@ Then build.py: P = propers[md] merged over the Common (cmerge shape: v1.ant/ants
 mat.resp from lessons[].resp when all 9 are there, laud.ant/bened, v2.ant/magn; lessons → o['lessons']).
 Known small bugs: Lauds antiphons lose the 5th when its number is lost; v2 ant may keep 'Psalmus Dixit…' tail; last antiphon of a
 nocturn keeps its versicle when the ℣ sign is read as a word.
+### Proper Offices — state 2026-11-26 20:00 (branch commons1909-v2, NOT live)
+proper.py now chunks by the calendar (chunks_cal: dynamic-programming alignment of calendar1909.txt titles with the text before each
+rank word; VOLS = v1 pages 768-1577 from 11-29 to 06-15, v2 476-1369 from 04-13 to 12-02). `python3 proper.py v1; python3 proper.py v2`
+(≈5 min each) → propers1909.json: 208 feasts ('MM-DD|title'), 162 with proper Matins material, 11 with 9 lessons + 9 responsories
+(St Andrew, Conversion of St Paul, Transl. St Thomas, St Agatha, St Patrick, 7 Founders, Cathedra Antioch., Bl. Jordan of Pisa,
+St Vincent Ferrer, St Thomas Ap., Holy Innocents); most Duplex feasts rightly have 3 (lessons iv-vi; the rest from the Common).
+SKIPPED (chunk > 60k chars = an anchor is missing inside): 12-07…12-15 (Dec 8 heading lost), 12-31…01-14, 03-24, 09-29, 10-29,
+v1 after 06-11 and v2 after 12-02 (end of the Sanctorale: find the true end page). Fix with a manual anchor list (md → literal snippet).
+Each entry has 'q' = pieces with words unknown to the DO corpus → to check on the page image; put corrections in a hand file
+(propers_fix.json, to create) rather than in the generated JSON.
+NOT YET WIRED into build.py. To wire: in feast_day, P = propers.get(md|title); F = cmerge(F, shape(P)) with
+v1.ant|ants, v1.magn, mat.invit, mat.noct[i] = (psalms of the Common, P.mat.nants[i], P.mat.nvr[i] or the Common's), laud.ant (5), laud.bened,
+v2.ant, v2.magn; lessons: o['lessons'] = P['lessons'] (good_lessons keeps src vulgate/DO ≥ 0.75); responsories: P.lessons[n].resp
+(a, b, v, gloria) → tuple for resp9 when present, else the Common's by order. Use a piece only when it has no entry in 'q'.

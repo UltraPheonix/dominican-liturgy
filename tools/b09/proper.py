@@ -208,6 +208,66 @@ def chunks(vol, a, b):
     for i, (s, md, title) in enumerate(hs):
         e = hs[i + 1][0] if i + 1 < len(hs) else len(t)
         yield md, title, t[s:e]
+# ---------- chunking by the calendar (the date headings are too often garbled by the OCR) ----------
+RANKW = r'(?i:Totum\s?Dupl\w*|Dupl\w+|Semidupl\w*|Simpl\w+|Tres\.?|Trium Lect\w*|iij\. Lect\w*|Memoria|Solem\s?n\w+)'
+def nrm(s):
+    import unicodedata
+    s = unicodedata.normalize('NFD', s.lower().replace('æ', 'ae').replace('œ', 'oe').replace('ǽ', 'ae'))
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn').replace('j', 'i')
+    return re.sub(r'\s+', ' ', re.sub(r'[^a-z ]', ' ', s)).strip()
+def calendar():
+    out = []
+    for l in open(os.path.join(HERE, 'calendar1909.txt'), encoding='utf-8'):
+        if l.startswith('#') or '|' not in l: continue
+        md, ti, rk = (l.rstrip('\n').split('|') + ['', ''])[:3]
+        out.append((md, ti, rk))
+    return out
+STOPW = set('conf ep mart virg vid et op eccl doct de a ab ss bb s b v mm abbatis papae apostoli sociorum in ord praed'.split())
+def bigr(w): return {w[k:k + 2] for k in range(len(w) - 1)} or {w}
+def chunks_cal(vol, a, b, start, stop=None):
+    """(md, calendar title, rank, text) for the feasts found: a monotone alignment (dynamic programming) of the calendar entries,
+    in the order of the book from entry `start` to `stop` (MM-DD), with the headings of the text (the words before each rank word)"""
+    t = O.text_sancti(vol, a, b)
+    cands = []
+    for m in re.finditer(r'[.,]\s*' + RANKW + r'[.,*]', t):
+        s0 = max(0, m.start() - 110); ws = nrm(t[s0:m.start()]).split()[-14:]
+        cands.append((s0, m.end(), [bigr(w) for w in ws if len(w) > 2], nrm(m.group(0)).replace(' ', '')))
+    cal = calendar(); i0 = next(i for i, c in enumerate(cal) if c[0] >= start)
+    order = cal[i0:] + cal[:i0]
+    if stop:
+        i1 = max(i for i, c in enumerate(order) if c[0] == stop); order = order[:i1 + 1]
+    ents = []
+    for md, ti, rk in order:
+        if not rk or rk == 'Memoria' or re.match(r'Vig[ií]lia', ti): continue
+        key = [bigr(w) for w in nrm(ti).split() if len(w) > 3 and w not in STOPW]
+        if key: ents.append((md, ti, rk, key, nrm(rk).split()[0][:4]))
+    n, m_ = len(ents), len(cands)
+    def score(e, c):
+        tot = 0.0
+        for kb in e[3]:
+            tot += max((2.0 * len(kb & wb) / (len(kb) + len(wb)) for wb in c[2]), default=0.0)
+        sc = tot / len(e[3])
+        if e[4] in c[3]: sc += 0.06
+        return sc
+    best = [[0.0] * (m_ + 1) for _ in range(n + 1)]; back = [[0] * (m_ + 1) for _ in range(n + 1)]
+    for i in range(1, n + 1):
+        e = ents[i - 1]; bi, bp = best[i], best[i - 1]; bk = back[i]
+        for j in range(1, m_ + 1):
+            v, w = bp[j], 0                       # entry i not in this volume / not found
+            if bi[j - 1] > v: v, w = bi[j - 1], 1  # candidate j is no heading
+            sc = score(e, cands[j - 1])
+            if sc >= 0.74 and bp[j - 1] + sc > v: v, w = bp[j - 1] + sc, 2
+            bi[j] = v; bk[j] = w
+    found = []; i, j = n, m_
+    while i > 0 and j > 0:
+        w = back[i][j]
+        if w == 2: found.append((ents[i - 1][0], ents[i - 1][1], ents[i - 1][2], cands[j - 1][0], cands[j - 1][1])); i -= 1; j -= 1
+        elif w == 1: j -= 1
+        else: i -= 1
+    found.reverse()
+    for k, (md, ti, rk, s0, e0) in enumerate(found):
+        end = found[k + 1][3] if k + 1 < len(found) else len(t)
+        yield md, ti, rk, t[s0:end]
 VOLS = {'v1': (768, 1577, '11-29', '06-15'), 'v2': (476, 1369, '04-13', '12-02')}
 if __name__ == '__main__':
     vol = sys.argv[1]; a, b, st, en = VOLS[vol]
