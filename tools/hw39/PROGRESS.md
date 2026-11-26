@@ -99,3 +99,12 @@ See tools/orat39/MISSING.md for the per-Mass list.
 ## 2026-11-19 evening: Washing of the altars done (Triduum 1927 pp. 82-111) -> Quad6h_abl.src + gabc/op-abl-*, tools/chant/abl.
 - 1927 book OCR index (page headings): /home/claude/dl/tri_index.txt (pdf page = book page/2 + 1; Thursday Matins pdf 2-17, Lauds 17-23, Hours 24-29, Ps. pœnit. 30-33, Compline 67; Friday Matins 69-84, Lauds 84-90, Hours 90-91; ...).
 - NEXT: Triduum Office (Tenebrae etc.) - the Office tab + holyweek page; then Holy Sat tracts check, Sanctus/Ite; Palm Sunday procession (Processionarium 1913).
+
+## 2026-11-26 (Mass chat): Holy Saturday chants checked against the Triduum O.P. 1927 (pdf pp. 138-147 = book pp. 271-288)
+- Tracts Cantemus (5971), Vinea (6418), Sicut cervus (7107), Alleluia Confitemini (5407), Tract Laudate (7201), Vespers
+  antiphons Alleluia (5281, printed in f3 in the book, c4 in GregoBase: same notes) and Vespere autem (7174): no
+  differences found (scan crops compared with the renderings, neume by neume; the openings note by note).
+- Added the book's Ite, missa est, allelúia (p. 288 = Kyriale Ite IV, 7310: same notes) after the Postcommunion rubric
+  (Quad6s.src and data/holyweek_text.js; NB holyweek_text.js has later G-blocks not in the .src files, so patch, do not rebuild).
+- Maundy Thursday: the Triduum gives no Ordinary melodies ("Missa ... sicut in festo Toto Duplici celebratur", p. 65).
+- Books now at /tmp/dl/tri.pdf (Triduum 1927) and /tmp/dl/proc.pdf (Processionarium 1913) in this container.
