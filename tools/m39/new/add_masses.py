@@ -15,11 +15,23 @@ XF = json.load(open('tools/orat39/extra_final.json')); EF = json.load(open('tool
 SPEC = [x for f in sorted(glob.glob(H + '/spec_*.json')) for x in json.load(open(f))]
 OR = {}
 for f in sorted(glob.glob(H + '/or_*.json')): OR.update(json.load(open(f)))
+# Commons the site has no Mass for, put together from Masses that carry exactly those chants and readings:
+# @BMV = In festis B. Mariae Virginis (Missale O.P. 1939, p. 1*); @ABB = In festo unius Abbatis (p. 25*).
+VIRT = {
+ '@BMV': {'title': 'Commune festorum B. Mariae Virginis (p. 1*)', 'parts': {'in': [{'id': 4289}], 'gr': [{'id': 6293}], 'al': [{'id': '7550s'}], 'of': [{'id': 8151}], 'co': [{'id': 7543}]},
+          'season': {}, 'readings_from': 'S0805', 'req': ['in', 'gr', 'al', 'of', 'co'], 'jgabc': None},
+ '@ABB': {'title': 'Commune unius Abbatis (p. 25*)', 'parts': {'in': [{'id': 5885}], 'gr': [{'id': 7142}], 'al': [{'id': 7042}], 'of': [{'id': 6021}], 'co': [{'id': 4856}]},
+          'season': {'lent': {'tr': [{'id': 7125}]}, 'pasch': {'al': [{'id': 7042}, {'id': 6824}]}, 'asc': {'al': [{'id': 7042}, {'id': 5526}]}},
+          'readings_from': 'S0207', 'req': ['in', 'gr', 'al', 'of', 'co'], 'jgabc': 'mass_i_confessor_not_bishop'}}
+for v in VIRT.values():
+    v['readings'] = D['masses'][v['readings_from']]['readings']
+    for p in v['parts'].values():
+        for x in p: assert str(x['id']) in D['chants'], x
 def order(k):   # the site's lists run from November
     m = D['masses'][k]; return ((m['month'] - 10) % 12, m['day']) if m.get('month') is not None else (99, 0)
 n = 0; fix = {}
 for x in SPEC:
-    k = x['key']; c = D['masses'][x['common']]
+    k = x['key']; c = VIRT[x['common']] if x['common'] in VIRT else D['masses'][x['common']]
     if k in D['masses'] and not D['masses'][k].get('m39new'): raise SystemExit('key already used by another Mass: ' + k)
     mo, dd = int(x['d'][:2]) - 1, int(x['d'][2:])
     m = {'title': x['title'], 'en': '%s %d — %s' % (MEN[mo], dd, x['title'].split(' — ', 1)[1]), 'rank': x['rank'], 'op': x['op'],
@@ -27,7 +39,13 @@ for x in SPEC:
          'note': x.get('note') or 'Missale O.P. (1939), p. %s: Mass from the %s, with proper orations.' % (OR.get(k, {}).get('p', '?'), c['title']),
          'parts': copy.deepcopy(c['parts']), 'season': copy.deepcopy(c.get('season', {})), 'extras': [], 'month': mo, 'day': dd,
          'readings': copy.deepcopy(c['readings']), 'req': list(c['req']), 'jgabc': c.get('jgabc'), 'name_en': x['name_en'], 'color': x['color'], 'm39new': True}
-    rd = copy.deepcopy(RD.get(x['common'], []))
+    if 'pasch' in x:   # Tempore Paschali the Introit, Offertory and Communion (and Alleluias) of another Common
+        pc = D['masses'][x['pasch']]
+        m['season']['pasch'] = {q: copy.deepcopy(pc['parts'][q]) for q in ('in', 'of', 'co') if q in pc['parts']}
+        m['season']['pasch']['al'] = copy.deepcopy(pc.get('season', {}).get('pasch', {}).get('al', pc['parts'].get('al', [])))
+        if 'asc' in pc.get('season', {}): m['season']['asc'] = copy.deepcopy(pc['season']['asc'])
+        m['note'] += ' Tempore Paschali: Introit, Offertory, Communion and Alleluias of the %s.' % pc['title']
+    rd = copy.deepcopy(RD.get(c.get('readings_from', x['common']), []))
     if 'gospel' in x:
         src, ref = x['gospel']
         g = next(r for r in RD[src] if r['ref'] == ref)
