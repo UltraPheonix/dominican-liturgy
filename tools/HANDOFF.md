@@ -364,3 +364,16 @@ Tools: OCR with tesseract 'latf'/'lat' (tessdata from raw.githubusercontent.com/
   Trinitas', ferial 'Deus exaudi orationem meam'). Prime, in chapter: Pretiosa … Obitus/Anniversarium prayers (pdf 110-112).
 NEXT: write tools/b09/psalter1909.json (per day/hour: antiphons, psalms, chapter, hymn, versicle, prayer, seasonal variants)
 from outline_psalter.txt (fix wording against DO), then build.py → data/office1909/ for the date range, Ordinary first.
+### 1909 — Ordinary LIVE (2026-11-26 08:40, sw propria-v83)
+- tools/b09/make_psalter.py → tools/b09/psalter1909.json (the whole 1909 Psalter: invitatories, Sunday Matins 3 nocturns with
+  pe/pt(leonine)/adv/pass antiphons, ferial nocturn 6 pairs, Lauds/Vespers per day, Prime (Sunday Sept.–Palm 21–25), Terce–None
+  chapters + R.br. by season, Compline, memorials BVM/Cross). Checked doubtful lines vs page images (pdf 93–101, 113–121, 216–220).
+- tools/b09/build.py → data/office1909/ (426 days 2026-11-01..2027-12-31; all blocks in common.json; psalm shards from DO
+  Psalmorum Latin/English, keys '§NN.L118a'/'§NN.E…'; hymns + fixed texts (Compline, Pretiosa, Confiteor, Te Deum) reused from
+  the 1954 data by id; English for antiphons/chapters via a DO Latin→English line map (fallback: Latin)).
+  Seasons: adv, nat(proper), pe, sept, cin(Ash Wed–Sat), quad, pass, tri(Holy Thu–Low Sat: proper), pasch, pent(Ascension–
+  Corpus Christi octave: proper), pt. Proper parts show "De Proprio de Tempore (in præparatione)".
+- office.html: 1909 option enabled. Test: /tmp/pg/t1909.py (playwright, 18 dates × 8 hours × chant on/off, no errors).
+NEXT (Joseph 08:13: Passiontide and Triduum must be perfect): Proprium de Tempore from v1 pdf 246 → tools/b09/tempora1909.json:
+  Advent first (starts 29 Nov), then Christmas, Lent, Passiontide, Holy Week + Triduum (line by line vs scans), Easter…; then
+  Sanctoral/Commons (vol. 2) + Rubricae generales precedence; then chant (Jandel 1862, Nocturnale).

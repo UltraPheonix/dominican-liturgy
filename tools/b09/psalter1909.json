@@ -1,0 +1,1596 @@
+{
+ "INVIT": {
+  "0": "Veníte, exsultémus Dómino: * Jubilémus Deo salutári nostro.",
+  "1": "Veníte, * Exsultémus Dómino.",
+  "2": "Jubilémus Deo * Salutári nostro.",
+  "3": "In manu tua, Dómine, * Omnes fines terræ.",
+  "4": "Adorémus Dóminum, * Quóniam ipse fecit nos.",
+  "5": "Dóminum, qui fecit nos, * Veníte, adorémus.",
+  "6": "Dóminum Deum nostrum * Veníte, adorémus."
+ },
+ "HYMN_MAT": {
+  "adv": "Verbum supernum prodiens",
+  "pa": "Nocte surgentes",
+  "quad": "Summi largitor praemii",
+  "pass": "Pange lingua gloriosi proelium",
+  "pasch": "Aurora lucis rutilat"
+ },
+ "SUN_MAT": [
+  {
+   "groups": [
+    [
+     1,
+     2,
+     3,
+     6
+    ],
+    [
+     7,
+     8,
+     9,
+     10
+    ],
+    [
+     11,
+     12,
+     13,
+     14
+    ]
+   ],
+   "ant": {
+    "pe": [
+     "Servíte Dómino in timóre, et exsultáte ei cum tremóre.",
+     "Dómine Deus meus, in te sperávi.",
+     "Tu, Dómine, servábis nos, et custódies nos."
+    ],
+    "pt": [
+     "Pro fídei méritis vocitátur jure beátus, legem qui Dómini meditátur nocte diéque.",
+     "Juste Deus, judex fortis, patiénsque, benígnus, in te sperántes muni miserándo fidéles.",
+     "Surge, et in ætérnum serva munímine sacro, custodíque tuos, Astrípotens, fámulos."
+    ],
+    "adv": [
+     "Sciéntes quia hora est jam nos de somno súrgere: nunc enim própior est nostra salus quam cum credídimus: nox præcéssit, dies autem appropinquávit."
+    ],
+    "pass": [
+     "Quid molésti estis huic mulíeri? Opus enim bonum operáta est in me."
+    ]
+   },
+   "v": {
+    "pa": [
+     "Memor fui nocte nóminis tui, Dómine.",
+     "Et custodívi legem tuam."
+    ],
+    "adv": [
+     "Ex Sion spécies decóris ejus.",
+     "Deus noster maniféste véniet."
+    ],
+    "quad": [
+     "Dicet Dómino: Suscéptor meus es tu.",
+     "Et refúgium meum, Deus meus."
+    ],
+    "pass": [
+     "Érue a frámea, Deus, ánimam meam.",
+     "Et de manu canis únicam meam."
+    ]
+   }
+  },
+  {
+   "groups": [
+    [
+     15
+    ],
+    [
+     16
+    ],
+    [
+     17
+    ]
+   ],
+   "ant": {
+    "pe": [
+     "Bonórum meórum non índiges: in te sperávi, consérva me, Dómine.",
+     "Inclína, Dómine, aurem tuam mihi, et exáudi verba mea.",
+     "Dóminus firmaméntum meum, et refúgium meum."
+    ],
+    "pt": [
+     "Natúræ Génitor, consérva a morte redémptos: hacque tuo dignos servítio fámulos.",
+     "Péctora nostra tibi, tu Cónditor orbis, adúre: igne pio purgans, atque cremándo probans.",
+     "Tu pópulum húmilem salvásti a morte, Redémptor: atque supérba tuo colla premis jáculo."
+    ],
+    "adv": [
+     "Hora est jam nos de somno súrgere, et apérti sunt óculi nostri súrgere ad Christum: quia lux vera est fulgens in mundo."
+    ],
+    "pass": [
+     "Mittens hæc múlier in corpus meum hoc unguéntum, ad sepeliéndum me fecit."
+    ]
+   },
+   "v": {
+    "pa": [
+     "Média nocte surgébam ad confiténdum tibi.",
+     "Super judícia justificatiónis tuæ."
+    ],
+    "adv": [
+     "Egrediétur virga de radíce Jesse.",
+     "Et flos de radíce ejus ascéndet."
+    ],
+    "quad": [
+     "Ipse liberávit me de láqueo venántium.",
+     "Et a verbo áspero."
+    ],
+    "pass": [
+     "De ore leónis líbera me, Dómine.",
+     "Et a córnibus unicórnium humilitátem meam."
+    ]
+   }
+  },
+  {
+   "groups": [
+    [
+     18
+    ],
+    [
+     19
+    ],
+    [
+     20
+    ]
+   ],
+   "ant": {
+    "pe": [
+     "Non sunt loquélæ, neque sermónes, quorum non audiántur voces eórum.",
+     "Exáudiat te Dóminus in die tribulatiónis.",
+     "Dómine, in virtúte tua lætábitur rex."
+    ],
+    "pt": [
+     "Sponsus ut e thálamo procéssit Christus in orbem, descéndens cælo jure salutífero.",
+     "Auxílium nobis, Salvátor, mitte salútis: et tríbuas vitam témpore perpétuo.",
+     "Rex sine fine manens, míseris tu parce ruínis: prǽmia concédens, et tua cuncta regens."
+    ],
+    "adv": [
+     "Nox præcéssit, dies autem appropinquávit: abjiciámus ergo ópera tenebrárum, et induámur arma lucis, sicut in die honéste ambulémus."
+    ],
+    "pass": [
+     "Magíster dicit: Tempus meum prope est: apud te fácio Pascha cum discípulis meis."
+    ]
+   },
+   "v": {
+    "pa": [
+     "Exaltáre, Dómine, in virtúte tua.",
+     "Cantábimus et psallémus virtútes tuas."
+    ],
+    "adv": [
+     "Egrediétur Dóminus de loco sancto suo.",
+     "Véniet, ut salvet pópulum suum."
+    ],
+    "quad": [
+     "Scápulis suis obumbrábit tibi.",
+     "Et sub pennis ejus sperábis."
+    ],
+    "pass": [
+     "Ne perdas cum ímpiis, Deus, ánimam meam.",
+     "Et cum viris sánguinum vitam meam."
+    ]
+   }
+  }
+ ],
+ "FER_MAT": {
+  "1": [
+   [
+    [
+     26,
+     27
+    ],
+    [
+     28,
+     29
+    ],
+    [
+     30,
+     31
+    ],
+    [
+     32,
+     33
+    ],
+    [
+     34,
+     35
+    ],
+    [
+     36,
+     37
+    ]
+   ],
+   [
+    "Dóminus defénsor vitæ meæ.",
+    "Adoráte Dóminum in aula sancta ejus.",
+    "In tua justítia líbera me, Dómine.",
+    "Rectos decet collaudátio.",
+    "Expúgna impugnántes me.",
+    "Revéla Dómino viam tuam."
+   ],
+   [
+    "Dómine, in cælo misericórdia tua.",
+    "Et véritas tua usque ad nubes."
+   ]
+  ],
+  "2": [
+   [
+    [
+     38,
+     39
+    ],
+    [
+     40,
+     41
+    ],
+    [
+     43,
+     44
+    ],
+    [
+     45,
+     46
+    ],
+    [
+     47,
+     48
+    ],
+    [
+     49,
+     51
+    ]
+   ],
+   [
+    "Ut non delínquam in lingua mea.",
+    "Sana, Dómine, ánimam meam: quia peccávi tibi.",
+    "Eructávit cor meum verbum bonum.",
+    "Adjútor in tribulatiónibus.",
+    "Áuribus percípite, qui habitátis orbem.",
+    "Deus deórum Dóminus locútus est."
+   ],
+   [
+    "Ímmola Deo sacrifícium laudis.",
+    "Et redde Altíssimo vota tua."
+   ]
+  ],
+  "3": [
+   [
+    [
+     52,
+     54
+    ],
+    [
+     55,
+     56
+    ],
+    [
+     57,
+     58
+    ],
+    [
+     59,
+     60
+    ],
+    [
+     61,
+     63
+    ],
+    [
+     65,
+     67
+    ]
+   ],
+   [
+    "Avértit Dóminus captivitátem plebis suæ.",
+    "Quóniam in te confídit ánima mea.",
+    "Juste judicáte, fílii hóminum.",
+    "Da nobis, Dómine, auxílium de tribulatióne.",
+    "A timóre inimíci éripe, Dómine, ánimam meam.",
+    "In ecclésiis benedícite Dómino."
+   ],
+   [
+    "Deus, vitam meam annuntiávi tibi.",
+    "Posuísti lácrimas meas in conspéctu tuo."
+   ]
+  ],
+  "4": [
+   [
+    [
+     68,
+     69
+    ],
+    [
+     70,
+     71
+    ],
+    [
+     72,
+     73
+    ],
+    [
+     74,
+     75
+    ],
+    [
+     76,
+     77
+    ],
+    [
+     78,
+     79
+    ]
+   ],
+   [
+    "Dómine Deus, in adjutórium meum inténde.",
+    "Esto mihi, Dómine, in Deum protectórem.",
+    "Liberásti virgam hereditátis tuæ.",
+    "In Israël magnum nomen ejus.",
+    "Tu es Deus, qui facis mirabília.",
+    "Propítius esto peccátis nostris, Dómine."
+   ],
+   [
+    "Gaudébunt lábia mea, cum cantávero tibi.",
+    "Et ánima mea, quam redemísti."
+   ]
+  ],
+  "5": [
+   [
+    [
+     80,
+     81
+    ],
+    [
+     82,
+     83
+    ],
+    [
+     84,
+     85
+    ],
+    [
+     86,
+     87
+    ],
+    [
+     88,
+     93
+    ],
+    [
+     95,
+     96
+    ]
+   ],
+   [
+    "Exsultáte Deo adjutóri nostro.",
+    "Tu solus Altíssimus super omnem terram.",
+    "Benedixísti, Dómine, terram tuam.",
+    "Fundaménta ejus in móntibus sanctis.",
+    "Benedíctus Dóminus in ætérnum.",
+    "Cantáte Dómino, et benedícite nómini ejus."
+   ],
+   [
+    "Beátus homo, quem tu erudíeris, Dómine.",
+    "Et de lege tua docúeris eum."
+   ]
+  ],
+  "6": [
+   [
+    [
+     97,
+     98
+    ],
+    [
+     99,
+     100
+    ],
+    [
+     101,
+     102
+    ],
+    [
+     103,
+     104
+    ],
+    [
+     105,
+     106
+    ],
+    [
+     107,
+     108
+    ]
+   ],
+   [
+    "Quia mirabília fecit Dóminus.",
+    "Jubiláte Deo, omnis terra.",
+    "Clamor meus ad te véniat, Deus.",
+    "Bénedic, ánima mea, Dómino.",
+    "Vísita nos, Dómine, in salutári tuo.",
+    "Confitébor Dómino nimis in ore meo."
+   ],
+   [
+    "Dómine, exáudi oratiónem meam.",
+    "Et clamor meus ad te véniat."
+   ]
+  ]
+ },
+ "FER_MAT_V": {
+  "adv": [
+   [
+    "Ex Sion spécies decóris ejus.",
+    "Deus noster maniféste véniet."
+   ],
+   [
+    "Egrediétur virga de radíce Jesse.",
+    "Et flos de radíce ejus ascéndet."
+   ],
+   [
+    "Egrediétur Dóminus de loco sancto suo.",
+    "Véniet, ut salvet pópulum suum."
+   ]
+  ],
+  "quad": [
+   [
+    "Dicet Dómino: Suscéptor meus es tu.",
+    "Et refúgium meum, Deus meus."
+   ],
+   [
+    "Ipse liberávit me de láqueo venántium.",
+    "Et a verbo áspero."
+   ],
+   [
+    "Scápulis suis obumbrábit tibi.",
+    "Et sub pennis ejus sperábis."
+   ]
+  ],
+  "pass": [
+   [
+    "Érue a frámea, Deus, ánimam meam.",
+    "Et de manu canis únicam meam."
+   ],
+   [
+    "De ore leónis líbera me, Dómine.",
+    "Et a córnibus unicórnium humilitátem meam."
+   ],
+   [
+    "Ne perdas cum ímpiis, Deus, ánimam meam.",
+    "Et cum viris sánguinum vitam meam."
+   ]
+  ]
+ },
+ "V_ANTE_LAUDES": {
+  "sun_pa": [
+   "Excélsus super omnes gentes Dóminus.",
+   "Et super cælos glória ejus."
+  ],
+  "fer_pa": [
+   "Fiat misericórdia tua, Dómine, super nos.",
+   "Quemádmodum sperávimus in te."
+  ],
+  "adv": [
+   "Emítte Agnum, Dómine, dominatórem terræ.",
+   "De petra desérti ad montem fíliæ Sion."
+  ],
+  "quad": [
+   "In mánibus portábunt te.",
+   "Ne forte offéndas ad lápidem pedem tuum."
+  ],
+  "pass": [
+   "Inténde ánimæ meæ, et líbera eam.",
+   "Propter inimícos meos éripe me."
+  ],
+  "pasch": [
+   "In resurrectióne tua, Christe, allelúja.",
+   "Cæli et terra læténtur, allelúja."
+  ]
+ },
+ "LAUDS_SUN": [
+  [
+   92
+  ],
+  [
+   99
+  ],
+  [
+   62,
+   66
+  ],
+  [
+   210
+  ],
+  [
+   148,
+   149,
+   150
+  ]
+ ],
+ "LAUDS_SUN_SEPT": [
+  [
+   50
+  ],
+  [
+   117
+  ],
+  [
+   62,
+   66
+  ],
+  [
+   210
+  ],
+  [
+   148,
+   149,
+   150
+  ]
+ ],
+ "LAUDS_SUN_ANT": {
+  "pe": "Regnávit Dóminus, procínctus fortitúdine cum decóre virtútum: cujus sedes paráta est in ætérnum.",
+  "pt": "Regnávit Dóminus, procínctus fortitúdine cum decóre virtútum: cujus sedes paráta est in ætérnum.",
+  "pasch": "Allelúja, allelúja."
+ },
+ "LAUDS_FER": {
+  "1": [
+   [
+    [
+     50
+    ],
+    [
+     5
+    ],
+    [
+     62,
+     66
+    ],
+    [
+     221
+    ],
+    [
+     148,
+     149,
+     150
+    ]
+   ],
+   [
+    "Miserére mei, Deus.",
+    "Intéllige clamórem meum, Dómine.",
+    "Deus, Deus meus, ad te de luce vígilo.",
+    "Convérsus est furor tuus, Dómine, et consolátus es me.",
+    "Laudáte Dóminum de cælis."
+   ]
+  ],
+  "2": [
+   [
+    [
+     50
+    ],
+    [
+     42
+    ],
+    [
+     62,
+     66
+    ],
+    [
+     222
+    ],
+    [
+     148,
+     149,
+     150
+    ]
+   ],
+   [
+    "Secúndum magnam misericórdiam tuam, miserére mei, Deus.",
+    "Salutáre vultus mei, et Deus meus.",
+    "Ad te de luce vígilo, Deus.",
+    "Cunctis diébus vitæ nostræ salvos nos fac, Dómine.",
+    "Omnes Ángeli ejus, laudáte Dóminum de cælis."
+   ]
+  ],
+  "3": [
+   [
+    [
+     50
+    ],
+    [
+     64
+    ],
+    [
+     62,
+     66
+    ],
+    [
+     223
+    ],
+    [
+     148,
+     149,
+     150
+    ]
+   ],
+   [
+    "Ámplius lava me, Dómine, ab injustítia mea.",
+    "Te decet hymnus, Deus, in Sion.",
+    "Lábia mea laudábunt te in vita mea, Deus meus.",
+    "Dóminus judicábit fines terræ.",
+    "Cæli cælórum, laudáte Deum."
+   ]
+  ],
+  "4": [
+   [
+    [
+     50
+    ],
+    [
+     89
+    ],
+    [
+     62,
+     66
+    ],
+    [
+     224
+    ],
+    [
+     148,
+     149,
+     150
+    ]
+   ],
+   [
+    "Tibi soli peccávi, Dómine, miserére mei.",
+    "Dómine, refúgium factus es nobis.",
+    "In matutínis, Dómine, meditábor in te.",
+    "In ætérnum Dóminus regnábit, et ultra.",
+    "In sanctis ejus laudáte Deum."
+   ]
+  ],
+  "5": [
+   [
+    [
+     50
+    ],
+    [
+     142
+    ],
+    [
+     62,
+     66
+    ],
+    [
+     225
+    ],
+    [
+     148,
+     149,
+     150
+    ]
+   ],
+   [
+    "Spíritu principáli confírma cor meum, Deus.",
+    "In veritáte tua exáudi me, Dómine.",
+    "Illúmina, Dómine, vultum tuum super nos.",
+    "Dómine, audívi audítum tuum, et tímui.",
+    "In týmpano et choro, in chordis et órgano laudáte Deum."
+   ]
+  ],
+  "6": [
+   [
+    [
+     50
+    ],
+    [
+     91
+    ],
+    [
+     62,
+     66
+    ],
+    [
+     226
+    ],
+    [
+     148,
+     149,
+     150
+    ]
+   ],
+   [
+    "Benígne fac in bona voluntáte tua, Dómine.",
+    "Bonum est confitéri Dómino.",
+    "Metuant Dóminum omnes fines terræ.",
+    "Et in servis suis Dóminus miserébitur.",
+    "In cýmbalis benesonántibus laudáte Deum."
+   ]
+  ]
+ },
+ "BENED_FER": {
+  "1": "Benedíctus Dóminus Deus Israël.",
+  "2": "Eréxit Dóminus nobis cornu salútis, in domo David púeri sui.",
+  "3": "Salútem ex inimícis nostris, et de manu ómnium qui nos odérunt, líbera nos, Dómine.",
+  "4": "In sanctitáte serviámus Dómino, et liberábit nos ab inimícis nostris.",
+  "5": "Per víscera misericórdiæ Dei nostri, in quibus visitávit nos óriens ex alto.",
+  "6": "In viam pacis dírige nos, Dómine."
+ },
+ "CAP": {
+  "laud_sun": {
+   "adv": [
+    "Jer 23",
+    "Ecce dies véniunt, dicit Dóminus, et suscitábo David germen justum: et regnábit rex, et sápiens erit: et fáciet judícium et justítiam in terra.",
+    "Vox clara ecce intonat",
+    "Vox clamántis in desérto.",
+    "Paráte viam Dómini."
+   ],
+   "pe": [
+    "Apoc 7",
+    "Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, honor, virtus, et fortitúdo Deo nostro in sǽcula sæculórum. Amen.",
+    "Ecce jam noctis",
+    "Dóminus regnávit.",
+    "Decórem índuit."
+   ],
+   "sept": [
+    "Apoc 7",
+    "Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, honor, virtus, et fortitúdo Deo nostro in sǽcula sæculórum. Amen.",
+    "Ecce jam noctis",
+    "Dómine, refúgium factus es nobis.",
+    "A generatióne et progénie."
+   ],
+   "quad": [
+    "2 Cor 6",
+    "Hortámur vos, ne in vácuum grátiam Dei recipiátis. Ait enim: Témpore accépto exaudívi te, et in die salútis adjúvi te.",
+    "Jam Christe sol justitiae",
+    "Scuto circúmdabit te véritas ejus.",
+    "Non timébis a timóre noctúrno."
+   ],
+   "pass": [
+    "Jer 11",
+    "Tu autem, Dómine Sábaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis: tibi enim revelávi causam meam, Dómine Deus meus.",
+    "Lustris sex",
+    "Éripe me de inimícis meis, Deus meus.",
+    "Et ab insurgéntibus in me líbera me."
+   ],
+   "pasch": [
+    "Rom 6",
+    "Christus resúrgens ex mórtuis jam non móritur, mors illi ultra non dominábitur. Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo.",
+    "Sermone blando",
+    "Gavísi sunt discípuli, allelúja.",
+    "Viso Dómino, allelúja."
+   ],
+   "pt": [
+    "Apoc 7",
+    "Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, honor, virtus, et fortitúdo Deo nostro in sǽcula sæculórum. Amen.",
+    "Ecce jam noctis",
+    "Dóminus regnávit.",
+    "Decórem índuit."
+   ]
+  },
+  "laud_fer": {
+   "pe": [
+    "Rom 13",
+    "Nox præcéssit, dies autem appropinquávit. Abjiciámus ergo ópera tenebrárum, et induámur arma lucis. Sicut in die honéste ambulémus.",
+    "Ecce jam noctis",
+    "In matutínis, Dómine, meditábor in te.",
+    "Quia fuísti adjútor meus."
+   ],
+   "quad": [
+    "Joël 2",
+    "Convertímini ad me in toto corde vestro, in jejúnio, et fletu, et planctu: et scíndite corda vestra, et non vestiménta vestra, ait Dóminus omnípotens.",
+    "Jam Christe sol justitiae",
+    "Scuto circúmdabit te véritas ejus.",
+    "Non timébis a timóre noctúrno."
+   ],
+   "adv": [
+    "Jer 23",
+    "Ecce dies véniunt, dicit Dóminus, et suscitábo David germen justum: et regnábit rex, et sápiens erit: et fáciet judícium et justítiam in terra.",
+    "Vox clara ecce intonat",
+    "Vox clamántis in desérto.",
+    "Paráte viam Dómini."
+   ],
+   "pass": [
+    "Jer 11",
+    "Tu autem, Dómine Sábaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis: tibi enim revelávi causam meam, Dómine Deus meus.",
+    "Lustris sex",
+    "Éripe me de inimícis meis, Deus meus.",
+    "Et ab insurgéntibus in me líbera me."
+   ],
+   "pasch": [
+    "Rom 6",
+    "Christus resúrgens ex mórtuis jam non móritur, mors illi ultra non dominábitur. Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo.",
+    "Sermone blando",
+    "Gavísi sunt discípuli, allelúja.",
+    "Viso Dómino, allelúja."
+   ],
+   "sept": [
+    "Rom 13",
+    "Nox præcéssit, dies autem appropinquávit. Abjiciámus ergo ópera tenebrárum, et induámur arma lucis. Sicut in die honéste ambulémus.",
+    "Ecce jam noctis",
+    "In matutínis, Dómine, meditábor in te.",
+    "Quia fuísti adjútor meus."
+   ],
+   "pt": [
+    "Rom 13",
+    "Nox præcéssit, dies autem appropinquávit. Abjiciámus ergo ópera tenebrárum, et induámur arma lucis. Sicut in die honéste ambulémus.",
+    "Ecce jam noctis",
+    "In matutínis, Dómine, meditábor in te.",
+    "Quia fuísti adjútor meus."
+   ]
+  },
+  "vesp_sun": {
+   "adv": [
+    "Jer 23",
+    "Ecce dies véniunt, dicit Dóminus, et suscitábo David germen justum: et regnábit rex, et sápiens erit: et fáciet judícium et justítiam in terra.",
+    "Conditor alme siderum",
+    "Roráte, cæli, désuper, et nubes pluant justum.",
+    "Aperiátur terra, et gérminet Salvatórem."
+   ],
+   "pe": [
+    "2 Thess 3",
+    "Dóminus dírigat corda et córpora nostra in caritáte Dei, et patiéntia Christi.",
+    "Lucis Creator optime",
+    "Dirigátur, Dómine, orátio mea.",
+    "Sicut incénsum in conspéctu tuo."
+   ],
+   "quad": [
+    "2 Cor 6",
+    "Hortámur vos, ne in vácuum grátiam Dei recipiátis. Ait enim: Témpore accépto exaudívi te, et in die salútis adjúvi te.",
+    "Audi benigne Conditor",
+    "Ángelis suis Deus mandávit de te.",
+    "Ut custódiant te in ómnibus viis tuis."
+   ],
+   "pass": [
+    "Jer 11",
+    "Tu autem, Dómine Sábaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis: tibi enim revelávi causam meam, Dómine Deus meus.",
+    "Vexilla Regis prodeunt",
+    "Éripe me, Dómine, ab hómine malo.",
+    "A viro iníquo éripe me."
+   ],
+   "pasch": [
+    "Rom 6",
+    "Christus resúrgens ex mórtuis jam non móritur, mors illi ultra non dominábitur. Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo.",
+    "Ad cenam Agni providi",
+    "Mane nobíscum, Dómine, allelúja.",
+    "Quóniam advesperáscit, allelúja."
+   ],
+   "pt": [
+    "2 Thess 3",
+    "Dóminus dírigat corda et córpora nostra in caritáte Dei, et patiéntia Christi.",
+    "Lucis Creator optime",
+    "Dirigátur, Dómine, orátio mea.",
+    "Sicut incénsum in conspéctu tuo."
+   ],
+   "sept": [
+    "2 Thess 3",
+    "Dóminus dírigat corda et córpora nostra in caritáte Dei, et patiéntia Christi.",
+    "Lucis Creator optime",
+    "Dirigátur, Dómine, orátio mea.",
+    "Sicut incénsum in conspéctu tuo."
+   ]
+  },
+  "vesp_fer": {
+   "quad": [
+    "Joël 2",
+    "Convertímini ad me in toto corde vestro, in jejúnio, et fletu, et planctu: et scíndite corda vestra, et non vestiménta vestra, ait Dóminus omnípotens.",
+    "Audi benigne Conditor",
+    "Ángelis suis Deus mandávit de te.",
+    "Ut custódiant te in ómnibus viis tuis."
+   ],
+   "adv": [
+    "Jer 23",
+    "Ecce dies véniunt, dicit Dóminus, et suscitábo David germen justum: et regnábit rex, et sápiens erit: et fáciet judícium et justítiam in terra.",
+    "Conditor alme siderum",
+    "Roráte, cæli, désuper, et nubes pluant justum.",
+    "Aperiátur terra, et gérminet Salvatórem."
+   ],
+   "pe": [
+    "2 Thess 3",
+    "Dóminus dírigat corda et córpora nostra in caritáte Dei, et patiéntia Christi.",
+    "Lucis Creator optime",
+    "Dirigátur, Dómine, orátio mea.",
+    "Sicut incénsum in conspéctu tuo."
+   ],
+   "sept": [
+    "2 Thess 3",
+    "Dóminus dírigat corda et córpora nostra in caritáte Dei, et patiéntia Christi.",
+    "Lucis Creator optime",
+    "Dirigátur, Dómine, orátio mea.",
+    "Sicut incénsum in conspéctu tuo."
+   ],
+   "pt": [
+    "2 Thess 3",
+    "Dóminus dírigat corda et córpora nostra in caritáte Dei, et patiéntia Christi.",
+    "Lucis Creator optime",
+    "Dirigátur, Dómine, orátio mea.",
+    "Sicut incénsum in conspéctu tuo."
+   ],
+   "pass": [
+    "Jer 11",
+    "Tu autem, Dómine Sábaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis: tibi enim revelávi causam meam, Dómine Deus meus.",
+    "Vexilla Regis prodeunt",
+    "Éripe me, Dómine, ab hómine malo.",
+    "A viro iníquo éripe me."
+   ],
+   "pasch": [
+    "Rom 6",
+    "Christus resúrgens ex mórtuis jam non móritur, mors illi ultra non dominábitur. Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo.",
+    "Ad cenam Agni providi",
+    "Mane nobíscum, Dómine, allelúja.",
+    "Quóniam advesperáscit, allelúja."
+   ]
+  },
+  "vesp_sat": {
+   "pe": [
+    "2 Cor 1",
+    "Benedíctus Deus et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolatiónis, qui consolátur nos in omni tribulatióne nostra.",
+    "O lux beata Trinitas",
+    "Vespertína orátio ascéndat ad te, Dómine.",
+    "Et descéndat super nos misericórdia tua."
+   ],
+   "pt": [
+    "2 Cor 1",
+    "Benedíctus Deus et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolatiónis, qui consolátur nos in omni tribulatióne nostra.",
+    "O lux beata Trinitas",
+    "Vespertína orátio ascéndat ad te, Dómine.",
+    "Et descéndat super nos misericórdia tua."
+   ],
+   "sept": [
+    "2 Cor 1",
+    "Benedíctus Deus et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolatiónis, qui consolátur nos in omni tribulatióne nostra.",
+    "O lux beata Trinitas",
+    "Vespertína orátio ascéndat ad te, Dómine.",
+    "Et descéndat super nos misericórdia tua."
+   ],
+   "adv": [
+    "Jer 23",
+    "Ecce dies véniunt, dicit Dóminus, et suscitábo David germen justum: et regnábit rex, et sápiens erit: et fáciet judícium et justítiam in terra.",
+    "Conditor alme siderum",
+    "Roráte, cæli, désuper, et nubes pluant justum.",
+    "Aperiátur terra, et gérminet Salvatórem."
+   ],
+   "quad": [
+    "Joël 2",
+    "Convertímini ad me in toto corde vestro, in jejúnio, et fletu, et planctu: et scíndite corda vestra, et non vestiménta vestra, ait Dóminus omnípotens.",
+    "Audi benigne Conditor",
+    "Ángelis suis Deus mandávit de te.",
+    "Ut custódiant te in ómnibus viis tuis."
+   ],
+   "pass": [
+    "Jer 11",
+    "Tu autem, Dómine Sábaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis: tibi enim revelávi causam meam, Dómine Deus meus.",
+    "Vexilla Regis prodeunt",
+    "Éripe me, Dómine, ab hómine malo.",
+    "A viro iníquo éripe me."
+   ],
+   "pasch": [
+    "Rom 6",
+    "Christus resúrgens ex mórtuis jam non móritur, mors illi ultra non dominábitur. Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo.",
+    "Ad cenam Agni providi",
+    "Mane nobíscum, Dómine, allelúja.",
+    "Quóniam advesperáscit, allelúja."
+   ]
+  }
+ },
+ "PRIME_PS": [
+  [
+   53
+  ],
+  [
+   "118a",
+   "118b"
+  ],
+  [
+   "118c",
+   "118d"
+  ]
+ ],
+ "PRIME_PS_SUN_SEPT": [
+  [
+   21,
+   22
+  ],
+  [
+   23,
+   24
+  ],
+  [
+   25,
+   53
+  ],
+  [
+   92,
+   "118a",
+   "118b"
+  ],
+  [
+   "118c",
+   "118d"
+  ]
+ ],
+ "HOUR_PS": {
+  "Tertia": [
+   [
+    "118e",
+    "118f"
+   ],
+   [
+    "118g",
+    "118h"
+   ],
+   [
+    "118i",
+    "118j"
+   ]
+  ],
+  "Sexta": [
+   [
+    "118k",
+    "118l"
+   ],
+   [
+    "118m",
+    "118n"
+   ],
+   [
+    "118o",
+    "118p"
+   ]
+  ],
+  "Nona": [
+   [
+    "118q",
+    "118r"
+   ],
+   [
+    "118s",
+    "118t"
+   ],
+   [
+    "118u",
+    "118v"
+   ]
+  ]
+ },
+ "HOUR_HYMN": {
+  "Prima": "Jam lucis orto sidere",
+  "Tertia": "Nunc Sancte nobis Spiritus",
+  "Sexta": "Rector potens verax Deus",
+  "Nona": "Rerum Deus tenax vigor"
+ },
+ "HOUR_ANT": {
+  "Prima": {
+   "adv": [
+    null,
+    "Veni, et líbera nos, Deus noster."
+   ],
+   "pe": [
+    "Glória tibi, Trínitas, æquális una Déitas, et ante ómnia sǽcula, et nunc, et in perpétuum.",
+    "Deus, exáudi oratiónem meam: áuribus pércipe verba oris mei."
+   ],
+   "quad": [
+    null,
+    "Vivo ego, dicit Dóminus: nolo mortem peccatóris, sed ut magis convertátur, et vivat."
+   ],
+   "pass": [
+    null,
+    "Ánimæ impiórum fremébant advérsum me: et gravátum est cor meum super eos."
+   ],
+   "pasch": [
+    "Cognovérunt Dóminum, allelúja, in fractióne panis, allelúja.",
+    "Cognovérunt Dóminum, allelúja, in fractióne panis, allelúja."
+   ],
+   "pt": [
+    "Glória tibi, Trínitas, æquális una Déitas, et ante ómnia sǽcula, et nunc, et in perpétuum.",
+    "Deus, exáudi oratiónem meam: áuribus pércipe verba oris mei."
+   ],
+   "sept": [
+    "Glória tibi, Trínitas, æquális una Déitas, et ante ómnia sǽcula, et nunc, et in perpétuum.",
+    "Deus, exáudi oratiónem meam: áuribus pércipe verba oris mei."
+   ]
+  },
+  "Tertia": {
+   "adv": [
+    null,
+    "Veni, Dómine, et noli tardáre: reláxa facínora plebis tuæ Israël."
+   ],
+   "pe": [
+    "Laus et perénnis glória Deo Patri et Fílio, Sancto simul Paráclito, in sǽcula sæculórum.",
+    "Deduc me, Dómine, in sémitam mandatórum tuórum."
+   ],
+   "quad": [
+    null,
+    "Advenérunt nobis dies pœniténtiæ, ad rediménda peccáta, et salvándas ánimas."
+   ],
+   "pass": [
+    null,
+    "Judicásti, Dómine, causam ánimæ meæ, defénsor vitæ meæ, Dómine Deus meus."
+   ],
+   "pasch": [
+    "Pax vobis, ego sum, allelúja: nolíte timére, allelúja.",
+    "Pax vobis, ego sum, allelúja: nolíte timére, allelúja."
+   ],
+   "pt": [
+    "Laus et perénnis glória Deo Patri et Fílio, Sancto simul Paráclito, in sǽcula sæculórum.",
+    "Deduc me, Dómine, in sémitam mandatórum tuórum."
+   ],
+   "sept": [
+    "Laus et perénnis glória Deo Patri et Fílio, Sancto simul Paráclito, in sǽcula sæculórum.",
+    "Deduc me, Dómine, in sémitam mandatórum tuórum."
+   ]
+  },
+  "Sexta": {
+   "adv": [
+    null,
+    "Tuam, Dómine, éxcita poténtiam, et veni ad salvándum nos."
+   ],
+   "pe": [
+    "Glória laudis résonet in ore ómnium Patri, genitǽque Proli: Spirítui Sancto páriter resúltet laude perénni.",
+    "Ádjuva me, et salvus ero, Dómine."
+   ],
+   "quad": [
+    null,
+    "Commendémus nosmetípsos in multa patiéntia, in jejúniis multis, per arma justítiæ."
+   ],
+   "pass": [
+    null,
+    "Pópule meus, quid feci tibi? aut quid moléstus fui? respónde mihi."
+   ],
+   "pasch": [
+    "Ecce ego vobíscum sum, allelúja, ómnibus diébus, allelúja.",
+    "Ecce ego vobíscum sum, allelúja, ómnibus diébus, allelúja."
+   ],
+   "pt": [
+    "Glória laudis résonet in ore ómnium Patri, genitǽque Proli: Spirítui Sancto páriter resúltet laude perénni.",
+    "Ádjuva me, et salvus ero, Dómine."
+   ],
+   "sept": [
+    "Glória laudis résonet in ore ómnium Patri, genitǽque Proli: Spirítui Sancto páriter resúltet laude perénni.",
+    "Ádjuva me, et salvus ero, Dómine."
+   ]
+  },
+  "Nona": {
+   "adv": [
+    null,
+    "In tuo advéntu érue nos, Dómine."
+   ],
+   "pe": [
+    "Ex quo ómnia, per quem ómnia, in quo ómnia: ipsi glória in sǽcula.",
+    "Áspice in me, Dómine, et miserére mei."
+   ],
+   "quad": [
+    null,
+    "Per arma justítiæ virtútis Dei commendémus nosmetípsos in multa patiéntia."
+   ],
+   "pass": [
+    null,
+    "Numquid rédditur pro bono malum, quia fodérunt fóveam ánimæ meæ?"
+   ],
+   "pasch": [
+    "Noli flere, María, allelúja: resurréxit Dóminus, allelúja.",
+    "Noli flere, María, allelúja: resurréxit Dóminus, allelúja."
+   ],
+   "pt": [
+    "Ex quo ómnia, per quem ómnia, in quo ómnia: ipsi glória in sǽcula.",
+    "Áspice in me, Dómine, et miserére mei."
+   ],
+   "sept": [
+    "Ex quo ómnia, per quem ómnia, in quo ómnia: ipsi glória in sǽcula.",
+    "Áspice in me, Dómine, et miserére mei."
+   ]
+  }
+ },
+ "HOUR_CAP": {
+  "Tertia": {
+   "sun_pa": [
+    "1 Joann 4",
+    "Deus cáritas est: et qui manet in caritáte, in Deo manet, et Deus in eo.",
+    "Inclína cor meum, Deus,",
+    "In testimónia tua.",
+    "Avérte óculos meos, ne vídeant vanitátem: in via tua vivífica me.",
+    "Adjútor meus esto, Dómine: ne derelínquas me.",
+    "Neque despícias me, Deus salutáris meus."
+   ],
+   "fer_pa": [
+    "Jer 17",
+    "Sana me, Dómine, et sanábor: salvum me fac, et salvus ero: quóniam laus mea tu es.",
+    "Sana ánimam meam,",
+    "Quia peccávi tibi.",
+    "Ego dixi: Dómine, miserére mei.",
+    "Adjútor meus esto, Dómine: ne derelínquas me.",
+    "Neque despícias me, Deus salutáris meus."
+   ],
+   "adv": [
+    "Jer 23",
+    "Ecce dies véniunt, dicit Dóminus, et suscitábo David germen justum: et regnábit rex, et sápiens erit: et fáciet judícium et justítiam in terra.",
+    "Veni ad liberándum nos,",
+    "Dómine Deus virtútum.",
+    "Osténde fáciem tuam, et salvi érimus.",
+    "Timébunt gentes nomen tuum, Dómine.",
+    "Et omnes reges terræ glóriam tuam."
+   ],
+   "quad": [
+    "Joël 2",
+    "Convertímini ad me in toto corde vestro, in jejúnio, et fletu, et planctu: et scíndite corda vestra, et non vestiménta vestra, ait Dóminus omnípotens.",
+    null
+   ],
+   "pass": [
+    "Jer 11",
+    "Tu autem, Dómine Sábaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis: tibi enim revelávi causam meam, Dómine Deus meus.",
+    "Érue a frámea, Deus, ánimam meam:",
+    "Et de manu canis únicam meam.",
+    "Salva me ex ore leónis: et a córnibus unicórnium humilitátem meam.",
+    "De ore leónis líbera me, Dómine.",
+    "Et a córnibus unicórnium humilitátem meam."
+   ],
+   "pasch": [
+    "Rom 6",
+    "Christus resúrgens ex mórtuis jam non móritur, mors illi ultra non dominábitur. Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo.",
+    "Resurréxit Dóminus,",
+    "Allelúja, allelúja.",
+    "Sicut dixit vobis.",
+    "Surréxit Dóminus vere, allelúja.",
+    "Et appáruit Simóni, allelúja."
+   ]
+  },
+  "Sexta": {
+   "sun_pa": [
+    "2 Cor 13",
+    "Grátia Dómini nostri Jesu Christi, et cáritas Dei, et communicátio Sancti Spíritus sit semper cum ómnibus vobis. Amen.",
+    "In ætérnum, Dómine,",
+    "Pérmanet verbum tuum.",
+    "In cælo, et in sǽculum sǽculi véritas tua.",
+    "Dóminus regit me, et nihil mihi déerit.",
+    "In loco páscuæ ibi me collocávit."
+   ],
+   "fer_pa": [
+    "Gal 6",
+    "Alter altérius ónera portáte, et sic adimplébitis legem Christi.",
+    "Benedícam Dóminum",
+    "In omni témpore.",
+    "Semper laus ejus in ore meo.",
+    "Dóminus regit me, et nihil mihi déerit.",
+    "In loco páscuæ ibi me collocávit."
+   ],
+   "adv": [
+    "Jer 23",
+    "In diébus illis salvábitur Juda, et Israël habitábit confidénter: et hoc est nomen, quod vocábunt eum: Dóminus justus noster.",
+    "Osténde nobis, Dómine,",
+    "Misericórdiam tuam.",
+    "Et salutáre tuum da nobis.",
+    "Meménto nostri, Dómine, in beneplácito pópuli tui.",
+    "Vísita nos in salutári tuo."
+   ],
+   "quad": [
+    "Isa 55",
+    "Derelínquat ímpius viam suam, et vir iníquus cogitatiónes suas, et revertátur ad Dóminum, et miserébitur ejus: et ad Deum nostrum, quóniam multus est ad ignoscéndum.",
+    null
+   ],
+   "pass": [
+    "Isa 50",
+    "Fáciem meam non avérti ab increpántibus, et conspuéntibus in me: Dóminus Deus auxiliátor meus, ídeo non sum confúsus.",
+    "De ore leónis líbera me, Dómine:",
+    "Et a córnibus unicórnium humilitátem meam.",
+    "Érue a frámea, Deus, ánimam meam: et de manu canis únicam meam.",
+    "Ne perdas cum ímpiis, Deus, ánimam meam.",
+    "Et cum viris sánguinum vitam meam."
+   ],
+   "pasch": [
+    "Col 3",
+    "Si consurrexístis cum Christo, quæ sursum sunt quǽrite, ubi Christus est in déxtera Dei sedens: quæ sursum sunt sápite, non quæ super terram.",
+    "Surréxit Dóminus vere,",
+    "Allelúja, allelúja.",
+    "Et appáruit Simóni.",
+    "Surréxit Dóminus de sepúlcro, allelúja.",
+    "Qui pro nobis pepéndit in ligno, allelúja."
+   ]
+  },
+  "Nona": {
+   "sun_pa": [
+    "1 Joann 5",
+    "Tres sunt, qui testimónium dant in cælo: Pater, Verbum, et Spíritus Sanctus: et hi tres unum sunt.",
+    "Clamávi in toto corde,",
+    "Exáudi me, Dómine.",
+    "Justificatiónes tuas requíram.",
+    "Ab occúltis meis munda me, Dómine.",
+    "Et ab aliénis parce servo tuo."
+   ],
+   "fer_pa": [
+    "1 Cor 6",
+    "Empti enim estis prétio magno: glorificáte, et portáte Deum in córpore vestro.",
+    "Rédime me, Dómine,",
+    "Et miserére mei.",
+    "Pes enim meus stetit in via recta: in ecclésiis benedícam te, Dómine.",
+    "Ab occúltis meis munda me, Dómine.",
+    "Et ab aliénis parce servo tuo."
+   ],
+   "adv": [
+    "Isa 2",
+    "Erit in novíssimis diébus præparátus mons domus Dómini in vértice móntium, et elevábitur super colles, et fluent ad eum omnes gentes.",
+    "Super te, Jerúsalem,",
+    "Oriétur Dóminus.",
+    "Et glória ejus in te vidébitur.",
+    "Dómine Deus virtútum, convérte nos.",
+    "Et osténde fáciem tuam, et salvi érimus."
+   ],
+   "quad": [
+    "Isa 58",
+    "Frange esuriénti panem tuum, et egénos vagósque induc in domum tuam: cum víderis nudum, óperi eum, et carnem tuam ne despéxeris, ait Dóminus omnípotens.",
+    null
+   ],
+   "pass": [
+    "Jer 17",
+    "Confundántur qui me persequúntur, et non confúndar ego: páveant illi, et non páveam ego: induc super eos diem afflictiónis, et dúplici contritióne cóntere eos, Dómine Deus noster.",
+    "Príncipes persecúti sunt me gratis, et a verbis tuis formidávit cor meum:",
+    "Lætábor ego super elóquia tua.",
+    "Quasi qui invénit spólia multa.",
+    "Éripe me de inimícis meis, Deus meus.",
+    "Et ab insurgéntibus in me líbera me."
+   ],
+   "pasch": [
+    "Col 3",
+    "Cum autem Christus apparúerit, vita vestra: tunc et vos apparébitis cum ipso in glória.",
+    "Surréxit Dóminus de sepúlcro,",
+    "Allelúja, allelúja.",
+    "Qui pro nobis pepéndit in ligno.",
+    "Gavísi sunt discípuli, allelúja.",
+    "Viso Dómino, allelúja."
+   ]
+  }
+ },
+ "VESP": {
+  "0": [
+   [
+    [
+     109
+    ],
+    [
+     110
+    ],
+    [
+     111
+    ],
+    [
+     112
+    ],
+    [
+     113
+    ]
+   ],
+   [
+    "Dixit Dóminus Dómino meo: Sede a dextris meis.",
+    "Fidélia ómnia mandáta ejus: confirmáta in sǽculum sǽculi.",
+    "In mandátis ejus cupit nimis.",
+    "Sit nomen Dómini benedíctum in sǽcula.",
+    "Nos qui vívimus, benedícimus Dómino."
+   ]
+  ],
+  "1": [
+   [
+    [
+     114
+    ],
+    [
+     115
+    ],
+    [
+     116
+    ],
+    [
+     119
+    ],
+    [
+     120
+    ]
+   ],
+   [
+    "Inclinávit Dóminus aurem suam mihi.",
+    "Crédidi, propter quod locútus sum.",
+    "Laudáte Dóminum, omnes gentes.",
+    "Clamávi, et exaudívit me.",
+    "Auxílium meum a Dómino."
+   ]
+  ],
+  "2": [
+   [
+    [
+     121
+    ],
+    [
+     122
+    ],
+    [
+     123
+    ],
+    [
+     124
+    ],
+    [
+     125
+    ]
+   ],
+   [
+    "In domum Dómini lætántes íbimus.",
+    "Qui hábitas in cælis, miserére nobis.",
+    "Adjutórium nostrum in nómine Dómini.",
+    "Bénefac, Dómine, bonis et rectis corde.",
+    "Facti sumus sicut consoláti."
+   ]
+  ],
+  "3": [
+   [
+    [
+     126
+    ],
+    [
+     127
+    ],
+    [
+     128
+    ],
+    [
+     129
+    ],
+    [
+     130
+    ]
+   ],
+   [
+    "Beátus vir, qui implévit desidérium suum.",
+    "Beáti omnes, qui timent Dóminum.",
+    "Benedíximus vobis in nómine Dómini.",
+    "De profúndis clamávi ad te, Dómine.",
+    "Speret Israël in Dómino."
+   ]
+  ],
+  "4": [
+   [
+    [
+     131
+    ],
+    [
+     132
+    ],
+    [
+     134
+    ],
+    [
+     135
+    ],
+    [
+     136
+    ]
+   ],
+   [
+    "Et omnis mansuetúdinis ejus.",
+    "Ecce quam bonum et quam jucúndum.",
+    "Ómnia quæcúmque vóluit Dóminus fecit.",
+    "Quóniam in ætérnum misericórdia ejus.",
+    "Hymnum cantáte nobis de cánticis Sion."
+   ]
+  ],
+  "5": [
+   [
+    [
+     137
+    ],
+    [
+     138
+    ],
+    [
+     139
+    ],
+    [
+     140
+    ],
+    [
+     141
+    ]
+   ],
+   [
+    "In conspéctu Angelórum psallam tibi, Deus meus.",
+    "Dómine, probásti me, et cognovísti me.",
+    "A viro iníquo líbera me, Dómine.",
+    "Dómine, clamávi ad te, exáudi me.",
+    "Pórtio mea, Dómine, sit in terra vivéntium."
+   ]
+  ],
+  "6": [
+   [
+    [
+     143
+    ],
+    [
+     144
+    ],
+    [
+     145
+    ],
+    [
+     146
+    ],
+    [
+     147
+    ]
+   ],
+   [
+    "Benedíctus Dóminus Deus meus.",
+    "In ætérnum, et in sǽculum sǽculi.",
+    "Laudábo Deum meum in vita mea.",
+    "Deo nostro jucúnda sit laudátio.",
+    "Lauda, Jerúsalem, Dóminum."
+   ]
+  ]
+ },
+ "VESP_PASCH_ANT": {
+  "0": "Allelúja, allelúja, allelúja, allelúja.",
+  "fer": "Allelúja.",
+  "6": "Allelúja, allelúja, allelúja."
+ },
+ "MAGN_FER": {
+  "1": "Magníficat ánima mea Dóminum.",
+  "2": "Exsultávit spíritus meus in Deo salutári meo.",
+  "3": "Respexísti humilitátem meam, Dómine Deus meus.",
+  "4": "Depósuit poténtes sanctos persequéntes: et exaltávit húmiles Christum confiténtes.",
+  "5": "Suscépit Deus Israël púerum suum, sicut locútus est ad Abraham et semen ejus: et exaltávit húmiles usque in sǽculum."
+ },
+ "MAGN_SAT_PE": "Peccáta mea, Dómine, sicut sagíttæ infíxa sunt in me: sed ántequam vúlnera génerent in me, sana me, Dómine, medicaménto pœniténtiæ, Deus.",
+ "MEM_BVM": {
+  "Laudes": [
+   "Sub tuum præsídium confúgimus, sancta Dei Génitrix: nostras deprecatiónes ne despícias in necessitátibus, sed a perículis cunctis líbera nos semper, Virgo benedícta.",
+   "Post partum, Virgo, invioláta permansísti.",
+   "Dei Génitrix, intercéde pro nobis."
+  ],
+  "Vespera": [
+   "Regáli ex progénie María exórta refúlget: cujus précibus nos adjuvári mente et spíritu devotíssime póscimus.",
+   "Ora pro nobis, sancta Dei Génitrix.",
+   "Ut digni efficiámur promissiónibus Christi."
+  ],
+  "oratio": "Prótege, Dómine, fámulos tuos subsídiis pacis: et beátæ Maríæ semper Vírginis patrocíniis confidéntes, a cunctis hóstibus redde secúros. Per Dóminum."
+ },
+ "MEM_CRUCIS": {
+  "Laudes": [
+   "Crucifíxus surréxit a mórtuis, et redémit nos, allelúja, allelúja."
+  ],
+  "Vespera": [
+   "Crucem sanctam súbiit, qui inférnum confrégit: accínctus est poténtia, surréxit die tértia, allelúja."
+  ],
+  "v": [
+   "Dícite in natiónibus, allelúja.",
+   "Quia Dóminus regnávit a ligno, allelúja."
+  ],
+  "oratio": "Deus, qui pro nobis Fílium tuum Crucis patíbulum subíre voluísti, ut inimíci a nobis expélleres potestátem: concéde nobis fámulis tuis, ut resurrectiónis grátiam consequámur. Per eúndem."
+ },
+ "COMPL": {
+  "ps": [
+   [
+    4
+   ],
+   [
+    "30a"
+   ],
+   [
+    90
+   ],
+   [
+    133
+   ]
+  ],
+  "ant": {
+   "pa": "Miserére mihi, Dómine, et exáudi oratiónem meam.",
+   "pasch": "Allelúja, allelúja, allelúja, allelúja."
+  },
+  "hymn": {
+   "pa": "Te lucis ante terminum",
+   "quad": "Christe qui lux es et dies",
+   "pass": "Christe qui lux es et dies",
+   "pasch": "Jesu nostra redemptio"
+  },
+  "nunc": {
+   "pa": "Salva nos, Dómine, vigilántes, custódi nos dormiéntes: ut vigilémus cum Christo, et requiescámus in pace.",
+   "quad1": "Evígila super nos, ætérne Salvátor, ne nos apprehéndat cállidus tentátor: quia tu factus es nobis sempitérnus adjútor.",
+   "pass": "O Rex glorióse inter Sanctos tuos, qui semper es laudábilis, et tamen ineffábilis: tu in nobis es, Dómine, et nomen sanctum tuum invocátum est super nos: ne derelínquas nos, Deus noster: ut in die judícii nos collocáre dignéris inter Sanctos et eléctos tuos, Rex benedícte.",
+   "pasch": "Allelúja, resurréxit Dóminus, allelúja: sicut dixit vobis, allelúja, allelúja."
+  }
+ },
+ "_doc": "The Psalter of the 1909 Dominican Breviary (Cormier), vol. 1 pdf 86-245, as data -> psalter1909.json.\nTexts from the 1909 OCR (tools/b09/outline_psalter.txt), corrected by hand against the page images and Divinum Officium.\nSeasons: adv = Advent ferias/Sundays; pe = after the Epiphany octave to Septuagesima; sept = Septuagesima to Ash Wednesday;\nquad = Lent (to Saturday before Passion Sunday); pass = Passiontide (to Wednesday in Holy Week); pasch = Low Sunday to Ascension;\npt = after the octave of Trinity to Advent.  'pa' = pe + sept + pt (per annum).  A missing season key = proper (Proprium de Tempore).\nPsalms: integers (Vulgate numbering); '118a'..'118v' = the 22 octonaries of Ps 118 (8 verses each); 30a = Ps 30:2-6;\ncanticles: 210 Benedicite (O.P. form, no Gloria), 221 Isaiae 12, 222 Ezechiae, 223 Annae, 224 Moysis (Ex 15), 225 Habacuc,\n226 Moysis (Deut 32), 231 Benedictus, 232 Magnificat, 233 Nunc dimittis, 234 Quicumque.\nA psalm group is [psalms...]; 'Gloria Patri' only at the end of the group (the 1909 rubric: 'Hic non dicitur Gloria Patri')."
+}
