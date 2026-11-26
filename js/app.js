@@ -439,7 +439,7 @@
       if (fE >= 39 && fE <= 48 && parts.al.length > 1) parts.al = [parts.al[0], {id: 5526}];  // tempore Ascensionis
     }
     if (isEmber(key) && !/^Pent0/.test(key)) parts.al = [];
-    if (isVigil(key) && !/^(Dec24|Jan5a)$/.test(key) && !(key === 'Dec24' && d && d.getDay() === 0)) parts.al = [];
+    if (isVigil(key) && !/^(Dec24|Jan5a|AscVig)$/.test(key) && !(key === 'Dec24' && d && d.getDay() === 0)) parts.al = [];
     if (/Innocent/.test(titleText(key)) && d && d.getDay() !== 0) parts.al = [];
     return parts;
   }
