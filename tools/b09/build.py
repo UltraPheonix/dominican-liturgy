@@ -364,6 +364,24 @@ def sunday_resp_source(d):
         if sum(1 for y in ls if 'resp' in y) >= 6: return ls
         if season(x)[0] != season(d)[0]: break
     return []
+_CL = {}
+def cut_lesson(t):
+    """a lesson ends before the responsory, the next lesson or the next Hour (the OCR parse can run on, e.g. the third lesson
+    into its responsory and Lauds); OCR words repaired as in clean_prayer"""
+    if t in _CL: return _CL[t]
+    import latdict as LD
+    k = t
+    m = re.search(r'\s(?:Ante Laudes|Ad Laudes|Ad Matutinum|Capitulum\.|Hymnus\.|In I+\. Nocturno|Super Psalm|Invitatorium|Dicátur Cánticum|Psalmi(?:,| et| de| ut)|Lectio [ivxj]+\.|'
+                  r'\S{1,3}\.?\s?(?:j|ij|iij|iv|v|vj|vij|viij|ix)\.\s+[A-Z])', t)
+    if m and m.start() > 80: t = t[:m.start()].rstrip()
+    out = []
+    for x in t.split():
+        y = LD.fix_word(x)
+        if y == x: y = ocr_word(x, LD)
+        if y is not None: out.append(y)
+    t = ' '.join(out); t = re.sub(r'\s+([;:,.?!])', r'\1', t)
+    _CL[k] = t
+    return t
 def lessons_rows(d, ls, noc, sunday):
     rows = [put('<n>Pater noster secreto.</n>', '<n>Our Father silently.</n>')]
     hom = any(x.get('homily_head') for x in ls)
@@ -379,7 +397,7 @@ def lessons_rows(d, ls, noc, sunday):
         if x.get('gospel'):
             la.append('<c>%s</c>%s' % (x['gospel'][0], x['gospel'][1:])); en_.append(ant_en(x['gospel']) if en(x['gospel']) else x['gospel'])
             la.append('<r>%s</r>' % x['homily_head']); en_.append('<r>%s</r>' % x['homily_head'])
-        t = x['la']; la.append('<c>%s</c>%s' % (t[0], t[1:])); en_.append(x.get('en') or t)
+        t = cut_lesson(x['la']); la.append('<c>%s</c>%s' % (t[0], t[1:])); en_.append(x.get('en') or t)
         if x.get('close') == 'haec' or (x.get('ref', '').startswith('Isa') and d.month == 12):
             la.append('Hæc dicit Dóminus Deus: Convertímini ad me, et salvi éritis.\n<r>℟.</r> Deo grátias.'); en_.append('Thus saith the Lord God: Be converted to me, and you shall be saved.\n<r>℟.</r> Thanks be to God.')
         else:
