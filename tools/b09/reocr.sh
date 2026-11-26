@@ -8,3 +8,5 @@ for p in $(seq $2 $3); do
   tesseract $f.img-*.png $f -l lat --psm 1 2>/dev/null
   rm -f $f.img-*.png
 done
+# The result is kept in tools/b09/ocr/v1.txt.gz, v2.txt.gz ('\f### <pdf page>\n<text>' per page). To restore /tmp/b09/ocr from them:
+#   python3 -c "import gzip,sys;[open('/tmp/b09/ocr/%s-%s.txt'%(v,p[:4]),'w').write(p[5:]) for v in ('v1','v2') for p in gzip.open('tools/b09/ocr/%s.txt.gz'%v,'rt').read().split('\f### ')[1:]]"
