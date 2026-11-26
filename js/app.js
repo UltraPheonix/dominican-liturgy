@@ -1266,8 +1266,8 @@
     var inc = function (p, re) { return ((state.parts || {})[p] || []).some(function (c) { var x = D.chants[c.id]; return x && re.test(x.i || ''); }); };
     var or = window.ORATIONS && ORATIONS[state.key];
     var on = {tab: state.sac === 'tab', exp: state.sac === 'exp', sac: !!state.sac, pope: state.prel === 'pope', bp: state.prel === 'bp',
-              prel: !!state.prel, one: servOf() === 'one', full: servOf() === 'full', req: !!(R && R.requiem),
-              flect: flectamusDay(state.key, state.date), sp: !!(or && or.sp), adjuva: inc('tr', /^Domine non secundum/), veni: inc('al', /^Veni Sancte Spiritus/)};
+              prel: state.prel === 'pope' || state.prel === 'bp', mo: state.prel === 'mo', one: servOf() === 'one', full: servOf() === 'full', req: !!(R && R.requiem),
+              flect: flectamusDay(state.key, state.date), sp: !!(or && or.sp), adjuva: inc('tr', /^Domine non secundum/), veni: inc('al', /^Veni Sancte Spiritus/), nogl: !(R && R.gloria)};
     return cond.split(',').every(function (c) { var neg = c.charAt(0) === '!', v = !!on[neg ? c.slice(1) : c]; return neg ? !v : v; });
   }
   // the full directions of the Missal (Ritus servandus), or the basic Order of Mass with its few directions
@@ -1276,7 +1276,7 @@
   function secLines(sec) { return fullRub() && sec.adv ? sec.adv : sec.lines; }
   function showLine(l, R) { return (!l.m || l.m.indexOf(modeOf()) >= 0) && holds(l['if'], R); }
   // a direction of the rubrics: the short form always shown; when it rests on paragraphs of the Missal, tapping it opens them (English)
-  var COND_LABEL = {tab: 'Tabernacle', exp: 'Exposition', sac: 'Blessed Sacrament', pope: 'The Pope present', bp: 'Prelate present', prel: 'Prelate present', one: 'One acolyte', req: 'Requiem'};
+  var COND_LABEL = {tab: 'Tabernacle', exp: 'Exposition', sac: 'Blessed Sacrament', pope: 'The Pope present', bp: 'Prelate present', prel: 'Prelate present', mo: 'Master of the Order', one: 'One acolyte', req: 'Requiem'};
   function rubLine(l) {
     var tag = (l['if'] || '').split(',').filter(function (c) { return COND_LABEL[c]; }).map(function (c) { return COND_LABEL[c]; })[0];
     var lead = tag ? el('span', {class: 'o-cond', text: tag}) : null;
