@@ -9,6 +9,14 @@ DO = '/home/claude/divinumofficium/divinum-officium/web/www/horas'
 OUT = os.path.join(REPO, 'data', 'office1909')
 FROM, TO = datetime.date(2026, 11, 1), datetime.date(2027, 12, 31)
 P = json.load(open(os.path.join(HERE, 'psalter1909.json')))
+T = json.load(open(os.path.join(HERE, 'tempora1909.json')))
+def tkey(d):
+    s, wk, n, prop = season(d); w = (d.weekday() + 1) % 7
+    if s == 'adv': return 'adv%d-%d' % (n, w)
+    if s == 'pt' and w == 6 and (d + datetime.timedelta(days=1)) == adv1(d.year): return 'pre-adv'
+    return None
+def TP(d, k):
+    x = T['days'].get(tkey(d) or '', {}); return x.get(k)
 
 def nb(s):
     s = unicodedata.normalize('NFD', s.lower()); s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
@@ -195,21 +203,36 @@ def laus(t, lang, s):
     if s in ('sept', 'cin', 'quad', 'pass'):
         return t.replace('<c>A</c>llelúia.', '<c>L</c>aus tibi, Dómine, Rex ætérnæ glóriæ.').replace('<c>A</c>lleluia.', '<c>P</c>raise be to thee, O Lord, King of eternal glory.')
     return t
-def chapter_hymn_row(cap, extra_head=('Capitulum Hymnus Versus', 'Chapter Hymn Verse')):
+def resp_text(r, lang):
+    a, b, v = r; rep = b.split()[0].rstrip(',.:') + '.'
+    if lang == 'la': return '<r>℟.</r> %s * %s\n<r>℣.</r> %s %s\n<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. %s\n\n' % (a, b, v, rep, rep)
+    return '<r>℟.</r> %s * %s\n<r>℣.</r> %s\n\n' % (ant_en(a), ant_en(b), ant_en(v))
+def week_oratio(d, s):
+    if s != 'adv': return None
+    return T['WEEK_OR'][str(season(d)[2])]
+def six_before_vigil(d):
+    if d.month != 12 or d.day < 17 or d.day > 23 or d.weekday() == 6: return False
+    n = sum(1 for k in range(d.day + 1, 24) if datetime.date(d.year, 12, k).weekday() != 6)
+    return n < 6
+def chapter_hymn_row(cap, extra_head=('Capitulum Hymnus Versus', 'Chapter Hymn Verse'), resp=None):
     if not cap: return put('<h>Capitulum Hymnus Versus</h>\n' + PROPER['la'], '<h>Chapter Hymn Verse</h>\n' + PROPER['en'])
     ref, txt, hy, v, r = cap; hla, hen = hymn(hy)
-    la = '<h>%s</h>\n<r>%s</r>\n<c>%s</c>%s\n<r>℟.</r> Deo grátias.\n\n<r>Hymnus</r>\n%s\n\n%s' % (extra_head[0], ref, txt[0], txt[1:], hla, VR([v, r], 'la'))
+    la = '<h>%s</h>\n<r>%s</r>\n<c>%s</c>%s\n<r>℟.</r> Deo grátias.\n\n%s<r>Hymnus</r>\n%s\n\n%s' % (extra_head[0], ref, txt[0], txt[1:], resp_text(resp, 'la') if resp else '', hla, VR([v, r], 'la'))
     e = en(txt); e = e if e else txt
-    en_ = '<h>%s</h>\n<r>%s</r>\n<c>%s</c>%s\n<r>℟.</r> Thanks be to God.\n\n<r>Hymn</r>\n%s\n\n%s' % (extra_head[1], ref, e[0], e[1:], hen or hla, VR([v, r], 'en'))
+    en_ = '<h>%s</h>\n<r>%s</r>\n<c>%s</c>%s\n<r>℟.</r> Thanks be to God.\n\n%s<r>Hymn</r>\n%s\n\n%s' % (extra_head[1], ref, e[0], e[1:], resp_text(resp, 'en') if resp else '', hen or hla, VR([v, r], 'en'))
     return put(la, en_)
 def gospel_row(which, ant):
     num, h = (231, ('Canticum: Benedictus', 'Canticle: Benedictus')) if which == 'b' else (232, ('Canticum: Magnificat', 'Canticle: Magnificat')) if which == 'm' else (233, ('Canticum: Nunc dimittis', 'Canticle: Nunc dimittis'))
     return psalm_rows([[num]], [ant], head=h)[0]
-def oratio_row(ferial_preces=False):
+def oratio_row(ferial_preces=False, text=None):
     la = '<h>Oratio</h>\n'; en_ = '<h>Prayer</h>\n'
     if ferial_preces:
         la += '<n>Preces feriales:</n>\n<c>K</c>ýrie, eléison. Christe, eléison. Kýrie, eléison.\n<n>Pater noster secreto.</n>\n<r>℣.</r> Et ne nos indúcas in tentatiónem.\n<r>℟.</r> Sed líbera nos a malo.\n'
         en_ += '<n>Ferial preces:</n>\n<c>L</c>ord, have mercy. Christ, have mercy. Lord, have mercy.\n<n>Our Father silently.</n>\n<r>℣.</r> And lead us not into temptation.\n<r>℟.</r> But deliver us from evil.\n'
+    if text:
+        la += '<r>℣.</r> Dóminus vobíscum.\n<r>℟.</r> Et cum spíritu tuo.\n<c>O</c>rémus.\n<c>%s</c>%s\n<r>℟.</r> Amen.' % (text[0], text[1:])
+        e = en(text); en_ += '<r>℣.</r> The Lord be with you.\n<r>℟.</r> And with thy spirit.\n<c>L</c>et us pray.\n%s\n<r>℟.</r> Amen.' % (e or text)
+        return put(la, en_)
     la += '<r>℣.</r> Dóminus vobíscum.\n<r>℟.</r> Et cum spíritu tuo.\n<c>O</c>rémus.\n' + PROPER['la']
     en_ += '<r>℣.</r> The Lord be with you.\n<r>℟.</r> And with thy spirit.\n<c>L</c>et us pray.\n' + PROPER['en']
     return put(la, en_)
@@ -233,7 +256,7 @@ def sv(dct, s, default=None):
 def matins(d, s, w):
     rows = [put('<h>Ante Matutinum</h>\n<n>Pater noster et Credo in Deum secreto.</n>', '<h>Before Matins</h>\n<n>Our Father and the Apostles\' Creed silently.</n>'),
             lib_row('mat_incipit', lambda t, l: laus(t, l, s))]
-    inv = P['INVIT'][str(w)] if s in ('pe', 'sept', 'pt') and not (w and s == 'sept' and False) else None
+    inv = TP(d, 'invit') or (P['INVIT'][str(w)] if s in ('pe', 'sept', 'pt') else None)
     rows.append(invit_row(inv, w))
     hy = sv(P['HYMN_MAT'], s)
     rows.append(put('<h>Hymnus</h>\n' + (hymn(hy)[0] if hy else PROPER['la']), '<h>Hymn</h>\n' + ((hymn(hy)[1] or hymn(hy)[0]) if hy else PROPER['en'])))
@@ -281,18 +304,19 @@ def lauds(d, s, w):
     rows = [put(laus(inc_la.replace('<h>Incipit</h>\n', '<h>Incipit</h>\n' + VR(v, 'la') + '\n'), 'la', s), laus(inc_en.replace('<h>Start</h>\n', '<h>Start</h>\n' + VR(v, 'en') + '\n'), 'en', s))]
     if w == 0:
         groups = P['LAUDS_SUN_SEPT'] if s in ('sept', 'quad', 'pass') else P['LAUDS_SUN']
-        a = P['LAUDS_SUN_ANT'].get(s)
-        rows += psalm_rows(groups, None if a else [None] * 5, single=a)
+        a = P['LAUDS_SUN_ANT'].get(s); la5 = TP(d, 'laudes')
+        rows += psalm_rows(groups, la5, single=None) if la5 else psalm_rows(groups, None if a else [None] * 5, single=a)
         cap = sv(P['CAP']['laud_sun'], s)
     else:
         groups, ants = P['LAUDS_FER'][str(w)]
+        if six_before_vigil(d): ants = T['SIX'][str(w)]
         if s == 'pasch': groups = P['LAUDS_SUN']; rows += psalm_rows(groups, None, single='Allelúja, allelúja.')
         else: rows += psalm_rows(groups, ants)
         cap = sv(P['CAP']['laud_fer'], s)
     rows.append(chapter_hymn_row(cap))
-    b = P['BENED_FER'].get(str(w)) if w and s in ('pe', 'pt') else None
+    b = TP(d, 'bened') or (P['BENED_FER'].get(str(w)) if w and s in ('pe', 'pt') else None)
     rows.append(gospel_row('b', b))
-    rows.append(oratio_row(ferial_preces=bool(w) and s != 'pasch'))
+    rows.append(oratio_row(ferial_preces=bool(w) and s != 'pasch', text=TP(d, 'oratio_laudes') or week_oratio(d, s)))
     if w == 0 and s in ('pe', 'pt', 'sept', 'pasch'): rows += memoria_row('Laudes', s)
     elif w and s == 'pasch': rows += memoria_row('Laudes', s)[:1]
     rows.append(lib_row('conclusio'))
@@ -302,6 +326,8 @@ def little(d, s, w, hour):
     hla, hen = hymn(P['HOUR_HYMN'][hour]); rows.append(put('<h>Hymnus</h>\n' + hla, '<h>Hymn</h>\n' + (hen or hla)))
     sa = sv(P['HOUR_ANT'][hour], s) if s != 'cin' else P['HOUR_ANT'][hour]['pe']
     a = sa[0 if w == 0 else 1] if sa else None
+    la5 = TP(d, 'laudes') if w == 0 else None
+    if la5: a = la5[{'Prima': 0, 'Tertia': 1, 'Sexta': 2, 'Nona': 4}[hour]]
     if hour == 'Prima':
         groups = P['PRIME_PS_SUN_SEPT'] if (w == 0 and s in ('sept', 'quad', 'pass')) else P['PRIME_PS']
         if w == 0 and s not in ('sept', 'quad', 'pass'): groups = groups + [[234]]
@@ -313,7 +339,7 @@ def little(d, s, w, hour):
         cap = ('1 Tim 1', 'Regi sæculórum immortáli et invisíbili, soli Deo honor et glória in sǽcula sæculórum. Amen.') if sun_cap else ('Zach 8', 'Pacem et veritátem dilígite, ait Dóminus omnípotens.')
         js = s not in ('pass',)
         la = '<h>Capitulum Responsorium Versus</h>\n<r>%s</r>\n<c>%s</c>%s\n<r>℟.</r> Deo grátias.\n\n' % (cap[0], cap[1][0], cap[1][1:])
-        if js: la += '<r>℟.br.</r> Jesu Christe, Fili Dei vivi, * Miserére nobis. Jesu Christe.\n<r>℣.</r> Qui sedes ad déxteram Patris. Miserére nobis.\n<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. Jesu Christe.\n\n'
+        if js: la += '<r>℟.br.</r> Jesu Christe, Fili Dei vivi, * Miserére nobis. Jesu Christe.\n<r>℣.</r> %s Miserére nobis.\n<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. Jesu Christe.\n\n' % ('Qui ventúrus es in mundum.' if s == 'adv' else 'Qui sedes ad déxteram Patris.')
         la += '<r>℣.</r> Exsúrge, Dómine, ádjuva nos.\n<r>℟.</r> Et líbera nos propter nomen tuum.'
         e1 = en(cap[1]) or cap[1]
         en_ = '<h>Chapter Responsory Verse</h>\n<r>%s</r>\n%s\n<r>℟.</r> Thanks be to God.\n\n' % (cap[0], e1)
@@ -340,22 +366,25 @@ def little(d, s, w, hour):
         la += '<r>℟.br.</r> %s * %s %s\n<r>℣.</r> %s %s%s\n\n%s' % (r1, r2, r1.rstrip(',:') if s != 'pass' else inc + '.', rv, r2.split()[0].rstrip(',.:') + '.', gl, VR([v, r], 'la'))
         en_ += '<r>℟.br.</r> %s * %s\n<r>℣.</r> %s\n\n%s' % (ant_en(r1 + ' ' + r2), '', ant_en(rv), VR([v, r], 'en'))
     rows.append(put(la, en_))
-    rows.append(oratio_row(ferial_preces=bool(w) and s != 'pasch'))
+    rows.append(oratio_row(ferial_preces=bool(w) and s != 'pasch', text=week_oratio(d, s)))
     rows.append(lib_row('conclusio'))
     return rows
 def vespers(d, s, w):
+    if tkey(d) == 'pre-adv': s = 'adv'
     rows = [lib_row('incipit', lambda t, l: laus(t, l, s))]
     groups, ants = P['VESP'][str(w)]
     if s == 'pasch': rows += psalm_rows(groups, None, single=P['VESP_PASCH_ANT'].get(str(w), P['VESP_PASCH_ANT']['fer']))
-    elif w == 0 and s not in ('pe', 'sept', 'pt', 'quad', 'pass', 'cin'): rows += psalm_rows(groups, [None] * 5)
+    elif w == 0 and s not in ('pe', 'sept', 'pt', 'quad', 'pass', 'cin', 'adv'): rows += psalm_rows(groups, [None] * 5)
     else: rows += psalm_rows(groups, ants)
     key = 'vesp_sun' if w == 0 else 'vesp_sat' if w == 6 else 'vesp_fer'
-    rows.append(chapter_hymn_row(sv(P['CAP'][key], s)))
-    m = None
-    if s in ('pe', 'pt') and 1 <= w <= 5: m = P['MAGN_FER'][str(w)]
+    rows.append(chapter_hymn_row(sv(P['CAP'][key], s), resp=TP(d, 'vesp_r')))
+    m = TP(d, 'magn')
+    if s == 'adv' and d.month == 12 and d.day >= 17: m = T['OANT'][str(d.day)]
+    if s in ('pe', 'pt') and 1 <= w <= 5 and not m: m = P['MAGN_FER'][str(w)]
     if s == 'pe' and w == 6: m = P['MAGN_SAT_PE']
     rows.append(gospel_row('m', m))
-    rows.append(oratio_row(ferial_preces=1 <= w <= 5 and s not in ('pasch',) and not (s == 'adv' and d.day >= 17)))
+    rows.append(oratio_row(ferial_preces=1 <= w <= 5 and s not in ('pasch',) and not (s == 'adv' and d.month == 12 and d.day >= 17),
+                           text=TP(d, 'oratio_vesp') or (week_oratio(d, s) if w != 6 else None)))
     if w == 0 and s in ('pe', 'pt', 'sept', 'pasch'): rows += memoria_row('Vespera', s)
     elif s == 'pasch': rows += memoria_row('Vespera', s)[:1]
     rows.append(lib_row('conclusio'))

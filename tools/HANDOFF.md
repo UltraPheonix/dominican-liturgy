@@ -377,3 +377,14 @@ from outline_psalter.txt (fix wording against DO), then build.py → data/office
 NEXT (Joseph 08:13: Passiontide and Triduum must be perfect): Proprium de Tempore from v1 pdf 246 → tools/b09/tempora1909.json:
   Advent first (starts 29 Nov), then Christmas, Lent, Passiontide, Holy Week + Triduum (line by line vs scans), Easter…; then
   Sanctoral/Commons (vol. 2) + Rubricae generales precedence; then chant (Jandel 1862, Nocturnale).
+### 1909 — Advent short propers LIVE (2026-11-26, sw propria-v84)
+- tools/b09/make_tempora.py → tempora1909.json (keys 'adv<week>-<weekday>', 'pre-adv' = Saturday before Advent I): invitatories
+  (Regem venturum on ferias, Prope est jam on the Ember days), Sunday Lauds antiphons (also Prime=1, Terce=2, Sext=3, None=5),
+  Benedictus/Magnificat antiphons for every Advent day, Sunday prayers (said all week; Ember-day Lauds prayers), First-Vespers
+  responsories (Missus est, Ecce Dominus veniet, Qui venturus est, Non auferetur), O antiphons from 17 Dec (no Vespers preces),
+  Lauds antiphons of the six ferias before the Vigil, Prime R.br. verse "Qui venturus es in mundum". Source: v1 pdf 246–283.
+- build.py: TP(d,key) reads tempora1909.json; Saturday-before-Advent Vespers = Advent chapter/hymn/R.
+STILL MISSING in Advent: Matins lessons + responsories (Isaiah; Sunday sermons/homilies; pdf 246–283), St Thomas (21 Dec)
+  commemoration antiphon "Nolite timere" (p273), Vigil of Christmas (p280–283). Sanctoral not yet (Dec 8 etc.).
+NEXT ORDER: Advent lessons → Christmas–Epiphany (pdf 284–373) → Sundays after Epiphany (374–415) → Septuagesima–Lent → Passiontide
+  + Holy Week + Triduum (Joseph: must be perfect; check every line vs scans) → Paschaltide → after Pentecost; then vol. 2.
