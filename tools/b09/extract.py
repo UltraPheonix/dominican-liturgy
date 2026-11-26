@@ -16,14 +16,15 @@ for i, p in enumerate(d):
     # a running head spanning the middle stays in the left column at the top
     txt = []
     for c in cols:
-        c.sort(key=lambda w: (round(w[1] / 4), w[0]))
-        lines, cur, y = [], [], None
+        # cluster words into lines by vertical centre (tolerance: 45% of the median word height), then order by x
+        hs = sorted(w[3] - w[1] for w in c) or [8]; tol = 0.45 * hs[len(hs) // 2]
+        c.sort(key=lambda w: (w[1] + w[3]) / 2)
+        rows = []
         for w in c:
-            if y is None or abs(w[1] - y) > 3.5:
-                if cur: lines.append(' '.join(cur))
-                cur, y = [w[4]], w[1]
-            else: cur.append(w[4])
-        if cur: lines.append(' '.join(cur))
+            cy = (w[1] + w[3]) / 2
+            if rows and abs(cy - rows[-1][0]) <= tol: rows[-1][1].append(w); rows[-1][0] = (rows[-1][0] * (len(rows[-1][1]) - 1) + cy) / len(rows[-1][1])
+            else: rows.append([cy, [w]])
+        lines = [' '.join(x[4] for x in sorted(r[1], key=lambda w: w[0])) for r in rows]
         txt.append('\n'.join(lines))
     out.append('\f### %d\n%s\n||\n%s\n' % (i, txt[0], txt[1]))
 dst = os.path.join(os.path.dirname(__file__), 'text', tag + '.txt')

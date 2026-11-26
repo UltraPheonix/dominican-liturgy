@@ -346,3 +346,21 @@ Tools: OCR with tesseract 'latf'/'lat' (tessdata from raw.githubusercontent.com/
   Also in Joseph's Drive folder "Antiphons" (and on the CMAA site as n1/n2/na/nc.pdf): the NOCTURNALE S.O.P. (Ammosaulicus):
   n1 = front matter, n2 = Dominica per annum (Ordinarium of Matins), na = Proprium de Tempore, nc = Commune Sanctorum —
   born-digital PDFs whose notes are set in a chant font: decode the font glyphs to gabc → the Matins chant for both Offices.
+### 1909 — progress 2026-11-26
+- tools/b09/extract.py (column + line clustering; good reading order) → tools/b09/text/v1.txt.gz, v2.txt.gz.
+- tools/b09/latdict.py: accent restorer — dictionary of accented forms from Divinum Officium Latin (clone:
+  GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 https://github.com/DivinumOfficium/divinum-officium /home/claude/divinumofficium/divinum-officium);
+  fix_line('nos h6die … declindmus') → 'nos hódie … declinémus'. DO also has the pre-1911 Roman psalter ('Daya…' sections in
+  horas/Latin/Psalterium/Psalmi/*.txt) and pre-Urban hymn texts — use them to restore wording/accents.
+- tools/b09/outline.py v1 86 246 → tools/b09/outline_psalter.txt: the psalter (vol. 1 pdf 86-245) with psalm verses skipped,
+  accents restored. Proprium de Tempore starts pdf 246 (Sabbato ante Dom. I Adventus).
+- 1909 cursus (= pre-1911 Roman distribution, confirmed from the OCR): Sunday Matins 12+3+3 psalms (1-3, 6-14 | 15-17 | 18-20);
+  Lauds Sun 92, 99, 62+66 (no Gloria after 62), Benedicite (+Benedicamus Patrem, Benedictus es; no Gloria), 148+149+150;
+  ferial Lauds Ps 50 + 5 / 42 / 64 / 89 / 142 / 91, 62+66, ferial canticle (Isaiae 12, Ezechiae, Annae, Moysis Ex 15, Habacuc?,
+  Moysis Deut 32), 148-150; Matins Mon 26-37, Tue 38-51, Wed 52-67, Thu 68-79, Fri 80-96, Sat 97-108; Vespers Sun 109-113,
+  Mon 114-120, Tue 121-125, Wed 126-130, Thu 131-136, Fri 137-141, Sat 143-147; Compline daily 4, 30(1-6), 90, 133 + Nunc dimittis;
+  Prime 53 + 118 (1-32) (Sunday adds 21-25 in Septuagesima/Lent per 'Modus dicendi Primam', pdf 118), Quicumque on Sundays
+  to check; Terce/Sext/None Ps 118 in sections. Prime antiphons by season pdf 115-117 (e.g. per annum Sunday 'Gloria tibi
+  Trinitas', ferial 'Deus exaudi orationem meam'). Prime, in chapter: Pretiosa … Obitus/Anniversarium prayers (pdf 110-112).
+NEXT: write tools/b09/psalter1909.json (per day/hour: antiphons, psalms, chapter, hymn, versicle, prayer, seasonal variants)
+from outline_psalter.txt (fix wording against DO), then build.py → data/office1909/ for the date range, Ordinary first.
