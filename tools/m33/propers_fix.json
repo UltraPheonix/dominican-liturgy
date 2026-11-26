@@ -46,7 +46,12 @@
   ],
   "lent_tr": [
    7125
-  ]
+  ],
+  "al": [
+   6582
+  ],
+  "p39": "G50 p. 18*-19*",
+  "_why_g50": "G50 p. 18*-19*: Alia Missa In virtute, Alleluia V. Laetabitur, pag. 9*"
  },
  "C30s": {
   "p33": 662,
@@ -467,23 +472,30 @@
   "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
  },
  "S0613": {
-  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "p39": "G50",
   "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
   "gr": [
-   7142
+   4733
   ],
   "co": [
-   4856
+   5425
   ],
   "al": [
-   6895
+   6959
   ],
   "pasch_al": [
    6895,
    6824
   ],
   "asc_al": 5352,
-  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "of": [
+   7170
+  ],
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35*"
  },
  "S0712": {
   "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
@@ -711,7 +723,10 @@
    6549
   ],
   "p39": "G50",
-  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine quinque talenta, p. 39*)",
+  "co": [
+   5425
+  ]
  },
  "S0405": {
   "pasch_al": [
@@ -737,7 +752,10 @@
    6549
   ],
   "p39": "G50",
-  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine quinque talenta, p. 39*)",
+  "co": [
+   5425
+  ]
  },
  "S0323b": {
   "pasch_al": [
@@ -790,7 +808,10 @@
    6549
   ],
   "p39": "G50",
-  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine quinque talenta, p. 39*)",
+  "co": [
+   5425
+  ]
  },
  "S0424": {
   "pasch_al": [
@@ -1094,7 +1115,10 @@
    6549
   ],
   "p39": "G50",
-  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine quinque talenta, p. 39*)",
+  "co": [
+   5425
+  ]
  },
  "S0620b": {
   "pasch_al": [
@@ -1338,7 +1362,10 @@
    6549
   ],
   "p39": "G50",
-  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine quinque talenta, p. 39*)",
+  "co": [
+   5425
+  ]
  },
  "S0223": {
   "in": [
@@ -1401,7 +1428,10 @@
    6549
   ],
   "p39": "G50",
-  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine quinque talenta, p. 39*)",
+  "co": [
+   5425
+  ]
  },
  "S0506": {
   "in": [
@@ -1510,5 +1540,186 @@
   ],
   "p39": "G50 p. 572",
   "_why_g50": "G50 p. 572: Offertorium Ave Maria, pag. 445"
+ },
+ "S0114": {
+  "of": [
+   7170
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Offertorium Veritas mea, p. 31*)"
+ },
+ "S1211": {
+  "in": [
+   5925
+  ],
+  "co": [
+   5854
+  ],
+  "al": [
+   4966
+  ],
+  "of": [
+   7170
+  ],
+  "gr": [
+   6727
+  ],
+  "p39": "G50 p. 384",
+  "_why_g50": "G50 p. 384: Missa Sacerdotes tui, de Communi unius Confessoris et Pontificis, pag. 30*"
+ },
+ "S0116b": {
+  "al": [
+   6890
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa Justus, de Communi unius Confessoris non Pontificis, pag. 39*"
+ },
+ "S0823b": {
+  "al": [
+   6890
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa Justus, de Communi unius Confessoris non Pontificis, pag. 39*"
+ },
+ "S0121": {
+  "gr": [
+   5531
+  ],
+  "co": [
+   6027
+  ],
+  "p39": "G50 p. 402",
+  "_why_g50": "G50 p. 402: Missa Me exspectaverunt, de Communi unius Virg. et Mart., pag. 48*"
+ },
+ "S0204": {
+  "gr": [
+   6123
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa Statuit, de Communi unius Confessoris et Pontificis, pag. 32*"
+ },
+ "S0308": {
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ],
+  "p39": "G50 p. 434",
+  "_why_g50": "G50 p. 434: Missa Os justi, de Communi unius Conf. non Pont., pag. 42*"
+ },
+ "S0904b": {
+  "in": [
+   4291
+  ],
+  "gr": [
+   6293
+  ],
+  "al": [
+   5685
+  ],
+  "of": [
+   5801
+  ],
+  "co": [
+   6238
+  ],
+  "p39": "G50 p. 566",
+  "_why_g50": "G50 p. 566: Missa Gaudeamus, de Communi unius Virginis non Martyris, pag. 51*"
+ },
+ "S0918": {
+  "in": [
+   5885
+  ],
+  "al": [
+   6895
+  ],
+  "of": [
+   6021
+  ],
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa Os justi, de Communi unius Confessoris non Pontificis, pag. 42*"
+ },
+ "S1012b": {
+  "in": [
+   5885
+  ],
+  "al": [
+   6895
+  ],
+  "of": [
+   6021
+  ],
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa Os justi, de Communi unius Confessoris non Pontificis, pag. 42*"
+ },
+ "S0115": {
+  "in": [
+   6411
+  ],
+  "gr": [
+   6960
+  ],
+  "al": [
+   6582
+  ],
+  "of": [
+   5797
+  ],
+  "co": [
+   6924
+  ],
+  "p39": "G50 p. 18*",
+  "_why_g50": "G50 p. 18*: Missa Laetabitur (p. 7*), praeter Offertorium Gloria et honore et Communionem Qui vult, pag. 17*"
+ },
+ "S0122": {
+  "in": [
+   6411
+  ],
+  "gr": [
+   6960
+  ],
+  "al": [
+   6582
+  ],
+  "of": [
+   5797
+  ],
+  "co": [
+   6924
+  ],
+  "p39": "G50 p. 18*",
+  "_why_g50": "G50 p. 18*: Missa Laetabitur (p. 7*), praeter Offertorium Gloria et honore et Communionem Qui vult, pag. 17*"
+ },
+ "S0201": {
+  "in": [
+   6411
+  ],
+  "gr": [
+   6960
+  ],
+  "al": [
+   6582
+  ],
+  "of": [
+   5797
+  ],
+  "co": [
+   6924
+  ],
+  "p39": "G50 p. 18*",
+  "_why_g50": "G50 p. 18*: Missa Laetabitur (p. 7*), praeter Offertorium Gloria et honore et Communionem Qui vult, pag. 17*"
  }
 }
