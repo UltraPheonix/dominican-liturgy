@@ -380,7 +380,10 @@ window.HOLYWEEK = {
         {"w": "C", "la": "Allelúia, allelúia, allelúia.", "en": "Alleluia, alleluia, alleluia."},
         {"g": "op59-ps150-laudes", "n": "Psalmus 150 · tonus VI"},
         {read: 'Psalmi 150: 1-6', type: 'Psalmus'},
+        {"r": "The antiphon Et valde and the canticle Benedictus are found in the Triduum ante Pascha, p. 324 (hs1959 p. 35); the celebrant intones the antiphon at the altar, the cantor bringing it to him, and it is sung in full before and after the canticle."},
+        {"g": "op59-etvalde", "n": "Antiphona · VIII"},
         {w: 'C', la: 'Ant. Et valde mane una sabbatórum véniunt ad monuméntum, orto iam sole, allelúia.', en: 'Ant. And very early in the morning, the first day of the week, they came to the sepulchre, the sun being now risen, alleluia.'},
+        {"g": "op59-benedictus8", "n": "Canticum Benedictus · tonus VIII"},
         {read: 'Lucas 1: 68-79', type: 'Canticum'},
         {r: 'While the Benedictus is sung there is the customary incensation. The antiphon Et valde is repeated, and the celebrant says:'}
       ]}

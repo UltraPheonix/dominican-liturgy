@@ -3,13 +3,13 @@ O.P. instauratum (Romae 1959) = media.churchmusicassociation.org/dominican/hebdo
 import os
 H=os.path.dirname(os.path.abspath(__file__)); G=os.path.join(H,'..','..','..','gabc')
 SRC='book:Cantus Gregoriani ad Ordinem Hebdomadae Sanctae O.P. instauratum (Romae 1959), %s;\ntranscriber:transcribed from the page images (Mass chat, 2026-11-26);\n'
-def build(src,out,name,part,mode,pages):
+def build(src,out,name,part,mode,pages,book=None):
     body=''
     for l in open(os.path.join(H,src)):
         l=l.rstrip()
         if not l or l.startswith('#'): continue
         body+= l[:-1] if l.endswith('+') else l+' '
-    head='name:%s;\noffice-part:%s;\n'%(name,part)+('mode:%s;\n'%mode if mode else '')+SRC%pages
+    head='name:%s;\noffice-part:%s;\n'%(name,part)+('mode:%s;\n'%mode if mode else '')+(SRC%pages if not book else 'book:%s, %s;\ntranscriber:transcribed from the page images (Mass chat, 2026-11-26);\n'%(book,pages))
     open(os.path.join(G,'op59-'+out+'.gabc'),'w').write(head+'%%\n'+body.strip()+'\n')
 build('pueri1.txt','pueri1','Pueri Hebraeorum, tollentes','Antiphona','1','pp. 5-6')
 build('ps23.txt','ps23','Domini est terra (Ps 23)','Psalmus','1','p. 6')
@@ -38,3 +38,5 @@ build('lumen.txt','lumen','Lumen Christi','Versus','','p. 33')
 build('deogratias.txt','deogratias','Deo gratias','Responsum','','p. 33')
 build('alleluia6.txt','alleluia6','Alleluia, alleluia, alleluia','Antiphona','6','p. 34')
 build('ps150l.txt','ps150-laudes','Laudate Dominum in sanctis (Ps 150)','Psalmus','6','p. 34')
+build('etvalde.txt','etvalde','Et valde mane','Antiphona','8','p. 324','Ecclesiasticum Officium O.P. Triduo ante Pascha (1927)')
+build('benedictus8.txt','benedictus8','Benedictus (tonus VIII)','Canticum','8','p. 324','Ecclesiasticum Officium O.P. Triduo ante Pascha (1927)')
