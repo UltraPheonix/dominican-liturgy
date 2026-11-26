@@ -10,6 +10,7 @@ OUT = os.path.join(REPO, 'data', 'office1909')
 FROM, TO = datetime.date(2026, 11, 1), datetime.date(2027, 12, 31)
 P = json.load(open(os.path.join(HERE, 'psalter1909.json')))
 T = json.load(open(os.path.join(HERE, 'tempora1909.json')))
+LES = json.load(open(os.path.join(HERE, 'lessons1909.json')))
 def tkey(d):
     s, wk, n, prop = season(d); w = (d.weekday() + 1) % 7
     if s == 'adv': return 'adv%d-%d' % (n, w)
@@ -203,6 +204,48 @@ def laus(t, lang, s):
     if s in ('sept', 'cin', 'quad', 'pass'):
         return t.replace('<c>A</c>llelúia.', '<c>L</c>aus tibi, Dómine, Rex ætérnæ glóriæ.').replace('<c>A</c>lleluia.', '<c>P</c>raise be to thee, O Lord, King of eternal glory.')
     return t
+BEN = {0: ['Benedictióne perpétua benedícat nos Pater ætérnus.', 'Unigénitus Dei Fílius nos benedícere et adjuváre dignétur.', 'Spíritus Sancti grátia illumináre dignétur sensus et corda nostra.'],
+       1: ['Deus Pater omnípotens sit nobis propítius et clemens.', 'Ad gáudia paradísi perdúcat nos misericórdia Christi.', 'Ignem sui amóris accéndat Deus in córdibus nostris.'],
+       2: ['Evangélica léctio sit nobis salus et protéctio.', 'Divínum auxílium máneat semper nobíscum.', 'Ad societátem cívium supernórum perdúcat nos Rex Angelórum.']}
+BEN_EN = {0: ['May the everlasting Father bless us with an everlasting blessing.', 'May the only-begotten Son of God vouchsafe to bless and help us.', 'May the grace of the Holy Spirit vouchsafe to enlighten our senses and hearts.'],
+          1: ['May God the Father almighty be gracious and merciful unto us.', 'May the mercy of Christ bring us to the joys of paradise.', 'May God kindle in our hearts the fire of his love.'],
+          2: ['May the Gospel reading be our salvation and protection.', 'May the divine assistance remain with us always.', 'May the King of Angels bring us to the fellowship of the citizens of heaven.']}
+ROMN = ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix']
+def resp_block(r, lang, last):
+    a, b, vs = r['a'], r['b'], r['v']
+    if r.get('ferial') and len(vs) > 1: vs = vs[-1:]; b2 = None
+    if lang == 'en': a, b, vs = ant_en(a), ant_en(b), [ant_en(v) for v in vs]
+    out = ['<r>℟.</r> %s * %s' % (a, b)]
+    rep = ' '.join(b.split()[:3]).rstrip(',:;') + '.'
+    for v in vs:
+        out.append('<r>℣.</r> %s %s' % (v, '' if nb(v)[-12:] in nb(a + b) else rep))
+    if r.get('gloria') and not r.get('ferial'):
+        out.append(('<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. ' if lang == 'la' else '<r>℣.</r> Glory be to the Father, and to the Son, and to the Holy Ghost. ') + rep)
+    return '\n'.join(out)
+def lessons_rows(d, ls, noc, sunday):
+    rows = [put('<n>Pater noster secreto.</n>', '<n>Our Father silently.</n>')]
+    hom = any(x.get('homily_head') for x in ls)
+    for i, x in enumerate(ls):
+        bi = (x['n'] - 1) % 3; bset = 2 if (sunday and noc == 2) or (not sunday and hom) else (noc if sunday else 0)
+        if bset == 2 and not hom: b_la, b_en = 'Ille nos benedícat, qui sine fine vivit et regnat.', 'May he bless us who liveth and reigneth without end.'
+        else: b_la, b_en = BEN[bset][bi], BEN_EN[bset][bi]
+        la = ['<h>Lectio %s</h>' % ROMN[x['n']], '<r>℣.</r> Jube, domne, benedícere.', '<r>Benedictio.</r> ' + b_la, '<r>℟.</r> Amen.']
+        en_ = ['<h>Lesson %d</h>' % x['n'], '<r>℣.</r> Pray, sir, a blessing.', '<r>Blessing.</r> ' + b_en, '<r>℟.</r> Amen.']
+        head = [h for h in x.get('head', []) if not h.startswith('Cap')]
+        if head: la.append('<r>%s</r>' % ' '.join(head))
+        if x.get('ref'): la.append('<r>%s</r>' % x['ref']); en_.append('<r>%s</r>' % x['ref'])
+        if x.get('gospel'):
+            la.append('<c>%s</c>%s' % (x['gospel'][0], x['gospel'][1:])); en_.append(ant_en(x['gospel']) if en(x['gospel']) else x['gospel'])
+            la.append('<r>%s</r>' % x['homily_head']); en_.append('<r>%s</r>' % x['homily_head'])
+        t = x['la']; la.append('<c>%s</c>%s' % (t[0], t[1:])); en_.append(x.get('en') or t)
+        if x.get('close') == 'haec' or (x.get('ref', '').startswith('Isa') and d.month == 12):
+            la.append('Hæc dicit Dóminus Deus: Convertímini ad me, et salvi éritis.\n<r>℟.</r> Deo grátias.'); en_.append('Thus saith the Lord God: Be converted to me, and you shall be saved.\n<r>℟.</r> Thanks be to God.')
+        else:
+            la.append('Tu autem, Dómine, miserére nostri.\n<r>℟.</r> Deo grátias.'); en_.append('But thou, O Lord, have mercy on us.\n<r>℟.</r> Thanks be to God.')
+        if x.get('resp'):
+            la.append('\n<h>Responsorium %s</h>\n' % ROMN[x['n']] + resp_block(x['resp'], 'la', i == len(ls) - 1)); en_.append('\n<h>Responsory</h>\n' + resp_block(x['resp'], 'en', i == len(ls) - 1))
+        rows.append(put('\n'.join(la), '\n'.join(en_)))
+    return rows
 def resp_text(r, lang):
     a, b, v = r; rep = b.split()[0].rstrip(',.:') + '.'
     if lang == 'la': return '<r>℟.</r> %s * %s\n<r>℣.</r> %s %s\n<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. %s\n\n' % (a, b, v, rep, rep)
@@ -269,7 +312,9 @@ def matins(d, s, w):
             else: rows += psalm_rows(noc['groups'], a or [None] * len(noc['groups']), head)
             v = sv(noc['v'], s) if s != 'cin' else noc['v']['pa']
             rows.append(vr_row(v) if v else put(PROPER['la'], PROPER['en']))
-            rows.append(note_row('Lectiones et Responsoria de Proprio de Tempore (in præparatione).', 'Lessons and responsories from the Proper of Time (in preparation).'))
+            ls = LES.get(tkey(d) or '', [])
+            if ls: rows += lessons_rows(d, [x for x in ls if 3 * ni < x['n'] <= 3 * ni + 3], ni, True)
+            else: rows.append(note_row('Lectiones et Responsoria de Proprio de Tempore (in præparatione).', 'Lessons and responsories from the Proper of Time (in preparation).'))
         if s not in ('adv', 'sept', 'cin', 'quad', 'pass'):
             rows.append(put('<h>Te Deum</h>\n<r>%s</r>\n%s' % (pstitle(0, 'la') if False else 'Canticum SS. Ambrosii et Augustini', TEDEUM[0]), '<h>Te Deum</h>\n%s' % TEDEUM[1]))
     else:
@@ -278,7 +323,14 @@ def matins(d, s, w):
         rows += psalm_rows(groups, ants if ok else [None] * 6, ('In Nocturno', 'Nocturn'))
         if s in P['FER_MAT_V']: v = P['FER_MAT_V'][s][(w - 1) % 3]
         rows.append(vr_row(v) if ok else put(PROPER['la'], PROPER['en']))
-        rows.append(note_row('Tres Lectiones cum Responsoriis de Proprio de Tempore (in præparatione).', 'Three lessons with responsories from the Proper of Time (in preparation).'))
+        ls = LES.get(tkey(d) or '', [])
+        if ls:
+            k = tkey(d); sun = LES.get(k[:-1] + '0', [])
+            if not any('resp' in x for x in ls) and sun:      # 'Responsoria Historiæ Dominicalis … secundum ordinem Nocturnorum'
+                noc = {1: 0, 4: 0, 2: 1, 5: 1, 3: 2, 6: 2}[w]
+                ls = [dict(x, resp=dict(sun[3 * noc + i]['resp'], ferial=(noc == 0 and i == 0))) if 3 * noc + i < len(sun) and 'resp' in sun[3 * noc + i] else x for i, x in enumerate(ls)]
+            rows += lessons_rows(d, ls, 0, False)
+        else: rows.append(note_row('Tres Lectiones cum Responsoriis de Proprio de Tempore (in præparatione).', 'Three lessons with responsories from the Proper of Time (in preparation).'))
     return rows
 def invit_row(ant, w):
     if not ant: return put('<h>Invitatorium</h>\n' + PROPER['la'], '<h>Invitatory</h>\n' + PROPER['en'])
