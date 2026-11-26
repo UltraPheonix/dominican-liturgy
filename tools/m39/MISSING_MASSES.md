@@ -1,0 +1,105 @@
+# 1939 calendar vs site Masses (tools/m39/k_build.py, 390 entries)
+
+## Feasts of the 1939 calendar with no site Mass (65)
+These need their Mass from the Missale O.P. 1939 (own Mass or Common + proper orations).
+
+- 0103 B. Zedislavæ Berkianæ Matronæ O. P. — Semiduplex
+- 0104 Octava SS. Innocentium MM. — Tres Lectiones
+- 0118 Cathedra Romana S. Petri — Totum Duplex
+- 0203 S. Blasii Ep. et Mart. — Tres Lectiones
+- 0204 Anniversarium Patrum et Matrum — Novem Lectiones
+- 0217 B. Reginaldi Conf. O. P. — Semiduplex
+- 0228 B. Villanæ de Bottis Matronæ O. P. — Semiduplex
+- 0302 B. Henrici Susonis Conf. O. P. — Semiduplex
+- 0304 S. Casimiri Conf. — Simplex
+- 0312 S. Gregorii Magni Papæ, Conf. et Eccl. Doct. — Duplex
+- 0317 S. Patricii Ep. et Conf. — Duplex
+- 0318 S. Cyrilli Ep. Hierosolymitani Conf. et Eccl. Doct. — Duplex
+- 0320 B. Ambrosii Sansedonii Conf. O. P. — Duplex
+- 0321 S. Benedicti Abbatis — Totum Duplex
+- 0401 Impressio SS. Stigmatum S. Catharinæ Sen. Virg. O. P. — Duplex
+- 0423 S. Georgii Mart. — Simplex
+- 0428 B. Ludovici M. Grignion de Montfort Conf. O. P. — Duplex
+- 0503 Inventio S. Crucis — Totum Duplex II classis
+- 0506 S. Joannis ante Portam Latinam — Totum Duplex
+- 0508 Apparitio S. Michaelis Arch. — Totum Duplex
+- 0513 B. Imeldæ Virg. O. P. — Duplex
+- 0516 S. Joannis Nepomuceni Mart. — Duplex
+- 0522 S. Servatii Ep. et Conf. — Duplex
+- 0525 S. Urbani I Papæ et Mart. — Tres Lectiones
+- 0529 BB. Guillelmi O. P. et Soc. MM. — Semiduplex
+- 0602 BB. Sadoc et Sociorum MM. O. P. — Semiduplex
+- 0609 BB. Dianæ, Cæciliæ et Amatæ Virginum O. P. — Semiduplex
+- 0610 B. Joannis Dominici Ep. et Conf. O. P. — Semiduplex
+- 0615 SS. Viti, Modesti et Crescentiæ MM. — Tres Lectiones
+- 0622 B. Innocentii V Papæ et Conf. O. P. — Duplex
+- 0703 S. Leonis II Papæ et Conf. — Simplex
+- 0707 B. Benedicti XI Papæ et Conf. O. P. — Duplex
+- 0712 Anniversarium sepultorum in Cœmeteriis nostris — Novem Lectiones
+- 0713 B. Jacobi a Voragine Ep. et Conf. O. P. — Semiduplex
+- 0716 Commemoratio B. Mariæ V. de Monte Carmelo — Totum Duplex
+- 0717 B. Ceslai Conf. O. P. — Semiduplex
+- 0721 S. Praxedis Virg. — Tres Lectiones
+- 0730 B. Mannis Conf. O. P. — Duplex
+- 0801 S. Petri Ap. ad Vincula — Totum Duplex
+- 0808 B. Joannæ de Aza, Matris S. P. N. Dominici — Duplex
+- 0813 SS. Hippolyti et Soc. MM. — Tres Lectiones
+- 0901 S. Ægidii Abbatis — Tres Lectiones
+- 0905 Anniversarium Familiarum et Benefactorum O. N. — Novem Lectiones
+- 0906 B. Bertrandi a Garriga Conf. O. P. — Semiduplex
+- 0909 S. Gorgonii Mart. — Tres Lectiones
+- 0910 S. Nicolai a Tolentino Conf. — Duplex
+- 0911 SS. Proti et Hyacinthi MM. — Tres Lectiones
+- 0917 Impressio sacrorum Stigmatum S. Francisci Conf. — Duplex
+- 0922 SS. Mauritii et Sociorum MM. — Tres Lectiones
+- 0924 B. Mariæ V. de Mercede — Totum Duplex
+- 0925 Commemoratio S. P. N. Dominici in Suriano — Totum Duplex
+- 1001 S. Remigii Ep. et Conf. — Tres Lectiones
+- 1009 SS. Dionysii Ep. et Sociorum MM. — Duplex
+- 1022 In Ecclesiis consecratis: Dedicatio propriæ Ecclesiæ — Totum Duplex I classis
+- 1029 Octava Dedicationis propriæ Ecclesiæ — Simplex
+- 1031 Commemoratio Sanctorum, quorum Reliquiæ in Ecclesiis nostris asservantur — Totum Duplex
+- 1110 Anniversarium Omnium Fratrum et Sororum defunctorum O. N. — Novem Lectiones
+- 1113 Patrocinium S. Thomæ Aq. in Scholas catholicas — Totum Duplex I classis
+- 1119 S. Elisabeth Viduæ — Duplex
+- 1201 B. Joannis a Vercellis Conf. O. P. — Duplex
+- 1210 Pro Italia et insulis adjac.: Translatio almæ domus Lauretanæ — Totum Duplex
+- 1220 S. Dominici Sylensis Abb. — Duplex
+- 1222 Patrocinium B. Mariæ V. — Totum Duplex
+- 1229 S. Thomæ Ep. et Mart. — Duplex
+- 1231 S. Silvestri I Papæ et Conf. — Duplex
+
+## Site Masses with a date that are not in the 1939 calendar (32)
+
+- S0110b 10 Ian. — B. Annæ de Angelis Monteagudo O.P. V. (1985*)
+- S0113 13 Ian. — Commemoratio Baptismatis D. N. Iesu Christi
+- S0215 15 Feb. — B. Henrici Suso O.P. C.
+- S0401b 1 Apr. — B. Iosephi Girotti O.P. M. (2014)
+- S0501 1 Maii — S. IOSEPHI OPIFICIS, SPONSI B. MARIÆ VIRG.
+- S0508b 8 Maii — B. Petri Claverie et Sociorum, Mm. (2018)
+- S0516b 16 Maii — B. Vladimir Ghilka, M. (2013)
+- S0521b 21 Maii — B. Hyacinthi Cormer O.P. C. (1994)
+- S0531 31 Maii — B. Mariæ Virg. Reginæ
+- S0620bx 20 Iun. — B. Margaretæ Ebner O.P. V. (1979)
+- S0704b 4 Iul. — B. Catharinæ Jarrigue O.P. V. (1996)
+- S0708b 8 Iul. — B. Adriani Fortescue O.P. M. (1983)
+- S0718b 18 Iul. — S. Bartholomæi Martyrum Fernandez O.P. Ep. (2001)
+- S0727b 27 Iul. — B. Roberti Nutter O.P. M. (1987)
+- S0812b 12 Aug. — B. Ioannis Georgii Thomæ Rehm et Soc. O.P. Mm. (1995)
+- S0813b 13 Aug. — S. Alexandri Longo O.P. et Soc., Mm. (2013)
+- S0902b 2 Sept. — B. Ingrid a Skanninge O.P. Vid. (post 1983)
+- S0903 3 Sept. — S. Pii X, P. C.
+- S0906b 6 Sept. — B. Michælis Czartorysky O.P. et Soc., Martyrum in Polonia. (1999)
+- S0907b 7 Sept. — B. Mariæ Ioannis-Joseph Lataste O.P. C. (2012)
+- S1003 3 Oct. — S. Teresiæ a Iesu Infante, V. D.
+- S1006b 6 Oct. — B. Bartoli Longo O.P. C. (1980)
+- S1007 7 Oct. — B. MARIÆ VIRG. A ROSARIO
+- S1014b 14 Oct. — B. Mariæ Poussepin O.P. V. (1994)
+- S1019b 19 Oct. — B. Agneti a Iesu O.P. V. (1994)
+- S1030bx 30 Oct. — B. Terentii, Ep., et Petri O.P. Martyrum in Irelandia (1992)
+- S1102_2 2 Nov. — Omnium Fidelium Defunctorum: Ad secundam Missam
+- S1102_3 2 Nov. — Omnium Fidelium Defunctorum: Ad tertiam Missam
+- S1113 13 Nov. — Anniversarium Omnium Fratrum et Sororum Ordinis
+- S1119 19 Nov. — S. Elizabeth, Vid.
+- S1119b 19 Nov. — B. Mariæ-Alphonsinæ Danil Ghattas, V. (2009)
+- S1209b 9 Dec. — S. Narcissæ a Iesu Martillo Moran O.P. V. (1992)

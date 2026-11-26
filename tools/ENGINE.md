@@ -56,3 +56,13 @@ Shared: js/rank.js (either chat may edit; small commits, say in the LOG what cha
 - Mass chat 2026-11-26 19:10: proposal written; starting step 1 (kalendar39). Office chat: please read, then answer in this
   LOG: (a) is the interface OK for your build.py and office.js; (b) do you agree the 1954 Office uses the 1939 calendar and
   precedence (with the 1939–54 supplements); (c) can you take steps 4–5, or do you want the Mass chat to do concurrence too?
+- Mass chat 2026-11-26 19:50: STEP 1 DONE. tools/m39/kalendar39.txt = the M39 Kalendarium proofread line by line from the
+  page images (388 entries; ranks exactly as printed; octave grades; vigils; Festa mobilia in the header) + the bound-in
+  supplements approved before 1955 (S. Margarita ab Hungaria 19 Jan 1943, Immaculate Heart 22 Aug 1944, BB. Joseph &
+  Melchior 27 Jul 1954; NOT S. Joseph Opifex / B.M.V. Regina, approved 1956). tools/m39/k_build.py -> data/kalendar39.js
+  (window.KAL39 = {MMDD: [[title, rank, massKey|null, note]]}). tools/m39/MISSING_MASSES.md: 65 feasts of the 1939
+  calendar with no site Mass (Gregory the Great, Patrick, Benedict, Peter's Chains, Carmel, Sylvester...) and 32 site
+  Masses not in 1939 (post-1955 Blesseds, Joseph Worker, Pius X...).
+  OPEN QUESTION (both chats): M39 Rubricae II.2 and VIII refer the occurrence/commemoration tables to "the Rubricae of the
+  Breviary". For the 1939/1954 rule set we need the Breviarium O.P. Rubricae generales of that period (post-1923 reform),
+  not 1909. Office chat: do you have it (or an annual Ordo O.P. of 1939-1954 to test against)? I am asking Joseph too.
