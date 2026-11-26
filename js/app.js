@@ -1216,7 +1216,7 @@
       box.appendChild(gabcBox(og));
       var amen = og.indexOf('A(g)men') >= 0;
       box.appendChild(el('p', {class: 'en-text tone-en', lang: 'en', text: it.x[1] + (amen ? ' ℟. Amen.' : '')}));
-      if (!amen) box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.']), el('p', {class: 'en-text', lang: 'en'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
+      if (!amen) box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
       return box;
     }
     if (it.k === 'se' && isSung()) {
@@ -1227,7 +1227,7 @@
       return box;
     }
     box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: it.x[0]}), el('p', {class: 'en-text', lang: 'en', text: it.x[1]})]));
-    box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.']), el('p', {class: 'en-text', lang: 'en'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
+    box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
     return box;
   }
   // Holy Week transcribed as printed. Markup: {red}, *black inside a rubric*, ^initial
@@ -1438,7 +1438,7 @@
     slot.appendChild(el('h2', {class: 'print-only', text: partName}));
     slot.appendChild(chantBox);
     var trc = c.id && (D.trans[c.id] || D.trans[String(c.id)]);
-    if (trc && trc.t) { slot.classList.add('m-pair'); slot.appendChild(el('div', {class: 'm-tr hide-print', text: trimTPText(trc.t)})); }
+    if (trc && trc.t) { slot.classList.add('m-pair'); slot.appendChild(el('div', {class: 'm-tr hide-print'}, trimTPText(trc.t).split(/(℣\.|℟\.)/).map(function (x) { return /^[℣℟]\.$/.test(x) ? el('span', {class: 'r', text: x}) : x; }))); }
     slot.appendChild(editor);
     if (state.edit) slot.appendChild(el('p', {class: 'meta hide-print'}, [info]));
     sel.addEventListener('change', function () {
@@ -1647,8 +1647,8 @@
   }
   function paschal() { return currentSeason() === 'pasch' || /^(Pasc|Asc|AscVig|Litaniis|Pent0)/.test(state.key || '') || (state.key && D.masses[state.key] && /Tempore Paschali/.test(D.masses[state.key].title || '')); }
   function trimTPText(t) {
-    if (paschal()) return t;
-    return t.replace(/\s*T\.\s?P\.\s*Alleluia,?\s*alleluia!?/g, '').replace(/,?\s*alleluia[!.]?\s*(?=(℣\.|Glory be|$))/gi, '. ').replace(/\.\s*\./g, '.').trim();
+    if (paschal()) return t.replace(/\(P\.T\.\s*([^)]*)\)/g, '$1');
+    return t.replace(/\s*\(P\.T\.[^)]*\)/g, '').replace(/\s*T\.\s?P\.\s*Alleluia,?\s*alleluia!?/g, '').replace(/,\s*alleluia[!.]?\s*(?=(℣\.|Glory be|$))/gi, '. ').replace(/\.\s*\./g, '.').trim();
   }
   function chantLatin(id) {
     return loadGabc(id).then(function (t) {

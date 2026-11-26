@@ -409,3 +409,17 @@ body.sheet-open { overflow: hidden; }
 .ordo .chant, .reading .chant.tone { margin: 6px 0 2px; }
 .tone-en { font-size: .9em; margin: 2px 0 10px; }
 .part.ordo.cont { border-top: 0; margin-top: -8px; padding-top: 0; }
+
+/* English translations: one calm style everywhere (upright, readable size, a thin rule to set them apart) */
+.m-tr, .reading .r-cols > .en-text, .reading .tone-en, .oratio .r-cols > .en-text, .oratio .tone-en, .preface .pf-text .en-text {
+  font-style: normal; color: var(--muted); font-size: 15.5px; line-height: 1.55; text-align: left; hyphens: manual;
+  border-left: 2px solid var(--line); padding: 1px 0 1px 11px; margin: 10px 0 6px; }
+.reading .en-text .r-title { font-style: italic; }
+.m-tr .r { color: var(--rubric); font-style: normal; }
+.reading .en-text .r-title { display: block; margin-bottom: 2px; }
+.oratio .o-line + .o-line .la { margin-top: 2px; }
+body.en-only .m-tr, body.en-only .reading .r-cols > .en-text, body.en-only .oratio .r-cols > .en-text { border-left: 0; padding-left: 0; color: var(--ink); font-size: 1em; }
+@media (max-width: 600px) {
+  .reading .la { text-align: left; hyphens: manual; }       /* justified text left rivers on phones */
+  .m-tr, .reading .r-cols > .en-text, .reading .tone-en, .oratio .r-cols > .en-text, .oratio .tone-en, .preface .pf-text .en-text { font-size: 15px; padding-left: 9px; }
+}
