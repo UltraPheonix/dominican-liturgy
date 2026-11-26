@@ -1118,6 +1118,7 @@
     lines.forEach(function (l, i) {
       if (l.r) { box.appendChild(el('p', {class: 'o-rub', text: l.r})); return; }
       if (l.read) { box.appendChild(drawReading({type: l.type || 'Gospel', ref: l.read})); return; }
+      if (l.g) { if (l.n) box.appendChild(el('p', {class: 'hw-chant-n', text: l.n})); box.appendChild(chantBox(l.g)); return; }   // a chant of the 1959 Holy Week (gabc/op59-*)
       var near = function (j) { return lines[j] && lines[j].w === 'S'; };
       var mark = l.w === 'C' || /^(℟|℣|Ant\.)/.test(l.la) ? '' : l.w === 'S' ? '℟. ' : (l.w === 'D' || near(i + 1) || near(i - 1)) && l.la.length < 140 ? '℣. ' : '';
       box.appendChild(el('div', {class: 'r-cols o-line'}, [
