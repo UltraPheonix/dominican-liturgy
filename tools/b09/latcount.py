@@ -50,6 +50,26 @@ def ocr_word(x, LD):
     if len(c) != 1: return x
     h = LD.D[c[0]]; h = h[:1].upper() + h[1:] if core[:1].isupper() else h
     return pre + h + post
+AEV = ('ze', 'zx', 'oe', 'ee', 'ce', 'se', 'a?', 'z', 'x', 'e')
+def ae_word(x):
+    """tesseract reads the ligature æ as 'ze', 'z', 'oe', 'ee'...: 'przemio' -> 'prǽmio', 'czelum' -> 'cælum', 'Galilzeze' -> 'Galilǽæ'"""
+    m = re.match(r"^(\W*)([A-Za-zÀ-ÿ?]+?)(\W*)$", x)
+    if not m: return None
+    pre, core, post = m.groups()
+    if N.get(LD.base(core), 0) >= 3 or not re.search(r'z|x|oe|ee|ce|se|a\?', core): return None
+    cands = {core}
+    for _ in range(2):
+        new = set()
+        for c in cands:
+            for v in AEV:
+                k = c.find(v)
+                while k >= 0:
+                    new.add(c[:k] + 'ae' + c[k + len(v):]); k = c.find(v, k + 1)
+        cands |= new
+    best = [c for c in cands if c != core and LD.base(c) in LD.D and N.get(LD.base(c), 0) >= 5]
+    if not best: return None
+    b = max(best, key=lambda c: N.get(LD.base(c), 0)); h = LD.D[LD.base(b)]
+    return pre + (h[:1].upper() + h[1:] if core[:1].isupper() else h) + post
 def fix_text(t):
     """word repairs of an OCR text: accents (latdict), usual OCR confusions against the corpus counts, æ read as 'a?' / 'se'"""
     out = []
@@ -58,7 +78,7 @@ def fix_text(t):
         if m and LD.base(m.group(2) + 'ae') in LD.D and N.get(LD.base(m.group(2) + m.group(3)), 0) < 3:
             h = LD.D[LD.base(m.group(2) + 'ae')]; h = h[:1].upper() + h[1:] if m.group(2)[:1].isupper() else h
             out.append(m.group(1) + h + m.group(4).replace('?', '').replace(':', '')); continue
-        y = LD.fix_word(x)
+        y = ae_word(x) or LD.fix_word(x)
         if y == x: y = ocr_word(x, LD)
         if y is not None: out.append(y)
     t = ' '.join(out); t = re.sub(r'\s+([;:,.?!])', r'\1', t); t = re.sub(r'[»«]', ',', t); t = re.sub(r'a\?(?=\s|$)', 'æ', t)

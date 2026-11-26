@@ -199,7 +199,34 @@ def is_head(l):
 def caps_line(l):
     let = [c for c in l if c.isalpha()]
     return len(let) >= 4 and sum(c.isupper() for c in let) >= 0.6 * len(let)
+OCRDIR = '/tmp/b09/ocr'   # tools/b09/reocr.sh: tesseract (lat, best) at 300 dpi of the text PDFs, one txt per pdf page
+ACC = str.maketrans('üïöàèìòùÜâêîôûäãõñ', 'úíóáéíóúÚáéíóúááón')
+def ocr_page(vol, p):
+    f = os.path.join(OCRDIR, '%s-%04d.txt' % (vol, p))
+    if not os.path.exists(f): return None
+    ls = [l.strip() for l in open(f, encoding='utf-8').read().split('\n')]
+    ls = [re.sub(r'\s*[|\[\]{}]+\s*$', '', l).strip() for l in ls]; ls = [l for l in ls if l]
+    k = 0
+    while k < len(ls) and k < 3 and (re.match(r'^[\W\dIl]{1,8}$', ls[k]) or is_head(ls[k]) or (FULLDAY.search(ls[k]) and len(ls[k]) < 60)): k += 1
+    return ls[k:]
+def text_ocr(vol, a, b):
+    """the Sanctorale text from the tesseract re-OCR (page index a..b as in text_sancti: pdf page = index + 1); None if a page is missing"""
+    out = []
+    for i in range(a, b):
+        ls = ocr_page(vol, i + 1)
+        if ls is None: return None
+        out.append('\n'.join(ls))
+    t = '\n'.join(out).translate(ACC)
+    t = re.sub(r'(\w)-\n(\w)', r'\1\2', t); t = re.sub(r'\s+', ' ', t)
+    t = re.sub(r'\b[KRBEFI][RKrk7y]?\.\s?(?=(?:[ivxj]+\.\s)?[A-ZÁÉÍÓÚÆ])', lambda m: m.group(0) if m.group(0).strip() in ('B.', 'E.', 'F.', 'I.') else '℟. ', t)
+    t = re.sub(r'(?<=[.,:;!?»] )[YVy¥]\s?[.,]\s?(?=[A-ZÁÉÍÓÚÆ])', '℣. ', t)
+    t = re.sub(r'\bA[nñfi][aàá]\.', 'Ana.', t)
+    t = R.fix_ocr(t)
+    return t
 def text_sancti(vol, a, b):
+    if os.environ.get('REOCR', '1') == '1':
+        t = text_ocr(vol, a, b)
+        if t: return t
     import gzip
     pages = gzip.open(os.path.join(HERE, 'text/%s.txt.gz' % vol), 'rt').read().split('\f### ')[1:]
     out = []
