@@ -247,6 +247,16 @@
    "i": "Franciscus (Roman melody)",
    "pg": "GR 531",
    "roman": true
+  },
+  "op-g50-misso-herodes": {
+   "p": "al",
+   "i": "Misso Herodes",
+   "pg": "563"
+  },
+  "op-g50-quasi-arcus": {
+   "p": "al",
+   "i": "Quasi arcus",
+   "pg": "564"
   }
  },
  "Quad1t": {
@@ -1825,5 +1835,22 @@
   ],
   "p39": "G50 p. 576",
   "_why_g50": "G50 p. 576: Alleluia V. Franciscus pauper (not yet transcribed)"
+ },
+ "S0829": {
+  "al": [
+   "op-g50-misso-herodes"
+  ],
+  "p39": "G50 p. 563",
+  "_why_g50": "G50 p. 563: Alleluia V. Misso Herodes (printed; transcribed from the scan)"
+ },
+ "S0830": {
+  "gr": [
+   5531
+  ],
+  "al": [
+   "op-g50-quasi-arcus"
+  ],
+  "p39": "G50 p. 564",
+  "_why_g50": "G50 p. 564: Responsorium Adjuvabit, pag. 418; Alleluia V. Quasi arcus (printed; transcribed from the scan)"
  }
 }
