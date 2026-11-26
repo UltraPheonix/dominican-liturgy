@@ -343,6 +343,11 @@
    "p": "co",
    "i": "Confundantur superbi",
    "pg": "619"
+  },
+  "op-g50-stabat-sancta-al": {
+   "p": "al",
+   "i": "Stabat sancta Maria",
+   "pg": "573"
   }
  },
  "Quad1t": {
@@ -840,11 +845,13 @@
   ]
  },
  "S0915": {
-  "p39": "313-314 (M39, In Compassione)",
+  "p39": "G50 p. 573",
   "_why": "M39/M33: \"In Festo VII Dolorum B.M.V. loco Tractus dicitur sequens Alleluia, alleluia. V. Stabat sancta Maria\" (one Alleluia verse; O vos omnes is the Tract verse). No O.P. melody available: Roman melody.",
   "al": [
-   "r853"
-  ]
+   "op-g50-stabat-sancta-al"
+  ],
+  "tr": [],
+  "_why_g50": "G50 p. 573: Omnia ut in Feria VI post Dom. Passionis, praeter quod omisso Tractu, cantatur Alleluia V. Stabat sancta Maria (transcribed from the scan)"
  },
  "S0324": {
   "pasch_al": [
@@ -2017,5 +2024,21 @@
   ],
   "p39": "G50 p. 47*",
   "_why_g50": "G50 p. 47*: Offertorium Afferentur (transcribed from the scan)"
+ },
+ "Adv3w": {
+  "gr": [
+   5441,
+   6717
+  ],
+  "p39": "G50 p. 10",
+  "_why_g50": "G50 p. 10: Post Lect. Responsorium I. Tollite, pag. 442; Post Epist. Responsorium II. Prope est, pag. 21"
+ },
+ "EmbWedSept": {
+  "gr": [
+   7138,
+   5616
+  ],
+  "p39": "G50 p. 332",
+  "_why_g50": "G50 p. 332: Post Lect. Responsorium I. Beata gens, pag. 328; Post Epistolam Responsorium II. Quis sicut"
  }
 }
