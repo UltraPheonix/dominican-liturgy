@@ -1,13 +1,9 @@
 # 1939 calendar vs site Masses (tools/m39/k_build.py, 390 entries)
 
-## Feasts of the 1939 calendar with no site Mass (5)
+## Feasts of the 1939 calendar with no site Mass (1)
 These need their Mass from the Missale O.P. 1939 (own Mass or Common + proper orations).
 
-- 0204 Anniversarium Patrum et Matrum — Novem Lectiones
 - 0609 BB. Dianæ, Cæciliæ et Amatæ Virginum O. P. — Semiduplex
-- 0712 Anniversarium sepultorum in Cœmeteriis nostris — Novem Lectiones
-- 0905 Anniversarium Familiarum et Benefactorum O. N. — Novem Lectiones
-- 0925 Commemoratio S. P. N. Dominici in Suriano — Totum Duplex
 
 ## Site Masses with a date that are not in the 1939 calendar (29)
 

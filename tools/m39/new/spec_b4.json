@@ -1,0 +1,61 @@
+[
+ {
+  "key": "S0925",
+  "d": "0925",
+  "kal": "Suriano",
+  "title": "25 Sept. — Commemoratio S. P. N. Dominici in Suriano",
+  "name_en": "Commemoration of St. Dominic in Soriano",
+  "rank": "II",
+  "op": true,
+  "color": "white",
+  "sec": "sanctorum",
+  "parts": {
+   "in": [
+    6482
+   ],
+   "gr": [
+    4733
+   ],
+   "al": [
+    5397
+   ],
+   "of": [
+    6021
+   ],
+   "co": [
+    6516
+   ]
+  },
+  "season": {
+   "lent": {
+    "tr": [
+     7081
+    ]
+   },
+   "pasch": {
+    "al": [
+     5397,
+     6484
+    ]
+   },
+   "asc": {
+    "al": [
+     5397,
+     5526
+    ]
+   }
+  },
+  "readings": [
+   [
+    "Epistle",
+    "Ad Timotheum 2 4: 1-8"
+   ],
+   [
+    "Gospel",
+    "Matthæus 5: 13-19"
+   ]
+  ],
+  "pref": "Dominico",
+  "note": "All as in the votive Mass of St Dominic (Feria III), Missale O.P. 1939 pp. 64*-66*, with Credo. Sequence Laudes ergo Dominico: no melody in the Graduale O.P. transcriptions."
+ }
+]
