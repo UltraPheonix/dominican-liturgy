@@ -1,6 +1,11 @@
 # Whole-site TODO (2026-11-26 12:50, live sw propria-v89). Rule: pre-1955 Dominican rite only; Dominican sources only; no inferred chant.
 
 ## A. 1909 Office — live errors (fix first)
+DONE 2026-11-26 sw v90: A1 (first prayer after the heading; 'Oratio,' accepted; vigil prayer → oratio_v1; running heads cut by
+  offices.text_sancti), A2 (no run-ons: build.clean_prayer/final_prayer), A3 partly (drop-caps, æ, OCR confusions vs DO word counts
+  tools/b09/latcount.py, conclusion restored). LEFT in A3: Bl. Lucy 11-16 'Luriam', Jerome Emiliani 07-21 garbled middle, Aug 8
+  'Kcdesise/intercessitine', Bl. Clare 04-17 'Tribus … pœniténtia … beáta:', Bl. Albert 05-13, Bl. Giles 05-14, St Alexius 07-17,
+  Bl. Jordan 02-15 → check scans; and the Temporale Matins lessons (≈530 Hours >4% unknown words, e.g. 05-05 Matins).
 1. Saints' prayers: offices.py takes the wrong "Oratio" (accept "Oratio," and drop-cap glitches; take the FIRST prayer after the heading);
    build.py san_oratio: refuse a prayer that doesn't name the saint (or N.) unless verified. Known wrong: 11-20, 12-02, 01-19, 07-21, 07-24,
    08-08, 11-30 (feast got vigil prayer) + ~22 more of 115.

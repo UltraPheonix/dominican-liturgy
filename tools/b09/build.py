@@ -51,6 +51,64 @@ def celebrable(d, s, w, rk):
     if s == 'pass' and (d - (easter(d.year) - datetime.timedelta(days=7))).days >= 0: return False
     if s in ('quad', 'pass', 'cin'): return rk >= 3
     return rk >= 1
+PAIRS = {('d', 'o'), ('c', 'e'), ('a', 'e'), ('i', 'e'), ('i', 'l'), ('l', 'i'), ('n', 'u'), ('u', 'n'), ('t', 'f'), ('r', 'c'), ('e', 'c'), ('o', 'a'),
+         ('a', 'o'), ('k', 'e'), ('h', 'b'), ('b', 'h'), ('i', 't'), ('f', 's'), ('s', 'f'), ('e', 'a'), ('m', 'n'), ('n', 'm')}
+def ocr_word(x, LD):
+    """an OCR word not in the dictionary: one substitution of a usual OCR confusion (pastdris -> pastóris, concade -> concéde);
+    junk of 1-3 letters not in the dictionary is dropped (None)"""
+    m = re.match(r'^(\W*)([A-Za-z]+)(\W*)$', x)
+    if not m: return x
+    import latcount as LC
+    pre, core, post = m.groups(); b = LD.base(core); n = LC.N.get(b, 0)
+    if n >= 3: return x
+    if len(core) <= 3 and re.fullmatch(r'[Il][il]+', core): return pre.strip() + post.strip() or None
+    if len(core) <= 3 and n == 0 and core.lower() not in ('et', 'in', 'ad', 'ut', 'a', 'e', 'o'): return pre.strip() + post.strip() or None
+    c = [k for k in LD.near(b) if [(p, q) for p, q in zip(b, k) if p != q][0] in PAIRS and LC.N.get(k, 0) >= max(10, 20 * n)]
+    if len(c) > 1: c = sorted(c, key=lambda k: -LC.N.get(k, 0))[:1] if LC.N.get(c[0], 0) > 0 and sorted((LC.N.get(k, 0) for k in c))[-1] >= 5 * sorted((LC.N.get(k, 0) for k in c))[-2] else []
+    if len(c) != 1: return x
+    h = LD.D[c[0]]; h = h[:1].upper() + h[1:] if core[:1].isupper() else h
+    return pre + h + post
+def clean_prayer(t):
+    """last repairs of a saint's prayer from the OCR: end at the conclusion, the drop-capital, æ read as 'se' / 'a?' / 'a:', dictionary words"""
+    import latdict as LD
+    m = re.search(r'\s(?:Ad (?:Utr|Matut|Laudes|Benedi|Magni|Mem|I+\. Vesp|Vesp|ii?j?\.)|Super Psalm|Invitatorium|Lectio [ivx]|Hymnus|In I+\. Noct|Capitulum|Die [IVXLivxl]+\.)', t)
+    if m: t = t[:m.start()]
+    m = re.search(r'\b(?:Per (?:Dóminum|Dominum|eúndem|eumdem|Christum)\b[^.]{0,120}|Qui (?:tecu\w|vivis|cum Patre)\b[^.]{0,160}|[PF][eo]r)\s*[.*,]', t)
+    if m:
+        c = m.group(0)
+        end = ' Qui vivis.' if 'vivis' in c else ' Qui tecum.' if re.match(r'Qui (?:tecu|cum)', c) else ' Per eúndem.' if re.search(r'e[uú]n?m?dem', c) else ' Per Christum.' if 'Christum' in c else ' Per Dóminum.'
+        t = t[:m.start()].rstrip(' ,;:.*') + '.' + end
+    w = t.split()
+    if w and w[0][:1].islower():   # drop-capital displaced: 'ómine Jesu Christe, qui D beátum' -> 'Dómine Jesu Christe, qui beátum'
+        for i in range(1, min(len(w), 14)):
+            if re.fullmatch(r'[A-Z]', w[i]): w[0] = w[i] + w[0]; del w[i]; break
+    out = []
+    for x in w:
+        m = re.match(r'^(\W*)([A-Za-z]+?)(se|a\?|a:|ae|æ)(\W*)$', x)
+        if m and m.group(3) != 'æ' and LD.base(m.group(2) + 'ae') in LD.D and LD.base(m.group(2) + m.group(3)) not in LD.D:
+            h = LD.D[LD.base(m.group(2) + 'ae')]; h = h[:1].upper() + h[1:] if m.group(2)[:1].isupper() else h
+            out.append(m.group(1) + h + m.group(4).replace('?', '').replace(':', '')); continue
+        y = LD.fix_word(x)
+        if y == x: y = ocr_word(x, LD)
+        if y is not None: out.append(y)
+    t = ' '.join(out)
+    t = re.sub(r'(\w) i (?=[a-z])', r'\1; ', t); t = re.sub(r'[*"]', '', t); t = re.sub(r'a\?(?=\s|$)', 'æ', t); t = re.sub(r'\s{2,}', ' ', t)
+    t = re.sub(r'\s+([;:,.])', r'\1', t); t = re.sub(r'([;:,])(?=\w)', r'\1 ', t)
+    return t
+_OFFM = None; _FP = {}
+def final_prayer(t):
+    """clean_prayer, then align once more with the Divinum Officium corpus (offices.fix_short) now that run-ons are cut"""
+    global _OFFM
+    if not t: return t
+    if t in _FP: return _FP[t]
+    if _OFFM is None:
+        import offices as _o; _OFFM = _o
+    k = t; t = clean_prayer(t); u = _OFFM.fix_short(t, 0.6)
+    u = clean_prayer(u) if u else t
+    if not re.search(r'(?:Per [^.]{0,40}|Qui [^.]{0,40})\.$', u):   # conclusion lost by the OCR: the book's rule (to the Son: Qui vivis)
+        u = u.rstrip(' .') + ('. Qui vivis.' if re.match(r'(?:Dómine )?Jesu Christe|Dómine Jesu', u) else '. Per Dóminum.')
+    _FP[k] = u
+    return _FP[k]
 def san_oratio(d, title):
     """the prayer of a saint from the extracted Sanctorale (offices.py), matched by date and name"""
     md = d.strftime('%m-%d'); best, br = None, 0.0
@@ -59,7 +117,7 @@ def san_oratio(d, title):
         if not k.startswith('S:' + md + ':') or not o.get('oratio'): continue
         r_ = difflib.SequenceMatcher(None, tn[:40], nb(o.get('title', ''))[:40]).ratio()
         if r_ > br: best, br = o['oratio'], r_
-    return best if br >= 0.45 else None
+    return final_prayer(best) if best and br >= 0.45 else None
 def okey(d):
     """key of the extracted Proprium de Tempore (offices.py) for a date"""
     s, wk, n, prop = season(d); w = (d.weekday() + 1) % 7; E = easter(d.year)
@@ -80,11 +138,11 @@ def TP(d, k):
     if not ok: return None
     o = OFF.get(ok, {}); w = ok.rsplit('-', 1)[1]
     if k == 'oratio_week':
-        return o.get('oratio') or OFF.get(ok.rsplit('-', 1)[0] + '-0', {}).get('oratio')
+        return final_prayer(o.get('oratio') or OFF.get(ok.rsplit('-', 1)[0] + '-0', {}).get('oratio'))
     if k == 'magn' and w == '6':   # First Vespers of the coming Sunday
         nx = okey(d + datetime.timedelta(days=1)); return OFF.get(nx or '', {}).get('magn1') or o.get('magn2')
     if k == 'oratio_vesp' and w == '6':
-        nx = okey(d + datetime.timedelta(days=1)); return OFF.get(nx or '', {}).get('oratio')
+        nx = okey(d + datetime.timedelta(days=1)); return final_prayer(OFF.get(nx or '', {}).get('oratio'))
     m = {'invit': 'invit', 'laudes': 'laudes', 'bened': 'bened', 'magn': 'magn2'}.get(k)
     v = o.get(m) if m else None
     if k == 'laudes' and v and len(v) < 5: return None

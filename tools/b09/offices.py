@@ -13,7 +13,7 @@ OUT = os.path.join(HERE, 'offices1909.json')
 SHORT = R.Corpus()
 def _build_short():
     import glob
-    for f in glob.glob(R.DO + '/Latin/Tempora/*.txt') + glob.glob(R.DO + '/Latin/Sancti/*.txt') + glob.glob(R.DO + '/Latin/Commune/*.txt') + glob.glob(R.DO + '/Latin/Psalterium/**/*.txt', recursive=True):
+    for f in glob.glob(R.DO + '/Latin/Tempora/*.txt') + glob.glob(R.DO + '/Latin/Sancti/*.txt') + glob.glob(R.DO + '/Latin/Commune/*.txt') + glob.glob(R.DO + '/Latin/SanctiOP/*.txt') + glob.glob(R.DO + '/Latin/TemporaOP/*.txt') + glob.glob(R.DO + '/Latin/CommuneOP/*.txt') + glob.glob(R.DO + '/Latin/Psalterium/**/*.txt', recursive=True):
         try: S = R._sections(f)
         except Exception: continue
         for k, ls in S.items():
@@ -35,6 +35,22 @@ def clean(t):
     t = re.sub(r'\s+', ' ', t).strip(' .;:,')
     return t + ('.' if t and t[-1] not in '.?!' else '')
 
+def cut_prayer(t):
+    """end a prayer at its conclusion; never run on into the next rubric or Office (OCR of the conclusion may be broken)"""
+    m = re.search(r'\s(?:Ad (?:Utr|Matut|Laudes|Benedi|Magni|Memor|I+\. Vesp|Vesp)|Super Psalm|Invitatorium|Lectio [ivx]|Hymnus|In I+\. Noct|Capitulum|Die [IVXLivxl]+\.)', t)
+    if m: t = t[:m.start()]
+    m = re.search(r'\b(Per (?:Dóminum|Dominum|eúndem|eumdem|Christum)\b[^.]{0,120}|Qui (?:tecu\w|vivis|cum Patre)\b[^.]{0,160}|Per)\s*[.*]', t)
+    if m: t = t[:m.end()]
+    return t
+def dropcap(t):
+    """repair the drop-capital of a prayer as the OCR gives it: 'T\\eus, qui', 'r\\EUS, qui', 'eus, qui beátam Maríam D semper' -> 'Deus, qui ...'"""
+    t = re.sub(r'^[^A-Za-zÀ-ÿ]*[A-Za-z]?[\\^\]|/]+\s*', '', t).strip()
+    m = re.match(r'^(?:[A-Z]\s)?(eus|EUS|kus)\b', t)
+    if m:
+        t = 'Deus' + t[m.end():]
+        t = re.sub(r'^(Deus\b.{0,70}?)\s[A-Z](?=\s)', r'\1', t, count=1)   # the displaced initial
+    t = re.sub(r'^([A-ZÆ])([A-ZÆǼ]{2,})', lambda m: m.group(1) + m.group(2).lower(), t)
+    return t
 # ---------- fields of one Office ----------
 END = r'(?=\s(?:Ad (?:Benedíctus|Magníficat|Laudes|Primam|Tertiam|Sextam|Nonam|Vesperas|I+\. Vesperas|Completorium|Memóriam)|Oratio\b|Capitulum|Hymnus|In I+\. Nocturno|In Iii?\. Nocturno|Lectio [ivx]+|Psalmus|Invitatorium|Feria|Sabbato|Dominica|T [A-Z]|¶|Antiphonae|Memória|Commemoratio)|$)'
 CONC = r'(?:Per Dóminum[^.]*|Per eúndem[^.]*|Per eumdem[^.]*|Qui vivis[^.]*|Qui tecum[^.]*|Per Christum[^.]*|Qui cum Patre[^.]*|Per\.?)'
@@ -55,9 +71,15 @@ def parse_office(chunk):
         mi = chunk.find('Ad Matutinum'); first = chunk.find('Ad Magníficat')
         if mi > 0 and first < mi: o['magn1'] = fix_short(mg[0]); mg = mg[1:]
         if mg: o['magn2'] = fix_short(mg[-1])
-    ors = [x for x in re.finditer(r'Oratio\.\s*(.+?' + CONC + r')\.?', chunk)]
-    if ors:
-        t = clean(ors[0].group(1)); o['oratio'] = fix_short(t, 0.6)
+    # prayers: 'Oratio.' / 'Oratio,' (OCR); the FIRST one after the heading is the saint's (a later one may belong to the next Office
+    # when the OCR lost its heading). A prayer of the vigil ('cujus prævenímus festivitátem') is the I Vespers prayer only.
+    ors = [x for x in re.finditer(r'Oratio[.,;:]\s*(.+?' + CONC + r')\.?', chunk)]
+    ors = [x for x in ors if not re.match(r'\s*(?:\w+\s+){0,4}(?:ut in Laud|ut supra|ut in I|de Communi|pag\.)', x.group(1))]
+    pr = [fix_short(dropcap(clean(cut_prayer(x.group(1)))), 0.6) for x in ors[:3]]
+    pr = [p for p in pr if len(p) > 40]
+    if pr:
+        if re.search(r'prævení?mus|praevenimus', pr[0], re.I) and len(pr) > 1: o['oratio_v1'] = pr[0]; o['oratio'] = pr[1]
+        else: o['oratio'] = pr[0]
     lm = re.search(r'Ad Laudes(?: Et Per Horas)? Antiphonae\.\s*(.+?)(?=Capitulum|Psalmi|Ad Benedíctus|Hymnus)', chunk)
     if lm:
         parts = re.split(r'(?:^|\s)(?:[1lI2-5s]|ii|iii|iv|v)[\.\-]\s', ' ' + lm.group(1))
@@ -168,8 +190,28 @@ def roman(s):
         if c not in v: return None
         n += -v[c] if i + 1 < len(s) and v.get(s[i + 1], 0) > v[c] else v[c]
     return n
+FULLDAY = re.compile(r'DIE\s.*(?:ARII|ARTII|PRILIS|MAII|MAJI|UNII|ULII|USTI|BRIS)\b', re.I)
+def is_head(l):
+    """running head of a Sanctorale column: short, mostly capitals ('S. FELICIS DE VAT.OIS.', 'JACOBI DE BENEFACTIS, 685', 'DIE XXIX. NOY. 15,')"""
+    if len(l) > 60 or FULLDAY.search(l): return False
+    let = [c for c in l if c.isalpha()]
+    return len(let) >= 4 and sum(c.isupper() for c in let) >= 0.6 * len(let)
+def text_sancti(vol, a, b):
+    import gzip
+    pages = gzip.open(os.path.join(HERE, 'text/%s.txt.gz' % vol), 'rt').read().split('\f### ')[1:]
+    out = []
+    for pg in pages[a:b]:
+        i, body = pg.split('\n', 1)
+        for c in body.split('\n||\n'):
+            ls = [l.strip() for l in c.split('\n') if l.strip()]
+            while ls and (is_head(ls[0]) or re.match(r'^[\W\d]{1,8}$', ls[0])): ls = ls[1:]
+            out.append('\n'.join(ls))
+    t = '\n'.join(out); t = re.sub(r'-\n(\S)', r'\1', t); t = re.sub(r'\s+', ' ', t)
+    t = R.fix_ocr(t)
+    t = re.sub(r'Lec\s?\.?tio', 'Lectio', t); t = re.sub(r'Lectio i v\.', 'Lectio iv.', t); t = re.sub(r'Lectio in\.', 'Lectio iii.', t)
+    return t
 def sanctorale(vol, a, b):
-    t = M.text_range(a, b) if vol == 'v1' else text_range2(a, b)
+    t = text_sancti(vol, a, b)
     hs = []
     plain = t.translate(str.maketrans('áéíóúýÁÉÍÓÚǽ', 'aeiouyAEIOUæ'))
     for m in SHEAD.finditer(plain):
