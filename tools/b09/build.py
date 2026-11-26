@@ -14,10 +14,57 @@ LES = json.load(open(os.path.join(HERE, 'lessons1909.json')))
 def tkey(d):
     s, wk, n, prop = season(d); w = (d.weekday() + 1) % 7
     if s == 'adv': return 'adv%d-%d' % (n, w)
+    if s != 'adv' and okey(d): return None
     if s == 'pt' and w == 6 and (d + datetime.timedelta(days=1)) == adv1(d.year): return 'pre-adv'
     return None
+OFF = json.load(open(os.path.join(HERE, 'offices1909.json'))) if os.path.exists(os.path.join(HERE, 'offices1909.json')) else {}
+RANKS = [('totum duplex', 4), ('duplex', 3), ('semiduplex', 2), ('simplex', 1), ('trium lect', 1), ('iij. lect', 1)]
+def san_rank(o):
+    t = (o.get('title', '') + ' ' + (o.get('rank') or '')).lower().replace('dupi.ex', 'duplex').replace('dupl ex', 'duplex')
+    for k, v in RANKS:
+        if k in t: return v, k
+    return 0, None
+SAN = {}
+for k, o in OFF.items():
+    if not k.startswith('S:'): continue
+    md = k.split(':')[1]; ti = re.sub(r'\s+', ' ', o.get('title', '')).strip()
+    if not re.match(r'^(S|Ss|B|Bb|In|Cáth|Cath)\b', ti) or len(ti) < 10 or not o.get('oratio'): continue
+    r, rn = san_rank(o)
+    ti = re.split(r'\s(?:In [IL1]\. Vesperis|In i\. Vesperis|Hymnus|Oratio|Ad |Omnia|Invitatorium|In I\. Nocturno)', ti)[0]
+    ti = re.sub(r'\s*(Totum Duplex|Totum DUPL\S*|duplex|Duplex|Semiduplex|Simplex|simplex)\.?.*$', '', ti, flags=re.I).strip(' .,')
+    ti = re.sub(r'Ord\.?,?\s*\S{1,3}[\.,]?\s*\S{0,4}[A-Z<>/\^\*\.]{2,6}\S*', 'Ord. Præd.', ti)
+    ti = re.sub(r'\bViro\.', 'Virg.', ti); ti = re.sub(r'\bCONE\.', 'Conf.', ti); ti = re.sub(r'\bCONF\b', 'Conf', ti)
+    ti = ' '.join(w if not (w.isupper() and len(w) > 3) else w.capitalize() for w in ti.split())
+    if md not in SAN or r > SAN[md]['r']: SAN[md] = {'r': r, 'rank': rn, 'title': ti, 'oratio': o['oratio']}
+def okey(d):
+    """key of the extracted Proprium de Tempore (offices.py) for a date"""
+    s, wk, n, prop = season(d); w = (d.weekday() + 1) % 7; E = easter(d.year)
+    if s == 'pe': return 'pe%d-%d' % (n, w) if n else None
+    if s == 'sept': return 'sept%d-%d' % (1 + (d - (E - datetime.timedelta(days=63))).days // 7, w)
+    if s == 'cin': return 'cin-%d' % w
+    if s == 'quad': return 'quad%d-%d' % (n, w)
+    if s == 'pass': return 'pass%d-%d' % (1 + (d - (E - datetime.timedelta(days=14))).days // 7, w)
+    if s == 'pasch': return 'pasch%d-%d' % (n, w)
+    if s == 'pt' and n and w == 0:   # after Trinity only the Sunday propers are keyed by number (ferial lessons follow the 'historiae')
+        for k in ('pt%d-0' % n, 'pt%d-0+' % n):
+            if 'post' in OFF.get(k, {}).get('title', '').lower(): return k
+    return None
 def TP(d, k):
-    x = T['days'].get(tkey(d) or '', {}); return x.get(k)
+    x = T['days'].get(tkey(d) or '', {})
+    if k in x: return x.get(k)
+    ok = okey(d)
+    if not ok: return None
+    o = OFF.get(ok, {}); w = ok.rsplit('-', 1)[1]
+    if k == 'oratio_week':
+        return o.get('oratio') or OFF.get(ok.rsplit('-', 1)[0] + '-0', {}).get('oratio')
+    if k == 'magn' and w == '6':   # First Vespers of the coming Sunday
+        nx = okey(d + datetime.timedelta(days=1)); return OFF.get(nx or '', {}).get('magn1') or o.get('magn2')
+    if k == 'oratio_vesp' and w == '6':
+        nx = okey(d + datetime.timedelta(days=1)); return OFF.get(nx or '', {}).get('oratio')
+    m = {'invit': 'invit', 'laudes': 'laudes', 'bened': 'bened', 'magn': 'magn2'}.get(k)
+    v = o.get(m) if m else None
+    if k == 'laudes' and v and len(v) < 5: return None
+    return v
 
 def nb(s):
     s = unicodedata.normalize('NFD', s.lower()); s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
@@ -222,6 +269,19 @@ def resp_block(r, lang, last):
     if r.get('gloria') and not r.get('ferial'):
         out.append(('<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. ' if lang == 'la' else '<r>℣.</r> Glory be to the Father, and to the Son, and to the Holy Ghost. ') + rep)
     return '\n'.join(out)
+def day_lessons(d):
+    k = tkey(d)
+    if k and k in LES: return LES[k]
+    ok = okey(d)
+    return OFF.get(ok, {}).get('lessons', []) if ok else []
+def sunday_resp_source(d):
+    """the Sunday whose responsories ('historia') serve the week: this week's Sunday, else the nearest earlier one that has them"""
+    for back in range(0, 8):
+        x = d - datetime.timedelta(days=(d.weekday() + 1) % 7 + 7 * back)
+        ls = day_lessons(x)
+        if sum(1 for y in ls if 'resp' in y) >= 6: return ls
+        if season(x)[0] != season(d)[0]: break
+    return []
 def lessons_rows(d, ls, noc, sunday):
     rows = [put('<n>Pater noster secreto.</n>', '<n>Our Father silently.</n>')]
     hom = any(x.get('homily_head') for x in ls)
@@ -251,7 +311,7 @@ def resp_text(r, lang):
     if lang == 'la': return '<r>℟.</r> %s * %s\n<r>℣.</r> %s %s\n<r>℣.</r> Glória Patri, et Fílio, et Spirítui Sancto. %s\n\n' % (a, b, v, rep, rep)
     return '<r>℟.</r> %s * %s\n<r>℣.</r> %s\n\n' % (ant_en(a), ant_en(b), ant_en(v))
 def week_oratio(d, s):
-    if s != 'adv': return None
+    if s != 'adv': return TP(d, 'oratio_week')
     return T['WEEK_OR'][str(season(d)[2])]
 def six_before_vigil(d):
     if d.month != 12 or d.day < 17 or d.day > 23 or d.weekday() == 6: return False
@@ -312,7 +372,7 @@ def matins(d, s, w):
             else: rows += psalm_rows(noc['groups'], a or [None] * len(noc['groups']), head)
             v = sv(noc['v'], s) if s != 'cin' else noc['v']['pa']
             rows.append(vr_row(v) if v else put(PROPER['la'], PROPER['en']))
-            ls = LES.get(tkey(d) or '', [])
+            ls = day_lessons(d)
             if ls: rows += lessons_rows(d, [x for x in ls if 3 * ni < x['n'] <= 3 * ni + 3], ni, True)
             else: rows.append(note_row('Lectiones et Responsoria de Proprio de Tempore (in præparatione).', 'Lessons and responsories from the Proper of Time (in preparation).'))
         if s not in ('adv', 'sept', 'cin', 'quad', 'pass'):
@@ -323,9 +383,9 @@ def matins(d, s, w):
         rows += psalm_rows(groups, ants if ok else [None] * 6, ('In Nocturno', 'Nocturn'))
         if s in P['FER_MAT_V']: v = P['FER_MAT_V'][s][(w - 1) % 3]
         rows.append(vr_row(v) if ok else put(PROPER['la'], PROPER['en']))
-        ls = LES.get(tkey(d) or '', [])
+        ls = day_lessons(d)
         if ls:
-            k = tkey(d); sun = LES.get(k[:-1] + '0', [])
+            sun = sunday_resp_source(d)
             if not any('resp' in x for x in ls) and sun:      # 'Responsoria Historiæ Dominicalis … secundum ordinem Nocturnorum'
                 noc = {1: 0, 4: 0, 2: 1, 5: 1, 3: 2, 6: 2}[w]
                 ls = [dict(x, resp=dict(sun[3 * noc + i]['resp'], ferial=(noc == 0 and i == 0))) if 3 * noc + i < len(sun) and 'resp' in sun[3 * noc + i] else x for i, x in enumerate(ls)]
@@ -491,8 +551,23 @@ def main():
             H = {'Matutinum': matins(d, s, w), 'Laudes': lauds(d, s, w), 'Vespera': vespers(d, s, w), 'Completorium': compline(d, s, w)}
             for h in ('Prima', 'Tertia', 'Sexta', 'Nona'): H[h] = little(d, s, w, h)
             t = title(d, s, wk, num)
-        rank = 'Psalterium et Ordinarium (Proprium et Sanctorale in præparatione)'
-        day = {'t': ['%s ~ %s' % (t, rank)], 'tv': [], 'h': H, 'p': {}, 'b': {}}
+        rank = 'Psalterium et Proprium de Tempore (Sanctorale in præparatione)'
+        sa = SAN.get(d.strftime('%m-%d'))
+        if sa and not prop:
+            w_ = (d.weekday() + 1) % 7
+            privileged = (w_ == 0 and s in ('adv', 'sept', 'quad', 'pass')) or s in ('cin', 'pass') and w_ != 0 and False
+            feast = sa['r'] >= 3 and not privileged and not (w_ == 0 and sa['r'] < 4)
+            rk = (sa['rank'] or '').title()
+            orat = sa['oratio']
+            if feast:
+                t = '%s ~ %s' % (sa['title'], rk) ; rank = None
+                note = note_row('Hodie: %s (%s). Officium proprium vel de Communi in præparatione; intérim Psalterium de Tempore cum Oratióne Sancti.' % (sa['title'], rk),
+                                'Today: %s (%s). The proper or Common Office is in preparation; meanwhile the Psalter of the day with the Saint’s prayer.' % (sa['title'], rk))
+                for h in H: H[h].insert(0, note)
+            mem = put('<h>%s</h>\n<n>%s</n>\n<c>O</c>rémus.\n<c>%s</c>%s\n<r>℟.</r> Amen.' % ('Oratio de Sancto' if feast else 'Commemoratio', sa['title'], orat[0], orat[1:]),
+                      '<h>%s</h>\n<n>%s</n>\n<c>L</c>et us pray.\n%s\n<r>℟.</r> Amen.' % ('Prayer of the Saint' if feast else 'Commemoration', sa['title'], en(orat) or orat))
+            for h in ('Laudes', 'Vespera'): H[h].insert(len(H[h]) - 1, mem)
+        day = {'t': [t if rank is None else '%s ~ %s' % (t, rank)], 'tv': [], 'h': H, 'p': {}, 'b': {}}
         os.makedirs(os.path.join(OUT, str(d.year)), exist_ok=True)
         json.dump(day, open(os.path.join(OUT, str(d.year), d.strftime('%m-%d') + '.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
         d += datetime.timedelta(days=1); n += 1
