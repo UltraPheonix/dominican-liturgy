@@ -42,7 +42,7 @@ DONE 2026-11-26 sw v90: A1 (first prayer after the heading; 'Oratio,' accepted; 
 20. DONE 2026-11-26 (Mass chat): orations from Missale O.P. 1939 for all Masses that have a pre-1955 Dominican source; the 26 left
     are listed in tools/orat39/MISSING.md (no source). Oratio super populum added on the 36 Lenten ferias.
 21. DONE 2026-11-26: every Divinum Officium oration checked (tools/orat39/do_check.json); 63 Masses replaced by the 1939 text (Commune Doctorum, Compassion, All Souls x3, Octave of Christmas, Vigil of SS. Peter & Paul, Commons...). Left from DO: C1s, S0501 (1956), S1003 (not in M39).
-22. AUDIT.md: 21 chant differences vs St Dominic Missal 1959 to check against the book (S. Nicolas, St John Baptist, etc.).
+22. DONE 2026-11-26: AUDIT.md items checked vs M39 (Januarius, Pius V votive fixed; 28 'Os justi ut in Communi' confessors fixed; rest already right).
 23. S0915 Seven Sorrows: 'Stabat sancta Maria' as Alleluia + 'O vos omnes' (M33).
 24. Calendar on pre-1955 ranks (now 1960 classes shown); remove/replace the 'Reformed 1959' Holy Week toggle per the rite rule (ask Joseph).
 25. Options Mass list blank on the last Sunday after Trinity.
