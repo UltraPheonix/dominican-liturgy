@@ -775,7 +775,7 @@
     if (/^Pent0/.test(key)) return 'Spiritu Sancto';
     return null;
   }
-  var BVM_WORD = [[/Annuntiat/, 'Annuntiatióne', 'Annunciation'], [/Visitat/, 'Visitatióne', 'Visitation'], [/Assumpt/, 'Assumptióne', 'Assumption'],
+  var BVM_WORD = [[/C82s/, 'Veneratióne sanctíssimi Rosárii', 'veneration of the most holy Rosary'], [/Annuntiat/, 'Annuntiatióne', 'Annunciation'], [/Visitat/, 'Visitatióne', 'Visitation'], [/Assumpt/, 'Assumptióne', 'Assumption'],
     [/Nativit/, 'Nativitáte', 'Nativity'], [/Pr(ae|æ)sentat/, 'Præsentatióne', 'Presentation'], [/Concept/, 'Conceptióne immaculáta', 'Immaculate Conception'],
     [/Dolor|Septem|Compassion/, 'Compassióne', 'Compassion'], [/Rosar|Cordis|Nominis|Regin|Lauret/, 'Solemnitáte', 'Solemnity'],
     [/Apparitio/, 'Conceptióne immaculáta', 'Immaculate Conception'], [/Sabbat|C79s/, 'Veneratióne', 'Veneration']];
@@ -784,8 +784,8 @@
     var t = titleText(key) + ' ' + key, w = BVM_WORD.filter(function (x) { return x[0].test(t); })[0];
     if (w) return w;
     var md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
-    if (md >= 816 && md <= 822) return BVM_WORD[2];
-    if (md >= 1209 && md <= 1215) return BVM_WORD[5];
+    if (md >= 816 && md <= 822) return BVM_WORD[3];
+    if (md >= 1209 && md <= 1215) return BVM_WORD[6];
     return null;
   }
   function prefaceText(name, key, d) {
@@ -816,7 +816,7 @@
   var PREF_FERIAL = {'Quadragesima': 1, 'Sancta Cruce': 1, 'Paschalis': 1, 'Communis': 1, 'Defunctorum': 1};
   var BVM_SYL = {'Annuntiatióne': 'An-nun-ti-a-ti-ó-ne', 'Visitatióne': 'Vi-si-ta-ti-ó-ne', 'Assumptióne': 'As-sump-ti-ó-ne', 'Nativitáte': 'Na-ti-vi-tá-te',
     'Præsentatióne': 'Præ-sen-ta-ti-ó-ne', 'Conceptióne immaculáta': 'Con-cep-ti-ó-ne im-ma-cu-lá-ta', 'Transfixióne': 'Trans-fi-xi-ó-ne',
-    'Solemnitáte': 'So-lem-ni-tá-te', 'Compassióne': 'Com-pas-si-ó-ne', 'Veneratióne': 'Ve-ne-ra-ti-ó-ne', 'Festivitáte': 'Fe-sti-vi-tá-te'};
+    'Solemnitáte': 'So-lem-ni-tá-te', 'Compassióne': 'Com-pas-si-ó-ne', 'Veneratióne': 'Ve-ne-ra-ti-ó-ne', 'Veneratióne sanctíssimi Rosárii': 'Ve-ne-ra-ti-ó-ne sanc-tís-si-mi Ro-sá-ri-i', 'Festivitáte': 'Fe-sti-vi-tá-te'};
   // Missale O.P. 1939, Appendix: the Prefaces "cum cantu solemni" on Sundays and in all feasts Simplex and above and
   // through their octaves; "cum cantu feriali" in profestis diebus and feasts of three lessons. The Pater noster the
   // same: "Cantus ferialis dicitur in festis trium Lectionum et in diebus ferialibus, et in Missis Defunctorum".

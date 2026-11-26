@@ -128,3 +128,4 @@ for k, ss in SEASON.items():
         for p, ids in parts.items(): D['masses'][k].setdefault('season', {}).setdefault(sn, {})[p] = [{'id': i, 'm39': 'G50'} for i in ids]
 open(F, 'w', encoding='utf8').write(head + 'var DOMINICAN = ' + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + ';\n')
 print(len(FIX), 'Masses corrected;', n, 'parts set')
+import orations_fix; orations_fix.run()
