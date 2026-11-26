@@ -1,0 +1,15 @@
+# V. Unus autem, Processionarium O.P. 1913 p. 28 (pdf 44), f3
+# P44 s0 (verse; ? au/tem split)
+(f3) <sp>V/</sp> U(e)nus(f) (,) au(fe/f/hi)tem(gf) (,) ex(e) ip(g/igh)sis,(gf) (;) Cá(f)i(fe)phas(ec) (,) nó(ef)mi(f/ghGF/g)+
+# P44 s1
+ne,(gf) (;) cum(e) es(fg)set(g) (,) Pón(fg)ti(f)fex(fe) (;) an(fg)ni(g) (,) il(fg)lí(e)us,(cd,ceDC,dCB/cb) (;) pro(b)+
+# P44 s2
+phe(c)tá(efe)vit,(f,ghGF/gf) (,) di(e/fh)cens:(fgf) (:) Ex(h)pe(ij)dit(j) (,) vo(i/jkJI/j)bis,(ji) (;) ut(f) u(h)+
+# P44 s3
+nus(i) (,) mo(h)ri(hg)á(f)tur(hg) (,) ho(fg)mo(fe) (,) pro(hg) pó(fgf)pu(e/fg)lo,(gf) (;) et(fc) non(e/fhGF) (,)
+# P44 s4 (Ab: long melisma as printed)
+to(f)ta(gh) gens(ihi) (,) pér(fhGF)e(ef/g)at.(gf) (:) Ab(jh,jIGF/hGE/f,fEC/ef/f;fg/hi,iHG/h) il(fg)+
+# P44 s5
+lo(fe) (,) er(f)go(hg) (,) di(hie)e(fe) (;) co(e)gi(f)ta(hg)vé(hie)runt(fe) (;) in(e)ter(f)fi(h)ce(hg)re(f) (,)
+# P44 s6
+e(ghGFE)um(f) (,) di(hg)cén(f/g)tes:(f) (::) *() Quid(fj) fá(jf)ci(hgi)mus.(i/jf/h/hg) (::)
