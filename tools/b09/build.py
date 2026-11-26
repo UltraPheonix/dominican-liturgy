@@ -1028,6 +1028,37 @@ def office_season(d, s):
     if s in ('pent', 'tri', 'nat'): return 'pasch' if (d - easter(d.year)).days < 49 else 'pt'
     return s
 FD_CACHE = {}
+PROP = {}
+try:
+    for _k, _v in json.load(open(os.path.join(HERE, 'propers1909.json'), encoding='utf-8')).items(): PROP[_k.split('|', 1)[1]] = _v
+except FileNotFoundError: pass
+def with_proper(F, o, title):
+    """the feast's own pieces (proper.py, from the scanned Sanctorale) over its Common; a piece with doubtful words (listed in 'q')
+    is not used"""
+    P = PROP.get(title)
+    if not P: return F, o
+    bad = set(x.split(':')[0] for x in P.get('q', []))
+    F = dict(F); ok = lambda sec, k: (P.get(sec) or {}).get(k) and '%s.%s' % (sec, k) not in bad
+    for sec, keys in (('v1', ('ant', 'ants', 'magn')), ('laud', ('ant', 'bened')), ('v2', ('ant', 'magn'))):
+        for k in keys:
+            if ok(sec, k) and isinstance(F.get(sec), dict): F[sec] = dict(F[sec], **{k: P[sec][k]})
+    M_ = dict(F['mat'])
+    if ok('mat', 'invit') and len(P['mat']['invit']) < 200: M_['invit'] = P['mat']['invit'].replace(', Qui', ', * Qui') if '*' not in P['mat']['invit'] else P['mat']['invit']
+    if ok('mat', 'nants') and not F.get('_tp') and len(M_.get('noct', [])) == 3:
+        nv = P['mat'].get('nvr') or [None] * 3
+        M_['noct'] = [(M_['noct'][i][0], P['mat']['nants'][i], tuple(nv[i]) if nv[i] else M_['noct'][i][2]) for i in range(3)]
+    if not F.get('_tp') and isinstance(M_.get('resp'), list) and len(M_['resp']) == 9:
+        rs = list(M_['resp'])
+        for x in P.get('lessons', []):
+            r = x.get('resp'); n = x.get('n')
+            if r and isinstance(n, int) and 1 <= n <= 9 and 'resp %d' % n not in bad and r.get('a') and r.get('b'):
+                rs[n - 1] = (r['a'].rstrip('.,:;') + ',' if not r['a'].rstrip()[-1:] in ':,' else r['a'], r['b'], r.get('v') or [], bool(r.get('gloria')))
+        M_['resp'] = rs
+    F['mat'] = M_
+    if P.get('lessons'):
+        o = dict(o or {}); o['lessons'] = P['lessons']
+        if 'mat.invit' in bad: o.pop('invit', None)
+    return F, o
 def feast_day(d):
     """the winning feast of a day with a Common to render it: dict(fe, cn, F, o, rk) or None"""
     if d in FD_CACHE: return FD_CACHE[d]
@@ -1037,7 +1068,10 @@ def feast_day(d):
             rk = RV.get(c['rank'] or '', 0)
             if rk >= 1 and (season(d)[3] or celebrable(d, s, w, rk)):
                 cn = feast_common(d, re.sub(r'\s*\(translatum\)', '', c['title']))
-                if cn: r = dict(fe=c, cn=cn, F=NM.fill_all(common_full(cn, tp_of(d)), c['title']), o=proper_entry(d, re.sub(r'\s*\(translatum\)', '', c['title'])), rk=rk)
+                if cn:
+                    ti0 = re.sub(r'\s*\(translatum\)', '', c['title'])
+                    F0, o0 = with_proper(NM.fill_all(common_full(cn, tp_of(d)), c['title']), proper_entry(d, ti0), ti0)
+                    r = dict(fe=c, cn=cn, F=F0, o=o0, rk=rk)
                 break
     FD_CACHE[d] = r; return r
 def day_rank(d):

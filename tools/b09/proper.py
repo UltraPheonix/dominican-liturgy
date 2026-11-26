@@ -14,8 +14,8 @@ SEC = [('v1', r'Ad I\. Vesperas|Ad i\. Vesperas|In I\. Vesperis'), ('mat', r'Ad 
        ('hor', r'Ad (?:Primam|Tertiam|Horas)'), ('v2', r'(?:Ad|In) I[iI]\. Vesper(?:as|is)'), ('oct', r'Per Octavam|Infra Octavam|Ad Memóriam')]
 
 def known(t):
-    ws = re.findall(r"[A-Za-zÀ-ÿǽæœÆŒ]+", t)
-    bad = [w for w in ws if len(w) > 2 and LC.N.get(LD.base(w), 0) < 2]
+    ws = re.findall(r"[A-Za-zÀ-ÿǽæœÆŒ0-9$£^\\]+", t)
+    bad = [w for w in ws if (len(w) > 2 and LC.N.get(LD.base(w), 0) < 2) or re.search(r'[0-9$£^\\]', w)]
     return bad
 def fix(t, cov=0.6):
     t = O.clean(t); t = O.dropcap(t) if re.match(r'^[a-zà-ÿ]|^[A-Z]{3,}|^.{0,3}[\\^/]', t) else t
@@ -148,7 +148,9 @@ def parse(ch):
     def put(sec, k, v):
         if v in (None, [], ''): return
         P.setdefault(sec, {})[k] = v
-        for x in (v if isinstance(v, list) else [v]):
+        flat = []
+        for x in (v if isinstance(v, list) else [v]): flat += x if isinstance(x, list) else [x]
+        for x in flat:
             if isinstance(x, str):
                 b = known(x)
                 if b: Q.append('%s.%s: %s' % (sec, k, ' '.join(b[:6])))
