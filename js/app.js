@@ -1103,11 +1103,26 @@
     return box;
   }
   // the Collect, Secret or Postcommunion of the day
+  function flectamusDay(key, d) {
+    return isTemporal(key) && /^(5a[whfs]|Quad[1-6][mtwhfs])$/.test(key) && !/^Quad6[hfs]$/.test(key) && !(d && d.getDay() === 0);
+  }
+  function chantBox(id) {
+    var cb = el('div', {class: 'chant'});
+    loadGabc(id).then(function (t) { var g = splitGabc(t); renderInto(cb, g.body, g.header, null); }, function (e) { showError(cb, e); });
+    return cb;
+  }
   function drawOratio(it) {
     var name = {or: ['Oratio', 'Collect'], se: ['Secreta', 'Secret'], pc: ['Postcommunio', 'Postcommunion'], sp: ['Oratio super populum', 'Prayer over the People']}[it.k];
     var box = el('section', {class: 'part ordo oratio', 'data-part': 'oratio'});
     box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: name[0]}), el('span', {class: 'incipit', text: it.k === 'sp' && it.x[2] ? name[1] + ' · ' + it.x[2] : name[1]})]));
+    // Missale O.P. 1939 (Feria IV Cinerum): "Flectamus genua, et Levate, quotidie in Quadragesima in Missa de tempore:
+    // exceptis Dominicis, et die Cenae, et Sabbato Paschae"; the deacon sings them after Oremus, before the Collect
+    if (it.k === 'or' && flectamusDay(state.key, state.date)) {
+      box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: 'Orémus. ℣. Flectámus génua. ℟. Leváte.'}), el('p', {class: 'en-text', lang: 'en', text: 'Let us pray. ℣. Let us kneel. ℟. Arise.'})]));
+      if (state.ordo !== 'low') box.appendChild(chantBox('op-m39-flectamus'));
+    }
     // Lenten ferias: after the Postcommunion the priest says Oremus and the deacon Humiliate capita vestra Deo
+    if (it.k === 'sp' && state.ordo !== 'low') box.appendChild(chantBox('op-m39-humiliate'));
     if (it.k === 'sp') box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: 'Orémus. ℣. Humiliáte cápita vestra Deo.'}), el('p', {class: 'en-text', lang: 'en', text: 'Let us pray. ℣. Bow down your heads before God.'})]));
     box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: it.x[0]}), el('p', {class: 'en-text', lang: 'en', text: it.x[1]})]));
     box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.']), el('p', {class: 'en-text', lang: 'en'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
@@ -1605,7 +1620,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {D: D, dismissGabc: dismissGabc, solemnDay: solemnDay, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
+  window.ProprOP = {D: D, dismissGabc: dismissGabc, solemnDay: solemnDay, flectamusDay: flectamusDay, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
 
   function start() {
     if (!document.getElementById('selMass')) return;   // loaded as a library (e.g. by the Office page)

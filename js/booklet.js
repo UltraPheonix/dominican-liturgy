@@ -383,7 +383,11 @@
         return;
       }
       if (it.t === 'oratio') {
-        if (it.k === 'sp') { heading('Oratio super populum', null); para('Orémus. ℣. Humiliáte cápita vestra Deo.', {cls: 'pr'}); }
+        if (it.k === 'or' && A.flectamusDay(S.key, S.date)) {
+          rubric('Quotidie in Quadragesima: after Orémus the deacon, kneeling, sings Flectámus génua, and rising, Leváte.', {left: true});
+          if (sung) chant('op-m39-flectamus', {noDrop: true, glyph: 1 / 19, size: 14}); else para('Orémus. ℣. Flectámus génua. ℟. Leváte.', {cls: 'pr'});
+        }
+        if (it.k === 'sp') { heading('Oratio super populum', null); para('Orémus.', {cls: 'pr'}); rubric('The deacon sings:', {left: true}); if (sung) chant('op-m39-humiliate', {noDrop: true, glyph: 1 / 19, size: 14}); else para('℣. Humiliáte cápita vestra Deo.', {cls: 'pr'}); }
         // sung in the solemn tone of the prayers (Harrison 1920); said at a Low Mass
         var og = null;
         try { og = sung && window.OPMassTones ? OPMassTones.oration(J(it.x[0])) : null; } catch (e) { console.warn('tone', e); }
@@ -563,6 +567,7 @@
       }
       if (it.t === 'oratio') {
         if (it.k === 'se') { heading('Secret · Secreta', null); }
+        if (it.k === 'or' && A.flectamusDay(S.key, S.date)) { posture('All kneel at Flectámus génua, and rise at Leváte'); pair('Orémus. ℣. Flectámus génua. ℟. Leváte.', 'Let us pray. ℣. Let us kneel. ℟. Arise.'); }
         if (it.k === 'sp') { heading('Prayer over the People · Oratio super populum', null); posture('All bow'); pair('Orémus. ℣. Humiliáte cápita vestra Deo.', 'Let us pray. ℣. Bow down your heads before God.'); }
         pair(it.x[0], it.x[1]); pair('℟. Amen.', '℟. Amen.');
         return;
