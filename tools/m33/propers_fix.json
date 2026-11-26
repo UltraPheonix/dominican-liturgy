@@ -298,6 +298,11 @@
    "p": "al",
    "i": "Tu gloria Jerusalem",
    "pg": "572"
+  },
+  "op-g50-fulgebunt-al": {
+   "p": "al",
+   "i": "Fulgebunt justi",
+   "pg": "574"
   }
  },
  "Quad1t": {
@@ -1629,9 +1634,9 @@
    6440
   ],
   "p39": "G50 p. 580",
-  "_why_g50": "G50 p. 580: Alleluia V. Fulgebunt, pag. 574 (not yet transcribed)",
+  "_why_g50": "G50 p. 580: Alleluia V. Fulgebunt, pag. 574 (transcribed from the scan)",
   "al": [
-   "r3755"
+   "op-g50-fulgebunt-al"
   ]
  },
  "S0921": {
@@ -1856,10 +1861,19 @@
  },
  "S0916": {
   "al": [
-   "r3755"
+   "op-g50-fulgebunt-al"
   ],
-  "p39": "Missale O.P. 1939",
-  "_why_g50": "Missale O.P. 1939: Alleluia V. Fulgebunt justi (G50 p. 574, not yet transcribed)"
+  "p39": "G50 p. 574",
+  "_why_g50": "G50 p. 574: Officium Sapientiam, pag. 515; Responsorium Gloriosus, pag. 399; Alleluia V. Fulgebunt (printed; transcribed from the scan); Offertorium Gloriabuntur, pag. 500",
+  "in": [
+   5872
+  ],
+  "gr": [
+   9869
+  ],
+  "of": [
+   5512
+  ]
  },
  "S1024": {
   "co": [
