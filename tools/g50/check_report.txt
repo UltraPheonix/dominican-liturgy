@@ -1,23 +1,12 @@
 S1208    8 Dec. — CONCEPTIO IMMACULATA B. MARIÆ VIRG.  p.378 
    in: Graduale [['Terribilis', '353', 6221]]  site ['6948']
 S1213    13 Dec. — S. Luciæ, V. M.                     p.384 
-   gr: Graduale [['Dilexisti', '56*', None]] (no GregoBase id)  site ['5634']
-   of: Graduale [['Atteréntur', '47*', None]] (no GregoBase id)  site ['r1107']
-S1226    26 Dec. — S. Stephani Protomartyris           p.385 
-   se: Graduale [['Leetabindus', '33', 4214]]  site None
-S1227    27 Dec. — S. Ioannis Apostoli et Evangelistæ  p.388 
-   in: Graduale [['In médio', '35*', 6549]]  site ['6482']
-   se: Graduale [['Letabindus', '33', 4214]]  site None
-S1228    28 Dec. — Ss. Innocentium Martyrum            p.390 
-   al: Graduale [['(printed)', '391', 5585]]  site ['5538']
+   gr: Graduale [['Dilexisti', '56*', None]] (no GregoBase id)  site ['op-g50-dilexisti-gr']
+   of: Graduale [['Atteréntur', '47*', None]] (no GregoBase id)  site ['op-g50-afferentur-of']
 30.12 De Octava Nativitatis Domini                        NO SITE MASS
  4.01 Octava SS. Innocentium, Martyrum                    NO SITE MASS
-S0117    17 Ian. — S. Antonii, Abb.                    p.394 
-   gr: Graduale [['©s justi', '36*', 4733]]  site ['7142']
 S0118_2  18 Ian. — Cathedra S. Petri qua Romæ primum s p.395 
-   gr: Graduale [['Unam pétii', '381', 4740]]  site None
-S0123    23 Ian. — S. Raymundi de Pennafort O.P. C.    p.402 
-   al: Graduale [['(printed)', '402', 6833]]  site ['6959']
+   gr: Graduale [['Unam pétii', '381', 4740]]  site ['5552']
 26.01 B. Andrea a Piscaria, Conf. Ord. Prad.              NO SITE MASS
 S0130b   30 Ian. — B. Mariæ Mancini O.P. Vid.          p.408 ['GaudeAmus', 'Communi unius S. Mulieris,', '59*']
    in: Graduale [['(printed)', '409', 5331]]  site ['4291']
@@ -32,7 +21,7 @@ S0210    10 Feb. — S. Scholasticæ, V.                  p.420 ['Gaude&mus', 'C
 S0212    12 Feb. — Ss. Septem Fundatorum O.S.M.        p.424 
    tr: Graduale [['Qui séminant', '23*', 4978]]  site ['6182']
 S0223    23 Feb. — S. Petri Damiani, E. C. D.          p.433 ['Os justi', 'Communi unius Conf. non Pont.,', '42*']
-   in: Graduale [['Mihi autem', '1*', 4899]]  site ['6482']
+   in: Graduale [['Mihi autem', '1*', 4899]]  site ['6549']
    tr: Graduale [['Desidérium', '14*', 6463]]  site ['7081']
    of: Graduale [['In omnem', '5*', 6618]]  site ['7170']
  2.03 B. Henricì Susonis, Conf. Ord. Prad.                NO SITE MASS
@@ -42,36 +31,25 @@ S0405    5 Apr. — S. Vincentii Ferrer, O.P., C.        p.446
    tr: Graduale [['Quasi stella', '35*', None]] (no GregoBase id)  site ['7081']
 S0429    29 Apr. — S. Petri Martyris, O.P. M. II Cl.   p.456 
    gr: Graduale [['Posuisti', '8*', 6960]]  site None
-S0430    30 Apr. — S. Catherinæ Senensis, O.P., V.     p.458 
-   in: Graduale [['(printed)', '458', 7243]]  site ['6267']
 S0503    3 Maii — Inventio S. Crucis                   p.467 
    gr: Graduale [['Christus', '170', 6737]]  site None
 S0505    5 Maii — S. Pii V, O.P., P. C.                p.470 
    in: Graduale [['In médio', '35*', 6549]]  site ['4980']
-S0510    10 Maii — S. Antonini, O.P., E. C.            p.474 
-   of: Graduale [['Meditàbar', '466', 5315]]  site ['4854']
 S0517b   17 Maii — B. Andreæ Abellonii O.P. C.         p.479 ['Os justi', 'Communi unius Confessoris non Pontificis,', '42*']
    in: Graduale [['Stàtuit', '32*', 5417]]  site ['5885']
    of: Graduale [['Justus', '34*', 5857]]  site ['6021']
    co: Graduale [['Beitus servus', '32*', 5854]]  site ['4856']
 S0524    24 Maii — Translatio S. P. N. Dominici, C.    p.480 
-   in: Graduale [['(printed)', '481', 5033]]  site ['5885']
-   gr: Graduale [['Invéni David', '12*', 6727], ['Venite fili', '298', 6052]]  site ['6266']
+   in: Graduale [['(printed)', '481', 5033]]  site ['6482']
+   gr: Graduale [['Invéni David', '12*', 6727], ['Venite fili', '298', 6052]]  site ['4733']
    of: Graduale [['Véritas mea', '31*', 7170]]  site ['6021']
-   co: Graduale [['Fidélis servus', '374', 6516], ['(printed)', '483', 4848]]  site ['5854']
+   co: Graduale [['Fidélis servus', '374', 6516], ['(printed)', '483', 4848]]  site ['6615']
 S0530b   30 Maii — B. Andreæ Franchi O.P. Ep., C.      p.484 ['Statuit', 'Communi Confessoris Pontificis,', '32*']
    gr: Graduale [['(printed)', '485', 6822]]  site ['6123']
    al: Graduale [['(printed)', '486', 7208]]  site ['6785', '6785', '6824', '5526']
    of: Graduale [['Recordàre', '364', 5119]]  site ['5857']
    co: Graduale [['(printed)', '487', 5623]]  site ['6516']
-S0605b   5 Iun. — B. Iacobi Salomonii O.P. C.          p.488 
-   gr: Graduale [['Domine', '40*', 7142]]  site ['6123']
-   co: Graduale [['Bedtus servus', '32*', 5854]]  site ['4856']
-S0611    11 Iun. — S. Barnabæ Apostoli                 p.489 
-   of: Graduale [['In omnem', '5*', 6618]]  site ['5848']
 20.06 B. Hosanna, Virg. Ord. Prad.                        ? ['S0620b', 'S0620bx']
-S0626    26 Iun. — Ss. Ioannis et Pauli, Mm.           p.499 
-   gr: Graduale [['Ecce quam bonum', '348', 6309]]  site ['6306']
 28.06 S. Irenai, Episc. et Mart.                          ? ['G502', 'G502_3']
 G502     Missa «Lex veritatis» (c. 28 Iun.)            p.502 
    co: Graduale [['(printed)', '503', 5102]]  site ['6938']
@@ -85,40 +63,28 @@ G515     Missa «Sapientiam sanctorum» (c. 6 Iul.)      p.515 ['Statuit', 'Comm
    al: Graduale [['Isti sunt', '499', 6911], ['(printed)', '518', 6183]]  site ['6895']
    tr: Graduale [['Qui séminant', '23', None]] (no GregoBase id)  site None
    of: Graduale [['Exsultbunt', '570', None]] (no GregoBase id)  site ['6555']
-S0714    14 Iul. — S. Bonaventuræ, B. C. D.            p.521 
-   in: Graduale [['In médio', '35*', 6549]]  site ['6482']
-S0719    19 Iul. — S. Vincentii a Paulo, C.            p.522 
-   gr: Graduale [['Os justi', '36*', 4733]]  site ['7142']
-   al: Graduale [['Bedtus vir qui timet', '407', 5359]]  site ['6890']
 20.06 S. Hieronymi Emiliani, Confessoris                  ? ['S0620b', 'S0620bx']
 S0620b   20 Iun. — B. Hosannæ Mantuanæ O.P. V.         p.522 
    gr: Graduale [['(printed)', '523', 5879]]  site ['6293']
    of: Graduale [['(printed)', '524', 6675]]  site ['5801']
    co: Graduale [['(printed)', '525', 6149]]  site ['6238']
-S0722    22 Iul. — S. Mariæ Magdalenæ                  p.526 
-   in: Graduale [['Gaudesmus', '51*', 4291]]  site ['5384']
 26.06 S. Anne, Matris B. Maria Virginis                   ? ['S0626', 'G499']
 28.06 B. Antonii ab Ecclesia, Conf. Ord. Prad.            ? ['G502', 'G502_3']
 S0804    4 Aug. — S. DOMINICI, CONF., PATRIS NOSTRI    p.533 
    gr: Graduale [['Os Justi', '36', None]] (no GregoBase id)  site ['4733']
-   co: Graduale [['(printed)', '538', 6615]]  site ['6516']
 S0806    6 Aug. — Transfiguratio Domini                p.539 ['GaudeAmus', 'Communi unius sancte Mulieris,', '59*']
    gr: Graduale [['Démine', '40*', 7142]]  site ['5191']
    of: Graduale [['Justus ut palma', '34*', 5857]]  site ['9882']
  9.08 B. Joannis de Salerno, Conf. Ord. Prad.             NO SITE MASS
 12.08 S. Clara, Virginis                                  ? ['S0812', 'S0812b']
 S0815    15 Aug. — ASSUMPTIO B. MARIÆ VIRG.            p.548 ['Gaudefmus', 'Nativitate ejusdem,', '566']
-   in: Graduale [['(printed)', '549', 6304]]  site ['4291']
-   gr: Graduale [['(printed)', '549', 5366]]  site ['6191']
+   in: Graduale [['(printed)', '549', 6304]]  site ['4289']
+   gr: Graduale [['(printed)', '549', 5366]]  site ['6293']
    al: Graduale [['Justus germinabit', '42*', None]] (no GregoBase id)  site ['5733']
    of: Graduale [['GI6ria et honére', '17*', 5797]]  site ['8151']
    co: Graduale [['Fidélis servus', '374', 6516]]  site ['7543']
 S0822    22 Aug. — Immaculati Cordis B. Mariæ Virg.    p.555 
    tr: Graduale [['(printed)', '558', 9884]]  site ['4978']
-S0825    25 Aug. — S. Lodovici Regis, C.               p.561 
-   gr: Graduale [['Démine', '40*', 7142]]  site ['6266']
-S0828    28 Aug. — S. Augustini, E. C. D.              p.563 
-   in: Graduale [['In médio', '35*', 6549]]  site ['6482']
 S0829    29 Aug. — Decollatio S. Ioannis Bapt.         p.563 
    tr: Graduale [['Quì séminant', '23*', 4978]]  site None
 S0908    8 Sept. — Nativitas B. Mariæ Virg.            p.566 
@@ -127,15 +93,10 @@ S0910    10 Sept. — S. Alphonsi Navarrete et Soc., O.P p.570 ['Sancti tui', 'C
    in: Graduale [['Intret', '25', None]] (no GregoBase id)  site ['6735']
 G566     12 Sept. — Ss. Nominis B. Mariæ Virg.         p.571 
    gr: Graduale [['Benedîcta', '76*', None]] (no GregoBase id)  site ['6984']
-   of: Graduale [['Ave', '445', 4781]]  site ['8151']
 S0920    20 Sept. — B. Francisci de Posadas, O.P., C.  p.571 ['Caritas', 'festo S. Philippi Nerii post Trinitatem,', '481']
    gr: Graduale [['Justus ut palma', '372', 6266]]  site ['6052']
    of: Graduale [['Gléria et hondre', '17*', 5797]]  site ['5852']
    co: Graduale [['Posuisti', '454', 6199]]  site ['4848']
-S0921    21 Sept. — S. Matthæi, Apostoli et Evangelist p.578 
-   co: Graduale [['Ego vos elégi', '515', 4728]]  site ['5171']
-S0927    27 Sept. — Ss. Cosmæ et Damiani, Mm.          p.580 
-   gr: Graduale [['Ecce quam bonum', '348', 6309]]  site ['6306']
 S0930    30 Sept. — S. Hieronymi, C. D.                p.580 
    of: Graduale [['(printed)', '581', 7920]]  site ['6021']
 S1008    8 Oct. — S. Birgittæ, Vid.                    p.595 ['GaudeAmus', 'Communi unius sancte Mulieris,', '59*']
@@ -144,8 +105,6 @@ S1008    8 Oct. — S. Birgittæ, Vid.                    p.595 ['GaudeAmus', 'C
    tr: Graduale [['Quasì stella', '37*', 7081]]  site None
    of: Graduale [['Leetàmini', '401', 5126]]  site ['5801']
    co: Graduale [['Gaudéte', '575', None]] (no GregoBase id)  site ['6238']
-S1018    18 Oct. — S. Lucæ, Evangelistæ                p.604 ['Justus', 'Communi unius Confessoris non Pontificis,', '39*']
-   in: Graduale [['In médio', '35*', 6549]]  site ['6482']
 22.10 In Anniversario                                     NO SITE MASS
 S1030b   30 Oct. — B. Benvenutæ Boiani O.P. V.         p.607 
    in: Graduale [['Multe tribulatiénes', '499', 5050], ['(printed)', '608', 7395]]  site ['4291']
