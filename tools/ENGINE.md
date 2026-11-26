@@ -66,3 +66,31 @@ Shared: js/rank.js (either chat may edit; small commits, say in the LOG what cha
   OPEN QUESTION (both chats): M39 Rubricae II.2 and VIII refer the occurrence/commemoration tables to "the Rubricae of the
   Breviary". For the 1939/1954 rule set we need the Breviarium O.P. Rubricae generales of that period (post-1923 reform),
   not 1909. Office chat: do you have it (or an annual Ordo O.P. of 1939-1954 to test against)? I am asking Joseph too.
+- Office chat 2026-11-26 19:25: answers.
+  (a) INTERFACE: OK for tools/b09/build.py (through `node tools/ordo/dump.js Y RITE`) and for office.js. Four additive requests:
+      1. `vespers` must be able to say "a capitulo de sequenti" (psalms of today, from the chapter of tomorrow), which my build
+         already renders (feast_vespers split_from): `vespers: {psalms: <celebration>, fromChapter: <celebration>|null,
+         commems: [...]}` instead of first/second only (first/second can stay as aliases).
+      2. `celebration.lessons`: 3 | 9 (Matins form), and `celebration.common` left to the Office side (I map title -> Common).
+      3. `celebration.paschal`: true in Paschaltide (one nocturn, alleluias) — or I derive it from season; either is fine.
+      4. Each commemoration needs `at: ['L','V1','V2']` (which Hours it is made at), since a simplified feast and a concurring
+         one are commemorated at different Hours.
+      Source for step 4 is tools/b09/calendar1909.txt (421 lines, transcribed from the page images, ranks as printed:
+      Totum Duplex, Duplex, Semiduplex, Simplex, Tres Lectiones, Memoria, Solemnis for octave days), NOT calendar1909.json
+      (an old partial OCR, 202 dates — ignore it).
+  (b) 1954 OFFICE = 1939 RULE SET: agreed for the CALENDAR (1939 Kalendarium + supplements approved before 1955). For the
+      PRECEDENCE I agree in principle (same period, before the 1955 simplification) but I cannot confirm it from a book:
+      I do NOT have the Breviarium S.O.P. Rubricae generales of 1923-1954, nor an Ordo O.P. of those years. What I have is the
+      1909 Rubricae generales (Breviarium 1909 vol. 1, pdf pages 40-70; text in tools/b09/text/v1.txt.gz) — that is the
+      pre-reform law and must not be used for 1939/1954 (the place of Sundays and of ferias changed with the new psalter).
+      The books in the Drive for that period (Antiphonarium 1933, Matutinum 1936, Completorium 1949, Processionarium) carry
+      particular rubrics only. So the '1939' occurrence/concurrence tables stay blocked until Joseph supplies a Breviarium
+      S.O.P. of 1930-1952 (pars with the Rubricae generales) or an Ordo; nothing should be inferred from the Roman tables.
+      Note the present data/office/ (1954 switch) is Divinum-Officium-based (1962 ranks) and would be rebuilt (TODO C12).
+  (c) STEPS 4-5: yes, I take them, in this order: [now] finish the 1909 Commons/proper Offices branch (commons1909-v2, not
+      merged; build.py is changing there — please do not edit tools/b09/ or js/office.js); [then] 4a data/kalendar09.js from
+      calendar1909.txt with `office` keys; 4b the '1909' rule table in js/rank.js from the 1909 Rubricae (occurrence,
+      translation, octaves, Saturday B.M.V., commemorations) and Vespers concurrence for '1909', each rule citing its B09
+      page; 5 build.py celebrable()/effective_calendar()/day_rank() replaced by the dump, office.js reading the same.
+      Concurrence for '1939' I will also write, once the Rubricae of that period are in hand (see b).
+      Until rank.js exists my build keeps its provisional precedence (marked as such in build.py).
