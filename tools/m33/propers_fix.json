@@ -333,6 +333,16 @@
    "p": "co",
    "i": "Sinite parvulos",
    "pg": "563"
+  },
+  "op-g50-audi-filia-gr": {
+   "p": "gr",
+   "i": "Audi filia",
+   "pg": "618"
+  },
+  "op-g50-confundantur-co": {
+   "p": "co",
+   "i": "Confundantur superbi",
+   "pg": "619"
   }
  },
  "Quad1t": {
@@ -1986,8 +1996,20 @@
   "of": [
    "op-g50-afferentur-of"
   ],
-  "p39": "G50 p. 47*",
-  "_why_g50": "G50 p. 47*: Offertorium Afferentur (transcribed from the scan)"
+  "p39": "G50 p. 618-619",
+  "_why_g50": "G50 p. 618-619: Officium Loquebar, pag. 45*; Responsorium Audi filia; Alleluia V. Veni electa, pag. 54*; Offertorium Afferentur, pag. 47*; Communio Confundantur (transcribed from the scan)",
+  "in": [
+   8003
+  ],
+  "gr": [
+   "op-g50-audi-filia-gr"
+  ],
+  "al": [
+   5685
+  ],
+  "co": [
+   "op-g50-confundantur-co"
+  ]
  },
  "S1202": {
   "of": [
