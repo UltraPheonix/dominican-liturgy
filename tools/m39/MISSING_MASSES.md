@@ -1,9 +1,8 @@
 # 1939 calendar vs site Masses (tools/m39/k_build.py, 390 entries)
 
-## Feasts of the 1939 calendar with no site Mass (1)
+## Feasts of the 1939 calendar with no site Mass (0)
 These need their Mass from the Missale O.P. 1939 (own Mass or Common + proper orations).
 
-- 0609 BB. Dianæ, Cæciliæ et Amatæ Virginum O. P. — Semiduplex
 
 ## Site Masses with a date that are not in the 1939 calendar (29)
 
