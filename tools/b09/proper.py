@@ -208,16 +208,17 @@ def chunks(vol, a, b):
     for i, (s, md, title) in enumerate(hs):
         e = hs[i + 1][0] if i + 1 < len(hs) else len(t)
         yield md, title, t[s:e]
+VOLS = {'v1': (768, 1577, '11-29', '06-15'), 'v2': (476, 1369, '04-13', '12-02')}
 if __name__ == '__main__':
-    vol, a, b = sys.argv[1], int(sys.argv[2]), int(sys.argv[3])
-    only = sys.argv[4] if len(sys.argv) > 4 else None
-    D = json.load(open(OUT)) if os.path.exists(OUT) else {}
-    seen = collections.Counter()
-    for md, title, ch in chunks(vol, a, b):
+    vol = sys.argv[1]; a, b, st, en = VOLS[vol]
+    only = sys.argv[2] if len(sys.argv) > 2 else None
+    D = json.load(open(OUT)) if os.path.exists(OUT) and not only else {}
+    for md, ti, rk, ch in chunks_cal(vol, a, b, st, en):
         if only and md != only: continue
-        if not re.search(r'Ad Matutinum|In I\. Nocturno|Invitatorium', ch): continue   # nothing proper at Matins: Common + prayer
-        seen[md] += 1; P = parse(ch); P['title'] = title
-        D['%s:%d' % (md, seen[md])] = P
-        print(md, '|', title[:50], '|', {k: (list(v) if isinstance(v, dict) else len(v)) for k, v in P.items() if k not in ('title',)})
-        if only: print(json.dumps(P, ensure_ascii=False, indent=1)[:9000])
+        if len(ch) > 60000: print(md, ti[:40], 'SKIPPED: chunk of %d characters holds several Offices (anchor missing)' % len(ch)); continue
+        P = parse(ch); P['title'] = ti; P['rank'] = rk; P['vol'] = vol; P['len'] = len(ch)
+        k = md + '|' + ti
+        if k in D and D[k].get('vol') != vol and len(D[k].get('q', [])) <= len(P.get('q', [])) and D[k].get('lessons'): continue   # keep the cleaner reading of the two volumes
+        D[k] = P
+        print(md, '|', ti[:44], '|', {x: (list(v) if isinstance(v, dict) else len(v) if hasattr(v, '__len__') else v) for x, v in P.items() if x not in ('title', 'rank', 'vol', 'len')}, flush=True)
     if not only: json.dump(D, open(OUT, 'w'), ensure_ascii=False, indent=0)
