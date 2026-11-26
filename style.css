@@ -403,3 +403,7 @@ body.sheet-open { overflow: hidden; }
 /* reading titles head their own column; the source is a small note on the reference line */
 .reading .r-title { display: block; font-style: italic; margin-bottom: .35em; }
 .reading h3 .src { font-family: var(--serif); font-size: 13px; letter-spacing: 0; color: var(--muted); margin-left: .6em; }
+/* the sung parts of the priest and ministers (tones), with the translation under them */
+.ordo .chant, .reading .chant.tone { margin: 6px 0 2px; }
+.tone-en { font-size: .9em; margin: 2px 0 10px; }
+.part.ordo.cont { border-top: 0; margin-top: -8px; padding-top: 0; }

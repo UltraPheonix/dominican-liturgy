@@ -353,7 +353,8 @@
                   var b = svg.getBBox(), vb = svg.getAttribute('viewBox').split(/\s+/).map(Number);
                   // a stray element can report an absurd size: never let the frame grow beyond twice the line
                   var hh = (b.height > 0 && b.height < vb[3] * 2) ? b.height + 6 : vb[3] + 6;
-                  if (isFinite(b.y) && Math.abs(b.y) < vb[3] * 2) svg.setAttribute('viewBox', [vb[0], (b.y - 3).toFixed(2), vb[2], hh.toFixed(2)].join(' '));
+                  // (the later lines of a long chant drift ever higher above their frame, so b.y itself is not bounded)
+                  if (isFinite(b.y) && b.height > 0 && b.height < vb[3] * 2) svg.setAttribute('viewBox', [vb[0], (b.y - 3).toFixed(2), vb[2], hh.toFixed(2)].join(' '));
                 } catch (e) {}
               });
             } catch (e) { showError(container, e); }
@@ -977,6 +978,7 @@
     }
     ch('se');
     if (O && O !== 'low') od('chalice');
+    state._gos = gos[0] || null;
     var passion = gos.some(function (r) { return r.passion; });
     if (gos.length && !passion) od('gospel');
     gos.forEach(function (r) { q.push({t: 'read', r: r}); });
@@ -1107,18 +1109,44 @@
         return l;
       });
     }
+    if (isSung() && k === 'canon') {
+      var n = lines.length;
+      if (n > 1 && /^Per ómnia sǽcula sæculórum/.test(lines[n - 2].la || '') && /^Amen/.test(lines[n - 1].la || '')) lines = lines.slice(0, n - 2);
+    }
+    if (isSung() && k === 'pater') {
+      // Missale O.P. 1939, Appendix: the ferial chant in feasts of three lessons, on ferias and in Masses for the Dead
+      var sol = solemnDay(state.key, state.date) && !R.requiem, after = false, L2 = [];
+      L2.push({r: 'The priest sings (' + (sol ? 'solemn' : 'ferial') + ' tone):'});
+      L2.push({g: sol ? 'op-m39-pater-solemn' : 'op-m39-pater-ferial', nd: 1, en: 'World without end. ℟. Amen. Let us pray. Admonished by saving precepts, and following the divine instruction, we make bold to say: Our Father … And lead us not into temptation. ℟. But deliver us from evil.'});
+      lines.forEach(function (l) {
+        if (/^Líbera nos/.test(l.la || '')) after = true;
+        if (!after) { if (/^Amen\.$/.test(l.la || '') && l.w === 'P') L2.push(l); return; }
+        if (/^Pax\s*✠?\s*Dómini/.test(l.la || '')) { L2.push({g: 'op-m39-pax', nd: 1, en: 'World without end. ℟. Amen. The peace ✠ of the Lord be ✠ always with ✠ you. ℟. And with thy spirit.'}); return; }
+        if (/^Per ómnia sǽcula sæculórum\.?$/.test(l.la || '') || /^Amen\.$/.test(l.la || '') || /^Et cum spíritu tuo/.test(l.la || '')) return;
+        L2.push(l);
+      });
+      lines = L2;
+    }
     return drawSection({la: sec.la, en: sec.en, lines: lines, k: k}, R);
   }
   function drawSection(sec, R) {
     var mode = {low: 'l', sung: 's', solemn: 'm'}[state.ordo] || 'l', lines = sec.lines, k = sec.k;
     lines = lines.filter(function (l) { return !l.m || l.m.indexOf(mode) >= 0; });
+    var b0 = gospelBook();
+    if (k === 'gospel' && b0 && EV_LA[b0]) lines = lines.map(function (l) { return /secúndum N\./.test(l.la || '') ? {w: l.w, la: l.la.replace('N.', EV_LA[b0] + '.'), en: l.en.replace(/according to N\./, 'according to ' + EV_EN[b0] + '.')} : l; });
+    if (mode !== 'l' && /^(collect|offerDial|post|postEnd|gospel)$/.test(k || '')) lines = singLines(lines);
     if (R.requiem) lines = lines.filter(function (l) { return !/^(Benedíctio Dei omnipoténtis|Amen\.$)/.test(l.la || '') || k !== 'end'; });
     var box = el('section', {class: 'part ordo', 'data-part': 'ordo'});
     box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: sec.la}), el('span', {class: 'incipit', text: sec.en})]));
     lines.forEach(function (l, i) {
       if (l.r) { box.appendChild(el('p', {class: 'o-rub', text: l.r})); return; }
       if (l.read) { box.appendChild(drawReading({type: l.type || 'Gospel', ref: l.read})); return; }
-      if (l.g) { if (l.n) box.appendChild(el('p', {class: 'hw-chant-n', text: l.n})); box.appendChild(chantBox(l.g)); return; }   // a chant of the 1959 Holy Week (gabc/op59-*)
+      if (l.g || l.gabc) {
+        if (l.n) box.appendChild(el('p', {class: 'hw-chant-n', text: l.n}));
+        box.appendChild(l.gabc ? gabcBox(l.gabc) : chantBox(l.g, l.nd ? {noDrop: true} : undefined));
+        if (l.en) box.appendChild(el('p', {class: 'en-text tone-en', lang: 'en', text: l.en}));
+        return;
+      }   // a chant of the 1959 Holy Week (gabc/op59-*)
       var near = function (j) { return lines[j] && lines[j].w === 'S'; };
       var mark = l.w === 'C' || /^(℟|℣|Ant\.)/.test(l.la) ? '' : l.w === 'S' ? '℟. ' : (l.w === 'D' || near(i + 1) || near(i - 1)) && l.la.length < 140 ? '℣. ' : '';
       box.appendChild(el('div', {class: 'r-cols o-line'}, [
@@ -1131,24 +1159,71 @@
   function flectamusDay(key, d) {
     return isTemporal(key) && /^(5a[whfs]|Quad[1-6][mtwhfs])$/.test(key) && !/^Quad6[hfs]$/.test(key) && !(d && d.getDay() === 0);
   }
-  function chantBox(id) {
+  function chantBox(id, o) {
     var cb = el('div', {class: 'chant'});
-    loadGabc(id).then(function (t) { var g = splitGabc(t); renderInto(cb, g.body, g.header, null); }, function (e) { showError(cb, e); });
+    loadGabc(id).then(function (t) { var g = splitGabc(t); renderInto(cb, g.body, g.header, null, o); }, function (e) { showError(cb, e); });
     return cb;
+  }
+  // a chant made here (the tones of the prayers and readings), drawn without a large initial
+  function gabcBox(gabc) {
+    var cb = el('div', {class: 'chant tone'});
+    renderInto(cb, gabc, {}, null, {noDrop: true});
+    return cb;
+  }
+  var EV_LA = {Matthæus: 'Matthǽum', Marcus: 'Marcum', Lucas: 'Lucam', Joannes: 'Ioánnem', Ioannes: 'Ioánnem'};
+  var EV_EN = {Matthæus: 'Matthew', Marcus: 'Mark', Lucas: 'Luke', Joannes: 'John', Ioannes: 'John'};
+  function gospelBook() { var g = state._gos; return g && g.ref ? g.ref.split(' ')[0] : null; }
+  function isSung() { return state.ordo === 'sung' || state.ordo === 'solemn'; }
+  // at a Sung or Solemn Mass the greetings, Orémus and the announcement of the Gospel are sung:
+  // Graduale O.P. (1950), Modus respondendi in Missa, pp. 146*-147* (Ad Orationes I; Ad Evangelium);
+  // Orémus after Harrison (1920) p. 67; the Dóminus vobíscum of the Gospel "like those for the Prayers" (p. 77)
+  function singLines(lines) {
+    var o = [], nx = function (i, re) { return lines[i + 1] && re.test(lines[i + 1].la || ''); };
+    for (var i = 0; i < lines.length; i++) {
+      var l = lines[i], la = l.la || '';
+      if (/^Dóminus vobíscum\.$/.test(la) && nx(i, /^Et cum spíritu tuo\.$/)) { o.push({g: '7339', nd: 1, en: 'The Lord be with you. ℟. And with thy spirit.'}); i++; continue; }
+      if (/^Orémus\.$/.test(la)) { o.push({g: 'op-h-oremus', nd: 1, en: 'Let us pray.'}); continue; }
+      if (/^Sequéntia sancti Evangélii/.test(la) && nx(i, /^Glória tibi/) && window.OPMassTones) {
+        var b = gospelBook(), g = b && OPMassTones.sequentia(b);
+        if (g) { o.push({gabc: g, en: 'The continuation of the holy Gospel according to ' + EV_EN[b] + '. ℟. Glory be to thee, O Lord.'}); i++; continue; }
+      }
+      o.push(l);
+    }
+    return o;
   }
   function drawOratio(it) {
     var name = {or: ['Oratio', 'Collect'], se: ['Secreta', 'Secret'], pc: ['Postcommunio', 'Postcommunion'], sp: ['Oratio super populum', 'Prayer over the People']}[it.k];
     var box = el('section', {class: 'part ordo oratio', 'data-part': 'oratio'});
-    box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: name[0]}), el('span', {class: 'incipit', text: it.k === 'sp' && it.x[2] ? name[1] + ' · ' + it.x[2] : name[1]})]));
+    // with the Order of Mass shown, the Collect and Postcommunion go under its heading (Oratio, Postcommunio)
+    if (!(state.ordo && window.ORDO && (it.k === 'or' || it.k === 'pc'))) box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: name[0]}), el('span', {class: 'incipit', text: it.k === 'sp' && it.x[2] ? name[1] + ' · ' + it.x[2] : name[1]})]));
+    else box.classList.add('cont');
     // Missale O.P. 1939 (Feria IV Cinerum): "Flectamus genua, et Levate, quotidie in Quadragesima in Missa de tempore:
     // exceptis Dominicis, et die Cenae, et Sabbato Paschae"; the deacon sings them after Oremus, before the Collect
     if (it.k === 'or' && flectamusDay(state.key, state.date)) {
       box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: 'Orémus. ℣. Flectámus génua. ℟. Leváte.'}), el('p', {class: 'en-text', lang: 'en', text: 'Let us pray. ℣. Let us kneel. ℟. Arise.'})]));
-      if (state.ordo !== 'low') box.appendChild(chantBox('op-m39-flectamus'));
+      if (isSung()) box.appendChild(chantBox('op-m39-flectamus', {noDrop: true}));
     }
     // Lenten ferias: after the Postcommunion the priest says Oremus and the deacon Humiliate capita vestra Deo
-    if (it.k === 'sp' && state.ordo !== 'low') box.appendChild(chantBox('op-m39-humiliate'));
+    if (it.k === 'sp' && isSung()) box.appendChild(chantBox('op-m39-humiliate', {noDrop: true}));
     if (it.k === 'sp') box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: 'Orémus. ℣. Humiliáte cápita vestra Deo.'}), el('p', {class: 'en-text', lang: 'en', text: 'Let us pray. ℣. Bow down your heads before God.'})]));
+    // at a Sung or Solemn Mass the Collect, Postcommunion and Prayer over the People are sung in the tone of the
+    // prayers (Harrison 1920, pp. 66-67; Orémus is sung just before); the Secret is said in a low voice
+    var og = null;
+    if (isSung() && it.k !== 'se' && window.OPMassTones) { try { og = OPMassTones.oration(it.x[0], {noOremus: true}); } catch (e) { console.warn('tone', e); } }
+    if (og) {
+      box.appendChild(gabcBox(og));
+      var amen = og.indexOf('A(g)men') >= 0;
+      box.appendChild(el('p', {class: 'en-text tone-en', lang: 'en', text: it.x[1] + (amen ? ' ℟. Amen.' : '')}));
+      if (!amen) box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.']), el('p', {class: 'en-text', lang: 'en'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
+      return box;
+    }
+    if (it.k === 'se' && isSung()) {
+      // said in a low voice as far as "Deus"; "Per omnia saecula saeculorum" is sung aloud at the beginning of the Preface
+      var sl = it.x[0].replace(/,?\s*per ómnia sǽcula sæculórum\.?\s*$/i, ','), se = it.x[1].replace(/,?\s*world without end\.?\s*$/i, ',');
+      box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: sl}), el('p', {class: 'en-text', lang: 'en', text: se}), ]));
+      box.appendChild(el('p', {class: 'o-rub', text: 'Per ómnia sǽcula sæculórum is sung aloud at the Preface.'}));
+      return box;
+    }
     box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: it.x[0]}), el('p', {class: 'en-text', lang: 'en', text: it.x[1]})]));
     box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.']), el('p', {class: 'en-text', lang: 'en'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
     return box;
@@ -1299,6 +1374,18 @@
       el('h3', null, [READ_LA[r.type], el('span', {class: 'ref', text: r.ref}), r.roman ? el('span', {class: 'badge warn', title: 'Reference from the Roman Missal (jgabc); not read from the Dominican Missal', text: 'Roman ref.'}) : null]),
       el('div', {class: 'r-cols'}, [la, en])]);
     var psTitle = function (t) { return r.type === 'Psalmus' ? t.replace(/^(Ipsi David[^.]*|Canticum graduum|Psalmus David[^.]*|A Psalm for David[^.]*|A gradual canticle|A psalm of David[^.]*)\.\s*/i, '') : t; };
+    if (r.la && isSung() && window.OPMassTones && /^(Lesson|Epistle|Gospel)$/.test(r.type) && !r.passion) {
+      var gos = r.type === 'Gospel', tg = null, rg = null;
+      try { tg = gos || !r.title ? null : OPMassTones.epistleTitle(r.title); rg = OPMassTones.reading(r.la, gos); } catch (e) { console.warn('tone', e); }
+      if (rg) {
+        box.querySelector('.r-cols').remove();
+        box.querySelector('h3').appendChild(el('span', {class: 'src', text: 'Missale O.P. 1933 · tone: Harrison O.P. 1920'}));
+        if (tg) box.appendChild(gabcBox(tg));
+        box.appendChild(gabcBox(rg));
+        box.appendChild(el('p', {class: 'en-text tone-en', lang: 'en'}, [el('span', {class: 'r-title', text: gos ? '' : (r.title_en || '')}), r.en || '']));
+        return box;
+      }
+    }
     if (r.la) {
       // the title heads each column (Latin over the Latin, English over the English); the source goes on the reference line
       la.appendChild(el('span', {class: 'r-title', text: r.title || ''})); la.appendChild(document.createTextNode(r.la));

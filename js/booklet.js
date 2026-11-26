@@ -339,9 +339,19 @@
     var ordoSec = function (k, title) {
       var s = ordoLines(k); if (!s) return;
       if (title !== false) heading(title || s.la, null);
+      // sung: Graduale O.P. (1950) pp. 146*-147* (Ad Orationes I, Ad Evangelium); Orémus after Harrison (1920) p. 67
+      var sing = sung && /^(offerDial|post|postEnd|gospel)$/.test(k), skip = -1;
       s.lines.forEach(function (l, i) {
+        if (i === skip) return;
         if (l.r) { rubric(l.r, {left: true}); return; }
         if (l.read) return;
+        var nx = s.lines[i + 1] && s.lines[i + 1].la || '';
+        if (sing && /^Dóminus vobíscum\.$/.test(l.la) && /^Et cum spíritu tuo\.$/.test(nx)) { chant(A.findKyriale('Ad Orationes I'), {noDrop: true, glyph: 1 / 19, size: 14}); skip = i + 1; return; }
+        if (sing && /^Orémus\.$/.test(l.la)) { chant('op-h-oremus', {noDrop: true, glyph: 1 / 19, size: 14}); return; }
+        if (sing && /^Sequéntia sancti Evangélii/.test(l.la) && /^Glória tibi/.test(nx) && window.OPMassTones) {
+          var bk = ((S._gos || {}).ref || '').split(' ')[0], sg = OPMassTones.sequentia(bk);
+          if (sg) { gabcInline(sg, {size: 14, glyph: 1 / 19}); skip = i + 1; return; }
+        }
         var ev = EVANGELIST();
         para(ev ? l.la.replace(/secúndum N\./, 'secúndum ' + ev + '.') : l.la, {mark: mk(l), cls: 'pr'});
       });
@@ -373,7 +383,7 @@
           heading('Oratio', null);
           var s2 = ordoLines('collect');
           s2.lines.forEach(function (l) { if (l.r) rubric(l.r, {left: true}); });
-          if (sung) chant(A.findKyriale('Ad Orationes I'), {noDrop: true, glyph: 1 / 19, size: 14});
+          if (sung) { chant(A.findKyriale('Ad Orationes I'), {noDrop: true, glyph: 1 / 19, size: 14}); chant('op-h-oremus', {noDrop: true, glyph: 1 / 19, size: 14}); }
           else para('Dóminus vobíscum. ℟. Et cum spíritu tuo. Orémus.', {cls: 'pr'});
           return;
         }
@@ -387,10 +397,10 @@
           rubric('Quotidie in Quadragesima: after Orémus the deacon, kneeling, sings Flectámus génua, and rising, Leváte.', {left: true});
           if (sung) chant('op-m39-flectamus', {noDrop: true, glyph: 1 / 19, size: 14}); else para('Orémus. ℣. Flectámus génua. ℟. Leváte.', {cls: 'pr'});
         }
-        if (it.k === 'sp') { heading('Oratio super populum', null); para('Orémus.', {cls: 'pr'}); rubric('The deacon sings:', {left: true}); if (sung) chant('op-m39-humiliate', {noDrop: true, glyph: 1 / 19, size: 14}); else para('℣. Humiliáte cápita vestra Deo.', {cls: 'pr'}); }
+        if (it.k === 'sp') { heading('Oratio super populum', null); if (sung) chant('op-h-oremus', {noDrop: true, glyph: 1 / 19, size: 14}); else para('Orémus.', {cls: 'pr'}); rubric('The deacon sings:', {left: true}); if (sung) chant('op-m39-humiliate', {noDrop: true, glyph: 1 / 19, size: 14}); else para('℣. Humiliáte cápita vestra Deo.', {cls: 'pr'}); }
         // sung in the solemn tone of the prayers (Harrison 1920); said at a Low Mass
         var og = null;
-        try { og = sung && window.OPMassTones ? OPMassTones.oration(J(it.x[0])) : null; } catch (e) { console.warn('tone', e); }
+        try { og = sung && window.OPMassTones ? OPMassTones.oration(J(it.x[0]), {noOremus: true}) : null; } catch (e) { console.warn('tone', e); }
         if (og) { gabcInline(og, {size: 14, glyph: 1 / 19}); return; }
         para(it.x[0], {cls: 'pr'}); para('℟. Amen.', {cls: 'pr'}); return;
       }
