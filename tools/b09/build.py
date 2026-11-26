@@ -915,6 +915,8 @@ def clean_proper(o, k, maxlen=420):
     if not v or not isinstance(v, str) or len(v) > maxlen or re.search(r'Psalm|pag\.|Capitul|Hymnus|Ana\.|\bT\.|\?\.', v): return None
     return v
 def feast_oratio(d, fe, F):
+    t0 = re.sub(r'\s*\(translatum\)', '', fe['title'])
+    if (PFIX.get(t0) or {}).get('oratio'): return PFIX[t0]['oratio']
     o = san_oratio(d, fe['title'])
     if o and re.search(r'prævení|vigíli', o, re.I): o = None
     return o or F.get('oratio')
@@ -1048,7 +1050,7 @@ def with_proper(F, o, title):
         if '%s.%s' % (sec, k) in X: return X['%s.%s' % (sec, k)]
         v = (P.get(sec) or {}).get(k)
         return v if v and '%s.%s' % (sec, k) not in bad else None
-    for sec, keys in (('v1', ('ant', 'ants', 'magn', 'resp')), ('laud', ('ant', 'bened')), ('v2', ('ant', 'magn'))):
+    for sec, keys in (('v1', ('ant', 'ants', 'magn', 'resp', 'cap')), ('laud', ('ant', 'bened')), ('v2', ('ant', 'magn'))):
         for k in keys:
             v = get(sec, k)
             if v and isinstance(F.get(sec), dict):
