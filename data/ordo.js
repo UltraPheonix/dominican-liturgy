@@ -17,23 +17,25 @@ window.ORDO = {
   foot: {la: 'Ad pedem altaris', en: 'At the foot of the altar', lines: [
     {r: 'Standing at the altar, the priest says in a low voice:'},
     {w: 'P', la: 'Actiónes nostras, quǽsumus, Dómine, aspirándo prǽveni et adiuvándo proséquere: ut cuncta nostra operátio a te semper incípiat, et per te cœpta finiátur. Per Christum Dóminum nostrum. Amen.', en: 'Prevent, O Lord, we beseech thee, our actions by thy inspiration, and continue them by thine assistance; that every one of our works may begin always from thee, and through thee be ended. Through Christ our Lord. Amen.'},
-    {r: 'He descends to the foot of the altar, bows profoundly, and signs himself:'},
+    {r: 'He stands below the lowest step before the middle of the altar, with hands joined before his breast, bows profoundly, and signs himself:'},
     {w: 'P', la: 'In nómine Patris, et Fílii, et Spíritus Sancti. Amen.', en: 'In the name of the Father, and of the Son, and of the Holy Ghost. Amen.'},
     {w: 'P', la: 'Confitémini Dómino quóniam bonus.', en: 'Give praise to the Lord, for he is good.'},
     {w: 'S', la: 'Quóniam in sǽculum misericórdia eius.', en: 'For his mercy endureth for ever.'},
+    {r: 'Bowing profoundly, with joined hands, in a moderate voice (he does not strike his breast at mea culpa):'},
     {w: 'P', la: 'Confíteor Deo omnipoténti, et beátæ Maríæ semper Vírgini, et beáto Domínico patri nostro, et ómnibus Sanctis, et vobis, fratres, quia peccávi nimis cogitatióne, locutióne, ópere et omissióne, mea culpa: precor vos oráre pro me.', en: 'I confess to almighty God, to blessed Mary ever a virgin, to blessed Dominic our father, to all the saints, and to you, brethren, that I have sinned exceedingly in thought, word, deed and omission, through my fault: I beseech you to pray for me.'},
     {w: 'S', la: 'Misereátur tui omnípotens Deus, et dimíttat tibi ómnia peccáta tua: líberet te ab omni malo, salvet et confírmet in omni ópere bono, et perdúcat te ad vitam ætérnam.', en: 'May almighty God have mercy on thee and forgive thee all thy sins: may he deliver thee from all evil, save and strengthen thee in every good work, and bring thee to life everlasting.'},
     {w: 'P', la: 'Amen.', en: 'Amen.'},
     {w: 'S', la: 'Confíteor Deo omnipoténti, et beátæ Maríæ semper Vírgini, et beáto Domínico patri nostro, et ómnibus Sanctis, et tibi, pater, quia peccávi nimis cogitatióne, locutióne, ópere et omissióne, mea culpa: precor te oráre pro me.', en: 'I confess to almighty God, to blessed Mary ever a virgin, to blessed Dominic our father, to all the saints, and to thee, father, that I have sinned exceedingly in thought, word, deed and omission, through my fault: I beseech thee to pray for me.'},
     {w: 'P', la: 'Misereátur vestri omnípotens Deus, et dimíttat vobis ómnia peccáta vestra: líberet vos ab omni malo, salvet et confírmet in omni ópere bono, et perdúcat vos ad vitam ætérnam.', en: 'May almighty God have mercy on you and forgive you all your sins: may he deliver you from all evil, save and strengthen you in every good work, and bring you to life everlasting.'},
     {w: 'S', la: 'Amen.', en: 'Amen.'},
+    {r: 'He does not make the sign of the cross:'},
     {w: 'P', la: 'Absolutiónem et remissiónem ómnium peccatórum vestrórum tríbuat vobis omnípotens et miséricors Dóminus.', en: 'May the almighty and merciful Lord grant you pardon and remission of all your sins.'},
     {w: 'S', la: 'Amen.', en: 'Amen.'},
     {w: 'P', la: 'Adiutórium nostrum in nómine Dómini.', en: 'Our help is in the name of the Lord.'},
     {w: 'S', la: 'Qui fecit cælum et terram.', en: 'Who made heaven and earth.'},
-    {r: 'Going up to the altar, the priest bows and says:'},
+    {r: 'Having said the Adjutorium standing erect with joined hands, he goes up to the altar; there, bowing profoundly towards it with joined hands, he says:'},
     {w: 'P', la: 'Aufer a nobis, Dómine, cunctas iniquitátes nostras: ut ad Sancta sanctórum puris mereámur méntibus introíre. Per Christum Dóminum nostrum. Amen.', en: 'Take away from us all our iniquities, O Lord, that we may be worthy to enter with pure minds into the Holy of Holies. Through Christ our Lord. Amen.'},
-    {r: 'He signs the altar with the cross and kisses it, then signs himself and goes to the missal.'},
+    {r: 'He makes the sign of the cross with his thumb in the middle of the altar and kisses it, his hands extended on the altar on either side. Standing erect before the middle of the altar and signing himself, he says in a low voice: In nómine Patris, et Fílii, et Spíritus Sancti. Amen. Then, with joined hands, he goes to the missal at the Epistle side.'},
     {m: 'm', r: 'At a Solemn Mass the altar is incensed after the Introit has been begun.'}
   ]},
   // Kyrie, Gloria, Credo, Sanctus, Agnus Dei said, at Low Mass (sung at Sung and Solemn Mass from the Kyriale)
@@ -48,7 +50,7 @@ window.ORDO = {
     {w: 'P', la: 'Glória in excélsis Deo. Et in terra pax homínibus bonæ voluntátis. Laudámus te. Benedícimus te. Adorámus te. Glorificámus te. Grátias ágimus tibi propter magnam glóriam tuam. Dómine Deus, Rex cæléstis, Deus Pater omnípotens. Dómine Fili unigénite, Iesu Christe. Dómine Deus, Agnus Dei, Fílius Patris. Qui tollis peccáta mundi, miserére nobis. Qui tollis peccáta mundi, súscipe deprecatiónem nostram. Qui sedes ad déxteram Patris, miserére nobis. Quóniam tu solus Sanctus. Tu solus Dóminus. Tu solus Altíssimus, Iesu Christe. Cum Sancto Spíritu, in glória Dei Patris. Amen.', en: 'Glory to God in the highest. And on earth peace to men of good will. We praise thee. We bless thee. We adore thee. We glorify thee. We give thee thanks for thy great glory. O Lord God, heavenly King, God the Father almighty. O Lord Jesus Christ, the only-begotten Son. O Lord God, Lamb of God, Son of the Father. Who takest away the sins of the world, have mercy on us. Who takest away the sins of the world, receive our prayer. Who sittest at the right hand of the Father, have mercy on us. For thou alone art holy. Thou alone art Lord. Thou alone, O Jesus Christ, art most high. With the Holy Ghost, in the glory of God the Father. Amen.'}
   ]},
   collect: {la: 'Oratio', en: 'Collect', lines: [
-    {r: 'The priest kisses the altar, turns to the people and says:'},
+    {r: 'At the missal (he does not kiss the altar), the priest turns to the people by his left, his hands raised and extended, and says; then, returning to the book the same way, he bows his head slightly towards the cross for the Oremus:'},
     {w: 'P', la: 'Dóminus vobíscum.', en: 'The Lord be with you.'},
     {w: 'S', la: 'Et cum spíritu tuo.', en: 'And with thy spirit.'},
     {w: 'P', la: 'Orémus.', en: 'Let us pray.'}
@@ -79,6 +81,7 @@ window.ORDO = {
     {w: 'P', la: 'Credo in unum Deum, Patrem omnipoténtem, factórem cæli et terræ, visibílium ómnium et invisibílium. Et in unum Dóminum Iesum Christum, Fílium Dei unigénitum. Et ex Patre natum ante ómnia sǽcula. Deum de Deo, lumen de lúmine, Deum verum de Deo vero. Génitum, non factum, consubstantiálem Patri: per quem ómnia facta sunt. Qui propter nos hómines et propter nostram salútem descéndit de cælis. (Hic genuflectitur.) Et incarnátus est de Spíritu Sancto ex María Vírgine: et homo factus est. Crucifíxus étiam pro nobis: sub Póntio Piláto passus, et sepúltus est. Et resurréxit tértia die, secúndum Scriptúras. Et ascéndit in cælum: sedet ad déxteram Patris. Et íterum ventúrus est cum glória iudicáre vivos et mórtuos: cuius regni non erit finis. Et in Spíritum Sanctum, Dóminum et vivificántem: qui ex Patre Filióque procédit. Qui cum Patre et Fílio simul adorátur et conglorificátur: qui locútus est per Prophétas. Et unam sanctam cathólicam et apostólicam Ecclésiam. Confíteor unum baptísma in remissiónem peccatórum. Et exspécto resurrectiónem mortuórum. Et vitam ventúri sǽculi. Amen.', en: 'I believe in one God, the Father almighty, maker of heaven and earth, and of all things visible and invisible. And in one Lord Jesus Christ, the only-begotten Son of God. Born of the Father before all ages. God of God, light of light, true God of true God. Begotten, not made, consubstantial with the Father: by whom all things were made. Who for us men and for our salvation came down from heaven. (Here all kneel.) And became incarnate by the Holy Ghost of the Virgin Mary: and was made man. He was crucified also for us, suffered under Pontius Pilate, and was buried. And on the third day he rose again according to the Scriptures. And ascended into heaven, and sitteth at the right hand of the Father. And he shall come again with glory to judge the living and the dead: of whose kingdom there shall be no end. And in the Holy Ghost, the Lord and giver of life, who proceedeth from the Father and the Son. Who together with the Father and the Son is adored and glorified: who spoke by the Prophets. And one holy, catholic and apostolic Church. I confess one baptism for the remission of sins. And I look for the resurrection of the dead. And the life of the world to come. Amen.'}
   ]},
   offerDial: {la: 'Offertorium', en: 'Offertory', lines: [
+    {r: 'At the middle of the altar (he does not kiss it), turning to the people, he opens and joins his hands and says:'},
     {w: 'P', la: 'Dóminus vobíscum.', en: 'The Lord be with you.'},
     {w: 'S', la: 'Et cum spíritu tuo.', en: 'And with thy spirit.'},
     {w: 'P', la: 'Orémus.', en: 'Let us pray.'},
@@ -94,9 +97,9 @@ window.ORDO = {
     {m: 'm', r: 'At a Solemn Mass the offerings, the altar, the priest, the ministers, the choir and the people are now incensed.'},
     {r: 'At the Epistle side he washes his fingers, saying:'},
     {w: 'P', la: 'Lavábo inter innocéntes manus meas: et circúmdabo altáre tuum, Dómine: ut áudiam vocem laudis, et enárrem univérsa mirabília tua. Dómine, diléxi decórem domus tuæ, et locum habitatiónis glóriæ tuæ.', en: 'I will wash my hands among the innocent, and will compass thine altar, O Lord, that I may hear the voice of thy praise, and tell of all thy wondrous works. I have loved, O Lord, the beauty of thy house, and the place where thy glory dwelleth.'},
-    {r: 'Bowing in the middle of the altar, with joined hands, he says:'},
+    {r: 'Returning to the middle of the altar with joined hands, he bows profoundly and says (at et pláceat he stands erect):'},
     {w: 'P', la: 'In spíritu humilitátis et in ánimo contríto suscipiámur, Dómine, a te: et sic fiat sacrifícium nostrum, ut a te suscipiátur hódie, et pláceat tibi, Dómine Deus.', en: 'In a humble spirit and a contrite heart may we be received by thee, O Lord; and so may our sacrifice be offered in thy sight this day, that it be received by thee and be pleasing to thee, O Lord God.'},
-    {r: 'He kisses the altar, turns to the people and says:'},
+    {r: 'Turning to the people (he does not kiss the altar), with hands raised and extended, he says aloud Oráte, fratres, and then, joining his hands, continues in a low voice, and turns back to the missal completing the circle. There is no response:'},
     {w: 'P', la: 'Oráte, fratres, ut meum ac vestrum páriter in conspéctu Dómini sit accéptum sacrifícium.', en: 'Pray, brethren, that my sacrifice and yours may be equally acceptable in the sight of the Lord.'},
     {r: 'Turning back to the altar, he says:'},
     {w: 'P', la: 'Dómine, exáudi oratiónem meam: et clamor meus ad te véniat.', en: 'O Lord, hear my prayer; and let my cry come unto thee.'},
@@ -161,10 +164,12 @@ window.ORDO = {
   communion: {la: 'Communio', en: 'Communion', lines: [
     {r: 'Placing the particle in the chalice, the priest says:'},
     {w: 'P', la: 'Hæc sacrosáncta commíxtio Córporis et Sánguinis Dómini nostri Iesu Christi fiat mihi et ómnibus suméntibus salus mentis et córporis, et ad vitam ætérnam promeréndam et capesséndam præparátio salutáris. Per eúndem Christum Dóminum nostrum. Amen.', en: 'May this most holy mingling of the Body and Blood of our Lord Jesus Christ be to me and to all who receive it health of mind and body, and a saving preparation for the meriting and the obtaining of eternal life. Through the same Christ our Lord. Amen.'},
+    {r: 'He kisses the lip of the chalice and gives the peace to the server, who holds the pall or the pax-brede where that is the custom (not in Masses for the Dead, nor in the Triduum before Easter):'},
+    {w: 'P', la: 'Pax tibi, et Ecclésiæ sanctæ Dei.', en: 'Peace be to thee and to the holy Church of God.'},
     {m: 'm', r: 'At a Solemn Mass the priest gives the kiss of peace to the deacon, who gives it to the subdeacon, and he to the choir (not in Masses for the Dead).'},
-    {r: 'Bowing, he says:'},
+    {r: 'He says with all the devotion he can this one prayer, and commends himself briefly to the Lord; no other prayer is added, nor does he strike his breast:'},
     {w: 'P', la: 'Dómine Iesu Christe, Fili Dei vivi, qui ex voluntáte Patris, cooperánte Spíritu Sancto, per mortem tuam mundum vivificásti: líbera me per hoc sacrosánctum Corpus et Sánguinem tuum ab ómnibus iniquitátibus meis et univérsis malis: et fac me tuis semper inhærére mandátis, et a te numquam separári permíttas. Qui cum eódem Deo Patre et Spíritu Sancto vivis et regnas Deus, in sǽcula sæculórum. Amen.', en: 'O Lord Jesus Christ, Son of the living God, who by the will of the Father, the Holy Ghost cooperating, hast by thy death given life to the world: deliver me by this thy most sacred Body and Blood from all my iniquities and from all evils; make me always cleave to thy commandments, and never suffer me to be separated from thee. Who with the same God the Father and the Holy Ghost livest and reignest God, world without end. Amen.'},
-    {r: 'Taking the Host and the chalice together, he says:'},
+    {r: 'Holding the chalice in his right hand, with head bowed, he receives the Host from his left hand, saying (then, after a short meditation, he receives the Precious Blood with the particle, saying nothing):'},
     {w: 'P', la: 'Corpus et Sanguis Dómini nostri Iesu Christi custódiant me in vitam ætérnam. Amen.', en: 'May the Body and Blood of our Lord Jesus Christ keep me unto life everlasting. Amen.'},
     {r: 'Communion of the faithful. The priest, holding up a Host, says:'},
     {w: 'P', la: 'Ecce Agnus Dei, ecce qui tollit peccáta mundi.', en: 'Behold the Lamb of God, behold him who taketh away the sins of the world.'},
@@ -172,16 +177,18 @@ window.ORDO = {
     {w: 'P', la: 'Dómine, non sum dignus, ut intres sub tectum meum: sed tantum dic verbo, et sanábitur ánima mea.', en: 'Lord, I am not worthy that thou shouldst enter under my roof; but only say the word, and my soul shall be healed.'},
     {r: 'Giving Communion to each:'},
     {w: 'P', la: 'Corpus Dómini nostri Iesu Christi custódiat te in vitam ætérnam. Amen.', en: 'May the Body of our Lord Jesus Christ keep thee unto life everlasting. Amen.'},
-    {r: 'At the ablutions the priest says:'},
+    {r: 'The first ablution, of wine alone, he takes at the Epistle side saying nothing; the second, of wine and water poured over his fingers, saying:'},
     {w: 'P', la: 'Quod ore súmpsimus, Dómine, pura mente capiámus: ut de Córpore et Sánguine Dómini nostri Iesu Christi fiat nobis remédium sempitérnum. Amen.', en: 'What we have taken with our mouth, O Lord, may we receive with a pure mind; that from the Body and Blood of our Lord Jesus Christ there may come to us an everlasting remedy. Amen.'},
     {r: 'Then he reads the Communion antiphon at the Epistle side:'}
   ]},
   post: {la: 'Postcommunio', en: 'Postcommunion', lines: [
+    {r: 'At the missal, turning to the people as before the first Collect, he says:'},
     {w: 'P', la: 'Dóminus vobíscum.', en: 'The Lord be with you.'},
     {w: 'S', la: 'Et cum spíritu tuo.', en: 'And with thy spirit.'},
     {w: 'P', la: 'Orémus.', en: 'Let us pray.'}
   ]},
   postEnd: {la: 'Dimissio', en: 'Dismissal', lines: [
+    {r: 'At the middle of the altar, turning to the people with hands raised and extended, he says:'},
     {w: 'P', la: 'Dóminus vobíscum.', en: 'The Lord be with you.'},
     {w: 'S', la: 'Et cum spíritu tuo.', en: 'And with thy spirit.'},
     {m: 'm', r: 'The deacon sings the dismissal.'}
