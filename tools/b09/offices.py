@@ -209,6 +209,11 @@ def ocr_page(vol, p):
     k = 0
     while k < len(ls) and k < 3 and (re.match(r'^[\W\dIl]{1,8}$', ls[k]) or is_head(ls[k]) or (FULLDAY.search(ls[k]) and len(ls[k]) < 60)): k += 1
     return ls[k:]
+def rejoin(m):
+    import latcount as LC, latdict as LD
+    a, b = m.group(1), m.group(2)
+    if LC.N.get(LD.base(a + b), 0) >= 2 and LC.N.get(LD.base(a), 0) < 200: return a + b
+    return m.group(0)
 def text_ocr(vol, a, b):
     """the Sanctorale text from the tesseract re-OCR (page index a..b as in text_sancti: pdf page = index + 1); None if a page is missing"""
     out = []
@@ -217,7 +222,9 @@ def text_ocr(vol, a, b):
         if ls is None: return None
         out.append('\n'.join(ls))
     t = '\n'.join(out).translate(ACC)
-    t = re.sub(r'(\w)-\n(\w)', r'\1\2', t); t = re.sub(r'\s+', ' ', t)
+    t = re.sub(r'(\w)-\n(\w)', r'\1\2', t)
+    t = re.sub(r'([A-Za-zÀ-ÿ]{2,})[.,]\n([a-zà-ÿ]{2,})', rejoin, t)   # a line-end hyphen read as a period
+    t = re.sub(r'\s+', ' ', t)
     t = re.sub(r'\b[KRBEFI][RKrk7y]?\.\s?(?=(?:[ivxj]+\.\s)?[A-ZÁÉÍÓÚÆ])', lambda m: m.group(0) if m.group(0).strip() in ('B.', 'E.', 'F.', 'I.') else '℟. ', t)
     t = re.sub(r'(?<=[.,:;!?»] )[YVy¥]\s?[.,]\s?(?=[A-ZÁÉÍÓÚÆ])', '℣. ', t)
     t = re.sub(r'\bA[nñfi][aàá]\.', 'Ana.', t)

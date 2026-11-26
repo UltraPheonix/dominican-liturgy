@@ -552,3 +552,12 @@ v2.ant, v2.magn; lessons: o['lessons'] = P['lessons'] (good_lessons keeps src vu
 - pip install of a Latin lemmatiser was refused by the sandbox policy; not needed.
 NEXT: same eye pass feast by feast, Totum Duplex first (list: grep rank in propers1909.json), then the 7 unsplit stretches; then
 Commons TP responsories; audits; merge; tools/push.sh.
+### 2026-11-26 21:05 — re-OCR + conform (branch commons1909-v2)
+- tools/b09/reocr.sh v1 769 1577 / v2 477 1369 → /tmp/b09/ocr/<vol>-<page>.txt (tesseract lat best, 300 dpi, ~7 s/page, resumable;
+  needs /tmp/b09/v1.pdf, v2.pdf = the uploaded text PDFs). offices.text_sancti uses it when every page of the range exists
+  (REOCR=0 forces the old text layer). Far cleaner than the PDFs' text layer. /tmp is lost with the container: rerun (≈70 min).
+  TODO: commit the OCR text into the repo (tools/b09/ocr/*.txt.gz) once complete.
+- tools/b09/conform.py: the BOOK's words with the reference's spelling (never adopt DO/Vulgate wording: the old pipeline
+  (matins.build_lesson, repair_resp, fix_short) replaces text by the Roman one at coverage ≥ 0.65 — e.g. St Andrew lesson iv, R. i).
+  proper.py now conforms antiphons, responsories and lessons. The Temporale already built (lessons1909.json, offices1909.json
+  T: entries, live in Advent) went through the OLD pipeline → re-run it through conform and re-check (TODO).

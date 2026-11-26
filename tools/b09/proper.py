@@ -6,9 +6,10 @@ everything else stays with the Common (build.py merges).
     python3 proper.py v1 768 1577 ; python3 proper.py v2 476 1369        (page = pdf page - 1)"""
 import os, re, sys, json, collections
 import offices as O, matins as M, latdict as LD, latcount as LC
+from conform import conform
 HERE = os.path.dirname(os.path.abspath(__file__)); OUT = os.path.join(HERE, 'propers1909.json')
 CAP = 'A-ZÁÉÍÓÚÝÆŒǼ'
-ANT = r'(?:Ana|Aria|Aha|Aña|Arra|Ant|Atia|Ada|Aiia|An a|Ami|Ana?)\s?[.,*:;]?\s'
+ANT = r'(?:Ana|Aria|Aha|Aña|Arra|Ant|Atia|Ada|Aiia|An a|Ami|Aúa|Aja|Afa|Aiía|Aüa|Añia|Ana?)\s?[.,*:;]?\s'
 SEC = [('v1', r'Ad I\. Vesperas|Ad i\. Vesperas|In I\. Vesperis'), ('mat', r'Ad Matutinum'), ('n1', r'In I\. Nocturno'),
        ('n2', r'In I[iI]\. Nocturno'), ('n3', r'In I[iI]{2}\. Nocturno'), ('laud', r'Ad Laudes'),
        ('hor', r'Ad (?:Primam|Tertiam|Horas)'), ('v2', r'(?:Ad|In) I[iI]\. Vesper(?:as|is)'), ('oct', r'Per Octavam|Infra Octavam|Ad Memóriam')]
@@ -17,14 +18,17 @@ def known(t):
     """the doubtful words of a piece: not (twice) in the reference corpora, or holding a character no Latin word has"""
     bad = []
     for w in t.split():
-        core = w.strip('.,;:!()«»"\'*—-')
+        core = w.strip('.,;:!?()«»"\'*—-')
         if not core: continue
         if re.search(r'[^A-Za-zÀ-ÿǽæœÆŒǼ]', core): bad.append(core); continue
         if len(core) > 2 and LC.N.get(LD.base(core), 0) < 2: bad.append(core)
     return bad
 def fix(t, cov=0.6):
+    """a short piece (antiphon, versicle, part of a responsory): the book's words, spelled after the matching Divinum Officium
+    piece where there is one (conform), else word repairs only"""
     t = O.clean(t); t = O.dropcap(t) if re.match(r'^[a-zà-ÿ]|^[A-Z]{3,}|^.{0,3}[\\^/]', t) else t
-    u = LC.fix_text(O.fix_short(t, cov) or t)
+    ref = O.fix_short(t, cov)
+    u = conform(t, ref)[0] if ref and ref != t else LC.fix_text(t)
     return re.sub(r'\s+', ' ', u).strip(' ,;:')
 def sections(ch):
     """{name: text} cut at the section labels, in the order of the book"""
@@ -98,6 +102,8 @@ def is_junk(tok):
     return LC.N.get(LD.base(core), 0) < 20
 def split_at_junk(t):
     """(before, after) at the first ℣/℟ sign after a sentence end; (t, None) if none"""
+    m = re.search(r'\s*[℣℟]\.\s*', t)
+    if m and m.start() > 8: return t[:m.start()], t[m.end():]
     w = t.split()
     for i in range(2, len(w) - 1):
         j = i
@@ -125,19 +131,19 @@ def resp_of(n, rt):
     rt = re.split(r'\s(?:In I+[iI]*\. Nocturno|Ad Laudes|Lectio sancti|Dic[aá]tur C[aá]nticum|Te Deum)', rt)[0]
     whole = re.split(r'\sGl[oó] ?ria\b', rt)[0]
     gloria = bool(re.search(r'\sGl[oó] ?ria\b', rt))
-    d = O.R.repair_resp(whole, 0.8)
-    if d and d.get('a') and d.get('b'):
-        return {'n': n, 'a': d['a'].rstrip(' :;,'), 'b': d['b'].rstrip(' :;,'), 'v': d['v'], 'gloria': gloria, 'src': 'DO %.2f' % d['cov']}
     body = whole
     a, rest = (body.split('*', 1) + [''])[:2] if '*' in body else (body, '')
-    if rest:
-        b, v = split_at_junk(rest)
-    else:
-        a, v = split_at_junk(a); b = ''
-        if v and '—' in v:   # no star printed/read: the repeat is named after the dash
-            pass
+    if rest: b, v = split_at_junk(rest)
+    else: a, v = split_at_junk(a); b = ''
     v = re.split(r'\s[—–]\s|\s—|\s-\s', v)[0] if v else None
-    return {'n': n, 'a': fix(a, 0.7).rstrip('.'), 'b': fix(b, 0.7) if b else '', 'v': [fix(v, 0.7)] if v else [], 'gloria': gloria, 'src': 'OCR'}
+    d = O.R.repair_resp(whole, 0.7); src = 'OCR'
+    if d and d.get('a'):
+        ref = ' '.join([d['a'], d.get('b') or ''] + list(d.get('v') or [])); src = 'DO %.2f' % d['cov']
+        a = conform(a, ref)[0]; b = conform(b, ref)[0] if b else ''; v = conform(v, ref)[0] if v else None
+    else:
+        a = fix(a, 0.7); b = fix(b, 0.7) if b else ''; v = fix(v, 0.7) if v else None
+    cl = lambda x: re.sub(r'\s*[*—]\s*$', '', x).strip()
+    return {'n': n, 'a': cl(a).rstrip('.'), 'b': cl(b), 'v': [cl(v)] if v else [], 'gloria': gloria, 'src': src}
 def lauds_ants(t):
     m = re.search(r'ANTIPHON\S*\.?\s*(.+?)(?=\sCapitul|\sHymnus|\sAd Bened)', t, re.I)
     if not m: return []
@@ -179,9 +185,15 @@ def parse(ch):
     for k in ('n1', 'n2', 'n3'):
         for n, lt, rt in split_lessons(S.get(k, '')):
             x = M.build_lesson(n, O.clean(lt))
-            if x.get('src') == 'OCR':
-                b = known(x.get('la', ''))
-                if b: Q.append('lectio %d: %s' % (n, ' '.join(b[:8])))
+            if x.get('src') != 'OCR' and x.get('la'):
+                body = M.lesson_parts(O.clean(lt))[1]
+                hm = re.search(r'\s((?:Homilía|Sermo|Ex Tractátu|Ex libro)[^.]*\.(?:\s*\([^)]*\))?)\s', ' ' + body + ' ')
+                if hm: body = body[hm.end() - 1:]
+                la, cf = conform(body, x['la'])
+                x['ref_src'] = x['src']; x['la'] = la; x['src'] = 'DO %.2f' % cf     # share of the book's words confirmed by the reference
+                if cf < 0.9: x.pop('en', None)                                        # the reference's English no longer fits
+            b = known(x.get('la', ''))
+            if b: Q.append('lectio %d: %s' % (n, ' '.join(b[:8])))
             if rt:
                 x['resp'] = resp_of(n, rt)
                 if x['resp']['src'] == 'OCR':
