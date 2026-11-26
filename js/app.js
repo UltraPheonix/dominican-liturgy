@@ -727,13 +727,27 @@
     if (f >= -1 && f <= 38) return 'Paschalis';
     if (f >= 39 && f <= 47) return 'Ascensione';
     if (f >= 48 && f <= 55) return 'Spiritu Sancto';
+    // within Octaves whose feast has its own Preface (the Prefaces' rubrics: "et dicatur per totam Octavam, etiam in festis
+    // Sanctorum, nisi propriam habuerint"; on a resumed Sunday "Praefatio Octavae"), but never in the Mass of the Sunday
+    if (d.getDay() === 0) return null;
+    if (f >= 57 && f <= 59) return 'SS. Trinitate';                 // SS. Trinitatis, per Octavam usque ad quintam Feriam exclusive
+    if (f >= 69 && f <= 75) return 'Corde Iesu';                    // SS. Cordis Jesu, per totam Octavam
+    if (md >= 630 && md <= 706) return 'Apostolis';                 // SS. Petri et Pauli, Octava solemnis
+    if (md >= 805 && md <= 811) return 'Dominico';                  // S. P. N. Dominici, Octava solemnis
+    if (md >= 816 && md <= 822) return 'B. Maria Virgine';          // Assumptionis, Octava solemnis
+    if (md >= 1209 && md <= 1215) return 'B. Maria Virgine';        // Conceptionis Immaculatae, Octava solemnis
     return null;
   }
+  // Missale O.P. 1939: Transfiguration "Praefatio de Trinitate"; the Crown of Thorns has none of its own (so that of the
+  // season); in all Masses of St Dominic his own; votive Masses with their own (Rubr. gen. XV, 2 and the Prefaces' rubrics)
+  var PREF39 = {S0806: 'SS. Trinitate', S0424: '', S0524: 'Dominico', S0531: 'B. Maria Virgine', C68s: 'Sancta Cruce',
+    C75s: 'Spiritu Sancto', C82s: 'B. Maria Virgine'};
   function prefaceOf(key, d) {
     var m = D.masses[key], temporal = isTemporal(key), R = rubricsOf(key, d);
     if (key === 'Quad6f' || !window.PREFACES) return null;
     if (R.requiem) return 'Defunctorum';
-    if (m.pref && PREFACES[m.pref]) return m.pref;
+    var mp = PREF39.hasOwnProperty(key) ? PREF39[key] : m.pref;
+    if (mp && PREFACES[mp]) return mp;
     if (key === 'SCJ') return 'Corde Iesu';
     if (key === 'ChristusRex') return 'D. N. Iesu Christo';
     if (key === 'S1004') return 'Francisco';   // Missale O.P. 1939, Appendix: in all Masses of St Francis
@@ -742,7 +756,7 @@
       var md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
       return (md >= 1225 || (md && md <= 202)) ? 'Nativitate' : 'B. Maria Virgine';
     }
-    if (key === 'Pent1') return d && d.getDay() !== 0 ? 'Communis' : 'SS. Trinitate';
+    if (key === 'Pent1') return d && d.getDay() !== 0 && diffDays(d, easter(d.getFullYear())) > 59 ? 'Communis' : 'SS. Trinitate';
     var s = d ? seasonPreface(d) : keyPreface(key);
     if (s) return s;
     if (isSundayMass(key, d)) return 'SS. Trinitate';
@@ -762,11 +776,21 @@
   }
   var BVM_WORD = [[/Annuntiat/, 'Annuntiatióne', 'Annunciation'], [/Visitat/, 'Visitatióne', 'Visitation'], [/Assumpt/, 'Assumptióne', 'Assumption'],
     [/Nativit/, 'Nativitáte', 'Nativity'], [/Pr(ae|æ)sentat/, 'Præsentatióne', 'Presentation'], [/Concept/, 'Conceptióne immaculáta', 'Immaculate Conception'],
-    [/Dolor|Septem|Compassion/, 'Transfixióne', 'Transfixion'], [/Rosar/, 'Solemnitáte', 'Solemnity'], [/Sabbat|C79s/, 'Veneratióne', 'Veneration']];
+    [/Dolor|Septem|Compassion/, 'Compassióne', 'Compassion'], [/Rosar|Cordis|Nominis|Regin|Lauret/, 'Solemnitáte', 'Solemnity'],
+    [/Apparitio/, 'Conceptióne immaculáta', 'Immaculate Conception'], [/Sabbat|C79s/, 'Veneratióne', 'Veneration']];
+  // the word of the Preface of Our Lady: by the feast, or within the Octaves of the Assumption and the Immaculate Conception
+  function bvmWord(key, d) {
+    var t = titleText(key) + ' ' + key, w = BVM_WORD.filter(function (x) { return x[0].test(t); })[0];
+    if (w) return w;
+    var md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
+    if (md >= 816 && md <= 822) return BVM_WORD[2];
+    if (md >= 1209 && md <= 1215) return BVM_WORD[5];
+    return null;
+  }
   function prefaceText(name, key, d) {
     var p = PREFACES[name], la = p.la, en = p.tr, t = titleText(key) + ' ' + key;
     if (name === 'B. Maria Virgine') {
-      var w = BVM_WORD.filter(function (x) { return x[0].test(t); })[0] || [null, 'Festivitáte', 'Feast'];
+      var w = bvmWord(key, d) || [null, 'Festivitáte', 'Feast'];
       la = la.replace('{Festivitáte}', w[1]); en = en.replace('{Feast}', w[2]);
     }
     if (name === 'S. Ioseph') { la = la.replace('{Festivitáte}', 'Festivitáte'); en = en.replace('{Feast}', 'Feast'); }
@@ -791,7 +815,7 @@
   var PREF_FERIAL = {'Quadragesima': 1, 'Sancta Cruce': 1, 'Paschalis': 1, 'Communis': 1, 'Defunctorum': 1};
   var BVM_SYL = {'Annuntiatióne': 'An-nun-ti-a-ti-ó-ne', 'Visitatióne': 'Vi-si-ta-ti-ó-ne', 'Assumptióne': 'As-sump-ti-ó-ne', 'Nativitáte': 'Na-ti-vi-tá-te',
     'Præsentatióne': 'Præ-sen-ta-ti-ó-ne', 'Conceptióne immaculáta': 'Con-cep-ti-ó-ne im-ma-cu-lá-ta', 'Transfixióne': 'Trans-fi-xi-ó-ne',
-    'Solemnitáte': 'So-lem-ni-tá-te', 'Veneratióne': 'Ve-ne-ra-ti-ó-ne', 'Festivitáte': 'Fe-sti-vi-tá-te'};
+    'Solemnitáte': 'So-lem-ni-tá-te', 'Compassióne': 'Com-pas-si-ó-ne', 'Veneratióne': 'Ve-ne-ra-ti-ó-ne', 'Festivitáte': 'Fe-sti-vi-tá-te'};
   // Missale O.P. 1939, Appendix: the Prefaces "cum cantu solemni" on Sundays and in all feasts Simplex and above and
   // through their octaves; "cum cantu feriali" in profestis diebus and feasts of three lessons. The Pater noster the
   // same: "Cantus ferialis dicitur in festis trium Lectionum et in diebus ferialibus, et in Missis Defunctorum".
@@ -820,7 +844,7 @@
       }
       if (name === 'Spiritu Sancto' && !(f >= 48 && f <= 55)) b = b.replace(/ho\(g\)di\(g\)ér\(g\)na\(g\) di\(g\)e\(g\) \(;\) /, '');
       if (name === 'B. Maria Virgine') {
-        var t = titleText(key) + ' ' + key, w = BVM_WORD.filter(function (x) { return x[0].test(t); })[0];
+        var w = bvmWord(key, d);
         var syl = BVM_SYL[w ? w[1] : 'Festivitáte'] || BVM_SYL['Festivitáte'];
         b = b.replace('Fe(h)sti(h)vi(h)tá(h)te(h)', syl.split(' ').map(function (wd) { return wd.split('-').map(function (s) { return s + '(h)'; }).join(''); }).join(' '));
       }
