@@ -14,7 +14,8 @@ for k, P in D.items():
             print(' %s.%s: %s' % (sec, kk, json.dumps(v, ensure_ascii=False)))
             if isinstance(v, str): probes.append(v)
     for x in P.get('lessons', []):
-        print(' L%s [%s] %s … %s' % (x['n'], x.get('src'), x['la'][:70], x['la'][-40:])); probes.append(x['la'][:200])
+        print(' L%s [%s] %s' % (x['n'], x.get('src'), x['la'] if '--full' in sys.argv else x['la'][:70] + ' … ' + x['la'][-40:])); probes.append(x['la'][:200])
+        if x.get('gospel') and '--full' in sys.argv: print('   gospel: %s | homily head: %s' % (x.get('gospel'), x.get('homily_head')))
         r = x.get('resp')
         if r: print('   R%s: %s * %s | V %s | gloria %s' % (x['n'], r['a'], r['b'], r['v'], r['gloria']))
     print(' Q:', P.get('q')); print(' info:', P.get('info'))

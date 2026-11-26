@@ -1037,6 +1037,9 @@ except FileNotFoundError: pass
 PFIX = {}
 try: PFIX = json.load(open(os.path.join(HERE, 'propers_fix.json'), encoding='utf-8'))
 except FileNotFoundError: pass
+for _f in sorted(glob.glob(os.path.join(HERE, 'fix', '*.json'))):   # one file per helper / stretch of the calendar, same format
+    try: PFIX.update({k: v for k, v in json.load(open(_f, encoding='utf-8')).items() if not k.startswith('_')})
+    except Exception as _e: print('fix file', _f, _e)
 def with_proper(F, o, title):
     """the feast's own pieces over its Common: first those corrected by eye against the page images (propers_fix.json), then those
     read by proper.py from the scanned Sanctorale, a piece with doubtful words (its 'q' list) or a partly doubtful set never used
