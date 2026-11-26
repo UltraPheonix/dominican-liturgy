@@ -870,7 +870,7 @@ def feast_matins(d, s, w, F, fe, o, rk):
         return BEN[noc][(n - 1) % 3], BEN_EN[noc][(n - 1) % 3]
     def lesson_src(n):
         if PL.get(n): return PL[n]
-        if has_proper and n in PL and n in (4, 5, 6): return None    # a proper legend exists but its text is not clean yet
+        if has_proper and n in PL: return None    # the feast prints its own lesson n, not yet verified: never the Common's in its place    # a proper legend exists but its text is not clean yet
         return CL.get(n)
     NOTE = ('Lectio (in præparatione).', 'Lesson (in preparation).')
     if tp:
@@ -1087,6 +1087,9 @@ def with_proper(F, o, title):
         if printed and printed <= set(rs):          # every responsory the book prints for the feast is clean
             M_['resp'] = [rs.get(n, M_['resp'][n - 1]) for n in range(1, 10)]
     F['mat'] = M_
+    if X.get('lessons'):
+        keep = [x for x in P.get('lessons', []) if str(x.get('n')) not in X['lessons']]
+        P = dict(P, lessons=sorted(keep + [dict(n=int(n), la=t, src='DO 1.00 (verified by eye)', head=[], close=None) for n, t in X['lessons'].items()], key=lambda x: x.get('n') or 0))
     if P.get('lessons'):
         hard = set(x.split(':')[0] for x in P.get('q', []) if 'witness' not in x)   # unknown words; (the second witness is too noisy on long lessons)
         o = dict(o or {})

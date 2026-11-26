@@ -43,7 +43,13 @@ def sections(ch):
         m = re.search(pat, ch[last:])
         if m: pos.append((last + m.start(), last + m.end(), name)); last = last + m.end()
     lo = next((e for s0, e, n in pos if n == 'mat'), 0); hi = next((s0 for s0, e, n in pos if n in ('laud', 'hor', 'v2', 'oct') and s0 > lo), len(ch))
-    for k, m in enumerate(list(NOCT.finditer(ch, lo, hi))[:3]): pos.append((m.start(), m.end(), 'n%d' % (k + 1)))
+    hs = list(NOCT.finditer(ch, lo, hi))[:3]
+    def num(m):   # I / Ii / Iii as read ('H' = II)
+        x = re.sub(r'(?i)^in\s|\s?noctur.*$|[.,]', '', m.group(0)); return sum(2 if c in 'Hh' else 1 for c in x if c in 'IiLl1!]Hh')
+    ns = [num(m) for m in hs]
+    if not (all(1 <= n <= 3 for n in ns) and ns == sorted(set(ns))):
+        ns = list(range(1, len(hs) + 1)) if len(hs) == 3 else ([2, 3][:len(hs)] if len(hs) == 2 and not re.search(r'L[eé]ctio\s[ij1l]{1,3}\s?[.,]', ch[lo:hs[0].start()] + ch[hs[0].end():hs[1].start()]) else list(range(1, len(hs) + 1)))
+    for n, m in zip(ns, hs): pos.append((m.start(), m.end(), 'n%d' % n))
     pos.sort()
     out = {}
     for i, (s0, e, name) in enumerate(pos):
