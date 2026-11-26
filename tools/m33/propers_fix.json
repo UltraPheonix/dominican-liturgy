@@ -98,26 +98,30 @@
  "C45s": {
   "p33": 669,
   "of": [
-   "r1107"
+   "op-g50-afferentur-of"
   ],
   "co": [
    6271
   ],
   "lent_tr": [
    4978
-  ]
+  ],
+  "p39": "G50 p. 47*",
+  "_why_g50": "G50 p. 47*: Offertorium Afferentur (transcribed from the scan)"
  },
  "C48s": {
   "p33": 670,
   "of": [
-   "r1107"
+   "op-g50-afferentur-of"
   ],
   "co": [
    6027
   ],
   "lent_tr": [
    4978
-  ]
+  ],
+  "p39": "G50 p. 47*",
+  "_why_g50": "G50 p. 47*: Offertorium Afferentur (transcribed from the scan)"
  },
  "C55s": {
   "p33": 673,
@@ -128,14 +132,16 @@
    6027
   ],
   "gr": [
-   "r3596"
+   "op-g50-dilexisti-gr"
   ],
   "al": [
    5784
   ],
   "lent_tr": [
    4978
-  ]
+  ],
+  "p39": "G50 p. 56*",
+  "_why_g50": "G50 p. 56*: Responsorium Dilexisti (transcribed from the scan)"
  },
  "C76s": {
   "p33": 691,
@@ -272,6 +278,16 @@
    "p": "of",
    "i": "Exsultabunt sancti",
    "pg": "570"
+  },
+  "op-g50-dilexisti-gr": {
+   "p": "gr",
+   "i": "Dilexisti",
+   "pg": "56*"
+  },
+  "op-g50-afferentur-of": {
+   "p": "of",
+   "i": "Afferentur",
+   "pg": "47*"
   }
  },
  "Quad1t": {
@@ -1686,7 +1702,10 @@
    6027
   ],
   "p39": "G50 p. 402",
-  "_why_g50": "G50 p. 402: Missa Me exspectaverunt, de Communi unius Virg. et Mart., pag. 48*"
+  "_why_g50": "G50 p. 402: Missa Me exspectaverunt, pag. 48* (Offertorium Afferentur, pag. 47*, transcribed from the scan)",
+  "of": [
+   "op-g50-afferentur-of"
+  ]
  },
  "S0204": {
   "gr": [
@@ -1876,5 +1895,36 @@
   ],
   "p39": "G50 p. 564",
   "_why_g50": "G50 p. 564: Responsorium Adjuvabit, pag. 418; Alleluia V. Quasi arcus (printed; transcribed from the scan)"
+ },
+ "S0721": {
+  "gr": [
+   "op-g50-dilexisti-gr"
+  ],
+  "p39": "G50 p. 56*",
+  "_why_g50": "G50 p. 56*: Responsorium Dilexisti (transcribed from the scan)"
+ },
+ "S1213": {
+  "gr": [
+   "op-g50-dilexisti-gr"
+  ],
+  "p39": "G50 p. 384",
+  "_why_g50": "G50 p. 384: Responsorium Dilexisti, pag. 56*; Offertorium Afferentur, pag. 47* (transcribed from the scan)",
+  "of": [
+   "op-g50-afferentur-of"
+  ]
+ },
+ "S1122": {
+  "of": [
+   "op-g50-afferentur-of"
+  ],
+  "p39": "G50 p. 47*",
+  "_why_g50": "G50 p. 47*: Offertorium Afferentur (transcribed from the scan)"
+ },
+ "S1202": {
+  "of": [
+   "op-g50-afferentur-of"
+  ],
+  "p39": "G50 p. 47*",
+  "_why_g50": "G50 p. 47*: Offertorium Afferentur (transcribed from the scan)"
  }
 }
