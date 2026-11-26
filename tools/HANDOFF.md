@@ -505,3 +505,14 @@ commonlessons1909.json; data/office1909 rebuilt (426 days; 292 feasts from the C
 TODO on the branch before merging: rerun audits (/tmp/audit.py, aud2-4 style: N., 'in preparation', OCR, run-ons), proper Offices
 before the Common (Dec 8 …), St Andrew's own responsories, TP Commons with 7 responsories (virg_mart_tp, nec_tp, mart_fem_tp),
 the 24 doubtful readings vs scans, headless test. Then merge into main and push with tools/push.sh.
+### B5 state 2026-11-26 18:30 — branch pushed as `commons1909-v2` (NOT live; main = v99+ Mass chat)
+Done on the branch: N. -> saint's name (tools/b09/names1909.py; build.py: NM.fill_all on the Common in feast_day/comm_ant, put() fills
+with NMT[0] = title of the feast being built, I Vespers uses tomorrow's title). 1223 -> 9 left: 06-09 (BB. Dianæ, Cæcíliæ et Amátæ:
+needs the plural text), 06-15 'Quirici et N.' (scan).
+NEXT (proper Offices before the Common): offices1909.json S: entries are too dirty for proper antiphons/responsories (St Andrew
+S:11-30:1 'ants' mix versicles/rubrics; lessons of the next saint mixed in; S:12-08:1 empty). Plan: a tokenizer of the Office
+markers in the OCR (Ant. = 'Ana.'/'Aha.', ℟ = 'R?' 'I£' '1$' 'If.' 'ty.', ℣ = 'f.' 'y.' 'T*' ')T.', 'Lectio n.', 'Ad Laudes', 'In I. Nocturno' …)
+on offices.text_sancti(vol, a, b) (page index = pdf page - 1; St Andrew is v1 ~771-776), parse one feast into
+v1/mat(noct ants, vr, lessons, resp)/laud/v2, repair wording with fix_short vs DO Sancti, test on St Andrew against DO Sancti/11-30,
+then Dec 8 and the other Totum Duplex feasts. Then: TP Commons with 7 responsories, 24 doubtful readings, audits
+(/tmp/audit.py etc. — recreate from the descriptions in the AUDIT section if /tmp is gone), headless test, merge to main, tools/push.sh.
