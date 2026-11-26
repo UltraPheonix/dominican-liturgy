@@ -257,6 +257,11 @@
    "p": "al",
    "i": "Quasi arcus",
    "pg": "564"
+  },
+  "op-g50-iste-sanctus": {
+   "p": "al",
+   "i": "Iste Sanctus",
+   "pg": "561"
   }
  },
  "Quad1t": {
@@ -1354,7 +1359,10 @@
    7142
   ],
   "p39": "G50 p. 561",
-  "_why_g50": "G50 p. 561: Responsorium Domine praevenisti, pag. 40*"
+  "_why_g50": "G50 p. 561: Responsorium Domine praevenisti, pag. 40*; Alleluia V. Iste Sanctus (printed; transcribed from the scan)",
+  "al": [
+   "op-g50-iste-sanctus"
+  ]
  },
  "S1226": {
   "se": [
@@ -1405,7 +1413,10 @@
    7170
   ],
   "p39": "G50 p. 613",
-  "_why_g50": "G50 p. 613: Responsorium Inveni David, pag. 12*; Offertorium Veritas mea, pag. 31*"
+  "_why_g50": "G50 p. 613: Responsorium Inveni David, pag. 12*; Alleluia V. Iste Sanctus, pag. 561; Offertorium Veritas mea, pag. 31*",
+  "al": [
+   "op-g50-iste-sanctus"
+  ]
  },
  "S0127": {
   "in": [
