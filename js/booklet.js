@@ -709,6 +709,8 @@
   function build(api) {
     A = api; D = api.D; S = api.state();
     if (!S.key) return;
+    // votive Masses and Commons have no date of their own: print them for today
+    if (!S.date) { S.date = new Date(); S.date.setHours(12, 0, 0, 0); }
     if (!S.ordo) S.ordo = params.get('ordo') || 'solemn';
     M = D.masses[S.key]; R = api.rubricsOf(S.key, S.date); ORD = api.ordinaryIds();
     document.title = BOOK_NAME + ' — ' + feastEnglish() + ' ' + iso(S.date);
