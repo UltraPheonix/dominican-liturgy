@@ -79,7 +79,7 @@
 
   // ---------------------------------------------------------------- state & URL
   // #<massKey>[&in=id,id&gr=id...]  (only parts the user changed are stored)
-  var state = {key: null, parts: null, edited: {}, date: null, season: 'auto', ord: '', credo: '', asp: '', ordo: '', hwr: '1939', edit: false, comm: '', prel: '', sac: '', serv: ''};
+  var state = {key: null, parts: null, edited: {}, date: null, season: 'auto', ord: '', credo: '', asp: '', ordo: '', hwr: '1939', edit: false, comm: '', prel: '', sac: '', serv: '', rub: ''};
 
   var HWP = document.body && document.body.getAttribute('data-page') === 'hw';
   var BOOKP = document.body && document.body.getAttribute('data-page') === 'book';
@@ -90,7 +90,7 @@
     bits.forEach(function (b) {
       var kv = b.split('=');
       if (PARTS.indexOf(kv[0]) >= 0) out.over[kv[0]] = kv[1] ? kv[1].split(',').map(function (x) { return /^\d+$/.test(x) ? Number(x) : x; }) : [];
-      else if (['d', 'season', 'ord', 'credo', 'asp', 'ordo', 'hw', 'conv', 'comm', 'prel', 'sac', 'serv'].indexOf(kv[0]) >= 0) out.opts[kv[0]] = kv[1] || '';
+      else if (['d', 'season', 'ord', 'credo', 'asp', 'ordo', 'hw', 'conv', 'comm', 'prel', 'sac', 'serv', 'rub'].indexOf(kv[0]) >= 0) out.opts[kv[0]] = kv[1] || '';
     });
     return out;
   }
@@ -112,6 +112,7 @@
     if (state.prel) bits.push('prel=' + state.prel);
     if (state.sac) bits.push('sac=' + state.sac);
     if (state.serv) bits.push('serv=' + state.serv);
+    if (state.rub) bits.push('rub=' + state.rub);
     if (HWP || state.hwr !== '1939') bits.push('hw=' + state.hwr);
     history.replaceState(null, '', '#' + bits.join('&'));
   }
@@ -1025,7 +1026,12 @@
       if ($('#selComm')) $('#selComm').value = commOf();
       if ($('#selPrel')) $('#selPrel').value = state.prel || '';
       if ($('#selSac')) $('#selSac').value = state.sac || '';
-      if ($('#selServ')) { $('#selServ').value = servOf(); $('#selServ').parentNode.hidden = state.ordo === 'low'; }
+      if ($('#selServ')) $('#selServ').value = servOf();
+      var fr = fullRub();
+      if ($('#roAi')) $('#roAi').hidden = !fr;
+      ['selPrel', 'selSac', 'selServ'].forEach(function (id) { var x = $('#' + id); if (x) x.parentNode.hidden = !fr || (id === 'selServ' && state.ordo === 'low'); });
+      var sr = $('#segRub');
+      if (sr) Array.prototype.forEach.call(sr.children, function (b) { var on = (b.getAttribute('data-v') || '') === (state.rub || ''); b.classList.toggle('on', on); b.setAttribute('aria-checked', on); });
     }
     if (l && window.OPLang) { var lv = OPLang.get(); Array.prototype.forEach.call(l.children, function (b) { var on = b.getAttribute('data-v') === lv; b.classList.toggle('on', on); b.setAttribute('aria-checked', on); }); }
   }
@@ -1099,7 +1105,7 @@
     var R = rubricsOf(state.key, state.date);
     mhead.appendChild(el('p', {class: 'rubric-line', text: rubricLine(R)}));
     if (!(HWP && window.HW_TEXT && HW_TEXT[state.hwr] && HW_TEXT[state.hwr][state.key])) main.appendChild(el('h2', {class: 'caps-head', id: 'chants', text: state.ordo ? 'Ordo et Proprium Missae' : 'Proprium Missae'}));
-    if (ord.as) { if (state.ordo && window.ORDO && ORDO.rAs) { var asr = drawSection({la: '', en: '', lines: ORDO.rAs.lines, k: 'rAs', strip: 1}, R); if (asr) main.appendChild(asr); } main.appendChild(drawOrdinary('as', ord.as)); }
+    if (ord.as) { if (state.ordo && window.ORDO && ORDO.rAs) { var asr = drawSection({la: '', en: '', lines: secLines(ORDO.rAs), k: 'rAs', strip: 1}, R); if (asr) main.appendChild(asr); } main.appendChild(drawOrdinary('as', ord.as)); }
     var readHead = false;
     massSequence(m, state.parts).forEach(function (it) {
       if (it.t === 'chant') main.appendChild(drawSlot(it.p, it.i, it.c));
@@ -1158,8 +1164,8 @@
   function drawOrdo(k, R) {
     var O = window.ORDO, sec, lines;
     if (k === 'dismiss') { sec = {la: R.requiem ? 'Requiescant in pace' : R.dismiss === 'ite' ? 'Ite, missa est' : 'Benedicamus Domino', en: 'Dismissal'}; lines = O.dismiss[R.requiem ? 'req' : R.dismiss === 'ite' ? 'ite' : 'ben']; }
-    else if (k === 'endNoGospel') { sec = O.end; lines = O.end.lines.slice(0, O.end.lines.findIndex(function (l) { return /^At the Gospel side/.test(l.r || ''); })); }
-    else { sec = O[k]; if (!sec) return null; lines = sec.lines; }
+    else if (k === 'endNoGospel') { sec = O.end; var el0 = secLines(O.end); lines = el0.slice(0, el0.findIndex(function (l) { return /^At the Gospel side/.test(l.r || ''); })); }
+    else { sec = O[k]; if (!sec) return null; lines = secLines(sec); }
     // the Communion of the faithful: none, the simple rite, or (at a Conventual Mass) the Communion of the friars
     if (k === 'communion' && window.ORDO) {
       var c0 = lines.findIndex(function (l) { return /^Communion of the faithful/.test(l.r || ''); });
@@ -1196,7 +1202,7 @@
       L2.push({g: sol ? 'op-m39-pater-solemn' : 'op-m39-pater-ferial', nd: 1, en: 'World without end. ℟. Amen. Let us pray. Admonished by saving precepts, and following the divine instruction, we make bold to say: Our Father … And lead us not into temptation. ℟. But deliver us from evil.'});
       lines.forEach(function (l) {
         if (/^Líbera nos/.test(l.la || '')) after = true;
-        if (!after) { if (l.r && /^(His hands laid on the corporal)/.test(l.r)) L2.unshift(l); else if (l.r) L2.push(l); else if (/^Amen\.$/.test(l.la || '') && l.w === 'P') L2.push(l); return; }
+        if (!after) { if (l.r && /^His hands are laid on the corporal/.test(l.r)) L2.unshift(l); else if (l.r) L2.push(l); else if (/^Amen\.$/.test(l.la || '') && l.w === 'P') L2.push(l); return; }
         if (/^Pax\s*✠?\s*Dómini/.test(l.la || '')) { L2.push({g: 'op-m39-pax', nd: 1, en: 'World without end. ℟. Amen. The peace ✠ of the Lord be ✠ always with ✠ you. ℟. And with thy spirit.'}); return; }
         if (/^Per ómnia sǽcula sæculórum\.?$/.test(l.la || '') || /^Amen\.$/.test(l.la || '') || /^Et cum spíritu tuo/.test(l.la || '')) return;
         L2.push(l);
@@ -1257,17 +1263,24 @@
   function servOf() { return state.serv || (state.ordo === 'solemn' || state.ordo === 'conv' ? 'full' : 'one'); }
   function holds(cond, R) {
     if (!cond) return true;
+    var inc = function (p, re) { return ((state.parts || {})[p] || []).some(function (c) { var x = D.chants[c.id]; return x && re.test(x.i || ''); }); };
+    var or = window.ORATIONS && ORATIONS[state.key];
     var on = {tab: state.sac === 'tab', exp: state.sac === 'exp', sac: !!state.sac, pope: state.prel === 'pope', bp: state.prel === 'bp',
-              prel: !!state.prel, one: servOf() === 'one', full: servOf() === 'full', req: !!(R && R.requiem)};
+              prel: !!state.prel, one: servOf() === 'one', full: servOf() === 'full', req: !!(R && R.requiem),
+              flect: flectamusDay(state.key, state.date), sp: !!(or && or.sp), adjuva: inc('tr', /^Domine non secundum/), veni: inc('al', /^Veni Sancte Spiritus/)};
     return cond.split(',').every(function (c) { var neg = c.charAt(0) === '!', v = !!on[neg ? c.slice(1) : c]; return neg ? !v : v; });
   }
+  // the full directions of the Missal (Ritus servandus), or the basic Order of Mass with its few directions
+  function fullRub() { return state.rub === 'full'; }
+  function rubPref() { try { return localStorage.getItem('rubrics') === 'full' ? 'full' : ''; } catch (e) { return ''; } }
+  function secLines(sec) { return fullRub() && sec.adv ? sec.adv : sec.lines; }
   function showLine(l, R) { return (!l.m || l.m.indexOf(modeOf()) >= 0) && holds(l['if'], R); }
   // a direction of the rubrics: the short form always shown; when it rests on paragraphs of the Missal, tapping it opens them (English)
   var COND_LABEL = {tab: 'Tabernacle', exp: 'Exposition', sac: 'Blessed Sacrament', pope: 'The Pope present', bp: 'Prelate present', prel: 'Prelate present', one: 'One acolyte', req: 'Requiem'};
   function rubLine(l) {
     var tag = (l['if'] || '').split(',').filter(function (c) { return COND_LABEL[c]; }).map(function (c) { return COND_LABEL[c]; })[0];
     var lead = tag ? el('span', {class: 'o-cond', text: tag}) : null;
-    if (!l.ref) return el('p', {class: 'o-rub' + (tag ? ' cond' : '')}, [lead, l.r]);
+    if (!l.ref || !fullRub()) return el('p', {class: 'o-rub' + (tag ? ' cond' : '')}, [lead, l.r]);
     var full = el('div', {class: 'rx-full'});
     var d = el('details', {class: 'o-rub rx' + (tag ? ' cond' : '')}, [el('summary', {}, [lead, l.r]), full]);
     d.addEventListener('toggle', function () {
@@ -1279,6 +1292,7 @@
           var x = T[id]; if (!x) return;
           var tx = el('span'); tx.innerHTML = x[1]; full.appendChild(el('p', {class: 'rx-p'}, [el('span', {class: 'rx-h', text: x[0]}), ' ', tx]));
         });
+        full.appendChild(el('p', {class: 'rx-ai', text: 'AI translation from the Latin of the Missal; not yet checked by a human translator.'}));
         full.appendChild(el('a', {class: 'rx-go', href: 'rubrics.html#' + l.ref[0], text: 'In the Rubrics of the Missal ›'}));
       }, function () { full.innerHTML = ''; full.appendChild(el('a', {class: 'rx-go', href: 'rubrics.html#' + l.ref[0], text: 'Open in the Rubrics of the Missal ›'})); });
     });
@@ -1899,6 +1913,11 @@
     $('#selCredo').addEventListener('change', function (e) { state.credo = e.target.value; drawMass(); writeHash(); });
     $('#selAsp').addEventListener('change', function (e) { state.asp = e.target.value; drawMass(); writeHash(); });
     $('#selOrdo').addEventListener('change', function (e) { state.ordo = e.target.value; drawMass(); writeHash(); });
+    if ($('#segRub')) $('#segRub').addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      state.rub = b.getAttribute('data-v') || ''; try { localStorage.setItem('rubrics', state.rub); } catch (x) {}
+      drawMass(); writeHash();
+    });
     // the circumstances of the Mass (shown with the Order of Mass): Communion, a prelate, the Blessed Sacrament, the servers
     [['selComm', 'comm'], ['selPrel', 'prel'], ['selSac', 'sac'], ['selServ', 'serv']].forEach(function (x) {
       var sel = $('#' + x[0]); if (sel) sel.addEventListener('change', function (e) { state[x[1]] = e.target.value; drawMass(); writeHash(); });
@@ -1937,7 +1956,7 @@
       var hh = readHash() || {key: 'Quad6', opts: {}}, KEYS = ['Quad6', 'Quad6m', 'Quad6t', 'Quad6w', 'Quad6h', 'Quad6f', 'Quad6s'];
       var stored = ''; try { stored = localStorage.getItem('hwRite') || ''; } catch (e) {}
       state.hwr = hh.opts.hw === '1959' || hh.opts.hw === '1939' ? hh.opts.hw : (stored || '1939');
-      state.ordo = hh.opts.ordo || ''; state.comm = hh.opts.comm || (hh.opts.conv === '1' ? 'friars' : ''); state.prel = hh.opts.prel || ''; state.sac = hh.opts.sac || ''; state.serv = hh.opts.serv || ''; state.ord = hh.opts.ord || ''; $('#selOrdo').value = state.ordo; $('#selOrd').value = state.ord;
+      state.ordo = hh.opts.ordo || ''; state.comm = hh.opts.comm || (hh.opts.conv === '1' ? 'friars' : ''); state.prel = hh.opts.prel || ''; state.sac = hh.opts.sac || ''; state.serv = hh.opts.serv || ''; state.rub = hh.opts.rub || rubPref(); state.ord = hh.opts.ord || ''; $('#selOrdo').value = state.ordo; $('#selOrd').value = state.ord;
       var today = new Date(); today.setHours(0, 0, 0, 0);
       var Ey = easter(today.getFullYear()); if (diffDays(today, Ey) > 0) Ey = easter(today.getFullYear() + 1);
       var dayOf = function (k) { return addDays(Ey, KEYS.indexOf(k) - 7); };
@@ -1962,7 +1981,7 @@
     var h = readHash();
     if (BOOKP) {
       var ob = (h && h.opts) || {};
-      state.season = ob.season || 'auto'; state.ord = ob.ord || ''; state.credo = ob.credo || ''; state.asp = ob.asp || ''; state.ordo = ob.ordo || ''; state.comm = ob.comm || (ob.conv === '1' ? 'friars' : ''); state.prel = ob.prel || ''; state.sac = ob.sac || ''; state.serv = ob.serv || ''; state.hwr = ob.hw === '1959' ? '1959' : '1939';
+      state.season = ob.season || 'auto'; state.ord = ob.ord || ''; state.credo = ob.credo || ''; state.asp = ob.asp || ''; state.ordo = ob.ordo || ''; state.comm = ob.comm || (ob.conv === '1' ? 'friars' : ''); state.prel = ob.prel || ''; state.sac = ob.sac || ''; state.serv = ob.serv || ''; state.rub = ob.rub || rubPref(); state.hwr = ob.hw === '1959' ? '1959' : '1939';
       var bd = ob.d ? fromIso(ob.d) : new Date(); bd.setHours(0, 0, 0, 0);
       if (h && D.masses[h.key]) state.key = h.key;
       onDate(bd, !!(h && D.masses[h.key]));
@@ -1972,7 +1991,7 @@
     }
     if (h && D.masses[h.key]) {
       var o = h.opts;
-      state.season = o.season || 'auto'; state.ord = o.ord || ''; state.credo = o.credo || ''; state.asp = o.asp || ''; state.ordo = o.ordo || ''; state.comm = o.comm || (o.conv === '1' ? 'friars' : ''); state.prel = o.prel || ''; state.sac = o.sac || ''; state.serv = o.serv || ''; state.hwr = o.hw === '1959' ? '1959' : '1939';
+      state.season = o.season || 'auto'; state.ord = o.ord || ''; state.credo = o.credo || ''; state.asp = o.asp || ''; state.ordo = o.ordo || ''; state.comm = o.comm || (o.conv === '1' ? 'friars' : ''); state.prel = o.prel || ''; state.sac = o.sac || ''; state.serv = o.serv || ''; state.rub = o.rub || rubPref(); state.hwr = o.hw === '1959' ? '1959' : '1939';
       $('#selSeason').value = state.season; $('#selOrd').value = state.ord; $('#selCredo').value = state.credo; $('#selAsp').value = state.asp; $('#selOrdo').value = state.ordo; 
       state.key = h.key;
       onDate(o.d ? fromIso(o.d) : new Date(), true);

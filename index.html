@@ -77,10 +77,12 @@
           <div class="pm-list" id="pmList" hidden><button type="button" id="btnShare">Share this Mass</button><button type="button" id="btnChoir">Choir Book</button><button type="button" id="btnPriest">Priest’s Missal</button><button type="button" id="btnCong">Congregation Booklet</button></div></div>
       </div>
       <div class="rubopts hide-print" id="rubopts" hidden>
+        <div class="ro ro-seg"><span>Rubrics</span><div class="seg seg-sm" id="segRub" role="radiogroup" aria-label="Rubrics"><button type="button" role="radio" data-v="">Basic</button><button type="button" role="radio" data-v="full">Full</button></div></div>
         <label class="ro"><span>Communion</span><select id="selComm"><option value="none">None</option><option value="simple">Of the faithful</option><option value="friars">Of the friars</option></select></label>
         <label class="ro"><span>Prelate</span><select id="selPrel"><option value="">None present</option><option value="pope">The Pope</option><option value="bp">Bishop in his see</option></select></label>
         <label class="ro"><span>Sacrament</span><select id="selSac"><option value="">Not on this altar</option><option value="tab">In the tabernacle</option><option value="exp">Exposed</option></select></label>
         <label class="ro"><span>Servers</span><select id="selServ"><option value="one">One acolyte</option><option value="full">Full, with thurifer</option></select></label>
+        <p class="ro-ai" id="roAi">The directions are summaries of the Missal’s rubrics, and their English an AI translation; tap ⓘ for the full rubric.</p>
       </div>
       <nav class="jump hide-print" id="jump" aria-label="Parts of the Mass"></nav>
       <main id="mass" aria-live="polite"></main>

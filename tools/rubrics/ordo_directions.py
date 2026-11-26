@@ -1,7 +1,7 @@
-# Built data/ordo.js's directions (Missale O.P. 1939, Ritus) from the earlier ordo.js, dumped to /tmp/ordo.json; kept for reference.
+# Builds data/ordo.js (basic lines and the full directions of the Missale O.P. 1939, Ritus) from the earlier ordo.js dumped to /tmp/ordo.json; kept for reference.
 import json, re
 O = json.load(open('/tmp/ordo.json'))
-def r(t, m=None, ref=None, c=None):
+def r(t, m=None, ref=None, c=None, lv=None):
     d = {}
     if m: d['m'] = m
     if c: d['if'] = c
@@ -9,16 +9,28 @@ def r(t, m=None, ref=None, c=None):
     if ref: d['ref'] = ref if isinstance(ref, list) else [ref]
     return d
 def L(sec, i, **kw):
-    d = dict(O[sec]['lines'][i]); d.update(kw); return d
+    # a line of the earlier Order of Mass, kept for both modes; where the advanced text or forms differ, the basic ones are kept in rb / mb
+    old = O[sec]['lines'][i]; d = dict(old)
+    if 'r' in kw and kw['r'] != old.get('r'): d['rb'] = kw.get('rb', old['r'])
+    if 'm' in kw and kw['m'] != old.get('m'): d['mb'] = old.get('m', '')
+    kw.pop('rb', None); d.update(kw); return d
+def B(sec, i, r=None, m=None):
+    # a direction of the earlier Order of Mass shown only in the basic mode (corrected where it was wrong)
+    d = dict(O[sec]['lines'][i]); d['lv'] = 'b'
+    if r: d['r'] = r
+    if m is not None:
+        if m: d['m'] = m
+        else: d.pop('m', None)
+    return d
 def t(w, la, en, m=None, c=None):
     d = {}
     if m: d['m'] = m
     if c: d['if'] = c
     d.update({'w': w, 'la': la, 'en': en}); return d
 # conditional directions repeated wherever the priest turns to the people
-def turn(m='ls'):
+def turn(m=None):
     return [r('The Sacrament is in the tabernacle on this altar: so as not to turn his back to it, he goes to the middle, bows his head, steps a little towards the Gospel side and turns to the people by his right; he returns the same way, bowing again before the tabernacle.', m, 'varia-ii-9', 'tab'),
-            r('The Sacrament is exposed: he genuflects at the middle, goes towards the Gospel corner and turns to the people there, his back towards the corner of the altar; he returns the same way, genuflecting again in the middle.', m + ('mc' if 'm' not in m else ''), 'varia-ii-5', 'exp')]
+            r('The Sacrament is exposed: he genuflects at the middle, goes towards the Gospel corner and turns to the people there, his back towards the corner of the altar; he returns the same way, genuflecting again in the middle.', m, 'varia-ii-5', 'exp')]
 N = {}
 N['chalice'] = {'la': O['chalice']['la'], 'en': O['chalice']['en'], 'lines': [
   r('Coming to the altar, he bows profoundly at its middle (without bending the knee), goes up, sets the chalice towards the Gospel side, spreads the corporal, lays the paten with the host on it and the purificator beside it. He pours a little wine into the chalice; the server, holding out the water, says:', 'l', ['praeparatio-ii-8', 'praeparatio-ii-9']),
@@ -62,11 +74,11 @@ N['foot'] = {'la': O['foot']['la'], 'en': O['foot']['en'], 'lines': [
   r('The Sacrament is exposed: on coming to the altar all kneel on both knees; each time the celebrant comes to, leaves or passes the middle, he and the ministers genuflect on one knee.', 'smc', ['varia-ii-3', 'varia-ii-4'], 'exp'),
   r('The Sacrament is in the tabernacle: the bows made at the middle of the altar on arriving and leaving become genuflexions.', 'smc', ['praeparatio-ii-8', 'modus-xv-4'], 'tab')]}
 N['rAs'] = {'la': '', 'en': '', 'strip': 1, 'lines': [
-  r('The sprinkling with holy water, on Sundays: when the Hour before Mass is finished, the priest, deacon and subdeacon come to the sanctuary in albs with stoles and maniples (if there is to be a procession, the priest in a silk cope and the ministers in dalmatics), the acolytes going before. The deacon stands with the senior acolyte at the priest’s right, the subdeacon with the junior at his left; all bow profoundly (or genuflect) before the altar.', 'mc', 'ministri-ii-1'),
+  r('On Sundays, when the Hour before Mass is finished, the priest, deacon and subdeacon come to the sanctuary in albs with stoles and maniples (if there is to be a procession, the priest in a silk cope and the ministers in dalmatics), the acolytes going before. The deacon stands with the senior acolyte at the priest’s right, the subdeacon with the junior at his left; all bow profoundly (or genuflect) before the altar.', 'mc', 'ministri-ii-1'),
   r('The senior acolyte brings the water, the deacon hands the sprinkler, and as the cantors begin Asperges me the priest sprinkles the high altar (not too much), then the deacon, subdeacon and acolytes, the Master of the Order if present, the cantors on Doubles, and the brethren, beginning on the right; after the clerics the lay brothers, then the seculars in choir. The same order is kept for the peace and the incensing.', 'c', 'ministri-ii-2'),
   r('The priest sprinkles the altar, the ministers and the people.', 'm', 'ministri-ii-2'),
   r('When the antiphon is finished, standing before the sanctuary steps as at the beginning, he says Ostende nobis, Dominus vobiscum, Oremus and the prayer Exaudi nos; then the ministers return to the sacristy (and, if there is a procession, it follows, after which the priest exchanges the cope for the chasuble).', 'mc', ['ministri-ii-3', 'ministri-ii-4']),
-  r('The sprinkling with holy water takes place on Sundays before the principal (conventual) Mass.', 'ls', 'ministri-ii-1')]}
+]}
 N['rIn'] = {'la': '', 'en': '', 'strip': 1, 'lines': [
   r('At the Epistle corner he begins the Introit in a clear and audible voice; at Gloria Patri he bows his head a little towards the cross; then he repeats the Introit as far as the verse.', 'ls', 'modus-ii-1'),
   r('All come together at the book, opened by the deacon (who turns the pages and points out what is to be said), and standing at the priest’s right in order of rank say the Introit and the Kyrie with him; they do not kneel at Salve sancta parens.', 'mc', 'ministri-iii-4'),
@@ -76,16 +88,17 @@ N['rKy'] = {'la': '', 'en': '', 'strip': 1, 'lines': [
   r('On Sundays, and on Doubles and above, the priest, deacon and subdeacon may sit at the Epistle side (the deacon at the priest’s left, the subdeacon at the deacon’s left, the acolytes on a lower bench). The acolytes spread a small cloth over their knees, and one of them takes it up at the last Kyrie eleison, beginning with the priest and kissing his hand.', 'mc', 'ministri-iii-6'),
   r('When the Gloria is not said (from Septuagesima to Easter), the subdeacon fetches the chalice from the sacristy during the Kyrie, as is done during the Gloria on other days.', 'mc', 'ministri-iv-2')]}
 N['rGl'] = {'la': '', 'en': '', 'strip': 1, 'lines': [
-  r('The last Kyrie said, he goes with hands joined to the middle of the altar. At Gloria he lays his hands extended on the altar; at in excelsis he raises them; at Deo he joins them and bows his head; then he returns to the Epistle corner and continues it at the book with hands joined. He bows his head at Adoramus te, Gratias agimus tibi, Jesu Christe, suscipe deprecationem nostram, and again at Jesu Christe.', 'ls', 'modus-ii-2'),
+  r('The last Kyrie said, he goes with hands joined to the middle of the altar. At Gloria he lays his hands extended on the altar; at in excelsis he raises them; at Deo he joins them and bows his head; then he returns to the Epistle corner and continues it at the book with hands joined. He bows his head at Adoramus te, Gratias agimus tibi, Jesu Christe, suscipe deprecationem nostram, and again at Jesu Christe.', 'l', 'modus-ii-2'),
+  r('The last Kyrie sung, he goes to the middle of the altar and intones the Gloria, with the gestures of the Low Mass (hands laid on the altar at Gloria, raised at in excelsis, joined at Deo, with a bow); then he goes to the Epistle corner and continues it at the book, bowing at Adoramus te, Gratias agimus tibi, Jesu Christe and Suscipe deprecationem nostram.', 's', ['modus-ii-2', 'ministri-iv-1']),
   r('All rise, stand before the middle of the altar and bow profoundly; the priest goes up and intones the Gloria. Then all go together to the Epistle corner and continue it with him, standing at his right; when it is said, the priest and deacon stand until the community has finished it. The ministers pass behind, never between, those of higher rank.', 'mc', 'ministri-iv-1'),
   r('Meanwhile on Sundays and Doubles the subdeacon, an acolyte going before with the wine and water, goes to the sacristy, puts on a clean veil over his shoulders, and brings the prepared chalice raised before his breast; they bow profoundly in the middle; he sets the chalice on the veil spread on the Epistle corner, and the acolyte puts the cruets in the niche or on a bench.', 'mc', 'ministri-iv-2')]}
 N['kyLow'] = O['kyLow']; N['glLow'] = O['glLow']
 N['collect'] = {'la': O['collect']['la'], 'en': O['collect']['en'], 'lines': [
-  r('In the same place, without kissing the altar, he turns to the people by his left (towards the Epistle corner), his hands raised no higher than the shoulders and extended so that they can be seen from behind, and says Dominus vobiscum, joining his hands; returning to the book by the same side, he bows his head a little towards the cross and says Oremus, opening his hands for the prayer. At Per Dominum nostrum he joins them and bows his head.', 'ls', ['modus-iii-1', 'modus-iii-2'])] + turn() + [
+  r('In the same place, without kissing the altar, he turns to the people by his left (towards the Epistle corner), his hands raised no higher than the shoulders and extended so that they can be seen from behind, and says Dominus vobiscum, joining his hands; returning to the book by the same side, he bows his head a little towards the cross and says Oremus, opening his hands for the prayer. At Per Dominum nostrum he joins them and bows his head.', None, ['modus-iii-1', 'modus-iii-2'])] + turn() + [
   r('As the priest begins Dominus vobiscum, the deacon (not kneeling, unless a bishop celebrates) lightly raises the lower edge of the chasuble, and so goes with him to the book and points out the prayer; he does the same at the Offertory, the Orate fratres and the Postcommunion.', 'mc', 'ministri-v-1'),
   L('collect', 1), L('collect', 2), L('collect', 3),
-  r('When Flectamus genua is said, he lays the front of the chasuble on the altar and kneels; the server answers Levate, and he rises at once for the prayer.', 'l', 'modus-iii-3'),
-  r('When Flectamus genua is said, the deacon sings it kneeling with the lower ministers and, rising, at once sings Levate; the priest does not kneel but goes on with the prayer.', 'mc', ['ministri-v-2', 'varia-i-2'])]}
+  r('After Oremus he says Flectamus genua: taking the front of the chasuble in both hands and laying it on the altar, he kneels; the server answers Levate, and rising at once he says the prayer.', 'ls', 'modus-iii-3', 'flect'),
+  r('After Oremus the deacon, kneeling with the lower ministers, sings Flectamus genua, and rising at once sings Levate; the priest does not kneel but goes on with the prayer.', 'mc', ['ministri-v-2', 'varia-i-2'], 'flect')]}
 N['collectEnd'] = {'la': O['collectEnd']['la'], 'en': O['collectEnd']['en'], 'lines': [
   r('With his hands laid on the book, or resting on the altar, he reads the Epistle or Lesson; then, with hands joined, the Gradual, Alleluia or Tract, and Sequence.', 'l', 'modus-iv-1'),
   r('The server stays kneeling at the Gospel side (always on the side opposite the book) until the Epistle and the Alleluia with its verse, or the Tract or Sequence, are said.', 'l', ['varia-vi-4', 'varia-vi-5']),
@@ -94,8 +107,10 @@ N['collectEnd'] = {'la': O['collectEnd']['la'], 'en': O['collectEnd']['en'], 'li
   r('During the last prayer the subdeacon, an acolyte going before, carries the book of Epistles against his breast to the lectern before the sanctuary steps (or, in some convents, on Sundays and Doubles, to the pulpit) and sings the Epistle facing the altar; the acolyte then puts the book back on the altar.', 'mc', 'ministri-vi-1'),
   r('The deacon and an acolyte seat the priest and lay a small cloth on his knees. The deacon washes his fingers, spreads the corporal in the middle of the altar and gives the Missal to the acolyte, who holds it before the seated priest. The priest reads the Epistle, then the Gradual, Alleluia or Tract and Sequence, verse by verse alternately with the deacon; then they rise, and the priest, standing, reads the Gospel at his seat, signing himself at its beginning and end.', 'mc', ['ministri-vi-2', 'ministri-vi-3'])]}
 N['rGr'] = {'la': '', 'en': '', 'strip': 1, 'lines': [
-  r('He genuflects at the Lenten Tract verse Adjuva nos, Deus salutaris noster, and, in Masses of the Holy Ghost, while he says the verse Veni Sancte Spiritus as far as reple.', 'ls', 'varia-i-1'),
-  r('At the verse Veni Sancte Spiritus the priest and ministers rise and stand (they do not kneel) while it is sung as far as reple; they sit again when the choir rises. While the priest sits, ministers who are not occupied may go to help the brethren in choir.', 'mc', ['ministri-vii-1', 'varia-i-2']),
+  r('He genuflects at the verse of the Tract Adjuva nos, Deus salutaris noster.', 'ls', 'varia-i-1', 'adjuva'),
+  r('All kneel at the verse of the Tract Adjuva nos, Deus salutaris noster.', 'mc', ['varia-i-1', 'varia-i-2'], 'adjuva'),
+  r('He genuflects while he says the verse Veni Sancte Spiritus, as far as reple.', 'ls', 'varia-i-1', 'veni'),
+  r('At the verse Veni Sancte Spiritus the priest and ministers rise and stand (they do not kneel) while it is sung as far as reple; they sit again when the choir rises.', 'mc', ['ministri-vii-1', 'varia-i-2'], 'veni'),
   r('Towards the end of the Alleluia, Tract, Responsory or Sequence the acolytes light their candles. The thurifer comes on Simple feasts and above, on Sundays, on Tuesdays of St Dominic, Wednesdays of St Thomas or another saint of the Order, Thursdays of Corpus Christi, Saturdays of Our Lady and the octave day of simple octaves; he stands in the sanctuary before the middle of the altar.', 'mc', 'ministri-vii-2', 'full'),
   r('On Totum Duplex feasts (on which alone the cross is carried at the Gospel), after the Epistle the acolytes go with the thurifer to the sacristy and return with the crossbearer between them; all but the crossbearer bow profoundly before the altar steps.', 'mc', 'ministri-vii-3', 'full'),
   r('The thurifer goes to the priest and offers the incense, saying Benedicite; the priest makes the sign of the cross over it, saying In nomine Patris, et Filii, et Spiritus Sancti. Amen.', 'mc', 'ministri-vii-3', 'full')]}
@@ -117,7 +132,6 @@ N['gospel'] = {'la': O['gospel']['la'], 'en': O['gospel']['en'], 'lines': [
   L('gospel', 8, m='ls'),
   t('D', 'Sequéntia sancti Evangélii secúndum N.', 'The continuation of the holy Gospel according to N.', 'mc'),
   L('gospel', 9),
-  L('gospel', 10, ref=['ministri-viii-4']),
   r('With his joined hands on the Missal he reads the whole Gospel. He bows his head at the names of Jesus and Mary, and genuflects towards the book where the Gospel requires it (Et procidentes adoraverunt eum at the Epiphany, and the like).', 'ls', ['modus-v-2', 'varia-i-1']),
   r('While the Gospel is sung the priest stands at the Epistle corner facing it, hands joined; all the brethren turn towards the Gospel wherever it is read, and sign themselves at its end. At the words at which one genuflects, the deacon genuflects towards the book, the priest and the others towards the altar; the acolytes holding the candlesticks do not.', 'mc', ['ministri-viii-4', 'varia-i-2'])]}
 N['afterGospel'] = {'la': O['afterGospel']['la'], 'en': O['afterGospel']['en'], 'lines': [
@@ -131,7 +145,7 @@ N['rCr'] = {'la': '', 'en': '', 'strip': 1, 'lines': [
   r('The priest intones the Credo at the middle of the altar; the deacon and the other ministers stand at his left, one behind another towards the Gospel corner, and continue it in a low voice. When the choir reaches Et incarnatus est, the priest kneels before the middle of the altar, the deacon and subdeacon on the first step behind him, the acolytes on a lower step with the crossbearer between them and the thurifer behind; all face the altar. Then the acolytes and thurifer bow and take the cross back to the sacristy. All bow at simul adoratur.', 'mc', ['ministri-ix-2', 'ministri-ix-3'])]}
 N['crLow'] = O['crLow']
 N['offerDial'] = {'la': O['offerDial']['la'], 'en': O['offerDial']['en'], 'lines': [
-  r('At the middle of the altar (he does not kiss it), turning to the people, he opens and joins his hands as at the first Dominus vobiscum, and returns by the same way; with hands opened and raised, bowing his head to the cross, he begins Oremus, joining them at the last syllable:', None, 'modus-vii-1')] + turn('ls') + [
+  r('At the middle of the altar (he does not kiss it), turning to the people, he opens and joins his hands as at the first Dominus vobiscum, and returns by the same way; with hands opened and raised, bowing his head to the cross, he begins Oremus, joining them at the last syllable:', None, 'modus-vii-1')] + turn() + [
   L('offerDial', 1), L('offerDial', 2), L('offerDial', 3),
   r('He goes to the book and reads the Offertory with hands joined:', 'ls', 'modus-vii-2'),
   r('The priest says the Offertory at the book, and the ministers continue it with him, all standing at his left:', 'mc', 'ministri-x-1')]}
@@ -157,15 +171,15 @@ N['offertory'] = {'la': O['offertory']['la'], 'en': O['offertory']['en'], 'lines
   L('offertory', 8),
   r('Having dried his fingers, he returns with hands joined to the middle of the altar and begins In spiritu humilitatis bowing profoundly, standing erect at et placeat tibi. He does not turn the pages or touch anything with the fingers with which he is to handle the Body of the Lord.', None, 'modus-vii-4'),
   L('offertory', 10),
-  r('Turned to the people (he does not kiss the altar), with hands raised and extended, he says Orate fratres in a moderate voice; joining his hands he continues secretly, and completes the circle towards the Gospel corner to return to the Missal. There is no response:', 'ls', 'modus-vii-5'),
-  r('He says only the two words Orate fratres in a moderate voice, so that the ministers can hear; the deacon raises the chasuble as before. In the season of flies the deacon keeps them away from the priest and the sacrifice with a fan.', 'mc', 'ministri-xii-2')] + [dict(x, r=x['r'].replace('he returns the same way', 'he returns the same way (he does not complete the circle)')) for x in turn('ls')] + [
+  r('Turned to the people (he does not kiss the altar), with hands raised and extended, he says Orate fratres in a moderate voice; joining his hands he continues secretly, and completes the circle towards the Gospel corner to return to the Missal. There is no response:', None, 'modus-vii-5'),
+  r('He says only the two words Orate fratres in a moderate voice, so that the ministers can hear; the deacon raises the chasuble as before. In the season of flies the deacon keeps them away from the priest and the sacrifice with a fan.', 'mc', 'ministri-xii-2')] + [dict(x, r=x['r'].replace('he returns the same way', 'he returns the same way (he does not complete the circle)')) for x in turn()] + [
   L('offertory', 12),
   r('With hands joined, as before:', None, 'modus-vii-5'),
   L('offertory', 14),
   r('With hands joined he says Oremus; then, his hands opened and extended, the Secret, joining them and bowing his head a little at Per Dominum; before each further commemoration he says Oremus again:', None, 'modus-vii-5')]}
 N['offertoryEnd'] = O['offertoryEnd']
 N['rPf'] = {'la': '', 'en': '', 'strip': 1, 'lines': [
-  r('Standing at the middle of the altar, his hands laid on it on either side, he says Per omnia saecula saeculorum aloud, and Dominus vobiscum; at Sursum corda he raises and extends his hands; at Gratias agamus he joins them and, at Deo nostro, bows his head to the cross and then opens them. He says the Preface with hands raised and extended, joining them at supplici confessione dicentes.', None, ['modus-viii-1', 'modus-viii-2']),
+  r('At the middle of the altar his hands are laid on it on either side for Per omnia saecula saeculorum and Dominus vobiscum; at Sursum corda he raises and extends them; at Gratias agamus he joins them, bows his head to the cross at Deo nostro, and opens them again for the Preface, joining them at supplici confessione dicentes.', None, ['modus-viii-1', 'modus-viii-2']),
   r('During the Preface the thurifer makes ready; after Gratias agamus Domino Deo nostro he bows before the altar and incenses the deacon, then the subdeacon and the acolytes, who stand, the deacon with one acolyte at the Gospel corner and the subdeacon with the other at the Epistle corner, almost facing one another, hands joined and heads a little bowed.', 'mc', 'ministri-xiii-1', 'full'),
   r('Then he goes into the choir with fresh, unblessed incense, and incenses the Master of the Order if present, then the brethren in both choirs, beginning with the seniors in the upper stalls, and then the lay brothers; he returns and stands in the middle behind the subdeacon.', 'c', 'ministri-xiii-2', 'full')]}
 N['rSa'] = {'la': '', 'en': '', 'strip': 1, 'lines': [
@@ -207,7 +221,7 @@ N['canon'] = {'la': O[C]['la'], 'en': O[C]['en'], 'lines': [
   L(C, 22), L(C, 23), L(C, 24)]}
 P = 'pater'
 N['pater'] = {'la': O[P]['la'], 'en': O[P]['en'], 'lines': [
-  r('His hands laid on the corporal on either side, he says Per omnia saecula saeculorum aloud, and Oremus in the same way; at Pater noster he raises and extends his hands.', None, 'modus-xii-1'),
+  r('His hands are laid on the corporal on either side for Per omnia saecula saeculorum and Oremus; at Pater noster he raises and extends them.', None, 'modus-xii-1'),
   L(P, 0), L(P, 1),
   r('The deacon, with the other ministers, answers in a low voice:', 'mc', 'ministri-xvi-1'),
   L(P, 2), L(P, 3),
@@ -233,7 +247,7 @@ N['communion'] = {'la': O[CM]['la'], 'en': O[CM]['en'], 'lines': [
   r('On Sundays, and Doubles and above, one acolyte gives the Pax to the cantors (unless the Master of the Order is present), and a cantor to the brethren in order, after the Agnus Dei has been sung; on other days only the ministers receive it. On the great solemnities (Christmas, Easter, the Ascension, Pentecost, Corpus Christi, the Assumption, our holy Father Dominic, All Saints and the like) the subdeacon himself carries it to the choir.', 'c', ['ministri-xvii-2', 'ministri-xvii-3']),
   r('The deacon also takes the instrument of peace to the prelate.', 'mc', 'varia-iii-5', 'prel'),
   L(CM, 5, ref=['modus-xiii-2']), L(CM, 6),
-  L(CM, 7, r='He commends himself briefly to God in his mind; then, his head bowed, holding the chalice in his right hand, he receives the Host from his left, saying (he covers the chalice, rests a little in meditation, genuflects, and receives the Blood with the particle, saying nothing):', ref=['modus-xiii-2']),
+  L(CM, 7, r='His head bowed, holding the chalice in his right hand, he receives the Host from his left, saying (then he covers the chalice, rests a little in meditation, genuflects, and receives the Blood with the particle, saying nothing):', ref=['modus-xiii-2']),
   L(CM, 8),
   r('After the first draught he gathers the particles from the corporal with the paten into the chalice, and consumes them.', None, 'modus-xiii-3'),
   L(CM, 9), L(CM, 10), L(CM, 11), L(CM, 12), L(CM, 13), L(CM, 14),
@@ -246,8 +260,8 @@ N['post'] = {'la': O['post']['la'], 'en': O['post']['en'], 'lines': [
   L('post', 0, ref=['modus-xiv-2'], r='Turning to the people as before the first Collect, he says Dominus vobiscum; at Oremus, his hands joined, he bows his head a little to the cross; then the Postcommunion with hands extended:')] + turn() + [
   r('The deacon raises the chasuble as before.', 'mc', 'ministri-xix-1'),
   L('post', 1), L('post', 2), L('post', 3),
-  r('On a Lenten feria, after all the commemorations, the priest says Oremus with head bowed and adds Humiliate capita vestra Deo before the Prayer over the people.', 'ls', 'modus-xiv-3'),
-  r('On a Lenten feria, after all the commemorations, the priest says Oremus, bowing his head with the ministers, and the deacon sings Humiliate capita vestra Deo; the priest goes on with the Prayer over the people.', 'mc', 'ministri-xix-2'),
+  r('On a Lenten feria, after all the commemorations, the priest says Oremus with head bowed and adds Humiliate capita vestra Deo before the Prayer over the people.', 'ls', 'modus-xiv-3', 'sp'),
+  r('On a Lenten feria, after all the commemorations, the priest says Oremus, bowing his head with the ministers, and the deacon sings Humiliate capita vestra Deo; the priest goes on with the Prayer over the people.', 'mc', 'ministri-xix-2', 'sp'),
   r('During the last prayers the subdeacon, an acolyte going before with the cruets, carries the chalice back to the sacristy (without the veil on his shoulders); on returning he takes the book of the Gospels and the other acolyte lights the candles. If there is only one prayer, or the sacristy is far off, he takes the chalice back only after Mass.', 'mc', 'ministri-xix-3')]}
 N['postEnd'] = {'la': O['postEnd']['la'], 'en': O['postEnd']['en'], 'lines': [
   r('At Per Dominum nostrum of the last prayer he comes to the middle of the altar; turned to the people, his hands raised and extended, he says Dominus vobiscum, joining them at vobiscum:', None, ['modus-xiv-2', 'modus-xv-1'])] + turn() + [
@@ -279,6 +293,29 @@ for k, s in N.items():
     for l in s['lines']:
         if l.get('m') == 'm' and k in ('kyLow',): pass
         if 'm' in l and 'm' in l['m'] and 'c' not in l['m'] and k not in ('rAs',) : l['m'] += 'c'
+# the basic mode: the earlier Order of Mass, as it was, with its errors corrected
+FIX = {('foot', 21): None,
+       ('chalice', 2): 'At a Solemn Mass, after the Epistle, the subdeacon brings the chalice and prepares it before the seated priest; presenting the water he says:',
+       ('gospel', 2): 'The deacon takes the book of the Gospels and, bowing before the priest, asks his blessing:',
+       ('gospel', 5): 'The deacon goes with the subdeacon, thurifer and acolytes to the lectern at the Gospel side.',
+       ('afterGospel', 0): 'The priest (at a Solemn Mass, the subdeacon bringing him the book) kisses the Gospel, saying:',
+       ('offertory', 0): 'At a Solemn Mass the deacon hands the chalice to the priest, saying Immola Deo sacrificium laudis, et redde Altissimo vota tua.',
+       ('offertory', 6): 'At a Solemn Mass the chalice and the altar are now incensed, and the deacon incenses the priest; the ministers and the choir are incensed at the Preface.',
+       ('canon', 10): 'He adores, elevates the Sacred Host, and adores again. The bell is rung at the elevation; at a Solemn Mass the deacon incenses the Host.',
+       ('communion', 4): 'At a Solemn Mass the deacon holds out the paten (or the Pax) for the priest to kiss, and gives it to the subdeacon, who gives it to the acolytes and (on Sundays and Doubles) to the choir (not in Masses for the Dead).',
+       ('postEnd', 3): 'The deacon sings the dismissal.'}
+BASIC = {}
+for k, sec in O.items():
+    if k == 'dismiss': continue
+    out = []
+    for i, l in enumerate(sec['lines']):
+        l = dict(l)
+        if (k, i) in FIX:
+            if FIX[(k, i)] is None: continue
+            l['r'] = FIX[(k, i)]
+        if 'm' in l and 'm' in l['m'] and 'c' not in l['m']: l['m'] += 'c'
+        out.append(l)
+    BASIC[k] = out
 # serialise
 def js(v): return json.dumps(v, ensure_ascii=False)
 out = ['''/* Ordo Missæ secundum ritum Ordinis Prædicatorum (Missale O.P. 1939).
@@ -287,9 +324,12 @@ out = ['''/* Ordo Missæ secundum ritum Ordinis Prædicatorum (Missale O.P. 1939
    m limits a line to some forms of Mass: l = Low Mass, s = Sung Mass, m = Solemn Mass, c = Conventual Mass (default: all).
    if limits a line to a circumstance chosen on the Mass page: tab (the Sacrament in the tabernacle on this altar), exp (exposed),
    sac (either), pope, bp (a Cardinal Legate, Patriarch, Archbishop or Bishop in his jurisdiction), prel (either), one (one server
-   or acolyte), full (two acolytes, thurifer, crossbearer), req (a Mass for the Dead); "!" negates, "," joins (all must hold).
+   or acolyte), full (two acolytes, thurifer, crossbearer), req (a Mass for the Dead), flect (a day with Flectamus genua), sp (a day
+   with a Prayer over the people), adjuva (a Tract with Adjuva nos), veni (Veni Sancte Spiritus); "!" negates, "," joins.
    ref: the paragraphs of the Missal's rubrics (rubrics.html, data/rubtext.js) behind a direction, opened from it on the Mass page.
-   Sections marked strip are directions without a heading, set before a chant of the Proper or the Ordinary. */
+   Sections marked strip are directions without a heading, set before a chant of the Proper or the Ordinary.
+   Each section has two forms: lines, the basic Order of Mass with its few directions, and adv, the full directions of the Missal's
+   Ritus (shown when "Full rubrics" is on); a section without adv is the same in both. */
 window.ORDO = {''']
 keys = list(N.keys())
 for j, k in enumerate(keys):
@@ -297,8 +337,12 @@ for j, k in enumerate(keys):
     if k == 'dismiss':
         out.append('  dismiss: {\n' + ',\n'.join('    %s: [%s]' % (kk, ', '.join(js(x) for x in vv)) for kk, vv in s.items()) + '\n  }')
         continue
+    clean = [{kk: vv for kk, vv in l.items() if kk not in ('rb', 'mb', 'lv')} for l in s['lines']]
+    basic = BASIC.get(k, [])
     head = '  %s: {la: %s, en: %s%s, lines: [\n' % (k, js(s['la']), js(s['en']), ', strip: 1' if s.get('strip') else '')
-    out.append(head + ',\n'.join('    ' + js(l) for l in s['lines']) + '\n  ]}' + (',' if j < len(keys) - 1 else ''))
+    body = head + ',\n'.join('    ' + js(l) for l in basic) + '\n  ]'
+    if clean != basic: body += ', adv: [\n' + ',\n'.join('    ' + js(l) for l in clean) + '\n  ]'
+    out.append(body + '}' + (',' if j < len(keys) - 1 else ''))
 src = '\n'.join(out[:1]) + '\n' + ',\n'.join(o.rstrip(',') for o in out[1:]) + '\n};\n'
 open('/home/claude/dominican-liturgy/data/ordo.js', 'w').write(src)
 # check refs

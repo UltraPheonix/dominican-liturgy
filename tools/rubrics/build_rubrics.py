@@ -163,7 +163,8 @@ page = '''<!DOCTYPE html>
     <p class="rb-src">All the rubrics of the <i>Missale juxta ritum Sacri Ordinis Praedicatorum</i> (Rome, 1939), in the order of the Missal:
       the defects in celebrating Mass, the preparation, the rite of Low Mass, the ceremonial of the ministers at the solemn and conventual
       Mass, Holy Communion, the general rubrics and the colours,
-      with an English translation of our own. The Latin follows the Missal as printed, including the changes made to it up to
+      with an English translation.</p>
+    <p class="ai-note"><b>The English is an AI translation</b> (made with Claude) and has not yet been checked by a human translator. The Latin is the text of the Missal; where the two differ, follow the Latin. The Latin follows the Missal as printed, including the changes made to it up to
       1939; the later supplements and the reforms of 1955 and after are not included.</p>
     <ol class="rb-toc">%s</ol>
     %s

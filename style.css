@@ -551,3 +551,10 @@ html[data-theme="dark"] .jump a.on, html[data-theme="dark"] .hours .sbtn.on, htm
 @media (max-width: 760px) { .pr .pr-pair { grid-template-columns: 1fr; gap: 4px; } .pr .pr-en { font-size: .92em; } }
 @media print { .pr .pr-toc { display: none; } .pr .pr-pair { break-inside: avoid; } }
 .pr .pr-day { font-family: var(--caps); font-style: normal; color: var(--rubric); letter-spacing: .06em; font-size: .9em; }
+.seg.seg-sm button { font-size: 13px; padding: 4px 12px; min-height: 32px; }
+@media (max-width: 560px) { .rubopts .ro-seg { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 10px; } }
+.ai-note { font-size: 15px; color: var(--muted); border-left: 2px solid var(--rubric); padding: 4px 10px; max-width: 760px; }
+.ai-note b { color: var(--rubric); font-weight: 600; }
+.rx-ai { margin: 0 0 4px; font-size: 13px; color: var(--muted); font-style: italic; }
+.ro-ai { flex-basis: 100%; margin: 0; font-size: 13px; color: var(--muted); font-style: italic; grid-column: 1 / -1; }
+.ro-ai[hidden] { display: none; }

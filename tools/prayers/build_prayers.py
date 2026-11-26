@@ -51,7 +51,8 @@ page = '''<!DOCTYPE html>
   <main class="prose">
     <h1>Orationes Sacerdotis</h1>
     <p class="pr-src">The prayers of the priest from the <i>Missale juxta ritum Sacri Ordinis Praedicatorum</i> (Rome, 1939), pp. 57&ndash;64:
-      at the washing of the hands and the vesting, and before and after Mass, with an English translation of our own.
+      at the washing of the hands and the vesting, and before and after Mass, with an English translation.</p>
+    <p class="ai-note"><b>The English is an AI translation</b> (made with Claude) and has not yet been checked by a human translator. The Latin is the text of the Missal; where the two differ, follow the Latin.
       The rubrics of the vesting are in the <a href="rubrics.html#praeparatio">Rubrics</a>.</p>
     <ol class="pr-toc">%s</ol>
     %s
