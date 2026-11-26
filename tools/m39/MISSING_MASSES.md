@@ -1,21 +1,14 @@
 # 1939 calendar vs site Masses (tools/m39/k_build.py, 390 entries)
 
-## Feasts of the 1939 calendar with no site Mass (65)
+## Feasts of the 1939 calendar with no site Mass (49)
 These need their Mass from the Missale O.P. 1939 (own Mass or Common + proper orations).
 
-- 0103 B. Zedislavæ Berkianæ Matronæ O. P. — Semiduplex
 - 0104 Octava SS. Innocentium MM. — Tres Lectiones
 - 0118 Cathedra Romana S. Petri — Totum Duplex
 - 0203 S. Blasii Ep. et Mart. — Tres Lectiones
 - 0204 Anniversarium Patrum et Matrum — Novem Lectiones
-- 0217 B. Reginaldi Conf. O. P. — Semiduplex
-- 0228 B. Villanæ de Bottis Matronæ O. P. — Semiduplex
-- 0302 B. Henrici Susonis Conf. O. P. — Semiduplex
-- 0304 S. Casimiri Conf. — Simplex
 - 0312 S. Gregorii Magni Papæ, Conf. et Eccl. Doct. — Duplex
-- 0317 S. Patricii Ep. et Conf. — Duplex
 - 0318 S. Cyrilli Ep. Hierosolymitani Conf. et Eccl. Doct. — Duplex
-- 0320 B. Ambrosii Sansedonii Conf. O. P. — Duplex
 - 0321 S. Benedicti Abbatis — Totum Duplex
 - 0401 Impressio SS. Stigmatum S. Catharinæ Sen. Virg. O. P. — Duplex
 - 0423 S. Georgii Mart. — Simplex
@@ -30,23 +23,14 @@ These need their Mass from the Missale O.P. 1939 (own Mass or Common + proper or
 - 0529 BB. Guillelmi O. P. et Soc. MM. — Semiduplex
 - 0602 BB. Sadoc et Sociorum MM. O. P. — Semiduplex
 - 0609 BB. Dianæ, Cæciliæ et Amatæ Virginum O. P. — Semiduplex
-- 0610 B. Joannis Dominici Ep. et Conf. O. P. — Semiduplex
 - 0615 SS. Viti, Modesti et Crescentiæ MM. — Tres Lectiones
-- 0622 B. Innocentii V Papæ et Conf. O. P. — Duplex
-- 0703 S. Leonis II Papæ et Conf. — Simplex
-- 0707 B. Benedicti XI Papæ et Conf. O. P. — Duplex
 - 0712 Anniversarium sepultorum in Cœmeteriis nostris — Novem Lectiones
-- 0713 B. Jacobi a Voragine Ep. et Conf. O. P. — Semiduplex
 - 0716 Commemoratio B. Mariæ V. de Monte Carmelo — Totum Duplex
-- 0717 B. Ceslai Conf. O. P. — Semiduplex
 - 0721 S. Praxedis Virg. — Tres Lectiones
-- 0730 B. Mannis Conf. O. P. — Duplex
 - 0801 S. Petri Ap. ad Vincula — Totum Duplex
-- 0808 B. Joannæ de Aza, Matris S. P. N. Dominici — Duplex
 - 0813 SS. Hippolyti et Soc. MM. — Tres Lectiones
 - 0901 S. Ægidii Abbatis — Tres Lectiones
 - 0905 Anniversarium Familiarum et Benefactorum O. N. — Novem Lectiones
-- 0906 B. Bertrandi a Garriga Conf. O. P. — Semiduplex
 - 0909 S. Gorgonii Mart. — Tres Lectiones
 - 0910 S. Nicolai a Tolentino Conf. — Duplex
 - 0911 SS. Proti et Hyacinthi MM. — Tres Lectiones
@@ -69,11 +53,10 @@ These need their Mass from the Missale O.P. 1939 (own Mass or Common + proper or
 - 1229 S. Thomæ Ep. et Mart. — Duplex
 - 1231 S. Silvestri I Papæ et Conf. — Duplex
 
-## Site Masses with a date that are not in the 1939 calendar (32)
+## Site Masses with a date that are not in the 1939 calendar (31)
 
 - S0110b 10 Ian. — B. Annæ de Angelis Monteagudo O.P. V. (1985*)
 - S0113 13 Ian. — Commemoratio Baptismatis D. N. Iesu Christi
-- S0215 15 Feb. — B. Henrici Suso O.P. C.
 - S0401b 1 Apr. — B. Iosephi Girotti O.P. M. (2014)
 - S0501 1 Maii — S. IOSEPHI OPIFICIS, SPONSI B. MARIÆ VIRG.
 - S0508b 8 Maii — B. Petri Claverie et Sociorum, Mm. (2018)

@@ -6,7 +6,10 @@ rows=json.load(open('/tmp/x/krows.json')); S=json.load(open('/tmp/x/sitem.json')
 FIX={('0217','Reginaldi'):None,('0317','Patricii'):None,('0423','Georgii'):None,('0811','Octava S. P. N.'):None,
      ('0822','Octava Assumptionis'):None,('0901','Ægidii Abbatis'):None,('1125','Catharinæ Virg. et Mart.'):'S1125',
      ('1225','Nativitas'):'Dec25_1',('1229','Thomæ Ep.'):None,('0628','Vigilia SS. Petri'):'G502_3',('0106','Epiphania'):'Epi',
-     ('0428','Pauli a Cruce'):'S0428'}
+     ('0428','Pauli a Cruce'):'S0428',('0321','Benedicti Abbatis'):None,('0302','Henrici Susonis'):'S0215'}
+import os
+if os.path.exists('tools/m39/new/kfix.json'):   # feasts added from the Missal by tools/m39/new/add_masses.py
+    FIX.update({tuple(k.split('|',1)):v for k,v in json.load(open('tools/m39/new/kfix.json')).items()})
 SUPERSEDED={('0126','Margaritæ de Hungaria')}   # replaced by the 1943 supplement (S. Margarita, 19 Jan)
 K={};miss=[]
 for d,t,r,note,key in rows:
