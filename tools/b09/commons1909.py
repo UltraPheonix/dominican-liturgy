@@ -742,3 +742,25 @@ UNSURE['tp'] = ['Apostles in Paschaltide, I Vespers Magnificat ant.: the OCR giv
                 'Martyr in Paschaltide, I Vespers: no psalm line survives in the OCR; "Laudáte púeri cum céteris" assumed as for the other Paschal Commons.',
                 'Martyr in Paschaltide, None chapter (Eccli. 4) ends in the OCR at "certa pro justítia." where the page ends.',
                 'Confessor in Paschaltide: the III responsory and I Vespers Magnificat "Fíliæ Jerúsalem … Mártyrem" are as printed for Martyrs; check that the book really gives them for a Confessor.']
+
+# Hymns not in the 1954 library, typed from the 1909 OCR (Latin) with an AI translation.
+def _hy(stanzas):
+    out = []
+    for i, s in enumerate(stanzas):
+        ls = s.split(' / '); f = ls[0]
+        out.append(('<c>%s</c>' if i == 0 else '<h>%s</h>') % f[0] + '\n'.join([f[1:]] + ls[1:]))
+    return '\n\n'.join(out)
+HYMN_TEXT = {
+    'Urbs Jerúsalem beáta': (_hy(['Urbs Jerúsalem beáta, / Dicta pacis vísio, / Quæ constrúitur in cælis / Vivis ex lapídibus, / Et Angelis coronáta / Ut sponsáta cómite.',
+                                  'Nova véniens e cælo, / Nuptiáli thálamo / Præparáta, ut sponsáta / Copulétur Dómino: / Platéæ et muri ejus / Ex auro puríssimo.',
+                                  'Portæ nitent margarítis, / Ádytis paténtibus: / Et virtúte meritórum / Illuc introdúcitur / Omnis, qui ob Christi nomen / Hic in mundo prémitur.',
+                                  'Tunsiónibus, pressúris / Expolíti lápides, / Suis coaptántur locis / Per manus Artíficis; / Disponúntur permansúri / Sacris ædifíciis.',
+                                  'Glória et honor Deo / Usquequáque altíssimo, / Una Patri, Filióque, / Ínclyto Paráclito, / Cui laus est et potéstas / Per ætérna sǽcula. / Amen.']),
+                             _hy(['Blessed city, Jerusalem, / called the vision of peace, / which is built in heaven / of living stones, / and crowned by Angels / as a bride by her companions.',
+                                  'Coming new from heaven, / made ready for the bridal chamber, / that as a bride / she may be wedded to the Lord: / her streets and her walls / are of purest gold.',
+                                  'Her gates shine with pearls, / her inner courts stand open: / and by the power of merits / there is brought in / everyone who for the name of Christ / is oppressed here in the world.',
+                                  'By blows and by pressures / the stones are polished, / and are fitted into their places / by the hands of the Craftsman; / they are set to remain for ever / in the holy buildings.',
+                                  'Glory and honour be to God / most high in every place, / to the Father and the Son alike, / and to the glorious Paraclete, / whose are praise and power / through everlasting ages. / Amen. [AI translation]'])),
+}
+UNSURE['hymns'] = ['"Urbs Jerúsalem beáta" (Dedication) typed from the OCR of v1 pdf 1316-1317; the 1954 books have no copy to compare.',
+                   'Marian doxology of the Hours on feasts of Our Lady: "María Mater grátiæ … Glória tibi, Dómine, Qui natus es de Vírgine, Cum Patre et Sancto Spíritu" assumed from the rubric; check the page for the exact stanzas.']

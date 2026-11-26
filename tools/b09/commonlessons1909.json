@@ -1,0 +1,460 @@
+{
+"bvm": [
+{
+"n": 2,
+"head": [],
+"close": null,
+"la": "Nolíte me consideráre quod fusca sim, quia decolorávit me sol. Fílii matris meæ pugnavérunt contra me: posuérunt me custódem in víneis: víneam meam non custodívi. Indica mihi, quem díligit ánima mea, ubi pascas, ubi cubes in merídie, ne vagári incípiam post greges sodálium tuórum. Si ignóras te o pulchérrima inter mulíeres, egrédere, et abi post vestígia gregum, et pasce hædos tuos juxta tabernácula pastórum. Equitátui meo in cúrribus Pharaónis assimilávi te amíca mea. Pulchræ sunt genæ tuæ sicut túrturis: collum tuum sicut monília.",
+"en": "Do not consider me that I am brown, because the sun hath altered my colour: the sons of my mother have fought against me, they have made me the keeper in the vineyards: my vineyard I have not kept. shew me, O thou whom my soul loveth, where thou feedest, where thou liest in the midday, lest I begin to wander after the flocks of thy companions. If thou know not thyself, O fairest among women, go forth, and follow after the steps of the flocks, and feed thy kids beside the tents of the shepherds. To my company of horsemen, in Pharao’s chariots, have I likened thee, O my love. Thy cheeks are beautiful as the turtledove’s, thy neck as jewels.",
+"ref": "Canticum Canticorum 1:5-9",
+"src": "vulgate 0.88",
+"score": 0.88
+},
+{
+"n": 7,
+"head": [
+"Cap. ll."
+],
+"close": null,
+"homily_head": "Homilía venerábilis Bedæ Presbýteri.",
+"gospel": "In illo témpore: Loquénte Jesu ad turbas, extóllens vocem quædam múlier de turba dixit illi: Beátus venter qui te portávit. Et úbera quæ",
+"evangelist": null,
+"la": "in Luc. ll. devotiónis et fídei hæc múlier osténditur, quæ, scribis et pharisǽis Dóminum tentántibus simul et blasphemántibus, tanta ejus incarnatiónem præ ómnibus sinceritáte cognóscit, tanta fidúcia confitétur, ut et præséntium prócerum calúmniam, et futurórum confúndat hæreticórum perfídiam. Nam, sicut tunc Judǽi, Sancti Spíritus ópera blasphemándo, verum consubstantialémque Patri Dei Fílium negábant; sic hærétici póstea, negándo Maríam semper Vírginem, Sancti Spíritus operánte virtúte, nascitúro cum humánis membris Unigénito Dei, carnis suæ matériam ministrásse, verum consubstantialémque matri Fílium hóminis fatéri non debére dixérunt.",
+"src": "DO 0.83 C11.txt",
+"score": 0.83
+},
+{
+"n": 8,
+"head": [],
+"close": null,
+"la": "Sed, si caro Verbi Dei secúndum carnem nascéntis a carne Vírginis matris pronuntiátur extránea, sine causa venter qui eam portásset, úbera quæ lactássent, beatificántur. Dicit enim Apóstolus: Quia misit Deus Fílium suum, factum ex mulíere, factum sub lege. Neque audiéndi sunt, qui legéndum putant: Natum ex mulíere, factum sub lege, sed Factum ex mulíere; quia concéptus ex útero virgináli, carnem non de níhilo, non aliúnde, sed matérna traxit ex carne. Alióquin nec vere Fílius hóminis dicerétur, qui oríginem non habéret ex hómine.",
+"src": "DO 0.93 C11.txt",
+"score": 0.93
+}
+],
+"ded": [
+{
+"n": 1,
+"head": [
+"Cap. 7."
+],
+"close": null,
+"la": "Cumque complésset Sálomon fundens preces, ignis descéndit de cælo, et devorávit holocáusta et víctimas: et majéstas Dómini implévit domum. Nec póterant sacerdótes íngredi templum Dómini, eo quod implésset majéstas Dómini templum Dómini. Sed et omnes fílii Israël vidébant descendéntem ignem, et glóriam Dómini super domum: et corruéntes proni in terram super paviméntum stratum lápide, adoravérunt, et laudavérunt Dóminum: Quóniam bonus, quóniam in sǽculum misericórdia ejus. Rex autem, et omnis pópulus immolábant víctimas coram Dómino.",
+"en": "And when Solomon had made an end of his prayer, fire came down from heaven, and consumed the holocausts and the victims: and the majesty of the Lord filled the house. Neither could the priests enter into the temple of the Lord, because the majesty of the Lord had filled the temple of the Lord. Moreover all the children of Israel saw the fire coming down, and the glory of the Lord upon the house: and falling down with their faces to the ground, upon the stone pavement, they adored and praised the Lord: because he is good, because his mercy endureth for ever. And the king and all the people sacrificed victims before the Lord.",
+"ref": "Paralipomenon 2 7:1-4",
+"src": "vulgate 0.91",
+"score": 0.91
+},
+{
+"n": 4,
+"head": [],
+"close": null,
+"la": "Quotiescúmque, fratres caríssimi, altáris vel templi festivitátem cólimus, si fidéliter ac diligénter atténdimus et sancte ac juste vívimus, quidquid in templis manufáctis ágitur, totum in nobis spiritáli ædificatióne complétur. Non enim mentítus est ille qui dixit: Templum enim Dei sanctum est, quod estis vos; et Ix Anniversario quia córpora vestra templum sunt Spíritus vestra Sancti, qui in vobis est? Et ideo, fratres caríssimi, quia, nullis præcedéntibus méritis, sed per grátiam Dei merúimus fíeri templum Dei, quantum possumus cum ipsíus adjutório labóremus, ne Dóminus noster in templo suo, hoc est, in nobis ipsis, invéniat quod óculos suæ majestátis offéndat.",
+"src": "DO 0.87 C8.txt",
+"en": "From the Sermons of St. Augustine, Bishop (of Hippo.) Dearly beloved brethren, as often as we keep the Dedication-Feast of some Altar or Church, if we think faithfully and carefully, and live holily and righteously, that which is done in temples made with hands, is done in our soul by a spiritual building. He at the Dedication of the Temple. lied not who said: The temple of God is holy; which temple ye are (i Cor. iii. 17,) and again: Know ye not that your body is the temple of the Holy Ghost, Which is in you, (vi. 19.) And therefore, dearly beloved brethren, since by the grace of God, without any foregoing deserts of our own, we have been made meet to become the Temple of God, let us work as hard as we can, with His help, that our Lord may not find in His Temple, that is, in us, anything to offend the eyes of His Majesty.",
+"score": 0.87
+},
+{
+"n": 5,
+"head": [],
+"close": null,
+"la": "Et ideo, fratres caríssimi, unusquísque consíderet consciéntiam suam, et, quando se áliquo peccáto vulnerátum esse cognóverit, prius oratiónibus, jejúniis et eleemósynis stúdeat mundáre consciéntiam suam; et sic Eucharístiam præsúmat accípere. Qui enim, agnóscens reátum suum, ipse se humíliter ab altári Ecclésiæ pro emendatióne vitæ removére volúerit, ab ætérno illo et cælésti convívio excommunicári pénitus non timébit.",
+"src": "DO 0.89 C8.txt",
+"score": 0.89
+},
+{
+"n": 7,
+"head": [
+"Cap. 19."
+],
+"close": null,
+"homily_head": "Homilía sancti Ambrósii Epíscopi. (Lib. a. in Lucam.)",
+"gospel": "In illo témpore: Ingréssus Jesus perambulábat Jéricho. Et ecce vir nómine Zachǽus: et hic princeps erat publicanórum, et ipse dives. Et réliqua.",
+"evangelist": null,
+"la": "Zachǽus, statúra pusíllus, hoc est, nulla nobilitátis ingénitæ dignitáte sublímis, exíguus méritis sicut pópulus natiónum, audíto Dómini Salvatóris advéntu, quem sui non recéperant, vidére cupiébat. Sed nemo fácile Jesum videt; nemo potest Jesum vidére constitútus in terra. Et, quia non prophétas, non legem habébat, tamquam formæ grátiam naturális, ascéndit in sycómorum, vanitátem scílicet Judæórum vestígio suo próterens, erráta quoque córrigens superióris ætátis. Et ídeo Jesum in interióris domus recépit hospítio.",
+"src": "DO 0.96 C8.txt",
+"score": 0.96
+}
+],
+"apost": [],
+"evang": [],
+"mart_pont": [
+{
+"n": 1,
+"head": [
+"Cap. 20."
+],
+"close": null,
+"la": "A Miléto Paulus mittens Ephesum, vocávit majóres natu ecclésiæ. Qui cum Mártyris Pontíficis. veníssent ad eum, et simul essent, dixit eis: Vos scitis a prima die, qua ingréssus sum in Asiam, quáliter vobíscum per omne tempus fúerim, sérviens Dómino cum omni humilitáte, et lácrymis, et tentatiónibus, quæ mihi accidérunt ex insídiis Judæórum: quómodo nihil subtráxerim utílium, quóminus annuntiárem vobis, et docérem vos públice, et per domos, testíficans Judǽis, atque gentílibus in Deum pœniténtiam, et fidem in Dóminum nostrum Jesum Christum.",
+"en": "And sending from Miletus to Ephesus, he called the ancients of the church. And when they were come to him, and were together, he said to them: You know from the first day that I came into Asia, in what manner I have been with you, for all the time, Serving the Lord with all humility, and with tears, and temptations which befell me by the conspiracies of the Jews; How I have kept back nothing that was profitable to you, but have preached it to you, and taught you publicly, and from house to house, Testifying both to Jews and Gentiles penance towards God, and faith in our Lord Jesus Christ.",
+"ref": "Actus Apostolorum 20:17-21",
+"src": "vulgate 0.93",
+"score": 0.93
+},
+{
+"n": 2,
+"head": [],
+"close": null,
+"la": "Et nunc ecce alligátus ego spíritu, vado in Jerúsalem: quæ in ea ventúra sint mihi, ignórans: nisi quod Spíritus sanctus per omnes civitátes mihi protestátur, dicens quóniam víncula, et tribulatiónes Jerosólymis me manent. Sed nihil horum véreor: nec fácio ánimam meam pretiosiórem quam me, dúmmodo consúmmem cursum meum, et ministérium verbi, quod accépi a Dómino Jesu, testificári Evangélium grátiæ Dei.",
+"en": "And now, behold, being bound in the spirit, I go to Jerusalem: not knowing the things which shall befall me there: Save that the Holy Ghost in every city witnesseth to me, saying: That bands and afflictions wait for me at Jerusalem. But I fear none of these things, neither do I count my life more precious than myself, so that I may consummate my course and the ministry of the word which I received from the Lord Jesus, to testify the gospel of the grace of God.",
+"ref": "Actus Apostolorum 20:22-24",
+"src": "vulgate 0.97",
+"score": 0.97
+},
+{
+"n": 7,
+"head": [
+"Cap. 14."
+],
+"close": null,
+"homily_head": "Homilía sancti Gregórii Papæ. (Hom. 37. in Evang.)",
+"gospel": "In illo témpore : Dixit Jesus turbis: Si quis venit ad me, et non odit patrem suum, et matrem, et uxórem, et fílios, et fratres, et soróres, adhuc autem et ánimam suam, non potest meus esse discípulus. Et réliqua.",
+"evangelist": null,
+"la": "Si considerémus fratres caríssimi, quæ et quanta sunt, quæ nobis promittúntur in cælis, viléscunt ánimo ómnia quæ habéntur in terris. Terréna namque substántia supérnæ felicitáti comparáta, pondus est, non subsídium. Temporális vita ætérnæ vitæ comparáta, mors est pótius dicénda quam vita, Ipse enim quotidianus deféctus corruptiónis quid est áliud, quam quædam prolíxitas mortis? Quæ autem lingua dícere, vel quis intelléctus cápere súfficit, illa supérnæ civitátis quanta sint gáudia; Angelórum choris interésse, cum beatíssimis spirítibus glóriæ Conditóris assístere, præséntem Dei vultum cérnere, incircumscríptum lumen vidére, nullo mortis metu áffici, incorruptiónis perpétuæ múnere lætári?",
+"src": "DO 0.96 07-13.txt",
+"score": 0.96
+},
+{
+"n": 8,
+"head": [],
+"close": null,
+"la": "Sed ad hæc audíta inardéscit ánimus, jamque illic cupit assístere, ubi sc sperat sine fine gaudére. Sed ad magna prǽmia perveníri non potest, nisi per magnos labóres. Unde et Paulus egrégius prædicátor dicit: Non coronábitur, nisi qui legítime certáverit. Deléctet ergo mentem magnitúdo præmiórum, sed non detérreat certámen labórum. Unde ad se veniéntibus Véritas dicit: Si quis venit ad me, et non odit patrem suum, et matrem, et uxórem, et fílios, et fratres, et soróres, adhuc autem et ánimam suam, non potest meus esse discípulus.",
+"src": "DO 0.96 C2.txt",
+"en": "Then we hear these things our hearts burn within us and we long to be already there, where we hope to rejoice for ever. But we cannot attain unto great rewards, save through great labour. Therefore saith the excellent preacher Paul: “He is not crowned, except he strive lawfully.” (2 Tim. ii. 5.) The greatness of the reward doth delight our mind let not the throes of the struggle dishearten us. Therefore the Truth saith unto every one that cometh unto Him “If any man come to Me, and hate not his father and mother, and wife, and children, and brethren, and sisters, yea, and his own life also, he cannot be My disciple.”",
+"score": 0.96
+}
+],
+"mart": [
+{
+"n": 6,
+"head": [],
+"close": null,
+"la": "enim quantum in ænígmate infírmitas humána óculum mentis in æternitáte fígere potest, quanta sint supérnæ civitátis gáudia: et ea enarráre non suffíciens admirándo clamábat Quid mihi est in cælo? Quasi díceret: Excédit vires meas, excédit facultátem eloquéntiæ meæ, transcéndit capacitátem intelligéntiæ meæ illud decus, illa glória, illa celsitúdo, qua nobis, a conturbatióne hóminum remótis, in abscóndito faciéi suæ Jesus Christus Dóminus noster reformábit corpus humilitátis nostræ, configurátum córpori claritátis suæ. Hujus perféctæ libertátis contemplatióne nullum vitábat perículum, nullum horrébat supplícium: et si mílies posset mori, non putábat se hanc digne posse áliqua ratióne promeréri. Iii. Nocturno. Léctio sancti Evangélii secúndum",
+"src": "DO 0.92 C2.txt",
+"en": "For he considered, as far as man's weakness is able, through this darkness, to fix the eyes of his mind upon the eternal things, what is the gladness of the city above and being not able to tell it, he cried out wondering “What have I in heaven?” As though he would have said “It passeth my strength, it passeth the power of my utterance, it goeth beyond the reach of my understanding, what is that beauty, what is that glory, what is that exaltation, wherein, when He hath hidden us from the troubling of men, in the secret of His presence, our Lord Jesus Christ shall change our vile body, that it may be fashioned like unto His glorious Body” (Ps. xxx. 21, Phil. iii. 21.) In sight of this perfect liberty he shrank from no danger, and quailed before no suffering and if he could have died a thousand times, he would not have thought himself to have bought it at a price high enough.",
+"score": 0.92
+},
+{
+"n": 7,
+"head": [
+"Cap. 12 ."
+],
+"close": null,
+"homily_head": "Homilía sancti Augustíni Epíscopi. (Tract. 51. in Joánnem.)",
+"gospel": "In illo témpore: Dixit Jesus discipulis suis: Amen, amen dico vobis, nisi granum Non Pontíficis. cadens in terram, mortuum fuerit, ipsum solum manet. Et réliqua.",
+"evangelist": null,
+"la": "Ipse Dóminus Jesus erat granum mortificándum et multiplicándum; mortificándum infidelitate Judæórum, multiplicándum fide populórum. Jam vero exhortans nos ad passiónis suæ sectanda vestígia, Qui amat, inquit, ánimam suam, perdet eam. Quod duobus modis intelligi potest. intélligi Qui amat, perdet; id est, si amas, perdes. Si cupis vitam tenére cum Christo, noli mortem timére pro Christo. Item alio modo: Qui amat ánimam suam, perdet eam; noli amare, ne perdas; noli amare in hac vita, ne perdas in æterna vita.",
+"src": "DO 0.91 02-01.txt",
+"score": 0.91
+},
+{
+"n": 8,
+"head": [],
+"close": null,
+"la": "Hoc autem, quod posterius dixi, magis habére vidétur habére evangélicus sensus; séquitur enim: Et qui odit ánimam suam in hoc mundo, in vitam ætérnam custódit eam. Ergo, quod supra dictum est, Qui amat, subintellígitur in hoc mundo, ipse útique perdet; qui eam odit, útique in hoc mundo, in vitam ætérnam ipse custódit eam. Magna et mira senténtia, quemádmodum sit hóminis in ánimam suam amor ut pereat, ódium ne pereat. Si male amáveris, tunc odísti; si bene óderis, tunc amásti.",
+"src": "DO 0.93 02-01.txt",
+"en": "What this second interpretation is the meaning of the Gospel, appeareth most probably from the words which follow And he that hateth his life in this world, shall keep it unto life eternal. From which we may suppose the sense of the first words to be He that loveth his life in this world shall lose it unto life eternal. This is a great and marvellous saying, showing how a man may so love life as to lose life, and so hate life as to keep life. If thou love it too well, then dost thou hate it if thou hate it with an holy hatred, then dost thou love it. Blessed are they that, lest they should so love it as to lose it, so hate it as to keep it.",
+"score": 0.93
+}
+],
+"mm": [
+{
+"n": 1,
+"head": [
+"Cap. a ."
+],
+"close": null,
+"la": "Exístimo enim quod non sunt condígnæ passiónes hujus témporis ad futúram glóriam, quæ revelábitur in nobis. Nam exspectátio creatúræ revelatiónem filiórum Dei exspéctat. Vanitáti enim creatúra subjécta est non volens, sed propter eum, qui subjécit eam in spe: quia et ipsa creatúra liberábitur a servitúte corruptiónis in libertátem glóriæ filiórum Dei.",
+"en": "For I reckon that the sufferings of this time are not worthy to be compared with the glory to come, that shall be revealed in us. For the expectation of the creature waiteth for the revelation of the sons of God. For the creature was made subject to vanity, not willingly, but by reason of him that made it subject, in hope: Because the creature also itself shall be delivered from the servitude of corruption, into the liberty of the glory of the children of God.",
+"ref": "Rom 8:18-21",
+"src": "vulgate 0.86",
+"score": 0.86
+},
+{
+"n": 2,
+"head": [],
+"close": null,
+"la": "Scimus enim quod omnis creatúra ingemíscit, et párturit usque adhuc. Non solum autem illa, sed et nos ipsi primítias spíritus habéntes: et ipsi intra nos gémimus adoptiónem filiórum Dei exspectántes, redemptiónem córporis nostri. Spe enim salvi facti sumus. Spes autem, quæ vidétur, non est spes: nam quod videt quis, quid sperat? Si autem quod non vidémus, sperámus: per patiéntiam exspectámus.",
+"en": "For we know that every creature groaneth and travaileth in pain, even till now. And not only it, but ourselves also, who have the firstfruits of the Spirit, even we ourselves groan within ourselves, waiting for the adoption of the sons of God, the redemption of our body. For we are saved by hope. But hope that is seen, is not hope. For what a man seeth, why doth he hope for? But if we hope for that which we see not, we wait for it with patience.",
+"ref": "Rom 8:22-25",
+"src": "vulgate 1.00",
+"score": 1.0
+}
+],
+"conf_pont": [
+{
+"n": 2,
+"head": [
+"Cap. l."
+],
+"close": null,
+"la": "A Portet epíscopum sine crímine esse, sicut Dei dispensatórem: non supérbum, non iracúndum, non Confessóris Pontíficis. vinoléntum, non percussórem, non turpis lucri cúpidum: sed hospitálem, benígnum, sóbrium, justum, sanctum, continéntem, amplecténtem eum, qui secúndum doctrínam est, fidélem sermónem: ut potens sit exhortári in doctrína sana, et eos, qui contradícunt, argúere.",
+"en": "To Titus my beloved son, according to the common faith, grace and peace from God the Father, and from Christ Jesus our Saviour. For a bishop must be without crime, as the steward of God: not proud, not subject to anger, not given to wine, no striker, not greedy of filthy lucre: But given to hospitality, gentle, sober, just, holy, continent: Embracing that faithful word which is according to doctrine, that he may be able to exhort in sound doctrine, and to convince the gainsayers.",
+"ref": "Ad Titum 1:4, 7-9",
+"src": "vulgate 0.94",
+"score": 0.94
+},
+{
+"n": 4,
+"head": [],
+"close": null,
+"la": "Ad sancti ac beatíssimi Patris nostri N., cujus hódie festa celebrámus, laudes addidísse áliquid, decerpsísse est; síquidem virtútem ejus grátia, non sermónibus exponénda est, sed opéribus comprobánda. Cum enim dicat Scriptúra: Glória patris est fílius sápiens; quantæ hujus sunt glóriæ, qui tantórum filiórum sapiéntia et devotióne lætátur? In Christo Confessóris Ponti enim Jesu per Evangélium ipse nos génuit.",
+"src": "DO 0.82 C4.txt",
+"en": "From the Sermons of St Maximus, Bishop [of Turin.] It is idle to strive to add anything to the praise of our holy and most blessed Father N. whose Feast is this day kept. The beauty of his life ought not to be the subject of panegyrics, so much as the object of imitation. The Scripture saith “A wise son is the glory of his father,” truly then will he be honoured by such as, by doing after his en sample, show themselves to be his children for in Christ Jesus hath he begotten us through the Gospel.(1 Cor. iv. 15.)",
+"score": 0.82
+}
+],
+"doct": [
+{
+"n": 1,
+"head": [
+"Cap. 14."
+],
+"close": null,
+"la": "Beátus vir, qui in sapiéntia morábitur, et qui in justítia sua meditábitur, et in sensu cogitábit circumspectiónem Dei. Qui excógitat vias illíus in corde suo, et in abscónditis suis intélligens, vadens Uníus illam quasi investigátor, et in viis illíus consístens: qui réspicit per fenéstras illíus, et in jánuis illíus áudiens: qui requiéscit juxta domum illíus, et in pariétibus illíus figens palum státuet cásulam suam ad manus illíus, et requiéscent in cásula illíus bona per ævum: státuet fílios suos sub tégmine illíus, et sub ramis ejus morábitur: protegétur sub tégmine illíus a fervóre, et in glória ejus requiéscet.",
+"en": "Blessed is the man that shall continue in wisdom, and that shall meditate in his justice, and in his mind shall think of the all seeing eye of God. He that considereth her ways in his heart, and hath understanding in her secrets, who goeth after her as one that traceth, and stayeth in her ways: He who looketh in at her windows, and hearkeneth at her door: He that lodgeth near her house, and fastening a pin in her walls shall set up his tent nigh unto her, where good things shall rest in his lodging for ever. He shall set his children under her shelter, and shall lodge under her branches: He shall be protected under her covering from the heat, and shall rest in her glory.",
+"ref": "Ecclesiasticus 14:22-27",
+"src": "vulgate 0.93",
+"score": 0.93
+},
+{
+"n": 2,
+"head": [
+"Cap. 24 ."
+],
+"close": null,
+"la": "Qui implet quasi Phison sapiéntiam, et sicut Tigris in diébus novórum. Qui adímplet quasi Euphrátes sensum: qui multíplicat quasi Jordánis in témpore messis. Qui mittit disciplínam sicut lucem, et assístens quasi Gehon in die vindémiæ. Qui pérficit primus scire ipsam, et infírmior non investigábit eam. A mari enim abundávit cogitátio ejus, et consílium illíus ab abýsso magna. Ego sapiéntia effúdi flúmina. Ego quasi trames aquæ imménsæ de flúvio, ego quasi flúvii dióryx, et sicut aquædúctus exívi paradíso:",
+"en": "Who filleth up wisdom as the Phison, and as the Tigris in the days of the new fruits. Who maketh understanding to abound as the Euphrates, who multiplieth it as the Jordan in the time of harvest. Who sendeth knowledge as the light, and riseth up as Gehon in the time of the vintage. Who first hath perfect knowledge of her, and a weaker shall not search her out. For her thoughts are more vast than the sea, and her counsels more deep than the great ocean. I, wisdom, have poured out rivers. I, like a brook out of a river of a mighty water; I, like a channel of a river. and like an aqueduct, came out of paradise.",
+"ref": "Ecclesiasticus 24:35-41",
+"src": "vulgate 0.97",
+"score": 0.97
+},
+{
+"n": 4,
+"head": [],
+"close": null,
+"la": "post Oríonas, Hýadum nómine, nisi Doctóres sanctæ Ecclésiæ designántur? Qui, subdúctis Martýribus, eo jam témpore ad mundi notítiam venérunt, quo fides clárius elúcet, et, représsa infidelitátis híeme, áltius per corda fidélium sol veritátis calet. Qui, remóta tempestáte persecutiónis, explétis longis nóctibus infidelitátis, tunc sanctæ Ecclésiæ orti sunt, cum ei jam per credulitátis vernum lucídior annus aperítur.",
+"src": "DO 0.92 C4a.txt",
+"score": 0.92
+},
+{
+"n": 5,
+"head": [],
+"close": null,
+"la": "a atec immérito Doctóres sancti Hýadum nuncupatióne signántur. Græco quippe elóquio hýetos plúvia vocátur, et Hýades nomen a plúviis accepérunt, quia ortæ procul dúbio imbres ferunt. Bene ergo Hýadum appellatióne expréssi sunt, qui, ad statum universális Ecclésiæ quasi in cæli fáciem dedúcti, super aréntem terram humáni péctoris, sanctæ prædicatiónis imbres fudérunt. Si enim prædicatiónis sermo plúvia non esset, Móyses mínime dixísset: Exspectétur sicut plúvia elóquium meum; et nequáquam per Isaíam Véritas díceret: Doctoris. dabo núbibus meis, ne pluant super eam imbrem; atque hoc, quod paulo ante protúlimus: Quam ob rem prohíbitæ sunt stellæ pluviárum.",
+"src": "DO 0.86 C4a.txt",
+"score": 0.86
+},
+{
+"n": 6,
+"head": [],
+"close": null,
+"la": "Dum ergo Hýades cum plúviis véniunt, ad cæli spátia altióra sol dúcitur: quia, apparénte Doctórum sciéntia, dum mens nostra imbre prædicatiónis infúnditur, fídei calor augétur. Et perfúsa terra ad fructum próficit, cum lumen ætheris ignéscit: quia ubérius frugem boni óperis réddimus, dum per sacræ eruditiónis flammam in corde clárius ardémus. Dumque per eos diébus síngulis magis magísque sciéntia cæléstis osténditur, quasi intérni nobis lúminis vernum tempus aperítur; ut novus sol nostris méntibus rútilet, et, eórum verbis nobis cógnitus, seípso quotídie clárior micet. Urgénte étenim mundi fine, supérna sciéntia próficit, et lárgius cum témpore excréscit. Iii. Nocturno. Léctio sancti Evangélii secúndum Matthǽum",
+"src": "DO 0.91 C4a.txt",
+"score": 0.91
+}
+],
+"conf": [
+{
+"n": 1,
+"head": [
+"Cap. 31."
+],
+"close": null,
+"la": "Beátus dives, qui invéntus est sine mácula: et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: qui pótuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ideo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum.",
+"en": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+"ref": "Ecclesiasticus 31:8-11",
+"src": "vulgate 0.89",
+"score": 0.89
+},
+{
+"n": 2,
+"head": [
+"Cap. 32."
+],
+"close": null,
+"la": "Qui timet Dóminum, excípiet doctrínam ejus: et qui vigiláverint ad illum, invénient benedictiónem. Qui quærit legem, replébitur ab ea: et qui insidióse agit, scandalizábitur in ea. Qui timent Dóminum, invénient judícium justum, et justítias quasi lumen accéndent. Qui credit Deo, atténdit mandátis: et qui confídit in illo, non minorábitur.",
+"en": "He that feareth the Lord, will receive his discipline: and they that will seek him early, shall find a blessing. He that seeketh the law, shall be filled with it: and he that dealeth deceitfully, shall meet with a stumblingblock therein. They that fear the Lord, shall find just judgment, and shall kindle justice as a light. He that believeth God, taketh heed to the commandments: and he that trusteth in him, shall fare never the worse.",
+"ref": "Ecclesiasticus 32:18-20, 28",
+"src": "vulgate 0.92",
+"score": 0.92
+},
+{
+"n": 4,
+"head": [],
+"close": null,
+"la": "Beáti N. dies, cujus festivitátem celebrámus, ad ipsíus recte factórum enarrationem línguam nostram evocavit. Síquidem hódie beátus iste ad tranquillam, omnísque perturbationis expertem vitam tránsiit: eóque navigium áppulit, ubi deínceps non póterit metuere naufragium, nec ullam Confessóris Nox Pontíficis. ánimi perturbationem, aut dolórem.",
+"src": "DO 0.82 C5.txt",
+"score": 0.82
+}
+],
+"abb": [
+{
+"n": 7,
+"head": [
+"Cap. 19."
+],
+"close": null,
+"la": "In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Et réliqua. Homilía sancti Hierónymi Presbýteri. in Mártii, cap. fidúcia! Petrus piscátor erat, dives non fúerat, cibos manu et arte quærébat: et tamen lóquitur confidénter: Relíquimus ómnia. Commune Uníus Et quia non súfficit tantum relínquere, jungit quod ctus est: Et secúti sumus te. Fécimus quod jussísti: quid ígitur nobis dabis prǽmii? Jesus autem dixit illis: Amen dico vobis, quod vos qui secúti estis me, in regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Ísraël.",
+"src": "DO 0.86 C1.txt",
+"score": 0.86
+},
+{
+"n": 8,
+"head": [],
+"close": null,
+"la": "Bene autem dícitur, quia misit eos ante fáciem suam in omnem civitátem locum, quo erat ipse ventúrus. Prædicatóres enim suos Dóminus séquitur: quia prædicátio prævenit, et tunc ad mentis nostræ habitáculum Dóminus venit, quando verba exhortatiónis præcúrrunt: atque per hæc véritas in mente suscípitur. Hinc namque eísdem prædicatóribus Isaías dicit: Paráte viam Dómini, rectas fácite sémitas Dei nostri.",
+"src": "DO 0.92 05-28.txt",
+"score": 0.92
+}
+],
+"virg_mart": [
+{
+"n": 1,
+"head": [
+"Cap. 51."
+],
+"close": null,
+"la": "Confitébor tibi Dómine rex, et collaudábo te Deum salvatórem meum. Confitébor nómini tuo: quóniam adjútor et protéctor factus es mihi, et liberásti corpus meum a perditióne, a láqueo linguæ iníquæ, et a lábiis operántium mendácium, et in conspéctu astántium factus es mihi adjútor. Vírginis Mártyris. Et liberásti me secúndum multitúdinem misericórdiæ nóminis tui a rugiéntibus, præparátis ad escam, de mánibus quæréntium ánimam meam, et de portis tribulatiónum quæ circumdedérunt me: a pressúra flammæ, quæ circúmdedit me, et in médio ignis non sum æstuátus: de altitúdine ventris ínferi, et a lingua coinquináta, et a verbo mendácii, a rege iníquo, et a lingua injústa:",
+"en": "A prayer of Jesus the son of Sirach. I will give glory to thee, O Lord, O King, and I will praise thee, O God my Saviour. I will give glory to thy name: for thou hast been a helper and protector to me. And hast preserved my body from destruction, from the snare of an unjust tongue, and from the lips of them that forge lies, and in the sight of them that stood by, thou hast been my helper. And thou hast delivered me, according to the multitude of the mercy of thy name, from them that did roar, prepared to devour. Out of the hands of them that sought my life, and from the gates of afflictions, which compassed me about: From the oppression of the flame which surrounded me, and in the midst of the fire I was not burnt. From the depth of the belly of hell, and from an unclean tongue, and from lying words, from an unjust king, and from a slanderous tongue:",
+"ref": "Ecclesiasticus 51:1-7",
+"src": "vulgate 0.86",
+"score": 0.86
+},
+{
+"n": 2,
+"head": [],
+"close": null,
+"la": "Laudábit usque ad mortem ánima mea Dóminum, et vita mea appropínquans erat in inférno deórsum. Circumdedérunt me úndique, et non erat qui adjuváret. Respíciens eram ad adjutórium hóminum, et non erat. Memorátus sum misericórdiæ tuæ Dómine, et operatiónis tuæ, quæ a sǽculo sunt: quóniam éruis sustinéntes te Dómine, et líberas eos de mánibus géntium.",
+"en": "My soul shall praise the Lord even to death. And my life was drawing near to hell beneath. They compassed me on every side, and there was no one that would help me. I looked for the succour of men, and there was none. I remembered thy mercy, O Lord, and thy works, which are from the beginning of the world. How thou deliverest them that wait for thee, O Lord, and savest them out of the hands of the nations.",
+"ref": "Ecclesiasticus 51:8-12",
+"src": "vulgate 0.89",
+"score": 0.89
+},
+{
+"n": 7,
+"head": [
+"Cap. 13 ."
+],
+"close": null,
+"homily_head": "Homilía sancti Gregórii Papæ.",
+"gospel": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile est regnum cælórum thesáuro abscóndito in agro. queri qui invénit homo, abscóndit, et præ gáudio illíus vadit, et vendit univérsa quæ habet, et emit agrum illum. et",
+"evangelist": null,
+"la": "In Evang.) regnum, fratres caríssimi, idcírco terrénis rebus símile dícitur, ut, ex his quæ ánimus novit, surgat ad incógnita, quæ non novit: quátenus exémplo visibílium se ad invisibília rápiat, et, per ea quæ usu dídicit quasi confricátus incaléscat; ut per hoc, quod scit notum dilígere, discat et incógnita amáre. Ecce enim cælórum regnum thesáuro abscóndito in agro comparátur; Qua in re hoc quoque notándum est, quod invéntus thesáurus abscónditur, ut servétur: quia stúdium cæléstis desidérii a malígnis spirítibus custodíre non súfficit, qui hoc ab humánis láudibus non abscóndit. In præsénti étenim vita, quasi in via sumus, qua ad pátriam pérgimus. Malígni autem spíritus iter nostrum quasi quidam latrúnculi óbsident.",
+"src": "DO 0.89 C7.txt",
+"score": 0.89
+}
+],
+"virg": [
+{
+"n": 1,
+"head": [
+"Cap. 7 ."
+],
+"close": null,
+"la": "De virgínibus autem præcéptum Dómini non hábeo: consílium autem do, tamquam misericórdiam consecútus a Dómino, ut sim fidélis. Exístimo ergo hoc bonum esse propter instántem necessitátem, quóniam bonum est hómini sic esse. Alligátus es uxóri? noli quǽrere solutiónem. Solútus es ab uxóre? noli quǽrere uxórem. Si autem accéperis uxórem, non peccásti. Et si núpserit virgo, non peccávit: tribulatiónem tamen carnis habébunt hujúsmodi.",
+"en": "Now concerning virgins, I have no commandment of the Lord; but I give counsel, as having obtained mercy of the Lord, to be faithful. I think therefore that this is good for the present necessity, that it is good for a man so to be. Art thou bound to a wife? seek not to be loosed. Art thou loosed from a wife? seek not a wife. But if thou take a wife, thou hast not sinned. And if a virgin marry, she hath not sinned: nevertheless, such shall have tribulation of the flesh. But I spare you.",
+"ref": "Ad Corinthios 1 7:25-28",
+"src": "vulgate 0.90",
+"score": 0.9
+},
+{
+"n": 2,
+"head": [],
+"close": null,
+"la": "Autem vobis parco. Hoc ítaque dico, fratres: Tempus breve est: réliquum est, ut et qui habent uxóres, tamquam non habéntes sint: et qui flent, tamquam non flentes: et qui gaudent, tamquam non gaudéntes: et qui emunt, tamquam non possidéntes: et qui utúntur hoc mundo, tamquam non utántur: prǽterit enim figúra hujus mundi.",
+"en": "But if thou take a wife, thou hast not sinned. And if a virgin marry, she hath not sinned: nevertheless, such shall have tribulation of the flesh. But I spare you. This therefore I say, brethren; the time is short; it remaineth, that they also who have wives, be as if they had none; And they that weep, as though they wept not; and they that rejoice, as if they rejoiced not; and they that buy, as though they possessed not; And they that use this world, as if they used it not: for the fashion of this world passeth away.",
+"ref": "Ad Corinthios 1 7:28-31",
+"src": "vulgate 0.91",
+"score": 0.91
+},
+{
+"n": 3,
+"head": [],
+"close": null,
+"la": "Volo autem vos sine sollicitúdine esse. Qui sine uxóre est, sollícitus est quæ Dómini sunt, quómodo pláceat Deo. Qui autem cum uxóre est, sollícitus est quæ sunt mundi, quómodo pláceat uxóri, et divísus est. Et múlier innúpta, et virgo, cógitat quæ Dómini sunt, ut sit sancta córpore, et spíritu. Quæ autem nupta est, cógitat quæ sunt mundi, quómodo pláceat viro.",
+"en": "But I would have you to be without solicitude. He that is without a wife, is solicitous for the things that belong to the Lord, how he may please God. But he that is with a wife, is solicitous for the things of the world, how he may please his wife: and he is divided. And the unmarried woman and the virgin thinketh on the things of the Lord, that she may be holy both in body and in spirit. But she that is married thinketh on the things of the world, how she may please her husband.",
+"ref": "Ad Corinthios 1 7:32-34",
+"src": "vulgate 0.92",
+"score": 0.92
+},
+{
+"n": 7,
+"head": [
+"Cap. 25."
+],
+"close": null,
+"homily_head": "Homilía sancti Gregórii Papæ. (Homilía 12. in Evang.)",
+"gospel": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Simile erit regnum cælórum decem virgínibus, quæ, accipiéntes lampades suas, exiérunt obviam sponso et sponsæ. Et réliqua.",
+"evangelist": null,
+"la": "vos, fratres caríssimi, admóneo prava ópera fúgere, mundi hujus inquinaménta devitáre, sed hodiérna sancti Evangélii lectióne compéllor dícere, ut, et bona, quæ ágitis, cum magna cautéla teneátis; ne per hoc, quod a vobis rectum géritur, favor aut grátia humána requirátur; ne Vírginis Non Mártyris. appetítus laudis subrépat, et, quod foris osténditur, intus a mercéde vacuétur.",
+"src": "DO 0.88 C6.txt",
+"score": 0.88
+},
+{
+"n": 8,
+"head": [],
+"close": null,
+"la": "Ecce enim Redemptóris voce decem vírgines, et omnes dicúntur vírgines, et tamen intra beatitúdinis jánuam non omnes sunt recéptæ; sunt quia eárum quædam, dum de virginitáte sua glóriam foris éxpetunt, in vasis suis óleum habére noluérunt. Sed sciéndum nobis est quod sæpe in sacro elóquio regnum cælórum præséntis témporis Ecclésia dícitur. quæ quia ex utróque sexu fidélium multitúdo collígitur, sancta Ecclésia decem virgínibus símilis esse denuntiátur. In qua quia mali cum bonis et réprobi cum eléctis commísti sunt, recte símilis virgínibus prudéntibus et fátuis esse perhibétur.",
+"src": "DO 0.94 C6.txt",
+"score": 0.94
+}
+],
+"mart_fem": [
+{
+"n": 7,
+"head": [
+"Cap. 13."
+],
+"close": null,
+"homily_head": "Homilía sancti Gregórii Papff. (Homil. ll. in Evang.)",
+"gospel": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile est regnum cælórum thesáuro abscóndito in qui invénit homo, abscóndit, et præ gáudio illíus vadit, et vendit univérsa quæ habet, et emit agrum illum. et",
+"evangelist": null,
+"la": "Cælórum regnum, fratres caríssimi, idcírco terrénis Commune Uníus rebus símile dícitur, ut, ex his quæ ánimus novit, surgat ad incógnita, quæ non novit: quátenus exémplo visibílium se ad invisibília rápiat, et, per ea quæ usu dídicit quasi confricátus incaléscat; ut per hoc, quod scit notum dilígere, discat et incógnita amáre. Ecce enim cælórum regnum thesáuro abscóndito in agro comparátur; Qua in re hoc quoque notándum est, quod invéntus thesáurus abscónditur, ut servétur: quia stúdium cæléstis desidérii a malígnis spirítibus custodíre non súfficit, qui hoc ab humánis láudibus non abscóndit. In præsénti étenim vita, quasi in via sumus, qua ad pátriam pérgimus. Malígni autem spíritus iter nostrum quasi quidam latrúnculi óbsident.",
+"src": "DO 0.92 C7.txt",
+"score": 0.92
+}
+],
+"nec": [
+{
+"n": 2,
+"head": [],
+"close": null,
+"la": "Gustávit, et vidit quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus. Manum suam misit ad fórtia, et dígiti ejus apprehendérunt fusum. Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem. Non timébit dómui suæ a frigóribus nivis: omnes enim doméstici ejus vestíti sunt duplícibus. Stragulátam vestem fecit sibi: byssus, et púrpura induméntum ejus. Nóbilis in portis vir ejus, quando séderit cum senatóribus terræ. Síndonem fecit, et véndidit, et cíngulum trádidit Chananǽo.",
+"en": "She hath tasted and seen that her traffic is good: her lamp shall not be put out in the night. She hath put out her hand to strong things, and her fingers have taken hold of the spindle. She hath opened her hand to the needy, and stretched out her hands to the poor. She shall not fear for her house in the cold of snow: for all her domestics are clothed with double garments. She hath made for herself clothing of tapestry: fine linen, and purple is her covering. Her husband is honourable in the gates, when he sitteth among the senators of the land. She made fine linen, and sold it, and delivered a girdle to the Chanaanite.",
+"ref": "Proverbia 31:18-24",
+"src": "vulgate 0.97",
+"score": 0.97
+},
+{
+"n": 4,
+"head": [],
+"close": null,
+"la": "Agrum hunc Ecclésiæ fértilem cerno, nunc integritátis flore vernántem, nunc viduitátis gravitáte polléntem, nunc étiam conjúgii frúctibus redundántem. Nam, etsi divérsi, uníus tamen agri fructus sunt; nec tanta hortórum lília, quantæ arístæ ségetum, méssium spicæ; compluriúmque spátia campórum recipiéndis aptántur semínibus, quam rédditis nováles frúctibus feriántur. Bona ergo vidúitas, quæ tóties apostólico judício prædicátur. Hæc enim magístra fídei, magístra est castitátis.",
+"src": "DO 0.92 C7.txt",
+"score": 0.92
+},
+{
+"n": 5,
+"head": [],
+"close": null,
+"la": "Unde et illi qui suórum adultéria et probra venerántur, cælibátus et viduitátis statuére pœnas; ut, ǽmuli críminum, mulctárent stúdia virtútum, spécie quidem qua fœcunditátem quǽrerent, sed stúdio quo propósitum castitátis abolérent. Vírginis Nec Mártyris. conféctis et miles stipéndiis arma depónit, et relícto offício quod gerébat, ad própria veteránus rura dimíttitur; ut et ipse exércitæ labóribus vitæ réquiem consequátur et álios spes futúræ quiétis subeúndis fáciat opéribus promptióres. Agrícola quoque matúrior torquéndam áliis stivam commíttit, et juveníli gravátus ópere, providéntiam curæ senílis explórat: vitem facílius tondére quam prémere, ut juvenescéntem luxúriam réprimat, et adolescéntem lascíviam falce succídat; parcórum quamdam pártuum castitátem docens étiam in vítibus expeténdam.",
+"src": "DO 0.84 C7.txt",
+"en": "Therefore they who worship adultery and uncleanness in their gods made celibacy and widowhood punishable. They who lusted after abominations, taxed self-control. The pretence was the desire of fruitfulness, but the aim was to abolish virginity, the resolution of chastity. When a soldier hath served his time he layeth down his arms, leaveth his trade, and retireth him to his own lands, that as well himself may rest after the toils of life, as that the hope of rest to come may make others the more ready to undergo work. So also the aged labourer leaveth it for others to guide the handle of the plough, and withdraweth from the weariness of his younger days' labour to essay the task of an old man's thoughtful supervision. It is easier to prune vines, than to stamp them out, to check the first wild outburst of their vigour, and to curtail the wantonness of their young growth, so teaching, even by the example of the vineyard, that chastity, which keepeth itself within the bearing of but a few children.",
+"score": 0.84
+},
+{
+"n": 7,
+"head": [
+"Cap. 13."
+],
+"close": null,
+"homily_head": "Homilía sancti Gregórii Papæ. (Homil. ll. in Evang.)",
+"gospel": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile est regnum cælórum thesáuro abscóndito in agro. Et réliqua.",
+"evangelist": null,
+"la": "Cælórum regnum, fratres caríssimi, idcírco terrénis rebus símile dícitur, ut, ex his quæ ánimus novit, surgat ad incógnita, quæ non novit: quátenus exémplo visibílium se ad invisibília rápiat, et, per ea quæ usu dídicit quasi confricátus incaléscat; ut per hoc, quod scit notum dilígere, discat et incógnita amáre. Ecce enim cælórum regnum thesáuro abscóndito in agro comparátur; quem, qui invénit homo, abscóndit, et præ gáudio illíus vadit, et vendit univérsa quæ habet, et emit agrum illum.",
+"src": "DO 0.94 C7.txt",
+"score": 0.94
+}
+]
+}
