@@ -345,6 +345,9 @@ body.sheet-open { overflow: hidden; }
 .hw-rite button span { display: block; font-family: var(--caps); letter-spacing: .08em; font-size: 16px; }
 .hw-rite button small { display: block; font-style: italic; font-size: 12px; }
 .hw-rite button.on { background: var(--ink); color: var(--paper); }
+.hw-rite button[hidden] { display: none; }
+.hw-rite:has(button[hidden]) { grid-template-columns: 1fr; }
+.hw-show59 { background: none; border: 0; color: var(--muted); font-size: 12px; font-style: italic; text-decoration: underline; padding: 4px 0; align-self: flex-start; cursor: pointer; }
 .hw-days { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--line); }
 .hw-days::-webkit-scrollbar { display: none; }
 @media (max-width: 600px) { .hw-days { -webkit-mask-image: linear-gradient(to right, #000 82%, transparent); mask-image: linear-gradient(to right, #000 82%, transparent); } }

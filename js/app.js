@@ -79,7 +79,7 @@
 
   // ---------------------------------------------------------------- state & URL
   // #<massKey>[&in=id,id&gr=id...]  (only parts the user changed are stored)
-  var state = {key: null, parts: null, edited: {}, date: null, season: 'auto', ord: '', credo: '', asp: '', ordo: '', hwr: '1959', edit: false};
+  var state = {key: null, parts: null, edited: {}, date: null, season: 'auto', ord: '', credo: '', asp: '', ordo: '', hwr: '1939', edit: false};
 
   var HWP = document.body && document.body.getAttribute('data-page') === 'hw';
   var BOOKP = document.body && document.body.getAttribute('data-page') === 'book';
@@ -108,7 +108,7 @@
     if (state.credo) bits.push('credo=' + state.credo);
     if (state.asp) bits.push('asp=' + state.asp);
     if (state.ordo) bits.push('ordo=' + state.ordo);
-    if (HWP || state.hwr !== '1959') bits.push('hw=' + state.hwr);
+    if (HWP || state.hwr !== '1939') bits.push('hw=' + state.hwr);
     history.replaceState(null, '', '#' + bits.join('&'));
   }
 
@@ -234,6 +234,15 @@
   }
 
   var KEEP_AL = {Epi2: 'of', C75s: 'in of co', S0806: 'co', CorpusChristi: 'in', C62s: 'in'};
+  // a Kyriale Ite with "vel Benedicamus" (Ite II, V, VI): keep only the half that is sung today
+  // Kyriale Ite II, V, VI carry their Benedicamus after the Ite (II and VI as "vel Benedicamus"): keep only the half sung today
+  function dismissGabc(body, ben) {
+    var m = /\(::z?\)\s*(?:<i>vel<\/i>\s*)?(B\{?e\}?\()/.exec(body);
+    if (!m) return body;
+    if (!ben) return body.slice(0, m.index) + '(::)';
+    var clef = (/\(([cf]b?[1-4])\)/.exec(body) || [, 'c4'])[1];
+    return '(' + clef + ') ' + body.slice(m.index + m[0].length - m[1].length).replace(/^B\{e\}/, 'Be').trim();
+  }
   function seasonalGabc(gabc, part) {
     var key = state.key || '', pasch = paschal(), lent = !pasch && currentSeason() === 'lent';
     gabc = etp(gabc, pasch);
@@ -684,7 +693,16 @@
     if (R.gloria) o.gl = part('Gloria');
     o.sa = part('Sanctus'); o.ag = part('Agnus');
     // Ite missa est when the Gloria is said (with two Alleluias in the Easter octave); otherwise Benedicamus Domino (XVI, 1)
-    if (R.dismiss === 'ben') o.it = part('Benedicamus') || find('Benedicamus VIII');
+    // Missale O.P. 1939, Appendix pp. 33-34 (Toni Ite, Missa est, etc.): the Benedicamus of Advent and Septuagesima-Lent
+    // Sundays, the Vigil of Christmas and the Holy Innocents is the tone of Totis Duplicibus (Ite II); Saturdays of Our Lady
+    // in Septuagesima, that of Ite V; semidoubles and simples in Septuagesima and votive Masses, that of Ite VI; ferias,
+    // vigils, Ember days and feasts of three lessons, Benedicamus VIII (in profestis diebus)
+    if (R.dismiss === 'ben') {
+      var sec = (D.sections.filter(function (s) { return s.items.indexOf(state.key) >= 0; })[0] || {}).id, tempo = isTemporal(state.key);
+      var bn = (tempo && d && d.getDay() === 0) || state.key === 'Dec24' || /Innocent/.test(titleText(state.key)) ? 'Ite II' :
+        state.key === 'C79s' ? 'Ite V' : (sec === 'votivae' || (!tempo && !isVigil(state.key))) ? 'Ite VI' : null;
+      o.it = (bn && find(bn)) || find('Benedicamus VIII');
+    }
     else o.it = (easterOctave(d) || state.key === 'Quad6s') ? find('Ite IV') : (part('Ite') || find('Ite I'));
     // a Credo chosen under Options is sung even on a day whose rubrics do not require it
     if ((R.credo && state.credo !== 'none') || (state.credo && state.credo !== 'none')) o.cr = find('Credo ' + (state.credo || 'I'));
@@ -1142,7 +1160,7 @@
   function drawOrdinary(k, id) {
     var slot = el('section', {class: 'part', 'data-part': k, id: k === 'ky' || k === 'as' ? 'ordinary' : null});
     var box = el('div', {class: 'chant'}), nm = D.chants[id] ? D.chants[id].i : '';
-    var label = k === 'it' && /^Benedicamus/.test(nm) ? 'Benedicamus Domino' : k === 'it' && /^Requiescant/.test(nm) ? 'Requiescant in pace' : ORD_LABEL[k];
+    var label = k === 'it' && (/^Benedicamus/.test(nm) || rubricsOf(state.key, state.date).dismiss === 'ben') ? 'Benedicamus Domino' : k === 'it' && /^Requiescant/.test(nm) ? 'Requiescant in pace' : ORD_LABEL[k];
     slot.appendChild(el('div', {class: 'part-head hide-print'}, [el('h2', {text: label}), el('span', {class: 'incipit', text: D.chants[id] ? clean(D.chants[id].i) : ''})]));
     slot.appendChild(el('h2', {class: 'print-only', text: label + (D.chants[id] ? ' · ' + clean(D.chants[id].i).replace(/^(Kyrie|Gloria|Credo|Sanctus|Agnus|Ite|Benedicamus)\s*/, '') : '')}));
     slot.appendChild(box);
@@ -1151,7 +1169,7 @@
     if (k === 'ky' && id === findKyriale('Kyrie IV') && state.ord !== 'IV')
       slot.appendChild(el('p', {class: 'hint rubric', text: 'In Paschaltide the Easter Kyrie is sung on Sundays and on feasts of the I and II class.'}));
     box.appendChild(el('p', {class: 'loading', text: 'Loading…'}));
-    loadGabc(id).then(function (t) { var g = splitGabc(t); renderInto(box, g.body, g.header, null); }, function (e) { showError(box, e); });
+    loadGabc(id).then(function (t) { var g = splitGabc(t); renderInto(box, k === 'it' ? dismissGabc(g.body, rubricsOf(state.key, state.date).dismiss === 'ben') : g.body, g.header, null); }, function (e) { showError(box, e); });
     return slot;
   }
 
@@ -1567,7 +1585,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {D: D, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
+  window.ProprOP = {D: D, dismissGabc: dismissGabc, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
 
   function start() {
     if (!document.getElementById('selMass')) return;   // loaded as a library (e.g. by the Office page)
@@ -1615,6 +1633,10 @@
       var today = new Date(); today.setHours(0, 0, 0, 0);
       var Ey = easter(today.getFullYear()); if (diffDays(today, Ey) > 0) Ey = easter(today.getFullYear() + 1);
       var dayOf = function (k) { return addDays(Ey, KEYS.indexOf(k) - 7); };
+      // the 1959 reform is post-1955: kept for reference, hidden unless asked for (Joseph, 26 Nov 2026)
+      var b59 = document.querySelector('#hwRite [data-r="1959"]'), show59 = $('#hwShow59');
+      if (state.hwr === '1959' && b59) b59.hidden = false;
+      if (show59) show59.addEventListener('click', function () { if (b59) b59.hidden = !b59.hidden; if (b59 && b59.hidden && state.hwr === '1959') { state.hwr = '1939'; try { localStorage.setItem('hwRite', '1939'); } catch (er) {} drawMass(); writeHash(); mark(); } });
       var mark = function () {
         Array.prototype.forEach.call(document.querySelectorAll('#hwDays button'), function (b) { var on = b.getAttribute('data-k') === state.key; b.classList.toggle('on', on); b.setAttribute('aria-current', on ? 'page' : 'false'); });
         Array.prototype.forEach.call(document.querySelectorAll('#hwRite button'), function (b) { var on = b.getAttribute('data-r') === state.hwr; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); });
@@ -1632,7 +1654,7 @@
     var h = readHash();
     if (BOOKP) {
       var ob = (h && h.opts) || {};
-      state.season = ob.season || 'auto'; state.ord = ob.ord || ''; state.credo = ob.credo || ''; state.asp = ob.asp || ''; state.ordo = ob.ordo || ''; state.hwr = ob.hw === '1939' ? '1939' : '1959';
+      state.season = ob.season || 'auto'; state.ord = ob.ord || ''; state.credo = ob.credo || ''; state.asp = ob.asp || ''; state.ordo = ob.ordo || ''; state.hwr = ob.hw === '1959' ? '1959' : '1939';
       var bd = ob.d ? fromIso(ob.d) : new Date(); bd.setHours(0, 0, 0, 0);
       if (h && D.masses[h.key]) state.key = h.key;
       onDate(bd, !!(h && D.masses[h.key]));
@@ -1642,7 +1664,7 @@
     }
     if (h && D.masses[h.key]) {
       var o = h.opts;
-      state.season = o.season || 'auto'; state.ord = o.ord || ''; state.credo = o.credo || ''; state.asp = o.asp || ''; state.ordo = o.ordo || ''; state.hwr = o.hw === '1939' ? '1939' : '1959';
+      state.season = o.season || 'auto'; state.ord = o.ord || ''; state.credo = o.credo || ''; state.asp = o.asp || ''; state.ordo = o.ordo || ''; state.hwr = o.hw === '1959' ? '1959' : '1939';
       $('#selSeason').value = state.season; $('#selOrd').value = state.ord; $('#selCredo').value = state.credo; $('#selAsp').value = state.asp; $('#selOrdo').value = state.ordo;
       state.key = h.key;
       onDate(o.d ? fromIso(o.d) : new Date(), true);

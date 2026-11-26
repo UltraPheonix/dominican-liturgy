@@ -277,12 +277,12 @@
       }
       if (it.t === 'ord') {
         var oid = ORD[it.k]; if (!oid) return;
-        var h = heading(ORD_LA[it.k], ordSub(oid)); h.toc = tocEntry(ordName(oid), h);
+        var h = heading(it.k === 'it' && R.dismiss === 'ben' ? 'Benedicamus Domino' : ORD_LA[it.k], ordSub(oid)); h.toc = tocEntry(ordName(oid), h);
         if (it.k === 'gl') rubric('The celebrant intones Glória in excélsis Deo, the choir continues at Et in terra pax.');
         if (it.k === 'cr') { art('init_prophet', {size: 'small'}); rubric('The celebrant intones Credo in unum Deum, the choir continues at Patrem omnipoténtem.'); }
         if (it.k === 'sa') art('sano_virgin_arch');
-        if (it.k === 'it') rubric(/Benedicamus/.test(ordName(oid)) ? 'The deacon sings Benedicámus Dómino, the choir answers Deo grátias.' : 'The deacon sings Ite, missa est, the choir answers Deo grátias.');
-        chant(oid, {part: null, noDrop: it.k === 'it' || it.k === 'gl' || it.k === 'cr' ? false : false});
+        if (it.k === 'it') rubric(R.dismiss === 'ben' ? 'The deacon sings Benedicámus Dómino, the choir answers Deo grátias.' : R.dismiss === 'req' ? 'The deacon sings Requiéscant in pace, the choir answers Amen.' : 'The deacon sings Ite, missa est, the choir answers Deo grátias.');
+        chant(oid, {part: null, noDrop: false, fix: it.k === 'it' && A.dismissGabc ? function (b) { return A.dismissGabc(b, R.dismiss === 'ben'); } : null});
         return;
       }
       if (it.t === 'ordo' && it.k === 'collect') {
@@ -412,9 +412,9 @@
           return;
         }
         if (it.k === 'it') {
-          heading(ordName(oid).replace(/\s+[IVX]+.*$/, ''), null);
+          heading(R.dismiss === 'ben' ? 'Benedicamus Domino' : ordName(oid).replace(/\s+[IVX]+.*$/, ''), null);
           rubric('The deacon sings (at a Sung Mass the priest):', {left: true});
-          chant(oid, {noDrop: true, glyph: 1 / 19, size: 14});
+          chant(oid, {noDrop: true, glyph: 1 / 19, size: 14, fix: function (b) { return A.dismissGabc ? A.dismissGabc(b, R.dismiss === 'ben') : b; }});
         }
         return;
       }
@@ -581,7 +581,11 @@
       }
       if (it.t === 'ord') {
         var low = ordoLines(it.k + 'Low');
-        if (it.k === 'it') return;
+        if (it.k === 'it') {
+          var dw = window.ORDINARY && ORDINARY[R.requiem ? 'req' : R.dismiss === 'ben' ? 'ben' : ORD.it && /Ite IV/.test(ordName(ORD.it)) ? 'itePasch' : 'ite'];
+          if (dw) { heading(dw.la_name, null); pair(dw.la, dw.en); }
+          return;
+        }
         if (!low) return;
         var name = {ky: 'Kyrie', gl: 'Gloria', cr: 'Credo', sa: 'Sanctus', ag: 'Agnus Dei'}[it.k];
         heading(name, null);
