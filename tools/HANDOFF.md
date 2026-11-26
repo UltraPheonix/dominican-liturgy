@@ -416,3 +416,29 @@ NEXT: (1) Commune Sanctorum (find in v1/v2 after the Sanctorale) → full feast 
   build yet: too noisy (II Vespers often merged into None — heading 'Ad ii. Vesperas' case; Lauds antiphon lists missed; several
   Commons empty because the OCR heading regex missed them). Fix the parser (or transcribe each Common's psalm/antiphon scheme from
   the page images — ~110 pages) before rendering feast Offices from it.
+### 1909 — Commons by hand: START HERE NEXT (paused 2026-11-26 10:00, sw propria-v87 unchanged)
+Joseph chose (2026-11-26): automatic parse where it works, hand transcription where it fails; after the Commons → Holy Week + Triduum
+line by line from the scans (then Christmas–Epiphany, then exact precedence).
+- commune.py's automatic parse proved unreliable (responsories, Lauds antiphons, verses) → DROPPED for the office parts.
+  NEW: tools/b09/commons1909.py = hand-transcribed dict C[common] (format in its docstring; 'base' = "Omnia ut in Communi …",
+  'v1'/'cap'='v1' = same chapter as I Vespers). DONE: apost, evang, mart_pont, mart. TODO in this order: conf_pont, doct, conf, abb,
+  virg_mart, virg, mart_fem, nec, mm, bvm, ded, then the Paschaltide forms apost_tp, mart_tp, mm_tp, conf_tp, virg_tp.
+- Reading aid: `python3 tools/b09/slim_common.py <name>` prints a Common's OCR with psalm texts and lesson bodies cut (responsories
+  kept). Uncertain readings → check the page image (v1 pdf pages listed above; render with pymupdf at 100 dpi).
+- II Vespers psalms found: apost 109 112 115 125 138; mart_pont 109 111 112 115 125; mm 109 112 115 125 139; conf_pont 109 111 112
+  115(?) 125 — verify conf_pont and ded (ded list garbled) from the text.
+- Matins lessons of the Commons: still from matins.parse_day (works where lessons are clean); responsories are typed in commons1909.
+- Rubricae generales learned (v1 pdf 40–70, §XIII–XVI): 3 Lessons = I Vesp. ferial psalms+ants, feast from Chapter; Matins invit,
+  hymn, 9 psalms under ONE antiphon (the Common's 'tl' ant), 3 lessons, 3 resp. of the Common by feria order (Virgins: last three),
+  no Te Deum; Lauds only 1st ant; BVM Office said. Simplex = 9 lessons, 3 nocturns, Te Deum (not Sept–Palm Sun.), 5 Lauds ants,
+  preces at Prime/Compl., II Vesp. Common's psalms under 1st Lauds ant; BVM Office. Duplex = I Vesp. one proper ant over the
+  FERIAL psalms + Responsory after the Chapter (with Glória, even in Passiontide); no preces, no BVM Office; Te Deum always.
+  Totum Duplex = I Vesp. psalms Laudate pueri set (except Passion/5 Wounds/Compassion, Holy Sat., Vig. Pent.), one ant (Christmas
+  Eve 5), resp.; ant doubled at Bened/Magn; no Quicumque on Sunday (except Trinity); short resp. of the Hours with double Alleluia
+  (form: 'R1 R2, * Allelúja, allelúja. R1. ℣ V. Allelúja. Glória. R1.') except Sept–Easter (also within Solemn octaves);
+  II Vesp. 1st Lauds ant. Little Hours on feasts: Lauds ants 1,2,3,5 at Prime, Terce, Sext, None.
+- build.py next: resp_text() must accept the 5-tuple resp (own repetitions); feast_hours(d, common, proper) built from C + the
+  feast's proper parts (offices1909 S: entries) + its prayer; map calendar titles to Commons (Apostoli→apost, Evang.→evang, single
+  Mart.+Ep./Papæ→mart_pont, Mart.→mart, MM.→mm, Ep./Papæ Conf.→conf_pont, Doct.→doct, Conf.→conf, Abb.→abb, Virg. et Mart.→
+  virg_mart, Virg.→virg, Mart. (woman)→mart_fem, Vid./others→nec, B.M.V.→bvm, Dedicatio→ded; _tp forms in Paschaltide).
+  Test: St Andrew 2026-11-30 (Totum Duplex? check calendar) with /tmp/pg/t1909.py-style headless run; bump sw, commit, push.
