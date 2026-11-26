@@ -464,3 +464,18 @@ Known gaps in that work, to fix before it goes live again:
 - Unclear whether St Andrew's vigil prayer (Nov 30) was right.
 Not started and not committed: the UI clean-up (17 small fixes proposed to Joe on 2026-11-26, then dropped), the Mass prayers
 from the 1933 Missal (need the page images), and the Options Mass list being blank on the last Sunday after Trinity.
+
+## AUDIT 2026-11-26 12:45 (live = sw propria-v89; archive = archive/1909-commons-2026-11-26.json) — EXACT TODO
+Archive checked: its patches on ccd3989 reproduce f5aaba3 exactly.
+Errors found (audit scripts: /tmp/audit.py-style, rebuild in tools/b09/audit1909.py when touched):
+- LIVE: wrong saint's prayer on ~29/115 days (san_oratio matched by date grabs a neighbour): Nov 20 Felix → Presentation; Dec 2 Bl. John
+  of Vercelli → St Catherine; Jan 19 Bl. Andrew of Peschiera → Fabian & Sebastian; Jul 21 Jerome Emiliani → Praxedes; Jul 24 Camillus →
+  St James; Aug 8 Bl. Augustine of Lucera → Cyriacus; Nov 30 St Andrew → vigil prayer.
+- LIVE: run-on prayers swallowing the next Office's OCR: 11-20, 03-20, 04-05, 05-28, 10-24 (both years).
+- LIVE: OCR garbage: 566 Hours on 371 days >4% unknown words (e.g. Nov 16 'luriam', Apr 17 'pcenifentiae').
+- Placeholders 'in preparation' on 406/426 days (expected).
+- ARCHIVE also: 'N.' for the saint's name ×1220 on 243 days; proper Offices (Dec 8…) use the Common; proper responsories lost (St Andrew);
+  virg_mart_tp / nec_tp / mart_fem_tp have 7 responsories (check); 24 doubtful readings unchecked.
+TODO: 1 fix san_oratio (match by name, cut at next heading; Andrew feast vs vigil) → 2 clean prayers vs DO SanctiOP/Sancti, scans for the
+rest → 3 test, bump, push → 4 branch: re-apply archive, fix N./proper Offices/proper resp/TP resp/24 readings/lessons → 5 live when clean
+→ 6 Holy Week+Triduum line by line, Christmas–Epiphany, precedence, chant.
