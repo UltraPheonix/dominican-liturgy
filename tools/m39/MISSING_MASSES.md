@@ -1,35 +1,13 @@
 # 1939 calendar vs site Masses (tools/m39/k_build.py, 390 entries)
 
-## Feasts of the 1939 calendar with no site Mass (27)
+## Feasts of the 1939 calendar with no site Mass (5)
 These need their Mass from the Missale O.P. 1939 (own Mass or Common + proper orations).
 
-- 0118 Cathedra Romana S. Petri — Totum Duplex
-- 0203 S. Blasii Ep. et Mart. — Tres Lectiones
 - 0204 Anniversarium Patrum et Matrum — Novem Lectiones
-- 0312 S. Gregorii Magni Papæ, Conf. et Eccl. Doct. — Duplex
-- 0318 S. Cyrilli Ep. Hierosolymitani Conf. et Eccl. Doct. — Duplex
-- 0503 Inventio S. Crucis — Totum Duplex II classis
-- 0506 S. Joannis ante Portam Latinam — Totum Duplex
-- 0508 Apparitio S. Michaelis Arch. — Totum Duplex
-- 0513 B. Imeldæ Virg. O. P. — Duplex
-- 0516 S. Joannis Nepomuceni Mart. — Duplex
-- 0522 S. Servatii Ep. et Conf. — Duplex
-- 0525 S. Urbani I Papæ et Mart. — Tres Lectiones
 - 0609 BB. Dianæ, Cæciliæ et Amatæ Virginum O. P. — Semiduplex
-- 0615 SS. Viti, Modesti et Crescentiæ MM. — Tres Lectiones
 - 0712 Anniversarium sepultorum in Cœmeteriis nostris — Novem Lectiones
-- 0801 S. Petri Ap. ad Vincula — Totum Duplex
-- 0813 SS. Hippolyti et Soc. MM. — Tres Lectiones
 - 0905 Anniversarium Familiarum et Benefactorum O. N. — Novem Lectiones
-- 0910 S. Nicolai a Tolentino Conf. — Duplex
-- 0917 Impressio sacrorum Stigmatum S. Francisci Conf. — Duplex
-- 0922 SS. Mauritii et Sociorum MM. — Tres Lectiones
 - 0925 Commemoratio S. P. N. Dominici in Suriano — Totum Duplex
-- 1009 SS. Dionysii Ep. et Sociorum MM. — Duplex
-- 1031 Commemoratio Sanctorum, quorum Reliquiæ in Ecclesiis nostris asservantur — Totum Duplex
-- 1210 Pro Italia et insulis adjac.: Translatio almæ domus Lauretanæ — Totum Duplex
-- 1229 S. Thomæ Ep. et Mart. — Duplex
-- 1231 S. Silvestri I Papæ et Conf. — Duplex
 
 ## Site Masses with a date that are not in the 1939 calendar (29)
 

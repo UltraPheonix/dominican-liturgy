@@ -27,16 +27,64 @@ for v in VIRT.values():
     v['readings'] = D['masses'][v['readings_from']]['readings']
     for p in v['parts'].values():
         for x in p: assert str(x['id']) in D['chants'], x
+import sqlite3
+GB = sqlite3.connect('tools/gregobase/gb.sqlite').cursor()
+PARTN = {'in': 'Introitus', 'gr': 'Graduale', 'al': 'Alleluia', 'tr': 'Tractus', 'of': 'Offertorium', 'co': 'Communio', 'se': 'Sequentia'}
+def addchant(i):
+    """a Graduale O.P. chant the site does not list yet: gabc file + chants entry from the GregoBase dump"""
+    if str(i) in D['chants']: return
+    r = GB.execute('select c.incipit,c."office-part",c.mode,c.gabc,c.transcriber,s.page from gregobase_chants c join gregobase_chant_sources s on s.chant_id=c.id where c.id=? and s.source=14', (i,)).fetchone()
+    if not r: raise SystemExit('chant %s: not in the Graduale O.P. dump' % i)
+    inc, p, mode, g, tr, pg = r; g = json.loads(g)
+    open('gabc/%s.gabc' % i, 'w').write('name:%s;\noffice-part:%s;\nmode:%s;\nbook:Graduale O.P. (Suarez), 1950, p. %s;\ntranscriber:%s;\n%%%%\n%s\n' % (inc, PARTN.get(p, p), mode or '', pg, tr or '', g))
+    D['chants'][str(i)] = {'p': p, 'i': inc, 'pg': pg}
+BIB = {}
+def verses(lang, book, ranges):
+    if (lang, book) not in BIB:
+        V = {}
+        for l in open('bible/%s/%s.txt' % (lang, book), encoding='utf-8'):
+            a = l.rstrip('\n').split('\t')
+            if len(a) >= 3: V[(int(a[0]), int(a[1]))] = ' '.join(a[2:])
+        BIB[(lang, book)] = V
+    V = BIB[(lang, book)]
+    return ' '.join(V[(c, v)] for c, a, b in ranges for v in range(a, b + 1))
+REFS = {}
+for _k, _v in RD.items():
+    for _r in _v: REFS.setdefault(_r['ref'], _r)
+TITLES = {}
+for _r in REFS.values(): TITLES.setdefault((_r['type'], re.sub(r'\s[\d:, -]+$', '', _r['ref'])), (_r['title'], _r['title_en']))
+def reading(typ, ref, ranges=None, pre_la='', pre_en=''):
+    """the same pericope already on the site (Missale O.P. 1933 text), else the Vulgate/Douay verses with the Missal's opening"""
+    if ranges is None:
+        r = REFS.get(ref)
+        if not r: raise SystemExit('no text on the site for ' + ref)
+        return dict(copy.deepcopy(r), type=typ)
+    la = verses('la', ref, ranges); en = verses('en', ref, ranges)
+    if pre_la: la = pre_la + ': ' + la[0].upper() + la[1:]; en = pre_en + ': ' + en
+    la = re.sub(r'[,;:]\s*$', '.', la.strip())
+    rf = ref + ' ' + ', '.join('%d: %d-%d' % (c, a, b) for c, a, b in ranges)
+    t = TITLES.get((typ, ref)) or TITLES.get(('Lesson' if typ == 'Epistle' else 'Epistle', ref)) or ('', '')
+    return {'type': typ, 'ref': rf, 'title': t[0], 'title_en': t[1], 'la': la, 'en': en, 'p33': None, 'src': 'Vulgate verses (Missale O.P. 1939 pericope)'}
 def order(k):   # the site's lists run from November
     m = D['masses'][k]; return ((m['month'] - 10) % 12, m['day']) if m.get('month') is not None else (99, 0)
 n = 0; fix = {}
 for x in SPEC:
-    k = x['key']; c = VIRT[x['common']] if x['common'] in VIRT else D['masses'][x['common']]
+    k = x['key']
+    if 'parts' in x:   # a Mass printed in full in the Missal: its own chants (ids checked in the gabc folder / GregoBase dump)
+        c = {'title': x['title'], 'parts': {q: [{'id': i, 'm39': True} for i in l] for q, l in x['parts'].items()},
+             'season': {s_: {q: [{'id': i, 'm39': True} for i in l] for q, l in v.items()} for s_, v in x.get('season', {}).items()},
+             'readings': [], 'req': [q for q in ('in', 'gr', 'al', 'tr', 'of', 'co') if q in x['parts']], 'jgabc': None}
+        for q in c['parts'].values():
+            for y in q: addchant(y['id'])
+        for v in c['season'].values():
+            for q in v.values():
+                for y in q: addchant(y['id'])
+    else: c = VIRT[x['common']] if x['common'] in VIRT else D['masses'][x['common']]
     if k in D['masses'] and not D['masses'][k].get('m39new'): raise SystemExit('key already used by another Mass: ' + k)
     mo, dd = int(x['d'][:2]) - 1, int(x['d'][2:])
     m = {'title': x['title'], 'en': '%s %d — %s' % (MEN[mo], dd, x['title'].split(' — ', 1)[1]), 'rank': x['rank'], 'op': x['op'],
          'page': OR[k]['p'] if k in OR else x.get('page', ''), 'conf': 'missal',
-         'note': x.get('note') or 'Missale O.P. (1939), p. %s: Mass from the %s, with proper orations.' % (OR.get(k, {}).get('p', '?'), c['title']),
+         'note': (x.get('note') + ' ' if x.get('note') and 'parts' in x else '') + ('Missale O.P. (1939), p. %s: proper Mass.' % OR.get(k, {}).get('p', '?') if 'parts' in x else '') if 'parts' in x else x.get('note') or 'Missale O.P. (1939), p. %s: Mass from the %s, with proper orations.' % (OR.get(k, {}).get('p', '?'), c['title']),
          'parts': copy.deepcopy(c['parts']), 'season': copy.deepcopy(c.get('season', {})), 'extras': [], 'month': mo, 'day': dd,
          'readings': copy.deepcopy(c['readings']), 'req': list(c['req']), 'jgabc': c.get('jgabc'), 'name_en': x['name_en'], 'color': x['color'], 'm39new': True}
     if 'pasch' in x:   # Tempore Paschali the Introit, Offertory and Communion (and Alleluias) of another Common
@@ -45,7 +93,11 @@ for x in SPEC:
         m['season']['pasch']['al'] = copy.deepcopy(pc.get('season', {}).get('pasch', {}).get('al', pc['parts'].get('al', [])))
         if 'asc' in pc.get('season', {}): m['season']['asc'] = copy.deepcopy(pc['season']['asc'])
         m['note'] += ' Tempore Paschali: Introit, Offertory, Communion and Alleluias of the %s.' % pc['title']
-    rd = copy.deepcopy(RD.get(c.get('readings_from', x['common']), []))
+    rd = copy.deepcopy(RD.get(c.get('readings_from', x.get('common')), []))
+    if 'readings' in x:   # the Missal's own lessons: the text of the same pericope elsewhere on the site, or the Vulgate verses
+        rd = [reading(*r) for r in x['readings']]
+        m['readings'] = [{'type': r['type'], 'ref': r['ref'], 'm39': True} for r in rd]
+    if 'pref' in x: m['pref'] = x['pref']
     if 'gospel' in x:
         src, ref = x['gospel']
         g = next(r for r in RD[src] if r['ref'] == ref)
