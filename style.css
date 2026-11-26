@@ -558,3 +558,5 @@ html[data-theme="dark"] .jump a.on, html[data-theme="dark"] .hours .sbtn.on, htm
 .rx-ai { margin: 0 0 4px; font-size: 13px; color: var(--muted); font-style: italic; }
 .ro-ai { flex-basis: 100%; margin: 0; font-size: 13px; color: var(--muted); font-style: italic; grid-column: 1 / -1; }
 .ro-ai[hidden] { display: none; }
+.pr .pr-srcline { margin: -4px 0 10px; font-size: 13px; color: var(--muted); font-style: italic; }
+.pr .pr-srcline.ai { color: var(--rubric); opacity: .85; }

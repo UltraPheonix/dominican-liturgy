@@ -3,6 +3,7 @@ Usage: python3 tools/prayers/build_prayers.py"""
 import html, os, sys
 H = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, H)
 from prayers_data import PARTS
+from prayers_published import SOURCES, PUB
 ROOT = os.path.join(H, '..', '..')
 E = html.escape
 import re
@@ -21,6 +22,13 @@ for pid, la, en, rub, items in PARTS:
         sub.append('<li><a href="#%s">%s <span class="pr-toc-en">%s</span></a></li>' % (iid, E(hla), E(hen)))
         s = ['<section class="pr-sec" id="%s"><h3>%s<span class="pr-h-en">%s</span></h3>' % (iid, E(hla), E(hen))]
         if r: s.append('<div class="pr-pair pr-rub"><p lang="la">%s</p><p class="pr-en" lang="en">%s</p></div>' % (E(r[0]), E(r[1])))
+        pub = PUB.get(hla)
+        if pub:
+            assert len(pub[1]) == len(paras), hla
+            paras = [(a, b) for (a, _), b in zip(paras, pub[1])]
+            s.append('<p class="pr-srcline">English: %s.</p>' % E(SOURCES[pub[0]]))
+        else:
+            s.append('<p class="pr-srcline ai">English: AI translation (Claude), not yet checked by a human translator.</p>')
         verse = any('\n' in a for a, b in paras)
         for a, b in paras:
             s.append('<div class="pr-pair%s"><p class="pr-la" lang="la">%s</p><p class="pr-en" lang="en">%s</p></div>' % (' pr-verse' if verse else '', txt(a), txt(b)))
@@ -51,8 +59,8 @@ page = '''<!DOCTYPE html>
   <main class="prose">
     <h1>Orationes Sacerdotis</h1>
     <p class="pr-src">The prayers of the priest from the <i>Missale juxta ritum Sacri Ordinis Praedicatorum</i> (Rome, 1939), pp. 57&ndash;64:
-      at the washing of the hands and the vesting, and before and after Mass, with an English translation.</p>
-    <p class="ai-note"><b>The English is an AI translation</b> (made with Claude) and has not yet been checked by a human translator. The Latin is the text of the Missal; where the two differ, follow the Latin.
+      at the washing of the hands and the vesting, and before and after Mass, with English translations.</p>
+    <p class="ai-note">Where a published English translation exists it is given, with its source; words in [square brackets] are ours, supplying what a version made for the laity leaves out. The rest is <b>AI translation</b> (made with Claude), marked as such and not yet checked by a human translator. The Latin is the text of the Missal; where the two differ, follow the Latin.
       The rubrics of the vesting are in the <a href="rubrics.html#praeparatio">Rubrics</a>.</p>
     <ol class="pr-toc">%s</ol>
     %s
