@@ -50,7 +50,7 @@ DONE 2026-11-26 sw v90: A1 (first prayer after the heading; 'Oratio,' accepted; 
 
 ## F. Holy Week page
 27. Good Friday Office (Tenebrae, Hours, Vespers, Compline), Holy Saturday Office, Holy Saturday tracts vs Triduum 1927, Sanctus/Ite,
-    Palm Sunday procession chants (Processionarium 1913) last.
+    Palm Sunday procession chants (Processionarium 1913): DONE 2026-11-26 (Mass chat), gabc/op13-*.gabc, sources in tools/chant/proc/.
 
 ## G. Booklets
 28. Priest booklet: Ite/Benedicamus, Gloria/Credo intonations, oration tones, Epistle/Gospel tones (Missal appendix).

@@ -108,3 +108,10 @@ See tools/orat39/MISSING.md for the per-Mass list.
   (Quad6s.src and data/holyweek_text.js; NB holyweek_text.js has later G-blocks not in the .src files, so patch, do not rebuild).
 - Maundy Thursday: the Triduum gives no Ordinary melodies ("Missa ... sicut in festo Toto Duplici celebratur", p. 65).
 - Books now at /tmp/dl/tri.pdf (Triduum 1927) and /tmp/dl/proc.pdf (Processionarium 1913) in this container.
+
+## 2026-11-26 Mass chat: Palm Sunday procession chants (Processionarium O.P. 1913, pdf 40-49 = pp. 24-33)
+- Transcribed staff by staff from the page images: tools/chant/proc/*.txt (one line per staff, '+' = word continues), build.py -> gabc/op13-*.gabc.
+- cumappropinquaret (c3), collegerunt + unusautem (c3: plain C clef), averex (f3: punctum before the clef = F clef), glorialaus (refrain) + glorialaus-v1..v3 (c4), ingrediente (f3, with V. Cumque and * Cum ramis), deoreleonis (f3, recto tono).
+- G blocks added after each text in 1939 Quad6 'Ad Processionem' (holyweek_text.js patched; Quad6_proc.src has matching G lines).
+- Second pass at 600 dpi confirmed the doubtful spots (so-lymam f,iie; contra cd/eDB/da with a below the ledger; Domino h,iHF; dicebant ce(e/fh) bant(fgf); autem au(fe/f/hi)). Remaining judgement: sternebant 'bant(g/g)' two puncta as printed.
+- Good Friday Improperia verses are inside 9867 (Popule meus incl. Agios, Quia eduxi, Quid ultra): nothing missing there.
