@@ -262,6 +262,11 @@
    "p": "al",
    "i": "Iste Sanctus",
    "pg": "561"
+  },
+  "op-g50-in-omnem-al": {
+   "p": "al",
+   "i": "In omnem terram",
+   "pg": "578"
   }
  },
  "Quad1t": {
@@ -1602,8 +1607,11 @@
   "co": [
    4728
   ],
-  "p39": "G50 p. 579",
-  "_why_g50": "G50 p. 579: Communio Ego vos elegi, pag. 515"
+  "p39": "G50 p. 578-579",
+  "_why_g50": "G50 p. 578-579: Alleluia V. In omnem terram (printed; transcribed from the scan); Communio Ego vos elegi, pag. 515",
+  "al": [
+   "op-g50-in-omnem-al"
+  ]
  },
  "S1008": {
   "al": [
