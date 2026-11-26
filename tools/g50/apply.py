@@ -60,10 +60,18 @@ FIX = {
   'S0122': ({'in': [6411], 'gr': [6960], 'al': [6582], 'of': [5797], 'co': [6924]}, 'G50 p. 18*: Missa Laetabitur (p. 7*), praeter Offertorium Gloria et honore et Communionem Qui vult, pag. 17*'),
   'S0201': ({'in': [6411], 'gr': [6960], 'al': [6582], 'of': [5797], 'co': [6924]}, 'G50 p. 18*: Missa Laetabitur (p. 7*), praeter Offertorium Gloria et honore et Communionem Qui vult, pag. 17*'),
   'C18s': ({'al': [6582]}, 'G50 p. 18*-19*: Alia Missa In virtute, Alleluia V. Laetabitur, pag. 9*'),
+  # the right text with the Roman melody (badge 'Roman melody') until the Dominican one is transcribed from the Graduale O.P.
+  'S0916': ({'al': ['r3755']}, 'Missale O.P. 1939: Alleluia V. Fulgebunt justi (G50 p. 574, not yet transcribed)'),
+  'S0927': ({'al': ['r3755']}, 'G50 p. 580: Alleluia V. Fulgebunt, pag. 574 (not yet transcribed)'),
+  'S1024': ({'co': ['r3501']}, 'G50 p. 605*: Communio Angeli, Archangeli (not yet transcribed)'),
+  'S0827': ({'in': ['r3821'], 'of': ['r3868'], 'co': ['r3371']}, 'G50 p. 562-563: Officium Venite filii, Offertorium Desiderium pauperum, Communio Sinite parvulos (not yet transcribed)'),
+  'G566': ({'in': ['r3498'], 'al': ['r3701']}, 'G50 p. 571-572: Officium Vultum tuum, Alleluia V. Tu gloria Jerusalem (not yet transcribed)'),
+  'S0910': ({'of': ['r3612']}, 'G50 p. 570: Offertorium Exsultabunt (not yet transcribed)'),
+  'S0917': ({'al': ['r3374']}, 'G50 p. 576: Alleluia V. Franciscus pauper (not yet transcribed)'),
 }
 META = {'S0524': {'conf': 'proper', 'note': 'Graduale O.P. (1950) p. 480: as on 4 August for the votive Masses of St Dominic (Sequence from Laudes), with the Paschal Alleluias.'}}
 SEASON = {'S0524': {'asc': {'al': [5397, 5526]}}}   # Temp. Ascens. II. Alleluia V. Ascendens (p. 240), then the Sequence
-EXTRA_CHANTS = {'op-g50-laudes': {'p': 'se', 'i': 'Laudes ergo', 'pg': '537'}}
+EXTRA_CHANTS = {'op-g50-laudes': {'p': 'se', 'i': 'Laudes ergo', 'pg': '537'}, 'r3755': {'p': 'al', 'i': 'Fulgebunt justi et tamquam (Roman melody)', 'pg': 'GR 509', 'roman': True}, 'r3501': {'p': 'co', 'i': 'Angeli Archangeli (Roman melody)', 'pg': 'GR [71]', 'roman': True}, 'r3821': {'p': 'in', 'i': 'Venite filii (Roman melody)', 'pg': 'GR 524', 'roman': True}, 'r3868': {'p': 'of', 'i': 'Desiderium pauperum (Roman melody)', 'pg': 'GR 524', 'roman': True}, 'r3371': {'p': 'co', 'i': 'Sinite parvulos (Roman melody)', 'pg': 'GR 524', 'roman': True}, 'r3498': {'p': 'in', 'i': 'Vultum tuum (Roman melody)', 'pg': 'GR [57]', 'roman': True}, 'r3701': {'p': 'al', 'i': 'Tu gloria Jerusalem (Roman melody)', 'pg': 'GR 349', 'roman': True}, 'r3612': {'p': 'of', 'i': 'Exsultabunt sancti (Roman melody)', 'pg': 'GR [25]', 'roman': True}, 'r3374': {'p': 'al', 'i': 'Franciscus (Roman melody)', 'pg': 'GR 531', 'roman': True}}
 # In medio of the Common of Doctors (p. 35*) in place of St Dominic's copy (p. 533), wherever the Graduale says pag. 35*
 DOCT = ['S0127', 'S0129', 'S0209', 'S0223', 'S0307', 'S0404', 'S0405', 'S0411', 'S0421', 'S0527', 'S0618', 'S0714', 'S0820',
         'S0828', 'S1018', 'S1115', 'S1124', 'S1204', 'S0506']

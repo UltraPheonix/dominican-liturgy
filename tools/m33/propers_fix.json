@@ -193,6 +193,60 @@
    "p": "se",
    "i": "Laudes ergo",
    "pg": "537"
+  },
+  "r3755": {
+   "p": "al",
+   "i": "Fulgebunt justi et tamquam (Roman melody)",
+   "pg": "GR 509",
+   "roman": true
+  },
+  "r3501": {
+   "p": "co",
+   "i": "Angeli Archangeli (Roman melody)",
+   "pg": "GR [71]",
+   "roman": true
+  },
+  "r3821": {
+   "p": "in",
+   "i": "Venite filii (Roman melody)",
+   "pg": "GR 524",
+   "roman": true
+  },
+  "r3868": {
+   "p": "of",
+   "i": "Desiderium pauperum (Roman melody)",
+   "pg": "GR 524",
+   "roman": true
+  },
+  "r3371": {
+   "p": "co",
+   "i": "Sinite parvulos (Roman melody)",
+   "pg": "GR 524",
+   "roman": true
+  },
+  "r3498": {
+   "p": "in",
+   "i": "Vultum tuum (Roman melody)",
+   "pg": "GR [57]",
+   "roman": true
+  },
+  "r3701": {
+   "p": "al",
+   "i": "Tu gloria Jerusalem (Roman melody)",
+   "pg": "GR 349",
+   "roman": true
+  },
+  "r3612": {
+   "p": "of",
+   "i": "Exsultabunt sancti (Roman melody)",
+   "pg": "GR [25]",
+   "roman": true
+  },
+  "r3374": {
+   "p": "al",
+   "i": "Franciscus (Roman melody)",
+   "pg": "GR 531",
+   "roman": true
   }
  },
  "Quad1t": {
@@ -1518,7 +1572,10 @@
    6440
   ],
   "p39": "G50 p. 580",
-  "_why_g50": "G50 p. 580: Officium Sapientiam, pag. 515; Responsorium Ecce quam bonum, pag. 348; Offertorium Gloriabuntur, pag. 500; Communio Posuerunt, pag. 25*"
+  "_why_g50": "G50 p. 580: Alleluia V. Fulgebunt, pag. 574 (not yet transcribed)",
+  "al": [
+   "r3755"
+  ]
  },
  "S0921": {
   "co": [
@@ -1538,8 +1595,14 @@
   "of": [
    4781
   ],
-  "p39": "G50 p. 572",
-  "_why_g50": "G50 p. 572: Offertorium Ave Maria, pag. 445"
+  "p39": "G50 p. 571-572",
+  "_why_g50": "G50 p. 571-572: Officium Vultum tuum, Alleluia V. Tu gloria Jerusalem (not yet transcribed)",
+  "in": [
+   "r3498"
+  ],
+  "al": [
+   "r3701"
+  ]
  },
  "S0114": {
   "of": [
@@ -1721,5 +1784,46 @@
   ],
   "p39": "G50 p. 18*",
   "_why_g50": "G50 p. 18*: Missa Laetabitur (p. 7*), praeter Offertorium Gloria et honore et Communionem Qui vult, pag. 17*"
+ },
+ "S0916": {
+  "al": [
+   "r3755"
+  ],
+  "p39": "Missale O.P. 1939",
+  "_why_g50": "Missale O.P. 1939: Alleluia V. Fulgebunt justi (G50 p. 574, not yet transcribed)"
+ },
+ "S1024": {
+  "co": [
+   "r3501"
+  ],
+  "p39": "G50 p. 605*",
+  "_why_g50": "G50 p. 605*: Communio Angeli, Archangeli (not yet transcribed)"
+ },
+ "S0827": {
+  "in": [
+   "r3821"
+  ],
+  "of": [
+   "r3868"
+  ],
+  "co": [
+   "r3371"
+  ],
+  "p39": "G50 p. 562-563",
+  "_why_g50": "G50 p. 562-563: Officium Venite filii, Offertorium Desiderium pauperum, Communio Sinite parvulos (not yet transcribed)"
+ },
+ "S0910": {
+  "of": [
+   "r3612"
+  ],
+  "p39": "G50 p. 570",
+  "_why_g50": "G50 p. 570: Offertorium Exsultabunt (not yet transcribed)"
+ },
+ "S0917": {
+  "al": [
+   "r3374"
+  ],
+  "p39": "G50 p. 576",
+  "_why_g50": "G50 p. 576: Alleluia V. Franciscus pauper (not yet transcribed)"
  }
 }
