@@ -45,7 +45,7 @@ DONE 2026-11-26 sw v90: A1 (first prayer after the heading; 'Oratio,' accepted; 
 22. DONE 2026-11-26: AUDIT.md items checked vs M39 (Januarius, Pius V votive fixed; 28 'Os justi ut in Communi' confessors fixed; rest already right).
 23. DONE 2026-11-26: S0915 sings Alleluia 'Stabat sancta Maria' in place of the Tract (M33 p.381 / M39 p.313: one verse; 'O vos omnes' is only the Tract's verse). Roman melody (GR 1961 p.596, GregoBase 853, badge): no O.P. melody on GregoBase. Open: the Sequence's added 'Alleluia' on that day is not notated.
 24. Calendar on pre-1955 ranks (now 1960 classes shown); remove/replace the 'Reformed 1959' Holy Week toggle per the rite rule (ask Joseph).
-25. Options Mass list blank on the last Sunday after Trinity.
+25. DONE 2026-11-26: Pent24 (and the resumed Epiphany Sundays Epi3r-6r) are made at runtime; now also listed in the Proper of Time, so the Options Mass list shows them.
 26. Mass prayers from the 1933 Missal (needs page images).
 
 ## F. Holy Week page

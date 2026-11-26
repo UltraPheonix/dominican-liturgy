@@ -27,6 +27,14 @@
         en: ['', '1st', '2nd', '3rd', '4th', '5th'][n - 1] + ' Sunday after the Octave of the Epiphany (resumed)', readings: e.readings});
       if (O['Epi' + n]) O['Epi' + n + 'r'] = O['Epi' + n];
     });
+    if (!O.Pent24 && O.Pent23) O.Pent24 = O.Pent23;
+    // list the Masses made here in the Proper of Time too, after the 23rd Sunday, so the Mass list (Options) can show them
+    var tp = (D.sections || []).filter(function (s) { return s.id === 'tempore'; })[0];
+    if (tp) {
+      var add = ['Epi3r', 'Epi4r', 'Epi5r', 'Epi6r', 'Pent24'].filter(function (k) { return M[k] && tp.items.indexOf(k) < 0; });
+      var at = tp.items.indexOf('Pent23');
+      if (add.length) Array.prototype.splice.apply(tp.items, [at < 0 ? tp.items.length : at + 1, 0].concat(add));
+    }
   })();
   var PARTS = ['pr', 'in', 'gr', 'al', 'tr', 'se', 'ad', 'of', 'co', 'an'];
   var PART_NAME = {in: 'Officium', gr: 'Responsorium', al: 'Alleluia', tr: 'Tractus', se: 'Sequentia', of: 'Offertorium', co: 'Communio', an: 'Ad Vesperas', pr: 'Ante Missam', ad: 'Ad adorationem Crucis'};
