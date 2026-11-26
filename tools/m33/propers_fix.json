@@ -273,6 +273,14 @@
   "p33": 664,
   "lent_tr": [
    7125
+  ],
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
   ]
  },
  "S0214": {
@@ -291,48 +299,331 @@
   "p33": 664,
   "lent_tr": [
    7125
+  ],
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
   ]
  },
  "S0124b": {
   "p33": 664,
   "lent_tr": [
    7125
+  ],
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
   ]
  },
  "S0216b": {
   "p33": 664,
   "lent_tr": [
    7125
+  ],
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
   ]
  },
  "S0219b": {
   "p33": 664,
   "lent_tr": [
    7125
+  ],
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
   ]
  },
  "S0225b": {
   "p33": 664,
   "lent_tr": [
    7125
+  ],
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
   ]
  },
  "S0301b": {
   "p33": 664,
   "lent_tr": [
    7125
+  ],
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
   ]
  },
  "S0322b": {
   "p33": 664,
   "lent_tr": [
    7125
+  ],
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
   ]
  },
  "S0303b": {
   "p33": 664,
   "lent_tr": [
    7125
+  ]
+ },
+ "S0919": {
+  "p39": "563 (M39)",
+  "_why": "Missale O.P. 1939 p. 563: gr Gloriosus Deus, al Sancti tui Domine, co Dico autem vobis",
+  "gr": [
+   9869
+  ],
+  "al": [
+   6943
+  ],
+  "co": [
+   6548
+  ]
+ },
+ "G470": {
+  "p39": "432-434 (M39)",
+  "_why": "S. Pius V, M39 pp. 432-434: extra T.P. gr Juravit Dominus; T.P. Alleluias Fortitudo mea + Angelus Domini",
+  "gr": [
+   6123
+  ],
+  "pasch_al": [
+   4870,
+   6824
+  ]
+ },
+ "S0604": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S0613": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ],
+  "al": [
+   6895
+  ]
+ },
+ "S0712": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ]
+ },
+ "S0718": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S1006": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S0517b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S0612b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S0724b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S0811b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S0818b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S0819b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S0923b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S0926b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S0928b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S1011b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S1021b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S1026b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S1103b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ],
+  "of": [
+   6021
+  ]
+ },
+ "S1114b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ]
+ },
+ "S1216b": {
+  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
   ]
  }
 }
