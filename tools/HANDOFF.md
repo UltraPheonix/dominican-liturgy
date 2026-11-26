@@ -573,3 +573,17 @@ Counts: 241 feasts, 14 with nothing doubtful; responsories 524 (53 clean); lesso
 THE REMAINING WORK IS THE EYE PASS: per feast, read 'q' in propers1909.json, open the page images (pdftoppm … -r 110), and write the
 verified pieces into propers_fix.json (model: S. Andréæ Apóstoli). Then audits, headless test (OK now: no console errors on
 11-30, 12-06, 01-25, 06-24), merge into main, tools/push.sh.
+### 2026-11-26 23:00 — PAUSE (branch commons1909-v2 pushed; NOT live; main = v99 + Mass chat)
+Eye pass round 1 done by 6 helper agents: 46 feasts (Nov 27 – Feb 23) in tools/b09/fix/b00…b05.json + my 4 in propers_fix.json
+(Andrew, Nicholas, John of Vercelli, Francis Xavier). Read tools/b09/fix/REPORTS.md first (decisions needed, faults found).
+build.with_proper rewritten: ONLY eye-verified text is used (fix files; machine reading only under 'ok'); written but NOT YET RUN —
+first thing tomorrow: `cd tools/b09 && python3 build.py`, fix whatever breaks (helpers' shapes: resp gloria as [rep, rep|false],
+mat.nants with empty lists, v1.resp with false, gospel7/homily7), headless test, audits.
+Then: (1) Joseph's decision on accents (REPORTS.md §1) → normalise; (2) spot-check ~2 pieces per helper against the page;
+(3) launch the next helpers: /tmp/b09/batches.json was the batch list (28 batches; 0-5 done) — if /tmp is gone, rebuild it from
+propers1909.json in date order from 02-25 (weights: full Office 3, legend 1, 14 per batch), PLUS the missing Offices listed in
+REPORTS.md, PLUS the unsplit stretches (12-07…12-15 incl. Dec 8, 12-31…01-14, after 03-25, v1 after 06-11, v2 after 12-02);
+helper prompt = 'Read tools/b09/EYEPASS.md … fix file fix/bNN.json … feasts: [...]' (see this session); update EYEPASS.md: PDFs are
+/tmp/b09/b1.pdf, b2.pdf (v1/v2 symlinks broken) — if /tmp/b09 is gone the scans must be fetched again (CMAA; see earlier HANDOFF
+sections) or Joseph re-uploads the text PDFs; OCR text is in tools/b09/ocr/*.txt.gz (restore command in reocr.sh).
+(4) merge verified days to main in batches once Joseph says how to publish (as-you-go was proposed, not yet answered).

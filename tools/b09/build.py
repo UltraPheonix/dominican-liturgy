@@ -1041,13 +1041,14 @@ for _f in sorted(glob.glob(os.path.join(HERE, 'fix', '*.json'))):   # one file p
     try: PFIX.update({k: v for k, v in json.load(open(_f, encoding='utf-8')).items() if not k.startswith('_')})
     except Exception as _e: print('fix file', _f, _e)
 def with_proper(F, o, title):
-    """the feast's own pieces over its Common: first those corrected by eye against the page images (propers_fix.json), then those
-    read by proper.py from the scanned Sanctorale, a piece with doubtful words (its 'q' list) or a partly doubtful set never used
-    (the nine responsories are taken together or not at all)"""
-    P = PROP.get(title); X = PFIX.get(title) or {}
-    if not P and not X: return F, o
-    P = P or {}
-    if X.get('sub') or X.get('ok'):      # the machine reading, corrected by eye: 'sub' = [wrong, right] replacements; 'ok' = every piece then verified
+    """the feast's own pieces over its Common. ONLY texts verified by eye against the page images are used (propers_fix.json and
+    fix/*.json; EYEPASS.md): explicit pieces, and the machine reading (propers1909.json) when its entry says 'ok' (after 'sub').
+    An unverified machine reading is never shown: its lessons only mark that the feast prints lessons of its own (so that the
+    Common's are not put in their place) when the feast has no verified entry yet."""
+    M0 = PROP.get(title) or {}; X = PFIX.get(title) or {}
+    if not M0 and not X: return F, o
+    P = {}
+    if X.get('ok'):
         def sb(v):
             if isinstance(v, str):
                 for a_, b_ in X.get('sub', []): v = v.replace(a_, b_)
@@ -1055,49 +1056,54 @@ def with_proper(F, o, title):
             if isinstance(v, dict): return {k: sb(x) for k, x in v.items()}
             if isinstance(v, list): return [sb(x) for x in v]
             return v
-        P = sb(P)
-        if X.get('ok'): P = dict(P, q=[q for q in P.get('q', []) if q.split(':')[0] in X.get('not_ok', [])])
-        if X.get('ok'): P['lessons'] = [dict(x, src='DO 1.00 (verified by eye)') if ('lectio %s' % x.get('n')) not in X.get('not_ok', []) else x for x in P.get('lessons', [])]
-    bad = set(x.split(':')[0] for x in P.get('q', []))
+        P = sb(M0); no = set(X.get('not_ok', []))
+        P['lessons'] = [dict(x, src='DO 1.00 (verified by eye)') for x in P.get('lessons', []) if ('lectio %s' % x.get('n')) not in no]
+        for sec in ('v1', 'mat', 'laud', 'v2'):
+            if isinstance(P.get(sec), dict): P[sec] = {k: v for k, v in P[sec].items() if '%s.%s' % (sec, k) not in no}
+        for x in P['lessons']:
+            if x.get('resp') and ('resp %s' % x.get('n')) in no: x.pop('resp')
     F = dict(F)
     def get(sec, k):
         if '%s.%s' % (sec, k) in X: return X['%s.%s' % (sec, k)]
-        v = (P.get(sec) or {}).get(k)
-        return v if v and '%s.%s' % (sec, k) not in bad else None
-    for sec, keys in (('v1', ('ant', 'ants', 'magn', 'resp', 'cap')), ('laud', ('ant', 'bened')), ('v2', ('ant', 'magn'))):
+        return (P.get(sec) or {}).get(k)
+    for sec, keys in (('v1', ('ant', 'ants', 'magn', 'resp', 'cap', 'vr')), ('laud', ('ant', 'bened')), ('v2', ('ant', 'magn'))):
         for k in keys:
             v = get(sec, k)
             if v and isinstance(F.get(sec), dict):
-                if k == 'ant' and sec != 'laud' and isinstance(v, str): F[sec] = dict(F[sec], ant=v)
-                else: F[sec] = dict(F[sec], **{k: tuple(v) if k == 'resp' else v})
+                if k == 'resp' and len(v) == 4: v = list(v) + [v[3]]
+                if k == 'resp' and v[4] is False: v = list(v[:4]) + [v[3]]
+                F[sec] = dict(F[sec], **{k: tuple(v) if k in ('resp', 'vr') else v})
     if X.get('al'): F['al'] = tuple(X['al'])
     M_ = dict(F['mat']); tp = F.get('_tp')
     iv = get('mat', 'invit')
-    if iv and len(iv) < 200 and '*' in iv: M_['invit'] = iv.replace(': *', ', *') if False else iv
+    if iv and len(iv) < 220 and '*' in iv: M_['invit'] = iv
     na = get('mat', 'nants')
-    if na and not tp and len(M_.get('noct', [])) == 3:
+    if na and not tp and len(M_.get('noct', [])) == 3 and len(na) == 3:
         nv = X.get('mat.nvr') or (P.get('mat') or {}).get('nvr') or [None] * 3
-        M_['noct'] = [(M_['noct'][i][0], na[i], tuple(nv[i]) if nv[i] else M_['noct'][i][2]) for i in range(3)]
+        nv = list(nv) + [None] * (3 - len(nv))
+        M_['noct'] = [(M_['noct'][i][0], na[i] if len(na[i]) == len(M_['noct'][i][1]) else M_['noct'][i][1], tuple(nv[i]) if nv[i] and len(nv[i]) == 2 else M_['noct'][i][2]) for i in range(3)]
     if not tp and isinstance(M_.get('resp'), list) and len(M_['resp']) == 9:
         rs = {}
         for x in P.get('lessons', []):
             r = x.get('resp'); n = x.get('n')
-            if r and isinstance(n, int) and 1 <= n <= 9 and 'resp %d' % n not in bad and r.get('a') and r.get('b'):
-                rs[n] = (r['a'], r['b'], r.get('v') or [], bool(r.get('gloria')))
+            if r and isinstance(n, int) and 1 <= n <= 9 and r.get('a') and r.get('b'): rs[n] = (r['a'], r['b'], r.get('v') or [], bool(r.get('gloria')))
         for n, r in (X.get('resp') or {}).items():
-            rs[int(n)] = (r[0], r[1], r[2], tuple(r[3]) if isinstance(r[3], list) else r[3])
-        printed = set(x.get('n') for x in P.get('lessons', []) if x.get('resp')) | set(int(n) for n in (X.get('resp') or {}))
-        if printed and printed <= set(rs):          # every responsory the book prints for the feast is clean
-            M_['resp'] = [rs.get(n, M_['resp'][n - 1]) for n in range(1, 10)]
+            if str(n).isdigit() and 1 <= int(n) <= 9 and len(r) >= 4: rs[int(n)] = (r[0], r[1], r[2] if isinstance(r[2], list) else [r[2]], tuple(r[3]) if isinstance(r[3], list) else r[3])
+        if rs: M_['resp'] = [rs.get(n, M_['resp'][n - 1]) for n in range(1, 10)]   # verified responsories; the others are the Common's, as the page directs
     F['mat'] = M_
+    ls = list(P.get('lessons', []))
     if X.get('lessons'):
-        keep = [x for x in P.get('lessons', []) if str(x.get('n')) not in X['lessons']]
-        P = dict(P, lessons=sorted(keep + [dict(n=int(n), la=t, src='DO 1.00 (verified by eye)', head=[], close=None) for n, t in X['lessons'].items()], key=lambda x: x.get('n') or 0))
-    if P.get('lessons'):
-        hard = set(x.split(':')[0] for x in P.get('q', []) if 'witness' not in x)   # unknown words; (the second witness is too noisy on long lessons)
-        o = dict(o or {})
-        o['lessons'] = [x if ('lectio %s' % x.get('n')) not in hard and not re.search(r'[℟℣]|\b[NRK]\. ?[ivx]+\b', x.get('la', '')) else dict(x, src='doubtful')
-                        for x in P['lessons']]
+        def les(n, t):
+            x = dict(n=int(n), la=t, src='DO 1.00 (verified by eye)', head=[], close=None)
+            if X.get('gospel%s' % n): x['gospel'] = X['gospel%s' % n]; x['homily_head'] = X.get('homily%s' % n)
+            return x
+        ls = [x for x in ls if str(x.get('n')) not in X['lessons']] + [les(n, t) for n, t in X['lessons'].items() if str(n).isdigit() and isinstance(t, str)]
+    if not X and M0.get('lessons'):   # not yet read by eye: the feast's own lessons are marked 'in preparation', never shown unverified
+        ls = [dict(x, src='doubtful') for x in M0['lessons']]
+    if ls:
+        o = dict(o or {}); o['lessons'] = sorted(ls, key=lambda x: x.get('n') or 0)
+    elif X:
+        o = dict(o or {}); o.pop('lessons', None)
     return F, o
 def feast_day(d):
     """the winning feast of a day with a Common to render it: dict(fe, cn, F, o, rk) or None"""

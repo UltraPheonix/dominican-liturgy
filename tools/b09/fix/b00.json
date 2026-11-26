@@ -1,0 +1,355 @@
+{
+ "B. Margarítæ de Sabáudia Vid. O.P.": {
+  "pages": "v2 pdf 1098-1100 (book pp. 1016-1018)",
+  "oratio": "Deus, qui beátam Margarítam a sæculi pompa ad húmilem tuæ Crucis sequélam toto corde transíre docuísti: concéde ut ejus méritis et exémplo discámus peritúras mundi calcáre delícias, et in ampléxu tuæ Crucis ómnia nobis adversántia superáre. Qui vivis.",
+  "lessons": {
+   "1": "Accínxit fortitúdine lumbos suos, et roborávit bráchium suum. Gustávit, et vidit quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus. Manum suam misit ad fórtia, et dígiti ejus apprehendérunt fusum. Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem. Non timébit dómui suæ a frigóribus nivis: omnes enim doméstici ejus vestíti sunt duplícibus. Stragulátam vestem fecit sibi: byssus, et púrpura induméntum ejus. Nóbilis in portis vir ejus, quando séderit cum senatóribus terræ.",
+   "2": "Quæ mihi fuérunt lucra hæc arbitrátus sum propter Christum detriménta. Verúmtamen exístimo ómnia detriméntum esse propter eminéntem sciéntiam Jesu Christi Dómini mei: propter quem ómnia detriméntum feci, et árbitror ut stércora, ut Christum lucrifáciam, et invéniar in illo non habens meam justítiam, quæ ex Lege est, sed illam, quæ ex Fide est Christi Jesu: quæ ex Deo est justítia in Fide ad cognoscéndum illum, et virtútem resurrectiónis ejus, et societátem passiónum illíus.",
+   "3": "Víduas honóra, quæ vere víduæ sunt. Si qua autem vídua fílios, aut nepótes habet: discat primum domum suam régere, et mútuam vicem réddere paréntibus: hoc enim accéptum est coram Deo. Quæ autem vere vídua est, et desoláta, speret in Deum, et instet obsecratiónibus et oratiónibus nocte ac die. Nam quæ in delíciis est, vivens mórtua est. Et hoc præcipe ut irreprehensíbiles sint.",
+   "4": "Beáta Margaríta, stirpe régia ducum Sabáudiæ nata, futúræ sanctitátis ab ipsa infántia spécimen dedit. Adúlta, paréntum jussu, Theodóro Montisferráti marchióni nupsit. A sancto Vincéntio Ferrério ad altióris perfectiónis stúdium accénsa, quantum per conjúgii statum lícuit, Deo se totam devóvit: ac demum a lege viri solúta, palam sancti Domínici hábitum, quem Soróres de Pœniténtia gestáre solent, assúmpsit, votúmque perpétuæ deínceps viduális continéntiæ emísit. Secúndas núptias cum Philíppo Mediolanénsium Duce oblatámque Summi Pontíficis relaxatiónem voti modéste recusávit. Mira in páuperes et infírmos ardébat caritáte. Nam sub Tertiáriæ hábitu foris degens, omni facultátum subsídio solabátur egénos, ministrábat ægris, languéntium sordes, úlcera, sániem própriis tergébat mánibus. A sæculi commércio lóngius abésse cúpiens, in Alba Pompéia sibi ac religiósis virgínibus monastérium sub cura Fratrum Prædicatórum constrúxit, in quo solémnibus votis réliquum vitæ Altíssimo consecrávit.",
+   "5": "Novum vitæ genus proféssa, novo ardóre stúdium pietátis ac religiónis exércuit. Régulæ et sacrárum Constitutiónum observántiam ita cóluit, ut eárum nec iota nec mínimum ápicem præteríret. Obediéntiam et humilitátem ita servávit, ac si ex ínfima plebe ad religiósum statum convolásset. Superiórum ac præsértim Confessárii jussa, summa ánimi demissióne excipiébat. Abjectíssima quæque cœnóbii ministéria ultro et alácriter obíbat. Nihil in ejus induméntis et supelléctili supérfluum reperíre erat. Data sibi aliquándo a Christo Dómino optióne, ex tribus acutíssimis lánceis, nempe calúmnia, ægritúdine ac persecutióne, quam vellet eligéndi, omnes simul sustinéndas elégit. Nec feféllit evéntus. Sed et ómnia æquanímiter sustínuit, ut Christo crucifíxo pleníssime configurarétur.",
+   "6": "Inter orándum sæpíssime rapiebátur in éxtasim, ac divínæ uniónis dulcédine tota spíritu colliquescébat. Precum ac lacrimárum ejus tanta vis fuit, ut quidquid a Deo péteret, impetráret. Neptem Amadéam, plane a médicis desperátam, integérrimæ valetúdini orándo restítuit. Fruges, in agro páuperis densa grándine omníno prostrátas, in messem copiósam eréxit. Dæmones, Albam Pompéiam fúnditus subvértere moliéntes, a cœpto detérruit ac fugávit. Pro pace universális Ecclésiæ redintegránda máximos labóres ultro felicitérque suscépit. Demum cælo matúra, exáctis sub sancti Domínici hábitu annis quadragínta quátuor, ad súperos evolávit, anno millésimo quadringentésimo sexagésimo quarto. Multis vivens ac post óbitum miráculis cláruit: quibus rite ágnitis ac probátis, Clemens Décimus Póntifex Máximus ejus festum in univérso Prædicatórum Ordine celebrári concéssit."
+  },
+  "not_ok": [
+   "lectio 7",
+   "lectio 8"
+  ],
+  "note": "Lessons are i-vi here (I Nocturn printed in full: Prov. 31 'Ex libro Proverbiórum', Phil. 3 'De Epístola beáti Pauli Apóstoli ad Philippénses', 1 Tim. 5 'De Epístola prima beáti Pauli Apóstoli ad Timótheum'); the machine numbered iv and v-vi as 1 and 2 and merged v into iv. Machine 'L7' and 'L8' are NOT this feast: they are lessons iv and v-vi of B. Zedislavæ Berkianæ (28 Nov., next feast on pdf 1100-1101) and must be dropped. III Nocturn: 'Homilia in Evangelium Símile est regnum cælórum thesáuro abscóndito. de Communi unius nec Virginis nec Martyris, pag. 111*.' Rubric after the Oratio: 'In j. Vesperis et Laudibus Memoria SS. Vitalis et Agricolæ Martyrum. Oratio. Da, quæsumus omnipotens Deus: ut qui beatórum Mártyrum tuórum Vitális et Agrícolæ solémnia cólimus, eórum apud te intercessiónibus adjuvémur. Per.' (first line of that prayer printed without accents: 'quæsumus omnipotens'). Lesson vi: 'Dæmones' is printed without accent, typed so. No responsories printed (from the Common)."
+ },
+ "B. Jacóbi de Benefáctis Ep. et Conf. O.P.": {
+  "pages": "v1 pdf 771-772 (book pp. 685-686)",
+  "oratio": "Deus, qui beáto Jacóbo, Confessóri tuo atque Pontífici, ómnia boni pastóris múnia fidéliter explére tribuísti: ejus intercessióne nobis concéde ut per viam mandatórum tuórum gradiéntes, inter oves páscuæ tuæ perpétuo collocári mereámur. Per Dóminum.",
+  "lessons": {
+   "4": "Jacóbus, ex illústri família de Benefáctis Mántuæ natus, in christiána religióne pie educátus fuit. Adoléscens, ut fervéntius Deo inservíret, domus suæ splendóri páriter ac sæculo valedícens, institútum Ordinis Prædicatórum in pátria ampléxus est: in quo humilitáte ac patiéntia refúlgens, summóque in Deum amóre flagrans, perfectiónis culmen áttigit. Sacris stúdiis ímpigre vacans, doctrína excélluit, ac magistérii láurea decorátus est. Tot sacri viri dótibus permótus Nicoláus Boccasínus, totíus Ordinis Prædicatórum Magíster, deínde summus Póntifex nómine Benedícti Undécimi, et sérius étiam Beatórum órdini adscríptus, eum in claustro sibi sócium adscívit, ac, uti fertur, in ipsa Petri cáthedra familiárem hábuit.",
+   "5": "Ne autem diútius lucérna sub módio latéret, Joánnes Vicésimus secúndus Jacóbum in Mantuána sede collocávit Antístitem. Hoc in múnere, cívium suórum non solum spem non feféllit, sed votis ómnium, sciéntia, doctrína ac sanctitáte vitæ ita respóndit, ut cujúsque conditiónis hómines illum tamquam divínitus datum suspícerent, veneraréntur. In gregem sibi commíssum caritáte flagrans, et ómnibus ómnia factus, ódia et dissídia diríssimis illis tempóribus Mántuæ exórta compéscere satégit. Cathólicæ veritátis integritátem strénue propugnávit, páuperes peste et fame semel atque íterum misérrime afflíctos sublevávit, unde patris páuperum nomen proméruit, et grege tandem ad pietátem et bonam frugem perdúcto, ipsum spirituálibus bonis ditáre stúduit.",
+   "6": "Postquam ímpiger per decem et octo annos Ecclésiam suam justítia, zelo, et caritáte rexísset, ómnibus boni pastóris pártibus explétis, sénio conféctus, et méritis clarus, piíssime óbiit die décima nona Novémbris anno millésimo tercentésimo trigésimo octávo. Christifidéles, qui beáti Jacóbi virtútes admiráti fúerant, ad ejus funus venerabúndi accurrérunt, ejúsque ope étiam prodígia contigísse fertur. Quare ab ejus óbitu públici et ecclesiástici cultus potítus est: sacræ ejus exúviæ multóties translátæ, tandem in cathedráli ecclésia Mantuána repósitæ fuérunt, ubi quotánnis Christifidélium veneratióni solémniter exponúntur. Quibus rite probátis, Pius Nonus Póntifex Máximus ex sacrórum Rítuum Congregatiónis consúlto cultum beáto Jacóbo ab immemorábili præstitum ratum hábuit, et diœcési Mantuánæ, ac univérso Prædicatórum Ordini potestátem fecit de eo quotánnis Offícium et Missam peragéndi."
+  },
+  "note": "Only Oratio and lessons iv-vi are proper. I Nocturn: 'Lectiones Fidélis sermo., de Communi unius Confessoris Pontificis, pag. 70*.' III Nocturn: 'Homilia in Evangelium Homo péregre. de Communi unius Confessoris Pontificis, pag. 78*.' Then: 'In Laudibus Memoria S. Saturnini Martyris. Oratio. Deus, qui nos beáti Saturníni Mártyris tui concédis natalítio pérfrui, ejus nos tríbue méritis adjuvári. Per.' As printed without accent: 'sæculo' (lesson iv), 'præstitum' (lesson vi). No responsories printed. (pdf 770-771 of v1 also carries the Office of B. Margarita de Sabaudia, 27 Nov.)"
+ },
+ "S. Bárbaræ Virg. et Mart.": {
+  "pages": "v1 pdf 782-783 (book pp. 696-697)",
+  "oratio": "Exáudi nos Deus salutáris noster: ut sicut de beátæ Bárbaræ Vírginis et Mártyris tuæ festivitáte gaudémus, ita piæ devotiónis erudiámur afféctu. Per Dóminum.",
+  "lessons": {
+   "4": "Bárbara Virgo Nicomediæ in persecutióne Júlii Maximíni passa est. A patre siquidem Dióscoro, viro nóbili sed gentíli, in alta et muníta turri, ob egrégiam ejus pulchritúdinem, custodiénda inclúditur: ubi bálneum, et duas fenéstras, quibus lumen exciperétur, in eo fíeri jubet. Bárbara vero, absénte patre, tértiam addi fenéstram, et labri paviméntum crucis imágine ornári jussit. Revérsus pater de tértia fenéstra quærit. Virgo, occasiónem nacta, de sacrosánctæ Trinitátis mystério multa apérte et divíne disséruit: ac plúribus verbis ad salutárem Christi fidem patrem est cohortáta.",
+   "5": "At pater, non solum suæ impietátis stímulis, sed étiam máximo Cæsaris timóre addúctus, qui fidem Christi immániter persequebátur, fíliam modis ómnibus nítitur ad idololatríam revocáre. Cumque id cónsequi non posset, provínciæ præsidi eam tradit. Qui primum Vírginem blandítiis aggréssus, ubi se nihil vidit efficeré, nudam nervis búbulis crudéliter cædi, dein præacútis téstulis vúlnera perfricári jubet. Post hæc in cárcerem tráditur, ubi claríssima luce et Christi Dómini præséntia ad réliqua subeúnda certámina mirífice confirmátur.",
+   "6": "Sed cum íterum præsidi sisterétur, et constántior in fídei confessióne persísteret; férreis úngulis dilaniátur, latéribus ardéntes faces admovéntur, caput férreis málleis contúnditur, mammíllæ præscindúntur, diréptis véstibus ignomíniæ causa, per pública loca perdúcitur. Quibus torméntis fórtiter et invícte superátis, tandem a patre impietátis furóre aménte cápite truncáta, gloriósum martyrii agónem consummávit. Fertur eam ab Orígene sacris lítteris imbútam."
+  },
+  "note": "Only Oratio and lessons iv-vi are proper. Heading of the II Nocturn: '(Ex sincerioribus Actis, ex S. Joanne Damasceno, aliisque.)'. III Nocturn: 'Homilia in Evangelium Símile est regnum cælórum thesáuro., ut in Communi unius Virginis et Martyris, pag. 94*.' No rubric for the I Nocturn and no responsories printed. As printed: 'efficeré' (sic, accent on the last e, lesson v); without accent: 'Nicomediæ', 'siquidem' (lesson iv; the i looks dotted not accented at 600 dpi), 'Cæsaris', 'præsidi' (twice), 'martyrii'."
+ },
+ "B. Sebastiáni Maggi Conf. O.P.": {
+  "pages": "v1 pdf 818-819 (book pp. 732-733)",
+  "oratio": "Deus, qui beátum Sebastiánum, Confessórem tuum reguláris disciplínæ et evangélicæ perfectiónis singulári stúdio mirábilem effecísti: concéde propítius ut ejus imitatióne, carne mortificáti, et vivificáti spíritu, ætérna præmia consequámur. Per Dóminum.",
+  "lessons": {
+   "4": "Sebastiánus Bríxiæ, quæ urbs est illústris Cenomanórum Itáliæ, antíqua imprimis ac nóbili stirpe Maggiórum ortus, jam usque a púero præclára indícia virtútis dedit. Adoléscens, confirmándæ suæ curandæque aliórum salútis causa, Ordinem Prædicatórum proféssus est. Quo ex témpore innocéntiæ atque austeritáti vitæ, assiduóque reguláris disciplínæ cúltui stúdium adjúnxit sacrárum litterárum. Cumque omni hoc in génere ita profecísset, ut quemádmodum sibi ipse fúerat, sic céteris emoluménto esse doctrína et exémplis posset: sacérdos factus, superiórum jussu conciónes habére de recta morum institutióne cœpit. Quo múnere tanto mortálium fructu perfúnctus est, ut auctor ímprobis permúltis homínibus uti resipíscerent fúerit: pacem inter inimícos conciliárit, atque in áliquot úrbibus Itáliæ sólidam vel restitúerit, vel confirmáverit pietátem.",
+   "5": "Multa inde cœnóbia, non tam dictis quam recte factis, moderátus est. Nullam enim ad rem, quæ ad perfectiónem evangélicam constitutionésque Ordinis pertinéret, suos sodáles est adhortátus, quam non ante cumulatíssime explevísset. Medioláni cum se suósque minus esse pópulo útiles vidísset, quam ipse cúperet, proptérea quod cœnóbium sanctæ Maríæ Gratiárum, in quo degébat, situm in ángulo urbis esset, quo cives frequéntes concúrrere verbum Dei auditúri non póterant: de amplíssimo templo, quod Rosæ vocant, in média urbe exstruéndo cogitávit. Quod quidem templum, miráculo, ut narrant, cœptum, magnis piórum largitiónibus, imprimisque Beatrícis ducis Mediolanénsium, cui Sebastiánus a confessiónibus erat, perféctum est.",
+   "6": "Congregatiónis deínceps univérsæ suæ præfectúram bis gessit. Quam dignitátem ita sustínuit, ut nihil remíserit de institúta austerióris sanctiorísque vitæ ratióne. Quare cum virtúte, præsértim autem stúdio júgiter precándi Deum, despiciéntia sui, voluntáriis cruciátibus, quibus castigáre corpus atque in servitútem redígere curábat, diligentíque legum Ordinis observatióne, præíre céteris pérgeret: quam sibi inítio pepérerat, eámdem domi forísque mirífice auxit sanctitátis famam. Senex ádmodum, cum Génuam, visitatúrus sanctæ Maríæ de Castéllo cœnóbium, venísset, prospexissétque imminére sibi suprémum diem, ad sócios versus, eum sibi locum dixit perpétuæ requiéi fore. Itaque suscéptis rite Ecclésiæ Sacraméntis, decéssit in pace, anno Dómini millésimo quadringentésimo nonagésimo sexto. Qua re in vulgus eláta, magnus ad ejus féretrum concúrsus est factus Genuénsium. Ejus corpus húmili primum sepúlcro cónditum, postque in decentiórem locum translátum, et multis, ut fertur, miráculis illustrátum, eódem in templo sanctæ Maríæ de Castéllo singulári cólitur religióne. Quem cultum nunquam interrúptum Clemens Décimus tértius Póntifex Máximus consúlto sacræ Rítuum Congregatiónis probávit, ac de beáto Sebastiáno quotánnis ab Ordine Prædicatórum univérso Offícium et Missam celebrári concéssit."
+  },
+  "note": "Only Oratio and lessons iv-vi are proper to this feast (title on the page: B. SEBASTIANI MAGGII). I Nocturn: 'Lectiones Beátus vir., de Communi unius Confessoris non Pontificis, pag. 81*.' III Nocturn: 'Homilia in Evangelium Sint lumbi. de Communi unius Confessoris non Pontificis, pag. 83*.' The machine pieces v1.magn (Oriétur sicut sol), laud.ant (Missus est Gábriel …), laud.bened (Quómodo fiet istud) and v2.magn (Hæc est dies) are NOT printed in this Office on pdf 818-819 and must be dropped: they belong to another Office (not on these pages; not verified by me). No responsories printed. As printed without accent: 'præmia' (Oratio), 'Itaque' (lesson vi). 'curandæque', 'imprimis', 'imprimisque' are printed without accent."
+ },
+ "S. Domínici Sylénsis Abbátis": {
+  "pages": "v1 pdf 828-829 (book pp. 742-743)",
+  "oratio": "Deus, qui Ecclésiam tuam beáti Domínici Confessóris tui præcláris vitæ méritis decorásti; et in liberándis captívis, gloriósis lætificásti miráculis: concéde nobis fámulis tuis ut et ipsíus instruámur exémplis, et ab omni vitiórum servitúte ejus patrocínio liberémur. Per Dóminum.",
+  "lessons": {
+   "4": "Domínicus Abbas honéstis paréntibus natus est Cannis, oppídulo ad radíces Jubédæ montis in Cántabris. Quem ab ipsa puerítia mirus monásticæ vitæ ardor occupávit: ádeo ut relícta gregis patérni cura, in solitúdinem secésserit. Sed cum parum ei tuta viderétur illa solitúdo, insígne sancti Æmiliáni cœnóbium ádiit: ubi cum diu sub hábitu et disciplína monástica vixísset magna sanctitátis opinióne, Ecclésiæ Cannárum regéndæ præfícitur. Inde in cœnóbium sancti Æmiliáni revocátus, Prior effícitur.",
+   "5": "Verum dum Cantabrórum regi quædam a cœnóbio injúste exigénti constantíssime resístit, ab eódem in Jubédæ montis ínvia duóbus mónachis comítibus actus est. Qui ejus furóri cédere cúpiens, ad Ferdinándum Castéllæ et Legiónis regem, ejus nóminis Primum, se cóntulit. Qui Viri Dei sanctitáte motus, illum ad se adeúntem benígne et honorífice excépit, et cœnóbio sancti Sebastiáni præésse vóluit, áddito ab Epíscopo diœcesáno Abbátis título. Erat autem ipse locus ínfrequens, útpote qui sterílibus quibúsdam Jubédæ montis cóllibus subjáceat, qui mons ipse Celtíberos tangit. At claritáte miraculórum, quæ quotídie per servum suum Domínicum operabátur Deus, tam céleber ac frequens factus est, ut eo témpore per Hispániam nullus illústrior esset: nulla enim ferme morbórum génera erant, quæ Domínici précibus ab hóminum corpóribus non pelleréntur. Unde cœnóbio in augustiórem formam erécto, magno étiam monachórum número coáluit, régibus ac pópulis multa illi certátim offeréntibus.",
+   "6": "Quin étiam singulári privilégio servum suum insignívit Dóminus, ut Christiáni, qui apud Mahometános vincti multis ferri pondéribus tenebántur, invocáto Domínico, liberaréntur. Demum gravi morbo corréptus, Ecclésiæ Sacraméntis devotíssime suscéptis, migrávit ad Dóminum, anno Dómini millésimo septuagésimo quarto. Eo autem die, quo migrávit a córpore, visa est a púeris quibúsdam illíus ánima tríplici coróna decoráta in cælum subvoláre. Corpus vero ejus in eódem cœnóbio cónditum hódie cérnimus, quod sanctum Domínicum de Sylos appellámus. Ad cujus sepúlcrum orans beáta Joánna Felícis Guzmáni uxor fílium impetrávit, cui sancti hujus Viri proptérea nomen impósuit. Quod quidem ipse mira vitæ sanctitáte, sacróque Prædicatórum Ordine institúto, multo réddidit illústrius quam accépit."
+  },
+  "note": "Only Oratio and lessons iv-vi are proper. No rubric for the I Nocturn is printed (the Oratio is followed directly by IN II. NOCTURNO). III Nocturn: 'Homilia in Evangelium Ecce nos relíquimus. de Communi unius Abbatis, pag. 85*.' No responsories printed. Lesson v: 'in Jubédæ montis ínvia' (machine had 'Tubéda'); 'quæ quotídie' (machine 'quas')."
+ },
+ "S. Thomæ Apóstoli": {
+  "pages": "v1 pdf 830-833 (book pp. 744-747)",
+  "v1.magn": "O Thoma Dídyme, qui Christum meruísti tángere, te précibus rogámus altísonis, succúrre nobis míseris, ne damnémur cum ímpiis in advéntu Júdicis.",
+  "oratio": "Da nobis, quæsumus Dómine, beáti Apóstoli tui Thomæ solemnitátibus gloriári: ut ejus semper et patrocíniis sublevémur, et fidem cóngrua devotióne sectémur. Per Dóminum.",
+  "resp": {
+   "1": [
+    "Ecce ego mitto vos sicut oves in médio lupórum, dicit Dóminus:",
+    "Estóte ergo prudéntes sicut serpéntes, et símplices sicut colúmbæ.",
+    [
+     "Tradent enim vos in concíliis, et in synagógis suis flagellábunt vos."
+    ],
+    [
+     "Estóte ergo prudéntes.",
+     false
+    ]
+   ],
+   "2": [
+    "Tóllite jugum meum super vos, dicit Dóminus, et díscite a me quia mitis sum et húmilis corde:",
+    "Jugum enim meum suáve est, et onus meum leve.",
+    [
+     "Et inveniétis réquiem animábus vestris."
+    ],
+    [
+     "Jugum enim meum.",
+     false
+    ]
+   ],
+   "3": [
+    "Dum stetéritis ante reges et præsides, nolíte cogitáre quómodo, aut quid loquámini:",
+    "Dábitur enim vobis in illa hora quid loquámini.",
+    [
+     "Non enim vos estis qui loquímini, sed Spíritus Patris vestri qui lóquitur in vobis."
+    ],
+    [
+     "Dábitur enim vobis.",
+     "Dábitur enim vobis."
+    ]
+   ],
+   "4": [
+    "Vidi conjúnctos viros habéntes spléndidas vestes, et Angelus Dómini locútus est ad me dicens:",
+    "Isti sunt viri sancti facti amíci Dei.",
+    [
+     "Vidi Angelum Dei volántem per médium cæli, voce magna clamántem, et dicéntem."
+    ],
+    [
+     "Isti sunt viri sancti.",
+     false
+    ]
+   ],
+   "5": [
+    "Isti sunt triumphatóres et amíci Dei, qui contemnéntes jussa príncipum meruérunt præmia ætérna:",
+    "Modo coronántur, et accípiunt palmam.",
+    [
+     "Isti sunt qui venérunt ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni."
+    ],
+    [
+     "Modo coronántur.",
+     false
+    ]
+   ],
+   "6": [
+    "Vos estis lux mundi, dicit Dóminus:",
+    "Qui in patiéntia vestra Possidébitis ánimas vestras.",
+    [
+     "Et ego dispóno vobis, sicut dispósuit mihi Pater meus, regnum, ut edátis et bibátis super mensam meam in regno meo."
+    ],
+    [
+     "Qui in patiéntia vestra.",
+     "Possidébitis ánimas vestras."
+    ]
+   ],
+   "7": [
+    "Isti sunt viri sancti, quos elégit Dóminus in caritáte non ficta, et dedit illis glóriam sempitérnam:",
+    "Quorum doctrína fulget Ecclésia, ut sole luna.",
+    [
+     "In omnem terram exívit sonus eórum, et in fines orbis terræ verba eórum."
+    ],
+    [
+     "Quorum doctrína.",
+     false
+    ]
+   ],
+   "8": [
+    "Qui sunt isti, qui ut nubes volant,",
+    "Et quasi colúmbæ ad fenéstras suas?",
+    [
+     "Candidióres nive, nitidióres lacte, rubicundióres ébore antíquo."
+    ],
+    [
+     "Et quasi colúmbæ ad fenéstras suas.",
+     false
+    ]
+   ],
+   "9": [
+    "Gregem tuum Pastor ætérne non déseras, sed per beátos Apóstolos tuos",
+    "Perpétua defensióne custódias.",
+    [
+     "Prótege Dómine pópulum tuum, et Apostolórum tuórum patrocínio confidéntem."
+    ],
+    [
+     "Perpétua defensióne custódias.",
+     "Perpétua defensióne custódias."
+    ]
+   ]
+  },
+  "laud.bened": "Quia vidísti me Thoma, credidísti: beáti qui non vidérunt, et credidérunt, allelúia.",
+  "lessons": {
+   "1": "Et ego, cum veníssem ad vos, fratres, veni non in sublimitáte sermónis, aut sapiéntiæ, annúntians vobis testimónium Christi. Non enim judicávi me scire áliquid inter vos, nisi Jesum Christum, et hunc crucifíxum. Et ego in infirmitáte, et timóre, et tremóre multo fui apud vos: et sermo meus, et prædicátio mea non in persuasibílibus humánæ sapiéntiæ verbis, sed in ostensióne spíritus, et virtútis: ut fides vestra non sit in sapiéntia hóminum, sed in virtúte Dei.",
+   "2": "Sapiéntiam autem lóquimur inter perféctos: sapiéntiam vero non hujus sæculi, neque príncipum hujus sæculi, qui destruúntur: sed lóquimur Dei sapiéntiam in mystério, quæ abscóndita est, quam prædestinávit Deus ante sæcula in glóriam nostram, quam nemo príncipum hujus sæculi cognóvit: si enim cognovíssent, nunquam Dóminum glóriæ crucifixíssent.",
+   "3": "Sed sicut scriptum est: Quod óculus non vidit, nec auris audívit, nec in cor hóminis ascéndit, quæ præparávit Deus iis, qui díligunt illum: nobis autem revelávit Deus per Spíritum suum: Spíritus enim ómnia scrutátur, étiam profúnda Dei. Quis enim hóminum scit quæ sunt hóminis, nisi spíritus hóminis, qui in ipso est? Ita et quæ Dei sunt, nemo cognóvit, nisi Spíritus Dei.",
+   "4": "Thomas Apóstolus, qui et Dídymus, Galilæus, post accéptum Spíritum sanctum in multas províncias proféctus est ad prædicándum Christi Evangélium. Parthis, Medis, Persis, Hyrcánis, et Bactris christiánæ fídei et vitæ præcépta trádidit. Postrémo ad Indos se cónferens, eos in christiána religióne erudívit. Qui ad extrémum, vitæ doctrinæque sanctitáte, et miraculórum magnitúdine, cum céteris ómnibus sui admiratiónem, et Jesu Christi amórem commovísset, illíus gentis regem, idolórum cultórem, magis ad iram accéndit: cujus senténtia condemnátus, telísque confóssus, Calamínæ Apostolátus honórem martyrii coróna decorávit.",
+   "5": "Scriptum est: Spíritus Dómini ornávit cælos. Ornaménta enim cælórum sunt virtútes prædicántium. Quæ vidélicet ornaménta Paulus enúmerat, dicens: Alii datur per Spíritum sermo sapiéntiæ: álii sermo sciéntiæ secúndum eúmdem Spíritum: álteri fides in eódem Spíritu: álii grátia sanitátum in uno Spíritu: álii operátio virtútum, álii prophetía, álii discrétio spirítuum, álii génera linguárum, álii interpretátio sermónum. Hæc autem ómnia operátur unus atque idem Spíritus, dívidens síngulis prout vult.",
+   "6": "Quot ergo sunt bona prædicántium, tot sunt ornaménta cælórum. Hinc rursus scriptum est: Verbo Dómini cæli firmáti sunt. Verbum enim Dómini, Fílius est Patris. Sed eósdem cælos, vidélicet sanctos Apóstolos, ut tota simul sancta Trínitas ostendátur operáta, repénte de sancti Spíritus divinitáte adjúngitur: Et spíritu oris ejus omnis virtus eórum. Cælórum ergo virtus de Spíritu sumpta est: quia mundi hujus potestátibus contraíre non præsúmerent, nisi eos sancti Spíritus fortitúdo solidásset.",
+   "7": "Non hoc casu, sed divína dispensatióne gestum est. Egit namque miro modo supérna cleméntia, ut discípulus ille dúbitans, dum in Magístro suo vúlnera palpáret carnis, in nobis vúlnera sanáret infidelitátis. Plus enim nobis Thomæ infidélitas ad fidem, quam fides credéntium discipulórum prófuit: quia dum ille ad fidem palpándo redúcitur, nostra mens, omni dubitatióne postpósita, in fide solidátur.",
+   "8": "Sic quippe discípulum Dóminus post Resurrectiónem suam dubitáre permísit, nec tamen in dubitatióne deséruit: sicut ante nativitátem suam, Maríam sponsum habére vóluit, qui tamen ad ejus núptias non pervénit. Nam ita factus est discípulus, dúbitans et palpans, testis veræ Resurrectiónis, sicut sponsus Matris fúerat custos integérrimæ virginitátis. Palpávit autem, et exclamávit: Dóminus meus, et Deus meus.",
+   "9": "Dicit ei Jesus: Quia vidísti me Thoma, credidísti. Cum Paulus Apóstolus dicat, Est autem fides sperandárum substántia rerum, arguméntum non apparéntium: profécto liquet quod fides illárum rerum arguméntum est, quæ apparére non possunt. Quæ étenim appárent, jam fidem non habent, sed agnitiónem. Dum ergo vidit Thomas, dum palpávit, cur ei dícitur, Quia vidísti me Thoma, credidísti? Sed áliud vidit, áliud crédidit. A mortáli quippe hómine divínitas vidéri non pótuit. Hóminem ergo vidit, et Deum conféssus est, dicens: Dóminus meus, et Deus meus."
+  },
+  "gospel7": "In illo témpore: Thomas unus ex Duódecim, qui dícitur Dídymus, non erat cum eis quando venit Jesus. Et réliqua.",
+  "homily7": "Homilía sancti Gregórii Papæ.",
+  "note": "Rubric under the title: 'Omnia de Communi Apostolorum, pag. 26*. præter hic posita.' Proper here: Ad Magnificat Aña in I Vesperis, Oratio, nine lessons with nine responsories, Ad Benedictus Aña; no Invitatory, antiphons, versicles or II Vespers pieces are printed. Headings: I Nocturn 'De Epístola prima beáti Pauli Apóstoli ad Corínthios. Cap. 2.'; II Nocturn '(Ex Sophron. ac Rom. Martyrol. et Brev.)' before lesson iv, and before lesson v 'Sermo sancti Gregórii Papæ. (Homil. 30. in Evang. post medium.)' (lessons v-vi are from that sermon); III Nocturn 'Léctio sancti Evangélii secúndum Joánnem. Cap. 20.' and after the Gospel 'Homilía sancti Gregórii Papæ. (Homil. 26. in Evang. post medium.)'. The machine reading had put the text of lesson i into 'gospel'/'homily head' of L1 and lost lesson i; its L2/L3 contained the responsories ii and iii. Responsory vi is printed with a capital in mid-text: '* Qui in patiéntia vestra Possidébitis ánimas vestras.' with repeats '— Qui in patiéntia vestra. Glória. Possidébitis ánimas vestras.' Responsory viii: the asterisk follows a comma ('volant, * Et quasi'), and the whole second part is repeated. After Lauds (pdf 833): 'Ad Memoriam de Adventu, omissa Antiphona Feriæ currentis, dicitur sequens Aña. Nolíte timére: quinta enim die véniet ad vos Dóminus noster. V. Vox clamántis in desérto. R. Paráte viam Dómini. Oratio Dominicæ (vel Feriæ, si hoc festum contigerit in jejuniis Quatuor Temporum). ¶ Si vero festum S. Thomæ transferatur, dimittatur Aña Nolíte timére., et dicatur Antiphona signata ad Benedictus Feriæ currentis.' As printed: no æ carries an accent (quæsumus, sæculi, sæcula, præsides, præmia, Galilæus, doctrinæque); 'martyrii' without accent; 'allelúia' with i in the Benedictus antiphon; 'factusest' is set without a space (typed 'factus est')."
+ },
+ "B. Maríæ Mancíni Víduæ O.P.": {
+  "pages": "v1 pdf 833-834 (book pp. 747-748)",
+  "oratio": "Deus, qui beátam Maríam, tuæ grátiæ ubertáte prævéntam, contemplatiónis dono, et exímia in próximum caritáte mirábilem effecísti: ex ejus nobis imitatióne concéde ut cæléstia meditántes, et áliis misericórdiam exhibéntes, ætérnam glóriam cum ipsa cónsequi mereámur. Per Dóminum.",
+  "lessons": {
+   "4": "María, quæ in sæculo Catharína vocabátur, ex nóbili Mancínia domo, Bartholomæo patre, Pisis orta est. Primo ævo laudabíliter transácto, ut propinquórum voluntáti obtemperáret, semel ac íterum matrimónio se addíxit: quo in statu rerum divinárum contemplatióni vacáre, et indigéntibus offícia caritátis impéndere cœpit. Altero viro demórtuo cum líberis, novas núptias iníre totis víribus ábnuit, et arctiórem vivéndi formam instítuit. Revéra solémne illi fuit, quater per hebdómadam jejunáre, quotídie corpus flagéllis cædere, super stratum lígneum vix necessário somno indulgére, diu noctúque oratióni vacáre. Hæc inter, labóre mánuum victum sibi comparábat, quem læto ánimo étiam paupéribus et ægrótis largiebátur. Assídue vero a Deo efflagitábat ut juxta suum beneplácitum ipse eam dirígeret.",
+   "5": "Ad ea témpora Pisas venit sancta Catharína Senénsis, qua María familiáriter usa est, ab ipsa mónita salútis accípiens. Illa hortánte, hábitum índuit Sorórum Ordinis sancti Domínici, quas de Pœniténtia vocant; nec multo post, monásticum institútum ejúsdem Ordinis sibi suscipiéndum státuit. Quare in pios usus colláta pecúnia, quam habébat, in monastérium se recépit sanctæ Crucis, ubi spectábilem se ipsam præbuit reguláris observántiæ stúdio. Nam céteris moniálibus próprio ære vivéntibus, María in commúni vitam ducébat cum sex áliis, quarum curam prudénter gerébat. Hic perfectiónis amor demum effécit, ut cum beáta Clara transíerit in monastérium sancti Domínici, a Petro Gambacúrta ejus patre nuper eréctum.",
+   "6": "Novum ingréssa cœnóbium una cum réliquis pari ardóre succénsis, summam diligéntiam adhíbuit, ut disciplína reguláris omníno vigéret, ejúsque zelus hac de re ádeo pátuit, ut moniáles post mortem beátæ Claræ ipsam communitáti præfécerint. Mira sunt quæ narrántur vel de visiónibus cæléstibus, quibus a Deo fuit illustráta, vel de vexatiónibus, quas a dæmone tolerávit, vel de cruciátibus, quos in córpore pértulit, ut ánimas piaculáribus flammis addíctas subleváret. Tandem provécta cum jam esset ætáte, ad Beatórum sedem migrávit, die vigésima secúnda Januárii, anno millésimo quadringentésimo trigésimo primo. Ejus corpus áliquot post annos e sepúlcro érutum super altáre pósitum fuit, et perpétuum cultum obtínuit. Quem rite probátum Pius Nonus Póntifex Máximus ex sacræ Rítuum Congregatiónis consúlto cum confirmásset, beátæ Maríæ novos Missæ et Offícii honóres benígne concéssit pro univérso Prædicatórum Ordine et Pisána diœcési."
+  },
+  "note": "Only Oratio and lessons iv-vi are proper (title on the page: B. MARIÆ MANCINI VIDUÆ ORD. PRÆD.). I Nocturn: 'Lectiones Mulíerem fortem. de Communi unius nec Virginis nec Martyris, pag. 106*.' III Nocturn: 'Homilia in Evangelium Símile est regnum cælórum thesáuro. de Communi unius nec Virginis nec Martyris, pag. 111*.' No responsories printed. Lesson iv: 'ex nóbili Mancínia domo' (machine 'Mancípia'), 'Altero viro', 'Hæc inter' (machine dropped 'Hæc'). As printed without accent: sæculo, Bartholomæo, cædere, præbuit, dæmone; 'corpusáliquot' is set without a space (typed 'corpus áliquot')."
+ },
+ "S. Stéphani Protomártyris": {
+  "pages": "v1 pdf 834-840 (book pp. 748-754)",
+  "v1.ant": "Tu principátum tenes in choro Mártyrum símilis ángelo: qui pro te lapidántibus Deum deprecátus es, beáte Stéphane intercéde pro nobis ad Dóminum.",
+  "oratio": "Da nobis, quæsumus Dómine, imitári quod cólimus, ut discámus et inimícos dilígere: quia ejus natalítia celebrámus, qui novit étiam pro persecutóribus exoráre: Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit.",
+  "mat.invit": "Christum natum, qui beátum hódie coronávit Stéphanum, * Veníte adorémus.",
+  "mat.nants": [
+   [
+    "Beátus Stéphanus jugi legis Dei meditatióne roborátus, tamquam lignum fructíferum secus salutárium aquárum plantátum decúrsus, fructum martyrii in témpore suo dedit primus.",
+    "Constitútus a Deo prædicátor præceptórum ejus, in timóre sancto illi servíre stúduit: officióque fidéliter perácto, in montem sanctum ejus ascéndere dignus fuit.",
+    "In tribulatióne lápidum se preméntium pósitus, míllia pópuli se circumdántis non tímuit: quia susceptórem suum Jesum, ut eum salvum fáceret, exsúrgere in cælo vidit."
+   ],
+   [
+    "Lúmine vultus tui Dómine insignítus Protomártyr Stéphanus, sacrifícium justítiæ seípsum tibi sacrificávit: ideóque in lætítia cordis, in pace obdórmiens requiéscit.",
+    "Benedictiónis tuæ Dómine múnere justificátus, et scuto tuæ protectiónis in passióne munítus, nóminis sui corónam Stéphanus a te percípere méruit.",
+    "O quam admirábile est nomen tuum Dómine Deus noster, pro quo beátus Stéphanus passus, glória et honóre a te est coronátus, et super cælos dono tuæ magnificéntiæ exaltátus!"
+   ],
+   [
+    "In Dómino Deo suo confísus fortis athléta Stéphanus, lápidum fórtiter sustínuit ictus: et idcírco ad montem virtútum transmigrávit victoriósus.",
+    "Sine mácula beátus Stéphanus ingréssus est Dómine in tabernáculum tuum: et quia operátus est justítiam, requiéscit in monte sancto tuo.",
+    "Dómine, virtus et lætítia rectórum: quóniam tu prævenísti diléctum tibi Stéphanum dono gratúitæ benedictiónis, te primum secútus est morte gloriósæ passiónis: unde cum coróna martyrii dedísti ei vitam in sæculum sæculi."
+   ]
+  ],
+  "mat.nvr": [
+   [
+    "Glória et honóre coronásti eum Dómine.",
+    "Et constituísti eum super ópera mánuum tuárum."
+   ],
+   [
+    "Posuísti Dómine super caput ejus.",
+    "Corónam de lápide pretióso."
+   ],
+   [
+    "Magna est glória ejus in salutári tuo.",
+    "Glóriam et magnum decórem impónes super eum."
+   ]
+  ],
+  "resp": {
+   "1": [
+    "Stéphanus autem plenus grátia et fortitúdine,",
+    "Faciébat prodígia et signa magna in pópulo.",
+    [
+     "Cum esset plenus Spíritu sancto beátus Stéphanus."
+    ],
+    [
+     "Faciébat.",
+     false
+    ]
+   ],
+   "2": [
+    "Vidébant omnes Stéphanum, qui erant in concílio:",
+    "Et intuebántur vultum ejus, tamquam vultum ángeli stantis inter illos.",
+    [
+     "Stéphanus autem plenus grátia et fortitúdine, faciébat prodígia, et signa magna in pópulo."
+    ],
+    [
+     "Et intuebántur.",
+     false
+    ]
+   ],
+   "3": [
+    "Intuens in cælum beátus Stéphanus vidit glóriam Dei, et ait:",
+    "Ecce vídeo cælos apértos, et Fílium hóminis stantem A dextris virtútis Dei.",
+    [
+     "Cum autem esset Stéphanus plenus Spíritu sancto, inténdens in cælum, ait."
+    ],
+    [
+     "Ecce vídeo.",
+     "A dextris virtútis Dei."
+    ]
+   ],
+   "4": [
+    "Lapidábant Stéphanum invocántem, et dicéntem: Dómine Jesu Christe áccipe spíritum meum: et",
+    "Ne státuas illis hoc peccátum.",
+    [
+     "Pósitis autem génibus, beátus Stéphanus orábat, dicens."
+    ],
+    [
+     "Ne státuas illis hoc peccátum.",
+     false
+    ]
+   ],
+   "5": [
+    "Impetum fecérunt unanímiter in eum, et ejecérunt eum extra civitátem,",
+    "Invocántem, et dicéntem: Dómine áccipe spíritum meum.",
+    [
+     "Et testes deposuérunt vestiménta sua secus pedes adolescéntis, qui vocabátur Saulus: et lapidábant Stéphanum."
+    ],
+    [
+     "Invocántem.",
+     false
+    ]
+   ],
+   "6": [
+    "Stéphanus servus Dei, quem lapidábant Judæi, vidit cælos apértos: vidit, et introívit:",
+    "Beátus homo, cui cæli patébant.",
+    [
+     "Cum ígitur saxórum crepitántium túrbine quaterétur, inter æthéreos aulæ cæléstis sinus divína ei cláritas fulsit."
+    ],
+    [
+     "Beátus homo.",
+     "Beátus homo."
+    ]
+   ],
+   "7": [
+    "Impii super justum jactúram fecérunt, ut eum morti tráderent:",
+    "At ille gaudens suscépit lápides, ut mererétur accípere corónam glóriæ.",
+    [
+     "Continuérunt aures suas, et ímpetum fecérunt unanímiter in eum."
+    ],
+    [
+     "At ille gaudens.",
+     false
+    ]
+   ],
+   "8": [
+    "Patefáctæ sunt jánuæ cæli Christi Mártyri beáto Stéphano, qui in número Mártyrum invéntus est primus:",
+    "Et ídeo triúmphat in cælis coronátus.",
+    [
+     "Mortem enim, quam Salvátor dignátus est pro ómnibus pati, hanc ille primus réddidit Salvatóri."
+    ],
+    [
+     "Et ídeo.",
+     false
+    ]
+   ],
+   "9": [
+    "Sancte Dei pretióse Protomártyr Stéphane, qui virtúte caritátis circumfúltus úndique, Dóminum pro inimíco exorásti pópulo:",
+    "Funde preces Pro devóto tibi nunc collégio.",
+    [
+     "Ut tuo propitiátus intervéntu, Dóminus nos purgátos a peccátis jungat cæli cívibus."
+    ],
+    [
+     "Funde preces.",
+     "Pro devóto tibi nunc collégio."
+    ]
+   ]
+  },
+  "al": [
+   "Ora pro nobis beáte Stéphane.",
+   "Ut digni efficiámur promissiónibus Christi."
+  ],
+  "laud.ant": [
+   "Lapidavérunt Stéphanum, et ipse invocábat Dóminum dicens: Ne státuas illis hoc peccátum.",
+   "Lápides torréntis illi dulces fuérunt: ipsum sequúntur omnes ánimæ justæ.",
+   "Adhæsit ánima mea post te: quia caro mea lapidáta est pro te, Deus meus.",
+   "Stéphanus vidit cælos apértos, vidit, et introívit: beátus homo cui cæli patébant.",
+   "Ecce vídeo cælos apértos, et Jesum stantem a dextris Dei."
+  ],
+  "laud.bened": "Intuens in cælum beátus Stéphanus vidit glóriam Dei, et ait: Ecce vídeo cælos apértos, et Fílium hóminis stantem a dextris Dei.",
+  "lessons": {
+   "1": "In diébus illis, crescénte número discipulórum, factum est murmur Græcórum advérsus Hebræos, eo quod despiceréntur in ministério quotidiáno víduæ eórum. Convocántes autem Duódecim multitúdinem discipulórum dixérunt: Non est æquum nos derelínquere verbum Dei, et ministráre mensis. Consideráte ergo, fratres, viros ex vobis boni testimónii septem, plenos Spíritu sancto, et sapiéntia, quos constituámus super hoc opus. Nos vero oratióni, et ministério verbi instántes érimus.",
+   "2": "Et plácuit sermo coram omni multitúdine. Et elegérunt Stéphanum, virum plenum fide, et Spíritu sancto, et Philíppum, et Próchorum, et Nicánorem, et Timónem, et Pármenam, et Nicoláum ádvenam Antiochénum. Hos statuérunt ante conspéctum Apostolórum: et orántes imposuérunt eis manus. Et verbum Dómini crescébat, et multiplicabátur númerus discipulórum in Jerúsalem valde: multa étiam turba sacerdótum obediébat fídei.",
+   "3": "Stéphanus autem plenus grátia et fortitúdine, faciébat prodígia et signa magna in pópulo. Surrexérunt autem quidam de synagóga, quæ appellátur Libertinórum, et Cyrenénsium, et Alexandrinórum, et eórum qui erant a Cilícia, et Asia, disputántes cum Stéphano: et non póterant resístere sapiéntiæ, et Spirítui, qui loquebátur. Tunc submisérunt viros, qui dícerent se audivísse eum dicéntem verba blasphémiæ in Móysen, et in Deum.",
+   "4": "Heri celebrávimus temporálem sempitérni Regis nostri natálem: hódie celebrámus triumphálem mílitis passiónem. Heri enim Rex noster trábea carnis indútus, de aula úteri virginális egrédiens, visitáre dignátus est mundum: hódie miles de tabernáculo córporis éxiens, triumphátor migrávit ad cælum. Ille, sempitérnæ Deitátis majestáte serváta, servíle cinctórium carnis assúmens, in hujus sæculi campum pugnatúrus intrávit: iste, depósitis corruptibílibus córporis induméntis, ad cæli palátium perénniter regnatúrus ascéndit.",
+   "5": "Ille descéndit carne velátus: iste ascéndit sánguine laureátus. Ascéndit iste, lapidántibus Judæis: quia ille descéndit, lætántibus Angelis. Glória in excélsis Deo, heri exsultántes sancti Angeli cantavérunt: hódie Stéphanum lætántes in suum consórtium suscepérunt. Heri Dóminus exívit de útero Vírginis: hódie miles egréssus est de ergástulo carnis. Heri Christus pro nobis pannis est involútus: hódie Stéphanus stola est ab eo immortalitátis indútus.",
+   "6": "Heri præsépis angústia Christum portávit infántem: hódie imménsitas cæli suscépit Stéphanum triumphántem. Solus descéndit Dóminus, ut multos eleváret: humiliávit se Rex noster, ut suos mílites exaltáret. Necessárium tamen nobis est, fratres, agnóscere quibus armis præcínctus Stéphanus sævítiam Judæórum pótuit superáre, ut ita meruísset felíciter triumpháre. Stéphanus ergo, ut nóminis sui corónam meruísset accípere, caritátem pro armis habébat, et per ipsam ubíque vincébat.",
+   "7": "Obsérva, juxta Apóstolum scribéntem ad Corínthios, vária esse dona discipulórum Christi: álios prophétas, qui ventúra prædícent: álios sapiéntes, qui novérunt quando débeant proférre sermónem: álios scribas in lege doctíssimos: ex quibus lapidátus est Stéphanus, Paulus occísus, crucifíxus Petrus, flagelláti in Actibus Apostolórum discípuli. Quærimus, quis sit iste Zacharías fílius Barachíæ: quia multos légimus Zacharías.",
+   "8": "In divérsis divérsa legi: et débeo singulórum opiniónes pónere. Alii Zacharíam fílium Barachíæ dicunt, qui in duódecim Prophétis undécimus est, patrísque in eo nomen conséntit: sed ubi occísus sit inter templum et altáre, Scriptúra non lóquitur; máxime cum tempóribus ejus vix ruínæ templi fúerint. Alii Zacharíam patrem Joánnis intélligi volunt, ex quibúsdam apocryphórum sómniis approbántes, quod proptérea occísus sit, quia Salvatóris prædicáret advéntum.",
+   "9": "Alii istum esse volunt Zacharíam, qui occísus est a Joas rege Juda inter templum et altáre, sicut Regum narrat história. Sed observándum quod ille Zacharías non sit fílius Barachíæ, sed fílius Joíadæ sacerdótis: unde et Scriptúra refert: Non fuit recordátus Joas patris ejus Joíadæ, quia sibi fecísset bona. Cum ergo et Zacharíam teneámus, et occisiónis conséntiat locus: quærimus quare Barachíæ dícitur fílius, et non Joíadæ? Barachías lingua nostra Benedíctus Dómini dícitur: et sacerdótis Joíadæ justítia hebræo nómine demonstrátur. In Evangélio quo utúntur Nazaræi, pro fílio Barachíæ, fílium Joíadæ reperímus scriptum."
+  },
+  "gospel7": "In illo témpore: Dicébat Jesus Scribis, et Pharisæis: Ecce ego mitto ad vos prophétas, et sapiéntes, et scribas, et ex illis occidétis, et crucifigétis, et ex eis flagellábitis in synagógis vestris. Et réliqua.",
+  "homily7": "Homilía sancti Hierónymi Presbyteri.",
+  "note": "I Vespers has only a commemoration: 'Ad Memoriam Aña. Tu principátum …' (given as v1.ant) with V. Glória et honóre coronásti eum Dómine. R. Et constituísti eum super ópera mánuum tuárum. (the machine had run this versicle into v1.ant). Oratio: the conclusion is printed in full form 'exoráre: Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit….' (kept as printed, no short 'Per Dóminum'); rubric: '¶ Cum hæc Oratio dicitur ad Memoriam, et immediate sequitur alia Memoria, finitur sic: exoráre Christum Dóminum nostrum. R. Amen.' Matins: hymn 'Deus tuórum mílitum' printed in full (doxology 'Glória tibi Dómine, Qui natus es de Vírgine'); after the 1st antiphon 'Psalmi de Communi unius Martyris, pag. 39*. et sequentibus.' Headings: 'De Actibus Apostolórum. Cap. 6.' (I Noct.); 'Sermo sancti Fulgéntii Epíscopi. (Serm. de S. Steph.)' (II Noct.); 'Léctio sancti Evangélii secúndum Matthæum. Cap. 23.' and 'Homilía sancti Hierónymi Presbyteri. (Lib. 4. Comm. in c. 23. Matth.)' (III Noct.). Machine errors: the gospel incipit was garbled; lesson vi was swallowed into 'R5'; in lesson v the words 'hódie Stéphanus' (page break 750/751) were dropped; lesson vii had a stray 'mácula beátus'. Responsories iii and ix have a capital in mid-text marking the repeat after Glória ('stantem A dextris virtútis Dei', 'Funde preces Pro devóto tibi nunc collégio'). In resp. i and v the asterisk follows a comma. Lauds: 'AD LAUDES ET PER HORAS ANTIPHONÆ', after ant. 1 'Psalmus Dóminus regnávit. cum ceteris, pag. 17.'; Capitulum (Act. 6) 'Stéphanus autem plenus grátia et fortitúdine, faciébat prodígia et signa magna in pópulo.'; hymn 'Martyr Dei, qui únicum' in full; V. Coróna áurea super caput ejus. R. Expréssa signo sanctitátis. After the Oratio: 'Memoria de Nativitate: Aña. Nésciens Mater Virgo virum péperit sine dolóre Salvatórem sæculórum: ipsum Regem angelórum sola Virgo lactábat úbere de cælo pleno. V. Benedíctus qui venit in nómine Dómini. R. Deus Dóminus, et illúxit nobis. Oratio. Concéde, quæsumus omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet, quos sub peccáti jugo vetústa sérvitus tenet. Per eúmdem Dóminum.' Little Hours are also printed (not in the fix keys): Terce 'Capitulum Stéphanus autem., ut in Laudibus.' R. Glória et honóre coronásti eum Dómine, * Allelúia, allelúia. Glória et honóre. V. Et constituísti eum super ópera mánuum tuárum. Allelúia. Glória Patri. Glória et honóre. V. Posuísti Dómine super caput ejus. R. Corónam de lápide pretióso. — Sext Capitulum (Act. 7) 'Cum esset Stéphanus plenus Spíritu sancto, inténdens in cælum, vidit glóriam Dei, et Jesum stantem a dextris Dei.' R. Posuísti Dómine super caput ejus, * Allelúia, allelúia. Posuísti. V. Corónam de lápide pretióso. Allelúia. Glória. Posuísti. V. Magna est glória ejus in salutári tuo. R. Glóriam et magnum decórem impónes super eum. — None Capitulum (Act. 7) 'Pósitis autem génibus, beátus Stéphanus clamávit voce magna dicens: Dómine ne státuas illis hoc peccátum.' R. Magna est glória ejus in salutári tuo, * Allelúia, allelúia. Magna est. V. Glóriam et magnum decórem impónes super eum. Allelúia. Glória. Magna est. V. Coróna áurea super caput ejus. R. Expréssa signo sanctitátis. II Vespers: 'Psalmi et Antiphonæ de Nativitate, pag. 214.' (so no v2.ant of the feast), Capitulum Stéphanus autem (Act. 6) as at Lauds, hymn Deus tuórum mílitum, V. Glória et honóre coronásti eum Dómine. R. Et constituísti eum super ópera mánuum tuárum., Ad Magnificat Aña O quam gloriósus, Oratio as above. Then 'PER OCTAVAM S. STEPHANI. De S. Stephano fiat quotidie Memoria in Laudibus et Vesperis, ut fusius suis locis notatum est.' As printed: no æ carries an accent (quæsumus, Hebræos, Judæis, Judæi, sæculi, Pharisæis, Quærimus, hebræo, Nazaræi, Adhæsit); 'martyrii', 'Presbyteri', 'Impetum', 'Impii', 'Alii', 'Angelis/Angeli' without accent; 'ángeli' lower-case in v1.ant and resp. ii; 'Joíadæ' with i (machine 'Jójadæ').",
+  "v2.magn": "O quam gloriósus est beátus Stéphanus Martyr et Levíta, qui ante Apóstolos regna cæléstia possidére méruit, et ad Patris déxteram Fílium vidére!"
+ }
+}

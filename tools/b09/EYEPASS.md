@@ -7,10 +7,10 @@ cannot be read on the image, say so (see `not_ok`). Dominican texts often differ
 ## Per feast
 1. `cd /home/claude/dominican-liturgy/tools/b09 && python3 show.py 'MM-DD' --full`
    shows the machine reading (two OCRs merged): pieces by section, lessons (L4…), responsories (R4…), `Q` = doubtful words,
-   `pages` = pdf pages of the volume (`v1` or `v2`) where the feast was found. The feast may start on the page before and end on
+   `pages` = pdf pages of the volume (`v1` → /tmp/b09/b1.pdf, `v2` → /tmp/b09/b2.pdf; the v1.pdf/v2.pdf symlinks are broken) where the feast was found. The feast may start on the page before and end on
    the page after: read those too if the Office is cut.
 2. Render and read the pages (120 dpi is readable; go to 160 for a doubtful word):
-   `pdftoppm -f N -l N -r 120 -gray -png /tmp/b09/v1.pdf /tmp/b09/eye/<yourfile>-N` then Read the PNG.
+   `pdftoppm -f N -l N -r 120 -gray -png /tmp/b09/b1.pdf /tmp/b09/eye/<yourfile>-N` then Read the PNG.
 3. Compare EVERY piece with the page: the prayer (Oratio), antiphons, versicles, responsories (with their printed repeats after
    the verse and after Glória), lessons word by word. Both OCRs can drop the same word (e.g. "quem vocávit" read as "vocávit");
    lessons may be interleaved across a column or page break.
