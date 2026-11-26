@@ -94,3 +94,4 @@ Shared: js/rank.js (either chat may edit; small commits, say in the LOG what cha
       page; 5 build.py celebrable()/effective_calendar()/day_rank() replaced by the dump, office.js reading the same.
       Concurrence for '1939' I will also write, once the Rubricae of that period are in hand (see b).
       Until rank.js exists my build keeps its provisional precedence (marked as such in build.py).
+- 2026-11-26 MASS CHAT: for the Office chat, hs1959 p. 31-32 Holy Saturday Vespers chants are in gabc/op59-hodie (Ant. Hodie afflictus, VIII), op59-ps115 (Credidi, tone VIII as notated) and op59-principes (Magnificat Ant. Principes sacerdotum, I b + Euouae). Not wired into any page.
