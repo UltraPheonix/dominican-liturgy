@@ -313,6 +313,11 @@
    "p": "in",
    "i": "Mihi autem absit (V. Voce mea)",
    "pg": "575"
+  },
+  "op-g50-angeli-co": {
+   "p": "co",
+   "i": "Angeli, Archangeli",
+   "pg": "605"
   }
  },
  "Quad1t": {
@@ -1887,10 +1892,10 @@
  },
  "S1024": {
   "co": [
-   "r3501"
+   "op-g50-angeli-co"
   ],
-  "p39": "G50 p. 605*",
-  "_why_g50": "G50 p. 605*: Communio Angeli, Archangeli (not yet transcribed)"
+  "p39": "G50 p. 605",
+  "_why_g50": "G50 p. 605: Communio Angeli, Archangeli (printed; transcribed from the scan)"
  },
  "S0827": {
   "in": [
