@@ -337,3 +337,12 @@ Tools: OCR with tesseract 'latf'/'lat' (tessdata from raw.githubusercontent.com/
   posterior pp. 1-481 = 1tRQFd_fEUhJEJrulKKcuQXsVK2dF7sOT (141 MB); posterior pp. 482-end not found. Text layer not yet checked
   (too large for the Drive tool's base64 download: ask Joseph to attach them, or use the CMAA scans + tools/b09/ocr09.py).
   Also matutinum-1936-gillet (1).pdf = 1w2PdWfEHZACazKofEG8YlPY1C9wz73nd. No Nocturnale S.O.P. (2006) in the Drive.
+- 2026-11-26: Joseph attached the 1909 Breviary with a text layer (vol. 1 1577 pp., vol. 2 1369 pp.; files in
+  /mnt/user-data/uploads/Breviarium_Cormier_1909_*_text.pdf — re-request if the session is new). Their text layer was
+  extracted column by column with tools/b09/extract.py → tools/b09/text/v1.txt.gz, v2.txt.gz ('\f### <pdf index>' per page,
+  '||' between columns). Quality: an old OCR — accents often wrong (h6die, declindmus), some word order jumbled within lines.
+  Plan: use it for structure/finding pages; restore wording by matching to known texts (Divinum Officium Latin, our 1962 data,
+  Vulgate psalter) and re-OCR doubtful pages with tesseract 'lat' (tessdata_best) from the page images of the same PDF.
+  Also in Joseph's Drive folder "Antiphons" (and on the CMAA site as n1/n2/na/nc.pdf): the NOCTURNALE S.O.P. (Ammosaulicus):
+  n1 = front matter, n2 = Dominica per annum (Ordinarium of Matins), na = Proprium de Tempore, nc = Commune Sanctorum —
+  born-digital PDFs whose notes are set in a chant font: decode the font glyphs to gabc → the Matins chant for both Offices.
