@@ -423,3 +423,51 @@ body.en-only .m-tr, body.en-only .reading .r-cols > .en-text, body.en-only .orat
   .reading .la { text-align: left; hyphens: manual; }       /* justified text left rivers on phones */
   .m-tr, .reading .r-cols > .en-text, .reading .tone-en, .oratio .r-cols > .en-text, .oratio .tone-en, .preface .pf-text .en-text { font-size: 15px; padding-left: 9px; }
 }
+
+/* the bar under the title: form of Mass · language · print & share */
+#mhead .mass-head { margin-bottom: 4px; }
+#mhead .rubric-line { margin: 8px 0 12px; }
+.massbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 6px 0 8px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--paper); }
+.seg button, .pm-btn { background: none; border: 0; color: var(--muted); font-family: var(--caps); letter-spacing: .06em; font-size: 14px; padding: 7px 13px; min-height: 36px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button:hover, .pm-btn:hover { color: var(--rubric); }
+.seg button.on { background: var(--rubric); color: var(--paper); }
+.pmenu { position: relative; margin-left: auto; }
+.pm-btn { border: 1px solid var(--line); border-radius: 999px; }
+.pm-list { position: absolute; right: 0; top: calc(100% + 6px); z-index: 60; min-width: 220px; display: flex; flex-direction: column; background: var(--paper);
+  border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.12); padding: 6px 0; }
+.pm-list[hidden] { display: none; }
+.pm-list button { background: none; border: 0; text-align: left; font: inherit; font-size: 16px; color: var(--ink); padding: 10px 16px; cursor: pointer; }
+.pm-list button:hover { background: rgba(127,127,127,.08); color: var(--rubric); }
+
+/* links to the parts, kept in view under the top bar */
+.jump { position: sticky; top: var(--toph, 54px); z-index: 30; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  background: var(--paper); border-bottom: 1px solid var(--line); margin: 0 -4px 4px; padding: 6px 4px; scroll-padding: 16px; }
+.jump::-webkit-scrollbar { display: none; }
+.jump[hidden] { display: none; }
+.jump a { flex: 0 0 auto; font-family: var(--caps); letter-spacing: .06em; font-size: 13.5px; color: var(--muted); text-decoration: none; padding: 5px 10px; border-radius: 999px; white-space: nowrap; }
+.jump a:hover { color: var(--rubric); }
+.jump a.on { color: var(--rubric); background: rgba(160, 30, 30, .08); }
+#mass section[id] { scroll-margin-top: calc(var(--toph, 54px) + 52px); }
+@media (max-width: 600px) {
+  .massbar { gap: 8px; }
+  #segForm { display: flex; width: 100%; }
+  #segForm button { flex: 1 1 0; padding: 7px 4px; }
+  .seg button, .pm-btn { font-size: 13px; }
+  .jump { margin: 0 -16px 4px; padding: 6px 12px; }
+}
+@media print { .massbar, .jump, #mhead .rubric-line { display: none !important; } }
+
+/* Latin + English: side by side where there is room (readings, prayers, Preface), one under the other on phones */
+@media (min-width: 820px) {
+  body.en-both .r-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: start; }
+  body.en-both .r-cols > .en-text { margin-top: 0; }
+  body.en-both .reading .r-cols > .la { text-align: left; hyphens: manual; }
+}
+/* Low Mass: the proper read, not sung */
+.part .said .la { margin: 6px 0 4px; font-size: 18px; line-height: 1.55; }
+.part .said .o-mark { color: var(--rubric); }
+@media (min-width: 820px) { body.en-both .part.m-pair:has(.said) { display: grid; grid-template-columns: 1fr 1fr; column-gap: 26px; }
+  body.en-both .part.m-pair:has(.said) > .part-head, body.en-both .part.m-pair:has(.said) > h2 { grid-column: 1 / -1; }
+  body.en-both .part.m-pair:has(.said) > .m-tr { margin-top: 6px; } }

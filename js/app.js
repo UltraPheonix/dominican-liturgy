@@ -1007,10 +1007,57 @@
       (P ? ' · ' + P.en : '') + ' · ' + (R.dismiss === 'ite' ? 'Ite, missa est' : 'Benedicamus Domino');
   }
 
+  // the bar under the title: form of Mass, language, print & share
+  function markBar() {
+    var f = $('#segForm'), l = $('#segLang');
+    if (f) Array.prototype.forEach.call(f.children, function (b) { var on = (b.getAttribute('data-v') || '') === (state.ordo || ''); b.classList.toggle('on', on); b.setAttribute('aria-checked', on); });
+    if (l && window.OPLang) { var lv = OPLang.get(); Array.prototype.forEach.call(l.children, function (b) { var on = b.getAttribute('data-v') === lv; b.classList.toggle('on', on); b.setAttribute('aria-checked', on); }); }
+  }
+  // a strip of links to the parts of the Mass, kept in view while scrolling; the part on screen is marked
+  var JUMP = {in: 1, ky: 1, gl: 1, oratio: 1, reading: 1, gr: 1, al: 1, tr: 1, se: 1, cr: 1, of: 1, pf: 1, sa: 1, ag: 1, co: 1, it: 1, as: 1};
+  var jumpObs = null;
+  function buildJump(main) {
+    var nav = $('#jump'); if (!nav) return;
+    nav.innerHTML = ''; if (jumpObs) jumpObs.disconnect();
+    var secs = [];
+    Array.prototype.forEach.call(main.children, function (sec, n) {
+      var p = sec.getAttribute && sec.getAttribute('data-part');
+      if (!p || !JUMP[p]) return;
+      var h = sec.querySelector('.part-head h2, h3');
+      var t = h ? (h.firstChild && h.firstChild.nodeType === 3 ? h.firstChild.nodeValue : h.textContent) : '';
+      t = (t || '').trim(); if (!t) return;
+      if (p === 'pf') t = 'Praefatio';
+      sec.id = sec.id || 'p-' + n;
+      secs.push(sec);
+      nav.appendChild(el('a', {href: '#' + sec.id, 'data-for': sec.id, text: t, onclick: function (e) {
+        e.preventDefault();
+        var top = sec.getBoundingClientRect().top + window.scrollY - (nav.getBoundingClientRect().height + (($('.top') || {}).offsetHeight || 0)) - 6;
+        window.scrollTo({top: top, behavior: 'smooth'});
+      }}));
+    });
+    nav.hidden = secs.length < 3;
+    var th = ($('.top') || {}).offsetHeight || 0;
+    document.documentElement.style.setProperty('--toph', th + 'px');
+    if (!('IntersectionObserver' in window)) return;
+    jumpObs = new IntersectionObserver(function (ents) {
+      ents.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var a = nav.querySelector('a[data-for="' + e.target.id + '"]');
+        if (!a) return;
+        Array.prototype.forEach.call(nav.querySelectorAll('a.on'), function (x) { x.classList.remove('on'); });
+        a.classList.add('on');
+        var r = a.getBoundingClientRect(), nr = nav.getBoundingClientRect();
+        if (r.left < nr.left || r.right > nr.right) nav.scrollTo({left: a.offsetLeft - 16, behavior: 'smooth'});
+      });
+    }, {rootMargin: '-' + (th + 60) + 'px 0px -65% 0px'});
+    secs.forEach(function (s2) { jumpObs.observe(s2); });
+  }
+
   function drawMass() {
     if (BOOKP) return;
-    var m = D.masses[state.key], main = $('#mass');
-    main.innerHTML = '';
+    var m = D.masses[state.key], main = $('#mass'), mhead = $('#mhead') || main;
+    main.innerHTML = ''; if (mhead !== main) mhead.innerHTML = '';
+    markBar();
     if (!HWP && /^Quad6[mtwhfs]?$/.test(state.key)) {
       main.appendChild(el('header', {class: 'mass-head'}, [el('h1', {text: clean(m.title).replace(/^\d+ [A-Za-z.]+ — /, '')}), el('p', {class: 'en', text: m.name_en || clean(m.en || '')})]));
       main.appendChild(el('div', {class: 'hw-card'}, [
@@ -1020,7 +1067,7 @@
     }
     var latin = clean(m.title).replace(/^\d+ [A-Za-z.]+ — /, '');
     var english = m.name_en || (isTemporal(state.key) ? clean(m.en || '') : '');
-    main.appendChild(el('header', {class: 'mass-head'}, [
+    mhead.appendChild(el('header', {class: 'mass-head'}, [
       el('h1', {text: latin}),
       english && english !== latin ? el('p', {class: 'en', text: english}) : null
     ]));
@@ -1032,7 +1079,7 @@
       el('div', {class: 'ch-sub', text: WEEKDAYS[d0.getDay()] + ', ' + d0.getDate() + ' ' + MONTHS[d0.getMonth()] + ' ' + d0.getFullYear() + ' · Graduale juxta ritum Ordinis Praedicatorum'})
     ]), main.firstChild);
     var R = rubricsOf(state.key, state.date);
-    main.appendChild(el('p', {class: 'rubric-line', text: rubricLine(R)}));
+    mhead.appendChild(el('p', {class: 'rubric-line', text: rubricLine(R)}));
     if (!(HWP && window.HW_TEXT && HW_TEXT[state.hwr] && HW_TEXT[state.hwr][state.key])) main.appendChild(el('h2', {class: 'caps-head', id: 'chants', text: state.ordo ? 'Ordo et Proprium Missae' : 'Proprium Missae'}));
     if (ord.as) main.appendChild(drawOrdinary('as', ord.as));
     var readHead = false;
@@ -1056,6 +1103,7 @@
     var src = {dm: 'Chants as assigned by the St. Dominic Missal (1959)', missal: 'Chants as given in the Missale O.P. (1939)',
       proper: 'Proper Mass of the Graduale O.P.', common: 'Common named by the Missale O.P. (1939)', guess: 'Common chosen from the saint\'s title: check the Ordo',
       shared: 'Chants re-used from elsewhere in the Graduale', g50: 'Mass as the Graduale O.P. gives it on the day', manual: 'Dominican Mass, checked against the Missale O.P.'}[m.conf];
+    buildJump(main);
     main.appendChild(el('p', {class: 'source hide-print'}, [
       'Graduale O.P. (1950)' + (m.page ? ', p. ' + m.page : '') + (src ? ' · ' + src : '') + '. Readings and prayers: Missale O.P. (1933/1939)' + (isSung() ? '; reading tones: Harrison O.P. (1920)' : '') + '. ',
       el('a', {href: 'about.html', text: 'About the sources'})
@@ -1438,7 +1486,8 @@
     slot.appendChild(el('h2', {class: 'print-only', text: partName}));
     slot.appendChild(chantBox);
     var trc = c.id && (D.trans[c.id] || D.trans[String(c.id)]);
-    if (trc && trc.t) { slot.classList.add('m-pair'); slot.appendChild(el('div', {class: 'm-tr hide-print'}, trimTPText(trc.t).split(/(℣\.|℟\.)/).map(function (x) { return /^[℣℟]\.$/.test(x) ? el('span', {class: 'r', text: x}) : x; }))); }
+    var trDiv = null;
+    if (trc && trc.t) { slot.classList.add('m-pair'); trDiv = el('div', {class: 'm-tr hide-print'}, trimTPText(trc.t).split(/(℣\.|℟\.)/).map(function (x) { return /^[℣℟]\.$/.test(x) ? el('span', {class: 'r', text: x}) : x; })); slot.appendChild(trDiv); }
     slot.appendChild(editor);
     if (state.edit) slot.appendChild(el('p', {class: 'meta hide-print'}, [info]));
     sel.addEventListener('change', function () {
@@ -1465,6 +1514,24 @@
       info.textContent = meta.join(' · ') + ' · ';
       info.appendChild(el('a', {href: 'https://gregobase.selapa.net/chant.php?id=' + c.id, target: '_blank', rel: 'noopener', text: 'GregoBase ' + c.id}));
       var shown = function () { return part === 'in' ? fullIntroit(editor.value, h, state.key) : editor.value; };
+      // the English of the Introit follows the Latin as it is sung: Glory be, then the antiphon again
+      if (part === 'in' && trDiv && !/Glory be/.test(trDiv.textContent)) {
+        var lt = gabcText(shown()), ant0 = trimTPText(trc.t).split('℣.')[0].trim();
+        var antE = ant0.split(/\s+/).slice(0, 6).join(' ').replace(/[,.;:]$/, '') + '…';
+        if (/Gl[oó]ria Patri/.test(lt) && !/sine Gl[oó]ria Patri/.test(lt)) { trDiv.appendChild(document.createTextNode(' Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now, and ever shall be, world without end. Amen. ')); }
+        if (/Ant\.|Gl[oó]ria Patri|repetitur/.test(lt) && ant0) { trDiv.appendChild(el('span', {class: 'r', text: 'Ant. '})); trDiv.appendChild(document.createTextNode(antE)); }
+      }
+      if (state.ordo === 'low' && !state.edit) {   // at Low Mass the priest reads the proper: the text only, without the notes
+        chantBox.innerHTML = ''; chantBox.className = 'said'; mode.textContent = '';
+        var tx = gabcText(seasonalGabc(shown(), part)).replace(/^(\S)(\S*)/, function (a, f, r) { return f + r.toLowerCase(); })
+          .replace(/Ant\.\s*([A-ZÁÉÍÓÚÆŒ]+)\s*$/, function (a, w) { return 'Ant. ' + w.charAt(0) + w.slice(1).toLowerCase(); });
+        var antw = tx.split('℣.')[0].trim().split(/\s+/).slice(0, 3).join(' ').replace(/[,.;:]$/, '');
+        tx = tx.replace(/Ant\.\s*\S+\s*$/, 'Ant. ' + antw + '…');
+        var lp = el('p', {class: 'la', lang: 'la'});
+        tx.split(/(℣\.|℟\.|Ant\.)/).forEach(function (x) { if (x) lp.appendChild(/^(℣\.|℟\.|Ant\.)$/.test(x) ? el('span', {class: 'o-mark', text: x + ' '}) : document.createTextNode(x.replace(/^\s+/, ''))); });
+        chantBox.appendChild(lp);
+        return;
+      }
       renderInto(chantBox, shown(), h, part);
       var timer;
       editor.addEventListener('input', function () {
@@ -1756,6 +1823,22 @@
     $('#selCredo').addEventListener('change', function (e) { state.credo = e.target.value; drawMass(); writeHash(); });
     $('#selAsp').addEventListener('change', function (e) { state.asp = e.target.value; drawMass(); writeHash(); });
     $('#selOrdo').addEventListener('change', function (e) { state.ordo = e.target.value; drawMass(); writeHash(); });
+    if ($('#segForm')) $('#segForm').addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      state.ordo = b.getAttribute('data-v') || ''; $('#selOrdo').value = state.ordo; drawMass(); writeHash();
+    });
+    if ($('#segLang')) $('#segLang').addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b || !window.OPLang) return;
+      OPLang.set(b.getAttribute('data-v')); markBar();
+    });
+    if ($('#btnPM')) {
+      var pmb = $('#btnPM'), pml = $('#pmList');
+      var pmClose = function () { pml.hidden = true; pmb.setAttribute('aria-expanded', 'false'); };
+      pmb.addEventListener('click', function (e) { e.stopPropagation(); pml.hidden = !pml.hidden; pmb.setAttribute('aria-expanded', String(!pml.hidden)); });
+      pml.addEventListener('click', function (e) { setTimeout(pmClose, e.target.id === 'btnShare' ? 1600 : 0); });
+      document.addEventListener('click', function (e) { if (!e.target.closest('.pmenu')) pmClose(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') pmClose(); });
+    }
     // the booklets (Choir Book, Priest's Missal, Congregation Booklet) open as A4 pages ready to print
     var openBook = function (b) { writeHash(); window.open('booklet.html?b=' + b + location.hash, '_blank'); };
     $('#btnChoir').addEventListener('click', function () { openBook('choir'); });
