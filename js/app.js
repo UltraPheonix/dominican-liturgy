@@ -90,7 +90,7 @@
     bits.forEach(function (b) {
       var kv = b.split('=');
       if (PARTS.indexOf(kv[0]) >= 0) out.over[kv[0]] = kv[1] ? kv[1].split(',').map(function (x) { return /^\d+$/.test(x) ? Number(x) : x; }) : [];
-      else if (['d', 'season', 'ord', 'credo', 'asp', 'ordo', 'hw'].indexOf(kv[0]) >= 0) out.opts[kv[0]] = kv[1] || '';
+      else if (['d', 'season', 'ord', 'credo', 'asp', 'ordo', 'hw', 'conv'].indexOf(kv[0]) >= 0) out.opts[kv[0]] = kv[1] || '';
     });
     return out;
   }
@@ -108,6 +108,7 @@
     if (state.credo) bits.push('credo=' + state.credo);
     if (state.asp) bits.push('asp=' + state.asp);
     if (state.ordo) bits.push('ordo=' + state.ordo);
+    if (state.conv) bits.push('conv=1');
     if (HWP || state.hwr !== '1939') bits.push('hw=' + state.hwr);
     history.replaceState(null, '', '#' + bits.join('&'));
   }
@@ -1144,6 +1145,13 @@
     if (k === 'dismiss') { sec = {la: R.requiem ? 'Requiescant in pace' : R.dismiss === 'ite' ? 'Ite, missa est' : 'Benedicamus Domino', en: 'Dismissal'}; lines = O.dismiss[R.requiem ? 'req' : R.dismiss === 'ite' ? 'ite' : 'ben']; }
     else if (k === 'endNoGospel') { sec = O.end; lines = O.end.lines.slice(0, O.end.lines.findIndex(function (l) { return /^At the Gospel side/.test(l.r || ''); })); }
     else { sec = O[k]; if (!sec) return null; lines = sec.lines; }
+    // Conventual Mass: the Communion of the friars in place of the Communion of the faithful
+    if (k === 'communion' && state.conv && window.ORDO && ORDO.commConv) {
+      var c0 = lines.findIndex(function (l) { return /^Communion of the faithful/.test(l.r || ''); });
+      var c1 = lines.findIndex(function (l) { return /custódiat te in vitam/.test(l.la || ''); });
+      if (c0 >= 0 && c1 > c0) lines = lines.slice(0, c0).concat(ORDO.commConv.lines, lines.slice(c1 + 1));
+    }
+    if (R.requiem && k === 'communion') lines = lines.filter(function (l) { return !/^Pax tibi/.test(l.la || '') && !/^He kisses the lip of the chalice/.test(l.r || ''); });
     var HWk = window.HOLYWEEK && HOLYWEEK[state.key];
     if (k === 'dismiss' && HWk && HWk.alleluiaDismiss) lines = lines.map(function (l) { return {w: l.w, la: l.la.replace(/\.$/, ', allelúia, allelúia.'), en: l.en.replace(/\.$/, ', alleluia, alleluia.')}; });
     // at a private Mass of Palm Sunday the Gospel of the blessing is the last Gospel
@@ -1188,7 +1196,6 @@
     if (k === 'gospel' && b0 && EV_LA[b0]) lines = lines.map(function (l) { return /secúndum N\./.test(l.la || '') ? {w: l.w, la: l.la.replace('N.', EV_LA[b0] + '.'), en: l.en.replace(/according to N\./, 'according to ' + EV_EN[b0] + '.')} : l; });
     if (mode !== 'l' && /^(collect|offerDial|post|postEnd|gospel)$/.test(k || '')) lines = singLines(lines);
     if (R.requiem) lines = lines.filter(function (l) { return !/^(Benedíctio Dei omnipoténtis|Amen\.$)/.test(l.la || '') || k !== 'end'; });
-    if (R.requiem && k === 'communion') lines = lines.filter(function (l) { return !/^Pax tibi/.test(l.la || '') && !/^He kisses the lip of the chalice/.test(l.r || ''); });
     var box = el('section', {class: 'part ordo', 'data-part': 'ordo'});
     box.appendChild(el('div', {class: 'part-head'}, [el('h2', {text: sec.la}), el('span', {class: 'incipit', text: sec.en})]));
     lines.forEach(function (l, i) {
@@ -1832,6 +1839,7 @@
     $('#selCredo').addEventListener('change', function (e) { state.credo = e.target.value; drawMass(); writeHash(); });
     $('#selAsp').addEventListener('change', function (e) { state.asp = e.target.value; drawMass(); writeHash(); });
     $('#selOrdo').addEventListener('change', function (e) { state.ordo = e.target.value; drawMass(); writeHash(); });
+    if ($('#chkConv')) $('#chkConv').addEventListener('change', function (e) { state.conv = e.target.checked; if (state.conv && !state.ordo) { state.ordo = 'sung'; $('#selOrdo').value = 'sung'; } drawMass(); writeHash(); });
     if ($('#segForm')) $('#segForm').addEventListener('click', function (e) {
       var b = e.target.closest('button'); if (!b) return;
       state.ordo = b.getAttribute('data-v') || ''; $('#selOrdo').value = state.ordo; drawMass(); writeHash();
@@ -1866,7 +1874,7 @@
       var hh = readHash() || {key: 'Quad6', opts: {}}, KEYS = ['Quad6', 'Quad6m', 'Quad6t', 'Quad6w', 'Quad6h', 'Quad6f', 'Quad6s'];
       var stored = ''; try { stored = localStorage.getItem('hwRite') || ''; } catch (e) {}
       state.hwr = hh.opts.hw === '1959' || hh.opts.hw === '1939' ? hh.opts.hw : (stored || '1939');
-      state.ordo = hh.opts.ordo || ''; state.ord = hh.opts.ord || ''; $('#selOrdo').value = state.ordo; $('#selOrd').value = state.ord;
+      state.ordo = hh.opts.ordo || ''; state.conv = hh.opts.conv === '1'; if ($('#chkConv')) $('#chkConv').checked = state.conv; state.ord = hh.opts.ord || ''; $('#selOrdo').value = state.ordo; $('#selOrd').value = state.ord;
       var today = new Date(); today.setHours(0, 0, 0, 0);
       var Ey = easter(today.getFullYear()); if (diffDays(today, Ey) > 0) Ey = easter(today.getFullYear() + 1);
       var dayOf = function (k) { return addDays(Ey, KEYS.indexOf(k) - 7); };
@@ -1891,7 +1899,7 @@
     var h = readHash();
     if (BOOKP) {
       var ob = (h && h.opts) || {};
-      state.season = ob.season || 'auto'; state.ord = ob.ord || ''; state.credo = ob.credo || ''; state.asp = ob.asp || ''; state.ordo = ob.ordo || ''; state.hwr = ob.hw === '1959' ? '1959' : '1939';
+      state.season = ob.season || 'auto'; state.ord = ob.ord || ''; state.credo = ob.credo || ''; state.asp = ob.asp || ''; state.ordo = ob.ordo || ''; state.conv = ob.conv === '1'; state.hwr = ob.hw === '1959' ? '1959' : '1939';
       var bd = ob.d ? fromIso(ob.d) : new Date(); bd.setHours(0, 0, 0, 0);
       if (h && D.masses[h.key]) state.key = h.key;
       onDate(bd, !!(h && D.masses[h.key]));
@@ -1901,8 +1909,8 @@
     }
     if (h && D.masses[h.key]) {
       var o = h.opts;
-      state.season = o.season || 'auto'; state.ord = o.ord || ''; state.credo = o.credo || ''; state.asp = o.asp || ''; state.ordo = o.ordo || ''; state.hwr = o.hw === '1959' ? '1959' : '1939';
-      $('#selSeason').value = state.season; $('#selOrd').value = state.ord; $('#selCredo').value = state.credo; $('#selAsp').value = state.asp; $('#selOrdo').value = state.ordo;
+      state.season = o.season || 'auto'; state.ord = o.ord || ''; state.credo = o.credo || ''; state.asp = o.asp || ''; state.ordo = o.ordo || ''; state.conv = o.conv === '1'; state.hwr = o.hw === '1959' ? '1959' : '1939';
+      $('#selSeason').value = state.season; $('#selOrd').value = state.ord; $('#selCredo').value = state.credo; $('#selAsp').value = state.asp; $('#selOrdo').value = state.ordo; if ($('#chkConv')) $('#chkConv').checked = !!state.conv;
       state.key = h.key;
       onDate(o.d ? fromIso(o.d) : new Date(), true);
       showMass(h.key, h.over);
