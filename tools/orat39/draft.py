@@ -1,0 +1,41 @@
+"""Draft orations for a Mass from the Missale O.P. 1939 text layer (m39lin.txt), to be proofed against the page images.
+Usage: python3 draft.py KEY:LINE [KEY:LINE ...]   (LINE = a line in m39lin.txt at or before the Mass's Oratio)
+Writes /tmp/cand.json (raw text per prayer, for proof2.py crops) and prints accented drafts + St Dominic Missal English."""
+import sys, re, json
+sys.argv, args = sys.argv[:1], sys.argv[1:]
+from build_or import latin, english, clean_en, flat
+L = open('m39lin.txt').read().split('\n')
+HEAD = {'or': re.compile(r'^Oratio\s*$'), 'se': re.compile(r'^Secreta\b'), 'pc': re.compile(r'^Postcommunio\b')}
+STOP = re.compile(r'^(Secreta|Postcommunio|Praefatio|Graduale|Lectio|Léctio|Communio|Offertorium|Evangelium|Sequentia|Tractus|Alleluia|Die \d|Festa |Oratio|Commemoratio|Secunda|Oremus|Humiliate|Dominica|Feria|DOMINICA|FERIA|Officium|In Vigilia|@@PAGE)')
+def grab(i, kind):
+    j = i
+    while j < len(L) and not HEAD[kind].match(L[j].strip()): j += 1
+    if j - i > 400: return None, i
+    out = []; k = j + 1
+    while k < len(L):
+        s = L[k].strip()
+        if s in ('C', '') or re.match(r'^\d+\*?$', s) or s.startswith('@@PAGE') or re.match(r'^Festa |^Commune|^Missae votivae|^Proprium', s): k += 1; continue
+        if STOP.match(s): break
+        out.append(s); k += 1
+    t = ''.join(x[:-1] if x.endswith('­') else x + ' ' for x in out)
+    t = re.sub(r'\s+', ' ', t).strip()
+    m = re.search(r'(Per (eumdem )?Dominum|Qui vivis|Qui tecum|qui tecum)(\.\.\.[^.]*|[^.])*\.', t)
+    if m: t = t[:m.end()]
+    return t, k
+cand = {}
+for a in args:
+    key, line = a.split(':'); i = int(line) - 1
+    pr = {}
+    for kind in ('or', 'se', 'pc'):
+        t, i2 = grab(i, kind)
+        if t: pr[kind] = t; i = i2
+    cand[key] = {'start': int(line) - 1, 'pr': pr}
+    print('=====', key)
+    for kind in ('or', 'se', 'pc'):
+        if kind not in pr: print(kind, 'NOT FOUND'); continue
+        la, ec, unk = latin(pr[kind])
+        r, en = english(kind, flat(pr[kind]))
+        en = clean_en(en, ec)[0] if en and r >= 0.75 else ''
+        print(kind, '|', la.split(' Per Dóminum nostrum')[0].split(' Qui vivis et')[0][:600], '| unk', unk)
+        print('   EN', round(r, 2), en[:400])
+json.dump(cand, open('/tmp/cand.json', 'w'), ensure_ascii=False)

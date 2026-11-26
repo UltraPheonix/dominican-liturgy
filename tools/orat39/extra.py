@@ -14,6 +14,8 @@ X = json.load(open('extra_final.json'))
 E = json.load(open('en_final.json'))
 def concl(t):
     t = t.strip().replace('eúmdem', 'eúndem')
+    if t.endswith('cum eódem Deo Patre.'):
+        return t[:-1] + ' in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.', 'Who live and reign with the same God the Father in the unity of the Holy Spirit, God, world without end.'
     m = re.search(r'(Per Dóminum|Per eúndem|Qui vivis|Qui vivit|Qui tecum|qui tecum)[^.]*\.$', t)
     if not m: raise SystemExit('no conclusion: ' + t[-60:])
     s = m.group(1); body = t[:m.start()]
