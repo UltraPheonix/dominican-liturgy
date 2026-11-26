@@ -496,3 +496,10 @@ rest → 3 test, bump, push → 4 branch: re-apply archive, fix N./proper Office
 push with tools/push.sh (fetch, rebase, sw VERSION = origin's + 1, retry). Prayer pipeline: offices.py (text_sancti cuts running heads;
 first 'Oratio[.,]' after the heading; vigil prayer → oratio_v1) → build.py final_prayer (clean_prayer: cut at conclusion/next rubric,
 drop-cap, æ, OCR confusions vs DO word counts latcount.py; fix_short again; conclusion restored). Left: see TODO.md A3.
+### B5 IN PROGRESS on branch `commons1909` (2026-11-26 13:35) — NOT live; main untouched
+Branch = main (v99) + archived Commons work re-applied: commons1909.py (f5aaba3 version, has HYMN_TEXT), build.py feast_hours patch
+(git apply -3 of f5aaba3's build.py diff: applied cleanly on top of the new prayer/lesson fixes), common_lessons.py,
+commonlessons1909.json; data/office1909 rebuilt (426 days; 292 feasts from the Commons). First check: 'N.' left in only 6 places / 3 days.
+TODO on the branch before merging: rerun audits (/tmp/audit.py, aud2-4 style: N., 'in preparation', OCR, run-ons), proper Offices
+before the Common (Dec 8 …), St Andrew's own responsories, TP Commons with 7 responsories (virg_mart_tp, nec_tp, mart_fem_tp),
+the 24 doubtful readings vs scans, headless test. Then merge into main and push with tools/push.sh.
