@@ -288,6 +288,16 @@
    "p": "of",
    "i": "Afferentur",
    "pg": "47*"
+  },
+  "op-g50-vultum-tuum": {
+   "p": "in",
+   "i": "Vultum tuum",
+   "pg": "571"
+  },
+  "op-g50-tu-gloria-al": {
+   "p": "al",
+   "i": "Tu gloria Jerusalem",
+   "pg": "572"
   }
  },
  "Quad1t": {
@@ -1646,12 +1656,18 @@
    4781
   ],
   "p39": "G50 p. 571-572",
-  "_why_g50": "G50 p. 571-572: Officium Vultum tuum, Alleluia V. Tu gloria Jerusalem (not yet transcribed)",
+  "_why_g50": "G50 p. 571-572: Officium Vultum tuum; Responsorium Benedicta, pag. 76*; Alleluia V. Tu gloria Jerusalem (transcribed from the scan); Offertorium Ave Maria, pag. 445; Communio Beata viscera, pag. 569",
   "in": [
-   "r3498"
+   "op-g50-vultum-tuum"
   ],
   "al": [
-   "r3701"
+   "op-g50-tu-gloria-al"
+  ],
+  "gr": [
+   6984
+  ],
+  "co": [
+   7543
   ]
  },
  "S0114": {
