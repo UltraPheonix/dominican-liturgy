@@ -8,7 +8,10 @@ A fixes file is a JSON list of entries:
    "src": "M39 p. 1 (pdf 33)", "why": "punctuation as printed"}
 "path" navigates the JSON object of the file (keys and list indices). "old" must equal the current value (else the
 entry is reported as CONFLICT and skipped); if the value already equals "new" it is skipped as done.
-Values may be strings or any JSON value. Usage: python3 tools/audit/apply_fixes.py [--dry]
+Values may be strings or any JSON value.
+To ADD something the data lacks (a missing reading, a missing key): give "op": "add" and "old": null. The last path element
+is a new dict key, or a list index equal to the list's length (append). If the value is already there and equal to "new",
+the entry is done; if something different is there, it is a CONFLICT. Usage: python3 tools/audit/apply_fixes.py [--dry]
 """
 import json, glob, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -32,6 +35,22 @@ for ff in sorted(glob.glob(os.path.join(ROOT, 'tools/audit/fixes/*.json'))):
         if fn not in files: files[fn] = list(load(fn))
         s, i, j, obj = files[fn]
         cur = obj
+        if e.get('op') == 'add':
+            try:
+                for k in e['path'][:-1]: cur = cur[k]
+            except (KeyError, IndexError, TypeError):
+                print('MISSING', os.path.basename(ff), fn, e['path']); stats['conflict'] += 1; continue
+            last = e['path'][-1]
+            have = (last in cur) if isinstance(cur, dict) else (isinstance(last, int) and last < len(cur))
+            if have:
+                if cur[last] == e['new']: stats['done'] += 1
+                else: print('CONFLICT(add)', os.path.basename(ff), fn, e['path']); stats['conflict'] += 1
+                continue
+            if isinstance(cur, list):
+                if last != len(cur): print('CONFLICT(add index)', os.path.basename(ff), fn, e['path']); stats['conflict'] += 1; continue
+                cur.append(e['new'])
+            else: cur[last] = e['new']
+            stats['applied'] += 1; continue
         try:
             for k in e['path'][:-1]: cur = cur[k]
             last = e['path'][-1]; val = cur[last]

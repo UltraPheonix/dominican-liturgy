@@ -6,6 +6,16 @@
 - **Rubr. VI.2:** when a week has no free day for the weekly Requiem, add Omnipotens on the lowest-ranked weekday (the first one if two tie). This is Lead F's rule; keep it.
 - **Paschal ferias:** alternate the two Alleluia verses as the Ordo 1944 does: Tuesday takes the 1st verse, Wednesday the 2nd, and so on.
 
+## Missing English (Joseph, 27 Nov 22:05)
+- Where the Missal's Latin is on the site but the St Dominic Missal 1959 has no English for it: an AI translation of the Missal's Latin, labelled "AI translation".
+- C76s (Cum sanctificatus, p. 54*, "Cetera ut supra, excepto quod nullum allelúia dicitur"): search G28/G50 for a Dominican non-alleluia Offertory and Communion first; report before deciding.
+- Joseph's standing goal: no errors on any day in the text or the choice of Mass (rubrics and readings); every prayer, reading and proper the Missal prints must be on the site.
+
+## Conclusions and named Introits (Joseph, 27 Nov 22:15)
+- "Qui tecum" conclusions (Rubr. gen. XI.2, p. 52): follow the Missal's printed pointing, "Fílium tuum; qui tecum" (';' = flexa), in the text and the sung tone, wherever the Missal prints it so.
+- Introit Gaudeamus with a saint's name (M39 pp. 485, 502, 508, 36*; G50 p. 509 "cum nomine"): print the Missal's text with the name; use notated chant only where a Dominican book prints the melody with that name (never adapt it ourselves).
+- Coordinator's application of the rubric (no question needed): Dedication Secret "Extra ecclesiam dedicatam" (p. 3*) for S1109 and S1118; S1113 is dated by the Kalendarium (10 Nov), handled in the calendar step.
+
 ## Saints' Masses
 - **28 Apr:** the Mass is B. Louis Grignion de Montfort, Os justi. St Paul of the Cross has only a Memoria in the 1939 Missal (pp. 420-421).
 - **C1s "Commune Apostolorum" (Joseph, 27 Nov 21:40):** drop it. The 1939 Missal has no such Mass; "only use the Missal".
