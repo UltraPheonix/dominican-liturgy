@@ -205,10 +205,12 @@
   // the octaves of the Time and their grades
   function temporalOctaves(d) {
     var y = d.getFullYear(), E = easter(y), out = [];
+    // the octave day has a Mass of its own where the Missal prints one (In Octava Epiphaniae, pp. 38-39)
+    var OWN = {Epi: 'EpiOct'};
     var add = function (start, key, title, within, octday) {
       var n = diffDays(d, start);
       if (n >= 1 && n <= 6) out.push({key: key, title: title, day: n, pv: within, of: key});
-      if (n === 7 && octday) out.push({key: key, title: 'Dies octava: ' + title, day: 7, pv: octday, of: key, octday: true});
+      if (n === 7 && octday) out.push({key: OWN[key] && MASSES[OWN[key]] ? OWN[key] : key, title: 'Dies octava: ' + title, day: 7, pv: octday, of: key, octday: true});
     };
     add(new Date(y - (d.getMonth() === 0 ? 1 : 0), 11, 25), 'Dec25_3', 'Nativitas Domini', PV.inOctPrivLow, 0);
     add(new Date(y, 0, 6), 'Epi', 'Epiphania Domini', PV.inOctPriv, PV.octDayPriv);

@@ -520,7 +520,54 @@
   // Gloria and Credo by the rubrics of 1960 followed by the Ordo O.P.: Gloria on Sundays outside Advent and
   // Septuagesima–Lent, on feasts of the I, II and III class and in the octaves, never on ferias, vigils or Ember days
   // (save Pentecost); Credo on Sundays, I class days, and II class feasts of Our Lord, Our Lady, the Apostles and Evangelists.
+  // Missale O.P. 1939, Rubricae generales IX.2 (Gloria "quotiescumque in Officio ante Laudes dictum fuerit Te Deum", not in
+  // the Masses of a vigil or of a feria with a Mass of its own; the resumed Sunday and private votives follow the day; the
+  // Order's weekly votive Masses outside Septuagesima) and XIV (Credo: the list of days and feasts, and any Mass on a day of
+  // Credo save Requiems and vigils), with the day as the Missal ranking engine (js/mrank.js) gives it
+  var CREDO_FEAST = /B\. Mari(æ|ae) V(irg)?\.|B\. M\. V\.|Mari(æ|ae) ad Nives|Compassio|Apost|App\.|\bAp\.|Evang|Cathedra|ad Vincula|ante Portam Latinam|Barnab|Crucis|Coron(æ|ae) spine|Sanguinis|Transfigur|Arch(ang|\\.)|Michaelis|Angelorum Custod|S\. Joseph|S\. Mari(æ|ae) Magdalen|^(Translatio |Commemoratio )?S\. P\. N\. Dominici|^SS?\. .*O\. ?P\.|Catharin(æ|ae) Sen|^S\. P\. N\. Francisci|Eccl\. Doct|Omnium Sanctorum|Dedicatio|Thom(æ|ae) Aq|SS\. Nominis Jesu|Familiae|Famili(æ|ae) Jesu/;
+  function credoDay(r, d) {
+    var t = r.temporal, o = r.office, f = diffDays(d, easter(d.getFullYear())), md = (d.getMonth() + 1) * 100 + d.getDate();
+    if (d.getDay() === 0) return true;
+    if (md >= 1225 || md === 101 || (md >= 106 && md <= 113)) return true;   // the octaves of Christmas and the Epiphany
+    if (f === -3 || (f >= 0 && f <= 7) || (f >= 39 && f <= 46) || (f >= 49 && f <= 56) || (f >= 60 && f <= 67) || (f >= 68 && f <= 75)) return true;
+    if (o.kind === 'octday' && /^(G515)$/.test(o.key)) return true;   // the octave day of Sts Peter and Paul
+    // the parents of Our Lady are not among the feasts of Our Lady (Ordo 1944, 26 Jul.: Missa sine Credo; 16 Aug.)
+    return (o.kind === 'feast' || o.kind === 'tfeast') && CREDO_FEAST.test(o.title || '') && !/(Matris|Patris) B\. Mari/.test(o.title || '');
+  }
+  // the Te Deum (Breviarium S.O.P. 1924, Rubr. gen. § XV-XXVI): never on feasts of three lessons; on Simplex and Semiduplex
+  // feasts and within simple octaves not from Septuagesima to Palm Sunday (Ordo 1944, 19 Feb. and 2 Mar.: Missa sine Gloria);
+  // always on Duplex feasts and above and in solemn octaves
+  function teDeumDay(r) {
+    var t = r.temporal, o = r.office, sept = /^(sept|quad|pass)$/.test(t.season);
+    // (the octave day of the Holy Innocents, of three lessons, has the Gloria: Ordo 1944, 4 Jan.)
+    if (o.rank === 'Tres Lectiones' && o.kind !== 'octday') return false;
+    if (/^(Semiduplex|Simplex)$/.test(o.rank) || (o.kind === 'octave' && o.pv <= 22)) return !sept;
+    if (o.kind === 'feast' || o.kind === 'tfeast' || o.kind === 'octday' || o.kind === 'octave') return true;
+    if (o.kind === 'bvmSat') return t.season !== 'sept';
+    if (o.kind === 'vigil') return false;
+    if (t.kind === 'sunday') return !/^(adv|sept|quad|pass)$/.test(t.season);
+    return /^(Pasc0|Pent0|Dec25)/.test(t.key);                    // the octaves of Easter and Pentecost, Christmas
+  }
+  function ownFeriaMass(key) {
+    return isVigil(key) || isEmber(key) && !/^Pent0/.test(key) || key === 'Litaniis' || /^(5a[whfs]|Quad[1-5][mtwhfs]|Quad5fe|Quad6[mtw])$/.test(key);
+  }
   function rubricsOf(key, d) {
+    if (isRequiem(key)) return {gloria: false, credo: false, dismiss: 'req', requiem: true};
+    if (d && window.OPMissalRank && !/^(Quad6[hfs]|Pasc6s|Dec24|Jan5a)$/.test(key)) {
+      var r = mr().day(d), sec0 = (D.sections.filter(function (s) { return s.items.indexOf(key) >= 0; })[0] || {}).id;
+      var said = r.masses.some(function (x) { return x.key === key; }) || r.temporal.keys.indexOf(key) >= 0;
+      if (said) {
+        var g0, c0;
+        if (ownFeriaMass(key)) { g0 = false; c0 = false; }
+        else if (sec0 === 'votivae' && !r.masses.some(function (x) { return x.key === key && /Saturday/.test(x.label || ''); })) {
+          // the Order's votive Masses of the week (Rubr. V.1): Gloria outside Septuagesima, except that of Christ the Priest
+          g0 = key !== 'C64s' && !(inSeptLent(d)); c0 = credoDay(r, d);
+        } else { g0 = teDeumDay(r); c0 = credoDay(r, d); }
+        // the Holy Innocents on a weekday: no Gloria (Ordo 1944, 28 Dec.: Missa sine Gloria ... dic. Credo ... Bened. Domino)
+        if (key === 'S1228' && d.getMonth() === 11 && d.getDate() === 28 && d.getDay() !== 0) g0 = false;
+        return {gloria: g0, credo: c0, dismiss: g0 ? 'ite' : 'ben'};
+      }
+    }
     var m = D.masses[key], t = titleText(key), sun = d ? d.getDay() === 0 : true, temporal = isTemporal(key);
     var sec = (D.sections.filter(function (s) { return s.items.indexOf(key) >= 0; })[0] || {}).id;
     if (isRequiem(key)) return {gloria: false, credo: false, dismiss: 'req', requiem: true};
@@ -536,6 +583,7 @@
           (key === 'Dec25_3' && md === 1225) || (key === 'Jan1' && md === 101) || (key === 'Epi' && md === 106) || (key === 'Nat2' && (sun || md === 102));
       if (key === 'Nat2') { g = !!(sun || md === 102); }
       if (/^(Quad6f|Quad6s)$/.test(key)) c = false;
+      if (key === 'Quad6h') c = true;   // Rubr. XIV: Feria quinta in Cena Domini
     } else if (sec === 'votivae') {
       g = /Mari|Dominic|Thom|Sacrament|Corporis|Sacerdot/.test(t) && !(d && inSeptLent(d));
       c = false;
@@ -757,6 +805,12 @@
     var y = d.getFullYear(), E = easter(y), f = diffDays(d, E), md = (d.getMonth() + 1) * 100 + d.getDate();
     if (md >= 1225 || md <= 105) return 'Nativitate';
     if (md >= 106 && md <= 113) return 'Epiphania';
+    // within the Octave of St Joseph's Solemnity his own, even in Paschaltide (Ordo 1944, 27 Apr. and 2 May: Praef. S. Joseph)
+    if (f >= 18 && f <= 24 && d.getDay() !== 0) return 'S. Ioseph';
+    // the solemnissimae Octaves of Corpus Christi (the Preface of the Nativity: Ordo 1944, 9-15 Jun.) and of the Sacred Heart,
+    // on their Sundays too (Rubr. XV.2: the Trinity on Sundays "extra ... Octavas solemnissimas")
+    if (f >= 60 && f <= 67) return 'Nativitate';
+    if (f >= 68 && f <= 75) return 'Corde Iesu';
     if (f >= -46 && f <= -15) return 'Quadragesima';
     if (f >= -14 && f <= -3) return 'Sancta Cruce';
     if (f >= -1 && f <= 38) return 'Paschalis';
@@ -766,16 +820,17 @@
     // Sanctorum, nisi propriam habuerint"; on a resumed Sunday "Praefatio Octavae"), but never in the Mass of the Sunday
     if (d.getDay() === 0) return null;
     if (f >= 57 && f <= 59) return 'SS. Trinitate';                 // SS. Trinitatis, per Octavam usque ad quintam Feriam exclusive
-    if (f >= 69 && f <= 75) return 'Corde Iesu';                    // SS. Cordis Jesu, per totam Octavam
     if (md >= 630 && md <= 706) return 'Apostolis';                 // SS. Petri et Pauli, Octava solemnis
     if (md >= 805 && md <= 811) return 'Dominico';                  // S. P. N. Dominici, Octava solemnis
     if (md >= 816 && md <= 822) return 'B. Maria Virgine';          // Assumptionis, Octava solemnis
     if (md >= 1209 && md <= 1215) return 'B. Maria Virgine';        // Conceptionis Immaculatae, Octava solemnis
+    var o1 = new Date(y, 9, 1), ros = addDays(o1, (7 - o1.getDay()) % 7), rd = diffDays(d, ros);
+    if (rd >= 1 && rd <= 7) return 'B. Maria Virgine';               // SS. Rosarii, Octava solemnis
     return null;
   }
   // Missale O.P. 1939: Transfiguration "Praefatio de Trinitate"; the Crown of Thorns has none of its own (so that of the
   // season); in all Masses of St Dominic his own; votive Masses with their own (Rubr. gen. XV, 2 and the Prefaces' rubrics)
-  var PREF39 = {S0806: 'SS. Trinitate', S0424: '', S0524: 'Dominico', S0531: 'B. Maria Virgine', C68s: 'Sancta Cruce',
+  var PREF39 = {CorpusChristi: 'Nativitate', Pasc2w: 'S. Ioseph', S1007: 'B. Maria Virgine', S0806: 'SS. Trinitate', S0424: '', S0524: 'Dominico', S0531: 'B. Maria Virgine', C68s: 'Sancta Cruce',
     C75s: 'Spiritu Sancto', C82s: 'B. Maria Virgine'};
   function prefaceOf(key, d) {
     var m = D.masses[key], temporal = isTemporal(key), R = rubricsOf(key, d);
@@ -986,8 +1041,9 @@
     if (O === 'low' && !m.prophecies) od('chalice');
     if (!m.prophecies && !(HW && HW.noFoot)) od('foot');
     if (O && (parts['in'] || []).length) od('rIn');
-    // an Introit the Missal prints whose chant is not yet typeset: its words, with a note (never a guessed melody)
-    if (m.pending && m.pending['in'] && !(parts['in'] || []).length) q.push({t: 'pending', p: 'in', x: m.pending['in']});
+    // a chant the Missal prints that is not yet typeset: its words, with a note (never a guessed melody)
+    var pend = function (p) { if (m.pending && m.pending[p] && !(parts[p] || []).length) q.push({t: 'pending', p: p, x: m.pending[p]}); };
+    pend('in');
     ch('in');
     if (!m.prophecies) { ord('ky'); ord('gl'); od('collect'); orat('or'); od('collectEnd'); }
     var gr = (parts.gr || []).length, tr = (parts.tr || []).length;
@@ -1016,7 +1072,9 @@
         hw('lesson' + i);
         if (last) {
           for (; gi < gr; gi++) take('gr', gi);
+          pend('gr');
           for (; ai < al; ai++) take('al', ai);
+          pend('al');
           ch('tr');
         }
       });
@@ -1032,11 +1090,11 @@
     if (gos.length && !passion) od('afterGospel');
     hw('afterGospel');
     ch('ad');
-    ord('cr'); od('offerDial'); ch('of'); od('offertory'); orat('se'); od('offertoryEnd'); od('rPf'); q.push({t: 'pref'}); ord('sa');
+    ord('cr'); od('offerDial'); pend('of'); ch('of'); od('offertory'); orat('se'); od('offertoryEnd'); od('rPf'); q.push({t: 'pref'}); ord('sa');
     od('canon'); od('pater');
     if (!m.noAgnus) ord('ag');
     od('communion');
-    ch('co'); ch('an'); hw('afterCo'); od('post'); orat('pc'); orat('sp'); od('postEnd');
+    pend('co'); ch('co'); ch('an'); hw('afterCo'); od('post'); orat('pc'); orat('sp'); od('postEnd');
     if (O === 'low') od('dismiss'); else q.push({t: 'ord', k: 'it'});
     if (!(HW && HW.noLastGospel)) od('end'); else od('endNoGospel');
     hw('end');
@@ -1152,7 +1210,7 @@
       else if (it.t === 'hwtext') main.appendChild(drawHwText(it.s, it.n));
       else if (it.t === 'pending') main.appendChild(el('section', {class: 'part pending', 'data-part': it.p}, [
         el('h3', {class: 'pend-h'}, [PART_NAME[it.p], ' ', el('i', {text: it.x.inc})]),
-        el('p', {class: 'hint rubric', text: 'The chant of this ' + ({'in': 'Introit'}[it.p] || 'part') + ' is not yet typeset on this site; the words are from the Missale O.P. (1939), p. ' + it.x.pg + '.'}),
+        el('p', {class: 'hint rubric', text: 'The chant of this ' + ({'in': 'Introit', gr: 'Gradual', al: 'Alleluia', tr: 'Tract', of: 'Offertory', co: 'Communion'}[it.p] || 'part') + ' is not yet typeset on this site; the words are from the Missale O.P. (1939), p. ' + it.x.pg + '.'}),
         el('p', {class: 'pend-la', lang: 'la', text: it.x.la}),
         it.x.en ? el('p', {class: 'pend-en m-tr', lang: 'en', text: it.x.en}) : null]));
       else if (it.t === 'hwnote') main.appendChild(el('p', {class: 'hint rubric', text: 'This day of Holy Week is still being transcribed from the Missale O.P. (1939); its chants follow.'}));

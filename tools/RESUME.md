@@ -101,8 +101,13 @@ OPEN:
    (tools/m39/new/spec_b6.json, or_b6.json; English orations AI, marked in src). Introits of S0920v (Ego autem sicut oliva,
    p. 564) and S1031v (Timete Dominum, p. 603) not in the Graduale GABC set (Joseph's Drive zip) -> masses.js 'pending': words
    shown with a note, no chant. NB add_masses.py re-applies ALL specs and regresses later fixes: restore other keys after running.
- - Still missing: Purissimi Cordis B.M.V. (pp. 316-317); In Octava Epiphaniae (own Mass, line 12265);
-   Feria VI post Dom. Passionis (site Quad5f is the Seven Sorrows Mass). S0910_2 has no Introit/Gradual.
+ - v191-192: Quad5fe = Friday in Passion Week (feria); Quad5f = the Compassion (its feast); Quad5s given Jer 18 / Jn 12.
+   EpiOct = In Octava Epiphaniae (own orations and Gospel Jn 1:29-34); PurCordisBMV = Purissimi Cordis (pp. 316-318): no
+   chant of it in the Graduale GABC set -> all five parts 'pending' (words only). S0910_2 has no Introit/Gradual.
+ - Gloria/Credo now by M39 IX.2 and XIV with the day from the engine (app.js teDeumDay/credoDay/CREDO_FEAST/ownFeriaMass);
+   Te Deum per Brev. 1924 (3L never; Simplex/Semid. not Septuagesima-Palm Sunday; Duplex+ always); checked against the Ordo
+   1944 Mass lines (/tmp/gc.py style: remaining differences are Polish feasts, later supplements, or parse noise).
+   Prefaces still by the old seasonPreface/keyPreface logic: to check against M39 XV next.
  - Gloria/Credo/Preface by the 1939 rank (rubricsOf still 1960-based); Saturday commemoration of Our Lady (Missal p. 40).
 
 1. Processions (#42) continued, in this order: Palm Sunday (20, compare with Holy Week page), Easter (34, 42), Corpus Christi (51, 55),
