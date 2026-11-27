@@ -170,7 +170,7 @@
 /* One header and one language switch on every page (Mass, Office, Holy Week, Rubrics, Prayers, About) */
 (function () {
   var NAV = [['./', 'Mass', /(^|\/)(index\.html)?$/], ['office.html', 'Office', /office\.html$/], ['holyweek.html', 'Holy Week', /holyweek\.html$/],
-    ['rubrics.html', 'Rubrics', /rubrics\.html$/], ['prayers.html', 'Prayers', /prayers\.html$/], ['about.html', 'About', /about\.html$/]];
+    ['rubrics.html', 'Rubrics', /rubrics\.html$/], ['prayers.html', 'Prayers', /prayers\.html$/], ['processions.html', 'Processions', /processions\.html$/], ['about.html', 'About', /about\.html$/]];
   function wire() {
     var nav = document.querySelector('.top .nav'), path = location.pathname;
     if (nav && !document.body.classList.contains('booklet')) {

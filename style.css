@@ -575,3 +575,15 @@ html[data-theme="dark"] .jump a.on, html[data-theme="dark"] .hours .sbtn.on, htm
 .o-hint { margin: 6px 0 0; color: var(--muted); line-height: 1.4; }
 .o-use { font: inherit; font-size: 12px; padding: 1px 8px; margin-left: 4px; border-radius: 10px; border: 1px solid var(--rubric); color: var(--rubric); background: transparent; cursor: pointer; }
 .o-xlab { color: var(--rubric); font-size: 13px; margin: 8px 0 2px; }
+
+/* Processionarium */
+.pr .pc-scan { margin: 6px 0 18px; }
+.pr .pc-scan summary { cursor: pointer; color: var(--rubric); font-size: 14px; letter-spacing: .02em; }
+.pr .pc-scan img { display: block; width: 100%; max-width: 560px; height: auto; margin: 10px auto; border: 1px solid var(--line); background: #fff; }
+[data-theme="dark"] .pr .pc-scan img { filter: invert(.9) hue-rotate(180deg); }
+.pr .pc-lit { margin: 8px 0 20px; }
+.pr .pc-row { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding: 3px 0; border-bottom: 1px dotted var(--line); }
+.pr .pc-row p { margin: 0; line-height: 1.45; }
+.pr .pc-resp { color: var(--rubric); }
+.pr .pc-rr p { color: var(--rubric); font-style: italic; font-size: .95em; }
+@media (max-width: 760px) { .pr .pc-row { grid-template-columns: 1fr; gap: 0; } }
