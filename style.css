@@ -565,3 +565,13 @@ html[data-theme="dark"] .jump a.on, html[data-theme="dark"] .hours .sbtn.on, htm
 .tr-src { display: block; font-style: normal; font-size: 12px; letter-spacing: .02em; color: var(--muted); margin-top: 3px; opacity: .8; }
 .tr-src.tr-ai::before { content: 'ⓘ '; }
 @media print { .tr-src { display: none; } }
+
+/* 2nd and 3rd prayers */
+.o-more { margin: 4px 0 14px; padding: 8px 10px; border: 1px solid var(--line, rgba(0,0,0,.12)); border-radius: 8px; font-size: 13px; }
+.o-picks { display: flex; flex-wrap: wrap; gap: 8px 14px; }
+.o-pick { display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1 1 220px; }
+.o-pick span { color: var(--muted); white-space: nowrap; }
+.o-pick select { flex: 1; min-width: 0; max-width: 100%; font: inherit; padding: 3px 4px; }
+.o-hint { margin: 6px 0 0; color: var(--muted); line-height: 1.4; }
+.o-use { font: inherit; font-size: 12px; padding: 1px 8px; margin-left: 4px; border-radius: 10px; border: 1px solid var(--rubric); color: var(--rubric); background: transparent; cursor: pointer; }
+.o-xlab { color: var(--rubric); font-size: 13px; margin: 8px 0 2px; }

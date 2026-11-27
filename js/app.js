@@ -79,7 +79,7 @@
 
   // ---------------------------------------------------------------- state & URL
   // #<massKey>[&in=id,id&gr=id...]  (only parts the user changed are stored)
-  var state = {key: null, parts: null, edited: {}, date: null, season: 'auto', ord: '', credo: '', asp: '', ordo: '', hwr: '1939', edit: false, comm: '', prel: '', sac: '', serv: '', rub: ''};
+  var state = {key: null, parts: null, edited: {}, date: null, season: 'auto', ord: '', credo: '', asp: '', ordo: '', hwr: '1939', edit: false, comm: '', prel: '', sac: '', serv: '', rub: '', o2: '', o3: ''};
 
   var HWP = document.body && document.body.getAttribute('data-page') === 'hw';
   var BOOKP = document.body && document.body.getAttribute('data-page') === 'book';
@@ -90,7 +90,7 @@
     bits.forEach(function (b) {
       var kv = b.split('=');
       if (PARTS.indexOf(kv[0]) >= 0) out.over[kv[0]] = kv[1] ? kv[1].split(',').map(function (x) { return /^\d+$/.test(x) ? Number(x) : x; }) : [];
-      else if (['d', 'season', 'ord', 'credo', 'asp', 'ordo', 'hw', 'conv', 'comm', 'prel', 'sac', 'serv', 'rub'].indexOf(kv[0]) >= 0) out.opts[kv[0]] = kv[1] || '';
+      else if (['d', 'season', 'ord', 'credo', 'asp', 'ordo', 'hw', 'conv', 'comm', 'prel', 'sac', 'serv', 'rub', 'o2', 'o3'].indexOf(kv[0]) >= 0) out.opts[kv[0]] = kv[1] || '';
     });
     return out;
   }
@@ -113,6 +113,8 @@
     if (state.sac) bits.push('sac=' + state.sac);
     if (state.serv) bits.push('serv=' + state.serv);
     if (state.rub) bits.push('rub=' + state.rub);
+    if (state.o2) bits.push('o2=' + state.o2);
+    if (state.o2 && state.o3) bits.push('o3=' + state.o3);
     if (HWP || state.hwr !== '1939') bits.push('hw=' + state.hwr);
     history.replaceState(null, '', '#' + bits.join('&'));
   }
@@ -616,6 +618,7 @@
   function showMass(key, over) {
     var m = D.masses[key];
     if (!m) return;
+    if (state.key && state.key !== key) { if (/^m:/.test(state.o2)) { state.o2 = state.o3; state.o3 = ''; } if (/^m:/.test(state.o3)) state.o3 = ''; if (/^m:/.test(state.o2)) state.o2 = ''; }
     state.key = key;
     state.edited = {};
     // a Mass picked from the list is shown for the next day it is said (a Sunday Mass on its Sunday, with its Alleluia
@@ -908,7 +911,12 @@
     // at a Low Mass the Ordinary is said, not sung
     var O = window.ORDO && state.ordo && state.key !== 'Quad6f' ? state.ordo : '', R = O ? rubricsOf(state.key, state.date) : {};
     var od = function (k) { if (O) q.push({t: 'ordo', k: k}); };
-    var orat = function (k) { var x = window.ORATIONS && ORATIONS[state.key]; if (x && x[k]) q.push({t: 'oratio', k: k, x: x[k], src: x.src}); };
+    var orat = function (k) {
+      var x = window.ORATIONS && ORATIONS[state.key]; if (!(x && x[k])) return;
+      var ex = k === 'sp' ? [] : morePrayers(k, m);
+      q.push({t: 'oratio', k: k, x: x[k], src: x.src, more: ex.length});
+      ex.forEach(function (p, i) { q.push({t: 'oratio', k: k, extra: i + 2, last: i === ex.length - 1, p: p}); });
+    };
     var STRIP = {ky: 'rKy', gl: 'rGl', cr: 'rCr', sa: 'rSa', ag: 'rAg'};
     var ord = function (k) {
       if (O && STRIP[k] && !(k === 'gl' && !R.gloria) && !(k === 'cr' && !R.credo)) q.push({t: 'ordo', k: STRIP[k]});
@@ -1044,7 +1052,7 @@
     var secs = [];
     Array.prototype.forEach.call(main.children, function (sec, n) {
       var p = sec.getAttribute && sec.getAttribute('data-part');
-      if (!p || !JUMP[p]) return;
+      if (!p || !JUMP[p] || sec.classList.contains('o-extra')) return;
       var h = sec.querySelector('.part-head h2, h3');
       var t = h ? (h.firstChild && h.firstChild.nodeType === 3 ? h.firstChild.nodeValue : h.textContent) : '';
       t = (t || '').trim();
@@ -1111,7 +1119,7 @@
       if (it.t === 'chant') main.appendChild(drawSlot(it.p, it.i, it.c));
       else if (it.t === 'pref') { var pf = drawPreface(state.key, state.date, R); if (pf) main.appendChild(pf); }
       else if (it.t === 'ord') { if (ord[it.k]) main.appendChild(drawOrdinary(it.k, ord[it.k])); }
-      else if (it.t === 'oratio') main.appendChild(drawOratio(it));
+      else if (it.t === 'oratio') { main.appendChild(drawOratio(it)); if (it.k === 'or' && (it.extra ? it.last : !it.more) && moreAllowed(D.masses[state.key])) main.appendChild(moreControls()); }
       else if (it.t === 'hw') { var hws = drawSection(it.s, R); if (hws) main.appendChild(hws); }
       else if (it.t === 'hwtext') main.appendChild(drawHwText(it.s, it.n));
       else if (it.t === 'hwnote') main.appendChild(el('p', {class: 'hint rubric', text: 'This day of Holy Week is still being transcribed from the Missale O.P. (1939); its chants follow.'}));
@@ -1343,7 +1351,100 @@
     }
     return o;
   }
+
+  // ---------------------------------------------------------------- 2nd and 3rd prayers
+  // Missale O.P. 1939, Rubr. gen. X-XI: the priest adds a 2nd and 3rd prayer (Collect, Secret and Postcommunion alike):
+  // of the season (Orationes ad supplendum numerum ternarium), from the Orationes ad diversa, or a commemoration.
+  // "Orémus" only before the first and the second; only the first and the last keep their conclusion.
+  var CONCL_LA = /\s*(Per (?:Dóminum|eúndem|eúmdem|Christum)|Qui (?:vivis|tecum|vivit)|qui tecum vivit|Dóminum nostrum I[eé]sum Christum Fílium tuum: Qui)\b(?!.*\b(?:Per Dóminum|Per eúndem|Qui vivis)\b).*$/;
+  var CONCL_EN = /[;:,.]?\s*(?:through|who (?:live|lives|livest|liveth)|Who (?:live|lives|livest|liveth)|Through|our Lord Jesus Christ, Your Son, who|our Lord Jesus Christ, thy Son)\b(?!.*\b(?:[Tt]hrough|[Ww]ho liv)).*$/;
+  function splitConcl(la, en) {
+    var a = CONCL_LA.exec(la), b = CONCL_EN.exec(en || '');
+    return {la: a ? la.slice(0, a.index).trim() : la, lc: a ? a[0].trim() : '', en: b ? en.slice(0, b.index).trim() : (en || ''), ec: b ? b[0].replace(/^[;:,.]?\s*/, '') : '', s: 'or'};
+  }
+  function prayerOf(id, k) {
+    if (!id) return null;
+    if (/^m:/.test(id)) {
+      var key = id.slice(2), x = window.ORATIONS && ORATIONS[key];
+      if (!x || !x[k] || !D.masses[key]) return null;
+      var p = splitConcl(x[k][0], x[k][1]); p.title = 'Commemoration: ' + massLabel(key); return p;
+    }
+    var S = window.ADDIV && ADDIV.sets[id];
+    if (!S || !S[k]) return null;
+    var q = {}; for (var f in S[k]) q[f] = S[k][f];
+    q.title = S.en + (S.n ? ' (n. ' + S.n + ')' : '') + ' · ' + S.inc; return q;
+  }
+  function moreAllowed(m) {
+    var R = rubricsOf(state.key, state.date);
+    return !R.requiem && !m.prophecies && !/^Quad6/.test(state.key) && state.key !== 'Pent0v' && !!(window.ORATIONS && ORATIONS[state.key] && ORATIONS[state.key].or);
+  }
+  function morePrayers(k, m) {
+    if (!moreAllowed(m)) return [];
+    var out = [], a = prayerOf(state.o2, k), b = state.o2 ? prayerOf(state.o3, k) : null;
+    if (a) out.push(a); if (b) out.push(b);
+    return out;
+  }
+  function massLabel(key) { var m = D.masses[key]; return clean(m.title || '').replace(/[,.\s]+$/, ''); }
+  // the prayers of the season to make up the number three (Rubr. gen. X.1), when no commemoration is made; an aid,
+  // since the rank of the day is approximate until the classification of days is built
+  function seasonPrayers(d) {
+    if (!d) return null;
+    var y = d.getFullYear(), E = easter(y), f = diffDays(d, E), md = (d.getMonth() + 1) * 100 + d.getDate();
+    var adv = new Date(y, 11, 3); adv.setDate(3 - adv.getDay());            // the First Sunday of Advent: Sunday from 27 Nov to 3 Dec
+    if (d >= adv && md <= 1224) return {o2: 'bvmAdv', o3: 'd15', with3: 'bvmAdv', name: 'Advent'};
+    if (md >= 102 && md <= 112) return {o2: 'bvmNat', o3: md === 104 ? 'd6' : '', name: 'from 2 January to the Octave of the Epiphany'};
+    if (f >= -63 && f < -3) return {o2: 'd15', o3: 'd2', with3: 'd15', name: 'from Septuagesima to Maundy Thursday'};
+    if (f >= 7 && f <= 38) return {o2: 'cruce', o3: 'd2', with3: 'cruce', name: 'Paschaltide'};
+    if ((md >= 113 && f < -63) || (f >= 75 && d < adv)) return {o2: 'd2', o3: '', with3: 'd2', name: 'through the year'};
+    return null;
+  }
+  function setName(id) {
+    if (!id) return '';
+    if (/^m:/.test(id)) return D.masses[id.slice(2)] ? massLabel(id.slice(2)) : '';
+    var S = window.ADDIV && ADDIV.sets[id]; return S ? (S.inc || S.la) : '';
+  }
+  function moreControls() {
+    var box = el('div', {class: 'o-more hide-print'});
+    if (!window.ADDIV) return box;
+    var groups = [['Of the season', ['bvmAdv', 'bvmNat', 'cruce', 'd15', 'd2', 'd6']], ['Orationes ad diversa', Object.keys(ADDIV.sets).filter(function (k) { return /^d\d+$/.test(k); })]];
+    var mk = function (name, n) {
+      var sel = el('select', {'aria-label': name, 'data-o': 'o' + n});
+      sel.appendChild(el('option', {value: '', text: '—'}));
+      groups.forEach(function (g) {
+        var og = el('optgroup', {label: g[0]});
+        g[1].forEach(function (id) {
+          var S = ADDIV.sets[id]; if (!S) return;
+          og.appendChild(el('option', {value: id, text: (g[0] === 'Of the season' ? S.en + ' · ' + S.inc : S.n + '. ' + S.en)}));
+        });
+        sel.appendChild(og);
+      });
+      var oc = el('optgroup', {label: 'Commemoration of a Mass'});
+      Object.keys(window.ORATIONS || {}).filter(function (k) { return k !== state.key && D.masses[k] && ORATIONS[k].or; })
+        .map(function (k) { return [k, massLabel(k)]; }).sort(function (a, b) { return a[1].localeCompare(b[1]); })
+        .forEach(function (x) { oc.appendChild(el('option', {value: 'm:' + x[0], text: x[1]})); });
+      sel.appendChild(oc);
+      sel.value = state['o' + n] || '';
+      sel.addEventListener('change', function () {
+        state['o' + n] = sel.value; if (n === 2 && !sel.value) state.o3 = '';
+        drawMass(); writeHash();
+      });
+      return el('label', {class: 'o-pick'}, [el('span', {text: name}), sel]);
+    };
+    var p2 = mk('2nd prayer', 2), p3 = mk('3rd prayer', 3);
+    if (!state.o2) p3.querySelector('select').disabled = true;
+    box.appendChild(el('div', {class: 'o-picks'}, [p2, p3]));
+    var sp = seasonPrayers(state.date), dr = dayRank(state.key, state.date);
+    if (sp && !dr.dup) {
+      var txt = 'Of the season (' + sp.name + '): 2nd ' + setName(sp.o2) + ', 3rd ' + (sp.o3 ? setName(sp.o3) : 'at choice') + '.' +
+                (sp.with3 ? ' With a commemoration: it is 2nd, ' + setName(sp.with3) + ' 3rd.' : '');
+      var use = el('button', {type: 'button', class: 'o-use', text: 'Use'});
+      use.addEventListener('click', function () { state.o2 = sp.o2; state.o3 = sp.o3; drawMass(); writeHash(); });
+      box.appendChild(el('p', {class: 'o-hint'}, [el('span', {text: txt + ' '}), (state.o2 === sp.o2 && state.o3 === sp.o3) ? null : use]));
+    }
+    return box;
+  }
   function drawOratio(it) {
+    if (it.extra) return drawMore(it);
     var name = {or: ['Oratio', 'Collect'], se: ['Secreta', 'Secret'], pc: ['Postcommunio', 'Postcommunion'], sp: ['Oratio super populum', 'Prayer over the People']}[it.k];
     var box = el('section', {class: 'part ordo oratio', 'data-part': 'oratio', 'data-k': it.k});
     // with the Order of Mass shown, the Collect and Postcommunion go under its heading (Oratio, Postcommunio)
@@ -1369,7 +1470,7 @@
       if (!amen) box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
       return box;
     }
-    if (it.k === 'se' && isSung()) {
+    if (it.k === 'se' && isSung() && !it.more) {
       // said in a low voice as far as "Deus"; "Per omnia saecula saeculorum" is sung aloud at the beginning of the Preface
       var sl = it.x[0].replace(/,?\s*per ómnia sǽcula sæculórum\.?\s*$/i, ','), se = it.x[1].replace(/,?\s*world without end\.?\s*$/i, ',');
       box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: sl}), el('p', {class: 'en-text', lang: 'en', text: se}), ]));
@@ -1377,6 +1478,20 @@
     }
     box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: it.x[0]}), el('p', {class: 'en-text', lang: 'en', text: it.x[1]})]));
     box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
+    return box;
+  }
+  // a 2nd or 3rd prayer: Orémus before the 2nd; the conclusion only on the last; at the Secret of a sung Mass,
+  // "Per omnia saecula saeculorum" of the last is sung at the beginning of the Preface
+  function drawMore(it) {
+    var p = it.p, box = el('section', {class: 'part ordo oratio cont o-extra', 'data-part': 'oratio', 'data-k': it.k});
+    if (it.extra === 2) box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: 'Orémus.'}), el('p', {class: 'en-text', lang: 'en', text: 'Let us pray.'})]));
+    box.appendChild(el('p', {class: 'o-xlab', text: (it.extra === 2 ? '2nd prayer' : '3rd prayer') + ' · ' + p.title}));
+    var la = p.la, en = p.en, lc = it.last ? p.lc : '', ec = it.last ? p.ec : '';
+    if (it.k === 'se' && isSung() && it.last) { lc = lc.replace(/,?\s*per ómnia sǽcula sæculórum\.?\s*$/i, ','); ec = ec.replace(/,?\s*world without end\.?\s*$/i, ','); }
+    if (lc) { la = la.replace(/[\s.]+$/, '') + ' ' + lc; en = en.replace(/[\s.;:,]+$/, '') + (p.cont ? ', ' : '; ') + ec.charAt(0).toLowerCase() + ec.slice(1); }
+    else { la = la.replace(/[\s:;,]+$/, '') + (/[.!?]$/.test(la.trim()) ? '' : '.'); en = en.replace(/[\s:;,.]+$/, '') + '.'; }
+    box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: la}), el('p', {class: 'en-text', lang: 'en'}, [en, p.s === 'ai' ? el('span', {class: 'tr-src tr-ai', text: 'AI translation'}) : (p.s === 'dm' ? el('span', {class: 'tr-src', text: 'After the St Dominic Missal (1959)'}) : null)])]));
+    if (it.last && !(it.k === 'se' && isSung())) box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
     return box;
   }
   // Holy Week transcribed as printed. Markup: {red}, *black inside a rubric*, ^initial
@@ -2002,7 +2117,7 @@
     var h = readHash();
     if (BOOKP) {
       var ob = (h && h.opts) || {};
-      state.season = ob.season || 'auto'; state.ord = ob.ord || ''; state.credo = ob.credo || ''; state.asp = ob.asp || ''; state.ordo = ob.ordo || ''; state.comm = ob.comm || (ob.conv === '1' ? 'friars' : ''); state.prel = ob.prel || ''; state.sac = ob.sac || ''; state.serv = ob.serv || ''; state.rub = ob.rub || rubPref(); state.hwr = ob.hw === '1959' ? '1959' : '1939';
+      state.season = ob.season || 'auto'; state.ord = ob.ord || ''; state.credo = ob.credo || ''; state.asp = ob.asp || ''; state.ordo = ob.ordo || ''; state.comm = ob.comm || (ob.conv === '1' ? 'friars' : ''); state.prel = ob.prel || ''; state.sac = ob.sac || ''; state.serv = ob.serv || ''; state.rub = ob.rub || rubPref(); state.hwr = ob.hw === '1959' ? '1959' : '1939'; state.o2 = ob.o2 || ''; state.o3 = ob.o3 || '';
       var bd = ob.d ? fromIso(ob.d) : new Date(); bd.setHours(0, 0, 0, 0);
       if (h && D.masses[h.key]) state.key = h.key;
       onDate(bd, !!(h && D.masses[h.key]));
@@ -2012,7 +2127,7 @@
     }
     if (h && D.masses[h.key]) {
       var o = h.opts;
-      state.season = o.season || 'auto'; state.ord = o.ord || ''; state.credo = o.credo || ''; state.asp = o.asp || ''; state.ordo = o.ordo || ''; state.comm = o.comm || (o.conv === '1' ? 'friars' : ''); state.prel = o.prel || ''; state.sac = o.sac || ''; state.serv = o.serv || ''; state.rub = o.rub || rubPref(); state.hwr = o.hw === '1959' ? '1959' : '1939';
+      state.season = o.season || 'auto'; state.ord = o.ord || ''; state.credo = o.credo || ''; state.asp = o.asp || ''; state.ordo = o.ordo || ''; state.comm = o.comm || (o.conv === '1' ? 'friars' : ''); state.prel = o.prel || ''; state.sac = o.sac || ''; state.serv = o.serv || ''; state.rub = o.rub || rubPref(); state.hwr = o.hw === '1959' ? '1959' : '1939'; state.o2 = o.o2 || ''; state.o3 = o.o3 || '';
       $('#selSeason').value = state.season; $('#selOrd').value = state.ord; $('#selCredo').value = state.credo; $('#selAsp').value = state.asp; $('#selOrdo').value = state.ordo; 
       state.key = h.key;
       onDate(o.d ? fromIso(o.d) : new Date(), true);
