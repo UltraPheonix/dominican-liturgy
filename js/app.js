@@ -1482,6 +1482,17 @@
   function memoriasOf(d) {
     if (!d || !window.OPMissalRank) return [];
     var r = mr().day(d);
+    // a votive Mass: the Office of the day is commemorated in the 2nd place (Rubr. X.1 g; Missal, Missae votivae: "fit
+    // Memoria Feriae de qua factum est Officium, et additur Oratio pro diversitate Temporum assignata")
+    var vot = state.key !== r.office.key && r.office.kind !== 'bvmSat' && D.sections.some(function (x) { return x.id === 'votivae' && x.items.indexOf(state.key) >= 0; });
+    if (vot) {
+      var ok = function (k) { return k && k !== state.key && window.ORATIONS && ORATIONS[k] && ORATIONS[k].or && D.masses[k]; };
+      var first = r.office.kind === 'temporal' ? r.temporal.key : r.office.key;
+      var res = ok(first) ? ['m:' + first] : [];
+      r.commems.forEach(function (c) { if (!c.privateOnly && c.kind !== 'bvm' && ok(c.key) && res.indexOf('m:' + c.key) < 0) res.push('m:' + c.key); });
+      res.high = /^(Totum Duplex|Duplex)/.test(r.office.rank || '');
+      return res;
+    }
     if (r.twoMasses && state.key !== r.office.key) return [];
     if (state.key !== r.office.key && r.office.kind !== 'temporal' && !(r.office.kind === 'octave' && D.masses[state.key] && state.key === r.office.key)) {
       if (!r.masses.some(function (m) { return m.key === state.key; })) return [];
