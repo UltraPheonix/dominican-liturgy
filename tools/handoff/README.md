@@ -10,6 +10,16 @@ Read tools/handoff/RULINGS.md (all of Joseph's decisions) before anything else.
 ## THE ORDER OF WORK (Joseph, 27 Nov 18:14). This overrides every older ordering below.
 **Agents:** up to 5 at once (Joseph). Send a status message after each substep. Push finished work in small batches with tools/push_files.sh, after mass_sweep.
 
+**RUBRICS FIRST (Joseph, 27 Nov 18:22). They are complicated, and we must follow them perfectly.**
+- **Before any agent works on calendar, prayers, Prefaces, Gloria/Credo, commemorations, chant forms or Holy Week, it must READ the relevant rubrics in full and cite them with their page.**
+  - Missale O.P. 1939: the Rubricae generales and the Ritus servandus at the front of the Missal, M39.pdf; the text layer is tools/orat39/m39lin.txt, and rubrics.html shows them on the site.
+  - The rubrics printed in each Mass and in Holy Week.
+  - The Processionarium 1913, Art. II-III (pp. 395-440), for tones and the Passion.
+  - The Graduale O.P. 1928 Kyriale headings (pp. 117*-155*).
+  - For the Office: the 1909 Rubricae generales (v1 pdf 40-70).
+- **Every agent prompt must say so,** and every agent must quote the rubric and page for each decision. Where the rubrics are silent or unclear, ask Joseph; don't guess.
+- **The coordinator checks each agent's rubric citations** before applying its work.
+
 ### PHASE 1: MASS (do this first)
 1. **Text audit of all 496 Masses** against the Missale O.P. 1939. Only 31 are done.
    - Reports: tools/audit/A1-A5.md. Scripts: tools/audit/scripts/A*/. Groups: tools/audit/groups.json. Restart brief: "Auditor brief" below.
