@@ -21,6 +21,7 @@ for s in SECTIONS:
     for it in s['items']:
         if it[0] == 'rub': out.append(pair(E(it[1]), E(it[2]), ' pr-rub'))
         elif it[0] == 'txt': out.append(pair(vr(it[1]), vr(it[2])))
+        elif it[0] == 'h': out.append('<h3 class="pc-h">%s<span class="pr-h-en">%s</span></h3>' % (E(it[1]), E(it[2])))
         elif it[0] == 'scan':
             pg = it[1]
             out.append('<details class="pc-scan"><summary>The chant as printed · p. %s</summary>%s</details>' % (

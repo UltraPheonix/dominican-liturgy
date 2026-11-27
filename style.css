@@ -587,3 +587,4 @@ html[data-theme="dark"] .jump a.on, html[data-theme="dark"] .hours .sbtn.on, htm
 .pr .pc-resp { color: var(--rubric); }
 .pr .pc-rr p { color: var(--rubric); font-style: italic; font-size: .95em; }
 @media (max-width: 760px) { .pr .pc-row { grid-template-columns: 1fr; gap: 0; } }
+.pr h3.pc-h { font-family: var(--caps); font-weight: 500; color: var(--rubric); font-size: 18px; margin: 26px 0 6px; } .pr h3.pc-h .pr-h-en { font-size: 15px; }
