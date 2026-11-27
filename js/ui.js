@@ -91,7 +91,7 @@
     if (!g || !sh) return;
     if (!sh.querySelector('.side-foot')) {
       var f = document.createElement('p'); f.className = 'side-foot';
-      f.innerHTML = 'A private project, not affiliated with the Order of Preachers. <a href="about.html">About the sources</a>';
+      f.innerHTML = 'For private devotion and reference, not an authoritative liturgical text. A private project, not affiliated with the Order of Preachers. <a href="about.html">About</a>';
       sh.appendChild(f);
     }
     function set(open) {
@@ -206,4 +206,15 @@
     document.addEventListener('oplang', mark);
   }
   if (document.readyState !== 'loading') wire(); else document.addEventListener('DOMContentLoaded', wire);
+
+  // a quiet line at the foot of every page (About, the disclaimer: not an authoritative liturgical text, not affiliated with the Order)
+  function siteFoot() {
+    if (document.querySelector('.site-foot') || /booklet\.html$/.test(location.pathname)) return;
+    var f = document.createElement('footer'); f.className = 'site-foot hide-print';
+    f.innerHTML = 'For private devotion and as a resource, not an authoritative liturgical text: if celebrating the Dominican rite, please consult the liturgical books. ' +
+      'A private project, not affiliated with the Order of Preachers. ' +
+      '<a href="about.html#disclaimer">About</a> · <a href="about.html#support">Books &amp; support the Order</a>';
+    (document.querySelector('.content') || document.body).appendChild(f);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', siteFoot); else siteFoot();
 })();
