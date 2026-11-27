@@ -464,7 +464,7 @@
     if (key === 'S1228' && dd && !(dd.getMonth() === 11 && dd.getDate() === 28)) return 'red';
     if (m.color) return m.color;
     if (/Vigilia|Vigil of/.test(t) && !/Pasch|Pentecost|Nativ/.test(t)) return 'violet';
-    if (/^(Adv|7a|6a|5a|Quad|EmbWed|EmbFri|EmbSat|Litaniis|Dec24)/.test(key) && !/Quad6h|Quad5f/.test(key)) return key === 'Quad6f' ? 'black' : 'violet';
+    if (/^(Adv|7a|6a|5a|Quad|EmbWed|EmbFri|EmbSat|Litaniis|Dec24)/.test(key) && !/^(Quad6h|Quad5f)$/.test(key)) return key === 'Quad6f' ? 'black' : 'violet';
     if (/^(Pent0|Pasc6s)/.test(key)) return 'red';
     if (/^(Pent1|Epi1)$/.test(key) && d0IsSunday()) return 'white';
     if (/^(Epi[1-6]|Pent\d)/.test(key) && !/^Pent0/.test(key)) return 'green';

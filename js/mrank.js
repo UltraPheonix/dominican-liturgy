@@ -98,6 +98,8 @@
     if (fromE >= -46 && fromE < -42) return ['5a' + WD[dow]];
     if (fromE >= -42 && fromE < 0) {
       var q = Math.floor((fromE + 42) / 7) + 1;
+      // Friday in Passion Week: the feria (Quad5fe); its feast, the Compassion of Our Lady, is Quad5f
+      if (q === 5 && dow === 5 && MASSES.Quad5fe) return ['Quad5fe'];
       return MASSES['Quad' + q + WD[dow]] || !Object.keys(MASSES).length ? ['Quad' + q + WD[dow]] : ['Quad' + q];
     }
     if (fromE >= 0 && fromE < 7) return ['Pasc0' + WD[dow]];
@@ -185,7 +187,7 @@
     if (fromE === 68) tf = {key: 'SCJ', rank: 'Totum Duplex I classis', title: 'Festum SS. Cordis Jesu', pv: 92};
     // Missale O.P. 1939, Festa mobilia (p. 14)
     if (fromE === -52) tf = {key: 'S0430', rank: 'Totum Duplex', title: 'Translatio S. Catharinae Senensis Virg. O. P.', note: 'Mass as on 30 April, with Credo (Missal p. [Translatio])'};
-    if (fromE === -9) tf = {key: 'S0915', rank: 'Totum Duplex', title: 'Compassio B. Mariae V.', note: 'the Mass of the Seven Sorrows is "as in the Compassion"'};
+    if (fromE === -9) tf = {key: MASSES.Quad5fe ? 'Quad5f' : 'S0915', rank: 'Totum Duplex', title: 'Compassio B. Mariae V.'};
     if (fromE === 17) tf = {key: 'Pasc2w', rank: 'Totum Duplex I classis', title: 'Solemnitas S. Joseph Sponsi B. Mariae V.'};
     if (fromE === 69) tf = {key: 'PurCordisBMV', rank: 'Totum Duplex', title: 'Purissimi Cordis B. Mariae V.', missing: 'Missal pp. 316-317'};
     var oct31 = new Date(y, 9, 31), ck = addDays(oct31, -oct31.getDay());
