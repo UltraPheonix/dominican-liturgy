@@ -27,10 +27,44 @@ def dump(obj, orig):
     sep = (', ', ': ') if '": ' in orig[:5000] else (',', ':')
     return json.dumps(obj, ensure_ascii=False, separators=sep)
 
+# Joseph, 27 Nov 22:35: every expanded conclusion is pointed "Fílium tuum; qui tecum" (the Missal's printed pointing,
+# e.g. pp. 245, 247, 472-473). canon() applies it to every string, so entries written before or after the change agree.
+def canon(v):
+    if isinstance(v, str): return v.replace('Fílium tuum: qui tecum', 'Fílium tuum; qui tecum').replace('Fílium tuum: Qui tecum', 'Fílium tuum; qui tecum')
+    if isinstance(v, list): return [canon(x) for x in v]
+    if isinstance(v, dict): return {k: canon(x) for k, x in v.items()}
+    return v
+
+# Entries on the same path form a chain (an auditor correcting its own earlier entry). An earlier link is "superseded"
+# when the current value already equals the "new" of a later link on that path.
+ALL = []
+for ff in sorted(glob.glob(os.path.join(ROOT, 'tools/audit/fixes/*.json'))):
+    for e in json.load(open(ff, encoding='utf8')): ALL.append((ff, e))
+LATER = {}
+for n, (ff, e) in enumerate(ALL): LATER.setdefault((e['file'], json.dumps(e['path'])), []).append(n)
+
+def replayed(n):
+    """Entry n's "new" with every later, deeper entry (path extends n's path) applied to it, in order."""
+    import copy
+    e = ALL[n][1]; v = copy.deepcopy(e['new']); p = e['path']
+    for m in range(n + 1, len(ALL)):
+        f = ALL[m][1]
+        if f['file'] != e['file'] or len(f['path']) <= len(p) or f['path'][:len(p)] != p: continue
+        cur = v
+        try:
+            for k in f['path'][len(p):-1]: cur = cur[k]
+            last = f['path'][-1]
+            if f.get('op') == 'add':
+                if isinstance(cur, list) and last == len(cur): cur.append(f['new'])
+                elif isinstance(cur, dict) and last not in cur: cur[last] = f['new']
+            elif canon(cur[last]) == canon(f['old']): cur[last] = f['new']
+        except (KeyError, IndexError, TypeError): pass
+    return v
+
 files = {}
 stats = {'applied': 0, 'done': 0, 'conflict': 0}
-for ff in sorted(glob.glob(os.path.join(ROOT, 'tools/audit/fixes/*.json'))):
-    for e in json.load(open(ff, encoding='utf8')):
+for n, (ff, e) in enumerate(ALL):
+    if True:
         fn = e['file']
         if fn not in files: files[fn] = list(load(fn))
         s, i, j, obj = files[fn]
@@ -43,9 +77,10 @@ for ff in sorted(glob.glob(os.path.join(ROOT, 'tools/audit/fixes/*.json'))):
             last = e['path'][-1]
             have = (last in cur) if isinstance(cur, dict) else (isinstance(last, int) and last < len(cur))
             if have:
-                if cur[last] == e['new']: stats['done'] += 1
+                if canon(cur[last]) == canon(e['new']): stats['done'] += 1
                 else: print('CONFLICT(add)', os.path.basename(ff), fn, e['path']); stats['conflict'] += 1
                 continue
+            e = dict(e, new=canon(e['new']))
             if isinstance(cur, list):
                 if last != len(cur): print('CONFLICT(add index)', os.path.basename(ff), fn, e['path']); stats['conflict'] += 1; continue
                 cur.append(e['new'])
@@ -56,10 +91,20 @@ for ff in sorted(glob.glob(os.path.join(ROOT, 'tools/audit/fixes/*.json'))):
             last = e['path'][-1]; val = cur[last]
         except (KeyError, IndexError, TypeError):
             print('MISSING', os.path.basename(ff), fn, e['path']); stats['conflict'] += 1; continue
-        if val == e['new']: stats['done'] += 1; continue
-        if val != e['old']:
+        if canon(val) == canon(e['new']):
+            if val != canon(val): cur[last] = canon(val); stats['applied'] += 1
+            else: stats['done'] += 1
+            continue
+        if any(canon(val) == canon(ALL[m][1]['new']) for m in LATER[(fn, json.dumps(e['path']))] if m > n) \
+           or canon(val) == canon(replayed(n)):
+            stats['done'] += 1; continue
+        if canon(val) != canon(e['old']):
             print('CONFLICT', os.path.basename(ff), fn, e['path'], '\n  now:', str(val)[:160], '\n  old:', str(e['old'])[:160]); stats['conflict'] += 1; continue
-        cur[last] = e['new']; stats['applied'] += 1
+        cur[last] = canon(e['new']); stats['applied'] += 1
+for fn in ('data/orations.js', 'data/addiv.js', 'data/memoriae.js'):
+    if fn not in files: files[fn] = list(load(fn))
+for fn in list(files):
+    s, i, j, obj = files[fn]; files[fn][3] = canon(obj)
 for fn, (s, i, j, obj) in files.items():
     new = s[:i] + dump(obj, s[i:j]) + s[j:]
     if new != s and not dry:

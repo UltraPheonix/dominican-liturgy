@@ -12,7 +12,8 @@
 - Joseph's standing goal: no errors on any day in the text or the choice of Mass (rubrics and readings); every prayer, reading and proper the Missal prints must be on the site.
 
 ## Conclusions and named Introits (Joseph, 27 Nov 22:15)
-- "Qui tecum" conclusions (Rubr. gen. XI.2, p. 52): follow the Missal's printed pointing, "Fílium tuum; qui tecum" (';' = flexa), in the text and the sung tone, wherever the Missal prints it so.
+- "Qui tecum" conclusions (Rubr. gen. XI.2, p. 52): follow the Missal's printed pointing, "Fílium tuum; qui tecum" (';' = flexa), in the text and the sung tone. **Joseph 22:35: ';' everywhere**, also in every conclusion the site expands from a bare "Per Dóminum". Done by canon() in tools/audit/apply_fixes.py (runs on every apply). The 110 ", qui tecum" (mostly after Per eúmdem) are left as the auditors find them printed.
+- Ember Saturday of Pentecost Alleluias (pp. 254-256): read from the G28 (pp. 261-262), fetched from Joseph's Drive.
 - Introit Gaudeamus with a saint's name (M39 pp. 485, 502, 508, 36*; G50 p. 509 "cum nomine"): print the Missal's text with the name; use notated chant only where a Dominican book prints the melody with that name (never adapt it ourselves).
 - Coordinator's application of the rubric (no question needed): Dedication Secret "Extra ecclesiam dedicatam" (p. 3*) for S1109 and S1118; S1113 is dated by the Kalendarium (10 Nov), handled in the calendar step.
 

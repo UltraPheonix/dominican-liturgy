@@ -1584,5 +1584,209 @@
   ],
   "src": "M39 p. 579 (pdf 327)",
   "why": "the rubric (M39 p. 579 (pdf 327)) reads \"Officium Os justi, de Communi Confessoris non Pontificis, pag. 23*, cum Evangelio Designavit Dominus, pag. 25*\"; the Beatus's own entry prints only the orations; readings of the Commune (C42s); this key has no readings33 entry, so the page takes the text from the Bible by these refs"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "C39s"
+  ],
+  "old": {
+   "src": "Commune/C5-1",
+   "or": [
+    "Adésto, Dómine, supplicatiónibus nostris, quas in beáti N. Confessóris tui sollemnitáte deférimus: ut, qui nostræ iustítiæ fidúciam non habémus, eius, qui tibi plácuit, précibus adiuvémur. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "Be mindful, O Lord, of our humble prayers in this commemoration of Your Saints, so that we, who have no confidence in our own righteousness, may be helped by the merits of those who have been pleasing to You. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end."
+   ],
+   "se": [
+    "Præsta nobis, quǽsumus, omnípotens Deus: ut nostræ humilitátis oblátio et pro tuórum tibi grata sit honóre Sanctórum, et nos córpore páriter et mente puríficet. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "Grant us, we beseech You, almighty God, that the offering of our lowliness may be pleasing to You in honor of Your Saints and may purify us in both body and mind. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end."
+   ],
+   "pc": [
+    "Quǽsumus, omnípotens Deus: ut, qui cœléstia aliménta percépimus, intercedénte beáto N. Confessóre tuo, per hæc contra ómnia advérsa muniámur. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "We pray You, almighty God, that we who have received heavenly nourishment may thereby, through the intercession of blessed N., Your Confessor, be sustained against all harm and danger. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end."
+   ]
+  },
+  "new": {
+   "src": "Missale O.P. (1939), pp. 22*-23* (Confessoris non Pontificis, Justus ut palma); English: St Dominic Missal (1959), Common No. 13",
+   "or": [
+    "Deus, qui nos beáti N. Confessóris tui ánnua solemnitáte lætíficas: concéde propítius, ut cuius natalítia cólimus; étiam actiónes imitémur: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "O God, year by year You gladden us by the solemnity of blessed N. Your confessor; mercifully grant that as we hallow his feast, we may follow in his ways; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ],
+   "se": [
+    "Laudis tibi Dómine hóstias immolámus in tuórum commemoratióne Sanctórum: quibus nos et præséntibus éxui malis confídimus, et futúris. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "We offer You, O Lord, victims of praise in memory of Your saints; and trust thereby to be freed from all ills both present and to come; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ],
+   "pc": [
+    "Refécti cibo potúque cælésti, Deus noster, te súpplices exorámus: ut in cuius hæc commemoratióne percépimus; eius muniámur et précibus: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "Refreshed with this heavenly food and drink, our God, we humbly pray, that he in whose memory we have received this sacrament, may help us by his prayers; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ],
+   "en_src": {
+    "or": "dm",
+    "se": "dm",
+    "pc": "dm"
+   }
+  },
+  "src": "M39 pp. 22*-23* (pdf 379)",
+  "why": "wrong orations (Divinum Officium \"Os justi\" set: Adesto / Praesta / Quaesumus); the Missal's Mass Justus ut palma prints Collect Deus, qui nos (22*), Secret Laudis tibi, Postcommunion Refecti cibo (23*), seen on the scan; conclusion Per Dominum as printed (Rubr. gen. XI.2, p. 52: \"Si Oratio dirigatur ad Patrem, concluditur Per Dominum nostrum\"). English verbatim from the St Dominic Missal 1959, Common No. 13 (tools/orat39/dm1959 rows, OCR slips only: \"victims of\", \"this\")"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "C51s"
+  ],
+  "old": {
+   "src": "Missale O.P. (1939), p. 35*-36* (Unius Sanctæ nec Virginis nec Martyris); English after the St Dominic Missal (1959), checked against the Latin",
+   "or": [
+    "Tuórum corda fidélium Deus miserátor illústra: et beátæ N. précibus gloriósis, fac nos próspera mundi despícere; et cælésti semper consolatióne gaudére: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "O merciful God, enlighten the hearts of Your faithful, and by the glorious prayers of blessed N. make us despise the prosperity of the world and ever rejoice in heavenly consolation; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ],
+   "se": [
+    "Múnera, Dómine, nostræ devotiónis offérimus: ut tibi grata, et nobis salutária, beátæ N. pia supplicatióne reddántur. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "We offer You, O Lord, the gifts of our devotion, that they may become pleasing to You and salutary to us through the devout supplication of blessed N; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ],
+   "pc": [
+    "Quǽsumus omnípotens Deus: ut quos salutáribus dignátus es erudíre mystériis; beátæ N. intercessióne gloriósa, cæléstibus refícias aliméntis: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "We beseech You, almighty God, that those whom You have deigned to instruct by the saving mysteries You may refresh with heavenly food through the glorious intercession of blessed N; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ]
+  },
+  "new": {
+   "src": "Missale O.P. (1939), pp. 30*-31* (Unius Virginis non Martyris); English after the St Dominic Missal (1959), checked against the Latin",
+   "or": [
+    "Exáudi nos Deus salutáris noster: ut sicut de beátæ N. Vírginis tuæ festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "Hear us, O God our Saviour, that as we rejoice in the feast of blessed N., Your virgin, so we may be taught the spirit of loving devotion; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ],
+   "se": [
+    "Accépta tibi sit, Dómine, sacrátæ plebis oblátio pro tuórum honóre Sanctórum, quorum se méritis de tribulatióne percepísse cognóscit auxílium. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "May the offering of Your consecrated people be acceptable to You, O Lord, in honor of Your saints, through whose merits they acknowledge that they have received help in tribulation; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ],
+   "pc": [
+    "Satiásti Dómine famíliam tuam munéribus sacris: eius, quǽsumus, semper interventióne nos réfove; cuius solémnia celebrámus: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "You have filled Your household, O Lord, with sacred gifts; ever refresh us, we beseech You, by the intercession of her whose feast we celebrate; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ]
+  },
+  "src": "M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong orations: Tuorum corda / Munera / Quaesumus are the nec Virg. nec Mart. Mass (pp. 36*-38*); p. 30*-31* prints Exaudi nos / Accepta tibi sit / Satiasti (= C55s, A5 scan-checked; the text layer of pdf 383 agrees word for word)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "C68s"
+  ],
+  "old": {
+   "src": "Missale O.P. (1939), p. 48*-50* (De Pœnis seu Passione D.N.J.C.); English after the St Dominic Missal (1959), checked against the Latin",
+   "or": [
+    "Omnípotens sempitérne Deus, qui passiónem Fílii tui Dómini nostri Iesu Christi in prétium redemptiónis humánæ misericórditer suscepísti: concéde propítius, ut sicut hódie pœnárum et dolórum passiónis eius memóriam celebrámus; ita eorúmdem fructus mereámur esse partícipes: Per eúndem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.",
+    "Almighty and everlasting God, who in Your mercy accepted the passion of Your Son, our Lord Jesus Christ, as the price of man's redemption, mercifully grant that, as we keep today the memory of the pains and sorrows of His passion, so we may deserve to share in their fruits; through the same Jesus Christ, Your Son, our Lord, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ],
+   "se": [
+    "Omnípotens sempitérne Deus, qui Christi Fílii tui beáta passióne nos réparas, consérva in nobis ópera misericórdiæ tuæ: ut in huius celebritáte mystérii, perpétua devotióne vivámus. Per eúndem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.",
+    "Almighty and everlasting God, who restore us by the blessed passion of Christ Your Son, preserve in us the works of Your mercy, that in the celebration of this mystery we may live in unceasing devotion; through the same Jesus Christ, Your Son, our Lord, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ],
+   "pc": [
+    "Refécti vitálibus aliméntis, omnípotens Deus, te supplíciter exorámus; ut sicut pœnas et dolóres, quos Fílius tuus Dóminus noster in sua passióne sustínuit, devóto celebrámus afféctu: ita benígno semper nos prótegas auxílio; et contínua pietáte ab omni malo præsérves: Per eúndem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.",
+    "Refreshed with life-giving food, almighty God, we humbly entreat You that, as we celebrate with devout affection the pains and sorrows which Your Son our Lord endured in His passion, so You may ever protect us with Your kindly help and preserve us from all evil by Your unfailing goodness; through the same Jesus Christ, Your Son, our Lord, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ]
+  },
+  "new": {
+   "src": "Missale O.P. (1939), pp. 46*-47* (De Quinque Stigmatibus D. N. J. C.); English: AI translation of the Missal's Latin (no St Dominic Missal text)",
+   "or": [
+    "Deus, qui unigéniti Fílii tui passióne, et copiósa per quinque vúlnera sui sánguinis effusióne, humánam natúram peccáto pérditam reparásti: tríbue nobis, quǽsumus, ut qui illíus passiónis glóriam, et ab eo suscépta vúlnera venerámur in terris; eiúsdem pretiosíssimi sánguinis fructum cónsequi mereámur in cælis: Per eúmdem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.",
+    "O God, who by the passion of Your only-begotten Son, and by the plentiful shedding of His blood through five wounds, restored human nature lost by sin: grant us, we beseech You, that we who venerate on earth the glory of His passion and the wounds He received, may deserve to obtain in heaven the fruit of that same most precious blood; through the same Jesus Christ, Your Son, our Lord, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ],
+   "se": [
+    "Oblátum tibi, Dómine, sacrifícium, intercedénte unigéniti Fílii tui, mediántibus quinque vulnéribus, passióne, vivíficet nos semper, et múniat. Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "May the sacrifice offered to You, O Lord, by the intercession of the passion of Your only-begotten Son, through His five wounds, ever give us life and protect us; who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ],
+   "pc": [
+    "Refécti vitálibus alimóniis, quǽsumus Dómine Deus noster: ut qui Stígmata Dómini nostri Iesu Christi venerándo cólimus; hæc in nostris córdibus impréssa, móribus et vita teneámus: Per eúmdem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.",
+    "Refreshed with life-giving nourishment, we beseech You, O Lord our God, that we who honour with veneration the Stigmata of our Lord Jesus Christ, may hold them impressed on our hearts, in our conduct and our life; through the same Jesus Christ, Your Son, our Lord, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+   ],
+   "en_src": {
+    "or": "ai",
+    "se": "ai",
+    "pc": "ai"
+   }
+  },
+  "src": "M39 pp. 46*-47* (pdf 391)",
+  "why": "wrong orations (those of De Poenis seu Passione, 48*); Latin read on the scan of 46*-47*. Conclusions as printed: Collect and Postcommunion \"Per eúmdem\" (Rubr. gen. XI.2, p. 52: \"si in principio Orationis fiat mentio Filii, terminatur Per eumdem Dominum nostrum\"), Secret \"Qui tecum vivit et regnat\" (printed; XI.2: \"si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\"). English: AI translation (Joseph's ruling, 27 Nov), labelled by en_src"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "C75s",
+   "or",
+   1
+  ],
+  "old": "O God, You Who on this day have taught the hearts of the faithful by the light of the Holy Spirit, grant us by that Holy Spirit Himself, to know what is right and ever to rejoice in His help. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the same Holy Ghost, God, world without end.",
+  "new": "O God, You Who have taught the hearts of the faithful by the light of the Holy Spirit, grant us by that Holy Spirit Himself, to know what is right and ever to rejoice in His help. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the same Holy Ghost, God, world without end.",
+  "src": "M39 p. 53* (pdf 395)",
+  "why": "English matched to the votive Latin (no \"hodierna die\", p. 53*)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "C76s"
+  ],
+  "old": {
+   "src": "Tempora/Quad4-3",
+   "or": [
+    "Deus, qui et iustis prǽmia meritórum et peccatóribus per ieiúnium véniam præbes: miserére supplícibus tuis; ut reátus nostri conféssio indulgéntiam valeat percípere delictórum. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "O God, Who graciously grant to the righteous the rewards of their merits, and to sinners forgiveness through fasting, have mercy upon Your humble servants, so that, confessing our guilt, we may obtain pardon for our transgressions. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end."
+   ],
+   "se": [
+    "Súpplices te rogámus, omnípotens Deus: ut his sacrifíciis peccáta nostra mundéntur; quia tunc veram nobis tríbuis et mentis et córporis sanitátem. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "We humbly entreat You, almighty God, that these sacrificial gifts may cleanse us from sin, for in this way You grant us true health of soul and body. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end."
+   ],
+   "pc": [
+    "Sacraménta, quæ súmpsimus, Dómine, Deus noster: et spirituálibus nos répleant aliméntis, et corporálibus tueántur auxíliis. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "May the sacrament we have received, O Lord, both fill us with spiritual nourishment and sustain us with bodily aid. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end."
+   ]
+  },
+  "new": {
+   "src": "Missale O.P. (1939), p. 54* (De Spiritu Sancto infra Septuagesimam: \"Cetera ut supra\"); orations as pp. 53*-54*",
+   "or": [
+    "Deus, qui corda fidélium Sancti Spíritus illustratióne docuísti: da nobis in eódem Spíritu recta sápere; et de eius semper consolatióne gaudére: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte eiúsdem Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "O God, You Who have taught the hearts of the faithful by the light of the Holy Spirit, grant us by that Holy Spirit Himself, to know what is right and ever to rejoice in His help. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the same Holy Ghost, God, world without end."
+   ],
+   "se": [
+    "Múnera, quǽsumus Dómine, obláta sanctífica: et corda nostra Sancti Spíritus illustratióne emúnda. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte eiúsdem Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "Sanctify these offerings, we beseech You, O Lord, and cleanse our hearts by the light of the Holy Spirit. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the same Holy Ghost, God, world without end."
+   ],
+   "pc": [
+    "Sancti Spíritus, Dómine, corda nostra mundet infúsio; et sui roris íntima aspersióne fecúndet: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte eiúsdem Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+    "May the inpouring of the Holy Spirit cleanse our hearts, O Lord, and make them fertile through the dew He sprinkles upon them. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the same Holy Ghost, God, world without end."
+   ]
+  },
+  "src": "M39 p. 54* (pdf 395)",
+  "why": "wrong orations (Lent IV Wednesday's, Divinum Officium Quad4-3); the Missal p. 54* prints only the Officium Cum sanctificatus and the Tract Caeli distillaverunt, then \"Cetera ut supra, excepto quod nullum allelúia dicitur\" (seen on the scan): the orations are C75s's (Deus qui corda / Munera / Sancti Spiritus), conclusion \"in unitáte ejúsdem\" as printed on p. 54* (\"Per Dóminum... in unitáte ejúsdem\"; Rubr. gen. XI.2, p. 52)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "C104s",
+   "parts",
+   "al"
+  ],
+  "old": [
+   {
+    "id": 5286
+   },
+   {
+    "id": 5433
+   },
+   {
+    "id": 6408
+   }
+  ],
+  "new": [
+   {
+    "id": 5286
+   },
+   {
+    "id": 5433
+   }
+  ],
+  "src": "M39 pp. 90*-91* (pdf 413); G50 pp. 105*, 108*",
+  "why": "stray Alleluia \"Adjuva nos\" (6408, G50 p. 108*, Mass pro remissione peccatorum) removed: the Missal prints for this Mass only \"Allelúia, allelúia. V. Zach. 8 Salvábo pópulum meum\" and \"Temp. Pasch. secundum Allelúia. V. Ps. 106 Confiteántur\" (p. 90*); \"Adjuva nos\" is here only a verse of the Tract (p. 91*)"
  }
 ]
