@@ -1438,7 +1438,7 @@
     var mk = function (name, n) {
       var sel = el('select', {'aria-label': name, 'data-o': 'o' + n}), p = P[n - 2];
       // the first option is what the Missal prescribes for the day
-      sel.appendChild(el('option', {value: '', text: !state.date ? 'Choose a date to see the Missal’s prayers' : p && p !== 'lib' ? 'As in the Missal: ' + setName(p) : p === 'lib' ? 'At the priest’s choice: none' : 'None (the Missal adds none)'}));
+      sel.appendChild(el('option', {value: '', text: !state.date && !P.length ? 'Choose a date to see the Missal’s prayers' : p && p !== 'lib' ? 'As in the Missal: ' + setName(p) : p === 'lib' ? 'At the priest’s choice: none' : 'None (the Missal adds none)'}));
       if (p && p !== 'lib') sel.appendChild(el('option', {value: 'none', text: 'None'}));
       groups.forEach(function (g) {
         var og = el('optgroup', {label: g[0]});

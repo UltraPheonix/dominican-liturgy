@@ -1,4 +1,4 @@
-# Mass chat — where to resume (27 Nov 2026, after v178)
+# Mass chat — where to resume (27 Nov 2026, after v182)
 
 Standing rules: pre-1955 Dominican rite only; never infer chant; terse; status after each substep; `git pull --rebase`,
 bump sw.js, headless Chrome test, commit as UltraPheonix, `bash tools/push.sh`; do not touch the Office files.
@@ -32,6 +32,25 @@ bump sw.js, headless Chrome test, commit as UltraPheonix, `bash tools/push.sh`; 
   Page images: art/proc/<page>.png (1-bit PNG, ~25 KB; script in the v173 session: render 2.1x gray, trim, threshold 150).
   OCR: tesseract -l ita --psm 4 on 3x renders, then proof against the image. Done: Ascension pp. 46-51, Purification pp. 66-72, Salve Regina procession pp. 89-91 (+ O lumen p. 76),
   Litany of Loreto + Inviolata pp. 91-95, Rogations pp. 124-126, Litany of the Saints pp. 126-130, extraordinary processions p. 131. Index of the book: pdf pages 459-461 (printed index).
+
+## Joseph, 27 Nov 07:47-07:58 (most recent; overrides the order below)
+- Work was too sloppy: do a real quality + clarity run (screenshots) after every step; never push before the full sweep finishes.
+- Processions: EVERY chant must be typeset in GABC (no scans). Page is out of the menu (v180) until done. Transcribe by eye
+  from the 1913 scan (crops at 3x with line labels; the OMR in tools/pdfomr reads only the first staff of a page here), then
+  render the GABC beside the scan and compare note by note.
+- 2nd and 3rd prayers: catch EVERY one the Missal sets. v182 = the seasonal rule (Rubr. gen. X.1) in js/app.js prescribed();
+  the 2nd has no ending, only the last (3rd) does (XI.1); sung in the tone (v181). STILL TO DO, in tools/addiv (new fixed.py):
+  a complete table key -> prescribed prayers from tools/orat39/m39lin.txt, each checked against the page image (M39.pdf):
+  * temporal 'Secunda Oratio' (28) and 'Secunda et tertia Oratio, ut in ... / pag. 40 / 47 / 63 / 287' (48): map to keys by
+    position (the Masses of the Time in order), NOT by collect prefix (Advent collects all begin 'Excita');
+  * 'Memoria' + 'Oratio' blocks printed inside feasts (lines ~44977, 52758, 53431, 58688, 59769, 65260, 67035: split over two lines),
+    with their Secreta and Postcommunio: new texts -> ADDIV sets with English;
+  * 'Et fit Memoria ...' (Epiphany octave, Sunday in the octave of Ascension, Corpus Christi, SS. Cordis, Christ the King with the
+    Sunday, S. Irenaeus with the octave of St John and the vigil, S. Silvester with the Nativity, Christmas 2nd Mass of St Anastasia,
+    Ember Wednesday of Advent 'Festina', the octave day of St Lawrence, Rogations in all Masses, 7-8 Mar.), and rule 8898
+    ('semper fit Memoria de Feria majori Adventus, Quadragesimae, Quatuor Temporum et Rogationum').
+  * then prescribed() uses the table first, the seasonal rule second; KAL39 Memoriae without prayers in the data need their
+    orations (from M39). Footnotes 39623-39631 (Saturday BVM, votive BVM, Joseph/Peter-Paul/Dominic omitted from A cunctis).
 
 ## Next
 1. Processions (#42) continued, in this order: Palm Sunday (20, compare with Holy Week page), Easter (34, 42), Corpus Christi (51, 55),
