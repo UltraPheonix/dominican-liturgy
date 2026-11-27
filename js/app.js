@@ -1265,6 +1265,37 @@
     main.appendChild(add);
   }
 
+  // The proper Communicantes and Hanc igitur (Missale O.P. 1939, Praefationes pp. 194-199, and the rubrics of each Mass):
+  // Christmas to its octave day inclusive, also in the Masses of Saints ("et noctem" in the first Mass); the Epiphany and its
+  // octave; the Easter Vigil to Low Sunday inclusive (with Hanc igitur); the Ascension and its octave, "etiam in Festo S. Crucis,
+  // et aliis quibuscumque Missis: exceptis Missis Defunctorum"; the Vigil of Pentecost to the Saturday inclusive (with Hanc igitur).
+  var CANON_MID = 'Sed et memóriam venerántes, in primis gloriósæ semper Vírginis Maríæ, Genitrícis ejúsdem Dei et Dómini nostri Jesu Christi: ',
+      CANON_END = 'sed et beatórum Apostolórum ac Mártyrum tuórum, Petri et Pauli, Andréæ, Jacóbi, Joánnis, Thomæ, Jacóbi, Philíppi, Bartholomǽi, Matthǽi, Simónis et Thaddǽi: Lini, Cleti, Cleméntis, Xysti, Cornélii, Cypriáni, Lauréntii, Chrysógoni, Joánnis et Pauli, Cosmæ et Damiáni: et ómnium Sanctórum tuórum; quorum méritis precibúsque concédas, ut in ómnibus protectiónis tuæ muniámur auxílio. Per eúmdem Christum Dóminum nostrum. Amen.',
+      CANON_END_EN = 'and also of thy blessed Apostles and Martyrs, Peter and Paul, Andrew, James, John, Thomas, James, Philip, Bartholomew, Matthew, Simon and Thaddeus; Linus, Cletus, Clement, Xystus, Cornelius, Cyprian, Laurence, Chrysogonus, John and Paul, Cosmas and Damian, and of all thy Saints; by whose merits and prayers grant that we may in all things be defended by the help of thy protection. Through the same Christ our Lord. Amen.',
+      MARY_EN = 'and honouring the memory in the first place of the glorious ever-virgin Mary, Mother of the same our God and Lord Jesus Christ, ',
+      HANC_PASCH = ['Hanc ígitur oblatiónem servitútis nostræ, sed et cunctæ famíliæ tuæ, quam tibi offérimus pro his quoque, quos regeneráre dignátus es ex aqua et Spíritu Sancto, tríbuens eis remissiónem ómnium peccatórum, quǽsumus, Dómine, ut placátus accípias: diésque nostros in tua pace dispónas, atque ab ætérna damnatióne nos éripi, et in electórum tuórum júbeas grege numerári. Per Christum Dóminum nostrum. Amen.',
+        'We therefore beseech thee, O Lord, graciously to accept this oblation of our service and that of all thy household, which we offer thee also for those whom thou hast vouchsafed to bring to a new birth by water and the Holy Ghost, granting them remission of all their sins; order our days in thy peace, and bid us be delivered from eternal damnation and numbered in the flock of thine elect. Through Christ our Lord. Amen.'];
+  function communicantes(la, en, mid, midEn) {
+    return ['Communicántes, et ' + la + ': ' + (mid || CANON_MID) + CANON_END, 'In communion with, and ' + en + ', ' + (midEn || MARY_EN) + CANON_END_EN];
+  }
+  function properCanon(key, d) {
+    if (!d || isRequiem(key)) return null;
+    var y = d.getFullYear(), md = (d.getMonth() + 1) * 100 + d.getDate(), f = diffDays(d, easter(y));
+    if (key === 'Dec25_1') return {'Communicántes': communicantes('noctem sacratíssimam celebrántes, qua beátæ Maríæ intemeráta virgínitas huic mundo édidit Salvatórem',
+      'celebrating the most sacred night on which the spotless virginity of blessed Mary brought forth the Saviour to this world', 'Sed et memóriam venerántes, in primis ejúsdem gloriósæ semper Vírginis Maríæ, Genitrícis ejúsdem Dei et Dómini nostri Jesu Christi: ', 'and honouring the memory in the first place of the same glorious ever-virgin Mary, Mother of the same our God and Lord Jesus Christ, ')};
+    if (md >= 1225 || md <= 101) return {'Communicántes': communicantes('diem sacratíssimum celebrántes, quo beátæ Maríæ intemeráta virgínitas huic mundo édidit Salvatórem',
+      'celebrating the most sacred day on which the spotless virginity of blessed Mary brought forth the Saviour to this world', 'Sed et memóriam venerántes, in primis ejúsdem gloriósæ semper Vírginis Maríæ, Genitrícis ejúsdem Dei et Dómini nostri Jesu Christi: ', 'and honouring the memory in the first place of the same glorious ever-virgin Mary, Mother of the same our God and Lord Jesus Christ, ')};
+    if (md >= 106 && md <= 113) return {'Communicántes': communicantes('diem sacratíssimum celebrántes, quo Unigénitus tuus in tua tecum glória coætérnus, in veritáte carnis nostræ visibíliter corporális appáruit',
+      'celebrating the most sacred day on which thine only-begotten Son, co-eternal with thee in thy glory, appeared visibly in a true body of flesh like ours')};
+    if (f >= -1 && f <= 7) return {'Communicántes': f === -1 ?
+      communicantes('noctem sacratíssimam celebrántes Resurrectiónis Dómini nostri Jesu Christi secúndum carnem', 'celebrating the most sacred night of the Resurrection of our Lord Jesus Christ according to the flesh') :
+      communicantes('diem sacratíssimum celebrántes Resurrectiónis Dómini nostri Jesu Christi secúndum carnem', 'celebrating the most sacred day of the Resurrection of our Lord Jesus Christ according to the flesh'), 'Hanc ígitur': HANC_PASCH};
+    if (f >= 39 && f <= 46) return {'Communicántes': communicantes('diem sacratíssimum celebrántes, quo Dóminus noster, unigénitus Fílius tuus, unítam sibi fragilitátis nostræ substántiam in glóriæ tuæ déxtera collocávit',
+      'celebrating the most sacred day on which our Lord, thine only-begotten Son, set at the right hand of thy glory the substance of our frail nature which he had united to himself')};
+    if (f >= 48 && f <= 55) return {'Communicántes': communicantes('diem sacratíssimum Pentecóstes celebrántes, quo Spíritus Sanctus Apóstolis in ígneis linguis appáruit',
+      'celebrating the most sacred day of Pentecost, on which the Holy Ghost appeared to the Apostles in tongues of fire', 'Sed et memóriam venerántes, in primis gloriósæ semper Vírginis Maríæ, Genitrícis Dei et Dómini nostri Jesu Christi: ', 'and honouring the memory in the first place of the glorious ever-virgin Mary, Mother of our God and Lord Jesus Christ, '), 'Hanc ígitur': HANC_PASCH};
+    return null;
+  }
   // a section of the Order of Mass: rubrics in red, the priest's and ministers' parts with their translation
   function drawOrdo(k, R) {
     var O = window.ORDO, sec, lines;
@@ -1283,6 +1314,7 @@
     if (k === 'dismiss' && HWk && HWk.alleluiaDismiss) lines = lines.map(function (l) { return {w: l.w, la: l.la.replace(/\.$/, ', allelúia, allelúia.'), en: l.en.replace(/\.$/, ', alleluia, alleluia.')}; });
     // at a private Mass of Palm Sunday the Gospel of the blessing is the last Gospel
     var HW = window.HOLYWEEK && HOLYWEEK[state.key];
+    if (k === 'canon' && !(HW && HW.canon)) { var pc = properCanon(state.key, state.date); if (pc) HW = {canon: pc}; }
     if (k === 'canon' && HW && HW.canon) {
       lines = lines.map(function (l) {
         var hit = l.la && Object.keys(HW.canon).filter(function (w) { return l.la.indexOf(w) === 0; })[0];
