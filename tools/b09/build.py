@@ -1046,6 +1046,8 @@ def with_proper(F, o, title):
     An unverified machine reading is never shown: its lessons only mark that the feast prints lessons of its own (so that the
     Common's are not put in their place) when the feast has no verified entry yet."""
     M0 = PROP.get(title) or {}; X = PFIX.get(title) or {}
+    # the old machine reading of the Sanctorale (offices1909.json: magn, bened, laudes, invit …) was never verified: only its title is kept
+    o = {k: v for k, v in (o or {}).items() if k in ('title', 'rank')}
     if not M0 and not X: return F, o
     P = {}
     if X.get('ok'):
