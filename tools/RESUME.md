@@ -1,4 +1,4 @@
-# Mass chat — where to resume (27 Nov 2026, after v179)
+# Mass chat — where to resume (27 Nov 2026, after v178)
 
 Standing rules: pre-1955 Dominican rite only; never infer chant; terse; status after each substep; `git pull --rebase`,
 bump sw.js, headless Chrome test, commit as UltraPheonix, `bash tools/push.sh`; do not touch the Office files.
