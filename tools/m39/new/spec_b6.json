@@ -118,6 +118,9 @@
   "color": "violet",
   "sec": "sanctorum",
   "parts": {
+   "in": [
+    "op-g50-ego-autem-oliva-in"
+   ],
    "gr": [
     6266
    ],
@@ -129,7 +132,7 @@
    ]
   },
   "pref": "Communis",
-  "note": "The Introit Ego autem, sicut oliva (Missal p. 564) is not yet typeset: its page of the Graduale O.P. is still to be read.",
+  "note": "Introit: Graduale O.P. (1950) p. 571, transcribed by Andrew Hinkley.",
   "readings": [
    [
     "Lesson",
@@ -188,6 +191,9 @@
   "color": "violet",
   "sec": "sanctorum",
   "parts": {
+   "in": [
+    "op-g50-timete-in"
+   ],
    "gr": [
     9869
    ],
@@ -199,7 +205,7 @@
    ]
   },
   "pref": "Communis",
-  "note": "The Introit Timete Dominum (Missal p. 603) is not yet typeset: its page of the Graduale O.P. is still to be read.",
+  "note": "Introit: Graduale O.P. (1950) p. 607, transcribed by Andrew Hinkley.",
   "readings": [
    [
     "Lesson",
