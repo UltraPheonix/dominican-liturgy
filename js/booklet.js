@@ -392,6 +392,16 @@
         ordoSec(it.k);
         return;
       }
+      if (it.t === 'oratio' && it.extra) {
+        // a 2nd or 3rd prayer (commemoration or Oratio ad diversa): Orémus before the second, the conclusion on the last
+        var mx = A.moreText(it, sung);
+        rubric(mx.label, {left: true});
+        var ogx = null;
+        try { ogx = sung && it.k !== 'se' && window.OPMassTones ? OPMassTones.oration(J(mx.la), {noOremus: it.extra !== 2}) : null; } catch (e) { console.warn('tone', e); }
+        if (ogx) { gabcInline(ogx, {size: 14, glyph: 1 / 19}); return; }
+        if (it.extra === 2) para('Orémus.', {cls: 'pr'});
+        para(mx.la, {cls: 'pr'}); if (it.last) para('℟. Amen.', {cls: 'pr'}); return;
+      }
       if (it.t === 'oratio') {
         if (it.k === 'or' && A.flectamusDay(S.key, S.date)) {
           rubric('Quotidie in Quadragesima: after Orémus the deacon, kneeling, sings Flectámus génua, and rising, Leváte.', {left: true});
@@ -573,6 +583,12 @@
         if (k === 'dismiss') { heading('Dismissal and Blessing', null); pairLines('dismiss'); return; }
         if (k === 'end') { heading('Last Gospel', 'John 1, 1-14'); art('st_john_arch', {size: 'small'}); posture('All stand; kneel at Et Verbum caro factum est'); pairLines('end'); return; }
         pairLines(k);
+        return;
+      }
+      if (it.t === 'oratio' && it.extra) {
+        var my = A.moreText(it, false);
+        if (it.extra === 2) pair('Orémus.', 'Let us pray.');
+        pair(my.la, my.en); if (it.last) pair('℟. Amen.', '℟. Amen.');
         return;
       }
       if (it.t === 'oratio') {

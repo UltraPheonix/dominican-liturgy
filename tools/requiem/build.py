@@ -36,13 +36,23 @@ FR = {'n': 'defFr', 'la': 'Pro defunctis fratribus, propinquis et benefactoribus
 h, O, t = load('/data/orations.js', 'window.ORATIONS = ')
 if 'C114o' not in O: O['C114o'] = O['C114s']            # the old C114s were the prayers of the day of death
 O['C114o']['src'] = 'Missale O.P. (1939), pp. 114*-116* (In die obitus seu depositionis defuncti); English after the St Dominic Missal (1959), checked against the Latin'
-O['C114s'] = {'src': SRC + ', 1st prayer Pro defunctis Episcopis seu Sacerdotibus ("Eadem dicatur prima Oratio si ignoretur pro quo vel pro quibus celebrandum sit"); English after the St Dominic Missal (1959)',
-              'or': [P1['or'][0] + ' ' + LC, P1['or'][1] + ' ' + EC], 'se': [P1['se'][0] + ' ' + LC, P1['se'][1] + ' ' + EC], 'pc': [P1['pc'][0] + ' ' + LC, P1['pc'][1] + ' ' + EC]}
+# the weekly conventual Mass for the dead (Rubr. VI.2) is for the brethren, familiars and benefactors: Rubr. XII.6 "prima
+# Oratio erit Deus, veniae largitor, secunda Deus, qui nos Patrem, tertia non mutabitur" (Omnipotens ... qui vivorum)
+O['C114s'] = {'src': SRC + '; prayers by Rubr. gen. XII.6 (the weekly Mass for the brethren, familiars and benefactors): Deus, veniae largitor; Deus, qui nos patrem (Orationes diversae n. 8, p. 124*); Omnipotens ... qui vivorum. English after the St Dominic Missal (1959)',
+              'or': [FR['or'][0] + ' ' + LC, FR['or'][1] + ' ' + EC], 'se': [FR['se'][0] + ' ' + LC, FR['se'][1] + ' ' + EC], 'pc': [FR['pc'][0] + ' ' + LC, FR['pc'][1] + ' ' + EC]}
 open(R + '/data/orations.js', 'w', encoding='utf8').write(h + json.dumps(O, ensure_ascii=False) + t)
 # ---- the 2nd prayer as a set of the Orationes ad diversa (the 3rd is d38, Pro vivis et defunctis alia)
 h, A, t = load('/data/addiv.js', 'window.ADDIV = ')
 def part(la, en): return {'la': la, 'lc': LC, 'en': en.rstrip(';'), 'ec': EC[0].upper() + EC[1:], 's': 'ai'}
-A['sets']['defFr'] = {'n': 0, 'la': FR['la'], 'en': FR['en'], 'or': part(*FR['or']), 'se': part(*FR['se']), 'pc': part(*FR['pc']), 'inc': 'Deus, véniæ largítor', 'src': SRC + '; English after the St Dominic Missal (1959), its Secret adapted to the Latin of 1939'}
+A['sets'].pop('defFr', None)
+PM = {'or': ('Deus, qui nos patrem et matrem honoráre præcepísti: miserére cleménter animábus paréntum nostrórum: eorúmque peccáta dimítte; nosque eos in ætérnæ claritátis gáudio fac vidére:',
+             'O God, You have commanded us to honor our father and mother; in Your loving kindness have mercy on the souls of our parents; forgive them their sins, and bring us to see them in the joy of eternal light;'),
+      'se': ('Súscipe sacrifícium Dómine, quod tibi pro animábus paréntum nostrórum offérimus: eísque gáudium sempitérnum in regióne vivórum concéde; nosque cum illis felicitáti Sanctórum coniúnge.',
+             'Receive, O Lord, the sacrifice which we offer to You for the souls of our parents; grant them everlasting joy in the land of the living, and in their company let us share in the happiness of the saints;'),
+      'pc': ('Cæléstis participátio sacraménti, quǽsumus Dómine, animábus paréntum nostrórum réquiem et lucem obtíneat perpétuam; nosque cum illis grátia tua corónet ætérna:',
+             'We beseech You, O Lord, that this heavenly sacrament of which we have partaken may obtain for the souls of our parents rest and light everlasting; and may Your grace crown us with them for evermore;')}
+A['sets']['defPM'] = {'n': 0, 'la': 'Pro patre et matre simul', 'en': 'For our fathers and mothers', 'or': part(*PM['or']), 'se': part(*PM['se']), 'pc': part(*PM['pc']),
+                      'inc': 'Deus, qui nos patrem', 'src': 'Missale O.P. (1939), Orationes diversae pro Defunctis n. 8, p. 124*; English after the St Dominic Missal (1959), in the plural'}
 open(R + '/data/addiv.js', 'w', encoding='utf8').write(h + json.dumps(A, ensure_ascii=False, separators=(',', ':')) + t)
 # ---- readings
 h, RD, t = load('/data/readings33.js', 'var READINGS33 = ')

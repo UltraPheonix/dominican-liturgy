@@ -1539,9 +1539,9 @@
   }
   function prescribed0(m) {
     if (!moreAllowed(m)) return [];
-    // In Missis quotidianis Defunctorum: Secunda Oratio pro defunctis fratribus, propinquis et benefactoribus; Tertia pro vivis
-    // et defunctis (Missale O.P. 1939, pp. 118*-121*)
-    if (state.key === 'C114s') return ['defFr', 'd38'];
+    // the weekly Mass for the brethren, familiars and benefactors (Rubr. gen. VI.2, XII.6): Deus, veniae largitor (the Mass's
+    // own), Deus, qui nos patrem (Orationes diversae pro Defunctis n. 8), Omnipotens ... qui vivorum (ad diversa n. 38)
+    if (state.key === 'C114s') return ['defPM', 'd38'];
     var d = state.date, dr = dayRank(state.key, d), sp = seasonPrayers(d), mem = memoriasOf(d), md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
     // no commemoration of Our Lady in a Mass of Our Lady (Vigil of the Assumption on a Saturday)
     if (isMarian(state.key)) { var hi = mem.high; mem = mem.filter(function (x) { return !BVM_SETS[x]; }); mem.high = hi; }
@@ -1673,14 +1673,19 @@
   }
   // a 2nd or 3rd prayer: Orémus before the 2nd; the conclusion only on the last; at the Secret of a sung Mass,
   // "Per omnia saecula saeculorum" of the last is sung at the beginning of the Preface
+  // the text of a 2nd or 3rd prayer: its conclusion only on the last (also used by the booklets)
+  function moreText(it, sung) {
+    var p = it.p, la = p.la, en = p.en, lc = it.last ? p.lc : '', ec = it.last ? p.ec : '';
+    if (it.k === 'se' && sung && it.last) { lc = lc.replace(/,?\s*per ómnia sǽcula sæculórum\.?\s*$/i, ','); ec = ec.replace(/,?\s*world without end\.?\s*$/i, ','); }
+    if (lc) { la = la.replace(/[\s.]+$/, '') + ' ' + lc; en = en.replace(/[\s.;:,]+$/, '') + (p.cont ? ', ' : '; ') + ec.charAt(0).toLowerCase() + ec.slice(1); }
+    else { la = la.replace(/[\s:;,]+$/, '') + (/[.!?]$/.test(la.trim()) ? '' : '.'); en = en.replace(/[\s:;,.]+$/, '') + '.'; }
+    return {la: la, en: en, label: (it.extra === 2 ? '2nd prayer' : '3rd prayer') + ' · ' + p.title};
+  }
   function drawMore(it) {
     var p = it.p, box = el('section', {class: 'part ordo oratio cont o-extra', 'data-part': 'oratio', 'data-k': it.k});
     if (it.extra === 2) box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: 'Orémus.'}), el('p', {class: 'en-text', lang: 'en', text: 'Let us pray.'})]));
     box.appendChild(el('p', {class: 'o-xlab', text: (it.extra === 2 ? '2nd prayer' : '3rd prayer') + ' · ' + p.title}));
-    var la = p.la, en = p.en, lc = it.last ? p.lc : '', ec = it.last ? p.ec : '';
-    if (it.k === 'se' && isSung() && it.last) { lc = lc.replace(/,?\s*per ómnia sǽcula sæculórum\.?\s*$/i, ','); ec = ec.replace(/,?\s*world without end\.?\s*$/i, ','); }
-    if (lc) { la = la.replace(/[\s.]+$/, '') + ' ' + lc; en = en.replace(/[\s.;:,]+$/, '') + (p.cont ? ', ' : '; ') + ec.charAt(0).toLowerCase() + ec.slice(1); }
-    else { la = la.replace(/[\s:;,]+$/, '') + (/[.!?]$/.test(la.trim()) ? '' : '.'); en = en.replace(/[\s:;,.]+$/, '') + '.'; }
+    var mt = moreText(it, isSung()), la = mt.la, en = mt.en;
     var src = p.s === 'ai' ? el('span', {class: 'tr-src tr-ai', text: 'AI translation'}) : (p.s === 'dm' ? el('span', {class: 'tr-src', text: 'After the St Dominic Missal (1959)'}) : null);
     // at a sung Mass the Collect and Postcommunion are sung in the tone of the prayers (Harrison 1920, pp. 66-67), Orémus
     // before the second, the conclusion and Amen only on the last; the Secret is said in a low voice
@@ -2199,7 +2204,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {D: D, dismissGabc: dismissGabc, solemnDay: solemnDay, flectamusDay: flectamusDay, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
+  window.ProprOP = {D: D, moreText: moreText, dismissGabc: dismissGabc, solemnDay: solemnDay, flectamusDay: flectamusDay, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
 
   function start() {
     if (!document.getElementById('selMass')) return;   // loaded as a library (e.g. by the Office page)
