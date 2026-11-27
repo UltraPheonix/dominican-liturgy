@@ -1225,10 +1225,10 @@
     }
     var src = {dm: 'Chants as assigned by the St. Dominic Missal (1959)', missal: 'Chants as given in the Missale O.P. (1939)',
       proper: 'Proper Mass of the Graduale O.P.', common: 'Common named by the Missale O.P. (1939)', guess: 'Common chosen from the saint\'s title: check the Ordo',
-      shared: 'Chants re-used from elsewhere in the Graduale', g50: 'Mass as the Graduale O.P. gives it on the day', manual: 'Dominican Mass, checked against the Missale O.P.'}[m.conf];
+      shared: 'Chants re-used from elsewhere in the Graduale', g50: 'Mass as the Graduale O.P. gives it on the day', g28: 'Mass as the Graduale O.P. of 1928 gives it (the 1950 edition has the Immaculate Heart instead)', manual: 'Dominican Mass, checked against the Missale O.P.'}[m.conf];
     buildJump(main);
     main.appendChild(el('p', {class: 'source hide-print'}, [
-      'Graduale O.P. (1950)' + (m.page ? ', p. ' + m.page : '') + (src ? ' · ' + src : '') + '. Readings and prayers: Missale O.P. (1933/1939)' + (isSung() ? '; reading tones: Harrison O.P. (1920)' : '') + '. ',
+      (m.conf === 'g28' ? 'Graduale O.P. (1928)' : 'Graduale O.P. (1950)') + (m.page ? ', p. ' + m.page : '') + (src ? ' · ' + src : '') + '. Readings and prayers: Missale O.P. (1933/1939)' + (isSung() ? '; reading tones: Harrison O.P. (1920)' : '') + '. ',
       el('a', {href: 'about.html', text: 'About the sources'})
     ]));
     if (!state.edit) return;
