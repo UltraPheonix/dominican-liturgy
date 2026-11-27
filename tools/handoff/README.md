@@ -55,4 +55,16 @@ The QC reports are copied here too: qc_mass.md (saints' Masses), qc_ui.md (site 
    - The DOUBTFUL items.
 9. **Ordo 1944 cross-check:** Kyriale by 1939 rank; the Sunday resumed as a commemoration.
 10. **Processions page text punctuation:** follow the book's flexa and colons (see the note in proc_tones handback). Also, the proc_data.py header says +15 but it is +16.
-11. **Last:** the Latin Passion, reconstructed from Fr Innocent Smith's English OP Passion GABC, clearly labelled.
+11. **Offline download (agreed, not started):**
+    - Generate a manifest of all site files at push time.
+    - Add an Options button "Download for offline use" with a progress bar, with Mass-only (about 15 MB) or everything (about 65 MB).
+    - Update only the changed files after a push.
+    - Call `navigator.storage.persist()`.
+12. **Later, if wanted:** an App Store app via Capacitor. Needs a Mac, Xcode and a $99 developer account, plus native features such as a today's-feast widget.
+
+Also added after the pause:
+- About page and site footer: the disclaimer and non-affiliation note, the bookstore (Dominican Liturgy Publications on Lulu) and the donation link (Dominican Friars Foundation).
+- The footer's Support and Books buttons.
+- Cloudflare Web Analytics, loaded in js/ui.js on dominicanrite.com only.
+
+13. **Last:** the Latin Passion, reconstructed from Fr Innocent Smith's English OP Passion GABC, clearly labelled.
