@@ -1,0 +1,414 @@
+# Missale O.P. 1939, Kalendarium perpetuum (pdf 9-13 = pp. 14-22), proofread from the page images.
+# MMDD|title|rank[|notes]   rank as printed; oct= octave grade; "Vigilia" = vigil.
+# FESTA MOBILIA (p. 14):
+# Dominica inter Circumcisionem et Epiphaniam: SS. Nominis Jesu. Totum Duplex I classis.
+# Dominica infra Oct. Epiphaniae: Sancta Familia Jesu, Mariae et Joseph. Totum Duplex.
+# Feria V post Dom. Sexagesimae: Translatio S. Catharinae Senensis, Virg. O. P. Totum Duplex.
+# Feria VI post Dom. Passionis: Compassio B. Mariae V. Totum Duplex.
+# Pascha Resurrectionis. Totum Duplex I classis cum oct. solemnissima (priv.).
+# Feria IV infra hebd. II post Oct. Paschae: Solemnitas S. Joseph Sponsi B. Mariae V. Conf. et Ecclesiae universalis Patroni. Totum Duplex I classis cum oct. solemni.
+# Feria IV infra hebd. III post Oct. Paschae: Dies octava S. Joseph C. Sponsi B. Mariae V. Solemnis.
+# Ascensio Domini. Totum Duplex I classis cum oct. solemnissima (priv.).
+# Pentecostes. Totum Duplex I classis cum oct. solemnissima (priv.).
+# Festum SS. Trinitatis. Totum Duplex I classis cum oct. solemni.
+# Festum SS. Corporis Christi. Totum Duplex I classis cum oct. solemnissima (priv.).
+# Feria VI post Oct. SS. Corporis Christi: Festum SS. Cordis Jesu. Totum Duplex I classis cum oct. solemnissima (priv.).
+# Sabbato post Oct. SS. Corporis Christi: Festum Purissimi Cordis B. Mariae V. Totum Duplex.
+# Dominica I Octobris: SS. Rosarii B. Mariae V. Totum Duplex I classis cum oct. solemni.
+# Dominica ultima Octobris: Festum D. N. Jesu Christi Regis. Totum Duplex I classis.
+# Dedicatio Ecclesiae Cathedralis: Totum Duplex I classis sine octava (and Titular, principal Patrons).
+0101|Circumcisio Domini|Totum Duplex II classis
+0102|B. Stephanæ de Quinzanis Virg. O. P.|Semiduplex
+0102|Octava S. Stephani Protomartyris|Memoria
+0103|B. Zedislavæ Berkianæ Matronæ O. P.|Semiduplex
+0103|Octava S. Joannis Ap. et Ev.|Memoria
+0104|Octava SS. Innocentium MM.|Tres Lectiones
+0105|Vigilia Epiphaniæ|Vigilia
+0106|Epiphania Domini|Totum Duplex I classis|oct=solemnissima priv
+0113|Octava Epiphaniæ|Octava solemnissima
+0114|S. Hilarii Ep., Conf. et Eccl. Doct.|Duplex
+0114|S. Felicis Presb. et Mart.|Memoria
+0115|B. Francisci de Capillas Mart. O. P.|Duplex
+0115|S. Mauri Abbatis|Memoria
+0115|S. Pauli primi Eremitæ Conf.|Memoria
+0116|B. Gundisalvi Conf. O. P.|Semiduplex
+0116|S. Marcelli I Papæ et Mart.|Memoria
+0117|S. Antonii Abbatis|Duplex
+0118|Cathedra Romana S. Petri|Totum Duplex
+0118|S. Priscæ Virg. et Mart.|Memoria
+0119|B. Andreæ a Piscaria Conf. O. P.|Semiduplex
+0120|SS. Fabiani Papæ et Sebastiani MM.|Duplex
+0121|S. Agnetis Virg. et Mart.|Duplex
+0122|S. Vincentii Mart.|Totum Duplex
+0123|S. Raymundi Conf. O. P.|Totum Duplex II classis
+0123|S. Emerentianæ Virg. et Mart.|Memoria
+0124|B. Marcolini Conf. O. P.|Semiduplex
+0124|S. Timothei Ep. et Mart.|Memoria
+0125|Conversio S. Pauli Apostoli|Totum Duplex
+0126|B. Margaritæ de Hungaria Virg. O. P.|Semiduplex
+0126|S. Polycarpi Ep. et Mart.|Memoria
+0127|S. Joannis Chrysostomi Ep., Conf. et Eccl. Doct.|Duplex
+0127|S. Juliani Ep. et Conf.|Memoria
+0128|S. Petri Nolasco Conf.|Duplex
+0128|S. Agnetis secundo|Memoria
+0129|S. Francisci Salesii Ep., Conf. et Eccl. Doct.|Duplex
+0130|B. Mariæ Mancini Vid. O. P.|Semiduplex
+0130|S. Martinæ Virg. et Mart.|Memoria
+0131|S. Joannis Bosco Conf.|Duplex
+0201|S. Ignatii Ep. et Mart.|Duplex
+0202|Purificatio B. Mariæ V.|Totum Duplex II classis
+0203|S. Blasii Ep. et Mart.|Tres Lectiones
+0204|S. Andreæ Corsini Ep. et Conf.|Duplex
+0204|Anniversarium Patrum et Matrum|Novem Lectiones
+0205|S. Agathæ Virg. et Mart.|Duplex
+0206|SS. Vedasti et Amandi Epp. et Confessorum|Memoria
+0207|S. Romualdi Abbatis|Duplex
+0208|S. Joannis de Matha Conf.|Duplex
+0209|S. Cyrilli Ep. Alexandrini, Conf. et Eccl. Doct.|Duplex
+0210|S. Scholasticæ Virg.|Duplex
+0211|Apparitio B. Mariæ V. Immaculatæ|Totum Duplex
+0212|SS. Septem Fundatorum Ordinis Servorum B. M. V.|Duplex
+0213|S. Catharinæ de Ricciis Virg. O. P.|Totum Duplex II classis
+0214|B. Nicolai Palea Conf. O. P.|Semiduplex
+0214|S. Valentini Mart.|Memoria
+0215|B. Jordani Saxonis Conf. O. P.|Duplex
+0216|B. Bernardi Scammacca Conf. O. P.|Semiduplex
+0217|B. Reginaldi Conf. O. P.|Semiduplex
+0219|B. Alvari Cordubensis Conf. O. P.|Semiduplex
+0222|Cathedra Antiochena S. Petri|Totum Duplex
+0223|S. Petri Damiani Ep., Conf. et Eccl. Doct.|Duplex
+0223|Vigilia S. Matthiæ|Vigilia
+0224|S. Matthiæ Apostoli|Totum Duplex II classis
+0225|B. Constantii a Fabriano Conf. O. P.|Semiduplex
+0228|B. Villanæ de Bottis Matronæ O. P.|Semiduplex
+# Leap year: S. Matthias on 25 Feb (and its Vigil on 24), B. Constantius on 26, B. Villana on 29.
+0301|B. Christophori a Mediolano Conf. O. P.|Semiduplex
+0301|S. Albini Ep. et Conf.|Memoria
+0302|B. Henrici Susonis Conf. O. P.|Semiduplex
+0304|S. Casimiri Conf.|Simplex
+0306|B. Jordani a Pisis Conf. O. P.|Semiduplex
+0307|S. Thomæ Aquinatis Conf. et Eccl. Doct. O. P.|Totum Duplex I classis
+0308|S. Joannis de Deo Conf.|Duplex
+0309|S. Franciscæ Romanæ Vid.|Duplex
+0310|B. Petri de Jeremia Conf. O. P.|Semiduplex
+0312|S. Gregorii Magni Papæ, Conf. et Eccl. Doct.|Duplex
+0317|S. Patricii Ep. et Conf.|Duplex
+0318|S. Cyrilli Ep. Hierosolymitani Conf. et Eccl. Doct.|Duplex
+0319|S. Joseph Sponsi B. Mariæ V. Conf.|Totum Duplex I classis
+0320|B. Ambrosii Sansedonii Conf. O. P.|Duplex
+0321|S. Benedicti Abbatis|Totum Duplex
+0322|B. Isnardi de Chiampo Conf. O. P.|Semiduplex
+0323|B. Sibyllinæ de Biscossis Virg. O. P.|Semiduplex
+0324|S. Gabrielis Archangeli|Totum Duplex
+0325|Annuntiatio B. Mariæ V.|Totum Duplex I classis
+0327|S. Joannis Damasceni Conf. et Eccl. Doct.|Duplex
+0401|Impressio SS. Stigmatum S. Catharinæ Sen. Virg. O. P.|Duplex
+0402|S. Francisci de Paula Conf.|Duplex
+0404|S. Isidori Ep., Conf. et Eccl. Doct.|Duplex
+0405|S. Vincentii Ferrerii Conf. O. P.|Totum Duplex II classis
+0409|B. Antonii Pavonii Mart. O. P.|Semiduplex
+0410|B. Antonii Neyrot Mart. O. P.|Semiduplex
+0411|S. Leonis Magni Papæ, Conf. et Eccl. Doct.|Duplex
+0413|B. Margaritæ de Castello V. O. P.|Semiduplex
+0414|B. Petri Gonzalez Conf. O. P.|Semiduplex
+0414|SS. Tiburtii, Valeriani et Maximi MM.|Memoria
+0417|B. Claræ Gambacurtæ Vid. O. P.|Semiduplex
+0420|S. Agnetis de Monte Politiano Virg. O. P.|Totum Duplex II classis
+0421|S. Anselmi Ep., Conf. et Eccl. Doct.|Duplex
+0422|B. Bartholomæi Mart. O. P.|Semiduplex
+0423|S. Georgii Mart.|Simplex
+0424|SS. Coronæ spineæ Domini|Totum Duplex
+0425|S. Marci Evangelistæ|Totum Duplex II classis
+0426|BB. Dominici et Gregorii CC. O. P.|Semiduplex
+0427|B. Hosannæ de Catharo V. O. P.|Semiduplex
+0428|B. Ludovici M. Grignion de Montfort Conf. O. P.|Duplex
+0428|S. Pauli a Cruce Conf.|Memoria
+0428|S. Vitalis Mart.|Memoria
+0429|S. Petri Mart. O. P.|Totum Duplex II classis
+0430|S. Catharinæ Senensis Virg. O. P.|Totum Duplex I classis|Apud III Ord. cum oct. solemni
+0501|SS. Philippi et Jacobi Apostolorum|Totum Duplex II classis
+0502|S. Athanasii Ep., Conf. et Eccl. Doct.|Duplex
+0503|Inventio S. Crucis|Totum Duplex II classis
+0503|SS. Alexandri, Eventii et Theoduli MM.|Memoria
+0504|S. Monicæ Vid.|Duplex
+0505|S. Pii V Papæ et Conf. O. P.|Totum Duplex II classis
+0506|S. Joannis ante Portam Latinam|Totum Duplex
+0507|S. Stanislai Ep. et Mart.|Duplex|Apud III Ord.: Octava S. Catharinæ Sen. Virg. O. P. Solemnis, S. Stanislai Memoria
+0508|Apparitio S. Michaelis Arch.|Totum Duplex
+0509|S. Gregorii Nazianzeni Ep., Conf. et Eccl. Doct.|Duplex
+0510|S. Antonini Ep., Conf. O. P.|Totum Duplex II classis
+0510|SS. Gordiani et Epimachi MM.|Memoria
+0511|B. Alberti a Bergomo Conf. O. P.|Semiduplex
+0512|B. Joannæ de Lusitania Virg. O. P.|Semiduplex
+0512|SS. Nerei, Achillei et Pancratii MM.|Memoria
+0513|B. Imeldæ Virg. O. P.|Duplex
+0514|B. Ægidii Conf. O. P.|Semiduplex
+0515|S. Joannis Baptistæ de la Salle Conf.|Duplex
+0516|S. Joannis Nepomuceni Mart.|Duplex
+0517|B. Andreæ Abellonii Conf. O. P.|Semiduplex
+0518|S. Venantii Mart.|Duplex
+0519|S. Petri Cælestini Papæ et Conf.|Duplex
+0519|S. Pudentianæ Virg.|Memoria
+0520|B. Columbæ Virg. O. P.|Semiduplex
+0522|S. Servatii Ep. et Conf.|Duplex
+0524|Translatio S. P. N. Dominici Conf.|Totum Duplex
+0525|S. Urbani I Papæ et Mart.|Tres Lectiones
+0526|S. Philippi Nerii Conf.|Duplex
+0527|S. Bedæ Venerabilis Conf. et Eccl. Doct.|Duplex
+0528|B. Mariæ Bartholomææ Virg. O. P.|Semiduplex
+0529|BB. Guillelmi O. P. et Soc. MM.|Semiduplex
+0530|B. Andreæ Franchi Ep. et Conf. O. P.|Semiduplex
+0531|B. M. V. omnium Gratiarum Mediatricis|Duplex
+0531|S. Angelæ Mericiæ Virg.|Memoria
+0531|S. Petronillæ Virg.|Memoria
+0601|BB. Alphonsi Navarrete O. P. et Soc. MM.|Duplex
+0602|BB. Sadoc et Sociorum MM. O. P.|Semiduplex
+0602|SS. Marcellini Presb. et Petri Exorcistæ MM.|Memoria
+0603|B. Petri Sanz Ep. et Soc. MM. O. P.|Duplex
+0604|S. Francisci Caracciolo Conf.|Duplex
+0605|B. Jacobi Salomonii Conf. O. P.|Semiduplex
+0606|S. Norberti Ep. et Conf.|Duplex
+0608|S. Medardi Ep. et Conf.|Memoria
+0609|BB. Dianæ, Cæciliæ et Amatæ Virginum O. P.|Semiduplex
+0609|SS. Primi et Feliciani MM.|Memoria
+0610|B. Joannis Dominici Ep. et Conf. O. P.|Semiduplex
+0611|S. Barnabæ Apostoli|Totum Duplex
+0612|B. Stephani Bandelli Conf. O. P.|Semiduplex
+0612|SS. Basilidis, Cyrini, Naboris et Nazarii MM.|Memoria
+0613|S. Antonii de Padua Conf.|Duplex
+0614|S. Basilii Ep., Conf. et Eccl. Doct.|Duplex
+0615|SS. Viti, Modesti et Crescentiæ MM.|Tres Lectiones
+0616|SS. Quirici et Julittæ MM.|Memoria
+0618|S. Ephræm Syri Diaconi Conf. et Eccl. Doct.|Duplex
+0618|SS. Marci et Marcelliani MM.|Memoria
+0619|SS. Gervasii et Protasii MM.|Tres Lectiones
+0620|B. Hosannæ Mantuanæ Virg. O. P.|Semiduplex
+0622|B. Innocentii V Papæ et Conf. O. P.|Duplex
+0623|Vigilia S. Joannis Baptistæ|Vigilia
+0624|Nativitas S. Joannis Baptistæ|Totum Duplex I classis|oct=simplex
+0626|SS. Joannis et Pauli MM.|Duplex
+0628|S. Irenæi Ep. et Mart.|Duplex
+0628|Vigilia SS. Petri et Pauli|Vigilia
+0629|SS. Petri et Pauli Apostolorum|Totum Duplex I classis|oct=solemnis
+0630|Commemoratio S. Pauli Apostoli|Totum Duplex
+0701|Pretiosissimi Sanguinis D. N. J. C.|Totum Duplex I classis
+0701|Octava S. Joannis Baptistæ|Memoria
+0702|Visitatio B. Mariæ V.|Totum Duplex II classis
+0702|SS. Processi et Martiniani MM.|Memoria
+0703|S. Leonis II Papæ et Conf.|Simplex
+0705|S. Antonii Mariæ Zaccaria Conf.|Duplex
+0706|Octava SS. Petri et Pauli Apostolorum|Octava solemnis
+0707|B. Benedicti XI Papæ et Conf. O. P.|Duplex
+0709|SS. Joannis O. P. et Sociorum MM.|Totum Duplex II classis
+0710|Septem Fratrum MM.|Simplex
+0711|BB. Ignatii Delgado, Dominici Henares O. P. et Sociorum MM.|Duplex
+0712|S. Joannis Gualberti Abbatis|Duplex
+0712|Anniversarium sepultorum in Cœmeteriis nostris|Novem Lectiones
+0713|B. Jacobi a Voragine Ep. et Conf. O. P.|Semiduplex
+0714|S. Bonaventuræ Ep., Conf. et Eccl. Doct.|Duplex
+0715|S. Henrici Imperatoris Conf.|Simplex
+0716|Commemoratio B. Mariæ V. de Monte Carmelo|Totum Duplex
+0717|B. Ceslai Conf. O. P.|Semiduplex
+0718|S. Camilli de Lellis Conf.|Duplex
+0719|S. Vincentii a Paulo Conf.|Duplex
+0720|S. Hieronymi Æmiliani Conf.|Duplex
+0720|S. Margaritæ Virg. et Mart.|Memoria
+0721|S. Praxedis Virg.|Tres Lectiones
+0722|S. Mariæ Magdalenæ|Totum Duplex II classis
+0723|B. Joannæ Urbevetanæ V. O. P.|Semiduplex
+0723|S. Apollinaris Ep. et Mart.|Memoria
+0724|B. Augustini de Bugella Conf. O. P.|Semiduplex
+0724|S. Christinæ Virg. et Mart.|Memoria
+0724|Vigilia S. Jacobi|Vigilia
+0725|S. Jacobi Apostoli|Totum Duplex II classis
+0725|SS. Christophori et Cucuphatis MM.|Memoria
+0726|S. Annæ Matris B. Mariæ V.|Totum Duplex II classis
+0728|B. Antonii ab Ecclesia Conf. O. P.|Semiduplex
+0728|SS. Nazarii, Celsi et Pantaleonis MM.|Memoria
+0729|S. Marthæ Virg.|Simplex
+0729|SS. Felicis, Simplicii, Faustini et Beatricis MM.|Memoria
+0730|B. Mannis Conf. O. P.|Duplex
+0730|SS. Abdon et Sennen MM.|Memoria
+0731|S. Ignatii Conf.|Duplex
+0731|S. Germani Ep. et Conf.|Memoria
+0801|S. Petri Ap. ad Vincula|Totum Duplex
+0801|SS. Machabæorum MM.|Memoria
+0802|S. Alphonsi Mariæ de Ligorio Ep., Conf. et Eccl. Doct.|Duplex
+0802|S. Stephani I Papæ et Mart.|Memoria
+0803|B. Augustini Lucerini Ep. et Conf. O. P.|Semiduplex
+0803|Inventio Corporis S. Stephani Protomartyris|Memoria
+0804|S. P. N. Dominici Conf.|Totum Duplex I classis|oct=solemnis
+0805|S. Mariæ ad Nives|Totum Duplex
+0806|Transfiguratio Domini|Totum Duplex II classis
+0806|SS. Xysti II Papæ, Felicissimi et Agapiti MM.|Memoria
+0807|S. Cajetani Conf.|Duplex
+0807|S. Donati Ep. et Mart.|Memoria
+0808|B. Joannæ de Aza, Matris S. P. N. Dominici|Duplex
+0808|SS. Cyriaci, Largi et Smaragdi MM.|Memoria
+0809|B. Joannis de Salerno Conf. O. P.|Semiduplex
+0809|Vigilia S. Laurentii|Vigilia
+0810|S. Laurentii Mart.|Totum Duplex II classis|oct=solius Memoriæ
+0811|Octava S. P. N. Dominici|Octava solemnis
+0811|S. Tiburtii Mart.|Memoria
+0812|S. Claræ Virg.|Duplex
+0813|SS. Hippolyti et Soc. MM.|Tres Lectiones
+0814|S. Eusebii Presb. et Conf.|Memoria
+0814|Vigilia Assumptionis|Vigilia
+0815|Assumptio B. Mariæ Virg.|Totum Duplex I classis|oct=solemnis
+0816|S. Joachim Conf. Patris B. Mariæ V.|Totum Duplex II classis
+0817|S. Hyacinthi Conf. O. P.|Totum Duplex II classis
+0817|Octava S. Laurentii|Memoria
+0818|B. Aimonis Taparelli Conf. O. P.|Semiduplex
+0818|S. Agapiti Mart.|Memoria
+0819|B. Æmiliæ Bicchieri Virg. O. P.|Semiduplex
+0820|S. Bernardi Abbatis et Eccl. Doct.|Duplex
+0821|S. Joannæ Franciscæ Fremiot de Chantal Vid.|Duplex
+0822|Octava Assumptionis B. Mariæ V.|Octava solemnis
+0822|SS. Timothei et Symphoriani MM.|Memoria
+0823|B. Jacobi a Mevania Conf. O. P.|Semiduplex
+0823|Vigilia S. Bartholomæi|Vigilia
+0824|S. Bartholomæi Apostoli|Totum Duplex II classis
+0825|S. Ludovici Galliæ Regis Conf.|Duplex
+0827|S. Josephi Calasanctii Conf.|Duplex
+0827|S. Rufi Ep. et Mart.|Memoria
+0828|S. Augustini Ep., Conf. et Eccl. Doct.|Totum Duplex II classis|oct=solius Memoriæ
+0829|Decollatio S. Joannis Baptistæ|Totum Duplex
+0829|S. Sabinæ Mart.|Memoria
+0830|S. Rosæ a Lima Virg. O. P.|Totum Duplex II classis
+0830|SS. Felicis et Adaucti MM.|Memoria
+0831|S. Raymundi Nonnati Conf.|Duplex
+0901|S. Ægidii Abbatis|Tres Lectiones
+0902|S. Stephani Hungariæ Regis Conf.|Simplex
+0903|B. Gualæ Ep. et Conf. O. P.|Semiduplex
+0904|B. Catharinæ a Raconixio Virg. O. P.|Semiduplex
+0904|Octava S. Augustini|Memoria
+0904|S. Marcelli Mart.|Memoria
+0905|Anniversarium Familiarum et Benefactorum O. N.|Novem Lectiones
+0906|B. Bertrandi a Garriga Conf. O. P.|Semiduplex
+0908|Nativitas B. Mariæ V.|Totum Duplex II classis|oct=solius Memoriæ
+0909|S. Gorgonii Mart.|Tres Lectiones
+0910|S. Nicolai a Tolentino Conf.|Duplex
+0911|SS. Proti et Hyacinthi MM.|Tres Lectiones
+0912|SS. Nominis B. Mariæ V.|Totum Duplex
+0914|Exaltatio S. Crucis|Totum Duplex
+0915|Septem Dolorum B. Mariæ V.|Totum Duplex II classis
+0915|S. Nicomedis Mart.|Memoria
+0916|SS. Cornelii Papæ et Cypriani Ep. MM.|Simplex
+0916|S. Euphemiæ Virg. et Mart.|Memoria
+0917|Impressio sacrorum Stigmatum S. Francisci Conf.|Duplex
+0917|S. Lamberti Ep. et Mart.|Memoria
+0918|B. Joannis Massias Conf. O. P.|Duplex
+0919|SS. Januarii Ep. et Sociorum MM.|Duplex
+0920|B. Francisci de Possadas Conf. O. P.|Duplex
+0920|Vigilia S. Matthæi|Vigilia
+0921|S. Matthæi Apost. et Evang.|Totum Duplex II classis
+0922|SS. Mauritii et Sociorum MM.|Tres Lectiones
+0923|B. Marci Mutinensis Conf. O. P.|Semiduplex
+0924|B. Mariæ V. de Mercede|Totum Duplex
+0925|Commemoratio S. P. N. Dominici in Suriano|Totum Duplex
+0926|B. Dalmatii Monerii Conf. O. P.|Semiduplex
+0927|SS. Cosmæ et Damiani MM.|Simplex
+0928|B. Laurentii a Ripafracta Conf. O. P.|Semiduplex
+0929|S. Michaelis Archangeli|Totum Duplex I classis
+0930|S. Hieronymi Presb., Conf. et Eccl. Doct.|Duplex
+1001|S. Remigii Ep. et Conf.|Tres Lectiones
+1002|SS. Angelorum Custodum|Totum Duplex
+1002|S. Leodegarii Ep. et Mart.|Memoria
+1003|B. Dominici Spadafora Conf. O. P.|Semiduplex
+1004|S. P. N. Francisci Conf.|Totum Duplex I classis
+1005|B. Raymundi a Capua Conf. O. P.|Duplex
+1006|S. Brunonis Conf.|Duplex
+1007|B. Matthæi Carrerii Conf. O. P.|Semiduplex
+1007|S. Marci Papæ et Conf.|Memoria
+1007|SS. Sergii, Bacchi, Marcelli et Apuleji MM.|Memoria
+1008|S. Birgittæ Viduæ|Duplex
+1009|SS. Dionysii Ep. et Sociorum MM.|Duplex
+1010|S. Ludovici Bertrandi Conf. O. P.|Totum Duplex II classis
+1011|B. Jacobi ab Ulma Conf. O. P.|Semiduplex
+1013|B. Magdalenæ de Panateriis Virg. O. P.|Semiduplex
+1014|S. Callisti Papæ et Mart.|Duplex
+1015|S. Teresiæ Virg.|Duplex
+1018|S. Lucæ Evangelistæ|Totum Duplex II classis
+1019|S. Petri de Alcantara Conf.|Duplex
+1021|B. Petri a Tiferno Conf. O. P.|Semiduplex
+1021|SS. Ursulæ et Sociarum VV. et MM.|Memoria
+1022|In Ecclesiis consecratis: Dedicatio propriæ Ecclesiæ|Totum Duplex I classis|oct=simplex
+1023|B. Bartholomæi de Bregantia Episc. et Conf. O. P.|Semiduplex
+1024|S. Raphaelis Archangeli|Totum Duplex
+1025|SS. Crispini et Crispiniani MM.|Memoria
+1026|B. Damiani a Finario Conf. O. P.|Semiduplex
+1027|Vigilia SS. Simonis et Judæ|Vigilia
+1028|SS. Simonis et Judæ Apostolorum|Totum Duplex II classis
+1029|Octava Dedicationis propriæ Ecclesiæ|Simplex
+1030|B. Benvenutæ Bojani Virg. O. P.|Semiduplex
+1031|Commemoratio Sanctorum, quorum Reliquiæ in Ecclesiis nostris asservantur|Totum Duplex
+1031|S. Quintini Mart.|Memoria
+1031|Vigilia Omnium Sanctorum|Vigilia
+1101|Festivitas Omnium Sanctorum|Totum Duplex I classis|oct=solemnis
+1102|Commemoratio Omnium Fidelium Defunctorum|Duplex
+1103|B. Simonis Ballacchii Conf. O. P.|Semiduplex
+1104|S. Caroli Ep. et Conf.|Duplex
+1104|SS. Vitalis et Agricolæ MM.|Memoria
+1105|B. Martini de Porres Conf. O. P.|Duplex
+1106|BB. Hieronymi, Valentini, Francisci, Hyacinthi et Sociorum MM. O. P.|Duplex
+1107|B. Petri de Ruffia Mart. O. P.|Semiduplex
+1108|Octava Omnium Sanctorum|Octava solemnis
+1108|SS. Quatuor Coronatorum MM.|Memoria
+1109|Dedicatio Basilicæ SS. Salvatoris|Totum Duplex II classis
+1109|S. Theodori Mart.|Memoria
+1110|Anniversarium Omnium Fratrum et Sororum defunctorum O. N.|Novem Lectiones
+1111|S. Martini Ep. et Conf.|Totum Duplex
+1111|S. Mennæ Mart.|Memoria
+1112|Festivitas Omnium Sanctorum O. P.|Totum Duplex II classis
+1113|Patrocinium S. Thomæ Aq. in Scholas catholicas|Totum Duplex I classis
+1114|B. Joannis Liccii Conf. O. P.|Semiduplex
+1114|S. Britii Ep. et Conf.|Memoria
+1115|S. Alberti Magni Ep., Conf. et Eccl. Doct. O. P.|Totum Duplex I classis
+1116|B. Luciæ a Narnia Virg. O. P.|Semiduplex
+1117|S. Gregorii Thaumaturgi Ep. et Conf.|Simplex
+1118|Dedicatio Basilicarum SS. Petri et Pauli Apostolorum|Totum Duplex
+1119|S. Elisabeth Viduæ|Duplex
+1120|S. Felicis de Valois Conf.|Duplex
+1121|Præsentatio B. Mariæ V.|Totum Duplex
+1122|S. Cæciliæ Virg. et Mart.|Duplex
+1123|S. Clementis I Papæ et Mart.|Duplex
+1124|S. Joannis a Cruce Conf. et Eccl. Doct.|Duplex
+1124|S. Chrysogoni Mart.|Memoria
+1125|S. Catharinæ Virg. et Mart.|Totum Duplex
+1126|B. Jacobi de Benefactis Ep. et Conf. O. P.|Semiduplex
+1129|S. Saturnini Ep. et Mart.|Memoria
+1129|Vigilia S. Andreæ|Vigilia
+1130|S. Andreæ Apostoli|Totum Duplex II classis|oct=solius Memoriæ
+1201|B. Joannis a Vercellis Conf. O. P.|Duplex
+1202|S. Bibianæ Virg. et Mart.|Simplex
+1203|S. Francisci Xaverii Conf.|Totum Duplex
+1204|S. Petri Chrysologi Ep., Conf. et Eccl. Doct.|Duplex
+1204|S. Barbaræ Virg. et Mart.|Memoria
+1206|S. Nicolai Ep. et Conf.|Duplex
+1207|S. Ambrosii Ep., Conf. et Eccl. Doct.|Duplex
+1207|Octava S. Andreæ Apost.|Memoria
+1207|Vigilia Conceptionis|Vigilia
+1208|Conceptio Immaculata B. Mariæ V.|Totum Duplex I classis|oct=solemnis
+1210|Pro Italia et insulis adjac.: Translatio almæ domus Lauretanæ|Totum Duplex
+1211|S. Damasi I Papæ et Conf.|Simplex
+1213|S. Luciæ Virg. et Mart.|Duplex
+1215|Octava Concept. Immaculatæ B. M. V.|Octava solemnis
+1216|B. Sebastiani Maggi Conf. O. P.|Semiduplex
+1220|S. Dominici Sylensis Abb.|Duplex
+1220|Vigilia S. Thomæ|Vigilia
+1221|S. Thomæ Apostoli|Totum Duplex II classis
+1222|Patrocinium B. Mariæ V.|Totum Duplex
+1223|B. Margaritæ de Sabaudia Vid. O. P.|Semiduplex
+1224|Vigilia Nativitatis|Vigilia
+1225|Nativitas D. N. J. C.|Totum Duplex I classis|oct=solemnissima priv
+1226|S. Stephani Protomartyris|Totum Duplex II classis|oct=Tres Lectiones
+1227|S. Joannis Ap. et Evang.|Totum Duplex II classis|oct=Tres Lectiones
+1228|SS. Innocentium MM.|Totum Duplex II classis|oct=Tres Lectiones
+1229|S. Thomæ Ep. et Mart.|Duplex
+1231|S. Silvestri I Papæ et Conf.|Duplex
+# Supplements bound into the pdf (pp. 355-367); only those approved before 1955 are kept:
+0119|S. Margaritæ ab Hungaria Virg. O. P.|Totum Duplex II classis|supp 1943 (canonized; replaces B. Margarita on 0126)
+0822|Immaculati Cordis B. Mariæ V.|Totum Duplex II classis|supp 1944 (Octava Assumptionis then commemorated)
+0727|BB. Josephi, Melchioris Episcoporum O. P. et Sociorum MM.|Duplex|supp decree 19 Jan 1954
+# Not kept (approved after the 1955 reform): S. Joseph Opificis 0501 (1956 sheet), B. M. V. Reginæ 0531 (Imprimi potest 2 Oct 1956).
+# Not kept: S. Teresiæ a Jesu Infante 1003, Totum Duplex I classis "in Missionibus" only (p. 355).

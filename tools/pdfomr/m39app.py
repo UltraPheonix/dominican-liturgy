@@ -170,7 +170,7 @@ def read_staff(g, L, x_lo, x_hi):
     return out
 def main(pdf, page, side):
     d = pymupdf.open(pdf); p = d[page]; W2 = p.rect.width / 2
-    clip = pymupdf.Rect(0, 0, W2, p.rect.height) if side == 'L' else pymupdf.Rect(W2, 0, p.rect.width, p.rect.height)
+    clip = p.rect if side == 'F' else pymupdf.Rect(0, 0, W2, p.rect.height) if side == 'L' else pymupdf.Rect(W2, 0, p.rect.width, p.rect.height)   # F: a whole single page (Graduale O.P.)
     pix = p.get_pixmap(dpi=DPI, clip=clip)
     g = np.frombuffer(pix.samples, np.uint8).reshape(pix.h, pix.w, pix.n)[:, :, :3].mean(2)
     g0 = g

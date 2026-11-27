@@ -1,0 +1,918 @@
+S0114     14 Ian. — S. Hilarii, E. C. D.                   l.42658  missal COMMONREF
+          in 6549 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 6959 "posui adiutorium super potentem et"
+          tr 7081 "quasi stella matutina in medio"
+          of 5857 "iustus ut palma florebit sicut"
+          co 5425 "domine quinque talenta tradidisti mihi"
+S0115     15 Ian. — Ss. Francisci de Capillas, O.P. M.     l.42688  dm
+          in 6411 "laetabitur iustus in domino et"
+          gr 6960 "posuisti domine super caput eius"
+          al 6582 "laetabitur iustus in domino et"
+          of 6358 "posuisti domine in capite eius"
+          co 6386 "magna est gloria eius in"
+S0117     17 Ian. — S. Antonii, Abb.                       l.42845  dm
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+S0118     18 Ian. — S. Margaritæ ab Hungariæ O.P. V.       no matching title (l.42956)
+S0120     20 Ian. — Ss. Fabiani et Sebastiani, Mm.         l.43165  missal
+          al 4992 "te martirum candidatus laudat exercitus"
+S0121     21 Ian. — S. Agnetis, V. M.                      l.43312  dm COMMONREF
+          gr 5634 "specie tua et pulcritudine tua"
+          al 4860 "adducentur regi uirgines post eam"
+          of r1107 NO GABC
+          co 6271 "simile est regnum caelorum homini"
+S0122     22 Ian. — S. Vincentii, M.                       l.43317  dm COMMONREF
+          gr 6960 "posuisti domine super caput eius"
+          of 6358 "posuisti domine in capite eius"
+          co 6386 "magna est gloria eius in"
+S0123     23 Ian. — S. Raymundi de Pennafort O.P. C.       l.43321  missal
+          al 6959 "posui adiutorium super potentem et"
+S0127     27 Ian. — S. Ioannis Chrysostomi E. C. D.        l.43854  dm COMMONREF
+          in 6482 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 6959 "posui adiutorium super potentem et"
+          of 7170 "ueritas mea et misericordia mea"
+          co 5854 "beatus seruus quem cum uenerit"
+S0129     29 Ian. — S. Francisci Salesii, E. C. D.         l.44066  dm COMMONREF
+          in 6482 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 6959 "posui adiutorium super potentem et"
+          of 7170 "ueritas mea et misericordia mea"
+          co 5854 "beatus seruus quem cum uenerit"
+S0202     2 Feb. — Purificatio B. Mariæ Virg.              no matching title (l.44466)
+S0204     4 Feb. — S. Andreæ Corsini, E. C.                l.44802  missal
+          in 5417 "statuit ei dominus testamentum pacis"
+          gr 5531 "adiuuabit eam deus uultu suo"
+          al 6785 "inueni dauid seruum meum oleo"
+          tr 4978 "qui seminant in lacrimis in"
+          of 5857 "iustus ut palma florebit sicut"
+          co 6516 "fidelis seruus et prudens quem"
+S0207     7 Feb. — S. Romualdi, Abb.                       l.45002  guess COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 6516 "fidelis seruus et prudens quem"
+S0208     8 Feb. — S. Ioannis de Matha, C.                 l.45006  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0209     9 Feb. — S. Cyrilli Alexandrini, E. D.           l.45043  dm COMMONREF
+          in 6482 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 6959 "posui adiutorium super potentem et"
+          of 7170 "ueritas mea et misericordia mea"
+          co 5854 "beatus seruus quem cum uenerit"
+S0210     10 Feb. — S. Scholasticæ, V.                     l.45080  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          tr 7029 "tu gloria ierusalem tu laetitia"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0213     13 Feb. — S. Catherinæ de Ricciis O.P. V.        no matching title (l.45391)
+S0214     14 Feb. — B. Iordani Saxonis, O.P., C.           no matching title (l.45555)
+S0215     15 Feb. — B. Henrici Suso O.P. C.                no matching title (l.45614)
+S0222     22 Feb. — Cathedra S. Petri. Apostoli            l.45763  guess COMMONREF
+          in 4899 "mihi autem nimis honorati sunt"
+          gr 9858 "constitues eos principes super omnem"
+          al 5348 "nimis honorati sunt amici tui"
+          of 5848 "mihi autem nimis honorati sunt"
+          co 5171 "uos qui secuti estis me"
+S0223     23 Feb. — S. Petri Damiani, E. C. D.             l.45770  dm COMMONREF
+          in 6482 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 6959 "posui adiutorium super potentem et"
+          of 7170 "ueritas mea et misericordia mea"
+          co 5854 "beatus seruus quem cum uenerit"
+S0224     24 Feb. — Matthiæ Apostoli                       no matching title (l.45806)
+S0307     7 Mart. — S. THOMÆ AQUINATIS O.P. C. D.          no matching title (l.46205)
+S0308     8 Mart. — S. Ioannis de Deo, C.                  l.46355  common COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 6266 "iustus ut palma florebit sicut"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 5854 "beatus seruus quem cum uenerit"
+S0309     9 Mart. — S. Francescæ Romanæ, Vid.              l.46428  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0319     19 Mart. — S. IOSEPHI, SPONSI B. MARIÆ VIRG. C.  l.46792  dm
+          al 7042 "amauit eum dominus et ornauit"
+S0325     25 Mart. — ANNUNTIATIO B. MARIÆ VIRG.            no matching title (l.47250)
+S0327     27 Mart. — S. Ioannis Damasceni, C. D.           l.47420  dm
+          gr 4733 "os iusti meditabitur sapientiam et"
+S0404     4 Apr. — S. Isidori, E. C. D.                    l.47712  dm
+          in 6482 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 6959 "posui adiutorium super potentem et"
+          of 7170 "ueritas mea et misericordia mea"
+          co 5854 "beatus seruus quem cum uenerit"
+S0411     11 Apr. — S. Leonis Magni, P. C. D.              l.47964  dm COMMONREF
+          in 6482 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 6959 "posui adiutorium super potentem et"
+          of 7170 "ueritas mea et misericordia mea"
+          co 5854 "beatus seruus quem cum uenerit"
+S0421     21 Apr. — S. Anselmi, E. C. D.                   l.48406  dm COMMONREF
+          in 6482 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 6959 "posui adiutorium super potentem et"
+          of 7170 "ueritas mea et misericordia mea"
+          co 5854 "beatus seruus quem cum uenerit"
+S0428     28 Apr. — S. Pauli a Cruce, C.                   no matching title (l.48902)
+S0501     1 Maii — S. IOSEPHI OPIFICIS, SPONSI B. MARIÆ VI l.69622  proper
+          in r646 NO GABC
+          of r26 NO GABC
+          co r28 NO GABC
+S0502     2 Maii — S. Athanasii, E. C. D.                  l.49475  missal
+          gr 5522 "ostende nobis domine misericordiam tuam"
+          of 6142 "meditabor in mandatis tuis quae"
+S0504     4 Maii — S. Monicæ, Vid.                         l.49819  dm
+          gr 6293 "propter ueritatem et mansuetudinem et"
+S0507     7 Maii — S. Stanislai, E. M.                     l.50203  dm
+          gr 6960 "posuisti domine super caput eius"
+          al 5176 "in conspectu angelorum psallam tibi"
+S0508     8 Maii — B. Mariæ Virg. omnium gratiarum Mediatr l.50326  missal
+          in 7070 "adeamus cum fiducia ad thronum"
+          al 7208 "salue mater misericordiae mater spei"
+          of 5119 "recordare uirgo mater dum steteris"
+          co 5623 "ualde mirabilis es o maria"
+S0509     9 Maii — S. Gregorii Nazianzeni, E.C.D.          l.50466  dm
+          gr 4733 "os iusti meditabitur sapientiam et"
+S0510     10 Maii — S. Antonini, O.P., E. C.               l.50615  common
+          of 4854 "meditabor in mandatis tuis quae"
+S0511     11 Maii — S. Philippi et Iacobi Apostolorum      l.50801  dm COMMONREF
+          in 4274 "clamauerunt ad te domine in"
+          al 6152 "stabunt iusti in magna constantia"
+          of 5269 "confitebuntur caeli mirabilia tua domine"
+          co 6774 "tanto tempore uobiscum sum et"
+S0515     15 Maii — S. Ioannis Baptistæ de la Salle, C.    l.51086  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 6266 "iustus ut palma florebit sicut"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0524     24 Maii — Translatio S. P. N. Dominici, C.       l.51698  guess
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 6266 "iustus ut palma florebit sicut"
+          al 5397 "pie pater dominice tuorum memor"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 5854 "beatus seruus quem cum uenerit"
+S0527     27 Maii — S. Bedæ Venerablis, C. D.              l.51970  dm COMMONREF
+          in 6482 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 6959 "posui adiutorium super potentem et"
+          of 7170 "ueritas mea et misericordia mea"
+          co 5854 "beatus seruus quem cum uenerit"
+S0531     31 Maii — B. Mariæ Virg. Reginæ                  l.69698  dm
+          gr 6822 "in me gratia omnis uiae"
+          al 7208 "salue mater misericordiae mater spei"
+          of 7216 "aue regina caelorum mater regis"
+          co 5623 "ualde mirabilis es o maria"
+S0603     3 Iun. — Ss. Petri Sanz, E., et Soc., Mm. O.P.,  l.52523  dm COMMONREF
+          in 6735 "intret in conspectu tuo domine"
+          gr 6720 "exsultabunt sancti in gloria laetabuntur"
+          al 4992 "te martirum candidatus laudat exercitus"
+          al 5648 "sancti et iusti in domino"
+          of 4790 "mirabilis deus in sanctis suis"
+          co 6440 "posuerunt mortalia seruoum tuorum domine"
+S0604     4 Iun. — S. Francisci Caracciolo, C.             l.52564  common COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0606     6 Iun. — S. Norberti, E. C.                      l.52724  dm COMMONREF
+          in 5417 "statuit ei dominus testamentum pacis"
+          gr 6123 "iurauit dominus et non poenitebit"
+          al 6785 "inueni dauid seruum meum oleo"
+          of 5857 "iustus ut palma florebit sicut"
+          co 6516 "fidelis seruus et prudens quem"
+S0611     11 Iun. — S. Barnabæ Apostoli                    no matching title (l.52920)
+S0613     13 Iun. — S. Antonii de Padua, C. D.             l.53142  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0618     18 Iun. — S. Ephræm Syri, C. D.                  l.53454  dm COMMONREF
+          in 6482 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 6959 "posui adiutorium super potentem et"
+          of 7170 "ueritas mea et misericordia mea"
+          co 5854 "beatus seruus quem cum uenerit"
+S0701     1 Iul. — PRETIOSISSIMI SANGUINIS D. N. I. C.     no matching title (l.54727)
+S0703     3 Iul. — S. Irenæi, E. M.                        no matching title (l.55049)
+S0711     11 Iul. — Ss. Ignatii Delgado et Soc., O.P., Mar NO ENTRY in M39
+S0714     14 Iul. — S. Bonaventuræ, B. C. D.               no matching title (l.55892)
+S0715     15 Iul. — S. Henrici Imperatoris, C.             l.56024  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 6191 "tibi domine derelictus est pauper"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0718     18 Iul. — S. Camilli de Lellis, C.               l.56143  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0719     19 Iul. — S. Vincentii a Paulo, C.               l.56183  guess
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6890 "beatus uir qui suffert tentationem"
+S0726     26 Iul. — S. Annæ Matris B. Mariæ Virg.          l.56960  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0727     27 Iul. — B. Iosephi, Melchioris E., O.P. et soc l.69890  dm
+          of 5269 "confitebuntur caeli mirabilia tua domine"
+          co 6576 "laetabitur iustus in domino et"
+S0731     31 Iul. — S. Ignatii, C.                         l.57250  missal
+          gr 6266 "iustus ut palma florebit sicut"
+S0805     5 Aug. — S. Mariæ ad Nives                       l.58039  dm COMMONREF
+          in 4289 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 7543 "beata uiscera mariae uirginis quae"
+S0812     12 Aug. — S. Claræ, V.                           l.58712  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0815     15 Aug. — ASSUMPTIO B. MARIÆ VIRG.               no matching title (l.58995)
+S0817     17 Aug. — S. Hyacinthi, O.P., C.                 l.59303  dm
+          gr 5041 "eruditus a iuuentute sua impletus"
+S0821     21 Aug. — S. Ioannæ Franciscæ Fremiot de Chantal l.59722  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0822     22 Aug. — Immaculati Cordis B. Mariæ Virg.       no matching title (l.59766)
+S0824     24 Aug. — S. Bartholomæi, Ap.                    no matching title (l.59833)
+S0825     25 Aug. — S. Lodovici Regis, C.                  l.59964  missal
+          gr 6266 "iustus ut palma florebit sicut"
+          al 6895 "iustus germinabit sicut lilium et"
+S0827     27 Aug. — S. Iosephi Calasanctii, C.             l.60110  guess
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 5854 "beatus seruus quem cum uenerit"
+S0829     29 Aug. — Decollatio S. Ioannis Bapt.            l.60374  dm
+          al 5585 "laus tua deus repetitur u"
+S0830     30 Aug. — S. Rosæ a Lima, O.P., V.               l.60539  dm
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+S0903     3 Sept. — S. Pii X, P. C.                        no matching title (l.60983)
+S0908     8 Sept. — Nativitas B. Mariæ Virg.               l.61149  missal
+          al 5685 "ueni electa mea et ponam"
+S0910     10 Sept. — S. Alphonsi Navarrete et Soc., O.P.,  no matching title (l.61359)
+S0916     16 Sept. — Ss. Cornelii et Cypriani, M.          l.61800  dm
+          al 6582 "laetabitur iustus in domino et"
+S0918     18 Sept. — S. Ioannis Massias, O.P., C.          l.62098  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 6191 "tibi domine derelictus est pauper"
+          al 6943 "sancti tui domine benedicent te"
+          of 4790 "mirabilis deus in sanctis suis"
+          co 4856 "amen dico uobis quod uos"
+S0920     20 Sept. — B. Francisci de Posadas, O.P., C.     l.62264  guess COMMONREF
+          in 5033 "caritas dei diffusa est in"
+          gr 6052 "uenite filii audite me timorem"
+          al 6501 "de excelso misit ignem in"
+          of 5852 "uiam mandatorum tuorum cucurri cum"
+          co 4848 "cor meum et caro mea"
+S0921     21 Sept. — S. Matthæi, Apostoli et Evangelistæ   no matching title (l.62410)
+S0927     27 Sept. — Ss. Cosmæ et Damiani, Mm.             l.62783  guess
+          al 4992 "te martirum candidatus laudat exercitus"
+S1003     3 Oct. — S. Teresiæ a Iesu Infante, V. D.        no matching title (l.63605)
+S1004     4 Oct. — S. P. Francisci, Ord. Min. Fund. C.     no matching title (l.63688)
+S1005     5 Oct. — B. Raymundi de Capua, O.P., C.          l.63845  missal
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 6191 "tibi domine derelictus est pauper"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 5854 "beatus seruus quem cum uenerit"
+S1006     6 Oct. — S. Brunonis, C.                         l.63877  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S1007     7 Oct. — B. MARIÆ VIRG. A ROSARIO                no matching title (l.63909)
+S1008     8 Oct. — S. Birgittæ, Vid.                       l.63996  dm
+          al 5685 "ueni electa mea et ponam"
+S1009     9 Oct. — S. Ludovici Bertrandi, O.P., C.         no matching title (l.64122)
+S1015     15 Oct. — S. Teresiæ de Avila, V. D.             no matching title (l.64630)
+S1018     18 Oct. — S. Lucæ, Evangelistæ                   no matching title (l.64751)
+S1019     19 Oct. — S. Petri de Alcantara, C.              l.64897  dm COMMONREF
+          in 4283 "iustus ut palma florebit sicut"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6582 "laetabitur iustus in domino et"
+          of 5857 "iustus ut palma florebit sicut"
+          co 4856 "amen dico uobis quod uos"
+S1024     24 Oct. — S. Raphaelis Archangeli                l.65135  dm
+          co 5241 "benedicite omnes angeli domini dominum"
+S1028     28 Oct. — Ss. Simonis et Iudæ, App.              l.65457  missal
+          gr 9858 "constitues eos principes super omnem"
+S1104     4 Nov. — S. Caroli Borromæo, E. C.               l.66737  missal
+          gr 6123 "iurauit dominus et non poenitebit"
+          of 5857 "iustus ut palma florebit sicut"
+S1105     5 Nov. — S. Martini de Porres, O.P., C.          l.66914  dm COMMONREF
+          in 4283 "iustus ut palma florebit sicut"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6582 "laetabitur iustus in domino et"
+          of 5857 "iustus ut palma florebit sicut"
+          co 4856 "amen dico uobis quod uos"
+S1106     6 Nov. — Ss. Hieronymi, Valentini, Francisci, Hy l.66949  dm
+          in 6735 "intret in conspectu tuo domine"
+          gr 6720 "exsultabunt sancti in gloria laetabuntur"
+          al 4992 "te martirum candidatus laudat exercitus"
+          al 5648 "sancti et iusti in domino"
+          of 4790 "mirabilis deus in sanctis suis"
+          co 6440 "posuerunt mortalia seruoum tuorum domine"
+S1109     9 Nov. — Dedicatio Archibasilicæ SS. Salvatoris  l.67060  missal COMMONREF
+          in 6221 "terribilis est locus iste hic"
+          gr 6283 "locus iste a deo factus"
+          al 5217 "adorabo ad templum sanctum tuum"
+          tr 6154 "domus mea domus orationis uocabitur"
+          of 5927 "domine deus in simplicitate cordis"
+          co 7050 "domus mea domus orationis uocabitur"
+S1111     11 Nov. — S. Martini, E. C.                      l.67095  missal
+          gr 6123 "iurauit dominus et non poenitebit"
+          al 7980 "hic martinus pauper et modicus"
+S1115     15 Nov. — S. Alberti Magni O.P. E. C. D.         no matching title (l.67467)
+S1117     17 Nov. — S. Gregorii Thaumaturgi, E. C.         l.67637  dm
+          gr 6123 "iurauit dominus et non poenitebit"
+          of 5857 "iustus ut palma florebit sicut"
+          co 6516 "fidelis seruus et prudens quem"
+S1119     19 Nov. — S. Elizabeth, Vid.                     no matching title (l.67751)
+S1121     21 Nov. — Præsentatio B. Mariæ Virg.             l.68003  missal COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 5936 "aue regina caelorum mater regis"
+S1122     22 Nov. — S. Cæciliæ, V. M.                      l.68045  dm
+          of r1107 NO GABC
+          co r1032 NO GABC
+S1124     24 Nov. — S. Ioannis a Cruce, C. D.              l.68302  dm COMMONREF
+          in 6482 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 6959 "posui adiutorium super potentem et"
+          of 7170 "ueritas mea et misericordia mea"
+          co 5854 "beatus seruus quem cum uenerit"
+S1125     25 Nov. — S. Catherinæ, V. M.                    no matching title (l.68362)
+S1202     2 Dec. — S. Bibianæ, V. M.                       no matching title (l.39997)
+S1203     3 Dec. — S. Francisci Xavierii, C.               l.40128  dm
+          al 5359 "beatus uir qui timet dominum"
+S1204     4 Dec. — S. Petri Chrysologi, E. C. D.           l.40247  dm COMMONREF
+          in 6482 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 6959 "posui adiutorium super potentem et"
+          of 7170 "ueritas mea et misericordia mea"
+          co 5854 "beatus seruus quem cum uenerit"
+S1211     11 Dec. — S. Damasi, P. C.                       no matching title (l.41079)
+S1213     13 Dec. — S. Luciæ, V. M.                        no matching title (l.41084)
+S1221     21 Dec. — S. Thomæ Apostoli                      no matching title (l.41270)
+S0102b    2 Ian. — B. Stephanæ de Quinzanis O.P. V.        l.42336  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0110b    10 Ian. — B. Annæ de Angelis Monteagudo O.P. V.  NO ENTRY in M39
+S0111b    11 Ian. — B. Bernardi Scammacca O.P. C.          NO ENTRY in M39
+S0116b    16 Ian. — B. Gundisalvi O.P. C.                  l.42780  dm
+          in 4283 "iustus ut palma florebit sicut"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6582 "laetabitur iustus in domino et"
+          of 5857 "iustus ut palma florebit sicut"
+          co 4856 "amen dico uobis quod uos"
+S0119b    19 Ian. — B. Andreæ a Piscaria O.P. C.           l.43131  common COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0124b    24 Ian. — B. Marcolini O.P. C.                   l.43523  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0130b    30 Ian. — B. Mariæ Mancini O.P. Vid.             l.44103  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0216b    16 Feb. — B. Nicolai Palea O.P. C.               no matching title (l.45653)
+S0219b    19 Feb. — B. Alvari a Corduba O.P. C.            l.45730  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0225b    25 Feb. — (vel 26 anno bissextili): B. Constanti l.45950  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0301b    1 Mart. — B. Christopheri Mediolanensis O.P. C.  no matching title (l.46025)
+S0303b    3 Mart. — B. Petri de Ieremia O.P. C.            NO ENTRY in M39
+S0322b    22 Mart. — B. Isnardi de Vicentia O.P. C.        l.46981  dm
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0323b    23 Mart. — B. Sibyllinæ de Biscossis O.P. V.     l.47015  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0401b    1 Apr. — B. Iosephi Girotti O.P. M. (2014)       no matching title (l.47566)
+S0409b    9 Apr. — B. Antonii Pavonii O.P. M.              l.47907  common COMMONREF
+          in 6411 "laetabitur iustus in domino et"
+          gr 6960 "posuisti domine super caput eius"
+          al 6582 "laetabitur iustus in domino et"
+          of 6358 "posuisti domine in capite eius"
+          co 6386 "magna est gloria eius in"
+S0410b    10 Apr. — B. Antonii Neyrot O.P. M.              l.47945  dm COMMONREF
+          in 6411 "laetabitur iustus in domino et"
+          gr 6960 "posuisti domine super caput eius"
+          al 6582 "laetabitur iustus in domino et"
+          of 6358 "posuisti domine in capite eius"
+          co 6386 "magna est gloria eius in"
+S0413b    13 Apr. — B. Margaritæ de Castello O.P. V.       l.48005  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0417b    17 Apr. — B. Claræ Gambacurtæ O.P. V.            l.48211  guess COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0419b    19 Apr. — B. Alberti a Bergomo O.P. C.           NO ENTRY in M39
+S0422b    22 Apr. — B. Bartholomæi Cerveri O.P. M.         no matching title (l.48441)
+S0426b    26 Apr. — B. Dominici et Gregorii O.P. C.        l.48831  dm COMMONREF
+          in 4283 "iustus ut palma florebit sicut"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6582 "laetabitur iustus in domino et"
+          of 5857 "iustus ut palma florebit sicut"
+          co 7015 "ego sum uitis uera et"
+S0427b    27 Apr. — B. Hosannæ a Catharo O.P. V.           l.48869  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0503b    3 Maii — B. Æmiliæ Bicchieri O.P. V.             l.49623  dm
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0508b    8 Maii — B. Petri Claverie et Sociorum, Mm. (201 l.50326  guess
+          in 6735 "intret in conspectu tuo domine"
+          gr 6720 "exsultabunt sancti in gloria laetabuntur"
+          al 4992 "te martirum candidatus laudat exercitus"
+          of 4790 "mirabilis deus in sanctis suis"
+          co 6440 "posuerunt mortalia seruoum tuorum domine"
+S0512b    12 Maii — B. Ioannæ Lusitanæ O.P. V.             l.50834  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0514b    14 Maii — B. Ægidii O.P. C.                      l.51048  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 6123 "iurauit dominus et non poenitebit"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0516b    16 Maii — B. Vladimir Ghilka, M. (2013)          l.51141  guess COMMONREF
+          in 6411 "laetabitur iustus in domino et"
+          gr 6960 "posuisti domine super caput eius"
+          al 6582 "laetabitur iustus in domino et"
+          of 6358 "posuisti domine in capite eius"
+          co 6386 "magna est gloria eius in"
+S0517b    17 Maii — B. Andreæ Abellonii O.P. C.            l.51206  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0520b    20 Maii — B. Columbæ O.P. V.                     l.51523  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0521b    21 Maii — B. Hyacinthi Cormer O.P. C. (1994)     NO ENTRY in M39
+S0528b    28 Maii — B. Mariæ Bartholomææ de Bagnesiis O.P. l.52006  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0530b    30 Maii — B. Andreæ Franchi O.P. Ep., C.         l.52080  dm
+          in 5417 "statuit ei dominus testamentum pacis"
+          gr 6123 "iurauit dominus et non poenitebit"
+          al 6785 "inueni dauid seruum meum oleo"
+          of 5857 "iustus ut palma florebit sicut"
+          co 6516 "fidelis seruus et prudens quem"
+S0605b    5 Iun. — B. Iacobi Salomonii O.P. C.             l.52599  dm
+          gr 6123 "iurauit dominus et non poenitebit"
+S0612b    12 Iun. — B. Stephani Bandelli O.P. C.           l.53067  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0620b    20 Iun. — B. Hosannæ Mantuanæ O.P. V.            l.53651  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0620bx   20 Iun. — B. Margaretæ Ebner O.P. V. (1979)      no matching title (l.53651)
+S0704b    4 Iul. — B. Catharinæ Jarrigue O.P. V. (1996)    no matching title (l.55083)
+S0708b    8 Iul. — B. Adriani Fortescue O.P. M. (1983)     NO ENTRY in M39
+S0718b    18 Iul. — S. Bartholomæi Martyrum Fernandez O.P. no matching title (l.56143)
+S0723b    23 Iul. — B. Ioannæ Urbevetanæ O.P. V.           l.56680  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0724b    24 Iul. — B. Augustini a Bugella O.P. C.         l.56738  dm
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0727b    27 Iul. — B. Roberti Nutter O.P. M. (1987)       no matching title (l.69890)
+S0728b    28 Iul. — B. Antonii ab Ecclesia O.P. C.         l.56995  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 6266 "iustus ut palma florebit sicut"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0803b    3 Aug. — B. Augustini Lucerini O.P. Ep., C.      l.57766  dm COMMONREF
+          in 5417 "statuit ei dominus testamentum pacis"
+          gr 6123 "iurauit dominus et non poenitebit"
+          al 6785 "inueni dauid seruum meum oleo"
+          of 5857 "iustus ut palma florebit sicut"
+          co 6516 "fidelis seruus et prudens quem"
+S0811b    11 Aug. — B. Ioannis a Salerno O.P. C.           no matching title (l.58687)
+S0812b    12 Aug. — B. Ioannis Georgii Thomæ Rehm et Soc.  no matching title (l.58712)
+S0813b    13 Aug. — S. Alexandri Longo O.P. et Soc., Mm. ( no matching title (l.58743)
+S0818b    18 Aug. — B. Aimonis Taparelli O.P. C.           l.59491  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0819b    19 Aug. — B. Iordani a Pisis O.P. C.             no matching title (l.59560)
+S0823b    23 Aug. — B. Iacobi a Mevania O.P. C.            l.59795  dm COMMONREF
+          in 4283 "iustus ut palma florebit sicut"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6582 "laetabitur iustus in domino et"
+          of 5857 "iustus ut palma florebit sicut"
+          co 4856 "amen dico uobis quod uos"
+S0902b    2 Sept. — B. Ingrid a Skanninge O.P. Vid. (post  no matching title (l.60848)
+S0904b    4 Sept. — B. Catharinæ a Raconixio O.P. V.       l.61014  guess COMMONREF
+          in 5384 "dilexisti iustitiam et odisti iniquitatem"
+          gr 5634 "specie tua et pulcritudine tua"
+          al 4860 "adducentur regi uirgines post eam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0905b    5 Sept. — B. Gualæ O.P. Ep., C.                  NO ENTRY in M39
+S0906b    6 Sept. — B. Michælis Czartorysky O.P. et Soc.,  no matching title (l.61109)
+S0907b    7 Sept. — B. Mariæ Ioannis-Joseph Lataste O.P. C NO ENTRY in M39
+S0923b    23 Sept. — B. Marci Mutinensis O.P. C.           l.62662  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0926b    26 Sept. — B. Dalmatii Monerii O.P. C.           l.62745  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0928b    28 Sept. — B. Laurentii a Ripafracta O.P. C.     l.62901  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S1006b    6 Oct. — B. Bartoli Longo O.P. C. (1980)         no matching title (l.63877)
+S1010b    10 Oct. — B. Matthæi Carrerii O.P. C.            no matching title (l.64301)
+S1011b    11 Oct. — B. Iacobi ab Ulma O.P. C.              l.64458  common COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S1012b    12 Oct. — B. Dominici Spadafora O.P. C.          NO ENTRY in M39
+S1013b    13 Oct. — B. Magdalenæ de Panateriis O.P. V.     l.64490  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S1014b    14 Oct. — B. Mariæ Poussepin O.P. V. (1994)      no matching title (l.64526)
+S1019b    19 Oct. — B. Agneti a Iesu O.P. V. (1994)        no matching title (l.64897)
+S1021b    21 Oct. — B. Petri a Tiferno O.P. C.             l.64935  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S1026b    26 Oct. — B. Damiani a Finario O.P. C.           l.65284  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S1030b    30 Oct. — B. Benvenutæ Boiani O.P. V.            l.65593  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S1030bx   30 Oct. — B. Terentii, Ep., et Petri O.P. Martyr no matching title (l.65593)
+S1103b    3 Nov. — B. Simonis Ballacchii, O.P. C.          l.66699  dm COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S1107b    7 Nov. — B. Petri a Rodulphia O.P. M.            l.66994  dm COMMONREF
+          in 6411 "laetabitur iustus in domino et"
+          gr 6960 "posuisti domine super caput eius"
+          al 6582 "laetabitur iustus in domino et"
+          of 6358 "posuisti domine in capite eius"
+          co 6386 "magna est gloria eius in"
+S1114b    14 Nov. — B. Ioannis Liccii O.P. C.              l.67367  common COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S1116b    16 Nov. — B. Luciæ a Narnia O.P. V.              l.67601  dm COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S1119b    19 Nov. — B. Mariæ-Alphonsinæ Danil Ghattas, V.  no matching title (l.67751)
+S1126b    26 Nov. — B. Iacobi de Benefactis O.P. Ep., C.   l.68517  dm COMMONREF
+          in 5417 "statuit ei dominus testamentum pacis"
+          gr 6123 "iurauit dominus et non poenitebit"
+          al 6785 "inueni dauid seruum meum oleo"
+          of 5857 "iustus ut palma florebit sicut"
+          co 6516 "fidelis seruus et prudens quem"
+S1127b    27 Nov. — B. Margaritæ de Sabaudia O.P. Vid.     NO ENTRY in M39
+S1209b    9 Dec. — S. Narcissæ a Iesu Martillo Moran O.P.  NO ENTRY in M39
+S1216b    16 Dec. — B. Sebastiani Maggi O.P. C.            l.41198  dm
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0814     14 Aug. — In Vigilia Assumptionis B. Mariæ V.    NO ENTRY in M39
+S0113     13 Ian. — Commemoratio Baptismatis D. N. Iesu Ch NO ENTRY in M39
+S0915     15 Sept. — Septem Dolorum B. Mariæ Virg.         l.61744  graduale
+          in 6514 "stabant iuxta crucem iesu mater"
+          gr 5248 "dolorosa et lacrimabilis es uirgo"
+          al r853 NO GABC
+          tr 5406 "stabat sancta maria caeli regina"
+          se 5877 "stabat mater dolorosa iuxta crucem"
+          of 5119 "recordare uirgo mater dum steteris"
+          co 6332 "felices sensus beatae mariae uirginis"
+S1002     2 Oct. — Ss. Angelorum Custodum                  l.63406  graduale
+          in 6138 "benedicite dominum omnes angeli eius"
+          al 5176 "in conspectu angelorum psallam tibi"
+          of 5330 "stetit angelus iuxta aram templi"
+          co 5241 "benedicite omnes angeli domini dominum"
+S1113     13 Nov. — Anniversarium Omnium Fratrum et Sororu no matching title (l.67359)
+S1118     18 Nov. — Dedicatio Basilicarum Ss. Petri et Pau l.67743  common COMMONREF
+          in 6221 "terribilis est locus iste hic"
+          gr 6283 "locus iste a deo factus"
+          al 5217 "adorabo ad templum sanctum tuum"
+          tr 6154 "domus mea domus orationis uocabitur"
+          of 5927 "domine deus in simplicitate cordis"
+          co 7050 "domus mea domus orationis uocabitur"
+S0103b    3 Ian. — B. Zedislavæ Berkianæ, O.P. Matronæ     l.42478  missal COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0217b    17 Feb. — B. Reginaldi Aurelianensis, O.P. C.    l.45686  missal COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0228b    28 Feb. — B. Villanæ de Bottis, O.P. Matronæ     l.45987  missal COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0304     4 Mart. — S. Casimiri, C.                        l.46115  missal COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0317     17 Mart. — S. Patricii, E. C.                    l.46635  missal COMMONREF
+          in 5417 "statuit ei dominus testamentum pacis"
+          gr 6123 "iurauit dominus et non poenitebit"
+          al 6785 "inueni dauid seruum meum oleo"
+          of 5857 "iustus ut palma florebit sicut"
+          co 6516 "fidelis seruus et prudens quem"
+S0320b    20 Mart. — B. Ambrosii Sansedonii, O.P. C.       l.46944  missal COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0610b    10 Iun. — B. Ioannis Dominici, O.P. E. C.        l.52883  missal COMMONREF
+          in 5417 "statuit ei dominus testamentum pacis"
+          gr 6123 "iurauit dominus et non poenitebit"
+          al 6785 "inueni dauid seruum meum oleo"
+          of 5857 "iustus ut palma florebit sicut"
+          co 6516 "fidelis seruus et prudens quem"
+S0622b    22 Iun. — B. Innocentii V, O.P. P. C.            no matching title (l.53656)
+S0703_2   3 Iul. — S. Leonis II, P. C.                     l.55049  missal COMMONREF
+          in 5925 "sacerdotes tui domine induant iustitiam"
+          gr 6727 "inueni dauid seruum meum oleo"
+          al 4966 "posuisti domine super caput eius"
+          of 7170 "ueritas mea et misericordia mea"
+          co 5854 "beatus seruus quem cum uenerit"
+S0707b    7 Iul. — B. Benedicti XI, O.P. P. C.             l.55364  missal COMMONREF
+          in 5417 "statuit ei dominus testamentum pacis"
+          gr 6123 "iurauit dominus et non poenitebit"
+          al 6785 "inueni dauid seruum meum oleo"
+          of 5857 "iustus ut palma florebit sicut"
+          co 6516 "fidelis seruus et prudens quem"
+S0713b    13 Iul. — B. Iacobi a Voragine, O.P. E. C.       l.55855  missal COMMONREF
+          in 5417 "statuit ei dominus testamentum pacis"
+          gr 6123 "iurauit dominus et non poenitebit"
+          al 6785 "inueni dauid seruum meum oleo"
+          of 5857 "iustus ut palma florebit sicut"
+          co 6516 "fidelis seruus et prudens quem"
+S0717b    17 Iul. — B. Ceslai, O.P. C.                     l.56100  missal COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0730b    30 Iul. — B. Mannis, O.P. C.                     l.57182  missal COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0808b    8 Aug. — B. Ioannæ de Aza, Matris S. P. N. Domin l.58362  missal COMMONREF
+          in 4291 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"
+S0906b_2  6 Sept. — B. Bertrandi a Garriga, O.P. C.        l.61109  missal COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0423     23 Apr. — S. Georgii, M.                         l.48482  missal COMMONREF
+          in 4864 "protexisti me deus a conuentu"
+          al 5678 "iustus ut palma florebit sicut"
+          of 5797 "gloria et honore coronasti eum"
+          co 6924 "qui uult uenire post me"
+S0428b    28 Apr. — B. Ludovici Mariæ Grignion de Montfort l.48902  missal COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0529b    29 Maii — BB. Guillelmi, O.P., et Sociorum, Mm.  l.52046  missal COMMONREF
+          in 4889 "salus autem iustorum a domino"
+          gr 6650 "uindica domine sanguinem sanctorum tuorum"
+          al 6538 "isti sunt qui uenerunt ex"
+          tr 4978 "qui seminant in lacrimis in"
+          of 5206 "anima nostra sicut passer erepta"
+          co 6440 "posuerunt mortalia seruoum tuorum domine"
+S0602b    2 Iun. — BB. Sadoc, O.P., et Sociorum, Mm.       l.52450  missal COMMONREF
+          gr 6650 "uindica domine sanguinem sanctorum tuorum"
+          al 6538 "isti sunt qui uenerunt ex"
+          tr 4978 "qui seminant in lacrimis in"
+          of 5206 "anima nostra sicut passer erepta"
+          co 6440 "posuerunt mortalia seruoum tuorum domine"
+S0716     16 Iul. — Commemoratio B. Mariæ Virg. de Monte C l.56060  missal COMMONREF
+          in 4289 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 7550s "solemnitas gloriosae uirginis mariae ex"
+          of 8151 "felix namque es sacra uirgo"
+          co 7543 "beata uiscera mariae uirginis quae"
+S0909     9 Sept. — S. Gorgonii, M.                        l.61333  missal COMMONREF
+          in 6411 "laetabitur iustus in domino et"
+          gr 6960 "posuisti domine super caput eius"
+          al 6582 "laetabitur iustus in domino et"
+          tr 7125 "beatus uir qui timet dominum"
+          of 6358 "posuisti domine in capite eius"
+          co 6386 "magna est gloria eius in"
+S0911     11 Sept. — Ss. Proti et Hyacinthi, Mm.           l.61467  missal COMMONREF
+          in 4889 "salus autem iustorum a domino"
+          gr 6650 "uindica domine sanguinem sanctorum tuorum"
+          al 6538 "isti sunt qui uenerunt ex"
+          tr 4978 "qui seminant in lacrimis in"
+          of 5206 "anima nostra sicut passer erepta"
+          co 6440 "posuerunt mortalia seruoum tuorum domine"
+S0924     24 Sept. — B. Mariæ Virg. de Mercede             l.62696  missal COMMONREF
+          in 4289 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 7550s "solemnitas gloriosae uirginis mariae ex"
+          of 8151 "felix namque es sacra uirgo"
+          co 7543 "beata uiscera mariae uirginis quae"
+S1001     1 Oct. — S. Remigii, E. C.                       l.63376  missal COMMONREF
+          in 5417 "statuit ei dominus testamentum pacis"
+          gr 6123 "iurauit dominus et non poenitebit"
+          al 6785 "inueni dauid seruum meum oleo"
+          of 5857 "iustus ut palma florebit sicut"
+          co 6516 "fidelis seruus et prudens quem"
+S1201b    1 Dec. — B. Ioannis a Vercellis, O.P. C.         l.39961  missal
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 6895 "iustus germinabit sicut lilium et"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S1220     20 Dec. — S. Dominici Sylensis, Abb.             l.41236  missal COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 7042 "amauit eum dominus et ornauit"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S1222     22 Dec. — Patrocinium B. Mariæ Virg. (in Ordine) l.41377  missal
+          in 4289 "gaudeamus omnes in domino diem"
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 7550s "solemnitas gloriosae uirginis mariae ex"
+          of 8151 "felix namque es sacra uirgo"
+          co 7543 "beata uiscera mariae uirginis quae"
+S0321     21 Mart. — S. Benedicti, Abb.                    l.46977  missal COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 7042 "amauit eum dominus et ornauit"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0901     1 Sept. — S. Ægidii, Abb.                        l.60842  missal COMMONREF
+          in 5885 "os iusti meditabitur sapientiam et"
+          gr 7142 "domine praeuenisti eum in benedictionibus"
+          al 7042 "amauit eum dominus et ornauit"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 4856 "amen dico uobis quod uos"
+S0721     21 Iul. — S. Praxedis, V.                        l.56479  missal
+          in 5384 "dilexisti iustitiam et odisti iniquitatem"
+          gr r3596 NO GABC
+          al 5784 "diffusa est gratia in labiis"
+          of 5009 "diffusa est gratia in labiis"
+          co 6027 "quinque prudentes uirgines acceperunt oleum"
+S0318     18 Mart. — S. Cyrilli Hierosolymitani, E. C. D.  l.46663  missal
+          co 5425 "domine quinque talenta tradidisti mihi"
+S0516     16 Maii — S. Ioannis Nepomuceni, M.              l.51141  missal COMMONREF
+          in 6411 "laetabitur iustus in domino et"
+          gr 6960 "posuisti domine super caput eius"
+          al 6582 "laetabitur iustus in domino et"
+          tr 7125 "beatus uir qui timet dominum"
+          of 6358 "posuisti domine in capite eius"
+          co 6386 "magna est gloria eius in"
+S0925     25 Sept. — Commemoratio S. P. N. Dominici in Sur l.62738  missal
+          in 6482 "in medio ecclesiae aperuit os"
+          gr 4733 "os iusti meditabitur sapientiam et"
+          al 5397 "pie pater dominice tuorum memor"
+          of 6021 "desiderium animae eius tribuisti ei"
+          co 6516 "fidelis seruus et prudens quem"
+S0609b    9 Iun. — BB. Dianæ, Cæciliæ et Amatæ, O.P. Virgi l.52788  missal COMMONREF
+          gr 6293 "propter ueritatem et mansuetudinem et"
+          al 5685 "ueni electa mea et ponam"
+          of 5801 "filiae regum in honore tuo"
+          co 6238 "diffusa est gratia in labiis"

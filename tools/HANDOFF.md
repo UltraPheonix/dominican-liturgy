@@ -1,4 +1,5 @@
-# HANDOFF (2026-11-19). Read fully, then continue at NOW. Older detail: tools/hw39/PROGRESS.md, tools/STATUS.md.
+# HANDOFF (2026-11-19). Read fully, then continue at NOW.
+**BOTH CHATS: shared feast engine — read tools/ENGINE.md and answer in its LOG (2026-11-26 19:10).** Older detail: tools/hw39/PROGRESS.md, tools/STATUS.md.
 
 ## Setup (new workspace has nothing)
 git clone https://github.com/UltraPheonix/dominican-liturgy /home/claude/dl-repo ; site = repo root (index.html, js/, data/, gabc/, art/).
@@ -493,7 +494,16 @@ rest → 3 test, bump, push → 4 branch: re-apply archive, fix N./proper Office
   app.js drawOratio/orat('sp') after the Postcommunion with Orémus. Humiliáte cápita vestra Deo; booklets too.
 - Booklet: votive/Common Masses without a date print for today (was a crash).
 - E21 DONE: DO orations checked against M33 (own Mass, tools/m33/map.json) and M39 text layers; 63 Masses replaced from page images
-  (/tmp/fin*.py -> /tmp/apply_fin.py style: Latin + English into extra_final/en_final, page from @@PAGE numbers). do_check.json = record.
+  (tools/orat39/e21/fin*.py -> apply_fin.py FILE: Latin + English into extra_final/en_final, page from @@PAGE numbers;
+  add*.py = the E20 batches). do_check.json = record.
+- E22 DONE (AUDIT.md rewritten with results). propers_apply.py now takes 'p39' (tag), 'pasch_al' (season.pasch.al) and sets
+  roman:true on Roman-melody chants. 28 'Os justi, ut in Communi Conf. non Pont. pag. 23*' Masses -> gr 7142, co 4856.
+- E23 DONE: S0915 al = r853 (gabc/r/853.gabc, Roman melody, GR 1961 p.596): M33/M39 print ONE Alleluia verse.
+- E25 DONE: Pent24/Epi3r-6r (runtime Masses) added to the tempore section in app.js.
+- E24: plan in tools/RANKS_PLAN.md; WAITING for Joseph on the 'Reformed 1959' Holy Week toggle (a remove / b hide+label / c keep).
+- G28 (priest booklet) NEXT: M39 Appendix pdf 445 left (Toni Gloria: 5 intonations by rank; Tonus Credo) and pdf 461-462
+  (Toni Ite missa est by rank + Benedicamus variants). Oration/Epistle/Gospel tones are NOT in the M39 Appendix (mtones.js,
+  Harrison 1920, already used). Plan: transcribe by eye (high-dpi crops) to gabc/op-m39-*.gabc, then booklet uses them by rank.
 ### 1909 saints' prayers fixed (2026-11-26 13:40, sw v97). Two chats now push to main (Mass chat + Office chat):
 push with tools/push.sh (fetch, rebase, sw VERSION = origin's + 1, retry). Prayer pipeline: offices.py (text_sancti cuts running heads;
 first 'Oratio[.,]' after the heading; vigil prayer → oratio_v1) → build.py final_prayer (clean_prayer: cut at conclusion/next rubric,
@@ -618,3 +628,4 @@ sections) or Joseph re-uploads the text PDFs; OCR text is in tools/b09/ocr/*.txt
    fix/a00.json has 9 entries (Ambrose, Conception + octave days, Octave day, Loreto, Lucy, Andrew of Peschiera, Andrew Corsini,
    Alvarus). Next feasts: Desponsatio B.M.V. (02-11, from pdf 983), Septem Fundatores (02-17, pdf 1002-1011), Aimo (02-21,
    pdf 1015-1016), Matthias (02-24, from pdf 1025), then batches from 02-25 (helpers when Joseph says so).
+- 2026-11-26 (v120-v123): 1959 Holy Week chants done from hs1959 (see hw39/PROGRESS.md); Passion chants blocked on a source (asked Joseph).

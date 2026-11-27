@@ -1,0 +1,1927 @@
+{
+ "1002|S. Leodegarii Ep. et Mart.": {
+  "or": {
+   "t": "Laetetur Ecclesia tua, Deus, beati Leodegarii Martyris tui atque Pontificis confisa suffragiis : atque ejus precibus gloriosis, et devota permaneat; et secura consistat : Per Dominum.",
+   "head": "De S. Leodegario Ep. et Mart.",
+   "from": "1002",
+   "line": 63405,
+   "match": "S0527.or",
+   "ratio": 0.46
+  },
+  "se": {
+   "t": "SUSCIPE Domine munera, quae in ejus tibi solemnitate deferimus, cujus nos confidimus patrocinio liberari. Per Dominum.",
+   "head": "De S. Leodegario",
+   "from": "1002",
+   "line": 63405,
+   "match": "S1227.se",
+   "ratio": 0.994
+  },
+  "pc": {
+   "t": "SATIASTI Domine familiam tuam muneribus sacris : ejus, quaesumus, semper interventione nos refove; cujus solemnia celebramus : Per Dominum.",
+   "head": "De S. Leodegario",
+   "from": "1002",
+   "line": 63405,
+   "match": "S1213.pc",
+   "ratio": 1.0
+  }
+ },
+ "1007|S. Marci Papæ et Conf.": {
+  "or": {
+   "t": "Exaudi Domine preces nostras : et interveniente beato Marco Confessore tuo atque Pontifice; supplicationes nostras placatus intende : Per Dominum.",
+   "head": "De S. Marco Papa et Conf.",
+   "from": "1007",
+   "line": 63908,
+   "match": "S0402.pc",
+   "ratio": 0.339
+  },
+  "se": {
+   "t": "SANCTI tui, quaesumus Domine, nos ubique laetificent : ut dum eorum merita recolimus, patrocinia sentiamus. Per Dominum.",
+   "head": "De S. Marco",
+   "from": "1007",
+   "line": 63908,
+   "match": "C30s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "PRAESTA, quaesumus omnipotens Deus : ut de perceptis muneribus gratias exhibentes; intercedente beato Marco Confessore tuo atque Pontifice, beneficia potiora sumamus : Per Dominum.",
+   "head": "De S. Marco",
+   "from": "1007",
+   "line": 63908,
+   "match": "S0317.pc",
+   "ratio": 0.982
+  }
+ },
+ "1007|SS. Sergii, Bacchi, Marcelli et Apuleji MM.": {
+  "or": {
+   "t": "SANCTORUM Martyrum tuorum nos, Domine, Sergii, Bacchi, Marcelli, et Apuleji beata merita prosequantur; et tuo semper faciant amore ferventes : Per Dominum.",
+   "head": "De SS. Sergio et sociis Mart.",
+   "from": "1007",
+   "line": 63908,
+   "match": "S0422b.pc",
+   "ratio": 0.321
+  },
+  "se": {
+   "t": "Majestatem tuam nobis, Domine quaesumus, haec hostia reddat immolanda placatam, tuorum digna postulatione Sanctorum. Per Dominum.",
+   "head": "De SS. Sergio et sociis",
+   "from": "1007",
+   "line": 63908,
+   "match": "S0517b.se",
+   "ratio": 0.276
+  },
+  "pc": {
+   "t": "Sacramentis, Domine, muniamur acceptis : et sanctorum Martyrum tuorum intervenientibus meritis; contra omnes nequitias irruentes, armis caelestibus protegamur. Per Dominum.",
+   "head": "De SS. Sergio et Sociis",
+   "from": "1007",
+   "line": 63908,
+   "match": "S0426b.pc",
+   "ratio": 0.294
+  }
+ },
+ "1021|SS. Ursulæ et Sociarum VV. et MM.": {
+  "or": {
+   "t": "DA nobis, quaesumus Domine Deus noster, sanctarum Virginum et Martyrum tuarum Ursulae et sociarum ejus palmas incessabili devotione venerari : ut quas digna mente non possumus celebrare; humilibus saltem frequentemus obsequiis : Per Dominum.",
+   "head": "De SS. Ursula et Sociabus VV. et MM.",
+   "from": "1021",
+   "line": 64934,
+   "match": "S0930.or",
+   "ratio": 0.065
+  },
+  "se": {
+   "t": "ostiarum nostrarum tibi, H Domine quaesumus, devotio placeat : et quod in ea pro nostra fragilitate deest, beatae Ursulae, sociarumque ejus intercessio suppleat gloriosa. Per Dominum.",
+   "head": "De SS. Ursula et Soc. Secreta",
+   "from": "1021",
+   "line": 64934,
+   "match": "A:d36.se",
+   "ratio": 0.278
+  },
+  "pc": {
+   "t": "PRESTA nobis, quaesumus Domine, intercedentibus sanctis Virginibus et Martyribus tuis; ut quod ore contigimus, pura mente capiamus : Per Dominum.",
+   "head": "De SS. Ursula et Soc.",
+   "from": "1021",
+   "line": 64934,
+   "match": "G515.pc",
+   "ratio": 0.916
+  }
+ },
+ "1025|SS. Crispini et Crispiniani MM.": {
+  "or": {
+   "t": "DEUS, qui nos concedis sanctorum Martyrum tuorum Crispini et Crispiniani natalitia colere; da nobis in aeterna beatitudine de eorum societate gaudere : Per Dominum.",
+   "head": "own section",
+   "from": "1025",
+   "line": 65261,
+   "match": "C25s.or",
+   "ratio": 0.928
+  },
+  "se": {
+   "t": "Munera tibi, Domine, nostrae devotionis offerimus : quae et pro tuorum tibi grata sint honore Sanctorum, et nobis salutaria, te miserante, reddantur. Per Dominum.",
+   "head": "own section",
+   "from": "1025",
+   "line": 65269,
+   "match": "C25s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "PRAESTA nobis, quaesumus Domine, intercedentibus sanctis Martyribus tuis Crispino et Crispiniano; ut quae ore contigimus, pura mente capiamus : Per Dominum.",
+   "head": "own section",
+   "from": "1025",
+   "line": 65276,
+   "match": "Quad4w.se",
+   "ratio": 0.215
+  }
+ },
+ "1031|S. Quintini Mart.": {
+  "or": {
+   "t": "Ad esto Domine supplicationibus nostris : ut qui ex iniquitate nostra reos nos esse cognoscimus: beati Quintini Martyris tui intercessione liberemur : Per Dominum.",
+   "head": "De S. Quintino Martyre",
+   "from": "1031",
+   "line": 65624,
+   "match": "S0122.or",
+   "ratio": 0.972
+  },
+  "se": {
+   "t": "Muneribus nostris, quaesumus Domine, precibusque susceptis : intercedente beato Quintino Martyre tuo, et caelestibus nos munda mysteriis, et clementer exaudi. Per Dominum.",
+   "head": "De S. Quintino",
+   "from": "1031",
+   "line": 65624,
+   "match": "S0122.se",
+   "ratio": 0.974
+  },
+  "pc": {
+   "t": "Quaesumus omnipotens Deus : ut qui caelestia alimenta percepimus; intercedente beato Quintino Martyre tuo, per haec contra omnia adversa muniamur : Per Dominum nostrum Jesum Christum Filium tuum : Qui tecum vivit et regnat. 603 Eadem die In Vigilia OMNIUM SANCTORUM",
+   "head": "De S. Quintino",
+   "from": "1031",
+   "line": 65624,
+   "match": "S0122.pc",
+   "ratio": 0.972
+  }
+ },
+ "1104|SS. Vitalis et Agricolæ MM.": {
+  "or": {
+   "t": "DA, quaesumus omnipotens Deus : ut qui beatorum Martyrum tuorum Vitalis et Agricolae solemnia colimus; eorum apud te intercessionibus adjuvemur: Per Dominum.",
+   "head": "De SS. Vitale et Agricola Mm.",
+   "from": "1104",
+   "line": 66736,
+   "match": "S1028.se",
+   "ratio": 0.236
+  },
+  "se": {
+   "t": "HOSTIAS tibi, Domine, beatorum Martyrum tuorum Vitalis et Agricolae dicatas meritis, benignus assume : et ad perpetuum nobis tribue provenire subsidium. Per Dominum. 616",
+   "head": "De SS. Vitale et Agricola",
+   "from": "1104",
+   "line": 66736,
+   "match": "S0626.se",
+   "ratio": 0.916
+  },
+  "pc": {
+   "t": "QlLESUMUS omnipotens Deus : ut qui caelestia alimenta percepimus; intercedentibus sanctis Martyribus tuis Vitale et Agricola, per haec contra omnia adversa muniamur : Per Dominum.",
+   "head": "De SS. Vitale et Agricola",
+   "from": "1104",
+   "line": 66736,
+   "match": "S0123.pc",
+   "ratio": 0.383
+  }
+ },
+ "1108|SS. Quatuor Coronatorum MM.": {
+  "or": {
+   "t": "FUESTA, quaesumus omnipotens Deus : ut qui gloriosos Martyres fortes in sua confessione cognovimus; pios apud te in nostra intercessione sentiamus : Per Dominum.",
+   "head": "own section",
+   "from": "1108",
+   "line": 67036,
+   "match": "C21s.or",
+   "ratio": 0.98
+  },
+  "se": {
+   "t": "BENEDICTIO tua Domine larga descendat : quae et munera nostra, deprecantibus sanctis Martyribus tuis, tibi reddat accepta, et nobis sacramentum redemptionis efficiat. Per Dominum.",
+   "head": "own section",
+   "from": "1108",
+   "line": 67043,
+   "match": "C21s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "Caelestibus refecti sacramentis et gaudiis, supplices te Domine deprecamur: ut quorum gloriamur triumphis; protegamur auxiliis : Per Dominum.",
+   "head": "own section",
+   "from": "1108",
+   "line": 67052,
+   "match": "C21s.pc",
+   "ratio": 1.0
+  }
+ },
+ "1109|S. Theodori Mart.": {
+  "or": {
+   "t": "e u s, qui nos beati TheoD dori Martyris tui confessione gloriosa circumdas ^ et protegis : praesta nobis ex ejus imitatione proficere; et oratione fulciri : Per Dominum.",
+   "head": "De S. Theodoro Mart. Oratio",
+   "from": "1109",
+   "line": 67059,
+   "match": "S1010b.or",
+   "ratio": 0.233
+  },
+  "se": {
+   "t": "SUSCIPE Domine fidelium preces cum oblationibus hostiarum : et intercedente beato Theodoro Martyre tuo, per haec piae devotionis officia, ad caelestem gloriam transeamus. Per Dominum.",
+   "head": "De S. Theodoro",
+   "from": "1109",
+   "line": 67059,
+   "match": "S0807.or",
+   "ratio": 0.388
+  },
+  "pc": {
+   "t": "PRAESTA nobis, quaesumus Domine, intercedente beato Theodoro Martyre tuo; ut quod ore contigimus, pura mente capiamus : Per Dominum.",
+   "head": "De S. Theodoro",
+   "from": "1109",
+   "line": 67059,
+   "match": "Quad5m.sp",
+   "ratio": 0.309
+  }
+ },
+ "1111|S. Mennæ Mart.": {
+  "or": {
+   "t": "PRiESTA, quaesumus omnipotens Deus : ut qui beati Mennae Martyris tui natalltia colimus; intercessione ejus in tui nominis amore roboremur : Per Dominum.",
+   "head": "De S. Menna Martyre Oratio",
+   "from": "1111",
+   "line": 67094,
+   "match": "C18s.or",
+   "ratio": 0.723
+  },
+  "se": {
+   "t": "OBLATIS, quaesumus Domine, placare muneribus : et intercedente beato Menna Martyre tuo, a cunctis nos defende periculis. Per Dominum.",
+   "head": "De S. Menna",
+   "from": "1111",
+   "line": 67094,
+   "match": "Quad2f.pc",
+   "ratio": 0.423
+  },
+  "pc": {
+   "t": "S IT nobis, Domine, reparatio mentis et corporis caeleste mysterium : ut cujus exsequimur actionem; intercedente beato Menna Martyre tuo, sentiamus effectum : Per Dominum.",
+   "head": "De S. Menna Postcommunio",
+   "from": "1111",
+   "line": 67094,
+   "match": "C11s.pc",
+   "ratio": 0.593
+  }
+ },
+ "1114|S. Britii Ep. et Conf.": {
+  "or": {
+   "t": "DA, quaesumus omnipotens Deus : ut beati Britii Confessoris tui atque Pontificis veneranda solemnitas; et devotionem nobis augeat, et salutem : Per Dominum.",
+   "head": "De S. Britio Ep. et Conf.",
+   "from": "1114",
+   "line": 67366,
+   "match": "S1001.or",
+   "ratio": 0.979
+  },
+  "se": {
+   "t": "SANCTI tui, quaesumus Domine, nos ubique laetificent : ut dum eorum merita recolimus, patrocinia sentiamus. Per Dominum.",
+   "head": "De S. Britio",
+   "from": "1114",
+   "line": 67366,
+   "match": "C30s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "PRAESTA, quaesumus omnipotens Deus : ut de perceptis muneribus gratias exhibentes; intercedente beato Britio Confessore tuo atque Pontifice, beneficia potiora sumamus : Per Dominum.",
+   "head": "De S. Britio",
+   "from": "1114",
+   "line": 67366,
+   "match": "S0317.pc",
+   "ratio": 0.979
+  }
+ },
+ "1124|S. Chrysogoni Mart.": {
+  "or": {
+   "t": "ADESTO Domine supplicationibus nostris : ut qui ex iniquitate nostra reos nos esse cognoscimus; beati Chrysogoni Martyris tui intercessione liberemur : Per Dominum.",
+   "head": "De S. Chrysogono Mart.",
+   "from": "1124",
+   "line": 68301,
+   "match": "C7s.or",
+   "ratio": 0.964
+  },
+  "se": {
+   "t": "OBLATIS, quaesumus Domine, placare muneribus : et intercedente beato Chrysogono Martyre tuo, a cunctis nos defende periculis. Per Dominum.",
+   "head": "De S. Chrysogono Secreta",
+   "from": "1124",
+   "line": 68301,
+   "match": "Quad1h.sp",
+   "ratio": 0.335
+  },
+  "pc": {
+   "t": "TUI, Domine, perceptione sacramenti, et a nostris mundemur occultis; et ab hostium liberemur insidiis : Per Dominum.",
+   "head": "De S. Chrysogono",
+   "from": "1124",
+   "line": 68301,
+   "match": "Quad1w.pc",
+   "ratio": 1.0
+  }
+ },
+ "1129|S. Saturnini Ep. et Mart.": {
+  "or": {
+   "t": "De u s , qui nos beati Saturnini Martyris tui concedis natalitio perfrui; ejus nos tribue meritis adjuvari : Per Dominum nostrum. Prced. — ‘21",
+   "head": "De S. Saturnino Martyre",
+   "from": "1129",
+   "line": 39666,
+   "match": "Epi3.pc",
+   "ratio": 0.251
+  },
+  "se": {
+   "t": "MUNERA tibi. Domine, dicata sanctifica, et intercedente beato Saturnino Martyre tuo, per haec eadem nos placatus intende. Per Dominum.",
+   "head": "De S. Saturnino",
+   "from": "1129",
+   "line": 39666,
+   "match": "G491.se",
+   "ratio": 0.794
+  },
+  "pc": {
+   "t": "SANCTIFICET nos, quaesumus Domine, tui perceptio sacramenti; et intercessione beati Saturnini Martyris tui tibi reddat acceptos : Per Dominum.",
+   "head": "De S. Saturnino",
+   "from": "1129",
+   "line": 39666,
+   "match": "G491.se",
+   "ratio": 0.395
+  }
+ },
+ "1204|S. Barbaræ Virg. et Mart.": {
+  "or": {
+   "t": "Exaudi nos Deus salutaris noster : ut sicut de beatae Barbarae Virginis et Martyris tuae festivitate gaudemus; ita piae devotionis erudiamur affectu : Per Dominum.",
+   "head": "De S. Barbara Virg. et Mart.",
+   "from": "1204",
+   "line": 40246,
+   "match": "S1213.or",
+   "ratio": 0.96
+  },
+  "se": {
+   "t": "Accepta tibi sit, Domine, sacratae plebis oblatio pro tuorum honore Sanctorum, quorum se meritis de tribulatione percepisse cognoscit auxilium. Per Dominum.",
+   "head": "De S. Barbara",
+   "from": "1204",
+   "line": 40246,
+   "match": "S1213.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "Sa t ia st i Domine familiam tuam muneribus sacris : ejus, quaesumus, semper interventione nos refove; cujus solemnia celebramus : Per Dominum.",
+   "head": "De S. Barbara",
+   "from": "1204",
+   "line": 40246,
+   "match": "S1213.pc",
+   "ratio": 1.0
+  }
+ },
+ "1207|Octava S. Andreæ Apost.": {
+  "or": {
+   "t": "PROTEGAT nos, Domine, saepius beMi Andreae Apostoli tui repetita solemnitas : ut cujus patrocinia sine intermissione recolimus; perpetuam defensionem sentiamus: Per Dominum.",
+   "head": "Pro Octava S. Andreae ad memoriam",
+   "from": "1207",
+   "line": 40449,
+   "match": "S1207.se",
+   "ratio": 0.351
+  },
+  "se": {
+   "t": "INDULGENTIAM nobis praebeant haec munera, quaesumus Domine, largiorem : quae 331 pro venerabilis Andreae Apostoli tui suffragiis offeruntur. Per Dominum.",
+   "head": "De S. Andrea",
+   "from": "1207",
+   "line": 40449,
+   "match": "S0810.se",
+   "ratio": 0.4
+  },
+  "pc": {
+   "t": "djuvet familiam tuam tibi Domine supplicando, beatus Andreas Apostolus : et pius interventor efficiatur; qui tui nominis exstitit praedicator : Per Dominum.",
+   "head": "De S. Andrea Postcommunio",
+   "from": "1207",
+   "line": 40449,
+   "match": "S0518.se",
+   "ratio": 0.296
+  }
+ },
+ "0102|Octava S. Stephani Protomartyris": {
+  "or": {
+   "t": "DA nobis, quaesumus Domine, imitari quod colimus, ut discamus et inimicos diligere : quia ejus natalitia celebramus; qui novit etiam pro persecutoribus exorare.",
+   "head": "De S. Stephano",
+   "from": "0102",
+   "line": 42335,
+   "match": "S0125.or",
+   "ratio": 0.32
+  },
+  "se": {
+   "t": "SUSCIPE Domine munera pro tuorum commemoratione Sanctorum : ut sicut illos passio gloriosos effecit, ita nos devotio reddat innocuos.",
+   "head": "De S. Stephano",
+   "from": "0102",
+   "line": 42335,
+   "match": "S1226.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "Auxit .tenti jr nobis, Domine, sumpta mysteria; et intercedente beato Stephano Martyre tuo, sempiterna protectione confirment.",
+   "head": "De S. Stephano",
+   "from": "0102",
+   "line": 42335,
+   "match": "S1226.pc",
+   "ratio": 0.967
+  }
+ },
+ "0103|Octava S. Joannis Ap. et Ev.": {
+  "or": {
+   "t": "Ec c l e s ia m tuam, Domine benignus illustra: ut beati Joannis Apostoli tui et Evangelistae illuminata doctrinis; ad dona perveniat sempiterna.",
+   "head": "De S. Joanne",
+   "from": "0103",
+   "line": 42477,
+   "match": "S1227.or",
+   "ratio": 1.0
+  },
+  "se": {
+   "t": "SUSCIPE Domine munera, quae in ejus tibi solemnitate deferimus, cujus nos confidimus patrocinio liberari.",
+   "head": "De S. Joanne",
+   "from": "0103",
+   "line": 42477,
+   "match": "S1227.se",
+   "ratio": 0.994
+  },
+  "pc": {
+   "t": "efecti cibo potuque caeR lesti, Deus noster, te supplices exoramus : ut in cujus haec commemorat one percepimus; ejus muniamur et precibus.",
+   "head": "De S. Joanne Postcommunio",
+   "from": "0103",
+   "line": 42477,
+   "match": "C48s.pc",
+   "ratio": 0.987
+  }
+ },
+ "0114|S. Felicis Presb. et Mart.": {
+  "or": {
+   "t": "Concede, quaesumus omnipotens D eu s: ut ad meliorem vitam Sanctorum tuorum exempla nos provocent; quatenus quorum solemnia agimus, etiam actus imitemur : Per Dominum.",
+   "head": "De S. Felice Martyre",
+   "from": "0114",
+   "line": 42657,
+   "match": "A:d3.or",
+   "ratio": 0.921
+  },
+  "se": {
+   "t": "HOSTIAS tibi, Domine, beati Felicis Martyris tui dicatas meritis, benignus assume; et ad perpetuum nobis tribue provenire subsidium. Per Dominum.",
+   "head": "De S. Felice",
+   "from": "0114",
+   "line": 42657,
+   "match": "C18s.se",
+   "ratio": 0.963
+  },
+  "pc": {
+   "t": "Quaesumus, Domine, salutaribus repleti m ysteriis: ut beati Felicis Martyris tui, cujus solemnia celebramus; orationibus adjuvemur : Per Dominum.",
+   "head": "De S. Felice Postcommunio",
+   "from": "0114",
+   "line": 42657,
+   "match": "S1125.pc",
+   "ratio": 0.866
+  }
+ },
+ "0115|S. Mauri Abbatis": {
+  "or": {
+   "t": "INTERCESSIO nos, qujesumus Domine; beati Mauri Abbatis commendet : ut quod nostris meritis non valemus; ejus patrocinio assequamur.",
+   "head": "De S. Mauro Abbate Oratio",
+   "from": "0115",
+   "line": 42687,
+   "match": "S0207.or",
+   "ratio": 0.963
+  },
+  "se": {
+   "t": "SACRIS altaribus, Domine, hostias superpositas sanctus Maurus Abbas, quaesumus, in salutem nobis provenire deposcat.",
+   "head": "De S. Mauro",
+   "from": "0115",
+   "line": 42687,
+   "match": "S0207.se",
+   "ratio": 0.963
+  },
+  "pc": {
+   "t": "P ROTEGAT nos, Domine, cum tui perceptione sacramenti, beatus Maurus Abbas pro nobis intercedendo : ut et conversationis ejus experiamur insignia; et intercessionis ipsius percipiamus suffragia.",
+   "head": "De S. Mauro",
+   "from": "0115",
+   "line": 42687,
+   "match": "S0117.pc",
+   "ratio": 0.976
+  }
+ },
+ "0115|S. Pauli primi Eremitæ Conf.": {
+  "or": {
+   "t": "DEUS, qui nos beati Pauli Confessoris tui annua solemnitate laetificas : concede propitius, ut cujus natalltia colimus; etiam actiones imitemur : Per Dominum.",
+   "head": "De S. Paulo primo Eremita",
+   "from": "0115",
+   "line": 42687,
+   "match": "S0605b.or",
+   "ratio": 0.963
+  },
+  "se": {
+   "t": "LAUDIS tibi Domine hostias i immolamus in tuorum commemoratione Sanctorum : quibus nos et praesentibus exui malis confidimus, et futuris. Per Dominum.",
+   "head": "De S. Paulo",
+   "from": "0115",
+   "line": 42687,
+   "match": "S0308.se",
+   "ratio": 0.996
+  },
+  "pc": {
+   "t": "R efecti cibo potuque caelesti, Deus noster, te supplices exoramus : ut in cujus haec commemoratione percepimus; ejus muniamur et precibus : Per Dominum.",
+   "head": "De S. Paulo",
+   "from": "0115",
+   "line": 42687,
+   "match": "C48s.pc",
+   "ratio": 1.0
+  }
+ },
+ "0116|S. Marcelli I Papæ et Mart.": {
+  "or": {
+   "t": "PRECES populi tui, quaesumus Domine, clementer exaudi: ut beati Marcelli Mar355 tyris tui atque Pontificis meritis adjuvemur; cujus passione laetamur : Per Dominum.",
+   "head": "S. Marcelli I Papae et Mart.",
+   "from": "0116",
+   "line": 42779,
+   "match": "Quad1.se",
+   "ratio": 0.289
+  },
+  "se": {
+   "t": "SUSCIPE, quaesumus Domine, munera dignanter oblata, et beati Marcelli Martyris tui atque Pontificis suffragantibus meritis, ad nostrae salutis auxilium provenire concede. Per Dominum.",
+   "head": "De S. Marcello",
+   "from": "0116",
+   "line": 42779,
+   "match": "S0614.pc",
+   "ratio": 0.449
+  },
+  "pc": {
+   "t": "R EFECTI participatione muneris sacri, quaesumus Domine Deus noster : ut cujus exsequimur cultum; intercedente beato Marcello Martyre tuo atque Pontifice, sentiamus effectum : Per Dominum.",
+   "head": "De S. Marcello Postcommunio",
+   "from": "0116",
+   "line": 42779,
+   "match": "S1229.pc",
+   "ratio": 0.969
+  }
+ },
+ "0118|S. Priscæ Virg. et Mart.": {
+  "or": {
+   "t": "DA, quaesumus omnipotens Deus : ut qui beatae Priscae Virginis et Martyris tuae natalitia colimus; et annua solemnitate laetemur, et tantae fidei proficiamus exemplo : Per Dominum.",
+   "head": "De S. Prisca Virg. et Mart.",
+   "from": "0118",
+   "line": 42955,
+   "match": "S1122.or",
+   "ratio": 0.526
+  },
+  "se": {
+   "t": "HOSTIA, quaesumus Domine, quam tibi, sanctae Priscae Virginis et Martyris tuae natalitia recensentes, offerimus, et vincula nostrae pravitatis absolvat, et tuae nobis misericordiae dona conciliet. Per Dominum.",
+   "head": "De S. Prisca",
+   "from": "0118",
+   "line": 42955,
+   "match": "S1125.se",
+   "ratio": 0.973
+  },
+  "pc": {
+   "t": "Quaesum us, Domine, salutaribus repleti m ysteriis: ut cujus solemnia celebramus; ejus orationibus adjuvemur : Per Dominum.",
+   "head": "De S. Prisca",
+   "from": "0118",
+   "line": 42955,
+   "match": "S1125.pc",
+   "ratio": 1.0
+  }
+ },
+ "0123|S. Emerentianæ Virg. et Mart.": {
+  "or": {
+   "t": "INDULGENTIAM nobis, qusesumus Domine, beata Emerentiana Virgo et Martyr imploret : quae tibi grata semper exstitit; et merito castitatis, et tuae professione virtutis : Per Dominum.",
+   "head": "De S. Emerentiana Virg. et Mart.",
+   "from": "0123",
+   "line": 43320,
+   "match": "C45s.or",
+   "ratio": 0.955
+  },
+  "se": {
+   "t": "SUSCIPE Domine munera, quae in beatae Emerentianae Virginis et Martyris tuae solemnitate deferimus : cujus nos confidimus patrocinio liberari. Per Dominum.",
+   "head": "De S. Emerentiana Secreta",
+   "from": "0123",
+   "line": 43320,
+   "match": "S1202.se",
+   "ratio": 0.958
+  },
+  "pc": {
+   "t": "Ai xiliem l r nobis, Domine, sumpta mysteria; et intercedente beata Emerentiana Virgine et Martyre tua, sempiterna protectione confirment : Per Dominum.",
+   "head": "De S. Emerentiana",
+   "from": "0123",
+   "line": 43320,
+   "match": "S1202.pc",
+   "ratio": 0.925
+  }
+ },
+ "0124|S. Timothei Ep. et Mart.": {
+  "or": {
+   "t": "Laetetur Ecclesia tua, Deus, beati Timothei Martyris tui atque Pontificis confisa suffragiis : atque ejus precibus gloriosis, et devota permaneat; et secura consistat : Per Dominum.",
+   "head": "De S. Timotheo Episc. et Mart.",
+   "from": "0124",
+   "line": 43522,
+   "match": "S0324.se",
+   "ratio": 0.283
+  },
+  "se": {
+   "t": "Suscipe Domine munera, quae in ejus tibi solemnitate deferimus, cujus nos confidimus patrocinio liberari. Per Dominum.",
+   "head": "De S. Timotheo",
+   "from": "0124",
+   "line": 43522,
+   "match": "S1227.se",
+   "ratio": 0.994
+  },
+  "pc": {
+   "t": "Satiasti Domine familiam tuam muneribus sacris : ejus, quaesumus, semper interventione nos refove; cujus solemnia celebramus : Per Dominum.",
+   "head": "De S. Timotheo",
+   "from": "0124",
+   "line": 43522,
+   "match": "S1213.pc",
+   "ratio": 1.0
+  }
+ },
+ "0126|S. Polycarpi Ep. et Mart.": {
+  "or": {
+   "t": "DA, quaesumus omnipotens Deus : ut qui beati Polycarpi Martyris tui atque Pontificis solemnia colimus; ejus apud te intercessionibus adjuvemur : Per Dominum.",
+   "head": "De S. Polvcarpo Ep. et Mart.",
+   "from": "0126",
+   "line": 43786,
+   "match": "S0203.or",
+   "ratio": 0.962
+  },
+  "se": {
+   "t": "SANCTI tui, quaesumus Domine, nos ubique laetificent : ut dum eorum merita recolimus, patrocinia sentiamus. Per Dominum.",
+   "head": "De S. Polycarpo",
+   "from": "0126",
+   "line": 43786,
+   "match": "C30s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "PRAESTA, quaesumus omnipotens Deus : ut de perceptis muneribus gratias exhibentes; intercedente beato Polycarpo Martyre tuo atque Pontifice, beneficia potiora sumamus : Per Dominum.",
+   "head": "De S. Polycarpo",
+   "from": "0126",
+   "line": 43786,
+   "match": "S0317.pc",
+   "ratio": 0.923
+  }
+ },
+ "0127|S. Juliani Ep. et Conf.": {
+  "or": {
+   "t": "Exa udi, quaesumus Domine, preces nostras, quas in beati Juliani Confessoris tui atque Pontificis solemnitate deferimus : ut qui tibi digne meruit famulari; ejus intercedentibus meritis, ab omnibus nos absolvas peccatis : Per Dominum.",
+   "head": "De S. Juliano Episc. et Conf.",
+   "from": "0127",
+   "line": 43853,
+   "match": "C32s.or",
+   "ratio": 0.983
+  },
+  "se": {
+   "t": "Accepta sit in conspectu tuo Domine nostra devotio : ut ejus nobis fiat supplicatione salutaris, pro cujus solemnitate defertur. Per Dominum.",
+   "head": "De S. Juliano",
+   "from": "0127",
+   "line": 43853,
+   "match": "C32s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "Da, quaesumus Domine, fidelibus tuis, Sanctorum tuorum semper veneratione laetari; et eorum perpetua supplicatione muniri : Per Dominum.",
+   "head": "De S. Juliano Postcommunio",
+   "from": "0127",
+   "line": 43853,
+   "match": "C32s.pc",
+   "ratio": 1.0
+  }
+ },
+ "0128|S. Agnetis secundo": {
+  "or": {
+   "t": "D EUS, qui nos annua beatae Agnetis Virginis et Martyris tuae solemnitate laetificas : da, quaesumus, ut quam veneramur officio; etiam 367 piae conversationis sequamur exemplo : Per Dominum.",
+   "head": "De S. Agnete secundo Oratio",
+   "from": "0128",
+   "line": 43916,
+   "match": "S1122.or",
+   "ratio": 0.928
+  },
+  "se": {
+   "t": "S UPER has, quaesumus Domine, hostias benedictio copiosa descendat : quae et sanctificationem nobis clementer operetur, et de sanctae Agnetis Virginis et Martyris tuae solemnitate laetificet. Per Dominum.",
+   "head": "De S. Agnete secundo Secreta",
+   "from": "0128",
+   "line": 43916,
+   "match": "S0427b.se",
+   "ratio": 0.319
+  },
+  "pc": {
+   "t": "u m p sim u s, Domine, celeS britatis annuae votiva sacramenta; praesta quaesumus, ut et temporalis vitae nobis remedia praebeant, et aeternae : Per Dominum.",
+   "head": "De S. Agnete Postcommunio",
+   "from": "0128",
+   "line": 43916,
+   "match": "S0908.pc",
+   "ratio": 0.991
+  }
+ },
+ "0130|S. Martinæ Virg. et Mart.": {
+  "or": {
+   "t": "DEUS, qui inter cetera potentiae tuae miracula, etiam in sexu fragili victoriam martyrii contulisti : concede propitius, ut qui beatae Martlnae Virginis et Martyris tuae natalltia colimus; per ejus ad te exempla gradiamur : Per Dominum.",
+   "head": "De S. Martina",
+   "from": "0130",
+   "line": 44102,
+   "match": "S0205.or",
+   "ratio": 0.975
+  },
+  "se": {
+   "t": "Su s c ip e Domine munera, quae in beatae Martlnae Virginis et Martyris tuae solemnitate deferimus : cujus nos confidimus patrocinio liberari. Per Dominum.",
+   "head": "De S. Martina",
+   "from": "0130",
+   "line": 44102,
+   "match": "S0205.se",
+   "ratio": 0.97
+  },
+  "pc": {
+   "t": "AUXILIENTUR nobis, Domine, sumpta mysteria; et intercedente beata Martina Virgine et Martyre tua, sempiterna faciant protectione gaudere : Per Dominum.",
+   "head": "De S. Martin* Postcommunio",
+   "from": "0130",
+   "line": 44102,
+   "match": "S0205.pc",
+   "ratio": 0.872
+  }
+ },
+ "0206|SS. Vedasti et Amandi Epp. et Confessorum": {
+  "or": {
+   "t": "DEUS, qui nos sanctorum Confessorum tuorum Vedasti et Amandi confessionibus gloriosis circumdas et protegis : da nobis eorum imitatione proficere; et intercessione gaudere: Per Dominum. 378 Festa Februarii (7, 8, 9)",
+   "head": "own section",
+   "from": "0206",
+   "line": 44978,
+   "match": "A:d18.pc",
+   "ratio": 0.292
+  },
+  "se": {
+   "t": "SANCTI tui, quaesumus Domine, nos ubique laetificent : ut dum eorum merita recolimus, patrocinia sentiamus. Per Dominum.",
+   "head": "own section",
+   "from": "0206",
+   "line": 44989,
+   "match": "C30s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "Quaesumus, Domine, salutaribus repleti m ysteriis: ut quorum solemnia celebramus; eorum orationibus adjuvemur : Per Dominum.",
+   "head": "own section",
+   "from": "0206",
+   "line": 44995,
+   "match": "S0916.pc",
+   "ratio": 1.0
+  }
+ },
+ "0214|S. Valentini Mart.": {
+  "or": {
+   "t": "PIUESTA, quaesumus omnipotens Deus : ut qui beati Valentini Martyris tui natalitia colimus; a cunctis malis imminentibus ejus intercessione liberemur : Per Dominum.",
+   "head": "De S. ValentinoPresb. et Mart.",
+   "from": "0214",
+   "line": 45554,
+   "match": "C18s.or",
+   "ratio": 0.951
+  },
+  "se": {
+   "t": "Ho stias tibi, Domine, beati Valentini Martyris tui dicatas meritis, benignus assume : et ad perpetuum nobis tribue provenire subsidium. Per Dominum.",
+   "head": "De S. Valentino",
+   "from": "0214",
+   "line": 45554,
+   "match": "C18s.se",
+   "ratio": 0.963
+  },
+  "pc": {
+   "t": "Su m ptis, Domine, sacramentis : quaesumus, ut intercedente beato Valentino Martyre tuo; supplicationes nostras placatus intendas : Per Dominum.",
+   "head": "De S. Valentino",
+   "from": "0214",
+   "line": 45554,
+   "match": "C18s.pc",
+   "ratio": 0.962
+  }
+ },
+ "0301|S. Albini Ep. et Conf.": {
+  "or": {
+   "t": "DA, quaesumus omnipotens Deus : ut beati Albini Confessoris tui atque Pontificis veneranda solemnitas; et devotionem nobis augeat, et salutem : Per Dominum.",
+   "head": "De S. Albmo Ep. et Conf.",
+   "from": "0301",
+   "line": 46024,
+   "match": "C30s.or",
+   "ratio": 0.978
+  },
+  "se": {
+   "t": "SANCTI tui, quaesumus Domine, nos ubique laetificent : ut dum eorum merita recolimus, patrocinia sentiamus. Per Dominum.",
+   "head": "De S. Albino",
+   "from": "0301",
+   "line": 46024,
+   "match": "C30s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "PRAESTA, quaesumus omnipotens Deus : ut de perceptis muneribus gratias exhibentes; intercedente beato Albino Confessore tuo atque Pontifice, beneficia potiora sumamus : Per Dominum.",
+   "head": "De S. Albino Postcommunio",
+   "from": "0301",
+   "line": 46024,
+   "match": "C30s.pc",
+   "ratio": 0.982
+  }
+ },
+ "0414|SS. Tiburtii, Valeriani et Maximi MM.": {
+  "or": {
+   "t": "PR/ESTA, quaesumus omnipotens Deus : ut qui sanctorum Martyrum tuorum Tiburtii, Valeriani, et Maximi solemnia colimus; eorum etiam virtutes imitemur : Per Dominum.",
+   "head": "De SS. Tiburtio, Valeriano et Maximo, Mm.",
+   "from": "0414",
+   "line": 48037,
+   "match": "S0927.or",
+   "ratio": 0.674
+  },
+  "se": {
+   "t": "HAEC hostia, quaesumus Domine, quam sanctorum Martyrum tuorum natalitia recensentes offerimus, et vincula nostrae pravitatis absolvat, et tuae nobis misericordiae dona conciliet. Per Dominum.",
+   "head": "De SS. Tiburtio, etc., Mm.",
+   "from": "0414",
+   "line": 48037,
+   "match": "S1009_2.se",
+   "ratio": 0.869
+  },
+  "pc": {
+   "t": "SACRO munere satiati, supplices te Domine deprecamur : ut quod debitae servitutis celebramus officio; salvationis tuae sentiamus augmentum : Per Dominum.",
+   "head": "De SS. Tiburtio, etc., Mm.",
+   "from": "0414",
+   "line": 48037,
+   "match": "S0813.or",
+   "ratio": 0.246
+  }
+ },
+ "0428|S. Pauli a Cruce Conf.": {
+  "or": {
+   "t": "DCMINE Jesu Christe, qui ad mysterium crucis praedicandum, sanctum Paulum singulari caritate donasti; et per eum novam in Ecclesia familiam florescere voluisti : ipsius nobis intercessione concede; ut passionem tuam jugi- 421 ter recolentes in terris, ejusdem fructum consequi mereamur in caelis.",
+   "head": "De S. Paulo a Cruce Conf.",
+   "from": "0428",
+   "line": 48901,
+   "match": "S0428.or",
+   "ratio": 0.996
+  },
+  "se": {
+   "t": "C/ELESTEM nobis, Domine, praebeant mysteria haec passionis et mortis tuae fervorem, quo sanctus Paulus, ea offerendo, corpus suum hostiam viventem, sanctam, tibique placentem exhibuit.",
+   "head": "De S. Paulo",
+   "from": "0428",
+   "line": 48901,
+   "match": "S0428.se",
+   "ratio": 0.997
+  },
+  "pc": {
+   "t": "Sum psim us, Domine, divinum sacramentum, immensae caritatis tuae memoriale perpetuum: tribue, quaesumus, ut sancti Pauli meritis et imitatione, aquam de fontibus tuis hauriamus in vitam aeternam salientem; et tuam sacratissimam passionem cordibus nostris impressam, moribus et vita teneamus.",
+   "head": "De S. Paulo",
+   "from": "0428",
+   "line": 48901,
+   "match": "S0428.pc",
+   "ratio": 1.0
+  }
+ },
+ "0428|S. Vitalis Mart.": {
+  "or": {
+   "t": "PfUESTA, quaesumus omnipotens Deus : ut intercedente beato Vitale Martyre tuo, et a cunctis adversitatibus liberemur in corpore; et a pravis cogitationibus mundemur in mente : Per Dominum.",
+   "head": "De S. Vitale Martyre",
+   "from": "0428",
+   "line": 48901,
+   "match": "S0810.pc",
+   "ratio": 0.408
+  },
+  "se": {
+   "t": "Accepta sit in conspectu tuo, Domine, nostra devotio, et ejus nobis fiat supplicatione salutaris, pro cujus solemnitate defertur. Per Dominum.",
+   "head": "De S. Vitale",
+   "from": "0428",
+   "line": 48901,
+   "match": "C32s.se",
+   "ratio": 0.991
+  },
+  "pc": {
+   "t": "Refec ti participatione muneris sacri, quaesumus Domine Deus noster : ut cujus exsequimur cultum; intercedente beato Vitale Martyre tuo, sentiamus effectum : Per Dominum.",
+   "head": "De S. Vitale",
+   "from": "0428",
+   "line": 48901,
+   "match": "C11s.pc",
+   "ratio": 0.923
+  }
+ },
+ "0503|SS. Alexandri, Eventii et Theoduli MM.": {
+  "or": {
+   "t": "PR/ES I A, quaesumus omnipotens Deus : ut qui sanctorum tuorum Alexandri, Eventii, et Theoduli natalitia colimus; a cunctis malis imminentibus eorum intercessionibus liberemur: Per Dominum.",
+   "head": "De sanctis Alexandro, Eventio, et Theodulo Martyribus",
+   "from": "0503",
+   "line": 49622,
+   "match": "S0927.or",
+   "ratio": 0.855
+  },
+  "se": {
+   "t": "SLPER has hostias, quaesumus Domine, benedictio copiosa descendat : quae et sanctificationem nobis clementer operetur, et de Sanctorum nos solemnitate laetificet. Per Dominum.",
+   "head": "De SS. Alexandro, etc.",
+   "from": "0503",
+   "line": 49622,
+   "match": "S0411.se",
+   "ratio": 0.261
+  },
+  "pc": {
+   "t": "REFECTI participatione muneris sacri, quaesumus Domine Deus noster : ut cujus exsequimur cultum; intercedentibus sanctis Martyribus tuis Alexandro, Eventio, et Theodulo, sentiamus effectum : Per Dominum.",
+   "head": "De SS. Alexandro, etc.",
+   "from": "0503",
+   "line": 49622,
+   "match": "S0203.pc",
+   "ratio": 0.82
+  }
+ },
+ "0510|SS. Gordiani et Epimachi MM.": {
+  "or": {
+   "t": "DA, quaesumus omnipotens Deus : ut qui beatorum Martyrum tuorum Gordiani et Epimachi solemnia colimus; eorum apud te intercessionibus adjuvemur : Per Dominum.",
+   "head": "De SS. Gordiano et Epimacho Martyribus",
+   "from": "0510",
+   "line": 50614,
+   "match": "S1028.se",
+   "ratio": 0.179
+  },
+  "se": {
+   "t": "HOSTIAS tibi, Domine, beatorum Martyrum tuorum Gordiani et Epimachi dicatas meritis, benignus assume, et ad perpetuum nobis tribue provenire subsidium. Per Dominum.",
+   "head": "De SS. Gordiano et Epimacho",
+   "from": "0510",
+   "line": 50614,
+   "match": "S0626.se",
+   "ratio": 0.924
+  },
+  "pc": {
+   "t": "Quaesumus omnipotens Deus : ut qui caelestia alimenta percepimus; intercedentibus sanctis Martyribus tuis Gordiano et Epimacho, per haec contra omnia adversa muniamur : Per Dominum.",
+   "head": "De SS. Gordiano et Epimacho",
+   "from": "0510",
+   "line": 50614,
+   "match": "S0909.pc",
+   "ratio": 0.455
+  }
+ },
+ "0512|SS. Nerei, Achillei et Pancratii MM.": {
+  "or": {
+   "t": "SEMPER nos, Domine, Martyrum tuorum Nerei, Achillei, atque Pancratii foveat, quaesumus, beata solemnitas; et tuo dignos reddat obsequio : Per Dominum.",
+   "head": "De SS. Nereo, Achilleo, et Pancratio Mart.",
+   "from": "0512",
+   "line": 50833,
+   "match": "Quad2h.pc",
+   "ratio": 0.358
+  },
+  "se": {
+   "t": "SANCTORUM Martyrum tuorum, quaesumus Domine, Nerei, Achillei, atque Pancratii sit tibi grata confessio : quae et munera nostra commendet, et tuam nobis indulgentiam semper imploret: Per Dominum.",
+   "head": "De SS. Nereo, etc. Secreta",
+   "from": "0512",
+   "line": 50833,
+   "match": "S0624.pc",
+   "ratio": 0.201
+  },
+  "pc": {
+   "t": "Qu a e s u m u s Domine, ut beatorum Martyrum tuorum Nerei, Achillei, atque Pancratii deprecationibus, sacramenta sancta, quae sumpsimus; ad tuse nobis proficiant placationis augmentum : Per Dominum.",
+   "head": "De SS. Nereo, etc.",
+   "from": "0512",
+   "line": 50833,
+   "match": "A:d15.pc",
+   "ratio": 0.395
+  }
+ },
+ "0519|S. Pudentianæ Virg.": {
+  "or": {
+   "t": "Exaudi nos Deus salutaris noster : ut sicut de beatae Pudentianae Virginis tuae festivitate gaudemus; ita piae devotionis erudiamur affectu : Per Dominum.",
+   "head": "De S. Pudentiana Virgine",
+   "from": "0519",
+   "line": 51368,
+   "match": "S0620b.or",
+   "ratio": 0.953
+  },
+  "se": {
+   "t": "Accepta tibi sit, Domine, sacratae plebis oblatio pro tuorum honore Sanctorum, quorum se meritis de tribulatione percepisse cognoscit auxilium. Per Dominum.",
+   "head": "De S. Pudentiana",
+   "from": "0519",
+   "line": 51368,
+   "match": "S1213.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "SATIASTI Domine familiam tuam muneribus sacris : ejus, quaesumus, semper in- 449 terventione nos refove; cujus solemnia celebramus : Per Dominum.",
+   "head": "De S. Pudentiana",
+   "from": "0519",
+   "line": 51368,
+   "match": "S1213.pc",
+   "ratio": 1.0
+  }
+ },
+ "0531|S. Angelæ Mericiæ Virg.": {
+  "or": {
+   "t": "DEUS, qui novum per beatam Angelam sacrarum Virginum collegium in Ecclesia tua florescere voluisti : da nobis, ejus intercessione, angelicis moribus vivere; ut, terrenis omnibus abdicatis, gaudiis perfrui mereamur aeternis. (Per Dominum.) 456",
+   "head": "De S. Angela Mericia^Virg.",
+   "from": "0531",
+   "line": 52112,
+   "match": "G555.pc",
+   "ratio": 0.34
+  },
+  "se": {
+   "t": "Hostia, Domine, quam tibi beatae Angelae memoriam recolentes offerimus, et nostrae pravitatis veniam imploret, et gratiae tuae nobis dona conciliet. (Per Dominum.)",
+   "head": "De S. Angela",
+   "from": "0531",
+   "line": 52112,
+   "match": "C79s.se",
+   "ratio": 0.357
+  },
+  "pc": {
+   "t": "AELESTI alimonia refecti, C supplices te, Domine, deprecamur; ut beatae Angelae precibus et exemplo, ab omni labe mundati, et corpore tibi placeamus, et mente. (Per Dominum.)",
+   "head": "De S. Angela Postcommunio",
+   "from": "0531",
+   "line": 52112,
+   "match": "S0630.pc",
+   "ratio": 0.273
+  }
+ },
+ "0531|S. Petronillæ Virg.": {
+  "or": {
+   "t": "EXAUDI nos, Deus, salutaris noster : ut, sicut de beatae Petronillae Virginis tuae festivitate gaudemus; ita piae devotionis erudiamur affectu. Per Dominum.",
+   "head": "De S. PetroniUa Virg.",
+   "from": "0531",
+   "line": 52112,
+   "match": "S0721.or",
+   "ratio": 0.944
+  },
+  "se": {
+   "t": "Accepta tibi sit, Domine, sacratae plebis oblatio pro tuorum honore Sanctorum : quorum se meritis de tribulatione percepisse cognoscit auxilium. Per Dominum.",
+   "head": "De S. PetroniUa",
+   "from": "0531",
+   "line": 52112,
+   "match": "S1213.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "SATIASTI, Domine, familiam tuam muneribus sacris : ejus, quaesumus, semper interventione nos refove; cujus solemnia celebramus : Per Dominum.",
+   "head": "De S. PetroniUa",
+   "from": "0531",
+   "line": 52112,
+   "match": "S1213.pc",
+   "ratio": 1.0
+  }
+ },
+ "0602|SS. Marcellini Presb. et Petri Exorcistæ MM.": {
+  "or": {
+   "t": "DEUS, qui nos annua beatorum Martyrum tuorum Marcellini et Petri solemnitate laetificas : praesta quaesumus, ut quorum gaudemus meritis; provocemur exemplis : Per Dominum.",
+   "head": "De SS. Marcellino et Petro Martyribus",
+   "from": "0602",
+   "line": 52449,
+   "match": "Quad1.se",
+   "ratio": 0.309
+  },
+  "se": {
+   "t": "HiEC hostia, quaesumus Domine, quam sanctorum Martyrum tuorum natalitia recensentes offerimus, et vincula nostrae pravitatis absolvat, et tuae nobis misericordiae dona conciliet. Per Dominum.",
+   "head": "De SS. Marcellino et Petro",
+   "from": "0602",
+   "line": 52449,
+   "match": "S1009_2.se",
+   "ratio": 0.869
+  },
+  "pc": {
+   "t": "SACRO munere satiati, supplices te Domine deprecamur : ut quod debitae servitutis celebramus officio; salvationis tuae sentiamus augmentum : Per Dominum.",
+   "head": "De SS. Marcellino et Petro",
+   "from": "0602",
+   "line": 52449,
+   "match": "S0813.or",
+   "ratio": 0.246
+  }
+ },
+ "0608|S. Medardi Ep. et Conf.": {
+  "or": {
+   "t": "Exaudi, quaesumus Domine, preces nostras, quas in beati Medardi Confessoris tui atque Pontificis solemnitate deferimus : ut qui tibi digne meruit famulari; ejus intercedentibus meritis, ab omnibus nos absolvas peccatis : Per Dominum.",
+   "head": "own section",
+   "from": "0608",
+   "line": 52759,
+   "match": "S0522.or",
+   "ratio": 0.975
+  },
+  "se": {
+   "t": "Accepta sit in conspectu tuo Domine nostra devotio : ut ejus nobis fiat supplicatione salutaris, pro cujus solemnitate defertur. Per Dominum.",
+   "head": "own section",
+   "from": "0608",
+   "line": 52771,
+   "match": "C32s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "DA, quaesumus Domine, fidelibus tuis, Sanctorum tuorum semper veneratione laetari; et eorum perpetua supplicatione muniri : Per Dominum.",
+   "head": "own section",
+   "from": "0608",
+   "line": 52778,
+   "match": "C32s.pc",
+   "ratio": 1.0
+  }
+ },
+ "0609|SS. Primi et Feliciani MM.": {
+  "or": {
+   "t": "FAC nos, quaesumus Domine, sanctorum Martyrum tuorum Primi et Feliciani semper festa sectari; et eorum suffragiis protectionis tuae dona sentire : Per Dominum.",
+   "head": "De SS. Primo et Feliciano Martyribus",
+   "from": "0609",
+   "line": 52787,
+   "match": "S0827.pc",
+   "ratio": 0.371
+  },
+  "se": {
+   "t": "FIAT tibi, quaesumus Domine, hostia sacranda placabilis, pretiosi celebritate martyrii : quae et peccata nostra purificet, et tuorum tibi vota conciliet famulorum. Per Dominum.",
+   "head": "De SS. Primo et Feliciano Martyribus",
+   "from": "0609",
+   "line": 52787,
+   "match": "S0808b.se",
+   "ratio": 0.386
+  },
+  "pc": {
+   "t": "Quaesumus omnipotens Deus : ut sanctorum Martyrum tuorum Primi et Feliciani caelestibus mysteriis celebrata solemnitas; indulgentiam nobis tuae propitiationis acquirat: Per Dominum.",
+   "head": "De SS. Primo et Feliciano Martyribus Postcommunio",
+   "from": "0609",
+   "line": 52787,
+   "match": "S0916.se",
+   "ratio": 0.41
+  }
+ },
+ "0612|SS. Basilidis, Cyrini, Naboris et Nazarii MM.": {
+  "or": {
+   "t": "SANCTORUM Martyrum tuorum Basilidis, Cyrini, Naboris, atque Nazarii, quaesumus Domine, natalitia nobis votiva resplendeant : et quod illis contulit excellentia sempiterna; fructibus nostrae devotionis accrescat : Per Dominum.",
+   "head": "De SS. Mm. Basilide, Cyrino, Nabore, et Nazario",
+   "from": "0612",
+   "line": 53066,
+   "match": "S1009_2.se",
+   "ratio": 0.39
+  },
+  "se": {
+   "t": "PRO sanctorum Martvrum tuorum Basilidis, Cyrini, Naboris, atque Nazarii sanguine venerando, hostias tibi Domine solemniter immolamus, tua mirabilia pertractantes : per quem talis est perfecta victoria. Per Dominum.",
+   "head": "De SS. Basilide etc. Secreta",
+   "from": "0612",
+   "line": 53066,
+   "match": "S1106.pc",
+   "ratio": 0.392
+  },
+  "pc": {
+   "t": "SEMPER, Domine, sanctorum Martyrum tuorum Basilidis, Cyrini, Naboris, atque Nazarii solemnia celebrantes : praesta quaesumus; ut eorum patrocinia jugiter sentiamus : Per Dominum.",
+   "head": "De SS. Basilide etc.",
+   "from": "0612",
+   "line": 53066,
+   "match": "S0426b.pc",
+   "ratio": 0.236
+  }
+ },
+ "0616|SS. Quirici et Julittæ MM.": {
+  "or": {
+   "t": "DEUS, qui nos concedis sanctorum Martyrum tuorum Quirici et Julittae natalitia colere; da nobis in aeterna beatitudine de eorum societate gaudere : Per Dominum.",
+   "head": "own section",
+   "from": "0616",
+   "line": 53432,
+   "match": "C25s.or",
+   "ratio": 0.927
+  },
+  "se": {
+   "t": "MUNERA tibi, Domine, nostrae devotionis offerimus : quae et pro tuorum tibi grata sint honore Sanctorum, et nobis salutaria, te miserante, reddantur. Per Dominum.",
+   "head": "own section",
+   "from": "0616",
+   "line": 53439,
+   "match": "C25s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "FUESTA nobis, quaesumus Domine, intercedentibus sanctis Martyribus tuis Quirico et Julitta; ut quae ore contigimus, pura mente capiamus : Per Dominum.",
+   "head": "own section",
+   "from": "0616",
+   "line": 53446,
+   "match": "S0525.or",
+   "ratio": 0.294
+  }
+ },
+ "0618|SS. Marci et Marcelliani MM.": {
+  "or": {
+   "t": "F! jESTA, quaesumus, omnipotens Deus : ut, qui sanctorum Martyrum tuorum Marci et Marcelliani natalitia colimus; a cunctis malis imminentibus, eorum intercessionibus liberemur : Per Dominum. 470",
+   "head": "De SS. Marco et Marcelliano Martyribus",
+   "from": "0618",
+   "line": 53453,
+   "match": "S0927.or",
+   "ratio": 0.931
+  },
+  "se": {
+   "t": "MUNERA tibi, Domine, dicata sanctifica: et, intercedentibus sanctis Martyribus tuis Marco et Marcelliano, per eadem nos placatus intende. Per Dominum.",
+   "head": "De SS. Marco et Marcelliano",
+   "from": "0618",
+   "line": 53453,
+   "match": "G491.se",
+   "ratio": 0.904
+  },
+  "pc": {
+   "t": "SALUT\\RIS tui, Domine, munere satiati, supplices exoramus : ut, cujus laetamur gustu; intercedentibus sanctis Martyribus tuis Marco et Marcelliano, renovemur effectu : Per Dominum.",
+   "head": "De SS. Marco et Marcelliano",
+   "from": "0618",
+   "line": 53453,
+   "match": "G491.pc",
+   "ratio": 0.916
+  }
+ },
+ "0701|Octava S. Joannis Baptistæ": {},
+ "0702|SS. Processi et Martiniani MM.": {
+  "or": {
+   "t": "DEUS, qui nos sanctorum Martyrum tuorum Processi et Martiniani gloriosis confessionibus circumdas et protegis : da nobis et eorum imitatione proficere; et intercessione gaudere : Per Dominum.",
+   "head": "De SS. Mm. Processo et Mar- tiniano",
+   "from": "0702",
+   "line": 54885,
+   "match": "S0615.pc",
+   "ratio": 0.387
+  },
+  "se": {
+   "t": "Su sc ipe Domine preces et munera : quae ut tuo sint digna conspectu, Sanctorum tuorum precibus adjuvemur. Per Dominum.",
+   "head": "De SS. Processo et Martiniano",
+   "from": "0702",
+   "line": 54885,
+   "match": "Quad3m.pc",
+   "ratio": 0.291
+  },
+  "pc": {
+   "t": "CORPORIS sacri, et pretiosi Sanguinis repleti libamine, quaesumus Domine Deus noster : ut quod pia devotione gerimus; certa redemptione capiamus : Per eumdem.",
+   "head": "De SS. Processo et Martiniano",
+   "from": "0702",
+   "line": 54885,
+   "match": "S0801.pc",
+   "ratio": 1.0
+  }
+ },
+ "0720|S. Margaritæ Virg. et Mart.": {
+  "or": {
+   "t": "INDULGENTIAM nobis, quaesumus Domine, beata Margarita Virgo et Martyr imploret : quae tibi grata semper exstitit; et merito castitatis, et tuae professione virtutis. Per Dominum.",
+   "head": "De S. Margarita V. M.",
+   "from": "0720",
+   "line": 56313,
+   "match": "S1202.or",
+   "ratio": 0.956
+  },
+  "se": {
+   "t": "Suscipe, Domine, munera, quae in beatae Margaritae Virginis et Martyris tuae solemnitate deferimus : cujus nos confidimus patrocinio liberari. Per Dominum.",
+   "head": "De S. Margarita",
+   "from": "0720",
+   "line": 56313,
+   "match": "S0205.se",
+   "ratio": 0.979
+  },
+  "pc": {
+   "t": "AUXILIENTUR nobis Domine sumpta mysteria; et intercedente beata Margarita Virgine et Martyre tua, sempiterna protectione confirment. Per Dominum.",
+   "head": "De S. Margarita",
+   "from": "0720",
+   "line": 56313,
+   "match": "S0205.pc",
+   "ratio": 0.978
+  }
+ },
+ "0723|S. Apollinaris Ep. et Mart.": {
+  "or": {
+   "t": "DEUS, qui nos beati Apollinaris Martyris tui atque Pontificis annua solemnitate laetificas : concede propitius, ut cujus natalitia colimus; de ejusdem etiam protectione gaudeamus : Per Dominum.",
+   "head": "De S. Apollinare Ep. et Mart.",
+   "from": "0723",
+   "line": 56679,
+   "match": "S1123.or",
+   "ratio": 0.788
+  },
+  "se": {
+   "t": "Munera tibi Domine dicata sanctifica : et intercedente beato Apollinare Martyre tuo atque Pontifice, per eadem nos placatus intende. Per Dominum.",
+   "head": "De S. Apollinare",
+   "from": "0723",
+   "line": 56679,
+   "match": "S1123.se",
+   "ratio": 0.776
+  },
+  "pc": {
+   "t": "HJEQ nos communio, Domine, purget a crimine; et intercedente beato Apollinare Martyre tuo atque Pontifice, caelestis remedii faciat esse consortes: Per Dominum.",
+   "head": "De S. Apollinare",
+   "from": "0723",
+   "line": 56679,
+   "match": "S0930.pc",
+   "ratio": 0.387
+  }
+ },
+ "0724|S. Christinæ Virg. et Mart.": {
+  "or": {
+   "t": "INDULGENTIAM nobis, quaesumus Domine, beata Christina Virgo et Martyr imploret : quae tibi grata semper exstitit; et merito castitatis, et tuae professione virtutis : Per Dominum.",
+   "head": "De S. Christina Virg. et Mart.",
+   "from": "0724",
+   "line": 56737,
+   "match": "S1202.or",
+   "ratio": 0.971
+  },
+  "se": {
+   "t": "Su sc ipe Domine munera, quae in beatae Christinae Virginis et Martyris tuae solemnitate deferimus: cujus nos confidimus patrocinio liberari. Per Dominum.",
+   "head": "De S. Christina",
+   "from": "0724",
+   "line": 56737,
+   "match": "S1202.se",
+   "ratio": 0.966
+  },
+  "pc": {
+   "t": "AUXILIENTUR nobis, Domine, sumpta mysteria; et intercedente beata Christina Virgine et Martyre tua, sempiterna protectione confirment: Per Dominum.",
+   "head": "De S. Christina",
+   "from": "0724",
+   "line": 56737,
+   "match": "S1202.pc",
+   "ratio": 0.965
+  }
+ },
+ "0725|SS. Christophori et Cucuphatis MM.": {
+  "or": {
+   "t": "PRAESTA, quaesumus omnipotens Deus : ut qui gloriosos Martyres tuos Christophorum et Cucuphatem fortes in sua confessione cognovimus; pios apud te in nostra intercessione sentiamus : Per Dominum.",
+   "head": "De SS. Christophoro et Cucu- phate Martyribus",
+   "from": "0725",
+   "line": 56802,
+   "match": "C21s.or",
+   "ratio": 0.895
+  },
+  "se": {
+   "t": "Sacrificiis praesentibus, quaesumus Domine, intende placatus : et intercedentibus sanctis Martyribus tuis, devotioni nostrae proficiant, et saluti. Per Dominum.",
+   "head": "De SS. Christophoro et Cucu- phate",
+   "from": "0725",
+   "line": 56802,
+   "match": "S1106.se",
+   "ratio": 0.924
+  },
+  "pc": {
+   "t": "QUAiSUML S omnipotens Deus : ut intercedentibus sanctis Martyribus tuis Christophoro et Cucuphate, illius salutaris capiamus effectum; cujus per haec mysteria pignus accepimus : Per Dominum.",
+   "head": "De SS. Christophoro et Cucu- phate",
+   "from": "0725",
+   "line": 56802,
+   "match": "S0816.or",
+   "ratio": 0.325
+  }
+ },
+ "0728|SS. Nazarii, Celsi et Pantaleonis MM.": {
+  "or": {
+   "t": "DEUS, qui nos concedis sanctorum Martyrum tuorum Nazarii, Celsi, et Pantaleonis natalitia colere; da nobis in aeterna beatitudine de eorum societate gaudere : Per Dominum.",
+   "head": "De SS. Nazario, Celso, et Pan- taleone Martyribus Oratio",
+   "from": "0728",
+   "line": 56994,
+   "match": "C25s.or",
+   "ratio": 0.913
+  },
+  "se": {
+   "t": "MUNERA tibi, Domine, nostrae devotionis offerimus : quae et pro tuorum tibi grata sint honore Sanctorum, et nobis salutaria, te miserante, reddantur. Per Dominum.",
+   "head": "De SS. Nazario etc. Secreta",
+   "from": "0728",
+   "line": 56994,
+   "match": "C25s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "PRxLSTA nobis, quaesumus Domine, intercedentibus sanctis Martyribus tuis Nazario, Celso, et Pantaleone; ut quae ore contigimus, pura mente capiamus : Per Dominum. 508",
+   "head": "De SS. Nazario etc.",
+   "from": "0728",
+   "line": 56994,
+   "match": "C25s.pc",
+   "ratio": 0.894
+  }
+ },
+ "0729|SS. Felicis, Simplicii, Faustini et Beatricis MM.": {
+  "or": {
+   "t": "PRAESTA, quaesumus Domine : ut sicut populus Christianus Martyrum tuorum Felicis, Simplicii, Faustini, et Beatricis temporali solemnitate congaudet, ita perfruatur aeterna; et quod votis celebrat, comprehendat effectu : Per Dominum.",
+   "head": "De SS. Felice, Simplicio, Faustino, et Beatrice Mart.",
+   "from": "0729",
+   "line": 57051,
+   "match": "C110s.or",
+   "ratio": 0.223
+  },
+  "se": {
+   "t": "Hostias tibi, Domine, pro sanctorum Martyrum tuorum Felicis, Simplicii, Faustini, et Beatricis commemoratione deferimus, suppliciter deprecantes, ut indulgentiam nobis pariter conferant, et salutem. Per Dominum.",
+   "head": "De SS. Felice etc.",
+   "from": "0729",
+   "line": 57051,
+   "match": "A:d24.or",
+   "ratio": 0.161
+  },
+  "pc": {
+   "t": "PRAESTA, quaesumus omnipotens Deus : ut sanctorum Martyrum tuorum Felicis, Simplicii, Faustini, et Beatricis caelestibus mysteriis celebrata solemnitas; indulgentiam nobis tuae propitiationis acquirat: Per Dominum.",
+   "head": "De SS. Felice etc.",
+   "from": "0729",
+   "line": 57051,
+   "match": "S1106.pc",
+   "ratio": 0.783
+  }
+ },
+ "0730|SS. Abdon et Sennen MM.": {
+  "or": {
+   "t": "DEUS, qui sanctis tuis Abdon et Sennen ad hanc gloriam veniendi copiosum munus gratiae contulisti; da famulis tuis suorum veniam peccatorum : ut Sanctorum tuorum intercedentibus meritis; ab omnibus mereamur adversitatibus liberari : Per Dominum.",
+   "head": "De SS. Abdon et Sennen Mm.",
+   "from": "0730",
+   "line": 57181,
+   "match": "S1101.or",
+   "ratio": 0.248
+  },
+  "se": {
+   "t": "H.UC hostia, quaesumus Domine, quam sanctorum Martyrum tuorum natalitia recensentes offerimus, et vincula nostrae pravitatis absolvat, et tuae nobis misericordiae dona conciliet. Per Dominum.",
+   "head": "De SS. Abdon et Sennen",
+   "from": "0730",
+   "line": 57181,
+   "match": "S1009_2.se",
+   "ratio": 0.871
+  },
+  "pc": {
+   "t": "PER hujus, Domine, operationem mysterii, et vitia nostra purgentur; et intercedentibus sanctis Martyribus tuis Abdon et Sennen, justa desideria compleantur : Per Dominum.",
+   "head": "De SS. Abdon et Sennen",
+   "from": "0730",
+   "line": 57181,
+   "match": "S0323b.pc",
+   "ratio": 0.406
+  }
+ },
+ "0731|S. Germani Ep. et Conf.": {
+  "or": {
+   "t": "EXAUDI, quaesumus Domine, preces nostras, quas in bea ii Germani Confessoris tui atque Pontificis solemnitate deferimus : ut qui tibi digne meruit famulari; ejus intercedentibus meritis, ab omnibus nos absolvas peccatis : Per Dominum.",
+   "head": "De S. Germano Episc. et Conf.",
+   "from": "0731",
+   "line": 57249,
+   "match": "S0522.or",
+   "ratio": 0.975
+  },
+  "se": {
+   "t": "Accepta sit in conspectu tuo Domine nostra devotio : ut ejus nobis fiat supplicatione salutaris, pro cujus solemnitate defertur. Per Dominum.",
+   "head": "De S. Germano",
+   "from": "0731",
+   "line": 57249,
+   "match": "C32s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "DA, quaesumus Domine, fidelibus tuis, Sanctorum tuorum semper veneratione laetari; et eorum perpetua supplicatione muniri : Per Dominum. FESTA AUGUSTI",
+   "head": "De S. Germano",
+   "from": "0731",
+   "line": 57249,
+   "match": "C32s.pc",
+   "ratio": 1.0
+  }
+ },
+ "0801|SS. Machabæorum MM.": {
+  "or": {
+   "t": "Fraterna nos, Domine, Martyrum tuorum corona laetificet : quae et fidei nostrae praebeat incrementa virtutum; et multiplici nos suffragio consoletur: Per Dominum.",
+   "head": "De SS. Machabaeis Martyribus",
+   "from": "0801",
+   "line": 57410,
+   "match": "S0422b.pc",
+   "ratio": 0.26
+  },
+  "se": {
+   "t": "Votiva nos, Domine, mysteria pro sanctorum Martyrum tuorum constantia devota mente tractanda sanctificent : quibus et praesidium nobis crescat, et gaudium. Per Dominum.",
+   "head": "De SS. Machabaeis Secreta",
+   "from": "0801",
+   "line": 57410,
+   "match": "A:d19.or",
+   "ratio": 0.268
+  },
+  "pc": {
+   "t": "PR.ESTA, quaesumus omnipotens Deus : ut quorum memoriam sacramenti participatione recolimus; fidem quoque proficiendo sectemur: Per Dominum.",
+   "head": "De SS. Machabaeis",
+   "from": "0801",
+   "line": 57410,
+   "match": "S1014.or",
+   "ratio": 0.083
+  }
+ },
+ "0802|S. Stephani I Papæ et Mart.": {
+  "or": {
+   "t": "Deus, qui nos beati Stephani Martyris tui atque Pontificis annua solemnitate laetificas : concede propitius, ut cujus natalitia colimus; de ejusdem etiam protectione gaudeamus : Per Dominum.",
+   "head": "De S. Stephano I Papa et Mart.",
+   "from": "0802",
+   "line": 57597,
+   "match": "S1123.or",
+   "ratio": 0.776
+  },
+  "se": {
+   "t": "Munera tibi Dom ne dicata sanctifica : et intercedente beato Stephano Martyre tuo atque Pontifice, per eadem nos placatus intende. Per Dominum.",
+   "head": "De S. Stephano",
+   "from": "0802",
+   "line": 57597,
+   "match": "S1123.se",
+   "ratio": 0.769
+  },
+  "pc": {
+   "t": "Haec nos communio, Domine, purget a crimine; et intercedente beato Stephano Martyre tuo atque Pontifice, Ccelestis remedii faciat esse consortes : Per Dominum.",
+   "head": "De S. Stephano",
+   "from": "0802",
+   "line": 57597,
+   "match": "S0622b.pc",
+   "ratio": 0.372
+  }
+ },
+ "0803|Inventio Corporis S. Stephani Protomartyris": {
+  "or": {
+   "t": "DA nobis, quaesumus, Domine, imitari quod colimus, ut discamus et inimicos diligere : quia ejus corporis Inventionem celebramus; qui novit etiam pro persecutoribus exorare : Dominum nostrum Jesum Christum Filium tuum. Qui tecum.",
+   "head": "De Inventione corporis S. Ste- phani Protom.",
+   "from": "0803",
+   "line": 57765,
+   "match": "G385.or",
+   "ratio": 0.931
+  },
+  "se": {
+   "t": "SUSCIPE Domine munera pro tuorum commemoratione Sanctorum ; ut sicut illos passio gloriosos effecit, ita nos devotio reddat innocuos. Per Dominum.",
+   "head": "De Inventione S. Stephani",
+   "from": "0803",
+   "line": 57765,
+   "match": "S1226.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "AUXILIENTUR nobis, Domine, sumpta mysteria; et intercedente beato Stephano Martyre tuo, sempiterna protectione confirment : Per Dominum. mortuos, per adventum ipsius, et regnum ejus : praedica verbum, insta opportune, importune : Argue, obsecra, increpa in omni patientia, et doctrina. Erit enim tempus, cum sanam doctrinam non sustinebunt, sed ad sua desideria coacervabunt sibi magistros, prurientes auribus, et a veritate quidem auditum avertent, ad fabulas autem convertentur. Tu vero vigila, in omnibus labora, opus fac Evangelistae, ministerium tuum imple. Sobrius esto. Ego enim jam delibor, et tempus resolutionis meae instat. Bonum certamen certavi, cursum consummavi, fidem servavi. In reliquo repo",
+   "head": "De Inventione S. Stephani",
+   "from": "0804",
+   "line": 57823,
+   "match": "S1226.pc",
+   "ratio": 1.0
+  }
+ },
+ "0806|SS. Xysti II Papæ, Felicissimi et Agapiti MM.": {
+  "or": {
+   "t": "DEUS, qui nos concedis sanctorum Martyrum tuorum Xysti, Felicissimi, et 519 Agapiti natalitia colere; da nobis in aeterna beatitudine de eorum societate gaudere : Per Dominum.",
+   "head": "De SS. Xysto II, Felicissimo, et Agapito Mm.",
+   "from": "0806",
+   "line": 58042,
+   "match": "S0123.pc",
+   "ratio": 0.381
+  },
+  "se": {
+   "t": "MUNERA tibi, Domine, nostrae devotionis offerimus : quae et pro tuorum tibi grata sint honore Sanctorum, et nobis salutaria, te miserante, reddantur. Per Dominum.",
+   "head": "De SS. Xysto etc.",
+   "from": "0806",
+   "line": 58042,
+   "match": "C25s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "PRAESTA nobis, quaesumus Domine, intercedentibus sanctis Martyribus tuis Xysto, Felicissimo, et Agapito; ut quae ore contigimus, pura mente capiamus : Per Dominum.",
+   "head": "De SS. Xysto etc.",
+   "from": "0806",
+   "line": 58042,
+   "match": "S0829.se",
+   "ratio": 0.335
+  }
+ },
+ "0807|S. Donati Ep. et Mart.": {
+  "or": {
+   "t": "DEUS, tuorum gloria sacerdotum : praesta quaesumus, ut sancti Martyris tui et Episcopi Donati, cujus festa gerimus; sentiamus auxilium : Per Dominum.",
+   "head": "De S. Donato Episc. et Mart.",
+   "from": "0807",
+   "line": 58207,
+   "match": "Pasc3.pc",
+   "ratio": 0.315
+  },
+  "se": {
+   "t": "PRAESTA, quaesumus Domine, ut sancti Martyris tui et Episcopi Donati intercessione, quem ad laudem nominis tui dicatis muneribus honoramus, piae nobis fructus devotionis accrescat. Per Dominum.",
+   "head": "De sancto Donato",
+   "from": "0807",
+   "line": 58207,
+   "match": "Pent1.pc",
+   "ratio": 0.228
+  },
+  "pc": {
+   "t": "Omnipotens et misericors Deus, qui nos sacramentorum tuorum et participes efficis, et ministros : praesta quaesumus, ut intercedente beato Donato Martyre tuo atque Pontifice; ejusdem proficiamus et fidei consortio, et digno servitio: Per Dominum.",
+   "head": "De sancto Donato",
+   "from": "0807",
+   "line": 58207,
+   "match": "S0219b.or",
+   "ratio": 0.369
+  }
+ },
+ "0808|SS. Cyriaci, Largi et Smaragdi MM.": {
+  "or": {
+   "t": "Deus, qui nos annua beatorum Martyrum tuorum Cyriaci, Largi, et Smaragdi solemnitate laetificas : concede propitius, ut quorum natalitia colimus; virtutem quoque passionis imitemur : Per Dominum.",
+   "head": "De SS. Cyriaco, Largo, et Smaragdo Mm.",
+   "from": "0808",
+   "line": 58361,
+   "match": "Quad1.se",
+   "ratio": 0.378
+  },
+  "se": {
+   "t": "SANCTI tui, quaesumus Domine, nos ubique laetificent : ut dum eorum merita recolimus, patrocinia sentiamus. Per Dominum.",
+   "head": "De SS. Cyriaco etc. Secreta",
+   "from": "0808",
+   "line": 58361,
+   "match": "C30s.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "Refecti participatione muneris sacri, quaesumus Domine Deus noster : ut cujus exsequimur cultum; intercedentibus sanctis Martyribus tuis Cyriaco, Largo, et Smaragdo, sentiamus effectum : Per Dominum.",
+   "head": "De SS. Cyriaco etc.",
+   "from": "0808",
+   "line": 58361,
+   "match": "S0920.se",
+   "ratio": 0.291
+  }
+ },
+ "0811|S. Tiburtii Mart.": {
+  "or": {
+   "t": "Beati Tiburtii Martyris tui nos, Domine, foveant continuata praesidia : quia non desinis propitius intueri; quos talibus auxiliis concesseris adjuvari : Per Dominum.",
+   "head": "own section",
+   "from": "0811",
+   "line": 58689,
+   "match": "C104s.se",
+   "ratio": 0.397
+  },
+  "se": {
+   "t": "Adesto Domine precibus populi tui, adesto muneribus : ut quae sacris sunt oblata mysteriis, tuorum tibi placeant intercessione Sanctorum. Per Dominum.",
+   "head": "own section",
+   "from": "0811",
+   "line": 58696,
+   "match": "Quad4w.pc",
+   "ratio": 0.274
+  },
+  "pc": {
+   "t": "Sumpsimus, Domine, pignus redemptionis aeternae; quod sit nobis, quaesumus, interveniente beato Tiburtio Martyre tuo, vitae praesentis auxilium, pariter et futurae : Per Dominum.",
+   "head": "own section",
+   "from": "0811",
+   "line": 58703,
+   "match": "Pent19.or",
+   "ratio": 0.309
+  }
+ },
+ "0814|S. Eusebii Presb. et Conf.": {
+  "or": {
+   "t": "DEUS, qui nos beati Eusebii Confessoris tui annua solemnitate laetificas: concede propitius, ut cujus natalitia colimus; per ejus ad te exempla gradiamur : Per Dominum.",
+   "head": "De S. Eusebio Confessore",
+   "from": "0814",
+   "line": 58863,
+   "match": "C1s.or",
+   "ratio": 0.569
+  },
+  "se": {
+   "t": "LAUDIS tibi Domine hostias immolamus in tuorum commemoratione Sanctorum: quibus nos et praesentibus exui matis confidimus, et futuris. Per Dominum.",
+   "head": "De S. Eusebio",
+   "from": "0814",
+   "line": 58863,
+   "match": "S0308.se",
+   "ratio": 0.991
+  },
+  "pc": {
+   "t": "efecti cibo potuque caeR lesti, Deus noster, te supplices exoramus : ut in cujus haec commemoratione percepimus; ejus muniamur et precibus : Per Dominum.",
+   "head": "De S. Eusebio Postcommunio",
+   "from": "0814",
+   "line": 58863,
+   "match": "C48s.pc",
+   "ratio": 0.991
+  }
+ },
+ "0817|Octava S. Laurentii": {
+  "or": {
+   "t": "DA nobis, quaesumus omnipotens Deus, vitiorum nostrorum flammas exstinguere; qui beato Laurentio tribuisti tormentorum suorum incendia superare : Per Dominum.",
+   "head": "De S. Laurentio",
+   "from": "0817",
+   "line": 59302,
+   "match": "S0810.or",
+   "ratio": 1.0
+  },
+  "se": {
+   "t": "Accipe, quaesumus Domine, munera dignanter oblata : et beati Laurentii suffragantibus meritis, ad nostrae salutis auxilium provenire concede. Per Dominum.",
+   "head": "De S. Laurentio",
+   "from": "0817",
+   "line": 59302,
+   "match": "S0810.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "SACRO munere satiati, supplices te Domine deprecamur : ut quod debitae servitutis celebramus officio; intercedente beato Laurentio Martyre tuo, salvationis tuae sentiamus augmentum : Per Dominum.",
+   "head": "De S. Laurentio",
+   "from": "0817",
+   "line": 59302,
+   "match": "S0810.pc",
+   "ratio": 1.0
+  }
+ },
+ "0818|S. Agapiti Mart.": {
+  "or": {
+   "t": "LAETETUR Ecclesia tua, Deus, beati Agapiti Martyris tui confisa suffragiis : atque ejus precibus gloriosis, et devota permaneat; et secura consistat : Per Dominum.",
+   "head": "De S. Agapito Martyre",
+   "from": "0818",
+   "line": 59490,
+   "match": "S0829.or",
+   "ratio": 0.299
+  },
+  "se": {
+   "t": "SUSCIPE Domine munera, quae in ejus tibi solemnitate deferimus, cujus nos confidimus patrocinio liberari. Per Dominum.",
+   "head": "De S. Agapito",
+   "from": "0818",
+   "line": 59490,
+   "match": "S1227.se",
+   "ratio": 0.994
+  },
+  "pc": {
+   "t": "atiasti Domine familiam S tuam muneribus sacris : ejus, quaesumus, semper interventione nos refove; cujus 535 solemnia celebramus : Per Dominum.",
+   "head": "De S. Agapito Postcommunio",
+   "from": "0818",
+   "line": 59490,
+   "match": "S1213.pc",
+   "ratio": 0.99
+  }
+ },
+ "0822|SS. Timothei et Symphoriani MM.": {
+  "or": {
+   "t": "Auxilium tuum nobis, Domine quaesumus, placatus impende : et intercedentibus beatis Martyribus tuis Timotheo atque Symphoriano; dexteram super nos tuae propitiationis extende : Per Dominum.",
+   "head": "own section",
+   "from": "0822",
+   "line": 59770,
+   "match": "S1009_2.pc",
+   "ratio": 0.453
+  },
+  "se": {
+   "t": "Accepta tibi sit. Domine, sacratae plebis oblatio pro tuorum honore Sanctorum, quorum se meritis de tribulatione percepisse cognoscit auxilium. Per Dominum.",
+   "head": "own section",
+   "from": "0822",
+   "line": 59779,
+   "match": "S1213.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "DIVINI muneris largitate satiati, quaesumus Domine Deus noster : ut intercedentibus sanctis Martyribus tuis Timotheo et Symphoriano; in ejus semper participatione vivamus : Per Dominum.",
+   "head": "own section",
+   "from": "0822",
+   "line": 59786,
+   "match": "Pent2.or",
+   "ratio": 0.308
+  }
+ },
+ "0827|S. Rufi Ep. et Mart.": {
+  "or": {
+   "t": "Adesto Domine supplicationibus nostris : ut qui ex iniquitate nostra reos nos esse cognoscimus; beati Rufi Martyris tui atque Pontificis intercessione liberemur : Per Dominum.",
+   "head": "De S. Rufo Episcopo et Mart.",
+   "from": "0827",
+   "line": 60109,
+   "match": "S0122.or",
+   "ratio": 0.902
+  },
+  "se": {
+   "t": "Muneribus nostris, quaesumus Domine, precibusque susceptis : intercedente beato Rufo Martyre tuo atque Pontifice, et caelestibus nos munda mysteriis, et clementer exaudi. Per Dominum.",
+   "head": "De S. Rufo",
+   "from": "0827",
+   "line": 60109,
+   "match": "S0122.se",
+   "ratio": 0.91
+  },
+  "pc": {
+   "t": "Quaesumus omnipotens Deus : ut qui caelestia alimenta percepimus; intercedente beato Rufo Martyre tuo atque Pontifice, per haec contra omnia adversa muniamur : Per Dominum.",
+   "head": "De S. Rufo Postcommunio",
+   "from": "0827",
+   "line": 60109,
+   "match": "S0122.pc",
+   "ratio": 0.903
+  }
+ },
+ "0829|S. Sabinæ Mart.": {
+  "or": {
+   "t": "DEUS, qui inter cetera potentiae tuae miracula, etiam in sexu fragili victoriam martyrii contulisti : concede propitius, ut qui beatae Sabinae Martyris tuae natalitia colimus; per ejus ad te exempla gradiamur : Per Dominum.",
+   "head": "De S. Sabina Mart. Oratio",
+   "from": "0829",
+   "line": 60373,
+   "match": "S0205.or",
+   "ratio": 0.955
+  },
+  "se": {
+   "t": "Hostias tibi, Domine, beatae Sabinae Martyris tuae dicatas meritis, benignus assume : et ad perpetuum nobis tribue provenire subsidium. Per Dominum.",
+   "head": "De S. Sabina",
+   "from": "0829",
+   "line": 60373,
+   "match": "C18s.se",
+   "ratio": 0.954
+  },
+  "pc": {
+   "t": "IVINI muneris largitate saD tiati, quaesumus Domine Deus noster : ut intercedente beata Sabina Martyre tua; in ejus semper participatione vivamus : Per Dominum.",
+   "head": "De S. Sabina Postcommunio",
+   "from": "0829",
+   "line": 60373,
+   "match": "A:d26.se",
+   "ratio": 0.375
+  }
+ },
+ "0830|SS. Felicis et Adaucti MM.": {
+  "or": {
+   "t": "Majestatem tuam, Domine, supplices exoramus: ut sicut nos jugiter Sanctorum tuorum commemoratione laetificas; ita semper supplicatione defendas: Per Dominum.",
+   "head": "De SS. Mart. Felice et Adaucto",
+   "from": "0830",
+   "line": 60538,
+   "match": "G491.or",
+   "ratio": 0.397
+  },
+  "se": {
+   "t": "HOSTIAS, Domine, tuae plebis intende : et quas in honorem Sanctorum tuorum devota mente celebrat, proficere sibi sentiat ad salutem. Per Dominum.",
+   "head": "De SS. Felice et Adaucto",
+   "from": "0830",
+   "line": 60538,
+   "match": "A:d10.se",
+   "ratio": 0.73
+  },
+  "pc": {
+   "t": "REPLETI, Domine, muneribus sacris; quaesumus, ut intercedentibus Sanctis tuis, 547 in gratiarum semper actione maneamus : Per Dominum.",
+   "head": "De SS. Felice et Adaucto",
+   "from": "0830",
+   "line": 60538,
+   "match": "C25s.pc",
+   "ratio": 0.52
+  }
+ },
+ "0904|Octava S. Augustini": {
+  "or": {
+   "t": "ADESTO supplicationibus nostris omnipotens D eus: et quibus fiduciam sperandae pietatis indulges; intercedente beato Augustino Confessore tuo atque Pontifice, consuetae misericordiae tribue benignus effectum : Per Dominum.",
+   "head": "De die Oct. S. Augustini Ep.",
+   "from": "0904",
+   "line": 61013,
+   "match": "S0828.or",
+   "ratio": 1.0
+  },
+  "se": {
+   "t": "SANCTI Confessoris tui atque Pontificis Augustini nobis, Domine, pia non desit oratio : quae et munera nostra conciliet, et tuam nobis indulgentiam semper obtineat.",
+   "head": "De S. Augustino",
+   "from": "0904",
+   "line": 61013,
+   "match": "S0828.se",
+   "ratio": 1.0
+  },
+  "pc": {
+   "t": "UT nobis, Domine, tua sacrificia dent salutem; beatus Confessor tuus Augustinus, et Pontifex, quaesumus, precator accedat : Per Dominum.",
+   "head": "De S. Augustino",
+   "from": "0904",
+   "line": 61013,
+   "match": "S0828.pc",
+   "ratio": 1.0
+  }
+ },
+ "0904|S. Marcelli Mart.": {
+  "or": {
+   "t": "FGESTA, quaesumus omnipotens Deus : ut qui beati Marcelli Martyris tui natalitia colimus; ejus intercessione in tui nominis amore roboremur : Per Dominum.",
+   "head": "De S. Marcello Martyre",
+   "from": "0904",
+   "line": 61013,
+   "match": "C18s.or",
+   "ratio": 0.746
+  },
+  "se": {
+   "t": "HOSTIAS tibi, Domine, beati Marcelli Martyris tui dicatas meritis, benignus assume : et ad perpetuum nobis tribue provenire subsidium. Per Dominum.",
+   "head": "De S. Marcello",
+   "from": "0904",
+   "line": 61013,
+   "match": "C18s.se",
+   "ratio": 0.958
+  },
+  "pc": {
+   "t": "UMPTIS, Domine, sacramentis : quaesumus, ut intercedente beato Marcello Martyre tuo; supplicationes nostras placatus intendas : Per Dominum.",
+   "head": "De S. Marcello Postcommunio",
+   "from": "0904",
+   "line": 61013,
+   "match": "C18s.pc",
+   "ratio": 0.951
+  }
+ },
+ "0915|S. Nicomedis Mart.": {
+  "or": {
+   "t": "Adesto Domine populo tuo : ut beati Nicomedis Martyris tui merita praeclara suscipiens; ad impetrandam misericordiam tuam semper ejus patrociniis adjuvetur : Per Dominum.",
+   "head": "De S. Nicomede",
+   "from": "0915",
+   "line": 61743,
+   "match": "S1027v.pc",
+   "ratio": 0.341
+  },
+  "se": {
+   "t": "SUSCIPE Domine munera propitius oblata, quae majestati tuae beati Nicomedis Martyris tui commendet oratio. Per Dominum.",
+   "head": "De S. Nicomede",
+   "from": "0915",
+   "line": 61743,
+   "match": "Quad5m.pc",
+   "ratio": 0.215
+  },
+  "pc": {
+   "t": "PURIFICENT nos, quaesumus Domine, sacramenta quae sumpsimus; et intercedente beato Nicomede Martyre tuo, a cunctis efficiant vitiis absolutos : Per Dominum.",
+   "head": "De S. Nicomede",
+   "from": "0915",
+   "line": 61743,
+   "match": "S0827.pc",
+   "ratio": 0.439
+  }
+ },
+ "0916|S. Euphemiæ Virg. et Mart.": {
+  "or": {
+   "t": "OMNIPOTENS sempiterne Deus, qui infirma mundi eligis, ut fortia quaeque confundas : concede propitius, ut qui beatae Euphemiae Virginis et Martyris tuae solemnia colimus; ejus apud te patrocinia sentiamus : Per Dominum.",
+   "head": "De S. Euphemia Virg. et Mart.",
+   "from": "0916",
+   "line": 61799,
+   "match": "C48s.or",
+   "ratio": 0.97
+  },
+  "se": {
+   "t": "Hostias, Domine, quas tibi offerimus, propitius suscipe : et intercedente beata Euphemia Virgine et Martyre tua, vincula peccatorum nostrorum absolve. Per Dominum.",
+   "head": "De S. Euphemia",
+   "from": "0916",
+   "line": 61799,
+   "match": "S0121.se",
+   "ratio": 0.96
+  },
+  "pc": {
+   "t": "REFECTI cibo, potuque caelesti, Deus noster, te supplices exoramus : ut in cujus haec commemoratione percepimus; ejus muniamur et precibus : Per Dominum.",
+   "head": "De S. Euphemia",
+   "from": "0916",
+   "line": 61799,
+   "match": "C48s.pc",
+   "ratio": 1.0
+  }
+ },
+ "0917|S. Lamberti Ep. et Mart.": {
+  "or": {
+   "t": "DA, quaesumus omnipotens Deus : ut qui beati Lamberti Martyris tui atque Pontificis solemnia colimus; ejus apud te intercessionibus adjuvemur : Per Dominum.",
+   "head": "De S. Lamberto Episc. et Mart.",
+   "from": "0917",
+   "line": 61957,
+   "match": "S0203.or",
+   "ratio": 0.966
+  },
+  "se": {
+   "t": "Haec hostia, quaesumus Domine, emundet nostra delicta : et ad sacrificium celebrandum, subditorum tibi corpora mentesque sanctificet. Per Dominum.",
+   "head": "De S. Lamberto",
+   "from": "0917",
+   "line": 61957,
+   "match": "Epi3.se",
+   "ratio": 0.946
+  },
+  "pc": {
+   "t": "REFECTI participatione muneris sacri, quaesumus Domine Deus noster : ut cujus exsequimur cultum; intercedente beato Lamberto Martyre tuo atque Pontifice, sentiamus effectum : Per Dominum.",
+   "head": "De S. Lamberto",
+   "from": "0917",
+   "line": 61957,
+   "match": "S1229.pc",
+   "ratio": 0.962
+  }
+ }
+}

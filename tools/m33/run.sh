@@ -24,6 +24,16 @@ F='$R/tools/m33/fixes.json'          # hand corrections: {"MassKey": [ full list
 if os.path.exists(F):
     fx=json.load(open(F)); out.update(fx); print(len(fx),'hand fixes applied from tools/m33/fixes.json')
 for k in json.load(open('$R/tools/m33/absent.json')): out.pop(k, None)   # not in the 1933 Missal: no readings
+F2='$R/tools/m33/fixes_m39.json'     # Masses added from the Missale O.P. 1939 (tools/m39/new/add_masses.py): kept as built there
+if os.path.exists(F2): fx2=json.load(open(F2)); out.update(fx2); print(len(fx2),'Masses from tools/m33/fixes_m39.json')
+TXTEN=[('Lord shall be known to his servants, and he shall be angry with his enemies.','Lord shall be known to his servants.')]   # English running past where the Missal's Latin stops
+TXT=[('Locútus est Domi; ad Achaz','Locútus est Dóminus ad Achaz'),('Dixit Jesus discípulis suis Vos estis sal','Dixit Jesus discípulis suis: Vos estis sal')]   # OCR slips seen when the readings were set to the tones
+for rs in out.values():
+    for r in rs:
+        for x,y in TXT:
+            if x in r.get('la',''): r['la']=r['la'].replace(x,y)
+        for x,y in TXTEN:
+            if x in r.get('en',''): r['en']=r['en'].replace(x,y)
 open('$R/data/readings33.js','w').write('/* Epistles and Gospels as printed in the Missale O.P. (1933), read from the scan (tools/m33). p33 = pdf page. */\nvar READINGS33 = '+json.dumps(out,ensure_ascii=False,separators=(',',':'))+';\n')
 print(len(out),'masses -> data/readings33.js')
 PY

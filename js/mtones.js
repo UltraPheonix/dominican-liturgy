@@ -49,12 +49,13 @@
     return out(s, n);
   }
   var TERM = 'per(h) óm(i)ni(h)a(h) sǽ(h)cu(g)la(g) sæ(g)cu(h)ló(hg)rum.(g)';
-  function oration(text) {
+  function oration(text, o) {
     var t = plain(text);
     var body = t, concl = '';
     var cm = /\s((?:Per (?:eúndem |eumdem )?Dóminum|Per Christum|Qui (?:tecum|vivis|cum Patre|vivit|venturus))\b.*)$/.exec(t);
     if (cm) { body = t.slice(0, cm.index).trim(); concl = cm[1]; }
-    var g = '(f3) O(h)ré(gh)mus.(h) (::) ';
+    // Orémus: Harrison p. 67 (sung apart, after Dóminus vobíscum, when o.noOremus)
+    var g = o && o.noOremus ? '(f3) ' : '(f3) O(h)ré(gh)mus.(h) (::) ';
     // the body: the Mediation immediately before the Conclusion, an Inflexion before it, a Mediation before that ...
     var ms = pieces(body, ':;?');
     if (ms.length > 1 && ms[ms.length - 1].t.length < 12) { ms[ms.length - 2].t += ' ' + ms[ms.length - 1].t; ms.pop(); }
@@ -169,6 +170,14 @@
     if (m) return '(f3) ' + mediationL(m[1] + ':') + ' (;) ' + termEp(m[2]) + ' (::)';
     return '(f3) ' + termEp(t) + ' (::)';
   }
-  root.OPMassTones = {oration: oration, reading: reading, epistleTitle: epistleTitle,
+  // the announcement of the Gospel: Graduale O.P. (1950), Modus respondendi in Missa, p. 147* ("Ad Evangelium",
+  // printed with Lucam: Lu(g)cam(g)); the other names take the same cadence, MI from their accent
+  var EVN = {Matthæus: 'Mat(h)thǽ(g)um.(g)', Marcus: 'Mar(g)cum.(g)', Lucas: 'Lu(g)cam.(g)', Joannes: 'Io(h)án(g)nem.(g)', Ioannes: 'Io(h)án(g)nem.(g)'};
+  function sequentia(book) {
+    var n = EVN[book]; if (!n) return null;
+    return '(f3) Se(h)quén(h)ti(h)a(h) san(h)cti(f) E(h)van(g)gé(g)li(g)i(h) (;) se(h)cún(h)dum(h) ' + n + ' (::) ' +
+      '<sp>R/</sp>. Gló(h)ri(h)a(h) ti(h)bi(h) Dó(g)mi(g)ne.(g) (::)';
+  }
+  root.OPMassTones = {oration: oration, sequentia: sequentia, reading: reading, epistleTitle: epistleTitle,
     _: {mediationL: mediationL, termEp: termEp, termEv: termEv, question: question, conclusion: conclusion, inflexion: inflexion, mediationPr: mediationPr}};
 })();

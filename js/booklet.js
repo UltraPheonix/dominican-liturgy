@@ -277,12 +277,12 @@
       }
       if (it.t === 'ord') {
         var oid = ORD[it.k]; if (!oid) return;
-        var h = heading(ORD_LA[it.k], ordSub(oid)); h.toc = tocEntry(ordName(oid), h);
+        var h = heading(it.k === 'it' && R.dismiss === 'ben' ? 'Benedicamus Domino' : ORD_LA[it.k], ordSub(oid)); h.toc = tocEntry(ordName(oid), h);
         if (it.k === 'gl') rubric('The celebrant intones Glória in excélsis Deo, the choir continues at Et in terra pax.');
         if (it.k === 'cr') { art('init_prophet', {size: 'small'}); rubric('The celebrant intones Credo in unum Deum, the choir continues at Patrem omnipoténtem.'); }
         if (it.k === 'sa') art('sano_virgin_arch');
-        if (it.k === 'it') rubric(/Benedicamus/.test(ordName(oid)) ? 'The deacon sings Benedicámus Dómino, the choir answers Deo grátias.' : 'The deacon sings Ite, missa est, the choir answers Deo grátias.');
-        chant(oid, {part: null, noDrop: it.k === 'it' || it.k === 'gl' || it.k === 'cr' ? false : false});
+        if (it.k === 'it') rubric(R.dismiss === 'ben' ? 'The deacon sings Benedicámus Dómino, the choir answers Deo grátias.' : R.dismiss === 'req' ? 'The deacon sings Requiéscant in pace, the choir answers Amen.' : 'The deacon sings Ite, missa est, the choir answers Deo grátias.');
+        chant(oid, {part: null, noDrop: false, fix: it.k === 'it' && A.dismissGabc ? function (b) { return A.dismissGabc(b, R.dismiss === 'ben'); } : null});
         return;
       }
       if (it.t === 'ordo' && it.k === 'collect') {
@@ -302,7 +302,7 @@
         return;
       }
       if (it.t === 'pref') {
-        var solemn = R.gloria && !R.requiem;
+        var pn = A.prefaceOf(S.key, S.date), pcc = pn && A.prefaceChant(pn, S.key, S.date), solemn = pcc ? pcc.tone === 'solemn' : A.solemnDay(S.key, S.date);
         heading('Ad Præfationem', (solemn ? 'In tono solemni' : 'In tono feriali') + ' · p. 147*');
         chant(A.findKyriale(solemn ? 'Ad Praefationem in tono solemni' : 'Ad Praefationem in tono feriali'), {noDrop: true});
         return;
@@ -316,13 +316,13 @@
     creditsUnit();
   }
   // ================================================================== ORDO helpers (priest, congregation)
-  var MODE = function () { return {low: 'l', sung: 's', solemn: 'm'}[S.ordo] || 'm'; };
+  var MODE = function () { return {low: 'l', sung: 's', solemn: 'm', conv: 'c'}[S.ordo] || 'm'; };
   function ordoLines(k) {
     var O = window.ORDO, sec, lines;
     if (k === 'dismiss') { lines = O.dismiss[R.requiem ? 'req' : R.dismiss === 'ite' ? 'ite' : 'ben']; sec = {la: 'Dimissio', en: 'Dismissal'}; }
     else { sec = O[k]; if (!sec) return null; lines = sec.lines; }
     var md = MODE();
-    lines = (lines || []).filter(function (l) { return !l.m || l.m.indexOf(md) >= 0; });
+    lines = (lines || []).filter(function (l) { return (!l.m || l.m.indexOf(md) >= 0) && (!l['if'] || l['if'] === 'full' || l['if'] === '!prel' || l['if'] === '!sac'); });
     return {la: sec.la, en: sec.en, lines: lines};
   }
   var WHO = {P: 'S.', S: 'M.', D: 'D.', C: ''};
@@ -339,9 +339,19 @@
     var ordoSec = function (k, title) {
       var s = ordoLines(k); if (!s) return;
       if (title !== false) heading(title || s.la, null);
+      // sung: Graduale O.P. (1950) pp. 146*-147* (Ad Orationes I, Ad Evangelium); Orémus after Harrison (1920) p. 67
+      var sing = sung && /^(offerDial|post|postEnd|gospel)$/.test(k), skip = -1;
       s.lines.forEach(function (l, i) {
+        if (i === skip) return;
         if (l.r) { rubric(l.r, {left: true}); return; }
         if (l.read) return;
+        var nx = s.lines[i + 1] && s.lines[i + 1].la || '';
+        if (sing && /^Dóminus vobíscum\.$/.test(l.la) && /^Et cum spíritu tuo\.$/.test(nx)) { chant(A.findKyriale('Ad Orationes I'), {noDrop: true, glyph: 1 / 19, size: 14}); skip = i + 1; return; }
+        if (sing && /^Orémus\.$/.test(l.la)) { chant('op-h-oremus', {noDrop: true, glyph: 1 / 19, size: 14}); return; }
+        if (sing && /^Sequéntia sancti Evangélii/.test(l.la) && /^Glória tibi/.test(nx) && window.OPMassTones) {
+          var bk = ((S._gos || {}).ref || '').split(' ')[0], sg = OPMassTones.sequentia(bk);
+          if (sg) { gabcInline(sg, {size: 14, glyph: 1 / 19}); skip = i + 1; return; }
+        }
         var ev = EVANGELIST();
         para(ev ? l.la.replace(/secúndum N\./, 'secúndum ' + ev + '.') : l.la, {mark: mk(l), cls: 'pr'});
       });
@@ -353,7 +363,7 @@
         if (it.k === 'pater' && sung) {
           heading('Pater noster', null);
           // Missale O.P. 1939, Appendix: the ferial chant in feasts of three lessons, on ferias and in Masses for the Dead
-          var pc = A.isTemporal(S.key) ? A.temporalClass(S.key, S.date) : A.feastClass(S.key), ptSol = !R.requiem && pc <= 3;
+          var ptSol = A.solemnDay(S.key, S.date);
           rubric('The priest sings (' + (ptSol ? 'solemn' : 'ferial') + ' chant):', {left: true});
           chant(ptSol ? 'op-m39-pater-solemn' : 'op-m39-pater-ferial', {noDrop: true, glyph: 1 / 19, size: 14});
           var s = ordoLines('pater');
@@ -373,7 +383,7 @@
           heading('Oratio', null);
           var s2 = ordoLines('collect');
           s2.lines.forEach(function (l) { if (l.r) rubric(l.r, {left: true}); });
-          if (sung) chant(A.findKyriale('Ad Orationes I'), {noDrop: true, glyph: 1 / 19, size: 14});
+          if (sung) { chant(A.findKyriale('Ad Orationes I'), {noDrop: true, glyph: 1 / 19, size: 14}); chant('op-h-oremus', {noDrop: true, glyph: 1 / 19, size: 14}); }
           else para('Dóminus vobíscum. ℟. Et cum spíritu tuo. Orémus.', {cls: 'pr'});
           return;
         }
@@ -382,11 +392,25 @@
         ordoSec(it.k);
         return;
       }
+      if (it.t === 'oratio' && it.extra) {
+        // a 2nd or 3rd prayer (commemoration or Oratio ad diversa): Orémus before the second, the conclusion on the last
+        var mx = A.moreText(it, sung);
+        rubric(mx.label, {left: true});
+        var ogx = null;
+        try { ogx = sung && it.k !== 'se' && window.OPMassTones ? OPMassTones.oration(J(mx.la), {noOremus: it.extra !== 2}) : null; } catch (e) { console.warn('tone', e); }
+        if (ogx) { gabcInline(ogx, {size: 14, glyph: 1 / 19}); return; }
+        if (it.extra === 2) para('Orémus.', {cls: 'pr'});
+        para(mx.la, {cls: 'pr'}); if (it.last) para('℟. Amen.', {cls: 'pr'}); return;
+      }
       if (it.t === 'oratio') {
-        if (it.k === 'sp') { heading('Oratio super populum', null); para('Orémus. ℣. Humiliáte cápita vestra Deo.', {cls: 'pr'}); }
+        if (it.k === 'or' && A.flectamusDay(S.key, S.date)) {
+          rubric('Quotidie in Quadragesima: after Orémus the deacon, kneeling, sings Flectámus génua, and rising, Leváte.', {left: true});
+          if (sung) chant('op-m39-flectamus', {noDrop: true, glyph: 1 / 19, size: 14}); else para('Orémus. ℣. Flectámus génua. ℟. Leváte.', {cls: 'pr'});
+        }
+        if (it.k === 'sp') { heading('Oratio super populum', null); if (sung) chant('op-h-oremus', {noDrop: true, glyph: 1 / 19, size: 14}); else para('Orémus.', {cls: 'pr'}); rubric('The deacon sings:', {left: true}); if (sung) chant('op-m39-humiliate', {noDrop: true, glyph: 1 / 19, size: 14}); else para('℣. Humiliáte cápita vestra Deo.', {cls: 'pr'}); }
         // sung in the solemn tone of the prayers (Harrison 1920); said at a Low Mass
         var og = null;
-        try { og = sung && window.OPMassTones ? OPMassTones.oration(J(it.x[0])) : null; } catch (e) { console.warn('tone', e); }
+        try { og = sung && window.OPMassTones ? OPMassTones.oration(J(it.x[0]), {noOremus: true}) : null; } catch (e) { console.warn('tone', e); }
         if (og) { gabcInline(og, {size: 14, glyph: 1 / 19}); return; }
         para(it.x[0], {cls: 'pr'}); para('℟. Amen.', {cls: 'pr'}); return;
       }
@@ -412,9 +436,9 @@
           return;
         }
         if (it.k === 'it') {
-          heading(ordName(oid).replace(/\s+[IVX]+.*$/, ''), null);
+          heading(R.dismiss === 'ben' ? 'Benedicamus Domino' : ordName(oid).replace(/\s+[IVX]+.*$/, ''), null);
           rubric('The deacon sings (at a Sung Mass the priest):', {left: true});
-          chant(oid, {noDrop: true, glyph: 1 / 19, size: 14});
+          chant(oid, {noDrop: true, glyph: 1 / 19, size: 14, fix: function (b) { return A.dismissGabc ? A.dismissGabc(b, R.dismiss === 'ben') : b; }});
         }
         return;
       }
@@ -473,7 +497,7 @@
   }
   function preface() {
     var name = A.prefaceOf(S.key, S.date); if (!name) return;
-    var P = A.prefaceText(name, S.key, S.date), solemn = R.gloria && !R.requiem;
+    var P = A.prefaceText(name, S.key, S.date), PC0 = A.prefaceChant(name, S.key, S.date), solemn = PC0 ? PC0.tone === 'solemn' : A.solemnDay(S.key, S.date);
     heading('Præfatio', P.name);
     if (BOOK === 'priest') {
       var PC = A.prefaceChant(name, S.key, S.date);
@@ -561,8 +585,15 @@
         pairLines(k);
         return;
       }
+      if (it.t === 'oratio' && it.extra) {
+        var my = A.moreText(it, false);
+        if (it.extra === 2) pair('Orémus.', 'Let us pray.');
+        pair(my.la, my.en); if (it.last) pair('℟. Amen.', '℟. Amen.');
+        return;
+      }
       if (it.t === 'oratio') {
         if (it.k === 'se') { heading('Secret · Secreta', null); }
+        if (it.k === 'or' && A.flectamusDay(S.key, S.date)) { posture('All kneel at Flectámus génua, and rise at Leváte'); pair('Orémus. ℣. Flectámus génua. ℟. Leváte.', 'Let us pray. ℣. Let us kneel. ℟. Arise.'); }
         if (it.k === 'sp') { heading('Prayer over the People · Oratio super populum', null); posture('All bow'); pair('Orémus. ℣. Humiliáte cápita vestra Deo.', 'Let us pray. ℣. Bow down your heads before God.'); }
         pair(it.x[0], it.x[1]); pair('℟. Amen.', '℟. Amen.');
         return;
@@ -581,7 +612,11 @@
       }
       if (it.t === 'ord') {
         var low = ordoLines(it.k + 'Low');
-        if (it.k === 'it') return;
+        if (it.k === 'it') {
+          var dw = window.ORDINARY && ORDINARY[R.requiem ? 'req' : R.dismiss === 'ben' ? 'ben' : ORD.it && /Ite IV/.test(ordName(ORD.it)) ? 'itePasch' : 'ite'];
+          if (dw) { heading(dw.la_name, null); pair(dw.la, dw.en); }
+          return;
+        }
         if (!low) return;
         var name = {ky: 'Kyrie', gl: 'Gloria', cr: 'Credo', sa: 'Sanctus', ag: 'Agnus Dei'}[it.k];
         heading(name, null);
@@ -629,9 +664,10 @@
   }
   function creditsUnit() {
     var t = [
-      ['Texts', 'Order of Mass and rubrics after the Missale juxta ritum Sacri Ordinis Prædicatorum (Rome, 1939); proper texts from the Graduale O.P. (1950) and the St Dominic Missal; Epistle and Gospel from the Vulgate, in English from the Douay-Rheims Bible. Other English translations are the editor’s.'],
+      ['Texts', 'Order of Mass and rubrics after the Missale juxta ritum Sacri Ordinis Prædicatorum (Rome, 1939); proper texts from the Graduale O.P. (1950) and the St Dominic Missal; Epistle and Gospel from the Vulgate, in English from the Douay-Rheims Bible. The English of the chants is the Douay-Rheims where the chant is Scripture; other English translations are AI translations, not yet checked by a human translator.'],
       ['Chant', 'Graduale juxta ritum Sacri Ordinis Prædicatorum (Rome, 1950), GABC from GregoBase; the priest’s chants (Preface, Pater noster, Pax) transcribed from the Missale O.P., Appendix. Engraved with Exsurge.'],
       ['Art', 'All images public-domain works from the open-access collection of The Art Institute of Chicago (CC0): Neri da Rimini, antiphonary leaves with St Dominic and the angel in initials (c. 1300); G. B. Tiepolo, Virgin and Child with SS Dominic and Hyacinth; Lo Spagna, St Catherine of Siena; A. Vivarini, St Peter Martyr; Sano di Pietro, Virgin and Child with saints and angels; A. Dürer, The Last Supper; M. Raimondi, St Paul preaching; J. de Gheyn II, St Matthew; P. Farinati, St John; Giovanni di Paolo’s circle, Crucifixion; a French prayer-book leaf (c. 1500) for the Canon border.'],
+      ['Please note', 'This is to be used for private devotion and as a useful resource, not as an authoritative liturgical text. Please consult actual liturgical texts if celebrating the Dominican rite. A private project, not affiliated with the Order of Preachers. Liturgical books of the Order: Dominican Liturgy Publications (lulu.com/spotlight/athompsonatdsptdotcom).'],
       ['Edition', 'Set in EB Garamond. Colours of Providence College: Providence Black and Providence Gold. Generated by dominicanrite.com for ' + dateLine(S.date) + '.']];
     U(el('div', {class: 'b-credits'}, [el('div', {class: 'b-title', text: 'Credits & Sources'}), el('div', {class: 'cr-rule'})].concat(t.map(function (x) { return el('p', null, [el('b', {text: x[0] + '. '}), x[1]]); }))), {brk: 'bottom'});
   }

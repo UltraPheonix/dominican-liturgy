@@ -1,0 +1,17 @@
+[
+ {"key":"S0103b","d":"0103","kal":"Zedislavæ","title":"3 Ian. — B. Zedislavæ Berkianæ, O.P. Matronæ","name_en":"Bl. Zedislava Berka","common":"C51s","rank":"","op":true,"color":"white","sec":"beati"},
+ {"key":"S0217b","d":"0217","kal":"Reginaldi","title":"17 Feb. — B. Reginaldi Aurelianensis, O.P. C.","name_en":"Bl. Reginald of Orléans","common":"C42s","rank":"","op":true,"color":"white","sec":"beati"},
+ {"key":"S0228b","d":"0228","kal":"Villanæ","title":"28 Feb. — B. Villanæ de Bottis, O.P. Matronæ","name_en":"Bl. Villana de' Botti","common":"C51s","rank":"","op":true,"color":"white","sec":"beati"},
+ {"key":"S0304","d":"0304","kal":"Casimiri","title":"4 Mart. — S. Casimiri, C.","name_en":"St. Casimir","common":"C42s","rank":"III","op":false,"color":"white","sec":"sanctorum"},
+ {"key":"S0317","d":"0317","kal":"Patricii","title":"17 Mart. — S. Patricii, E. C.","name_en":"St. Patrick","common":"C32s","rank":"III","op":false,"color":"white","sec":"sanctorum"},
+ {"key":"S0320b","d":"0320","kal":"Sansedonii","title":"20 Mart. — B. Ambrosii Sansedonii, O.P. C.","name_en":"Bl. Ambrose Sansedoni","common":"C42s","rank":"","op":true,"color":"white","sec":"beati"},
+ {"key":"S0610b","d":"0610","kal":"Joannis Dominici","title":"10 Iun. — B. Ioannis Dominici, O.P. E. C.","name_en":"Bl. John Dominici","common":"C32s","rank":"","op":true,"color":"white","sec":"beati"},
+ {"key":"S0622b","d":"0622","kal":"Innocentii V","title":"22 Iun. — B. Innocentii V, O.P. P. C.","name_en":"Bl. Innocent V","common":"C32s","rank":"","op":true,"color":"white","sec":"beati"},
+ {"key":"S0703_2","d":"0703","kal":"Leonis II","title":"3 Iul. — S. Leonis II, P. C.","name_en":"St. Leo II","common":"C30s","gospel":["C32s","Matthæus 25: 14-23"],"rank":"III","op":false,"color":"white","sec":"sanctorum"},
+ {"key":"S0707b","d":"0707","kal":"Benedicti XI","title":"7 Iul. — B. Benedicti XI, O.P. P. C.","name_en":"Bl. Benedict XI","common":"C32s","rank":"","op":true,"color":"white","sec":"beati"},
+ {"key":"S0713b","d":"0713","kal":"Voragine","title":"13 Iul. — B. Iacobi a Voragine, O.P. E. C.","name_en":"Bl. James of Voragine","common":"C32s","rank":"","op":true,"color":"white","sec":"beati"},
+ {"key":"S0717b","d":"0717","kal":"Ceslai","title":"17 Iul. — B. Ceslai, O.P. C.","name_en":"Bl. Ceslaus","common":"C42s","gospel":["S0731","Lucas 10: 1-9"],"rank":"","op":true,"color":"white","sec":"beati"},
+ {"key":"S0730b","d":"0730","kal":"Mannis","title":"30 Iul. — B. Mannis, O.P. C.","name_en":"Bl. Mannes","common":"C42s","rank":"","op":true,"color":"white","sec":"beati"},
+ {"key":"S0808b","d":"0808","kal":"Joannæ de Aza","title":"8 Aug. — B. Ioannæ de Aza, Matris S. P. N. Dominici","name_en":"Bl. Joan of Aza","common":"C51s","rank":"","op":true,"color":"white","sec":"beati"},
+ {"key":"S0906b_2","d":"0906","kal":"Bertrandi","title":"6 Sept. — B. Bertrandi a Garriga, O.P. C.","name_en":"Bl. Bertrand of Garrigue","common":"C42s","rank":"","op":true,"color":"white","sec":"beati"}
+]

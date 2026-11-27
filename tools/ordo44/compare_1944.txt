@@ -1,0 +1,118 @@
+117 days differ
+1944-01-03 M | Ordo: B. Zedislavae Matr. O. N. Se-| Alb.  | site: Jan1 Octava Nativitatis (Circumcisione Domini
+1944-01-04 T | Ordo: Dies oct. SS. Innocentium Mm. 8 Lect. — Ps. fer.—Invit. (Ps. Venite. ab uno | site: Jan1 Octava Nativitatis (Circumcisione Domini
+1944-01-07 F | Ordo: De oct. 1-o0—0Omnia ut in Brev. per oct. Epiph. super 9 Ps. antiph. Afferíe | site: Epi Epiphania
+1944-01-08 S | Ordo: De oct. 2-o — Super Ps. ant. Flu- minis; V., Bened. et RR. ex 3-o Noct. — m | site: C79s Missa votiva de B. Maria Virgine (Salve 
+1944-01-10 M | Ordo: De oct. 5-o—Super Ps. ant. Psa/- | 4b. - lite.; V., Bened. et RH. ex 1-o No | site: Epi1 I post Epiphaniam (Sanctæ Familiæ)
+1944-01-12 W | Ordo: De oct. 5-o — Super Ps. antiph. | 42b. Reges Tharsis.; V., Benedict. et RR. | site: Epi1 I post Epiphaniam (Sanctæ Familiæ)
+1944-01-13 T | Ordo: Dies oct. Epiphaniae. So/em-| Alb. niss. — Ps. fest; Omnia ut in Brev. —  | site: S0113 13 Ian. — Commemoratio Baptismatis D. N.
+1944-01-19 W | Ordo: B. Andreae a Pisc. C. O. N. Semid. — Ps. fer. — In Prima Preces.  | site: Epi2 II post Epiphaniam
+1944-01-24 M | Ordo: B. Marcolini C.O.N. Semid. — Ps. fer. — Homil. Dom. praec. cum RR. 3-i Noct | site: Epi3 III post Epiphaniam
+1944-01-26 W | Ordo: B. Margaritae ab Hung. V. O. N. Semid.—Ps. fer.—m. S. Polycarpi. — In Prima | site: Epi3 III post Epiphaniam
+1944-02-02 W | Ordo: Puriticatio B. M. V. Tot. Dupl. 2. cl.— Offic. festiv. — In Prima V. Qui na | site: S0202 2 Feb. — Purificatio B. Mariæ Virg.
+1944-02-11 F | Ordo: S. Andreae Cors. E. C. Dupl.—  | site: S0211 11 Feb. — Apparitio B. Mariæ Virg. Immac
+1944-02-12 S | Ordo: S. Agathae V.M. Dupl.—Matut. propr. cum Ps. et VV. de Comm. — Ad Laud. Ps.  | site: S0212 12 Feb. — Ss. Septem Fundatorum O.S.M.
+1944-02-14 M | Ordo: S. Romualdi Abb. Du^/. — Ps. | Alb. fer. — Lect. 1-i Noct. de Script. curr. | site: S0214 14 Feb. — B. Iordani Saxonis, O.P., C.
+1944-02-16 W | Ordo: S. Cyrilli Alex. E. C. et E. D. 4//. Dupl. — Ps. fer.  | site: 6a Sexagesima
+1944-02-17 T | Ordo: S. Scholasticae V. D:/.—Ps. fer. | Alb.  | site: 6a Sexagesima
+1944-02-18 F | Ordo: Apparitio B.M.V. Immacula- | A4/b.. tae. Toż. Dupl. -— Offic. festiv. — In  | site: 6a Sexagesima
+1944-02-19 S | Ordo: SS. Septem Fundat. Ord. Serv. | A/p. B. M. V. CC. Dupi. — Ps. fer. — Oft. u | site: 6a Sexagesima
+1944-02-21 M | Ordo: S. Catharinae de Ricc. V.O.N. | Alb.  | site: 5a Quinquagesima
+1944-02-23 W | Ordo: B. Bernardi Scamm. C. O. N. Semid. — Ps. fer. — In Prima Preces.  | site: 5aw Feria IV Cinerum
+1944-02-24 T | Ordo: Translat. S. Catharinae Sen. V.O.N. Tot. Dupli. — Matut. propr. cum Ps. et  | site: S0224 24 Feb. — Matthiæ Apostoli
+1944-02-27 S | Ordo: praec. — Omitt. Te Deum, nec| repet. ult. R. — Ad Laud. Ps. 2-0 loco;| ad B | site: Quad1 Dominica I in Quadragesima
+1944-02-29 T | Ordo: Cathedra Antioch, S. Petri Ap. | 42b. Tot. Dupl. — Offic. festiv. In Missa  | site: Quad1t Feria III post Dominicam I Quadragesimæ
+1944-03-03 F | Ordo: S. Matthiae Ap. Toż. Dufl. 2 cl.  | site: Quad1f Feria Sexta IV Temporum in Quadragesima
+1944-03-04 S | Ordo: B. Constantii C. O. N. Senid.— Ps. fer.—Lect. 1-i Noct. et RR. de Comm.; 83 | site: Quad1s Sabbato IV Temporum in Quadragesima
+1944-03-05 S | Ordo: praec —Omitt. Te Deum. et repet. IX. R.—m. fer. et B.V. (Ant. Ave stella.,  | site: Quad2 Dominica II in Quadragesima
+1944-03-07 T | Ordo: B. Villanae de Bott. Matro- | Alb. nae O. N. Semid. — Ps. fer. — Lect. l-i  | site: S0307 7 Mart. — S. THOMÆ AQUINATIS O.P. C. D.
+1944-03-09 T | Ordo: B. Henrici Sus. C.O.N. Semid.| Alb: — Ps. fer. — Lect. 1-i Noct. propr. cum | site: Quad2h Feria V post Dominicam II Quadragesimæ
+1944-03-17 F | Ordo: S. Patricii E. C. Dupli. — Ps. fer.—Hom. fer. cum RR. 2-i Noct. Dom. praec. | site: Quad3f Feria VI post Dominicam III Quadragesimæ
+1944-03-18 S | Ordo: S. Cyrilli Ep. Hierosol. C. et E.D. Dupl. — Ps. fer. — Hom. propr. eum RR.  | site: Quad3s Sabbato post Dominicam III Quadragesimæ
+1944-03-24 F | Ordo: Compassio B.M.V. Tot. Dupi. — Offic. festiv. — m. fer. — In Prima R. Jesu C | site: Quad4f Feria VI post Dominicam IV Quadragesimæ
+1944-03-25 S | Ordo: Impress. Stigm. S. Catharinae Sen. V. O. N. Dupl. — Matut. propr. cum Ps. e | site: S0325 25 Mart. — ANNUNTIATIO B. MARIÆ VIRG.
+1944-04-11 T | Ordo: De Octava.  | site: Pasc0t Feria III in Oct Paschæ
+1944-04-12 W | Ordo: De oct. — Offic. festiv. propr. In Missa Credo (Omitt. Collectae).  | site: Pasc0w Feria IV in Oct Paschæ
+1944-04-13 T | Ordo: De oct. — Offic. festiv. propr.— m. B. Margaritae. e  | site: Pasc0h Feria V in Oct Paschæ
+1944-04-14 F | Ordo: De oct. — Offic. festiv. propr.— | Alb. m. B. Petri. In Missa m. B. Petri,  | site: Pasc0f Feria VI in Oct Paschæ
+1944-04-15 S | Ordo: De oct. — Offic. festiv. propr. — | Alb. Ad Horas die. llel. ante V. Haec d | site: Pasc0s Sabbato in Oct Paschæ
+1944-04-22 S | Ordo: B. Bartholomaei D CREER  | site: C79s Missa votiva de B. Maria Virgine (Salve 
+1944-04-26 W | Ordo: Solemnitas S. Joseph C. Sp. Alb. B.M.V. Tot. Dupl 1. cl. cum oct. solemni.| | site: Pasc2 II post Pascha
+1944-04-27 T | Ordo: B. Hos*ánnae de Catharo V.O N. |. Semid. — Ps. fer. — In Mat. 3 Ps. et V.:e | site: Pasc2 II post Pascha
+1944-04-28 F | Ordo: B. Ludovici Mariae Grignion C. O. N. Dupi. (23 Maji) — Ps. fer. — In Matut. | site: S0428 28 Apr. — S. Pauli a Cruce, C.
+1944-05-03 W | Ordo: B. Mariae Virg. R. P. Toż. | Dupi. 2 cl. (ARCHID. LEOPOL. et DIOEC.  | site: S0503 3 Maii — Inventio S. Crucis
+1944-05-04 T | Ordo: Inventio S. Crucis. Toż. Dupi. 2 cl. (ex heri assign.). — Offic. festiv. —  | site: S0504 4 Maii — S. Monicæ, Vid.
+1944-05-05 F | Ordo: S. Pii Quinti P. C. O. N. Tot Dupl. 2. cl. — Offic. festiv. — In Matut. Ps. | site: S0505 5 Maii — S. Pii V, O.P., P. C.
+1944-05-07 S | Ordo: APUD SOR. lll. ORD. — In Laud. et Missa m. S. Cath. — In  | site: Pasc4 IV post Pascha
+1944-05-08 M | Ordo: S. Stanislai E.M. Patr. princ.| Rob. PoL Tot Dupli- 1. ch Offic. festiv. i  | site: S0508 8 Maii — B. Mariæ Virg. omnium gratiarum
+1944-05-11 T | Ordo: B. Alberti a Berg. C. O. N. Alb.  | site: S0511 11 Maii — S. Philippi et Iacobi Apostolo
+1944-05-12 F | Ordo: B. Joannae Lusit. V. O; N. Semid. — Ps. fer. — In Matut; 3 Ps. et V. ex I N | site: Pasc4 IV post Pascha
+1944-05-16 T | Ordo: Rogat. (J.C.) S. Andreae Bobola M. P. P. Tot. Dupl. 2. cl. — Otfic. fest. — | site: S0516 16 Maii — S. Ioannis Nepomuceni, M.
+1944-05-20 S | Ordo: B. Columbae V. O.N. Semid. — | Alb. Ps. fer.—In Matut. 3 Ps. et V. ex II  | site: C79s Missa votiva de B. Maria Virgine (Salve 
+1944-05-23 T | Ordo: De oct. — Offic. festiv. propr. — Omnia ut in Brev. pro oct. notata. — In P | site: Pasc6 in Oct Ascensione Domini
+1944-05-25 T | Ordo: Dies oct. Ascensionis. So/emis- | Alb. sima. — Ps. festivi. — Omnia ut in d | site: S0525 25 Maii — S. Urbani I, P. M.
+1944-05-31 W | Ordo: (Q. T.—J. E. cum abst.) De oc- tava.—Ps. festivi.—In Mat. ant. Emitte. — m. | site: Pent0w Feria Quarta IV Temp. Pentecostes
+1944-06-02 F | Ordo: (Q. T. — J. E. eum abst.) De oc- | Rb. tava. — Ps. festivi. — In Mat. ant.  | site: Pent0f Feria Sexta IV Temp. Pentecostes
+1944-06-05 M | Ordo: B. Jacobi Salomonii C. O. N. Semid. — Ps. fer. — Lect. I Noct. de Script. c | site: Pent1 Sanctissimæ Trinitatis
+1944-06-09 F | Ordo: De oct. 1-o. — Offic. oct., Ps. festivi. — In Matut. (Ps. Venite. a duo- bu | site: Pent1 Sanctissimæ Trinitatis
+1944-06-13 T | Ordo: De oct. 4-o.—Omnia ut fer. 6-a.' 4/b.  | site: S0613 13 Iun. — S. Antonii de Padua, C. D.
+1944-06-15 T | Ordo: Dies oct. SS. Corporis Christi. | 4//.  | site: S0615 15 Iun. — Ss. Viti, Modesti et Crescenti
+1944-06-18 S | Ordo: ) eum ant. et concl. hymni propr.  | site: Pent3 Dominica in Octavam Sme Cordis Jesu
+1944-06-20 T | Ordo: B. Hosannae V. O. N. Semid.| 41b. tt] — Ps. fer. — Lect. I Noct. de Script. | site: Pent3 Dominica in Octavam Sme Cordis Jesu
+1944-06-21 W | Ordo: De oct. 2-o. — Omnia ut Fer. 2. ' 42b. — In Matut. super Ps. ant. Speravit| | site: Pent3 Dominica in Octavam Sme Cordis Jesu
+1944-06-22 T | Ordo: B. Innocentii V.P. C. O. N. Dupl. — Ps. fer. — Lect. I Noct. de Script. cur | site: Pent3 Dominica in Octavam Sme Cordis Jesu
+1944-06-23 F | Ordo: Vig. (J. C.) Dies oct. SS. Cor- dis Jesu. So/lemnissima.—Ps. festivi.— Omni | site: G494 23 Iun. — Vigilia S. Ioannis Baptistae
+1944-06-27 T | Ordo: De oct. S. Joannis Bapt.- Ps. fer. — In Mat. Invit. et Hymn. ut in festo (P | site: Pent4 4 post Pentecosten
+1944-06-28 W | Ordo: Vizi (J.-C) S. Irenaei E. M. Dupi. — Ps. fer. — m. S. Joan. Bapt.  | site: G502_3 28 Iun. — Vigilia Ss. Petri et Pauli
+1944-07-02 S | Ordo: lII. P. O. T. Visitatio B. M. V.!41b. Tot. Dupl. 2. cl. — Offic. festiv. m. | site: Pent5 5 post Pentecosten
+1944-07-03 M | Ordo: S. Leonis II Papae C. Simpl. | Alb. (Suppl) — Ps. fer. — m. SS. Apost.—  | site: S0703 3 Iul. — S. Irenæi, E. M.
+1944-07-04 T | Ordo: De oct. SS. Petri et Pauli. —  | site: Pent5 5 post Pentecosten
+1944-07-06 T | Ordo: Dies oct. SS. App. Petri et Pauli. Solemnis. — Ps. fer. — Lect. II et III N | site: Pent5 5 post Pentecosten
+1944-07-07 F | Ordo: B. Benedicti XI. P. C. O. N. | Alb. Dupl. — Ps. fer.  | site: Pent5 5 post Pentecosten
+1944-07-13 T | Ordo: B. Jacobi a Vorag. E. C. O. N. | 41b. Semid. — Ps. fer. — In Prima Preces.| | site: Pent6 6 post Pentecosten
+1944-07-20 T | Ordo: B. Ceslai C.O.N. Du. (17 Jul.) — Ps. fer. — Lect. I Noct. propr. cum RR. de | site: S0720 20 Iul. — S. Hieronymi Æmiliani, C.
+1944-07-27 T | Ordo: B. Cunegundis V. P. P. Tot.|Alb. Dupi. — Ps. fer. VF. (de festo), m. seq.  | site: S0727 27 Iul. — B. Iosephi, Melchioris E., O.P
+1944-07-28 F | Ordo: B. Antonii ab Eccl. C. O. N. Semid. — Ps. fer. — m. SS. Nazarii et Soc. Mm. | site: Pent8 8 post Pentecosten
+1944-08-03 T | Ordo: (J. C) B. Augustini Luc. E.C. f| O.N. Semid. — Ps. fer. — m. Invent.  | site: Pent9 9 post Pentecosten
+1944-08-08 T | Ordo: B. Joannae de Aza Matris | S. P. Dominici. Du. (2 Aug.) — Ps.  | site: Pent10 10 post Pentecosten
+1944-08-11 F | Ordo: Dies oct. S. P. N. Dominici. Solemnis.—Ps. fer.—(Ps. Venite. a duo- bus) —  | site: Pent10 10 post Pentecosten
+1944-08-18 F | Ordo: B. Aimonis C. O. N. Semid. (21 Febr.) — Ps. fer. — m. Assumpt. S. Hyae. (an | site: Pent11 11 post Pentecosten
+1944-08-19 S | Ordo: B. Aemiliae Bicchieri V. O. N. (18 Aug.) Semid.—Ps. fer.—m. Assumpt. et S.  | site: C79s Missa votiva de B. Maria Virgine (Salve 
+1944-08-22 T | Ordo: Dies oct. Assumpt. B. M. V.|Ai Solemnis.—Ps. fer. — Bened. ante Leet.| de B | site: S0822 22 Aug. — Immaculati Cordis B. Mariæ Vir
+1944-08-26 S | Ordo: B. Mariae Virg. Claromontanae. | Alb. -  | site: C79s Missa votiva de B. Maria Virgine (Salve 
+1944-09-04 M | Ordo: B. Catharinae a Rac. V.O.N.  | site: Pent14 14 post Pentecosten
+1944-09-06 W | Ordo: B. Bertrandi C.O.N. Semid. -— Ps. fer. — In Prima Preces.  | site: Pent14 14 post Pentecosten
+1944-09-09 S | Ordo: Oiiic. B.M.V. in Sabbato.— Ps. fer.— In Mat, Invit. (Ps. Venite. a duo- bus | site: S0909 9 Sept. — S. Gorgonii, M.
+1944-09-19 T | Ordo: B. Dalmatii Mon. C. O. N. Semid. — Ps. fer. — In Prima Preces. In Missa 2-2 | site: S0919 19 Sept. — S. Ianuarii, E., et soc., Mm.
+1944-09-20 W | Ordo: SS. Cosmae et Damiani Mm. Simpl. — Ps. fer. — In Prima Preces.  | site: EmbWedSept Feria Quarta IV Temporum Septembris
+1944-10-03 T | Ordo: B. Dominici Spadafora C.O.N. Semid. — Ps. fer. — Hom. Dom. praec. cum RR. I | site: S1003 3 Oct. — S. Teresiæ a Iesu Infante, V. D
+1944-10-07 S | Ordo: B. Matthaei C. O. N. Semid. — ) Ps. fer.—m. oct., S. Marci et SS. Sergii| * | site: S1007 7 Oct. — B. MARIÆ VIRG. A ROSARIO
+1944-10-09 M | Ordo: SS. Dionysii Ep. et Soc. Mm. | Xb. Dupi. — Ps. fer. — Lect. I Noct. propr.  | site: S1009 9 Oct. — S. Ludovici Bertrandi, O.P., C.
+1944-10-10 T | Ordo: S. Ludovici Bertr. C. O. N. | 4/». Tot. Dupi. 2. cl. — Offic. festiv.  | site: Pent19 19 post Pentecosten
+1944-10-12 T | Ordo: Gratiarum actio pro vict. Cho- cim. Toż, Dupl. — Mat. propr. — Ad Laud. Ps. | site: Pent19 19 post Pentecosten
+1944-10-13 F | Ordo: B. Magdalenae V. O.N. Semid. | Alb.  | site: Pent19 19 post Pentecosten
+1944-10-16 M | Ordo: S. Hedvigis Vid. P. P. DupL— Ps. fer. VF. (de festo), nulla mem. — Compl. f | site: Pent20 20 post Pentecosten
+1944-10-20 F | Ordo: S. Joannis Cant. C. P. P. Tot.  | site: Pent20 20 post Pentecosten
+1944-10-21 S | Ordo: B. Petri a Tit. C. O. N. Semid.— Ps. fer.—m. B.M.V. (ant. Ave stella., V.|  | site: C79s Missa votiva de B. Maria Virgine (Salve 
+1944-10-22 S | Ordo: (sine R.) seq., m. praec. — Compl. Sabb.| |.  | site: Pent21 21 post Pentecosten
+1944-10-23 M | Ordo: B. Bartholomaei de Breg. E.C. O.N. Semid. — Ps. fer. — m. Dedic. — In Prima | site: Pent21 21 post Pentecosten
+1944-10-25 W | Ordo: De oct. Dedicat. 1-o. — Ps. fer. — In Mat. Invit. et Hymn. ut in festo (Ps. | site: Pent21 21 post Pentecosten
+1944-10-26 T | Ordo: B. Damiani a Finario C.O.N. Semid. Ps. fer. — m. Dedic. — In Prima Preces.  | site: Pent21 21 post Pentecosten
+1944-10-27 F | Ordo: (Vigilia De oct. Dedic. 2-o. — Ps. fer, — In Mat. Invit. et Hymn. de  | site: Pent21 21 post Pentecosten
+1944-10-29 S | Ordo: ttm. — Compl. Dom. ; Dom. XX. P.O.T. (1-a Nov.) — Festum D.N.J. Chr. Regis. | site: ChristusRex Domini Nostri Jesu Christi Regis
+1944-10-30 M | Ordo: B. Benvenutae V.O.N. Semid. — Ps. fer. — Hom. Dom. praec. cum RR. HI Noct.  | site: Pent22 22 post Pentecosten
+1944-11-03 F | Ordo: B. Simonis Ball. C.O.N. Semid. — Ps. fer. — m. oct. — In Prima omitt. Prece | site: Pent22 22 post Pentecosten
+1944-11-07 T | Ordo: B. Petri a Ruitia M. O. N. Semid. — Ps. fer. — m. oct. — In Prima omitt. Pr | site: Pent23 23 post Pentecosten
+1944-11-08 W | Ordo: Dies oct. Omnium Sanctorum. Solemnis. — Ps. fer. — Invit. et Hymn. ut in fe | site: Pent23 23 post Pentecosten
+1944-11-10 F | Ordo: S. Gregorii Thaum. E.C. Simpl. — Ps. fer. — In Prima Preces.  | site: Pent23 23 post Pentecosten
+1944-11-11 S | Ordo: Dedicat. Basilicartum SS. Petri et Pauli App. Toż. Du/.—Off. festiv.  | site: S1111 11 Nov. — S. Martini, E. C.
+1944-11-22 W | Ordo: Vigilia S. Andreae Ap. — De ea. — (Preces et Prostr. usque ad No- nam exelu | site: S1122 22 Nov. — S. Cæciliæ, V. M.
+1944-12-01 F | Ordo: B. Joannis Vercell. C. O. N. Dupl. — Ps. fer.  | site: Pent24 
+1944-12-10 S | Ordo: ).  | site: Adv2 II Adventus
+1944-12-12 T | Ordo: De oct. 2-0. — Ps. fer. — In Mat. Invit. et Hymn. ut in festo (Ps. Venite.  | site: Adv2 II Adventus
+1944-12-14 T | Ordo: De Octava 5-o, — Ps. fer. — In Mat. Invit. et Hymn. ut in festo (Ps. Venite | site: Adv2 II Adventus
+1944-12-15 F | Ordo: Dies oct. Immac. Conceptionis. Solemnis. — Ps. fer. — Lect. I Noct. de Scri | site: Adv2 II Adventus
+1944-12-16 S | Ordo: B. Sebastiani Maggi C. O. N. Script. curr. cum RR. III. Noct. Dom.  | site: Adv2 II Adventus
+1944-12-20 W | Ordo: Q.T. (J.E. cum abst.) S. Dominici Syl. Abb. Dupl. — Ps. fer. — Lect. I Noct | site: Adv3w Feria Quarta IV Temporum in Adventu
+1944-12-24 S | Ordo: ) cum ant. el concl. hymni propr.  | site: Dec24 pridie Nativitas
+1944-12-29 F | Ordo: S. Thomae E. M. Dugl. — Ps. fer, — Lect. I Noct. de Epist. ad Roma-  | site: Dec25_3 Nativitas Domini, Missa interdiu

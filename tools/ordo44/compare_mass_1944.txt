@@ -1,0 +1,11 @@
+1944-01-24 Ordo: choir:dom | engine: single:feast ['S0124b'] B. Marcolini Conf. O. P.
+1944-03-07 Ordo: choir:feri | engine: choir:fest ['S0307', 'Quad2t'] S. Thomæ Aquinatis Conf. et Eccl. Doct. 
+1944-03-30 Ordo: choir:feri | engine: single:temporal ['Quad5h'] 
+1944-05-13 Ordo: choir:roga | engine: single:feast ['S0513b'] B. Imeldæ Virg. O. P.
+1944-05-17 Ordo: choir:vig | engine: choir:roga ['AscVig', 'S0517b'] B. Andreæ Abellonii Conf. O. P.
+1944-07-03 Ordo: dom | engine: single:feast ['S0703_2'] S. Leonis II Papæ et Conf.
+1944-10-01 Ordo: choir:dom | engine: single:tfeast ['S1007'] SS. Rosarii B. Mariae V.
+1944-10-17 Ordo: requiem | engine: single:temporal ['Pent20'] 
+1944-11-10 Ordo: feast+anniv | engine: anniv ['S1113', 'Pent23'] 
+1944-12-21 Ordo: choir:feri | engine: single:feast ['S1221'] S. Thomæ Apostoli
+10 differ

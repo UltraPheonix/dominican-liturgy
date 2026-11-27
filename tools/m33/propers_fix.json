@@ -46,7 +46,12 @@
   ],
   "lent_tr": [
    7125
-  ]
+  ],
+  "al": [
+   6582
+  ],
+  "p39": "G50 p. 18*-19*",
+  "_why_g50": "G50 p. 18*-19*: Alia Missa In virtute, Alleluia V. Laetabitur, pag. 9*"
  },
  "C30s": {
   "p33": 662,
@@ -93,26 +98,30 @@
  "C45s": {
   "p33": 669,
   "of": [
-   "r1107"
+   "op-g50-afferentur-of"
   ],
   "co": [
    6271
   ],
   "lent_tr": [
    4978
-  ]
+  ],
+  "p39": "G50 p. 47*",
+  "_why_g50": "G50 p. 47*: Offertorium Afferentur (transcribed from the scan)"
  },
  "C48s": {
   "p33": 670,
   "of": [
-   "r1107"
+   "op-g50-afferentur-of"
   ],
   "co": [
    6027
   ],
   "lent_tr": [
    4978
-  ]
+  ],
+  "p39": "G50 p. 47*",
+  "_why_g50": "G50 p. 47*: Offertorium Afferentur (transcribed from the scan)"
  },
  "C55s": {
   "p33": 673,
@@ -123,14 +132,16 @@
    6027
   ],
   "gr": [
-   "r3596"
+   "op-g50-dilexisti-gr"
   ],
   "al": [
    5784
   ],
   "lent_tr": [
    4978
-  ]
+  ],
+  "p39": "G50 p. 56*",
+  "_why_g50": "G50 p. 56*: Responsorium Dilexisti (transcribed from the scan)"
  },
  "C76s": {
   "p33": 691,
@@ -183,6 +194,215 @@
    "i": "Stabat sancta Maria (Roman melody)",
    "pg": "GR 596",
    "roman": true
+  },
+  "op-g50-laudes": {
+   "p": "se",
+   "i": "Laudes ergo",
+   "pg": "537"
+  },
+  "r3755": {
+   "p": "al",
+   "i": "Fulgebunt justi et tamquam (Roman melody)",
+   "pg": "GR 509",
+   "roman": true
+  },
+  "r3501": {
+   "p": "co",
+   "i": "Angeli Archangeli (Roman melody)",
+   "pg": "GR [71]",
+   "roman": true
+  },
+  "r3821": {
+   "p": "in",
+   "i": "Venite filii (Roman melody)",
+   "pg": "GR 524",
+   "roman": true
+  },
+  "r3868": {
+   "p": "of",
+   "i": "Desiderium pauperum (Roman melody)",
+   "pg": "GR 524",
+   "roman": true
+  },
+  "r3371": {
+   "p": "co",
+   "i": "Sinite parvulos (Roman melody)",
+   "pg": "GR 524",
+   "roman": true
+  },
+  "r3498": {
+   "p": "in",
+   "i": "Vultum tuum (Roman melody)",
+   "pg": "GR [57]",
+   "roman": true
+  },
+  "r3701": {
+   "p": "al",
+   "i": "Tu gloria Jerusalem (Roman melody)",
+   "pg": "GR 349",
+   "roman": true
+  },
+  "r3612": {
+   "p": "of",
+   "i": "Exsultabunt sancti (Roman melody)",
+   "pg": "GR [25]",
+   "roman": true
+  },
+  "r3374": {
+   "p": "al",
+   "i": "Franciscus (Roman melody)",
+   "pg": "GR 531",
+   "roman": true
+  },
+  "op-g50-misso-herodes": {
+   "p": "al",
+   "i": "Misso Herodes",
+   "pg": "563"
+  },
+  "op-g50-quasi-arcus": {
+   "p": "al",
+   "i": "Quasi arcus",
+   "pg": "564"
+  },
+  "op-g50-iste-sanctus": {
+   "p": "al",
+   "i": "Iste Sanctus",
+   "pg": "561"
+  },
+  "op-g50-in-omnem-al": {
+   "p": "al",
+   "i": "In omnem terram",
+   "pg": "578"
+  },
+  "op-g50-exsultabunt-of": {
+   "p": "of",
+   "i": "Exsultabunt sancti",
+   "pg": "570"
+  },
+  "op-g50-dilexisti-gr": {
+   "p": "gr",
+   "i": "Dilexisti",
+   "pg": "56*"
+  },
+  "op-g50-afferentur-of": {
+   "p": "of",
+   "i": "Afferentur",
+   "pg": "47*"
+  },
+  "op-g50-vultum-tuum": {
+   "p": "in",
+   "i": "Vultum tuum",
+   "pg": "571"
+  },
+  "op-g50-tu-gloria-al": {
+   "p": "al",
+   "i": "Tu gloria Jerusalem",
+   "pg": "572"
+  },
+  "op-g50-fulgebunt-al": {
+   "p": "al",
+   "i": "Fulgebunt justi",
+   "pg": "574"
+  },
+  "op-g50-franciscus-al": {
+   "p": "al",
+   "i": "Franciscus pauper",
+   "pg": "576"
+  },
+  "op-g50-mihi-autem-voce": {
+   "p": "in",
+   "i": "Mihi autem absit (V. Voce mea)",
+   "pg": "575"
+  },
+  "op-g50-angeli-co": {
+   "p": "co",
+   "i": "Angeli, Archangeli",
+   "pg": "605"
+  },
+  "op-g50-venite-filii-in": {
+   "p": "in",
+   "i": "Venite, filii",
+   "pg": "562"
+  },
+  "op-g50-desiderium-pauperum-of": {
+   "p": "of",
+   "i": "Desiderium pauperum",
+   "pg": "562"
+  },
+  "op-g50-sinite-parvulos-co": {
+   "p": "co",
+   "i": "Sinite parvulos",
+   "pg": "563"
+  },
+  "op-g50-audi-filia-gr": {
+   "p": "gr",
+   "i": "Audi filia",
+   "pg": "618"
+  },
+  "op-g50-confundantur-co": {
+   "p": "co",
+   "i": "Confundantur superbi",
+   "pg": "619"
+  },
+  "op-g50-stabat-sancta-al": {
+   "p": "al",
+   "i": "Stabat sancta Maria",
+   "pg": "573"
+  },
+  "op-g50-veni-de-libano-in": {
+   "p": "in",
+   "i": "Veni de Libano",
+   "pg": "586"
+  },
+  "op-g50-confiteor-tibi-gr": {
+   "p": "gr",
+   "i": "Confiteor tibi",
+   "pg": "586"
+  },
+  "op-g50-quasi-rosa-al": {
+   "p": "al",
+   "i": "Quasi rosa",
+   "pg": "586"
+  },
+  "op-g50-jam-hiems-tr": {
+   "p": "tr",
+   "i": "Jam hiems",
+   "pg": "586"
+  },
+  "op-g50-magnificat-of": {
+   "p": "of",
+   "i": "Magnificat anima mea",
+   "pg": "586"
+  },
+  "op-g50-circumduxit-co": {
+   "p": "co",
+   "i": "Circumduxit eam",
+   "pg": "586"
+  },
+  "op-g50-quasi-stella-fr-gr": {
+   "p": "gr",
+   "i": "Quasi stella matutina",
+   "pg": "588"
+  },
+  "op-g50-o-patriarcha-al": {
+   "p": "al",
+   "i": "O Patriarcha pauperum",
+   "pg": "588"
+  },
+  "op-g50-sanctitatis-se": {
+   "p": "se",
+   "i": "Sanctitatis nova signa",
+   "pg": "589"
+  },
+  "op-g50-magnificabitur-of": {
+   "p": "of",
+   "i": "Magnificabitur Christus",
+   "pg": "594"
+  },
+  "op-g50-non-sunt-co": {
+   "p": "co",
+   "i": "Non sunt condignae",
+   "pg": "595"
   }
  },
  "Quad1t": {
@@ -255,13 +475,23 @@
   "p33": 438,
   "lent_tr": [
    6182
-  ]
+  ],
+  "co": [
+   5178
+  ],
+  "p39": "G50 p. 427",
+  "_why_g50": "G50 p. 427: Communio Ego vos elegi (printed, with T.P. Alleluia)"
  },
  "S0120": {
   "p33": 421,
   "lent_tr": [
    4978
-  ]
+  ],
+  "al": [
+   6943
+  ],
+  "p39": "G50 p. 400",
+  "_why_g50": "G50 p. 400: Alleluia V. Sancti tui (printed)"
  },
  "S0222": {
   "p33": 442,
@@ -397,7 +627,13 @@
   ],
   "co": [
    4856
-  ]
+  ],
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
  },
  "S0303b": {
   "p33": 664,
@@ -437,20 +673,39 @@
   ],
   "co": [
    4856
-  ]
+  ],
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
  },
  "S0613": {
-  "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
+  "p39": "G50",
   "_why": "M39: Officium Os justi, ut in Communi Conf. non Pont. pag. 23*: gr Domine praevenisti, co Amen dico vobis",
   "gr": [
-   7142
+   4733
   ],
   "co": [
-   4856
+   5425
   ],
   "al": [
-   6895
-  ]
+   6959
+  ],
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "of": [
+   7170
+  ],
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35*"
  },
  "S0712": {
   "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
@@ -487,7 +742,13 @@
   ],
   "co": [
    4856
-  ]
+  ],
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
  },
  "S0612b": {
   "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
@@ -497,7 +758,13 @@
   ],
   "co": [
    4856
-  ]
+  ],
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
  },
  "S0724b": {
   "p39": "23*-24* (M39 Commune Conf. non Pont., alia Missa \"Os justi\")",
@@ -633,10 +900,1481 @@
   ]
  },
  "S0915": {
-  "p39": "313-314 (M39, In Compassione)",
+  "p39": "G50 p. 573",
   "_why": "M39/M33: \"In Festo VII Dolorum B.M.V. loco Tractus dicitur sequens Alleluia, alleluia. V. Stabat sancta Maria\" (one Alleluia verse; O vos omnes is the Tract verse). No O.P. melody available: Roman melody.",
   "al": [
-   "r853"
+   "op-g50-stabat-sancta-al"
+  ],
+  "tr": [],
+  "_why_g50": "G50 p. 573: Omnia ut in Feria VI post Dom. Passionis, praeter quod omisso Tractu, cantatur Alleluia V. Stabat sancta Maria (transcribed from the scan)"
+ },
+ "S0324": {
+  "pasch_al": [
+   6556,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 401 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0402": {
+  "pasch_al": [
+   6582,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 405 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0404": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine quinque talenta, p. 39*)",
+  "co": [
+   5425
   ]
+ },
+ "S0405": {
+  "pasch_al": [
+   5072,
+   6843
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 408 (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0411": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine quinque talenta, p. 39*)",
+  "co": [
+   5425
+  ]
+ },
+ "S0323b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0413b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0417b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. nec Virg. nec Mart. 35* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0419b": {
+  "pasch_al": [
+   6582,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. 22* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0420": {
+  "pasch_al": [
+   5039,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 414 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0421": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine quinque talenta, p. 39*)",
+  "co": [
+   5425
+  ]
+ },
+ "S0424": {
+  "pasch_al": [
+   6260,
+   6350
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 417 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0425": {
+  "pasch_al": [
+   6102,
+   5632
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 419 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0426b": {
+  "pasch_al": [
+   6582,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. 22* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0427b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0429": {
+  "pasch_al": [
+   5207,
+   5767
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 422 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0430": {
+  "pasch_al": [
+   5405,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 424 (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   7243
+  ],
+  "p39": "G50 p. 458",
+  "_why_g50": "G50 p. 458: Officium Mihi adhaerere (printed)"
+ },
+ "S0502": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 427 (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "of": [
+   5315
+  ],
+  "p39": "G50 p. 466",
+  "_why_g50": "G50 p. 466: Missa In medio, pag. 35*, praeter Offertorium Meditabar (printed)"
+ },
+ "S0503b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 429 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0504": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 431 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0505": {
+  "pasch_al": [
+   4870,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 432 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0507": {
+  "pasch_al": [
+   6582,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 436 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0508": {
+  "pasch_al": [
+   7208,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 453 (B. M. V. omnium gratiarum Mediatricis, 31 Maii) (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0509": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 438 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0510": {
+  "pasch_al": [
+   5453,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 439 (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "of": [
+   5315
+  ],
+  "p39": "G50 p. 474 / Missale O.P. 1939",
+  "_why_g50": "G50 p. 474 / Missale O.P. 1939: Offertorium Meditabar (p. 466)"
+ },
+ "S0511": {
+  "pasch_al": [
+   6152,
+   5632
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 425 (SS. Philippi et Jacobi, 1 Maii) (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0512b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0514b": {
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0515": {
+  "pasch_al": [
+   6895,
+   6824
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. non Pont. alia Missa 23* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0518": {
+  "pasch_al": [
+   5678,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 446 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0519": {
+  "pasch_al": [
+   7042,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 447 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0520b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0524": {
+  "pasch_al": [
+   5397,
+   6484
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Missa votiva de S. Dominico, Feria iij, 66* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "al": [
+   5397
+  ],
+  "in": [
+   6482
+  ],
+  "gr": [
+   4733
+  ],
+  "se": [
+   "op-g50-laudes"
+  ],
+  "of": [
+   6021
+  ],
+  "co": [
+   6615
+  ],
+  "p39": "G50 p. 480",
+  "_why_g50": "G50 p. 480: Omnia ut in die 4 Augusti notatur pro Missis votivis ejusdem, servata temporum varietate (p. 538)"
+ },
+ "S0526": {
+  "pasch_al": [
+   6501,
+   5437
+  ],
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 452 (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0527": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0528b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0530b": {
+  "pasch_al": [
+   6785,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. Pont. 18* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0531": {
+  "pasch_al": [
+   7208,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; supplement (B. M. V. Reginae): second Alleluia only (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0605b": {
+  "pasch_al": [
+   6895,
+   5632
+  ],
+  "asc_al": 5352,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 459 (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "gr": [
+   7142
+  ],
+  "co": [
+   5854
+  ],
+  "p39": "G50 p. 488",
+  "_why_g50": "G50 p. 488: Post Trinitatem Responsorium Domine, pag. 40*; Communio Beatus servus, pag. 32*"
+ },
+ "S0606": {
+  "pasch_al": [
+   6785,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Conf. Pont. 18* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0611": {
+  "pasch_al": [
+   5348,
+   5352
+  ],
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; p. 462 (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "of": [
+   6618
+  ],
+  "p39": "G50 p. 489",
+  "_why_g50": "G50 p. 489: Offertorium In omnem, pag. 5*"
+ },
+ "S0618": {
+  "pasch_al": [
+   6959,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Doct. 20* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine quinque talenta, p. 39*)",
+  "co": [
+   5425
+  ]
+ },
+ "S0620b": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0620bx": {
+  "pasch_al": [
+   5685,
+   5130
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Virg. non Mart. 30* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "C15s": {
+  "pasch_al": [
+   5678,
+   5767
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Mart. Pont. tempore Paschali 7* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "C28s": {
+  "pasch_al": [
+   5648,
+   5632
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. plur. Mart. tempore Paschali 15* (Tempore Resurrectionis / Ascensionis secundum Alleluia)"
+ },
+ "S0409b": {
+  "pasch_al": [
+   5678,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Mart. non Pont. tempore Paschali 11* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "pasch": {
+   "in": [
+    4864
+   ],
+   "of": [
+    5269
+   ],
+   "co": [
+    6576
+   ]
+  }
+ },
+ "S0410b": {
+  "pasch_al": [
+   5678,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Mart. non Pont. tempore Paschali 11* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "pasch": {
+   "in": [
+    4864
+   ],
+   "of": [
+    5269
+   ],
+   "co": [
+    6576
+   ]
+  }
+ },
+ "S0422b": {
+  "pasch_al": [
+   5678,
+   6824
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. Mart. non Pont. tempore Paschali 11* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "pasch": {
+   "in": [
+    4864
+   ],
+   "of": [
+    5269
+   ],
+   "co": [
+    6576
+   ]
+  }
+ },
+ "S0603": {
+  "pasch_al": [
+   5648,
+   5632
+  ],
+  "asc_al": 5526,
+  "_why_pasch": "Missale O.P. 1939, Rubr. gen. XIII, 1: in Paschaltide two Alleluia verses; Comm. plur. Mart. tempore Paschali 15* (Tempore Resurrectionis / Ascensionis secundum Alleluia)",
+  "pasch": {
+   "in": [
+    6578
+   ],
+   "of": [
+    4790
+   ],
+   "co": [
+    6440
+   ]
+  }
+ },
+ "G475": {
+  "al": [
+   6419
+  ],
+  "of": [
+   6024
+  ],
+  "co": [
+   6658
+  ],
+  "gr": [],
+  "pasch_al": [
+   6419,
+   9853
+  ],
+  "asc_al": 5526,
+  "p39": "p. 442-443",
+  "_why": "B. Imelda (13 Maii), Missale O.P. 1939 pp. 442-443 and Graduale O.P. 1950 pp. 475-478: Alleluia Ave virginum gemma, Off. Introibo, Comm. Ego dilecto; always in Paschaltide (Tempore Resurr. secundum Alleluia Nonne cor nostrum; Ascens. Ascendens Christus), so no Gradual"
+ },
+ "S0117": {
+  "gr": [
+   4733
+  ],
+  "p39": "G50 p. 394",
+  "_why_g50": "G50 p. 394: Responsorium Os justi, pag. 36*"
+ },
+ "S0123": {
+  "al": [
+   6833
+  ],
+  "p39": "G50 p. 402",
+  "_why_g50": "G50 p. 402: Alleluia V. Optime pater (printed)"
+ },
+ "S0118_2": {
+  "gr": [
+   5552
+  ],
+  "p39": "G50 p. 395",
+  "_why_g50": "G50 p. 395: Responsorium Exaltent eum (printed)"
+ },
+ "S0719": {
+  "gr": [
+   4733
+  ],
+  "al": [
+   5359
+  ],
+  "p39": "G50 p. 522",
+  "_why_g50": "G50 p. 522: Responsorium Os justi, pag. 36*; Alleluia V. Beatus vir qui timet, pag. 407"
+ },
+ "S0731": {
+  "gr": [
+   7142
+  ],
+  "p39": "G50 p. 528",
+  "_why_g50": "G50 p. 528: Missa Os justi, de Communi unius Conf. non Pont., pag. 42*"
+ },
+ "S0825": {
+  "gr": [
+   7142
+  ],
+  "p39": "G50 p. 561",
+  "_why_g50": "G50 p. 561: Responsorium Domine praevenisti, pag. 40*; Alleluia V. Iste Sanctus (printed; transcribed from the scan)",
+  "al": [
+   "op-g50-iste-sanctus"
+  ]
+ },
+ "S1226": {
+  "se": [
+   4214
+  ],
+  "p39": "G50 p. 387",
+  "_why_g50": "G50 p. 387: Sequentia Laetabundus, pag. 33"
+ },
+ "S1227": {
+  "in": [
+   6549
+  ],
+  "se": [
+   4214
+  ],
+  "p39": "G50 p. 388-389",
+  "_why_g50": "G50 p. 388-389: Officium In medio, pag. 35*; Sequentia Laetabundus, pag. 33"
+ },
+ "S1228": {
+  "al": [
+   5585
+  ],
+  "p39": "G50 p. 391-392",
+  "_why_g50": "G50 p. 391-392: Alleluia V. Herodes (Hi sunt only on a Sunday and on the Octave)"
+ },
+ "S0327": {
+  "gr": [
+   5703
+  ],
+  "lent_tr": [
+   6931
+  ],
+  "p39": "G50 p. 445*-446*",
+  "_why_g50": "G50 p. 445*-446*: Responsorium Deus qui praecinxit; Tractus Persequar"
+ },
+ "S1028": {
+  "gr": [
+   6863
+  ],
+  "p39": "G50 p. 606",
+  "_why_g50": "G50 p. 606: III. Responsorium Nimis honorati sunt, pag. 4*"
+ },
+ "S1104": {
+  "gr": [
+   6727
+  ],
+  "of": [
+   7170
+  ],
+  "p39": "G50 p. 613",
+  "_why_g50": "G50 p. 613: Responsorium Inveni David, pag. 12*; Alleluia V. Iste Sanctus, pag. 561; Offertorium Veritas mea, pag. 31*",
+  "al": [
+   "op-g50-iste-sanctus"
+  ]
+ },
+ "S0127": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0129": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0209": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine quinque talenta, p. 39*)",
+  "co": [
+   5425
+  ]
+ },
+ "S0223": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0307": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0714": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0820": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0828": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S1018": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S1115": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S1124": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S1204": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine quinque talenta, p. 39*)",
+  "co": [
+   5425
+  ]
+ },
+ "S0506": {
+  "in": [
+   6549
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Officium In medio, de Communi unius Doctoris, pag. 35*"
+ },
+ "S0804": {
+  "co": [
+   6615
+  ],
+  "p39": "G50 p. 538",
+  "_why_g50": "G50 p. 538: Communio Fidelis servus (printed, with T.P. Alleluia)"
+ },
+ "S0925": {
+  "co": [
+   6615
+  ],
+  "se": [
+   "op-g50-laudes"
+  ],
+  "p39": "G50 p. 538",
+  "_why_g50": "G50 p. 538: in the Commemoration and votive Masses, after V. Pie Pater the Sequence from * Laudes"
+ },
+ "S0908": {
+  "in": [
+   4289
+  ],
+  "al": [
+   7550
+  ],
+  "p39": "G50 p. 566-567",
+  "_why_g50": "G50 p. 566-567: Officium Gaudeamus (Nativitate); Alleluia V. Nativitas gloriosae"
+ },
+ "S0815": {
+  "in": [
+   4289
+  ],
+  "gr": [
+   6293
+  ],
+  "p39": "G50 p. 548",
+  "_why_g50": "G50 p. 548: Missa Gaudeamus, ut in Nativitate ejusdem, cum nomine Assumptionis, praeter Alleluia Hodie Maria"
+ },
+ "S0805": {
+  "al": [
+   "7550s"
+  ],
+  "of": [
+   8151
+  ],
+  "co": [
+   7543
+  ],
+  "p39": "G50 p. 539",
+  "_why_g50": "G50 p. 539: Missa Gaudeamus, ut in Nativitate B. M. V., cum nomine Solemnitatis"
+ },
+ "S0722": {
+  "in": [
+   4291
+  ],
+  "p39": "G50 p. 526",
+  "_why_g50": "G50 p. 526: Officium Gaudeamus, pag. 51*"
+ },
+ "S0626": {
+  "gr": [
+   6309
+  ],
+  "p39": "G50 p. 499",
+  "_why_g50": "G50 p. 499: Responsorium Ecce quam bonum, pag. 348"
+ },
+ "S0927": {
+  "gr": [
+   6309
+  ],
+  "in": [
+   5872
+  ],
+  "of": [
+   5512
+  ],
+  "co": [
+   6440
+  ],
+  "p39": "G50 p. 580",
+  "_why_g50": "G50 p. 580: Alleluia V. Fulgebunt, pag. 574 (transcribed from the scan)",
+  "al": [
+   "op-g50-fulgebunt-al"
+  ]
+ },
+ "S0921": {
+  "co": [
+   4728
+  ],
+  "p39": "G50 p. 578-579",
+  "_why_g50": "G50 p. 578-579: Alleluia V. In omnem terram (printed; transcribed from the scan); Communio Ego vos elegi, pag. 515",
+  "al": [
+   "op-g50-in-omnem-al"
+  ]
+ },
+ "S1008": {
+  "al": [
+   5114
+  ],
+  "p39": "G50 p. 595",
+  "_why_g50": "G50 p. 595: Missa Gaudeamus, de Communi unius sanctae Mulieris, praeter Alleluia V. Specie tua, pag. 58*"
+ },
+ "G566": {
+  "of": [
+   4781
+  ],
+  "p39": "G50 p. 571-572",
+  "_why_g50": "G50 p. 571-572: Officium Vultum tuum; Responsorium Benedicta, pag. 76*; Alleluia V. Tu gloria Jerusalem (transcribed from the scan); Offertorium Ave Maria, pag. 445; Communio Beata viscera, pag. 569",
+  "in": [
+   "op-g50-vultum-tuum"
+  ],
+  "al": [
+   "op-g50-tu-gloria-al"
+  ],
+  "gr": [
+   6984
+  ],
+  "co": [
+   7543
+  ]
+ },
+ "S0114": {
+  "of": [
+   7170
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Offertorium Veritas mea, p. 31*)"
+ },
+ "S1211": {
+  "in": [
+   5925
+  ],
+  "co": [
+   5854
+  ],
+  "al": [
+   4966
+  ],
+  "of": [
+   7170
+  ],
+  "gr": [
+   6727
+  ],
+  "p39": "G50 p. 384",
+  "_why_g50": "G50 p. 384: Missa Sacerdotes tui, de Communi unius Confessoris et Pontificis, pag. 30*"
+ },
+ "S0116b": {
+  "al": [
+   6890
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa Justus, de Communi unius Confessoris non Pontificis, pag. 39*"
+ },
+ "S0823b": {
+  "al": [
+   6890
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa Justus, de Communi unius Confessoris non Pontificis, pag. 39*"
+ },
+ "S0121": {
+  "gr": [
+   5531
+  ],
+  "co": [
+   6027
+  ],
+  "p39": "G50 p. 402",
+  "_why_g50": "G50 p. 402: Missa Me exspectaverunt, pag. 48* (Offertorium Afferentur, pag. 47*, transcribed from the scan)",
+  "of": [
+   "op-g50-afferentur-of"
+  ]
+ },
+ "S0204": {
+  "gr": [
+   6123
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa Statuit, de Communi unius Confessoris et Pontificis, pag. 32*"
+ },
+ "S0308": {
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ],
+  "p39": "G50 p. 434",
+  "_why_g50": "G50 p. 434: Missa Os justi, de Communi unius Conf. non Pont., pag. 42*"
+ },
+ "S0904b": {
+  "in": [
+   4291
+  ],
+  "gr": [
+   6293
+  ],
+  "al": [
+   5685
+  ],
+  "of": [
+   5801
+  ],
+  "co": [
+   6238
+  ],
+  "p39": "G50 p. 566",
+  "_why_g50": "G50 p. 566: Missa Gaudeamus, de Communi unius Virginis non Martyris, pag. 51*"
+ },
+ "S0918": {
+  "in": [
+   5885
+  ],
+  "al": [
+   6895
+  ],
+  "of": [
+   6021
+  ],
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa Os justi, de Communi unius Confessoris non Pontificis, pag. 42*"
+ },
+ "S1012b": {
+  "in": [
+   5885
+  ],
+  "al": [
+   6895
+  ],
+  "of": [
+   6021
+  ],
+  "gr": [
+   7142
+  ],
+  "co": [
+   4856
+  ],
+  "p39": "G50",
+  "_why_g50": "G50: Missa Os justi, de Communi unius Confessoris non Pontificis, pag. 42*"
+ },
+ "S0115": {
+  "in": [
+   6411
+  ],
+  "gr": [
+   6960
+  ],
+  "al": [
+   6582
+  ],
+  "of": [
+   5797
+  ],
+  "co": [
+   6924
+  ],
+  "p39": "G50 p. 18*",
+  "_why_g50": "G50 p. 18*: Missa Laetabitur (p. 7*), praeter Offertorium Gloria et honore et Communionem Qui vult, pag. 17*"
+ },
+ "S0122": {
+  "in": [
+   6411
+  ],
+  "gr": [
+   6960
+  ],
+  "al": [
+   6582
+  ],
+  "of": [
+   5797
+  ],
+  "co": [
+   6924
+  ],
+  "p39": "G50 p. 18*",
+  "_why_g50": "G50 p. 18*: Missa Laetabitur (p. 7*), praeter Offertorium Gloria et honore et Communionem Qui vult, pag. 17*"
+ },
+ "S0201": {
+  "in": [
+   6411
+  ],
+  "gr": [
+   6960
+  ],
+  "al": [
+   6582
+  ],
+  "of": [
+   5797
+  ],
+  "co": [
+   6924
+  ],
+  "p39": "G50 p. 18*",
+  "_why_g50": "G50 p. 18*: Missa Laetabitur (p. 7*), praeter Offertorium Gloria et honore et Communionem Qui vult, pag. 17*"
+ },
+ "S0916": {
+  "al": [
+   "op-g50-fulgebunt-al"
+  ],
+  "p39": "G50 p. 574",
+  "_why_g50": "G50 p. 574: Officium Sapientiam, pag. 515; Responsorium Gloriosus, pag. 399; Alleluia V. Fulgebunt (printed; transcribed from the scan); Offertorium Gloriabuntur, pag. 500",
+  "in": [
+   5872
+  ],
+  "gr": [
+   9869
+  ],
+  "of": [
+   5512
+  ]
+ },
+ "S1024": {
+  "co": [
+   "op-g50-angeli-co"
+  ],
+  "p39": "G50 p. 605",
+  "_why_g50": "G50 p. 605: Communio Angeli, Archangeli (printed; transcribed from the scan)"
+ },
+ "S0827": {
+  "in": [
+   "op-g50-venite-filii-in"
+  ],
+  "of": [
+   "op-g50-desiderium-pauperum-of"
+  ],
+  "co": [
+   "op-g50-sinite-parvulos-co"
+  ],
+  "p39": "G50 p. 562-563",
+  "_why_g50": "G50 p. 562-563: Officium Venite filii; Responsorium Os justi, pag. 36*; Alleluia V. Beatus vir qui suffert, pag. 373; Offertorium Desiderium pauperum; Communio Sinite parvulos (transcribed from the scan)",
+  "gr": [
+   4733
+  ],
+  "al": [
+   6890
+  ]
+ },
+ "S0910": {
+  "of": [
+   "op-g50-exsultabunt-of"
+  ],
+  "p39": "G50 p. 570",
+  "_why_g50": "G50 p. 570: Offertorium Exsultabunt (printed; transcribed from the scan)"
+ },
+ "S0917": {
+  "al": [
+   "op-g50-franciscus-al"
+  ],
+  "p39": "G50 p. 576",
+  "_why_g50": "G50 p. 576: Alleluia V. Franciscus pauper (printed; transcribed from the scan)",
+  "in": [
+   "op-g50-mihi-autem-voce"
+  ]
+ },
+ "S0829": {
+  "al": [
+   "op-g50-misso-herodes"
+  ],
+  "p39": "G50 p. 563",
+  "_why_g50": "G50 p. 563: Alleluia V. Misso Herodes (printed; transcribed from the scan)"
+ },
+ "S0830": {
+  "gr": [
+   5531
+  ],
+  "al": [
+   "op-g50-quasi-arcus"
+  ],
+  "p39": "G50 p. 564",
+  "_why_g50": "G50 p. 564: Responsorium Adjuvabit, pag. 418; Alleluia V. Quasi arcus (printed; transcribed from the scan)"
+ },
+ "S0721": {
+  "gr": [
+   "op-g50-dilexisti-gr"
+  ],
+  "p39": "G50 p. 56*",
+  "_why_g50": "G50 p. 56*: Responsorium Dilexisti (transcribed from the scan)"
+ },
+ "S1213": {
+  "gr": [
+   "op-g50-dilexisti-gr"
+  ],
+  "p39": "G50 p. 384",
+  "_why_g50": "G50 p. 384: Responsorium Dilexisti, pag. 56*; Offertorium Afferentur, pag. 47* (transcribed from the scan)",
+  "of": [
+   "op-g50-afferentur-of"
+  ]
+ },
+ "S1122": {
+  "of": [
+   "op-g50-afferentur-of"
+  ],
+  "p39": "G50 p. 618-619",
+  "_why_g50": "G50 p. 618-619: Officium Loquebar, pag. 45*; Responsorium Audi filia; Alleluia V. Veni electa, pag. 54*; Offertorium Afferentur, pag. 47*; Communio Confundantur (transcribed from the scan)",
+  "in": [
+   8003
+  ],
+  "gr": [
+   "op-g50-audi-filia-gr"
+  ],
+  "al": [
+   5685
+  ],
+  "co": [
+   "op-g50-confundantur-co"
+  ]
+ },
+ "S1202": {
+  "of": [
+   "op-g50-afferentur-of"
+  ],
+  "p39": "G50 p. 47*",
+  "_why_g50": "G50 p. 47*: Offertorium Afferentur (transcribed from the scan)"
+ },
+ "Adv3w": {
+  "gr": [
+   5441,
+   6717
+  ],
+  "p39": "G50 p. 10",
+  "_why_g50": "G50 p. 10: Post Lect. Responsorium I. Tollite, pag. 442; Post Epist. Responsorium II. Prope est, pag. 21"
+ },
+ "EmbWedSept": {
+  "gr": [
+   7138,
+   5616
+  ],
+  "p39": "G50 p. 332",
+  "_why_g50": "G50 p. 332: Post Lect. Responsorium I. Beata gens, pag. 328; Post Epistolam Responsorium II. Quis sicut"
+ },
+ "S1003": {
+  "in": [
+   "op-g50-veni-de-libano-in"
+  ],
+  "gr": [
+   "op-g50-confiteor-tibi-gr"
+  ],
+  "al": [
+   "op-g50-quasi-rosa-al"
+  ],
+  "lent_tr": [
+   "op-g50-jam-hiems-tr"
+  ],
+  "of": [
+   "op-g50-magnificat-of"
+  ],
+  "co": [
+   "op-g50-circumduxit-co"
+  ],
+  "p39": "G50 pp. 586(1)-586(6)",
+  "_why_g50": "G50 pp. 586(1)-586(6): Officium Veni de Libano; Responsorium Confiteor tibi; Alleluia V. Quasi rosa; infra Septuagesimam Tractus Jam hiems; Offertorium Magnificat; Communio Circumduxit (each checked against the scan)"
+ },
+ "_trans": {
+  "4292": {
+   "t": "Let us all rejoice in the Lord, celebrating a festival day in honour of blessed Francis: at whose solemnity the Angels rejoice, and give praise to the Son of God. ℣. Rejoice in the Lord, O ye just: praise becometh the upright.",
+   "r": "Ps. 32, 1",
+   "s": "own"
+  },
+  "4740": {
+   "t": "One thing I have asked of the Lord, this will I seek after: that I may dwell in the house of the Lord all the days of my life. ℣. That I may see the delight of the Lord, and may visit his temple.",
+   "r": "Ps. 26, 4",
+   "s": "douay"
+  },
+  "4770": {
+   "t": "I will come into thy house: I will worship towards thy holy temple, and I will give glory to thy name.",
+   "r": "Ps. 5, 8; 137, 2",
+   "s": "own"
+  },
+  "5114": {
+   "t": "Alleluia. ℣. With thy comeliness and thy beauty set out, proceed prosperously, and reign.",
+   "r": "Ps. 44, 5",
+   "s": "douay"
+  },
+  "5315": {
+   "t": "I meditated on thy commandments, which I loved exceedingly: and I lifted up my hands to thy commandments, which I loved. (P.T. Alleluia.)",
+   "r": "Ps. 118, 47-48",
+   "s": "own"
+  },
+  "5437": {
+   "t": "Alleluia. ℣. My heart grew hot within me: and in my meditation a fire shall flame out.",
+   "r": "Ps. 38, 4",
+   "s": "douay"
+  },
+  "6415": {
+   "t": "Declare his glory among the Gentiles: his wonders among all people. ℣. For the Lord is great, and exceedingly to be praised: he is to be feared above all gods. ℣. For all the gods of the Gentiles are devils: but the Lord made the heavens.",
+   "r": "Ps. 95, 3-5",
+   "s": "douay"
+  },
+  "6419": {
+   "t": "Alleluia. ℣. Hail, jewel of virgins, Imelda; hail, glorious bride of the King of kings; hail, living victim of Christ.",
+   "r": "",
+   "s": "own"
+  },
+  "6557": {
+   "t": "Blessed is the man that heareth me, and that watcheth daily at my gates, and waiteth at the posts of my doors: he that shall find me shall find life, and shall have salvation from the Lord.",
+   "r": "Prov. 8, 34-35",
+   "s": "douay"
+  },
+  "6759": {
+   "t": "Alleluia. ℣. Blessed are they that dwell in thy house, O Lord: they shall praise thee for ever and ever.",
+   "r": "Ps. 83, 5",
+   "s": "douay"
+  },
+  "6833": {
+   "t": "Alleluia. ℣. O best of fathers and singular patron, blessed Raymund, look kindly upon us from heaven.",
+   "r": "",
+   "s": "own"
+  },
+  "6843": {
+   "t": "Alleluia. ℣. It behoved Christ to suffer, and to rise again from the dead, and so to enter into the glory of God.",
+   "r": "Luke 24, 46.26",
+   "s": "own"
+  },
+  "7023": {
+   "t": "Thou art Peter, and upon this rock I will build my Church. ℣. And the gates of hell shall not prevail against it: and I will give to thee the keys of the kingdom of heaven. ℣. Whatsoever thou shalt bind upon earth, it shall be bound also in heaven. ℣. And whatsoever thou shalt loose upon earth, it shall be loosed also in heaven.",
+   "r": "Matt. 16, 18-19",
+   "s": "douay"
+  },
+  "7069": {
+   "t": "In Judea God is known: his name is great in Israel. ℣. And his place is in peace: and his abode in Sion. ℣. There hath he broken the powers of bows, the shield, the sword, and the battle.",
+   "r": "Ps. 75, 2-4",
+   "s": "douay"
+  },
+  "7243": {
+   "t": "It is good for me to adhere to my God, to put my hope in the Lord God: my flesh and my heart hath fainted away: thou art the God of my heart, and the God that is my portion for ever. (P.T. Alleluia, alleluia.) ℣. How good is God to Israel, to them that are of a right heart!",
+   "r": "Ps. 72, 28.26.1",
+   "s": "own"
+  },
+  "7245": {
+   "t": "But it behoveth us to glory in the Cross of our Lord Jesus Christ: in whom is our salvation, life, and resurrection; by whom we are saved and delivered. (P.T. Alleluia, alleluia.) ℣. May God have mercy on us, and bless us: may he cause the light of his countenance to shine upon us, and may he have mercy on us.",
+   "r": "Gal. 6, 14; Ps. 66, 2",
+   "s": "own"
+  },
+  "op-g50-laudes": {
+   "t": "Let us then sound forth praises to the wonderful Dominic with full voice. Cry out, ye needy people, asking his intercession and following his footsteps. But thou, kind and good father, shepherd and patron of the flock, with prayer ever diligent, at the court of the most high King commend for ever the needs of thy forsaken flock. Amen. Alleluia.",
+   "r": "",
+   "s": "own"
+  },
+  "op-g50-iste-sanctus": {
+   "t": "Alleluia. ℣. This Saint is worthily held in the memory of men, who has passed over to the joy of the Angels.",
+   "r": "",
+   "s": "own"
+  },
+  "op-g50-misso-herodes": {
+   "t": "Alleluia. ℣. Herod, sending an executioner, commanded John's head to be cut off in the prison.",
+   "r": "Mark 6, 27",
+   "s": "own"
+  },
+  "op-g50-quasi-arcus": {
+   "t": "Alleluia. ℣. As the rainbow giving light in the bright clouds, and as the flower of roses in the days of the spring.",
+   "r": "Ecclus. 50, 8",
+   "s": "douay"
+  },
+  "op-g50-exsultabunt-of": {
+   "t": "The saints shall rejoice in glory: they shall be joyful in their beds. The high praises of God shall be in their mouth.",
+   "r": "Ps. 149, 5-6",
+   "s": "douay"
+  },
+  "op-g50-fulgebunt-al": {
+   "t": "Alleluia. ℣. The just shall shine, and shall run to and fro like sparks among the reeds: and they shall reign for ever.",
+   "r": "Wisd. 3, 7-8",
+   "s": "own"
+  },
+  "op-g50-in-omnem-al": {
+   "t": "Alleluia. ℣. Their sound hath gone forth into all the earth: and their words unto the ends of the world.",
+   "r": "Ps. 18, 5",
+   "s": "douay"
+  },
+  "op-g50-angeli-co": {
+   "t": "Angels, Archangels, Principalities and Powers, Virtues of the heavens, Dominations and Thrones, Cherubim and Seraphim, bless ye the Lord for ever.",
+   "r": "",
+   "s": "own"
+  },
+  "op-g50-vultum-tuum": {
+   "t": "All the rich among the people shall entreat thy countenance: after her shall virgins be brought to the King: her neighbours shall be brought to thee in gladness and rejoicing. ℣. My heart hath uttered a good word: I speak my works to the King.",
+   "r": "Ps. 44, 13.15.16.2",
+   "s": "own"
+  },
+  "op-g50-tu-gloria-al": {
+   "t": "Alleluia. ℣. Thou art the glory of Jerusalem, thou art the joy of Israel, thou art the honour of our people.",
+   "r": "Judith 15, 10",
+   "s": "douay"
+  },
+  "op-g50-mihi-autem-voce": {
+   "t": "But God forbid that I should glory, save in the cross of our Lord Jesus Christ: by whom the world is crucified to me, and I to the world. ℣. I cried to the Lord with my voice: with my voice I made supplication to the Lord.",
+   "r": "Gal. 6, 14; Ps. 141, 2",
+   "s": "douay"
+  },
+  "op-g50-franciscus-al": {
+   "t": "Alleluia. ℣. Francis, poor and humble, enters heaven rich, and is honoured with heavenly hymns.",
+   "r": "",
+   "s": "own"
+  },
+  "op-g50-afferentur-of": {
+   "t": "After her shall virgins be brought to the King: her neighbours shall be brought to thee in gladness and rejoicing: they shall be brought into the temple of the King, the Lord.",
+   "r": "Ps. 44, 15-16",
+   "s": "own"
+  },
+  "op-g50-dilexisti-gr": {
+   "t": "Thou hast loved justice, and hated iniquity. ℣. Therefore God, thy God, hath anointed thee with the oil of gladness.",
+   "r": "Ps. 44, 8",
+   "s": "douay"
+  },
+  "op-g50-venite-filii-in": {
+   "t": "Come, ye children, hearken to me: I will teach you the fear of the Lord. ℣. I will bless the Lord at all times: his praise shall be always in my mouth.",
+   "r": "Ps. 33, 12.2",
+   "s": "douay"
+  },
+  "op-g50-desiderium-pauperum-of": {
+   "t": "The Lord hath heard the desire of the poor: thy ear hath heard the preparation of their heart.",
+   "r": "Ps. 9, 17",
+   "s": "douay"
+  },
+  "op-g50-sinite-parvulos-co": {
+   "t": "Suffer the little children to come unto me, and forbid them not: for of such is the kingdom of God.",
+   "r": "Mark 10, 14",
+   "s": "douay"
+  },
+  "op-g50-veni-de-libano-in": {
+   "t": "Come from Libanus, my spouse, come from Libanus, come: thou hast wounded my heart, my sister, my spouse, thou hast wounded my heart. (P.T. Alleluia, alleluia.) ℣. Praise the Lord, ye children: praise ye the name of the Lord.",
+   "r": "Cant. 4, 8-9; Ps. 112, 1",
+   "s": "own"
+  },
+  "op-g50-confiteor-tibi-gr": {
+   "t": "I confess to thee, O Father, Lord of heaven and earth, because thou hast hidden these things from the wise and prudent, and hast revealed them to little ones. ℣. O Lord, my hope from my youth.",
+   "r": "Matt. 11, 25; Ps. 70, 5",
+   "s": "douay"
+  },
+  "op-g50-quasi-rosa-al": {
+   "t": "Alleluia. ℣. As a rose planted by the brooks of waters, bud ye forth: give ye a sweet odour as frankincense: send forth flowers as the lily, and yield a smell, and bring forth leaves in grace, and praise with canticles, and bless the Lord in his works.",
+   "r": "Ecclus. 39, 17-19",
+   "s": "own"
+  },
+  "op-g50-jam-hiems-tr": {
+   "t": "For winter is now past, the rain is over and gone. ℣. The flowers have appeared in our land, the time of pruning is come: the voice of the turtle is heard in our land. ℣. I have loved thee with an everlasting love, therefore have I drawn thee, taking pity on thee.",
+   "r": "Cant. 2, 11-12; Jer. 31, 3",
+   "s": "douay"
+  },
+  "op-g50-magnificat-of": {
+   "t": "My soul doth magnify the Lord: and my spirit hath rejoiced in God my Saviour: because he hath regarded the humility of his handmaid; for he that is mighty hath done great things to me. (P.T. Alleluia.)",
+   "r": "Luke 1, 46-49",
+   "s": "douay"
+  },
+  "op-g50-circumduxit-co": {
+   "t": "He led her about, and taught her, and he kept her as the apple of his eye. As the eagle he spread his wings, and hath taken her, and carried her on his shoulders. The Lord alone was her leader. (P.T. Alleluia.)",
+   "r": "Deut. 32, 10-12",
+   "s": "own"
+  },
+  "op-g50-audi-filia-gr": {
+   "t": "Hearken, O daughter, and see, and incline thy ear: for the king hath greatly desired thy beauty. ℣. With thy comeliness and thy beauty set out, proceed prosperously, and reign.",
+   "r": "Ps. 44, 11.12.5",
+   "s": "douay"
+  },
+  "op-g50-confundantur-co": {
+   "t": "Let the proud be ashamed, because they have done unjustly towards me: but I will be employed in thy commandments, in thy justifications, that I may not be confounded.",
+   "r": "Ps. 118, 78.80",
+   "s": "douay"
+  },
+  "op-g50-stabat-sancta-al": {
+   "t": "Alleluia. ℣. Holy Mary, Queen of heaven and Mistress of the world, stood sorrowful by the cross of our Lord Jesus Christ.",
+   "r": "",
+   "s": "own"
+  },
+  "op-g50-quasi-stella-fr-gr": {
+   "t": "As the morning star in the midst of a cloud, and as the moon at the full, he shineth in his days. ℣. And as the sun when it shineth, so did he shine in the temple of God.",
+   "r": "Ecclus. 50, 6-7",
+   "s": "douay"
+  },
+  "op-g50-o-patriarcha-al": {
+   "t": "Alleluia. ℣. O Francis, patriarch of the poor, by thy prayers increase the number of thy children in the charity of Christ: those whom thou didst bless with crossed hands, as Jacob dying.",
+   "r": "",
+   "s": "own"
+  },
+  "op-g50-sanctitatis-se": {
+   "t": "New signs of holiness have appeared, worthy of praise, wonderful and gracious, entrusted to Francis. To the rule of a new flock the laws of a new covenant are given; through Francis the King's commands are renewed. A new order, a new life, unheard of, rises in the world; a holy law restores the state of the Gospel. To the pattern of Christ's law the right is brought into conformity: it keeps the rite of the rule given, the height of the apostolic life. A rough cord, a hard garment girds and covers him without care; bread is given by measure, the shoe is cast away. Poverty alone he seeks, he keeps nothing of earth; Francis treads all things down; the purse is despised. He seeks places of tears, his bitter heart pours out its cries, sorrowing he mourns the precious time lost in the world. Withdrawn into a mountain cave he weeps, he prays lying on the ground; at last, his mind made serene, he hides in the cell. There he rests, sheltered by the rock, borne upward to things divine; an upright judge, he scorns things below and chooses the heavenly. He curbs the flesh under discipline, transformed into the likeness of Christ; he takes his food from the Scripture, he drives away earthly things. Then from on high comes a seraph-prince, behold the King and Monarch: the patriarch trembles, struck with fear at the vision. He bears the signs of Christ and gives the wounds to him, while with sorrowing heart he silently wonders at the passion. The sacred body is sealed, wounded in hand and foot; the right side is pierced and reddened with blood. They speak words of hidden things, many things to come are made plain; the saint sees the power of the words by the mystical breath. At once wondrous nails appear, black without, golden within; pain pierces, heavy sharp points torture. The craftsman's art has no part in the opening of the limbs; nature did not print them, nor the torment of the hammer. By the signs of the cross which thou didst bear, by which thou didst triumph over the world, flesh and foe thou didst overcome with glorious victory. Francis, may we be defended, protected in adversity, that we may enjoy our reward in heavenly glory. Loving father, holy father, may thy devoted people, with thy help and the company of thy brethren, win the rewards. Make them companions of those on high, whom thou dost form by thy way of life: may the flock of Minors attain eternal joys. Amen. Alleluia.",
+   "r": "Thomas of Celano",
+   "s": "own"
+  },
+  "op-g50-magnificabitur-of": {
+   "t": "Christ shall be magnified in my body, whether it be by life or by death. For to me, to live is Christ: and to die is gain.",
+   "r": "Phil. 1, 20-21",
+   "s": "douay"
+  },
+  "op-g50-non-sunt-co": {
+   "t": "The sufferings of this time are not worthy to be compared with the glory to come, that shall be revealed in us.",
+   "r": "Rom. 8, 18",
+   "s": "douay"
+  }
+ },
+ "S1004": {
+  "in": [
+   4292
+  ],
+  "gr": [
+   "op-g50-quasi-stella-fr-gr"
+  ],
+  "al": [
+   "op-g50-o-patriarcha-al"
+  ],
+  "se": [
+   "op-g50-sanctitatis-se"
+  ],
+  "of": [
+   "op-g50-magnificabitur-of"
+  ],
+  "co": [
+   "op-g50-non-sunt-co"
+  ],
+  "p39": "G50 pp. 587-595",
+  "_why_g50": "G50 pp. 587-595: Officium Gaudeamus; Responsorium Quasi stella; Alleluia V. O Patriarcha pauperum; Sequentia Sanctitatis nova signa; Offertorium Magnificabitur; Communio Non sunt condignae (transcribed from the scan)"
  }
 }

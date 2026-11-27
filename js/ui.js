@@ -91,7 +91,7 @@
     if (!g || !sh) return;
     if (!sh.querySelector('.side-foot')) {
       var f = document.createElement('p'); f.className = 'side-foot';
-      f.innerHTML = 'A private project, not affiliated with the Order of Preachers. <a href="about.html">About the sources</a>';
+      f.innerHTML = 'For private devotion and reference, not an authoritative liturgical text. A private project, not affiliated with the Order of Preachers. <a href="about.html">About</a>';
       sh.appendChild(f);
     }
     function set(open) {
@@ -116,7 +116,9 @@
   function applyTheme(t) { document.documentElement.setAttribute('data-theme', t); }
   applyTheme(theme());
   function themeWire() {
-    var tools = document.querySelector('.top-tools'); if (!tools || document.getElementById('themeBtn')) return;
+    var tools = document.querySelector('.top-tools'), inn = document.querySelector('.top .top-in');
+    if (!tools && inn) { tools = document.createElement('div'); tools.className = 'top-tools'; inn.appendChild(tools); }
+    if (!tools || document.getElementById('themeBtn')) return;
     var b = document.createElement('button');
     b.type = 'button'; b.id = 'themeBtn'; b.className = 'theme-btn';
     var mark = function () { var d = theme() === 'dark'; b.setAttribute('aria-pressed', d); b.title = d ? 'Day mode' : 'Night mode'; b.setAttribute('aria-label', b.title);
@@ -163,4 +165,67 @@
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !pop.hidden) { close(); lab.focus(); } });
   }
   if (document.readyState !== 'loading') datePopWire(); else document.addEventListener('DOMContentLoaded', datePopWire);
+})();
+
+/* One header and one language switch on every page (Mass, Office, Holy Week, Rubrics, Prayers, About) */
+(function () {
+  var NAV = [['./', 'Mass', /(^|\/)(index\.html)?$/], ['office.html', 'Office', /office\.html$/], ['holyweek.html', 'Holy Week', /holyweek\.html$/],
+    ['rubrics.html', 'Rubrics', /rubrics\.html$/], ['prayers.html', 'Prayers', /prayers\.html$/], ['processions.html', 'Processions', /processions\.html$/], ['about.html', 'About', /about\.html$/]];
+  function wire() {
+    var nav = document.querySelector('.top .nav'), path = location.pathname;
+    if (nav && !document.body.classList.contains('booklet')) {
+      nav.innerHTML = '';
+      NAV.forEach(function (n) {
+        var a = document.createElement('a'); a.href = n[0]; a.textContent = n[1];
+        if (n[2].test(path)) a.setAttribute('aria-current', 'page');
+        nav.appendChild(a);
+      });
+    }
+    var inn = document.querySelector('.top .top-in');
+    if (inn && !inn.querySelector('.top-tools')) { var t = document.createElement('div'); t.className = 'top-tools'; inn.appendChild(t); }
+    // the language switch: Latin (tap a passage for its English) / Latin + English, under the title of the page
+    var old = document.querySelector('.top .en-toggle');
+    var seg = document.querySelector('.seg[data-lang]');
+    if (old && !seg) {
+      seg = document.createElement('div'); seg.className = 'seg'; seg.setAttribute('data-lang', ''); seg.setAttribute('role', 'radiogroup'); seg.setAttribute('aria-label', 'Language');
+      seg.innerHTML = '<button type="button" role="radio" data-v="tap">Latin</button><button type="button" role="radio" data-v="both">Latin + English</button>';
+      var bar = document.createElement('div'); bar.className = 'pagebar hide-print'; bar.appendChild(seg);
+      var slot = document.getElementById('hwbar') || document.getElementById('hours');
+      if (slot && slot.id === 'hwbar') slot.insertBefore(seg, slot.firstChild);
+      else if (slot) slot.parentNode.insertBefore(bar, slot);
+      else { var db = document.querySelector('.daybar'); if (db) db.parentNode.insertBefore(bar, db.nextSibling); }
+    }
+    if (old) old.remove();
+    if (!seg || !window.OPLang) return;
+    var mark = function () { var v = window.OPLang.get(); Array.prototype.forEach.call(seg.children, function (b) { var on = b.getAttribute('data-v') === v; b.classList.toggle('on', on); b.setAttribute('aria-checked', on); }); };
+    mark();
+    if (!seg.hasAttribute('data-wired')) {
+      seg.setAttribute('data-wired', '');
+      seg.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; window.OPLang.set(b.getAttribute('data-v')); });
+    }
+    document.addEventListener('oplang', mark);
+  }
+  if (document.readyState !== 'loading') wire(); else document.addEventListener('DOMContentLoaded', wire);
+
+  // a quiet line at the foot of every page (About, the disclaimer: not an authoritative liturgical text, not affiliated with the Order)
+  function siteFoot() {
+    if (document.querySelector('.site-foot') || /booklet\.html$/.test(location.pathname)) return;
+    var f = document.createElement('footer'); f.className = 'site-foot hide-print';
+    f.innerHTML = '<div class="support-links"><a class="support-btn" href="https://dominicanfriars.org/donate" target="_blank" rel="noopener">Support the Dominican Friars</a>' +
+      '<a class="support-btn alt" href="http://www.lulu.com/spotlight/athompsonatdsptdotcom" target="_blank" rel="noopener">Buy the Order\u2019s books</a></div>' +
+      'For private devotion and as a resource, not an authoritative liturgical text: if celebrating the Dominican rite, please consult the liturgical books. ' +
+      'A private project, not affiliated with the Order of Preachers. ' +
+      '<a href="about.html#disclaimer">About</a> · <a href="about.html#support">Books &amp; support the Order</a>';
+    (document.querySelector('.content') || document.body).appendChild(f);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', siteFoot); else siteFoot();
+
+  // Cloudflare Web Analytics: anonymous page counts, no cookies (see About). Added here so that every page that loads ui.js
+  // is counted without editing each page; not on a local copy.
+  (function () {
+    if (!/^(www\.)?dominicanrite\.com$/.test(location.hostname) || document.querySelector('script[data-cf-beacon]')) return;
+    var s = document.createElement('script'); s.defer = true; s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    s.setAttribute('data-cf-beacon', '{"token": "526dd2ddf79f492ab8d98e1598f6d9ed"}');
+    document.head.appendChild(s);
+  })();
 })();

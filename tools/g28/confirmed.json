@@ -1,0 +1,8 @@
+{"_note": "Chants once marked 'inferred' that the Graduale O.P. (1928) names for the same Mass (printed, or by reference: 'Tractus Domine non secundum, pag. 72', 'Responsorium Jacta, ut in Dom. I post Oct. Trinitatis'). Read from tools/g28/verify.txt and /tmp/rev.txt, page by page; djvu page/half of the scan.",
+ "Jan5a": {"co": "32/0"}, "Nat1": {"of": "30/0"}, "5ah": {"gr": "48/1", "of": "48/1", "co": "48/1"}, "5af": {"tr": "49/0"},
+ "Quad1m": {"tr": "53/0"}, "Quad2m": {"tr": "59/1", "of": "59/1"}, "Quad2t": {"gr": "60/1"}, "Quad2w": {"tr": "61/1", "of": "61/1"},
+ "Quad2h": {"gr": "62/1", "co": "62/1"}, "Quad2f": {"gr": "62/1", "tr": "62/1", "of": "62/1"}, "Quad2s": {"of": "63/0"},
+ "Quad3t": {"of": "67/1"}, "Quad3w": {"tr": "68/1"}, "Quad3h": {"gr": "69/1", "of": "69/1", "co": "69/1"},
+ "Quad4w": {"tr": "75/0", "co": "75/0"}, "Quad4f": {"gr": "76/0", "tr": "76/0", "of": "76/0"}, "Quad5m": {"tr": "80/1"},
+ "Quad5t": {"of": "81/1"}, "Quad5w": {"tr": "82/0"}, "Quad5h": {"gr": "84/0"}, "Quad6t": {"gr": "91/1", "of": "91/1", "co": "91/1"},
+ "Quad6h": {"of": "96/0"}, "Pasc1": {"of": "121/0"}, "G502_3": {"gr": "261/0", "of": "261/0"}, "C110s": {"of": "369/0"}}

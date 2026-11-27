@@ -17,7 +17,7 @@ DONE 2026-11-26 sw v90: A1 (first prayer after the heading; 'Oratio,' accepted; 
 5. Commons (archive/1909-commons-2026-11-26.json) on a branch: saint's name for N. (declined), proper Offices before the Common (Dec 8 …),
    proper responsories (St Andrew), Paschaltide Commons with 7 responsories, 24 doubtful readings vs scans, Commons' Matins lessons;
    live only when clean.
-6. Holy Week + Triduum line by line from the scans (must be perfect).
+6. Holy Week + Triduum line by line from the scans (must be perfect). 2026-11-26: 1939 + 1959 chants complete; Passion tones still need a Dominican source.
 7. Christmas–Epiphany (v1 pdf 284–373), Sundays after Epiphany, Septuagesima–Lent, Paschaltide, Ascension–Corpus Christi.
 8. Summer 'historiae' (ferial lessons after Trinity), Advent Matins lessons/responsories left, St Thomas 21 Dec ant., Christmas Vigil.
 9. Exact precedence from the Rubricae generales (v1 pdf 40–70): concurrence, octaves, Saturday BVM Office, simplex/memoria, transfers.
@@ -50,7 +50,7 @@ DONE 2026-11-26 sw v90: A1 (first prayer after the heading; 'Oratio,' accepted; 
 
 ## F. Holy Week page
 27. Good Friday Office (Tenebrae, Hours, Vespers, Compline), Holy Saturday Office, Holy Saturday tracts vs Triduum 1927, Sanctus/Ite,
-    Palm Sunday procession chants (Processionarium 1913) last.
+    Palm Sunday procession chants (Processionarium 1913): DONE 2026-11-26 (Mass chat), gabc/op13-*.gabc, sources in tools/chant/proc/.
 
 ## G. Booklets
 28. Priest booklet: Ite/Benedicamus, Gloria/Credo intonations, oration tones, Epistle/Gospel tones (Missal appendix).

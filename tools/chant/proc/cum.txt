@@ -1,0 +1,33 @@
+# Cum appropinquaret, Processionarium O.P. 1913 p. 24-26 (pdf 40-42), Ant. toni vij, c3
+# P40 s0
+(c3) Cum(ef/he) (,) ap(e)pro(e)pin(fh)quá(h)ret(h) (::) Dó(hgih/hFE)mi(de)nus(e) (,) Ie(f)ro(hg)+
+# P40 s1
+só(f,iie)ly(fe)mam(ed) (,) mi(gxegFE)sit(fe) (,) du(dced)os(d) (;) ex(b) dis(e)cí(ef)pu(e)lis(ed) (,) su(f)+
+# P40 s2
+is(fhf/gf) (,) di(e/fe)cens:(e) (:) I(gxfED/e/fgFE/f)te(fe) (,) in(d) cas(e)tél(f)lum(e) (;) quod(d) est(e/gef) (,)
+# P40 s3
+con(d)tra(cd/eDB/da) vos(a) (:) et(d) in(b)ve(c)ni(d)é(edfe)tis(e) (;) pul(fh)lum(hg) (,) á(hi)si(fe)næ(ed) (;)
+# P41 s0
+al(f)li(fhf/gf)gá(e)tum,(cde/ed/e/eb) (:) su(b)per(dc) quem(de) (;) nul(e)lus(ed) (;) hó(fhGF)mi(e)num(fgf)
+# P41 s1
+se(e)dit:(e) (:) sól(e)vi(dfd/ef)te,(e) (;) et(d) ad(f)dú(hiHGF)ci(g)te(gf) mi(e)hi:(e) (:) Si(ehg) quis(hi) (,)
+# P41 s2
+vos(ijkj/kJI/ji) (:) in(g)ter(i)ro(i)gá(jij)ve(hiHF)rit,(hg) (;) dí(fh/ji)ci(hi)te:(ie) (:) O(d)pus(f)
+# P41 s3
+Dó(hjhi)mi(h,iHF)no(h/hfhe) est.(e) (:) Sol(eb)vén(d/fde)tes(d/fde) (,) ad(efDC)du(b)xé(c)runt(d)
+# P41 s4
+ad(e) Ie(dc)sum,(b) (:) et(b) im(b)po(e)su(fh)é(hg)runt(h) (,) il(ghi)li(iHG/h/fe) (;) ve(e)sti(fg)mén(f)ta,(e) (:)
+# P41 s5
+et(e) su(f)per(ed) e(f)um(hg) se(e)dit.(e) (:) A(i)li(hjh/iHGF)i(h) (;) ex(f)pan(gh)dé(i)bant(i) (,)
+# P41 s6
+ve(i)sti(i)mén(i)ta(i) su(h)a(j) (;) in(ih) vi(ijkJI/j)a:(ji) (:) A(ijkj)li(i)i(h) (;) ra(i)mos(hg) de(f)
+# P41 s7
+ar(i)bó(h)ri(g)bus(e) (,) ster(g)né(ih)bant;(g/g) (:) et(gi/iHGF/g) qui(e) (,) se(g)que(h)bán(ih)tur(ij) (,)
+# P42 s0
+cla(ih)má(g)bant:(g) (:) Ho(f)sán(fi)na,(i) (;) be(h)ne(i)dí(k)ctus(k) (,) qui(j) ve(k)nit(j) in(i) nó(j)mi(i)+
+# P42 s1
+ne(h) (,) Dó(i)mi(i/jkJI/j)ni;(ji) (:) be(hg)ne(h)díc(ij)tum(i) (,) re(j)gnum(h) Pa(i)tris(h) no(hg)stri(f) (,)
+# P42 s2
+Da(gi/ig)vid:(g) (:) Ho(f)sán(fi)na(i) (;) in(h) ex(j)cél(i,l/lKJI)sis:(ji) (:) mi(hg)se(h)ré(ij)re(i) (,)
+# P42 s3
+no(hi)bis,(ie) (;) Fi(gi)li(h/hGFE) (,) Da(fhf/ghg)vid.(fe) (::)

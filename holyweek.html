@@ -19,7 +19,7 @@
   <div class="top-in">
     <a class="brand" href="./" aria-label="Dominican Rite, today's Mass"><svg width="26" height="26" viewBox="0 0 40 40" aria-hidden="true"><rect x="17" y="3" width="6" height="34" fill="currentColor"/><rect x="3" y="17" width="34" height="6" fill="currentColor"/><circle cx="20" cy="4" r="3.6" fill="currentColor"/><circle cx="20" cy="36" r="3.6" fill="currentColor"/><circle cx="4" cy="20" r="3.6" fill="currentColor"/><circle cx="36" cy="20" r="3.6" fill="currentColor"/></svg>
       <span class="t1">Dominican Rite</span></a>
-    <nav class="nav" aria-label="Main"><a href="./">Mass</a><a href="office.html">Office</a><a href="holyweek.html" aria-current="page">Holy Week</a><a href="about.html">About</a></nav>
+    <nav class="nav" aria-label="Main"><a href="./">Mass</a><a href="office.html">Office</a><a href="holyweek.html" aria-current="page">Holy Week</a><a href="rubrics.html">Rubrics</a><a href="about.html">About</a></nav>
     <div class="top-tools">
       <button type="button" class="en-toggle" aria-pressed="false" title="Show the English with the Latin">EN</button>
       <button type="button" class="gear" id="gear" aria-controls="sheet" aria-expanded="false" title="Options"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.4 13a7.5 7.5 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.6 7.6 0 0 0-1.7-1L15 3h-4l-.4 2.9a7.6 7.6 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.5 7.5 0 0 0 0 2l-2.2 1.6 2 3.5 2.5-1a7.6 7.6 0 0 0 1.7 1L11 21h4l.4-2.9a7.6 7.6 0 0 0 1.7-1l2.5 1 2-3.5zM13 15.5A3.5 3.5 0 1 1 13 8.5a3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg><span>Options</span></button>
@@ -36,6 +36,7 @@
               <option value="low">Low Mass</option>
               <option value="sung">Sung Mass</option>
               <option value="solemn">Solemn Mass</option>
+              <option value="conv">Conventual Mass</option>
             </select></div>
   </section>
   <section class="sh-sec"><h3>Chants</h3>
@@ -62,8 +63,9 @@
     <div class="inner">
       <div class="hw-pick hide-print"><div class="hw-rite" id="hwRite" role="group" aria-label="Rite">
       <button type="button" data-r="1939"><span>Traditional</span><small>Missale O.P. 1939</small></button>
-      <button type="button" data-r="1959"><span>Reformed</span><small>St Dominic Missal 1959</small></button>
+      <button type="button" data-r="1959" hidden><span>Reformed 1959</span><small>Post-1955 · not the pre-1955 rite</small></button>
     </div>
+      <button type="button" class="hw-show59" id="hwShow59">Show/hide the post-1955 (1959) reform, for reference</button>
       <nav class="hw-days" id="hwDays" aria-label="Days of Holy Week">
       <button type="button" data-k="Quad6"><span>Dominica in Palmis</span><small>Palm Sunday</small></button>
       <button type="button" data-k="Quad6m"><span>Feria II</span><small>Monday</small></button>
@@ -73,7 +75,12 @@
       <button type="button" data-k="Quad6f"><span>Feria VI in Parasceve</span><small>Good Friday</small></button>
       <button type="button" data-k="Quad6s"><span>Sabbato Sancto</span><small>Holy Saturday</small></button>
     </nav></div>
-      <div class="tools hide-print"><button type="button" class="tbtn" id="btnShare">Share</button><button type="button" class="tbtn" id="btnChoir">Choir PDF</button><button type="button" class="tbtn" id="btnCong">Congregation PDF</button></div>
+      <div id="mhead"></div>
+      <div class="massbar hide-print" id="hwbar">
+        <div class="pmenu"><button type="button" class="pm-btn" id="btnPM" aria-expanded="false" aria-controls="pmList">Print &amp; share <span aria-hidden="true">▾</span></button>
+          <div class="pm-list" id="pmList" hidden><button type="button" id="btnShare">Share this day</button><button type="button" id="btnChoir">Choir Book</button><button type="button" id="btnCong">Congregation Booklet</button></div></div>
+      </div>
+      <nav class="jump hide-print" id="jump" aria-label="Parts of the rite"></nav>
       <main id="mass" aria-live="polite"></main>
       <article id="cong" class="cong" aria-hidden="true"></article>
     </div>
@@ -89,6 +96,8 @@
   <script src="data/holyweek_text.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/cal.js"></script>
+  <script src="data/kalendar39.js"></script>
+  <script src="js/mrank.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

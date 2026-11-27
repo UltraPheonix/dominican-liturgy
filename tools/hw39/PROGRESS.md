@@ -99,3 +99,29 @@ See tools/orat39/MISSING.md for the per-Mass list.
 ## 2026-11-19 evening: Washing of the altars done (Triduum 1927 pp. 82-111) -> Quad6h_abl.src + gabc/op-abl-*, tools/chant/abl.
 - 1927 book OCR index (page headings): /home/claude/dl/tri_index.txt (pdf page = book page/2 + 1; Thursday Matins pdf 2-17, Lauds 17-23, Hours 24-29, Ps. pœnit. 30-33, Compline 67; Friday Matins 69-84, Lauds 84-90, Hours 90-91; ...).
 - NEXT: Triduum Office (Tenebrae etc.) - the Office tab + holyweek page; then Holy Sat tracts check, Sanctus/Ite; Palm Sunday procession (Processionarium 1913).
+
+## 2026-11-26 (Mass chat): Holy Saturday chants checked against the Triduum O.P. 1927 (pdf pp. 138-147 = book pp. 271-288)
+- Tracts Cantemus (5971), Vinea (6418), Sicut cervus (7107), Alleluia Confitemini (5407), Tract Laudate (7201), Vespers
+  antiphons Alleluia (5281, printed in f3 in the book, c4 in GregoBase: same notes) and Vespere autem (7174): no
+  differences found (scan crops compared with the renderings, neume by neume; the openings note by note).
+- Added the book's Ite, missa est, allelúia (p. 288 = Kyriale Ite IV, 7310: same notes) after the Postcommunion rubric
+  (Quad6s.src and data/holyweek_text.js; NB holyweek_text.js has later G-blocks not in the .src files, so patch, do not rebuild).
+- Maundy Thursday: the Triduum gives no Ordinary melodies ("Missa ... sicut in festo Toto Duplici celebratur", p. 65).
+- Books now at /tmp/dl/tri.pdf (Triduum 1927) and /tmp/dl/proc.pdf (Processionarium 1913) in this container.
+
+## 2026-11-26 Mass chat: Palm Sunday procession chants (Processionarium O.P. 1913, pdf 40-49 = pp. 24-33)
+- Transcribed staff by staff from the page images: tools/chant/proc/*.txt (one line per staff, '+' = word continues), build.py -> gabc/op13-*.gabc.
+- cumappropinquaret (c3), collegerunt + unusautem (c3: plain C clef), averex (f3: punctum before the clef = F clef), glorialaus (refrain) + glorialaus-v1..v3 (c4), ingrediente (f3, with V. Cumque and * Cum ramis), deoreleonis (f3, recto tono).
+- G blocks added after each text in 1939 Quad6 'Ad Processionem' (holyweek_text.js patched; Quad6_proc.src has matching G lines).
+- Second pass at 600 dpi confirmed the doubtful spots (so-lymam f,iie; contra cd/eDB/da with a below the ledger; Domino h,iHF; dicebant ce(e/fh) bant(fgf); autem au(fe/f/hi)). Remaining judgement: sternebant 'bant(g/g)' two puncta as printed.
+- Good Friday Improperia verses are inside 9867 (Popule meus incl. Agios, Quia eduxi, Quid ultra): nothing missing there.
+
+## 2026-11-26 Mass chat: 1959 Holy Week chants (Cantus Gregoriani ... Hebdomadae Sanctae O.P., Rome 1959 = /tmp/dl59/hs1959.pdf)
+- tools/chant/hs59/*.txt -> build.py -> gabc/op59-*.gabc; patch_palm/thu/fri/sat.py insert {g:'op59-..', n:label} lines into data/holyweek.js (idempotent).
+- Palm Sunday: distribution Ant 1/Ps 23, Ant 2/Ps 46; procession Ant 1-4, Gloria laus (+v1-3), Ant 5 + Ps 147, Ant 6, Ave Rex, Ingrediente, De ore leonis (1913 melodies reused where identical).
+- Thursday Communion: Ps 22, 71, 103, 150 (tone as notated + psalter verses). Friday Communion: Adoramus (I), Per lignum (VIII), Salvator mundi (VII), Ps 21.
+- Vigil: Lumen Christi / Deo gratias procession (p. 33, was missing from the St Dominic Missal text), Lauds Ant Alleluia (VI) + Ps 150 tone VI,
+  Et valde (VIII) + Benedictus tone VIII from the Triduum 1927 p. 324 (as hs1959 p. 35 directs).
+- Holy Saturday Vespers (pp. 31-32): op59-hodie, op59-ps115, op59-principes built for the Office chat; not on any page.
+- No Mandatum in hs1959 or the St Dominic Missal for 1959: nothing missing.
+- Passion tones: FOUND in the Processionarium O.P. 1913, pp. 435-440 (pdf 451-456), "VII. Modus cantandi Passiones" (Chronista, Christus, Turba, Lamentation-tone ending). See tools/handoff/README.md item 11.

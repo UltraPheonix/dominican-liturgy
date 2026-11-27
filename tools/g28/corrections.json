@@ -1,0 +1,1216 @@
+{
+"_note": "Inferred chants checked against the Graduale O.P. 1950 (OCR, tools/g50/ocr.tgz; page index of the G50 GABC set) and 1928 (/tmp/rev2.txt), and the Missale O.P. 1939 (tools/orat39/m39lin.txt). 'set' replaces a part (the chant was wrong); 'ok' confirms the inferred chant (page cited).",
+"S0207": {
+"src": "G50 p. 418 / G28 p. 219: Missa Os justi, de Communi unius Abbatis, pag. 44* (Alleluia Amavit eum 44*, Communio Amen dico 41*)",
+"set": {
+"al": [
+7042
+],
+"co": [
+4856
+]
+},
+"ok": {
+"gr": "40*"
+}
+},
+"S0214": {
+"src": "G50 / G28 p. 225; M39 p. 384: Missa Os justi, de Communi unius Conf. non Pont., pag. 42*",
+"set": {
+"gr": [
+7142
+],
+"co": [
+4856
+]
+}
+},
+"S0215": {
+"src": "G50 p. 433 / G28 p. 226 (2 Mar.): Missa Justus, de Communi unius Confessoris non Pontificis, pag. 39* (the Os justi line was B. Jordan's)",
+"set": {
+"gr": [
+7142
+],
+"in": [
+4283
+],
+"al": [
+6582
+],
+"of": [
+5857
+],
+"co": [
+4856
+]
+}
+},
+"S0515": {
+"src": "G50 / G28 p. 248: Missa Os justi, pag. 42*",
+"set": {
+"gr": [
+7142
+]
+}
+},
+"S0728b": {
+"src": "G28 p. 273: Missa Os justi, pag. 42*",
+"set": {
+"gr": [
+7142
+]
+}
+},
+"S1005": {
+"src": "G28 p. 304; M39 p. 582: Officium Os justi, de Communi Confessoris non Pontificis",
+"set": {
+"gr": [
+7142
+],
+"co": [
+4856
+]
+}
+},
+"S0905b": {
+"src": "M39 (3 Sept.): Officium Sacerdotes, ut in Communi Conf. Pont., pag. 17* (G50 pp. 30*-32*)",
+"set": {
+"in": [
+5925
+],
+"gr": [
+6727
+],
+"al": [
+4966
+],
+"tr": [
+6463
+],
+"of": [
+7170
+],
+"co": [
+5854
+]
+},
+"page": "30*-32*",
+"note": "Missale O.P. (1939), 3 Sept.: Officium Sacerdotes, ut in Communi Conf. Pont. (Graduale O.P. 1950, pp. 30*-32*)."
+},
+"S1121": {
+"src": "G50 p. 648 / G28 p. 316: Missa Gaudeamus, ut in Nativitate B. M. V., pag. 566, cum nomine Praesentationis; M39 p. 628",
+"set": {
+"in": [
+4289
+],
+"gr": [
+6293
+],
+"al": [
+"7550s"
+],
+"of": [
+8151
+],
+"co": [
+7543
+]
+},
+"page": "566-569",
+"note": "Graduale O.P. (1950), p. 648: Missa Gaudeamus, ut in Nativitate B. M. V., pag. 566, cum nomine Praesentationis (Alleluia, V. Solemnitas). Missale O.P. (1939), p. 628."
+},
+"S1127b": {
+"src": "G50 p. 59*: Missa Gaudeamus, ut in Festo Virg. non Mart., pag. 51* (Communio Diffusa est, 55*)",
+"set": {
+"co": [
+6238
+]
+}
+},
+"C39s": {
+"src": "G50 / G28 p. 41*: Alleluia, V. Laetabitur, pag. 9*",
+"set": {
+"al": [
+6582
+]
+}
+},
+"C28s": {
+"src": "G50 pp. 28*-30*: Alleluia, V. Sancti et justi (28*); Communio Justorum animae (30*)",
+"set": {
+"al": [
+5648
+],
+"co": [
+6276
+]
+}
+},
+"C48s": {
+"src": "G28 p. 49*: Responsorium Specie tua, pag. 46*",
+"set": {
+"gr": [
+5634
+]
+},
+"ok": {
+"al": "49*"
+}
+},
+"S0120": {
+"ok": {
+"of": "401",
+"co": "401"
+}
+},
+"S0624": {
+"ok": {
+"of": "498"
+}
+},
+"S0629": {
+"ok": {
+"co": "505"
+}
+},
+"S0710": {
+"ok": {
+"of": "520"
+}
+},
+"S0802": {
+"ok": {
+"gr": "529"
+}
+},
+"S0910": {
+"ok": {
+"co": "592"
+}
+},
+"S0919": {
+"ok": {
+"of": "599"
+}
+},
+"S1106": {
+"ok": {
+"co": "643"
+},
+"src": "English name completed (was cut at a comma)",
+"name_en": "SS. Jerome, Valentine, Francis, Hyacinth and Companions, OP, Martyrs"
+},
+"S0711": {
+"ok": {
+"co": "25*"
+},
+"src": "English name completed (was cut at a comma)",
+"name_en": "SS. Ignatius Delgado and Companions, OP, Martyrs"
+},
+"S0816": {
+"ok": {
+"co": "549"
+}
+},
+"S0103b": {
+"ok": {
+"co": "55*"
+}
+},
+"C18s": {
+"ok": {
+"gr": "19*"
+}
+},
+"C25s": {
+"ok": {
+"of": "27*",
+"co": "27*"
+}
+},
+"C30s": {
+"ok": {
+"of": "31*"
+}
+},
+"C51s": {
+"ok": {
+"co": "55*"
+}
+},
+"C62s": {
+"ok": {
+"gr": "62*",
+"al": "62*",
+"of": "62*",
+"co": "62*"
+}
+},
+"C64s": {
+"ok": {
+"co": "66*"
+}
+},
+"C75s": {
+"ok": {
+"gr": "76*",
+"al": "76*",
+"of": "76*",
+"co": "76*"
+}
+},
+"C89s": {
+"ok": {
+"co": "93*"
+}
+},
+"C93s": {
+"ok": {
+"gr": "94*",
+"al": "95*",
+"of": "97*"
+},
+"src": "G50 98*: COMMUNIO Laudate Dominum omnes gentes, printed in full",
+"set": {
+"co": [
+4900
+]
+}
+},
+"Quad2": {
+"src": "G28 p. 93-95 (djvu 57/1-58/1): Dominica II in Quadragesima, Officium Reminiscere, TRACTUS I. De necessitatibus, TRACTUS II. Confitemini (no Responsorium)",
+"set": {
+"tr": [
+7055,
+4695
+]
+},
+"drop": [
+"gr"
+]
+},
+"Pent0s": {
+"src": "G28 p. 262: after the Epistle 'Alleluia. Laudate Dominum omnes gentes' (semel), not a Tract",
+"drop": [
+"tr"
+]
+},
+"G494": {
+"src": "G50 pp. 494-495: Officium Ne timeas, Responsorium Fuit homo, Offertorium Gloria et honore 17*, Communio Magna est 11* (no Alleluia: Vigil)",
+"drop": [
+"al"
+]
+},
+"C68s": {
+"src": "G28 p. 66* (djvu 350/0) = G50 p. 70*: Alleluia, V. Ave, Rex noster (typeset from the 1928 scan); Tract Vere languores infra Septuagesimam; T. P. I. Alleluia V. Ave, II. Alleluia V. Surrexit Christus, pag. 222; Missale O.P. (1939) p. 46*: DE QUINQUE STIGMATIBUS D. N. J. C.",
+"set": {
+"al": [
+"g28:stigmata_al|Ave, Rex noster|66* (1928)"
+]
+},
+"title": "Missa votiva de Quinque Stigmatibus D. N. J. C.",
+"en": "Votive Mass of the Five Wounds of Our Lord (of the Passion)"
+},
+"G505": {
+"src": "G50 p. 506: Responsorium Qui operatus est, pag. 404. Alleluia, V. Magnus, pag. 405. II. Offertorium Mihi autem, pag. 5*. Communio Amen, dico vobis, pag. 41*",
+"set": {
+"co": [
+4856
+]
+},
+"ok": {
+"gr": "506",
+"al": "506",
+"of": "506"
+}
+},
+"G587": {
+"src": "G50 pp. 587-590: S. P. Francisci (4 Oct.), as S1004 (the Dionysius chants were wrong)",
+"set": {
+"in": [
+4292
+],
+"al": [
+"op-g50-o-patriarcha-al"
+],
+"of": [
+"op-g50-magnificabitur-of"
+],
+"gr": [
+"op-g50-quasi-stella-fr-gr"
+],
+"co": [
+"op-g50-non-sunt-co"
+],
+"se": [
+"op-g50-sanctitatis-se"
+]
+}
+},
+"Adv3w": {
+"ok": {
+"co": "23 (G28 p. 16/0)"
+}
+},
+"Adv3f": {
+"ok": {
+"of": "6 (G28 16/1)"
+}
+},
+"Jan5a": {
+"ok": {
+"al": "29 (Omnia ut in Missa Aurorae)",
+"of": "29"
+}
+},
+"Epi4": {
+"ok": {
+"gr": "53 (Dom. II-V post Oct. Epiph.)"
+}
+},
+"Epi5": {
+"ok": {
+"gr": "53"
+}
+},
+"Quad1h": {
+"ok": {
+"gr": "306 (G28 55/1)"
+}
+},
+"Quad1f": {
+"ok": {
+"tr": "72 (G28 56/0)"
+}
+},
+"Quad1s": {
+"ok": {
+"of": "262 (G28 57/0)"
+}
+},
+"Quad2h": {
+"ok": {
+"of": "313 (G28 62/1)"
+}
+},
+"Quad3m": {
+"ok": {
+"tr": "72 (G28 67/0)"
+}
+},
+"Quad3f": {
+"ok": {
+"gr": "309 (G28 70/0)",
+"tr": "72"
+}
+},
+"Quad4m": {
+"ok": {
+"tr": "72 (G28 73/1)"
+}
+},
+"Quad4h": {
+"ok": {
+"gr": "316 (G28 76/0)"
+}
+},
+"Quad5h": {
+"ok": {
+"of": "342 (G28 84/0)"
+}
+},
+"Quad6m": {
+"ok": {
+"tr": "72 (G28 91/0)"
+}
+},
+"Pent0m": {
+"ok": {
+"co": "254 (G28 138/0)"
+}
+},
+"Pent0f": {
+"ok": {
+"of": "226 (G28 141/1)"
+}
+},
+"Pent7": {
+"ok": {
+"of": "299"
+}
+},
+"Pent8": {
+"ok": {
+"gr": "300"
+}
+},
+"Pent9": {
+"ok": {
+"of": "109 (G28 160/0)"
+}
+},
+"Pent11": {
+"ok": {
+"of": "73 (G28 163/0)"
+}
+},
+"Pent16": {
+"ok": {
+"gr": "53 (G28 170/1)"
+}
+},
+"Pent18": {
+"ok": {
+"gr": "122 (G28 176/0)"
+}
+},
+"EmbFriSept": {
+"ok": {
+"gr": "296 (G28 174/1)",
+"of": "90",
+"co": "333"
+}
+},
+"EmbSatSept": {
+"ok": {
+"tr": "193 (G28 175/0)",
+"of": "262"
+}
+},
+"EmbSatSeptS": {
+"ok": {
+"tr": "193"
+}
+},
+"G369": {
+"ok": {
+"gr": "370"
+}
+},
+"G499": {
+"ok": {
+"gr": "499"
+}
+},
+"ChristusRex": {
+"ok": {
+"gr": "608",
+"al": "609",
+"of": "610",
+"co": "610"
+}
+},
+"S0110b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 55*-57*)",
+"set": {
+"gr": [
+"op-g50-dilexisti-gr"
+],
+"al": [
+5784
+],
+"of": [
+5009
+],
+"co": [
+6027
+]
+},
+"conf": "guess"
+},
+"S0704b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 55*-57*)",
+"set": {
+"gr": [
+"op-g50-dilexisti-gr"
+],
+"al": [
+5784
+],
+"of": [
+5009
+],
+"co": [
+6027
+]
+},
+"conf": "guess"
+},
+"S1209b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 55*-57*)",
+"set": {
+"gr": [
+"op-g50-dilexisti-gr"
+],
+"al": [
+5784
+],
+"of": [
+5009
+],
+"co": [
+6027
+]
+},
+"conf": "guess"
+},
+"S0401b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 11*-17*)",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+},
+"conf": "guess"
+},
+"S0708b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 11*-17*)",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+},
+"conf": "guess"
+},
+"S0718b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 42*)",
+"set": {
+"gr": [
+7142
+]
+},
+"conf": "guess"
+},
+"S0906b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 42*)",
+"set": {
+"gr": [
+7142
+]
+},
+"conf": "guess"
+},
+"S1006b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 42*)",
+"set": {
+"gr": [
+7142
+]
+},
+"conf": "guess"
+},
+"S0508b": {
+"ok": {
+"of": "29* (Common Intret, 25*)",
+"co": "25*"
+}
+},
+"S0228b": {
+"ok": {
+"co": "55* (G50: Missa Gaudeamus, de Communi unius S. Mulieris, pag. 59*)"
+},
+"src": "G50 59*: Missa Gaudeamus ... praeter seq.: Tractus Veni, sponsa Christi",
+"season_set": {
+"lent": {
+"tr": [
+6032
+]
+}
+}
+},
+"S0808b": {
+"ok": {
+"co": "55* (G50 p. 541: Missa Gaudeamus, ut in Communi unius sanctae Mulieris)"
+}
+},
+"S0703_2": {
+"ok": {
+"of": "31* (G28 265/0: Missa Sacerdotes tui, de Communi unius Confessoris et Pontificis)"
+}
+},
+"S1125": {
+"src": "G28 p. 604 (djvu 317/0) / G50: Communio Feci judicium printed in full (typeset from the 1928 scan)",
+"set": {
+"co": [
+"g28:catharina_co|Feci judicium|604 (1928)"
+]
+}
+},
+"S1102": {
+"src": "G28 p. 106* (rubric): \"Sequens Responsorium Requiem, cum V. In memoria, et Tractus Absolve, dicuntur in die Animarum et in diebus obitus et anniversarii Papae vel Episcopi\" (typeset from the 1928 scan)",
+"set": {
+"gr": [
+"g28:requiem_gr_inmemoria|Requiem (V. In memoria)|106*-107* (1928)"
+]
+},
+"conf": "missal"
+},
+"S1102_2": {
+"src": "G28 p. 106* (rubric): \"Sequens Responsorium Requiem, cum V. In memoria, et Tractus Absolve, dicuntur in die Animarum et in diebus obitus et anniversarii Papae vel Episcopi\" (typeset from the 1928 scan)",
+"set": {
+"gr": [
+"g28:requiem_gr_inmemoria|Requiem (V. In memoria)|106*-107* (1928)"
+]
+},
+"conf": "missal"
+},
+"S1102_3": {
+"src": "G28 p. 106* (rubric): \"Sequens Responsorium Requiem, cum V. In memoria, et Tractus Absolve, dicuntur in die Animarum et in diebus obitus et anniversarii Papae vel Episcopi\" (typeset from the 1928 scan)",
+"set": {
+"gr": [
+"g28:requiem_gr_inmemoria|Requiem (V. In memoria)|106*-107* (1928)"
+]
+},
+"conf": "missal"
+},
+"S1009": {
+"src": "G28 pp. 582-585 (djvu 305-306): S. Ludovici Bertrandi, proper Mass printed in full (typeset from the 1928 scan; = G50 pp. 597-600; Missale O.P. 1939, p. 587). The Dionysius chants were wrong.",
+"conf": "g28",
+"set": {
+"in": [
+"g28:bertrand_in|Convertisti|582 (1928)"
+],
+"gr": [
+"g28:bertrand_gr|Populus quem non cognovi|583 (1928)"
+],
+"al": [
+"g28:bertrand_al|Diligam te|584 (1928)"
+],
+"of": [
+"g28:bertrand_of|Virga tua|585 (1928)"
+],
+"co": [
+"g28:bertrand_co|Ecce dedi te|585 (1928)"
+]
+},
+"season": {
+"pasch": {
+"al": [
+"op-g28-bertrand-al",
+6843
+]
+},
+"asc": {
+"al": [
+5352
+]
+},
+"lent": {
+"tr": [
+7081
+]
+}
+},
+"page": "582-585",
+"note": "Graduale O.P. (1928), pp. 582-585 (= 1950, pp. 597-600): Officium Convertisti, Responsorium Populus, Alleluia Diligam te, Offertorium Virga tua, Communio Ecce dedi te; Tempore Resurrectionis II. Alleluia Oportebat pati, Tempore Ascensionis II. Alleluia Ascendit; infra Septuagesimam Tractus Quasi stella, pag. 37*. Missale O.P. (1939), p. 587.",
+"readings": [
+{
+"type": "Epistle",
+"ref": "Ad Romanos 10: 10-18",
+"m39": true
+},
+{
+"type": "Gospel",
+"ref": "Marcus 16: 15-18",
+"m39": true
+}
+]
+},
+"S0127": {
+"src": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine, quinque talenta, 39*; M39 Commune Doctorum)",
+"set": {
+"co": [
+5425
+]
+}
+},
+"S0129": {
+"src": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine, quinque talenta, 39*; M39 Commune Doctorum)",
+"set": {
+"co": [
+5425
+]
+}
+},
+"S0223": {
+"src": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine, quinque talenta, 39*; M39 Commune Doctorum)",
+"set": {
+"co": [
+5425
+]
+}
+},
+"S0307": {
+"src": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine, quinque talenta, 39*; M39 Commune Doctorum)",
+"set": {
+"co": [
+5425
+]
+}
+},
+"S0527": {
+"src": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine, quinque talenta, 39*; M39 Commune Doctorum)",
+"set": {
+"co": [
+5425
+]
+}
+},
+"S1124": {
+"src": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine, quinque talenta, 39*; M39 Commune Doctorum)",
+"set": {
+"co": [
+5425
+]
+}
+},
+"S0116b": {
+"src": "G50 p. 394: Missa Justus, de Communi unius Confessoris non Pontificis, pag. 39* (Alleluia Laetabitur, 9*)",
+"set": {
+"al": [
+6582
+]
+}
+},
+"S0823b": {
+"src": "G50 p. 560: Missa Justus, pag. 39* (Alleluia Laetabitur, 9*)",
+"set": {
+"al": [
+6582
+]
+}
+},
+"S1203": {
+"src": "G50 p. 373: Alleluia V. Beatus vir, qui suffert tentationem (printed)",
+"set": {
+"al": [
+6890
+]
+}
+},
+"S0121": {
+"src": "G50 p. 402: Missa Me exspectaverunt, de Communi unius Virg. et Mart., pag. 48* (Responsorium Specie tua 46*; infra Septuag. Tractus Qui seminant 23*)",
+"set": {
+"gr": [
+5634
+]
+},
+"season_set": {
+"lent": {
+"tr": [
+4978
+]
+}
+}
+},
+"S0202": {
+"src": "G50 p. 416: Alleluia V. Adorabo, pag. 354. Sequentia Laetabundus, pag. 33 (infra Septuagesimam omissis Alleluia et Sequentia)",
+"set": {
+"se": [
+4214
+]
+}
+},
+"S0212": {
+"src": "G50 p. 426: Infra Septuagesimam Tractus Qui seminant, pag. 23*",
+"season_set": {
+"lent": {
+"tr": [
+4978
+]
+}
+}
+},
+"S0222": {
+"src": "G50 p. 432: Missa ut in festo Cathedrae Romanae ejusdem, pag. 395; M39: Officium Statuit, et reliqua ut in Cathedra Romana",
+"set": {
+"in": [
+5417
+],
+"gr": [
+5552
+],
+"al": [
+6296
+],
+"of": [
+7170
+],
+"co": [
+5396
+]
+},
+"season_set": {
+"lent": {
+"tr": [
+7023
+]
+}
+}
+},
+"S0409b": {
+"src": "G50 18*-20*: Missa Laetabitur, de Communi unius Martyris non Pontificis: ut pag. 7*, praeter Offertorium Gloria, pag. 17*, et Communionem Qui vult, pag. 17*",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+}
+},
+"S0410b": {
+"src": "G50 18*-20*: Missa Laetabitur, de Communi unius Martyris non Pontificis: ut pag. 7*, praeter Offertorium Gloria, pag. 17*, et Communionem Qui vult, pag. 17*",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+}
+},
+"S0909": {
+"src": "G50 18*-20*: Missa Laetabitur, de Communi unius Martyris non Pontificis: ut pag. 7*, praeter Offertorium Gloria, pag. 17*, et Communionem Qui vult, pag. 17*",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+}
+},
+"S1107b": {
+"src": "G50 18*-20*: Missa Laetabitur, de Communi unius Martyris non Pontificis: ut pag. 7*, praeter Offertorium Gloria, pag. 17*, et Communionem Qui vult, pag. 17*",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+}
+},
+"S0423": {
+"src": "G50 p. 452: Missa Protexisti, de Communi unius Martyris non Pontificis, pag. 19* (Offertorium Confitebuntur, Communio Laetabitur 20*; Tempore Resurrectionis II. Alleluia Angelus, pag. 214)",
+"set": {
+"of": [
+5269
+],
+"co": [
+6576
+]
+},
+"season_set": {
+"pasch": {
+"al": [
+5678,
+6824
+],
+"of": [
+5269
+],
+"co": [
+6576
+]
+}
+}
+},
+"S0516": {
+"src": "G50 p. 476: Missa Protexisti, pag. 19*. Post Trinitatem Missa Laetabitur, pag. 18*",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+},
+"season_set": {
+"pasch": {
+"al": [
+5678,
+6824
+],
+"of": [
+5269
+],
+"co": [
+6576
+]
+}
+}
+},
+"S0529b": {
+"src": "G50: Missa Sancti tui, de Communi plurimorum Martyrum, pag. 28* (Communio Justorum animae, 30*)",
+"season_set": {
+"pasch": {
+"co": [
+6276
+]
+}
+}
+},
+"S0602b": {
+"src": "G50: Missa Sancti tui, de Communi plurimorum Martyrum, pag. 28* (Communio Justorum animae, 30*)",
+"season_set": {
+"pasch": {
+"co": [
+6276
+]
+}
+}
+},
+"S0603": {
+"src": "G50: Missa Sancti tui, de Communi plurimorum Martyrum, pag. 28* (Communio Justorum animae, 30*)",
+"season_set": {
+"pasch": {
+"co": [
+6276
+]
+}
+}
+},
+"S0428b": {
+"src": "G50 p. 456 / 42*: Missa Os justi; Tempore Resurrectionis II. Alleluia Angelus, pag. 214; Tempore Ascensionis Ascendit Deus, pag. 240",
+"season_set": {
+"pasch": {
+"al": [
+6895,
+6824
+]
+},
+"asc": {
+"al": [
+5352
+]
+}
+}
+},
+"S0610b": {
+"src": "G50 34*: Tempore Resurrectionis II. Alleluia Angelus, pag. 214. Tempore Ascensionis II. Ascendens, pag. 240",
+"season_set": {
+"pasch": {
+"al": [
+6785,
+6824
+]
+},
+"asc": {
+"al": [
+5526
+]
+}
+}
+},
+"S0613": {
+"src": "G50 p. 490: Missa In medio, de Communi unius Doctoris (I. Alleluia Posui; Tempore Ascens. Ascendens Christus)",
+"season_set": {
+"pasch": {
+"al": [
+6959,
+6824
+]
+},
+"asc": {
+"al": [
+5526
+]
+}
+}
+},
+"S0502": {
+"src": "G50 p. 466: Missa In medio, pag. 35*, praeter Offertorium Meditabor",
+"set": {
+"gr": [
+4733
+]
+}
+},
+"S0514b": {
+"src": "G50 p. 476: Missa Os justi, pag. 42*",
+"set": {
+"gr": [
+7142
+]
+}
+},
+"S0702": {
+"src": "G50 p. 509: Missa Gaudeamus, ut in Nativitate B. M. V., cum nomine Visitationis, pag. 566",
+"set": {
+"in": [
+4289
+]
+}
+},
+"S0703": {
+"src": "G50 p. 502 (28 June): S. Irenaei, his own Mass printed in full: Lex veritatis, Propter fratres, In multitudine, Doctrinam, Videte quoniam",
+"set": {
+"in": [
+6167
+],
+"gr": [
+5864
+],
+"al": [
+7206
+],
+"of": [
+5922
+],
+"co": [
+6938
+]
+}
+},
+"S0715": {
+"src": "G50 p. 520: Missa Os justi, de Communi unius Confessoris non Pontificis, pag. 42*",
+"set": {
+"gr": [
+7142
+]
+}
+},
+"S0720": {
+"src": "G50 p. 523: Responsorium Deriventur fontes tui, printed in full",
+"set": {
+"gr": [
+5879
+]
+}
+},
+"S1010b": {
+"src": "G50 p. 595: Missa Os justi, pag. 42*",
+"set": {
+"gr": [
+7142
+],
+"al": [
+6895
+]
+}
+},
+"S1111": {
+"src": "G50 p. 614: Officium Statuit, pag. 32*. Responsorium Inveni David, pag. 12*",
+"set": {
+"gr": [
+6727
+]
+}
+},
+"S1117": {
+"src": "G50 p. 617: Officium Statuit. Responsorium Inveni David, 12*. Alleluia Posuisti, 13*. Offertorium Veritas mea, 31*. Communio Beatus servus",
+"set": {
+"gr": [
+6727
+],
+"al": [
+4966
+],
+"of": [
+7170
+]
+}
+},
+"S1126b": {
+"src": "G50 p. 620: Missa Statuit, de Communi unius Conf. et Pont., pag. 32* (Communio Beatus servus)",
+"set": {
+"co": [
+5854
+]
+}
+},
+"S1202": {
+"src": "G50 p. 371: Officium Me exspectaverunt, pag. 48*. Reliqua ex Missa Loquebar, pag. 45*",
+"set": {
+"in": [
+5273
+]
+}
+},
+"S0111b": {
+"src": "G50 p. 432: Missa Os justi, de Communi unius Conf. non Pont., pag. 42*",
+"set": {
+"in": [
+5885
+],
+"gr": [
+7142
+],
+"al": [
+6895
+],
+"of": [
+6021
+],
+"co": [
+4856
+]
+},
+"season_set": {
+"lent": {
+"tr": [
+7125
+]
+}
+}
+},
+"S0303b": {
+"src": "G50 p. 434: Missa Os justi, de Communi unius Conf. non Pont., pag. 42*; M39 Officium Os justi",
+"set": {
+"in": [
+5885
+],
+"gr": [
+7142
+],
+"al": [
+6895
+],
+"of": [
+6021
+],
+"co": [
+4856
+]
+},
+"season_set": {
+"lent": {
+"tr": [
+7125
+]
+}
+}
+},
+"S0123": {
+"src": "English name completed (was cut at a comma)",
+"name_en": "St. Raymond of Penyafort, OP"
+},
+"S0420": {
+"src": "English name completed (was cut at a comma)",
+"name_en": "St. Agnes of Montepulciano, OP"
+},
+"S0501": {
+"src": "English name completed (was cut at a comma)",
+"name_en": "St. Joseph the Worker"
+},
+"S0511": {
+"src": "English name completed (was cut at a comma)",
+"name_en": "SS. Philip and James, Apostles"
+},
+"S0709": {
+"src": "English name completed (was cut at a comma)",
+"name_en": "SS. John of Cologne and Companions, OP, Martyrs"
+},
+"S1028": {
+"src": "English name completed (was cut at a comma)",
+"name_en": "SS. Simon and Jude, Apostles"
+}
+}
