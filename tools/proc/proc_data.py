@@ -344,6 +344,9 @@ _EXOCC = [
   '℣. Salvum fac servum tuum. ℟. Deus meus, sperántem in te: Orátio. Quǽsumus, omnípotens Deus: ut fámulus tuus N. Rex (vel Dux, vel Princeps) noster, qui tua miseratióne suscépit Regni (vel Ducátus, vel Principátus) gubernácula † virtútum étiam ómnium percípiat increménta: quibus decénter ornátus, et vitiórum monstra devitáre † et ad te, qui via, véritas et vita es, gratiósus váleat perveníre: Per Christum Dóminum nostrum. ℟. Amen.',
   '℣. Save Thy servant. ℟. Who hopeth in Thee, O my God. Prayer. We beseech Thee, almighty God, that Thy servant N., our King (or Duke, or Prince), who by Thy mercy has taken up the government of the kingdom (or duchy, or principality), may also receive an increase of all virtues; that, fittingly adorned with them, he may be able both to shun the enormities of vice and to come in Thy grace to Thee, who art the way, the truth and the life. Through Christ our Lord. ℟. Amen.'),
 ]
+# ecclesia, pestilentia, turcas, rege: a versicle ends on a monosyllable with ':' (no flexa sign); the tone of p. 395 has
+# no example of that ending, so their gabc (ex_<id>.gabc, marked DRAFT) is not wired in until the reading is decided
+_EXDRAFT = ('ecclesia', 'pestilentia', 'turcas', 'rege')
 for _la, _en, _id, _tla, _ten in _EXOCC:
-    _EXO += [('rub', _la, _en), ('gabc', 'ex_' + _id, '', ''), ('txt', _tla, _ten)]
+    _EXO += [('rub', _la, _en)] + ([] if _id in _EXDRAFT else [('gabc', 'ex_' + _id, '', '')]) + [('txt', _tla, _ten)]
 _at('extraordinariae', _r('Póstea subjúngat álium'), _EXO, after=True)

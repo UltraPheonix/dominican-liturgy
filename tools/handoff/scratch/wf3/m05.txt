@@ -1,0 +1,658 @@
+======== 1944-05-01 [Ordo p.60]
+Fer. 2. SS. Ph ilip piet Ja cobiA pp.
+Tot. Dupl. 2. cl. — Offic. festiv. — In
+Matut. Ps. et V. ex 1 Noct. cum unica
+ant.: Tristitia.
+
+MA JU S Й5
+
+In Pret. post E vang. addatur: O bitas V enera­
+bilis Fr. Ludovici Theiśsling,A lcm ariensis,Septu­
+agesim i septim iM agistri Ordinis; item com­
+m em oratio etc.
+In Missa Credo, Praef. A post.
+In Vesp. m. seq. — Compl. Dom.
+  >> SITE office: feast | SS. Philippi et Jacobi Apostolorum | Totum Duplex II classis | two=False
+  >> commems: [('Solemnitas S. Joseph', '', 'priv')] missing: []
+  >> MASS S0511 [] 11 Maii — S. Philippi et Iacobi Apostolorum | red | G=Y C=Y | Pf=Apostolis | Ky=III+IV | ite | prayers=[]
+======== 1944-05-02 [Ordo p.61]
+Fer. 3. S. A th anas ii Ё. C. et B. D. Alb.
+<
+N+
+
+
+
+
+- Dupl. — Ps. fer. — In Matut. 3 Ps. et
+V. ex III Noct. — Bened. ex 1П Noct.;
+Lect. I de Hom. Dom. praec. cum R.
+1 Dom. praec. — m. oct. — In- Pret.
+Ev. Dom.
+1-a Missa conv. in Choro de Dom. (eum Gloria
+et Credo) sine mem. — Praef. S. Joseph.—Alb.
+2-a Missa conv. extra Chorum de festo; m. oct.,
+Credo, Praef. S. Joseph. — Alb.
+Ubi h ab e tu r unica Missa conv., dic. de Dom. (cum
+Gloria et Credo) cum mem. festi et óct. —
+Praef. S. Joseph. — Alb.
+Missa priv. ad libitum : au t de Dom. (Ut Missa
+conv. unica); — aut de festo cum m. Dom.
+et oct., Credo, Praef. S. Joseph, ult. Ev. S. Joan.
+— Alb.
+Prohib. Missae lectae et eant, tam vot. (etiam
+SS. Ros.) quam quotid. Def.
+Vesp. seq. (Ps. Laudate.), m. praec. etdiei
+OCt. S. Joseph. (In ARCH ID . LEOPOL .
+et D IOEC. CZĘSТОCHOV. nulla mem.).
+— Compl. B.M.V. (Ps. Dom.) cum ant.
+et conci, hymni propr.
+APUDSOR : 111 ORD . — In Laud . etM is saadd . ( postm . S .
+Jós .) m . S . Ga th .
+  >> SITE office: feast | S. Athanasii Ep., Conf. et Eccl. Doct. | Duplex | two=True
+  >> commems: [('Solemnitas S. Joseph', '', '')] missing: []
+  >> MASS Pasc3 [In choir: the Sunday (resumed, Rubr. III.4)] II post Octavam Paschæ | white | G=Y C=Y | Pf=S. Ioseph | Ky=VI | ite | prayers=['Deus, qui pro nobis', 'A cunctis']
+  >> MASS S0502 [Outside choir: the feast] 2 Maii — S. Athanasii, E. C. D. | white | G=Y C=Y | Pf=S. Ioseph | Ky=VI | ite | prayers=['Solemnitas S. Joseph']
+======== 1944-05-03 [Ordo p.61]
+3 Fer. 4. B. Ma ria eV irg . R. P . Tot. Alb.
+Dupl. 2 cl. (ARCHID. LEOPOL. et DIOEC.
+
+56 ma ju s
+
+
+
+
+CZĘSTO CHOW . Pa tr. p rin e . Tot. Dupl.
+1 cl.) — Offic. festiv. (propr. Prov.) —
+In Mat. 8 Ps., 3 ant. et V. ex I Noct.;
+Bened. B.M.V. ex III Noct.; Lect. et RR.
+propr. — m. diei oct. S. Joseph et SS.
+Alexandri et Soc. MM. (In ARCH ID .
+LE OP . et D IO EC . CZĘST . m. diei oct. S.
+Joseph ttm). — Ad Horas conci, hymn.
+propr. — In Prima Ps. Deus, in nomine.,
+V. Qui natus.
+In Missa (propr.) m. diei oct. S. Joseph et SS.
+Mm.; Credo, Praef. В. М. V.—In M. conv. vel
+eant, om itt. m. SS. Mm.
+ARCH ID . LEO P. et D IOEC. CZĘST .—In Missa
+m. diei oct. S. Joseph ttm (in M. conv. vel
+eant, omitt.).
+Vesp. seq., m. praec., diei oct. S. Joseph
+et S. Monicae Vid.~(Dupl. imped.).
+ARCH ID . LEO P. et DIOEC. CZĘST — Io Vesp.
+m. seq., diei oct. S. Joseph et S. Monicae Vid.
+. — Compl. В. М. V.
+  >> SITE office: feast | Inventio S. Crucis | Totum Duplex II classis | two=False
+  >> commems: [('Dies octava: Solemnitas S. Joseph', 'Octava', 'priv'), ('SS. Alexandri, Eventii et Theoduli MM.', 'Memoria', 'priv')] missing: []
+  >> MASS S0503 [] 3 Maii — Inventio S. Crucis | red | G=Y C=Y | Pf=Sancta Cruce | Ky=III+IV | ite | prayers=[]
+======== 1944-05-04 [Ordo p.62]
+Fer. 5. In v en tio S. C rucis. Tfit. Dupl. Rb.
+2 cl. (ex heri assign.). — Offic. festiv.
+—m. S. Monicae et S. Floriani M.P.P.
+In Missa m. S. Monicae et S. F loriani (haec ult.
+om itt. ia M. conv. et eant.); Credo, Praef. Cruc.
+Vesp. seq. (Ps. Laudate.), m. praec. et S-
+Monicae (In D IOEC. PREM IS L . haec,
+ult. omitt.). •— Compl. Dom.
+  >> SITE office: feast | S. Monicæ Vid. | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0504 [] 4 Maii — S. Monicæ, Vid. | white | G=Y C=n | Pf=Paschalis | Ky=VI | ite | prayers=[]
+======== 1944-05-05 [Ordo p.62]
+Fer. 6. S. P ii Q uinti Р. С. O. N. Tot. Alb.
+Dupl. 2. cl. — Offic. festiv. — In Matut.
+Ps. et V. ex I Noct.
+
+MAJUS 57
+
+
+| In Missa Credo.
+Hodiepermi tt it urun ic aM is savo tiv a SS. Cord is Jesucum
+Glor ia , un ic aora tio ne , Credo , Praef . deCruce ( Om itt.
+Co lle c ta e ) . — A lb .
+In Vesp. m. seq. — Compl. Dom.
+D IO EC . PREM lS L .fi- Anniv. Oedic. Eocl. Cathedr. Alb.
+Tot. Dupl. i cl. — Offic. festiv. — In Mat. 3
+Ps., 3 ant., V. et RR. ex II Noct.; Lect. I, IV
+etV festi.
+In M is sad ic . Credo ; Praef . Pasch .
+In Secre ta M is saeom itt. pa re n th es is .
+Proh ib eturM is savot. SS. Cord is Jesu , sedpe rm itt. ( subun ic a
+conci.) e ju sOr . in unaM is sa ( e ts iconven tu a li) .
+In Vesp. m. seq. et S. Joannis a. p. Lał. (Tot.
+Dupl. imped.). — Compl. Dom.
+  >> SITE office: feast | S. Pii V Papæ et Conf. O. P. | Totum Duplex II classis | two=False
+  >> commems: [] missing: []
+  >> MASS S0505 [] 5 Maii — S. Pii V, O.P., P. C. | white | G=Y C=Y | Pf=Paschalis | Ky=VI | ite | prayers=[]
+======== 1944-05-06 [Ordo p.63]
+6 Sabb. S. Joann is Ev. an te po rta m Rb.
+■fLa tin am . Tot. Dupl. — Ps. festivi;
+Offic. de Comm. Evang. T. P. — Ps. et
+V. ex III Noct.
+In Missa Credo et Praef. Apost.
+VF. Dom. (cum R.) seq., m. praec. et
+Appar. S. Michaelis Arch. (Tot. Dupl.
+imped.). — Compl. Sabb.
+D IO EC . PREMISL — S. Pii Quinti P. C. 0. N. Tot. Alb.
+Dupl. 2. cl. (ex heri assign.) Offic. feat. —
+In Mat. Ps. et V. ex I Noct.—m. S. Joannis Ev.
+In M is sam . S. Joann is Ev ., Credo , Praef . Pasch .
+In V esp. m. Dom., S. Joannis Ev. et Appar. S.
+Michaelis Arch. (Tot. Dupl. im ped.) —. Compl.
+Dom.
+APUDSOR . 111. ORD . — In Laud . etM is sam . S . Ca th . — In
+Vesp . add . m . dieioct. S . Ca th . an te m . S . M ic h . A rc h .
+  >> SITE office: feast | S. Joannis ante Portam Latinam | Totum Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0506 [] 6 Maii — S. Ioannis ante Portam Latinam | red | G=Y C=Y | Pf=Apostolis | Ky=VI | ite | prayers=[]
+======== 1944-05-07 [Ordo p.63]
+Dom. III. P. O. P. — De ea . — Ps. et Alb.
+-V. ex I Noct.; reliqua ut in Psalt. Т. P.
+et Propr.—m. Appar. S. Mich.—In Prima
+Ps. ConJitemini.
+
+58 MA JU S
+
+
+In Missa m. Appar. S. Mich. Arch.; Credo, Praef.
+Pascha
+Vesp. seq. (Ps. Lauda te Cap., Hymnus et
+. ant. ad Magn. propr.), m. Dom. ttm .—
+Compl. Dom.
+Processio SS. Rosarii (I. P. R.)
+NOTA . — O ffic . S . S ta n is la iE . M . in ven itu r in Append .
+hu ju sCa le nd .
+APUDSOR . 111 ORD . — ln Laud . etM is saadd . m . diei oct*
+S . Ca th . an te m . S . M ic h . — ln Vesp . om itt.
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('S. Stanislai Ep. et Mart.', 'Duplex', '')] missing: []
+  >> MASS Pasc4 [] III post Octavam Paschæ | white | G=Y C=Y | Pf=Paschalis | Ky=II+IV | ite | prayers=['7 Maii — S. Stanislai, E. M']
+======== 1944-05-08 [Ordo p.64]
+Fer. 2. S. S ta n is la iE.M . Pa tf. p rin e. Rb.
+PoL Tot. Dupl. 1. cl. — Offic. festiv.
+— In Mat. 3 Ps. et V. ex I Noct. — In
+Pret. Ev. Ego sum pastor. (Dom. I.P.O.P.)
+Missa Protexisti, (ut in festo S. A dalberti, die 23
+Apr., cum Or. propr.); Credo, Praef. Pasch.
+In Vesp. m. seq. — Compl. Dom.
+  >> SITE office: feast | Apparitio S. Michaelis Arch. | Totum Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0508_2 [] 8 Maii — Apparitio S. Michaelis Archangeli | white | G=Y C=Y | Pf=Paschalis | Ky=VI | ite | prayers=[]
+======== 1944-05-09 [Ordo p.64]
+Fer. 3. S. G re go rii N azianz. E. C. et Alb
+E. D. Dupl. — Ps. fer. — In Mat. 3 Ps.
+et V. ex I Noct. — Lect. I de Script.
+curr. cum suo R.
+In Missa Credo.
+Vesp. seq. (Ps. Laudate.), m. praec.—Compl.
+Dom.
+  >> SITE office: feast | S. Gregorii Nazianzeni Ep., Conf. et Eccl. Doct. | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0509 [] 9 Maii — S. Gregorii Nazianzeni, E.C.D. | white | G=Y C=Y | Pf=Paschalis | Ky=VI | ite | prayers=[]
+======== 1944-05-10 [Ordo p.64]
+10 Fer. 4. S. A nto n in iE. С. O. N. Tot. A lb
+Dupl. 2 cl. — Offic. festiv. — In Mat.
+Ps. et V*. ex I Noct. — m. SS. Gordiani
+et Epimachi Mm. IpО
+In Missa m. SS. Gordiani et Epimachi, Credo.
+In Missa conv. et eant, om itt. m. SS; G ordiani et
+Epimachi.
+In Vesp. m. seq. — Compl. Dom.
+
+MAJUS 89
+  >> SITE office: feast | S. Antonini Ep., Conf. O. P. | Totum Duplex II classis | two=False
+  >> commems: [('SS. Gordiani et Epimachi MM.', 'Memoria', 'priv')] missing: []
+  >> MASS S0510 [] 10 Maii — S. Antonini, O.P., E. C. | white | G=Y C=Y | Pf=Paschalis | Ky=III+IV | ite | prayers=[]
+======== 1944-05-11 [Ordo p.65]
+11 Fer. 5. B. A lb e rti aB erg. С. О. N. Alb.
+Semid. — Ps. fer. — In Matut. 3 Ps. et *
+V. ex I Noct. — Lect. I de Script. curr. +
+cum R. I. Dom. praec. — m. Crucis. —
+In Prima Preces.
+In Missa 2-a Or. Crucis, 3-aA euntis.
+YF. a cap. seq., m. praec., SS. Nerei ac
+Soc. Mm. et Crucis.—In Compl. Preces.
+  >> SITE office: feast | B. Alberti a Bergomo Conf. O. P. | Semiduplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0419b [] 19 Apr. — B. Alberti a Bergomo O.P. C. | white | G=Y C=n | Pf=Paschalis | Ky=VI | ite | prayers=['Deus, qui pro nobis', 'A cunctis']
+======== 1944-05-12 [Ordo p.65]
+12 Fer. 6. B. JoannaeLu sit. V . 0 . N. Alb.
+Semid. — Ps. fer. — In Matut, 3 Ps. *
+et V. ex I Noct. — Lect. I de Sęript; +
+curr. cum R. I Fer. 3-ae praec.; П et III
+propr. cum RR. (VIII et IX) ex Ш Noct.
+de Comm. alt. Temp. — m. SS. Nerei
+ac Soc. Mm. et Crucis.—In Prima Prec.
+Hodie in Ma rty ro lo g io ade lo g iu mS. Serva tii to ll it urve rb um
+Memor ia etad ju ngitur : Cu iu s fe s tu mveroundec im o
+Ka le ndaeJun ii ag itu r .
+In Missa 2-a Or. SS. Mm., 3-a Cruc.
+VF. a cap. seq., m. praec.
+  >> SITE office: feast | B. Joannæ de Lusitania Virg. O. P. | Semiduplex | two=False
+  >> commems: [('SS. Nerei, Achillei et Pancratii MM.', 'Memoria', '')] missing: []
+  >> MASS S0512b [] 12 Maii — B. Ioannæ Lusitanæ O.P. V. | white | G=Y C=n | Pf=Paschalis | Ky=VI | ite | prayers=['SS. Nerei, Achillei et Pancratii MM.', 'Deus, qui pro nobis']
+======== 1944-05-13 [Ordo p.65]
+13 Sabb. B. Im eldae V. O. N. Dupl.—Ps. A lb r
+fer. — In Mat. 3 Ps. et V. ex I Noct.
+— Lect. I de Script. curr. cum R. I
+Fer. 4-ae praeć.; II et III propr. cum
+RR. (VIII et IX) ex III Noct. de Comm.
+alt. Temp. — In Pret. Ev. propr. (ut
+in nota).
+In Pretiosa:
+Secundam Joannem .
+In illo tem pore: Dixit Jesus turbis Ju d aeo ru m :
+Amen, am en dico vobis: non Moyses d edit
+vobis panem de caelo, sed P ater mens ^lat
+
+MA JU S
+
+
+
+vobis panem de caelo verum . Panis enim Dei
+est, qui de caelo descendit, et dat vitam mundo.
+Missa propria (Suppi, noviss.t. ,
+VF. Dom. (sine R.) seq., m. praec. et B.
+Aegidii C. 0. N. (Semid. imped.).
+I Dom. IV. P. Q. P . — De ea. — Ps. et Alb.
+V. ex II Noct.; reliqua ut in Psalt. T.P.
+et Propr. — m. B. Aegidii, Crucis et
+B.M.V.—In Prima Ps. Confitemini.
+ln Missa 2-a Or. B. Aegidii, 3-a Crucis, 4-aA cun­
+ctis.; Credo, Praef. Pasch. (Omitt. Coli.).
+In V.esp. m. seq. et B. Aegidii.
+Processio SS. Nominis (I. P. N.)
+Fer. 2. Rogat. (J. C.) S. Joann is B apt. Alb.
+de la S alle C. Dupl. — Ps. fer. — In
+Matut. 3 Ps. et V. ex II Noct. — Lect.
+I. de Hom. Rog. cum R. I. Dom.
+praec. — m. Rog. (Or. propr.).
+Hoc triduo an te Missam feriae, si non fit Proc.,
+dic. antiph. Exsurge., cum V. et Orat. Parce.;
+deinde Litan. SS., Ps. 69, VV. et Orat., quae
+obligant etiam extra Chorum. (E xtra Chor.
+tam en om itt. ant. Exsurge, cum suo V. et Orat.).
+1-a Missa conv. in Choro de Rogat, (sine Gloria)
+cum 2-a Or. Crucis, 3-aA cunctis.—Praef. Pasch,
+et in fine Bened. Domino (Omitt. Prostr.).— Viol.
+2-a Missa conv. ex tra Chorum de festo absque
+mem. — Praef. Pasch, et Ev. S. Joan. in fine.
+Ubi vero h ab etu r unica Missa conv. dicitur de
+Rogat, (sine Gloria) cum m. festi ttm . —Praef.
+Pasch, et Bened. Domino (Omitt. (Prostr.). —
+Viol.
+Missae priv. de festo tantum , cum mem. Rog. —
+Praef. Pasch, et in fine Ev. Rog.
+
+MA JU S 61
+
+NOTA . — Hoctr id uoproh ib en tu rM is sae le c ta e ta mvo tiv ae
+( e tia mSS . Ros .) quamDefunc to rum .— In Ecc le s iis un ic am
+M is samhaben tib us , ( sifiatProcessio ) , proh ib e tu rquae li­
+betM is saproDefunc tis etiampraesentecadavere .
+Vesp. seq. (Ps. Laudate.), m. praec., S. Jo­
+annis Nepom. M. (Dupl.' imped.) et Rog.
+(Or. Dom. praec.) — Compl. Dom.
+  >> SITE office: feast | B. Imeldæ Virg. O. P. | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0513b [] 13 Maii — B. Imeldæ, O.P. V. | white | G=Y C=n | Pf=Paschalis | Ky=VI | ite | prayers=[]
+======== 1944-05-14 [Ordo p.None]
+(not parsed: see previous day)
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('B. Ægidii Conf. O. P.', 'Semiduplex', '')] missing: []
+  >> MASS Pasc5 [] IV post Octavam Paschæ | white | G=Y C=Y | Pf=Paschalis | Ky=II+IV | ite | prayers=['14 Maii — B. Ægidii O.P. C', 'Deus, qui pro nobis']
+======== 1944-05-15 [Ordo p.None]
+(not parsed: see previous day)
+  >> SITE office: feast | S. Joannis Baptistæ de la Salle Conf. | Duplex | two=True
+  >> commems: [('Feria', '', 'priv')] missing: []
+  >> MASS Litaniis [In choir: the Rogations] In Litaniis Majoribus et Minoribus | violet | G=n C=n | Pf=Paschalis | Ky=VIII | ben | prayers=['Deus, qui pro nobis', 'A cunctis']
+  >> MASS S0515 [Outside choir: the feast] 15 Maii — S. Ioannis Baptistæ de la Salle, C. | white | G=Y C=n | Pf=Paschalis | Ky=VI | ite | prayers=[]
+======== 1944-05-16 [Ordo p.67]
+16 Fer. 3. Rogat. (J.C.) S. And re ae Bobola M. Rb.
+fP . P. Tot. Dupl. 2. 'cl. — Offic. fest.
+—In Mat. Ps. et V. ex II Noct.—Lect.
+I de Comm. Mart. non Pont. Existimo.;
+Lect. II et III propr., 3 RR. de Temp.
+Pasch. —f .m. S. Joannis Nep. et Rog.
+Ubi non fit Processio, dic. nnica Missa conv. de
+festo cum m. S. Joannis Nep. et Rog. (cujus
+Ev. in fine). — Praef. Pascb.
+Ubi fit Processio (ad quam Regu la res non ten en ­
+tur!, dic. duae Missae conv. in Choro:
+1-a Missa conv. de Rog. Exaudivit, sine Gloria et
+Credo, 2-a et 3-a Or. Dom. hР. О. P.; Praef.
+Pasch, et Bened. Domino in fine. (Omitt. Prostr.)
+ЦЛ Viol.
+2-a Missa conv. de fesło cum m. S. JoanDis Nep.
+ttm ., Praef. Pascb., ult. Ev. S. Joan.
+Ubi autem una tantum h ab etu r Missa conv., et
+fit Processio, dic. Missa de Rogat, (absque Gloria
+et Credo} cum mem. festi et S. Joannis Nep.,
+Praef. Pasch. — Viol.
+Missae priv. de festo tan tu m cum mem. ut in
+Missa conv. ubi non fit Processio.
+In Vesp. m. seq., S. Joannis Nep. et Rog.
+(Or. Dom. praec.).
+  >> SITE office: feast | S. Joannis Nepomuceni Mart. | Duplex | two=True
+  >> commems: [('Feria', '', 'priv')] missing: []
+  >> MASS Litaniis [In choir: the Rogations] In Litaniis Majoribus et Minoribus | violet | G=n C=n | Pf=Paschalis | Ky=VIII | ben | prayers=['Deus, qui pro nobis', 'A cunctis']
+  >> MASS S0516 [Outside choir: the feast] 16 Maii — S. Ioannis Nepomuceni, M. | red | G=Y C=n | Pf=Paschalis | Ky=VI | ite | prayers=[]
+======== 1944-05-17 [Ordo p.67]
+17 Fer. 4. Rogat, et Vigil. (J. С.) B. And re ae Alb,
+MA bellon. С. O. N. Semid.—Ps. fer.—In
+Mat. 3 Ps. et V. ex II Noct. — Bened.
+
+62 MA JU S
+
+
+
+ex III Noct. — Lect. I de Homil. Vigil,
+cum suo R.; m. Vigil, ttm. — In Pret.
+Ev. Vigil. — In Prima Preces.
+1-a Missa conv. in Choro de Vig. (sine Gloria)
+eum 2-a Or. Rogat., 3-a Crucis.—Praef. Pasch.
+(Omitt. P rostr.)—In fine Bened. Domino et ult.
+Ev. Rogat. — Viol.
+2-a Missa conv. ex tra Chorum de festo cum 2-a
+Or. Crucis, 3-aA cunctis.—Praef. Pasch. —Ult. Ev.
+S. Joan.
+Ubi habetur unica Missa conv., erit de Vigil,
+cum m. festi et Rogat.; Praef. Pasch, et ult.
+Ev. Rogat. — Bened. Domino. — (Omitt. Prostr.)
+— Viol.
+Missae privatae ad lib.: aut de festo cum m.
+Vigil, et Rogat., Praef. Pasch, et ult. Evaug.
+Rogat.;—aut de Vigil, (ut Missa conv. unica).
+Missae privatae de Rogationibus probibentur.
+Vesp. seq. (Ps. Laudate Or. Vig.); nulla
+mem. — Compl. Dom.; conci, hymni et
+ant. ad Nunc dimittis propr. usque ad
+Pentec.
+NOTA . — CereusPasch , accend . hod ie adVesp . etCompl.;
+c ra sadMa tu t., Pr im am , Ter ti am , M is sametSex ta m , de in de
+amove tu r.
+  >> SITE office: feast | B. Andreæ Abellonii Conf. O. P. | Semiduplex | two=True
+  >> commems: [('Feria', '', 'priv')] missing: []
+  >> MASS AscVig [In choir: the Rogations] In Vigilia Ascensionis | white | G=n C=n | Pf=Paschalis | Ky=VIII+IV | ben | prayers=['Deus, qui pro nobis', 'A cunctis']
+  >> MASS S0517b [Outside choir: the feast] 17 Maii — B. Andreæ Abellonii O.P. C. | white | G=Y C=n | Pf=Paschalis | Ky=VI | ite | prayers=['Deus, qui pro nobis', 'A cunctis']
+======== 1944-05-18 [Ordo p.68]
+18! Fer. 5. A scensio D om ini. Tot. Dupl. Alb.
+1. cl. cum oct. solemńissima. (priv.) —
+Offic. festiv.—In Prima V. Qui scandis.
+usque ad Pentec.
+(A. G. R.) I. P. R. et 0.
+DeS . Venan tio M . hocannon ih il fit.
+
+In Missa Credo, Praef. et Comm. propr. per tot.
+oct.
+Pertot. oct. proh ib . M is saevo tiv . ( e tia mSS . Ros .) etM issa e
+quae lib etp ro Defunc tis ; perm ittitu rtan tu mM issa can ta ta
+(siv eun ic a le c ta p ro paupere ) praesen te cadavere .
+
+MA JU S 63
+
+
+I In an ti ph . Reginacaeli ., d ic . Jamascendit . , tan tu m in r itu
+nostro ; nonve ro in sa lu ta ti oneB .M .V . ter in dierec ita nda .
+In Vesp. m. seq. — Compl. ut heri.
+  >> SITE office: tfeast | Ascensio Domini | Totum Duplex I classis | two=False
+  >> commems: [('S. Venantii Mart.', 'Duplex', 'priv')] missing: []
+  >> MASS Asc [] Ascensio | white | G=Y C=Y | Pf=Ascensione | Ky=I+IV | ite | prayers=[]
+======== 1944-05-19 [Ordo p.69]
+19 !Fer. 6. S. Pe tri C aelest. P.C. Dupl. — Alb.
+Ps,- fer. — In Matut. 3 Ps. et V. ex II
+Noct. — Lect. I de' Script. curr. cum
+suo R. — m. Ascens. ttm.
+] DeS . Pudent ia naV . hocannon ih il fit.
+j Iit-M issa m. Ascens. ttro; Credo, Praef. et Comm.
+de oct. (Omitt. Collectae).
+VF. (de festo), m. seq. et Ascens. —
+Compl. fer.
+NOTA . — Hod ie in c ip it novend ia lis supp lic a tio adSp iritu m
+sanc tu m .
+  >> SITE office: feast | S. Petri Cælestini Papæ et Conf. | Duplex | two=False
+  >> commems: [('Ascensio Domini', '', ''), ('S. Pudentianæ Virg.', 'Memoria', '')] missing: []
+  >> MASS S0519 [] 19 Maii — S. Petri Celestini, P. C. | white | G=Y C=Y | Pf=Ascensione | Ky=VI | ite | prayers=['Ascensio', 'S. Pudentianæ Virg.']
+======== 1944-05-20 [Ordo p.69]
+20 Sabb. B. C olum bae V. O. N. Semid. — Alb.
+Ps. fer. — In Matut, 3 Ps. et V. ex II
+Noct. — Lect. I de Script. curr. cum
+suo R .; II et III propr. cum RR. (VIII
+et IX) ex III Noct. de Comm. alt. Temp.
+—m. Ascens.—In Prima omitt. Preces.
+In Missa mem. Ascens.; Credo, Praef. et Com-
+munic. de oct. (Omitt. Collectae).
+VF. (de festo), m. Ascens.—Compl. Sabbati.
+  >> SITE office: feast | B. Columbæ Virg. O. P. | Semiduplex | two=False
+  >> commems: [('Ascensio Domini', '', '')] missing: []
+  >> MASS S0520b [] 20 Maii — B. Columbæ O.P. V. | white | G=Y C=Y | Pf=Ascensione | Ky=VI | ite | prayers=['Ascensio']
+======== 1944-05-21 [Ordo p.69]
+21 Dom. in fra Oct. A scen s. — De ea. — Alb.
+Omnia ut in Brev. — m. Ascens. — In
+Pret. Ev. Dom. — In Prima Ps. Deus
+in nomine.—Ad omnes Horas dic. Or. Dom.
+NOTA . — Hod ie in Ma rty ro lo g io annun ti a tu rI-oloco : Sanc ti
+ServatiiTungrensisEcc le siaeEpiscopi , cu ju sdiesnata ­
+lis fuitTertioIdusMa ji . — Fes tu mDup le x .
+
+Missa propr. cum mem. Ascens. Credo, Praef. et
+Communic. de Ascens. (Omitt. Collectae).
+
+64 MA JU S
+
+
+
+In Vesp. ш. seq. et Ascens.
+Processio SS. Sacramenti. (I.P.O.)
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('Ascensio Domini', '', '')] missing: []
+  >> MASS Pasc6 [] in Oct Ascensione Domini | white | G=Y C=Y | Pf=Ascensione | Ky=II+IV | ite | prayers=['Ascensio']
+======== 1944-05-22 [Ordo p.70]
+22 Fer. 2. S. Se rv a tii E. C. Dupl. — (Pro Лй,
+Brev. Theissling in Suppi.) — Ps. fer.
+— In Mat. 3 Ps. et V. ex III Noct. — |
+—Lect. propr. cum RR. de Comm. T.P.
+— m. Ascens.
+In Missa m. Ascens.; Credo, Praef. et Comm. de
+Ascens. (Omitt. Coli.).
+VF. (de festo), m. Ascens. — Compl. fer.
+  >> SITE office: feast | S. Servatii Ep. et Conf. | Duplex | two=False
+  >> commems: [('Ascensio Domini', '', '')] missing: []
+  >> MASS S0522 [] 22 Maii — S. Servatii, E. C. | white | G=Y C=Y | Pf=Ascensione | Ky=VI | ite | prayers=['Ascensio']
+======== 1944-05-23 [Ordo p.70]
+23 Fer. 3. De oct. — Offic. festiv. propr. — Alb.
+Omnia ut in Brev. pro oct. notata. —
+In Pret. Ev. festi.
+In Missa (ut in festo) Credo, Praef. et Comm. de
+Ascens. (Omitt. Coli.).
+Vesp. seq. (Ps. Laudate!), m. Ascens. —
+Compl. fer.
+  >> SITE office: octave | Ascensio Domini |  | two=False
+  >> commems: [] missing: []
+  >> MASS Asc [Within the octave] Ascensio | white | G=Y C=Y | Pf=Ascensione | Ky=I+IV | ite | prayers=[]
+======== 1944-05-24 [Ordo p.70]
+24 Fer. 4. Transi. S. P. D om inici C. Tot. Alb.
+Dupl. — Offic. propr. — In Laud. 1-a
+ant. Pie Pater. — m. Ascens. — Ad
+Horas min. Ps. et ant. fer.
+In Missa m. Ascens., Seq .{Laudes ergo.), Credo, Praef.
+propr. et Communic. de Ascens. (Om itt. Coli.).
+Vesp. (Ps. de Comm. cum ant. Pie Pater.)
+a cap. (sine R.) seq. (ad Magn. ant. ut
+in I Vesp., Or. ut in Laud.), m praec.
+ttm. — Compl. Dom.
+  >> SITE office: feast | Translatio S. P. N. Dominici Conf. | Totum Duplex | two=False
+  >> commems: [('Ascensio Domini', '', '')] missing: []
+  >> MASS S0524 [] 24 Maii — Translatio S. P. N. Dominici, C. | white | G=Y C=Y | Pf=Dominico | Ky=VI | ite | prayers=['Ascensio']
+======== 1944-05-25 [Ordo p.70]
+25 Fer. 5. D ies oct. A sc en sio n is. Solemnis- Alb.
+t sima. — Ps. festivi. — Omnia ut in die;
+Lect. propr. — nulla mem. — In Pret.
+Ev. festi.
+
+MA JU Ś
+
+
+HocannodeS . UrbanoI. P . etM . n ih il fit.
+Iu Missa (ut in die) nulla mem., Credo, Praef. et
+Comm. de Ascens. (Omitt. Coli.).
+In Vesp. m. seq. — Compl. Dom.
+  >> SITE office: octday | Dies octava: Ascensio Domini | Octava | two=False
+  >> commems: [('S. Urbani I Papæ et Mart.', 'Tres Lectiones', '')] missing: []
+  >> MASS Asc [Octave day] Ascensio | white | G=Y C=Y | Pf=Ascensione | Ky=I+IV | ite | prayers=['25 Maii — S. Urbani I, P. M']
+======== 1944-05-26 [Ordo p.71]
+26 Fer. 6. S. Ph ilip piN er. C. Dupl. — Alb.
+Ps. fer. — In Mat. 3 Ps. et V. ex III
+Noct. — Lect. I de Script. curr. cum R.
+I. fer. 6-ae post Ascens. — m. fer.
+In Missa m. fer. (Or. Dom. praec.), Praef. Ascens.
+(sed non Communiet).
+VF. (de festo), m. S. Bedae Venerab. C.
+E. D. (Dupl. imped.) et fer. (Or. Omni­
+potens. ut in Laud.) — Compl. fer.
+  >> SITE office: feast | S. Philippi Nerii Conf. | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0526 [] 26 Maii — S. Philippi Neri, C. | white | G=Y C=n | Pf=Ascensione | Ky=VI | ite | prayers=[]
+======== 1944-05-27 [Ordo p.71]
+27 Sabb. (J. E. cum abst.) V ig ilia Pen te ­ Rb.
+M costes. De ea. (Omitt. Preces et Prostr.)
+— Offic. festiv. (Ps. Venite, a duobus).
+— Dic. Te Deum. — m. S. Bedae. —
+Bened. Domino cum dupl. .Allel. — In
+Pret. Ev. — In Prima Capit. Regi.,
+Or. In hac hora.
+Hodie post Nonam eant. Missa ad modum Dupl.
+cum Lect., Tract., L itan. etc. ut Sabb. Sancto;
+unica Oratio (non dic. Credo'), Praef., Commu­
+nio. et Hanc igitur, propr. (Omitt. Coli.).—Ubi
+Missa conv. non can tatu r, Sacerd. in Missa
+conv. post Lect. legat L itanias, Choro respon­
+dento.—L ita n ia e 'ex tra Chor. non obligant.
+Missae priv. sine Propbet. et Litaniis, cum In­
+tro itu Cum sanctificatus. (dic. Gloria) et unica
+Or.; Praef., Communic. et Hanc igitur, propr.
+(Omitt. Collectae).
+| NOTA . — Proh ib . quae lib . M is sadefunct., n is ipraes , cadavere ;
+sedubiunatan tu mM is sahabeatur , sif ia tbened ic tio Fon tis
+bap tis ma lis , proh ib . e tia mM is saexsequ ia lis . ‘— I te mprohi­
+be tu rM is sacan ta taSalveRad ix .
+
+
+
+s
+
+ее MA JU S
+
+
+
+Vesp. seq. (Ps. Lauda anima mea., Orat.
+Vig.), nulla mem. — Compl. Dom. cum
+conci, hymni et ant. ad Nunc dimitt.
+propr. usque ad Sabb. exclus.
+28 D om inica P en tec o stes. Tot. Dupl. 1. cl. Rb.
+cum oct. solemnissima. (Privileg.)—Offic.
+festiv. — In Prima Ps. Deus in 'nomine-;
+V. Qui sedes., et sic deinceps, nisi
+aliter not.
+(A. G. R. et Т.) I. P. O. et R.
+DeB. Ma ria Bar th ol. V . O . N . hocannon ih il fit.
+Ter ti ahoctr id uoso le mn ite rcan te tu r , etpariterper to t. oct.
+hym DUs VeniCreator .
+In Missa Seq., Credo, Praef., Comm. et Hanc igi-
+tur. propr.
+Postgra tia s , lo coant. Reginacaeli ., reass . ant. Recordare .,
+sednonadd itu r in fin eAlleluja ,
+
+In Vesp. nulla mem. — Compl. ut heri.
+NOTA . — HacHebdomadaom itt. O ffic . etM issa p ro De fu n ­
+c tis . ( Cons ti t. N . 228 § II)..
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('S. Bedæ Venerabilis Conf. et Eccl. Doct.', 'Duplex', 'priv')] missing: []
+  >> MASS Pasc6s [] Sabbato in Vigilia Pentecostes | red | G=Y C=Y | Pf=Spiritu Sancto | Ky=I+IV | ite | prayers=[]
+======== 1944-05-28 [Ordo p.None]
+(not parsed: see previous day)
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('B. Mariæ Bartholomææ Virg. O. P.', 'Semiduplex', 'priv')] missing: []
+  >> MASS Pent0 [] Dominica Pentecostes | red | G=Y C=Y | Pf=Spiritu Sancto | Ky=I+IV | ite | prayers=[]
+======== 1944-05-29 [Ordo p.72]
+29 Fer. 2. De octava. Tot. Dupl. 1. cl — Rb.
+Ps. feStivi. — In Mat. ant. Factus est.
+De BB . Gu ille lm oetSoc . Mm . O . N . hocannon ih il fit.
+P er tot. oct. Invit. Repleti sunt., Hymn. ut in die;
+Ps." festi et Dom. — In Laud. sola 1-a ant.
+D um complerentur.—Praef., Communic. et Hanc
+igitur, propr.
+In Missa Sequentia et Credo.
+Pertot. oct. proh ib . M is saevot. ( e tia mSS . Ros .) etM issa e
+quae lib etp ro Defunc tis ; pe rm itt. t tm M is saeant, (siv e le c ta
+p ro paupere ) praesen te cadavere .
+
+Vesp. de oct.
+NOTA.—In omnibus Conventibus et Domibus
+absque exceptione, legentur publice Litte­
+rae Rmi. Mag* Ordinis; *>De annuaQu iete
+Re lig io sorum " .
+
+JU N IU S6?
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('BB. Guillelmi O. P. et Soc. MM.', 'Semiduplex', 'priv')] missing: []
+  >> MASS Pent0m [] Feria II in Oct Pentecostes | red | G=Y C=Y | Pf=Spiritu Sancto | Ky=I+IV | ite | prayers=[]
+======== 1944-05-30 [Ordo p.73]
+30 Fer. 3. De octava. Tot. Dupl. 1. cl. — Rb.
+tP | Ps. festivi. — In Mat. ant. Confirma.
+IDeB . AndreaFranchiE . C . O . N . hócannon ih il fit.
+! In M artyrologio l-o loco „Festam В. М. V. om­
+nium G ratiarum M ediatricis. Festum Totnm
+Duplex“; — 2-o loco elogium S. Angelae (Me­
+mo ria );— 3-o loco elogium S. Petronillae (Me­
+moria).
+In Missa Sequentia et Credo. (Omitt. Coli.).
+lln Vesp. (de oct.), m. В. М. V. Omn.
+Grat. Mediatricis (Tot. Dupl. imped.)
+ttm.
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('B. Andreæ Franchi Ep. et Conf. O. P.', 'Semiduplex', 'priv')] missing: []
+  >> MASS Pent0t [] Feria III in Oct Pentecostes | red | G=Y C=Y | Pf=Spiritu Sancto | Ky=I+IV | ite | prayers=[]
+======== 1944-05-31 [Ordo p.73]
+31 Fer. 4. (Q. T.—J. E. cum abst.) De oc­ Rb.
+ta va .—Ps. festivi.—Iu Mat. ant. Emitte.
+— m. В. М. V. Omn. Grat. Mediatr.
+DeS . Ange la Mer. V . etdeS . Petron illa V . hocannon ih il fit,
+ln Missa m. В. М. V. Omn. Grat. M ediatr. (incli­
+natio fit ad Orat., quae sequitur Dominus vo-
+biscum), Credo. — (Omitt. Coli.).
+In Vesp. (de oct.) m. BB. Alphonsi Nav.
+et Soc. Mm. et В. М. V. Omn. Grat.
+Mediatr.
+i NOTA. —In omn. Convent. et Domibus legan­
+tur Aota ultimi Capit. Provinoialls.
+
+
+JUNIUS
+i Fer. 5. De octava. — Ps. festivi. — In Rb.
+Mat. ant. Factus est.; V. et RR. ut feria
+2-a. — m. BB. Alphonsi et Soc. Mm.
+i In Missa m. BB. A lphonsi et Soc. Mm.; Credo
+(Om itt. Coli.).
+IIn Vesp. (de oct.) m. BB. Sadoc et Soc.
+Mm. 0. N. Р. P. (Dupl. imped.) et BB.
+Alphonsi et Soc. Mm.
+
+68 JuNiUś
+
+
+Fer. 6. (Q. T. — J. ET cum abst.) De oc­ Rb.
+tava. — Ps. festivi. — In Mat. ant. Con­
+firma.; V. et RR. ut fer. 3-a. — m. BB.
+Sadoc et Soc. Mm. ttm.
+DeSS . Ma rc e li, etPetroMm . hocannon ih il fit.
+In Missa m. BB. Sadoc et Soc. Mm.; Credo (Omitt.
+Coli.).
+Hod ie proh ib . M is savot. SS . Cord is Jesu . sed in un ic aM issa
+d ie i ( e ts iconven tu a li) permi tt . e ju smem . subun ic a conci,
+(s in ea lia mem .) cumOr . fes ti.
+In Vesp. (de oct.) m. BB. Petri Sanz E.
+et Soc. Mm. 0. N. (Dupl. imped.) et BB.
+Sadoc et Soc. Mm.
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('B. M. V. omnium Gratiarum Mediatricis', 'Duplex', 'priv'), ('S. Angelæ Mericiæ Virg.', 'Memoria', 'priv'), ('S. Petronillæ Virg.', 'Memoria', 'priv')] missing: []
+  >> MASS Pent0w [] Feria Quarta IV Temp. Pentecostes | red | G=Y C=Y | Pf=Spiritu Sancto | Ky=I+IV | ite | prayers=[]

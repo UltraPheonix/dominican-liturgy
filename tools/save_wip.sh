@@ -5,6 +5,7 @@ cd "$(dirname "$0")/.."
 export GIT_INDEX_FILE=/tmp/wip.index; rm -f $GIT_INDEX_FILE
 git read-tree HEAD && git add -A . 2>/dev/null
 T=$(git write-tree)
+git fetch -q origin wip-swarm:refs/remotes/origin/wip-swarm 2>/dev/null
 P=$(git rev-parse -q --verify origin/wip-swarm || git rev-parse HEAD)
 C=$(echo "WIP snapshot of the agent swarm $(date -u +%FT%TZ) (not live; main is untouched)" | git -c user.name=UltraPheonix -c user.email=UltraPheonix@users.noreply.github.com commit-tree $T -p $P -p HEAD)
 git -c push.negotiate=true push -q origin $C:refs/heads/wip-swarm && echo "saved wip-swarm $C"

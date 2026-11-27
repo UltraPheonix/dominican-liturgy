@@ -98,8 +98,8 @@ const MONONOTE = {
   recto: ' This line ends on a monosyllable and the book prints a colon, not the flexa sign, after it: sung on the tenor throughout without a fall (reading chosen by the site; the tone of p. 395 gives no example of this ending).',
   fall: ' This line ends on a monosyllable and the book prints a colon, not the flexa sign, after it: only the monosyllable falls to f (reading chosen by the site; the tone of p. 395 gives no example of this ending).',
 };
-function write(file, name, part, pageNote, tone, gabc) {
-  const head = `name:${name};\noffice-part:${part};\nmode:;\nbook:Processionarium O.P. (Cormier), 1913, ${pageNote};\n` +
+function write(file, name, part, pageNote, tone, gabc, draft) {
+  const head = `name:${draft ? 'DRAFT (monosyllable versicle ending not decided; not wired in) ' : ''}${name};\noffice-part:${part};\nmode:;\nbook:Processionarium O.P. (Cormier), 1913, ${pageNote};\n` +
     `commentary:${tone.replace(/;/g, ',')};\ntranscriber:the tone printed in the Processionarium O.P. 1913 applied to this text for this site (the book prints this text without notes);\n%%\n`;
   fs.writeFileSync(OUT + file + '.gabc', head + gabc + '\n');
   console.log(file, gabc.length);
@@ -163,5 +163,5 @@ OCC.forEach(o => {
     'V. and R.: ' + VTONE + (mono ? MONONOTE[MONO] : '') + ' Prayer (said without Orémus, which went before Concéde nos): ' + OTONE +
     (o.id === 'papa' ? ' In the R. the book prints a flexa sign also after "in terra": the fall is made there too, with a half bar.' : '') +
     (o.id === 'rege' ? ' The alternatives the book prints in parentheses (vel Dux, vel Princeps; vel Ducátus, vel Principátus) are shown in italics without notes: the one used is sung on the tenor in place of Rex, Regni.' : ''),
-    '(f3) ' + vr(o.v, o.r) + ' ' + prayer(o.o));
+    '(f3) ' + vr(o.v, o.r) + ' ' + prayer(o.o), mono && !process.env.EX_MONO_FINAL);
 });

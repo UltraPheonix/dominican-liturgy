@@ -1,0 +1,877 @@
+======== 1944-12-01 [Ordo p.138]
+Fer. 6. B. Joann is V ercell. C. 0 . N. Alb.
+Dupl. — Ps. fer.
+Hod ie perm itt. un ic aM is savot. SS . Co rd is JesucumG lo r ia ,
+un ic aOr ., CredoetPraef . Na tiv . ( Om itt. Co ll.). — A lb .
+VF. (de festo), m. seq.
+  >> SITE office: feast | B. Joannis a Vercellis Conf. O. P. | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S1201b [] 1 Dec. — B. Ioannis a Vercellis, O.P. C. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-12-02 [Ordo p.138]
+Sabb. S. B ib ian aeV .M . Simpl. — Ps. Rb.
+fer. — Dic. Te Deum. — m. B.M.V. (ant. *
+. Ave stella., V. Elegit., Or. Concede.) — +
+In Prima Preces.
+In Missa 2-a Or. Concede. (В. М. V.), 3-a ad
+libitum .
+VF. Dom. (cum R.) seq., m. praec. et S.
+Francisci Xav. C. (Tot. Dupl. imped.).
+Inolpit Adventus. — Chorus a dextris
+РвгAdventumi — l-o . In Dom in ic is om itt. TeDeum
+( re sum . u lt. R .). — Om itt. Symbol. A tb anas . et in M issis
+Ora tio im per . ( n is is it p ro re g ra vi).
+2 -o. Quo tid ie in Pr im ausqueadV ig il. Nat. in c lu s . d ic itu r,
+e tia m in fe s tis , V . Quiven tu rus ., n is ia lite rno te tu r .
+3 -o. Promemor ia fe r. in Laud . etVesp . an tip h . propr. etOrat.
+Dom . p ra ec .
+4-o. PerAdven tu m in fe s tis 1-ae c la ss . o rg anapu ls an tu rmodo
+consueto ; Dom . 3-aAdv . ( Gaude te . ) in M iss. etVesp .; in
+to ti sdupl., dupl. et in fr. oct. so le mn ., in M issa ta n tu m ;
+in fra ve ro nonpu ls an tu r, n isi adsus tin endumcan tu m .
+  >> SITE office: feast | S. Bibianæ Virg. et Mart. | Simplex | two=False
+  >> commems: [('S. Maria in Sabbato', '', '')] missing: []
+  >> MASS S1202 [] 2 Dec. — S. Bibianæ, V. M. | red | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['Concéde nos fámulos', '(ad lib.)']
+======== 1944-12-03 [Ordo p.138]
+3 Dom. I. Adv en tu s. (1. cl.) De ea. — VI.
+fp Omnia ut in Psalt. T. Adv. et Propr.—
+Omitt. Te Deum et repet, ult. R. — Ad
+
+D ECEM BER 133
+
+
+Laudes Ps. l-o loco cum ant. propr. —
+m. S. Francisci. — In Prima Ps. Conji-
+tem ini.' cum 1-a ant. Laud.,, V. Qui
+venturus. — Ad alias Horas ant. Laud.
+In Missa (sine Gloria) Credo, Praef. Trin. et in
+fine Bened. Domino. — (Omitt. Collect.).
+In Vesp. m. seq., S. Francisci et S. Bar­
+barae V. M.
+Processio SS. Rosarii (I.P.R.)
+IN MISS IO N IB US : Vesp. seq. (Ps. Laudate.),
+m. Dom. ttm . — Compl. Dom.
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('S. Francisci Xaverii Conf.', 'Totum Duplex', 'priv')] missing: []
+  >> MASS Adv1 [] I Adventus | violet | G=n C=Y | Pf=SS. Trinitate | Ky=II | ben | prayers=[]
+======== 1944-12-04 [Ordo p.139]
+Fer. 2. S. Pe tri Ch ry so lo giE. C. et Alb.
+E . D. Dupl. — Ps. fer. — Lect. I Noct.
+de Script. curr. cum RR. I Noct. Dom.
+praec. — m. fer. et S. Barbarae.
+In Missa m. fer. et S. Barbarae. — Credo.
+VF. (de festo), m. fer.
+INM IS S IO N IB US : S. Francisci Xav. C. PATRONI Alb.
+PRINC. MISSIONUM. Tot. Dupl. 1 . cl. (heri) —
+Off. festiv.—Omnia de Comm. Conf. non Pont,
+praet. Or. et. Lect. II et III Noct. (Add. ad VI
+Lect. ut in Nota).—m. S. P etri Chrys. E.C.E.D.
+(Dupl. imped.) et fer.
+NOTA . — AdVILect. add .: Piusautemdec im us ip sumso ­
+da lita ti etope ri PropagandaeF id eicae le s te mpa tro num
+elegita tQ ueconstituit .
+In M is sam . S . Pe tr iet fe r., Credo . — In M is saconv . eteant,
+om itt. m . S . Pe tr i.
+In Vesp. m. fer. ttm . — Compl. Dom.
+  >> SITE office: feast | S. Petri Chrysologi Ep., Conf. et Eccl. Doct. | Duplex | two=False
+  >> commems: [('Feria', '', ''), ('S. Barbaræ Virg. et Mart.', 'Memoria', '')] missing: []
+  >> MASS S1204 [] 4 Dec. — S. Petri Chrysologi, E. C. D. | white | G=Y C=Y | Pf=Communis | Ky=VI | ite | prayers=['I Adventus', 'S. Barbaræ Virg. et Mart.']
+======== 1944-12-05 [Ordo p.139]
+Fer. 3. De ea. — (Preces et Prostr. us­ VI.
+que ad Nonam exclus.) — Ps. fer. — *
+Omnia ut in Psalt. T. Adv. — In Mat. +
+Invit. Regem venturum, ut fer. 2-a praec.
+(Ps. Venite, ab uno); 9 Ps. et 9 ant. sub
+
+D EC EM B ER
+
+
+
+unico Noct.; V. T. Adv. — RR. II Noct.
+Dom. praec. — Omitt, Te Deum, nec
+repet, ult. R.—Ad Laud. Ps. 2-o loco.—
+Ad Benedictus ant. propr. cum Or. Dom.
+praec. (etiam ad Horas). — In Pret. de
+Regula.—In Prima 4-us Ps., Cap. Pacem.,
+V. Qui venturus., Or. Domine Deus,
+Missa conv. unica de R equiem ; \ - sl Ov. Deus' ve ­
+niae., 2-a Deus, qui nos patrem., 3-a Omnipotens.
+— Dicitur Sequentia, etiam si Missa conv. fuerit
+tan tu m lecta. (Prostr.) — N ig.
+Missae privatae de Dom. praec. cum 2-a et 3-a
+Or. Dom. I. Adv. —- Omitt. Gloria, Credo et
+Allel. cum suo V ersu; Praef. comm., Bened.
+Domino.
+VF. a cap. seq., m.' fer. — Compl. fer.
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [] missing: []
+  >> MASS C114s [Conventual Mass for the dead (the week's first free feria)] Missa pro Defunctis (in Missis quotidianis) | black | G=n C=n | Pf=Defunctorum | Ky=Req | req | prayers=['Deus, qui nos patrem', 'Omnípotens sempitérne Deus, qui']
+  >> MASS Adv1 [Mass of the Sunday] I Adventus | violet | G=n C=n | Pf=Communis | Ky=VIII | ben | prayers=['Deus, qui de beátæ', 'Deus, qui caritátis']
+======== 1944-12-06 [Ordo p.140]
+Fer. 4. S. N icolai E. C. Dupl. — Mat. Alb.
+propr. — Ad Laud. Ps. festivi cum ant.
+propr. — m. fer. — Ad Horas min. Ps.
+et ant. fer.
+In Missa m. fer.
+Vesp. (Ps. de Comm. cum ant. Laud.)
+a cap^ seq., m. praec., fer. et diei oct.
+S. Andreae. — Compl. fer.
+  >> SITE office: feast | S. Nicolai Ep. et Conf. | Duplex | two=False
+  >> commems: [('Feria', '', '')] missing: []
+  >> MASS S1206 [] 6 Dec. — S. Nicolai, E. C. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['I Adventus']
+======== 1944-12-07 [Ordo p.140]
+Fer. 5. ( Vigilia) S. Amb ro sii E. C. et Alb.
+E. D. Dupl. — Ps. fer. — Lect. I Noct.
+de Script. curr. cum RR. I Noct. Dom!
+praec.—m. fer. et diei oct. S. Andreae.
+NOTA. — Legitur Missa Statuit, (in antiq. Missali
+ut in die 4 Apr.).
+1-a Missa conv. in Choro de Vigilia (sine Gloria
+et Credo)-, 2-a Or. fer., 3-a Deus, qui caritatis.;
+
+D EC EM B ER 135
+
+
+Praef. В. М. V. Et te in Veneratione., Bened.
+D om ino; (Prostr.) — Viol.
+2-a Missa conv. extra Chorum de festo cum m-
+S. A ndreae ta n tu m ; Credo.
+Ubi Missa conv. fu erit unica, dic. de Vigil, (sine
+Gloria) cum m. festi, fer. etS. A ndreae; Praef.
+В. М. V. Et te in Veneratione. — Benedicamus
+Domino. — (Omitt. Coli.) — (Prostr.) — Viol.
+Missae privatae ad libitum : an t de festo cum mem.
+fer., S. A ndreae et Vigil., Credo et Ev. S. Joan.
+in fine (Omitt. Coli.);—aut de Vigil, (ut Missa
+conv. unica).
+Vesp. seq. (Ps. Laudate., Or. Vigil.), m.
+fer. — Compl. В. М. V. (Ps. Dom.) per
+totam oct.; et in hymno eiusd. metri
+(excepto hymno Praeclara.) conci, propr.,
+nisi aliter not.
+  >> SITE office: feast | S. Ambrosii Ep., Conf. et Eccl. Doct. | Duplex | two=True
+  >> commems: [('Feria', '', 'priv'), ('Vigilia Conceptionis', 'Vigilia', 'priv'), ('Octava S. Andreæ Apost.', 'Memoria', '')] missing: []
+  >> MASS S1207v [In choir: the vigil] 7 Dec. — In Vigilia Immaculatæ Conceptionis B. Mariæ Virg. | violet | G=n C=n | Pf=B. Maria Virgine | Ky=VIII | ben | prayers=['Deus, qui de beátæ', 'Deus, qui caritátis']
+  >> MASS S1207 [Outside choir: the feast] 7 Dec. — S. Ambrosii, E. C. D. | white | G=Y C=Y | Pf=Communis | Ky=VI | ite | prayers=['Octava S. Andreæ Apost.']
+======== 1944-12-08 [Ordo p.141]
+Fer. 6. Conceptio Im macu la ta B .M .V . Alb.
+Tot. Dupl. 1. cl. cum oct. solemni. —
+Offic. festiv. — m. fer. — In Prima V.
+Qui natus, per tot. oct.
+(A. G. R. et Т.) I. P. O.
+In Missa m. fer.; Credo et Praef. В. М. V. Et te
+in Concepi. Im mac.
+In Vesp. m. fer. — Compl. В. М. V. (Ps.
+Dom.).
+  >> SITE office: feast | Conceptio Immaculata B. Mariæ V. | Totum Duplex I classis | two=False
+  >> commems: [('Feria', '', '')] missing: []
+  >> MASS S1208 [] 8 Dec. — CONCEPTIO IMMACULATA B. MARIÆ VIRG. | white | G=Y C=Y | Pf=B. Maria Virgine | Ky=V | ite | prayers=['I Adventus']
+======== 1944-12-09 [Ordo p.141]
+Sabb. De oct. l-o. — Ps. fer. — In Mat. Alb.
+Invit et hymn. ut in festo (Ps. Venite. *
+a duobus); 9 Ps. et 9 ant. sub unico
+Noct.; V. tertius. — Bened. ex III Noct.
+В. М. V.—Lect. I et II de Script. curr.
+cum RR. III Noct. Dom. praec.; III de
+oct. (1-a die) cum R. III festi. — Dic.
+Te Deum.—m. fer.—In Pret. Ev. festi.
+
+136 D EC EM B ER
+
+
+NOTA. — Per totam oct. Cone. Imm. (except.
+Officio Dom.) RR. Hor. cum dupl. Alleluja.
+Missa ut in die (sine Credo) cum m. fer. — Praef.
+B. M. V.
+VF. Dom. (cum. R.) seq., m. oct. (simpli-
+fic.) — In Compl. Sabb. R. In manus.
+sine Allel.; in hymno concl. comm. et
+ad Nunc dimittis ant. Salva nos.
+го Dom. II Adv en tu s. (2. cl.) — De ea. — VI.
+Ut in Psalt. T. Adv. et Propr. — Omitt.
+Te Deum. et rep. ult. R. — Ad Laud.
+Ps. l-o loco cum ant. propr.—m. oct.—
+In Prima Ps. Confitemini, cum 1-a ant.
+Laud.; V. Qui venturus. — Ad alias
+Horas ant. Laud.
+In Missa (sine Gloria) 2-a Or. oct., 3-a Deus, qui
+caritatis.; Credo, Praef. Triu., Bened. Domino.
+(Omitt. Coll.).
+In Vesp. m. seq. et oct. — In Compl. R.
+In manus., sine Allel.; ad Nunc dimittis
+ant. Salva nos.
+Processio SS. Nominis (I.P.O. et N.)
+  >> SITE office: octave | Conceptio Immaculata B. Mariæ V. |  | two=False
+  >> commems: [('Feria', '', '')] missing: []
+  >> MASS S1208 [Within the octave] 8 Dec. — CONCEPTIO IMMACULATA B. MARIÆ VIRG. | white | G=Y C=n | Pf=B. Maria Virgine | Ky=V | ite | prayers=['I Adventus']
+======== 1944-12-10 [Ordo p.None]
+(not parsed: see previous day)
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('Conceptio Immaculata B. Mariæ V.', '', '')] missing: []
+  >> MASS Adv2 [] II Adventus | violet | G=n C=Y | Pf=SS. Trinitate | Ky=II | ben | prayers=['8 Dec. — Conceptio Immaculata B. Mariæ Virg']
+======== 1944-12-11 [Ordo p.142]
+11 Fer. 2. S. D am asi Р . C. Simpl. — Ps. Alb.
+fer.—Lect. I Noct. de Script. curr. cum *
+RR. I Noct. Dom. praec. — m. oct. et +
+fer. — In Prima omitt. Preces.
+In Missa mem. oct. et fer.; Praef. В. М. V.
+VF. (de festo), m. oct. et fer. — Compl.
+B.M.V. (Ps. Dom.) sine Precibus.
+  >> SITE office: feast | S. Damasi I Papæ et Conf. | Simplex | two=False
+  >> commems: [('Feria', '', ''), ('Conceptio Immaculata B. Mariæ V.', '', '')] missing: []
+  >> MASS S1211 [] 11 Dec. — S. Damasi, P. C. | white | G=Y C=n | Pf=B. Maria Virgine | Ky=VI | ite | prayers=['II Adventus', '8 Dec. — Conceptio Immaculata B. Mariæ Virg']
+======== 1944-12-12 [Ordo p.142]
+12 Fer. 3. De oct. 2-o. — Ps. fer. — In Mat. Alb.
+Invit. et Hymn. ut in festo (Ps. Venite. *
+a duobus); 9 Ps. et 9 ant, sub unico +
+
+DECEMBER 13?
+
+
+Noct.; V. tertius,—Bened. ante Lect. ex
+II Noct. B.M.V.—Lect. I et II de Script.
+curr cum RR. II Noct. Dom. praec., Lect,
+III de oct. (2-a die) cum R. VI festi.—Dic.
+Te Deum. — m. fer.—In Pret. Ev. festi.
+Missa ut in die (sine Credo), m. fer.; Praef. B.M.V.
+VF. a cap. seq., m. oct. et fer. — Compl.
+В. М. V. (Ps. Dom.).
+  >> SITE office: octave | Conceptio Immaculata B. Mariæ V. |  | two=False
+  >> commems: [('Feria', '', '')] missing: []
+  >> MASS S1208 [Within the octave] 8 Dec. — CONCEPTIO IMMACULATA B. MARIÆ VIRG. | white | G=Y C=n | Pf=B. Maria Virgine | Ky=V | ite | prayers=['II Adventus']
+======== 1944-12-13 [Ordo p.143]
+13 Fer. 4. S. Lu ciae V. M . Dupl. — Ps. Rb.
+fer.—Lect. I Noct. de Script. curr. cum
+RR. III Noct. Dom- praec.—R. IX propr.
+— Ad Laud. Ps. fest. cum ant. propr.
+— m. oct. et fer. — Ad Horas min. Ps.
+et ant. fer.
+Hodie in M artyrologio sic m utetur elogium S. Jo ­
+annis a Cruce: Ubedae, in Hispania, natatis san­
+cti Joannis a Cruce, Presbyteri et Confessoris,
+sanctae Teresiae in Carmelitarum reformatione
+socii; quem, a Sum mo Pontifice Benedicto Decimo
+tertio Sanctis adscriptum, Pius Papa Undecimus
+Doctorem universalis Ecclesiae declaravit. Ipsius
+tamen festivitas agitur octavo Kalendas Decem­
+bris.
+In Missa 2-a Or. oct., 3-a fer.; Praef. В. М. V.
+In Vesp. (Ps. de Comm. cum l-a ant.
+. Laud.), m. oct. et fer. — Compl. B.M.V.
+(Ps. Dom.).
+  >> SITE office: feast | S. Luciæ Virg. et Mart. | Duplex | two=False
+  >> commems: [('Feria', '', ''), ('Conceptio Immaculata B. Mariæ V.', '', '')] missing: []
+  >> MASS S1213 [] 13 Dec. — S. Luciæ, V. M. | red | G=Y C=n | Pf=B. Maria Virgine | Ky=VI | ite | prayers=['II Adventus', '8 Dec. — Conceptio Immaculata B. Mariæ Virg']
+======== 1944-12-14 [Ordo p.143]
+14 Fer. 5. De O ctava 3-o. < — Ps. fer. — In Alb.
+Mat. Invit. et Hymn. ut in festo (Ps. *
+Venite, a duobus); 9 Ps. et 9 ant. sub +
+unico Noct.; V. tertius. — Bened. ante
+Lect. ex I Noct. В. М. V. — Lect. I et
+II de Script. curr. cum RR. 1 Noct. Dóm.
+praec.; III de oct. (3-a die) cum R. III festi;
+
+138 D ECEM BER
+
+
+
+— Dic. Te Deum. — m. fer. — In Pret.
+Ev. festi.
+Missa ut in die (sine Credo), m. fer.; Praef. B.M.V.
+D IO EC . CZĘSTOCHOy. — Anniv. Praeconis.
+Episc. — In ołnn. Miss. add. Or. pro Eo.
+VF. a cap. (sine R.) seq. (ad Magn. ant.
+ut in I Vesp., Orat. Laud.), m. fer. —
+Compl. В. М. V. (Ps. Dom.).
+  >> SITE office: octave | Conceptio Immaculata B. Mariæ V. |  | two=False
+  >> commems: [('Feria', '', '')] missing: []
+  >> MASS S1208 [Within the octave] 8 Dec. — CONCEPTIO IMMACULATA B. MARIÆ VIRG. | white | G=Y C=n | Pf=B. Maria Virgine | Ky=V | ite | prayers=['II Adventus']
+======== 1944-12-15 [Ordo p.144]
+15 Fer. 6. D ies oct. Im m ac. C onceptionis. Alb.
++ Solemnis. — Ps. fer. — Lect. I Noct. de
+Script. сцгг. cum RR. II Noct. Dom.
+praec.; II et III Noct. propr. cum RR.
+de festo; reliqua ut in festo.;—m. fer.—
+— In Pret. Ev. festi.
+Missa ut in die sine Credo, m. fer., Praef. B.M.V,
+VF. (de die oct.), m. seq. et fer.—Compl.
+B.M.V. (Ps. Dom.).
+  >> SITE office: octday | Octava Concept. Immaculatæ B. M. V. | Octava solemnis | two=False
+  >> commems: [('Feria', '', '')] missing: []
+  >> MASS S1208 [Octave day] 8 Dec. — CONCEPTIO IMMACULATA B. MARIÆ VIRG. | white | G=Y C=n | Pf=B. Maria Virgine | Ky=V | ite | prayers=['II Adventus']
+======== 1944-12-16 [Ordo p.144]
+16 Sabb. B. Seba stia niM ag giC. O. N. Alb.
+t Semid, — Ps. fer. — Lect. I Noct. de * s
+Script. curr. cum RR. III Noct. Dom. ' +
+praec.—m. fer. et В. М. V. (ant. Spiri­
+tus sanctus., V. Elegit., Or. Deus, qui
+de beatae.) — In Prima Preces.
+In Missa 2-a Or. fer., 3-a Deus, qui de beatae.
+(B. M. V.).
+VF. Dom. (cum R.) seq., m. praec.
+NOTA . — Hod ie in c ip it exe rc itiu mnovemd ie ru man te festu m
+Na tiv ita tis Dom in i.
+Pulsantur organa in utrisque Vesp. et Miesa.
+  >> SITE office: feast | B. Sebastiani Maggi Conf. O. P. | Semiduplex | two=False
+  >> commems: [('Feria', '', ''), ('S. Maria in Sabbato', '', '')] missing: []
+  >> MASS S1216b [] 16 Dec. — B. Sebastiani Maggi O.P. C. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['II Adventus', 'Deus, qui de beátæ']
+======== 1944-12-17 [Ordo p.144]
+17 Dom. III. Adven tu s. (Gaudete; 2 . cl.) De VI.
+t ea. — Ut in Psalt. T. Adv. et Propr. — vel
+Omitt. Te Deum et repet, ult. R. — Ad Ros.
+
+DECEM BER 139
+
+
+
+Laud. Ps. l-o loco cum ant. propr. —
+m. В. М. V. — In Prima Ps. Conf itemini.
+cum 1-a ant. Laud.; V. Qui venturus.—
+Ad alias Horas ant. Laud.
+In Missa (sine Gloria) 2-a et 3-a Or. Dom. 1. Adv.;
+Credo, Praef. Trinit., Benedicamus Domino.
+(Omitt. Coli.).
+ARCH ID IO EC . C RA COV . — Anniv. Consecr-
+Prine. Archiepisc. — In omn. Miss. add. Or.
+pro Eo.
+In Vesp. (ad Magn. ant. О Sapientia.) m.
+B. M. V.
+Processio SS. Sacramenti (I. P. 0.)
+NOTA . — Abhacd ie usqueadV ig il. Na tiv . proh ib en tu r
+M is sae le c ta e ta mvo tiv aequamquo tid ia naeDefunct.
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [] missing: []
+  >> MASS Adv3 [] III Adventus | rose | G=n C=Y | Pf=SS. Trinitate | Ky=II | ben | prayers=[]
+======== 1944-12-18 [Ordo p.145]
+18 Fer. 2. De ea. — (Preces 6t Prostr. ad vi .
+omnes Horas., exc. Vesp.) ,-c- Omnia ut
+in Psalt T. Adv.—In Mat. Invit. Regem
+venturum., ut fer. 2-a post Dom. I. Adv.
+(Ps. Venite, ab uno); 9 Ps. et 9 ant.
+sub unico Noct.; V. T. Adv. — Lect. de
+Script. curr. cum RR. I Noct. Dom.
+praec.,— Omitt. Te, Deum, nec repet,
+ult. R. — Ad Laudes Ps. 2-o loco cum
+ant. propr.: Ecce veniet.; ad Benedictus
+ant. propr. cum Orat. Dom. praec.—In
+Pret. de Regula. — In Prima 4-us Ps.,
+Capit. Pacem., Or. Domine Deus. — Ad
+Horas min. ant. T. Adv.; reliqua de T. Adv.
+cum Orat. Dom. praec.
+Missa conv. unica de Requiem; 1-a Or. Deus ve­
+niae,, 2-a Deus, qui nos patrem., 3-a Omnipotens.
+Dic. Sequentia, etiam si Missa conv. fuerit tau-
+' tum lecta. (Prostr.) — N ig,
+
+140 D EC EM B ER
+
+
+Missae priv. de Dom. praec. cum 2-a et 3-a Or. I
+Dom. I. Adv.; orńitt. Gloria, Credo et Alleluja
+cum suo Versu. — Praef. comm. et in fine
+Bened. Domino. — Viol.
+VF. (ad M agn.ant. OA dona/., Or. Dom.
+praec.; omitt. Preces et Prostr.), nulla
+mem. — In Compl. Prostr. et Preces.
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [] missing: []
+  >> MASS C114s [Conventual Mass for the dead (the week's first free feria)] Missa pro Defunctis (in Missis quotidianis) | black | G=n C=n | Pf=Defunctorum | Ky=Req | req | prayers=['Deus, qui nos patrem', 'Omnípotens sempitérne Deus, qui']
+  >> MASS Adv3 [Mass of the Sunday] III Adventus | rose | G=n C=n | Pf=Communis | Ky=VIII | ben | prayers=['Deus, qui de beátæ', 'Deus, qui caritátis']
+======== 1944-12-19 [Ordo p.146]
+19 Fer. 3. De ea. — (Preces et Prostr. us­ VI.
+que ad Nonam exlus.). — Omnia ut in
+Psalt. T. Adv. — In Mat. Invit. Regem
+venturum., ut fer. 2-a post Dom. I Adv.;
+9 Ps. et 9 ant. sub unićo Noct.; V.
+T. Adv. — Lect. de Script. curr. cum
+RR. II Noct. Dom. pr,aec. — Omitt. Te
+Deum, nec repet, ult. R. — Ad Laudes
+Ps.2 -o loco cum ant. propr. Rorate cae­
+li. — Ad Benedictus ant. propr. cum
+Or. Dom. praec. — ln Pret. de Regula.
+— In Prima 4-us Ps., Cap. Pacem., Or.
+Domine Deus. — Ad Hor. min. ant.
+T. Adv.; reliqua de T. Adv. cum Or.
+Dom. praec.
+Missa de Dom. praec. cum 2-a et 3-a Or. Dom.,
+I. Adv.; om itt. Gloria, Credo et Alleluja cum
+suo Versu. — Bened. Domino in fine. — Viol.
+VF. a cap. seq., m. fer. (ant. O Radix.).
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [] missing: []
+  >> MASS Adv3 [Mass of the Sunday] III Adventus | rose | G=n C=n | Pf=Communis | Ky=VIII | ben | prayers=['Deus, qui de beátæ', 'Deus, qui caritátis']
+======== 1944-12-20 [Ordo p.146]
+20 Fer. 4. Q.T. (J.E. cum abst.) S. D om inici Alb.
+fS yl. A bb. Dupl. — Ps. fer. — Lect. 11
+Noct. de Comm. Conf. non Pont. Beatus
+wr.cum RR. de Comm.; III Noct. Hom.
+fer. cum suis RR. — Ad Laud. ant. fer.
+per annum. — m. fer. (ant. Missus., Or.
+Festina.) — In Pret. Ev. fer.
+
+DECEM BER 141
+
+
+1-a Missa conv. in Choro de feria (sine Gloria.)
+cum 2-a et 3-a Or. Dom. 1. Adv.; Praef. comm.,
+Bened. Domino. — (Prostr. fit ad Or. quae se­
+qu itu r Dominus vobiscum). — Viol.
+2-a Missa conv. extra Chorum de festo sine mem.;
+Praef. comm., EV. S. Joan. in fine.
+Ubi h ab etu r unica Missa conv., dic. de fer. (sine
+Gloria) cum m. festi ttm ; Praef. comm. et in
+fine Benedicamus Domino. — (Prostr. fit ad
+Or. quae sequitur D ominus vobiscum). — Viol.
+Missae priv. ad libitum ; au t de feria (ut Missa
+conv.. un ica);— aut de festo (cum Gloria) cum
+m. fer. (Or. Festina.) ttm ; Praef. comm. et Ev.
+fer. in fine.
+Vesp. seq. (Ps. Laudate.), m. praec. et fer.
+(ant. O clavis.) — Compl. Dom.
+NOTA. — In omnibus Conventibus et Domibus legan­
+tur Acta ultimi Capituli Provincialis.
+  >> SITE office: feast | S. Dominici Sylensis Abb. | Duplex | two=True
+  >> commems: [('Feria', '', 'priv')] missing: []
+  >> MASS Adv3w [In choir: the feria] Feria Quarta IV Temporum in Adventu | violet | G=n C=n | Pf=Communis | Ky=VIII | ben | prayers=['Deus, qui de beátæ', 'Deus, qui caritátis']
+  >> MASS S1220 [Outside choir: the feast] 20 Dec. — S. Dominici Sylensis, Abb. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-12-21 [Ordo p.147]
+21 Fer. 5. S. ThomaeAp. Tot. Dupl. 2 cl. Rb.
+— Offic. festiv. — m. fer. (ant. Nolite
+timere., Or. Dom. praec.).
+In Missa m. fer.; Credo, Praef. Ap.
+In Vesp. m. seq. et fer. (ant. O Oriens.).
+‘22 Fer. 6. Q. T. (J. E. cum abst.) Pa tro ci­ Alb.
+n iu mB.M..V. Tot. Dupl. ~ Offic. festiv.
+— m. fer. — In hymn. conci, propr. —
+In Prima V. Qui natus.
+1-a Missa conv. in Choro de feria (sine Gloria)
+cum 2-a et 3-a Or. Dom. I. Adv.; Praef. comm.,
+Bened. Domino (Prostrat.). — Viol.
+2-a Missa conv. extra Chorum de festo sine mem.;
+Credo, Praef. В. М. V. JLt te in solemnitate.; Ev.
+S. Joan. in fine.
+Ubi h ab etu r unica Missa conv., dic. de feria (si­
+ne Gloria) cum mem. festi ta n tu m .'— Praef.
+comm, — Bened, Domino (Prostr.). — Viol.
+
+142 DEC EM B ER
+
+
+Missae priv. ad libitum: au t de fer. (ut Missa
+conv. unica); ж aut de festo (cam Gloria et
+Credo) cum m. fer. (Or. Excita, quaisumus.),
+■Praef. В. М. V. et Ev. fer. in fine.
+In Vesp. m. seq. et fer. (ant. О Rex., Or.
+Aurem tuam ) — Compl. В. М. V. (Ps.
+Dom.) cum ant. el conci, hymni propr.
+  >> SITE office: feast | S. Thomæ Apostoli | Totum Duplex II classis | two=False
+  >> commems: [('Feria', '', '')] missing: []
+  >> MASS S1221 [] 21 Dec. — S. Thomæ Apostoli | red | G=Y C=Y | Pf=Apostolis | Ky=III | ite | prayers=['III Adventus']
+======== 1944-12-22 [Ordo p.None]
+(not parsed: see previous day)
+  >> SITE office: feast | Patrocinium B. Mariæ V. | Totum Duplex | two=True
+  >> commems: [('Feria', '', 'priv')] missing: []
+  >> MASS Adv3f [In choir: the feria] Feria Sexta IV Temporum in Adventu | violet | G=n C=n | Pf=Communis | Ky=VIII | ben | prayers=['Deus, qui de beátæ', 'Deus, qui caritátis']
+  >> MASS S1222 [Outside choir: the feast] 22 Dec. — Patrocinium B. Mariæ Virg. (in Ordine) | white | G=Y C=Y | Pf=B. Maria Virgine | Ky=V | ite | prayers=[]
+======== 1944-12-23 [Ordo p.148]
+23 Sabb. Q. T. (J. E. cum abst.) B. Mar­ Alb.
+tga rita e de S ab. V id. O. N. Semid.—
+Ps. fe r.— Lect. I Noct. propr. cum RR.
+de Comm.; III Noct. Homil. fer. cum
+suis RR. — Ad Laud. ant. fer. per an­
+num. — m. fer. et B.M.V. (ant. Spiritus
+sanctus., V. Speciosa., Or. Deus, qui de
+beatae.) — In Prima Preces.
+1-a Missa conv. in Choro de feria (sine Gloria)
+cum 2-a et 3-a Or. Dom. I. Adv.; Praef. comm.
+et in fine Bened. Dom in o .^ P rostr. fit ad Or.,
+quae sequitur Dominus vobiscum). — Viol.
+2-a Missa conv. extra Chorum de festo (cum
+Gloria) сищ 2-a et 3-a Or. Dom. I. Adv. et Ev.
+S. Joan. in fine.
+Ubi h abetur unica Missa conv. dic. de feria (sine
+Gloria) cum 2-a Or. festi, 3-a Deus, qui de bea­
+tae. (B.M.V.); — Praef. comm. et in fine Bened.
+Domino (Prostr.). — Viol.
+Missae priv. ad libitum : au t de feria (ut Missa
+conv. unica ) ; aut de festo (cum Gloria) cum
+2-a Or. fer. (Festina.), 3-a Deus, qui de beatae.
+(B.M.Vi) et Ev. fer. in fine.
+VF. Dom. (cum R.) seq. (ad Magn. ant.
+О Emmanuel., Or: Excita), m. praec.
+  >> SITE office: feast | B. Margaritæ de Sabaudia Vid. O. P. | Semiduplex | two=True
+  >> commems: [('Feria', '', 'priv'), ('S. Maria in Sabbato', '', '')] missing: []
+  >> MASS Adv3s [In choir: the feria] Sabbato IV Temporum in Adventu | violet | G=n C=n | Pf=Communis | Ky=VIII | ben | prayers=['Deus, qui de beátæ', 'Deus, qui caritátis']
+  >> MASS S1127b [Outside choir: the feast] 27 Nov. — B. Margaritæ de Sabaudia O.P. Vid. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['Deus, qui de beátæ', 'Deus, qui caritátis']
+======== 1944-12-24 [Ordo p.148]
+24 Dom. IV . Adv en tu s et V ig ilia Na tiv i­ VI.
+ta tis D .N .J. C hr. (2. cl.) De ea. In Mat.
+
+Decem ber 143
+
+
+Invit. de Vigil. Hodie scietis. ; hymnus)
+de Adv. Verbum supernum.— In I et II
+Noct. Ps., ant., VV., Lect. et RR. de
+Dom. IV. Adv.—In III Noct. Ps. et ant.
+de Dom., V. de Vigil., tres Lect. de
+Homil. Vigil, cum suis RR. — Omitt. Te
+Deum et repet, ult. R. — V. ante Laud.
+de Vigil. — Ad Laud. et Horas (Ps. fes­
+tivi cum ant. propr.) fit Offic. de Vigil,
+ritu duplici; VV. et RR. a duobus. —
+m. Dom.—In Pret. Ev. Vigil.
+HODIEHABETURSOLEMNECAP IT ULUM , adquodomnes
+conven ir etenentur . — Ma rty ro lo g , in cipi tu rs ta n tib usFFr.
+etad ' ve rb aJesusChristusvoxe le ve tu rso le mn iu s , mo ro ­
+s iu seaverbacan ta ndo , etpostve rb afactushomoabom ­
+n ib us fit ven ia quousquePrae la tu sdederits ig num .
+
+Hodie pulsantur organa.
+1-a Missa conv. in Cboro de Vigilia (sine Gtoria)
+cum unica Or., Credo, P raef. Trinit., Bened.
+Domino et Ev. S. Joan. in fine (Omitt. Coli.)—
+Viol.
+2-a Missa conv. extra Chorum de Dom. IV. Adv.
+(sine Gloria) cum 2-a et 3-a Or. Dom. I. Adv.;
+Credo, Praef. T rinit. et Bened. Domino in fine
+(Omitt. Coli.). Viol.
+Ubi h ab etu r unica Missa conv. dic. de Vigil, (sine
+Gloria) cum m. Dom., Credo, Praef. Trinit.,
+Bened. Domino et Ev. S. Joan. (non Dom.) in
+fine. (Omitt. Coli.) — Viol.
+Missae priv. de Vigil, cnm m. Dom. etc. (ut in
+Missa conv. unica).
+Hod ie etpettot. oct. Nat. om itt. Co li, im per . — Par ite rab
+hacdieusqueadd ie moct.' Ep ip h . proh ib . M is saevot.
+( e tia m . SS . Ros .) etDefunct.. ( excep ta M is sapraesen te
+cadavere ).
+
+Vesp. seq. (Ps. Laudate.; Or. Vigil.); nulla
+mem,—In Compl. Ps. Dom.; ant. propr.
+
+Decem ber
+
+
+
+(hodie tantum.)—In hymno conci, propr.
+usque ad Epiph.
+Hac hebd. om itt. Offic. et Missa hebd. Defunct.
+■ (Const. 228, § II).
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [] missing: []
+  >> MASS Dec24 [] pridie Nativitas | violet | G=n C=Y | Pf=Communis | Ky=II | ben | prayers=[]
+======== 1944-12-25 [Ordo p.150]
+25 Fer. 2. Na tiv ita sD om ini. Tot. Dupl. Alb.
+1. cl. cum oct. solemnissima (priv.). —
+Offic. festiv. — In Prima V. Qui natus.
+usque ad Epiph.
+. (A. G. R. et Т.) I. P. R. et O.
+Post IX . R . so le mn ite rcan ta tu rEvange liu mgene ra tio n is D .N .
+J . CH . — ln pr in c ip io etf in eGenea lo g ia eomnesses ig nant
+'s ic utadEvange liu mM is sae .
+Dumcan ta tu rTeDeum , im agoPueriJesuprocess io na lite rper
+Ecc le s ia mde fe rripo te st ( Caerem . p . 397).'
+De Laudibus. — Dicta Communione, absque V.
+et absque Deus in adiutor., in Choro inchoetur
+ant. Quem vidistis etfc. — Privatim ex tra Cho­
+rum , ante Laudes V. Puer., Deus in adiutorium.,
+absque Capit., hym n. et V.; Or. Concede. (_Caer.
+'N. 1360 — 1362).
+Hodie habentur tres Missae conv. in Choro: p ri­
+ma in ter M atutinum et Laudes, secunda ante
+Prim am , tertia post Tertiam .
+In Missa Gloria (Sequentia in 3-a Missa), Credo,
+Praef. et Cotrimunic. propr.
+Med ia noc te in choaripotestso la M issa conven tu a lis velpa ro e -
+c ia lis . — In omn ib us ta men re lig io s is seup iis dom ib us
+Ora to r iu mhaben tib uscumfacu lta te SS . Eucha ris tia mhabi-
+tu ali te rasservandi, unusSace rd osnoc te unamvel tre sM issa s
+ce le brarepo te st, etS. Commun io nemm in is tr a re (C fr. Cod .
+Jur . can . 921, § 2et3).
+Rubr ic . se rv andae in ce le bra tio ne triu mM is sa ru mhaben tu r in
+M is sa li in fes to Na tiv . —Cuiplacuer it unam ta n tu mM issa m
+ce le brare , si in noc te pr im am , si in au ro rasecundam , si
+postso lis o rtu m te r tia mce le braredebet ( S .C .R . 13 Febr . 1892).
+— Sace rd oscaecu tie ns , qui ex in du ito ce le bratM is samvot.
+B .M .V ., po te st3M is sasvot. ce le brare ( Decr. 26 Jan . 1920).
+In Vesp. m. seq. — In Compl. Ps. Dom.
+cum ant. propr. usque ad Epiph.
+NOTA. — ln omnibus Missionum Domibus, ubi saltem
+duo adsint Religiosi, legatur in publica mensa, in­
+fra Octavam Nativitatis Domini, Statutum pro
+
+DECEM BER 145
+
+Missionibus Fratrnm Praedicatorum. (Extat Ana­
+lectis Qrd. 1933, pag. 193 et seqq.).
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [] missing: []
+  >> MASS Dec25_3 [] Nativitas Domini, Missa interdiu | white | G=Y C=Y | Pf=Nativitate | Ky=I | ite | prayers=[]
+  >> MASS Dec25_1 [At midnight] Nativitas Domini, Missa ad media noctem | white | G=Y C=Y | Pf=Nativitate | Ky=I | ite | prayers=[]
+  >> MASS Dec25_2 [At dawn] Nativitas Domini, Missa ad matutinam | white | G=Y C=Y | Pf=Nativitate | Ky=I | ite | prayers=['S. Anastasiæ Mart.']
+======== 1944-12-26 [Ordo p.151]
+26 Fer. 3. S. S te phaniP ro to ma rty ris . Rb.
+Tot. Dupl. 2 . cl. cum oct. } Lect. —
+Offic. festiv. — m. Nativ.
+In Missa m. Nativ., Sequentia, Credo, Praef. et
+Communic. Nat.
+In Vesp. (Ps. et ant. de Nat.) m. seq. et
+Nat. — Compl. oct. (Ps. Dom.).
+D IO EC . LUBL IN . — Vesp. (Ps. et ant. de Nat.)
+seq., m. praec. et Nat.
+  >> SITE office: feast | S. Stephani Protomartyris | Totum Duplex II classis | two=False
+  >> commems: [('Nativitas Domini', '', 'priv')] missing: []
+  >> MASS S1226 [] 26 Dec. — S. Stephani Protomartyris | red | G=Y C=Y | Pf=Nativitate | Ky=III | ite | prayers=[]
+======== 1944-12-27 [Ordo p.151]
+27 Fer. 4. S. Joann is A post. et E vang. Alb.
+Tot. Dupl. 2 . cl. cum oct. 3 Lect.—Offic.
+fest. — m. Nat.
+In Missa m. Nativ., Sequentia, Credo, Praef. et
+Communic. Nativ.
+In Vesp. (Ps. et ant. de Nativ.) m. seq.
+et Nativ. — Compl. oct. (Ps. Dom.).
+D IO EC . LUBL IN . — Idem festum Tit. prine. Eccl.
+Cathedr. Tot. Dupl. i. cl.
+  >> SITE office: feast | S. Joannis Ap. et Evang. | Totum Duplex II classis | two=False
+  >> commems: [('Nativitas Domini', '', 'priv')] missing: []
+  >> MASS S1227 [] 27 Dec. — S. Ioannis Apostoli et Evangelistæ | red | G=Y C=Y | Pf=Nativitate | Ky=III | ite | prayers=[]
+======== 1944-12-28 [Ordo p.151]
+28 Fer. 5. SS. In no cen tiu mMm . Tot. Dupl. VI.
+2 . cl. cum oct. } Lect. — Offic. festiv. —
+Omitt. Te Deum et repet, ult. R. — m.
+Nativ. — RR. Horar. sine Allel.
+In Missa (sine Gloria), mem. N ativ.; dic. Credo,
+Praef. et Communic. Nativ (omitt. Alleluja cum
+suo Versa, et ejus loco dic. Laus tua etc.); in
+fine Bened. Domino.
+In Vesp. (Ps. et ant. de Nativ.) m. seq.
+et Nativ. — Compl. oct. (Ps. Dom.); R.
+In manus, cum Allel.
+  >> SITE office: feast | SS. Innocentium MM. | Totum Duplex II classis | two=False
+  >> commems: [('Nativitas Domini', '', 'priv')] missing: []
+  >> MASS S1228 [] 28 Dec. — Ss. Innocentium Martyrum | violet | G=n C=Y | Pf=Nativitate | Ky=VIII | ben | prayers=[]
+======== 1944-12-29 [Ordo p.151]
+29 Fer. 6. S. Thom ae E. M . Dupl. — Ps. Rb.
+fer, — Lect. I Noct, de Epist, ad Roma­
+
+146 DECEM BER
+
+
+
+nos: Humanum dico, cum RR. II Noct.
+Dom. infra oct. Nativ.; — m. Nativ., S.
+■Stephani, S. Joan. et SS. Innoc.
+In Missa Orat, ut in Laud., Credo, Praef. et
+Communic. de Nativ. (Omitt. Collectae).
+In Vesp. (Ps. et ant. de Nat.) m. Nat., S.
+Stephani, S. Joan. et SS. InnQc,—Compl.
+oct. (Ps. Dom.).
+  >> SITE office: feast | S. Thomæ Ep. et Mart. | Duplex | two=False
+  >> commems: [('Nativitas Domini', '', '')] missing: []
+  >> MASS S1229 [] 29 Dec. — S. Thomæ Cantuariensis, E. M. | red | G=Y C=Y | Pf=Nativitate | Ky=VI | ite | prayers=['Nativitas Domini, Missa interdiu']
+======== 1944-12-30 [Ordo p.152]
+30 Sabb. De oct. N ativ. — Ps. festivi. — Alb.
+In Mat. Invit. (Ps. Veniie. a duobus) et
+Hymnus ut in die Nativ.; super 9 Ps.
+de Nat. sola 1-a ant. Dominus dixit.,
+V. Ipse invocabit. — Bened. ex III Noct.
+Ille nos.; Lect. T Occasione., II Itaque
+(in Brev. noviss. p. 366), III de Sermone
+S. Aug. Dominus noster, (p. 376) cum
+RR. III Noct. Dom. infra oct. Nat. —
+Dic. Te Deum.—Ante Laudes V. Puer.—
+In Laud. Ps. Dominus regnavit etc. cum
+sola ant. Quem vidistis., Capit. M ultifa­
+riam’, Hymnus A solis ortus.; ad Bene­
+dictus ant. Nesciens., Or. Concede, (ut
+in festo).—m. S. Steph., S. Joan. et SS.
+Innoc.—In Pret. Ev. Pastores loqueban­
+tur.—Ad Horas min. (Ps. festivi) omnia
+ut in festo Nat.
+Missa de die infra oct. Nat. Puer natus, cum Or.
+ut in L aud.; Credo, Praef. et Commiimc. de
+Nat; (Omitt Coli.).
+In Vesp. omnia ut in II Vesp. Nat. (ad
+Magn. ant. Gaudeamus.), m. S. Silvestri
+P. C. (Dupl. imped.), S. Steph., S. Joan.
+et SS. Innoc. — Compl. oct. (Ps. Dom.).
+
+DECEM BER '147
+  >> SITE office: octave | Nativitas Domini |  | two=False
+  >> commems: [] missing: []
+  >> MASS Dec25_3 [Within the octave] Nativitas Domini, Missa interdiu | white | G=Y C=Y | Pf=Nativitate | Ky=III | ite | prayers=[]
+======== 1944-12-31 [Ordo p.153]
+31 Dom. in fra oct. N ativ. — De ea. — Ps.\Alb.
+festivi. — Omnia ut in festo Nat. et in
+Propr. — Lect. I Noct. de Ep. ad Rom.
+Nihil ergo, (in Brev. noviss. p. 367).—
+Ad Benedictus ant. Dum medium., Or.
+Qmnipotens.—m. Nat. (ant. Nesciens., V. [
+Bened ic tu s Or. Concede.), S. Silvestri,
+S. Stephąni, S. Joan. et SS. Innoc.—In
+Pret. Ev. Dom. — Ad Primam Ps. Deus |
+m nomine,—Ad alias Horas min. omnia
+ut in Nat,, Or. Dominicae.
+Hodie in M artyrologio p ro nun tiatu r luna sub
+litte ra r (m inuscula), quae in servit pro toto
+anno 1945.
+Missa ab om nibus de Dom. cum Gloria, mem. ut
+. in Laud., Credo, Praef. et Communic. de Nat.
+(Om itt. Coli.).
+Vesp. seq. (Ps. Laudate), nulla mem.
+Compl. oct. (Ps. Dom.).
+
+
+SummaeTr ia di
+Laus
+DeiparaeV ir g in iMariaeRosarianae
+Ho nor
+' PatriarchaeNostroDom in ico
+COEL IT IB USQUEOMN IB US
+Glor ia
+
+
+
+
+Redeg it: P. S ta n is la us . Hay to ,
+
+148
+
+
+
+
+NOTA :
+
+Indultum Apostolicum Provinciae nostrae ad
+decennium concessum externam solemnitatem aliquo­
+rum festorum proxima Dominica celebrandi ja m exspi­
+ravit et petita suo tempore ab A . R . P. Provinciali
+hujus induiti renovatio ex ignota causa non advenit.
+
+
+Co rrig enda in Ca le nd ario :
+
+1 . Die 7 Januarii post notam de Missa vot. SS . Cordis
+Jesu addatur :
+Vesp. de oct., m. В. М. V.
+2. Die 14 Febr. D IO EC . PREM IS L . color paramen-
+torum Rubeus.
+3. Die 15 Febr. D IO EC . PREM IS L . color param en-
+torum Albus.
+4. Die 22 Sept. VARSAVIAE color param entorum
+Violaceus.
+5. Die 3 Oct. INM IS S IO N IB US color param entorum
+Albus.
+6. Die 27 Octobr. IN ECCL. NON CO NSECR. color
+param entorum Violaceus.
+
+149
+
+
+
+
+APPENDIX
+
+
+DIE 8 MAJI
+S. STAN IS LAIE. M . PA TRONI PR IN C. PO L.
+TOTUM DUPLEX I CLASSIS
+Quae hic notata non sunt, dicantur de Communi unius'
+M artyris Temporis Paschalis pag. (169).
+Psalm i de Dominica ad utrumque Completorium, ad
+Laudes ( / loco) et ad H oras (ad Prim am 3 loco). In Nocturno
+tres Psalm i et Vers. secundum ordinem Feriarum ex Сот.
+unius Martyris pag. {58 ).
+
+AD IVESPERAS
+Capitulum Hebr. j .
+Omnis Pontifex ex hominibus assumptus, pro
+hominibus constituitur in iis, quae sunt ad Deum,
+ut offerat dona et sacrificia pro peccatis.
+Resp. P astor cadit., ut infra in Nocturno.
+H ym nus Gaude m ater Polonia., ut in Proprio Provinciae.
+
+Ad Magnificat Ant. O beate Stanislae, Prae­
+sul plebis Cracoviae, cujus signa victoriae late pa­
+tent Poloniae, nam dono Christi gratiae, pestes cu­
+rantur v ariae: tua, Martyr egregie, festa colentes
+hodie, Regi commenda gloriae, alleluja.
+Oratio ut in Breviario die 7 Maji.
+
+i5Ó.
+
+
+
+AD MA TUTINUM
+H ym nus ut in I Vesperis (totus).
+Lectio I Omnis Pontifex., ut in Proprio Provinciae.
+Resp. I. B eatus vir. (de Т. P.).
+Lectio II et 111 ut in Breviario die 7 Maji cum Resp.
+infra notatis.
+
+II. O venerandam Martyris cons
+О praedicandam Stanislai praesulis fidem; qua in
+testem veritatis Boleslai regis sistendum tribunali­
+bus * Petrum revocavit ab inferis, alleluja, f . Trien­
+nem in tumulo, deficientibus a veritate filiis homi­
+num — Petrum revocavit.
+EJ'. III. Pastor cadit in gregis m edio: dormit
+sponsus in sponsae grem io: mater plorans gaudet
+in filio: * Quia vivit victor sub gladio, alleluja.
+У. Cleri plebisque concio in patris natalitio jubilet
+cum tripudio pro tanto beneficio. — Quia vivit. —
+Gloria. — Alleluja.
+
+AD LA UDE S
+Capitulum Omnis Pontifex., ut in I Vesperis.
+H ym nus M artyr Diei., ut in Communi uniUs Martyris.
+
+Ad Benedictus Ant. Martyr Dei Stanislaus,
+gloriosus Pontifex, quem occidit Boleslaus truculen­
+tus princeps; pastor bonus et patronus, adsit nobis
+opifex, et virtutum artifex, alleluja.
+
+AD PRETIOSA
+Evangelium
+Secundum Joannem
+Cap. io.
+In illo tem pore: Dixit Jesus Pharisaeis: Ego
+sum pastor bonus. Bonus pastor animam suam dat
+pro ovibus suis. Tu autem.
+AD TERTIAM
+Capitulum Omnis Pontifex., ut in 1 Vesperis.
+
+AD S EXTAM
+Capitulum . Hebr. f.
+Qui condolere possit iis, qui ignorant et errant,
+quoniam et ipse circumdatus est infirm itate: et
+propterea debet, quemadmodum pro populo, ita
+etiam et pro semetipso offerre pro peccatis.
+AD NONAM
+Capitulum Hebr. 7.
+Talis enim decebat, ut nobis esset Pontifex,
+sanctus, innocens, impollutus, segregatus a peccato­
+ribus, et excelsior coeli factus.
+AD II VESPERAS
+H ym nus ut in l Vesperis.
+Ad Magnificat Ant. Vir inclyte Stanislae,
+vita, signis, passione, plebem tuam, pastor bone,
+fove benedictione, guberna protectione, salva sancta
+intercessione, alleluja.
+
+
+'ШТЩ-
+
+
+
+
+i:
+ш Шр
+
+
+
+
+SS
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('Nativitas Domini', '', ''), ('S. Silvestri I Papæ et Conf.', 'Duplex', '')] missing: []
+  >> MASS Nat1 [] Dominica in Oct Nativitatis | white | G=Y C=Y | Pf=Nativitate | Ky=II | ite | prayers=['Nativitas Domini, Missa interdiu', '31 Dec. — S. Silvestri I, P. C']

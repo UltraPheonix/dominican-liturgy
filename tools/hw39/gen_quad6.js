@@ -85,7 +85,7 @@ const DAYS = {
   quad6: {name: 'Dominica in Ramis Palmarum', items: [
     {n: 1, file: 'Quad6', find: /^T: \^OMNIPOTENS sempitérne Redémptor/, tone: 'III', opts: {dv: false, oremus: false, pointing: 'book'}, special: 'palmBlessing',
       what: 'Benedictio ramorum: Omnípotens sempitérne Redémptor', page: 'pp. 137-138',
-      rubric: 'Missale p. 137: "Prior ... ramos arborum ... benedicat eo modo, quo dicuntur Orationes ad Horas." Proc. p. 20: "benedicat eo tono, quo dicuntur Orationes ad Horas"; Proc. pp. 20-21 print this prayer pointed for the tone (flexa at the Missal\'s ";"), ending "per ómnia sǽcula sæculórum ‡. ℟. Amen."',
+      rubric: 'Missale p. 137: "Prior ... ramos arborum ... benedicat eo modo, quo dicuntur Orationes ad Horas." Proc. p. 20: "benedicat eo tono, quo dicuntur Orationes ad Horas"; Proc. pp. 20-21 print this prayer pointed for the tone (the flexa sign where the Missal has a semicolon, and at voluísti ‡ where it has a full stop), ending "per ómnia sǽcula sæculórum ‡. ℟. Amen."',
       label: 'Omnípotens sempitérne Redémptor · in the tone of the Orations at the Hours (Processionarium O.P. 1913, pp. 20-21, 407-408)'},
     {n: 2, file: 'Quad6', find: /^T: \^IN illo témpore : Cum appropinquásset/, tone: 'VI', opts: {},
       what: 'Evangelium Cum appropinquásset (Matth. 21), the body (Dóminus vobíscum and Sequéntia: op13-palm-evangelium-dv, Proc. p. 23)', page: 'p. 139',
@@ -226,13 +226,16 @@ function prepare(it) {
     if (k2 < 0 || !/voluísti\. Sed/.test(la)) throw new Error('palm blessing text changed');
     const bodyTxt = la.slice(0, k2).trim().replace('voluísti. Sed', 'voluísti † sed'), fin = la.slice(k2).trim().replace(/\.$/, '');
     g = T.orationProc(bodyTxt, Object.assign({tone: 'hours'}, it.opts)).replace(/ \(::\)$/, ' (;)');
-    g += ' ' + T._proc.flexO(fin, true) + '. (::) <sp>R/</sp>. A(g)men.(h) (::)';
-    return {gabc: g.replace(/\s+/g, ' '), text: la};
+    g += ' ' + T._proc.flexO(fin + '.', true) + ' (::) <sp>R/</sp>. A(g)men.(h) (::)';
+    // the sung text keeps the Missal's words and stop ("voluísti. Sed"); only the notes follow the Proc. pointing
+    const g2 = g.replace(/sti;\(f\) \(,\) sed\(h\)/, 'sti.(f) (,) Sed(h)');
+    if (g2 === g) throw new Error('voluísti flexa not found');
+    return {gabc: g2.replace(/\s+/g, ' '), text: la};
   }
   if (it.tone === 'II' || it.tone === 'III') {
     la = la.replace(/\s*\(Per Dóminum[^)]*\)\s*$/, '');            // the parenthesised conclusion of a 2nd prayer
     const m = CONCL.exec(la);
-    if (it.conc === 'drop') { if (m) la = la.slice(0, m.index); la = la.replace(/[\s:;,]*$/, '.'); }
+    if (it.conc === 'drop') { if (m) la = la.slice(0, m.index); la = la.replace(/[\s:;,.]*$/, '.'); }
     else {
       if (!m) throw new Error('no conclusion: ' + la.slice(-60));
       const body = la.slice(0, m.index).replace(/\s*$/, '');

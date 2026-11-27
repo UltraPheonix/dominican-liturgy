@@ -279,7 +279,7 @@
   var SAYS = /\b(dicit|dixit|dixérunt|dixerunt|dicunt|dicens|dicéntes|dicentes|ait|aiunt|inquit|respóndit|respondit|respondérunt|respondens|respóndens|clamábant|clamavérunt|clamávit|loquútus|locútus|dícite|dicite|dicat|dicam|dico|dicébant|interrogávit|exclamávit|orávit|dicéntem|scriptum est|clamans|clamávit)\b[^:]*:$/i;
   function speech(member, next) { return !!next && SAYS.test(member) && /^[A-ZÀ-ÝÆŒǼ]/.test(next.replace(/^[^A-Za-zÀ-ÿǽ]+/, '')); }
   // split the conclusion from the body of a prayer
-  var CONCL = /\s((?:Per (?:eúndem |eúmdem |eumdem |eundem )?(?:Dóminum|Dominum|Christum)|Qui (?:tecum|vivis|cum Patre|vivit|venturus|cum Deo))\b.*)$/;
+  var CONCL = /\s((?:Per (?:eúndem |eúmdem |eumdem |eundem )?(?:Dóminum|Dominum|Christum)|Per (?:eúndem|eúmdem|eumdem|eundem)(?=\.)|Qui (?:tecum|vivis|cum Patre|vivit|venturus|cum Deo))\b.*)$/;
 
   // ================================================================ Orations: tones II and III (pp. 404-408)
   // FLEXIO at ";": II the syllables after the last accent to MI (Fí-li-um tú-um(g) ;), III to RE (tri-stí-ti-a(f) ;)
@@ -373,7 +373,7 @@
     g += body(ms, III, o.pointing === 'book', o.final === 'flex');
     if (c) {
       g += conclO(c, III) + ' (::)';
-      if (o.amen !== false) g += ' <sp>R/</sp>. A(g)men.(h) (::)';
+      if (o.amen !== false && !/\bDeus\.$/.test(c)) g += ' <sp>R/</sp>. A(g)men.(h) (::)';   // "...Deus." : Per ómnia follows in the Preface tone
     } else g = g.replace(/ \([;,]\) $/, ' (::)');
     return g.replace(/\s+/g, ' ').trim();
   }

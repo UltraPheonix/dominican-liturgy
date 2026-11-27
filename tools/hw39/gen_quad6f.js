@@ -52,7 +52,7 @@ const SOLEMN = [
   ['^OREMUS et pro beatíssimo Papa', 172, 191, 'pro Papa', 'Orémus et pro beatíssimo Papa nostro N. ‡ ut Deus et Dóminus noster, qui elégit eum in órdine Episcopátus, salvum atque incólumem custódiat Ecclésiæ suæ sanctæ, ad regéndum pópulum sanctum Dei :'],
   ['^OMNIPOTENS sempitérne Deus, cujus judício', 172, 191, null, 'Omnípotens sempitérne Deus, cujus judício univérsa fundántur ‡ réspice propítius ad preces nostras : et eléctum nobis Antístitem tua pietáte consérva ‡ ut christiána plebs, quæ te gubernátur auctóre, sub tanto Pontífice, credulitátis suæ méritis augeátur : Per Dóminum nostrum.'],
   ['^OREMUS et pro ómnibus Epíscopis', 172, 191, 'pro ordinibus', 'Orémus et pro ómnibus Epíscopis, Presbýteris, Diacónibus, Subdiacónibus, Acólythis, Exorcístis, Lectóribus, Ostiáriis, Confessóribus, Virgínibus, Víduis, et pro omni pópulo sancto Dei :'],
-  ['^OMNIPOTENS sempitérne Deus, cujus spíritu', 172, 191, null, 'Omnípotens sempitérne Deus, cujus spíritu totum corpus Ecclésiæ sanctificátur et régitur : exáudi nos pro univérsis Ordínibus supplicántes ‡ ut grátiæ tuæ múnere, ab ómnibus tibi grádibus fidéliter serviátur : Per Dóminum.'],
+  ['^OMNIPOTENS sempitérne Deus, cujus spíritu', 172, 191, null, 'Omnípotens sempitérne Deus, cujus spíritu totum corpus Ecclésiæ sanctificátur et régitur : exáudi nos pro univérsis Ordínibus supplicántes ‡ ut grátiæ tuæ múnere, ab ómnibus tibi grádibus fidéliter serviátur : Per Dóminum... in unitáte Spíritus.'],
   ['^OREMUS et pro christianíssimo Imperatóre', 172, 192, 'pro Imperatore', 'Orémus et pro christianíssimo Imperatóre nostro N. ‡ ut Deus et Dóminus noster súbditas illi fáciat omnes bárbaras natiónes ad nostram perpétuam pacem :'],
   ['^OMNIPOTENS sempitérne Deus, in cujus manu', 172, 192, null, 'Omnípotens sempitérne Deus, in cujus manu sunt ómnium potestátes, et ómnium jura regnórum ‡ réspice ad Románum benígnus Impérium : ut gentes, quæ in sua feritáte confídunt ‡ poténtiæ tuæ déxtera comprimántur : Per Dóminum.'],
   ['^OREMUS et pro Catechúmenis', 172, 192, 'pro Catechumenis', 'Orémus et pro Catechúmenis nostris, ut Deus et Dóminus noster adapériat aures præcordiórum ipsórum, januámque misericórdiæ ‡ ut per lavácrum regeneratiónis accépta remissióne ómnium peccatórum, et ipsi inveniántur in Christo Jesu Dómino nostro :'],
@@ -116,11 +116,7 @@ function compareWords(a, b) {
 function sing(it, text) {
   const t = text.replace(/\s*‡/g, ';'), o = Object.assign({}, it.o || {}, POINTING === 'triduum' ? {pointing: 'book'} : {});
   let g;
-  if (it.o && it.o.final === 'flex' && POINTING === 'triduum') {
-    // ends on the flexio, no conclusion (Triduum p. 205): the engine's own flexio/elevatio by the book's marks
-    const P = T._proc, ms = t.match(/[^;:]+[;:]?/g).map(x => x.trim()).filter(Boolean);
-    g = '(f3) ' + ms.map((m, i) => /;$/.test(m) ? P.flexO(m) + (i === ms.length - 1 ? ' (::)' : ' (,)') : P.elevO(m) + ' (;)').join(' ');
-  } else if (it.kind === 'lesson') g = T.lessonProc(t, o);
+  if (it.kind === 'lesson') g = T.lessonProc(t, o);
   else g = T.orationProc(t, o);
   if (it.o && it.o.noTerm) g = g.replace(/ \(;\) per\(h\) óm\(i\).*$/, ' (::)');   // Per ómnia is a separate file
   return g;

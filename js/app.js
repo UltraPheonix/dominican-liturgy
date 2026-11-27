@@ -2059,9 +2059,10 @@
     var T = window.OPMassTones, gos = r.type === 'Gospel';
     if (!T || !la) return null;
     try {
-      if (gos && T.gospelProc) return [null, T.gospelProc(la, {book: (r.ref || '').split(' ')[0], dv: false})];
-      if (!gos && pro && T.lessonProc) return [null, T.lessonProc(la, {title: r.title || ''})];
-      if (!gos && T.epistleProc) return [null, T.epistleProc(la, {title: r.title || ''})];
+      // the Gospel's Dóminus vobíscum and Sequéntia are sung in the Order of Mass just before (singLines): the body only
+      if (gos && T.readingProc) return [null, T.readingProc(la, true)];
+      if (pro && T.lessonProc) return [null, T.lessonProc(la, {title: r.title || ''})];
+      if (T.readingProc && T.epistleTitleProc) return [r.title ? T.epistleTitleProc(r.title) : null, T.readingProc(la, false)];
       return [gos || !r.title ? null : T.epistleTitle(r.title), T.reading(la, gos)];
     } catch (e) { console.warn('tone', e); return null; }
   }

@@ -34,6 +34,8 @@ for rs in out.values():
             if x in r.get('la',''): r['la']=r['la'].replace(x,y)
         for x,y in TXTEN:
             if x in r.get('en',''): r['en']=r['en'].replace(x,y)
+import sys; sys.path.insert(0,'$R/tools/m33'); import tails   # readings cut at a page break, completed from the 1939 Missal
+print(tails.apply(out),'tail fixes applied from tools/m33/tails.json')
 open('$R/data/readings33.js','w').write('/* Epistles and Gospels as printed in the Missale O.P. (1933), read from the scan (tools/m33). p33 = pdf page. */\nvar READINGS33 = '+json.dumps(out,ensure_ascii=False,separators=(',',':'))+';\n')
 print(len(out),'masses -> data/readings33.js')
 PY
