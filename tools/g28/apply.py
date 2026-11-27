@@ -65,6 +65,7 @@ for k, c in K.items():
     for sk, sv in c.get('season_set', {}).items():
         m.setdefault('season', {}).setdefault(sk, {})
         for p, ids in sv.items(): m['season'][sk][p] = [{'id': i, 'm39': 'G50'} for i in ids]
+    if c.get('name_en'): m['name_en'] = c['name_en']
     if c.get('readings'): m['readings'] = c['readings']
     if c.get('title'): m['title'] = c['title']
     if c.get('en'): m['en'] = c['en']

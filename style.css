@@ -602,3 +602,7 @@ html[data-theme="dark"] .jump a.on, html[data-theme="dark"] .hours .sbtn.on, htm
 .part.pending .pend-h i { font-family: var(--serif); color: var(--ink); letter-spacing: 0; }
 .part.pending .pend-la { font-size: 17px; margin: 6px 0; }
 .part.pending .pend-en { color: var(--muted); margin: 4px 0; }
+
+/* the Holy Week stub on the Mass page: a readable button on the light page */
+.hw-card .hw-go { display: inline-block; flex: none; color: var(--ink); border-color: var(--ink); text-decoration: none; margin-top: 6px; }
+.massbar[hidden] { display: none; }

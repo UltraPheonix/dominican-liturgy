@@ -124,10 +124,17 @@
   function loadGabc(id) {
     if (!gabcCache[id]) {
       var path = /^r\d+$/.test(String(id)) ? 'gabc/r/' + String(id).slice(1) : 'gabc/' + id;
-      gabcCache[id] = fetch(path + '.gabc').then(function (r) {
-        if (!r.ok) throw new Error('gabc/' + id + '.gabc: ' + r.status);
-        return r.text();
-      });
+      // the host answers 503 for a moment while a new version is being published: try again before giving up
+      var get = function (n) {
+        return fetch(path + '.gabc').then(function (r) {
+          if (!r.ok) throw new Error('gabc/' + id + '.gabc: ' + r.status);
+          return r.text();
+        }).catch(function (e) {
+          if (n >= 4) { delete gabcCache[id]; throw e; }
+          return new Promise(function (ok) { setTimeout(ok, 800 * (n + 1)); }).then(function () { return get(n + 1); });
+        });
+      };
+      gabcCache[id] = get(0);
     }
     return gabcCache[id];
   }
@@ -1177,20 +1184,34 @@
     secs.forEach(function (s2) { jumpObs.observe(s2); });
   }
 
+  var ordIdUsed = false;
   function drawMass() {
     if (BOOKP) return;
     var m = D.masses[state.key], main = $('#mass'), mhead = $('#mhead') || main;
     main.innerHTML = ''; if (mhead !== main) mhead.innerHTML = '';
-    markBar();
-    if (!HWP && /^Quad6[mtwhfs]?$/.test(state.key)) {
+    markBar(); ordIdUsed = false;
+    var mbar = $('#massbar'), hwStub = !HWP && /^Quad6[mtwhfs]?$/.test(state.key);
+    if (mbar) mbar.hidden = hwStub;
+    if (hwStub) {
       main.appendChild(el('header', {class: 'mass-head'}, [el('h1', {text: clean(m.title).replace(/^\d+ [A-Za-z.]+ — /, '')}), el('p', {class: 'en', text: m.name_en || clean(m.en || '')})]));
       main.appendChild(el('div', {class: 'hw-card'}, [
-        el('p', {text: 'Holy Week has its own section, with the whole rite of each day as the Missal gives it, in the traditional (1939) and the reformed (1959) form.'}),
+        el('p', {text: 'Holy Week has its own section, with the whole rite of each day as the Missale O.P. (1939) gives it.'}),
         el('a', {class: 'sbtn hw-go', href: 'holyweek.html#' + state.key, text: 'Open in Holy Week ›'})]));
       return;
     }
     var latin = clean(m.title).replace(/^\d+ [A-Za-z.]+ — /, '');
     var english = m.name_en || (isTemporal(state.key) ? clean(m.en || '') : '');
+    // on a date, a feast takes its title from the 1939 calendar (e.g. "Patrocinium S. Thomæ", "Translatio S. Catharinae",
+    // "B. Martini de Porres"): the Mass may be borrowed from another feast, and some titles in the Mass list are later
+    var off0 = null; try { off0 = state.date && window.OPMissalRank ? mr().day(state.date).office : null; } catch (e) { off0 = null; }
+    if (off0 && off0.key === state.key && off0.title && /^(feast|tfeast|octday)$/.test(off0.kind)) {
+      var ot = clean(off0.title).replace(/^Dies octava: /, 'In Octava ');
+      var fold = function (x) { return x.toLowerCase().replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/j/g, 'i').normalize('NFD').replace(/[\u0300-\u036f]/g, ''); };
+      var w0 = ot.split(/[ ,.:]/)[0], OWN = {Patrocinium: 'Patronage of ', Translatio: 'Translation of ', Impressio: 'Stigmata of '};
+      if (/^BB?\. /.test(ot) && english) english = english.replace(/^(Sts?\.|SS\.|Saints?)\s/, function (x0) { return /^(Sts|SS|Saints)/.test(x0) ? 'Bls. ' : 'Bl. '; });
+      if (OWN[w0] && fold(latin).indexOf(fold(w0)) < 0 && english) english = OWN[w0] + english;
+      latin = ot;
+    }
     mhead.appendChild(el('header', {class: 'mass-head'}, [
       el('h1', {text: latin}),
       english && english !== latin ? el('p', {class: 'en', text: english}) : null
@@ -1804,7 +1825,7 @@
   }
   function findKyriale(name) { var r = null; D.kyriale.forEach(function (id) { if (D.chants[id].i === name) r = id; }); return r; }
   function drawOrdinary(k, id) {
-    var slot = el('section', {class: 'part', 'data-part': k, id: k === 'ky' || k === 'as' ? 'ordinary' : null});
+    var slot = el('section', {class: 'part', 'data-part': k, id: (k === 'ky' || k === 'as') && !ordIdUsed ? (ordIdUsed = true, 'ordinary') : null});
     var box = el('div', {class: 'chant'}), nm = D.chants[id] ? D.chants[id].i : '';
     var label = k === 'it' && (/^Benedicamus/.test(nm) || rubricsOf(state.key, state.date).dismiss === 'ben') ? 'Benedicamus Domino' : k === 'it' && /^Requiescant/.test(nm) ? 'Requiescant in pace' : ORD_LABEL[k];
     slot.appendChild(el('div', {class: 'part-head hide-print'}, [el('h2', {text: label}), el('span', {class: 'incipit', text: D.chants[id] ? clean(D.chants[id].i) : ''})]));

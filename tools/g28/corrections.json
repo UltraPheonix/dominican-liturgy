@@ -196,12 +196,16 @@
 "S1106": {
 "ok": {
 "co": "643"
-}
+},
+"src": "English name completed (was cut at a comma)",
+"name_en": "SS. Jerome, Valentine, Francis, Hyacinth and Companions, OP, Martyrs"
 },
 "S0711": {
 "ok": {
 "co": "25*"
-}
+},
+"src": "English name completed (was cut at a comma)",
+"name_en": "SS. Ignatius Delgado and Companions, OP, Martyrs"
 },
 "S0816": {
 "ok": {
@@ -1184,5 +1188,29 @@
 ]
 }
 }
+},
+"S0123": {
+"src": "English name completed (was cut at a comma)",
+"name_en": "St. Raymond of Penyafort, OP"
+},
+"S0420": {
+"src": "English name completed (was cut at a comma)",
+"name_en": "St. Agnes of Montepulciano, OP"
+},
+"S0501": {
+"src": "English name completed (was cut at a comma)",
+"name_en": "St. Joseph the Worker"
+},
+"S0511": {
+"src": "English name completed (was cut at a comma)",
+"name_en": "SS. Philip and James, Apostles"
+},
+"S0709": {
+"src": "English name completed (was cut at a comma)",
+"name_en": "SS. John of Cologne and Companions, OP, Martyrs"
+},
+"S1028": {
+"src": "English name completed (was cut at a comma)",
+"name_en": "SS. Simon and Jude, Apostles"
 }
 }
