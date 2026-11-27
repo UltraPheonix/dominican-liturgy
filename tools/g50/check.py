@@ -48,8 +48,8 @@ for i in sorted(OCR):
     for l in OCR[i].split('\n'): lines.append((i, l))
 blocks = []
 for j, (i, l) in enumerate(lines):
-    m = re.match(r'^\W{0,3}D[il1]e\s+(\d{1,2})\s+([A-Za-z]{3,})', l.strip())
-    if not m or re.search(r'\s-\s', l): continue
+    m = re.match(r'^\W{0,3}D[il1I]e\s+(\d{1,2})\s+(?:ve[lL]\s+\d{1,2}\s+)?([A-Za-z]{3,})', l.strip())
+    if not m or re.search(r'\s[-—]\s', l): continue
     mo = mon(m.group(2))
     if not mo: continue
     title = ' '.join(x.strip() for _, x in lines[j + 1:j + 3] if x.strip())[:90]

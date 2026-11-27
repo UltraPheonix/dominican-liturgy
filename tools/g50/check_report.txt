@@ -20,10 +20,6 @@ S0210    10 Feb. — S. Scholasticæ, V.                  p.420 ['Gaude&mus', 'C
    co: Graduale [['(printed)', '424', 5846]]  site ['6238']
 S0212    12 Feb. — Ss. Septem Fundatorum O.S.M.        p.424 
    tr: Graduale [['Qui séminant', '23*', 4978]]  site ['6182']
-S0223    23 Feb. — S. Petri Damiani, E. C. D.          p.433 ['Os justi', 'Communi unius Conf. non Pont.,', '42*']
-   in: Graduale [['Mihi autem', '1*', 4899]]  site ['6549']
-   tr: Graduale [['Desidérium', '14*', 6463]]  site ['7081']
-   of: Graduale [['In omnem', '5*', 6618]]  site ['7170']
  2.03 B. Henricì Susonis, Conf. Ord. Prad.                NO SITE MASS
  6.03 B. Jordani a Pisis, Conf. Ord. Prad.                NO SITE MASS
 10.03 B. Petri de Jeremia, Conf. Ord. Pred.               NO SITE MASS
@@ -48,7 +44,7 @@ S0530b   30 Maii — B. Andreæ Franchi O.P. Ep., C.      p.484 ['Statuit', 'Com
    gr: Graduale [['(printed)', '485', 6822]]  site ['6123']
    al: Graduale [['(printed)', '486', 7208]]  site ['6785', '6785', '6824', '5526']
    of: Graduale [['Recordàre', '364', 5119]]  site ['5857']
-   co: Graduale [['(printed)', '487', 5623]]  site ['6516']
+   co: Graduale [['(printed)', '487', 5623]]  site ['5854']
 20.06 B. Hosanna, Virg. Ord. Prad.                        ? ['S0620b', 'S0620bx']
 28.06 S. Irenai, Episc. et Mart.                          ? ['G502', 'G502_3']
 G502     Missa «Lex veritatis» (c. 28 Iun.)            p.502 
@@ -58,11 +54,10 @@ S0704b   4 Iul. — B. Catharinæ Jarrigue O.P. V. (1996) p.511
    gr: Graduale [['Constitues', '2*', 9858], ['(printed)', '512', 6775]]  site ['5634']
    of: Graduale [['(printed)', '514', 6990]]  site ['5801']
    co: Graduale [['Vos qui sectiti', '6*', 5171]]  site ['6238']
-G515     Missa «Sapientiam sanctorum» (c. 6 Iul.)      p.515 ['Statuit', 'Communi unius Confessoris et Pontificis,', '32*']
-   gr: Graduale [['In omnem', '5*', None], ['(printed)', '516', 5724]]  site ['9870']
-   al: Graduale [['Isti sunt', '499', 6911], ['(printed)', '518', 6183]]  site ['6895']
+G515     6 Iul. — In Octava Ss. Apostolorum Petri et P p.515 ['Statuit', 'Communi unius Confessoris et Pontificis,', '32*']
+   gr: Graduale [['In omnem', '5*', None], ['(printed)', '516', 5724]]  site ['6831']
    tr: Graduale [['Qui séminant', '23', None]] (no GregoBase id)  site None
-   of: Graduale [['Exsultbunt', '570', None]] (no GregoBase id)  site ['6555']
+   of: Graduale [['Exsultbunt', '570', None]] (no GregoBase id)  site ['op-g50-exsultabunt-of']
 20.06 S. Hieronymi Emiliani, Confessoris                  ? ['S0620b', 'S0620bx']
 S0620b   20 Iun. — B. Hosannæ Mantuanæ O.P. V.         p.522 
    gr: Graduale [['(printed)', '523', 5879]]  site ['6293']
