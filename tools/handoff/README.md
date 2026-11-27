@@ -7,64 +7,71 @@ Read tools/handoff/RULINGS.md (all of Joseph's decisions) before anything else.
 
 
 
-## NEW REQUESTS (Joseph, 27 Nov 18:00), to do first in the next chat
-- **Publish the Office branch:** Joseph has approved it. Follow OFFICE_HANDOFF.md §3 step 1:
-  1. normalise propers_fix.json and fix/a00.json to the page spelling;
-  2. rebuild;
-  3. run scratch/chk.py and the audits;
-  4. run the browser test on sample days of every month, in both rites;
-  5. merge origin/commons1909-v2 into main;
-  6. run tools/push.sh.
-  Run the Mass sweep too. Joseph's later rule overrides the earlier "don't publish the Office yet".
-- **Processions page (processions.html):** it "looks really messy", so clean it up. Tidy the layout of the chant blocks, rubrics and texts (see tools/proc/build_proc.py and proc_data.py), and check it on a phone-width screenshot.
-- **Missing chants:** some processional chants are missing, e.g. "O lumen" (the antiphon O lumen Ecclesiae, for St Dominic).
-  - Look for the Dominican version on GregoBase (tools/gregobase/gb.sqlite, Dominican sources 11, 12, 13, 14, 20, 21, 35, 36).
-  - Check it against the Processionarium 1913 scan before use.
-  - List every procession item that has text but no chant, and fill in each one.
-- **Processions chant QC:** some responses have wrong notes, e.g. one that doesn't go down at the end.
-  - Check every versicle/response and prayer tone file (tools/proc/gabc/tone_*, ex_*, lit_*, lor_*) against the Processionarium rules: p. 395-396 for versicles (the final drop), p. 402 for flexa and proparoxytones, pp. 407-408 for prayers.
-  - Check every read chant against the scan.
-  - Fix in the generators (gen_tones.js, gen_lit.js, gen_ex.js), then rebuild.
+## THE ORDER OF WORK (Joseph, 27 Nov 18:14). This overrides every older ordering below.
+**Agents:** up to 5 at once (Joseph). Send a status message after each substep. Push finished work in small batches with tools/push_files.sh, after mass_sweep.
 
-## ONE MERGED TO-DO LIST (Joseph, 27 Nov 17:52): Mass first, then Office
-The Office chat is closed, so this chat owns the whole site.
-- The old "never touch the Office files" rule is VOID.
-- Do NO Office work until the Mass is done AND Joseph says so.
-- Office material is on the branch origin/commons1909-v2 (it contains main as of 27 Nov 17:10; ignore the branches commons1909 and commons-1909-and-orations).
-- Bring it in with `git fetch origin commons1909-v2 && git merge origin/commons1909-v2` on a LOCAL branch, not main: don't publish the Office yet. tools/push_files.sh pushes only the files you list, from origin/main.
-- Then read, in this order:
-  1. tools/OFFICE_HANDOFF.md;
-  2. the Office sections of tools/HANDOFF.md (from "B5 IN PROGRESS");
-  3. tools/TODO.md;
-  4. tools/b09/fix/REPORTS.md;
-  5. tools/b09/EYEPASS.md;
-  6. the LOG in tools/ENGINE.md.
-- Log in tools/ENGINE.md that the Office chat's engine steps 4-5 are now ours.
+### PHASE 1: MASS (do this first)
+1. **Text audit of all 496 Masses** against the Missale O.P. 1939. Only 31 are done.
+   - Reports: tools/audit/A1-A5.md. Scripts: tools/audit/scripts/A*/. Groups: tools/audit/groups.json. Restart brief: "Auditor brief" below.
+   - Fixes go in tools/audit/fixes/*.json and are applied with tools/audit/apply_fixes.py.
+   - Then:
+     - convert consonantal i→j to the Missal's spelling (script);
+     - re-punctuate the orations that came from Divinum Officium;
+     - fix the cut readings (W-E3.md, plus about 30 more found by A1);
+     - fix the wrong prayers, readings and chants the auditors listed: C1s, C39s, C51s, C55s, S0603 and S0524 readings, S0531 (1956), All Souls II/III Gradual, the Beati using C7s chants, etc.
+   - Easy chant follows straight away (standing instruction).
+2. **Calendar fixes** from tools/handoff/ordo44_diff.md; also check December.
+3. **The Commons' Paschal second Alleluias** (D.md), and the remaining site fixes (W-F2.md, F.md).
+4. **Holy Week chant:** Palm Sunday–Wednesday (W-B2.md), Holy Saturday (W-B5.md), Maundy Thursday (W-B3.md).
+5. **The Passions:** tools/passion/TONES.md and tools/handoff/C.md (5 questions for Joseph).
+6. **The 1959 English** (E.md); then a final whole-Mass QC; then the offline download.
 
-**MASS (do these first):**
-1. Text audit: finish all 496 Masses (tools/audit/A1-A5.md; only 31 done). Then do the i→j conversion, re-punctuate the Divinum Officium prayers, and finish the cut readings (W-E3.md).
-2. Calendar fixes from tools/handoff/ordo44_diff.md; December still to be checked.
-3. The chant corrections found by the audit (in A*.md), the Commons' Paschal second Alleluias (D.md), and the remaining site fixes (W-F2.md, F.md).
-4. Holy Week chant: Palm Sunday–Wednesday (W-B2.md), Holy Saturday (W-B5.md), Maundy Thursday (W-B3.md).
-5. The Passions (tools/passion/TONES.md, tools/handoff/C.md).
-6. The 1959 English (E.md); then a final whole-Mass QC; then the offline download.
+### PHASE 2: PROCESSIONS
+7. **Clean up processions.html:** Joseph says it "looks really messy". Tidy the layout of the chant blocks, rubrics and texts (tools/proc/build_proc.py, proc_data.py) and check it at phone width.
+8. **Add the missing chants,** e.g. "O lumen" (O lumen Ecclesiae, St Dominic).
+   - Take them from GregoBase (tools/gregobase/gb.sqlite, Dominican sources 11, 12, 13, 14, 20, 21, 35, 36) and check each against the Processionarium 1913 scan.
+   - List every procession item that has text but no chant, and fill each one.
+9. **QC of the processional chant:** some responses have wrong notes (e.g. an ending that doesn't go down).
+   - Check every tone file (tools/proc/gabc/tone_*, ex_*, lit_*, lor_*) against the Processionarium rules: pp. 395-396 for versicles and their final drop, p. 402 for the flexa and proparoxytones, pp. 407-408 for prayers.
+   - Check every chant that was read against the scan.
+   - Fix it in the generators (gen_tones.js, gen_lit.js, gen_ex.js), then rebuild.
 
-**OFFICE (only after the Mass, and when Joseph says so; tools/OFFICE_HANDOFF.md §3; rules in §1):**
-- **Rules (§1):** the page image is the only authority for the 1909 texts; show eye-checked text as the page prints it; show only eye-verified saints' text; publish checked days as they are done; send a status message after each day checked; no subagents unless Joseph asks.
-- **Scans:** the 1909 Breviary scans are not in the repo. Fetch Breviarium-1909-1/2-optimized.pdf from the CMAA Dominican page to /tmp/b09/b1.pdf and b2.pdf, or ask Joseph to attach them.
+### PHASE 3: OFFICE (the Office chat is closed; we own the whole site; the old "don't touch the Office files" rule is void)
+10. **Publish the Office branch at the START of this phase** (Joseph). The branch is origin/commons1909-v2; ignore the branches commons1909 and commons-1909-and-orations.
+    - First read, in this order:
+      1. tools/OFFICE_HANDOFF.md;
+      2. tools/HANDOFF.md from "B5 IN PROGRESS";
+      3. tools/TODO.md;
+      4. tools/b09/fix/REPORTS.md;
+      5. tools/b09/EYEPASS.md;
+      6. the LOG in tools/ENGINE.md.
+    - Log in ENGINE.md that the Office chat's engine steps 4-5 are now ours.
+    - Then follow OFFICE_HANDOFF §3 step 1:
+      1. normalise propers_fix.json and fix/a00.json to the page spelling;
+      2. rebuild;
+      3. run the audits and scratch/chk.py;
+      4. run the browser test on sample days of every month, in both rites;
+      5. merge into main;
+      6. push.
+    - Rules (§1):
+      - The page image is the only authority for the 1909 texts.
+      - Show eye-checked text as the page prints it; show only eye-verified saints' text.
+      - Publish checked days as they're done, with a status message after each day.
+      - No subagents in the Office work unless Joseph asks.
+    - Scans: fetch Breviarium-1909-1/2-optimized.pdf from the CMAA Dominican page to /tmp/b09/b1.pdf and b2.pdf, or ask Joseph to attach them.
+11. **Office to-do, in OFFICE_HANDOFF §3 order:**
+    1. Saints: the eye check.
+    2. Saints: place the texts that are transcribed but not yet placed.
+    3. Commons.
+    4. Proper of the Season.
+    5. Psalter and Ordinary.
+    6. Other Offices.
+    7. The 1909 ranking engine (steps 4-5).
+    8. Clean-up.
+    9. Office chant.
 
-7. First merge to live: normalise propers_fix.json and fix/a00.json to the page spelling; rebuild; run the audits and the browser test; merge; push.
-8. Saints: finish the eye check (the Nov 27–Feb 23 gaps, then about 185 feasts from 02-25 to 11-26).
-9. Saints: place the parts that are transcribed but not yet placed (Little Hours, Compline antiphons, blessings, Lauds, hymns, T.P. forms, commemorations, rubrics).
-10. Commons: an eye check of every Common; the "N." days; the doubtful readings; Matins lessons and homilies; English.
-11. Proper of the Season: re-OCR, then the eye pass from Advent through the Ember days and vigils.
-12. Psalter and Ordinary: the psalter, preces, suffrages, Prime's chapter office, the Marian antiphons.
-13. Other Offices: the Little Office B.V.M., the Saturday B.V.M., the Office of the Dead, St Dominic, psalms, litanies, blessings.
-14. Ranking engine 1909 (tools/ENGINE.md steps 4-5; the '1939' rule set waits on a 1930-52 Breviary or Ordo from Joseph).
-15. Clean-up: drop the "in preparation" notes; full-year automatic check; read-through by Joseph.
-16. Office chant: the Jandel 1862 Antiphonary and the 1933 books; the Nocturnale; the tones.
-
-**Later:** the 1959 Holy Week; an App Store app.
+### LATER
+- The complete 1959 Holy Week; an App Store app (needs a Mac).
 
 ## Joseph's priority order (27 Nov)
 1. **Mass TEXTS exactly as the Missale O.P. 1939 prints them. Nothing else until this is done.**
