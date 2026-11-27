@@ -124,4 +124,4 @@ See tools/orat39/MISSING.md for the per-Mass list.
   Et valde (VIII) + Benedictus tone VIII from the Triduum 1927 p. 324 (as hs1959 p. 35 directs).
 - Holy Saturday Vespers (pp. 31-32): op59-hodie, op59-ps115, op59-principes built for the Office chat; not on any page.
 - No Mandatum in hs1959 or the St Dominic Missal for 1959: nothing missing.
-- Passion tones: no Dominican source in hand (1913, 1927, 1939, 1959, 1965 books, Harrison 1920 all lack them). Waiting on Joseph for a scan of a Cantus Passionis O.P.
+- Passion tones: FOUND in the Processionarium O.P. 1913, pp. 435-440 (pdf 451-456), "VII. Modus cantandi Passiones" (Chronista, Christus, Turba, Lamentation-tone ending). See tools/handoff/README.md item 11.
