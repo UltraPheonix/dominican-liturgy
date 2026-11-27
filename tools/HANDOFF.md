@@ -602,3 +602,19 @@ sections) or Joseph re-uploads the text PDFs; OCR text is in tools/b09/ocr/*.txt
 - Spot-check of helpers: Barbara (b00) and Agnes (b02) compared with the page: no difference found. b01, b03, b04, b05 not yet sampled.
 - NEXT in calendar order: Dec 15 Octave of the Conception; then the missed Offices (REPORTS.md); then batches from 02-25.
 - Joseph asked for the ranking engine (plan given in chat 2026-11-27 08:00), then said: keep working on the Office, no subagents yet.
+### 2026-11-27 08:55 — PAUSE. Joseph's DECISIONS (binding)
+1. ACCENTS: the 1909 Office follows THE PAGE AS PRINTED (æ unaccented: sæculo, quæsumus, præmium; no accent on y or on capital
+   initials: Innocens, Ordinis, Angelus). → normalise every fix file to that (my own entries in propers_fix.json and fix/a00.json
+   have some ǽ / Ínnocens / Ámbulans typed by site habit: change ǽ→æ, Ǽ→Æ, and drop accents on capital initials ONLY where the
+   page has none — check on the page when unsure); helpers' files already follow the page (a few leftovers noted in REPORTS.md).
+   NB this applies to the eye-checked 1909 texts; psalter/Commons text built from Divinum Officium keeps its accents until it is
+   eye-checked too.
+2. PUBLISH CHECKED DAYS as they are done (not at the end). → next session, first job: normalise accents (1), run the audits
+   (/tmp/b09/chk.py-style placement check — recreate if /tmp is gone; aud3 run-ons; headless test on a sample of days in every
+   month), rebase commons1909 onto origin/main (Mass chat keeps pushing; sw.js VERSION conflict → take origin's and bump), merge
+   to main and push with tools/push.sh. What goes live with the branch: 60 eye-checked feasts (fix/*.json, propers_fix.json),
+   Commons re-applied with saints' names for N., unverified machine text of the Sanctorale no longer shown.
+3. Stopped at Joseph's request. State: branch commons1909 (pushed as origin/commons1909-v2), HEAD = this commit, nothing running.
+   fix/a00.json has 9 entries (Ambrose, Conception + octave days, Octave day, Loreto, Lucy, Andrew of Peschiera, Andrew Corsini,
+   Alvarus). Next feasts: Desponsatio B.M.V. (02-11, from pdf 983), Septem Fundatores (02-17, pdf 1002-1011), Aimo (02-21,
+   pdf 1015-1016), Matthias (02-24, from pdf 1025), then batches from 02-25 (helpers when Joseph says so).
