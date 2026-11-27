@@ -54,6 +54,12 @@ bump sw.js, headless Chrome test, commit as UltraPheonix, `bash tools/push.sh`; 
     Holy Week Mon-Wed print 'Secunda et tertia Oratio, pag. 63' but render via the Holy Week text (data/holyweek_text.js):
     the two prayers must be inserted there (not yet).
   * Joseph: the day-ranking engine is to be built twice, one for the Missal, one for the Breviary (the Office chat owns the Office files).
+  * 1b inventory: 'Memoria' + 'Oratio' blocks in M39 (m39lin.txt lines) = commemoration-only saints with their own prayers:
+    44977 Vedast & Amand (6 Feb), 52758 Medard (8 Jun), 53431 Quiricus & Julitta (16 Jun), 58688 Tiburtius (11 Aug),
+    59769 Timothy & Symphorian (22 Aug), 65260 Crispin & Crispinian (25 Oct), 67035 Four Crowned (8 Nov). Make ADDIV sets
+    (or, se, pc; proof from M39.pdf page images; English) and link them to the KAL39 Memoria entries of those dates.
+    KAL39 has 75 Memoria entries: find where M39 gives the prayers of the other 68 (search the feast of the same day,
+    the Commons 'ut in Communi', or the supplements); list any not in M39.
   * then prescribed() uses the table first, the seasonal rule second; KAL39 Memoriae without prayers in the data need their
     orations (from M39). Footnotes 39623-39631 (Saturday BVM, votive BVM, Joseph/Peter-Paul/Dominic omitted from A cunctis).
 
