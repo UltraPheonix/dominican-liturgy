@@ -587,3 +587,18 @@ helper prompt = 'Read tools/b09/EYEPASS.md … fix file fix/bNN.json … feasts:
 /tmp/b09/b1.pdf, b2.pdf (v1/v2 symlinks broken) — if /tmp/b09 is gone the scans must be fetched again (CMAA; see earlier HANDOFF
 sections) or Joseph re-uploads the text PDFs; OCR text is in tools/b09/ocr/*.txt.gz (restore command in reocr.sh).
 (4) merge verified days to main in batches once Joseph says how to publish (as-you-go was proposed, not yet answered).
+### 2026-11-27 morning (branch commons1909-v2, NOT live)
+- build.py ran on all fix files; with_proper uses verified text only; the old offices1909.json Sanctorale pieces (magn, bened, laudes,
+  invit) are no longer used (only titles). New fix keys supported: psalms [[3],[3],[3]] (own Matins psalms), v1.oratio, v1.vr,
+  mat.hymn / v1.hymn / laud.hymn / v2.hymn (strophes; own doxology kept), gospelN/homilyN.
+- fix/a00.json (main session): Ordinatio S. Ambrosii (7 Dec), Conceptio immaculata (8 Dec, full, 12 pages; octave days pdf 800-802,
+  815 ff. NOT done), Translatio Domus Lauretanæ (10 Dec, full), S. Lucia (13 Dec, full). 56 feasts verified in all.
+- /tmp/b09/chk.py (not in repo; recreate): for every fix entry, are its pieces present in the built day (and the eve's Vespers)?
+  All placed except what precedence decides (I/II Vespers lost to a neighbour) and the days the build does not celebrate yet:
+  Christmas-octave feasts (Stephen, John, Innocents, Thomas B.), Holy Name, Gundisalvus (Epiphany octave), Simplex feasts
+  (Blaise, Martina), octave days. → needs the Temporale / engine.
+- Not placed yet (in each entry's 'note'): Little-Hours chapters/short responsories, Compline antiphons, proper blessings,
+  Lauds chapter/versicle, commemorations, strophes 'María Mater grátiæ' within the Octave of the Conception.
+- Spot-check of helpers: Barbara (b00) and Agnes (b02) compared with the page: no difference found. b01, b03, b04, b05 not yet sampled.
+- NEXT in calendar order: Dec 15 Octave of the Conception; then the missed Offices (REPORTS.md); then batches from 02-25.
+- Joseph asked for the ranking engine (plan given in chat 2026-11-27 08:00), then said: keep working on the Office, no subagents yet.
