@@ -1588,7 +1588,7 @@
     slot.appendChild(chantBox);
     var trc = c.id && (D.trans[c.id] || D.trans[String(c.id)]);
     var trDiv = null;
-    if (trc && trc.t) { slot.classList.add('m-pair'); trDiv = el('div', {class: 'm-tr hide-print'}, trimTPText(trc.t).split(/(℣\.|℟\.)/).map(function (x) { return /^[℣℟]\.$/.test(x) ? el('span', {class: 'r', text: x}) : x; })); slot.appendChild(trDiv); }
+    if (trc && trc.t) { slot.classList.add('m-pair'); trDiv = el('div', {class: 'm-tr hide-print'}, trimTPText(trc.t).split(/(℣\.|℟\.)/).map(function (x) { return /^[℣℟]\.$/.test(x) ? el('span', {class: 'r', text: x}) : x; }).concat([trSrc(trc)])); slot.appendChild(trDiv); }
     slot.appendChild(editor);
     if (state.edit) slot.appendChild(el('p', {class: 'meta hide-print'}, [info]));
     sel.addEventListener('change', function () {
@@ -1621,6 +1621,7 @@
         var antE = ant0.split(/\s+/).slice(0, 6).join(' ').replace(/[,.;:]$/, '') + '…';
         if (/Gl[oó]ria Patri/.test(lt) && !/sine Gl[oó]ria Patri/.test(lt)) { trDiv.appendChild(document.createTextNode(' Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now, and ever shall be, world without end. Amen. ')); }
         if (/Ant\.|Gl[oó]ria Patri|repetitur/.test(lt) && ant0) { trDiv.appendChild(el('span', {class: 'r', text: 'Ant. '})); trDiv.appendChild(document.createTextNode(antE)); }
+        var ts0 = trDiv.querySelector('.tr-src'); if (ts0) trDiv.appendChild(ts0);   // the source stays last
       }
       if (state.ordo === 'low' && !state.edit) {   // at Low Mass the priest reads the proper: the text only, without the notes
         chantBox.innerHTML = ''; chantBox.className = 'said'; mode.textContent = '';
@@ -1820,6 +1821,9 @@
       .trim();
   }
   function paschal() { return currentSeason() === 'pasch' || /^(Pasc|Asc|AscVig|Litaniis|Pent0)/.test(state.key || '') || (state.key && D.masses[state.key] && /Tempore Paschali/.test(D.masses[state.key].title || '')); }
+  // where the English of a chant comes from, shown after it
+  var TR_SRC = {douay: 'Douay-Rheims', dra: 'Douay-Rheims, adapted to the chant', own: 'AI translation'};
+  function trSrc(t) { var k = t.s || 'own'; return el('span', {class: 'tr-src' + (k === 'own' ? ' tr-ai' : ''), text: TR_SRC[k] || TR_SRC.own}); }
   function trimTPText(t) {
     if (paschal()) return t.replace(/\(P\.T\.\s*([^)]*)\)/g, '$1');
     return t.replace(/\s*\(P\.T\.[^)]*\)/g, '').replace(/\s*T\.\s?P\.\s*Alleluia,?\s*alleluia!?/g, '').replace(/,\s*alleluia[!.]?\s*(?=(℣\.|Glory be|$))/gi, '. ').replace(/\.\s*\./g, '.').trim();
@@ -1859,7 +1863,7 @@
     var chantSec = function (p, c) {
       var tr = D.trans[c.id] || D.trans[String(c.id)];
       var o = sec(PART_NAME[p], PART_EN_FULL[p], tr && tr.r ? tr.r : '');
-      if (tr) o.en.textContent = trimTPText(tr.t);
+      if (tr) { o.en.textContent = trimTPText(tr.t); o.en.appendChild(trSrc(tr)); }
       else o.en.appendChild(el('span', {class: 'c-missing', text: '(No English translation of this chant is available yet.)'}));
       jobs.push(chantLatin(c.id).then(function (t) { o.la.textContent = t; }));
     };
@@ -1890,7 +1894,7 @@
         if (pn) { var P = prefaceText(pn, state.key, state.date), o = sec('Praefatio', P.en, ''); o.la.textContent = P.la; o.en.textContent = P.tr; }
       }
     });
-    box.appendChild(el('footer', {class: 'c-foot', text: 'Chants: Graduale O.P. (1950). Readings: Vulgate and Douay-Rheims. English of the chants: Douay-Rheims where the chant is the text of Scripture, otherwise our own translation.'}));
+    box.appendChild(el('footer', {class: 'c-foot', text: 'Chants: Graduale O.P. (1950). Readings: Vulgate and Douay-Rheims. English of the chants: Douay-Rheims where the chant is the text of Scripture, otherwise an AI translation (marked).'}));
     return Promise.all(jobs);
   }
   function printAs(mode) {
