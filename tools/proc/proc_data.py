@@ -199,8 +199,8 @@ SECTIONS.insert(0, {'id': 'purificatio', 'la': 'In Festo Purificationis B. M. V.
   ('rub', 'Finíta prædícta Antíphona, Ceroferárii, Cantóre eis deferénte, dicant:', 'When the antiphon is finished, the candle-bearers, the cantor prompting them, say:'),
   ('txt', '℣. Post partum, Virgo, invioláta permansísti. ℟. Dei Génitrix, intercéde pro nobis.', '℣. After childbirth, O Virgin, thou didst remain inviolate. ℟. Mother of God, intercede for us.'),
   ('rub', 'Deínde Prior absque Dóminus vobíscum dicat:', 'Then the Prior, without "The Lord be with you", says:'),
-  ('txt', 'Orémus. Exáudi, quǽsumus, Dómine, plebem tuam: et quæ extrínsecus ánnua tríbuis devotióne venerári, intérius ássequi grátiæ tuæ luce concéde. Per Christum Dóminum nostrum. ℟. Amen.',
-          'Let us pray. Hear, we beseech Thee, O Lord, Thy people; and grant that what Thou givest them to venerate outwardly by yearly devotion they may attain inwardly by the light of Thy grace. Through Christ our Lord. ℟. Amen.'),
+  ('txt', 'Orémus. Erúdi, quǽsumus, Dómine, plebem tuam: et quæ extrínsecus ánnua tríbuis devotióne venerári, intérius ássequi grátiæ tuæ luce concéde. Per Christum Dóminum nostrum. ℟. Amen.',
+          'Let us pray. Instruct, we beseech Thee, O Lord, Thy people; and grant that what Thou givest them to venerate outwardly by yearly devotion they may attain inwardly by the light of Thy grace. Through Christ our Lord. ℟. Amen.'),
   ('rub', 'Dum autem Orátio dícitur, Cruciferárius Crucem repónat in loco suo. Oratióne finíta, Prior et Minístri in Sacrístiam vadant. Fratres vero Candélas téneant quoúsque fúerint offeréndæ.',
           'While the prayer is said, the cross-bearer puts the cross back in its place. When the prayer is finished, the Prior and the ministers go to the sacristy. The friars keep their candles until they are to be offered.'),
  ]})
@@ -277,3 +277,9 @@ _at('ascensio', _t('℟. Viri Galil'), [('gabc', 'asc_viri', '℟.', '7')])
 _at('ascensio', _t('℟. Omnis pulchr'), [('gabc', 'asc_omnis', '℟.', '2')])
 _at('ascensio', _t('℟. Non conturb'), [('gabc', 'asc_nonconturbetur', '℟.', '3')])
 _at('ascensio', _t('Ant. O Rex'), [('gabc', 'asc_orex', 'Ant.', '2')])
+_at('purificatio', _t('℣. Dóminus vobíscum'), [('gabc', 'pur_dominus', '', '')])
+_at('purificatio', _t('Ant. Lumen'), [('gabc', 'pur_lumen', 'Ant.', '8')])
+_at('purificatio', _t('Ant. Ave, grátia'), [('gabc', 'pur_ave', 'Ant.', '1')])
+_at('purificatio', _t('Ant. Adórna'), [('gabc', 'pur_adorna', 'Ant.', '5')])
+_at('purificatio', _t('Ant. Respónsum'), [('gabc', 'pur_responsum', 'Ant.', '2')])
+_at('purificatio', _t('Ant. Hódie'), [('gabc', 'pur_hodie', 'Ant.', '2')])
