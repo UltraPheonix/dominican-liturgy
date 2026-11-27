@@ -13,22 +13,33 @@ Every paused job has its own note in this folder:
 | proc_tones.md | Processions: versicles and prayers in tone | **Done and live** (reference only) |
 | qc_mass.md, qc_ui.md, qc_hw.md | The three QC reports | Partly fixed (see the to-do list below) |
 
-## When Joseph says "continue": start a swarm
-Joseph asked (27 Nov) that "continue" launches a whole swarm of sub-agents to finish the Mass work, not one job at a time.
-- **One agent per independent job:**
-  - items 1, 2, 3, 4 and 5;
-  - item 6 split into 2 agents (Holy Week text/layout; Holy Week app logic);
-  - item 7 split into 2 agents (Requiem and prayers; the rest);
-  - item 8: one agent per Mass to typeset (S1002, S1015, S1024, S1115), plus one for the DOUBTFUL items;
-  - item 9;
-  - item 11 split into 5 agents: one transcribing the Passion tones (pp. 435-440) first, then one per Passion.
-- **Each agent's prompt:** give the standing rules above, its handoff note, and the files it may touch. Agents in the same file need separate, non-overlapping regions, as with proc_data.py's `_at` blocks.
-- **Agents' own limits:** agents don't commit; each reports per chant / per Mass, and the coordinator relays these to Joseph.
-- **Coordinator's job:**
-  - Verify each result against the scan.
-  - Integrate, sweep, test and push in small batches.
-  - Send Joseph a short status after each batch.
-- **One QC agent at the end** re-walks the site, checking against the 1939 Missal.
+## When Joseph says "continue": start a swarm, organised in a hierarchy
+Joseph asked (27 Nov) that "continue" launches a swarm of agents to finish the Mass work, organised hierarchically. Each
+larger task has one **lead agent** that reports to the coordinator (the main chat). The lead spawns and directs **worker
+agents** beneath it and gives regular status reports.
+
+### Structure
+| Lead (reports to coordinator) | Workers under it |
+|---|---|
+| **A. Chant: Processions & litanies** (items 1, 9) | Loreto litany; Litany of the Saints and Rogations; extraordinary processions (texts pp. 132-134 + chant); processions punctuation |
+| **B. Holy Week** (items 2, 6) | tones engine in js/mtones.js (new functions only); orations per day (Palm Sunday-Wednesday, Thursday, Friday, Saturday); lessons/prophecies; QC text and layout; QC app logic |
+| **C. The Passions** (item 11) | transcribe the Passion tones (Proc. pp. 435-440) first; then Matthew, Mark, Luke, John in parallel |
+| **D. Graduale and saints' Masses** (items 4, 8) | Teresa; Raphael; Albert (1933 supplement); S1002; S1015; S1024; S1115; DOUBTFUL items; one second-pass checker who reads every new file against the scan |
+| **E. Texts** (items 3, 5) | 1959 English: extraction/OCR; 1959 English: matching and labelling; the cut readings |
+| **F. Site QC** (items 7, 10) | Requiem and prayers; remaining qc_ui items; Ordo 1944 cross-check |
+| **G. Final QC** (after A-F) | re-walk the site against the 1939 Missal; one worker per page type |
+
+### Rules for leads
+- **Before starting:** give every worker the standing rules below, its handoff note, and the exact files it may touch. Workers in the same file get separate, non-overlapping regions (e.g. separate `_at` blocks in proc_data.py, separate .src files).
+- **Checking workers' chant:** the lead checks each worker's chant against the scan, or has the D-checker do it, before handing anything up.
+- **Status:** the lead sends the coordinator a short status report:
+  - after each chant / Mass / day is finished;
+  - at least every ~15 minutes;
+  - the format is done / in progress / next / blockers.
+  The coordinator relays these to Joseph, grouped by lead.
+- **Committing:** leads and workers never commit or push. The lead hands up finished, compiled and tested work with a list of the files it touched.
+- **Coordinator's job:** integrate, run mass_sweep (port 8768), check in headless Chrome, and push in small batches, sending Joseph a one-line message per push.
+- **If stopped:** each lead writes its own tools/handoff/<lead>.md before ending.
 
 ## Standing rules (Joseph)
 - **Pre-1955 Dominican rite only.**
