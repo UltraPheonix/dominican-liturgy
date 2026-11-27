@@ -596,3 +596,9 @@ html[data-theme="dark"] .jump a.on, html[data-theme="dark"] .hours .sbtn.on, htm
 .day-alts .da-link { background: none; border: 0; padding: 2px 0; color: var(--muted); font: inherit; text-align: left; cursor: pointer; }
 .day-alts .da-link .da-t { color: var(--ink); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
 .day-alts .da-miss { font-style: italic; }
+
+.part.pending { margin: 18px 0; }
+.part.pending .pend-h { font-weight: normal; font-size: 20px; margin: 0 0 4px; font-family: var(--caps); color: var(--rubric); letter-spacing: .06em; }
+.part.pending .pend-h i { font-family: var(--serif); color: var(--ink); letter-spacing: 0; }
+.part.pending .pend-la { font-size: 17px; margin: 6px 0; }
+.part.pending .pend-en { color: var(--muted); margin: 4px 0; }

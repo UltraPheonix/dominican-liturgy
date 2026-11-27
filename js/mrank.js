@@ -254,6 +254,8 @@
   }
 
   function cand(o) { return o; }
+  // the common vigils with a Mass in the Missale O.P. 1939 (by the date of the Kalendarium)
+  var VIGIL_MASS = {'1129': 1, '1207': 1, '0623': 1, '0628': 1, '0809': 1, '0814': 1, '0920': 1, '1027': 1, '1031': 1};
   var LORD = /\bDomini\b|D\. ?N\. ?J\. ?C|Salvatoris|S\. Crucis|Sanguinis|Jesu\b/;
   // the candidates of a date before transfers: {kind, key, title, rank, pv, ...}
   function candidates(d) {
@@ -272,7 +274,10 @@
       if (e[2] && (tkeys.indexOf(e[2]) >= 0 || /^Dec25/.test(e[2]))) return;
       if (/^Octava /.test(e[0]) && out.some(function (c) { return c.kind === 'octday'; })) return;
       var rank = e[1], c = {kind: 'feast', key: e[2], title: e[0], rank: rank, pv: RANK_PV[rank] || 0, md: mmdd(d), order: i, note: e[3]};
-      if (rank === 'Vigilia') { c.kind = 'vigil'; c.pv = PV.vigil; }
+      // the Kalendarium marks as Vigils also fast days that have no Mass of their own (St Matthias, St James, St Bartholomew,
+      // St Thomas: the Missal prints none, and the Ordo 1944 says nothing of them in the Mass on 24 Jul., 23 Aug., 20 Dec.);
+      // only the vigils with a Mass in the Missal enter the occurrence (Rubr. IV.2 "Vigiliis communibus quae propriam Missam habent")
+      if (rank === 'Vigilia') { if (!VIGIL_MASS[mmdd(d)]) return; c.kind = 'vigil'; c.pv = PV.vigil; }
       else if (rank === 'Novem Lectiones') { c.kind = 'anniv'; c.pv = -1; }
       else if (rank === 'Memoria') { c.kind = 'memoria'; c.pv = -1; }
       else if (/^Octava/.test(rank) || /^Octava /.test(e[0])) {

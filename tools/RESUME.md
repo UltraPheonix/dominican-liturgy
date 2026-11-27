@@ -95,8 +95,13 @@ OPEN:
    solemn vacant day (§ VII.2); tools/b24/homily.py lists the Saints' Offices with a proper III-Nocturn Homily or Responsories
    (homily.json, 123 days not vacant). Matches the Ordo 1944 (2 May, 15 Jul, 9 Aug, 25 Oct, 30 Oct, 14 Nov).
  - Still wanted: more Ordos 1939-54 (non-Polish) to test; a Graduale O.P. scan (chants of the missing Masses).
- - Masses missing on the site (M39 has them): vigils of Matthias, James, Laurence, Bartholomew, Matthew, Simon & Jude, All Saints,
-   Andrew, Imm. Conception, Thomas; Purissimi Cordis B.M.V. (pp. 316-317); In Octava Epiphaniae (own Mass, line 12265);
+ - Vigils (v190): the Missal prints Masses for 9 common vigils only (Andrew, Imm. Conc., John Bapt., Peter & Paul, Laurence,
+   Assumption, Matthew, Simon & Jude, All Saints); the Kalendarium's Vigils of Matthias, James, Bartholomew, Thomas are fasts
+   with no Mass (Ordo 1944 24 Jul., 23 Aug., 20 Dec.) -> mrank.js VIGIL_MASS. Added S1129v S1207v S0809v S0920v S1027v S1031v
+   (tools/m39/new/spec_b6.json, or_b6.json; English orations AI, marked in src). Introits of S0920v (Ego autem sicut oliva,
+   p. 564) and S1031v (Timete Dominum, p. 603) not in the Graduale GABC set (Joseph's Drive zip) -> masses.js 'pending': words
+   shown with a note, no chant. NB add_masses.py re-applies ALL specs and regresses later fixes: restore other keys after running.
+ - Still missing: Purissimi Cordis B.M.V. (pp. 316-317); In Octava Epiphaniae (own Mass, line 12265);
    Feria VI post Dom. Passionis (site Quad5f is the Seven Sorrows Mass). S0910_2 has no Introit/Gradual.
  - Gloria/Credo/Preface by the 1939 rank (rubricsOf still 1960-based); Saturday commemoration of Our Lady (Missal p. 40).
 

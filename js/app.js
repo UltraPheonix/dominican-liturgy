@@ -986,6 +986,8 @@
     if (O === 'low' && !m.prophecies) od('chalice');
     if (!m.prophecies && !(HW && HW.noFoot)) od('foot');
     if (O && (parts['in'] || []).length) od('rIn');
+    // an Introit the Missal prints whose chant is not yet typeset: its words, with a note (never a guessed melody)
+    if (m.pending && m.pending['in'] && !(parts['in'] || []).length) q.push({t: 'pending', p: 'in', x: m.pending['in']});
     ch('in');
     if (!m.prophecies) { ord('ky'); ord('gl'); od('collect'); orat('or'); od('collectEnd'); }
     var gr = (parts.gr || []).length, tr = (parts.tr || []).length;
@@ -1148,6 +1150,11 @@
       else if (it.t === 'oratio') { main.appendChild(drawOratio(it)); if (it.k === 'or' && (it.extra ? it.last : !it.more) && moreAllowed(D.masses[state.key])) main.appendChild(moreControls()); }
       else if (it.t === 'hw') { var hws = drawSection(it.s, R); if (hws) main.appendChild(hws); }
       else if (it.t === 'hwtext') main.appendChild(drawHwText(it.s, it.n));
+      else if (it.t === 'pending') main.appendChild(el('section', {class: 'part pending', 'data-part': it.p}, [
+        el('h3', {class: 'pend-h'}, [PART_NAME[it.p], ' ', el('i', {text: it.x.inc})]),
+        el('p', {class: 'hint rubric', text: 'The chant of this ' + ({'in': 'Introit'}[it.p] || 'part') + ' is not yet typeset on this site; the words are from the Missale O.P. (1939), p. ' + it.x.pg + '.'}),
+        el('p', {class: 'pend-la', lang: 'la', text: it.x.la}),
+        it.x.en ? el('p', {class: 'pend-en m-tr', lang: 'en', text: it.x.en}) : null]));
       else if (it.t === 'hwnote') main.appendChild(el('p', {class: 'hint rubric', text: 'This day of Holy Week is still being transcribed from the Missale O.P. (1939); its chants follow.'}));
       else if (it.t === 'ordo') { var os = drawOrdo(it.k, R); if (os) main.appendChild(os); }
       else {

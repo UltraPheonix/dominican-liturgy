@@ -1,0 +1,221 @@
+[
+ {
+  "key": "S1129v",
+  "d": "1129",
+  "kal": "Vigilia S. Andre",
+  "title": "29 Nov. — In Vigilia S. Andreæ Apostoli",
+  "name_en": "Vigil of St Andrew",
+  "rank": "",
+  "op": false,
+  "color": "violet",
+  "sec": "sanctorum",
+  "parts": {
+   "in": [
+    4298
+   ],
+   "gr": [
+    6863
+   ],
+   "of": [
+    5797
+   ],
+   "co": [
+    6487
+   ]
+  },
+  "pref": "Communis",
+  "readings": [
+   [
+    "Lesson",
+    "Ecclesiasticus 44: 26-27, 45: 1-4, 6, 8-9"
+   ],
+   [
+    "Gospel",
+    "Joannes 1: 35-51"
+   ]
+  ]
+ },
+ {
+  "key": "S1207v",
+  "d": "1207",
+  "kal": "Vigilia Conceptionis",
+  "title": "7 Dec. — In Vigilia Immaculatæ Conceptionis B. Mariæ Virg.",
+  "name_en": "Vigil of the Immaculate Conception",
+  "rank": "",
+  "op": false,
+  "color": "violet",
+  "sec": "sanctorum",
+  "parts": {
+   "in": [
+    6161
+   ],
+   "gr": [
+    5577
+   ],
+   "of": [
+    4880
+   ],
+   "co": [
+    7228
+   ]
+  },
+  "pref": "B. Maria Virgine",
+  "readings": [
+   [
+    "Lesson",
+    "Ecclesiasticus 24: 23-31"
+   ],
+   [
+    "Gospel",
+    "Matthæus 1: 1-16"
+   ]
+  ]
+ },
+ {
+  "key": "S0809v",
+  "d": "0809",
+  "kal": "Vigilia S. Laurentii",
+  "title": "9 Aug. — In Vigilia S. Laurentii Martyris",
+  "name_en": "Vigil of St Laurence",
+  "rank": "",
+  "op": false,
+  "color": "violet",
+  "sec": "sanctorum",
+  "parts": {
+   "in": [
+    6304
+   ],
+   "gr": [
+    5366
+   ],
+   "of": [
+    5076
+   ],
+   "co": [
+    6924
+   ]
+  },
+  "pref": "Communis",
+  "readings": [
+   [
+    "Lesson",
+    "Ecclesiasticus 51: 1-8, 12"
+   ],
+   [
+    "Gospel",
+    "Matthæus 16: 24-27"
+   ]
+  ]
+ },
+ {
+  "key": "S0920v",
+  "d": "0920",
+  "kal": "Vigilia S. Matth",
+  "title": "20 Sept. — In Vigilia S. Matthæi Apostoli et Evangelistæ",
+  "name_en": "Vigil of St Matthew",
+  "rank": "",
+  "op": false,
+  "color": "violet",
+  "sec": "sanctorum",
+  "parts": {
+   "gr": [
+    6266
+   ],
+   "of": [
+    5797
+   ],
+   "co": [
+    6199
+   ]
+  },
+  "pref": "Communis",
+  "note": "The Introit Ego autem, sicut oliva (Missal p. 564) is not yet typeset: its page of the Graduale O.P. is still to be read.",
+  "readings": [
+   [
+    "Lesson",
+    "Ecclesiasticus 44: 26-27, 45: 1-4, 6, 8-9"
+   ],
+   [
+    "Gospel",
+    "Lucas 5: 27-32"
+   ]
+  ]
+ },
+ {
+  "key": "S1027v",
+  "d": "1027",
+  "kal": "Vigilia SS. Simonis",
+  "title": "27 Oct. — In Vigilia Ss. Simonis et Iudæ Apostolorum",
+  "name_en": "Vigil of Sts Simon and Jude",
+  "rank": "",
+  "op": false,
+  "color": "violet",
+  "sec": "sanctorum",
+  "parts": {
+   "in": [
+    6735
+   ],
+   "gr": [
+    6650
+   ],
+   "of": [
+    "op-g50-exsultabunt-of"
+   ],
+   "co": [
+    6276
+   ]
+  },
+  "pref": "Communis",
+  "readings": [
+   [
+    "Epistle",
+    "Ad Corinthios 1 4: 9-14"
+   ],
+   [
+    "Gospel",
+    "Joannes 15: 1-7"
+   ]
+  ]
+ },
+ {
+  "key": "S1031v",
+  "d": "1031",
+  "kal": "Vigilia Omnium",
+  "title": "31 Oct. — In Vigilia Omnium Sanctorum",
+  "name_en": "Vigil of All Saints",
+  "rank": "",
+  "op": false,
+  "color": "violet",
+  "sec": "sanctorum",
+  "parts": {
+   "gr": [
+    9869
+   ],
+   "of": [
+    5126
+   ],
+   "co": [
+    4728
+   ]
+  },
+  "pref": "Communis",
+  "note": "The Introit Timete Dominum (Missal p. 603) is not yet typeset: its page of the Graduale O.P. is still to be read.",
+  "readings": [
+   [
+    "Lesson",
+    "Apocalypsis",
+    [
+     [
+      5,
+      6,
+      12
+     ]
+    ]
+   ],
+   [
+    "Gospel",
+    "Lucas 6: 17-23"
+   ]
+  ]
+ }
+]
