@@ -280,10 +280,14 @@
 ]
 },
 "C68s": {
-"src": "G50 pp. 68*-72*: the Alleluia is V. Ave, Rex noster (printed; not yet typeset), Tract Vere languores infra Septuagesimam",
-"drop": [
-"al"
+"src": "G28 p. 66* (djvu 350/0) = G50 p. 70*: Alleluia, V. Ave, Rex noster (typeset from the 1928 scan); Tract Vere languores infra Septuagesimam; T. P. I. Alleluia V. Ave, II. Alleluia V. Surrexit Christus, pag. 222; Missale O.P. (1939) p. 46*: DE QUINQUE STIGMATIBUS D. N. J. C.",
+"set": {
+"al": [
+"g28:stigmata_al|Ave, Rex noster|66* (1928)"
 ]
+},
+"title": "Missa votiva de Quinque Stigmatibus D. N. J. C.",
+"en": "Votive Mass of the Five Wounds of Our Lord (of the Passion)"
 },
 "G505": {
 "src": "G50 p. 506: Responsorium Qui operatus est, pag. 404. Alleluia, V. Magnus, pag. 405. II. Offertorium Mihi autem, pag. 5*. Communio Amen, dico vobis, pag. 41*",
@@ -599,5 +603,40 @@
 "ok": {
 "of": "31* (G28 265/0: Missa Sacerdotes tui, de Communi unius Confessoris et Pontificis)"
 }
+},
+"S1125": {
+"src": "G28 p. 604 (djvu 317/0) / G50: Communio Feci judicium printed in full (typeset from the 1928 scan)",
+"set": {
+"co": [
+"g28:catharina_co|Feci judicium|604 (1928)"
+]
+}
+},
+"S1102": {
+"src": "G28 p. 106* (rubric): \"Sequens Responsorium Requiem, cum V. In memoria, et Tractus Absolve, dicuntur in die Animarum et in diebus obitus et anniversarii Papae vel Episcopi\" (typeset from the 1928 scan)",
+"set": {
+"gr": [
+"g28:requiem_gr_inmemoria|Requiem (V. In memoria)|106*-107* (1928)"
+]
+},
+"conf": "missal"
+},
+"S1102_2": {
+"src": "G28 p. 106* (rubric): \"Sequens Responsorium Requiem, cum V. In memoria, et Tractus Absolve, dicuntur in die Animarum et in diebus obitus et anniversarii Papae vel Episcopi\" (typeset from the 1928 scan)",
+"set": {
+"gr": [
+"g28:requiem_gr_inmemoria|Requiem (V. In memoria)|106*-107* (1928)"
+]
+},
+"conf": "missal"
+},
+"S1102_3": {
+"src": "G28 p. 106* (rubric): \"Sequens Responsorium Requiem, cum V. In memoria, et Tractus Absolve, dicuntur in die Animarum et in diebus obitus et anniversarii Papae vel Episcopi\" (typeset from the 1928 scan)",
+"set": {
+"gr": [
+"g28:requiem_gr_inmemoria|Requiem (V. In memoria)|106*-107* (1928)"
+]
+},
+"conf": "missal"
 }
 }

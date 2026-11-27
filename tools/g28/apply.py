@@ -47,13 +47,30 @@ for k, c in K.items():
         m['parts'].pop(p, None)
         if p in m.get('req', []): m['req'].remove(p)
     for p, ids in c.get('set', {}).items():
-        m['parts'][p] = [{'id': i, 'm39': 'G50', 'v50': c['src']} for i in ids]
+        out = []
+        for i in ids:
+            if isinstance(i, str) and i.startswith('g28:'):
+                src, inc, pg = i[4:].split('|')
+                cid = 'op-g28-' + src.replace('_', '-')
+                shutil.copy(H + '/' + src + '.gabc', R + '/gabc/' + cid + '.gabc')
+                D['chants'][cid] = {'p': p, 'i': inc, 'pg': pg}
+                out.append({'id': cid, 'm39': 'G28', 'v28': c['src']})
+            else: out.append({'id': i, 'm39': 'G50', 'v50': c['src']})
+        m['parts'][p] = out
         if p not in m.get('req', []): m.setdefault('req', []).append(p)
     if c.get('conf'): m['conf'] = c['conf']
     elif c.get('set') and k.startswith('S') and k[1:5].isdigit(): m['conf'] = 'g50'
+    if c.get('title'): m['title'] = c['title']
+    if c.get('en'): m['en'] = c['en']
     if c.get('page'): m['page'] = c['page']
     if c.get('note'): m['note'] = c['note']
     for p, pg in c.get('ok', {}).items():
         for x in m['parts'].get(p, []):
             if isinstance(x, dict) and (x.get('inferred') or x.get('v50')): x.pop('inferred', None); x['v50'] = 'G50 p. ' + pg
+# the Requiem Sanctus and Agnus Dei of the Missa pro Defunctis, typeset from the Graduale O.P. 1928, pp. 115*-116* (KYR28)
+for src, inc, pg in [('requiem_sanctus', 'Sanctus (Requiem)', '115*-116* (1928)'), ('requiem_agnus', 'Agnus (Requiem)', '116* (1928)')]:
+    cid = 'op-g28-' + src.replace('_', '-')
+    shutil.copy(H + '/' + src + '.gabc', R + '/gabc/' + cid + '.gabc')
+    D['chants'][cid] = {'p': 'ky', 'i': inc, 'pg': pg}
+    if cid not in D['kyriale']: D['kyriale'].insert(D['kyriale'].index(7634), cid)
 open(F, 'w', encoding='utf8').write(head + 'var DOMINICAN = ' + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + ';\n')

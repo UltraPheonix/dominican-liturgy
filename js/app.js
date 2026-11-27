@@ -763,7 +763,7 @@
     if (!asp && d && d.getDay() === 0 && !R.requiem && state.key !== 'Quad6') { var f = diffDays(d, easter(d.getFullYear())); asp = (f >= 0 && f <= 49) ? 'vidi' : 'asperges'; }
     if (asp && asp !== 'none') o.as = asp === 'vidi' ? D.front[1] : D.front[0];
     if (state.ord === 'none') { if (R.credo && state.credo && state.credo !== 'none') o.cr = find('Credo ' + state.credo); return o; }
-    if (R.requiem) { o.ky = find('Kyrie (Requiem)'); o.sa = find('Sanctus VIII'); o.ag = find('Agnus VIII'); o.it = find('Requiescant'); o.req = true; return o; }
+    if (R.requiem) { o.ky = find('Kyrie (Requiem)'); o.sa = find('Sanctus (Requiem)') || find('Sanctus VIII'); o.ag = find('Agnus (Requiem)') || find('Agnus VIII'); o.it = find('Requiescant'); o.req = true; return o; }
     var num = state.ord || autoKyriale(state.key, d);
     var part = function (kind) {
       var chain = [num].concat(ORD_FALLBACK[num] || []), hit = null;
@@ -1472,7 +1472,7 @@
   }
   function moreAllowed(m) {
     var R = rubricsOf(state.key, state.date);
-    return !R.requiem && !m.prophecies && !/^Quad6[hfs]?$/.test(state.key) && !!(window.ORATIONS && ORATIONS[state.key] && ORATIONS[state.key].or);
+    return (!R.requiem || state.key === 'C114s') && !m.prophecies && !/^Quad6[hfs]?$/.test(state.key) && !!(window.ORATIONS && ORATIONS[state.key] && ORATIONS[state.key].or);
   }
   // the 2nd and 3rd prayers the Missal prescribes for the day (Rubr. gen. X.1; the Missal prints them in the Masses of the
   // Time from the First Sunday of each season): ids of ADDIV sets or 'm:KEY' commemorations; 'lib' = at the priest's choice
@@ -1539,6 +1539,9 @@
   }
   function prescribed0(m) {
     if (!moreAllowed(m)) return [];
+    // In Missis quotidianis Defunctorum: Secunda Oratio pro defunctis fratribus, propinquis et benefactoribus; Tertia pro vivis
+    // et defunctis (Missale O.P. 1939, pp. 118*-121*)
+    if (state.key === 'C114s') return ['defFr', 'd38'];
     var d = state.date, dr = dayRank(state.key, d), sp = seasonPrayers(d), mem = memoriasOf(d), md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
     // no commemoration of Our Lady in a Mass of Our Lady (Vigil of the Assumption on a Saturday)
     if (isMarian(state.key)) { var hi = mem.high; mem = mem.filter(function (x) { return !BVM_SETS[x]; }); mem.high = hi; }
@@ -1764,7 +1767,7 @@
     slot.appendChild(el('div', {class: 'part-head hide-print'}, [el('h2', {text: label}), el('span', {class: 'incipit', text: D.chants[id] ? clean(D.chants[id].i) : ''})]));
     slot.appendChild(el('h2', {class: 'print-only', text: label + (D.chants[id] ? ' · ' + clean(D.chants[id].i).replace(/^(Kyrie|Gloria|Credo|Sanctus|Agnus|Ite|Benedicamus)\s*/, '') : '')}));
     slot.appendChild(box);
-    if (k === 'ag' && rubricsOf(state.key, state.date).requiem)
+    if (k === 'ag' && rubricsOf(state.key, state.date).requiem && !findKyriale('Agnus (Requiem)'))
       slot.appendChild(el('p', {class: 'hint rubric', text: 'At a Mass for the Dead: “dona eis requiem” twice, and the third time “dona eis requiem sempiternam”.'}));
     if (k === 'ky' && id === findKyriale('Kyrie IV') && state.ord !== 'IV')
       slot.appendChild(el('p', {class: 'hint rubric', text: 'In Paschaltide the Easter Kyrie is sung on Sundays and on feasts of the I and II class.'}));

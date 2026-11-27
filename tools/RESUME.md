@@ -133,3 +133,14 @@ empty sections, Canon present).
   (note heads measured against local staff lines: python3 blobs.py PAGE.pnm X0 X1 L1,L2,L3,L4), staff.py (grid crops),
   verify.py (+ /tmp/g28pages.json built from the text layer) -> verify.txt; confirmed.json = 40 'inferred' chants confirmed.
 - 120 chants still 'inferred': sanctoral/common/votive and Ember days need page-by-page reading (the day sections hold several Masses).
+
+## Inferred chants and Requiem (Nov 27, Mass chat)
+- tools/g28/corrections.json (applied by tools/g28/apply.py, re-run after any rebuild of masses.js): 'set' (wrong chant replaced;
+  'g28:file|incipit|page' = typeset from the 1928 scan), 'ok' (inferred chant confirmed, page), 'drop', 'title'/'en'/'page'/'note'/'conf'.
+  Left inferred: S0531 (Queenship, 1954), S0813b (2013), S1009 (Louis Bertrand: proper Mass being typeset).
+- Typeset from G28 (agents, each checked against the scan): catharina_co, stigmata_al, requiem_sanctus/agnus (Kyriale, app.js
+  uses 'Sanctus (Requiem)'/'Agnus (Requiem)'), requiem_gr_inmemoria (All Souls; C114o extras). joseph_al = G50 6110 exactly.
+- tools/requiem/build.py (run after apply.py and after rebuilding orations/readings): C114s = Missa quotidiana (Apoc 14, Jn 6,
+  prayers Deus qui inter apostolicos + defFr + d38, app.js prescribed0), C114o = in die obitus (1 Thess 4, Jn 11, Si ambulem,
+  Sicut cervus, Deus cui proprium), S1113 = anniversary.
+- Processions: agents typesetting into tools/proc/gabc/ (not yet integrated). QC reports: /tmp/qc_mass.md, /tmp/qc_ui.md.
