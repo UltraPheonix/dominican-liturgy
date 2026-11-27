@@ -30,6 +30,12 @@
 - Conclusions: the whole printed pointing of the full conclusion is applied everywhere by canon() in apply_fixes.py: "Fílium tuum; qui tecum", "cum Deo Patre; in unitáte", "Spíritus Sancti Deus: per ómnia" (M39 p. 16 and passim), and no comma in "Jesum Christum Fílium tuum;" (pp. 472-475, 516, 545).
 - Coordinator under these rulings: where no Dominican book prints a named Introit melody, the notated chant is hidden and the Missal's text (masses.js parts.in[0].m39text) is shown; the votive "per annum" forms (pp. 492, 503, 547) get a selector in the app; C39s's "Aliud Evangelium" (p. 23*) is shown as an alternative Gospel.
 
+## Answers 27 Nov 23:00 (Joseph)
+- C76s Communion (p. 54*, "nullum allelúia dicitur"): stop before the alleluias, as the Offertory's printed Septuagesima ending (G50 p. 251), with a note citing p. 54*.
+- C104s Gradual (p. 90*, "Misit Dóminus … de morte eórum"): read this Mass's own Gradual from G28/G50 (pp. 104*-105*) first.
+- Readings whose Latin departs from the Vulgate (e.g. Sap 10 pp. 539, 541; Hebr 11 p. 526): the English follows the Missal's Latin, labelled "AI translation".
+- Coordinator under the rulings above: S0113 (13 Jan "Commemoratio Baptismatis", not in the 1939 Missal, duplicates EpiOct, unused by the calendar) is dropped like C1s; Gospel English gets "At that time Jesus said to his disciples" etc. wherever the Latin has the incipit (follow the Latin).
+
 ## Saints' Masses
 - **28 Apr:** the Mass is B. Louis Grignion de Montfort, Os justi. St Paul of the Cross has only a Memoria in the 1939 Missal (pp. 420-421).
 - **C1s "Commune Apostolorum" (Joseph, 27 Nov 21:40):** drop it. The 1939 Missal has no such Mass; "only use the Missal".

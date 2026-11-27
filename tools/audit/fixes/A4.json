@@ -3719,5 +3719,674 @@
   },
   "src": "M39 p. 37* (pdf 386)",
   "why": "p. 37*: \"Tempore Ascens. secundum Allelúia V. Ascéndens\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0901",
+   0
+  ],
+  "old": {
+   "type": "Lesson",
+   "ref": "Ecclesiasticus 31: 8-11",
+   "title": "Léctio libri Sapiéntiæ.",
+   "title_en": "Lesson from the Book of Wisdom.",
+   "la": "Beátus vir, qui invéntus est sine mácula: et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudábimus eum? Fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: qui pótuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ideo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum.",
+   "en": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+   "p33": 665
+  },
+  "new": {
+   "type": "Lesson",
+   "ref": "Ecclesiasticus 45: 1-6",
+   "title": "Léctio libri Sapiéntiæ.",
+   "title_en": "Lesson from the Book of Wisdom.",
+   "la": "Diléctus Deo, et homínibus: cujus memória in benedictióne est. Símilem illum fecit in glória sanctórum, et magnificávit eum in timóre inimicórum, et in verbis suis monstra placávit. Glorificávit illum in conspéctu regum, et jussit illi coram pópulo suo, et osténdit illi glóriam suam. In fide et lenitáte ipsíus sanctum fecit illum, et elégit eum ex omni carne. Audívit enim eum, et vocem ipsíus, et indúxit illum in nubem. Et dedit illi coram præcépta, et legem vitæ et disciplínæ.",
+   "en": "Beloved of God, and men: whose memory is in benediction. He made him like the saints in glory, and magnified him in the fear of his enemies, and with his words he made prodigies to cease. He glorified him in the sight of kings, and gave him commandments in the sight of his people, and shewed him his glory. He sanctified him in his faith, and meekness, and chose him out of all flesh. For he heard him, and his voice, and brought him into a cloud. And he gave him commandments before his face, and a law of life and instruction."
+  },
+  "src": "M39 p. 25* (pdf 380)",
+  "why": "M39 p. 548 (pdf 313): \"S. ÆGIDII Abbatis (3 LL.) Officium Os justi, ut in Communi Abbatis, pag. 25*\"; the Common p. 25* prints Lectio Eccli. 45 \"Diléctus Deo\" and p. 26* the Gospel Matth. 19 \"Dixit Petrus ad Jesum: Ecce nos relíquimus\" (masses.js already gives these refs). The site had Eccli 31 \"Beátus vir\" + Luc 12 \"Sint lumbi\" (Common of a Confessor not Bishop, pp. 22*-24*); Latin as printed (= S0207); English Douay-Rheims Eccli 45:1-6 without \"Moses was\" and v. 6b, which the Missal omits"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0901",
+   1
+  ],
+  "old": {
+   "type": "Gospel",
+   "ref": "Lucas 12: 35-40",
+   "title": "Sequéntia sancti Evangélii secúndum Lucam.",
+   "title_en": "Continuation of the holy Gospel according to Luke.",
+   "la": "In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. Beáti servi illi, quos cum vénerit dóminus, invénerit vigilántes: amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.",
+   "en": "At that time: Let your loins be girt, and lamps burning in your hands. And you yourselves like to men who wait for their lord, when he shall return from the wedding; that when he cometh and knocketh, they may open to him immediately. Blessed are those servants, whom the Lord when he cometh, shall find watching. Amen I say to you, that he will gird himself, and make them sit down to meat, and passing will minister unto them. And if he shall come in the second watch, or come in the third watch, and find them so, blessed are those servants. But this know ye, that if the householder did know at what hour the thief would come, he would surely watch, and would not suffer his house to be broken open. Be you then also ready: for at what hour you think not, the Son of man will come.",
+   "p33": 665
+  },
+  "new": {
+   "type": "Gospel",
+   "ref": "Matthæus 19: 27-29",
+   "title": "Sequéntia sancti Evangélii secúndum Matthǽum.",
+   "title_en": "Continuation of the holy Gospel according to Matthew.",
+   "la": "In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: Quid ergo erit nobis? Jesus autem dixit illis: Amen dico vobis, quod vos, qui secúti estis me, in regeneratióne cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis, qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros propter nomen meum, céntuplum accípiet, et vitam ætérnam possidébit.",
+   "en": "At that time: Peter said to Jesus: Behold we have left all things, and have followed thee: what therefore shall we have? And Jesus said to them: Amen, I say to you, that you, who have followed me, in the regeneration, when the Son of man shall sit on the seat of his majesty, you also shall sit on twelve seats judging the twelve tribes of Israel. And every one that hath left house, or brethren, or sisters, or father, or mother, or wife, or children, or lands for my name’s sake, shall receive an hundredfold, and shall possess life everlasting."
+  },
+  "src": "M39 p. 26* (pdf 381)",
+  "why": "M39 p. 548 (pdf 313): \"S. ÆGIDII Abbatis (3 LL.) Officium Os justi, ut in Communi Abbatis, pag. 25*\"; the Common p. 25* prints Lectio Eccli. 45 \"Diléctus Deo\" and p. 26* the Gospel Matth. 19 \"Dixit Petrus ad Jesum: Ecce nos relíquimus\" (masses.js already gives these refs). The site had Eccli 31 \"Beátus vir\" + Luc 12 \"Sint lumbi\" (Common of a Confessor not Bishop, pp. 22*-24*); Latin as printed (\"te : Quid ergo\"); English Douay-Rheims Matth 19:27-29 with the Missal's incipit \"Peter said to Jesus\" (as S0519)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S0902",
+   "or",
+   0
+  ],
+  "old": "Concéde, quǽsumus, Ecclésiæ tuæ, omnípotens Deus: ut beátum Stéphanum Confessórem tuum, quem regnántem in terris propagatórem hábuit, propugnatórem habére mereátur gloriósum in cœlis. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Concéde, quǽsumus, Ecclésiæ tuæ, omnípotens Deus: ut beátum Stéphanum Confessórem tuum, quem regnántem in terris propagatórem hábuit; propugnatórem habére mereátur gloriósum in cælis: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 549 (pdf 313)",
+  "why": "DO punctuation; as printed: \"hábuit; propugnatórem\"; \"in cælis : Per Dóminum\""
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S0902",
+   "se",
+   0
+  ],
+  "old": "Réspice, quas offérimus, hóstias, omnípotens Deus: et præsta; ut, qui passiónis Dominicæ mystéria celebrámus, imitémur quod ágimus. Per eúndem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Réspice quas offérimus hóstias, omnípotens Deus, et præsta, ut qui passiónis Domínicæ mystéria celebrámus, imitémur quod ágimus. Per eúndem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 550 (pdf 314)",
+  "why": "DO punctuation; as printed: \"Réspice quas offérimus hóstias, omnípotens Deus, et præsta, ut qui passiónis Domínicæ mystéria celebrámus, imitémur quod ágimus. Per eúmdem\" (Per eumdem: the Son named at the start, Rubr. gen. XI.2 p. 52)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S0902",
+   "pc",
+   0
+  ],
+  "old": "Præsta, quǽsumus, omnípotens Deus: ut beáti Stephani Confessóris tui fidem cóngrua devotióne sectémur; qui, pro eiúsdem fídei dilatatióne, de terréno regno ad cœléstis regni glóriam méruit perveníre. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Præsta, quǽsumus omnípotens Deus: ut beáti Stéphani Confessóris tui fidem cóngrua devotióne sectémur; qui pro eiúsdem fídei dilatatióne, de terréno regno ad cæléstis regni glóriam méruit perveníre: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 550 (pdf 314)",
+  "why": "DO punctuation; as printed: \"quǽsumus omnípotens Deus\"; \"Stéphani\"; \"qui pro ejúsdem\"; \"cæléstis\"; \"perveníre : Per Dóminum\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0902",
+   0,
+   "la"
+  ],
+  "old": "Beátus vir, qui invéntus est sine mácula: et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudábimus eum? Fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: qui pótuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ideo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum.",
+  "new": "Beátus vir, qui invéntus est sine mácula: et qui post aurum non ábiit, nec sperávit in pecúnia, et thesáuris. Quis est hic, et laudábimus eum? Fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: Qui pótuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: Ideo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis Ecclésia sanctórum.",
+  "src": "M39 p. 549 (pdf 313)",
+  "why": "as printed: \"pecúnia, et thesáuris\"; \": Qui pótuit\"; \": Ideo\"; \"Ecclésia\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0902",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo quidam nóbilis ábiit in regiónem longínquam accípere sibi regnum, et revérti. Vocátis autem decem servis suis, dedit eis decem mnas, et ait ad illos: Negotiámini dum vénio. Cives autem ejus óderant eum: et misérunt legatiónem post illum, dicéntes: Nólumus hunc regnáre super nos. Et factum est ut redíret accépto regno: et jussit vocári servos, quibus dedit pecúniam, ut sciret quantum quisque negotiátus esset. Venit autem primus dicens: Dómine, mna tua decem mnas acquisívit. Et ait illi: Euge bone serve, quia in módico fuísti fidélis, eris potestátem habens super decem civitátes. Et alter venit, dicens: Dómine, mna tua fecit quinque mnas. Et huic ait: Et tu esto super quinque civitátes. Et alter venit, dicens: Dómine, ecce mna tua, quam hábui repósitam in sudário: tímui enim te, quia homo austérus es: tollis quod non posuísti, et metis quod non seminásti. Dicit ei: De ore tuo te júdico, serve nequam: sciébas quod ego homo austérus sum, tollens quod non pósui, et metens quod non seminávi: et quare non dedísti pecúniam meam ad mensam, ut ego véniens cum usúris útique exegíssem illam? Et astántibus dixit: Auférte ab illo mnam, et date illi, qui decem mnas habet. Et dixérunt ei: Dómine, habet decem mnas. Dico autem vobis, quia omni habénti dábitur, et abundábit: ab eo autem, qui non habet, et quod habet auferétur ab eo.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo quidam nóbilis ábiit in regiónem longínquam accípere sibi regnum, et revérti. Vocátis autem decem servis suis, dedit eis decem mnas, et ait ad illos: Negotiámini dum vénio. Cives autem ejus óderant eum: et misérunt legatiónem post illum, dicéntes: Nólumus hunc regnáre super nos. Et factum est ut redíret accépto regno: et jussit vocári servos, quibus dedit pecúniam, ut sciret quantum quisque negotiátus esset. Venit autem primus, dicens: Dómine, mna tua decem mnas acquisívit. Et ait illi: Euge bone serve, quia in módico fuísti fidélis, eris potestátem habens super decem civitátes. Et alter venit, dicens: Dómine, mna tua fecit quinque mnas. Et huic ait: Et tu esto super quinque civitátes. Et alter venit, dicens: Dómine, ecce mna tua, quam hábui repósitam in sudário: Tímui enim te, quia homo austérus es: tollis quod non posuísti, et metis quod non seminásti. Dicit ei: De ore tuo te júdico, serve nequam. Sciébas quod ego homo austérus sum, tollens quod non pósui, et metens quod non seminávi: Et quare non dedísti pecúniam meam ad mensam, ut ego véniens cum usúris útique exegíssem illam? Et astántibus dixit: Auférte ab illo mnam, et date illi, qui decem mnas habet. Et dixérunt ei: Dómine, habet decem mnas. Dico autem vobis, quia omni habénti dábitur, et abundábit: Ab eo autem, qui non habet, et quod habet, auferétur ab eo.",
+  "src": "M39 p. 549 (pdf 313)",
+  "why": "as printed: \"primus, dicens\"; \": Tímui\"; \"serve nequam. Sciébas\"; \": Et quare\"; \": Ab eo\"; \"et quod habet, auferétur\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0902",
+   1,
+   "en"
+  ],
+  "old": "At that time: He said therefore: A certain nobleman went into a far country, to receive for himself a kingdom, and to return. And calling his ten servants, he gave them ten pounds, and said to them: Trade till I come. But his citizens hated him: and they sent an embassage after him, saying: We will not have this man to reign over us. And it came to pass, that he returned, having received the kingdom: and he commanded his servants to be called, to whom he had given the money, that he might know how much every man had gained by trading. And the first came, saying: Lord, thy pound hath gained ten pounds. And he said to him: Well done, thou good servant, because thou hast been faithful in a little, thou shalt have power over ten cities. And the second came, saying: Lord, thy pound hath gained five pounds. And he said to him: Be thou also over five cities. And another came, saying: Lord, behold here is thy pound, which I have kept laid up in a napkin; For I feared thee, because thou art an austere man: thou takest up what thou didst not lay down, and thou reapest that which thou didst not sow. He saith to him: Out of thy own mouth I judge thee, thou wicked servant. Thou knewest that I was an austere man, taking up what I laid not down, and reaping that which I did not sow: And why then didst thou not give my money into the bank, that at my coming, I might have exacted it with usury? And he said to them that stood by: Take the pound away from him, and give it to him that hath ten pounds. And they said to him: Lord, he hath ten pounds. But I say to you, that to every one that hath shall be given, and he shall abound: and from him that hath not, even that which he hath, shall be taken from him.",
+  "new": "At that time: Jesus spoke this parable to his disciples: A certain nobleman went into a far country, to receive for himself a kingdom, and to return. And calling his ten servants, he gave them ten pounds, and said to them: Trade till I come. But his citizens hated him: and they sent an embassage after him, saying: We will not have this man to reign over us. And it came to pass, that he returned, having received the kingdom: and he commanded his servants to be called, to whom he had given the money, that he might know how much every man had gained by trading. And the first came, saying: Lord, thy pound hath gained ten pounds. And he said to him: Well done, thou good servant, because thou hast been faithful in a little, thou shalt have power over ten cities. And the second came, saying: Lord, thy pound hath gained five pounds. And he said to him: Be thou also over five cities. And another came, saying: Lord, behold here is thy pound, which I have kept laid up in a napkin; For I feared thee, because thou art an austere man: thou takest up what thou didst not lay down, and thou reapest that which thou didst not sow. He saith to him: Out of thy own mouth I judge thee, thou wicked servant. Thou knewest that I was an austere man, taking up what I laid not down, and reaping that which I did not sow: And why then didst thou not give my money into the bank, that at my coming, I might have exacted it with usury? And he said to them that stood by: Take the pound away from him, and give it to him that hath ten pounds. And they said to him: Lord, he hath ten pounds. But I say to you, that to every one that hath shall be given, and he shall abound: and from him that hath not, even that which he hath, shall be taken from him.",
+  "src": "M39 p. 549 (pdf 313)",
+  "why": "the Latin is \"Dixit Jesus discípulis suis parábolam hanc\"; only the incipit is changed, the verses stay Douay-Rheims"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0908",
+   0,
+   "la"
+  ],
+  "old": "Dóminus possédit me in inítio viárum suárum, ántequam quidquam fáceret a princípio. Ab ætérno ordináta sum, et ex antíquis ántequam terra fíeret. Nondum erant abýssi, et ego jam concépta eram: necdum fontes aquárum erúperant: necdum montes gravi mole constíterant: ante colles ego parturiébar: adhuc terram non fécerat, et flúmina, et cárdines orbis terræ. Quando præparábat cælos, áderam: quando certa lege, et gyro vallábat abýssos: quando ǽthera firmábat sursum, et librábat fontes aquárum: quando circúmdabat mari términum suum, et legem ponébat aquis, ne transírent fines suos: quando appendébat fundaménta terræ. Cum eo eram cuncta compónens: et delectábar per síngulos dies, ludens coram eo omni témpore, ludens in orbe terrárum: et delíciæ meæ esse cum fíliis hóminum. Nunc ergo fílii audíte me: Beáti, qui custódiunt vias meas. Audíte disciplínam, et estóte sapiéntes, et nolíte abjícere eam. Beátus homo qui audit me, et qui vígilat ad fores meas quotídie, et obsérvat ad postes óstii mei. Qui me invénerit, invéniet vitam, et háuriet salútem a Dómino.",
+  "new": "Dóminus possédit me in inítio viárum suárum, ántequam quidquam fáceret a princípio. Ab ætérno ordináta sum, et ex antíquis ántequam terra fíeret. Nondum erant abýssi, et ego jam concépta eram: Necdum fontes aquárum erúperant: necdum montes gravi mole constíterant: Ante colles ego parturiébar: adhuc terram non fécerat, et flúmina, et cárdines orbis terræ. Quando præparábat cælos, áderam: quando certa lege, et gyro vallábat abýssos: Quando ǽthera firmábat sursum, et librábat fontes aquárum: Quando circúmdabat mari términum suum, et legem ponébat aquis, ne transírent fines suos: Quando appendébat fundaménta terræ. Cum eo eram cuncta compónens: Et delectábar per síngulos dies, ludens coram eo omni témpore; ludens in orbe terrárum: et delíciæ meæ esse cum fíliis hóminum. Nunc ergo fílii audíte me: Beáti, qui custódiunt vias meas. Audíte disciplínam, et estóte sapiéntes, et nolíte abjícere eam. Beátus homo qui audit me, et qui vígilat ad fores meas quotídie, et obsérvat ad postes óstii mei: Qui me invénerit, invéniet vitam, et háuriet salútem a Dómino.",
+  "src": "M39 p. 552 (pdf 315)",
+  "why": "as printed: \": Necdum\"; \": Ante colles\"; \": Quando\" (3); \": Et delectábar\"; \"omni témpore;\"; \"óstii mei :\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0908",
+   1,
+   "la"
+  ],
+  "old": "Liber generatiónis Jesu Christi fílii David, fílii Abraham. Abraham génuit Isaac. Isaac autem génuit Jacob. Jacob autem génuit Judam, et fratres ejus. Judas autem génuit Phares, et Zaram de Thamar. Phares autem génuit Esron. Esron autem génuit Aram. Aram autem génuit Amínadab. Amínadab autem génuit Naásson. Naásson autem génuit Salmon. Salmon autem génuit Booz de Rahab. Booz autem génuit Obed ex Ruth. Obed autem génuit Jesse. Jesse autem génuit David regem. David autem rex génuit Salomónem ex ea, quæ fuit Uríæ. Sálomon autem génuit Róboam. Róboam autem génuit Abíam. Abías autem génuit Asa. Asa autem génuit Jósaphat. Jósaphat autem génuit Joram. Joram autem génuit Ozíam. Ozías autem génuit Jóatham. Jóatham autem génuit Achaz. Achaz autem génuit Ezechíam. Ezechías autem génuit Manássen. Manásses autem génuit Amon. Amon autem génuit Josíam. Josías autem génuit Jechoníam, et fratres ejus in transmigratióne Babylónis. Et post transmigratiónem Babylónis: Jechonías génuit Saláthiel. Saláthiel autem génuit Zoróbabel. Zoróbabel autem génuit Abiud. Abiud autem génuit Elíacim. Elíacim autem génuit Azor. Azor autem génuit Sadoc. Sadoc autem génuit Achim. Achim autem génuit Eliud. Eliud autem génuit Eleázar. Eleázar autem génuit Mathan. Mathan autem génuit Jacob. Jacob autem génuit Joseph virum Maríæ, de qua natus est Jesus, qui",
+  "new": "Liber generatiónis Jesu Christi fílii David, fílii Abraham. Abraham génuit Isaac. Isaac autem génuit Jacob. Jacob autem génuit Judam, et fratres ejus. Judas autem génuit Phares, et Zaram de Thamar. Phares autem génuit Esron. Esron autem génuit Aram. Aram autem génuit Amínadab. Amínadab autem génuit Naásson. Naásson autem génuit Salmon. Salmon autem génuit Booz de Rahab. Booz autem génuit Obed ex Ruth. Obed autem génuit Jesse. Jesse autem génuit David regem. David autem rex génuit Salomónem ex ea, quæ fuit Uríæ. Sálomon autem génuit Róboam. Róboam autem génuit Abíam. Abías autem génuit Asa. Asa autem génuit Jósaphat. Jósaphat autem génuit Joram. Joram autem génuit Ozíam. Ozías autem génuit Jóatham. Jóatham autem génuit Achaz. Achaz autem génuit Ezechíam. Ezechías autem génuit Manássen. Manásses autem génuit Amon. Amon autem génuit Josíam. Josías autem génuit Jechoníam, et fratres ejus in transmigratióne Babylónis. Et post transmigratiónem Babylónis: Jechonías génuit Saláthiel. Saláthiel autem génuit Zoróbabel. Zoróbabel autem génuit Abiud. Abiud autem génuit Elíacim. Elíacim autem génuit Azor. Azor autem génuit Sadoc. Sadoc autem génuit Achim. Achim autem génuit Eliud. Eliud autem génuit Eleázar. Eleázar autem génuit Mathan. Mathan autem génuit Jacob. Jacob autem génuit Joseph virum Maríæ de qua natus est Jesus, qui",
+  "src": "M39 p. 553 (pdf 315)",
+  "why": "as printed: \"virum Maríæ de qua natus est Jesus\" (no comma)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "G555",
+   "or"
+  ],
+  "old": [
+   "Omnípotens sempitérne Deus, qui in Corde beátæ Maríæ Vírginis dignum Spíritus Sancti habitáculum præparásti: concéde propítius; ut eiúsdem immaculáti Cordis festivitátem devóta mente recoléntes, secúndum cor tuum vívere valeámus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   "Almighty, everlasting God, Who in the Heart of the Blessed Virgin Mary prepared a dwelling place worthy of the Holy Spirit; graciously grant that we, who are devoutly keeping the feast of her Immaculate Heart, may be able to live according to Your Heart. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end."
+  ],
+  "new": [
+   "Omnípotens sempitérne Deus, qui in Corde beátæ Maríæ Vírginis dignum Spíritus Sancti habitáculum præparásti: concéde propítius, ut eiúsdem immaculáti Cordis festivitátem devóta mente recoléntes; secúndum cor tuum vívere valeámus: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte eiúsdem Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   "Almighty and everlasting God, who in the Heart of the blessed Virgin Mary prepared a dwelling worthy of the Holy Spirit, mercifully grant that, keeping with devout minds the feast of her Immaculate Heart, we may be able to live according to Your heart; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the same Holy Spirit, God, world without end."
+  ],
+  "src": "M39 leaf \"Immaculati Cordis B. M. V.\" pp. 4-6 (pdf 361-362)",
+  "why": "G555 is the Graduale-page copy of the Immaculate Heart Mass (same five chants as S0822: Adeamus, Exsultabit cor meum, Magnificat, Exsultavit spiritus meus, Dixit Jesus). Joseph (27 Nov 22:25, G385/G505): keep such copies and fix their readings to the Missal; the prayer came from DO (src Sancti/08-22); now the leaf's text as on S0822 (Collect \"in unitáte ejúsdem Spíritus Sancti\", Rubr. gen. XI.2 p. 52; \"propítius, ut ... recoléntes;\"; Secret \"qui Cor\"; Postcommunion \"solémnia ... égimus;\")"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "G555",
+   "se"
+  ],
+  "old": [
+   "Maiestáti tuæ, Dómine, Agnum immaculátum offeréntes, quǽsumus: ut corda nostra ignis ille divínus accéndat, cui Cor beátæ Maríæ Vírginis ineffabíliter inflammávit. Per eúndem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   "Offering the spotless Lamb to Your Majesty, O Lord, we pray that our hearts may be set aflame by the fire that burned so wondrously in the Heart of the Blessed Virgin Mary. Through the same Jesus Christ, thy Son, Our Lord, Who liveth and reigneth with thee in the unity of the Holy Ghost, God, world without end."
+  ],
+  "new": [
+   "Maiestáti tuæ, Dómine, Agnum immaculátum offeréntes, quǽsumus, ut corda nostra ignis ille divínus accéndat, qui Cor beátæ Maríæ Vírginis ineffabíliter inflammávit: Per eúndem Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   "Offering to Your majesty, O Lord, the spotless Lamb, we beseech You that our hearts may be kindled by that divine fire which ineffably inflamed the Heart of the blessed Virgin Mary; through the same Jesus Christ, Your Son, our Lord, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+  ],
+  "src": "M39 leaf \"Immaculati Cordis B. M. V.\" pp. 4-6 (pdf 361-362)",
+  "why": "G555 is the Graduale-page copy of the Immaculate Heart Mass (same five chants as S0822: Adeamus, Exsultabit cor meum, Magnificat, Exsultavit spiritus meus, Dixit Jesus). Joseph (27 Nov 22:25, G385/G505): keep such copies and fix their readings to the Missal; the prayer came from DO (src Sancti/08-22); now the leaf's text as on S0822 (Collect \"in unitáte ejúsdem Spíritus Sancti\", Rubr. gen. XI.2 p. 52; \"propítius, ut ... recoléntes;\"; Secret \"qui Cor\"; Postcommunion \"solémnia ... égimus;\")"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "G555",
+   "pc"
+  ],
+  "old": [
+   "Divínis refécti munéribus te, Dómine, supplíciter exorámus: ut beátæ Maríæ Vírginis intercessióne, cuius immaculáti Cordis sollémnia venerándo égimus, a præséntibus perículis liberáti, ætérnæ vitæ gáudia consequámur. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   "Refreshed by divine gifts, we humbly beseech You, O Lord, that by the intercession of the Blessed Virgin Mary, the solemn feast of whose Immaculate Heart we have celebrated, we may be freed from present dangers and reach the happiness of life eternal. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end."
+  ],
+  "new": [
+   "Divínis refécti munéribus te, Dómine, supplíciter exorámus: ut beátæ Maríæ Vírginis intercessióne, cuius immaculáti Cordis solémnia venerándo égimus; a præséntibus perículis liberáti, ætérnæ vitæ gáudia consequámur: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   "Refreshed with divine gifts, we humbly entreat You, O Lord, that by the intercession of the blessed Virgin Mary, whose Immaculate Heart we have venerated in this feast, we may be freed from present dangers and attain the joys of eternal life; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+  ],
+  "src": "M39 leaf \"Immaculati Cordis B. M. V.\" pp. 4-6 (pdf 361-362)",
+  "why": "G555 is the Graduale-page copy of the Immaculate Heart Mass (same five chants as S0822: Adeamus, Exsultabit cor meum, Magnificat, Exsultavit spiritus meus, Dixit Jesus). Joseph (27 Nov 22:25, G385/G505): keep such copies and fix their readings to the Missal; the prayer came from DO (src Sancti/08-22); now the leaf's text as on S0822 (Collect \"in unitáte ejúsdem Spíritus Sancti\", Rubr. gen. XI.2 p. 52; \"propítius, ut ... recoléntes;\"; Secret \"qui Cor\"; Postcommunion \"solémnia ... égimus;\")"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "G555",
+   "src"
+  ],
+  "old": "Sancti/08-22",
+  "new": "Missale O.P. (1939), p. supplement (Immaculati Cordis B.M.V., 22 Aug.), pp. 4-6; English after the St Dominic Missal (1959), checked against the Latin",
+  "src": "M39 leaf \"Immaculati Cordis B. M. V.\" pp. 4-6 (pdf 361-362)",
+  "why": "G555 is the Graduale-page copy of the Immaculate Heart Mass (same five chants as S0822: Adeamus, Exsultabit cor meum, Magnificat, Exsultavit spiritus meus, Dixit Jesus). Joseph (27 Nov 22:25, G385/G505): keep such copies and fix their readings to the Missal"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "G555",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Proverbia 8: 22-35",
+    "roman": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 1: 1-16",
+    "roman": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Epistle",
+    "ref": "Ecclesiasticus 24: 23-31",
+    "roman": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Joannes 19: 25-27",
+    "roman": true
+   }
+  ],
+  "src": "M39 leaf \"Immaculati Cordis B. M. V.\" pp. 4-6 (pdf 361-362)",
+  "why": "G555 is the Graduale-page copy of the Immaculate Heart Mass (same five chants as S0822: Adeamus, Exsultabit cor meum, Magnificat, Exsultavit spiritus meus, Dixit Jesus). Joseph (27 Nov 22:25, G385/G505): keep such copies and fix their readings to the Missal; the site had the Nativity of Our Lady's readings (Prov 8, Matth 1); the leaf prints Eccli 24:23-31 \"Ego quasi vitis\" and Jo 19:25-27 \"Stabant juxta crucem\""
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "G555"
+  ],
+  "old": null,
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Ecclesiasticus 24: 23-31",
+    "title": "Léctio libri Sapiéntiæ.",
+    "title_en": "Lesson from the Book of Wisdom.",
+    "la": "Ego quasi vitis fructificávi suavitátem odóris: et flores mei, fructus honóris et honestátis. Ego mater pulchræ dilectiónis, et timóris, et agnitiónis, et sanctæ spei. In me grátia omnis viæ et veritátis: in me omnis spes vitæ, et virtútis. Transíte ad me omnes qui concupíscitis me, et a generatiónibus meis implémini. Spíritus enim meus super mel dulcis, et heréditas mea super mel et favum. Memória mea in generatiónes sæculórum. Qui edunt me, adhuc esúrient: et qui bibunt me, adhuc sítient. Qui audit me, non confundétur: et qui operántur in me, non peccábunt. Qui elúcidant me, vitam ætérnam habébunt.",
+    "en": "As the vine I have brought forth a pleasant odour: and my flowers are the fruit of honour and riches. I am the mother of fair love, and of fear, and of knowledge, and of holy hope. In me is all grace of the way and of the truth, in me is all hope of life and of virtue. Come over to me, all ye that desire me, and be filled with my fruits. For my spirit is sweet above honey, and my inheritance above honey and the honeycomb. My memory is unto everlasting generations. They that eat me, shall yet hunger: and they that drink me, shall yet thirst. He that hearkeneth to me, shall not be confounded: and they that work by me, shall not sin. They that explain me shall have life everlasting.",
+    "p33": 784
+   },
+   {
+    "type": "Gospel",
+    "ref": "Joannes 19: 25-27",
+    "title": "Sequéntia sancti Evangélii secúndum Joánnem.",
+    "title_en": "Continuation of the holy Gospel according to John.",
+    "la": "In illo témpore: Stabant juxta crucem Jesu mater ejus, et soror matris ejus María Cléophæ, et María Magdaléne. Cum vidísset ergo Jesus matrem, et discípulum stantem, quem diligébat, dicit matri suæ: Múlier, ecce fílius tuus. Deínde dicit discípulo: Ecce mater tua. Et ex illa hora accépit eam discípulus in sua.",
+    "en": "At that time: There stood by the cross of Jesus, his mother, and his mother’s sister, Mary of Cleophas, and Mary Magdalen. When Jesus therefore had seen his mother and the disciple standing whom he loved, he saith to his mother: Woman, behold thy son. After that, he saith to the disciple: Behold thy mother. And from that hour, the disciple took her to his own.",
+    "p33": 785
+   }
+  ],
+  "src": "M39 leaf \"Immaculati Cordis B. M. V.\" pp. 4-6 (pdf 361-362)",
+  "why": "G555 is the Graduale-page copy of the Immaculate Heart Mass (same five chants as S0822: Adeamus, Exsultabit cor meum, Magnificat, Exsultavit spiritus meus, Dixit Jesus). Joseph (27 Nov 22:25, G385/G505): keep such copies and fix their readings to the Missal; the readings as printed on the leaf (= S0822, checked in session 3)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "G555",
+   "title"
+  ],
+  "old": "Missa «Adeamus (ps. Erucvtavit)» (c. 8 Sept.)",
+  "new": "Missa «Adeamus (ps. Eructavit)» (c. 8 Sept.)",
+  "src": "G28/G50 incipit",
+  "why": "OCR slip in the title"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "G555",
+   "en"
+  ],
+  "old": "Mass \"Adeamus (ps. Erucvtavit)\", Graduale p. 555",
+  "new": "Mass \"Adeamus (ps. Eructavit)\", Graduale p. 555",
+  "src": "G28/G50 incipit",
+  "why": "OCR slip in the title"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0909",
+   0
+  ],
+  "old": {
+   "type": "Epistle",
+   "ref": "Jacobi 1: 12-18",
+   "title": "Léctio Epístolæ beáti Jacóbi Apóstoli.",
+   "title_en": "Lesson from the Epistle of blessed James the Apostle.",
+   "la": "Caríssimi: Beátus vir, qui suffert tentatiónem: quóniam cum probátus fúerit, accípiet corónam vitæ, quam repromísit Deus diligéntibus se. Nemo cum tentátur, dicat quóniam a Deo tentátur: Deus enim intentátor malórum est: ipse autem néminem tentat. Unusquísque vero tentátur a concupiscéntia sua abstráctus, et illéctus. Deínde concupiscéntia cum concéperit, parit peccátum: peccátum vero cum consummátum fúerit, génerat mortem. Nolíte ítaque erráre fratres mei dilectíssimi. Omne datum óptimum, et omne donum perféctum desúrsum est, descéndens a Patre lúminum, apud quem non est transmutátio, nec vicissitúdinis obumbrátio. Voluntárie enim génuit nos verbo veritátis, ut simus inítium áliquod creatúræ ejus.",
+   "en": "Dearly beloved: Blessed is the man that endureth temptation; for when he hath been proved, he shall receive a crown of life, which God hath promised to them that love him. Let no man, when he is tempted, say that he is tempted by God. For God is not a tempter of evils, and he tempteth no man. But every man is tempted by his own concupiscence, being drawn away and allured. Then when concupiscence hath conceived, it bringeth forth sin. But sin, when it is completed, begetteth death. Do not err, therefore, my dearest brethren. Every best gift, and every perfect gift, is from above, coming down from the Father of lights, with whom there is no change, nor shadow of alteration. For of his own will hath he begotten us by the word of truth, that we might be some beginning of his creatures.",
+   "p33": 650
+  },
+  "new": {
+   "type": "Lesson",
+   "ref": "Ecclesiasticus 14: 22, 15: 3-4, 6",
+   "title": "Léctio libri Sapiéntiæ.",
+   "title_en": "Lesson from the Book of Wisdom.",
+   "la": "Beátus vir, qui in sapiéntia morábitur, et qui in justítia sua meditábitur, et in sensu cogitábit circumspectiónem Dei. Cibábit illum pane vitæ et intelléctus, et aqua sapiéntiæ salutáris potábit illum: Et firmábitur in illo, et non flectétur: et continébit illum, et non confundétur: et exaltábit illum apud próximos suos. Et nómine ætérno hereditábit illum, Dóminus Deus noster.",
+   "en": "Blessed is the man that shall continue in wisdom, and that shall meditate in his justice, and in his mind shall think of the all seeing eye of God. With the bread of life and understanding, she shall feed him, and give him the water of wholesome wisdom to drink: and she shall be made strong in him, and he shall not be moved: and she shall hold him fast, and he shall not be confounded: and she shall exalt him among his neighbours. And shall cause him to inherit an everlasting name, the Lord our God.",
+   "p33": 653
+  },
+  "src": "M39 p. 9* (pdf 372)",
+  "why": "M39 p. 554 (pdf 316): \"S. GORGONII Mart. (3 LL.) Officium Lætábitur, ut in Comm. Mart. non Pont., pag. 9*\"; the Common (pp. 9*-10*) prints Lectio Eccli. 14 et 15 \"Beátus vir, qui in sapiéntia morábitur\" and the Gospel Jo 12 \"Amen, amen dico vobis, nisi granum fruménti\". The site had Jac 1:12-18 + Luc 14:26-33 (readings33) and 2 Tim 2-3 (masses.js), neither printed for this Mass; Latin as printed (= S0122, with \": Et firmábitur\"); English Douay as S0122"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0909",
+   1
+  ],
+  "old": {
+   "type": "Gospel",
+   "ref": "Lucas 14: 26-33",
+   "title": "Sequéntia sancti Evangélii secúndum Lucam.",
+   "title_en": "Continuation of the holy Gospel according to Luke.",
+   "la": "In illo témpore: Dixit Jesus turbis: Si quis venit ad me, et non odit patrem suum, et matrem, et uxórem, et fílios, et fratres, et soróres, adhuc autem et ánimam suam, non potest meus esse discípulus. Et qui non bájulat crucem suam, et venit post me, non potest meus esse discípulus. Quis enim ex vobis volens turrim ædificáre, non prius sedens cómputat sumptus, qui necessárii sunt, si hábeat ad perficiéndum, ne, posteáquam posúerit fundaméntum, et non potúerit perfícere, omnes, qui vident, incípiant illúdere ei, dicéntes: Quia hic homo cœpit ædificáre, et non pótuit consummáre? Aut quis rex itúrus commíttere bellum advérsus álium regem, non sedens prius cógitat, si possit cum decem míllibus occúrrere ei, qui cum vigínti míllibus venit ad se? Alióquin adhuc illo longe agénte, legatiónem mittens rogat ea quæ pacis sunt. Sic ergo omnis ex vobis, qui non renúntiat ómnibus, quæ póssidet, non potest meus esse discípulus.",
+   "en": "At that time: If any man come to me, and hate not his father, and mother, and wife, and children, and brethren, and sisters, yea and his own life also, he cannot be my disciple. And whosoever doth not carry his cross and come after me, cannot be my disciple. For which of you having a mind to build a tower, doth not first sit down, and reckon the charges that are necessary, whether he have wherewithal to finish it: Lest, after he hath laid the foundation, and is not able to finish it, all that see it begin to mock him, Saying: This man began to build, and was not able to finish. Or what king, about to go to make war against another king, doth not first sit down, and think whether he be able, with ten thousand, to meet him that, with twenty thousand, cometh against him? Or else, whilst the other is yet afar off, sending an embassy, he desireth conditions of peace. So likewise every one of you that doth not renounce all that he possesseth, cannot be my disciple.",
+   "p33": 651
+  },
+  "new": {
+   "type": "Gospel",
+   "ref": "Joannes 12: 24-26",
+   "title": "Sequéntia sancti Evangélii secúndum Joánnem.",
+   "title_en": "Continuation of the holy Gospel according to John.",
+   "la": "In illo témpore: Dixit Jesus discípulis suis: Amen, amen dico vobis, nisi granum fruménti cadens in terram, mórtuum fúerit, ipsum solum manet. Si autem mórtuum fúerit, multum fructum affert. Qui amat ánimam suam, perdet eam: Et qui odit ánimam suam in hoc mundo, in vitam ætérnam custódit eam. Si quis mihi minístrat, me sequátur: Et ubi sum ego, illic et miníster meus erit. Si quis mihi ministráverit, honorificábit eum Pater meus.",
+   "en": "At that time: Jesus said to his disciples: Amen, amen I say to you, unless the grain of wheat falling into the ground die, itself remaineth alone. But if it die, it bringeth forth much fruit. He that loveth his life shall lose it; and he that hateth his life in this world, keepeth it unto life eternal. If any man minister to me, let him follow me; and where I am, there also shall my minister be. If any man minister to me, him will my Father honour.",
+   "p33": 654
+  },
+  "src": "M39 pp. 9*-10* (pdf 372-373)",
+  "why": "M39 p. 554 (pdf 316): \"S. GORGONII Mart. (3 LL.) Officium Lætábitur, ut in Comm. Mart. non Pont., pag. 9*\"; the Common (pp. 9*-10*) prints Lectio Eccli. 14 et 15 \"Beátus vir, qui in sapiéntia morábitur\" and the Gospel Jo 12 \"Amen, amen dico vobis, nisi granum fruménti\". The site had Jac 1:12-18 + Luc 14:26-33 (readings33) and 2 Tim 2-3 (masses.js), neither printed for this Mass; Latin as printed (= S0810: \": Et qui odit\", \": Et ubi sum\"); English Douay as S0122"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0909",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Timotheum 2 2: 8-10; 3: 10-12",
+    "roman": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 14: 26-33"
+   }
+  ],
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Ecclesiasticus 14: 22, 15: 3-4, 6",
+    "m39": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Joannes 12: 24-26",
+    "m39": true
+   }
+  ],
+  "src": "M39 pp. 9*-10* (pdf 372-373)",
+  "why": "M39 p. 554 (pdf 316): \"S. GORGONII Mart. (3 LL.) Officium Lætábitur, ut in Comm. Mart. non Pont., pag. 9*\"; the Common (pp. 9*-10*) prints Lectio Eccli. 14 et 15 \"Beátus vir, qui in sapiéntia morábitur\" and the Gospel Jo 12 \"Amen, amen dico vobis, nisi granum fruménti\". The site had Jac 1:12-18 + Luc 14:26-33 (readings33) and 2 Tim 2-3 (masses.js), neither printed for this Mass"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0910",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Rememorámini prístinos dies, in quibus illumináti, magnum certámen sustinuístis passiónum: et in áltero quidem oppróbriis, et tribulatiónibus spectáculum facti: in áltero autem sócii táliter conversántium effécti. Nam et vinctis compássi estis, et rapínam bonórum vestrórum cum gáudio suscepístis, cognoscéntes vos habére meliórem et manéntem substántiam. Nolíte ítaque amíttere confidéntiam vestram, quæ magnam habet remuneratiónem. Patiéntia enim vobis necessária est: ut voluntátem Dei faciéntes, reportétis promissiónem. Adhuc enim módicum aliquántulum, qui ventúrus est, véniet, et non tardábit. Justus autem meus ex fide vivit.",
+  "new": "Fratres: Rememorámini prístinos dies, in quibus illumináti, magnum certámen sustinuístis passiónum: et in áltero quidem oppróbriis, et tribulatiónibus spectáculum facti: in áltero autem sócii táliter conversántium effécti. Nam et vinctis compássi estis, et rapínam bonórum vestrórum cum gáudio suscepístis, cognoscéntes vos habére meliórem, et manéntem substántiam. Nolíte ítaque amíttere confidéntiam vestram, quæ magnam habet remuneratiónem. Patiéntia enim vobis necessária est: ut voluntátem Dei faciéntes, reportétis promissiónem. Adhuc enim módicum aliquántulum, qui ventúrus est, véniet, et non tardábit. Justus autem meus ex fide vivit.",
+  "src": "M39 p. 458 (pdf 268)",
+  "why": "as printed: \"meliórem, et manéntem\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0910",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Sedénte Jesu super montem Olivéti, accessérunt ad eum discípuli secréto, dicéntes: Dic nobis, quando hæc erunt? Et quod signum advéntus tui, et consummatiónis sǽculi? Et respóndens Jesus, dixit eis: Vidéte ne quis vos sedúcat. Multi enim vénient in nómine meo, dicéntes: Ego sum Christus: et multos sedúcent. Auditúri enim estis prœ́lia, et opiniónes prœliórum. Vidéte ne turbémini: opórtet enim hæc fíeri, sed nondum est finis. Consúrget enim gens in gentem, et regnum in regnum, et erunt pestiléntiæ, et fames, et terræmótus per loca. Hæc autem ómnia inítia sunt dolórum. Tunc tradent vos in tribulatiónem, et occídent vos: et éritis ódio ómnibus géntibus propter nomen meum. Et tunc scandalizabúntur multi, et ínvicem tradent, et ódio habébunt ínvicem. Et multi pseudoprophétæ surgent, et sedúcent multos. Et quóniam abundávit iníquitas, refrigéscet cáritas multórum. Qui autem perseveráverit usque in finem, hic salvus erit.",
+  "new": "In illo témpore: Sedénte Jesu super Montem olivéti, accessérunt ad eum discípuli secréto, dicéntes: Dic nobis, quando hæc erunt? et quod signum advéntus tui, et consummatiónis sǽculi? Et respóndens Jesus, dixit eis: Vidéte ne quis vos sedúcat. Multi enim vénient in nómine meo, dicéntes, Ego sum Christus: et multos sedúcent. Auditúri enim estis prœ́lia, et opiniónes prœliórum. Vidéte ne turbémini. Opórtet enim hæc fíeri, sed nondum est finis. Consúrget enim gens in gentem, et regnum in regnum, et erunt pestiléntiæ, et fames, et terræmótus per loca. Hæc autem ómnia inítia sunt dolórum. Tunc tradent vos in tribulatiónem, et occídent vos: et éritis ódio ómnibus géntibus propter nomen meum. Et tunc scandalizabúntur multi, et ínvicem tradent, et ódio habébunt ínvicem. Et multi pseudoprophétæ surgent, et sedúcent multos. Et quóniam abundávit iníquitas, refrigéscet cáritas multórum. Qui autem perseveráverit usque in finem, hic salvus erit.",
+  "src": "M39 p. 458 (pdf 268)",
+  "why": "as printed: \"super Montem olivéti\" (sic); \"quando hæc erunt? et quod\"; \"meo, dicéntes\"; \"Vidéte ne turbémini. Opórtet\""
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0910",
+   "title"
+  ],
+  "old": "10 Sept. — S. Alphonsi Navarrete et Soc., O.P., Martyrum in Iaponia",
+  "new": "10 Sept. — BB. Alphonsi Navarrete et Soc., O.P., Martyrum in Iaponia",
+  "src": "M39 p. 457 (pdf 267)",
+  "why": "the Missal: \"BB. ALPHONSI NAVARRETE Ord. Præd. et Sociorum Martyrum (d.)\" (Beati in 1939)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0910",
+   "en"
+  ],
+  "old": "Sep 10 — S. Alphonsi Navarrete et Soc., O.P., Martyrum in Iaponia",
+  "new": "Sep 10 — BB. Alphonsi Navarrete et Soc., O.P., Martyrum in Iaponia",
+  "src": "M39 p. 457 (pdf 267)",
+  "why": "as the Latin title"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0910",
+   "name_en"
+  ],
+  "old": "St. Alphonsus Navarrete and",
+  "new": "Bl. Alphonsus Navarrete and",
+  "src": "M39 p. 457 (pdf 267)",
+  "why": "Beati in the 1939 Missal"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0910_2",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Spectáculum facti sumus mundo, et ángelis, et homínibus. Nos stulti propter Christum, vos autem prudéntes in Christo: nos infírmi, vos autem fortes: vos nóbiles, nos autem ignóbiles. Usque in hanc horam et esurímus, et sitímus, et nudi sumus, et cólaphis cǽdimur, et instábiles sumus, et laborámus operántes mánibus nostris: maledícimur, et benedícimus: persecutiónem pátimur, et sustinémus: blasphemámur, et obsecrámus: tamquam purgaménta hujus mundi facti sumus, ómnium peripséma usque adhuc. Non ut confúndam vos, hæc scribo, sed ut fílios meos caríssimos móneo.",
+  "new": "Fratres: Spectáculum facti sumus mundo, et Angelis, et homínibus. Nos stulti propter Christum, vos autem prudéntes in Christo: Nos infírmi, vos autem fortes: Vos nóbiles, nos autem ignóbiles. Usque in hanc horam et esurímus, et sitímus, et nudi sumus, et cólaphis cǽdimur, et instábiles sumus, et laborámus operántes mánibus nostris: Maledícimur, et benedícimus: Persecutiónem pátimur, et sustinémus: Blasphemámur, et obsecrámus: Tamquam purgaménta hujus mundi facti sumus, ómnium peripséma usque adhuc. Non ut confúndam vos, hæc scribo, sed ut fílios meos caríssimos móneo: In Christo Jesu Dómino nostro.",
+  "src": "M39 p. 554 (pdf 316)",
+  "why": "as printed: \"Angelis\"; \": Nos infírmi\"; \": Vos nóbiles\"; \": Maledícimur\"; \": Persecutiónem\"; \": Blasphemámur\"; \": Tamquam\"; and the missing ending \"móneo : In Christo Jesu Dómino nostro.\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0910_2",
+   0,
+   "en"
+  ],
+  "old": "Brethren: I think that God hath set forth us apostles, the last, as it were men appointed to death: we are made a spectacle to the world, and to angels, and to men. We are fools for Christ’s sake, but you are wise in Christ; we are weak, but you are strong; you are honourable, but we without honour. Even unto this hour we both hunger and thirst, and are naked, and are buffeted, and have no fixed abode; And we labour, working with our own hands: we are reviled, and we bless; we are persecuted, and we suffer it. We are blasphemed, and we entreat; we are made as the refuse of this world, the offscouring of all even until now. I write not these things to confound you; but I admonish you as my dearest children.",
+  "new": "Brethren: I think that God hath set forth us apostles, the last, as it were men appointed to death: we are made a spectacle to the world, and to angels, and to men. We are fools for Christ’s sake, but you are wise in Christ; we are weak, but you are strong; you are honourable, but we without honour. Even unto this hour we both hunger and thirst, and are naked, and are buffeted, and have no fixed abode; And we labour, working with our own hands: we are reviled, and we bless; we are persecuted, and we suffer it. We are blasphemed, and we entreat; we are made as the refuse of this world, the offscouring of all even until now. I write not these things to confound you; but I admonish you as my dearest children, in Christ Jesus our Lord.",
+  "src": "M39 p. 554 (pdf 316)",
+  "why": "the Missal's added ending \"In Christo Jesu Dómino nostro\" (as S0813)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0604",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "M39 p. 22* (pdf 379)",
+  "why": "the Missal prints \"Beátus vir\" (Vulgate Eccli 31:8 \"Beatus dives\"): the English follows the Missal's Latin (Joseph's ruling on Q6)"
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "S0604",
+   0,
+   "en_src"
+  ],
+  "old": null,
+  "new": "ai",
+  "src": "M39 p. 22* (pdf 379)",
+  "why": "label: the English is adapted to the Missal's Latin \"Beátus vir\", not Douay-Rheims verbatim (Joseph's ruling on Q6: labelled AI translation)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0613",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "M39 p. 22* (pdf 379)",
+  "why": "the Missal prints \"Beátus vir\" (Vulgate Eccli 31:8 \"Beatus dives\"): the English follows the Missal's Latin (Joseph's ruling on Q6)"
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "S0613",
+   0,
+   "en_src"
+  ],
+  "old": null,
+  "new": "ai",
+  "src": "M39 p. 22* (pdf 379)",
+  "why": "label: the English is adapted to the Missal's Latin \"Beátus vir\", not Douay-Rheims verbatim (Joseph's ruling on Q6: labelled AI translation)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0715",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "M39 p. 22* (pdf 379)",
+  "why": "the Missal prints \"Beátus vir\" (Vulgate Eccli 31:8 \"Beatus dives\"): the English follows the Missal's Latin (Joseph's ruling on Q6)"
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "S0715",
+   0,
+   "en_src"
+  ],
+  "old": null,
+  "new": "ai",
+  "src": "M39 p. 22* (pdf 379)",
+  "why": "label: the English is adapted to the Missal's Latin \"Beátus vir\", not Douay-Rheims verbatim (Joseph's ruling on Q6: labelled AI translation)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0718",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "M39 p. 22* (pdf 379)",
+  "why": "the Missal prints \"Beátus vir\" (Vulgate Eccli 31:8 \"Beatus dives\"): the English follows the Missal's Latin (Joseph's ruling on Q6)"
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "S0718",
+   0,
+   "en_src"
+  ],
+  "old": null,
+  "new": "ai",
+  "src": "M39 p. 22* (pdf 379)",
+  "why": "label: the English is adapted to the Missal's Latin \"Beátus vir\", not Douay-Rheims verbatim (Joseph's ruling on Q6: labelled AI translation)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0807",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "M39 p. 22* (pdf 379)",
+  "why": "the Missal prints \"Beátus vir\" (Vulgate Eccli 31:8 \"Beatus dives\"): the English follows the Missal's Latin (Joseph's ruling on Q6)"
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "S0807",
+   0,
+   "en_src"
+  ],
+  "old": null,
+  "new": "ai",
+  "src": "M39 p. 22* (pdf 379)",
+  "why": "label: the English is adapted to the Missal's Latin \"Beátus vir\", not Douay-Rheims verbatim (Joseph's ruling on Q6: labelled AI translation)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0816",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "M39 p. 530 (pdf 304)",
+  "why": "the Missal prints \"Beátus vir\" (Vulgate Eccli 31:8 \"Beatus dives\"): the English follows the Missal's Latin (Joseph's ruling on Q6)"
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "S0816",
+   0,
+   "en_src"
+  ],
+  "old": null,
+  "new": "ai",
+  "src": "M39 p. 530 (pdf 304)",
+  "why": "label: the English is adapted to the Missal's Latin \"Beátus vir\", not Douay-Rheims verbatim (Joseph's ruling on Q6: labelled AI translation)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0831",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "M39 p. 547 (pdf 312)",
+  "why": "the Missal prints \"Beátus vir\" (Vulgate Eccli 31:8 \"Beatus dives\"): the English follows the Missal's Latin (Joseph's ruling on Q6)"
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "S0831",
+   0,
+   "en_src"
+  ],
+  "old": null,
+  "new": "ai",
+  "src": "M39 p. 547 (pdf 312)",
+  "why": "label: the English is adapted to the Missal's Latin \"Beátus vir\", not Douay-Rheims verbatim (Joseph's ruling on Q6: labelled AI translation)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0902",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "M39 p. 549 (pdf 313)",
+  "why": "the Missal prints \"Beátus vir\" (Vulgate Eccli 31:8 \"Beatus dives\"): the English follows the Missal's Latin (Joseph's ruling on Q6)"
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "S0902",
+   0,
+   "en_src"
+  ],
+  "old": null,
+  "new": "ai",
+  "src": "M39 p. 549 (pdf 313)",
+  "why": "label: the English is adapted to the Missal's Latin \"Beátus vir\", not Douay-Rheims verbatim (Joseph's ruling on Q6: labelled AI translation)"
  }
 ]
