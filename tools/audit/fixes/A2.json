@@ -3647,5 +3647,556 @@
   "new": "At that time: Jesus going out of the coasts of Tyre, came by Sidon to the sea of Galilee, through the midst of the coasts of Decapolis. And they bring to him one deaf and dumb; and they besought him that he would lay his hand upon him. And taking him from the multitude apart, he put his fingers into his ears, and spitting, he touched his tongue: And looking up to heaven, he groaned, and said to him: Ephpheta, which is, Be thou opened. And immediately his ears were opened, and the string of his tongue was loosed, and he spoke right. And he charged them that they should tell no man. But the more he charged them, so much the more a great deal did they publish it. And so much the more did they wonder, saying: He hath done all things well; he hath made both the deaf to hear, and the dumb to speak.",
   "src": "M39 p. 277 (pdf 177R)",
   "why": "English had \"Again\" and lacked the subject (\"Exiens Jesus\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent11",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Exiens Jesus de fínibus Tyri, venit per Sidónem ad Mare Galilǽæ inter médios fines Decapóleos. Et addúcunt ei surdum, et mutum, et deprecabántur eum, ut impónat illi manum. Et apprehéndens eum de turba seórsum, misit dígitos suos in aurículas ejus: et éxspuens, tétigit linguam ejus: Et suspíciens in cælum, ingémuit, et ait illi: Ephpheta, quod est, adaperíre. Et statim apértæ sunt aures ejus, et solútum est vínculum linguæ ejus, et loquebátur recte. Et præcépit illis, ne cui dícerent. Quanto autem eis præcipiébat, tanto magis plus prædicábant: et eo ámplius admirabántur, dicéntes: Bene ómnia fecit: et surdos fecit audíre, et mutos loqui.",
+  "new": "In illo témpore: Exiens Jesus de fínibus Tyri, venit per Sidónem ad Mare Galilǽæ inter médios fines Decapóleos. Et addúcunt ei surdum, et mutum, et deprecabántur eum, ut impónat illi manum. Et apprehéndens eum de turba seórsum, misit dígitos suos in aurículas ejus: et éxspuens, tétigit linguam ejus: Et suspíciens in cælum, ingémuit, et ait illi: Ephpheta, quod est adaperíre. Et statim apértæ sunt aures ejus, et solútum est vínculum linguæ ejus, et loquebátur recte. Et præcépit illis, ne cui dícerent. Quanto autem eis præcipiébat, tanto magis plus prædicábant: et eo ámplius admirabántur, dicéntes: Bene ómnia fecit: et surdos fecit audíre, et mutos loqui.",
+  "src": "M39 p. 277 (pdf 177R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent12",
+   "or",
+   0
+  ],
+  "old": "Omnípotens et miséricors Deus, de cuius múnere venit, ut tibi a fidélibus tuis digne et laudabíliter serviátur: tríbue, quǽsumus, nobis; ut ad promissiónes tuas sine offensióne currámus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Omnípotens et miséricors Deus, de cuius múnere venit, ut tibi a fidélibus tuis digne et laudabíliter serviátur; tríbue, quǽsumus, nobis, ut ad promissiónes tuas sine offensióne currámus: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 278 (pdf 178L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent12",
+   "se",
+   0
+  ],
+  "old": "Hóstias, quǽsumus, Dómine, propítius inténde, quas sacris altáribus exhibémus: ut, nobis indulgéntiam largiéndo, tuo nómini dent honórem. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Hóstias, quǽsumus Dómine, propítius inténde, quas sacris altáribus exhibémus: ut nobis indulgéntiam largiéndo, tuo nómini dent honórem. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 279 (pdf 178R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent12",
+   "pc",
+   0
+  ],
+  "old": "Vivíficet nos, quǽsumus, Dómine, huius participátio sancta mystérii: et páriter nobis expiatiónem tríbuat et múnimen. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Vivíficet nos, quǽsumus Dómine, huius participátio sancta mystérii; et páriter nobis expiatiónem tríbuat, et munímen: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 279 (pdf 178R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent12",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Fidúciam talem habémus per Christum ad Deum: non quod sufficiéntes simus cogitáre áliquid a nobis, quasi ex nobis: sed sufficiéntia nostra ex Deo est: qui et idóneos nos fecit minístros novi testaménti: non líttera, sed Spíritu: líttera enim occídit, Spíritus autem vivíficat. Quod si ministrátio mortis lítteris deformáta in lapídibus fuit in glória, ita ut non possent inténdere fílii Israël in fáciem Móysi propter glóriam vultus ejus, quæ evacuátur: quómodo non magis ministrátio spíritus erit in glória? Nam si ministrátio damnatiónis glória est: multo abúndat magis ministérium justítiæ in glória.",
+  "new": "Fratres: Fidúciam talem habémus per Christum ad Deum: non quod sufficiéntes simus cogitáre áliquid a nobis, quasi ex nobis: sed sufficiéntia nostra ex Deo est: Qui et idóneos nos fecit minístros novi testaménti: non líttera, sed Spíritu: Líttera enim occídit, Spíritus autem vivíficat. Quod si ministrátio mortis lítteris deformáta in lapídibus, fuit in glória, ita ut non possent inténdere fílii Israël in fáciem Móysi propter glóriam vultus ejus, quæ evacuátur: quómodo non magis ministrátio Spíritus erit in glória? Nam si ministrátio damnatiónis glória est: multo abúndat magis ministérium justítiæ in glória.",
+  "src": "M39 p. 278 (pdf 178L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent12",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis: Beáti óculi, qui vident quæ vos vidétis. Dico enim vobis, quod multi prophétæ, et reges voluérunt vidére quæ vos vidétis, et non vidérunt: et audíre quæ audítis, et non audiérunt. Et ecce quidam legisperítus surréxit tentans illum, et dicens: Magíster, quid faciéndo vitam ætérnam possidébo? At ille dixit ad eum: In lege quid scriptum est? Quómodo legis? Ille respóndens dixit: Díliges Dóminum Deum tuum ex toto corde tuo, et ex tota ánima tua, et ex ómnibus víribus tuis, et ex omni mente tua: et próximum tuum sicut teípsum. Dixítque illi: Recte respondísti: hoc fac, et vives. Ille autem volens justificáre seípsum, dixit ad Jesum: Et quis est meus próximus? Suscípiens autem Jesus, dixit: Homo quidam descendébat ab Jerúsalem in Jéricho, et íncidit in latrónes, qui étiam despoliavérunt eum: et plagis impósitis abiérunt semivívo relícto. Accidit autem ut sacérdos quidam descénderet eádem via: et viso illo præterívit. Simíliter et Levíta, cum esset secus locum, et vidéret eum, pertránsiit. Samaritánus autem quidam iter fáciens, venit secus eum: et videns eum, misericórdia motus est. Et apprópians alligávit vúlnera ejus, infúndens óleum, et vinum: et impónens illum in juméntum suum, duxit in stábulum, et curam ejus egit. Et áltera die prótulit duos denários, et dedit stabulário, et ait: Curam illíus habe: et quodcúmque supererogáveris, ego cum redíero reddam tibi. Quis horum trium vidétur tibi próximus fuísse illi, qui íncidit in latrónes? At ille dixit: Qui fecit misericórdiam in illum. Et ait illi Jesus: Vade, et tu fac simíliter.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis: Beáti óculi, qui vident quæ vos vidétis. Dico enim vobis, quod multi prophétæ, et reges voluérunt vidére quæ vos vidétis, et non vidérunt: et audíre quæ audítis, et non audiérunt. Et ecce quidam legisperítus surréxit tentans illum, et dicens: Magíster, quid faciéndo vitam ætérnam possidébo? At ille dixit ad eum: In lege quid scriptum est? Quómodo legis? Ille respóndens dixit: Díliges Dóminum Deum tuum ex toto corde tuo, et ex tota ánima tua, et ex ómnibus víribus tuis, et ex omni mente tua: et próximum tuum sicut teípsum. Dixítque illi: Recte respondísti: Hoc fac, et vives. Ille autem volens justificáre seípsum, dixit ad Jesum: Et quis est meus próximus? Suscípiens autem Jesus, dixit: Homo quidam descendébat ab Jerúsalem in Jéricho, et íncidit in latrónes, qui étiam despoliavérunt eum: et plagis impósitis abiérunt semivívo relícto. Accidit autem ut sacérdos quidam descénderet eádem via: et viso illo præterívit. Simíliter et Levíta, cum esset secus locum, et vidéret eum, pertránsiit. Samaritánus autem quidam iter fáciens, venit secus eum: et videns eum, misericórdia motus est. Et apprópians alligávit vúlnera ejus, infúndens óleum, et vinum: Et impónens illum in juméntum suum, duxit in stábulum, et curam ejus egit. Et áltera die prótulit duos denários, et dedit stabulário, et ait: Curam illíus habe: Et quodcúmque supererogáveris, ego cum redíero reddam tibi. Quis horum trium vidétur tibi próximus fuísse illi, qui íncidit in latrónes? At ille dixit: Qui fecit misericórdiam in illum. Et ait illi Jesus: Vade, et tu fac simíliter.",
+  "src": "M39 pp. 278-279 (pdf 178L-R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent13",
+   "or",
+   0
+  ],
+  "old": "Omnípotens sempitérne Deus, da nobis fídei, spei et caritátis augméntum: et, ut mereámur asséqui quod promíttis, fac nos amáre quod prǽcipis. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Omnípotens sempitérne Deus, da nobis fídei, spei, et caritátis augméntum: et ut mereámur ássequi quod promíttis; fac nos amáre quod prǽcipis: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 279 (pdf 178R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent13",
+   "se",
+   0
+  ],
+  "old": "Propitiáre, Dómine, pópulo tuo, propitiáre munéribus: ut, hac oblatióne placátus, et indulgéntiam nobis tríbuas et postuláta concedas. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Propitiáre Dómine pópulo tuo, propitiáre munéribus: ut hac oblatióne placátus, et indulgéntiam nobis tríbuas, et postuláta concédas. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 280 (pdf 179L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent13",
+   "pc",
+   0
+  ],
+  "old": "Sumptis, Dómine, cœléstibus sacraméntis: ad redemptiónis ætérnæ, quǽsumus, proficiámus augméntum. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Sumptis, Dómine, cæléstibus sacraméntis; ad redemptiónis ætérnæ, quǽsumus, proficiámus augméntum: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 280 (pdf 179L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent13",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Abrahæ dictæ sunt promissiónes, et sémini ejus. Non dicit: Et semínibus, quasi in multis: sed quasi in uno: Et sémini tuo, qui est Christus. Hoc autem dico, testaméntum confirmátum a Deo: quæ post quadringéntos et trigínta annos facta est lex, non írritum facit ad evacuándam promissiónem. Nam si ex lege heréditas, jam non ex promissióne. Abrahæ autem per repromissiónem donávit Deus. Quid ígitur lex? Propter transgressiónes pósita est donec veníret semen, cui promíserat, ordináta per ángelos in manu mediatóris. Mediátor autem uníus non est: Deus autem unus est. Lex ergo advérsus promíssa Dei? Absit. Si enim data esset lex, quæ posset vivificáre, vere ex lege esset justítia. Sed conclúsit Scriptúra ómnia sub peccáto, ut promíssio ex fide Jesu Christi darétur credéntibus.",
+  "new": "Fratres: Abrahæ dictæ sunt promissiónes, et sémini ejus. Non dicit, Et semínibus, quasi in multis: sed quasi in uno, Et sémini tuo, qui est Christus. Hoc autem dico, testaméntum confirmátum a Deo: quæ post quadringéntos et trigínta annos facta est lex, non írritum facit ad evacuándam promissiónem. Nam si ex lege heréditas, jam non ex promissióne. Abrahæ autem per repromissiónem donávit Deus. Quid ígitur lex? Propter transgressiónes pósita est, donec veníret semen cui promíserat, ordináta per Angelos in manu mediatóris. Mediátor autem uníus non est: Deus autem unus est. Lex ergo advérsus promíssa Dei? Absit. Si enim data esset lex, quæ posset vivificáre, vere ex lege esset justítia. Sed conclúsit Scriptúra ómnia sub peccáto, ut promíssio ex fide Jesu Christi darétur credéntibus.",
+  "src": "M39 pp. 279-280 (pdf 178R-179L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent13",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dum iret Jesus in Jerúsalem, transíbat per médiam Samaríam, et Galilǽam. Et cum ingrederétur quoddam castéllum, occurrérunt ei decem viri leprósi, qui stetérunt a longe: et levavérunt vocem, dicéntes: Jesu præcéptor, miserére nostri. Quos ut vidit, dixit: Ite, osténdite vos sacerdótibus. Et factum est, dum irent, mundáti sunt. Unus autem ex illis, ut vidit quia mundátus est, regréssus est, cum magna voce magníficans Deum, et cécidit in fáciem ante pedes ejus, grátias agens: et hic erat Samaritánus. Respóndens autem Jesus, dixit: Nonne decem mundáti sunt? Et novem ubi sunt? Non est invéntus qui redíret, et daret glóriam Deo, nisi hic alienígena. Et ait illi: Surge, vade: quia fides tua te salvum fecit.",
+  "new": "In illo témpore: Dum iret Jesus in Jerúsalem, transíbat per médiam Samaríam, et Galilǽam. Et cum ingrederétur quoddam castéllum, occurrérunt ei decem viri leprósi, qui stetérunt a longe: Et levavérunt vocem, dicéntes: Jesu præcéptor, miserére nostri. Quos ut vidit, dixit: Ite, osténdite vos sacerdótibus. Et factum est, dum irent, mundáti sunt. Unus autem ex illis, ut vidit quia mundátus est, regréssus est, cum magna voce magníficans Deum, et cécidit in fáciem ante pedes ejus, grátias agens: Et hic erat Samaritánus. Respóndens autem Jesus, dixit: Nonne decem mundáti sunt? Et novem ubi sunt? Non est invéntus qui redíret, et daret glóriam Deo, nisi hic alienígena. Et ait illi: Surge, vade: quia fides tua te salvum fecit.",
+  "src": "M39 p. 280 (pdf 179L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent14",
+   "or",
+   0
+  ],
+  "old": "Custódi, Dómine, quǽsumus, Ecclésiam tuam propitiatióne perpétua: et quia sine te lábitur humána mortálitas; tuis semper auxíliis et abstrahátur a nóxiis et ad salutária dirigátur. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Custódi, Dómine quǽsumus, Ecclésiam tuam propitiatióne perpétua: et quia sine te lábitur humána mortálitas; tuis semper auxíliis, et abstrahátur a nóxiis, et ad salutária dirigátur: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 281 (pdf 179R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent14",
+   "se",
+   0
+  ],
+  "old": "Concéde nobis, Dómine, quǽsumus, ut hæc hóstia salutáris et nostrórum fiat purgátio delictórum, et tuæ propitiátio potestátis. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Concéde nobis, Dómine quǽsumus, ut hæc hóstia salutáris, et nostrórum fiat purgátio delictórum, et tuæ propitiátio potestátis. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 282 (pdf 180L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent14",
+   "pc",
+   0
+  ],
+  "old": "Puríficent semper et múniant tua sacraménta nos, Deus: et ad perpétuæ ducant salvatiónis efféctum. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Puríficent semper et múniant tua sacraménta nos Deus; et ad perpétuæ ducant salvatiónis efféctum: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 282 (pdf 180L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent14",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Spíritu ambuláte, et desidéria carnis non perficiétis. Caro enim concupíscit advérsus spíritum: spíritus autem advérsus carnem: hæc enim sibi ínvicem adversántur, ut non quæcúmque vultis, illa faciátis. Quod si spíritu ducímini, non estis sub lege. Manifésta sunt autem ópera carnis: quæ sunt fornicátio, immundítia, impudicítia, luxúria, idolórum sérvitus, venefícia, inimicítiæ, contentiónes, æmulatiónes, iræ, rixæ, dissensiónes, sectæ, invídiæ, homicídia, ebrietátes, comessatiónes, et his simília, quæ prædíco vobis, sicut prædíxi: quóniam qui tália agunt, regnum Dei non consequéntur. Fructus autem Spíritus est: cáritas, gáudium, pax, patiéntia, benígnitas, bónitas, longanímitas, mansuetúdo, fides, modéstia, continéntia, cástitas. Advérsus hujúsmodi non est lex. Qui autem sunt Christi, carnem suam crucifixérunt cum vítiis, et concupiscéntiis.",
+  "new": "Fratres: Spíritu ambuláte, et desidéria carnis non perficiétis. Caro enim concupíscit advérsus spíritum: spíritus autem advérsus carnem: Hæc enim sibi ínvicem adversántur: ut non quæcúmque vultis, illa faciátis. Quod si spíritu ducímini, non estis sub lege. Manifésta sunt autem ópera carnis: quæ sunt fornicátio, immundítia, impudicítia, luxúria, idolórum sérvitus, venefícia, inimicítiæ, contentiónes, æmulatiónes, iræ, rixæ, dissensiónes, sectæ, invídiæ, homicídia, ebrietátes, comessatiónes, et his simília, quæ prædíco vobis, sicut prædíxi: quóniam qui tália agunt, regnum Dei non consequéntur. Fructus autem Spíritus est: cáritas, gáudium, pax, patiéntia, benígnitas, bónitas, longanímitas, mansuetúdo, fides, modéstia, continéntia, cástitas. Advérsus hujúsmodi non est lex. Qui autem sunt Christi, carnem suam crucifixérunt cum vítiis, et concupiscéntiis.",
+  "src": "M39 p. 281 (pdf 179R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent14",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis: Nemo potest duóbus dóminis servíre: aut enim unum ódio habébit, et álterum díliget: aut unum sustinébit, et álterum contémnet. Non potéstis Deo servíre et mammónæ. Ideo dico vobis, ne sollíciti sitis ánimæ vestræ quid manducétis, neque córpori vestro quid induámini. Nonne ánima plus est quam esca, et corpus plus quam vestiméntum? Respícite volatília cæli, quóniam non serunt, neque metunt, neque cóngregant in hórrea: et Pater vester cæléstis pascit illa. Nonne vos magis pluris estis illis? Quis autem vestrum cógitans potest adjícere ad statúram suam cúbitum unum? Et de vestiménto quid sollíciti estis? Consideráte lília agri quómodo crescunt: non labórant, neque nent. Dico autem vobis, quóniam nec Sálomon in omni glória sua coopértus est sicut unum ex istis. Si autem fœnum agri, quod hódie est, et cras in clíbanum míttitur, Deus sic vestit, quanto magis vos módicæ fídei? Nolíte ergo sollíciti esse, dicéntes: Quid manducábimus, aut quid bibémus, aut quo operiémur? Hæc enim ómnia gentes inquírunt. Scit enim Pater vester, quia his ómnibus indigétis. Quǽrite ergo primum regnum Dei, et justítiam ejus: et hæc ómnia adjiciéntur vobis.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis: Nemo potest duóbus dóminis servíre: Aut enim unum ódio habébit, et álterum díliget: aut unum sustinébit, et álterum contémnet. Non potéstis Deo servíre, et mammónæ. Ideo dico vobis, ne sollíciti sitis ánimæ vestræ quid manducétis, neque córpori vestro quid induámini. Nonne ánima plus est quam esca: et corpus plus quam vestiméntum? Respícite volatília cæli, quóniam non serunt, neque metunt, neque cóngregant in hórrea: et Pater vester cæléstis pascit illa. Nonne vos magis pluris estis illis? Quis autem vestrum cógitans potest adjícere ad statúram suam cúbitum unum? Et de vestiménto quid sollíciti estis? Consideráte lília agri, quómodo crescunt: Non labórant, neque nent. Dico autem vobis, quóniam nec Sálomon in omni glória sua coopértus est sicut unum ex istis. Si autem fœnum agri, quod hódie est, et cras in clíbanum míttitur, Deus sic vestit: quanto magis vos módicæ fídei? Nolíte ergo sollíciti esse, dicéntes: Quid manducábimus, aut quid bibémus, aut quo operiémur? Hæc enim ómnia gentes inquírunt. Scit enim Pater vester, quia his ómnibus indigétis. Quǽrite ergo primum regnum Dei, et justítiam ejus: et hæc ómnia adjiciéntur vobis.",
+  "src": "M39 pp. 281-282 (pdf 179R-180L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent14",
+   0,
+   "en"
+  ],
+  "old": "Brethren: I say then, walk in the spirit, and you shall not fulfill the lusts of the flesh. For the flesh lusteth against the spirit: and the spirit against the flesh; for these are contrary one to another: so that you do not the things that you would. But if you are led by the spirit, you are not under the law. Now the works of the flesh are manifest, which are fornication, uncleanness, immodesty, luxury, Idolatry, witchcrafts, enmities, contentions, emulations, wraths, quarrels, dissensions, sects, Envies, murders, drunkenness, revellings, and such like. Of the which I foretell you, as I have foretold to you, that they who do such things shall not obtain the kingdom of God. But the fruit of the Spirit is, charity, joy, peace, patience, benignity, goodness, longanimity, Mildness, faith, modesty, continency, chastity. Against such there is no law. And they that are Christ’s, have crucified their flesh, with the vices and concupiscences.",
+  "new": "Brethren: Walk in the spirit, and you shall not fulfill the lusts of the flesh. For the flesh lusteth against the spirit: and the spirit against the flesh; for these are contrary one to another: so that you do not the things that you would. But if you are led by the spirit, you are not under the law. Now the works of the flesh are manifest, which are fornication, uncleanness, immodesty, luxury, Idolatry, witchcrafts, enmities, contentions, emulations, wraths, quarrels, dissensions, sects, Envies, murders, drunkenness, revellings, and such like. Of the which I foretell you, as I have foretold to you, that they who do such things shall not obtain the kingdom of God. But the fruit of the Spirit is, charity, joy, peace, patience, benignity, goodness, longanimity, Mildness, faith, modesty, continency, chastity. Against such there is no law. And they that are Christ’s, have crucified their flesh, with the vices and concupiscences.",
+  "src": "M39 p. 281 (pdf 179R)",
+  "why": "English had \"I say then\", which the Latin (\"Fratres: Spíritu ambuláte\") does not have"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent15",
+   "or",
+   0
+  ],
+  "old": "Ecclésiam tuam, Dómine, miserátio continuáta mundet et múniat: et quia sine te non potest salva consístere; tuo semper múnere gubernétur. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Ecclésiam tuam, Dómine, miserátio continuáta mundet et múniat: et quia sine te non potest salva consístere; tuo semper múnere gubernétur: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 282 (pdf 180L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent15",
+   "se",
+   0
+  ],
+  "old": "Tua nos, Dómine, sacramenta custodiant: et contra diabólicos semper tueántur incúrsus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Tua nos, Dómine, sacraménta custódiant, et contra diabólicos semper tueántur incúrsus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 283 (pdf 180R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent15",
+   "pc",
+   0
+  ],
+  "old": "Mentes nostras et córpora possídeat, quǽsumus, Dómine, doni cœléstis operátio: ut non noster sensus in nobis, sed iúgiter eius prævéniat efféctus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Mentes nostras, et córpora possídeat, quǽsumus Dómine, doni cæléstis operátio: ut non noster sensus in nobis; sed iúgiter eius prævéniat efféctus: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 283 (pdf 180R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent15",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Si spíritu vívimus, spíritu et ambulémus. Non efficiámur inánis glóriæ cúpidi, ínvicem provocántes, ínvicem invidéntes. Fratres, et si præoccupátus fúerit homo in áliquo delícto, vos, qui spirituáles estis, hujúsmodi instrúite in spíritu lenitátis, consíderans teípsum, ne et tu tentéris. Alter altérius ónera portáte, et sic adimplébitis legem Christi. Nam si quis exístimat se áliquid esse, cum nihil sit, ipse se sedúcit. Opus autem suum probet unusquísque, et sic in semetípso tantum glóriam habébit, et non in áltero. Unusquísque enim onus suum portábit. Commúnicet autem is, qui catechizátur verbo, ei, qui se catechízat, in ómnibus bonis. Nolíte erráre: Deus non irridétur. Quæ enim semináverit homo, hæc et metet. Quóniam qui séminat in carne sua, de carne et metet corruptiónem: qui autem séminat in spíritu, de spíritu metet vitam ætérnam. Bonum autem faciéntes, non deficiámus: témpore enim suo metémus non deficiéntes. Ergo dum tempus habémus, operémur bonum ad omnes, máxime autem ad domésticos fídei.",
+  "new": "Fratres: Si spíritu vívimus, spíritu et ambulémus. Non efficiámur inánis glóriæ cúpidi, ínvicem provocántes, ínvicem invidéntes. Fratres, et si præoccupátus fúerit homo in áliquo delícto, vos, qui spirituáles estis, hujúsmodi instrúite in spíritu lenitátis, consíderans teípsum, ne et tu tentéris. Alter altérius ónera portáte, et sic adimplébitis legem Christi. Nam si quis exístimat se áliquid esse, cum nihil sit, ipse se sedúcit. Opus autem suum probet unusquísque, et sic in semetípso tantum glóriam habébit, et non in áltero. Unusquísque enim onus suum portábit. Commúnicet autem is, qui catechizátur verbo, ei, qui se catechízat, in ómnibus bonis. Nolíte erráre: Deus non irridétur. Quæ enim semináverit homo, hæc et metet. Quóniam qui séminat in carne sua, de carne et metet corruptiónem: Qui autem séminat in spíritu, de spíritu metet vitam ætérnam. Bonum autem faciéntes, non deficiámus: témpore enim suo metémus non deficiéntes. Ergo dum tempus habémus, operémur bonum ad omnes, máxime autem ad domésticos fídei.",
+  "src": "M39 pp. 282-283 (pdf 180L-R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent15",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Ibat Jesus in civitátem, quæ vocátur Naim: et ibant cum eo discípuli ejus, et turba copiósa. Cum autem appropinquáret portæ civitátis, ecce defúnctus efferebátur fílius únicus matris suæ: et hæc vídua erat: et turba civitátis multa cum illa. Quam cum vidísset Dóminus, misericórdia motus super eam, dixit illi: Noli flere. Et accéssit, et tétigit lóculum. (Hi autem, qui portábant, stetérunt.) Et ait: Adoléscens, tibi dico, surge. Et resédit qui erat mórtuus, et cœpit loqui. Et dedit illum matri suæ. Accépit autem omnes timor: et magnificábant Deum, dicéntes: Quia prophéta magnus surréxit in nobis: et quia Deus visitávit plebem suam.",
+  "new": "In illo témpore: Ibat Jesus in civitátem, quæ vocátur Naim: et ibant cum eo discípuli ejus, et turba copiósa. Cum autem appropinquáret portæ civitátis, ecce defúnctus efferebátur fílius únicus matris suæ: Et hæc vídua erat: et turba civitátis multa cum illa. Quam cum vidísset Dóminus, misericórdia motus super eam, dixit illi: Noli flere. Et accéssit, et tétigit lóculum. (Hi autem, qui portábant, stetérunt.) Et ait: Adoléscens, tibi dico, surge. Et resédit qui erat mórtuus, et cœpit loqui. Et dedit illum matri suæ. Accépit autem omnes timor: et magnificábant Deum, dicéntes: Quia prophéta magnus surréxit in nobis: et quia Deus visitávit plebem suam.",
+  "src": "M39 p. 283 (pdf 180R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent16",
+   "or",
+   0
+  ],
+  "old": "Tua nos, quǽsumus, Dómine, grátia semper et prævéniat et sequátur: ac bonis opéribus iúgiter præstet esse inténtos. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Tua nos, quǽsumus Dómine, grátia semper et prævéniat, et sequátur; ac bonis opéribus iúgiter præstet esse inténtos: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 284 (pdf 181L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent16",
+   "se",
+   0
+  ],
+  "old": "Munda nos, quǽsumus, Dómine, sacrifícii præséntis efféctu: et pérfice miserátus in nobis; ut eius mereámur esse partícipes. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Munda nos, quǽsumus Dómine, sacrifícii præséntis efféctu; et pérfice miserátus in nobis, ut eius mereámur esse partícipes. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 285 (pdf 181R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent16",
+   "pc",
+   0
+  ],
+  "old": "Purífica, quǽsumus, Dómine, mentes nostras benígnus, et rénova cœléstibus sacraméntis: ut consequénter et córporum præsens páriter et futúrum capiámus auxílium. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Purífica, quǽsumus Dómine, mentes nostras benígnus, et rénova cæléstibus sacraméntis; ut consequénter et córporum præsens páriter et futúrum capiámus auxílium: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 285 (pdf 181R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent16",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Óbsecro vos ne deficiátis in tribulatiónibus meis pro vobis: quæ est glória vestra. Hujus rei grátia flecto génua mea ad Patrem Dómini nostri Jesu Christi, ex quo omnis patérnitas in cælis, et in terra nominátur, ut det vobis secúndum divítias glóriæ suæ, virtúte corroborári per Spíritum ejus in interiórem hóminem, Christum habitáre per fidem in córdibus vestris: in caritáte radicáti, et fundáti, ut possítis comprehéndere cum ómnibus sanctis, quæ sit latitúdo, et longitúdo, et sublímitas, et profúndum: scire étiam supereminéntem sciéntiæ caritátem Christi, ut impleámini in omnem plenitúdinem Dei. Ei autem, qui potens est ómnia fácere superabundánter quam pétimus aut intellígimus, secúndum virtútem, quæ operátur in nobis: ipsi glória in Ecclésia, et in Christo Jesu, in omnes generatiónes sǽculi sæculórum. Amen.",
+  "new": "Fratres: Obsecro vos ne deficiátis in tribulatiónibus meis pro vobis: quæ est glória vestra. Hujus rei grátia flecto génua mea ad Patrem Dómini nostri Jesu Christi, ex quo omnis patérnitas in cælis, et in terra nominátur, ut det vobis secúndum divítias glóriæ suæ, virtúte corroborári per Spíritum ejus in interiórem hóminem, Christum habitáre per fidem in córdibus vestris: In caritáte radicáti, et fundáti, ut possítis comprehéndere cum ómnibus sanctis, quæ sit latitúdo, et longitúdo, et sublímitas, et profúndum: Scire étiam supereminéntem sciéntiæ caritátem Christi, ut impleámini in omnem plenitúdinem Dei. Ei autem, qui potens est ómnia fácere superabundánter quam pétimus aut intellígimus, secúndum virtútem, quæ operátur in nobis: ipsi glória in Ecclésia, et in Christo Jesu, in omnes generatiónes sǽculi sæculórum. Amen.",
+  "src": "M39 p. 284 (pdf 181L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent16",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Cum intráret Jesus in domum cujúsdam príncipis Pharisæórum sábbato manducáre panem, et ipsi observábant eum. Et ecce homo quidam hydrópicus erat ante illum. Et respóndens Jesus dixit ad legisperítos et Pharisǽos, dicens: Si licet sábbato curáre? At illi tacuérunt. Ipse vero apprehénsum sanávit eum, ac dimísit. Et respóndens ad illos dixit: Cujus vestrum ásinus, aut bos in púteum cadet, et non contínuo éxtrahet illum die sábbati? Et non póterant ad hæc respondére illi. Dicébat autem et ad invitátos parábolam, inténdens quómodo primos accúbitus elígerent, dicens ad illos: Cum invitátus fúeris ad núptias, non discúmbas in primo loco, ne forte honorátior te sit invitátus ab illo. Et véniens is, qui te et illum vocávit, dicat tibi: Da huic locum: et tunc incípias cum rubóre novíssimum locum tenére. Sed cum vocátus fúeris, vade, recúmbe in novíssimo loco: ut, cum vénerit qui te invitávit, dicat tibi: Amíce, ascénde supérius. Tunc erit tibi glória coram simul discumbéntibus: quia omnis, qui se exáltat, humiliábitur: et qui se humíliat, exaltábitur.",
+  "new": "In illo témpore: Cum intráret Jesus in domum cujúsdam príncipis Pharisæórum sábbato manducáre panem, et ipsi observábant eum. Et ecce homo quidam hydrópicus erat ante illum. Et respóndens Jesus, dixit ad legisperítos, et Pharisǽos, dicens: Si licet sábbato curáre? At illi tacuérunt. Ipse vero apprehénsum sanávit eum, ac dimísit. Et respóndens ad illos, dixit: Cujus vestrum ásinus, aut bos in púteum cadet, et non contínuo éxtrahet illum die sábbati? Et non póterant ad hæc respondére illi. Dicébat autem et ad invitátos parábolam, inténdens quómodo primos accúbitus elígerent, dicens ad illos: Cum invitátus fúeris ad núptias, non discúmbas in primo loco, ne forte honorátior te sit invitátus ab illo, et véniens is, qui te et illum vocávit, dicat tibi, Da huic locum: et tunc incípias cum rubóre novíssimum locum tenére. Sed cum vocátus fúeris, vade, recúmbe in novíssimo loco: ut, cum vénerit qui te invitávit, dicat tibi: Amíce, ascénde supérius. Tunc erit tibi glória coram simul discumbéntibus: Quia omnis, qui se exáltat, humiliábitur: et qui se humíliat, exaltábitur.",
+  "src": "M39 pp. 284-285 (pdf 181L-R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent16",
+   0,
+   "en"
+  ],
+  "old": "Brethren: Wherefore I pray you not to faint at my tribulations for you, which is your glory. For this cause I bow my knees to the Father of our Lord Jesus Christ, Of whom all paternity in heaven and earth is named, That he would grant you, according to the riches of his glory, to be strengthened by his Spirit with might unto the inward man, That Christ may dwell by faith in your hearts; that being rooted and founded in charity, You may be able to comprehend, with all the saints, what is the breadth, and length, and height, and depth: To know also the charity of Christ, which surpasseth all knowledge, that you may be filled unto all the fulness of God. Now to him who is able to do all things more abundantly than we desire or understand, according to the power that worketh in us; To him be glory in the church, and in Christ Jesus unto all generations, world without end. Amen.",
+  "new": "Brethren: I pray you not to faint at my tribulations for you, which is your glory. For this cause I bow my knees to the Father of our Lord Jesus Christ, Of whom all paternity in heaven and earth is named, That he would grant you, according to the riches of his glory, to be strengthened by his Spirit with might unto the inward man, That Christ may dwell by faith in your hearts; that being rooted and founded in charity, You may be able to comprehend, with all the saints, what is the breadth, and length, and height, and depth: To know also the charity of Christ, which surpasseth all knowledge, that you may be filled unto all the fulness of God. Now to him who is able to do all things more abundantly than we desire or understand, according to the power that worketh in us; To him be glory in the church, and in Christ Jesus unto all generations, world without end. Amen.",
+  "src": "M39 p. 284 (pdf 181L)",
+  "why": "English had \"Wherefore\", which the Latin (\"Fratres: Obsecro vos\") does not have"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent17",
+   "or",
+   0
+  ],
+  "old": "Da, quǽsumus, Dómine, pópulo tuo diabólica vitáre contágia: et te solum Deum pura mente sectári. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Da, quǽsumus Dómine, pópulo tuo diabólica vitáre contágia; et te solum Deum pura mente sectári: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 285 (pdf 181R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent17",
+   "se",
+   0
+  ],
+  "old": "Maiestátem tuam, Dómine, supplíciter deprecámur: ut hæc sancta, quæ gérimus, et a prætéritis nos delictis éxuant et futúris. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Maiestátem tuam, Dómine, supplíciter deprecámur: ut hæc sancta, quæ gérimus, et a prætéritis nos delíctis éxuant, et futúris. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 286 (pdf 182L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Pent17",
+   "pc",
+   0
+  ],
+  "old": "Sanctificatiónibus tuis, omnípotens Deus, et vítia nostra curéntur, et remédia nobis ætérna provéniant. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Sanctificatiónibus tuis, omnípotens Deus, et vítia nostra curéntur; et remédia nobis ætérna provéniant: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 286 (pdf 182L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent17",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Óbsecro vos ego vinctus in Dómino, ut digne ambulétis vocatióne, qua vocáti estis, cum omni humilitáte, et mansuetúdine, cum patiéntia, supportántes ínvicem in caritáte, sollíciti serváre unitátem spíritus in vínculo pacis. Unum corpus, et unus spíritus, sicut vocáti estis in una spe vocatiónis vestræ. Unus Dóminus, una fides, unum baptísma. Unus Deus et Pater ómnium, qui est super omnes, et per ómnia, et in ómnibus nobis.",
+  "new": "Fratres: Obsecro vos ego vinctus in Dómino, ut digne ambulétis vocatióne, qua vocáti estis, cum omni humilitáte, et mansuetúdine, cum patiéntia, supportántes ínvicem in caritáte, sollíciti serváre unitátem Spíritus in vínculo pacis. Unum corpus, et unus Spíritus, sicut vocáti estis in una spe vocatiónis vestræ. Unus Dóminus, una fides, unum baptísma. Unus Deus et Pater ómnium, qui est super omnes, et per ómnia, et in ómnibus nobis.",
+  "src": "M39 pp. 285-286 (pdf 181R-182L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent17",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Accessérunt ad Jesum Pharisǽi: et interrogávit eum unus ex eis legis doctor, tentans eum: Magíster, quod est mandátum magnum in lege? Ait illi Jesus: Díliges Dóminum Deum tuum ex toto corde tuo, et in tota ánima tua, et in tota mente tua. Hoc est máximum, et primum mandátum. Secúndum autem símile est huic: Díliges próximum tuum, sicut teípsum. In his duóbus mandátis univérsa lex pendet, et prophétæ. Congregátis autem Pharisǽis, interrogávit eos Jesus, dicens: Quid vobis vidétur de Christo? Cujus fílius est? Dicunt ei: David. Ait illis: Quómodo ergo David in Spíritu vocat eum Dóminum, dicens: Dixit Dóminus Dómino meo: Sede a dextris meis, donec ponam inimícos tuos scabéllum pedum tuórum? Si ergo David vocat eum Dóminum, quómodo fílius ejus est? Et nemo póterat ei respondére verbum: neque ausus fuit quisquam ex illa die eum ámplius interrogáre.",
+  "new": "In illo témpore: Accessérunt ad Jesum Pharisǽi: et interrogávit eum unus ex eis legis doctor, tentans eum: Magíster, quod est mandátum magnum in lege? Ait illi Jesus: Díliges Dóminum Deum tuum ex toto corde tuo, et in tota ánima tua, et in tota mente tua. Hoc est máximum, et primum mandátum. Secúndum autem símile est huic: Díliges próximum tuum, sicut teípsum. In his duóbus mandátis univérsa lex pendet, et prophétæ. Congregátis autem Pharisǽis, interrogávit eos Jesus, dicens: Quid vobis vidétur de Christo? Cujus fílius est? Dicunt ei: David. Ait illis: Quómodo ergo David in spíritu vocat eum Dóminum, dicens, Dixit Dóminus Dómino meo: sede a dextris meis, donec ponam inimícos tuos scabéllum pedum tuórum? Si ergo David vocat eum Dóminum, quómodo fílius ejus est? Et nemo póterat ei respondére verbum: neque ausus fuit quisquam ex illa die eum ámplius interrogáre.",
+  "src": "M39 p. 286 (pdf 182L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent17",
+   0,
+   "en"
+  ],
+  "old": "Brethren: I therefore, a prisoner in the Lord, beseech you that you walk worthy of the vocation in which you are called, With all humility and mildness, with patience, supporting one another in charity. Careful to keep the unity of the Spirit in the bond of peace. One body and one Spirit; as you are called in one hope of your calling. One Lord, one faith, one baptism. One God and Father of all, who is above all, and through all, and in us all.",
+  "new": "Brethren: I, a prisoner in the Lord, beseech you that you walk worthy of the vocation in which you are called, With all humility and mildness, with patience, supporting one another in charity. Careful to keep the unity of the Spirit in the bond of peace. One body and one Spirit; as you are called in one hope of your calling. One Lord, one faith, one baptism. One God and Father of all, who is above all, and through all, and in us all.",
+  "src": "M39 p. 285 (pdf 181R)",
+  "why": "English had \"therefore\", which the Latin (\"Obsecro vos ego vinctus\") does not have"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "EmbWedSept",
+   "or",
+   0
+  ],
+  "old": "Misericórdiæ tuæ remédiis, quǽsumus, Dómine, fragílitas nostra subsístat: ut, quæ sua conditióne attéritur, tua cleméntia reparétur. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Misericórdiæ tuæ remédiis, quǽsumus Dómine, fragílitas nostra subsístat: ut quæ sua conditióne attéritur; tua cleméntia reparétur: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 287 (pdf 182R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "EmbWedSept",
+   "se",
+   0
+  ],
+  "old": "Hæc hóstia, Dómine, quǽsumus, emúndet nostra delícta: et ad sacrifícium celebrándum, subditórum tibi córpora mentésque sanctíficet. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Hæc hóstia, Dómine, quǽsumus, emúndet nostra delícta: et ad sacrifícium celebrándum, subditórum tibi córpora, mentésque sanctíficet. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 289 (pdf 183R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "EmbWedSept",
+   "pc",
+   0
+  ],
+  "old": "Suméntes, Dómine, dona cœléstia, supplíciter deprecámur: ut, quæ sédula servitúte, donánte te, gérimus, dignis sénsibus tuo múnere capiámus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Suméntes, Dómine, dona cæléstia, supplíciter deprecámur: ut quæ sédula servitúte, donánte te, gérimus; dignis sénsibus tuo múnere capiámus: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 289 (pdf 183R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "EmbWedSept",
+   0,
+   "la"
+  ],
+  "old": "Hæc dicit Dóminus Deus: Ecce dies véniunt: et comprehéndet arátor messórem, et calcátor uvæ mitténtem semen: et stillábunt montes dulcédinem, et omnes colles culti erunt. Et convértam captivitátem pópuli mei Israël: et ædificábunt civitátes desértas, et inhabitábunt: et plantábunt víneas, et bibent vinum eárum: et fácient hortos, et cómedent fructus eórum. Et plantábo eos super humum suam, et non evéllam eos ultra de terra sua, quam dedi eis, dicit Dóminus Deus tuus.",
+  "new": "Hæc dicit Dóminus Deus: Ecce dies véniunt: et comprehéndet arátor messórem, et calcátor uvæ mitténtem semen: Et stillábunt montes dulcédinem, et omnes colles culti erunt. Et convértam captivitátem pópuli mei Israël: et ædificábunt civitátes desértas, et inhabitábunt: Et plantábunt víneas, et bibent vinum eárum: Et fácient hortos, et cómedent fructus eórum. Et plantábo eos super humum suam: et non evéllam eos ultra de terra sua, quam dedi eis: Dicit Dóminus Deus tuus.",
+  "src": "M39 p. 287 (pdf 182R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "EmbWedSept",
+   1,
+   "la"
+  ],
+  "old": "In diébus illis: Congregátus est omnis pópulus quasi vir unus ad platéam, quæ est ante portam aquárum: et dixérunt Esdræ scribæ ut afférret librum legis Móysi, quam præcéperat Dóminus Israéli. Attulit ergo Esdras sacérdos legem coram multitúdine virórum et mulíerum, cunctísque qui póterant intellígere, in die prima mensis séptimi. Et legit in eo apérte in platéa, quæ erat ante portam aquárum, de mane usque ad médiam diem, in conspéctu virórum et mulíerum, et sapiéntium: et aures omnis pópuli erant eréctæ ad librum. Stetit autem Esdras scriba super gradum lígneum, quem fécerat ad loquéndum: et librum coram omni pópulo: super univérsum quippe pópulum eminébat: et cum aperuísset eum, stetit omnis pópulus. Et benedíxit Esdras Dómino Deo magno: et respóndit omnis pópulus: Amen, amen: élevans manus suas: et incurváti sunt, et adoravérunt Deum proni in terram. Porro Levítæ, siléntium faciébant in pópulo ad audiéndam legem: pópulus autem stabat in gradu suo. Et legérunt in libro legis Dei distíncte, et apérte ad intelligéndum: et intellexérunt cum legerétur. Dixit autem Nehemías et Esdras sacérdos et scriba, et Levítæ interpretántes univérso pópulo: Dies sanctificátus est Dómino Deo nostro: nolíte lugére, et nolíte flere. Et dixit eis: Ite, comédite pínguia, et bíbite mulsum, et míttite partes his, qui non præparavérunt sibi: quia sanctus dies Dómini est, et nolíte contristári: gáudium étenim Dómini est fortitúdo nostra.",
+  "new": "In diébus illis: Congregátus est omnis pópulus quasi vir unus ad platéam, quæ est ante portam aquárum: et dixérunt Esdræ scribæ ut afférret Librum legis Móysi, quam præcéperat Dóminus Israéli. Attulit ergo Esdras sacérdos legem coram multitúdine virórum et mulíerum, cunctísque qui póterant intellígere, in die prima mensis séptimi. Et legit in eo apérte in platéa quæ erat ante portam aquárum, de mane usque ad médiam diem, in conspéctu virórum et mulíerum, et sapiéntium: Et aures omnis pópuli erant eréctæ ad Librum. Stetit autem Esdras scriba super gradum lígneum, quem fécerat ad loquéndum. Et apéruit Librum coram omni pópulo: Super univérsum quippe pópulum eminébat: Et cum aperuísset eum, stetit omnis pópulus. Et benedíxit Esdras Dómino Deo magno: Et respóndit omnis pópulus, Amen, amen: élevans manus suas. Et incurváti sunt, et adoravérunt Deum, proni in terram. Porro Levítæ, siléntium faciébant in pópulo ad audiéndam legem: Pópulus autem stabat in gradu suo. Et legérunt in Libro legis Dei distíncte, et apérte ad intelligéndum: et intellexérunt cum legerétur. Dixit autem Nehemías, et Esdras sacérdos et scriba, et Levítæ interpretántes univérso pópulo: Dies sanctificátus est Dómino Deo nostro, nolíte lugére, et nolíte flere. Et dixit eis: Ite, comédite pínguia, et bíbite mulsum, et míttite partes his, qui non præparavérunt sibi: quia sanctus dies Dómini est, et nolíte contristári: Gáudium étenim Dómini est fortitúdo nostra.",
+  "src": "M39 pp. 287-288 (pdf 182R-183L)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "EmbWedSept",
+   2,
+   "la"
+  ],
+  "old": "In illo témpore: Respóndens unus de turba, dixit: ad Jesum: Magíster, áttuli fílium meum ad te habéntem spíritum mutum: qui ubicúmque eum apprehénderit, allídit illum, et spumat, et stridet déntibus, et aréscit: et dixi discípulis tuis ut ejícerent illum, et non potuérunt. Qui respóndens eis, dixit: generátio incrédula, quámdiu apud vos ero? Quámdiu vos pátiar? Afférte illum ad me. Et attulérunt eum. Et cum vidísset eum, statim spíritus conturbávit illum: et elísus in terram, volutabátur spumans. Et interrogávit patrem ejus: Quantum témporis est ex quo ei hoc áccidit? At ille ait: Ab infántia: et frequénter eum in ignem, et in aquas misit ut eum pérderet: sed si quid potes, ádjuva nos, misértus nostri. Jesus autem ait illi: Si potes crédere, ómnia possibília sunt credénti. Et contínuo exclámans pater púeri, cum lácrymis ajébat: Credo, Dómine: ádjuva incredulitátem meam. Et cum vidéret Jesus concurréntem turbam, comminátus est spirítui immúndo, dicens illi: Surde, et mute spíritus, ego præcípio tibi, exi ab eo: et ámplius ne intróeas in eum. Et exclámans, et multum discérpens eum, éxiit ab eo, et factus est sicut mórtuus, ita ut multi dícerent: Quia mórtuus est. Jesus autem tenens manum ejus, elevávit eum, et surréxit. Et cum introísset in domum, discípuli ejus secréto interrogábant eum: Quare nos non potúimus ejícere eum? Et dixit illis: Hoc genus in nullo potest exíre, nisi in oratióne, et jejúnio.",
+  "new": "In illo témpore: Respóndens unus de turba, dixit ad Jesum: Magíster, áttuli fílium meum ad te, habéntem spíritum mutum: Qui ubicúmque eum apprehénderit, allídit illum, et spumat, et stridet déntibus, et aréscit: Et dixi discípulis tuis ut ejícerent illum, et non potuérunt. Qui respóndens eis, dixit: O generátio incrédula, quámdiu apud vos ero? quámdiu vos pátiar? Afférte illum ad me. Et attulérunt eum. Et cum vidísset eum, statim spíritus conturbávit illum: et elísus in terram, volutabátur spumans. Et interrogávit patrem ejus: Quantum témporis est ex quo ei hoc áccidit? At ille ait: Ab infántia: Et frequénter eum in ignem, et in aquas misit, ut eum pérderet. Sed si quid potes, ádjuva nos, misértus nostri. Jesus autem ait illi: Si potes crédere, ómnia possibília sunt credénti. Et contínuo exclámans pater púeri, cum lácrymis ajébat: Credo, Dómine: ádjuva incredulitátem meam. Et cum vidéret Jesus concurréntem turbam, comminátus est spirítui immúndo, dicens illi: Surde, et mute spíritus, ego præcípio tibi, exi ab eo: et ámplius ne intróeas in eum. Et exclámans, et multum discérpens eum, éxiit ab eo, et factus est sicut mórtuus, ita ut multi dícerent: Quia mórtuus est. Jesus autem tenens manum ejus, elevávit eum, et surréxit. Et cum introísset in domum, discípuli ejus secréto interrogábant eum: Quare nos non potúimus ejícere eum? Et dixit illis: Hoc genus in nullo potest exíre, nisi in oratióne, et jejúnio.",
+  "src": "M39 pp. 288-289 (pdf 183L-R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "EmbWedSept",
+   1,
+   "title"
+  ],
+  "old": "Léctio libri Nehemiæ.",
+  "new": "Léctio libri Esdræ.",
+  "src": "M39 p. 287 (pdf 182R): \"Léctio Libri Esdræ. 2 Esd. 8\"",
+  "why": "heading as printed"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "EmbWedSept",
+   1,
+   "title_en"
+  ],
+  "old": "Lesson from the Book of Nehemiæ.",
+  "new": "Lesson from the Book of Esdras.",
+  "src": "M39 p. 287 (pdf 182R)",
+  "why": "English heading to match the Latin"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "EmbWedSept",
+   1,
+   "en"
+  ],
+  "old": "In those days: The seventh month came: and the children of Israel were in their cities. And all the people were gathered together as one man to the street which is before the water gate, and they spoke to Esdras the scribe, to bring the book of the law of Moses, which the Lord had commanded to Israel. Then Esdras the priest brought the law before the multitude of men and women, and all those that could understand, in the first day of the seventh month. And he read it plainly in the street that was before the water gate, from the morning until midday, before the men, and the women, and all those that could understand: and the ears of all the people were attentive to the book. And Esdras the scribe stood upon a step of wood, which he had made to speak upon, and there stood by him Mathathias, and Semeia, and Ania, and Uria, and Helcia, and Maasia, on his right hand: and on the left, Phadaia, Misael, and Melchia, and Hasum, and Hasbadana, Zacharia and Mosollam. And Esdras opened the book before all the people: for he was above all the people: and when he had opened it, all the people stood. And Esdras blessed the Lord the great God: and all the people answered, Amen, amen: lifting up their hands: and they bowed down, and adored God with their faces to the ground. Now Josue, and Bani, and Serebia, Jamin, Accub, Sephtai, Odia, Maasia, Celtia, Azarias, Jozabed, Hanan, Phalaia, the Levites, made silence among the people to hear the law: and the people stood in their place. And they read in the book of the law of God distinctly and plainly to be understood: and they understood when it was read. And Nehemias (he is Athersatha) and Esdras the priest and scribe, and the Levites who interpreted to all the people, said: This is a holy day to the Lord our God: do not mourn, nor weep: for all the people wept, when they heard the words of the law. And he said to them: Go, eat fat meats, and drink sweet wine, and send portions to them that have not prepared for themselves: because it is the holy day of the Lord, and be not sad: for the joy of the Lord is our strength.",
+  "new": "In those days: All the people were gathered together as one man to the street which is before the water gate, and they spoke to Esdras the scribe, to bring the book of the law of Moses, which the Lord had commanded to Israel. Then Esdras the priest brought the law before the multitude of men and women, and all those that could understand, in the first day of the seventh month. And he read it plainly in the street that was before the water gate, from the morning until midday, before the men, and the women, and all those that could understand: and the ears of all the people were attentive to the book. And Esdras the scribe stood upon a step of wood, which he had made to speak upon, and there stood by him Mathathias, and Semeia, and Ania, and Uria, and Helcia, and Maasia, on his right hand: and on the left, Phadaia, Misael, and Melchia, and Hasum, and Hasbadana, Zacharia and Mosollam. And Esdras opened the book before all the people: for he was above all the people: and when he had opened it, all the people stood. And Esdras blessed the Lord the great God: and all the people answered, Amen, amen: lifting up their hands: and they bowed down, and adored God with their faces to the ground. Now Josue, and Bani, and Serebia, Jamin, Accub, Sephtai, Odia, Maasia, Celtia, Azarias, Jozabed, Hanan, Phalaia, the Levites, made silence among the people to hear the law: and the people stood in their place. And they read in the book of the law of God distinctly and plainly to be understood: and they understood when it was read. And Nehemias (he is Athersatha) and Esdras the priest and scribe, and the Levites who interpreted to all the people, said: This is a holy day to the Lord our God: do not mourn, nor weep: for all the people wept, when they heard the words of the law. And he said to them: Go, eat fat meats, and drink sweet wine, and send portions to them that have not prepared for themselves: because it is the holy day of the Lord, and be not sad: for the joy of the Lord is our strength.",
+  "src": "M39 p. 287 (pdf 182R)",
+  "why": "English began with Neh 7:72b (\"The seventh month came …\"), which the Latin (begins \"Congregátus est omnis pópulus\") does not have"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "EmbWedSept",
+   0,
+   "en"
+  ],
+  "old": "Thus saith the Lord God: Behold the days come, saith the Lord, when the ploughman shall overtake the reaper, and the treader of grapes him that soweth seed: and the mountains shall drop sweetness, and every hill shall be tilled. And I will bring back the captivity of my people Israel: and they shall build the abandoned cities, and inhabit them: and they shall plant vineyards, and drink the wine of them: and shall make gardens, and eat the fruits of them. And I will plant them upon their own land: and I will no more pluck them out of their land which I have given them, saith the Lord thy God.",
+  "new": "Thus saith the Lord God: Behold the days come, when the ploughman shall overtake the reaper, and the treader of grapes him that soweth seed: and the mountains shall drop sweetness, and every hill shall be tilled. And I will bring back the captivity of my people Israel: and they shall build the abandoned cities, and inhabit them: and they shall plant vineyards, and drink the wine of them: and shall make gardens, and eat the fruits of them. And I will plant them upon their own land: and I will no more pluck them out of their land which I have given them, saith the Lord thy God.",
+  "src": "M39 p. 287 (pdf 182R)",
+  "why": "English had \"saith the Lord\", which the Missal's Latin (\"Ecce dies véniunt: et comprehéndet\") does not have"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "EmbWedSept",
+   "inter"
+  ],
+  "old": null,
+  "new": [
+   {
+    "after": 0,
+    "chant": true,
+    "pre": "Dóminus vobíscum. Orémus.",
+    "la": "Præsta, quǽsumus Dómine, famíliæ tuæ supplicánti: ut dum a cibis corporálibus se ábstinet; a vítiis quoque mente jejúnet: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "Grant to Your suppliant flock, O Lord, we pray, that while denying meats to the body, they may also fast from the vices of the soul: through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end.",
+    "src": "M39 p. 287 (pdf 182R)",
+    "en_src": "dm",
+    "rubric": "Secunda Oratio A cunctis; Tertia Oratio ad libitum (p. 287)"
+   }
+  ],
+  "src": "M39 p. 287 (pdf 182R)",
+  "why": "new field \"inter\": the collect after Lesson I and the Responsory Beata gens, preceded by \"Dóminus vobíscum. Orémus\"; the Missal prints \"Secunda Oratio\" A cunctis after it (the commemorations follow this collect) and \"Oratio sequens non est dicenda pro memoria Q. T. in Missa festi … sed dici debet Oratio subsequens Præsta\". English: St Dominic Missal 1959 (DM pdf p. 592), conclusion expanded",
+  "op": "add"
  }
 ]

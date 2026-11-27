@@ -1,0 +1,5 @@
+# ---- S0630 Commemoration of St Paul pp. 481-482 (pdf 279-280)
+P('S0630','r0',[0,1,2,3,4],'M39 pp. 481-482 (pdf 279-280)',manual=[(' Operátus est Petro in apostolátum operátus est et mihi inter gentes): et cognovérunt grátiam Dei, quæ data est mihi.','')],why='as printed: ": Neque enim"; "neque dídici sed"; "Arábiam : et"; ": Deínde"; ": Alium"; and the Epistle ends "quia non méntior." (the added Gal 2:8-9 fragment is the Gradual\'s text, not the Epistle\'s)')
+RAW('data/readings33.js',['S0630',0,'ref'],F.A.RD['S0630'][0]['ref'],'Ad Galatas 1: 11-20','M39 p. 481 (pdf 279)','reference to the Epistle as printed (c. 1 only)')
+EN('S0630',0,[(' (For he who wrought in Peter to the apostleship of the circumcision, wrought in me also among the Gentiles.) And when they had known the grace that was given to me, James and Cephas and John, who seemed to be pillars, gave to me and Barnabas the right hands of fellowship: that we should go unto the Gentiles, and they unto the circumcision:','')],'M39 p. 482 (pdf 280)','English cut to the Latin as printed (ends "I lie not.")')
+P('S0630','r1',[0,1,2,3,4,5,6],'M39 p. 482 (pdf 280)',why='punctuation and capitals as printed')

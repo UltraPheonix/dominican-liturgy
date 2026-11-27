@@ -28,7 +28,17 @@ def field(k,lab):
         n=int(lab[7:].split()[0]); return ('data/readings33.js',[k,n,'ref'],R[k][n]['ref'])
     if lab=='title': return ('data/masses.js',['masses',k,'title'],MS['masses'][k]['title'])
     raise Exception(lab)
+import os
+OLDF=json.load(open('/home/claude/dominican-liturgy/tools/audit/fixes/A1.json'))
+def curval(f):
+    d={'data/orations.js':O,'data/readings33.js':R,'data/masses.js':MS}[f['file']]
+    try:
+        for p in f['path']: d=d[p]
+        return d
+    except Exception: return None
+APPLIED={f['path'][1] if f['file']=='data/masses.js' else f['path'][0] for f in OLDF if curval(f)==f['new']}
 for k,dec in DEC.items():
+    if k in ('Adv1','Adv3') or k in APPLIED: continue
     its=rv.items(k) if k in rv.D else []
     rej=set(dec.get('rejP',[]))
     news={}  # (file,path tuple) -> [file,path,old,new,count]
@@ -49,6 +59,20 @@ for k,dec in DEC.items():
             assert t[1]==it['site'], (k,lab,t,it)
             s=(s[:t[4]]+it['missal']+s[t[6]:]) if t[1] else (s[:t[4]]+it['missal']+s[t[4]:])
         e[3]=s; e[4]['punct']=e[4].get('punct',0)+len(lst)
+    cf='/tmp/A1/case_%s.json'%k
+    if os.path.exists(cf):
+        CI=json.load(open(cf)).get(k,[]); rejC=set(dec.get('rejC',[]))
+        bl={}
+        for n,it in enumerate(CI):
+            if n in rejC: continue
+            bl.setdefault(it['lab'].split()[0] if it['lab'].startswith('rd') else it['lab'],[]).append(it)
+        for lab,lst in bl.items():
+            e=get(lab); s=e[3]; st=toks_site(s)
+            for it in sorted(lst,key=lambda x:-x['a']):
+                t=st[it['a']]; assert t[2]==it['site'],(k,t,it)
+                w=t[2]; w=(w[0].upper() if it['missal'][0].isupper() else w[0].lower())+w[1:]
+                s=s[:t[3]]+w+s[t[4]:]
+            e[3]=s; e[4]['case']=e[4].get('case',0)+len(lst)
     for ed in dec.get('edits',[]):
         lab,old,new=ed[:3]; why=ed[3] if len(ed)>3 else 'words'
         e=get(lab); s=e[3]
@@ -58,5 +82,24 @@ for k,dec in DEC.items():
     for (fn,_),(fn,path,old,new,cnt,lab) in news.items():
         if old==new: continue
         fixes.append({'file':fn,'path':path,'old':old,'new':new,'src':dec.get('src',{}).get(lab) or src(k,lab),'why':', '.join('%s %d'%(a,b) for a,b in cnt.items())+' as printed'})
-json.dump(fixes,open('/home/claude/dominican-liturgy/tools/audit/fixes/A1.json','w'),ensure_ascii=False,indent=1)
+FN='/home/claude/dominican-liturgy/tools/audit/fixes/A1.json'
+old=json.load(open(FN)); newk={(f['file'],tuple(f['path'])) for f in fixes}
+extra=json.load(open('/tmp/A1/manual.json')) if __import__('os').path.exists('/tmp/A1/manual.json') else []
+exk={(f['file'],tuple(f['path'])) for f in extra}
+fixes=[f for f in old if (f['file'],tuple(f['path'])) not in newk|exk]+[f for f in fixes if (f['file'],tuple(f['path'])) not in exk]+extra
+for k,dec in DEC.items():
+    for lab,o,n,why in dec.get('amend',[]):
+        fn,path,cur=field(k,lab)
+        e=[f for f in fixes if f['file']==fn and f['path']==path]
+        if e:
+            e=e[0]; base=e['new']
+            if o not in base:
+                if n not in base: print('AMEND NOT FOUND',k,lab,o)
+                continue
+            if cur==base: e['old']=cur
+            e['new']=base.replace(o,n,1); e['why']+='; %s (amended)'%why
+        else:
+            if cur.count(o)!=1: print('AMEND NOT FOUND',k,lab,o); continue
+            fixes.append({'file':fn,'path':path,'old':cur,'new':cur.replace(o,n),'src':dec.get('src',{}).get(lab) or src(k,lab),'why':why+' as printed'})
+json.dump(fixes,open(FN,'w'),ensure_ascii=False,indent=1)
 print(len(fixes),'fixes')

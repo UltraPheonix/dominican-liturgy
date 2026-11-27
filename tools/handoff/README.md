@@ -1,4 +1,55 @@
-# >>> START HERE (state at 27 Nov 2026, 17:35, Joseph out of credits) <<<
+# >>> START HERE (state at 27 Nov 2026, ~23:10, Joseph out of credits; coordinator session of 21:36) <<<
+
+Live: v242+ (see git log). Read tools/handoff/RULINGS.md first: Joseph gave ~25 new rulings tonight (top sections).
+
+## Where Phase 1 stands
+**Step 1, text audit (tools/audit/):** brief = tools/audit/BRIEF.md (every auditor reads it). Fixes = tools/audit/fixes/A1-A6.json,
+applied by `python3 tools/audit/apply_fixes.py` (idempotent; handles chained entries, "op":"add" for missing items, and canon():
+the Missal's printed pointing of every expanded conclusion, "Iesum Christum Fílium tuum; qui tecum … cum Deo Patre; in unitáte
+Spíritus Sancti Deus: per ómnia"). ~1,300 fixes live, each seen on the M39 scan. mass_sweep 224/0 at every push.
+Resume points (each group's report has a "Where I stopped" line):
+- A1 Temporale Adv1-Quad5f: see A1.md (was continuing from Quad2m: English from bible/en, missing Epistles Adv3s/Epi2, Ember "inter" collects).
+- A2 Temporale Quad5s-end: see A2.md (was doing Pasc6s readings, Ember "inter" collects, then from Pent2).
+- A3 Sanctorale Nov-May: see A3.md (was continuing from S0317).
+- A4 Sanctorale May-Oct: see A4.md (was continuing from S0901).
+- A5 + A6 (Commune, Votives, Beati, Requiem, memoriae.js): DONE (A5.md, A6.md).
+- addiv.js (2nd/3rd prayer texts, coordinator, tools/audit/scripts/C0/): the 38 ad diversa match M39 pp. 100*-113* except 3 points
+  still to confirm on the scan (d6.or and d15.pc final '.' vs ':' before Per Dóminum; d22.pc a comma) and bvmNat se/pc, defFr.or,
+  d33.pc to locate on the scan. Crop helper: tools/audit/scripts/C0/crop.py PDFPAGE WORD NLINES OUT.png.
+- Final resume points (all stopped 23:10): A1 next Quad2m (Quad2m-Quad5f not audited; Quad4w inter collect; English for the restored
+  formula endings of 5aw/5ah/Quad1m/t/h). A2 next EmbWedSept chants, then EmbFriSept to Dedicatio (inter for EmbSatSept/S).
+  A3 next S0327 (partial: see its line), then G446 + 27 more. A4 next S0918.
+- Independent checker: tools/audit/CHECK.md. 69 of 119 sampled entries checked: 58 agree, **11 DISAGREE, to fix first**
+  (Nat1 se "obtíneat"; Quad2 or "mente : Per"; Adv3f/7a Secret English = the 1959 text in tools/orat39/dm_prayers.json, not AI;
+  Quad5s pc no comma after Dómine; SCJ Epistle two commas not printed; S1220 Lesson/Gospel English openings; S0611 English
+  "at Antioch"; S0809v English "O Lord" once; S0228b/S0904b Gospel English incipits). Then check the remaining 50 sampled entries
+  (mostly A4 #183 on, A5, A6) and the leads at the end of CHECK.md (accented capitals: the Missal prints none; S1106 extras 5648).
+- More coordinator to-dos from the last reports: "inter" items also carry "chant" (after a Tract/Alleluia) and "rubric"; on
+  Ember days the 2nd/3rd prayers move after the between-lessons collect (Adv3w pp. 6-7, Adv3s pp. 10-13, Quad1w pp. 68-70,
+  Quad1s pp. 74-77, Quad6w, EmbWedSept). "Blessed is the rich man" (Eccli 31) → "Blessed is the man", AI-labelled, in ~40 Masses
+  of other groups. S0319 pc as memoria ends at "méruit adoráre" (p. 399). Calendar: S0910 is 1 June in the Missal; G555 is 22 Aug.
+
+**Coordinator to-do (js/, nobody else touches it):**
+1. Wire `ORATIONS[key].inter` (collects between the lessons: {after, pre, la, en, src}) into the Mass page (Ember days, Quad6w, Pent0w/s).
+2. Show the "AI translation"/"St Dominic Missal" label (`en_src`) for a Mass's own or/se/pc and for readings (m33Readings pick() drops en_src).
+3. seasonalReadings(): use masses.js `season.pasch.readings` in Paschaltide (S0529b, S0602b; code in A6.md).
+4. Named Introits: where `parts.in[0].m39text` exists, show that text unnotated instead of the gabc (ruling: melody only if a Dominican book prints it with the name).
+5. Votive "per annum" selector (S0709, S0722, S0830, S0812, S0821, S0822: Introit Dilexisti, excepto Credo, Tract/Alleluias).
+6. C39s "Aliud Evangelium" Luke 12:32-34 (p. 23*) as an alternative Gospel.
+7. Gospel English: add "At that time Jesus said to his disciples:" etc. by script wherever the Latin has the incipit and the English lacks it (~192).
+8. C76s Communion: stop before the alleluias (ruling). C104s Gradual: read from G28/G50 pp. 104*-105*.
+9. G28 is on Joseph's Drive ("351_Graduale…zip"): Joseph approved fetching it with the Google Drive connector (for the Pent0s Alleluias pp. 261-262, C104s, S0609b plural Introit, S1119).
+**Step 2 (calendar/selection, tools/handoff/ordo44_diff.md sections A-M + December):** Joseph approved starting it NOW, in parallel,
+by the coordinator in js/ (app.js prescribed0/dayRank, mrank.js), rule by rule quoting the rubric (Rubr. gen. tit. VIII, X, XI on
+M39 @@PAGE 26-27 were read tonight). Not started. Also: Irenaeus back to 28 June (p. 476); S1113 dated 10 Nov by the Kalendarium;
+S0811b/S1012b dated 9 Aug/3 Oct in the Missal.
+
+## Environment (this session)
+M39 downloads fine from media.musicasacra.com (to /home/claude/dl/missal/M39.pdf). Servers: python3 -m http.server 8765 and 8768.
+Push with tools/push_files.sh MSGFILE files… (runs mass_sweep in a clean worktree).
+
+----
+# (older start, 17:35)
 
 Live: v228 (v226 plus the "everything finished" push of 17:35 (sung prayers in the Proc. 1913 tones on the Mass page + booklets incl. Asperges;
 Holy Week tone engine js/mtones.js, Good Friday prayers/lessons in chant, Holy Week QC fixes, Passion text corrections (55);

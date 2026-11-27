@@ -1,0 +1,3 @@
+# ---- S0729 St Martha pp. 508-509 (pdf 293)
+SUB('data/readings33.js',['S0729',0,'la'],[('sed et supportáre me: ǽmulor','sed et supportáte me: Æmulor'),('uni viro, vírginem','uni viro vírginem')],'M39 p. 508 (pdf 293)','as printed: "supportáte me : Æmulor" (the site had "supportáre"); "viro vírginem"')
+SUB('data/readings33.js',['S0729',1,'la'],[('domum suam: et huic erat soror nómine María','domum suam: Et huic erat soror, nómine María'),('ministérium: quæ stetit','ministérium: Quæ stetit'),('Dic ergo illi ut me','Dic ergo illi, ut me'),('Et respóndens dixit illi','Et respóndens, dixit illi')],'M39 p. 508 (pdf 293)','punctuation and capitals as printed')

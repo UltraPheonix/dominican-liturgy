@@ -27,10 +27,11 @@ for key in keys:
         for a,b in SUB.get(fid,[]):
             assert a in new, (fid,a); new=new.replace(a,b)
         if new!=d['old']:
-            if d['kind']=='or': path=[key,fid.split('.')[1],0]; fn='data/orations.js'
+            if d['path'][0]=='MEM': path=d['path'][1:]; fn='data/memoriae.js'
+            elif d['kind']=='or': path=[key,fid.split('.')[1],0]; fn='data/orations.js'
             else: path=[key,int(fid.split('.r')[1]),'la']; fn='data/readings33.js'
             p=d['at'].split(', line')[0]
-            fixes.append({'file':fn,'path':path,'old':d['old'],'new':new,'src':'M39 '+p.replace('pdf ','pdf. ').replace('pdf. ','pdf ') ,'why':'as printed in the Missal'})
+            fixes.append({'file':fn,'path':path,'old':d['old'],'new':new,'src':'M39 '+p.replace('pdf ','pdf. ').replace('pdf. ','pdf ') ,'why':'words and punctuation as printed (checked on the scan)'})
 json.dump(fixes,open('/tmp/A3/fx_%s.json'%keys[0],'w'),ensure_ascii=False,indent=1)
 print(len(fixes),'fixes')
 for f in fixes:

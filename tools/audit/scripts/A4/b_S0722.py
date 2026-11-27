@@ -1,0 +1,3 @@
+# ---- S0722 St Mary Magdalen pp. 502-503 (pdf 290)
+SUB('data/readings33.js',['S0722',0,'la'],[('cubículum genitricis','cubículum genitrícis')],'M39 p. 502 (pdf 290)','accent as printed ("genitrícis")')
+SUB('data/readings33.js',['S0722',1,'la'],[('domum Pharisǽi discúbuit','domum Pharisǽi, discúbuit'),('unguénti: et stans','unguénti: Et stans'),('lácrymis cœpit','lácrimis cœpit'),('cuídam fœneratóri: unus','cuídam feneratóri: Unus'),('Respóndens Simon dixit: Æstimo quia is','Respóndens Simon, dixit: Æstimo, quia is'),('dedísti: hæc autem lácrymis','dedísti: Hæc autem lácrimis'),('dico tibi: remittúntur','dico tibi: Remittúntur')],'M39 pp. 502-503 (pdf 290)','punctuation, capitals and spelling as printed ("lácrimis" twice, "feneratóri")')

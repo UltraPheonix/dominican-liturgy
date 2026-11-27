@@ -2487,5 +2487,625 @@
   },
   "src": "M39 p. 79 (pdf 73)",
   "why": "missing reading: the Missal prints the Epistle 1 Thess 4 (p. 79); masses.js lists it but readings33.js had only the Gospel, so m33Readings() fell back to the masses.js reference without text. Appended (non-Gospel readings are shown before the Gospel)."
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2",
+   1,
+   "en"
+  ],
+  "old": "Brethren: We pray and beseech you in the Lord Jesus, that as you have received from us, how you ought to walk, and to please God, so also you would walk, that you may abound the more. For you know what precepts I have given to you by the Lord Jesus. For this is the will of God, your sanctification: that you should abstain from fornication, that every one of you should know how to possess his vessel in sanctification and honour: not in the passion of lust, like the Gentiles that know not God: and that no man overreach, nor circumvent his brother in business: because the Lord is the avenger of all these things, as we have told you before, and have testified. For God hath not called us unto uncleanness, but unto sanctification: in Christ Jesus our Lord.",
+  "new": "Brethren: We pray and beseech you in the Lord Jesus, that as you have received from us, how you ought to walk, and to please God, so also you would walk, that you may abound the more. For you know what precepts I have given to you by the Lord Jesus. For this is the will of God, your sanctification; that you should abstain from fornication; That every one of you should know how to possess his vessel in sanctification and honour: Not in the passion of lust, like the Gentiles that know not God: And that no man overreach, nor circumvent his brother in business: because the Lord is the avenger of all these things, as we have told you before, and have testified. For God hath not called us unto uncleanness, but unto sanctification: in Christ Jesus our Lord.",
+  "src": "M39 p. 79 (pdf 73); bible/en 1 Thess 4: 1-7",
+  "why": "English replaced by the exact Douay-Rheims text, verse by verse (opening \"For the rest therefore, brethren, we pray\" -> \"Brethren: We pray\" (Missal \"Fratres: Rogámus\"); AI translation (Missal departs from the Vulgate): \": in Christ Jesus our Lord.\" for the Missal's \"In Christo Jesu Dómino nostro\" (wording after Rom 6: 23 \"in Christ Jesus our Lord\")); the earlier text was written from memory",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2",
+   1,
+   "src"
+  ],
+  "old": "Missale O.P. 1939, p. 79 (pdf 73), transcribed from the scan; English: Douay-Rheims (1 Thess 4: 1-7), not checked against a printed copy",
+  "new": "Missale O.P. 1939, p. 79 (pdf 73), transcribed from the scan; English: Douay-Rheims, bible/en 1 Thess 4: 1-7 ; opening \"For the rest therefore, brethren, we pray\" -> \"Brethren: We pray\" (Missal \"Fratres: Rogámus\"); AI translation (Missal departs from the Vulgate): \": in Christ Jesus our Lord.\" for the Missal's \"In Christo Jesu Dómino nostro\" (wording after Rom 6: 23 \"in Christ Jesus our Lord\")",
+  "src": "M39 p. 79 (pdf 73)",
+  "why": "source note: English now from bible/en",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad1s",
+   6,
+   "en"
+  ],
+  "old": "Brethren: We beseech you, rebuke the unquiet, comfort the feeble-minded, support the weak, be patient towards all men. See that none render evil for evil to any man: but ever follow that which is good towards each other, and towards all men. Always rejoice. Pray without ceasing. In all things give thanks: for this is the will of God in Christ Jesus concerning you all. Extinguish not the Spirit. Despise not prophecies. But prove all things: hold fast that which is good. From all appearance of evil refrain yourselves. And may the God of peace himself sanctify you in all things: that your whole spirit, and soul, and body may be preserved blameless in the coming of our Lord Jesus Christ.",
+  "new": "Brethren: We beseech you, rebuke the unquiet, comfort the feeble minded, support the weak, be patient towards all men. See that none render evil for evil to any man; but ever follow that which is good towards each other, and towards all men. Always rejoice. Pray without ceasing. In all things give thanks; for this is the will of God in Christ Jesus concerning you all. Extinguish not the spirit. Despise not prophecies. But prove all things; hold fast that which is good. From all appearance of evil refrain yourselves. And may the God of peace himself sanctify you in all things; that your whole spirit, and soul, and body, may be preserved blameless in the coming of our Lord Jesus Christ.",
+  "src": "M39 p. 78 (pdf 72); bible/en 1 Thess 5: 14-23",
+  "why": "English replaced by the exact Douay-Rheims text, verse by verse (opening \"And we beseech you, brethren,\" -> \"Brethren: We beseech you,\" (Missal \"Fratres: Rogámus vos\")); the earlier text was written from memory",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad1s",
+   6,
+   "src"
+  ],
+  "old": "Missale O.P. 1939, p. 78 (pdf 72), transcribed from the scan; English: Douay-Rheims (1 Thess 5: 14-23), not checked against a printed copy",
+  "new": "Missale O.P. 1939, p. 78 (pdf 72), transcribed from the scan; English: Douay-Rheims, bible/en 1 Thess 5: 14-23 ; opening \"And we beseech you, brethren,\" -> \"Brethren: We beseech you,\" (Missal \"Fratres: Rogámus vos\")",
+  "src": "M39 p. 78 (pdf 72)",
+  "why": "source note: English now from bible/en",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Adv3",
+   0,
+   "en"
+  ],
+  "old": "Brethren: Rejoice in the Lord always; again, I say, rejoice. Let your modesty be known to all men. The Lord is nigh. Be nothing solicitous; but in every thing, by prayer and supplication, with thanksgiving, let your petitions be made known to God. And the peace of God, which surpasseth all understanding, keep your hearts and minds in Christ Jesus.",
+  "new": "Brethren: Rejoice in the Lord always; again, I say, rejoice. Let your modesty be known to all men. The Lord is nigh. Be nothing solicitous; but in every thing, by prayer and supplication, with thanksgiving, let your petitions be made known to God. And the peace of God, which surpasseth all understanding, keep your hearts and minds in Christ Jesus our Lord.",
+  "src": "M39 p. 5 (pdf 36); bible/en Phil 4: 7",
+  "why": "English lacked \"our Lord\" of the Missal's ending \"In Christo Jesu Dómino nostro\" (Douay wording of the same Latin, Rom 6: 23 \"in Christ Jesus our Lord\")",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Adv3s",
+   0,
+   "en"
+  ],
+  "old": "In those days: It shall be for a sign, and for a testimony to the Lord of hosts in the land of Egypt. For they shall cry to the Lord because of the oppressor, and he shall send them a Saviour and a defender to deliver them. And the Lord shall be known by Egypt, and the Egyptians shall know the Lord in that day, and shall worship him with sacrifices and offerings: and they shall make vows to the Lord, and perform them. And the Lord shall strike Egypt with a scourge, and shall heal it, and they shall return to the Lord, and he shall be pacified towards them, and heal them.",
+  "new": "In those days: They shall cry to the Lord because of the oppressor, and he shall send them a Saviour and a defender to deliver them. And the Lord shall be known by Egypt, and the Egyptians shall know the Lord in that day, and shall worship him with sacrifices and offerings: and they shall make vows to the Lord, and perform them. And the Lord shall strike Egypt with a scourge, and shall heal it, and they shall return to the Lord, and he shall be pacified towards them, and heal them, the Lord our God.",
+  "src": "M39 p. 11 (pdf 39); bible/en Isa 19: 20-22",
+  "why": "English to the Latin: the Missal begins at v. 20b \"Clamábunt\" (Douay \"It shall be for a sign ... For\" dropped) and ends \"sanábit eos Dóminus Deus noster\" (\"the Lord our God\": Douay wording of the same Latin, Exod 8: 10 \"the Lord our God\")",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Adv3s",
+   1,
+   "en"
+  ],
+  "old": "The land that was desolate and impassable shall be glad, and the wilderness shall rejoice, and shall flourish like the lily. It shall bud forth and blossom, and shall rejoice with joy and praise: the glory of Libanus is given to it: the beauty of Carmel, and Saron, they shall see the glory of the Lord, and the beauty of our God. Strengthen ye the feeble hands, and confirm the weak knees. Say to the fainthearted: Take courage, and fear not: behold your God will bring the revenge of recompense: God himself will come and will save you. Then shall the eyes of the blind be opened, and the ears of the deaf shall be unstopped. Then shall the lame man leap as a hart, and the tongue of the dumb shall be free: for waters are broken out in the desert, and streams in the wilderness. And that which was dry land, shall become a pool, and the thirsty land springs of water. In the dens where dragons dwell before, shall rise up the verdure of the reed and the bulrush.",
+  "new": "Thus saith the Lord: The land that was desolate and impassable shall be glad, and the wilderness shall rejoice, and shall flourish like the lily. It shall bud forth and blossom, and shall rejoice with joy and praise: the glory of Libanus is given to it: the beauty of Carmel, and Saron, they shall see the glory of the Lord, and the beauty of our God. Strengthen ye the feeble hands, and confirm the weak knees. Say to the fainthearted: Take courage, and fear not: behold your God will bring the revenge of recompense: God himself will come and will save you. Then shall the eyes of the blind be opened, and the ears of the deaf shall be unstopped. Then shall the lame man leap as a hart, and the tongue of the dumb shall be free: for waters are broken out in the desert, and streams in the wilderness. And that which was dry land, shall become a pool, and the thirsty land springs of water. Saith the Lord Almighty.",
+  "src": "M39 p. 11 (pdf 39); bible/en Isa 35: 1-7",
+  "why": "English to the Latin: Missal \"Hæc dicit Dóminus:\" (Amos 1: 3 \"Thus saith the Lord:\") and \"Ait Dóminus omnípotens.\" (2 Cor 6: 18 \"saith the Lord Almighty\"); v. 7b \"In the dens ...\" is not in the Missal",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Adv3s",
+   2,
+   "en"
+  ],
+  "old": "Get thee up upon a high mountain, thou that bringest good tidings to Sion: lift up thy voice with strength, thou that bringest good tidings to Jerusalem: lift it up, fear not. Say to the cities of Juda: Behold your God: Behold the Lord God shall come with strength, and his arm shall rule: Behold his reward is with him and his work is before him. He shall feed his flock like a shepherd: he shall gather together the lambs with his arm, and shall take them up in his bosom, and he himself shall carry them that are with young.",
+  "new": "Thus saith the Lord: Get thee up upon a high mountain, thou that bringest good tidings to Sion: lift up thy voice with strength, thou that bringest good tidings to Jerusalem: lift it up, fear not. Say to the cities of Juda: Behold your God: Behold the Lord God shall come with strength, and his arm shall rule: Behold his reward is with him and his work is before him. He shall feed his flock like a shepherd: he shall gather together the lambs with his arm, and shall take them up in his bosom, the Lord our God.",
+  "src": "M39 pp. 11-12 (pdf 39-40); bible/en Isa 40: 9-11",
+  "why": "English to the Latin: Missal \"Hæc dicit Dóminus:\" (Amos 1: 3 \"Thus saith the Lord:\"); it ends \"in sinu suo levábit, Dóminus Deus noster\" for the Vulgate \"fœtas ipse portábit\" (\"the Lord our God\": Exod 8: 10 \"the Lord our God\")",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Adv3s",
+   4,
+   "en"
+  ],
+  "old": "In those days: The angel of the Lord went down with Azarias and his companions into the furnace: and he drove the flame of the fire out of the furnace, And made the midst of the furnace like the blowing of a wind bringing dew, and the fire touched them not at all, nor troubled them, nor did them any harm. Then these three as with one mouth praised, and glorified, and blessed God in the furnace, saying:",
+  "new": "In those days: The angel of the Lord went down with Azarias and his companions into the furnace: and he drove the flame of the fire out of the furnace, And made the midst of the furnace like the blowing of a wind bringing dew. And the flame mounted up above the furnace nine and forty cubits: And it broke forth, and burnt such of the Chaldeans as it found near the furnace, the king’s servants that heated it. And the fire touched them not at all, nor troubled them, nor did them any harm. Then these three as with one mouth praised, and glorified, and blessed God in the furnace, saying:",
+  "src": "M39 pp. 12-13 (pdf 40); bible/en Dan 3: 47-51",
+  "why": "English of the Latin added in session 2 (\"Flamma autem effundebátur ... qui eam incendébant\", which the Missal puts inside v. 50): Douay vv. 47-48 in the Missal's order; \"the king’s servants that heated it\" (Missal \"minístros regis, qui eam incendébant\", not in the Vulgate v. 48) is an AI translation (wording after Douay v. 46); opening \"But the angel\" -> \"The angel\"",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Adv3s",
+   4,
+   "ref"
+  ],
+  "old": "Daniel 3: 49-51",
+  "new": "Daniel 3: 47-51",
+  "src": "M39 pp. 12-13 (pdf 40)",
+  "why": "reference: the reading now includes vv. 47-48 (masses.js has 3: 47-51; the Missal prints only \"c. 3\")",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad1s",
+   4,
+   "en"
+  ],
+  "old": "In those days: The angel of the Lord went down with Azarias and his companions into the furnace: and he drove the flame of the fire out of the furnace, And made the midst of the furnace like the blowing of a wind bringing dew, and the fire touched them not at all, nor troubled them, nor did them any harm. Then these three as with one mouth praised, and glorified, and blessed God in the furnace, saying:",
+  "new": "In those days: The angel of the Lord went down with Azarias and his companions into the furnace: and he drove the flame of the fire out of the furnace, And made the midst of the furnace like the blowing of a wind bringing dew. And the flame mounted up above the furnace nine and forty cubits: And it broke forth, and burnt such of the Chaldeans as it found near the furnace, the king’s servants that heated it. And the fire touched them not at all, nor troubled them, nor did them any harm. Then these three as with one mouth praised, and glorified, and blessed God in the furnace, saying:",
+  "src": "M39 pp. 76-77 (pdf 72); bible/en Dan 3: 47-51",
+  "why": "English of the Latin added in session 2 (\"Flamma autem effundebátur ... qui eam incendébant\", which the Missal puts inside v. 50): Douay vv. 47-48 in the Missal's order; \"the king’s servants that heated it\" (Missal \"minístros regis, qui eam incendébant\", not in the Vulgate v. 48) is an AI translation (wording after Douay v. 46); opening \"But the angel\" -> \"The angel\"",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad1s",
+   4,
+   "ref"
+  ],
+  "old": "Daniel 3: 49-51",
+  "new": "Daniel 3: 47-51",
+  "src": "M39 pp. 76-77 (pdf 72)",
+  "why": "reference: the reading now includes vv. 47-48 (masses.js has 3: 47-51; the Missal prints only \"c. 3\")",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Dec25_2",
+   0,
+   "en"
+  ],
+  "old": "The spirit of the Lord is upon me, because the Lord hath anointed me: he hath sent me to preach to the meek, to heal the contrite of heart, and to preach a release to the captives, and deliverance to them that are shut up. To proclaim the acceptable year of the Lord, and the day of vengeance of our God: to comfort all that mourn: To appoint to the mourners of Sion, and to give them a crown for ashes, the oil of joy for mourning, a garment of praise for the spirit of grief: and they shall be called in it the mighty ones of justice, the planting of the Lord to glorify him. Behold the Lord hath made it to be heard in the ends of the earth, tell the daughter of Sion: Behold thy Saviour cometh: behold his reward is with him, and his work before him. And they shall call them, The holy people, the redeemed of the Lord. But thou shalt be called: A city sought after, and not forsaken.",
+  "new": "Thus saith the Lord: The spirit of the Lord is upon me, because the Lord hath anointed me: he hath sent me to preach to the meek, to heal the contrite of heart, and to preach a release to the captives, and deliverance to them that are shut up. To proclaim the acceptable year of the Lord, and the day of vengeance of our God: to comfort all that mourn: To appoint to the mourners of Sion, and to give them a crown for ashes, the oil of joy for mourning, a garment of praise for the spirit of grief: and they shall be called in it the mighty ones of justice, the planting of the Lord to glorify him. Behold the Lord hath made it to be heard in the ends of the earth, tell the daughter of Sion: Behold thy Saviour cometh: behold his reward is with him, and his work before him. And they shall call them, The holy people, the redeemed of the Lord our God.",
+  "src": "M39 p. 21 (pdf 44); bible/en Isa 61: 1-3; 62: 11-12",
+  "why": "English to the Latin: Missal \"Hæc dicit Dóminus:\" (Amos 1: 3 \"Thus saith the Lord:\"); ends \"redémpti a Dómino Deo nostro\" (Douay v. 12b \"But thou shalt be called ...\" is not in the Missal)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Dec25_2",
+   1,
+   "en"
+  ],
+  "old": "Dearly beloved: Not by the works of justice, which we have done, but according to his mercy, he saved us, by the laver of regeneration, and renovation of the Holy Ghost; Whom he hath poured forth upon us abundantly, through Jesus Christ our Saviour: That, being justified by his grace, we may be heirs, according to hope of life everlasting.",
+  "new": "Dearly beloved: The goodness and kindness of God our Saviour appeared: Not by the works of justice, which we have done, but according to his mercy, he saved us, by the laver of regeneration, and renovation of the Holy Ghost; Whom he hath poured forth upon us abundantly, through Jesus Christ our Saviour: That, being justified by his grace, we may be heirs, according to hope of life everlasting: in Christ Jesus our Lord.",
+  "src": "M39 p. 21 (pdf 44); bible/en Titus 3: 4-7",
+  "why": "English to the Latin: v. 4 was missing (\"Appáruit benígnitas ... Dei\"; opening \"But when\" dropped as in the Missal) and the ending \"In Christo Jesu Dómino nostro\" (Rom 6: 23 \"in Christ Jesus our Lord\")",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Dec25_2",
+   2,
+   "en"
+  ],
+  "old": "At that time: It came to pass, after the angels departed from them into heaven, the shepherds said one to another: Let us go over to Bethlehem, and let us see this word that is come to pass, which the Lord hath shewed to us. And they came with haste; and they found Mary and Joseph, and the infant lying in the manger. And seeing, they understood of the word that had been spoken to them concerning this child. And all that heard, wondered; and at those things that were told them by the shepherds. But Mary kept all these words, pondering them in her heart. And the shepherds returned, glorifying and praising God, for all the things they had heard and seen, as it was told unto them.",
+  "new": "At that time: The shepherds said one to another: Let us go over to Bethlehem, and let us see this word that is come to pass, which the Lord hath shewed to us. And they came with haste; and they found Mary and Joseph, and the infant lying in the manger. And seeing, they understood of the word that had been spoken to them concerning this child. And all that heard, wondered; and at those things that were told them by the shepherds. But Mary kept all these words, pondering them in her heart. And the shepherds returned, glorifying and praising God, for all the things they had heard and seen, as it was told unto them.",
+  "src": "M39 p. 22 (pdf 45); bible/en Luke 2: 15-20",
+  "why": "English to the Latin: the Missal begins \"Pastóres loquebántur ad ínvicem\" (Douay \"And it came to pass, after the angels departed from them into heaven,\" not in the Latin)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Nat1",
+   1,
+   "en"
+  ],
+  "old": "At that time: His father and mother were wondering at those things which were spoken concerning him. And Simeon blessed them, and said to Mary his mother: Behold this child is set for the fall, and for the resurrection of many in Israel, and for a sign which shall be contradicted; And thy own soul a sword shall pierce, that, out of many hearts, thoughts may be revealed. And there was one Anna, a prophetess, the daughter of Phanuel, of the tribe of Aser; she was far advanced in years, and had lived with her husband seven years from her virginity. And she was a widow until fourscore and four years; who departed not from the temple, by fastings and prayers serving night and day. Now she, at the same hour, coming in, confessed to the Lord; and spoke of him to all that looked for the redemption of Israel. And after they had performed all things according to the law of the Lord, they returned into Galilee, to their city Nazareth. And the child grew, and waxed strong, full of wisdom; and the grace of God was in him.",
+  "new": "At that time: Joseph and Mary the mother of Jesus were wondering at those things which were spoken concerning him. And Simeon blessed them, and said to Mary his mother: Behold this child is set for the fall, and for the resurrection of many in Israel, and for a sign which shall be contradicted; And thy own soul a sword shall pierce, that, out of many hearts, thoughts may be revealed. And there was one Anna, a prophetess, the daughter of Phanuel, of the tribe of Aser; she was far advanced in years, and had lived with her husband seven years from her virginity. And she was a widow until fourscore and four years; who departed not from the temple, by fastings and prayers serving night and day. Now she, at the same hour, coming in, confessed to the Lord; and spoke of him to all that looked for the redemption of Israel. And after they had performed all things according to the law of the Lord, they returned into Galilee, to their city Nazareth. And the child grew, and waxed strong, full of wisdom; and the grace of God was in him.",
+  "src": "M39 p. 26 (pdf 47); bible/en Luke 2: 33-40",
+  "why": "English to the Latin: the Missal reads \"Erat Joseph, et María mater Jesu mirántes\" for the Vulgate \"pater ejus et mater\"; \"Joseph and Mary the mother of Jesus\" is an AI translation of these words, the rest Douay",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Epi5",
+   0,
+   "en"
+  ],
+  "old": "Brethren: Put ye on therefore, as the elect of God, holy, and beloved, the bowels of mercy, benignity, humility, modesty, patience: Bearing with one another, and forgiving one another, if any have a complaint against another: even as the Lord hath forgiven you, so do you also. But above all these things have charity, which is the bond of perfection: And let the peace of Christ rejoice in your hearts, wherein also you are called in one body: and be ye thankful. Let the word of Christ dwell in you abundantly, in all wisdom: teaching and admonishing one another in psalms, hymns, and spiritual canticles, singing in grace in your hearts to God. All whatsoever you do in word or in work, do all in the name of the Lord Jesus Christ, giving thanks to God and the Father by him.",
+  "new": "Brethren: Put ye on therefore, as the elect of God, holy, and beloved, the bowels of mercy, benignity, humility, modesty, patience: Bearing with one another, and forgiving one another, if any have a complaint against another: even as the Lord hath forgiven you, so do you also. But above all these things have charity, which is the bond of perfection: And let the peace of Christ rejoice in your hearts, wherein also you are called in one body: and be ye thankful. Let the word of Christ dwell in you abundantly, in all wisdom: teaching and admonishing one another in psalms, hymns, and spiritual canticles, singing in grace in your hearts to God. All whatsoever you do in word or in work, do all in the name of the Lord Jesus Christ, giving thanks to God and the Father by Jesus Christ our Lord.",
+  "src": "M39 p. 45 (pdf 56); bible/en Col 3: 17",
+  "why": "English to the Latin: the Missal ends \"per Jesum Christum Dóminum nostrum\" for the Vulgate \"per ipsum\" (Douay wording of the same Latin, Rom 7: 25 \"by Jesus Christ our Lord\")",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad1f",
+   0,
+   "en"
+  ],
+  "old": "Thus saith the Lord God: the soul that sinneth, the same shall die: the son shall not bear the iniquity of the father, and the father shall not bear the iniquity of the son: the justice of the just shall be upon him, and the wickedness of the wicked shall be upon him. But if the wicked do penance for all his sins which he hath committed, and keep all my commandments, and do judgment, and justice, living he shall live, and shall not die. I will not remember all his iniquities that he hath done: in his justice which he hath wrought, he shall live. Is it my will that a sinner should die, saith the Lord God, and not that he should be converted from his ways, and live? But if the just man turn himself away from his justice, and do iniquity according to all the abominations which the wicked man useth to work, shall he live? all his justices which he hath done, shall not be remembered: in the prevarication, by which he hath prevaricated, and in his sin, which he hath committed, in them he shall die. And you have said: The way of the Lord is not right. Hear ye, therefore, O house of Israel: Is it my way that is not right, and are not rather your ways perverse? For when the just turneth himself away from his justice, and committeth iniquity, he shall die therein: in the injustice that he hath wrought he shall die. And when the wicked turneth himself away from his wickedness, which he hath wrought, and doeth judgment, and justice: he shall save his soul alive.",
+  "new": "Thus saith the Lord God: the soul that sinneth, the same shall die: the son shall not bear the iniquity of the father, and the father shall not bear the iniquity of the son: the justice of the just shall be upon him, and the wickedness of the wicked shall be upon him. But if the wicked do penance for all his sins which he hath committed, and keep all my commandments, and do judgment, and justice, living he shall live, and shall not die. I will not remember all his iniquities that he hath done: in his justice which he hath wrought, he shall live. Is it my will that a sinner should die, saith the Lord God, and not that he should be converted from his ways, and live? But if the just man turn himself away from his justice, and do iniquity according to all the abominations which the wicked man useth to work, shall he live? all his justices which he hath done, shall not be remembered: in the prevarication, by which he hath prevaricated, and in his sin, which he hath committed, in them he shall die. And you have said: The way of the Lord is not right. Hear ye, therefore, O house of Israel: Is it my way that is not right, and are not rather your ways perverse? For when the just turneth himself away from his justice, and committeth iniquity, he shall die therein: in the injustice that he hath wrought he shall die. And when the wicked turneth himself away from his wickedness, which he hath wrought, and doeth judgment, and justice: he shall save his soul alive. Because he considereth and turneth away himself from all his iniquities which he hath wrought, he shall surely live, and not die. Saith the Lord Almighty.",
+  "src": "M39 p. 74 (pdf 70); bible/en Ezek 18: 28",
+  "why": "English completed: v. 28 (Douay) and the Missal's \"Ait Dóminus omnípotens.\" (2 Cor 6: 18 \"saith the Lord Almighty\")",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad1f",
+   1,
+   "en"
+  ],
+  "old": "At that time: after these things was a festival day of the Jews, and Jesus went up to Jerusalem. Now there is at Jerusalem a pond, called Probatica, which in Hebrew is named Bethsaida, having five porches. In these lay a great multitude of sick, of blind, of lame, of withered; waiting for the moving of the water. And an angel of the Lord descended at certain times into the pond; and the water was moved. And he that went down first into the pond after the motion of the water, was made whole, of whatsoever infirmity he lay under. And there was a certain man there, that had been eight and thirty years under his infirmity. Him when Jesus had seen lying, and knew that he had been now a long time, he saith to him: Wilt thou be made whole? The infirm man answered him: Sir, I have no man, when the water is troubled, to put me into the pond. For whilst I am coming, another goeth down before me.",
+  "new": "At that time: There was a festival day of the Jews, and Jesus went up to Jerusalem. Now there is at Jerusalem a pond, called Probatica, which in Hebrew is named Bethsaida, having five porches. In these lay a great multitude of sick, of blind, of lame, of withered; waiting for the moving of the water. And an angel of the Lord descended at certain times into the pond; and the water was moved. And he that went down first into the pond after the motion of the water, was made whole, of whatsoever infirmity he lay under. And there was a certain man there, that had been eight and thirty years under his infirmity. Him when Jesus had seen lying, and knew that he had been now a long time, he saith to him: Wilt thou be made whole? The infirm man answered him: Sir, I have no man, when the water is troubled, to put me into the pond. For whilst I am coming, another goeth down before me. Jesus saith to him: Arise, take up thy bed, and walk. And immediately the man was made whole: and he took up his bed, and walked. And it was the sabbath that day. The Jews therefore said to him that was healed: It is the sabbath; it is not lawful for thee to take up thy bed. He answered them: He that made me whole, he said to me, Take up thy bed, and walk. They asked him therefore: Who is that man who said to thee, Take up thy bed, and walk? But he who was healed, knew not who it was; for Jesus went aside from the multitude standing in the place. Afterwards, Jesus findeth him in the temple, and saith to him: Behold thou art made whole: sin no more, lest some worse thing happen to thee. The man went his way, and told the Jews, that it was Jesus who had made him whole.",
+  "src": "M39 pp. 74-75 (pdf 70-71); bible/en John 5: 1-15",
+  "why": "English completed to v. 15 (it stopped at v. 7) from Douay; opening: the Missal begins \"Erat dies festus\" (Douay \"After these things\", Vulgate \"Post hæc\", not in the Missal; \"There was\" supplied)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Adv3",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Phil 4: 4-7); AI translation (Missal departs from the Vulgate): \"our Lord\" (Missal \"Dómino nostro\")",
+  "src": "M39 p. 5 (pdf 36)",
+  "why": "English source label (new key)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Adv3s",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Isa 19: 20b-22); AI translation (Missal departs from the Vulgate): \", the Lord our God\" (Missal \"Dóminus Deus noster\")",
+  "src": "M39 p. 11 (pdf 39)",
+  "why": "English source label (new key)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Adv3s",
+   1,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Isa 35: 1-7a); AI translation (Missal departs from the Vulgate): \"Thus saith the Lord:\" and \"Saith the Lord Almighty.\" (Missal \"Hæc dicit Dóminus\", \"Ait Dóminus omnípotens\")",
+  "src": "M39 p. 11 (pdf 39)",
+  "why": "English source label (new key)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Adv3s",
+   2,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Isa 40: 9-11); AI translation (Missal departs from the Vulgate): \"Thus saith the Lord:\" and \", the Lord our God.\" (Missal \"Hæc dicit Dóminus\", \"Dóminus Deus noster\" for the Vulgate \"fœtas ipse portábit\")",
+  "src": "M39 pp. 11-12 (pdf 39-40)",
+  "why": "English source label (new key)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Adv3s",
+   4,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Dan 3: 47-51, in the Missal's order 49, 50a, 47, 48, 50b, 51); AI translation (Missal departs from the Vulgate): \"the king’s servants that heated it\" (Missal \"minístros regis, qui eam incendébant\")",
+  "src": "M39 pp. 12-13 (pdf 40)",
+  "why": "English source label (new key)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad1s",
+   4,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Dan 3: 47-51, in the Missal's order 49, 50a, 47, 48, 50b, 51); AI translation (Missal departs from the Vulgate): \"the king’s servants that heated it\" (Missal \"minístros regis, qui eam incendébant\")",
+  "src": "M39 pp. 76-77 (pdf 72)",
+  "why": "English source label (new key)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Dec25_2",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Isa 61: 1-3; 62: 11-12a); AI translation (Missal departs from the Vulgate): \"Thus saith the Lord:\" and \"our God\" (Missal \"Hæc dicit Dóminus\", \"a Dómino Deo nostro\")",
+  "src": "M39 p. 21 (pdf 44)",
+  "why": "English source label (new key)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Dec25_2",
+   1,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Titus 3: 4-7); AI translation (Missal departs from the Vulgate): \"in Christ Jesus our Lord\" (Missal \"In Christo Jesu Dómino nostro\")",
+  "src": "M39 p. 21 (pdf 44)",
+  "why": "English source label (new key)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Nat1",
+   1,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Luke 2: 33-40); AI translation (Missal departs from the Vulgate): \"Joseph and Mary the mother of Jesus\" (Missal \"Joseph, et María mater Jesu\")",
+  "src": "M39 p. 26 (pdf 47)",
+  "why": "English source label (new key)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Epi5",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Col 3: 12-17); AI translation (Missal departs from the Vulgate): \"by Jesus Christ our Lord\" (Missal \"per Jesum Christum Dóminum nostrum\")",
+  "src": "M39 p. 45 (pdf 56)",
+  "why": "English source label (new key)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad1f",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Ezek 18: 20-28); AI translation (Missal departs from the Vulgate): \"Saith the Lord Almighty.\" (Missal \"Ait Dóminus omnípotens\")",
+  "src": "M39 p. 74 (pdf 70)",
+  "why": "English source label (new key)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad1f",
+   1,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en John 5: 1-15); opening \"There was\" supplied for the Missal's \"Erat dies festus\" (Douay \"After these things was\")",
+  "src": "M39 pp. 74-75 (pdf 70-71)",
+  "why": "English source label (new key)",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Adv3s",
+   6
+  ],
+  "old": null,
+  "new": {
+   "type": "Epistle",
+   "ref": "Ad Thessalonicenses 2 2: 1-8",
+   "title": "Léctio Epístolæ beáti Pauli Apóstoli ad Thessalonicénses.",
+   "title_en": "Lesson from the Second Epistle of blessed Paul the Apostle to the Thessalonians.",
+   "la": "Fratres: Rogámus vos per advéntum Dómini nostri Jesu Christi, et nostræ congregatiónis in ipsum: ut non cito moveámini a vestro sensu, neque terreámini, neque per spíritum, neque per sermónem, neque per epístolam tamquam per nos missam, quasi instet dies Dómini. Ne quis vos sedúcat ullo modo: Quóniam nisi vénerit discéssio primum, et revelátus fúerit homo peccáti, fílius perditiónis, qui adversátur, et extóllitur supra omne, quod dícitur Deus, aut quod cólitur, ita ut in templo Dei sédeat osténdens se tamquam sit Deus. Non retinétis quod cum adhuc essem apud vos, hæc dicébam vobis? Et nunc quid detíneat scitis, ut revelétur in suo témpore. Nam mystérium jam operátur iniquitátis: tantum ut qui tenet nunc, téneat, donec de médio fiat. Et tunc revelábitur ille iniquus, quem Dóminus Jesus interfíciet spíritu oris sui, et déstruet illustratióne advéntus sui.",
+   "en": "Brethren: We beseech you by the coming of our Lord Jesus Christ, and of our gathering together unto him: That you be not easily moved from your sense, nor be terrified, neither by spirit, nor by word, nor by epistle, as sent from us, as if the day of the Lord were at hand. Let no man deceive you by any means, for unless there come a revolt first, and the man of sin be revealed, the son of perdition, Who opposeth, and is lifted up above all that is called God, or that is worshipped, so that he sitteth in the temple of God, shewing himself as if he were God. Remember you not, that when I was yet with you, I told you these things? And now you know what withholdeth, that he may be revealed in his time. For the mystery of iniquity already worketh; only that he who now holdeth, do hold, until he be taken out of the way. And then that wicked one shall be revealed whom the Lord Jesus shall kill with the spirit of his mouth; and shall destroy with the brightness of his coming.",
+   "p33": null,
+   "src": "Missale O.P. 1939, pp. 13-14 (pdf 40-41), transcribed from the scan (\"iniquus\" without accent as printed); English: Douay-Rheims, bible/en 2 Thess 2: 1-8 ; opening \"And we beseech you, brethren, by\" -> \"Brethren: We beseech you by\" (Missal \"Fratres: Rogámus vos per\"); v. 8 ends at \"his coming\" as the Latin does (Douay's \", him,\" belongs to v. 9)"
+  },
+  "src": "M39 pp. 13-14 (pdf 40-41)",
+  "why": "EPISTLE MISSING: the Missal prints the Epistle 2 Thess 2: 1-8 after the Daniel lesson and its collects (title \"Léctio Epístolæ beáti Pauli Apóstoli ad Thessalonicénses. 2, c. 2\"); masses.js lists it, readings33 lacked it. Latin read from the scan crop; English bible/en",
+  "s3": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Epi2",
+   1
+  ],
+  "old": null,
+  "new": {
+   "type": "Epistle",
+   "ref": "Ad Romanos 12: 6-16",
+   "title": "Léctio Epístolæ beáti Pauli Apóstoli ad Romános.",
+   "title_en": "Lesson from the Epistle of blessed Paul the Apostle to the Romans.",
+   "la": "Fratres: Habéntes donatiónes secúndum grátiam, quæ data est nobis, differéntes: Sive prophetíam secúndum ratiónem fídei, sive ministérium in ministrándo, sive qui docet in doctrína, qui exhortátur in exhortándo, qui tríbuit in simplicitáte, qui præest in sollicitúdine, qui miserétur in hilaritáte. Diléctio sine simulatióne. Odiéntes malum, adhæréntes bono: Caritáte fraternitátis ínvicem diligéntes: Honóre ínvicem præveniéntes: Sollicitúdine non pigri: Spíritu fervéntes: Dómino serviéntes: Spe gaudéntes: In tribulatióne patiéntes: Oratióni instántes: Necessitátibus sanctórum communicántes: Hospitalitátem sectántes. Benedícite persequéntibus vos: benedícite et nolíte maledícere. Gaudére cum gaudéntibus, flere cum fléntibus: Idípsum ínvicem sentiéntes: Non alta sapiéntes, sed humílibus consentiéntes.",
+   "en": "Brethren: Having different gifts, according to the grace that is given us, either prophecy, to be used according to the rule of faith; Or ministry, in ministering; or he that teacheth, in doctrine; He that exhorteth, in exhorting; he that giveth, with simplicity; he that ruleth, with carefulness; he that sheweth mercy, with cheerfulness. Let love be without dissimulation. Hating that which is evil, cleaving to that which is good. Loving one another with the charity of brotherhood, with honour preventing one another. In carefulness not slothful. In spirit fervent. Serving the Lord. Rejoicing in hope. Patient in tribulation. Instant in prayer. Communicating to the necessities of the saints. Pursuing hospitality. Bless them that persecute you: bless, and curse not. Rejoice with them that rejoice; weep with them that weep. Being of one mind one towards another. Not minding high things, but consenting to the humble.",
+   "p33": null,
+   "src": "Missale O.P. 1939, pp. 40-41 (pdf 54), transcribed from the scan; English: Douay-Rheims, bible/en Rom 12: 6-16 ; opening \"And having\" -> \"Brethren: Having\" (Missal \"Fratres: Habéntes\"); v. 16 ends at \"consenting to the humble\" as the Latin does"
+  },
+  "src": "M39 pp. 40-41 (pdf 54)",
+  "why": "EPISTLE MISSING: the Missal prints the Epistle Rom 12: 6-16 (\"Léctio Epístolæ beáti Pauli Apóstoli ad Romános. c. 12\"); readings33 had only the Gospel, masses.js only the reference. Latin read from the scan crop; English bible/en",
+  "s3": true
+ },
+ {
+  "file": "data/orations.js",
+  "op": "add",
+  "path": [
+   "Adv3w",
+   "inter"
+  ],
+  "old": null,
+  "new": [
+   {
+    "after": 0,
+    "pre": "Dóminus vobíscum. Orémus.",
+    "la": "Festína, quǽsumus Dómine, ne tardáveris: et auxílium nobis supérnæ virtútis impénde; ut advéntus tui consolatiónibus sublevéntur, qui in tua pietáte confídunt: Qui vivis et regnas cum Deo Patre; in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "Hasten, we pray You, come soon, and yield the power of Your help from on high; that they who trust in Your love may be helped by the consolation of Your coming: who live and reign.",
+    "src": "M39 p. 7 (pdf 37), after the Gradual Tóllite portas: \"Hic dicitur Dóminus vobíscum. Orémus\"; conclusion printed \"Qui vivis et regnas.\"; English St Dominic Missal (1959) p. 11 (pdf p. 34), verbatim (OCR checked on the page image)",
+    "en_src": "dm",
+    "note": "The Missal prints the Secunda and Tertia Oratio after this collect (p. 7: Deus, qui de beátæ Maríæ (Per eúmdem); Deus, qui caritátis (Per Dóminum ... in unitáte ejúsdem)): the 2nd and 3rd prayers of the day are said here, not after the first Collect",
+    "rubric": "The first Collect (Præsta) is said after the Kyrie with \"Orémus\" only (\"Orémus sine Dóminus vobíscum\", p. 6)."
+   }
+  ],
+  "src": "M39 pp. 6-7 (pdf 37)",
+  "why": "NEW FIELD \"inter\": the collects the Missal prints between the lessons (Ember day), each after the lesson whose 0-based index in readings33[Adv3w] is \"after\"; Latin read from the scan crops, conclusions expanded by type as printed (Rubr. gen. XI.2, M39 p. 52: \"Si Oratio dirigatur ad Patrem, concluditur Per Dominum nostrum; et si ad Filium, Qui vivis et regnas cum Deo Patre; si in principio Orationis fiat mentio Filii, terminatur Per eumdem Dominum nostrum; si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\"); \"pre\" = what the Missal prints before it; \"rubric\"/\"note\" = the Missal's rubrics there",
+  "s3": true
+ },
+ {
+  "file": "data/orations.js",
+  "op": "add",
+  "path": [
+   "Adv3s",
+   "inter"
+  ],
+  "old": null,
+  "new": [
+   {
+    "after": 0,
+    "pre": "Orémus.",
+    "la": "Concéde, quǽsumus omnípotens Deus: ut qui sub peccáti jugo ex vetústa servitúte deprímimur; exspectáta unigéniti Fílii tui nova nativitáte, liberémur: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "Grant, we beseech You, almighty God, that we who are bowed down by our old bondage under the yoke of sin, may be set free by that new birth of Your Only-begotten Son which we await: who lives and reigns with You.",
+    "src": "M39 p. 11 (pdf 39); printed \"Qui tecum.\"; English St Dominic Missal (1959) p. 16 (pdf p. 39), verbatim (OCR checked on the page image)",
+    "en_src": "dm",
+    "rubric": "\"Post Kýrie eléison quinque sequéntes Oratiónes dicántur sine Dóminus vobíscum. Nec dicátur Flectámus génua sed Orémus\" (p. 10)."
+   },
+   {
+    "after": 1,
+    "pre": "Orémus.",
+    "la": "Indígnos nos, quǽsumus Dómine, fámulos tuos, quos actiónis própriæ culpa contrístat; unigéniti Fílii tui advéntu lætífica: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "We beseech You, O Lord, that Your unworthy servants who are saddened by the guilt of their misdeeds, may be made glad by the coming of Your Only-begotten Son: who lives and reigns with You.",
+    "src": "M39 p. 11 (pdf 39); printed \"Qui tecum.\"; first word in capitals, accent supplied; English St Dominic Missal (1959) p. 17 (pdf p. 40), verbatim (OCR checked on the page image)",
+    "en_src": "dm"
+   },
+   {
+    "after": 2,
+    "pre": "Orémus.",
+    "la": "Præsta, quǽsumus omnípotens Deus: ut Fílii tui ventúra solémnitas, et præséntis nobis vitæ remédia cónferat; et prǽmia ætérna concédat: Per eúmdem Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "Grant, we beseech You, almighty God, that the approaching feast of Your Son, may bestow on us remedies for this present life, and afford us rewards in the life to come: through the same Lord.",
+    "src": "M39 p. 12 (pdf 40); printed \"Per eúmdem.\"; English St Dominic Missal (1959) p. 18 (pdf p. 41), verbatim (OCR checked on the page image)",
+    "en_src": "dm"
+   },
+   {
+    "after": 3,
+    "pre": "Orémus.",
+    "la": "Preces pópuli tui, quǽsumus Dómine, cleménter exáudi: ut qui juste pro peccátis nostris afflígimur; pietátis tuæ visitatióne consolémur: Qui vivis et regnas cum Deo Patre; in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "We beseech You, O Lord, mercifully to hear the prayers of Your people, that we who are justly afflicted for our sins may be comforted by the coming of Your loving kindness: who live and reign.",
+    "src": "M39 pp. 12-13 (pdf 40); printed \"Qui vivis.\"; English St Dominic Missal (1959) p. 20 (pdf p. 43), verbatim (OCR checked on the page image)",
+    "en_src": "dm"
+   },
+   {
+    "after": 4,
+    "pre": "Dóminus vobíscum. Orémus.",
+    "la": "Deus, qui tribus púeris mitigásti flammam ígnium; concéde propítius, ut nos fámulos tuos non exúrat flamma vitiórum: Per Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "O God, who for the three young men tempered the flame of fire, mercifully grant that the flame of vices may not burn us, Your servants: through our Lord.",
+    "src": "M39 p. 13 (pdf 40), after the Hymn Benedíctus es: \"Postea Dóminus vobíscum. Orémus\"; printed \"Per Dóminum.\"; English: AI translation (the St Dominic Missal 1959, p. 22, has \"flammas\", plural; the M39 prints \"flammam\")",
+    "en_src": "ai",
+    "note": "The Missal prints the Secunda and Tertia Oratio after this collect (p. 13: Deus, qui de beátæ Maríæ (Per eúmdem); Deus, qui caritátis): the 2nd and 3rd prayers of the day are said here, not after the first Collect"
+   }
+  ],
+  "src": "M39 pp. 10-13 (pdf 39-40)",
+  "why": "NEW FIELD \"inter\": the collects the Missal prints between the lessons (Ember day), each after the lesson whose 0-based index in readings33[Adv3s] is \"after\"; Latin read from the scan crops, conclusions expanded by type as printed (Rubr. gen. XI.2, M39 p. 52: \"Si Oratio dirigatur ad Patrem, concluditur Per Dominum nostrum; et si ad Filium, Qui vivis et regnas cum Deo Patre; si in principio Orationis fiat mentio Filii, terminatur Per eumdem Dominum nostrum; si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\"); \"pre\" = what the Missal prints before it; \"rubric\"/\"note\" = the Missal's rubrics there",
+  "s3": true
+ },
+ {
+  "file": "data/orations.js",
+  "op": "add",
+  "path": [
+   "Quad1w",
+   "inter"
+  ],
+  "old": null,
+  "new": [
+   {
+    "after": 0,
+    "pre": "Dóminus vobíscum. Orémus. Flectámus génua. Leváte.",
+    "la": "Devotiónem pópuli tui, quǽsumus Dómine, benígnus inténde: ut qui per abstinéntiam macerántur in córpore; per fructum boni óperis reficiántur in mente: Per Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "Look down in mercy, O Lord, we beseech You, on the devotion of Your people; that as they mortify their bodies by abstinence, they may be refreshed in mind by the fruit of good deeds: through our Lord.",
+    "src": "M39 p. 70 (pdf 69); printed \"Per Dóminum.\"; first word in capitals, accent supplied; English St Dominic Missal (1959) p. 124 (pdf p. 147), verbatim (OCR checked on the page image)",
+    "en_src": "dm",
+    "note": "The Missal prints the Secunda and Tertia Oratio after this collect (p. 70: \"Secunda et tertia Oratio, pag. 63\"): the 2nd and 3rd prayers of the day are said here, not after the first Collect",
+    "rubric": "The first Collect (Preces nostras): \"Post Kýrie eléison non dicátur Dóminus vobíscum, sed Orémus. Flectámus génua. Leváte\" (p. 68)."
+   }
+  ],
+  "src": "M39 pp. 69-70 (pdf 68-69)",
+  "why": "NEW FIELD \"inter\": the collects the Missal prints between the lessons (Ember day), each after the lesson whose 0-based index in readings33[Quad1w] is \"after\"; Latin read from the scan crops, conclusions expanded by type as printed (Rubr. gen. XI.2, M39 p. 52: \"Si Oratio dirigatur ad Patrem, concluditur Per Dominum nostrum; et si ad Filium, Qui vivis et regnas cum Deo Patre; si in principio Orationis fiat mentio Filii, terminatur Per eumdem Dominum nostrum; si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\"); \"pre\" = what the Missal prints before it; \"rubric\"/\"note\" = the Missal's rubrics there",
+  "s3": true
+ },
+ {
+  "file": "data/orations.js",
+  "op": "add",
+  "path": [
+   "Quad1s",
+   "inter"
+  ],
+  "old": null,
+  "new": [
+   {
+    "after": 0,
+    "pre": "Orémus. Flectámus génua. Leváte.",
+    "la": "Deus, qui nos in tantis perículis constitútos, pro humána scis fragilitáte non posse subsístere; da nobis salútem mentis et córporis: ut ea, quæ pro peccátis nostris pátimur; te adjuvánte vincámus: Per Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "O God, You know that in such dangers our human weakness cannot stand firm; grant us health of mind and body, that, by Your help, we may overcome what we suffer for our sins: through our Lord.",
+    "src": "M39 p. 76 (pdf 72); printed \"Per Dóminum.\"; English St Dominic Missal (1959) p. 138 (pdf p. 161), verbatim (OCR checked on the page image)",
+    "en_src": "dm",
+    "rubric": "\"Post Kýrie eléison, quinque sequéntes Oratiónes dicántur sine Dóminus vobíscum. Sed ante unamquámque Oratiónem, nisi áliter notétur, dicátur Orémus. Flectámus génua. Leváte\" (p. 74)."
+   },
+   {
+    "after": 1,
+    "pre": "Orémus. Flectámus génua. Leváte.",
+    "la": "Protéctor noster áspice Deus: ut qui malórum nostrórum póndere prémimur; percépta misericórdia, líbera tibi mente famulémur: Per Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "Look down upon us, O God, our protector, and grant that we who are burdened by the weight of our sins, may receive Your mercy and serve You with a free mind: through our Lord.",
+    "src": "M39 p. 76 (pdf 72); printed \"Per Dóminum.\"; first word in capitals, accent supplied; English St Dominic Missal (1959) p. 139 (pdf p. 162), verbatim (OCR checked on the page image)",
+    "en_src": "dm"
+   },
+   {
+    "after": 2,
+    "pre": "Orémus. Flectámus génua. Leváte.",
+    "la": "Adésto, quǽsumus Dómine, supplicatiónibus nostris: ut esse, te largiénte, mereámur et inter próspera húmiles; et inter advérsa secúri: Per Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "Be near to our cries, O Lord, we beseech You, that by Your bounty we may deserve to be humble in every success and steadfast in every trial: through our Lord.",
+    "src": "M39 p. 76 (pdf 72); printed \"Per Dóminum.\"; first word in capitals, accent supplied; English St Dominic Missal (1959) p. 140 (pdf p. 163), verbatim (OCR checked on the page image)",
+    "en_src": "dm"
+   },
+   {
+    "after": 3,
+    "pre": "Orémus. Flectámus génua. Leváte.",
+    "la": "Preces pópuli tui, quǽsumus Dómine, cleménter exáudi: ut qui juste pro peccátis nostris afflígimur; pro tui nóminis glória misericórditer liberémur: Per Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "Graciously hear, O Lord, the prayers of Your people, that we who are justly afflicted for our sins may, to the glory of Your name, be mercifully delivered: through our Lord.",
+    "src": "M39 p. 76 (pdf 72); printed \"Per Dóminum.\"; English St Dominic Missal (1959) p. 141 (pdf p. 164), verbatim (OCR checked on the page image)",
+    "en_src": "dm"
+   },
+   {
+    "after": 4,
+    "pre": "Dóminus vobíscum. Orémus.",
+    "la": "Deus, qui tribus púeris mitigásti flammas ígnium; concéde propítius, ut nos fámulos tuos non exúrat flamma vitiórum: Per Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+    "en": "O God, who tempered the flames of fire for the three young men, mercifully grant that we Your servants may not be consumed by the flames of vice: through our Lord.",
+    "src": "M39 p. 77 (pdf 73), after the Hymn Benedíctus es; printed \"Per Dóminum.\"; English St Dominic Missal (1959) p. 141 (pdf p. 164), verbatim (OCR checked on the page image)",
+    "en_src": "dm",
+    "rubric": "\"Non dicátur Flectámus génua\" (p. 77).",
+    "note": "The Missal prints the Secunda and Tertia Oratio after this collect (p. 77: \"Secunda et tertia Oratio, pag. 63\"): the 2nd and 3rd prayers of the day are said here, not after the first Collect"
+   }
+  ],
+  "src": "M39 pp. 74-77 (pdf 71-73)",
+  "why": "NEW FIELD \"inter\": the collects the Missal prints between the lessons (Ember day), each after the lesson whose 0-based index in readings33[Quad1s] is \"after\"; Latin read from the scan crops, conclusions expanded by type as printed (Rubr. gen. XI.2, M39 p. 52: \"Si Oratio dirigatur ad Patrem, concluditur Per Dominum nostrum; et si ad Filium, Qui vivis et regnas cum Deo Patre; si in principio Orationis fiat mentio Filii, terminatur Per eumdem Dominum nostrum; si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\"); \"pre\" = what the Missal prints before it; \"rubric\"/\"note\" = the Missal's rubrics there",
+  "s3": true
  }
 ]

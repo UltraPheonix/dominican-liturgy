@@ -11,6 +11,7 @@ def norm_concl(s):
 def concl_after(r):
     i=r['endi']; return [t[1] for t in MS[i:i+12]]
 NOISE={'arnen':'amen'}
+OWIN=json.load(open('/tmp/A4/owin.json')) if __import__('os').path.exists('/tmp/A4/owin.json') else {}
 RWIN=json.load(open('/tmp/A4/rwin.json')) if __import__('os').path.exists('/tmp/A4/rwin.json') else {}
 OCR=[('se','ae'),('rn','m'),('fesu','iesu'),('ii','u'),('cte','cte')]
 def ocr_eq(a,b):
@@ -30,9 +31,9 @@ CROPS=[]
 def keep(d):
     t,a,b,c,ln,j1,j2=d[:7]
     fb=[fold(x) for x in b.split()]; fa=[fold(x) for x in a.split()]
-    if t=='insert' and all(x in HDR or len(x)<=3 for x in fb): return False
-    if t=='replace' and [NOISE.get(x,x) for x in fb]==fa: return False
-    if t=='replace' and ocr_eq(a,b): return False
+    if t=='insert' and all((x in HDR or len(x)<=3) and x.isalpha() for x in fb): return False
+    if t=='replace' and [NOISE.get(x,x) for x in fb]==fa and [y[:1].isupper() for y in a.split()]==[y[:1].isupper() for y in b.split()]: return False
+    if t=='replace' and ocr_eq(a,b) and [y[:1].isupper() for y in a.split() if y[:1].isalpha()]==[y[:1].isupper() for y in b.split() if y[:1].isalpha()]: return False
     return True
 def fmt(k,lab,r):
     out=[]
@@ -58,6 +59,7 @@ def run(k,out):
     if pg and pg[0] in P2L:
         l0=P2L[pg[0]]; l1=P2L.get(pg[1],l0)
         win=(l0-30,l1+420)
+    if k in OWIN: l0=P2L[OWIN[k]]; win=(l0-200,l0+600)
     out.append(f"===== {k} | site title: {m.get('title')} | src: {o.get('src','')[:90]} | win {win}")
     first=None
     for p in ('or','se','pc'):

@@ -29,6 +29,7 @@ def texts(k):
     return out
 os.makedirs('/tmp/A1/diff',exist_ok=True)
 summ=[]
+RNG=tuple(map(int,os.environ['A1RANGE'].split('-'))) if os.environ.get('A1RANGE') else None
 ITEMS={}
 LOC={}
 keys=sys.argv[1:] or G
@@ -38,7 +39,7 @@ for k in keys:
     for lab,t,c in T:
         st=toks_site(t)
         if len(st)<3: cands[lab]=[]; continue
-        v=locate(st)
+        v=locate(st,*RNG) if RNG else locate(st)
         cands[lab]=[(p*8,n) for p,n in v.most_common(6) if n>=max(2,v.most_common(1)[0][1]*0.6)]
     # cluster center: median of top cand positions of orations+readings
     tops=[c[0][0] for l,c in cands.items() if c and not l.startswith('ch')]

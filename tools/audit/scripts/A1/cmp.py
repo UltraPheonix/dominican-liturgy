@@ -1,5 +1,6 @@
 import json, re, sys, unicodedata, difflib, collections
-ROOT='/home/claude/dominican-liturgy/'
+import os
+ROOT=os.environ.get('A1ROOT','/home/claude/dominican-liturgy/')
 def load(fn):
     s=open(ROOT+fn,encoding='utf8').read()
     i=re.search(r'(?:var\s+\w+|window\.\w+)\s*=\s*',s).end()
@@ -20,7 +21,7 @@ def toks_site(t):
             continue
         out.append([f,m.group(2),m.group(1),m.start(1),m.end(1),m.start(2),m.end(2)])
     return out
-S=json.load(open('/tmp/A1/stream.json'))
+S=json.load(open(os.environ.get('A1STREAM','/tmp/A1/stream.json')))
 # Missal tokens
 MT=[]  # [fold, punct, raw, streamidx]
 i=0

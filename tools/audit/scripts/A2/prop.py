@@ -43,13 +43,18 @@ def propose(txt, s):
         if op=='equal':
             for k,(a,b) in enumerate(zip(S,Mx)):
                 i=i1+k
+                if a[0].isalpha() and i>0 and not (len(b)>1 and b.isupper()) and a[0].isupper()!=b[0].isupper() and (a[0] in 'íÍ' and b[0]=='I'):
+                    notes.append(('CAP?',a,b))   # text layer reads initial í as I: check by eye
                 if a[0].isalpha() and i>0 and not (len(b)>1 and b.isupper()) and a[0].isupper()!=b[0].isupper() and not (a[0] in 'íÍ' and b[0]=='I'):
                     a2=(a[0].upper() if b[0].isupper() else a[0].lower())+a[1:]
                     notes.append(('case',a,a2)); edits.append((spans[i][0],spans[i][1],a2))
             continue
         if oi==0 and op=='delete' and i1==0: notes.append(('start?',' '.join(S),'')); continue
         if not S and all(w in ('C','S','F','h','N','I','L') for w in Mx): continue
-        if not S and len(Mx)<=2 and all(w in ('C','S') or not w[0].isalpha() for w in Mx): continue
+        if not S and all(w in ('C','S') or not w[0].isalpha() for w in Mx):
+            # speaker markers C/S dropped, but INSERTED punctuation is kept (A4's finding, 27 Nov)
+            Mx=[w for w in Mx if not w[0].isalpha()]
+            if not Mx: continue
         sw=[w for w in S if w[0].isalpha()]; mw=[w for w in Mx if w[0].isalpha()]
         if sw and [ocrn(w) for w in sw]==[ocrn(w) for w in mw]:
             it=iter(sw); rep=[next(it) if w[0].isalpha() else w for w in Mx]

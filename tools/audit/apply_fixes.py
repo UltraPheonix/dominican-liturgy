@@ -85,7 +85,7 @@ for n, (ff, e) in enumerate(ALL):
             last = e['path'][-1]
             have = (last in cur) if isinstance(cur, dict) else (isinstance(last, int) and last < len(cur))
             if have:
-                if canon(cur[last]) == canon(e['new']): stats['done'] += 1
+                if canon(cur[last]) == canon(e['new']) or canon(cur[last]) == canon(replayed(n)): stats['done'] += 1
                 else: print('CONFLICT(add)', os.path.basename(ff), fn, e['path']); stats['conflict'] += 1
                 continue
             e = dict(e, new=canon(e['new']))

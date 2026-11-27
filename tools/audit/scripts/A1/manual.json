@@ -1,0 +1,247 @@
+[
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "Epi",
+   "parts"
+  ],
+  "old": {
+   "in": [
+    {
+     "id": 5006
+    }
+   ],
+   "gr": [
+    {
+     "id": 7014
+    }
+   ],
+   "al": [
+    {
+     "id": 6342
+    }
+   ],
+   "of": [
+    {
+     "id": 6426
+    }
+   ],
+   "co": [
+    {
+     "id": 5896
+    }
+   ]
+  },
+  "new": {
+   "in": [
+    {
+     "id": 5006
+    }
+   ],
+   "gr": [
+    {
+     "id": 7014
+    }
+   ],
+   "al": [
+    {
+     "id": 6342
+    }
+   ],
+   "se": [
+    {
+     "id": 4214
+    }
+   ],
+   "of": [
+    {
+     "id": 6426
+    }
+   ],
+   "co": [
+    {
+     "id": 5896
+    }
+   ]
+  },
+  "src": "M39 p. 35 (pdf 51); Graduale chant #4214 (Lætabúndus, the id already used for Dec25_3, whose text matched M39 pp. 23-24)",
+  "why": "the Missal prints the Sequence Lætabúndus in the Epiphany Mass (p. 35, \"Sequentia\" after the Alleluia Vídimus stellam); the site had none. Rubr. gen. XIII.10 (p. 53): \"Dicto Responsorio, vel Alleluia, vel Tractu, vel Sequentia, dicitur Evangelium\"."
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Jan5a",
+   "or"
+  ],
+  "old": [
+   "Corda nostra, quǽsumus Dómine, ventúræ festivitátis splendor illústret: quo mundi hujus ténebris carére valeámus; et perveniámus ad pátriam claritátis ætérnæ: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+   ""
+  ],
+  "new": [
+   "Corda nostra, quǽsumus Dómine, ventúræ festivitátis splendor illústret: quo mundi hujus ténebris carére valeámus; et perveniámus ad pátriam claritátis ætérnæ: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+   "May the splendour of the coming feast, we beseech You, O Lord, enlighten our hearts, so that we may be freed from the darkness of this world and come to the fatherland of eternal brightness. Through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+  ],
+  "src": "M39 p. 31 (pdf 49)",
+  "why": "wrong prayer: the site had the Collect/Secret/Postcommunion of the Sunday in the octave (Roman Vigil Mass, src DO Sancti/01-05). The Missal O.P. prints proper prayers for the Vigil: Corda nostra. Rubr. gen. X.1 f (p. 52): \"in Vigiliis privilegiatis Nativitatis D. N. J. C. et Epiphaniae Orationes dicuntur ut in Missali.\" Text as printed; conclusion type as printed (\"Per Dóminum nostrum Jesum Christum.\", Rubr. XI.2); the full form follows the Missal's own full conclusion (Dec24 Collect, p. 16). English: AI translation of the Missal's Latin (no 1959 St Dominic Missal text for this Mass; RULINGS \"Missing English\"), labelled by en_src \"ai\"."
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Jan5a",
+   "se"
+  ],
+  "old": [
+   "Tríbue, quǽsumus Dómine, ut eum præséntibus immolémus sacrifíciis, et sumámus, quem ventúræ solemnitátis pia múnera præloquúntur: Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   ""
+  ],
+  "new": [
+   "Tríbue, quǽsumus Dómine, ut eum præséntibus immolémus sacrifíciis, et sumámus, quem ventúræ solemnitátis pia múnera præloquúntur: Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   "Grant, we beseech You, O Lord, that in this present sacrifice we may offer and receive Him whom the holy gifts of the coming solemnity foretell: our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+  ],
+  "src": "M39 pp. 32-33 (pdf 50)",
+  "why": "wrong prayer: the site had the Collect/Secret/Postcommunion of the Sunday in the octave (Roman Vigil Mass, src DO Sancti/01-05). The Missal O.P. prints proper prayers for the Vigil: Tríbue. Rubr. gen. X.1 f (p. 52): \"in Vigiliis privilegiatis Nativitatis D. N. J. C. et Epiphaniae Orationes dicuntur ut in Missali.\" Text as printed; conclusion type as printed (\"…præloquúntur : Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit.\", Rubr. XI.2); the full form follows the Missal's own full conclusion (Dec24 Collect, p. 16). English: AI translation of the Missal's Latin (no 1959 St Dominic Missal text for this Mass; RULINGS \"Missing English\"), labelled by en_src \"ai\"."
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Jan5a",
+   "pc"
+  ],
+  "old": [
+   "Illúmina, quǽsumus Dómine, pópulum tuum: et splendóre grátiæ tuæ cor ejus semper accénde; ut Salvatórem suum et incessánter agnóscat, et veráciter apprehéndat: Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   ""
+  ],
+  "new": [
+   "Illúmina, quǽsumus Dómine, pópulum tuum: et splendóre grátiæ tuæ cor ejus semper accénde; ut Salvatórem suum et incessánter agnóscat, et veráciter apprehéndat: Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   "Enlighten Your people, we beseech You, O Lord, and ever kindle their hearts with the splendour of Your grace, so that they may unceasingly acknowledge their Saviour and truly lay hold of Him: our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+  ],
+  "src": "M39 p. 33 (pdf 50)",
+  "why": "wrong prayer: the site had the Collect/Secret/Postcommunion of the Sunday in the octave (Roman Vigil Mass, src DO Sancti/01-05). The Missal O.P. prints proper prayers for the Vigil: Illúmina. Rubr. gen. X.1 f (p. 52): \"in Vigiliis privilegiatis Nativitatis D. N. J. C. et Epiphaniae Orationes dicuntur ut in Missali.\" Text as printed; conclusion type as printed (\"…apprehéndat : Dóminum nostrum Jesum Christum Fílium tuum; qui tecum vivit.\", Rubr. XI.2); the full form follows the Missal's own full conclusion (Dec24 Collect, p. 16). English: AI translation of the Missal's Latin (no 1959 St Dominic Missal text for this Mass; RULINGS \"Missing English\"), labelled by en_src \"ai\"."
+ },
+ {
+  "file": "data/orations.js",
+  "op": "add",
+  "path": [
+   "Jan5a",
+   "en_src"
+  ],
+  "old": null,
+  "new": {
+   "or": "ai",
+   "se": "ai",
+   "pc": "ai"
+  },
+  "src": "M39 pp. 31-33 (pdf 49-50)",
+  "why": "label: the English of the three prayers is an AI translation (RULINGS, Missing English)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Adv3f",
+   "se",
+   1
+  ],
+  "old": "",
+  "new": "Receive our gifts and prayers, we beseech You, O Lord: cleanse us by these heavenly mysteries, and mercifully hear us. Through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end.",
+  "src": "M39 p. 9 (pdf 38)",
+  "why": "English was empty; AI translation of the Missal's Latin \"Munéribus nostris, quǽsumus Dómine, precibúsque suscéptis: et cæléstibus nos munda mystériis, et cleménter exáudi\" (RULINGS, Missing English)"
+ },
+ {
+  "file": "data/orations.js",
+  "op": "add",
+  "path": [
+   "Adv3f",
+   "en_src"
+  ],
+  "old": null,
+  "new": {
+   "se": "ai"
+  },
+  "src": "M39 p. 9 (pdf 38)",
+  "why": "label: the Secret's English is an AI translation (RULINGS, Missing English)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "7a",
+   "se",
+   1
+  ],
+  "old": "",
+  "new": "Receive our gifts and prayers, we beseech You, O Lord: cleanse us by these heavenly mysteries, and mercifully hear us. Through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end.",
+  "src": "M39 p. 49 (pdf 58)",
+  "why": "English was empty; AI translation of the Missal's Latin \"Munéribus nostris, quǽsumus Dómine, precibúsque suscéptis: et cæléstibus nos munda mystériis, et cleménter exáudi\" (RULINGS, Missing English)"
+ },
+ {
+  "file": "data/orations.js",
+  "op": "add",
+  "path": [
+   "7a",
+   "en_src"
+  ],
+  "old": null,
+  "new": {
+   "se": "ai"
+  },
+  "src": "M39 p. 49 (pdf 58)",
+  "why": "label: the Secret's English is an AI translation (RULINGS, Missing English)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "5as",
+   "parts",
+   "gr",
+   0,
+   "id"
+  ],
+  "old": 4764,
+  "new": 5760,
+  "src": "M39 p. 62 (pdf 65); Graduale O.P. 1950 p. 75 (gabc 5760 \"Unam petii... Ut... protegar\")",
+  "why": "wrong chant: the Missal prints the Gradual Unam pétii with V. \"Ut vídeam voluptátem Dómini, et prótegar a templo sancto ejus\" (as on Friday, p. 60, where the site uses 5760); 4764 is the Holy Family Gradual with V. \"Beáti qui hábitant\" (G50 p. 47)."
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad1s",
+   6
+  ],
+  "old": null,
+  "new": {
+   "type": "Epistle",
+   "ref": "Ad Thessalonicenses 1 5: 14-23",
+   "title": "Léctio Epístolæ beáti Pauli Apóstoli ad Thessalonicénses.",
+   "title_en": "Lesson from the First Epistle of blessed Paul the Apostle to the Thessalonians.",
+   "la": "Fratres: Rogámus vos, corrípite inquiétos, consolámini pusillánimes, suscípite infírmos, patiéntes estóte ad omnes. Vidéte ne quis malum pro malo alícui reddat: sed semper quod bonum est sectámini in ínvicem, et in omnes. Semper gaudéte. Sine intermissióne oráte. In ómnibus grátias ágite: Hæc est enim volúntas Dei in Christo Jesu in ómnibus vobis. Spíritum nolíte exstínguere. Prophetías nolíte spérnere. Omnia autem probáte: quod bonum est tenéte. Ab omni spécie mala abstinéte vos. Ipse autem Deus pacis sanctíficet vos per ómnia: ut integer spíritus vester, et ánima, et corpus sine queréla in advéntu Dómini nostri Jesu Christi servétur.",
+   "en": "Brethren: We beseech you, rebuke the unquiet, comfort the feeble-minded, support the weak, be patient towards all men. See that none render evil for evil to any man: but ever follow that which is good towards each other, and towards all men. Always rejoice. Pray without ceasing. In all things give thanks: for this is the will of God in Christ Jesus concerning you all. Extinguish not the Spirit. Despise not prophecies. But prove all things: hold fast that which is good. From all appearance of evil refrain yourselves. And may the God of peace himself sanctify you in all things: that your whole spirit, and soul, and body may be preserved blameless in the coming of our Lord Jesus Christ.",
+   "p33": null,
+   "src": "Missale O.P. 1939, p. 78 (pdf 72), transcribed from the scan; English: Douay-Rheims (1 Thess 5: 14-23), not checked against a printed copy"
+  },
+  "src": "M39 p. 78 (pdf 72)",
+  "why": "missing reading: the Missal prints the Epistle (1 Thess 5) after the Hymn Benedíctus es and its collect Deus qui tribus púeris (p. 78); masses.js lists it but readings33.js lacked it, so the site showed no Epistle. Appended: m33Readings() shows non-Gospel readings in list order, before the Gospel."
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad2",
+   1
+  ],
+  "old": null,
+  "new": {
+   "type": "Epistle",
+   "ref": "Ad Thessalonicenses 1 4: 1-7",
+   "title": "Léctio Epístolæ beáti Pauli Apóstoli ad Thessalonicénses.",
+   "title_en": "Lesson from the First Epistle of blessed Paul the Apostle to the Thessalonians.",
+   "la": "Fratres: Rogámus vos et obsecrámus in Dómino Jesu, ut quemádmodum accepístis a nobis quómodo opórteat vos ambuláre, et placére Deo, sic et ambulétis ut abundétis magis. Scitis enim quæ præcépta déderim vobis per Dóminum Jesum. Hæc est enim volúntas Dei, sanctificátio vestra: ut abstineátis vos a fornicatióne, ut sciat unusquísque vestrum vas suum possidére in sanctificatióne, et honóre: Non in passióne desidérii, sicut et gentes, quæ ignórant Deum: Et ne quis supergrediátur, neque circumvéniat in negótio fratrem suum: quóniam vindex est Dóminus de his ómnibus, sicut prædíximus vobis, et testificáti sumus. Non enim vocávit nos Deus in immundítiam, sed in sanctificatiónem: In Christo Jesu Dómino nostro.",
+   "en": "Brethren: We pray and beseech you in the Lord Jesus, that as you have received from us, how you ought to walk, and to please God, so also you would walk, that you may abound the more. For you know what precepts I have given to you by the Lord Jesus. For this is the will of God, your sanctification: that you should abstain from fornication, that every one of you should know how to possess his vessel in sanctification and honour: not in the passion of lust, like the Gentiles that know not God: and that no man overreach, nor circumvent his brother in business: because the Lord is the avenger of all these things, as we have told you before, and have testified. For God hath not called us unto uncleanness, but unto sanctification: in Christ Jesus our Lord.",
+   "p33": null,
+   "src": "Missale O.P. 1939, p. 79 (pdf 73), transcribed from the scan; English: Douay-Rheims (1 Thess 4: 1-7), not checked against a printed copy"
+  },
+  "src": "M39 p. 79 (pdf 73)",
+  "why": "missing reading: the Missal prints the Epistle 1 Thess 4 (p. 79); masses.js lists it but readings33.js had only the Gospel, so m33Readings() fell back to the masses.js reference without text. Appended (non-Gospel readings are shown before the Gospel)."
+ }
+]

@@ -34,12 +34,18 @@ for i in range(len(d)):
     cols=collections.defaultdict(list)
     for l in L:
         # split a line into columns by word x0 too (a pdf "line" may span columns)
-        for w in l: cols[col(w[0]) if (w[3]-w[1])<1.6*med else col(w[0])].append(w)
+        prev=None
+        for w in sorted(l,key=lambda w:w[0]):
+            import re as _re
+            if prev is not None and _re.fullmatch(r'[,;:.?!)\]]+',w[4]) and w[0]-prev[2]<15: c=pc
+            else: c=col(w[0])
+            cols[c].append(w); prev=w; pc=c
     for k in sorted(cols):
         items=cols[k]
         def yk(w): return (w[1]+w[3])/2 if (w[3]-w[1])<1.6*med else w[1]+med*0.5
         items.sort(key=lambda w:(round(yk(w)/(med*0.8)), w[0]))
         for w in items:
             out.append([i,round(w[0],1),round(w[1],1),round(w[2],1),round(w[3],1),w[4],round((w[3]-w[1])/med,2)])
-json.dump(out,open('/tmp/A1/stream.json','w'))
+import os
+json.dump(out,open(os.environ.get('A1STREAM','/tmp/A1/stream.json'),'w'))
 print(len(out))

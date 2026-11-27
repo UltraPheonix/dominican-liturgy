@@ -1,0 +1,6 @@
+# ---- S0911 SS. Protus and Hyacinth (3 LL.) p. 555: "Officium Salus autem, ut in Communi plurimorum Martyrum, p. 13*"; Common pp. 13*-14* (pdf 374-375)
+RD=F.A.RD
+P('S0911','r0',[1,2],'M39 p. 13* (pdf 374)',[('per mare Rubrum','per Mare rubrum'),('decantavérunt Dómine nomen','decantavérunt Dómine nomen'),('et víctricem manum tuam laudavérunt páriter.','et victrícem manum tuam laudavérunt páriter, Dómine Deus noster.')],why='as printed: ": Et fuit"; ": Tránstulit"; "Mare rubrum" (sic); "victrícem"; and the Missal\'s ending ", Dómine Deus noster" (not in the Vulgate)')
+RAW('data/readings33.js',['S0911',0,'en'],RD['S0911'][0]['en'],RD['S0727'][0]['en'],'M39 p. 13* (pdf 374)','the Missal\'s Latin "Réddidit Deus justis ... laudavérunt páriter, Dómine Deus noster" departs from the Vulgate ("she rendered"); the English follows the Missal\'s Latin (Joseph\'s ruling on Q6), as S0727')
+FX.append({"file":"data/readings33.js","op":"add","path":['S0911',0,'en_src'],"old":None,"new":'ai',"src":'M39 p. 13* (pdf 374)',"why":'label: AI translation of the Missal\'s Latin (Joseph\'s ruling on Q6)'})
+P('S0911','r1',[1,3,5,6,7,8],'M39 pp. 13*-14* (pdf 374-375)',[('ómnia inícient','ómnia injícient')],why='as printed: ": Opórtet"; ": Contínget"; "respondeátis. Ego"; ": Et éritis"; ": Et capíllus"; "injícient"')

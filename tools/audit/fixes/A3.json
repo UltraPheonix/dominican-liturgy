@@ -3706,5 +3706,307 @@
   "new": "In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Ad níhilum valet ultra, nisi ut mittátur foras, et conculcétur ab homínibus. Vos estis lux mundi. Non potest cívitas abscóndi supra montem pósita. Neque accéndunt lucérnam, et ponunt eam sub módio, sed super candelábrum, ut lúceat ómnibus, qui in domo sunt. Sic lúceat lux vestra coram homínibus: ut vídeant ópera vestra bona, et gloríficent Patrem vestrum, qui in cælis est. Nolíte putáre, quóniam veni sólvere legem, aut prophétas: non veni sólvere, sed adimplére. Amen quippe dico vobis: donec tránseat cælum et terra, jota unum, aut unus apex non præteríbit a lege, donec ómnia fiant. Qui ergo sólverit unum de mandátis istis mínimis, et docúerit sic hómines, mínimus vocábitur in regno cælórum: qui autem fécerit et docúerit, hic magnus vocábitur in regno cælórum.",
   "src": "M39 p. 394 (pdf 236)",
   "why": "punctuation as printed on p. 394 (same text and pointing as the Commune Doctorum, S1124)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0317",
+   0,
+   "la"
+  ],
+  "old": "Ecce sacérdos magnus, qui in diébus suis plácuit Deo, et invéntus est justus: et in témpore iracúndiæ factus est reconciliátio. Non est invéntus símilis illi, qui conservávit legem Excélsi. Ideo jurejurándo fecit illum Dóminus créscere in plebem suam. Benedictiónem ómnium géntium dedit illi, et testaméntum suum confirmávit super caput ejus. Agnóvit eum in benedictiónibus suis: conservávit illi misericórdiam suam: et invénit grátiam coram óculis Dómini. Magnificávit eum in conspéctu regum: et dedit illi corónam glóriæ. Státuit illi testaméntum ætérnum, et dedit illi sacerdótium magnum: et beatificávit illum in glória. Fungi sacerdótio, et habére laudem in nómine ipsíus, et offérre illi incénsum dignum in odórem suavitátis.",
+  "new": "Ecce sacérdos magnus, qui in diébus suis plácuit Deo, et invéntus est justus: et in témpore iracúndiæ factus est reconciliátio. Non est invéntus símilis illi, qui conservávit legem Excélsi. Ideo jurejurándo fecit illum Dóminus créscere in plebem suam. Benedictiónem ómnium géntium dedit illi: et testaméntum suum confirmávit super caput ejus. Agnóvit eum in benedictiónibus suis: conservávit illi misericórdiam suam, et invénit grátiam coram óculis Dómini. Magnificávit eum in conspéctu regum: et dedit illi corónam glóriæ. Státuit illi testaméntum ætérnum: et dedit illi sacerdótium magnum, et beatificávit illum in glória. Fungi sacerdótio, et habére laudem in nómine ipsíus: et offérre illi incénsum dignum in odórem suavitátis.",
+  "src": "M39 p. 396 (pdf 237) -> Comm. Conf. Pont. Statuit pp. 18*-20* (pdf 377-378)",
+  "why": "p. 396 \"Officium Statuit, ut in Comm. Conf. Pont., pag. 18*\": punctuation as printed (same text as S1104, scan-checked)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0317",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo péregre proficíscens, vocávit servos suos, et trádidit illis bona sua. Et uni dedit quinque talénta, álii autem duo, álii vero unum, unicuíque secúndum própriam virtútem: et proféctus est statim. Abiit autem qui quinque talénta accéperat, et operátus est in eis, et lucrátus est ália quinque. Simíliter et qui duo accéperat, lucrátus est ália duo. Qui autem unum accéperat, ábiens fodit in terram, et abscóndit pecúniam dómini sui. Post multum vero témporis venit dóminus servórum illórum, et pósuit ratiónem cum eis. Et accédens qui quinque talénta accéperat, óbtulit ália quinque talénta, dicens: Dómine, quinque talénta tradidísti mihi, ecce ália quinque superlucrátus sum. Ait illi dóminus ejus: Euge serve bone, et fidélis: quia super pauca fuísti fidélis, super multa te constítuam: intra in gáudium dómini tui. Accéssit autem et qui duo talénta accéperat, et ait: Dómine, duo talénta tradidísti mihi, ecce ália duo lucrátus sum. Ait illi dóminus ejus: Euge serve bone, et fidélis: quia super pauca fuísti fidélis, super multa te constítuam: intra in gáudium dómini tui.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo péregre proficíscens, vocávit servos suos, et trádidit illis bona sua. Et uni dedit quinque talénta, álii autem duo, álii vero unum, unicuíque secúndum própriam virtútem, et proféctus est statim. Abiit autem qui quinque talénta accéperat, et operátus est in eis, et lucrátus est ália quinque. Simíliter et qui duo accéperat, lucrátus est ália duo. Qui autem unum accéperat, ábiens fodit in terram, et abscóndit pecúniam dómini sui. Post multum vero témporis venit dóminus servórum illórum, et pósuit ratiónem cum eis. Et accédens qui quinque talénta accéperat, óbtulit ália quinque talénta, dicens: Dómine, quinque talénta tradidísti mihi, ecce ália quinque superlucrátus sum. Ait illi dóminus ejus: Euge serve bone, et fidélis, quia super pauca fuísti fidélis, super multa te constítuam, intra in gáudium dómini tui. Accéssit autem et qui duo talénta accéperat, et ait: Dómine, duo talénta tradidísti mihi, ecce ália duo lucrátus sum. Ait illi dóminus ejus: Euge serve bone, et fidélis, quia super pauca fuísti fidélis, super multa te constítuam, intra in gáudium dómini tui.",
+  "src": "M39 p. 396 (pdf 237) -> Comm. Conf. Pont. Statuit pp. 18*-20* (pdf 377-378)",
+  "why": "p. 396 \"Officium Statuit, ut in Comm. Conf. Pont., pag. 18*\": punctuation as printed (same text as S1104, scan-checked)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0318",
+   0,
+   "la"
+  ],
+  "old": "Justus cor suum tradet ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur. Apériet os suum in oratióne, et pro delíctis suis deprecábitur. Si enim Dóminus magnus volúerit, spíritu intelligéntiæ replébit illum: et ipse tamquam imbres mittet elóquia sapiéntiæ suæ, et in oratióne confitébitur Dómino: et ipse díriget consílium ejus, et disciplínam, et in abscónditis suis consiliábitur. Ipse palam fáciet disciplínam doctrínæ suæ, et in lege testaménti Dómini gloriábitur. Collaudábunt multi sapiéntiam ejus, et usque in sǽculum non delébitur. Non recédet memória ejus, et nomen ejus requirétur a generatióne in generatiónem. Sapiéntiam ejus enarrábunt gentes, et laudem ejus enuntiábit ecclésia.",
+  "new": "Justus cor suum tradet ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur. Apériet os suum in oratióne, et pro delíctis suis deprecábitur. Si enim Dóminus magnus volúerit, spíritu intelligéntiæ replébit illum: et ipse tamquam imbres mittet elóquia sapiéntiæ suæ, et in oratióne confitébitur Dómino: et ipse díriget consílium ejus, et disciplínam, et in abscónditis suis consiliábitur. Ipse palam fáciet disciplínam doctrínæ suæ, et in lege testaménti Dómini gloriábitur. Collaudábunt multi sapiéntiam ejus, et usque in sǽculum non delébitur. Non recédet memória ejus et nomen ejus requirétur a generatióne in generatiónem. Sapiéntiam ejus enarrábunt gentes et laudem ejus enuntiábit ecclésia.",
+  "src": "M39 pdf 237 (p. 396)",
+  "why": "words and punctuation as printed (checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0318",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis: Cum persequéntur vos in civitáte ista, fúgite in áliam. Amen dico vobis, non consummábitis civitátes Israël, donec véniat Fílius hóminis. Non est discípulus super magístrum, nec servus super dóminum suum: súfficit discípulo ut sit sicut magíster ejus, et servo, sicut dóminus ejus. Si patremfamílias Beélzebub vocavérunt, quanto magis domésticos ejus? Ne ergo timuéritis eos. Nihil enim est opértum, quod non revelábitur: et occúltum, quod non sciétur. Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere: sed pótius timéte eum, qui potest et ánimam, et corpus pérdere in gehénnam.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis: Cum persequéntur vos in civitáte ista, fúgite in áliam. Amen dico vobis, non consummábitis civitátes Israël, donec véniat Fílius hóminis. Non est discípulus super magístrum, nec servus super dóminum suum. Súfficit discípulo, ut sit sicut magíster ejus: et servo, sicut dóminus ejus. Si patremfamílias Beélzebub vocavérunt: quanto magis domésticos ejus? Ne ergo timuéritis eos: Nihil enim est opértum, quod non revelábitur: et occúltum quod non sciétur. Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere: sed pótius timéte eum, qui potest et ánimam et corpus pérdere in gehénnam.",
+  "src": "M39 pdf 237 (p. 396)",
+  "why": "words and punctuation as printed (checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0319",
+   0,
+   "la"
+  ],
+  "old": "Diléctus Deo et homínibus cujus memória in benedictióne est. Símilem illum fecit in glória sanctórum, et magnificávit eum in timóre inimicórum, et in verbis suis monstra placávit. Glorificávit illum in conspéctu regum, et jussit illi coram pópulo suo, et osténdit illi glóriam suam. In fide et lenitáte ipsíus sanctum fecit illum, et elégit eum ex omni carne. Audívit enim eum, et vocem ipsíus, et indúxit illum in nubem. Et dedit illi coram præcépta, et legem vitæ et disciplínæ.",
+  "new": "Diléctus Deo, et homínibus: cujus memória in benedictióne est. Símilem illum fecit in glória sanctórum, et magnificávit eum in timóre inimicórum, et in verbis suis monstra placávit. Glorificávit illum in conspéctu regum, et jussit illi coram pópulo suo, et osténdit illi glóriam suam. In fide et lenitáte ipsíus sanctum fecit illum, et elégit eum ex omni carne. Audívit enim eum, et vocem ipsíus, et indúxit illum in nubem. Et dedit illi coram præcépta, et legem vitæ et disciplínæ.",
+  "src": "M39 p. 398 (pdf 238)",
+  "why": "punctuation as printed (\"Diléctus Deo, et homínibus: cujus\"); same text as S0117 (scan-checked)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0319",
+   0,
+   "en"
+  ],
+  "old": "Moses was beloved of God, and men: whose memory is in benediction. He made him like the saints in glory, and magnified him in the fear of his enemies, and with his words he made prodigies to cease. He glorified him in the sight of kings, and gave him commandments in the sight of his people, and shewed him his glory. He sanctified him in his faith, and meekness, and chose him out of all flesh. For he heard him, and his voice, and brought him into a cloud. And he gave him commandments before his face, and a law of life and instruction, that he might teach Jacob his covenant, and Israel his judgments.",
+  "new": "Beloved of God, and men: whose memory is in benediction. He made him like the saints in glory, and magnified him in the fear of his enemies, and with his words he made prodigies to cease. He glorified him in the sight of kings, and gave him commandments in the sight of his people, and shewed him his glory. He sanctified him in his faith, and meekness, and chose him out of all flesh. For he heard him, and his voice, and brought him into a cloud. And he gave him commandments before his face, and a law of life and instruction.",
+  "src": "M39 p. 398 (pdf 238)",
+  "why": "English followed the Douay verse, not the Missal's Latin: \"Moses was\" and the Vulgate tail \"that he might teach Jacob…\" are not in the Missal (as S0117)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0319",
+   1,
+   "la"
+  ],
+  "old": "Esset desponsáta mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu sancto. Joseph autem vir ejus cum esset justus, et nollet eam tradúcere, vóluit occúlte dimíttere eam. Hæc autem eo cogitánte, ecce ángelus Dómini appáruit in somnis ei, dicens: Joseph fili David, noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu sancto est. Páriet autem fílium: et vocábis nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum.",
+  "new": "Cum esset desponsáta mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu sancto. Joseph autem vir ejus cum esset justus, et nollet eam tradúcere: vóluit occúlte dimíttere eam. Hæc autem eo cogitánte, ecce ángelus Dómini appáruit in somnis ei, dicens: Joseph fili David, noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu sancto est. Páriet autem fílium: et vocábis nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum.",
+  "src": "M39 p. 398 (pdf 238)",
+  "why": "first word \"Cum\" lost (drop capital \"CUM esset desponsáta\"); \"tradúcere :\" as printed"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0319",
+   1,
+   "en"
+  ],
+  "old": "Now the generation of Christ was in this wise. When as his mother Mary was espoused to Joseph, before they came together, she was found with child, of the Holy Ghost. Whereupon Joseph her husband, being a just man, and not willing publicly to expose her, was minded to put her away privately. But while he thought on these things, behold the angel of the Lord appeared to him in his sleep, saying: Joseph, son of David, fear not to take unto thee Mary thy wife, for that which is conceived in her, is of the Holy Ghost. And she shall bring forth a son: and thou shalt call his name JESUS. For he shall save his people from their sins.",
+  "new": "When as his mother Mary was espoused to Joseph, before they came together, she was found with child, of the Holy Ghost. Whereupon Joseph her husband, being a just man, and not willing publicly to expose her, was minded to put her away privately. But while he thought on these things, behold the angel of the Lord appeared to him in his sleep, saying: Joseph, son of David, fear not to take unto thee Mary thy wife, for that which is conceived in her, is of the Holy Ghost. And she shall bring forth a son: and thou shalt call his name JESUS. For he shall save his people from their sins.",
+  "src": "M39 p. 398 (pdf 238)",
+  "why": "the Missal begins at \"Cum esset desponsáta\" (no \"Christi autem generatio sic erat\"): English trimmed to match the Latin"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S0319",
+   "pc",
+   0
+  ],
+  "old": "Sit nobis, quǽsumus Dómine, per hæc sancta, quæ súmpsimus, beatíssimi Ioseph Patriárchæ solémnitas, præsídium salutáre; qui pretiósæ sponsæ suæ Vírginis matris Fílium in præsépio méruit adoráre Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Sit nobis, quǽsumus Dómine, per hæc sancta, quæ súmpsimus, beatíssimi Ioseph Patriárchæ solémnitas, præsídium salutáre; qui pretiósæ sponsæ suæ Vírginis matris Fílium in præsépio méruit adoráre: Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 398 (pdf 238)",
+  "why": "\"méruit adoráre : Dóminum nostrum.\" as printed (body ends with the mention of the Son; expanded \"qui tecum\" kept, Rubr. gen. XI.2 p. 52: \"si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0321",
+   0
+  ],
+  "old": {
+   "type": "Lesson",
+   "ref": "Ecclesiasticus 31: 8-11",
+   "title": "Léctio libri Sapiéntiæ.",
+   "title_en": "Lesson from the Book of Wisdom.",
+   "la": "Beátus vir, qui invéntus est sine mácula: et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudábimus eum? Fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: qui pótuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ideo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum.",
+   "en": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+   "p33": 665
+  },
+  "new": {
+   "type": "Lesson",
+   "ref": "Ecclesiasticus 45: 1-6",
+   "title": "Léctio libri Sapiéntiæ.",
+   "title_en": "Lesson from the Book of Wisdom.",
+   "la": "Diléctus Deo, et homínibus: cujus memória in benedictióne est. Símilem illum fecit in glória sanctórum, et magnificávit eum in timóre inimicórum, et in verbis suis monstra placávit. Glorificávit illum in conspéctu regum, et jussit illi coram pópulo suo, et osténdit illi glóriam suam. In fide et lenitáte ipsíus sanctum fecit illum, et elégit eum ex omni carne. Audívit enim eum, et vocem ipsíus, et indúxit illum in nubem. Et dedit illi coram præcépta, et legem vitæ et disciplínæ.",
+   "en": "Beloved of God, and men: whose memory is in benediction. He made him like the saints in glory, and magnified him in the fear of his enemies, and with his words he made prodigies to cease. He glorified him in the sight of kings, and gave him commandments in the sight of his people, and shewed him his glory. He sanctified him in his faith, and meekness, and chose him out of all flesh. For he heard him, and his voice, and brought him into a cloud. And he gave him commandments before his face, and a law of life and instruction."
+  },
+  "src": "M39 p. 400 (pdf 238): \"Officium Os justi, ut in Communi unius Abbatis, pag. 25*\" -> Comm. Abbatis pp. 25*-26* (pdf 380-381)",
+  "why": "site had the Conf. non Pont. readings (Eccli 31 / Lk 12); the Abbot's Mass prints Eccli 45 \"Dilectus Deo\" / Mt 19:27-29 (texts as S0207, scan-checked)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0321",
+   1
+  ],
+  "old": {
+   "type": "Gospel",
+   "ref": "Lucas 12: 35-40",
+   "title": "Sequéntia sancti Evangélii secúndum Lucam.",
+   "title_en": "Continuation of the holy Gospel according to Luke.",
+   "la": "In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. Beáti servi illi, quos cum vénerit dóminus, invénerit vigilántes: amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.",
+   "en": "At that time: Let your loins be girt, and lamps burning in your hands. And you yourselves like to men who wait for their lord, when he shall return from the wedding; that when he cometh and knocketh, they may open to him immediately. Blessed are those servants, whom the Lord when he cometh, shall find watching. Amen I say to you, that he will gird himself, and make them sit down to meat, and passing will minister unto them. And if he shall come in the second watch, or come in the third watch, and find them so, blessed are those servants. But this know ye, that if the householder did know at what hour the thief would come, he would surely watch, and would not suffer his house to be broken open. Be you then also ready: for at what hour you think not, the Son of man will come.",
+   "p33": 665
+  },
+  "new": {
+   "type": "Gospel",
+   "ref": "Matthæus 19: 27-29",
+   "title": "Sequéntia sancti Evangélii secúndum Matthǽum.",
+   "title_en": "Continuation of the holy Gospel according to Matthew.",
+   "la": "In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Jesus autem dixit illis: Amen dico vobis, quod vos, qui secúti estis me, in regeneratióne cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis, qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros propter nomen meum, céntuplum accípiet, et vitam ætérnam possidébit.",
+   "en": "At that time: Then Peter answering, said to him: Behold we have left all things, and have followed thee: what therefore shall we have? And Jesus said to them: Amen, I say to you, that you, who have followed me, in the regeneration, when the Son of man shall sit on the seat of his majesty, you also shall sit on twelve seats judging the twelve tribes of Israel. And every one that hath left house, or brethren, or sisters, or father, or mother, or wife, or children, or lands for my name’s sake, shall receive an hundredfold, and shall possess life everlasting."
+  },
+  "src": "M39 p. 400 (pdf 238): \"Officium Os justi, ut in Communi unius Abbatis, pag. 25*\" -> Comm. Abbatis pp. 25*-26* (pdf 380-381)",
+  "why": "site had the Conf. non Pont. readings (Eccli 31 / Lk 12); the Abbot's Mass prints Eccli 45 \"Dilectus Deo\" / Mt 19:27-29 (texts as S0207, scan-checked)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0321",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ecclesiasticus 45: 1-6",
+    "roman": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 19: 27-29",
+    "roman": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Ecclesiasticus 45: 1-6",
+    "m39": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 19: 27-29",
+    "m39": true
+   }
+  ],
+  "src": "M39 p. 400 (pdf 238): \"Officium Os justi, ut in Communi unius Abbatis, pag. 25*\" -> Comm. Abbatis pp. 25*-26* (pdf 380-381)",
+  "why": "Missal readings of the Common Abbatis, not 'roman'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0324",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Ecce vir Gábriel, quem víderam in visióne a princípio, cito volans tétigit me in témpore sacrifícii vespertíni. Et dócuit me, et locútus est mihi, dixítque: Dániel nunc egréssus sum ut docérem te, et intellígeres. Ab exórdio precum tuárum egréssus est sermo: ego autem veni ut indicárem tibi, quia vir desideriórum es: tu ergo animadvérte sermónem, et intéllige visiónem. Septuagínta hebdómades abbreviátæ sunt super pópulum tuum, et super urbem sanctam tuam, ut consummétur prævaricátio, et finem accípiat peccátum, et deleátur iníquitas, et adducátur justítia sempitérna, et impleátur vísio et prophetía, et ungátur Sanctus sanctórum. Scito ergo, et animadvérte: Ab éxitu sermónis, ut íterum ædificétur Jerúsalem, usque ad Christum ducem, hebdómades septem, et hebdómades sexagínta duæ erunt: et rursum ædificábitur platéa, et muri in angústia témporum. Et post hebdómades sexagínta duas occidétur Christus: et non erit ejus pópulus, qui eum negatúrus est. Et civitátem, et sanctuárium dissipábit pópulus cum duce ventúro: et finis ejus vástitas, et post finem belli statúta desolátio.",
+  "new": "In diébus illis: Ecce vir Gábriel, quem víderam in visióne a princípio, cito volans tétigit me in témpore sacrifícii vespertíni. Et dócuit me, et locútus est mihi, dixítque: Dániel nunc egréssus sum, ut docérem te, et intellígeres. Ab exórdio precum tuárum egréssus est sermo: ego autem veni ut indicárem tibi, quia vir desideriórum es: tu ergo animadvérte sermónem, et intéllige visiónem. Septuagínta hebdómades abbreviátæ sunt super pópulum tuum, et super urbem sanctam tuam, ut consummétur prævaricátio, et finem accípiat peccátum, et deleátur iníquitas, et adducátur justítia sempitérna, et impleátur vísio, et prophetía, et ungátur Sanctus sanctórum. Scito ergo, et animadvérte: Ab éxitu sermónis, ut íterum ædificétur Jerúsalem, usque ad Christum ducem, hebdómades septem, et hebdómades sexagínta duæ erunt: et rursum ædificábitur platéa, et muri in angústia témporum. Et post hebdómades sexagínta duas occidétur Christus: et non erit ejus pópulus, qui eum negatúrus est. Et civitátem, et sanctuárium dissipábit pópulus cum duce ventúro: et finis ejus vástitas, et post finem belli statúta desolátio.",
+  "src": "M39 pdf 239 (p. 400)",
+  "why": "words and punctuation as printed (checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0324",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Missus est ángelus Gábriel a Deo in civitátem Galilǽæ, cui nomen Názareth, ad vírginem desponsátam viro, cui nomen erat Joseph, de domo David: et nomen vírginis María. Et ingréssus ángelus ad eam dixit: Ave grátia plena: Dóminus tecum: benedícta tu in muliéribus. Quæ cum audísset, turbáta est in sermóne ejus, et cogitábat qualis esset ista salutátio. Et ait ángelus ei: Ne tímeas María: invenísti enim grátiam apud Deum. Ecce concípies in útero, et páries fílium, et vocábis nomen ejus Jesum. Hic erit magnus, et Fílius Altíssimi vocábitur, et dabit illi Dóminus Deus sedem David patris ejus: et regnábit in domo Jacob in ætérnum, et regni ejus non erit finis. Dixit autem María ad ángelum: Quómodo fiet istud, quóniam virum non cognósco? Et respóndens ángelus dixit ei: Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi. Ideóque et quod nascétur ex te sanctum, vocábitur Fílius Dei. Et ecce Elísabeth cognáta tua, et ipsa concépit fílium in senectúte sua: et hic mensis sextus est illi, quæ vocátur stérilis: quia non erit impossíbile apud Deum omne verbum. Dixit autem María: Ecce ancílla Dómini: fiat mihi secúndum verbum tuum.",
+  "new": "In illo témpore: Missus est ángelus Gábriel a Deo in civitátem Galilǽæ, cui nomen Názareth, ad vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen vírginis María. Et ingréssus ángelus ad eam, dixit: Ave grátia plena: Dóminus tecum: benedícta tu in muliéribus. Quæ cum audísset, turbáta est in sermóne ejus, et cogitábat qualis esset ista salutátio. Et ait ángelus ei: Ne tímeas María, invenísti enim grátiam apud Deum: Ecce concípies in útero, et páries fílium, et vocábis nomen ejus Jesum. Hic erit magnus, et Fílius Altíssimi vocábitur, et dabit illi Dóminus Deus sedem David patris ejus: et regnábit in domo Jacob in ætérnum, et regni ejus non erit finis. Dixit autem María ad ángelum: Quómodo fiet istud, quóniam virum non cognósco? Et respóndens ángelus, dixit ei: Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi. Ideóque et quod nascétur ex te sanctum, vocábitur Fílius Dei. Et ecce Elísabeth cognáta tua, et ipsa concépit fílium in senectúte sua: et hic mensis sextus est illi, quæ vocátur stérilis: quia non erit impossíbile apud Deum omne verbum. Dixit autem María: Ecce ancílla Dómini, fiat mihi secúndum verbum tuum.",
+  "src": "M39 pdf 240 (p. 402)",
+  "why": "words and punctuation as printed (checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0325",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Locútus est Dóminus ad Achaz, dicens: Pete tibi signum a Dómino Deo tuo, in profúndum inférni, sive in excélsum supra. Et dixit Achaz: Non petam, et non tentábo Dóminum. Et dixit: Audíte ergo domus David: Numquid parum vobis est moléstos esse homínibus, quia molésti estis et Deo meo? Propter hoc dabit Dóminus ipse vobis signum. Ecce virgo concípiet, et páriet fílium, et vocábitur nomen ejus Emmánuel. Butýrum et mei cómedet, ut sciat reprobáre malum, et elígere bonum.",
+  "new": "In diébus illis: Locútus est Dóminus ad Achaz, dicens: Pete tibi signum a Dómino Deo tuo in profúndum inférni, sive in excélsum supra. Et dixit Achaz: Non petam, et non tentábo Dóminum. Et dixit: Audíte ergo domus David: Numquid parum vobis est, moléstos esse homínibus, quia molésti estis et Deo meo? Propter hoc dabit Dóminus ipse vobis signum. Ecce virgo concípiet, et páriet fílium, et vocábitur nomen ejus Emmánuel. Butýrum et mel cómedet, ut sciat reprobáre malum, et elígere bonum.",
+  "src": "M39 pdf 240 (p. 402)",
+  "why": "words and punctuation as printed (checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0325",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Missus est Ángelus Gábriel a Deo in civitátem Galilǽæ, cui nomen Názareth, ad vírginem desponsátam viro, cui nomen erat Joseph, de domo David: et nomen vírginis María. Et ingréssus ángelus ad eam dixit: Ave grátia plena: Dóminus tecum: benedícta tu in muliéribus. Quæ cum audísset, turbáta est in sermóne ejus, et cogitábat qualis esset ista salutátio. Et ait ángelus ei: Ne tímeas María: invenísti enim grátiam apud Deum. Ecce concípies in útero, et páries fílium, et vocábis nomen ejus Jesum. Hic erit magnus, et Fílius Altíssimi vocábitur, et dabit illi Dóminus Deus sedem David patris ejus: et regnábit in domo Jacob in ætérnum, et regni ejus non erit finis. Dixit autem María ad ángelum: Quómodo fiet istud, quóniam virum non cognósco? Et respóndens ángelus dixit ei: Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi. Ideóque et quod nascétur ex te sanctum, vocábitur Fílius Dei. Et ecce Elísabeth cognáta tua, et ipsa concépit fílium in senectúte sua: et hic mensis sextus est illi, quæ vocátur stérilis: quia non erit impossíbile apud Deum omne verbum. Dixit autem María: Ecce ancílla Dómini: fiat mihi secúndum verbum tuum.",
+  "new": "In illo témpore: Missus est Ángelus Gábriel a Deo in civitátem Galilǽæ, cui nomen Názareth, ad vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen vírginis María. Et ingréssus ángelus ad eam, dixit: Ave grátia plena: Dóminus tecum: benedícta tu in muliéribus. Quæ cum audísset, turbáta est in sermóne ejus, et cogitábat qualis esset ista salutátio. Et ait ángelus ei: Ne tímeas María, invenísti enim grátiam apud Deum: Ecce concípies in útero, et páries fílium, et vocábis nomen ejus Jesum. Hic erit magnus, et Fílius Altíssimi vocábitur, et dabit illi Dóminus Deus sedem David patris ejus: et regnábit in domo Jacob in ætérnum, et regni ejus non erit finis. Dixit autem María ad ángelum: Quómodo fiet istud, quóniam virum non cognósco? Et respóndens ángelus, dixit ei: Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi. Ideóque et quod nascétur ex te sanctum, vocábitur Fílius Dei. Et ecce Elísabeth cognáta tua, et ipsa concépit fílium in senectúte sua: et hic mensis sextus est illi, quæ vocátur stérilis: quia non erit impossíbile apud Deum omne verbum. Dixit autem María: Ecce ancílla Dómini, fiat mihi secúndum verbum tuum.",
+  "src": "M39 pdf 241 (p. 404)",
+  "why": "words and punctuation as printed (checked on the scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S0327",
+   "or",
+   0
+  ],
+  "old": "Omnípotens sempitérne Deus, qui, ad cultum sacrárum imáginum asseréndum, beátum Ioánnem cœlésti doctrína et admirábili spíritus fortitúdine imbuísti: concéde nobis eius intercessióne et exémplo; ut, quorum cólimus imagines, virtútes imitémur et patrocínia sentiámus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Omnípotens sempitérne Deus, qui ad cultum sacrárum imáginum asseréndum, beátum Ioánnem cælésti doctrína, et admirábili spíritus fortitúdine imbuísti: concéde nobis eius intercessióne et exémplo; ut quorum cólimus imagines, virtútes imitémur et patrocínia sentiámus: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 pdf 241 (p. 404)",
+  "why": "words and punctuation as printed (checked on the scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S0327",
+   "se",
+   0
+  ],
+  "old": "Ut, quæ tibi, Dómine, offérimus, dona tuo sint digna conspéctu: beáti Ioánnis et Sanctórum, quos eius ópera expósitos in templis cólimus, pia suffragátio conspíret. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Ut, quæ tibi, Dómine, offérimus dona tuo sint digna conspéctu: beáti Ioánnis et Sanctórum, quos eius ópera expósitos in templis cólimus, pia suffragátio conspíret. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 pdf 242 (p. 406)",
+  "why": "words and punctuation as printed (checked on the scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S0327",
+   "pc",
+   0
+  ],
+  "old": "Sumpta nos, quǽsumus, Dómine, dona cœléstibus armis tueántur: et beáti Ioánnis patrocínia circúmdent Sanctórum unánimi suffrágio cumuláta; quorum imágines evícit in Ecclésia esse venerándas. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Sumpta nos quǽsumus Dómine, dona cæléstibus armis tueántur: et beáti Ioánnis patrocínia circúmdent Sanctórum unánimi suffrágio cumuláta; quorum imágines evícit in Ecclésia esse venerándas. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 pdf 242 (p. 406)",
+  "why": "words and punctuation as printed (checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0327",
+   0,
+   "la"
+  ],
+  "old": "Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum: honestávit illum in labóribus, et complévit labóres illíus. In fraude circumveniéntium illum áffuit illi, et honéstum fecit illum. Custodívit illum ab inimícis, et a seductóribus tutávit illum: et certámen forte dedit illi ut vínceret, et sciret quóniam ómnium poténtior est sapiéntia. Hæc vénditum justum non derelíquit, sed a peccatóribus liberávit eum: descendítque cum illo in fóveam, et in vínculis non derelíquit illum, donec afférret illi sceptrum regni, et poténtiam advérsus eos, qui eum deprimébant: et mendáces osténdit, qui maculavérunt illum, et dedit illi claritátem ætérnam. Hæc pópulum justum, et semen sine queréla liberávit a natiónibus, quæ illum deprimébant. Intrávit in ánimam servi Dei, et stetit contra reges horréndos in porténtis et signis. Et réddidit justis mercédem labórum suórum.",
+  "new": "Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum: honestávit illum in labóribus, et complévit labóres illíus. In fraude circumveniéntium illum áffuit illi, et honéstum fecit illum. Custodívit illum ab inimícis, et a seductóribus tutávit illum, et certámen forte dedit illi ut vínceret, et sciret quóniam ómnium poténtior est sapiéntia. Hæc vénditum justum non derelíquit, sed a peccatóribus liberávit eum: descendítque cum illo in fóveam, et in vínculis non derelíquit illum, donec afférret illi sceptrum regni, et poténtiam advérsus eos, qui eum deprimébant: et mendáces osténdit, qui maculavérunt illum, et dedit illi claritátem ætérnam. Hæc pópulum justum, et semen sine queréla liberávit a natiónibus, quæ illum deprimébant. Intrávit in ánimam servi Dei, et stetit contra reges horréndos in porténtis et signis. Et réddidit justis mercédem labórum suórum.",
+  "src": "M39 pdf 241 (p. 404)",
+  "why": "words and punctuation as printed (checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0327",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Factum est et in álio sábbato, ut intráret Jesus in synagógam, et docéret. Et erat ibi homo, et manus ejus dextra erat árida. Observábant autem scribæ, et Pharisǽi si in sábbato curáret, ut invenírent unde accusárent eum. Ipse vero sciébat cogitatiónes eórum: et ait hómini, qui habébat manum áridam: Surge, et sta in médium. Et surgens stetit. Ait autem ad illos Jesus: Intérrogo vos si licet sábbatis benefácere, an male: ánimam salvam fácere, an pérdere? Et circumspéctis ómnibus dixit hómini: Exténde manum tuam. Et exténdit: et restitúta est manus ejus. Ipsi autem repléti sunt insipiéntia, et colloquebántur ad ínvicem, quidnam fácerent Jesu.",
+  "new": "In illo témpore: Factum est et in álio sábbato, ut intráret Jesus in synagógam, et docéret. Et erat ibi homo, et manus ejus dextra erat árida. Observábant autem scribæ et Pharisǽi, si in sábbato curáret, ut invenírent unde accusárent eum. Ipse vero sciébat cogitatiónes eórum: et ait hómini, qui habébat manum áridam: Surge, et sta in médium. Et surgens stetit. Ait autem ad illos Jesus: Intérrogo vos si licet sábbatis benefácere, an male: ánimam salvam fácere, an pérdere? Et circumspéctis ómnibus dixit hómini: Exténde manum tuam. Et exténdit: et restitúta est manus ejus. Ipsi autem repléti sunt insipiéntia, et colloquebántur ad ínvicem, quidnam fácerent Jesu.",
+  "src": "M39 pdf 241 (p. 404)",
+  "why": "words and punctuation as printed (checked on the scan)"
  }
 ]

@@ -2,7 +2,7 @@ import json,sys,re,os
 from load import *
 import eng, crop
 from eng import stream, where
-O=load('data/orations.js'); R=load('data/readings33.js'); D=load('data/masses.js'); M=D['masses']
+O=load('data/orations.js'); MEM=load('data/memoriae.js'); R=load('data/readings33.js'); D=load('data/masses.js'); M=D['masses']
 ACC=json.load(open(ROOT+'/tools/orat39/accdict.json'))
 HINT=json.load(open('/tmp/A3/hints.json')) if os.path.exists('/tmp/A3/hints.json') else {}
 def fields(key):
@@ -10,6 +10,11 @@ def fields(key):
     o=O.get(key,{})
     for p in ('or','se','pc'):
         if p in o: yield ('%s.%s'%(key,p), [key,p,0], o[p][0], 'or')
+    m=M[key]; md='%02d%02d'%(m['month']+1,m['day']) if 'month' in m else None
+    for mk,mv in MEM.items():
+        if md and mv.get('md')==md:
+            for p in ('or','se','pc'):
+                if p in mv: yield ('%s.M[%s].%s'%(key,mk,p), ['MEM',mk,p,0], mv[p][0], 'or')
     for n,x in enumerate(R.get(key) or []):
         yield ('%s.r%d'%(key,n), [key,n,'la'], x.get('la',''), 'rd')
 def analyse(key):

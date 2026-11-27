@@ -1,0 +1,6 @@
+# ---- S0910 BB. Alphonsus Navarrete et Soc. (d.): M39 1 June, pp. 457-459 (pdf 267-268)
+P('S0910','r0',[0],'M39 p. 458 (pdf 268)',why='as printed: "meliórem, et manéntem"')
+P('S0910','r1',[0,1,2,3,5,6],'M39 p. 458 (pdf 268)',why='as printed: "super Montem olivéti" (sic); "quando hæc erunt? et quod"; "meo, dicéntes"; "Vidéte ne turbémini. Opórtet"')
+SUB('data/masses.js',['masses','S0910','title'],[('S. Alphonsi','BB. Alphonsi')],'M39 p. 457 (pdf 267)','the Missal: "BB. ALPHONSI NAVARRETE Ord. Præd. et Sociorum Martyrum (d.)" (Beati in 1939)')
+SUB('data/masses.js',['masses','S0910','en'],[('S. Alphonsi','BB. Alphonsi')],'M39 p. 457 (pdf 267)','as the Latin title')
+SUB('data/masses.js',['masses','S0910','name_en'],[('St. Alphonsus','Bl. Alphonsus')],'M39 p. 457 (pdf 267)','Beati in the 1939 Missal')

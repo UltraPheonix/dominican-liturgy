@@ -1,0 +1,2 @@
+# ---- S0726 St Anne p. 506-507 (pdf 292): Officium Gaudeamus, Comm. nec Virg. nec Mart. p. 36* (pdf 386-387)
+SUB('data/readings33.js',['S0726',0,'la'],[('quem qui ínvenit homo','quem qui invénit homo'),('secus littus sedéntes','secus litus sedéntes'),('sǽculi: exíbunt ángeli','sǽculi: Exíbunt Angeli'),('ignis: ibi erit','ignis: Ibi erit')],'M39 p. 38* (pdf 387)','as printed ("invénit"; "litus"; ": Exíbunt Angeli"; ": Ibi erit")')

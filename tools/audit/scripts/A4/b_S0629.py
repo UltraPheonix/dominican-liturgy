@@ -1,0 +1,6 @@
+# ---- S0629 SS. Peter & Paul pp. 479-481 (pdf 278-279); orations came from DO
+SUB('data/orations.js',['S0629','or',0],[('sumpsit exórdium. Per Dóminum','sumpsit exórdium: Per Dóminum')],'M39 p. 479 (pdf 278)','as printed ("exórdium : Per Dóminum")')
+SUB('data/orations.js',['S0629','se',0],[('offérimus, apostólica prosequátur orátio: per quam nos expiári tríbuas et deféndi.','offérimus, Apostólica prosequátur orátio, per quam nos expiári tríbuas, et deféndi.')],'M39 p. 481 (pdf 279)','as printed ("Apostólica prosequátur orátio, per quam nos expiári tríbuas, et deféndi")')
+SUB('data/orations.js',['S0629','pc',0],[('Quos cœlésti, Dómine, aliménto satiásti: apostólicis','Quos cælésti, Dómine, aliménto satiásti; Apostólicis'),('adversitáte custódi. Per Dóminum','adversitáte custódi: Per Dóminum')],'M39 p. 481 (pdf 279)','as printed ("cælésti"; "satiásti; Apostólicis"; "custódi : Per Dóminum")')
+P('S0629','r0',[0,1,2,3,4,5,6,7,8],'M39 p. 480 (pdf 279)',why='as printed: ": Et custódes"; "Angelus" (x5 with capital); "ástitit : et"; ": Percussóque"; ": Existimábat"')
+P('S0629','r1',[0,1,2,3,4,5],'M39 pp. 480-481 (pdf 279)',why='as printed: "Vos autem quem"; "Petrus, dixit"; "fílius Dei vivi"; "caro, et sanguis"; "ecclésiam meam"; ": Et quodcúmque"')

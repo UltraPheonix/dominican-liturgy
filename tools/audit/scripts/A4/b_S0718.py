@@ -1,0 +1,10 @@
+# ---- S0718 St Camillus p. 498 (pdf 288): Officium Os justi, Comm. Conf. non Pont. p. 23* (pdf 379-380)
+P('S0718','r0',[0,2,3],'M39 pp. 23*-24* (pdf 379-380)',why='capitals after ":" as printed ("Qui pótuit", "Ideo", "Ecclésia")')
+P('S0718','r1',[1,2,3],'M39 p. 24* (pdf 380)',manual={3:'Amen'},why='punctuation and capital as printed ("suum, quando"; "vénerit, et pulsáverit"; ": Amen dico")')
+# ---- S0719 St Vincent de Paul pp. 498-500 (pdf 288-289); orations came from DO
+SUB('data/orations.js',['S0719','or',0],[('Deus, qui, ad evangelizándum paupéribus et ecclesiástici órdinis decórem promovéndum, beátum','Deus, qui ad evangelizándum paupéribus, et ecclesiástici órdinis decórem promovéndum beátum'),('roborásti: præsta, quǽsumus; ut, cuius pia mérita venerámur, virtútum quoque instruámur exémplis. Per Dóminum','roborásti: præsta quǽsumus, ut cuius pia mérita venerámur; virtútum quoque instruámur exémplis: Per Dóminum')],'M39 pp. 498-499 (pdf 288)','punctuation as printed')
+RAW('data/orations.js',['S0719','se',0],F.A.O['S0719']['se'][0],F.A.O['S0718']['se'][0],'M39 p. 499 (pdf 288)','as printed: "Præsta nobis, quǽsumus omnípotens Deus, ut nostræ humilitátis oblátio, et pro tuórum …" (the same text as S0718)')
+RAW('data/orations.js',['S0719','pc',0],F.A.O['S0719']['pc'][0],F.A.O['S0718']['pc'][0].replace('Camíllo','Vincéntio'),'M39 p. 500 (pdf 289)','as printed: "Quǽsumus omnípotens Deus : ut qui cæléstia aliménta percépimus; intercedénte beáto Vincéntio Confessóre tuo, …" (the site had the Common\'s "beáto N.")')
+P('S0719','r0',[1,2,3,4,5,6,7,8],'M39 p. 499 (pdf 288)',manual={8:': In Christo Jesu Dómino nostro'},why='capitals as printed (": Nos", ": Vos", ": Maledícimur", ": Persecutiónem", ": Blasphemámur", ": Tamquam", "Angelis") and the missing ending ": In Christo Jesu Dómino nostro"')
+EN('S0719',0,[('I admonish you as my dearest children.','I admonish you as my dearest children, in Christ Jesus our Lord.')],'M39 p. 499 (pdf 288)','English ending to match the Latin as printed')
+P('S0719','r1',[0,1,2,3,4,5,6,7],'M39 p. 499 (pdf 288)',why='punctuation and capitals as printed')

@@ -14,8 +14,10 @@ def win_for(k):
     o=A.O.get(k,{}); m=A.M.get(k,{})
     pg=pages_from(o.get('src','')) or pages_from('p. '+str(m.get('page','')))
     if pg and pg[0] in P2L:
-        l0=P2L[pg[0]]; l1=P2L.get(pg[1],l0); return (l0-30,l1+420)
-    return None
+        l0=P2L[pg[0]]; l1=P2L.get(pg[1],l0); w=(l0-30,l1+420)
+    else: w=None
+    if k in A.OWIN: l0=P2L[A.OWIN[k]]; w=(l0-200,l0+600)
+    return w
 def kept(k,field):
     fn,path,s=target(k,field); win=win_for(k)
     body=s
@@ -39,7 +41,9 @@ def make(k,field,accept,manual=None,src='',why=''):
             else: edits.append((sp[i1-1][1],sp[i1-1][1],rep))
             continue
         if t=='case':
-            st0=sp[i1][0]; ch=s[st0]; edits.append((st0,st0+1,ch.upper() if b[0].isupper() else ch.lower())); continue
+            st0=sp[i1][0]; ch=s[st0]; import unicodedata as _u
+            up=''.join(c for c in _u.normalize('NFD',ch.upper()) if _u.category(c)!='Mn') if ch not in 'ǽ' else 'Æ'
+            edits.append((st0,st0+1,up if b[0].isupper() else ch.lower())); continue
         assert all(x in PUN for x in mp) and all(x in PUN for x in a.split()), (k,field,n,a,b)
         newp=''.join(mp)
         if t=='insert':

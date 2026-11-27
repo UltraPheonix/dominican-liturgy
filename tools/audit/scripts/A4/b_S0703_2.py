@@ -1,0 +1,4 @@
+# ---- S0703_2 St Leo II p. 486 (pdf 282): Officium Sacerdotes, Comm. Conf. Pont. p. 17* (pdf 376-377), Gospel Homo peregre from Statuit p. 19*
+SUB('data/readings33.js',['S0703_2',0,'la'],[('deínde pro constítuet eum. Pópuli: hoc enim fecit semel, seípsum offeréndo.','deínde pro pópuli: Hoc enim fecit semel, seípsum offeréndo, Jesus Christus Dóminus noster.')],'M39 p. 17* (pdf 376)','text garbled at a line join ("pro constítuet eum. Pópuli"); the Missal reads "deínde pro pópuli : Hoc enim fecit semel, seípsum offeréndo, Jesus Christus Dóminus noster."')
+EN('S0703_2',0,[('for this he did once, in offering himself.','for this he did once, in offering himself, Jesus Christ our Lord.')],'M39 p. 17* (pdf 376)','English ending to match the Latin as printed')
+P('S0703_2','r1',[0,1,2,3,5,6],'M39 pp. 19*-20* (pdf 377-378)',manual={6:'constítuam,'},why='punctuation as printed (the same Gospel as S0606)')

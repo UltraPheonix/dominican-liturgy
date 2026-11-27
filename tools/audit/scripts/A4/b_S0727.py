@@ -1,0 +1,5 @@
+# ---- S0727 BB. Joseph, Melchior & companions: 1954 leaf "Die 27 Julii" (pdf 367 R - 368 L)
+SRC='M39, 1954 leaf (Imprimi potest 19 Jan. 1954), "Die 27 Julii" (pdf 367-368)'
+RAW('data/masses.js',['masses','S0727','parts','of'],F.A.M['S0727']['parts']['of'],[{'id':5206}],SRC,'the leaf prints "Offertorium Psalm. 123 Anima nostra sicut passer erépta est"; the site had 5269 Confitebuntur (1959 Common No. 7). 5206 Anima nostra (G50 p. 24*) is the id already used for this text in G491 and S0710')
+RAW('data/masses.js',['masses','S0727','parts','co'],F.A.M['S0727']['parts']['co'],[{'id':6440}],SRC,'the leaf prints "Communio Psalm. 78 Posuérunt mortália servórum tuórum"; the site had 6576 Laetabitur justus. 6440 Posuerunt (G50 p. 25*) is the id already used for this text in G491 and S0711')
+RAW('data/masses.js',['masses','S0727','readings'],F.A.M['S0727']['readings'],[{'type':'Lesson','ref':'Sapientia 10: 17-20'},{'type':'Gospel','ref':'Lucas 21: 9-19'}],SRC,'the leaf prints "Léctio Libri Sapiéntiæ. c. 10 Réddidit Deus justis mercédem labórum suórum …" (Sap 10:17-20), not the Roman Epistle 2 Tim 2-3; the Gospel Luc 21 "Cum audiéritis prœlia" is right')
