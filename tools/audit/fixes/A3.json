@@ -1635,5 +1635,165 @@
   "new": "The blessing of the Lord is upon the head of the just. Therefore did the Lord give him an inheritance, and divided him his portion among the twelve tribes: and he found grace in the sight of all flesh. And he magnified him in the fear of his enemies, and by his words he made prodigies to cease. He glorified him in the sight of kings, and gave him commandments in the sight of his people, and showed him his glory. He sanctified him in his faith and meekness, and chose him out of all flesh. And he gave him commandments before his face, and a law of life and instruction: and he exalted him. He made an everlasting covenant with him, and girded him about with a girdle of justice: and the Lord put on him a crown of glory. (AI translation)",
   "src": "M39 p. 320 (pdf 199)",
   "why": "The old English followed the longer Roman Lesson (and began 'He acknowledged him…'); the 1959 English is not available here, so, per Joseph's ruling of 27 Nov 22:05 (RULINGS.md, Missing English), an AI translation of the Missal's Latin, labelled. Replace with the 1959 text if dm.pdf has this Lesson."
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1121"
+  ],
+  "op": "add",
+  "old": null,
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Ecclesiasticus 24: 14-16",
+    "title": "Léctio libri Sapiéntiæ.",
+    "title_en": "Lesson from the Book of Wisdom.",
+    "la": "Ab inítio, et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.",
+    "en": "From the beginning, and before the world, was I created, and unto the world to come I shall not cease to be, and in the holy dwelling place I have ministered before him. And so was I established in Sion, and in the holy city likewise I rested, and my power was in Jerusalem. And I took root in an honourable people, and in the portion of my God his inheritance, and my abode is in the full assembly of saints.",
+    "p33": 692
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 11: 27-28",
+    "title": "Sequéntia sancti Evangélii secúndum Lucam.",
+    "title_en": "Continuation of the holy Gospel according to Luke.",
+    "la": "In illo témpore: Loquénte Jesu ad turbas, extóllens vocem quædam múlier de turba dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. At ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud.",
+    "en": "At that time: As Jesus was speaking to the multitudes, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck. But he said: Yea rather, blessed are they who hear the word of God, and keep it. (AI translation)",
+    "p33": 693
+   }
+  ],
+  "src": "M39 p. 1* (pdf 368), In festis B. Mariae Virginis: Lectio Eccli. 24 'Ab initio', Evangelium Lc. 11 'Loquente Jesu'",
+  "why": "readings missing (no S1121 key); the Mass takes the Common of BVM readings (M39 p. 628). Latin checked on the scan p. 1* ('Ab initio', no comma after 'de turba'). Lesson English: Douay-Rheims, matches the Latin. Gospel English: the Douay opening ('as he spoke these things') does not match the Missal's 'Loquente Jesu ad turbas'; no 1959 reading English in the repo, so AI translation of the Missal's Latin, labelled (RULINGS 27 Nov 22:05)."
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1222"
+  ],
+  "op": "add",
+  "old": null,
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Ecclesiasticus 24: 14-16",
+    "title": "Léctio libri Sapiéntiæ.",
+    "title_en": "Lesson from the Book of Wisdom.",
+    "la": "Ab inítio, et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.",
+    "en": "From the beginning, and before the world, was I created, and unto the world to come I shall not cease to be, and in the holy dwelling place I have ministered before him. And so was I established in Sion, and in the holy city likewise I rested, and my power was in Jerusalem. And I took root in an honourable people, and in the portion of my God his inheritance, and my abode is in the full assembly of saints.",
+    "p33": 692
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 11: 27-28",
+    "title": "Sequéntia sancti Evangélii secúndum Lucam.",
+    "title_en": "Continuation of the holy Gospel according to Luke.",
+    "la": "In illo témpore: Loquénte Jesu ad turbas, extóllens vocem quædam múlier de turba dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. At ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud.",
+    "en": "At that time: As Jesus was speaking to the multitudes, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck. But he said: Yea rather, blessed are they who hear the word of God, and keep it. (AI translation)",
+    "p33": 693
+   }
+  ],
+  "src": "M39 p. 1* (pdf 368), In festis B. Mariae Virginis: Lectio Eccli. 24 'Ab initio', Evangelium Lc. 11 'Loquente Jesu'",
+  "why": "readings missing (no S1222 key); the Mass takes the Common of BVM readings (M39 p. 339-340). Latin checked on the scan p. 1* ('Ab initio', no comma after 'de turba'). Lesson English: Douay-Rheims, matches the Latin. Gospel English: the Douay opening ('as he spoke these things') does not match the Missal's 'Loquente Jesu ad turbas'; no 1959 reading English in the repo, so AI translation of the Missal's Latin, labelled (RULINGS 27 Nov 22:05)."
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S1206",
+   "pc",
+   1
+  ],
+  "old": "May the sacrifice in which we have shared on the feast of Your holy Bishop Nicholas guard us with its lasting protection. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.",
+  "new": "May the sacrifice in which we have shared on the feast of Your holy Bishop Nicholas strengthen us with its lasting protection. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.",
+  "src": "M39 p. 329 (pdf 203)",
+  "why": "English followed the old Latin \"conservent\"; the Missal prints \"confirment\" (Latin already fixed): verb only"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1210",
+   0,
+   "ref"
+  ],
+  "old": "Ecclesiasticus 24: 11-20",
+  "new": "Ecclesiasticus 24: 11-13, 15-20",
+  "src": "M39 pp. 334-335 (pdf 206)",
+  "why": "the Missal prints vv. 11 (\"In omnibus requiem\") -13 and 15-20; it omits v. 14 \"Ab initio\" (text already trimmed to match)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0113",
+   "title"
+  ],
+  "old": "13 Ian. — Commemoratio Baptismatis D. N. Iesu Christi",
+  "new": "13 Ian. — In Octava Epiphaniæ",
+  "src": "M39 p. 38 (pdf 53)",
+  "why": "the 1939 Missal has no \"Commemoratio Baptismatis\" (a 1960 title); p. 38 heads this Mass \"In Octava Epiphaniae\" (Kalendarium 13 Jan.: Octava Epiphaniae)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0113",
+   "en"
+  ],
+  "old": "Jan 13 — Commemoration of the Baptism of Our Lord",
+  "new": "Jan 13 — Octave of the Epiphany",
+  "src": "M39 p. 38 (pdf 53)",
+  "why": "English title to match the corrected Latin title"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0113",
+   "name_en"
+  ],
+  "old": "Baptism of Our Lord",
+  "new": "Octave of the Epiphany",
+  "src": "M39 p. 38 (pdf 53)",
+  "why": "as the title"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0114",
+   0,
+   "la"
+  ],
+  "old": "Caríssime: Testíficor coram Deo, et Jesu Christo, qui judicatúrus est vivos et mórtuos, per advéntum ipsíus, et regnum ejus: prǽdica verbum, insta opportúne, importúne: árgue, óbsecra, íncrepa in omni patiéntia, et doctrína. Erit enim tempus, cum sanam doctrínam non sustinébunt, sed ad sua desidéria coacervábunt sibi magístros, pruriéntes áuribus, et a veritáte quidem audítum avértent, ad fábulas autem converténtur. Tu vero vígila, in ómnibus labóra, opus fac evangelístæ, ministérium tuum imple. Sóbrius esto. Ego enim jam delíbor, et tempus resolutiónis meæ instat. Bonum certámen certávi, cursum consummávi, fidem servávi. In réliquo repósita est mihi coróna justítiæ, quam reddet mihi Dóminus in illa die, justus judex: non solum autem mihi, sed et iis, qui díligunt advéntum ejus.",
+  "new": "Caríssime: Testíficor coram Deo, et Jesu Christo, qui judicatúrus est vivos, et mórtuos, per advéntum ipsíus, et regnum ejus: prǽdica verbum, insta opportúne, importúne: árgue, óbsecra, íncrepa in omni patiéntia, et doctrína. Erit enim tempus, cum sanam doctrínam non sustinébunt, sed ad sua desidéria coacervábunt sibi magístros, pruriéntes áuribus, et a veritáte quidem audítum avértent, ad fábulas autem converténtur. Tu vero vígila, in ómnibus labóra, opus fac evangelístæ, ministérium tuum imple. Sóbrius esto. Ego enim jam delíbor, et tempus resolutiónis meæ instat. Bonum certámen certávi, cursum consummávi, fidem servávi. In réliquo repósita est mihi coróna justítiæ, quam reddet mihi Dóminus in illa die justus judex: non solum autem mihi, sed et iis, qui díligunt advéntum ejus.",
+  "src": "M39 pp. 20*-21* (pdf 378), Commune Doctorum",
+  "why": "punctuation as printed (Epistle 'vivos,' 'die justus'; Gospel 'posita. Neque', 'omnibus,', 'putare,', 'legem,', 'vobis:'): same Common text as S1124, checked on the scan"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0114",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Ad níhilum valet ultra, nisi ut mittátur foras, et conculcétur ab homínibus. Vos estis lux mundi. Non potest cívitas abscóndi supra montem pósita: neque accéndunt lucérnam, et ponunt eam sub módio, sed super candelábrum, ut lúceat ómnibus qui in domo sunt. Sic lúceat lux vestra coram homínibus: ut vídeant ópera vestra bona, et gloríficent Patrem vestrum, qui in cælis est. Nolíte putáre quóniam veni sólvere legem aut prophétas: non veni sólvere, sed adimplére. Amen quippe dico vobis, donec tránseat cælum et terra, jota unum, aut unus apex non præteríbit a lege, donec ómnia fiant. Qui ergo sólverit unum de mandátis istis mínimis, et docúerit sic hómines, mínimus vocábitur in regno cælórum: qui autem fécerit et docúerit, hic magnus vocábitur in regno cælórum.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Ad níhilum valet ultra, nisi ut mittátur foras, et conculcétur ab homínibus. Vos estis lux mundi. Non potest cívitas abscóndi supra montem pósita. Neque accéndunt lucérnam, et ponunt eam sub módio, sed super candelábrum, ut lúceat ómnibus, qui in domo sunt. Sic lúceat lux vestra coram homínibus: ut vídeant ópera vestra bona, et gloríficent Patrem vestrum, qui in cælis est. Nolíte putáre, quóniam veni sólvere legem, aut prophétas: non veni sólvere, sed adimplére. Amen quippe dico vobis: donec tránseat cælum et terra, jota unum, aut unus apex non præteríbit a lege, donec ómnia fiant. Qui ergo sólverit unum de mandátis istis mínimis, et docúerit sic hómines, mínimus vocábitur in regno cælórum: qui autem fécerit et docúerit, hic magnus vocábitur in regno cælórum.",
+  "src": "M39 pp. 20*-21* (pdf 378), Commune Doctorum",
+  "why": "punctuation as printed (Epistle 'vivos,' 'die justus'; Gospel 'posita. Neque', 'omnibus,', 'putare,', 'legem,', 'vobis:'): same Common text as S1124, checked on the scan"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0114",
+   "season",
+   "lent",
+   "tr",
+   0,
+   "id"
+  ],
+  "old": 7125,
+  "new": 7081,
+  "src": "M39 p. 20* (pdf 378)",
+  "why": "the Commune Doctorum (Officium In medio, p. 20*, assigned on p. 352 'ut in Comm. Doct., pag. 20*') prints 'Infra Septuag. Tractus Eccli. 50 Quasi stella' (7081, as parts.tr and S1124/S1204); 7125 'Beatus vir' is the Conf. non Pont. Tract (p. 22*)"
  }
 ]

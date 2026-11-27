@@ -16,6 +16,12 @@
 - Introit Gaudeamus with a saint's name (M39 pp. 485, 502, 508, 36*; G50 p. 509 "cum nomine"): print the Missal's text with the name; use notated chant only where a Dominican book prints the melody with that name (never adapt it ourselves).
 - Coordinator's application of the rubric (no question needed): Dedication Secret "Extra ecclesiam dedicatam" (p. 3*) for S1109 and S1118; S1113 is dated by the Kalendarium (10 Nov), handled in the calendar step.
 
+## Answers 27 Nov 22:25 (Joseph)
+- G385 and G505 (Graduale-page copies of St Stephen and of the Commemoration of St Paul): keep them, and fix their reading references to the Missal.
+- S0529b and S0602b: switch the readings by season as their rubric says (Sancti tui p. 15* in Paschaltide; Salus autem p. 13* outside it).
+- S0904b: the readings of the Mass the Missal names (Gaudeamus, Common p. 30*), not the proper ones.
+- Dedication Secret for S1109 and S1118: the "extra ecclesiam dedicatam" form (p. 3*), confirmed.
+
 ## Saints' Masses
 - **28 Apr:** the Mass is B. Louis Grignion de Montfort, Os justi. St Paul of the Cross has only a Memoria in the 1939 Missal (pp. 420-421).
 - **C1s "Commune Apostolorum" (Joseph, 27 Nov 21:40):** drop it. The 1939 Missal has no such Mass; "only use the Missal".

@@ -7,9 +7,9 @@
    "la"
   ],
   "old": "Stabunt justi in magna constántia advérsus eos, qui se angustiavérunt, et qui abstulérunt labóres eórum. Vidéntes turbabúntur timóre horríbili, et mirabúntur in subitatióne insperátæ salútis, dicéntes intra se, pœniténtiam agéntes, et præ angústia spíritus geméntes: Hi sunt, quos habúimus aliquándo in derísum, et in similitúdinem impropérii. Nos insensáti, vitam illórum æstimabámus insániam, et finem illórum sine honóre: ecce quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est.",
-  "new": "Stabunt justi in magna constántia advérsus eos, qui se angustiavérunt, et qui abstulérunt labóres eórum. Vidéntes turbabúntur timóre horríbili, et mirabúntur in subitatióne insperátæ salútis, dicéntes intra se, pœniténtiam agéntes, et præ angústia spíritus geméntes: Hi sunt, quos habúimus aliquándo in derísum, et in similitúdinem impropérii. Nos insensáti vitam illórum æstimabámus insániam, et finem illórum sine honóre: ecce quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est.",
+  "new": "Stabunt justi in magna constántia advérsus eos, qui se angustiavérunt, et qui abstulérunt labóres eórum. Vidéntes turbabúntur timóre horríbili, et mirabúntur in subitatióne insperátæ salútis, dicéntes intra se, pœniténtiam agéntes, et præ angústia spíritus geméntes: Hi sunt, quos habúimus aliquándo in derísum, et in similitúdinem impropérii. Nos insensáti vitam illórum æstimabámus insániam, et finem illórum sine honóre: Ecce quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est.",
   "src": "M39 p. 446 (pdf 262)",
-  "why": "punctuation as printed"
+  "why": "punctuation as printed; then (session 3) as printed: \": Ecce quómodo\" (capital)"
  },
  {
   "file": "data/readings33.js",
@@ -19,9 +19,9 @@
    "la"
   ],
   "old": "In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis vera, et Pater meus agrícola est. Omnem pálmitem in me non feréntem fructum, tollet eum: et omnem, qui fert fructum, purgábit eum, ut fructum plus áfferat. Jam vos mundi estis propter sermónem, quem locútus sum vobis. Manéte in me, et ego in vobis. Sicut palmes non potest ferre fructum a semetípso, nisi mánserit in vite: sic nec vos, nisi in me manséritis. Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum, quia sine me nihil potéstis fácere. Si quis in me non mánserit, mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint, quodcúmque voluéritis petétis, et fiet vobis.",
-  "new": "In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis vera: et Pater meus agrícola est. Omnem pálmitem in me non feréntem fructum, tollet eum: et omnem, qui fert fructum, purgábit eum, ut fructum plus áfferat. Jam vos mundi estis propter sermónem, quem locútus sum vobis. Manéte in me: et ego in vobis. Sicut palmes non potest ferre fructum a semetípso, nisi mánserit in vite: sic nec vos, nisi in me manséritis. Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Si quis in me non mánserit: mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint: quodcúmque voluéritis petétis, et fiet vobis.",
-  "src": "M39 p. 446-447 (pdf 262)",
-  "why": "punctuation as printed"
+  "new": "In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis vera: et Pater meus agrícola est. Omnem pálmitem in me non feréntem fructum, tollet eum: et omnem, qui fert fructum, purgábit eum, ut fructum plus áfferat. Jam vos mundi estis propter sermónem, quem locútus sum vobis. Manéte in me: et ego in vobis. Sicut palmes non potest ferre fructum a semetípso, nisi mánserit in vite: sic nec vos, nisi in me manséritis. Ego sum vitis, vos pálmites: Qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Si quis in me non mánserit: mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint: quodcúmque voluéritis petétis, et fiet vobis.",
+  "src": "M39 p. 446-447 (pdf 262); M39 p. 446 (pdf 262)",
+  "why": "punctuation as printed; then (session 3) as printed: \": Qui manet\" (capital)"
  },
  {
   "file": "data/readings33.js",
@@ -43,9 +43,9 @@
    "la"
   ],
   "old": "In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Jesus autem dixit illis: Amen dico vobis, quod vos, qui secúti estis me, in regeneratióne cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis, qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros propter nomen meum, céntuplum accípiet, et vitam ætérnam possidébit.",
-  "new": "In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Jesus autem dixit illis: Amen dico vobis, quod vos, qui secúti estis me, in regeneratióne cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis, qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros propter nomen meum, céntuplum accípiet et vitam ætérnam possidébit.",
+  "new": "In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: Quid ergo erit nobis? Jesus autem dixit illis: Amen dico vobis, quod vos, qui secúti estis me, in regeneratióne cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis, qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros propter nomen meum, céntuplum accípiet et vitam ætérnam possidébit.",
   "src": "M39 p. 448 (pdf 263)",
-  "why": "punctuation as printed"
+  "why": "punctuation as printed; then (session 3) as printed: \": Quid ergo\" (capital)"
  },
  {
   "file": "data/readings33.js",
@@ -67,9 +67,9 @@
    "la"
   ],
   "old": "In illo témpore: Dixit Jesus discípulis suis: Cum persequéntur vos in civitáte ista, fúgite in áliam. Amen dico vobis, non consummábitis civitátes Israël, donec véniat Fílius hóminis. Non est discípulus super magístrum, nec servus super dóminum suum: súfficit discípulo ut sit sicut magíster ejus, et servo, sicut dóminus ejus. Si patremfamílias Beélzebub vocavérunt, quanto magis domésticos ejus? Ne ergo timuéritis eos. Nihil enim est opértum, quod non revelábitur: et occúltum, quod non sciétur. Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere: sed pótius timéte eum, qui potest et ánimam, et corpus pérdere in gehénnam.",
-  "new": "In illo témpore: Dixit Jesus discípulis suis: Cum persequéntur vos in civitáte ista, fúgite in áliam. Amen dico vobis, non consummábitis civitátes Israël, donec véniat Fílius hóminis. Non est discípulus super magístrum, nec servus super dóminum suum. Súfficit discípulo ut sit sicut magíster ejus: et servo, sicut dóminus ejus. Si patremfamílias Beélzebub vocavérunt, quanto magis domésticos ejus? Ne ergo timuéritis eos: Nihil enim est opértum, quod non revelábitur: et occúltum, quod non sciétur: Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere: sed pótius timéte eum, qui potest et ánimam, et corpus pérdere in gehénnam.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis: Cum persequéntur vos in civitáte ista, fúgite in áliam. Amen dico vobis, non consummábitis civitátes Israël, donec véniat Fílius hóminis. Non est discípulus super magístrum, nec servus super dóminum suum. Súfficit discípulo, ut sit sicut magíster ejus: et servo, sicut dóminus ejus. Si Patremfamílias Beélzebub vocavérunt: quanto magis domésticos ejus? Ne ergo timuéritis eos: Nihil enim est opértum, quod non revelábitur: et occúltum, quod non sciétur: Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere: Sed pótius timéte eum, qui potest et ánimam, et corpus pérdere in gehénnam.",
   "src": "M39 p. 450 (pdf 264)",
-  "why": "punctuation as printed"
+  "why": "punctuation as printed; then (session 3) as printed: \"discípulo, ut\"; \"Patremfamílias\" (capital); \"vocavérunt :\"; \": Sed pótius\""
  },
  {
   "file": "data/readings33.js",
@@ -532,6 +532,18 @@
   "file": "data/orations.js",
   "path": [
    "G494",
+   "or",
+   0
+  ],
+  "old": "Præsta, quǽsumus omnípotens Deus: ut família tua per viam salútis incédat; et beáti Ioánnis Præcursóris hortaménta sectándo, ad eum, quem prædíxit, secúra pervéniat: Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "new": "Præsta, quǽsumus omnípotens Deus: ut família tua per viam salútis incédat; et beáti Ioánnis Præcursóris hortaménta sectándo, ad eum, quem prædíxit, secúra pervéniat: Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 472 (pdf 275)",
+  "why": "printed \"Dóminum nostrum Jesum Christum Fílium tuum; qui tecum.\" Rubr. gen. XI.2 (M39 p. 52): \"si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\"; Joseph (27 Nov): follow the printed pointing \"Fílium tuum; qui tecum\" (';' = flexa, Proc. 1913 p. 405); the Missal prints no comma after \"Christum\""
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "G494",
    "se",
    0
   ],
@@ -551,6 +563,18 @@
   "new": "Beáti Ioánnis Baptístæ nos, Dómine, præclára comitétur orátio: et quem ventúrum esse prædíxit; poscat nobis fore placátum: Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
   "src": "M39 p. 473 (pdf 275)",
   "why": "punctuation as printed (\"orátio : et quem ventúrum esse prædíxit; poscat nobis fore placátum : Dóminum\"). Conclusion type \"qui tecum\" as printed (Rubr. gen. XI.2, p. 52); expansion in the site's standard form"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "G494",
+   "pc",
+   0
+  ],
+  "old": "Beáti Ioánnis Baptístæ nos, Dómine, præclára comitétur orátio: et quem ventúrum esse prædíxit; poscat nobis fore placátum: Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "new": "Beáti Ioánnis Baptístæ nos, Dómine, præclára comitétur orátio: et quem ventúrum esse prædíxit; poscat nobis fore placátum: Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 473 (pdf 275)",
+  "why": "printed \"Dóminum nostrum Jesum Christum Fílium tuum; qui tecum.\" Rubr. gen. XI.2 (M39 p. 52): \"si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\"; Joseph (27 Nov): follow the printed pointing \"Fílium tuum; qui tecum\" (';' = flexa, Proc. 1913 p. 405); the Missal prints no comma after \"Christum\""
  },
  {
   "file": "data/readings33.js",
@@ -604,6 +628,18 @@
   "file": "data/orations.js",
   "path": [
    "S0624",
+   "se",
+   0
+  ],
+  "old": "Tua, Dómine, munéribus altária cumulámus, illíus Nativitátem honóre débito celebrántes, qui Salvatórem mundi et cécinit adfutúrum, et adésse monstrávit: Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "new": "Tua, Dómine, munéribus altária cumulámus, illíus Nativitátem honóre débito celebrántes, qui Salvatórem mundi et cécinit adfutúrum, et adésse monstrávit: Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 475 (pdf 276)",
+  "why": "printed \"Dóminum nostrum Jesum Christum Fílium tuum; qui tecum.\" Rubr. gen. XI.2 (M39 p. 52): \"si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\"; Joseph (27 Nov): follow the printed pointing \"Fílium tuum; qui tecum\" (';' = flexa, Proc. 1913 p. 405); the Missal prints no comma after \"Christum\""
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S0624",
    "pc",
    0
   ],
@@ -611,6 +647,18 @@
   "new": "Sumat Ecclésia tua, Deus, beáti Ioánnis Baptístæ generatióne lætítiam; per quem suæ regeneratiónis cognóvit auctórem: Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
   "src": "M39 p. 475 (pdf 276)",
   "why": "as printed: \"lætítiam; per quem\"; \"auctórem : Dóminum\". Conclusion type \"qui tecum\" as printed (Rubr. gen. XI.2, p. 52); expansion in the site's standard form (see A4.md Q1)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S0624",
+   "pc",
+   0
+  ],
+  "old": "Sumat Ecclésia tua, Deus, beáti Ioánnis Baptístæ generatióne lætítiam; per quem suæ regeneratiónis cognóvit auctórem: Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "new": "Sumat Ecclésia tua, Deus, beáti Ioánnis Baptístæ generatióne lætítiam; per quem suæ regeneratiónis cognóvit auctórem: Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 475 (pdf 276)",
+  "why": "printed \"Dóminum nostrum Jesum Christum Fílium tuum; qui tecum.\" Rubr. gen. XI.2 (M39 p. 52): \"si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\"; Joseph (27 Nov): follow the printed pointing \"Fílium tuum; qui tecum\" (';' = flexa, Proc. 1913 p. 405); the Missal prints no comma after \"Christum\""
  },
  {
   "file": "data/readings33.js",
@@ -1842,18 +1890,6 @@
  {
   "file": "data/readings33.js",
   "path": [
-   "S0522",
-   1,
-   "la"
-  ],
-  "old": "In illo témpore: Dixit Jesus discípulis suis: Cum persequéntur vos in civitáte ista, fúgite in áliam. Amen dico vobis, non consummábitis civitátes Israël, donec véniat Fílius hóminis. Non est discípulus super magístrum, nec servus super dóminum suum. Súfficit discípulo ut sit sicut magíster ejus: et servo, sicut dóminus ejus. Si patremfamílias Beélzebub vocavérunt, quanto magis domésticos ejus? Ne ergo timuéritis eos: Nihil enim est opértum, quod non revelábitur: et occúltum, quod non sciétur: Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere: sed pótius timéte eum, qui potest et ánimam, et corpus pérdere in gehénnam.",
-  "new": "In illo témpore: Dixit Jesus discípulis suis: Cum persequéntur vos in civitáte ista, fúgite in áliam. Amen dico vobis, non consummábitis civitátes Israël, donec véniat Fílius hóminis. Non est discípulus super magístrum, nec servus super dóminum suum. Súfficit discípulo, ut sit sicut magíster ejus: et servo, sicut dóminus ejus. Si Patremfamílias Beélzebub vocavérunt: quanto magis domésticos ejus? Ne ergo timuéritis eos: Nihil enim est opértum, quod non revelábitur: et occúltum, quod non sciétur: Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere: Sed pótius timéte eum, qui potest et ánimam, et corpus pérdere in gehénnam.",
-  "src": "M39 p. 450 (pdf 264)",
-  "why": "as printed: \"discípulo, ut\"; \"Patremfamílias\" (capital); \"vocavérunt :\"; \": Sed pótius\""
- },
- {
-  "file": "data/readings33.js",
-  "path": [
    "S0525",
    1,
    "la"
@@ -1900,39 +1936,216 @@
   "why": "as printed (the same Gospel as S0714): \"pósita.\"; \"Neque\"; \"ómnibus, qui\"; \"putáre, quóniam\"; \"legem, aut\"; \"Non veni\"; \"dico vobis :\"; \"Qui autem\""
  },
  {
-  "file": "data/readings33.js",
+  "file": "data/masses.js",
+  "op": "add",
   "path": [
-   "S0518",
+   "masses",
+   "S0709",
+   "season",
+   "pasch"
+  ],
+  "old": null,
+  "new": {
+   "al": [
+    {
+     "id": 6183,
+     "m39": "p. 492"
+    },
+    {
+     "id": 5632,
+     "m39": "p. 492",
+     "v50": "G50 p. 211"
+    }
+   ]
+  },
+  "src": "M39 p. 492 (pdf 285)",
+  "why": "M39 p. 492 (pdf 285): \"Quando celebratur de SS. Joanne et sociis ex voto vel devotione per annum, Officium erit ut supra, excepto Credo.\" Temp. Pasch. Alleluia V. Repleti sumus; Alleluia V. In die resurrectionis; Temp. Ascens. secundum Alleluia V. Ascendens; two verses with four Alleluias in Paschaltide, Rubr. gen. XIII.1 (p. 53)"
+ },
+ {
+  "file": "data/masses.js",
+  "op": "add",
+  "path": [
+   "masses",
+   "S0709",
+   "season",
+   "asc"
+  ],
+  "old": null,
+  "new": {
+   "al": [
+    {
+     "id": 6183,
+     "m39": "p. 492"
+    },
+    {
+     "id": 5526,
+     "m39": "p. 492"
+    }
+   ]
+  },
+  "src": "M39 p. 492 (pdf 285)",
+  "why": "M39 p. 492 (pdf 285): \"Quando celebratur de SS. Joanne et sociis ex voto vel devotione per annum, Officium erit ut supra, excepto Credo.\" Temp. Pasch. Alleluia V. Repleti sumus; Alleluia V. In die resurrectionis; Temp. Ascens. secundum Alleluia V. Ascendens"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0722",
+   "season",
+   "pasch"
+  ],
+  "old": {
+   "al": [
+    {
+     "id": 5130
+    }
+   ]
+  },
+  "new": {
+   "in": [
+    {
+     "id": 5384,
+     "m39": "p. 503"
+    }
+   ],
+   "al": [
+    {
+     "id": 5685,
+     "m39": "p. 37*"
+    },
+    {
+     "id": 5130,
+     "m39": "p. 37*"
+    }
+   ]
+  },
+  "src": "M39 p. 503, p. 37* (pdf 290, 386)",
+  "why": "M39 p. 503 (pdf 290): \"Quando per anni circulum celebratur de S. Maria Magdalena ex voto, vel devotione: Officium Ps. 44 Dilexisti ... T. P. Alleluia, alleluia ... Reliqua dicuntur ut supra, excepto Credo. Tempore Resurrectionis, vel Ascensionis, Alleluia, et infra Septuagesimam, Tract. Veni, ut in Communi, p. 37*\"; p. 37* (pdf 386): Alleluia V. Veni electa; Tempore Resurr. secundum Alleluia V. Surrexit Dominus et occurrens; Tempore Ascens. secundum Alleluia V. Ascendens; Infra Septuag. Tractus Veni sponsa Christi; the feast (22 July) never falls in Paschaltide, so this set serves only the votive Mass; two verses in Paschaltide, Rubr. gen. XIII.1 (p. 53)"
+ },
+ {
+  "file": "data/masses.js",
+  "op": "add",
+  "path": [
+   "masses",
+   "S0722",
+   "season",
+   "asc"
+  ],
+  "old": null,
+  "new": {
+   "al": [
+    {
+     "id": 5685,
+     "m39": "p. 37*"
+    },
+    {
+     "id": 5526,
+     "m39": "p. 37*"
+    }
+   ]
+  },
+  "src": "M39 p. 503, p. 37* (pdf 290, 386)",
+  "why": "M39 p. 503 (pdf 290): \"Quando per anni circulum celebratur de S. Maria Magdalena ex voto, vel devotione: Officium Ps. 44 Dilexisti ... T. P. Alleluia, alleluia ... Reliqua dicuntur ut supra, excepto Credo. Tempore Resurrectionis, vel Ascensionis, Alleluia, et infra Septuagesimam, Tract. Veni, ut in Communi, p. 37*\"; p. 37* (pdf 386): Alleluia V. Veni electa; Tempore Resurr. secundum Alleluia V. Surrexit Dominus et occurrens; Tempore Ascens. secundum Alleluia V. Ascendens; Infra Septuag. Tractus Veni sponsa Christi"
+ },
+ {
+  "file": "data/masses.js",
+  "op": "add",
+  "path": [
+   "masses",
+   "S0722",
+   "season",
+   "lent"
+  ],
+  "old": null,
+  "new": {
+   "tr": [
+    {
+     "id": 6032,
+     "m39": "p. 37*"
+    }
+   ]
+  },
+  "src": "M39 p. 503, p. 37* (pdf 290, 386)",
+  "why": "M39 p. 503 (pdf 290): \"Quando per anni circulum celebratur de S. Maria Magdalena ex voto, vel devotione: Officium Ps. 44 Dilexisti ... T. P. Alleluia, alleluia ... Reliqua dicuntur ut supra, excepto Credo. Tempore Resurrectionis, vel Ascensionis, Alleluia, et infra Septuagesimam, Tract. Veni, ut in Communi, p. 37*\"; p. 37* (pdf 386): Alleluia V. Veni electa; Tempore Resurr. secundum Alleluia V. Surrexit Dominus et occurrens; Tempore Ascens. secundum Alleluia V. Ascendens; Infra Septuag. Tractus Veni sponsa Christi. NOTE: the votive Introit Dilexisti outside Paschaltide (per annum, infra Septuag.) cannot be expressed by the season sets; app.js needs a votive form"
+ },
+ {
+  "file": "data/masses.js",
+  "op": "add",
+  "path": [
+   "masses",
+   "S0702",
+   "parts",
+   "in",
    0,
-   "la"
+   "m39text"
   ],
-  "old": "Stabunt justi in magna constántia advérsus eos, qui se angustiavérunt, et qui abstulérunt labóres eórum. Vidéntes turbabúntur timóre horríbili, et mirabúntur in subitatióne insperátæ salútis, dicéntes intra se, pœniténtiam agéntes, et præ angústia spíritus geméntes: Hi sunt, quos habúimus aliquándo in derísum, et in similitúdinem impropérii. Nos insensáti vitam illórum æstimabámus insániam, et finem illórum sine honóre: ecce quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est.",
-  "new": "Stabunt justi in magna constántia advérsus eos, qui se angustiavérunt, et qui abstulérunt labóres eórum. Vidéntes turbabúntur timóre horríbili, et mirabúntur in subitatióne insperátæ salútis, dicéntes intra se, pœniténtiam agéntes, et præ angústia spíritus geméntes: Hi sunt, quos habúimus aliquándo in derísum, et in similitúdinem impropérii. Nos insensáti vitam illórum æstimabámus insániam, et finem illórum sine honóre: Ecce quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est.",
-  "src": "M39 p. 446 (pdf 262)",
-  "why": "as printed: \": Ecce quómodo\" (capital)"
+  "old": null,
+  "new": "Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Maríæ Vírginis, de cujus Visitatióne gaudent Angeli, et colláudant Fílium Dei. ℣. Ps. 44 Eructávit cor meum verbum bonum: dico ego ópera mea regi. Glória Patri.",
+  "src": "M39 p. 485 (pdf 281)",
+  "why": "Joseph (27 Nov): print the Missal's text with the name; notated chant only where a Dominican book prints the melody with that name, never adapted. No Dominican source (GregoBase 11-14, 20, 21, 35, 36) prints this Gaudeamus with this name (only 4288-4292: Omnium Sanctorum, Nativitate, Coronae, beatae N. Virginis, Francisci). app.js must show this text, unnotated, in place of the gabc"
  },
  {
-  "file": "data/readings33.js",
+  "file": "data/masses.js",
+  "op": "add",
   "path": [
-   "S0518",
-   1,
-   "la"
+   "masses",
+   "S0716",
+   "parts",
+   "in",
+   0,
+   "m39text"
   ],
-  "old": "In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis vera: et Pater meus agrícola est. Omnem pálmitem in me non feréntem fructum, tollet eum: et omnem, qui fert fructum, purgábit eum, ut fructum plus áfferat. Jam vos mundi estis propter sermónem, quem locútus sum vobis. Manéte in me: et ego in vobis. Sicut palmes non potest ferre fructum a semetípso, nisi mánserit in vite: sic nec vos, nisi in me manséritis. Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Si quis in me non mánserit: mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint: quodcúmque voluéritis petétis, et fiet vobis.",
-  "new": "In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis vera: et Pater meus agrícola est. Omnem pálmitem in me non feréntem fructum, tollet eum: et omnem, qui fert fructum, purgábit eum, ut fructum plus áfferat. Jam vos mundi estis propter sermónem, quem locútus sum vobis. Manéte in me: et ego in vobis. Sicut palmes non potest ferre fructum a semetípso, nisi mánserit in vite: sic nec vos, nisi in me manséritis. Ego sum vitis, vos pálmites: Qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Si quis in me non mánserit: mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint: quodcúmque voluéritis petétis, et fiet vobis.",
-  "src": "M39 p. 446 (pdf 262)",
-  "why": "as printed: \": Qui manet\" (capital)"
+  "old": null,
+  "new": "Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Maríæ Vírginis, de cujus solemnitáte gaudent Angeli, et colláudant Fílium Dei. ℣. Ps. 44 Eructávit cor meum verbum bonum: dico ego ópera mea regi. Glória Patri.",
+  "src": "M39 p. 497 \"Officium Gaudeamus, ut in Festis B. Mariae Virginis, pag. 1*\"; p. 1* (pdf 368)",
+  "why": "Joseph (27 Nov): print the Missal's text with the name; notated chant only where a Dominican book prints the melody with that name, never adapted. No Dominican source (GregoBase 11-14, 20, 21, 35, 36) prints this Gaudeamus with this name (only 4288-4292: Omnium Sanctorum, Nativitate, Coronae, beatae N. Virginis, Francisci). app.js must show this text, unnotated, in place of the gabc"
  },
  {
-  "file": "data/readings33.js",
+  "file": "data/masses.js",
+  "op": "add",
   "path": [
-   "S0519",
-   1,
-   "la"
+   "masses",
+   "S0722",
+   "parts",
+   "in",
+   0,
+   "m39text"
   ],
-  "old": "In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Jesus autem dixit illis: Amen dico vobis, quod vos, qui secúti estis me, in regeneratióne cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis, qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros propter nomen meum, céntuplum accípiet et vitam ætérnam possidébit.",
-  "new": "In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: Quid ergo erit nobis? Jesus autem dixit illis: Amen dico vobis, quod vos, qui secúti estis me, in regeneratióne cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis, qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros propter nomen meum, céntuplum accípiet et vitam ætérnam possidébit.",
-  "src": "M39 p. 448 (pdf 263)",
-  "why": "as printed: \": Quid ergo\" (capital)"
+  "old": null,
+  "new": "Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Maríæ Magdalénæ, de cujus solemnitáte gaudent Angeli, et colláudant Fílium Dei. ℣. Ps. 44 Eructávit cor meum verbum bonum: dico ego ópera mea regi. Glória Patri.",
+  "src": "M39 p. 502 (pdf 290)",
+  "why": "Joseph (27 Nov): print the Missal's text with the name; notated chant only where a Dominican book prints the melody with that name, never adapted. No Dominican source (GregoBase 11-14, 20, 21, 35, 36) prints this Gaudeamus with this name (only 4288-4292: Omnium Sanctorum, Nativitate, Coronae, beatae N. Virginis, Francisci). app.js must show this text, unnotated, in place of the gabc"
+ },
+ {
+  "file": "data/masses.js",
+  "op": "add",
+  "path": [
+   "masses",
+   "S0726",
+   "parts",
+   "in",
+   0,
+   "m39text"
+  ],
+  "old": null,
+  "new": "Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Annæ de cujus solemnitáte gaudent Angeli, et colláudant Fílium Dei. ℣. Ps. 44 Eructávit cor meum verbum bonum: dico ego ópera mea regi. Glória Patri.",
+  "src": "M39 p. 506 \"Officium Gaudeamus, ut in Comm. nec Virg. nec Mart., pag. 36*\"; p. 36* (pdf 386) prints \"beátæ N. de cujus solemnitáte\"",
+  "why": "Joseph (27 Nov): print the Missal's text with the name; notated chant only where a Dominican book prints the melody with that name, never adapted. No Dominican source (GregoBase 11-14, 20, 21, 35, 36) prints this Gaudeamus with this name (only 4288-4292: Omnium Sanctorum, Nativitate, Coronae, beatae N. Virginis, Francisci). app.js must show this text, unnotated, in place of the gabc"
+ },
+ {
+  "file": "data/masses.js",
+  "op": "add",
+  "path": [
+   "masses",
+   "S0729",
+   "parts",
+   "in",
+   0,
+   "m39text"
+  ],
+  "old": null,
+  "new": "Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Marthæ Vírginis, de cujus solemnitáte gaudent Angeli, et colláudant Fílium Dei. ℣. Ps. 44 Eructávit cor meum verbum bonum: dico ego ópera mea regi. Glória Patri.",
+  "src": "M39 p. 508 (pdf 293)",
+  "why": "Joseph (27 Nov): print the Missal's text with the name; notated chant only where a Dominican book prints the melody with that name, never adapted. No Dominican source (GregoBase 11-14, 20, 21, 35, 36) prints this Gaudeamus with this name (only 4288-4292: Omnium Sanctorum, Nativitate, Coronae, beatae N. Virginis, Francisci). app.js must show this text, unnotated, in place of the gabc"
  }
 ]

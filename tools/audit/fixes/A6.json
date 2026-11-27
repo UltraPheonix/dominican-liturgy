@@ -1,0 +1,1588 @@
+[
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "C114o",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Martha ad Jesum: Dómine, si fuísses hic, frater meus non fuísset mórtuus: sed et nunc scio quia quæcúmque popósceris a Deo, dabit tibi Deus. Dicit illi Jesus: Resúrget frater tuus. Dicit ei Martha: Scio quia resúrget in resurrectióne in novíssimo die. Dixit ei Jesus: Ego sum resurréctio, et vita: qui credit in me, etiámsi mórtuus fúerit, vivet: et omnis, qui vivit, et credit in me, non moriétur in ætérnum. Credis hoc? Ait illi: Utique Dómine, ego crédidi quia tu es Christus, Fílius Dei vivi, qui in hunc mundum venísti.",
+  "new": "In illo témpore: Dixit Martha ad Jesum: Dómine, si fuísses hic, frater meus non fuísset mórtuus: sed et nunc scio, quia quæcúmque popósceris a Deo, dabit tibi Deus. Dicit illi Jesus: Resúrget frater tuus. Dicit ei Martha: Scio quia resúrget in resurrectióne in novíssimo die. Dixit ei Jesus: Ego sum resurréctio et vita: qui credit in me, etiámsi mórtuus fúerit, vivet: et omnis, qui vivit, et credit in me, non moriétur in ætérnum. Credis hoc? Ait illi: Utique Dómine, ego crédidi, quia tu es Christus Fílius Dei vivi, qui in hunc mundum venísti.",
+  "src": "M39 p. 115* (pdf 425)",
+  "why": "punctuation as printed"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1103b",
+   1,
+   "ref"
+  ],
+  "old": "Lucas 12: 35-40",
+  "new": "Matthæus 19: 27-29",
+  "src": "M39 p. 614 (pdf 346) rubric; Gospel M39 p. 26* (pdf 381)",
+  "why": "wrong Gospel: the rubric reads \"Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evangelio Ecce nos reliquimus, ut in Communi Abbatum, pag. 26*\"; Matt 19: 27-29 as printed on p. 26* (= S1112, checked word by word on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1103b",
+   1,
+   "title"
+  ],
+  "old": "Sequéntia sancti Evangélii secúndum Lucam.",
+  "new": "Sequéntia sancti Evangélii secúndum Matthǽum.",
+  "src": "M39 p. 614 (pdf 346) rubric; Gospel M39 p. 26* (pdf 381)",
+  "why": "wrong Gospel: the rubric reads \"Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evangelio Ecce nos reliquimus, ut in Communi Abbatum, pag. 26*\"; Matt 19: 27-29 as printed on p. 26* (= S1112, checked word by word on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1103b",
+   1,
+   "title_en"
+  ],
+  "old": "Continuation of the holy Gospel according to Luke.",
+  "new": "Continuation of the holy Gospel according to Matthew.",
+  "src": "M39 p. 614 (pdf 346) rubric; Gospel M39 p. 26* (pdf 381)",
+  "why": "wrong Gospel: the rubric reads \"Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evangelio Ecce nos reliquimus, ut in Communi Abbatum, pag. 26*\"; Matt 19: 27-29 as printed on p. 26* (= S1112, checked word by word on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1103b",
+   1,
+   "p33"
+  ],
+  "old": 665,
+  "new": 633,
+  "src": "M39 p. 614 (pdf 346) rubric; Gospel M39 p. 26* (pdf 381)",
+  "why": "wrong Gospel: the rubric reads \"Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evangelio Ecce nos reliquimus, ut in Communi Abbatum, pag. 26*\"; Matt 19: 27-29 as printed on p. 26* (= S1112, checked word by word on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1103b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. Beáti servi illi, quos cum vénerit dóminus, invénerit vigilántes: amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.",
+  "new": "In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Jesus autem dixit illis: Amen dico vobis, quod vos, qui secúti estis me, in regeneratióne cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis, qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros propter nomen meum, céntuplum accípiet, et vitam ætérnam possidébit.",
+  "src": "M39 p. 614 (pdf 346) rubric; Gospel M39 p. 26* (pdf 381)",
+  "why": "wrong Gospel: the rubric reads \"Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evangelio Ecce nos reliquimus, ut in Communi Abbatum, pag. 26*\"; Matt 19: 27-29 as printed on p. 26* (= S1112, checked word by word on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1103b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Let your loins be girt, and lamps burning in your hands. And you yourselves like to men who wait for their lord, when he shall return from the wedding; that when he cometh and knocketh, they may open to him immediately. Blessed are those servants, whom the Lord when he cometh, shall find watching. Amen I say to you, that he will gird himself, and make them sit down to meat, and passing will minister unto them. And if he shall come in the second watch, or come in the third watch, and find them so, blessed are those servants. But this know ye, that if the householder did know at what hour the thief would come, he would surely watch, and would not suffer his house to be broken open. Be you then also ready: for at what hour you think not, the Son of man will come.",
+  "new": "At that time: Then Peter answering, said to him: Behold we have left all things, and have followed thee: what therefore shall we have? And Jesus said to them: Amen, I say to you, that you, who have followed me, in the regeneration, when the Son of man shall sit on the seat of his majesty, you also shall sit on twelve seats judging the twelve tribes of Israel. And every one that hath left house, or brethren, or sisters, or father, or mother, or wife, or children, or lands for my name’s sake, shall receive an hundredfold, and shall possess life everlasting.",
+  "src": "M39 p. 614 (pdf 346) rubric; Gospel M39 p. 26* (pdf 381)",
+  "why": "wrong Gospel: the rubric reads \"Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evangelio Ecce nos reliquimus, ut in Communi Abbatum, pag. 26*\"; Matt 19: 27-29 as printed on p. 26* (= S1112, checked word by word on the scan) (English: Douay, as on S1112)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S1103b",
+   "readings",
+   1,
+   "ref"
+  ],
+  "old": "Lucas 12: 35-40",
+  "new": "Matthæus 19: 27-29",
+  "src": "M39 p. 614 (pdf 346) rubric; Gospel M39 p. 26* (pdf 381)",
+  "why": "wrong Gospel: the rubric reads \"Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evangelio Ecce nos reliquimus, ut in Communi Abbatum, pag. 26*\"; Matt 19: 27-29 as printed on p. 26* (= S1112, checked word by word on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0225b",
+   1,
+   "ref"
+  ],
+  "old": "Lucas 12: 35-40",
+  "new": "Lucas 10: 1-9",
+  "src": "M39 p. 388 (pdf 233) rubric; Gospel M39 p. 25* (pdf 380)",
+  "why": "wrong Gospel: the rubric reads \"Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evangelio Designavit, pag. 25*\"; Luke 10: 1-9 as printed on p. 25*"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0225b",
+   1,
+   "p33"
+  ],
+  "old": 665,
+  "new": 528,
+  "src": "M39 p. 388 (pdf 233) rubric; Gospel M39 p. 25* (pdf 380)",
+  "why": "wrong Gospel: the rubric reads \"Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evangelio Designavit, pag. 25*\"; Luke 10: 1-9 as printed on p. 25*"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0225b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. Beáti servi illi, quos cum vénerit dóminus, invénerit vigilántes: amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.",
+  "new": "In illo témpore: Designávit Dóminus et álios septuagínta duos, et misit illos binos ante fáciem suam in omnem civitátem, et locum, quo erat ipse ventúrus. Et dicébat illis: Messis quidem multa, operárii autem pauci. Rogáte ergo dóminum messis, ut mittat operários in messem suam. Ite: ecce ego mitto vos sicut agnos inter lupos. Nolíte portáre sácculum, neque peram, neque calceaménta, et néminem per viam salutavéritis. In quamcúmque domum intravéritis, primum dícite: Pax huic dómui: et si ibi fúerit fílius pacis, requiéscet super illum pax vestra: sin autem, ad vos revertétur. In eádem autem domo manéte, edéntes, et bibéntes quæ apud illos sunt: dignus est enim operárius mercéde sua. Nolíte transíre de domo in domum. Et in quamcúmque civitátem intravéritis, et suscéperint vos, manducáte quæ apponúntur vobis: et curáte infírmos, qui in illa sunt, et dícite illis: Appropinquávit in vos regnum Dei.",
+  "src": "M39 p. 388 (pdf 233) rubric; Gospel M39 p. 25* (pdf 380)",
+  "why": "wrong Gospel: the rubric reads \"Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evangelio Designavit, pag. 25*\"; Luke 10: 1-9 as printed on p. 25*"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0225b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Let your loins be girt, and lamps burning in your hands. And you yourselves like to men who wait for their lord, when he shall return from the wedding; that when he cometh and knocketh, they may open to him immediately. Blessed are those servants, whom the Lord when he cometh, shall find watching. Amen I say to you, that he will gird himself, and make them sit down to meat, and passing will minister unto them. And if he shall come in the second watch, or come in the third watch, and find them so, blessed are those servants. But this know ye, that if the householder did know at what hour the thief would come, he would surely watch, and would not suffer his house to be broken open. Be you then also ready: for at what hour you think not, the Son of man will come.",
+  "new": "At that time: After these things the Lord appointed also other seventy-two: and he sent them two and two before his face into every city and place whither he himself was to come. And he said to them: The harvest indeed is great, but the labourers are few. Pray ye therefore the Lord of the harvest, that he send labourers into his harvest. Go: Behold I send you as lambs among wolves. Carry neither purse, nor scrip, nor shoes; and salute no man by the way. Into whatsoever house you enter, first say: Peace be to this house. And if the son of peace be there, your peace shall rest upon him; but if not, it shall return to you. And in the same house, remain, eating and drinking such things as they have: for the labourer is worthy of his hire. Remove not from house to house. And into what city soever you enter, and they receive you, eat such things as are set before you. And heal the sick that are therein, and say to them: The kingdom of God is come nigh unto you.",
+  "src": "M39 p. 388 (pdf 233) rubric; Gospel M39 p. 25* (pdf 380)",
+  "why": "wrong Gospel: the rubric reads \"Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evangelio Designavit, pag. 25*\"; Luke 10: 1-9 as printed on p. 25* (English: Douay, as on S0719)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0225b",
+   "readings",
+   1,
+   "ref"
+  ],
+  "old": "Lucas 12: 35-40",
+  "new": "Lucas 10: 1-9",
+  "src": "M39 p. 388 (pdf 233) rubric; Gospel M39 p. 25* (pdf 380)",
+  "why": "wrong Gospel: the rubric reads \"Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evangelio Designavit, pag. 25*\"; Luke 10: 1-9 as printed on p. 25*"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0119b",
+   1,
+   "ref"
+  ],
+  "old": "Lucas 10: 1-10",
+  "new": "Lucas 10: 1-9",
+  "src": "M39 p. 25* (pdf 380)",
+  "why": "Luke 10: 1-9 as printed on p. 25* (the rubric's \"Evangelio Designavit, pag. 25*\"): missing words \"et\" (Dóminus et álios) / \"quo\" (quo erat), punctuation, stray final \"In\"; ref and English to v. 9"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0119b",
+   1,
+   "p33"
+  ],
+  "old": 666,
+  "new": 528,
+  "src": "M39 p. 25* (pdf 380)",
+  "why": "Luke 10: 1-9 as printed on p. 25* (the rubric's \"Evangelio Designavit, pag. 25*\"): missing words \"et\" (Dóminus et álios) / \"quo\" (quo erat), punctuation, stray final \"In\"; ref and English to v. 9"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0119b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Designávit Dóminus et álios septuagínta duos: et misit illos binos ante fáciem suam in omnem civitátem et locum, quo erat ipse ventúrus. Et dicébat illis: Messis quidem multa, operárii autem pauci. Rogáte ergo dóminum messis ut mittat operários in messem suam. Ite: ecce ego mitto vos sicut agnos inter lupos. Nolíte portáre sácculum, neque peram, neque calceaménta, et néminem per viam salutavéritis. In quamcúmque domum intravéritis, primum dícite: Pax huic dómui: et si ibi fúerit fílius pacis, requiéscet super illum pax vestra: sin autem, ad vos revertétur. In eádem autem domo manéte, edéntes et bibéntes quæ apud illos sunt: dignus est enim operárius mercéde sua. Nolíte transíre de domo in domum. Et in quamcúmque civitátem intravéritis, et suscéperint vos, manducáte quæ apponúntur vobis: et curáte infírmos, qui in illa sunt, et dícite illis: Appropinquávit in vos regnum Dei. In",
+  "new": "In illo témpore: Designávit Dóminus et álios septuagínta duos, et misit illos binos ante fáciem suam in omnem civitátem, et locum, quo erat ipse ventúrus. Et dicébat illis: Messis quidem multa, operárii autem pauci. Rogáte ergo dóminum messis, ut mittat operários in messem suam. Ite: ecce ego mitto vos sicut agnos inter lupos. Nolíte portáre sácculum, neque peram, neque calceaménta, et néminem per viam salutavéritis. In quamcúmque domum intravéritis, primum dícite: Pax huic dómui: et si ibi fúerit fílius pacis, requiéscet super illum pax vestra: sin autem, ad vos revertétur. In eádem autem domo manéte, edéntes, et bibéntes quæ apud illos sunt: dignus est enim operárius mercéde sua. Nolíte transíre de domo in domum. Et in quamcúmque civitátem intravéritis, et suscéperint vos, manducáte quæ apponúntur vobis: et curáte infírmos, qui in illa sunt, et dícite illis: Appropinquávit in vos regnum Dei.",
+  "src": "M39 p. 25* (pdf 380)",
+  "why": "Luke 10: 1-9 as printed on p. 25* (the rubric's \"Evangelio Designavit, pag. 25*\"): missing words \"et\" (Dóminus et álios) / \"quo\" (quo erat), punctuation, stray final \"In\"; ref and English to v. 9"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0119b",
+   1,
+   "en"
+  ],
+  "old": "At that time: After these things the Lord appointed also other seventy-two: and he sent them two and two before his face into every city and place whither he himself was to come. And he said to them: The harvest indeed is great, but the labourers are few. Pray ye therefore the Lord of the harvest, that he send labourers into his harvest. Go: Behold I send you as lambs among wolves. Carry neither purse, nor scrip, nor shoes; and salute no man by the way. Into whatsoever house you enter, first say: Peace be to this house. And if the son of peace be there, your peace shall rest upon him; but if not, it shall return to you. And in the same house, remain, eating and drinking such things as they have: for the labourer is worthy of his hire. Remove not from house to house. And into what city soever you enter, and they receive you, eat such things as are set before you. And heal the sick that are therein, and say to them: The kingdom of God is come nigh unto you. But into whatsoever city you enter, and they receive you not, going forth into the streets thereof, say:",
+  "new": "At that time: After these things the Lord appointed also other seventy-two: and he sent them two and two before his face into every city and place whither he himself was to come. And he said to them: The harvest indeed is great, but the labourers are few. Pray ye therefore the Lord of the harvest, that he send labourers into his harvest. Go: Behold I send you as lambs among wolves. Carry neither purse, nor scrip, nor shoes; and salute no man by the way. Into whatsoever house you enter, first say: Peace be to this house. And if the son of peace be there, your peace shall rest upon him; but if not, it shall return to you. And in the same house, remain, eating and drinking such things as they have: for the labourer is worthy of his hire. Remove not from house to house. And into what city soever you enter, and they receive you, eat such things as are set before you. And heal the sick that are therein, and say to them: The kingdom of God is come nigh unto you.",
+  "src": "M39 p. 25* (pdf 380)",
+  "why": "Luke 10: 1-9 as printed on p. 25* (the rubric's \"Evangelio Designavit, pag. 25*\"): missing words \"et\" (Dóminus et álios) / \"quo\" (quo erat), punctuation, stray final \"In\"; ref and English to v. 9 (English: Douay, as on S0719)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0119b",
+   "readings",
+   1,
+   "ref"
+  ],
+  "old": "Matthæus 13: 44-52",
+  "new": "Lucas 10: 1-9",
+  "src": "M39 p. 25* (pdf 380)",
+  "why": "Luke 10: 1-9 as printed on p. 25* (the rubric's \"Evangelio Designavit, pag. 25*\"): missing words \"et\" (Dóminus et álios) / \"quo\" (quo erat), punctuation, stray final \"In\"; ref and English to v. 9"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0428b",
+   1,
+   "p33"
+  ],
+  "old": 537,
+  "new": 528,
+  "src": "M39 p. 25* (pdf 380)",
+  "why": "Luke 10: 1-9 as printed on p. 25* (the rubric's \"Evangelio Designavit, pag. 25*\"): missing words \"et\" (Dóminus et álios) / \"quo\" (quo erat), punctuation, stray final \"In\"; ref and English to v. 9"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0428b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Designávit Dóminus álios septuagínta duos: et misit illos binos ante fáciem suam in omnem civitátem et locum, erat ipse ventúrus. Et dicébat illis: Messis quidem multa, operárii autem pauci. Rogáte ergo dóminum messis ut mittat operários in messem suam. Ite: ecce ego mitto vos sicut agnos inter lupos. Nolíte portáre sácculum, neque peram, neque calceaménta, et néminem per viam salutavéritis. In quamcúmque domum intravéritis, primum dícite: Pax huic dómui: et si ibi fúerit fílius pacis, requiéscet super illum pax vestra: sin autem, ad vos revertétur. In eádem autem domo manéte, edéntes et bibéntes quæ apud illos sunt: dignus est enim operárius mercéde sua. Nolíte transíre de domo in domum. Et in quamcúmque civitátem intravéritis, et suscéperint vos, manducáte quæ apponúntur vobis: et curáte infírmos, qui in illa sunt, et dícite illis: Appropinquávit in vos regnum Dei.",
+  "new": "In illo témpore: Designávit Dóminus et álios septuagínta duos, et misit illos binos ante fáciem suam in omnem civitátem, et locum, quo erat ipse ventúrus. Et dicébat illis: Messis quidem multa, operárii autem pauci. Rogáte ergo dóminum messis, ut mittat operários in messem suam. Ite: ecce ego mitto vos sicut agnos inter lupos. Nolíte portáre sácculum, neque peram, neque calceaménta, et néminem per viam salutavéritis. In quamcúmque domum intravéritis, primum dícite: Pax huic dómui: et si ibi fúerit fílius pacis, requiéscet super illum pax vestra: sin autem, ad vos revertétur. In eádem autem domo manéte, edéntes, et bibéntes quæ apud illos sunt: dignus est enim operárius mercéde sua. Nolíte transíre de domo in domum. Et in quamcúmque civitátem intravéritis, et suscéperint vos, manducáte quæ apponúntur vobis: et curáte infírmos, qui in illa sunt, et dícite illis: Appropinquávit in vos regnum Dei.",
+  "src": "M39 p. 25* (pdf 380)",
+  "why": "Luke 10: 1-9 as printed on p. 25* (the rubric's \"Evangelio Designavit, pag. 25*\"): missing words \"et\" (Dóminus et álios) / \"quo\" (quo erat), punctuation, stray final \"In\"; ref and English to v. 9"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0717b",
+   1,
+   "p33"
+  ],
+  "old": 537,
+  "new": 528,
+  "src": "M39 p. 25* (pdf 380)",
+  "why": "Luke 10: 1-9 as printed on p. 25* (the rubric's \"Evangelio Designavit, pag. 25*\"): missing words \"et\" (Dóminus et álios) / \"quo\" (quo erat), punctuation, stray final \"In\"; ref and English to v. 9"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0717b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Designávit Dóminus álios septuagínta duos: et misit illos binos ante fáciem suam in omnem civitátem et locum, erat ipse ventúrus. Et dicébat illis: Messis quidem multa, operárii autem pauci. Rogáte ergo dóminum messis ut mittat operários in messem suam. Ite: ecce ego mitto vos sicut agnos inter lupos. Nolíte portáre sácculum, neque peram, neque calceaménta, et néminem per viam salutavéritis. In quamcúmque domum intravéritis, primum dícite: Pax huic dómui: et si ibi fúerit fílius pacis, requiéscet super illum pax vestra: sin autem, ad vos revertétur. In eádem autem domo manéte, edéntes et bibéntes quæ apud illos sunt: dignus est enim operárius mercéde sua. Nolíte transíre de domo in domum. Et in quamcúmque civitátem intravéritis, et suscéperint vos, manducáte quæ apponúntur vobis: et curáte infírmos, qui in illa sunt, et dícite illis: Appropinquávit in vos regnum Dei.",
+  "new": "In illo témpore: Designávit Dóminus et álios septuagínta duos, et misit illos binos ante fáciem suam in omnem civitátem, et locum, quo erat ipse ventúrus. Et dicébat illis: Messis quidem multa, operárii autem pauci. Rogáte ergo dóminum messis, ut mittat operários in messem suam. Ite: ecce ego mitto vos sicut agnos inter lupos. Nolíte portáre sácculum, neque peram, neque calceaménta, et néminem per viam salutavéritis. In quamcúmque domum intravéritis, primum dícite: Pax huic dómui: et si ibi fúerit fílius pacis, requiéscet super illum pax vestra: sin autem, ad vos revertétur. In eádem autem domo manéte, edéntes, et bibéntes quæ apud illos sunt: dignus est enim operárius mercéde sua. Nolíte transíre de domo in domum. Et in quamcúmque civitátem intravéritis, et suscéperint vos, manducáte quæ apponúntur vobis: et curáte infírmos, qui in illa sunt, et dícite illis: Appropinquávit in vos regnum Dei.",
+  "src": "M39 p. 25* (pdf 380)",
+  "why": "Luke 10: 1-9 as printed on p. 25* (the rubric's \"Evangelio Designavit, pag. 25*\"): missing words \"et\" (Dóminus et álios) / \"quo\" (quo erat), punctuation, stray final \"In\"; ref and English to v. 9"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0103b",
+   0,
+   "type"
+  ],
+  "old": "Epistle",
+  "new": "Lesson",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0103b",
+   0,
+   "ref"
+  ],
+  "old": "Ad Corinthios 2 10: 17-18, 11: 1-2",
+  "new": "Proverbia 31: 10-31",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0103b",
+   0,
+   "title"
+  ],
+  "old": "Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios.",
+  "new": "Léctio libri Sapiéntiæ.",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0103b",
+   0,
+   "title_en"
+  ],
+  "old": "Lesson from the Epistle of blessed Paul the Apostle to the Corinthians.",
+  "new": "Lesson from the Book of Wisdom.",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0103b",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáre me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro, vírginem castam exhibére Christo.",
+  "new": "Mulíerem fortem quis invéniet? Procul, et de últimis fínibus prétium ejus. Confídit in ea cor viri sui, et spóliis non indigébit. Reddet ei bonum, et non malum, ómnibus diébus vitæ suæ. Quæsívit lanam et linum, et operáta est consílio mánuum suárum. Facta est quasi navis institóris, de longe portans panem suum. Et de nocte surréxit, dedítque prædam domésticis suis, et cibária ancíllis suis. Considerávit agrum, et emit eum: de fructu mánuum suárum plantávit víneam. Accínxit fortitúdine lumbos suos, et roborávit bráchium suum. Gustávit, et vidit quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus. Manum suam misit ad fórtia, et dígiti ejus apprehendérunt fusum. Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem. Non timébit dómui suæ a frigóribus nivis: omnes enim doméstici ejus vestíti sunt duplícibus. Stragulátam vestem fecit sibi: byssus et púrpura induméntum ejus. Nóbilis in portis vir ejus, quando séderit cum senatóribus terræ. Síndonem fecit, et véndidit, et cíngulum trádidit Chananǽo. Fortitúdo et decor induméntum ejus, et ridébit in die novíssimo. Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus. Considerávit sémitas domus suæ, et panem otiósa non comédit. Surrexérunt fílii ejus, et beatíssimam prædicavérunt: vir ejus et laudávit eam. Multæ fíliæ congregavérunt divítias: tu supergréssa es univérsas. Fallax grátia, et vana est pulchritúdo: múlier timens Dóminum ipsa laudábitur. Date ei de fructu mánuum suárum: et laudent eam in portis ópera ejus.",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0103b",
+   0,
+   "en"
+  ],
+  "old": "Brethren: He that glorieth, let him glory in the Lord. For not he who commendeth himself, is approved, but he, whom God commendeth. Would to God you could bear with some little of my folly: but do bear with me. For I am jealous of you with the jealousy of God. For I have espoused you to one husband that I may present you as a chaste virgin to Christ.",
+  "new": "Who shall find a valiant woman? far and from the uttermost coasts is the price of her. The heart of her husband trusteth in her, and he shall have no need of spoils. She will render him good, and not evil, all the days of her life. She hath sought wool and flax, and hath wrought by the counsel of her hands. She is like the merchant’s ship, she bringeth her bread from afar. And she hath risen in the night, and given a prey to her household, and victuals to her maidens. She hath considered a field, and bought it: with the fruit of her hands she hath planted a vineyard. She hath girded her loins with strength, and hath strengthened her arm. She hath tasted and seen that her traffic is good: her lamp shall not be put out in the night. She hath put out her hand to strong things, and her fingers have taken hold of the spindle. She hath opened her hand to the needy, and stretched out her hands to the poor. She shall not fear for her house in the cold of snow: for all her domestics are clothed with double garments. She hath made for herself clothing of tapestry: fine linen, and purple is her covering. Her husband is honourable in the gates, when he sitteth among the senators of the land. She made fine linen, and sold it, and delivered a girdle to the Chanaanite. Strength and beauty are her clothing, and she shall laugh in the latter day. She hath opened her mouth to wisdom, and the law of clemency is on her tongue. She hath looked well to the paths of her house, and hath not eaten her bread idle. Her children rose up, and called her blessed: her husband, and he praised her. Many daughters have gathered together riches: thou hast surpassed them all. Favour is deceitful, and beauty is vain: the woman that feareth the Lord, she shall be praised. Give her of the fruit of her hands: and let her works praise her in the gates.",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0103b",
+   0,
+   "p33"
+  ],
+  "old": 670,
+  "new": 637,
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0103b",
+   "readings",
+   0
+  ],
+  "old": {
+   "type": "Epistle",
+   "ref": "Ad Corinthios 1 7: 25-34"
+  },
+  "new": {
+   "type": "Lesson",
+   "ref": "Proverbia 31: 10-31"
+  },
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0103b",
+   1,
+   "ref"
+  ],
+  "old": "Matthæus 25: 1-13",
+  "new": "Matthæus 13: 44-52",
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0103b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile est regnum cælórum thesáuro abscóndito in agro: quem qui invénit homo, abscóndit, et præ gáudio illíus vadit, et vendit univérsa quæ habet, et emit agrum illum. Iterum símile est regnum cælórum hómini negotiatóri, quærénti bonas margarítas. Invénta autem una pretiósa margaríta, ábiit, et véndidit ómnia quæ hábuit, et emit eam. Iterum símile est regnum cælórum sagénæ missæ in mare, et ex omni génere píscium congregánti. Quam, cum impléta esset, educéntes, et secus litus sedéntes, elegérunt bonos in vasa, malos autem foras misérunt. Sic erit in consummatióne sǽculi: Exíbunt Angeli, et separábunt malos de médio justórum, et mittent eos in camínum ignis: ibi erit fletus et stridor déntium. Intellexístis hæc ómnia? Dicunt ei: Etiam. Ait illis: Ideo omnis scriba doctus in regno cælórum, símilis est hómini patrifamílias, qui profert de thesáuro suo nova et vétera.",
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0103b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Then shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: The kingdom of heaven is like unto a treasure hidden in a field. Which a man having found, hid it, and for joy thereof goeth, and selleth all that he hath, and buyeth that field. Again the kingdom of heaven is like to a merchant seeking good pearls. Who when he had found one pearl of great price, went his way, and sold all that he had, and bought it. Again the kingdom of heaven is like to a net cast into the sea, and gathering together of all kind of fishes. Which, when it was filled, they drew out, and sitting by the shore, they chose out the good into vessels, but the bad they cast forth. So shall it be at the end of the world. The angels shall go out, and shall separate the wicked from among the just. And shall cast them into the furnace of fire: there shall be weeping and gnashing of teeth. Have ye understood all these things? They say to him: Yes. He said unto them: Therefore every scribe instructed in the kingdom of heaven, is like to a man that is a householder, who bringeth forth out of his treasure new things and old.",
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0103b",
+   1,
+   "p33"
+  ],
+  "old": 670,
+  "new": 672,
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0103b",
+   "readings",
+   1
+  ],
+  "old": {
+   "type": "Gospel",
+   "ref": "Matthæus 13: 44-52",
+   "roman": true
+  },
+  "new": {
+   "type": "Gospel",
+   "ref": "Matthæus 13: 44-52"
+  },
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 351 (pdf 214)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0228b",
+   0,
+   "type"
+  ],
+  "old": "Epistle",
+  "new": "Lesson",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0228b",
+   0,
+   "ref"
+  ],
+  "old": "Ad Corinthios 2 10: 17-18, 11: 1-2",
+  "new": "Proverbia 31: 10-31",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0228b",
+   0,
+   "title"
+  ],
+  "old": "Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios.",
+  "new": "Léctio libri Sapiéntiæ.",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0228b",
+   0,
+   "title_en"
+  ],
+  "old": "Lesson from the Epistle of blessed Paul the Apostle to the Corinthians.",
+  "new": "Lesson from the Book of Wisdom.",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0228b",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáre me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro, vírginem castam exhibére Christo.",
+  "new": "Mulíerem fortem quis invéniet? Procul, et de últimis fínibus prétium ejus. Confídit in ea cor viri sui, et spóliis non indigébit. Reddet ei bonum, et non malum, ómnibus diébus vitæ suæ. Quæsívit lanam et linum, et operáta est consílio mánuum suárum. Facta est quasi navis institóris, de longe portans panem suum. Et de nocte surréxit, dedítque prædam domésticis suis, et cibária ancíllis suis. Considerávit agrum, et emit eum: de fructu mánuum suárum plantávit víneam. Accínxit fortitúdine lumbos suos, et roborávit bráchium suum. Gustávit, et vidit quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus. Manum suam misit ad fórtia, et dígiti ejus apprehendérunt fusum. Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem. Non timébit dómui suæ a frigóribus nivis: omnes enim doméstici ejus vestíti sunt duplícibus. Stragulátam vestem fecit sibi: byssus et púrpura induméntum ejus. Nóbilis in portis vir ejus, quando séderit cum senatóribus terræ. Síndonem fecit, et véndidit, et cíngulum trádidit Chananǽo. Fortitúdo et decor induméntum ejus, et ridébit in die novíssimo. Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus. Considerávit sémitas domus suæ, et panem otiósa non comédit. Surrexérunt fílii ejus, et beatíssimam prædicavérunt: vir ejus et laudávit eam. Multæ fíliæ congregavérunt divítias: tu supergréssa es univérsas. Fallax grátia, et vana est pulchritúdo: múlier timens Dóminum ipsa laudábitur. Date ei de fructu mánuum suárum: et laudent eam in portis ópera ejus.",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0228b",
+   0,
+   "en"
+  ],
+  "old": "Brethren: He that glorieth, let him glory in the Lord. For not he who commendeth himself, is approved, but he, whom God commendeth. Would to God you could bear with some little of my folly: but do bear with me. For I am jealous of you with the jealousy of God. For I have espoused you to one husband that I may present you as a chaste virgin to Christ.",
+  "new": "Who shall find a valiant woman? far and from the uttermost coasts is the price of her. The heart of her husband trusteth in her, and he shall have no need of spoils. She will render him good, and not evil, all the days of her life. She hath sought wool and flax, and hath wrought by the counsel of her hands. She is like the merchant’s ship, she bringeth her bread from afar. And she hath risen in the night, and given a prey to her household, and victuals to her maidens. She hath considered a field, and bought it: with the fruit of her hands she hath planted a vineyard. She hath girded her loins with strength, and hath strengthened her arm. She hath tasted and seen that her traffic is good: her lamp shall not be put out in the night. She hath put out her hand to strong things, and her fingers have taken hold of the spindle. She hath opened her hand to the needy, and stretched out her hands to the poor. She shall not fear for her house in the cold of snow: for all her domestics are clothed with double garments. She hath made for herself clothing of tapestry: fine linen, and purple is her covering. Her husband is honourable in the gates, when he sitteth among the senators of the land. She made fine linen, and sold it, and delivered a girdle to the Chanaanite. Strength and beauty are her clothing, and she shall laugh in the latter day. She hath opened her mouth to wisdom, and the law of clemency is on her tongue. She hath looked well to the paths of her house, and hath not eaten her bread idle. Her children rose up, and called her blessed: her husband, and he praised her. Many daughters have gathered together riches: thou hast surpassed them all. Favour is deceitful, and beauty is vain: the woman that feareth the Lord, she shall be praised. Give her of the fruit of her hands: and let her works praise her in the gates.",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0228b",
+   0,
+   "p33"
+  ],
+  "old": 670,
+  "new": 637,
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0228b",
+   "readings",
+   0
+  ],
+  "old": {
+   "type": "Epistle",
+   "ref": "Ad Corinthios 1 7: 25-34"
+  },
+  "new": {
+   "type": "Lesson",
+   "ref": "Proverbia 31: 10-31"
+  },
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0228b",
+   1,
+   "ref"
+  ],
+  "old": "Matthæus 25: 1-13",
+  "new": "Matthæus 13: 44-52",
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0228b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile est regnum cælórum thesáuro abscóndito in agro: quem qui invénit homo, abscóndit, et præ gáudio illíus vadit, et vendit univérsa quæ habet, et emit agrum illum. Iterum símile est regnum cælórum hómini negotiatóri, quærénti bonas margarítas. Invénta autem una pretiósa margaríta, ábiit, et véndidit ómnia quæ hábuit, et emit eam. Iterum símile est regnum cælórum sagénæ missæ in mare, et ex omni génere píscium congregánti. Quam, cum impléta esset, educéntes, et secus litus sedéntes, elegérunt bonos in vasa, malos autem foras misérunt. Sic erit in consummatióne sǽculi: Exíbunt Angeli, et separábunt malos de médio justórum, et mittent eos in camínum ignis: ibi erit fletus et stridor déntium. Intellexístis hæc ómnia? Dicunt ei: Etiam. Ait illis: Ideo omnis scriba doctus in regno cælórum, símilis est hómini patrifamílias, qui profert de thesáuro suo nova et vétera.",
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0228b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Then shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: The kingdom of heaven is like unto a treasure hidden in a field. Which a man having found, hid it, and for joy thereof goeth, and selleth all that he hath, and buyeth that field. Again the kingdom of heaven is like to a merchant seeking good pearls. Who when he had found one pearl of great price, went his way, and sold all that he had, and bought it. Again the kingdom of heaven is like to a net cast into the sea, and gathering together of all kind of fishes. Which, when it was filled, they drew out, and sitting by the shore, they chose out the good into vessels, but the bad they cast forth. So shall it be at the end of the world. The angels shall go out, and shall separate the wicked from among the just. And shall cast them into the furnace of fire: there shall be weeping and gnashing of teeth. Have ye understood all these things? They say to him: Yes. He said unto them: Therefore every scribe instructed in the kingdom of heaven, is like to a man that is a householder, who bringeth forth out of his treasure new things and old.",
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0228b",
+   1,
+   "p33"
+  ],
+  "old": 670,
+  "new": 672,
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0228b",
+   "readings",
+   1
+  ],
+  "old": {
+   "type": "Gospel",
+   "ref": "Matthæus 13: 44-52",
+   "roman": true
+  },
+  "new": {
+   "type": "Gospel",
+   "ref": "Matthæus 13: 44-52"
+  },
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 389 (pdf 233)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0808b",
+   0,
+   "type"
+  ],
+  "old": "Epistle",
+  "new": "Lesson",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0808b",
+   0,
+   "ref"
+  ],
+  "old": "Ad Corinthios 2 10: 17-18, 11: 1-2",
+  "new": "Proverbia 31: 10-31",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0808b",
+   0,
+   "title"
+  ],
+  "old": "Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios.",
+  "new": "Léctio libri Sapiéntiæ.",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0808b",
+   0,
+   "title_en"
+  ],
+  "old": "Lesson from the Epistle of blessed Paul the Apostle to the Corinthians.",
+  "new": "Lesson from the Book of Wisdom.",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0808b",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáre me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro, vírginem castam exhibére Christo.",
+  "new": "Mulíerem fortem quis invéniet? Procul, et de últimis fínibus prétium ejus. Confídit in ea cor viri sui, et spóliis non indigébit. Reddet ei bonum, et non malum, ómnibus diébus vitæ suæ. Quæsívit lanam et linum, et operáta est consílio mánuum suárum. Facta est quasi navis institóris, de longe portans panem suum. Et de nocte surréxit, dedítque prædam domésticis suis, et cibária ancíllis suis. Considerávit agrum, et emit eum: de fructu mánuum suárum plantávit víneam. Accínxit fortitúdine lumbos suos, et roborávit bráchium suum. Gustávit, et vidit quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus. Manum suam misit ad fórtia, et dígiti ejus apprehendérunt fusum. Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem. Non timébit dómui suæ a frigóribus nivis: omnes enim doméstici ejus vestíti sunt duplícibus. Stragulátam vestem fecit sibi: byssus et púrpura induméntum ejus. Nóbilis in portis vir ejus, quando séderit cum senatóribus terræ. Síndonem fecit, et véndidit, et cíngulum trádidit Chananǽo. Fortitúdo et decor induméntum ejus, et ridébit in die novíssimo. Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus. Considerávit sémitas domus suæ, et panem otiósa non comédit. Surrexérunt fílii ejus, et beatíssimam prædicavérunt: vir ejus et laudávit eam. Multæ fíliæ congregavérunt divítias: tu supergréssa es univérsas. Fallax grátia, et vana est pulchritúdo: múlier timens Dóminum ipsa laudábitur. Date ei de fructu mánuum suárum: et laudent eam in portis ópera ejus.",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0808b",
+   0,
+   "en"
+  ],
+  "old": "Brethren: He that glorieth, let him glory in the Lord. For not he who commendeth himself, is approved, but he, whom God commendeth. Would to God you could bear with some little of my folly: but do bear with me. For I am jealous of you with the jealousy of God. For I have espoused you to one husband that I may present you as a chaste virgin to Christ.",
+  "new": "Who shall find a valiant woman? far and from the uttermost coasts is the price of her. The heart of her husband trusteth in her, and he shall have no need of spoils. She will render him good, and not evil, all the days of her life. She hath sought wool and flax, and hath wrought by the counsel of her hands. She is like the merchant’s ship, she bringeth her bread from afar. And she hath risen in the night, and given a prey to her household, and victuals to her maidens. She hath considered a field, and bought it: with the fruit of her hands she hath planted a vineyard. She hath girded her loins with strength, and hath strengthened her arm. She hath tasted and seen that her traffic is good: her lamp shall not be put out in the night. She hath put out her hand to strong things, and her fingers have taken hold of the spindle. She hath opened her hand to the needy, and stretched out her hands to the poor. She shall not fear for her house in the cold of snow: for all her domestics are clothed with double garments. She hath made for herself clothing of tapestry: fine linen, and purple is her covering. Her husband is honourable in the gates, when he sitteth among the senators of the land. She made fine linen, and sold it, and delivered a girdle to the Chanaanite. Strength and beauty are her clothing, and she shall laugh in the latter day. She hath opened her mouth to wisdom, and the law of clemency is on her tongue. She hath looked well to the paths of her house, and hath not eaten her bread idle. Her children rose up, and called her blessed: her husband, and he praised her. Many daughters have gathered together riches: thou hast surpassed them all. Favour is deceitful, and beauty is vain: the woman that feareth the Lord, she shall be praised. Give her of the fruit of her hands: and let her works praise her in the gates.",
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0808b",
+   0,
+   "p33"
+  ],
+  "old": 670,
+  "new": 637,
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0808b",
+   "readings",
+   0
+  ],
+  "old": {
+   "type": "Epistle",
+   "ref": "Ad Corinthios 1 7: 25-34"
+  },
+  "new": {
+   "type": "Lesson",
+   "ref": "Proverbia 31: 10-31"
+  },
+  "src": "M39 pp. 36*-37* (pdf 386)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Lesson Prov 31: 10-31 as printed on pp. 36*-37* (\"vir ejus et laudávit\"; text = S1119, checked on the scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0808b",
+   1,
+   "ref"
+  ],
+  "old": "Matthæus 25: 1-13",
+  "new": "Matthæus 13: 44-52",
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0808b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile est regnum cælórum thesáuro abscóndito in agro: quem qui invénit homo, abscóndit, et præ gáudio illíus vadit, et vendit univérsa quæ habet, et emit agrum illum. Iterum símile est regnum cælórum hómini negotiatóri, quærénti bonas margarítas. Invénta autem una pretiósa margaríta, ábiit, et véndidit ómnia quæ hábuit, et emit eam. Iterum símile est regnum cælórum sagénæ missæ in mare, et ex omni génere píscium congregánti. Quam, cum impléta esset, educéntes, et secus litus sedéntes, elegérunt bonos in vasa, malos autem foras misérunt. Sic erit in consummatióne sǽculi: Exíbunt Angeli, et separábunt malos de médio justórum, et mittent eos in camínum ignis: ibi erit fletus et stridor déntium. Intellexístis hæc ómnia? Dicunt ei: Etiam. Ait illis: Ideo omnis scriba doctus in regno cælórum, símilis est hómini patrifamílias, qui profert de thesáuro suo nova et vétera.",
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0808b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Then shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: The kingdom of heaven is like unto a treasure hidden in a field. Which a man having found, hid it, and for joy thereof goeth, and selleth all that he hath, and buyeth that field. Again the kingdom of heaven is like to a merchant seeking good pearls. Who when he had found one pearl of great price, went his way, and sold all that he had, and bought it. Again the kingdom of heaven is like to a net cast into the sea, and gathering together of all kind of fishes. Which, when it was filled, they drew out, and sitting by the shore, they chose out the good into vessels, but the bad they cast forth. So shall it be at the end of the world. The angels shall go out, and shall separate the wicked from among the just. And shall cast them into the furnace of fire: there shall be weeping and gnashing of teeth. Have ye understood all these things? They say to him: Yes. He said unto them: Therefore every scribe instructed in the kingdom of heaven, is like to a man that is a householder, who bringeth forth out of his treasure new things and old.",
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0808b",
+   1,
+   "p33"
+  ],
+  "old": 670,
+  "new": 672,
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0808b",
+   "readings",
+   1
+  ],
+  "old": {
+   "type": "Gospel",
+   "ref": "Matthæus 13: 44-52",
+   "roman": true
+  },
+  "new": {
+   "type": "Gospel",
+   "ref": "Matthæus 13: 44-52"
+  },
+  "src": "M39 p. 38* (pdf 387)",
+  "why": "wrong readings: the rubric (M39 p. 522 (pdf 300)) reads \"Officium Gaudeamus, ut in Communi nec Virg. nec Mart., pag. 36*\"; the site had the Virg. non Mart. readings (2 Cor 10 / Matt 25, p. 30*); Gospel Matt 13: 44-52 as printed on p. 38* (invénit; Exíbunt Angeli; \"fletus et stridor\"; \"nova et vétera\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0605b",
+   0,
+   "la"
+  ],
+  "old": "Beátus vir, qui invéntus est sine mácula: et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudábimus eum? Fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: qui pótuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ideo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum.",
+  "new": "Beátus vir, qui invéntus est sine mácula: et qui post aurum non ábiit, nec sperávit in pecúnia, et thesáuris. Quis est hic, et laudábimus eum? Fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: qui pótuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ideo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum.",
+  "src": "M39 p. 461 (pdf 269)",
+  "why": "punctuation as printed"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0605b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. Beáti servi illi, quos cum vénerit dóminus, invénerit vigilántes: amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut, cum vénerit, et pulsáverit, conféstim apériant ei. Beáti servi illi, quos cum vénerit dóminus, invénerit vigilántes: amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.",
+  "src": "M39 pp. 460-461 (pdf 269)",
+  "why": "punctuation as printed"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0609b",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáre me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro, vírginem castam exhibére Christo.",
+  "new": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáte me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhibére Christo.",
+  "src": "M39 p. 462 (pdf 270) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "readings of the Comm. Virg. non Mart., p. 30*, as printed (A5's C51s correction carried over): supportáte, \"uni viro vírginem\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0609b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis de óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas, exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes, et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis de óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "src": "M39 p. 462 (pdf 270) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "readings of the Comm. Virg. non Mart., p. 30*, as printed (A5's C51s correction carried over): commas \"lámpades suas, exiérunt\", \"dormitavérunt omnes, et\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   0,
+   "ref"
+  ],
+  "old": "Ad Thessalonicenses 1 2: 2-8",
+  "new": "Ad Corinthios 2 10: 17-18, 11: 1-2",
+  "src": "M39 p. 550 (pdf 314) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong readings (1 Thess 2 / John 21 are not in the 1939 Missal for this Beata): the rubric reads \"Officium Gaudeamus, ut in Communi unius Virg. non Mart., p. 30*\" and pp. 550-551 print only the orations; readings of p. 30* (C51s, scan-checked by A5)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   0,
+   "title"
+  ],
+  "old": "Léctio Epístolæ beáti Pauli Apóstoli ad Thessalonicénses.",
+  "new": "Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios.",
+  "src": "M39 p. 550 (pdf 314) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong readings (1 Thess 2 / John 21 are not in the 1939 Missal for this Beata): the rubric reads \"Officium Gaudeamus, ut in Communi unius Virg. non Mart., p. 30*\" and pp. 550-551 print only the orations; readings of p. 30* (C51s, scan-checked by A5)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   0,
+   "title_en"
+  ],
+  "old": "Lesson from the Epistle of blessed Paul the Apostle to the Thessalonians.",
+  "new": "Lesson from the Epistle of blessed Paul the Apostle to the Corinthians.",
+  "src": "M39 p. 550 (pdf 314) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong readings (1 Thess 2 / John 21 are not in the 1939 Missal for this Beata): the rubric reads \"Officium Gaudeamus, ut in Communi unius Virg. non Mart., p. 30*\" and pp. 550-551 print only the orations; readings of p. 30* (C51s, scan-checked by A5)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Fidúciam habúimus in Deo nostro loqui ad vos Evangélium Dei in multa sollicitúdine. Exhortátio enim nostra non de erróre, neque de immundítia, neque in dolo, sed sicut probáti sumus a Deo ut crederétur nobis Evangélium: ita lóquimur non quasi homínibus placéntes, sed Deo, qui probat corda nostra. Neque enim aliquándo fúimus in sermóne adulatiónis, sicut scitis: neque in occasióne avarítiæ: Deus testis est: nec quæréntes ab homínibus glóriam, neque a vobis, neque ab áliis. Cum possémus vobis óneri esse ut Christi apóstoli: sed facti sumus párvuli in médio vestrum, tamquam si nutrix fóveat fílios suos. Ita desiderántes vos, cúpide volebámus trádere vobis non solum Evangélium Dei, sed étiam ánimas nostras: quóniam caríssimi nobis facti estis.",
+  "new": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáte me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhibére Christo.",
+  "src": "M39 p. 550 (pdf 314) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong readings (1 Thess 2 / John 21 are not in the 1939 Missal for this Beata): the rubric reads \"Officium Gaudeamus, ut in Communi unius Virg. non Mart., p. 30*\" and pp. 550-551 print only the orations; readings of p. 30* (C51s, scan-checked by A5)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   0,
+   "en"
+  ],
+  "old": "Brethren: Having suffered many things before, and been shamefully treated (as you know) at Philippi, we had confidence in our God, to speak unto you the gospel of God in much carefulness. For our exhortation was not of error, nor of uncleanness, nor in deceit: But as we were approved by God that the gospel should be committed to us: even so we speak, not as pleasing men, but God, who proveth our hearts. For neither have we used, at any time, the speech of flattery, as you know; nor taken an occasion of covetousness, God is witness: Nor sought we glory of men, neither of you, nor of others. Whereas we might have been burdensome to you, as the apostles of Christ: but we became little ones in the midst of you, as if a nurse should cherish her children: So desirous of you, we would gladly impart unto you not only the gospel of God, but also our own souls: because you were become most dear unto us.",
+  "new": "Brethren: He that glorieth, let him glory in the Lord. For not he who commendeth himself, is approved, but he, whom God commendeth. Would to God you could bear with some little of my folly: but do bear with me. For I am jealous of you with the jealousy of God. For I have espoused you to one husband that I may present you as a chaste virgin to Christ.",
+  "src": "M39 p. 550 (pdf 314) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong readings (1 Thess 2 / John 21 are not in the 1939 Missal for this Beata): the rubric reads \"Officium Gaudeamus, ut in Communi unius Virg. non Mart., p. 30*\" and pp. 550-551 print only the orations; readings of p. 30* (C51s, scan-checked by A5)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   0,
+   "p33"
+  ],
+  "old": 574,
+  "new": 670,
+  "src": "M39 p. 550 (pdf 314) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong readings (1 Thess 2 / John 21 are not in the 1939 Missal for this Beata): the rubric reads \"Officium Gaudeamus, ut in Communi unius Virg. non Mart., p. 30*\" and pp. 550-551 print only the orations; readings of p. 30* (C51s, scan-checked by A5)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   1,
+   "ref"
+  ],
+  "old": "Joannes 21: 15-17",
+  "new": "Matthæus 25: 1-13",
+  "src": "M39 p. 550 (pdf 314) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong readings (1 Thess 2 / John 21 are not in the 1939 Missal for this Beata): the rubric reads \"Officium Gaudeamus, ut in Communi unius Virg. non Mart., p. 30*\" and pp. 550-551 print only the orations; readings of p. 30* (C51s, scan-checked by A5)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   1,
+   "title"
+  ],
+  "old": "Sequéntia sancti Evangélii secúndum Joánnem.",
+  "new": "Sequéntia sancti Evangélii secúndum Matthǽum.",
+  "src": "M39 p. 550 (pdf 314) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong readings (1 Thess 2 / John 21 are not in the 1939 Missal for this Beata): the rubric reads \"Officium Gaudeamus, ut in Communi unius Virg. non Mart., p. 30*\" and pp. 550-551 print only the orations; readings of p. 30* (C51s, scan-checked by A5)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   1,
+   "title_en"
+  ],
+  "old": "Continuation of the holy Gospel according to John.",
+  "new": "Continuation of the holy Gospel according to Matthew.",
+  "src": "M39 p. 550 (pdf 314) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong readings (1 Thess 2 / John 21 are not in the 1939 Missal for this Beata): the rubric reads \"Officium Gaudeamus, ut in Communi unius Virg. non Mart., p. 30*\" and pp. 550-551 print only the orations; readings of p. 30* (C51s, scan-checked by A5)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus Simóni Petro: Simon Joánnis, díligis me plus his? Dicit ei: Etiam Dómine, tu scis quia amo te. Dicit ei: Pasce agnos meos. Dicit ei íterum: Simon Joánnis, díligis me? Ait illi: Etiam Dómine, tu scis quia amo te. Dicit ei: Pasce agnos meos. Dicit ei tértio: Simon Joánnis, amas me? Contristátus est Petrus, quia dixit ei tértio: Amas me? Et dixit ei: Dómine tu ómnia nosti, tu scis quia amo te. Dixit ei: Pasce oves meas.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas, exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes, et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis de óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "src": "M39 p. 550 (pdf 314) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong readings (1 Thess 2 / John 21 are not in the 1939 Missal for this Beata): the rubric reads \"Officium Gaudeamus, ut in Communi unius Virg. non Mart., p. 30*\" and pp. 550-551 print only the orations; readings of p. 30* (C51s, scan-checked by A5)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   1,
+   "en"
+  ],
+  "old": "At that time: When therefore they had dined, Jesus saith to Simon Peter: Simon son of John, lovest thou me more than these? He saith to him: Yea, Lord, thou knowest that I love thee. He saith to him: Feed my lambs. He saith to him again: Simon, son of John, lovest thou me? He saith to him: Yea, Lord, thou knowest that I love thee. He saith to him: Feed my lambs. He said to him the third time: Simon, son of John, lovest thou me? Peter was grieved, because he had said to him the third time: Lovest thou me? And he said to him: Lord, thou knowest all things: thou knowest that I love thee. He said to him: Feed my sheep.",
+  "new": "At that time: Then shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "M39 p. 550 (pdf 314) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong readings (1 Thess 2 / John 21 are not in the 1939 Missal for this Beata): the rubric reads \"Officium Gaudeamus, ut in Communi unius Virg. non Mart., p. 30*\" and pp. 550-551 print only the orations; readings of p. 30* (C51s, scan-checked by A5)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   1,
+   "p33"
+  ],
+  "old": 575,
+  "new": 670,
+  "src": "M39 p. 550 (pdf 314) rubric; readings M39 pp. 30*-31* (pdf 383)",
+  "why": "wrong readings (1 Thess 2 / John 21 are not in the 1939 Missal for this Beata): the rubric reads \"Officium Gaudeamus, ut in Communi unius Virg. non Mart., p. 30*\" and pp. 550-551 print only the orations; readings of p. 30* (C51s, scan-checked by A5)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0904b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 2 10: 17-18; 11: 1-2",
+    "roman": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 1-13",
+    "roman": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 2 10: 17-18, 11: 1-2"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 1-13"
+   }
+  ],
+  "src": "M39 p. 550 (pdf 314)",
+  "why": "refs of the readings of p. 30*"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0303b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ecclesiasticus 44: 16-27; 45: 3-20",
+    "roman": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 14-23",
+    "roman": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Ecclesiasticus 31: 8-11"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 12: 35-40"
+   }
+  ],
+  "src": "M39 p. 394 (pdf 236)",
+  "why": "the rubric (M39 p. 394 (pdf 236)) reads \"Officium Os justi, ut in Communi Conf. non Pontif. pag. 23*\"; the Beatus's own entry prints only the orations; readings of the Commune (C42s); this key has no readings33 entry, so the page takes the text from the Bible by these refs"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0503b",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáre me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro, vírginem castam exhibére Christo.",
+  "new": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáte me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhibére Christo.",
+  "src": "M39 p. 534 (pdf 306)",
+  "why": "the rubric (M39 p. 534 (pdf 306)) reads \"Officium Gaudeamus, ut in Comm. Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s), scan-checked by A5"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0503b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas, exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes, et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis de óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "src": "M39 p. 534 (pdf 306)",
+  "why": "the rubric (M39 p. 534 (pdf 306)) reads \"Officium Gaudeamus, ut in Comm. Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s), scan-checked by A5"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0503b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 2 10: 17-18; 11: 1-2",
+    "m39": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 1-13",
+    "m39": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 2 10: 17-18, 11: 1-2"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 1-13"
+   }
+  ],
+  "src": "M39 p. 534 (pdf 306)",
+  "why": "the rubric (M39 p. 534 (pdf 306)) reads \"Officium Gaudeamus, ut in Comm. Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0620b",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáre me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro, vírginem castam exhibére Christo.",
+  "new": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáte me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhibére Christo.",
+  "src": "M39 p. 469 (pdf 274)",
+  "why": "the rubric (M39 p. 469 (pdf 274)) reads \"Officium Gaudeamus, ut in Communi Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s), scan-checked by A5"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0620b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas, exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes, et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis de óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "src": "M39 p. 469 (pdf 274)",
+  "why": "the rubric (M39 p. 469 (pdf 274)) reads \"Officium Gaudeamus, ut in Communi Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s), scan-checked by A5"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0620b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 1 7: 25-34"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 21: 9-19",
+    "roman": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 2 10: 17-18, 11: 1-2"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 1-13"
+   }
+  ],
+  "src": "M39 p. 469 (pdf 274)",
+  "why": "the rubric (M39 p. 469 (pdf 274)) reads \"Officium Gaudeamus, ut in Communi Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0622b",
+   0,
+   "la"
+  ],
+  "old": "Ecce sacérdos magnus, qui in diébus suis plácuit Deo, et invéntus est justus: et in témpore iracúndiæ factus est reconciliátio. Non est invéntus símilis illi, qui conservávit legem Excélsi. Ideo jurejurándo fecit illum Dóminus créscere in plebem suam. Benedictiónem ómnium géntium dedit illi, et testaméntum suum confirmávit super caput ejus. Agnóvit eum in benedictiónibus suis: conservávit illi misericórdiam suam: et invénit grátiam coram óculis Dómini. Magnificávit eum in conspéctu regum: et dedit illi corónam glóriæ. Státuit illi testaméntum ætérnum, et dedit illi sacerdótium magnum: et beatificávit illum in glória. Fungi sacerdótio, et habére laudem in nómine ipsíus, et offérre illi incénsum dignum in odórem suavitátis.",
+  "new": "Ecce sacérdos magnus, qui in diébus suis plácuit Deo, et invéntus est justus: et in témpore iracúndiæ factus est reconciliátio. Non est invéntus símilis illi, qui conservávit legem Excélsi. Ideo jurejurándo fecit illum Dóminus créscere in plebem suam. Benedictiónem ómnium géntium dedit illi: et testaméntum suum confirmávit super caput ejus. Agnóvit eum in benedictiónibus suis: conservávit illi misericórdiam suam, et invénit grátiam coram óculis Dómini. Magnificávit eum in conspéctu regum: et dedit illi corónam glóriæ. Státuit illi testaméntum ætérnum: et dedit illi sacerdótium magnum, et beatificávit illum in glória. Fungi sacerdótio, et habére laudem in nómine ipsíus: et offérre illi incénsum dignum in odórem suavitátis.",
+  "src": "M39 p. 470 (pdf 274)",
+  "why": "the rubric (M39 p. 470 (pdf 274)) reads \"Officium Statuit, ut in Communi Conf. Pontificis, pag. 18*\"; the Beatus's own entry prints only the orations; readings of the Commune (C32s), scan-checked by A5"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0622b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo péregre proficíscens, vocávit servos suos, et trádidit illis bona sua. Et uni dedit quinque talénta, álii autem duo, álii vero unum, unicuíque secúndum própriam virtútem: et proféctus est statim. Abiit autem qui quinque talénta accéperat, et operátus est in eis, et lucrátus est ália quinque. Simíliter et qui duo accéperat, lucrátus est ália duo. Qui autem unum accéperat, ábiens fodit in terram, et abscóndit pecúniam dómini sui. Post multum vero témporis venit dóminus servórum illórum, et pósuit ratiónem cum eis. Et accédens qui quinque talénta accéperat, óbtulit ália quinque talénta, dicens: Dómine, quinque talénta tradidísti mihi, ecce ália quinque superlucrátus sum. Ait illi dóminus ejus: Euge serve bone, et fidélis: quia super pauca fuísti fidélis, super multa te constítuam: intra in gáudium dómini tui. Accéssit autem et qui duo talénta accéperat, et ait: Dómine, duo talénta tradidísti mihi, ecce ália duo lucrátus sum. Ait illi dóminus ejus: Euge serve bone, et fidélis: quia super pauca fuísti fidélis, super multa te constítuam: intra in gáudium dómini tui.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo péregre proficíscens, vocávit servos suos et trádidit illis bona sua. Et uni dedit quinque talénta, álii autem duo, álii vero unum, unicuíque secúndum própriam virtútem, et proféctus est statim. Abiit autem qui quinque talénta accéperat, et operátus est in eis, et lucrátus est ália quinque. Simíliter et qui duo accéperat, lucrátus est ália duo. Qui autem unum accéperat, ábiens fodit in terram, et abscóndit pecúniam dómini sui. Post multum vero témporis venit dóminus servórum illórum, et pósuit ratiónem cum eis. Et accédens qui quinque talénta accéperat, óbtulit ália quinque talénta, dicens: Dómine, quinque talénta tradidísti mihi, ecce ália quinque superlucrátus sum. Ait illi dóminus ejus: Euge serve bone, et fidélis, quia super pauca fuísti fidélis, super multa te constítuam, intra in gáudium dómini tui. Accéssit autem et qui duo talénta accéperat, et ait: Dómine, duo talénta tradidísti mihi, ecce ália duo lucrátus sum. Ait illi dóminus ejus: Euge serve bone, et fidélis, quia super pauca fuísti fidélis, super multa te constítuam, intra in gáudium dómini tui.",
+  "src": "M39 p. 470 (pdf 274)",
+  "why": "the rubric (M39 p. 470 (pdf 274)) reads \"Officium Statuit, ut in Communi Conf. Pontificis, pag. 18*\"; the Beatus's own entry prints only the orations; readings of the Commune (C32s), scan-checked by A5"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0622b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ecclesiasticus 44: 16-27; 45: 3-20",
+    "roman": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 14-23"
+   }
+  ],
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Ecclesiasticus 44: 16-27, 45: 3-20"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 14-23"
+   }
+  ],
+  "src": "M39 p. 470 (pdf 274)",
+  "why": "the rubric (M39 p. 470 (pdf 274)) reads \"Officium Statuit, ut in Communi Conf. Pontificis, pag. 18*\"; the Beatus's own entry prints only the orations; readings of the Commune (C32s)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0905b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ecclesiasticus 44: 16-27; 45: 3-20",
+    "roman": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 14-23",
+    "roman": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Hebræos 7: 23-27"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 24: 42-47"
+   }
+  ],
+  "src": "M39 p. 550 (pdf 314)",
+  "why": "the rubric (M39 p. 550 (pdf 314)) reads \"Officium Sacerdotes, ut in Communi Conf. Pont., pag. 17*\"; the Beatus's own entry prints only the orations; readings of the Commune (C30s); this key has no readings33 entry, so the page takes the text from the Bible by these refs"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1116b",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáre me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro, vírginem castam exhibére Christo.",
+  "new": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáte me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhibére Christo.",
+  "src": "M39 p. 624 (pdf 351)",
+  "why": "the rubric (M39 p. 624 (pdf 351)) reads \"Officium Gaudeamus, ut in Communi Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s), scan-checked by A5"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1116b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas, exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes, et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis de óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "src": "M39 p. 624 (pdf 351)",
+  "why": "the rubric (M39 p. 624 (pdf 351)) reads \"Officium Gaudeamus, ut in Communi Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s), scan-checked by A5"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S1116b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 1 7: 25-34"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 1-13",
+    "roman": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 2 10: 17-18, 11: 1-2"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 1-13"
+   }
+  ],
+  "src": "M39 p. 624 (pdf 351)",
+  "why": "the rubric (M39 p. 624 (pdf 351)) reads \"Officium Gaudeamus, ut in Communi Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0427b",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáre me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro, vírginem castam exhibére Christo.",
+  "new": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáte me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhibére Christo.",
+  "src": "M39 p. 420 (pdf 249)",
+  "why": "the rubric (M39 p. 420 (pdf 249)) reads \"Officium Gaudeamus, ut in Communi Virg. non Mart. pag. 30*, cum Orationibus sequentibus\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s), scan-checked by A5"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0427b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas, exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes, et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis de óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "src": "M39 p. 420 (pdf 249)",
+  "why": "the rubric (M39 p. 420 (pdf 249)) reads \"Officium Gaudeamus, ut in Communi Virg. non Mart. pag. 30*, cum Orationibus sequentibus\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s), scan-checked by A5"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0427b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 1 7: 25-34"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 5: 13-19",
+    "roman": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 2 10: 17-18, 11: 1-2"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 1-13"
+   }
+  ],
+  "src": "M39 p. 420 (pdf 249)",
+  "why": "the rubric (M39 p. 420 (pdf 249)) reads \"Officium Gaudeamus, ut in Communi Virg. non Mart. pag. 30*, cum Orationibus sequentibus\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0528b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 1 7: 25-34"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 10: 1-9",
+    "roman": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 2 10: 17-18, 11: 1-2"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 1-13"
+   }
+  ],
+  "src": "M39 p. 454 (pdf 266)",
+  "why": "the rubric (M39 p. 454 (pdf 266)) reads \"Officium Gaudeamus, ut in Communi Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s); this key has no readings33 entry, so the page takes the text from the Bible by these refs"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1030b",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáre me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro, vírginem castam exhibére Christo.",
+  "new": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáte me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhibére Christo.",
+  "src": "M39 p. 600 (pdf 339)",
+  "why": "the rubric (M39 p. 600 (pdf 339)) reads \"Officium Gaudeamus, ut in Comm. Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s), scan-checked by A5"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1030b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas, exiérunt óbviam sponso, et sponsæ. Quinque autem ex eis erant fátuæ, et quinque prudéntes: sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum: prudéntes vero accepérunt óleum in vasis suis cum lampádibus. Moram autem faciénte sponso, dormitavérunt omnes, et dormiérunt. Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei. Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas. Fátuæ autem sapiéntibus dixérunt: Date nobis de óleo vestro: quia lámpades nostræ exstinguúntur. Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis. Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est jánua. Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, Dómine, áperi nobis. At ille respóndens, ait: Amen dico vobis, néscio vos. Vigiláte ítaque, quia nescítis diem, neque horam.",
+  "src": "M39 p. 600 (pdf 339)",
+  "why": "the rubric (M39 p. 600 (pdf 339)) reads \"Officium Gaudeamus, ut in Comm. Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s), scan-checked by A5"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S1030b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 1 7: 25-34",
+    "m39": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 13: 44-52",
+    "m39": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Corinthios 2 10: 17-18, 11: 1-2"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Matthæus 25: 1-13"
+   }
+  ],
+  "src": "M39 p. 600 (pdf 339)",
+  "why": "the rubric (M39 p. 600 (pdf 339)) reads \"Officium Gaudeamus, ut in Comm. Virg. non Mart., pag. 30*\"; the Beatus's own entry prints only the orations; readings of the Commune (C51s)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0514b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. Beáti servi illi, quos cum vénerit dóminus, invénerit vigilántes: amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut, cum vénerit, et pulsáverit, conféstim apériant ei. Beáti servi illi, quos cum vénerit dóminus, invénerit vigilántes: amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.",
+  "src": "M39 p. 442 (pdf 260)",
+  "why": "the rubric (M39 p. 442 (pdf 260)) reads \"Officium Os justi, ut in Communi Conf. non Pont., pag. 23*\"; the Beatus's own entry prints only the orations; readings of the Commune (C42s), scan-checked by A5"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0514b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ecclesiasticus 31: 8-11",
+    "m39": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 12: 35-40",
+    "m39": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Ecclesiasticus 31: 8-11"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 12: 35-40"
+   }
+  ],
+  "src": "M39 p. 442 (pdf 260)",
+  "why": "the rubric (M39 p. 442 (pdf 260)) reads \"Officium Os justi, ut in Communi Conf. non Pont., pag. 23*\"; the Beatus's own entry prints only the orations; readings of the Commune (C42s)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1026b",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. Beáti servi illi, quos cum vénerit dóminus, invénerit vigilántes: amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut, cum vénerit, et pulsáverit, conféstim apériant ei. Beáti servi illi, quos cum vénerit dóminus, invénerit vigilántes: amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.",
+  "src": "M39 p. 597 (pdf 337)",
+  "why": "the rubric (M39 p. 597 (pdf 337)) reads \"Officium Os justi, ut in Communi Conf. non Pont., pag. 23*\"; the Beatus's own entry prints only the orations; readings of the Commune (C42s), scan-checked by A5"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S1026b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ecclesiasticus 31: 8-11",
+    "m39": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 12: 35-40",
+    "m39": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Ecclesiasticus 31: 8-11"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 12: 35-40"
+   }
+  ],
+  "src": "M39 p. 597 (pdf 337)",
+  "why": "the rubric (M39 p. 597 (pdf 337)) reads \"Officium Os justi, ut in Communi Conf. non Pont., pag. 23*\"; the Beatus's own entry prints only the orations; readings of the Commune (C42s)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0811b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Lesson",
+    "ref": "Ecclesiasticus 31: 8-11",
+    "m39": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 12: 35-40",
+    "m39": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Ecclesiasticus 31: 8-11"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 10: 1-9"
+   }
+  ],
+  "src": "M39 p. 522 (pdf 300)",
+  "why": "the rubric (M39 p. 522 (pdf 300)) reads \"Officium Os justi, ut in Communi Conf. non Pont., pag. 23*, cum Evangelio Designavit, pag. 25*\"; the Beatus's own entry prints only the orations; readings of the Commune (C42s); this key has no readings33 entry, so the page takes the text from the Bible by these refs"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S1012b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ecclesiasticus 31: 8-11",
+    "m39": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 12: 35-40",
+    "m39": true
+   }
+  ],
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Ecclesiasticus 31: 8-11"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 10: 1-9"
+   }
+  ],
+  "src": "M39 p. 579 (pdf 327)",
+  "why": "the rubric (M39 p. 579 (pdf 327)) reads \"Officium Os justi, de Communi Confessoris non Pontificis, pag. 23*, cum Evangelio Designavit Dominus, pag. 25*\"; the Beatus's own entry prints only the orations; readings of the Commune (C42s); this key has no readings33 entry, so the page takes the text from the Bible by these refs"
+ }
+]
