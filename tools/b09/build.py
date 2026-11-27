@@ -784,10 +784,13 @@ def swap_doxology(t, which, lang):
     have = {nb(re.sub(r'<[^>]+>', '', x))[:30] for x in st[:-1]}
     new = [x for x in new if nb(re.sub(r'<[^>]+>', '', x))[:30] not in have]   # a hymn that already has 'María Mater grátiæ'
     return '\n\n'.join(st[:-1] + new)
+FIXHY = set()
 def hymn9(spec, d=None, dox=None):
     """a 1909 hymn: spec = incipit or (incipit, word the right variant contains); dox = 'tp' | 'bvm' | None"""
     inc, must = (spec if isinstance(spec, tuple) else (spec, None))
     if inc in CM.HYMN_TEXT: la, e = CM.HYMN_TEXT[inc]
+    if inc in FIXHY: return la, e    # printed in the feast itself, doxology included
+    if inc in CM.HYMN_TEXT: pass
     else:
         q = nb(inc); c = [(la, e) for n, la, e in HYALL if n.startswith(q[:36])]
         if must: c = [x for x in c if nb(must) in nb(x[0])] or c
@@ -1080,7 +1083,7 @@ def with_proper(F, o, title):
         hy = X.get(sec + '.hymn')
         if hy and isinstance(F.get(sec), dict):
             inc = hy[0].split(' / ')[0].rstrip(',.:;')
-            CM.HYMN_TEXT[inc] = (CM._hy(hy), CM._hy(hy))
+            CM.HYMN_TEXT[inc] = (CM._hy(hy), CM._hy(hy)); FIXHY.add(inc)
             F[sec] = dict(F[sec], hymn=inc)
     M_ = dict(F['mat']); tp = F.get('_tp')
     iv = get('mat', 'invit')
