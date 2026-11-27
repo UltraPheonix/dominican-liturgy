@@ -21,6 +21,10 @@ Read tools/handoff/RULINGS.md (all of Joseph's decisions) before anything else.
   - Look for the Dominican version on GregoBase (tools/gregobase/gb.sqlite, Dominican sources 11, 12, 13, 14, 20, 21, 35, 36).
   - Check it against the Processionarium 1913 scan before use.
   - List every procession item that has text but no chant, and fill in each one.
+- **Processions chant QC:** some responses have wrong notes, e.g. one that doesn't go down at the end.
+  - Check every versicle/response and prayer tone file (tools/proc/gabc/tone_*, ex_*, lit_*, lor_*) against the Processionarium rules: p. 395-396 for versicles (the final drop), p. 402 for flexa and proparoxytones, pp. 407-408 for prayers.
+  - Check every read chant against the scan.
+  - Fix in the generators (gen_tones.js, gen_lit.js, gen_ex.js), then rebuild.
 
 ## ONE MERGED TO-DO LIST (Joseph, 27 Nov 17:52): Mass first, then Office
 The Office chat is closed, so this chat owns the whole site.
