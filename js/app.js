@@ -1491,7 +1491,10 @@
       if (!c.key || !(window.ORATIONS && ORATIONS[c.key] && D.masses[c.key])) return !c.privateOnly && !!memoriaId(c, d);
       return !c.privateOnly && c.key !== state.key;
     });
-    var out = keep.map(function (c) { return c.kind === 'bvm' ? bvmSet(d) : c.key && window.ORATIONS && ORATIONS[c.key] && D.masses[c.key] ? 'm:' + c.key : memoriaId(c, d); });
+    var out = keep.map(function (c) {
+      if (c.key === 'Adv3w' && window.MEMORIAE && MEMORIAE['Adv3w|Feria IV Quatuor Temporum Adventus']) return 'x:Adv3w|Feria IV Quatuor Temporum Adventus';   // Festina
+      return c.kind === 'bvm' ? bvmSet(d) : c.key && window.ORATIONS && ORATIONS[c.key] && D.masses[c.key] ? 'm:' + c.key : memoriaId(c, d);
+    });
     // a Commemoration of a feast Totum Duplex or Duplex, or of a solemn Octave, leaves no prayer to be added (Rubr. X.1)
     out.high = keep.some(function (c) { return /^(Totum Duplex|Duplex)/.test(c.rank || '') || (c.kind === 'octave' && c.pv >= 25); });
     return out;
@@ -1528,6 +1531,7 @@
     var d = state.date, dr = dayRank(state.key, d), sp = seasonPrayers(d), mem = memoriasOf(d), md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
     // no commemoration of Our Lady in a Mass of Our Lady (Vigil of the Assumption on a Saturday)
     if (isMarian(state.key)) { var hi = mem.high; mem = mem.filter(function (x) { return !BVM_SETS[x]; }); mem.high = hi; }
+    if (state.key === 'Dec25_2') return ['x:1225|S. Anastasiæ Mart.'];   // "Memoria de S. Anastasia" (Missal pp. 21-22)
     if (/^(Pasc0|Pent0|Dec25|Jan1$)/.test(state.key)) return [];
     // a day within a simple octave is of the Simplex rite: three prayers (X.1)
     var od = d && window.OPMissalRank ? mr().day(d) : null;

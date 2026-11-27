@@ -569,6 +569,9 @@
     var I = /I classis/.test(win.rank) || win.pv >= 90, II = /II classis/.test(win.rank);
     commems.forEach(function (c) {
       var pv = RANK_PV[c.rank] || (c.kind === 'memoria' ? 5 : 0);
+      // the Sunday and a major feria are always commemorated, even on a feast of the I class (Missal, after the First Sunday of Advent, scan p. 34: "semper fit
+      // Memoria de Feria majori Adventus, Quadragesimae, Quatuor Temporum et Rogationum"; Ordo 1944, 8 Dec.: "In Missa m. fer.")
+      if (c.kind === 'feria' || c.kind === 'sunday') { if (twoMass && c.kind === 'feria') c.privateOnly = true; return; }
       if (I && ((c.kind === 'feast' && pv <= 60) || c.kind === 'memoria' || (c.kind === 'octave' && !/^(Epi|CorpusChristi|Asc|SCJ|Dec25)/.test(c.key || '')))) c.privateOnly = true;
       if (II && (pv <= 20 || c.kind === 'memoria')) c.privateOnly = true;
       // on the days of two conventual Masses the Mass of the feast is said without the feria or vigil, which private
