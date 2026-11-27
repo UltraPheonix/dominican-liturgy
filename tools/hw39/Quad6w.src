@@ -13,6 +13,7 @@ C: in 0
 X: ky
 R: Post Kyrie eléison, non dicatur *Dóminus vobíscum,* sed *Orémus. Flectámus génua. Leváte.*
  = After the Kyrie eléison, *Dóminus vobíscum* is not said, but *Orémus. Flectámus génua. Leváte.* (Let us pray. Let us kneel. Arise.)
+G: op-m39-flectamus|Flectámus génua. Leváte. (Missale O.P. 1939, Suppl. p. 34)
 L: Oratio
  = Collect
 T: ^PRÆSTA, quǽsumus omnípotens Deus : ut qui nostris excéssibus incessánter afflígimur; per unigéniti Fílii tui passiónem liberémur : Qui tecum vivit.
@@ -24,6 +25,7 @@ T: ^HÆC dicit Dóminus Deus : Dícite fíliæ Sion : Ecce Salvátor tuus venit 
 T: {℟. Ps. 68} Ne avértas fáciem tuam a púero tuo : quóniam tríbulor, velóciter exáudi me. {℣.} Salvum me fac Deus, quóniam intravérunt aquæ usque ad ánimam meam : infíxus sum in limo profúndi, et non est substántia.
  = {℟. Ps. 68} Turn not away Your face from Your servant, because I am in tribulation; hear me speedily. {℣.} Save me, O God, because the waters have entered into my soul; I am stuck fast in the deep mire, and there is no sure standing.
 C: gr 0
+G: op-m39-flectamus|Flectámus génua. Leváte. (Missale O.P. 1939, Suppl. p. 34)
 T: Dóminus vobíscum. Orémus. Flectámus génua. Leváte.
  = The Lord be with you. Let us pray. Let us kneel. Arise.
 L: Oratio
@@ -71,6 +73,7 @@ T: ^LARGIRE sénsibus nostris, omnípotens Deus : ut per temporálem Fílii tui 
 R: Secunda et tertia Postcommunio, pag. 65
  = The second and third Postcommunions, p. 65:
 INC: lent_pc
+G: op-m39-humiliate|Humiliáte cápita vestra Deo. (Missale O.P. 1939, Suppl. p. 34)
 T: Orémus. Humiliáte cápita vestra Deo.
  = Let us pray. Bow down your heads to God.
 L: Oratio super populum
