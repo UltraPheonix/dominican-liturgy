@@ -13,6 +13,23 @@ Every paused job has its own note in this folder:
 | proc_tones.md | Processions: versicles and prayers in tone | **Done and live** (reference only) |
 | qc_mass.md, qc_ui.md, qc_hw.md | The three QC reports | Partly fixed (see the to-do list below) |
 
+## When Joseph says "continue": start a swarm
+Joseph asked (27 Nov) that "continue" launches a whole swarm of sub-agents to finish the Mass work, not one job at a time.
+- **One agent per independent job:**
+  - items 1, 2, 3, 4 and 5;
+  - item 6 split into 2 agents (Holy Week text/layout; Holy Week app logic);
+  - item 7 split into 2 agents (Requiem and prayers; the rest);
+  - item 8: one agent per Mass to typeset (S1002, S1015, S1024, S1115), plus one for the DOUBTFUL items;
+  - item 9;
+  - item 11 split into 5 agents: one transcribing the Passion tones (pp. 435-440) first, then one per Passion.
+- **Each agent's prompt:** give the standing rules above, its handoff note, and the files it may touch. Agents in the same file need separate, non-overlapping regions, as with proc_data.py's `_at` blocks.
+- **Agents' own limits:** agents don't commit; each reports per chant / per Mass, and the coordinator relays these to Joseph.
+- **Coordinator's job:**
+  - Verify each result against the scan.
+  - Integrate, sweep, test and push in small batches.
+  - Send Joseph a short status after each batch.
+- **One QC agent at the end** re-walks the site, checking against the 1939 Missal.
+
 ## Standing rules (Joseph)
 - **Pre-1955 Dominican rite only.**
   - Use Dominican books only: Missale O.P. 1939/1933, Graduale O.P. 1928/1950, Processionarium O.P. 1913, Triduum O.P. 1927, Ordo 1944.
