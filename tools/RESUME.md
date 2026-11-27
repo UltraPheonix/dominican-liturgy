@@ -1,4 +1,4 @@
-# Mass chat — where to resume (27 Nov 2026, after v167)
+# Mass chat — where to resume (27 Nov 2026, after v171)
 
 Standing rules: pre-1955 Dominican rite only; never infer chant; terse; status after each substep; `git pull --rebase`,
 bump sw.js, headless Chrome test, commit as UltraPheonix, `bash tools/push.sh`; do not touch the Office files.
@@ -17,17 +17,22 @@ bump sw.js, headless Chrome test, commit as UltraPheonix, `bash tools/push.sh`; 
   Hopkins for Adoro te; [brackets] = ours). Remaining AI-labelled: Augustine/Ambrose readings, confession prayers, O sancte N.,
   O serenissima, Pater caelestis, Anima Christi (Dominican form), In nomine.
 
-## In progress when stopped: task #46, chant English
-- data/masses.js trans: 357 Douay-Rheims ('douay'), 576 'own' (AI, replaced the 1959 St Dominic Missal English in an earlier session,
-  see build_masses.py ~line 540; the 1959 English is still in tools/sources/dm_trans.json). tools/g50/trans.json (47 new chants) is AI.
-- Next: (1) check scriptural chants in g50/trans.json against the real Douay-Rheims (/home/claude/src/jgabc/douay-rheims, tools/douay_match.py)
-  and mark 's': 'douay'; (2) ask Joseph whether to bring back the 1959 St Dominic Missal English (human) for the 576 'own' chants,
-  or keep AI and label it on the page; (3) label AI English on the Mass page.
+- v169 chant English (#46): tools/check/trans_source.py relabels English that is really Douay-Rheims ('douay' verbatim, 'dra' adapted
+  to the chant); 410 remain AI ('own'). Each chant's English shows its source on the Mass page (Douay-Rheims / adapted / AI).
+  Decision taken without Joseph: the 1959 St Dominic Missal English was NOT restored for the AI chants (easy to do if he asks:
+  tools/sources/dm_trans.json).
+- v170 2nd and 3rd prayers (#40): data/addiv.js (tools/addiv: parse.py, fix.py + la_fix.json proofed from page images of M39.pdf
+  pp. 100*-113*, tern.py, en.py, build.py). Selector under the Collect (state.o2/o3, hash o2=,o3=): of the season, Orationes ad diversa
+  1-38, or 'm:KEY' commemoration from data/orations.js. Hint + "Use" for the season (Rubr. gen. X). Hidden at Requiem / Holy Week.
+- v171 error check (#41): see tools/g50/REVIEW.md (Statuit Communio, Commons' Tracts, St Margaret of Hungary, Octave of Peter & Paul).
 
-## Then (Joseph's order)
-1. 2nd and 3rd collects: dropdown where the priest chooses; carry to Secret and Postcommunion.
-2. Error check: the 30 flagged feasts (tools/g50/check.py), then a full Mass check.
-3. Processions, litanies and blessings (Processionarium 1913).
+## Next
+1. Processions, litanies and blessings (Processionarium 1913) (#42).
+2. Open from the review: 168 'inferred' chants in data/masses.js to check against the Graduale; 43 orations without Latin conclusion.
+3. Booklets (js/booklet.js) do not yet print the 2nd/3rd prayers.
+
+Sources: M39 PDF = archive.org/download/m-39_20261122/M39.pdf (download to /home/claude/dl/missal/M39.pdf for page images).
+Graduale O.P. 1950 scan is not reachable (archive.org copy is loan-only); OCR in tools/g50/ocr.tgz, GregoBase pages in tools/gregobase/gb.sqlite.
 
 Test helpers (recreate if /tmp was cleared): local server `python3 -m http.server 8768`; sweep of Masses x forms x rubrics
 is tools/check/mass_sweep.py (load index.html?n=<i>#<key>&ordo=<f>&rub=<full>&sac=..&prel=.., check pageerrors, duplicate rubric lines,
