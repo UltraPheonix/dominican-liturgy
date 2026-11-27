@@ -119,8 +119,10 @@
     if (fromE === 68) return ['SCJ'];
     if (fromE >= 56) {
       var a1n = adv1(y), n = Math.floor((fromE - 49) / 7), keys = [];
-      var s1 = new Date(y, 8, 1), sun3 = addDays(s1, ((7 - s1.getDay()) % 7) + 14), ed = diffDays(d, sun3);
-      if (ed === 3) keys.push('EmbWedSept'); if (ed === 5) keys.push('EmbFriSept'); if (ed === 6) keys.push('EmbSatSept');
+      // the September Ember days: Wednesday, Friday and Saturday after the Exaltation of the Holy Cross (Missale O.P. 1939,
+      // Quatuor Tempora, p. [8]; Brev. 1924 likewise)
+      var x14 = new Date(y, 8, 14), ew = addDays(x14, ((3 - x14.getDay() + 7) % 7) || 7), ed = diffDays(d, ew);
+      if (ed === 0) keys.push('EmbWedSept'); if (ed === 2) keys.push('EmbFriSept'); if (ed === 3) keys.push('EmbSatSept');
       // the last Sunday has its own Mass; the Sundays between the twenty-first after the Octave of Trinity and the last
       // take the prayers and lessons of the Sundays left over after the Epiphany (Missale O.P. 1939)
       var dS = diffDays(a1n, d) + dow;
@@ -553,6 +555,14 @@
     if (vigil && win !== vigil && !(/I classis/.test(priv))) pushC(vigil, 'vigil');
     cs.forEach(function (c) { if ((c.kind === 'octave' || c.kind === 'octday') && c !== win && c.pv >= 20) pushC(c, 'octave'); });
     cs.forEach(function (c) { if ((c.kind === 'feast' || c.kind === 'tfeast') && c !== win && c.pv >= 20) pushC(c, 'feast'); });
+    // Our Lady on a Saturday whose Office of her is impeded (Brev. 1924, § XXI.3): not on Doubles and above, within
+    // solemnissima and solemn octaves and on their octave days, from 2 to 13 January, nor on All Souls; after the feasts,
+    // before the Memoriae (Ordo 1944, 15 Jul.: "2-a Or. festi, 3-a Concede. (B.V.)"; 29 Jul.: "2-a Or. Concede. (B.M.V.),
+    // 3-a SS. Felicis")
+    var md = mmdd(d);
+    if (d.getDay() === 6 && !bvm && win.pv < 50 && t.pv < 50 && !win.allSouls && !(md >= '0102' && md <= '0113') &&
+        !cs.some(function (c) { return c.kind === 'octday' || (c.kind === 'octave' && c.pv >= PV.inOctSolemn); }))
+      pushC({key: null, title: 'S. Maria in Sabbato', rank: ''}, 'bvm');
     cs.forEach(function (c) { if (c.kind === 'memoria') pushC(c, 'memoria'); });
     // at the conventual and sung Mass of a feast of the I class nothing is made of common Totum Duplex feasts and below,
     // nor of non-privileged octaves; of the II class nothing of Tres Lectiones and below (Rubr. VIII.2)

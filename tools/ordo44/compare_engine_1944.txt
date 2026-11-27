@@ -27,7 +27,7 @@ X 10-12 T | Ordo: G ra tia ru m actio pro viet. Cho­ Alb. cim . Tot. Dupl. — 
 X 10-16 M | Ordo: S. H e d v ig is V id. P . P . Dupl,— Alb. Ps. fer. OCTOBER  | engine: temporal  [] -> C114s,Pent20
 X 10-20 F | Ordo: S. J o a n n is C ant. С. P. P. Tot. Alb. Dupl. — Ps. fer. 1 | engine: temporal  [] -> Pent20
 X 10-29 S | Ordo: ttm. — Compl. Dom.                                           | engine: tfeast D. N. Jesu Christi Regis [Totum Duplex I classis] -> ChristusRex
-X 10-31 T | Ordo: Vigil. (J. E. cum abst.) S a c ra ­ Rb ru m R e liq u ia ru  | engine: feast Commemoratio Sanctorum, quorum Reliquiæ  [Totum Duplex] -> -,S1031
+X 10-31 T | Ordo: Vigil. (J. E. cum abst.) S a c ra ­ Rb ru m R e liq u ia ru  | engine: feast Commemoratio Sanctorum, quorum Reliquiæ  [Totum Duplex] -> S1031v,S1031
 X 11-10 F | Ordo: S. S ta n is la i K o stk a С. P . P. Alb. t Tot. Dupl. — Ps | engine: temporal  [] -> S1113,Pent23
 X 11-12 S | Ordo: (ant. Qui caelorum., От. Dom. IV. P.O.E.) — Compl. Dom.      | engine: feast Festivitas Omnium Sanctorum O. P. [Totum Duplex II classis] -> S1112
 X 12-23 S | Ordo: Q. T. (J. E. cum abst.) B. M a r­ Alb. t g a rita e de S ab. | engine: feast B. Margaritæ de Sabaudia Vid. O. P. [Semiduplex] -> Adv3s,S1127b

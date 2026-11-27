@@ -47,8 +47,21 @@ for k, (la, en) in T.items():
         if k == 'bvmNat' and kind == 'or':
             b = t['or'][:-len(NAT_OR)].rstrip(' ,'); S[k]['or'] = {'la': b + ',', 'lc': NAT_OR, 'en': EN[k][0][1], 'ec': 'our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end.', 's': DM, 'cont': 1}
         else: S[k][kind] = prayer(t[kind], EN[k][i])
+# Of Our Lady through the year (Missale O.P. 1939, De sancta Maria in Sabbato III, A Purificatione usque ad Adventum,
+# pp. 58*-59*): the commemoration of Our Lady on Saturdays when her Office is impeded (Breviarium 1924, Rubr. gen. § XXI.3;
+# Missal p. 320, n. 3); in Advent the Advent prayer, from Christmas to the Purification that of Christmastide
+PD = fix.ispell(fix.PD)
+S['bvm'] = {'la': 'De B. Maria V. (a Purificatione usque ad Adventum)', 'en': 'Of Our Lady (through the year)'}
+for kind, la, en in (
+    ('or', 'Concéde nos fámulos tuos, quǽsumus Dómine Deus, perpétua mentis et córporis salúte gaudére: et gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia; et ætérna pérfrui lætítia: ' + PD,
+     'Grant, we beseech You, O Lord God, that we Your servants may rejoice in lasting health of mind and body, and by the glorious intercession of blessed Mary ever Virgin be delivered from present sorrow and enjoy eternal gladness'),
+    ('se', 'Tua, Dómine, propitiatióne, et beátæ Maríæ semper Vírginis intercessióne, ad perpétuam atque præséntem hæc oblátio nobis profíciat prosperitátem et pacem. ' + PD,
+     'By Your mercy, O Lord, and the intercession of blessed Mary ever Virgin, may this offering profit us for prosperity and peace, now and for ever'),
+    ('pc', 'Sumptis, Dómine, salútis nostræ subsídiis: da, quǽsumus, beátæ Maríæ semper Vírginis patrocíniis nos ubíque prótegi; in cuius veneratióne hæc tuæ obtúlimus maiestáti: ' + PD,
+     'Having received, O Lord, the helps of our salvation, grant, we beseech You, that we may everywhere be protected by the patronage of blessed Mary ever Virgin, in whose honour we have offered these gifts to Your majesty')):
+    S['bvm'][kind] = prayer(la, ('ai', en))
 # Latin initials of the sets, for the lists
-INC = {'bvmAdv': 'Deus, qui de beátæ', 'bvmNat': 'Deus, qui salútis', 'cruce': 'Deus, qui pro nobis', 'd15': 'Deus, qui caritátis', 'd2': 'A cunctis', 'd6': 'Deus ómnium fidélium'}
+INC = {'bvm': 'Concéde nos fámulos', 'bvmAdv': 'Deus, qui de beátæ', 'bvmNat': 'Deus, qui salútis', 'cruce': 'Deus, qui pro nobis', 'd15': 'Deus, qui caritátis', 'd2': 'A cunctis', 'd6': 'Deus ómnium fidélium'}
 for k, v in S.items(): v['inc'] = INC.get(k) or ' '.join(v['or']['la'].split()[:4]).rstrip(',:;')
 out = 'window.ADDIV = ' + json.dumps({'src': 'Missale O.P. (1939): Orationes ad diversa, pp. 100*-113*; Orationes ad supplendum numerum ternarium, pp. 636-638; In Vigilia Epiphaniae, pp. 32-33',
                                       'sets': S}, ensure_ascii=False, separators=(',', ':')) + ';\n'

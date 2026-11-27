@@ -1482,10 +1482,31 @@
       if (!r.masses.some(function (m) { return m.key === state.key; })) return [];
     }
     return r.commems.filter(function (c) {
+      if (c.kind === 'bvm') return !c.privateOnly;
       return !c.privateOnly && c.key && c.key !== state.key && window.ORATIONS && ORATIONS[c.key] && D.masses[c.key];
-    }).map(function (c) { return 'm:' + c.key; });
+    }).map(function (c) { return c.kind === 'bvm' ? bvmSet(d) : 'm:' + c.key; });
   }
+  // the prayer of Our Lady for her commemoration on Saturdays (Brev. § XXI.3; Missal, De S. Maria in Sabbato I-III):
+  // in Advent Deus, qui de beatae; from Christmas to the Purification Deus, qui salutis; else Concede nos famulos
+  function bvmSet(d) {
+    var sp = seasonPrayers(d), md = (d.getMonth() + 1) * 100 + d.getDate();
+    if (sp && sp.o2 === 'bvmAdv') return 'bvmAdv';
+    if (md >= 1225 || md < 202) return 'bvmNat';
+    return 'bvm';
+  }
+  var BVM_SETS = {bvm: 1, bvmAdv: 1, bvmNat: 1};
   function prescribed(m) {
+    var P = prescribed0(m);
+    // votive Masses of Our Lady: without a Memoria the Oratio Ecclesiae (n. 7) replaces the prayer of Our Lady or A cunctis;
+    // with one, the 3rd prayer is at the priest's choice (Missal p. 320, n. 2; Rubr. X.1 d; Ordo 1944, 9 Sept.: "In Missa
+    // (Salve sancta Parens.) ... 2-a Or. S. Gorgonii, 3-a ad libitum")
+    if (/^C(79|82)s$/.test(state.key) && P.length) {
+      var memo = P.some(function (x) { return /^m:/.test(x); });
+      P = P.map(function (x) { return BVM_SETS[x] || x === 'd2' ? (memo ? 'lib' : 'd7') : x; });
+    }
+    return P;
+  }
+  function prescribed0(m) {
     if (!moreAllowed(m)) return [];
     var d = state.date, dr = dayRank(state.key, d), sp = seasonPrayers(d), mem = memoriasOf(d), md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
     if (/^(Pasc0|Pent0|Dec25|Jan1$)/.test(state.key)) return [];
@@ -1495,7 +1516,13 @@
     if (dr.dup) return mem.slice(0, 2);                                        // Doubles: only the Memoriae
     if (!sp) return mem.slice(0, 2);
     if (mem.length >= 2) return mem.slice(0, 2).concat(sp.with3 === 'cruce' ? ['cruce'] : []);   // X.1 c, e
-    if (mem.length === 1) return [mem[0], sp.with3 || 'lib'];
+    if (mem.length === 1) {
+      // Our Lady commemorated on a Saturday: A cunctis is left out; the 3rd prayer is at the priest's choice through the
+      // year, Deus, qui caritatis from Septuagesima to Maundy Thursday, de Cruce in Paschaltide (Missal p. 320, nn. 1, 3;
+      // Ordo 1944, 23 Sept.: "2-a Or. Concede., 3-a ad libitum"); in Advent she is the season's prayer
+      if (BVM_SETS[mem[0]]) return mem[0] === sp.o2 ? [sp.o2, sp.o3 || 'lib'] : [mem[0], sp.with3 === 'd2' ? 'lib' : sp.with3 || 'lib'];
+      return [mem[0], sp.with3 || 'lib'];
+    }
     return [sp.o2, sp.o3 || 'lib'];
   }
   // what is said: the priest's choice where he has made one ('none' leaves the place empty), otherwise the Missal's
