@@ -63,6 +63,18 @@ bump sw.js, headless Chrome test, commit as UltraPheonix, `bash tools/push.sh`; 
   * then prescribed() uses the table first, the seasonal rule second; KAL39 Memoriae without prayers in the data need their
     orations (from M39). Footnotes 39623-39631 (Saturday BVM, votive BVM, Joseph/Peter-Paul/Dominic omitted from A cunctis).
 
+## Day-by-day audit of the Mass (Joseph, 27 Nov 08:13): tools/check/day_audit.py START END > /tmp/year.json (about 10 min a year),
+then tools/check/day_report.py /tmp/year.json. First run 2026-11-29..2027-11-27: no page errors, all propers/orations/readings present
+except Paschaltide ferias (one Alleluia: correct, XIII.1) and the Vigil of Pentecost (no Introit: correct). The real problem is the
+choice of the day's Mass: massesOf() in js/app.js uses the 1960 class scheme (feastClass/temporalClass I-IV) and treats every
+Dominican Blessed as ad libitum, so e.g. BB. Alphonsus Navarrete (1 Jun), Innocent V (22 Jun), Benedict XI (7 Jul), Mannes (30 Jul)
+lose to ferias, the Saturday Mass of Our Lady beats Ss. Philip and James (1 May 2027) and falls within the Epiphany octave (9 Jan),
+St Thomas Becket / St Silvester lose to the Christmas octave. M39 Rubr. gen. (m39lin.txt 6290-6460): 'Missa quotidie celebrari debet
+secundum ordinem Officii, de quo fit illo die' -> the Mass follows the Office of the day (Breviary precedence); tit. III Sunday,
+tit. IV ferias and vigils: in Lent ferias, Ember days, common vigils with a feast, TWO conventual Masses (in choir: the feast for
+Totum Duplex I/II cl. and the privileged octaves of Epiphany and Corpus Christi, otherwise the feria); private Masses ad libitum.
+To build: the Missal ranking engine (Joseph: separate engines for Missal and Breviary).
+
 ## Next
 1. Processions (#42) continued, in this order: Palm Sunday (20, compare with Holy Week page), Easter (34, 42), Corpus Christi (51, 55),
    Assumption (77), St Dominic (73, 97), processions of the Order's saints (97-110), Te Deum (120), Asperges (2), then the rest.
