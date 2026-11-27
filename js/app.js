@@ -1490,7 +1490,18 @@
     if (it.k === 'se' && isSung() && it.last) { lc = lc.replace(/,?\s*per ómnia sǽcula sæculórum\.?\s*$/i, ','); ec = ec.replace(/,?\s*world without end\.?\s*$/i, ','); }
     if (lc) { la = la.replace(/[\s.]+$/, '') + ' ' + lc; en = en.replace(/[\s.;:,]+$/, '') + (p.cont ? ', ' : '; ') + ec.charAt(0).toLowerCase() + ec.slice(1); }
     else { la = la.replace(/[\s:;,]+$/, '') + (/[.!?]$/.test(la.trim()) ? '' : '.'); en = en.replace(/[\s:;,.]+$/, '') + '.'; }
-    box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: la}), el('p', {class: 'en-text', lang: 'en'}, [en, p.s === 'ai' ? el('span', {class: 'tr-src tr-ai', text: 'AI translation'}) : (p.s === 'dm' ? el('span', {class: 'tr-src', text: 'After the St Dominic Missal (1959)'}) : null)])]));
+    var src = p.s === 'ai' ? el('span', {class: 'tr-src tr-ai', text: 'AI translation'}) : (p.s === 'dm' ? el('span', {class: 'tr-src', text: 'After the St Dominic Missal (1959)'}) : null);
+    // at a sung Mass the Collect and Postcommunion are sung in the tone of the prayers (Harrison 1920, pp. 66-67), Orémus
+    // before the second, the conclusion and Amen only on the last; the Secret is said in a low voice
+    var og = null;
+    if (isSung() && it.k !== 'se' && window.OPMassTones) { try { og = OPMassTones.oration(la, {noOremus: it.extra !== 2}); } catch (e) { console.warn('tone', e); } }
+    if (og) {
+      if (it.extra === 2) { var orl = box.querySelector('.o-line'); if (orl) box.removeChild(orl); }   // Orémus is sung with the tone
+      box.appendChild(gabcBox(og));
+      box.appendChild(el('p', {class: 'en-text tone-en', lang: 'en'}, [(it.extra === 2 ? 'Let us pray. ' : '') + en + (it.last ? ' ℟. Amen.' : ''), src]));
+      return box;
+    }
+    box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: la}), el('p', {class: 'en-text', lang: 'en'}, [en, src])]));
     if (it.last && !(it.k === 'se' && isSung())) box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la'}, [el('span', {class: 'o-mark', text: '℟. '}), 'Amen.'])]));
     return box;
   }
