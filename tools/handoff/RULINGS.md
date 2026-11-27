@@ -27,7 +27,8 @@
 - Step 2 (calendar/selection logic, ordo44_diff.md) starts NOW, in parallel with the text audit; the coordinator fixes js/ rule by rule, quoting each rubric.
 - Dec24 Gospel: "desponsáta" (the Vulgate); the Missal's "deponsáta" (p. 17) is a printer's slip.
 - After this round: an independent checker re-reads a random 1-in-10 sample of the audit fixes on the scan.
-- Conclusions: the whole printed pointing of the full conclusion is applied everywhere by canon() in apply_fixes.py: "Fílium tuum; qui tecum", "cum Deo Patre; in unitáte", "Spíritus Sancti Deus: per ómnia" (M39 p. 16 and passim).
+- Conclusions: the whole printed pointing of the full conclusion is applied everywhere by canon() in apply_fixes.py: "Fílium tuum; qui tecum", "cum Deo Patre; in unitáte", "Spíritus Sancti Deus: per ómnia" (M39 p. 16 and passim), and no comma in "Jesum Christum Fílium tuum;" (pp. 472-475, 516, 545).
+- Coordinator under these rulings: where no Dominican book prints a named Introit melody, the notated chant is hidden and the Missal's text (masses.js parts.in[0].m39text) is shown; the votive "per annum" forms (pp. 492, 503, 547) get a selector in the app; C39s's "Aliud Evangelium" (p. 23*) is shown as an alternative Gospel.
 
 ## Saints' Masses
 - **28 Apr:** the Mass is B. Louis Grignion de Montfort, Os justi. St Paul of the Cross has only a Memoria in the 1939 Missal (pp. 420-421).

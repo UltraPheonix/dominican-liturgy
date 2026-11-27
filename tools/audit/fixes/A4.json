@@ -2166,6 +2166,18 @@
  },
  {
   "file": "data/readings33.js",
+  "path": [
+   "S0716",
+   1,
+   "en"
+  ],
+  "old": "At that time: As Jesus was speaking to the multitudes, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck. But he said: Yea rather, blessed are they who hear the word of God, and keep it.",
+  "new": "At that time: It came to pass, as he spoke these things, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck. But he said: Yea rather, blessed are they who hear the word of God, and keep it.",
+  "src": "M39 p. 497 \"ut in Festis B. Mariae Virginis, pag. 1*\"; p. 1* (pdf 368)",
+  "why": "English regenerated verse by verse from bible/en (Douay-Rheims), as the coordinator requires; only the liturgical incipit (\"At that time:\", \"In those days:\") is added and verses/clauses the Missal omits are cut"
+ },
+ {
+  "file": "data/readings33.js",
   "op": "add",
   "path": [
    "S0716"
@@ -2188,13 +2200,26 @@
     "title": "Sequéntia sancti Evangélii secúndum Lucam.",
     "title_en": "Continuation of the holy Gospel according to Luke.",
     "la": "In illo témpore: Loquénte Jesu ad turbas, extóllens vocem quædam múlier de turba dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. At ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud.",
-    "en": "At that time: As Jesus was speaking to the multitudes, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck. But he said: Yea rather, blessed are they who hear the word of God, and keep it.",
+    "en": "At that time: It came to pass, as he spoke these things, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck. But he said: Yea rather, blessed are they who hear the word of God, and keep it.",
     "p33": null,
     "src": "Missale O.P. 1939, p. 1*; English: Douay-Rheims verses (the site's English for readings; the St Dominic Missal 1959 readings are not in the repo), cut/adapted to the Missal's Latin"
    }
   ],
   "src": "M39 p. 497 \"ut in Festis B. Mariae Virginis, pag. 1*\"; p. 1* (pdf 368)",
   "why": "no READINGS33 entry: the app showed a Bible text. Lesson Eccli 24 \"Ab inítio\" (identical to C79s, checked on p. 1*) and Gospel Luc 11 \"Loquénte Jesu\", transcribed from the scan"
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "S0727",
+   0,
+   "en_src"
+  ],
+  "old": null,
+  "new": "ai",
+  "src": "M39 1954 leaf \"Die 27 Julii\" (pdf 367)",
+  "why": "label: the Missal's Latin \"Réddidit Deus justis ... Dómine Deus noster\" departs from the Vulgate, so the English is an AI translation of the Missal's Latin, not Douay-Rheims (Joseph 27 Nov 22:05: label it); app.js m33Readings/drawReading must carry and show en_src"
  },
  {
   "file": "data/readings33.js",
@@ -2212,7 +2237,8 @@
     "la": "Réddidit Deus justis mercédem labórum suórum, et dedúxit illos in via mirábili: Et fuit illis in velaménto diéi, et in luce stellárum per noctem: Tránstulit illos per Mare Rubrum, et transvéxit illos per aquam nímiam. Inimícos autem illórum demérsit in mare, et ab altitúdine inferórum edúxit illos. Ideo justi tulérunt spólia impiórum, et decantavérunt, Dómine, nomen sanctum tuum, et victrícem manum tuam laudavérunt páriter, Dómine Deus noster.",
     "en": "God rendered to the just the wages of their labours, and conducted them in a wonderful way: and he was to them for a covert by day, and for the light of stars by night: he brought them through the Red Sea, and carried them over through a great water. But their enemies he drowned in the sea, and from the depth of hell he brought them out. Therefore the just took the spoils of the wicked, and they sung to thy holy name, O Lord, and they praised with one accord thy victorious hand, O Lord our God.",
     "p33": null,
-    "src": "Missale O.P. 1939, leaf \"Die 27 Julii\" (1954); English: Douay-Rheims verses (the site's English for readings; the St Dominic Missal 1959 readings are not in the repo), cut/adapted to the Missal's Latin"
+    "src": "Missale O.P. 1939, leaf \"Die 27 Julii\" (1954); English: Douay-Rheims verses (the site's English for readings; the St Dominic Missal 1959 readings are not in the repo), cut/adapted to the Missal's Latin",
+    "en_src": "ai"
    },
    {
     "type": "Gospel",
@@ -2230,6 +2256,18 @@
  },
  {
   "file": "data/readings33.js",
+  "path": [
+   "S0624",
+   1,
+   "en"
+  ],
+  "old": "Give ear, ye islands, and hearken, ye people from afar: the Lord hath called me from the womb, from the bowels of my mother he hath been mindful of my name. And he hath made my mouth like a sharp sword: in the shadow of his hand he hath protected me, and hath made me as a chosen arrow: in his quiver he hath hidden me. And he said to me: Thou art my servant Israel, for in thee will I glory. And now saith the Lord, that formed me from the womb to be his servant: Behold, I have given thee to be the light of the Gentiles, that thou mayst be my salvation even to the farthest part of the earth. Kings shall see, and princes shall rise up, and adore for the Lord’s sake, and for the Holy One of Israel, who hath chosen thee.",
+  "new": "Give ear, ye islands, and hearken, ye people from afar. The Lord hath called me from the womb, from the bowels of my mother he hath been mindful of my name. And he hath made my mouth like a sharp sword: in the shadow of his hand he hath protected me, and hath made me as a chosen arrow: in his quiver he hath hidden me. And he said to me: Thou art my servant Israel, for in thee will I glory. And now saith the Lord, that formed me from the womb to be his servant: Behold, I have given thee to be the light of the Gentiles, that thou mayst be my salvation even to the farthest part of the earth. Kings shall see, and princes shall rise up, and adore for the Lord’s sake, and for the Holy One of Israel, who hath chosen thee.",
+  "src": "M39 p. 474 (pdf 276)",
+  "why": "English regenerated verse by verse from bible/en (Douay-Rheims), as the coordinator requires; only the liturgical incipit (\"At that time:\", \"In those days:\") is added and verses/clauses the Missal omits are cut"
+ },
+ {
+  "file": "data/readings33.js",
   "op": "add",
   "path": [
    "S0624",
@@ -2242,7 +2280,7 @@
    "title": "Léctio Isaíæ Prophétæ.",
    "title_en": "Lesson from the Prophet Isaias.",
    "la": "Audíte ínsulæ, et atténdite pópuli de longe: Dóminus ab útero vocávit me, de ventre matris meæ recordátus est nóminis mei. Et pósuit os meum quasi gládium acútum: in umbra manus suæ protéxit me: Et pósuit me sicut sagíttam eléctam: in pháretra sua abscóndit me. Et dixit mihi: Servus meus es tu Israël, quia in te gloriábor. Et nunc dicit Dóminus, formans me ex útero servum sibi: Ecce dedi te in lucem géntium, ut sis salus mea usque ad extrémum terræ. Reges vidébunt, et consúrgent príncipes, et adorábunt propter Dóminum, et sanctum Israël qui elégit te.",
-   "en": "Give ear, ye islands, and hearken, ye people from afar: the Lord hath called me from the womb, from the bowels of my mother he hath been mindful of my name. And he hath made my mouth like a sharp sword: in the shadow of his hand he hath protected me, and hath made me as a chosen arrow: in his quiver he hath hidden me. And he said to me: Thou art my servant Israel, for in thee will I glory. And now saith the Lord, that formed me from the womb to be his servant: Behold, I have given thee to be the light of the Gentiles, that thou mayst be my salvation even to the farthest part of the earth. Kings shall see, and princes shall rise up, and adore for the Lord’s sake, and for the Holy One of Israel, who hath chosen thee.",
+   "en": "Give ear, ye islands, and hearken, ye people from afar. The Lord hath called me from the womb, from the bowels of my mother he hath been mindful of my name. And he hath made my mouth like a sharp sword: in the shadow of his hand he hath protected me, and hath made me as a chosen arrow: in his quiver he hath hidden me. And he said to me: Thou art my servant Israel, for in thee will I glory. And now saith the Lord, that formed me from the womb to be his servant: Behold, I have given thee to be the light of the Gentiles, that thou mayst be my salvation even to the farthest part of the earth. Kings shall see, and princes shall rise up, and adore for the Lord’s sake, and for the Holy One of Israel, who hath chosen thee.",
    "p33": null,
    "src": "Missale O.P. 1939, p. 474; English: Douay-Rheims verses (the site's English for readings; the St Dominic Missal 1959 readings are not in the repo), cut/adapted to the Missal's Latin"
   },
@@ -2281,6 +2319,18 @@
   "new": "In those days: A great number of believers at Antioch were converted to the Lord. And the tidings came to the ears of the church that was at Jerusalem, touching these things: and they sent Barnabas as far as Antioch. Who, when he was come, and had seen the grace of God, rejoiced: and he exhorted them all with purpose of heart to continue in the Lord. For he was a good man, and full of the Holy Ghost and of faith. And a great multitude was added to the Lord. And Barnabas went to Tarsus to seek Saul: whom, when he had found, he brought to Antioch. And they conversed there in the church a whole year; and they taught a great multitude, so that at Antioch the disciples were first named Christians. Now there were in the church which was at Antioch, prophets and doctors, among whom was Barnabas, and Simon who was called Niger, and Lucius of Cyrene, and Manahen, who was the foster brother of Herod the tetrarch, and Saul. And as they were ministering to the Lord, and fasting, the Holy Ghost said to them: Separate me Saul and Barnabas, for the work whereunto I have taken them. Then they, fasting and praying, and imposing their hands upon them, sent them away.",
   "src": "M39 pp. 464-465 (pdf 271)",
   "why": "the Lesson had no English; English: Douay-Rheims verses (the site's English for readings; the St Dominic Missal 1959 readings are not in the repo), cut/adapted to the Missal's Latin (Acts 11:21-26; 13:1-3, opening \"In those days: A great number of believers at Antioch\" for the Missal's \"Multus númerus credéntium Antiochíæ\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0611",
+   0,
+   "en"
+  ],
+  "old": "In those days: A great number of believers at Antioch were converted to the Lord. And the tidings came to the ears of the church that was at Jerusalem, touching these things: and they sent Barnabas as far as Antioch. Who, when he was come, and had seen the grace of God, rejoiced: and he exhorted them all with purpose of heart to continue in the Lord. For he was a good man, and full of the Holy Ghost and of faith. And a great multitude was added to the Lord. And Barnabas went to Tarsus to seek Saul: whom, when he had found, he brought to Antioch. And they conversed there in the church a whole year; and they taught a great multitude, so that at Antioch the disciples were first named Christians. Now there were in the church which was at Antioch, prophets and doctors, among whom was Barnabas, and Simon who was called Niger, and Lucius of Cyrene, and Manahen, who was the foster brother of Herod the tetrarch, and Saul. And as they were ministering to the Lord, and fasting, the Holy Ghost said to them: Separate me Saul and Barnabas, for the work whereunto I have taken them. Then they, fasting and praying, and imposing their hands upon them, sent them away.",
+  "new": "In those days: A great number believing, were converted to the Lord. And the tidings came to the ears of the church that was at Jerusalem, touching these things: and they sent Barnabas as far as Antioch. Who, when he was come, and had seen the grace of God, rejoiced: and he exhorted them all with purpose of heart to continue in the Lord. For he was a good man, and full of the Holy Ghost and of faith. And a great multitude was added to the Lord. And Barnabas went to Tarsus to seek Saul: whom, when he had found, he brought to Antioch. And they conversed there in the church a whole year; and they taught a great multitude, so that at Antioch the disciples were first named Christians. Now there were in the church which was at Antioch, prophets and doctors, among whom was Barnabas, and Simon who was called Niger, and Lucius of Cyrene, and Manahen, who was the foster brother of Herod the tetrarch, and Saul. And as they were ministering to the Lord, and fasting, the Holy Ghost said to them: Separate me Saul and Barnabas, for the work whereunto I have taken them. Then they, fasting and praying, and imposing their hands upon them, sent them away.",
+  "src": "M39 pp. 464-465 (pdf 271)",
+  "why": "English regenerated verse by verse from bible/en (Douay-Rheims), as the coordinator requires; only the liturgical incipit (\"At that time:\", \"In those days:\") is added and verses/clauses the Missal omits are cut"
  },
  {
   "file": "data/orations.js",
@@ -2399,6 +2449,18 @@
  },
  {
   "file": "data/readings33.js",
+  "path": [
+   "S0805",
+   1,
+   "en"
+  ],
+  "old": "At that time: As Jesus was speaking to the multitudes, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck. But he said: Yea rather, blessed are they who hear the word of God, and keep it.",
+  "new": "At that time: It came to pass, as he spoke these things, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck. But he said: Yea rather, blessed are they who hear the word of God, and keep it.",
+  "src": "M39 p. 518 \"Officium Gaudeámus, ut in Festis B. Mariæ Virg., pag. 1*\"; p. 1* (pdf 368)",
+  "why": "English regenerated verse by verse from bible/en (Douay-Rheims), as the coordinator requires; only the liturgical incipit (\"At that time:\", \"In those days:\") is added and verses/clauses the Missal omits are cut"
+ },
+ {
+  "file": "data/readings33.js",
   "op": "add",
   "path": [
    "S0805"
@@ -2421,7 +2483,7 @@
     "title": "Sequéntia sancti Evangélii secúndum Lucam.",
     "title_en": "Continuation of the holy Gospel according to Luke.",
     "la": "In illo témpore: Loquénte Jesu ad turbas, extóllens vocem quædam múlier de turba dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. At ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud.",
-    "en": "At that time: As Jesus was speaking to the multitudes, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck. But he said: Yea rather, blessed are they who hear the word of God, and keep it.",
+    "en": "At that time: It came to pass, as he spoke these things, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck. But he said: Yea rather, blessed are they who hear the word of God, and keep it.",
     "p33": null,
     "src": "Missale O.P. 1939, p. 1*; English: Douay-Rheims verses (the site's English for readings; the St Dominic Missal 1959 readings are not in the repo), cut/adapted to the Missal's Latin"
    }
@@ -2850,6 +2912,18 @@
  {
   "file": "data/readings33.js",
   "path": [
+   "S0814",
+   1,
+   "en"
+  ],
+  "old": "At that time: As Jesus was speaking to the multitudes, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck. But he said: Yea rather, blessed are they who hear the word of God, and keep it.",
+  "new": "At that time: It came to pass, as he spoke these things, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck. But he said: Yea rather, blessed are they who hear the word of God, and keep it.",
+  "src": "M39 p. 528 (pdf 303)",
+  "why": "reverted to the Douay-Rheims wording (coordinator: no English written from memory)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
    "S0815",
    1,
    "en"
@@ -2910,6 +2984,35 @@
   },
   "src": "M39 p. 531-532 (pdf 304-305)",
   "why": "the Missal prints the whole genealogy, Matth 1:1-16, as \"Inítium sancti Evangélii secúndum Matthǽum\" (\"Liber generatiónis ...\"); the site began at v. 6 with the garbled \"Autem rex génuit\" (and \"Jechoníam, et\"). Transcribed from the scan; English Douay-Rheims 1:1-16"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0816",
+   1
+  ],
+  "old": {
+   "type": "Gospel",
+   "ref": "Matthæus 1: 1-16",
+   "title": "Inítium sancti Evangélii secúndum Matthǽum.",
+   "title_en": "The beginning of the holy Gospel according to Matthew.",
+   "la": "Liber generatiónis Jesu Christi fílii David, fílii Abraham. Abraham génuit Isaac. Isaac autem génuit Jacob. Jacob autem génuit Judam, et fratres ejus. Judas autem génuit Phares, et Zaram de Thamar. Phares autem génuit Esron. Esron autem génuit Aram. Aram autem génuit Amínadab. Amínadab autem génuit Naásson. Naásson autem génuit Salmon. Salmon autem génuit Booz de Rahab. Booz autem génuit Obed ex Ruth. Obed autem génuit Jesse. Jesse autem génuit David regem. David autem rex génuit Salomónem ex ea, quæ fuit Uríæ. Sálomon autem génuit Róboam. Róboam autem génuit Abíam. Abías autem génuit Asa. Asa autem génuit Jósaphat. Jósaphat autem génuit Joram. Joram autem génuit Ozíam. Ozías autem génuit Jóatham. Jóatham autem génuit Achaz. Achaz autem génuit Ezechíam. Ezechías autem génuit Manássen. Manásses autem génuit Amon. Amon autem génuit Josíam. Josías autem génuit Jechoníam et fratres ejus in transmigratióne Babylónis. Et post transmigratiónem Babylónis: Jechonías génuit Saláthiel. Saláthiel autem génuit Zoróbabel. Zoróbabel autem génuit Abiud. Abiud autem génuit Elíacim. Elíacim autem génuit Azor. Azor autem génuit Sadoc. Sadoc autem génuit Achim. Achim autem génuit Eliud. Eliud autem génuit Eleázar. Eleázar autem génuit Mathan. Mathan autem génuit Jacob. Jacob autem génuit Joseph virum Maríæ, de qua natus est Jesus, qui vocátur Christus.",
+   "en": "The book of the generation of Jesus Christ, the son of David, the son of Abraham. Abraham begot Isaac. And Isaac begot Jacob. And Jacob begot Judas and his brethren. And Judas begot Phares and Zara of Thamar. And Phares begot Esron. And Esron begot Aram. And Aram begot Aminadab. And Aminadab begot Naasson. And Naasson begot Salmon. And Salmon begot Booz of Rahab. And Booz begot Obed of Ruth. And Obed begot Jesse. And Jesse begot David the king. And David the king begot Solomon, of her that had been the wife of Urias. And Solomon begot Roboam. And Roboam begot Abia. And Abia begot Asa. And Asa begot Josaphat. And Josaphat begot Joram. And Joram begot Ozias. And Ozias begot Joatham. And Joatham begot Achaz. And Achaz begot Ezechias. And Ezechias begot Manasses. And Manasses begot Amon. And Amon begot Josias. And Josias begot Jechonias and his brethren in the transmigration of Babylon. And after the transmigration of Babylon, Jechonias begot Salathiel. And Salathiel begot Zorobabel. And Zorobabel begot Abiud. And Abiud begot Eliacim. And Eliacim begot Azor. And Azor begot Sadoc. And Sadoc begot Achim. And Achim begot Eliud. And Eliud begot Eleazar. And Eleazar begot Mathan. And Mathan begot Jacob. And Jacob begot Joseph the husband of Mary, of whom was born Jesus, who is called Christ.",
+   "p33": 558,
+   "src": "Missale O.P. 1939, p. 531; English: Douay-Rheims verses"
+  },
+  "new": {
+   "type": "Gospel",
+   "ref": "Matthæus 1: 1-16",
+   "title": "Inítium sancti Evangélii secúndum Matthǽum.",
+   "title_en": "The beginning of the holy Gospel according to Matthew.",
+   "la": "Liber generatiónis Jesu Christi fílii David, fílii Abraham. Abraham génuit Isaac. Isaac autem génuit Jacob. Jacob autem génuit Judam, et fratres ejus. Judas autem génuit Phares, et Zaram de Thamar. Phares autem génuit Esron. Esron autem génuit Aram. Aram autem génuit Amínadab. Amínadab autem génuit Naásson. Naásson autem génuit Salmon. Salmon autem génuit Booz de Rahab. Booz autem génuit Obed ex Ruth. Obed autem génuit Jesse. Jesse autem génuit David regem. David autem rex génuit Salomónem ex ea, quæ fuit Uríæ. Sálomon autem génuit Róboam. Róboam autem génuit Abíam. Abías autem génuit Asa. Asa autem génuit Jósaphat. Jósaphat autem génuit Joram. Joram autem génuit Ozíam. Ozías autem génuit Jóatham. Jóatham autem génuit Achaz. Achaz autem génuit Ezechíam. Ezechías autem génuit Manássen. Manásses autem génuit Amon. Amon autem génuit Josíam. Josías autem génuit Jechoníam et fratres ejus in transmigratióne Babylónis. Et post transmigratiónem Babylónis: Jechonías génuit Saláthiel. Saláthiel autem génuit Zoróbabel. Zoróbabel autem génuit Abiud. Abiud autem génuit Elíacim. Elíacim autem génuit Azor. Azor autem génuit Sadoc. Sadoc autem génuit Achim. Achim autem génuit Eliud. Eliud autem génuit Eleázar. Eleázar autem génuit Mathan. Mathan autem génuit Jacob. Jacob autem génuit Joseph virum Maríæ, de qua natus est Jesus, qui vocátur Christus.",
+   "en": "The book of the generation of Jesus Christ, the son of David, the son of Abraham: Abraham begot Isaac. And Isaac begot Jacob. And Jacob begot Judas and his brethren. And Judas begot Phares and Zara of Thamar. And Phares begot Esron. And Esron begot Aram. And Aram begot Aminadab. And Aminadab begot Naasson. And Naasson begot Salmon. And Salmon begot Booz of Rahab. And Booz begot Obed of Ruth. And Obed begot Jesse. And Jesse begot David the king. And David the king begot Solomon, of her that had been the wife of Urias. And Solomon begot Roboam. And Roboam begot Abia. And Abia begot Asa. And Asa begot Josaphat. And Josaphat begot Joram. And Joram begot Ozias. And Ozias begot Joatham. And Joatham begot Achaz. And Achaz begot Ezechias. And Ezechias begot Manasses. And Manasses begot Amon. And Amon begot Josias. And Josias begot Jechonias and his brethren in the transmigration of Babylon. And after the transmigration of Babylon, Jechonias begot Salathiel. And Salathiel begot Zorobabel. And Zorobabel begot Abiud. And Abiud begot Eliacim. And Eliacim begot Azor. And Azor begot Sadoc. And Sadoc begot Achim. And Achim begot Eliud. And Eliud begot Eleazar. And Eleazar begot Mathan. And Mathan begot Jacob. And Jacob begot Joseph the husband of Mary, of whom was born Jesus, who is called Christ.",
+   "p33": 558,
+   "src": "Missale O.P. 1939, p. 531; English: Douay-Rheims verses"
+  },
+  "src": "M39 p. 531-532 (pdf 304-305)",
+  "why": "English regenerated verse by verse from bible/en (Douay-Rheims), as the coordinator requires; only the liturgical incipit (\"At that time:\", \"In those days:\") is added and verses/clauses the Missal omits are cut"
  },
  {
   "file": "data/readings33.js",
@@ -3242,5 +3345,379 @@
   "new": "At that time: The disciples came to Jesus, saying: Who thinkest thou is the greater in the kingdom of heaven? And Jesus calling unto him a little child, set him in the midst of them, And said: Amen I say to you, unless you be converted, and become as little children, you shall not enter into the kingdom of heaven. Whosoever therefore shall humble himself as this little child, he is the greater in the kingdom of heaven. And he that shall receive one such little child in my name, receiveth me.",
   "src": "M39 p. 541 (pdf 309)",
   "why": "\"At that hour\" (Vulgate \"In illa hora\") is not in the Missal's \"In illo témpore: Accessérunt discípuli\""
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "S0825",
+   0,
+   "en_src"
+  ],
+  "old": null,
+  "new": "ai",
+  "src": "M39 pp. 539/541",
+  "why": "label: the Missal's Latin \"Justum dedúxit Dóminus ... Dóminus Deus noster\" departs from the Vulgate (Wisdom as \"she\"), so the English adapted to it is an AI translation, not Douay-Rheims; app.js must carry and show en_src"
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "S0827",
+   0,
+   "en_src"
+  ],
+  "old": null,
+  "new": "ai",
+  "src": "M39 pp. 539/541",
+  "why": "label: the Missal's Latin \"Justum dedúxit Dóminus ... Dóminus Deus noster\" departs from the Vulgate (Wisdom as \"she\"), so the English adapted to it is an AI translation, not Douay-Rheims; app.js must carry and show en_src"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0828",
+   0,
+   "la"
+  ],
+  "old": "Caríssime: Testíficor coram Deo, et Jesu Christo, qui judicatúrus est vivos et mórtuos, per advéntum ipsíus, et regnum ejus: prǽdica verbum, insta opportúne, importúne: árgue, óbsecra, íncrepa in omni patiéntia, et doctrína. Erit enim tempus, cum sanam doctrínam non sustinébunt, sed ad sua desidéria coacervábunt sibi magístros, pruriéntes áuribus, et a veritáte quidem audítum avértent, ad fábulas autem converténtur. Tu vero vígila, in ómnibus labóra, opus fac evangelístæ, ministérium tuum imple. Sóbrius esto. Ego enim jam delíbor, et tempus resolutiónis meæ instat. Bonum certámen certávi, cursum consummávi, fidem servávi. In réliquo repósita est mihi coróna justítiæ, quam reddet mihi Dóminus in illa die, justus judex: non solum autem mihi, sed et iis, qui díligunt advéntum ejus.",
+  "new": "Caríssime: Testíficor coram Deo, et Jesu Christo, qui judicatúrus est vivos, et mórtuos, per advéntum ipsíus, et regnum ejus: prǽdica verbum, insta opportúne, importúne: Argue, óbsecra, íncrepa in omni patiéntia et doctrína. Erit enim tempus, cum sanam doctrínam non sustinébunt, sed ad sua desidéria coacervábunt sibi magístros, pruriéntes áuribus, et a veritáte quidem audítum avértent, ad fábulas autem converténtur. Tu vero vígila, in ómnibus labóra, opus fac Evangelístæ, ministérium tuum imple. Sóbrius esto. Ego enim jam delíbor, et tempus resolutiónis meæ instat. Bonum certámen certávi, cursum consummávi, fidem servávi. In réliquo repósita est mihi coróna justítiæ, quam reddet mihi Dóminus in illa die justus judex: Non solum autem mihi, sed et iis, qui díligunt advéntum ejus.",
+  "src": "M39 p. 542 (pdf 310)",
+  "why": "as printed: \"vivos, et\"; \": Argue\"; \"patiéntia et doctrína\" (no comma on this page); \"Evangelístæ\"; \"in illa die justus judex : Non solum\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0828",
+   0,
+   "en"
+  ],
+  "old": "Dearly beloved: I charge thee, before God and Jesus Christ, who shall judge the living and the dead, by his coming, and his kingdom: Preach the word: be instant in season, out of season: reprove, entreat, rebuke in all patience and doctrine. For there shall be a time, when they will not endure sound doctrine; but, according to their own desires, they will heap to themselves teachers, having itching ears: And will indeed turn away their hearing from the truth, but will be turned unto fables. But be thou vigilant, labour in all things, do the work of an evangelist, fulfill thy ministry. Be sober. For I am even now ready to be sacrificed: and the time of my dissolution is at hand. I have fought a good fight, I have finished my course, I have kept the faith. As to the rest, there is laid up for me a crown of justice, which the Lord the just judge will render to me in that day: and not only to me, but to them also that love his coming. Make haste to come to me quickly.",
+  "new": "Dearly beloved: I charge thee, before God and Jesus Christ, who shall judge the living and the dead, by his coming, and his kingdom: Preach the word: be instant in season, out of season: reprove, entreat, rebuke in all patience and doctrine. For there shall be a time, when they will not endure sound doctrine; but, according to their own desires, they will heap to themselves teachers, having itching ears: And will indeed turn away their hearing from the truth, but will be turned unto fables. But be thou vigilant, labour in all things, do the work of an evangelist, fulfill thy ministry. Be sober. For I am even now ready to be sacrificed: and the time of my dissolution is at hand. I have fought a good fight, I have finished my course, I have kept the faith. As to the rest, there is laid up for me a crown of justice, which the Lord the just judge will render to me in that day: and not only to me, but to them also that love his coming.",
+  "src": "M39 p. 542 (pdf 310)",
+  "why": "the English added v. 9; the Latin ends \"advéntum ejus.\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0828",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Ad níhilum valet ultra, nisi ut mittátur foras, et conculcétur ab homínibus. Vos estis lux mundi. Non potest cívitas abscóndi supra montem pósita: neque accéndunt lucérnam, et ponunt eam sub módio, sed super candelábrum, ut lúceat ómnibus qui in domo sunt. Sic lúceat lux vestra coram homínibus: ut vídeant ópera vestra bona, et gloríficent Patrem vestrum, qui in cælis est. Nolíte putáre quóniam veni sólvere legem aut prophétas: non veni sólvere, sed adimplére. Amen quippe dico vobis, donec tránseat cælum et terra, jota unum, aut unus apex non præteríbit a lege, donec ómnia fiant. Qui ergo sólverit unum de mandátis istis mínimis, et docúerit sic hómines, mínimus vocábitur in regno cælórum: qui autem fécerit et docúerit, hic magnus vocábitur in regno cælórum.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Ad níhilum valet ultra, nisi ut mittátur foras, et conculcétur ab homínibus. Vos estis lux mundi. Non potest cívitas abscóndi supra montem pósita. Neque accéndunt lucérnam, et ponunt eam sub módio, sed super candelábrum, ut lúceat ómnibus, qui in domo sunt. Sic lúceat lux vestra coram homínibus: ut vídeant ópera vestra bona, et gloríficent Patrem vestrum, qui in cælis est. Nolíte putáre, quóniam veni sólvere legem, aut prophétas: Non veni sólvere, sed adimplére. Amen quippe dico vobis: donec tránseat cælum et terra, jota unum, aut unus apex non præteríbit a lege, donec ómnia fiant. Qui ergo sólverit unum de mandátis istis mínimis, et docúerit sic hómines, mínimus vocábitur in regno cælórum: Qui autem fécerit et docúerit, hic magnus vocábitur in regno cælórum.",
+  "src": "M39 p. 543 (pdf 310)",
+  "why": "as printed (as S0714): \"pósita.\"; \"Neque\"; \"ómnibus, qui\"; \"putáre, quóniam\"; \"legem, aut\"; \": Non veni\"; \"dico vobis :\"; \": Qui autem\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0829",
+   0,
+   "en"
+  ],
+  "old": "In those days: Thou therefore gird up thy loins, and arise, and speak to them all that I command thee. Be not afraid at their presence: for I will make thee not to fear their countenance. For behold I have made thee this day a fortified city, and a pillar of iron, and a wall of brass, over all the land, to the kings of Juda, to the princes thereof, and to the priests, and to the people of the land. And they shall fight against thee, and shall not prevail: for I am with thee, saith the Lord, to deliver thee.",
+  "new": "In those days: The word of the Lord came to me, saying: Gird up thy loins, and arise, and speak to them all that I command thee. Be not afraid at their presence: for I will make thee not to fear their countenance. For behold I have made thee this day a fortified city, and a pillar of iron, and a wall of brass, over all the land, to the kings of Juda, to the princes thereof, and to the priests, and to the people of the land. And they shall fight against thee, and shall not prevail: for I am with thee, saith the Lord, to deliver thee.",
+  "src": "M39 p. 544 (pdf 311)",
+  "why": "the Latin is \"Factum est verbum Dómini ad me, dicens: Accínge lumbos tuos\" (Jer 1:4 + 1:17); the English now has Douay-Rheims 1:4 (\"the word of the Lord came to me, saying\") and 1:17 without \"Thou therefore\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0829",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Misit Heródes, ac ténuit Joánnem, et vinxit eum in cárcere propter Herodíadem uxórem Philíppi fratris sui, quia dúxerat eam. Dicébat enim Joánnes Heródi: Non licet tibi habére uxórem fratris tui. Heródias autem insidiabátur illi: et volébat occídere eum, nec póterat. Heródes enim metuébat Joánnem, sciens eum virum justum et sanctum: et custodiébat eum, et audíto eo multa faciébat, et libénter eum audiébat. Et cum dies opportúnus accidísset, Heródes natális sui cœnam fecit princípibus, et tribúnis, et primis Galilǽæ: cumque introísset fília ipsíus Herodíadis, et saltásset, et placuísset Heródi, simúlque recumbéntibus, rex ait puéllæ: Pete a me quod et dabo tibi: et jurávit illi: Quia quidquid petíeris dabo tibi, licet dimídium regni mei. Quæ cum exísset, dixit matri suæ: Quid petam? At illa dixit: Caput Joánnis Baptístæ. Cumque introísset statim cum festinatióne ad regem, petívit dicens: Volo ut prótinus des mihi in disco caput Joánnis Baptístæ. Et contristátus est rex: propter jusjurándum, et propter simul discumbéntes, nóluit eam contristáre: sed misso speculatóre præcépit afférri caput ejus in disco. Et decollávit eum in cárcere, et áttulit caput ejus in disco: et dedit illud puéllæ, et puélla dedit matri suæ. Quo audíto, discípuli ejus venérunt, et tulérunt corpus ejus: et posuérunt illud in monuménto.",
+  "new": "In illo témpore: Misit Heródes, ac ténuit Joánnem, et vinxit eum in cárcere propter Herodíadem uxórem Philíppi fratris sui, quia dúxerat eam. Dicébat enim Joánnes Heródi: Non licet tibi habére uxórem fratris tui. Heródias autem insidiabátur illi: et volébat occídere eum, nec póterat. Heródes enim metuébat Joánnem, sciens eum virum justum et sanctum: et custodiébat eum, et audíto eo multa faciébat, et libénter eum audiébat. Et cum dies opportúnus accidísset, Heródes natális sui cenam fecit princípibus, et tribúnis, et primis Galilǽæ. Cumque introísset fília ipsíus Herodíadis, et saltásset, et placuísset Heródi, simúlque recumbéntibus; rex ait puéllæ: Pete a me quod vis, et dabo tibi: Et jurávit illi, Quia quidquid petíeris dabo tibi, licet dimídium regni mei. Quæ cum exísset, dixit matri suæ: Quid petam? At illa dixit: Caput Joánnis Baptístæ. Cumque introísset statim cum festinatióne ad regem, petívit dicens: Volo, ut prótinus des mihi in disco caput Joánnis Baptístæ. Et contristátus est rex: propter jusjurándum, et propter simul discumbéntes nóluit eam contristáre: sed misso spiculatóre præcépit afférri caput ejus in disco. Et decollávit eum in cárcere, et áttulit caput ejus in disco: et dedit illud puéllæ, et puélla dedit matri suæ. Quo audíto, discípuli ejus venérunt, et tulérunt corpus ejus: et posuérunt illud in monuménto.",
+  "src": "M39 p. 544 (pdf 311)",
+  "why": "as printed: the missing word \"vis\" restored (\"Pete a me quod vis, et dabo tibi\"); \"cenam\"; \"Galilǽæ. Cumque\"; \"recumbéntibus;\"; \": Et jurávit illi, Quia\"; \"Volo, ut\"; \"discumbéntes nóluit\"; \"spiculatóre\" (the site had \"speculatóre\")"
+ },
+ {
+  "file": "data/masses.js",
+  "op": "add",
+  "path": [
+   "masses",
+   "S0830",
+   "parts",
+   "in",
+   0,
+   "m39text"
+  ],
+  "old": null,
+  "new": "Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Rosæ Vírginis, de cujus solemnitáte gaudent Angeli, et colláudant Fílium Dei. ℣. Ps. 44 Eructávit cor meum verbum bonum: dico ego ópera mea regi. Glória Patri.",
+  "src": "M39 p. 545 (pdf 311)",
+  "why": "Joseph (27 Nov): print the Missal's text with the name (\"beátæ Rosæ Vírginis\"); no Dominican source prints the melody with this name (4291 sings \"beátæ N.\"). app.js must show this text, unnotated"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0830",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáre me: ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro, vírginem castam exhibére Christo.",
+  "new": "Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáte me: Æmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhibére Christo.",
+  "src": "M39 pp. 545-546 (pdf 311-312)",
+  "why": "as printed (as S0812): \"supportáte\"; \": Æmulor\"; \"uni viro vírginem\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0830",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus turbis parábolam hanc: Símile est regnum cælórum grano sinápis, quod accípiens homo seminávit in agro suo: quod mínimum quidem est ómnibus semínibus: cum autem créverit, majus est ómnibus oléribus, et fit arbor, ita ut vólucres cæli véniant, et hábitent in ramis ejus. Aliam parábolam locútus est eis: Símile est regnum cælórum ferménto, quod accéptum múlier abscóndit in farínæ satis tribus, donec fermentátum est totum. Hæc ómnia locútus est Jesus in parábolis ad turbas: et sine parábolis non loquebátur eis: ut implerétur quod dictum erat per prophétam dicéntem: Apériam in parábolis os meum, eructábo abscóndita a constitutióne mundi.",
+  "new": "In illo témpore: Dixit Jesus turbis parábolam hanc: Símile est regnum cælórum grano sinápis, quod accípiens homo seminávit in agro suo: Quod mínimum quidem est ómnibus semínibus: cum autem créverit, majus est ómnibus oléribus, et fit arbor, ita ut vólucres cæli véniant, et hábitent in ramis ejus. Aliam parábolam locútus est eis. Símile est regnum cælórum ferménto, quod accéptum múlier abscóndit in farínæ satis tribus, donec fermentátum est totum. Hæc ómnia locútus est Jesus in parábolis ad turbas: et sine parábolis non loquebátur eis: ut implerétur quod dictum erat per Prophétam dicéntem: Apériam in parábolis os meum, eructábo abscóndita a constitutióne mundi.",
+  "src": "M39 p. 546 (pdf 312)",
+  "why": "as printed: \": Quod mínimum\"; \"locútus est eis.\"; \"Prophétam\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0830",
+   1,
+   "en"
+  ],
+  "old": "At that time: Another parable he proposed unto them, saying: The kingdom of heaven is like to a grain of mustard seed, which a man took and sowed in his field. Which is the least indeed of all seeds; but when it is grown up, it is greater than all herbs, and becometh a tree, so that the birds of the air come, and dwell in the branches thereof. Another parable he spoke to them: The kingdom of heaven is like to leaven, which a woman took and hid in three measures of meal, until the whole was leavened. All these things Jesus spoke in parables to the multitudes: and without parables he did not speak to them. That it might be fulfilled which was spoken by the prophet, saying: I will open my mouth in parables, I will utter things hidden from the foundation of the world.",
+  "new": "At that time: Jesus spoke this parable to the multitudes: The kingdom of heaven is like to a grain of mustard seed, which a man took and sowed in his field. Which is the least indeed of all seeds; but when it is grown up, it is greater than all herbs, and becometh a tree, so that the birds of the air come, and dwell in the branches thereof. Another parable he spoke to them: The kingdom of heaven is like to leaven, which a woman took and hid in three measures of meal, until the whole was leavened. All these things Jesus spoke in parables to the multitudes: and without parables he did not speak to them. That it might be fulfilled which was spoken by the prophet, saying: I will open my mouth in parables, I will utter things hidden from the foundation of the world.",
+  "src": "M39 p. 546 (pdf 312)",
+  "why": "the Latin is \"Dixit Jesus turbis parábolam hanc\"; only the incipit is changed, the verses stay Douay-Rheims"
+ },
+ {
+  "file": "data/masses.js",
+  "op": "add",
+  "path": [
+   "masses",
+   "S0830",
+   "season",
+   "pasch"
+  ],
+  "old": null,
+  "new": {
+   "in": [
+    {
+     "id": 5384,
+     "m39": "p. 547"
+    }
+   ],
+   "al": [
+    {
+     "id": "op-g50-quasi-arcus",
+     "m39": "p. 547"
+    },
+    {
+     "id": 5130,
+     "m39": "p. 547"
+    }
+   ]
+  },
+  "src": "M39 p. 547 (pdf 312)",
+  "why": "M39 p. 547 (pdf 312): \"Quando celebratur de beata Rosa ex voto, vel devotione per annum: Officium Ps. 44 Dilexisti ... Omittitur Credo. Tempore Paschali, cetera ut in die, addito Allelúia post Officium, Offertorium, et Communionem, et loco R/. dicitur: Allelúia V. Quasi arcus ... Temp. Resurr. secundum Allelúia V. Surréxit Dóminus, et occúrrens ... Temp. Ascens. secundum Allelúia V. Ascéndens ... Infra Sept. Tractus Qui séminant\"; Joseph: the votive variants printed in the Missal go on the site. OPEN (chant): the Offertory Obaudite and Communion Florete with an added Alleluia have no Dominican notation found; not inferred"
+ },
+ {
+  "file": "data/masses.js",
+  "op": "add",
+  "path": [
+   "masses",
+   "S0830",
+   "season",
+   "asc"
+  ],
+  "old": null,
+  "new": {
+   "al": [
+    {
+     "id": "op-g50-quasi-arcus",
+     "m39": "p. 547"
+    },
+    {
+     "id": 5526,
+     "m39": "p. 547"
+    }
+   ]
+  },
+  "src": "M39 p. 547 (pdf 312)",
+  "why": "M39 p. 547 (pdf 312): \"Quando celebratur de beata Rosa ex voto, vel devotione per annum: Officium Ps. 44 Dilexisti ... Omittitur Credo. Tempore Paschali, cetera ut in die, addito Allelúia post Officium, Offertorium, et Communionem, et loco R/. dicitur: Allelúia V. Quasi arcus ... Temp. Resurr. secundum Allelúia V. Surréxit Dóminus, et occúrrens ... Temp. Ascens. secundum Allelúia V. Ascéndens ... Infra Sept. Tractus Qui séminant\""
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S0831",
+   "or",
+   0
+  ],
+  "old": "Deus, qui in liberándis fidélibus tuis ab impiórum captivitáte beátum Raymúndum Confessórem tuum mirábilem effecísti: eius nobis intercessióne concéde; ut, a peccatórum vínculis absolúti, quæ tibi sunt plácita, líberis méntibus exsequámur. Per Dóminum nostrum Iesum Christum, Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Deus, qui in liberándis fidélibus tuis ab impiórum captivitáte beátum Raymúndum Confessórem tuum mirábilem effecísti: eius nobis intercessióne concéde, ut a peccatórum vínculis absolúti; quæ tibi sunt plácita, líberis méntibus exsequámur: Per Dóminum nostrum Iesum Christum, Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 547 (pdf 312)",
+  "why": "the prayer came from DO (src Sancti/08-31); as printed: \"concéde, ut a peccatórum vínculis absolúti; quæ\"; \"exsequámur : Per Dóminum\""
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S0831",
+   "se"
+  ],
+  "old": [
+   "Laudis tibi, Dómine, hóstias immolámus in tuórum commemoratióne Sanctórum: quibus nos et præséntibus éxui malis confídimus et futúris. Per Dóminum nostrum Iesum Christum, Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   ""
+  ],
+  "new": [
+   "Laudis tibi, Dómine, hóstias immolámus in tuórum commemoratióne Sanctórum: quibus nos et præséntibus éxui malis confídimus, et futúris. Per Dóminum nostrum Iesum Christum, Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   "We offer You, O Lord, sacrifices of praise in commemoration of Your saints, through whom we trust to be delivered from evils both present and to come; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+  ],
+  "src": "M39 p. 548 (pdf 313)",
+  "why": "as printed (this page has \"Laudis tibi, Dómine, hóstias\"): \"confídimus, et futúris\"; the English was empty: the 1959 English of the same Secret, as S0715"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "S0831",
+   "pc"
+  ],
+  "old": [
+   "Refécti cibo potúque cœlésti, Deus noster, te súpplices exorámus: ut, in cuius hæc commemoratióne percépimus, eius muniámur et précibus. Per Dóminum nostrum Iesum Christum, Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   ""
+  ],
+  "new": [
+   "Refécti cibo potúque cælésti, Deus noster, te súpplices exorámus: ut in cuius hæc commemoratióne percépimus; eius muniámur et précibus: Per Dóminum nostrum Iesum Christum, Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+   "Refreshed with heavenly food and drink, O our God, we humbly entreat You that we may also be defended by the prayers of him in whose commemoration we have received these gifts; through our Lord Jesus Christ, Your Son, who lives and reigns with You in the unity of the Holy Spirit, God, world without end."
+  ],
+  "src": "M39 p. 548 (pdf 313)",
+  "why": "DO text replaced by the Missal's (identical to S0715/S0807): \"cælésti\"; \"exorámus : ut in cujus hæc commemoratióne percépimus; ejus muniámur et précibus : Per Dóminum\"; English (was empty) as S0715"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0831",
+   0,
+   "la"
+  ],
+  "old": "Beátus vir, qui invéntus est sine mácula: et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudábimus eum? Fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: qui pótuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ideo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum.",
+  "new": "Beátus vir, qui invéntus est sine mácula: et qui post aurum non ábiit, nec sperávit in pecúnia, et thesáuris. Quis est hic, et laudábimus eum? Fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: Qui pótuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: Ideo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis Ecclésia sanctórum.",
+  "src": "M39 p. 547 (pdf 312)",
+  "why": "as printed: \"pecúnia, et\"; \": Qui pótuit\"; \": Ideo\"; \"Ecclésia\""
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0831",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. Beáti servi illi, quos cum vénerit dóminus, invénerit vigilántes: amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. Beáti servi illi, quos cum vénerit dóminus, invénerit vigilántes: Amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.",
+  "src": "M39 p. 548 (pdf 313)",
+  "why": "as printed: \"dóminum suum, quando\"; \": Amen dico\" (this page prints \"cum vénerit et pulsáverit\" without a comma)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0812",
+   "season",
+   "pasch"
+  ],
+  "old": {
+   "al": [
+    {
+     "id": 5526
+    }
+   ]
+  },
+  "new": {
+   "al": [
+    {
+     "id": 5685,
+     "m39": "p. 30*"
+    },
+    {
+     "id": 5130,
+     "m39": "p. 30*"
+    }
+   ]
+  },
+  "src": "M39 p. 30* (pdf 383)",
+  "why": "p. 30* prints Allelúia V. Veni elécta mea; \"Tempore Resurr. secundum Allelúia V. Surréxit Dóminus, et occúrrens\"; \"Tempore Ascens. secundum Allelúia V. Ascéndens\". The site had [5526 Ascendens] only (two verses in Paschaltide, Rubr. gen. XIII.1 p. 53). Used only in votive Masses (the feast is in August)"
+ },
+ {
+  "file": "data/masses.js",
+  "op": "add",
+  "path": [
+   "masses",
+   "S0812",
+   "season",
+   "asc"
+  ],
+  "old": null,
+  "new": {
+   "al": [
+    {
+     "id": 5685,
+     "m39": "p. 30*"
+    },
+    {
+     "id": 5526,
+     "m39": "p. 30*"
+    }
+   ]
+  },
+  "src": "M39 p. 30* (pdf 383)",
+  "why": "p. 30*: \"Tempore Ascens. secundum Allelúia V. Ascéndens\""
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0821",
+   "season",
+   "pasch"
+  ],
+  "old": {
+   "al": [
+    {
+     "id": 5526
+    }
+   ]
+  },
+  "new": {
+   "al": [
+    {
+     "id": 5685,
+     "m39": "p. 37*"
+    },
+    {
+     "id": 5130,
+     "m39": "p. 37*"
+    }
+   ]
+  },
+  "src": "M39 p. 37* (pdf 386)",
+  "why": "p. 37* prints Allelúia V. Veni elécta mea; \"Tempore Resurr. secundum Allelúia V. Surréxit Dóminus, et occúrrens\"; \"Tempore Ascens. secundum Allelúia V. Ascéndens\". The site had [5526 Ascendens] only (two verses in Paschaltide, Rubr. gen. XIII.1 p. 53). Used only in votive Masses (the feast is in August)"
+ },
+ {
+  "file": "data/masses.js",
+  "op": "add",
+  "path": [
+   "masses",
+   "S0821",
+   "season",
+   "asc"
+  ],
+  "old": null,
+  "new": {
+   "al": [
+    {
+     "id": 5685,
+     "m39": "p. 37*"
+    },
+    {
+     "id": 5526,
+     "m39": "p. 37*"
+    }
+   ]
+  },
+  "src": "M39 p. 37* (pdf 386)",
+  "why": "p. 37*: \"Tempore Ascens. secundum Allelúia V. Ascéndens\""
  }
 ]

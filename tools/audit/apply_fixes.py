@@ -37,6 +37,7 @@ def canon(v):
         v = re.sub(r'Spíritus Sancti,? Deus[,:]? per ómnia', 'Spíritus Sancti Deus: per ómnia', v)
         v = re.sub(r'Spíritus Sancti Deus per ómnia', 'Spíritus Sancti Deus: per ómnia', v)
         v = re.sub(r'cum Deo Patre,? in unitáte', 'cum Deo Patre; in unitáte', v)
+        v = v.replace('Christum, Fílium tuum;', 'Christum Fílium tuum;')   # no comma, as printed (pp. 472-475, 516, 545)
         return v
     if isinstance(v, list): return [canon(x) for x in v]
     if isinstance(v, dict): return {k: canon(x) for k, x in v.items()}

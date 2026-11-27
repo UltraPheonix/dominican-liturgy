@@ -1905,9 +1905,21 @@
    0
   ],
   "old": "Da nobis, quǽsumus, Dómine, imitári quod cólimus, ut discámus et inimícos dilígere: quia eius córporis Inventiónem celebrámus; qui novit étiam pro persecutóribus exoráre Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
-  "new": "Da nobis, quǽsumus, Dómine, imitári quod cólimus, ut discámus et inimícos dilígere: quia eius córporis Inventiónem celebrámus; qui novit étiam pro persecutóribus exoráre: Dóminum nostrum Iesum Christum Fílium tuum. Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "new": "Da nobis, quǽsumus, Dómine, imitári quod cólimus, ut discámus et inimícos dilígere: quia eius córporis Inventiónem celebrámus; qui novit étiam pro persecutóribus exoráre: Dóminum nostrum Iesum Christum Fílium tuum. Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
   "src": "M39 (pdf 296)",
-  "why": "punctuation as printed: \"pro persecutóribus exoráre: Dóminum nostrum Jesum Christum Fílium tuum. Qui tecum.\" (the conclusion is \"Qui tecum\" because the Son is named at the end, Rubr. gen. XI.2, p. 52: \"si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\"; here the Missal prints \".\" not \";\" before Qui tecum)"
+  "why": "punctuation as printed: \"pro persecutóribus exoráre: Dóminum nostrum Jesum Christum Fílium tuum. Qui tecum.\" (the conclusion is \"Qui tecum\" because the Son is named at the end, Rubr. gen. XI.2, p. 52: \"si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\"; the Missal prints \"Fílium tuum. Qui tecum\" here; the pointing of the conclusion is left to apply_fixes.py canon()) (earlier form, already applied)"
+ },
+ {
+  "file": "data/memoriae.js",
+  "path": [
+   "0803|Inventio Corporis S. Stephani Protomartyris",
+   "or",
+   0
+  ],
+  "old": "Da nobis, quǽsumus, Dómine, imitári quod cólimus, ut discámus et inimícos dilígere: quia eius córporis Inventiónem celebrámus; qui novit étiam pro persecutóribus exoráre: Dóminum nostrum Iesum Christum Fílium tuum. Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Da nobis, quǽsumus, Dómine, imitári quod cólimus, ut discámus et inimícos dilígere: quia eius córporis Inventiónem celebrámus; qui novit étiam pro persecutóribus exoráre: Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "src": "M39 (pdf 296)",
+  "why": "conclusion pointing handed back to apply_fixes.py canon() (coordinator, 27 Nov): body punctuation as printed only"
  },
  {
   "file": "data/memoriae.js",
@@ -2013,9 +2025,21 @@
    0
   ],
   "old": "Tua, Dómine, munéribus altária cumulámus: illíus nativitátem honóre débito celebrántes, qui Salvatórem mundi et cécinit ad futúrum et adésse monstravit, Dóminum nostrum Iesum Christum, Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum.",
-  "new": "Tua, Dómine, munéribus altária cumulámus, illíus nativitátem honóre débito celebrántes, qui Salvatórem mundi et cécinit adfutúrum, et adésse monstrávit: Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum.",
+  "new": "Tua, Dómine, munéribus altária cumulámus, illíus nativitátem honóre débito celebrántes, qui Salvatórem mundi et cécinit adfutúrum, et adésse monstrávit: Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
   "src": "M39 pp. 474-475 (pdf 276)",
-  "why": "words and punctuation as printed: \"cécinit adfutúrum, et adésse monstrávit: Dóminum nostrum Jesum Christum Fílium tuum; qui tecum.\" (Qui tecum: Rubr. gen. XI.2, p. 52, the Son named at the end)"
+  "why": "words and punctuation as printed: \"cécinit adfutúrum, et adésse monstrávit: Dóminum nostrum Jesum Christum Fílium tuum; qui tecum.\" (Qui tecum: Rubr. gen. XI.2, p. 52, the Son named at the end) (earlier form, already applied)"
+ },
+ {
+  "file": "data/memoriae.js",
+  "path": [
+   "0701|Octava S. Joannis Baptistæ",
+   "se",
+   0
+  ],
+  "old": "Tua, Dómine, munéribus altária cumulámus, illíus nativitátem honóre débito celebrántes, qui Salvatórem mundi et cécinit adfutúrum, et adésse monstrávit: Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Tua, Dómine, munéribus altária cumulámus, illíus nativitátem honóre débito celebrántes, qui Salvatórem mundi et cécinit adfutúrum, et adésse monstrávit: Dóminum nostrum Iesum Christum, Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum.",
+  "src": "M39 pp. 474-475 (pdf 276)",
+  "why": "conclusion pointing handed back to apply_fixes.py canon() (coordinator, 27 Nov): body punctuation as printed only"
  },
  {
   "file": "data/memoriae.js",
@@ -2025,9 +2049,21 @@
    0
   ],
   "old": "Sumat Ecclésia tua, Deus, beáti Ioánnis Baptístæ generatióne lætítiam: per quem suæ regeneratiónis cognóvit auctórem, Dóminum nostrum Iesum Christum, Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum.",
-  "new": "Sumat Ecclésia tua, Deus, beáti Ioánnis Baptístæ generatióne lætítiam; per quem suæ regeneratiónis cognóvit auctórem: Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum.",
+  "new": "Sumat Ecclésia tua, Deus, beáti Ioánnis Baptístæ generatióne lætítiam; per quem suæ regeneratiónis cognóvit auctórem: Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
   "src": "M39 p. 475 (pdf 276)",
-  "why": "punctuation as printed: \"lætítiam; per quem ... auctórem: Dóminum nostrum Jesum Christum Fílium tuum; qui tecum.\""
+  "why": "punctuation as printed: \"lætítiam; per quem ... auctórem: Dóminum nostrum Jesum Christum Fílium tuum; qui tecum.\" (earlier form, already applied)"
+ },
+ {
+  "file": "data/memoriae.js",
+  "path": [
+   "0701|Octava S. Joannis Baptistæ",
+   "pc",
+   0
+  ],
+  "old": "Sumat Ecclésia tua, Deus, beáti Ioánnis Baptístæ generatióne lætítiam; per quem suæ regeneratiónis cognóvit auctórem: Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Sumat Ecclésia tua, Deus, beáti Ioánnis Baptístæ generatióne lætítiam; per quem suæ regeneratiónis cognóvit auctórem: Dóminum nostrum Iesum Christum, Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 475 (pdf 276)",
+  "why": "conclusion pointing handed back to apply_fixes.py canon() (coordinator, 27 Nov): body punctuation as printed only"
  },
  {
   "file": "data/memoriae.js",
@@ -2040,5 +2076,241 @@
   "new": "Salutáris tui Dómine múnere satiáti, súpplices deprecámur: ut cuius lætámur gustu; renovémur efféctu: Per Dóminum nostrum Iesum Christum, Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
   "src": "M39 (pdf 38)",
   "why": "punctuation (flexa \";\" after gustu, \":\" before Per) and accent múnere as printed"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0529b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Hebræos 11: 33-39",
+    "roman": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 21: 9-19"
+   }
+  ],
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Sapientia 10: 17-20"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 21: 9-19"
+   }
+  ],
+  "src": "M39 p. 454 (pdf 266)",
+  "why": "refs of the readings actually given (Salus autem, p. 13*: Sap 10 / Luke 21); the old ref Hebr 11 is the Roman Missal's"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0529b",
+   "season",
+   "pasch"
+  ],
+  "old": {
+   "in": [
+    {
+     "id": 6578
+    }
+   ],
+   "of": [
+    {
+     "id": 4790
+    }
+   ],
+   "co": [
+    {
+     "id": 6276,
+     "m39": "G50"
+    }
+   ],
+   "al": [
+    {
+     "id": 5648,
+     "m39": null
+    },
+    {
+     "id": 5632,
+     "m39": null
+    }
+   ]
+  },
+  "new": {
+   "in": [
+    {
+     "id": 6578
+    }
+   ],
+   "of": [
+    {
+     "id": 4790
+    }
+   ],
+   "co": [
+    {
+     "id": 6276,
+     "m39": "G50"
+    }
+   ],
+   "al": [
+    {
+     "id": 5648,
+     "m39": null
+    },
+    {
+     "id": 5632,
+     "m39": null
+    }
+   ],
+   "readings": [
+    {
+     "type": "Lesson",
+     "ref": "Apocalypsis 19: 1-9",
+     "title": "Léctio libri Apocalýpsis beáti Joánnis Apóstoli.",
+     "title_en": "Lesson from the Book of the Apocalypse of blessed John the Apostle.",
+     "la": "In diébus illis: Post hæc ego Joánnes audívi quasi vocem turbárum multárum in cælo dicéntium, Allelúja: salus, et glória, et virtus Deo nostro est: quia vera, et justa judícia sunt ejus, qui judicávit de meretríce magna, quæ corrúpit terram in prostitutióne sua, et vindicávit sánguinem servórum suórum de mánibus ejus. Et íterum dixérunt, Allelúja. Et fumus ejus ascéndit in sǽcula sæculórum. Et cecidérunt senióres vigínti quátuor, et quátuor animália, et adoravérunt Deum sedéntem super thronum, dicéntes, Amen, allelúja. Et vox de throno exívit, dicens: Laudem dícite Deo nostro omnes servi ejus: et qui timétis eum pusílli, et magni. Et audívi quasi vocem turbæ magnæ, et sicut vocem aquárum multárum, et sicut vocem tonitruórum magnórum, dicéntium, Allelúja: quóniam regnávit Dóminus Deus noster omnípotens. Gaudeámus, et exsultémus: et demus glóriam ei: quia venérunt núptiæ Agni, et uxor ejus præparávit se. Et datum est illi ut coopériat se býssino splendénti, et cándido. Býssinum enim justificatiónes sunt sanctórum. Et dixit mihi: Scribe: Beáti, qui ad cenam nuptiárum Agni vocáti sunt.",
+     "en": "In those days: After these things I heard as it were the voice of much people in heaven, saying: Alleluia. Salvation, and glory, and power is to our God. For true and just are his judgments, who hath judged the great harlot which corrupted the earth with her fornication, and hath revenged the blood of his servants, at her hands. And again they said: Alleluia. And her smoke ascendeth for ever and ever. And the four and twenty ancients, and the four living creatures fell down and adored God that sitteth upon the throne, saying: Amen; Alleluia. And a voice came out from the throne, saying: Give praise to our God, all ye his servants; and you that fear him, little and great. And I heard as it were the voice of a great multitude, and as the voice of many waters, and as the voice of great thunders, saying, Alleluia: for the Lord our God the Almighty hath reigned. Let us be glad and rejoice, and give glory to him; for the marriage of the Lamb is come, and his wife hath prepared herself. And it is granted to her that she should clothe herself with fine linen, glittering and white. For the fine linen are the justifications of saints. And he said to me: Write: Blessed are they that are called to the marriage supper of the Lamb. And he saith to me: These words of God are true.",
+     "p33": 659
+    },
+    {
+     "type": "Gospel",
+     "ref": "Joannes 15: 5-11",
+     "title": "Sequéntia sancti Evangélii secúndum Joánnem.",
+     "title_en": "Continuation of the holy Gospel according to John.",
+     "la": "In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Si quis in me non mánserit: mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint: quodcúmque voluéritis petétis, et fiet vobis. In hoc clarificátus est Pater meus, ut fructum plúrimum afferátis, et efficiámini mei discípuli. Sicut diléxit me Pater, et ego diléxi vos. Manéte in dilectióne mea. Si præcépta mea servavéritis, manébitis in dilectióne mea, sicut et ego Patris mei præcépta servávi, et máneo in ejus dilectióne. Hæc locútus sum vobis: ut gáudium meum in vobis sit, et gáudium vestrum impleátur.",
+     "en": "At that time: I am the vine: you the branches: he that abideth in me, and I in him, the same beareth much fruit: for without me you can do nothing. If any one abide not in me, he shall be cast forth as a branch, and shall wither, and they shall gather him up, and cast him into the fire, and he burneth. If you abide in me, and my words abide in you, you shall ask whatever you will, and it shall be done unto you. In this is my Father glorified; that you bring forth very much fruit, and become my disciples. As the Father hath loved me, I also have loved you. Abide in my love. If you keep my commandments, you shall abide in my love; as I also have kept my Father’s commandments, and do abide in his love. These things I have spoken to you, that my joy may be in you, and your joy may be filled.",
+     "p33": 659
+    }
+   ]
+  },
+  "src": "M39 p. 454 (pdf 266); readings M39 pp. 15*-17* (pdf 375-376)",
+  "why": "rubric: \"Temp. Pasch. Officium Sancti tui, ut in Comm. plurim. Mart., pag. 15*; Extra Temp. Pasch. Officium Salus autem ..., p. 13*\": the Paschaltide readings (Apoc 19, John 15 = C28s, scan-corrected by A5) in season.pasch.readings; js/app.js seasonalReadings() must read them (see report)"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0602b",
+   "readings"
+  ],
+  "old": [
+   {
+    "type": "Epistle",
+    "ref": "Ad Hebræos 11: 33-39",
+    "roman": true
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 21: 9-19"
+   }
+  ],
+  "new": [
+   {
+    "type": "Lesson",
+    "ref": "Sapientia 10: 17-20"
+   },
+   {
+    "type": "Gospel",
+    "ref": "Lucas 21: 9-19"
+   }
+  ],
+  "src": "M39 p. 459 (pdf 268)",
+  "why": "refs of the readings actually given (Salus autem, p. 13*: Sap 10 / Luke 21); the old ref Hebr 11 is the Roman Missal's"
+ },
+ {
+  "file": "data/masses.js",
+  "path": [
+   "masses",
+   "S0602b",
+   "season",
+   "pasch"
+  ],
+  "old": {
+   "in": [
+    {
+     "id": 6578
+    }
+   ],
+   "of": [
+    {
+     "id": 4790
+    }
+   ],
+   "co": [
+    {
+     "id": 6276,
+     "m39": "G50"
+    }
+   ],
+   "al": [
+    {
+     "id": 5648,
+     "m39": null
+    },
+    {
+     "id": 5632,
+     "m39": null
+    }
+   ]
+  },
+  "new": {
+   "in": [
+    {
+     "id": 6578
+    }
+   ],
+   "of": [
+    {
+     "id": 4790
+    }
+   ],
+   "co": [
+    {
+     "id": 6276,
+     "m39": "G50"
+    }
+   ],
+   "al": [
+    {
+     "id": 5648,
+     "m39": null
+    },
+    {
+     "id": 5632,
+     "m39": null
+    }
+   ],
+   "readings": [
+    {
+     "type": "Lesson",
+     "ref": "Apocalypsis 19: 1-9",
+     "title": "Léctio libri Apocalýpsis beáti Joánnis Apóstoli.",
+     "title_en": "Lesson from the Book of the Apocalypse of blessed John the Apostle.",
+     "la": "In diébus illis: Post hæc ego Joánnes audívi quasi vocem turbárum multárum in cælo dicéntium, Allelúja: salus, et glória, et virtus Deo nostro est: quia vera, et justa judícia sunt ejus, qui judicávit de meretríce magna, quæ corrúpit terram in prostitutióne sua, et vindicávit sánguinem servórum suórum de mánibus ejus. Et íterum dixérunt, Allelúja. Et fumus ejus ascéndit in sǽcula sæculórum. Et cecidérunt senióres vigínti quátuor, et quátuor animália, et adoravérunt Deum sedéntem super thronum, dicéntes, Amen, allelúja. Et vox de throno exívit, dicens: Laudem dícite Deo nostro omnes servi ejus: et qui timétis eum pusílli, et magni. Et audívi quasi vocem turbæ magnæ, et sicut vocem aquárum multárum, et sicut vocem tonitruórum magnórum, dicéntium, Allelúja: quóniam regnávit Dóminus Deus noster omnípotens. Gaudeámus, et exsultémus: et demus glóriam ei: quia venérunt núptiæ Agni, et uxor ejus præparávit se. Et datum est illi ut coopériat se býssino splendénti, et cándido. Býssinum enim justificatiónes sunt sanctórum. Et dixit mihi: Scribe: Beáti, qui ad cenam nuptiárum Agni vocáti sunt.",
+     "en": "In those days: After these things I heard as it were the voice of much people in heaven, saying: Alleluia. Salvation, and glory, and power is to our God. For true and just are his judgments, who hath judged the great harlot which corrupted the earth with her fornication, and hath revenged the blood of his servants, at her hands. And again they said: Alleluia. And her smoke ascendeth for ever and ever. And the four and twenty ancients, and the four living creatures fell down and adored God that sitteth upon the throne, saying: Amen; Alleluia. And a voice came out from the throne, saying: Give praise to our God, all ye his servants; and you that fear him, little and great. And I heard as it were the voice of a great multitude, and as the voice of many waters, and as the voice of great thunders, saying, Alleluia: for the Lord our God the Almighty hath reigned. Let us be glad and rejoice, and give glory to him; for the marriage of the Lamb is come, and his wife hath prepared herself. And it is granted to her that she should clothe herself with fine linen, glittering and white. For the fine linen are the justifications of saints. And he said to me: Write: Blessed are they that are called to the marriage supper of the Lamb. And he saith to me: These words of God are true.",
+     "p33": 659
+    },
+    {
+     "type": "Gospel",
+     "ref": "Joannes 15: 5-11",
+     "title": "Sequéntia sancti Evangélii secúndum Joánnem.",
+     "title_en": "Continuation of the holy Gospel according to John.",
+     "la": "In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Si quis in me non mánserit: mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint: quodcúmque voluéritis petétis, et fiet vobis. In hoc clarificátus est Pater meus, ut fructum plúrimum afferátis, et efficiámini mei discípuli. Sicut diléxit me Pater, et ego diléxi vos. Manéte in dilectióne mea. Si præcépta mea servavéritis, manébitis in dilectióne mea, sicut et ego Patris mei præcépta servávi, et máneo in ejus dilectióne. Hæc locútus sum vobis: ut gáudium meum in vobis sit, et gáudium vestrum impleátur.",
+     "en": "At that time: I am the vine: you the branches: he that abideth in me, and I in him, the same beareth much fruit: for without me you can do nothing. If any one abide not in me, he shall be cast forth as a branch, and shall wither, and they shall gather him up, and cast him into the fire, and he burneth. If you abide in me, and my words abide in you, you shall ask whatever you will, and it shall be done unto you. In this is my Father glorified; that you bring forth very much fruit, and become my disciples. As the Father hath loved me, I also have loved you. Abide in my love. If you keep my commandments, you shall abide in my love; as I also have kept my Father’s commandments, and do abide in his love. These things I have spoken to you, that my joy may be in you, and your joy may be filled.",
+     "p33": 659
+    }
+   ]
+  },
+  "src": "M39 p. 459 (pdf 268); readings M39 pp. 15*-17* (pdf 375-376)",
+  "why": "rubric: \"Temp. Pasch. Officium Sancti tui, ut in Comm. plurim. Mart., pag. 15*; Extra Temp. Pasch. Officium Salus autem ..., p. 13*\": the Paschaltide readings (Apoc 19, John 15 = C28s, scan-corrected by A5) in season.pasch.readings; js/app.js seasonalReadings() must read them (see report)"
  }
 ]
