@@ -6,6 +6,22 @@ site fixes from Lead F/W-F2; litanies & processions (v225); G28 saints' Masses (
 Read tools/handoff/RULINGS.md (all of Joseph's decisions) before anything else.
 
 
+
+## NEW REQUESTS (Joseph, 27 Nov 18:00), to do first in the next chat
+- **Publish the Office branch:** Joseph has approved it. Follow OFFICE_HANDOFF.md §3 step 1:
+  1. normalise propers_fix.json and fix/a00.json to the page spelling;
+  2. rebuild;
+  3. run scratch/chk.py and the audits;
+  4. run the browser test on sample days of every month, in both rites;
+  5. merge origin/commons1909-v2 into main;
+  6. run tools/push.sh.
+  Run the Mass sweep too. Joseph's later rule overrides the earlier "don't publish the Office yet".
+- **Processions page (processions.html):** it "looks really messy", so clean it up. Tidy the layout of the chant blocks, rubrics and texts (see tools/proc/build_proc.py and proc_data.py), and check it on a phone-width screenshot.
+- **Missing chants:** some processional chants are missing, e.g. "O lumen" (the antiphon O lumen Ecclesiae, for St Dominic).
+  - Look for the Dominican version on GregoBase (tools/gregobase/gb.sqlite, Dominican sources 11, 12, 13, 14, 20, 21, 35, 36).
+  - Check it against the Processionarium 1913 scan before use.
+  - List every procession item that has text but no chant, and fill in each one.
+
 ## ONE MERGED TO-DO LIST (Joseph, 27 Nov 17:52): Mass first, then Office
 The Office chat is closed, so this chat owns the whole site.
 - The old "never touch the Office files" rule is VOID.
