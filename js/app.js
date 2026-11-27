@@ -1564,13 +1564,26 @@
     }
     return [sp.o2, sp.o3 || 'lib'];
   }
-  // what is said: the priest's choice where he has made one ('none' leaves the place empty), otherwise the Missal's
+  // what is said: the Missal's prayers; where a place is at the priest's choice ('lib'), the prayer he has chosen (state.o2 for
+  // the 2nd place, state.o3 for the 3rd and later), or none
   function chosen(m) {
-    var P = prescribed(m), o2 = state.o2 || P[0] || '', o3 = state.o3 || P[1] || '';
-    if (o2 === 'none') o2 = ''; if (o3 === 'none' || o3 === 'lib') o3 = '';
-    if (!o2) o3 = '';
-    // the 4th and later prayers the Commemorations require (Rubr. X), unless the priest has changed the 2nd or 3rd
-    return [o2, o3].concat(!state.o2 && !state.o3 && o3 ? P.slice(2).filter(function (x) { return x && x !== 'lib'; }) : []);
+    var P = prescribed(m);
+    return P.map(function (x, i) { return x === 'lib' ? (libChoices(m).indexOf(state[i ? 'o3' : 'o2']) >= 0 ? state[i ? 'o3' : 'o2'] : '') : x; })
+      .filter(function (x) { return !!x; });
+  }
+  // the prayers the priest may take where the Missal leaves the 3rd prayer ad libitum: the Orationes ad diversa (Missal pp.
+  // 100*-113*), less those already said today, A cunctis when Our Lady or All Saints is commemorated (Rubr. X.1 d; p. 320, n. 3),
+  // and the priest's own prayer, which belongs to the anniversary of his ordination (X.2)
+  function libChoices(m) {
+    if (!window.ADDIV) return [];
+    var P = prescribed(m), d = state.date, mem = d ? memoriasOf(d) : [];
+    var bvm = P.some(function (x) { return BVM_SETS[x]; }) || isMarian(state.key);
+    return Object.keys(ADDIV.sets).filter(function (k) {
+      if (!/^d\d+$/.test(k) || P.indexOf(k) >= 0 || mem.indexOf(k) >= 0) return false;
+      if (k === 'd13') return false;
+      if (k === 'd2' && bvm) return false;
+      return true;
+    }).sort(function (a, b) { return +a.slice(1) - +b.slice(1); });
   }
   function morePrayers(k, m) {
     if (!moreAllowed(m)) return [];
@@ -1601,39 +1614,23 @@
   function moreControls() {
     var box = el('div', {class: 'o-more hide-print'});
     if (!window.ADDIV) return box;
-    var m = D.masses[state.key], P = prescribed(m), C = chosen(m);
-    var groups = [['Of the season', ['bvmAdv', 'bvmNat', 'cruce', 'd15', 'd2', 'd6']], ['Orationes ad diversa', Object.keys(ADDIV.sets).filter(function (k) { return /^d\d+$/.test(k); })]];
-    var mk = function (name, n) {
-      var sel = el('select', {'aria-label': name, 'data-o': 'o' + n}), p = P[n - 2];
-      // the first option is what the Missal prescribes for the day
-      sel.appendChild(el('option', {value: '', text: !state.date && !P.length ? 'Choose a date to see the Missal’s prayers' : p && p !== 'lib' ? 'As in the Missal: ' + setName(p) : p === 'lib' ? 'At the priest’s choice: none' : 'None (the Missal adds none)'}));
-      if (p && p !== 'lib') sel.appendChild(el('option', {value: 'none', text: 'None'}));
-      groups.forEach(function (g) {
-        var og = el('optgroup', {label: g[0]});
-        g[1].forEach(function (id) {
-          var S = ADDIV.sets[id]; if (!S) return;
-          og.appendChild(el('option', {value: id, text: (g[0] === 'Of the season' ? S.en + ' · ' + S.inc : S.n + '. ' + S.en)}));
-        });
-        sel.appendChild(og);
-      });
-      var oc = el('optgroup', {label: 'Commemoration of a Mass'});
-      Object.keys(window.ORATIONS || {}).filter(function (k) { return k !== state.key && D.masses[k] && ORATIONS[k].or; })
-        .map(function (k) { return [k, massLabel(k)]; }).sort(function (a, b) { return a[1].localeCompare(b[1]); })
-        .forEach(function (x) { oc.appendChild(el('option', {value: 'm:' + x[0], text: x[1]})); });
-      sel.appendChild(oc);
-      sel.value = state['o' + n] || '';
+    var m = D.masses[state.key], P = prescribed(m);
+    // a choice is offered only where the Missal leaves a prayer at the priest's choice (Rubr. X.1: "Tertia Oratio ad libitum")
+    P.forEach(function (x, i) {
+      if (x !== 'lib') return;
+      var slot = i ? 'o3' : 'o2', name = (i + 2) + (i ? 'rd' : 'nd') + ' prayer (at the priest’s choice)';
+      var sel = el('select', {'aria-label': name, 'data-o': slot});
+      sel.appendChild(el('option', {value: '', text: 'None'}));
+      libChoices(m).forEach(function (id) { var S = ADDIV.sets[id]; sel.appendChild(el('option', {value: id, text: S.n + '. ' + S.en + ' · ' + S.inc})); });
+      sel.value = state[slot] || '';
       if (sel.selectedIndex < 0) sel.value = '';
-      sel.addEventListener('change', function () { state['o' + n] = sel.value; drawMass(); writeHash(); });
-      return el('label', {class: 'o-pick' + (state['o' + n] ? ' o-changed' : '')}, [el('span', {text: name}), sel]);
-    };
-    var p2 = mk('2nd prayer', 2), p3 = mk('3rd prayer', 3);
-    if (!C[0]) p3.querySelector('select').disabled = true;
-    box.appendChild(el('div', {class: 'o-picks'}, [p2, p3]));
-    var why = P.length ? (P[1] === 'lib' ? 'Missal, Rubr. gen. X: the 3rd prayer is at the priest’s choice today.' : 'Missal, Rubr. gen. X: the prayers set for today; change them only where the rubrics allow.')
-                       : 'Missal, Rubr. gen. X: no prayer is added today; one may be added where the rubrics allow.';
-    box.appendChild(el('p', {class: 'o-hint', text: why + ' (The rank of the day is approximate until the classification of days is built.)'}));
+      sel.addEventListener('change', function () { state[slot] = sel.value; drawMass(); writeHash(); });
+      box.appendChild(el('div', {class: 'o-picks'}, [el('label', {class: 'o-pick' + (state[slot] ? ' o-changed' : '')}, [el('span', {text: name}), sel])]));
+      box.appendChild(el('p', {class: 'o-hint', text: 'Missal, Rubr. gen. X.1: the ' + (i + 2) + (i ? 'rd' : 'nd') + ' prayer is at the priest’s choice today, from the Orationes ad diversa.'}));
+    });
     return box;
   }
+
   function drawOratio(it) {
     if (it.extra) return drawMore(it);
     var name = {or: ['Oratio', 'Collect'], se: ['Secreta', 'Secret'], pc: ['Postcommunio', 'Postcommunion'], sp: ['Oratio super populum', 'Prayer over the People']}[it.k];
