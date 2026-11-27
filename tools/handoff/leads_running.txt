@@ -1,0 +1,29 @@
+Swarm started 27 Nov 2026 16:4x (Rome). Lead agent ids (for SendMessage from the coordinator session only):
+A processions/litanies  a0f710f93c793b03e
+B Holy Week 1939        a2cb07fefcc7691b9
+C Passions              ab0bedcd5465c53a9
+D Graduale/saints       a9591b725b2ca6c95
+E Texts (1959 English, readings) a959177d4ba29be14
+F Site QC + Ordo 1944   acc2ec79e9967d65c
+H Sung prayers (Mass page, booklets) a122bb0d95ad1f2c1
+G Final QC: start after A-F and H finish.
+Leads cannot spawn agents (no Agent tool in subagents), so the coordinator spawns workers, which report to their lead:
+W-A2 extraordinary processions -> A   a4438cce5339e10ba
+W-D1 St Teresa -> D                  a0584115460447327
+W-D2 St Raphael -> D                 a2d430339b76a736f
+W-D3 St Albert -> D                  a8dd6aebeea01c14f
+W-E3 cut readings -> E               a89476e69a20e21e2
+W-F3 Ordo 1944 cross-check -> F      a92c402c8596ccf10
+Planned: B day workers (after B's tone engine); C one worker per Passion (after C's tone engine).
+
+Model change (Joseph, 16:46): leads also work on their own portion; EVERY agent (leads and workers) reports directly to main. Workers cc their lead only for coordination/checking.
+W-B6 Holy Week QC fixes -> B         a21e9f51b3ad4b830
+W-C0 Passion texts vs Missal -> C    a4e78a167699911ba
+W-F2 remaining site QC -> F          acdb43f8248d71658
+W-B2 Palm Sun-Wed tones -> B         a72cd109d1c04f6fc
+W-B3 Maundy Thursday tones -> B      a0ef60afd2c0c1b29
+W-B4 Good Friday tones -> B          ad931bf0de27ce3ff
+W-B5 Holy Saturday tones -> B        a4c3911943335d4a0
+Limit: 20 concurrent agents. Queued (not started): W-D4 doubtful Masses, W-D9 chant checker, W-H4 booklets; C's 4 Passion workers.
+
+Ruling (Joseph, 27 Nov 16:59): use the PROPER Prefaces from the inserted leaves of the 1939 Missal (St Thomas p. 137, Sacred Heart p. 135), even where the Ordo 1944 gives Lent/Nativity.

@@ -51,7 +51,8 @@ window.ORDO = {
     {"w": "P", "la": "Confíteor Deo omnipoténti, et beátæ Maríæ semper Vírgini, et beáto Domínico patri nostro, et ómnibus Sanctis, et vobis, fratres, quia peccávi nimis cogitatióne, locutióne, ópere et omissióne, mea culpa: precor vos oráre pro me.", "en": "I confess to almighty God, to blessed Mary ever a virgin, to blessed Dominic our father, to all the saints, and to you, brethren, that I have sinned exceedingly in thought, word, deed and omission, through my fault: I beseech you to pray for me."},
     {"w": "S", "la": "Misereátur tui omnípotens Deus, et dimíttat tibi ómnia peccáta tua: líberet te ab omni malo, salvet et confírmet in omni ópere bono, et perdúcat te ad vitam ætérnam.", "en": "May almighty God have mercy on thee and forgive thee all thy sins: may he deliver thee from all evil, save and strengthen thee in every good work, and bring thee to life everlasting."},
     {"w": "P", "la": "Amen.", "en": "Amen."},
-    {"r": "Then the ministers repeat the Confession, and where the priest said vobis, fratres and vos, they say tibi, pater and te."},
+    {"m": "l", "r": "Then the server repeats the Confession, and where the priest said vobis, fratres and vos, he says tibi, pater and te."},
+    {"m": "smc", "r": "Then the ministers repeat the Confession, and where the priest said vobis, fratres and vos, they say tibi, pater and te."},
     {"w": "S", "la": "Confíteor Deo omnipoténti, et beátæ Maríæ semper Vírgini, et beáto Domínico patri nostro, et ómnibus Sanctis, et tibi, pater, quia peccávi nimis cogitatióne, locutióne, ópere et omissióne, mea culpa: precor te oráre pro me.", "en": "I confess to almighty God, to blessed Mary ever a virgin, to blessed Dominic our father, to all the saints, and to thee, father, that I have sinned exceedingly in thought, word, deed and omission, through my fault: I beseech thee to pray for me."},
     {"r": "This said, the priest says:"},
     {"w": "P", "la": "Misereátur vestri omnípotens Deus, et dimíttat vobis ómnia peccáta vestra: líberet vos ab omni malo, salvet et confírmet in omni ópere bono, et perdúcat vos ad vitam ætérnam.", "en": "May almighty God have mercy on you and forgive you all your sins: may he deliver you from all evil, save and strengthen you in every good work, and bring you to life everlasting."},
@@ -66,15 +67,17 @@ window.ORDO = {
     {"r": "This prayer said, he kisses the altar, first signing it in the middle with his right thumb; and standing erect he signs himself, and going to the book with hands joined before his breast, begins the Office, or Introit, of the Mass."}
   ], adv: [
     {"m": "l", "r": "He returns to the middle of the altar, uncovers his head, and says secretly:", "ref": ["praeparatio-ii-10"]},
-    {"m": "mc", "if": "!chin", "r": "When the choir begins the Gloria Patri of the Introit, the ministers go to the altar: the acolytes with their candles, the subdeacon with the Gospel book, the deacon with the Missal, and last the priest.", "ref": ["ministri-iii-1"]},
-    {"m": "mc", "if": "chin", "r": "When the choir begins the Gloria Patri of the Introit, the ministers go to the altar: the acolytes with their candles, the subdeacon carrying the prepared chalice, the deacon with the Missal, and last the priest.", "ref": ["ministri-iii-1"]},
+    {"m": "mc", "if": "!chin,!req", "r": "When the choir begins the Gloria Patri of the Introit, the ministers go to the altar: the acolytes with their candles, the subdeacon with the Gospel book, the deacon with the Missal, and last the priest.", "ref": ["ministri-iii-1"]},
+    {"m": "mc", "if": "chin,!req", "r": "When the choir begins the Gloria Patri of the Introit, the ministers go to the altar: the acolytes with their candles, the subdeacon carrying the prepared chalice, the deacon with the Missal, and last the priest.", "ref": ["ministri-iii-1"]},
+    {"m": "mc", "if": "!chin,req", "r": "When the choir begins the verse Te decet of the Introit (there is no Gloria Patri), the ministers go to the altar: the acolytes with their candles, the subdeacon with the Gospel book, the deacon with the Missal, and last the priest.", "ref": ["ministri-iii-1"]},
+    {"m": "mc", "if": "chin,req", "r": "When the choir begins the verse Te decet of the Introit (there is no Gloria Patri), the ministers go to the altar: the acolytes with their candles, the subdeacon carrying the prepared chalice, the deacon with the Missal, and last the priest.", "ref": ["ministri-iii-1"]},
     {"m": "mc", "if": "!sac", "r": "Below the lowest step they stand in line, the deacon at the priest’s right, the subdeacon at his left, an acolyte at each end. All bow profoundly and uncover their heads.", "ref": ["ministri-iii-2"]},
     {"m": "mc", "if": "tab", "r": "Below the lowest step they stand in line, the deacon at the priest’s right, the subdeacon at his left, an acolyte at each end. All genuflect and uncover their heads.", "ref": ["ministri-iii-2", "praeparatio-ii-8"]},
     {"m": "mc", "if": "exp", "r": "Below the lowest step they stand in line, the deacon at the priest’s right, the subdeacon at his left, an acolyte at each end. All kneel on both knees and uncover their heads.", "ref": ["ministri-iii-2", "varia-ii-3"]},
     {"m": "mc", "r": "Rising, the priest says secretly:", "ref": ["ministri-iii-2"]},
     {"m": "s", "r": "Before beginning, the priest says secretly:"},
     {"w": "P", "la": "Actiónes nostras, quǽsumus, Dómine, aspirándo prǽveni et adiuvándo proséquere: ut cuncta nostra operátio a te semper incípiat, et per te cœpta finiátur. Per Christum Dóminum nostrum. Amen.", "en": "Prevent, O Lord, we beseech thee, our actions by thy inspiration, and continue them by thine assistance; that every one of our works may begin always from thee, and through thee be ended. Through Christ our Lord. Amen."},
-    {"if": "exp", "r": "Whenever the priest comes to the middle of the altar, leaves it or passes it, he genuflects (the ministers with him); no one ever turns his back to the Sacrament.", "ref": ["varia-ii-4", "varia-ii-6"]},
+    {"if": "exp", "r": "Whenever the priest comes to the middle of the altar, leaves it or passes it, he genuflects (the server or ministers with him); no one ever turns his back to the Sacrament.", "ref": ["varia-ii-4", "varia-ii-6"]},
     {"m": "l", "if": "exp", "r": "The server genuflects whenever he passes the middle.", "ref": ["varia-vi-6"]},
     {"m": "mc", "if": "exp", "r": "The deacon kisses neither the priest’s hand nor his shoulder when he hands him anything.", "ref": ["varia-ii-6"]},
     {"if": "pope", "r": "The priest first kneels below the lowest step on the Gospel side, facing the Pope, and waits for his blessing; then he rises and, turned partly towards the altar, begins.", "ref": ["varia-iii-1"]},
@@ -130,7 +133,8 @@ window.ORDO = {
     {"m": "mc", "r": "Then the deacon stands behind the priest and the subdeacon behind the deacon; the acolytes stand below the steps.", "ref": ["ministri-iii-5"]}
   ]},
   rKy: {la: "", en: "", strip: 1, lines: [
-    {"r": "The Introit finished, he says alternately with the ministers:"}
+    {"m": "l", "r": "The Introit finished, he says alternately with the server:"},
+    {"m": "smc", "r": "The Introit finished, he says alternately with the ministers:"}
   ], adv: [
     {"m": "l", "r": "He says the Kyrie alternately with the server.", "ref": ["modus-ii-1"]},
     {"m": "mc", "if": "sd", "r": "They may sit at the Epistle side, the deacon at the priest’s left and the subdeacon at the deacon’s left; an acolyte spreads a cloth over their knees.", "ref": ["ministri-iii-6"]},
@@ -213,7 +217,8 @@ window.ORDO = {
     {"r": "And standing before the book, with his hands joined upon it, he says:"},
     {"w": "P", "la": "Dóminus vobíscum.", "en": "The Lord be with you."},
     {"w": "S", "la": "Et cum spíritu tuo.", "en": "And with thy spirit."},
-    {"r": "And saying Sequentia (or Initium) sancti Evangelii, he signs the Gospel with his right thumb, and himself on the forehead, mouth and breast; then with his right hand he signs himself with a larger sign of the cross, from forehead to breast and shoulders. The ministers answer Gloria tibi Domine:"},
+    {"m": "l", "r": "And saying Sequentia (or Initium) sancti Evangelii, he signs the Gospel with his right thumb, and himself on the forehead, mouth and breast; then with his right hand he signs himself with a larger sign of the cross, from forehead to breast and shoulders. The server answers Gloria tibi Domine:"},
+    {"m": "smc", "r": "And saying Sequentia (or Initium) sancti Evangelii, he signs the Gospel with his right thumb, and himself on the forehead, mouth and breast; then with his right hand he signs himself with a larger sign of the cross, from forehead to breast and shoulders. The ministers answer Gloria tibi Domine:"},
     {"w": "P", "la": "Sequéntia sancti Evangélii secúndum N.", "en": "The continuation of the holy Gospel according to N."},
     {"w": "S", "la": "Glória tibi, Dómine.", "en": "Glory be to thee, O Lord."},
     {"r": "Then he continues the Gospel with hands joined, as before."}

@@ -1,5 +1,6 @@
+import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from dmpaths import *
 import pickle, re, json, difflib, collections, sys
-sys.argv=['x']; exec(open('/tmp/dmv/seg.py').read().split("if __name__")[0])
+sys.argv=['x']; exec(open(os.path.join(D,'seg.py')).read().split("if __name__")[0])
 E,L=streams(); SE,SL=segments(E),segments(L)
 def join(lines):
     t=''
@@ -23,10 +24,10 @@ for p in sorted(set(byE)|set(byL)):
         if tag=='equal':
             for k in range(i2-i1):
                 ue.discard(i1+k); ul.discard(j1+k)
-                if a[i1+k]!='x': pairs.append({'typ':a[i1+k],'p':p,'en':join(byE[p][i1+k]['lines']),'la':join(byL[p][j1+k]['lines'])})
+                if a[i1+k]!='x': pairs.append({'typ':a[i1+k],'p':p,'en':join(byE[p][i1+k]['lines']),'la':join(byL[p][j1+k]['lines']),'erows':byE[p][i1+k]['rows'],'lrows':byL[p][j1+k]['rows'],'elines':byE[p][i1+k]['lines'],'llines':byL[p][j1+k]['lines']})
     unE+=[(p,byE[p][i]) for i in sorted(ue) if a[i]!='x']; unL+=[(p,byL[p][j]) for j in sorted(ul) if b[j]!='x']
 print(len(pairs), collections.Counter(x['typ'] for x in pairs), 'unpaired E',len(unE),'L',len(unL))
-pickle.dump((pairs,unE,unL),open('/tmp/dmv/pairs.pkl','wb'))
+pickle.dump((pairs,unE,unL),open(W_('pairs.pkl'),'wb'))
 for p,s in unE[:10]: print('E',p,s['typ'],join(s['lines'])[:100])
 for p,s in unL[:10]: print('L',p,s['typ'],join(s['lines'])[:100])
 # second pass: unpaired prayers of the same kind on the same or the next page, in order
@@ -35,6 +36,6 @@ for i,(p,s) in enumerate(unE):
     for j,(q,t) in enumerate(unL):
         if j in usedL or t['typ']!=s['typ'] or abs(q-p)>1: continue
         usedL.add(j); extra+=1
-        pairs.append({'typ':s['typ'],'p':p,'en':join(s['lines']),'la':join(t['lines']),'pass2':1}); break
+        pairs.append({'typ':s['typ'],'p':p,'en':join(s['lines']),'la':join(t['lines']),'pass2':1,'erows':s['rows'],'lrows':t['rows'],'elines':s['lines'],'llines':t['lines']}); break
 print('pass2', extra, len(pairs))
-pickle.dump((pairs,unE,unL),open('/tmp/dmv/pairs.pkl','wb'))
+pickle.dump((pairs,unE,unL),open(W_('pairs.pkl'),'wb'))

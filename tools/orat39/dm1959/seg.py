@@ -1,5 +1,6 @@
+import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from dmpaths import *
 import pickle, re, json, difflib, sys
-ROWS=pickle.load(open('/tmp/dmv/rows.pkl','rb'))
+ROWS=pickle.load(open(W_('rows.pkl'),'rb'))
 EN=set('the and of to you we that your our may us who which be by with for his her is are lord god through this those they he she them all have has from as on'.split())
 LA=set('et ut nos qui quae quod tua tuam tuae tui nobis quaesumus domine deus per est ad cum sunt eius ejus te tibi atque ac dominum nostri nostrae nostra sicut non quia'.split())
 def score(row):
@@ -55,20 +56,20 @@ def streams():
                 t=' '.join(o['t'].strip() for o in objs)
                 letters=re.sub(r'[^A-Za-z]','',t)
                 caps= len(letters)>=6 and sum(c.isupper() for c in letters)/len(letters)>.8
-                out.append({'p':pno,'t':t,'caps':caps,'lab':label(t,lang)})
+                out.append({'p':pno,'t':t,'caps':caps,'lab':label(t,lang),'g':[(o['x'],o['y'],o['x1'],o['y1']) for o in objs]})
     return E,L
 def segments(S):
     segs=[]; cur=None
     for i,r in enumerate(S):
         if r['lab']:
-            cur={'typ':r['lab'][0],'p':r['p'],'lines':[r['lab'][1]]}; segs.append(cur); continue
+            cur={'typ':r['lab'][0],'p':r['p'],'lines':[r['lab'][1]],'rows':[(r['p'],r['g'],1)]}; segs.append(cur); continue
         if r['caps'] or re.match(r'^\W*(Memory of|Commemoration of|Commemoratio|Memoria)\b', r['t']):
             cur=None; segs.append({'typ':'h','p':r['p'],'lines':[r['t']]}); continue
-        if cur is not None: cur['lines'].append(r['t'])
+        if cur is not None: cur['lines'].append(r['t']); cur['rows'].append((r['p'],r['g'],0))
     return segs
 if __name__=='__main__':
     E,L=streams()
     SE,SL=segments(E),segments(L)
-    pickle.dump((SE,SL),open('/tmp/dmv/segs.pkl','wb'))
+    pickle.dump((SE,SL),open(W_('segs.pkl'),'wb'))
     import collections
     print(collections.Counter(s['typ'] for s in SE)); print(collections.Counter(s['typ'] for s in SL))

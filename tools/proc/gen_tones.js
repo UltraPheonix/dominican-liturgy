@@ -14,10 +14,14 @@
 const fs = require('fs');
 global.window = {};
 const P = require('/home/claude/dominican-liturgy/js/psalm.js');
-const TEXTS = JSON.parse(fs.readFileSync('/tmp/gen/texts.json', 'utf8'));
+// the Latin of every text item of proc_data.py, so each sung text can be checked against the site text
+const TEXTS = JSON.parse(require('child_process').execFileSync('python3', ['-c',
+  'import sys, json; sys.path.insert(0, sys.argv[1]); import proc_data as d; print(json.dumps([i[1] for s in d.SECTIONS for i in s["items"] if i[0] == "txt"]))',
+  __dirname]).toString());
 const OUT = '/home/claude/dominican-liturgy/tools/proc/gabc/';
 
-function syl(text) { return P.analyse(text); }
+// the book's flexa sign (‡, written † in the site text) marks where the flexa falls; it is not sung
+function syl(text) { return P.analyse(text.replace(/\s*†/g, '')); }
 function lastAcc(s) { let a = -1; s.forEach((x, i) => { if (x.acc) a = i; }); return a < 0 ? Math.max(0, s.length - 2) : a; }
 function render(s, notes) {
   return s.map((x, i) => x.t + '(' + notes[i] + ')' + (x.last ? ' ' : '')).join('').trim();
@@ -61,7 +65,7 @@ function check(name, parts, full) {
 const VTONE = 'Versicle: Art. II § IV 3° (pp. 395-396: "Subscripto modo dicantur Versiculi ad Memorias et ante Laudes, et in Processionibus, et quotiescumque dicitur V. a Sacerdote"): tenor h, the syllables after the last accent of the versicle (marked with the flexa sign in the text) fall to f, as in the example Dignáre me laudáre te, Virgo sacráta. R. Da mihi virtútem contra hostes tuos; alleluia after a half bar as in the example Dícite in natiónibus, allelúia (p. 396). Proparoxytone endings: both syllables after the accent fall (the flexa as defined in Art. III § I, p. 402: geminatur nota re). F clef on the 3rd line as printed.';
 const OTONE = 'Prayer: Art. III § III, pp. 407-408 ("Modus cantandi Orationes ad Horas, et quotiescumque aliquae aliae Orationes quae non sunt de corpore Officii et Missae cantandae fuerint"), applied after its printed example Concéde nos fámulos tuos (p. 407) and conclusions (p. 408): Orémus h h f; tenor h; at the flexa (the sign after the word in the text of this page) the syllables after the last accent fall to f; at the metrum (colon in the text of this page) the two syllables before the last accent (three if the third ends a dactyl, Art. III § II 2°, p. 405) on g, the last of them on f, the accent and the rest on h; R. Amen g h (p. 401, VII 2°; p. 408). The inflexions fall where this page marks them, not where the site text has its punctuation. F clef on the 3rd line as printed.';
 function write(file, name, part, pageNote, tone, gabc) {
-  const head = `name:${name};\noffice-part:${part};\nmode:;\nbook:Processionarium O.P. (Cormier), 1913, ${pageNote};\n` +
+  const head = `name:${name};\noffice-part:${part};\nmode:;\nbook:Processionarium O.P. (Cormier), 1913, ${pageNote.replace(/;/g, ',')};\n` +
     `commentary:${tone.replace(/;/g, ',')};\ntranscriber:the tone of the Processionarium O.P. 1913 applied to this text for this site (the book prints no melody with this text);\n%%\n`;
   fs.writeFileSync(OUT + file + '.gabc', head + gabc + '\n');
   console.log(file, gabc.length);
@@ -70,27 +74,27 @@ function write(file, name, part, pageNote, tone, gabc) {
 // ---------------- Ascension, pp. 50-51
 write('tone_asc_versus', 'Ascendit Deus (versus ad processionem)', 'Versiculus', 'p. 50 (text)', VTONE,
   '(f3) <sp>V/</sp>. ' + vr('Ascéndit Deus in jubilatióne, allelúia.') + ' <sp>R/</sp>. ' + vr('Et Dóminus in voce tubæ, allelúia.'));
-let p = [['Deus, cujus Fílius in alta cælórum poténter ascéndens, captivitátem nostram sua duxit virtúte captívam:', 'f'],
-         ['tríbue, quǽsumus, ut dona, quæ suis particípibus cóntulit, largiátur et nobis,', 'm'],
-         ['Jesus Christus Fílius tuus Dóminus noster: Qui tecum vivit et regnat per ómnia sǽcula sæculórum.', 'c']];
-check('asc', p, 'Orémus. Deus, cujus Fílius in alta cælórum poténter ascéndens, captivitátem nostram sua duxit virtúte captívam: tríbue, quǽsumus, ut dona, quæ suis particípibus cóntulit, largiátur et nobis, Jesus Christus Fílius tuus Dóminus noster: Qui tecum vivit et regnat per ómnia sǽcula sæculórum. ℟. Amen.');
+let p = [['Deus, cujus Fílius in alta cælórum poténter ascéndens captivitátem nostram sua duxit virtúte captívam †', 'f'],
+         ['tríbue, quǽsumus, ut dona, quæ suis particípibus cóntulit, largiátur et nobis:', 'm'],
+         ['Jesus Christus Fílius tuus Dóminus noster, qui tecum vivit, et regnat per ómnia sǽcula sæculórum.', 'c']];
+check('asc', p, 'Orémus. Deus, cujus Fílius in alta cælórum poténter ascéndens captivitátem nostram sua duxit virtúte captívam † tríbue, quǽsumus, ut dona, quæ suis particípibus cóntulit, largiátur et nobis: Jesus Christus Fílius tuus Dóminus noster, qui tecum vivit, et regnat per ómnia sǽcula sæculórum. ℟. Amen.');
 write('tone_asc_oratio', 'Deus, cujus Filius (oratio ad processionem)', 'Oratio', 'pp. 50-51 (text, with its flexa after captívam, colon after nobis, flexa after sæculórum)', OTONE, prayer(p));
 
 // ---------------- Purification, pp. 66-67, 72
-p = [['Omnípotens sempitérne Deus, qui hodiérna die Unigénitum tuum ulnis sancti Simeónis in Templo sancto tuo suscipiéndum præsentásti:', 'f'],
+p = [['Omnípotens sempitérne Deus, qui hodiérna die Unigénitum tuum ulnis sancti Simeónis in Templo sancto tuo suscipiéndum præsentásti †', 'f'],
      ['tuam súpplices deprecámur cleméntiam:', 'm'],
-     ['ut has candélas, quas nos fámuli tui, in tui nóminis magnificéntiam suscipiéntes, gestáre cúpimus, luce accénsas, bene✠dícere et sancti✠ficáre, atque lúmine supérnæ benedictiónis accéndere dignéris:', 'f'],
-     ['quátenus eas tibi Dómino Deo nostro offeréndo, digni, et sancto igne dulcíssimæ caritátis tuæ succénsi, in Templo sancto glóriæ tuæ repræsentári mereámur.', 'm'],
-     ['Per eúndem Christum Dóminum nostrum.', 'c']];
-check('omnip', p, 'Orémus. Omnípotens sempitérne Deus, qui hodiérna die Unigénitum tuum ulnis sancti Simeónis in Templo sancto tuo suscipiéndum præsentásti: tuam súpplices deprecámur cleméntiam: ut has candélas, quas nos fámuli tui, in tui nóminis magnificéntiam suscipiéntes, gestáre cúpimus, luce accénsas, bene✠dícere et sancti✠ficáre, atque lúmine supérnæ benedictiónis accéndere dignéris: quátenus eas tibi Dómino Deo nostro offeréndo, digni, et sancto igne dulcíssimæ caritátis tuæ succénsi, in Templo sancto glóriæ tuæ repræsentári mereámur. Per eúndem Christum Dóminum nostrum. ℟. Amen.');
+     ['ut has candélas, quas nos fámuli tui, in tui nóminis magnificéntiam suscipiéntes, gestáre cúpimus, luce accénsas, bene✠dícere, et sancti✠ficáre, atque lúmine supérnæ benedictiónis accéndere dignéris †', 'f'],
+     ['quátenus eas tibi Dómino Deo nostro offeréndo, digni, et sancto igne dulcíssimæ charitátis tuæ succénsi, in Templo sancto glóriæ tuæ repræsentári mereámur:', 'm'],
+     ['Per eúmdem Christum Dóminum nostrum.', 'c']];
+check('omnip', p, 'Orémus. Omnípotens sempitérne Deus, qui hodiérna die Unigénitum tuum ulnis sancti Simeónis in Templo sancto tuo suscipiéndum præsentásti † tuam súpplices deprecámur cleméntiam: ut has candélas, quas nos fámuli tui, in tui nóminis magnificéntiam suscipiéntes, gestáre cúpimus, luce accénsas, bene✠dícere, et sancti✠ficáre, atque lúmine supérnæ benedictiónis accéndere dignéris † quátenus eas tibi Dómino Deo nostro offeréndo, digni, et sancto igne dulcíssimæ charitátis tuæ succénsi, in Templo sancto glóriæ tuæ repræsentári mereámur: Per eúmdem Christum Dóminum nostrum. ℟. Amen.');
 write('tone_pur_omnipotens', 'Omnipotens sempiterne Deus (benedictio candelarum)', 'Oratio', 'p. 66 (rubric: "benedicat voce mediocri, eo modo quo dicuntur Orationes ad Horas") and p. 67 (text, with its flexa after præsentásti and dignéris, colons after cleméntiam and mereámur, flexa after nostrum)', OTONE, prayer(p));
 write('tone_pur_versus', 'Post partum (versus ad processionem)', 'Versiculus', 'p. 72 (text)', VTONE,
   '(f3) <sp>V/</sp>. ' + vr('Post partum, Virgo, invioláta permansísti.') + ' <sp>R/</sp>. ' + vr('Dei Génitrix, intercéde pro nobis.'));
 p = [['Erúdi, quǽsumus, Dómine, plebem tuam:', 'm'],
-     ['et quæ extrínsecus ánnua tríbuis devotióne venerári,', 'f'],
-     ['intérius ássequi grátiæ tuæ luce concéde.', 'm'],
+     ['et quæ extrínsecus ánnua tríbuis devotióne venerári †', 'f'],
+     ['intérius ássequi grátiæ tuæ luce concéde:', 'm'],
      ['Per Christum Dóminum nostrum.', 'c']];
-check('erudi', p, 'Orémus. Erúdi, quǽsumus, Dómine, plebem tuam: et quæ extrínsecus ánnua tríbuis devotióne venerári, intérius ássequi grátiæ tuæ luce concéde. Per Christum Dóminum nostrum. ℟. Amen.');
+check('erudi', p, 'Orémus. Erúdi, quǽsumus, Dómine, plebem tuam: et quæ extrínsecus ánnua tríbuis devotióne venerári † intérius ássequi grátiæ tuæ luce concéde: Per Christum Dóminum nostrum. ℟. Amen.');
 write('tone_pur_erudi', 'Erudi, quaesumus (oratio ad processionem)', 'Oratio', 'p. 72 (text, with its colon after tuam, flexa after venerári, colon after concéde, flexa after nostrum)', OTONE, prayer(p));
 
 // ---------------- Salve Regina procession, pp. 90-91
@@ -98,38 +102,50 @@ const TP_R = (r) => ' <i>T. P.</i>(::) <sp>R/</sp>. ' + vr(r.replace(/\.$/, ', a
 write('tone_salve_dignare', 'Dignare me (versus post Salve Regina)', 'Versiculus', 'p. 90 (text; the same versicle is the printed example of the tone, p. 395-396)', VTONE +
   ' In Paschaltide the Alleluia is added (p. 90: Temp. Pasch. additur Allelúia), sung as in the example on p. 396.',
   '(f3) <sp>V/</sp>. ' + vr('Dignáre me laudáre te, Virgo sacráta.') + ' <sp>R/</sp>. ' + vr('Da mihi virtútem contra hostes tuos.').replace(/ \(::\)$/, '') + TP_R('Da mihi virtútem contra hostes tuos.'));
-p = [['Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis salúte gaudére:', 'm'],
-     ['et gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia,', 'f'],
-     ['et ætérna pérfrui lætítia.', 'm'],
+p = [['Concéde nos fámulos tuos, quǽsumus Dómine Deus, perpétua mentis et córporis salúte gaudére:', 'm'],
+     ['et gloriósa beátæ Maríæ semper Vírginis intercessióne a præsénti liberári tristítia †', 'f'],
+     ['et ætérna pérfrui lætítia:', 'm'],
      ['Per Christum Dóminum nostrum.', 'c']];
-check('concede', p, 'Orémus. Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis salúte gaudére: et gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia. Per Christum Dóminum nostrum. ℟. Amen.');
+check('concede', p, 'Orémus. Concéde nos fámulos tuos, quǽsumus Dómine Deus, perpétua mentis et córporis salúte gaudére: et gloriósa beátæ Maríæ semper Vírginis intercessióne a præsénti liberári tristítia † et ætérna pérfrui lætítia: Per Christum Dóminum nostrum. ℟. Amen.');
 write('tone_salve_concede', 'Concede nos famulos tuos (oratio post Salve Regina)', 'Oratio', 'pp. 90-91 (text; the same prayer is the printed example of the tone, p. 407, and its conclusion p. 408)', OTONE, prayer(p));
 write('tone_salve_dominice', 'Ora pro nobis, beate Pater Dominice (versus)', 'Versiculus', 'p. 91 (text)', VTONE +
   ' In Paschaltide the Alleluia is added (p. 91: Temp. Pasch. additur Allelúia), sung as in the example on p. 396.',
-  '(f3) <sp>V/</sp>. ' + vr('Ora pro nobis, beáte Pater Domínice.') + ' <sp>R/</sp>. ' + vr('Ut digni efficiámur promissiónibus Christi.').replace(/ \(::\)$/, '') + TP_R('Ut digni efficiámur promissiónibus Christi.'));
-p = [['Concéde, quǽsumus, omnípotens Deus:', 'm'],
-     ['ut qui peccatórum nostrórum póndere prémimur,', 'f'],
-     ['beáti Domínici Confessóris tui, Patris nostri, patrocínio sublevémur.', 'm'],
+  '(f3) <sp>V/</sp>. ' + vr('Ora pro nobis beáte Pater Domínice.') + ' <sp>R/</sp>. ' + vr('Ut digni efficiámur promissiónibus Christi.').replace(/ \(::\)$/, '') + TP_R('Ut digni efficiámur promissiónibus Christi.'));
+p = [['Concéde, quǽsumus omnípotens Deus:', 'm'],
+     ['ut qui peccatórum nostrórum póndere prémimur †', 'f'],
+     ['beáti Domínici, Confessóris tui, Patris nostri, patrocínio sublevémur:', 'm'],
      ['Per Christum Dóminum nostrum.', 'c']];
-check('dominici', p, 'Orémus. Concéde, quǽsumus, omnípotens Deus: ut qui peccatórum nostrórum póndere prémimur, beáti Domínici Confessóris tui, Patris nostri, patrocínio sublevémur. Per Christum Dóminum nostrum. ℟. Amen.');
+check('dominici', p, 'Orémus. Concéde, quǽsumus omnípotens Deus: ut qui peccatórum nostrórum póndere prémimur † beáti Domínici, Confessóris tui, Patris nostri, patrocínio sublevémur: Per Christum Dóminum nostrum. ℟. Amen.');
 write('tone_salve_dominici', 'Concede, quaesumus, omnipotens Deus (oratio de S. P. Dominico)', 'Oratio', 'p. 91 (text, with its colon after Deus, flexa after prémimur, colon after sublevémur, flexa after nostrum)', OTONE, prayer(p));
 
 // ---------------- Litany of Loreto: after the Prose / Regina caeli, p. 95
 write('tone_lor_genitrix', 'Ora pro nobis, sancta Dei Genitrix (versus)', 'Versiculus', 'p. 95 (text)', VTONE +
   ' In Paschaltide the Alleluia is added (p. 95: T. P. additur Allelúia), sung as in the example on p. 396.',
-  '(f3) <sp>V/</sp>. ' + vr('Ora pro nobis, sancta Dei Génitrix.') + ' <sp>R/</sp>. ' + vr('Ut digni efficiámur promissiónibus Christi.').replace(/ \(::\)$/, '') + TP_R('Ut digni efficiámur promissiónibus Christi.'));
-p = [['Grátiam tuam, quǽsumus, Dómine, méntibus nostris infúnde:', 'm'],
-     ['ut qui, Angelo nuntiánte, Christi Fílii tui Incarnatiónem cognóvimus,', 'f'],
-     ['per Passiónem ejus et Crucem ad resurrectiónis glóriam perducámur.', 'm'],
+  '(f3) <sp>V/</sp>. ' + vr('Ora pro nobis sancta Dei Génitrix.') + ' <sp>R/</sp>. ' + vr('Ut digni efficiámur promissiónibus Christi.').replace(/ \(::\)$/, '') + TP_R('Ut digni efficiámur promissiónibus Christi.'));
+p = [['Grátiam tuam, quǽsumus Dómine, méntibus nostris infúnde:', 'm'],
+     ['ut qui, Angelo nuntiánte, Christi Fílii tui Incarnatiónem cognóvimus †', 'f'],
+     ['per Passiónem ejus et Crucem ad resurrectiónis glóriam perducámur:', 'm'],
      ['Per eúndem Christum Dóminum nostrum.', 'c']];
-check('gratiam', p, 'Orémus. Grátiam tuam, quǽsumus, Dómine, méntibus nostris infúnde: ut qui, Angelo nuntiánte, Christi Fílii tui Incarnatiónem cognóvimus, per Passiónem ejus et Crucem ad resurrectiónis glóriam perducámur. Per eúndem Christum Dóminum nostrum. ℟. Amen.');
+check('gratiam', p, 'Orémus. Grátiam tuam, quǽsumus Dómine, méntibus nostris infúnde: ut qui, Angelo nuntiánte, Christi Fílii tui Incarnatiónem cognóvimus † per Passiónem ejus et Crucem ad resurrectiónis glóriam perducámur: Per eúndem Christum Dóminum nostrum. ℟. Amen.');
 write('tone_lor_gratiam', 'Gratiam tuam (oratio)', 'Oratio', 'p. 95 (text, with its colon after infúnde, flexa after cognóvimus, colon after perducámur, flexa after nostrum)', OTONE, prayer(p));
 write('tone_lor_postpartum', 'Post partum (versus post Prosam vel Regina caeli)', 'Versiculus', 'p. 95 (text)', VTONE +
   ' In Paschaltide the Alleluia is added (p. 95: T. P. additur Allelúia), sung as in the example on p. 396.',
   '(f3) <sp>V/</sp>. ' + vr('Post partum, Virgo, invioláta permansísti.') + ' <sp>R/</sp>. ' + vr('Dei Génitrix, intercéde pro nobis.').replace(/ \(::\)$/, '') + TP_R('Dei Génitrix, intercéde pro nobis.'));
 p = [['Prótege, Dómine, fámulos tuos subsídiis pacis:', 'm'],
-     ['et beátæ Maríæ semper Vírginis patrocíniis confidéntes,', 'f'],
-     ['a cunctis hóstibus redde secúros.', 'm'],
+     ['et beátæ Maríæ semper Vírginis patrocíniis confidéntes †', 'f'],
+     ['a cunctis hóstibus redde secúros:', 'm'],
      ['Per Christum Dóminum nostrum.', 'c']];
-check('protege', p, 'Orémus. Prótege, Dómine, fámulos tuos subsídiis pacis: et beátæ Maríæ semper Vírginis patrocíniis confidéntes, a cunctis hóstibus redde secúros. Per Christum Dóminum nostrum. ℟. Amen.');
+check('protege', p, 'Orémus. Prótege, Dómine, fámulos tuos subsídiis pacis: et beátæ Maríæ semper Vírginis patrocíniis confidéntes † a cunctis hóstibus redde secúros: Per Christum Dóminum nostrum. ℟. Amen.');
 write('tone_lor_protege', 'Protege, Domine (oratio)', 'Oratio', 'p. 95 (text, with its colon after pacis, flexa after confidéntes, colon after secúros, flexa after nostrum)', OTONE, prayer(p));
+
+// ---------------- Rogation days, p. 125 (the versicle with alleluia, Dominus vobiscum as on p. 407, the prayer)
+write('tone_rog_versus', 'Ostende nobis (versus in Rogationibus)', 'Versiculus', 'p. 125 (text)', VTONE,
+  '(f3) <sp>V/</sp>. ' + vr('Osténde nobis, Dómine, misericórdiam tuam, allelúia.') + ' <sp>R/</sp>. ' + vr('Et salutáre tuum da nobis, allelúia.'));
+p = [['Parce, Dómine, parce pópulo tuo:', 'm'],
+     ['ut dignis flagellatiónibus castigátus †', 'f'],
+     ['in tua miseratióne respíret:', 'm'],
+     ['Per Christum Dóminum nostrum.', 'c']];
+check('parce', p, 'Orémus. Parce, Dómine, parce pópulo tuo: ut dignis flagellatiónibus castigátus † in tua miseratióne respíret: Per Christum Dóminum nostrum. ℟. Amen.');
+write('tone_rog_parce', 'Parce, Domine (oratio in Rogationibus)', 'Oratio', 'p. 125 (text, with its colon after tuo, flexa after castigátus, colon after respíret, flexa after nostrum), preceded by Dominus vobiscum as on p. 407', OTONE,
+  prayer(p).replace('(f3) ', '(f3) <sp>V/</sp>. Dó(h)mi(h)nus(h) vo(h)bís(h)cum.(f) (::) <sp>R/</sp>. Et(g) cum(g) spí(g)ri(g)tu(g) tu(g)o.(h) (::) '));
+

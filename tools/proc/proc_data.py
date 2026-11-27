@@ -46,25 +46,26 @@ LIT_SANCT = [
  ('Propítius esto,', 'exáudi nos, Dómine.', 'Be merciful,', 'graciously hear us, O Lord.'),
 ] + [(a, 'líbera nos, Dómine.', b, 'deliver us, O Lord.') for a, b in [
  ('A damnatióne perpétua,', 'From everlasting damnation,'), ('A subitánea et improvísa morte,', 'From sudden and unprovided death,'),
- ('Ab imminéntibus peccatórum nostrórum perículis,', 'From the dangers of our sins that threaten us,'), ('Ab infestatiónibus dæmonum,', 'From the assaults of the devils,'),
+ ('Ab imminéntibus peccatórum nostrórum perículis,', 'From the dangers of our sins that threaten us,'), ('Ab infestatiónibus dǽmonum,', 'From the assaults of the devils,'),
  ('Ab omni immundítia mentis et córporis,', 'From all uncleanness of mind and body,'), ('Ab ira, et ódio, et omni mala voluntáte,', 'From anger, and hatred, and all ill will,'),
  ('Ab immúndis cogitatiónibus,', 'From unclean thoughts,'), ('A cæcitáte cordis,', 'From blindness of heart,'), ('A fúlgure et tempestáte,', 'From lightning and tempest,'),
  ('A peste, fame, et bello,', 'From plague, famine and war,'), ('A flagéllo terræmótus,', 'From the scourge of earthquake,'), ('Ab omni malo,', 'From all evil,'),
  ('Per mystérium sanctæ Incarnatiónis tuæ,', 'Through the mystery of Thy holy Incarnation,'), ('Per Passiónem et Crucem tuam,', 'Through Thy Passion and Cross,'),
  ('Per gloriósam Resurrectiónem tuam,', 'Through Thy glorious Resurrection,'), ('Per admirábilem Ascensiónem tuam,', 'Through Thy wonderful Ascension,'),
  ('Per grátiam Sancti Spíritus Parácliti,', 'Through the grace of the Holy Ghost, the Paraclete,'), ('In die judícii,', 'In the day of judgement,')]] + [
- ('Peccatóres,', 'te rogámus, audi nos.', 'We sinners,', 'we beseech Thee, hear us.')] + [(a, 'te rogámus, audi nos.', b, 'we beseech Thee, hear us.') for a, b in [
+ ('Peccatóres,', 'te rogámus, audi nos.', 'We sinners,', 'we beseech Thee, hear us.')] + [(a, 'te rogámus, audi nos.', b, 'we beseech Thee, hear us.') if a != '*' else ('*', b, '*', b) for a, b in [
  ('Ut pacem nobis dones,', 'That Thou wouldst give us peace,'), ('Ut misericórdia et píetas tua nos custódiat,', 'That Thy mercy and goodness may keep us,'),
  ('Ut Ecclésiam tuam sanctam régere et conserváre dignéris,', 'That Thou wouldst deign to rule and preserve Thy holy Church,'),
  ('Ut Domnum Apostólicum et omnes gradus Ecclésiæ in sancta religióne conserváre dignéris,', 'That Thou wouldst deign to preserve the Lord Apostolic and every rank of the Church in holy religion,'),
  ('Ut Epíscopos et Prælátos nostros et cunctas congregatiónes illis commíssas in tuo sancto servítio conserváre dignéris,', 'That Thou wouldst deign to keep our Bishops and Prelates and all the congregations committed to them in Thy holy service,'),
  ('Ut inimícos sanctæ Ecclésiæ humiliáre dignéris,', 'That Thou wouldst deign to humble the enemies of holy Church,'),
  ('Ut Régibus et Princípibus nostris pacem et veram concórdiam atque victóriam donáre dignéris,', 'That Thou wouldst deign to give our Kings and Princes peace, true concord and victory,'),
- ('Ut cunctum pópulum christiánum pretióso Sánguine tuo redémptum conserváre dignéris,', 'That Thou wouldst deign to preserve all the Christian people redeemed by Thy precious Blood,'),
+ ('Ut cunctum pópulum Christiánum pretióso Sánguine tuo redémptum conserváre dignéris,', 'That Thou wouldst deign to preserve all the Christian people redeemed by Thy precious Blood,'),
  ('Ut ómnibus benefactóribus nostris sempitérna bona retríbuas,', 'That Thou wouldst repay all our benefactors with everlasting good things,'),
  ('Ut ánimas nostras et paréntum nostrórum ab ætérna damnatióne erípias,', 'That Thou wouldst snatch our souls and those of our parents from everlasting damnation,'),
  ('Ut fructus terræ dare et conserváre dignéris,', 'That Thou wouldst deign to give and preserve the fruits of the earth,'),
  ('Ut óculos misericórdiæ tuæ super nos redúcere dignéris,', 'That Thou wouldst deign to turn again upon us the eyes of Thy mercy,'),
+ ('*', 'Added after 1913 (typed into the scanned copy, below p. 129):'),
  ('Ut omnes errántes ad unitátem Ecclésiæ revocáre, et infidéles univérsos ad Evangélii lumen perdúcere dignéris,', 'That Thou wouldst deign to call back all who stray to the unity of the Church, and lead all unbelievers to the light of the Gospel,'),
  ('Ut obséquium servitútis nostræ rationábile fácias,', 'That Thou wouldst make the service of our bondage a reasonable one,'),
  ('Ut mentes nostras ad cæléstia desidéria érigas,', 'That Thou wouldst lift up our minds to heavenly desires,'),
@@ -87,7 +88,7 @@ SECTIONS = [
           'If there is to be a procession, the priest puts on a silk cope and two candle-bearers carry lighted candles. While the antiphon is sung, those who are to carry the cross and the holy water take what belongs to them.'),
   ('txt', 'Ant. Exsúrge, Dómine, ádjuva nos: et líbera nos propter nomen tuum, allelúia. ℣. Deus, áuribus nostris audívimus: patres nostri annuntiavérunt nobis. Glória Patri. Sicut erat. Repetitur Exsúrge.',
           'Ant. Arise, O Lord, help us, and deliver us for Thy name’s sake, alleluia. ℣. We have heard, O God, with our ears: our fathers have declared to us. Glory be. As it was. Arise is repeated.'),
-  ('txt', '℣. Osténde nobis, Dómine, misericórdiam tuam, allelúia. ℟. Et salutáre tuum da nobis, allelúia. ℣. Dóminus vobíscum. ℟. Et cum spíritu tuo. Orémus. Parce, Dómine, parce pópulo tuo: ut dignis flagellatiónibus castigátus, in tua miseratióne respíret: Per Christum Dóminum nostrum. ℟. Amen.',
+  ('txt', '℣. Osténde nobis, Dómine, misericórdiam tuam, allelúia. ℟. Et salutáre tuum da nobis, allelúia. ℣. Dóminus vobíscum. ℟. Et cum spíritu tuo. Orémus. Parce, Dómine, parce pópulo tuo: ut dignis flagellatiónibus castigátus † in tua miseratióne respíret: Per Christum Dóminum nostrum. ℟. Amen.',
           '℣. Show us, O Lord, Thy mercy, alleluia. ℟. And grant us Thy salvation, alleluia. ℣. The Lord be with you. ℟. And with thy spirit. Let us pray. Spare, O Lord, spare Thy people; that, chastised by deserved scourges, they may breathe again in Thy mercy. Through Christ our Lord. ℟. Amen.'),
   ('rub', 'Póstea duo Fratres in superpellíceis in médio Chori cantent Litaníam, utróque Choro simul respondénte, Frátribus stántibus versis vúltibus ad Altáre. Intérim (ubi Procéssio non fit) Sacerdos et Minístri sédeant in Presbytério, et ibi simul Litaníam voce submíssa legant, Acolytho tenénte Missále.',
           'Then two friars in surplices sing the Litany in the middle of the choir, both sides of the choir answering together, the friars standing turned towards the altar. Meanwhile (where there is no procession) the priest and ministers sit in the presbytery and read the Litany there together in a low voice, the acolyte holding the Missal.'),
@@ -131,8 +132,8 @@ LIT_LAUR = [
  ('Jánua cæli,', 'Gate of heaven,'), ('Stella matutína,', 'Morning star,'), ('Salus infirmórum,', 'Health of the sick,'), ('Refúgium peccatórum,', 'Refuge of sinners,'),
  ('Consolátrix afflictórum,', 'Comforter of the afflicted,'), ('Auxílium Christianórum,', 'Help of Christians,'), ('Regína Angelórum,', 'Queen of Angels,'), ('Regína Patriarchárum,', 'Queen of Patriarchs,'),
  ('Regína Prophetárum,', 'Queen of Prophets,'), ('Regína Apostolórum,', 'Queen of Apostles,'), ('Regína Mártyrum,', 'Queen of Martyrs,'), ('Regína Confessórum,', 'Queen of Confessors,'),
- ('Regína Vírginum,', 'Queen of Virgins,'), ('Regína Sanctórum ómnium,', 'Queen of all Saints,'), ('Regína sine labe originali concépta,', 'Queen conceived without original sin,')]] + [
- ('*', 'Typed into the scanned copy (added to the Litany in 1950):', '*', 'Typed into the scanned copy (added to the Litany in 1950):'),
+ ('Regína Vírginum,', 'Queen of Virgins,'), ('Regína Sanctórum ómnium,', 'Queen of all Saints,'), ('Regína sine labe origináli concépta,', 'Queen conceived without original sin,')]] + [
+ ('*', 'Added after 1913 (typed into the scanned copy):', '*', 'Added after 1913 (typed into the scanned copy):'),
  ('Regína in cælum assúmpta,', ORA2[0], 'Queen assumed into heaven,', ORA2[1]),
  ('Agnus Dei, qui tollis peccáta mundi,', 'parce nobis, Dómine.', 'Lamb of God, who takest away the sins of the world,', 'spare us, O Lord.'),
  ('Agnus Dei, qui tollis peccáta mundi,', 'exáudi nos, Dómine.', 'Lamb of God, who takest away the sins of the world,', 'graciously hear us, O Lord.'),
@@ -144,11 +145,11 @@ SECTIONS.insert(0, {'id': 'salve', 'la': 'Ad Processionem de B. M. V. post Compl
   ('rub', 'Finíta Antíphona, Acólythi cantent:', 'When the antiphon is finished, the acolytes sing:'),
   ('txt', '℣. Dignáre me laudáre te, Virgo sacráta. ℟. Da mihi virtútem contra hostes tuos. (T. P. Allelúia.)', '℣. Make me worthy to praise thee, O sacred Virgin. ℟. Give me strength against thine enemies. (In Paschaltide: Alleluia.)'),
   ('rub', 'Hebdomadárius subjúngat:', 'The hebdomadary adds:'),
-  ('txt', 'Orémus. Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis salúte gaudére: et gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia. Per Christum Dóminum nostrum. ℟. Amen.',
+  ('txt', 'Orémus. Concéde nos fámulos tuos, quǽsumus Dómine Deus, perpétua mentis et córporis salúte gaudére: et gloriósa beátæ Maríæ semper Vírginis intercessióne a præsénti liberári tristítia † et ætérna pérfrui lætítia: Per Christum Dóminum nostrum. ℟. Amen.',
           'Let us pray. Grant, we beseech Thee, O Lord God, that we Thy servants may enjoy lasting health of mind and body, and by the glorious intercession of blessed Mary ever Virgin be delivered from present sorrow and enjoy eternal gladness. Through Christ our Lord. ℟. Amen.'),
   ('rub', 'Deínde Ceroferárii, vel Cantóres, incípiant Antíphonam O lumen, ut supra, pag. 76, et Fratres processionáliter revertántur in Chorum. Qua finíta, Ceroferárii dicant:',
           'Then the candle-bearers or the cantors begin the antiphon O lumen, as above, p. 76, and the friars return in procession to the choir. When it is finished, the candle-bearers say:'),
-  ('txt', '℣. Ora pro nobis, beáte Pater Domínice. ℟. Ut digni efficiámur promissiónibus Christi. (T. P. Allelúia.) Orémus. Concéde, quǽsumus, omnípotens Deus: ut qui peccatórum nostrórum póndere prémimur, beáti Domínici Confessóris tui, Patris nostri, patrocínio sublevémur. Per Christum Dóminum nostrum. ℟. Amen.',
+  ('txt', '℣. Ora pro nobis beáte Pater Domínice. ℟. Ut digni efficiámur promissiónibus Christi. (T. P. Allelúia.) Orémus. Concéde, quǽsumus omnípotens Deus: ut qui peccatórum nostrórum póndere prémimur † beáti Domínici, Confessóris tui, Patris nostri, patrocínio sublevémur: Per Christum Dóminum nostrum. ℟. Amen.',
           '℣. Pray for us, blessed Father Dominic. ℟. That we may be made worthy of the promises of Christ. (In Paschaltide: Alleluia.) Let us pray. Grant, we beseech Thee, almighty God, that we who are weighed down by the burden of our sins may be raised up by the patronage of blessed Dominic, Thy Confessor, our Father. Through Christ our Lord. ℟. Amen.'),
   ('rub', 'Si consuetúdo Convéntus vel Provínciæ sit, ut loco Antíphonæ O lumen cantétur Antíphona de áliquo Sancto Órdinis, vel álio Sancto, talis consuetúdo servári póterit; et tunc Versículus et Orátio erunt páriter de illo cujus Antíphona cantáta fúerit.',
           'If it is the custom of the convent or province to sing, instead of the antiphon O lumen, an antiphon of some saint of the Order or of another saint, the custom may be kept; the versicle and prayer are then likewise of the saint whose antiphon was sung.'),
@@ -162,11 +163,11 @@ SECTIONS.insert(1, {'id': 'lauretanae', 'la': 'Litaniæ Lauretanæ B. M. V.', 'e
           'Inviolate, spotless and pure art thou, O Mary, who wast made the shining gate of heaven. O loving Mother, most dear to Christ, receive our devout songs of praise. That our hearts and bodies may be pure, our devoted hearts and lips now implore thee. By thy sweet-sounding prayers grant us pardon for ever. O kind one, who alone hast remained inviolate. In Paschaltide: Alleluia.'),
   ('rub', 'Póterit étiam, Témpore Pascháli, ubi usus obtinúerit, loco Prosæ Invioláta cantári Ant. Regína cæli, pag. 44. Post Prosam Invioláta vel Ant. Regína cæli dicátur:',
           'In Paschaltide, where it is the custom, the antiphon Regina caeli (p. 44) may be sung instead of the Prose Inviolata. After the Prose Inviolata or the antiphon Regina caeli is said:'),
-  ('txt', '℣. Ora pro nobis, sancta Dei Génitrix. ℟. Ut digni efficiámur promissiónibus Christi. (T. P. Allelúia.) Orémus. Grátiam tuam, quǽsumus, Dómine, méntibus nostris infúnde: ut qui, Angelo nuntiánte, Christi Fílii tui Incarnatiónem cognóvimus, per Passiónem ejus et Crucem ad resurrectiónis glóriam perducámur. Per eúndem Christum Dóminum nostrum. ℟. Amen.',
+  ('txt', '℣. Ora pro nobis sancta Dei Génitrix. ℟. Ut digni efficiámur promissiónibus Christi. (T. P. Allelúia.) Orémus. Grátiam tuam, quǽsumus Dómine, méntibus nostris infúnde: ut qui, Angelo nuntiánte, Christi Fílii tui Incarnatiónem cognóvimus † per Passiónem ejus et Crucem ad resurrectiónis glóriam perducámur: Per eúndem Christum Dóminum nostrum. ℟. Amen.',
           '℣. Pray for us, O holy Mother of God. ℟. That we may be made worthy of the promises of Christ. (In Paschaltide: Alleluia.) Let us pray. Pour forth, we beseech Thee, O Lord, Thy grace into our hearts; that we, to whom the Incarnation of Christ Thy Son was made known by the message of an Angel, may by His Passion and Cross be brought to the glory of His Resurrection. Through the same Christ our Lord. ℟. Amen.'),
   ('rub', 'Ubi consuétum fúerit, ℣. Ora et Orátio Grátiam immediáte post Litanías B. M. V. dicántur. Post Prosam vero Invioláta, vel post Ant. Regína cæli, dicátur:',
           'Where it is the custom, the versicle Ora and the prayer Gratiam are said immediately after the Litany of Our Lady; and after the Prose Inviolata, or after the antiphon Regina caeli, is said:'),
-  ('txt', '℣. Post partum, Virgo, invioláta permansísti. ℟. Dei Génitrix, intercéde pro nobis. (T. P. Allelúia.) Orémus. Prótege, Dómine, fámulos tuos subsídiis pacis: et beátæ Maríæ semper Vírginis patrocíniis confidéntes, a cunctis hóstibus redde secúros. Per Christum Dóminum nostrum. ℟. Amen.',
+  ('txt', '℣. Post partum, Virgo, invioláta permansísti. ℟. Dei Génitrix, intercéde pro nobis. (T. P. Allelúia.) Orémus. Prótege, Dómine, fámulos tuos subsídiis pacis: et beátæ Maríæ semper Vírginis patrocíniis confidéntes † a cunctis hóstibus redde secúros: Per Christum Dóminum nostrum. ℟. Amen.',
           '℣. After childbirth, O Virgin, thou didst remain inviolate. ℟. Mother of God, intercede for us. (In Paschaltide: Alleluia.) Let us pray. Protect, O Lord, Thy servants with the help of peace; and make them, trusting in the patronage of blessed Mary ever Virgin, safe from all enemies. Through Christ our Lord. ℟. Amen.'),
   ('rub', 'Póstea dicátur Antíphona cum ℣. et Oratióne de S. P. Domínico, aut de álio Sancto.', 'Then the antiphon, with the versicle and prayer, of our holy Father Dominic or of another saint is said.'),
  ]})
@@ -174,7 +175,7 @@ SECTIONS.insert(1, {'id': 'lauretanae', 'la': 'Litaniæ Lauretanæ B. M. V.', 'e
 SECTIONS.insert(0, {'id': 'purificatio', 'la': 'In Festo Purificationis B. M. V.', 'en': 'The Purification of Our Lady (Candlemas): blessing of candles and procession', 'pages': [66, 72], 'items': [
   ('rub', 'In festo Purificatiónis, finíta Tértia, Prior cum Cappa sérica, et Diáconus cum Missáli, et Subdiáconus cum Libéllo Processionáli, séricis indúti, præcedéntibus Acólythis in albis cum céreis accénsis, in Chorum véniant: et si Domínica fúerit, Aqua benedícta more sólito aspergátur. Finíta aspersióne Aquæ, vel si Aqua non fúerit aspergénda, postquam in Chorum venerint, Prior stans ante gradus Presbytérii verso vultu ad Altáre, Diácono coram ipso tenénte librum, candélas a Sacrísta super gradus Presbytérii collocátas, ita quod sint ad déxteram benedicéntis, benedícat voce mediócri, eo modo quo dicúntur Oratiónes ad Horas:',
           'On the feast of the Purification, when Terce is finished, the Prior in a silk cope, the deacon with the Missal and the subdeacon with the processional, in silk vestments, come into the choir, the acolytes going before in albs with lighted candles; and if it is a Sunday, holy water is sprinkled in the usual way. After the sprinkling, or when they have come into the choir if there is no sprinkling, the Prior, standing before the steps of the presbytery facing the altar, the deacon holding the book before him, blesses the candles which the sacristan has placed on the steps of the presbytery, so that they are on the right of the one blessing, in a moderate voice, in the way the prayers are said at the Hours:'),
-  ('txt', '℣. Dóminus vobíscum. ℟. Et cum spíritu tuo. Orémus. Omnípotens sempitérne Deus, qui hodiérna die Unigénitum tuum ulnis sancti Simeónis in Templo sancto tuo suscipiéndum præsentásti: tuam súpplices deprecámur cleméntiam: ut has candélas, quas nos fámuli tui, in tui nóminis magnificéntiam suscipiéntes, gestáre cúpimus, luce accénsas, bene✠dícere et sancti✠ficáre, atque lúmine supérnæ benedictiónis accéndere dignéris: quátenus eas tibi Dómino Deo nostro offeréndo, digni, et sancto igne dulcíssimæ caritátis tuæ succénsi, in Templo sancto glóriæ tuæ repræsentári mereámur. Per eúndem Christum Dóminum nostrum. ℟. Amen.',
+  ('txt', '℣. Dóminus vobíscum. ℟. Et cum spíritu tuo. Orémus. Omnípotens sempitérne Deus, qui hodiérna die Unigénitum tuum ulnis sancti Simeónis in Templo sancto tuo suscipiéndum præsentásti † tuam súpplices deprecámur cleméntiam: ut has candélas, quas nos fámuli tui, in tui nóminis magnificéntiam suscipiéntes, gestáre cúpimus, luce accénsas, bene✠dícere, et sancti✠ficáre, atque lúmine supérnæ benedictiónis accéndere dignéris † quátenus eas tibi Dómino Deo nostro offeréndo, digni, et sancto igne dulcíssimæ charitátis tuæ succénsi, in Templo sancto glóriæ tuæ repræsentári mereámur: Per eúmdem Christum Dóminum nostrum. ℟. Amen.',
           '℣. The Lord be with you. ℟. And with thy spirit. Let us pray. Almighty, everlasting God, who on this day didst present Thine only-begotten Son in Thy holy Temple to be received in the arms of holy Simeon: we humbly entreat Thy mercy, that Thou wouldst deign to bless✠ and sanctify✠ these candles, which we Thy servants, receiving them to the glory of Thy name, desire to carry lighted, and to kindle them with the light of heavenly blessing; that, offering them to Thee, the Lord our God, we may be made worthy, and set on fire with the holy flame of Thy most sweet charity, to be presented in the holy Temple of Thy glory. Through the same Christ our Lord. ℟. Amen.'),
   ('rub', 'Finíta benedictióne aspérgat Prior candélas Aqua benedícta. Póstmodum Cantor, candélam ófferens Prióri, incípiat Antíphonam Lumen ad revelatiónem, et Convéntus prosequátur ipsam et Cánticum Nunc dimíttis, Cantóre incipiénte síngulos versus Cántici, et reincipiénte Antíphonam prædíctam post síngulos Versus, et repeténte, prout necésse fúerit, si ipsis complétis nondum fúerint expedíta quæ ante inchoatiónem Processiónis sunt faciénda.',
           'After the blessing the Prior sprinkles the candles with holy water. Then the cantor, offering a candle to the Prior, begins the antiphon Lumen ad revelationem, and the community continues it and the canticle Nunc dimittis, the cantor beginning each verse of the canticle and beginning the antiphon again after each verse, and repeating it as needed if, when these are finished, what is to be done before the procession begins is not yet done.'),
@@ -199,7 +200,7 @@ SECTIONS.insert(0, {'id': 'purificatio', 'la': 'In Festo Purificationis B. M. V.
   ('rub', 'Finíta prædícta Antíphona, Ceroferárii, Cantóre eis deferénte, dicant:', 'When the antiphon is finished, the candle-bearers, the cantor prompting them, say:'),
   ('txt', '℣. Post partum, Virgo, invioláta permansísti. ℟. Dei Génitrix, intercéde pro nobis.', '℣. After childbirth, O Virgin, thou didst remain inviolate. ℟. Mother of God, intercede for us.'),
   ('rub', 'Deínde Prior absque Dóminus vobíscum dicat:', 'Then the Prior, without "The Lord be with you", says:'),
-  ('txt', 'Orémus. Erúdi, quǽsumus, Dómine, plebem tuam: et quæ extrínsecus ánnua tríbuis devotióne venerári, intérius ássequi grátiæ tuæ luce concéde. Per Christum Dóminum nostrum. ℟. Amen.',
+  ('txt', 'Orémus. Erúdi, quǽsumus, Dómine, plebem tuam: et quæ extrínsecus ánnua tríbuis devotióne venerári † intérius ássequi grátiæ tuæ luce concéde: Per Christum Dóminum nostrum. ℟. Amen.',
           'Let us pray. Instruct, we beseech Thee, O Lord, Thy people; and grant that what Thou givest them to venerate outwardly by yearly devotion they may attain inwardly by the light of Thy grace. Through Christ our Lord. ℟. Amen.'),
   ('rub', 'Dum autem Orátio dícitur, Cruciferárius Crucem repónat in loco suo. Oratióne finíta, Prior et Minístri in Sacrístiam vadant. Fratres vero Candélas téneant quoúsque fúerint offeréndæ.',
           'While the prayer is said, the cross-bearer puts the cross back in its place. When the prayer is finished, the Prior and the ministers go to the sacristy. The friars keep their candles until they are to be offered.'),
@@ -225,7 +226,7 @@ SECTIONS.insert(0, {'id': 'ascensio', 'la': 'In Ascensione Domini ad Processione
   ('rub', 'Finíta Antíphona, Ceroferárii, Cantóre eis deferénte, dicant sequéntem ℣.:', 'When the antiphon is finished, the candle-bearers, the cantor prompting them, say the following versicle:'),
   ('txt', '℣. Ascéndit Deus in jubilatióne, allelúia. ℟. Et Dóminus in voce tubæ, allelúia.', '℣. God is ascended with jubilee, alleluia. ℟. And the Lord with the sound of trumpet, alleluia.'),
   ('rub', 'Deínde Prior, absque Dóminus vobíscum, præmísso Orémus, dicat sequéntem Oratiónem; quæ dum dícitur, Cruciferárius repónat Crucem in loco suo.', 'Then the Prior, without "The Lord be with you", saying "Let us pray", says the following prayer; while it is said, the cross-bearer puts the cross back in its place.'),
-  ('txt', 'Orémus. Deus, cujus Fílius in alta cælórum poténter ascéndens, captivitátem nostram sua duxit virtúte captívam: tríbue, quǽsumus, ut dona, quæ suis particípibus cóntulit, largiátur et nobis, Jesus Christus Fílius tuus Dóminus noster: Qui tecum vivit et regnat per ómnia sǽcula sæculórum. ℟. Amen.',
+  ('txt', 'Orémus. Deus, cujus Fílius in alta cælórum poténter ascéndens captivitátem nostram sua duxit virtúte captívam † tríbue, quǽsumus, ut dona, quæ suis particípibus cóntulit, largiátur et nobis: Jesus Christus Fílius tuus Dóminus noster, qui tecum vivit, et regnat per ómnia sǽcula sæculórum. ℟. Amen.',
           'Let us pray. O God, whose Son, ascending in power to the heights of heaven, by His might led our captivity captive: grant, we beseech Thee, that the gifts He bestowed on those who share with Him He may bestow on us also, Jesus Christ Thy Son our Lord, who liveth and reigneth with Thee for ever and ever. ℟. Amen.'),
   ('rub', 'Oratióne finíta, Prior et Minístri in Sacrístiam vadant. Hic ritus et ordo procedéndi servétur in ómnibus Processiónibus, quæ finíta Tértia fíeri solent, nisi áliter notétur.',
           'When the prayer is finished, the Prior and the ministers go to the sacristy. This rite and order of going in procession is kept in all the processions that are made after Terce, unless otherwise noted.'),
@@ -244,29 +245,35 @@ _t = lambda p: (lambda x: x[0] == 'txt' and x[1].startswith(p))
 _r = lambda p: (lambda x: x[0] == 'rub' and x[1].startswith(p))
 _at('salve', _t('Ant. Salve'), [('gabc', 'salve_regina', 'Ant.', '1')])
 _at('lauretanae', lambda x: x[0] == 'lit', [
-    ('h', 'Tonus Litaniarum (pp. 91-94)', 'The tone of the Litany: the Kyrie, then each kind of invocation as printed'),
+    ('h', 'Litaníæ in cantu (pp. 91-94)', 'The Litany in chant: each invocation set to its formula as the book lines it up under the notes'),
     ('gabc', 'lor_kyrie', '', '6'),
     ('rub', 'Pater de cælis Deus, Fili Redémptor mundi Deus, Spíritus sancte Deus, Sancta Trínitas unus Deus:', 'The invocations of the Holy Trinity:'),
     ('gabc', 'lor_invocation_miserere', '', ''),
-    ('rub', 'Sancta María … Virgo fidélis:', 'Holy Mary to Virgin most faithful (the shorter lines leave out notes of the recitation):'),
+    ('rub', 'Sancta María … Virgo fidélis:', 'Holy Mary to Virgin most faithful:'),
     ('gabc', 'lor_invocation_maria', '', ''),
     ('rub', 'Spéculum justítiæ … Auxílium Christianórum:', 'Mirror of justice to Help of Christians:'),
     ('gabc', 'lor_invocation_speculum', '', ''),
     ('rub', 'Regína Angelórum … Regína sine labe origináli concépta:', 'Queen of Angels to Queen conceived without original sin:'),
     ('gabc', 'lor_invocation_regina', '', ''),
-    ('gabc', 'lor_agnus', '', '')])
+    ('gabc', 'lor_agnus', '', ''),
+    ('h', 'Litaníæ', 'The Litany in full (texts)')])
 _at('lauretanae', _t('Invioláta'), [('gabc', 'inviolata', 'Prosa', '6')])
 _at('lauretanae', _r('Póterit étiam'), [('gabc', 'regina_caeli', 'Ant.', '5')], after=True)
 _at('rogationes', _t('Ant. Exsúrge'), [('gabc', 'rog_exsurge', 'Ant.', '2')])
 _at('litaniae', lambda x: x[0] == 'lit', [
-    ('h', 'Tonus Litaniarum (pp. 126-130)', 'The tone of the Litany: each kind of invocation as printed; the others are sung like the first of their kind'),
+    ('h', 'Litaníæ in cantu (pp. 126-130)', 'The Litany in chant: the invocations given as text in the book are set to the formula printed for their kind'),
     ('gabc', 'lit_kyrie', '', ''), ('gabc', 'lit_christe_audi', '', ''), ('gabc', 'lit_miserere', '', ''),
-    ('rub', 'Sancta María, Sancta Dei Génitrix, Sancta Virgo vírginum; et sic de céteris:', 'Holy Mary, Holy Mother of God, Holy Virgin of virgins; and so the other saints:'),
+    ('rub', 'Sancta María, Sancta Dei Génitrix, Sancta Virgo vírginum:', 'Holy Mary, Holy Mother of God, Holy Virgin of virgins:'),
     ('gabc', 'lit_ora', '', ''),
     ('rub', 'Sancte Míchaël, Sancte Gábriel, Sancte Ráphaël:', 'St Michael, St Gabriel, St Raphael:'),
     ('gabc', 'lit_ora_michael', '', ''),
-    ('rub', 'Omnes sancti Ángeli et Archángeli; et sic de céteris in plurali:', 'All ye holy Angels and Archangels; and so the others in the plural:'),
-    ('gabc', 'lit_orate', '', ''), ('gabc', 'lit_propitius', '', ''),
+    ('rub', 'Omnes sancti Ángeli et Archángeli, Omnes sancti beatórum Spirítuum órdines:', 'All ye holy Angels and Archangels, All ye holy orders of blessed Spirits:'),
+    ('gabc', 'lit_orate', '', ''),
+    ('rub', 'Sancte Joánnes Baptísta … Sancte Antoníne:', 'St John the Baptist … St Antoninus:'),
+    ('gabc', 'lit_sancti', '', ''),
+    ('rub', 'Vox exaltétur: Sancte Pater Domínice … Omnes Sancti:', 'The voice is raised: Holy Father Dominic … All ye Saints:'),
+    ('gabc', 'lit_sancti_dominice', '', ''),
+    ('gabc', 'lit_propitius', '', ''),
     ('rub', 'A damnatióne perpétua … In die judícii:', 'From everlasting damnation … In the day of judgement:'),
     ('gabc', 'lit_libera', '', ''),
     ('rub', 'Peccatóres … Fili Dei:', 'We sinners … Son of God:'),
@@ -293,6 +300,50 @@ _at('purificatio', _t('℣. Post partum'), [('gabc', 'tone_pur_versus', '', '')]
 _at('purificatio', _t('Orémus. Erúdi'), [('gabc', 'tone_pur_erudi', '', '')])
 _at('salve', _t('℣. Dignáre'), [('gabc', 'tone_salve_dignare', '', '')])
 _at('salve', _t('Orémus. Concéde nos'), [('gabc', 'tone_salve_concede', '', '')])
-_at('salve', _t('℣. Ora pro nobis, beáte'), [('gabc', 'tone_salve_dominice', '', ''), ('gabc', 'tone_salve_dominici', '', '')])
-_at('lauretanae', _t('℣. Ora pro nobis, sancta'), [('gabc', 'tone_lor_genitrix', '', ''), ('gabc', 'tone_lor_gratiam', '', '')])
+_at('salve', _t('℣. Ora pro nobis beáte'), [('gabc', 'tone_salve_dominice', '', ''), ('gabc', 'tone_salve_dominici', '', '')])
+_at('lauretanae', _t('℣. Ora pro nobis sancta'), [('gabc', 'tone_lor_genitrix', '', ''), ('gabc', 'tone_lor_gratiam', '', '')])
 _at('lauretanae', _t('℣. Post partum'), [('gabc', 'tone_lor_postpartum', '', ''), ('gabc', 'tone_lor_protege', '', '')])
+_at('rogationes', _t('℣. Osténde'), [('gabc', 'tone_rog_versus', '', ''), ('gabc', 'tone_rog_parce', '', '')])
+
+# extraordinariae (W-A2): the texts of pp. 131-134 (pdf 147-150) after the Litany, with their chant (tools/proc/gen_ex.js,
+# gabc/ex_*.gabc: versicles in the tone of Art. II § IV 3°, pp. 395-396; prayers in the tone of Art. III § III, pp. 407-408).
+# The Latin is as printed, with the book's flexa sign (†) inside a text and its colons; English translated for this site.
+S['extraordinariae']['pages'] = [131, 132, 133, 134]
+_at('extraordinariae', _t('℣. Et ne nos'), [('gabc', 'ex_versus', '', '')])
+_EXO = [
+  ('rub', 'Deínde, absque Dóminus vobíscum, dicat sequéntes Oratiónes, præmísso Orémus:', 'Then, without "The Lord be with you", he says the following prayers, saying "Let us pray" first:'),
+  ('gabc', 'ex_orationes', '', ''),
+  ('txt', 'Orémus. Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis salúte gaudére: et gloriósa beátæ Maríæ semper Vírginis intercessióne a præsénti liberári tristítia † et ætérna pérfrui lætítia: Orátio. Parce, Dómine, parce pópulo tuo: ut dignis flagellatiónibus castigátus † in tua miseratióne respíret:',
+          'Let us pray. Grant, we beseech Thee, O Lord God, that we Thy servants may enjoy lasting health of mind and body, and by the glorious intercession of blessed Mary ever Virgin be delivered from present sorrow and enjoy eternal gladness. Prayer. Spare, O Lord, spare Thy people; that, chastised by deserved scourges, they may breathe again in Thy mercy.'),
+  ('rub', 'Demum subjúngat áliquam ex infra pósitis Oratiónibus ad propósitum Processiónis, eam terminándo Per Christum Dóminum nostrum. Et respónso Amen, ad Sacristíam cum Minístris revertátur.',
+          'Last he adds one of the prayers given below, suited to the purpose of the procession, ending it with "Through Christ our Lord". And when "Amen" has been answered, he returns to the sacristy with the ministers.'),
+]
+_EXOCC = [
+ ('Si fúerit tribulátio Ecclésiæ, dicátur:', 'If the Church is in tribulation, there is said:', 'ecclesia',
+  '℣. Ádjuva nos, Deus salutáris noster. ℟. Et propter glóriam nóminis tui, Dómine, líbera nos: Orátio. Ecclésiæ tuæ, quǽsumus, Dómine, preces placátus admítte: ut destrúctis adversitátibus et erróribus univérsis † secúra tibi sérviat libertáte: Per Christum Dóminum nostrum. ℟. Amen.',
+  '℣. Help us, O God our Saviour. ℟. And for the glory of Thy name, O Lord, deliver us. Prayer. Mercifully receive, we beseech Thee, O Lord, the prayers of Thy Church: that, all adversities and errors being destroyed, she may serve Thee in secure freedom. Through Christ our Lord. ℟. Amen.'),
+ ('Si Procéssio fiat pro pace, dicátur:', 'If the procession is made for peace, there is said:', 'pace',
+  '℣. Fiat pax in virtúte tua. ℟. Et abundántia in túrribus tuis. Orátio. Deus, a quo sancta desidéria, recta consília et justa sunt ópera † da servis tuis illam, quam mundus dare non potest, pacem: ut et corda nostra mandátis tuis dédita † et hóstium subláta formídine, témpora sint tua protectióne tranquílla: Per Christum Dóminum nostrum. ℟. Amen.',
+  '℣. Let peace be in thy strength. ℟. And abundance in thy towers. Prayer. O God, from whom are holy desires, right counsels and just works: give to Thy servants that peace which the world cannot give; that our hearts may be given to Thy commandments, and, the fear of enemies being taken away, our times may be peaceful under Thy protection. Through Christ our Lord. ℟. Amen.'),
+ ('Si Procéssio fiat pro peténda plúvia, dicátur:', 'If the procession is made to ask for rain, there is said:', 'pluvia',
+  '℣. Óperi, Dómine, cælum núbibus. ℟. Et para terræ plúviam. Orátio. Deus, in quo vívimus, et movémur, et sumus † plúviam nobis tríbue congruéntem: ut præséntibus auxíliis sufficiénter adjúti † sempitérna fiduciálius appetámus: Per Christum Dóminum nostrum. ℟. Amen.',
+  '℣. Cover the heaven with clouds, O Lord. ℟. And prepare rain for the earth. Prayer. O God, in whom we live, and move, and are: grant us rain in due measure; that, sufficiently helped in our present needs, we may seek the things eternal with greater confidence. Through Christ our Lord. ℟. Amen.'),
+ ('Si Procéssio fiat pro serenitáte, dicátur:', 'If the procession is made for fair weather, there is said:', 'serenitate',
+  '℣. Adduxísti, Dómine, Spíritum tuum super terram. ℟. Et prohíbitæ sunt plúviæ de cælo. Orátio. Ad te, Dómine, clamántes exáudi † et áëris serenitátem nobis tríbue supplicántibus: ut qui juste pro peccátis nostris afflígimur † misericórdia tua præveniénte, tuam cleméntiam sentiámus: Per Christum Dóminum nostrum. ℟. Amen.',
+  '℣. Thou hast brought Thy wind upon the earth, O Lord. ℟. And the rains from heaven were stayed. Prayer. Hear us, O Lord, who cry to Thee, and grant fair weather to us who make supplication: that we who are justly afflicted for our sins may, by Thy mercy going before us, know Thy clemency. Through Christ our Lord. ℟. Amen.'),
+ ('Si Procéssio fiat témpore pestiléntiæ, dicátur:', 'If the procession is made in time of pestilence, there is said:', 'pestilentia',
+  '℣. Exsúrge, Dómine, ádjuva nos: ℟. Et líbera nos propter nomen tuum. Orátio. Deus, qui non mortem, sed pœniténtiam desíderas peccatórum † pópulum tuum, quǽsumus, ad te convérte propítius: ut dum tibi devótus exístit † iracúndiæ tuæ ab eo flagélla amóveas: Per Christum Dóminum nostrum. ℟. Amen.',
+  '℣. Arise, O Lord, help us. ℟. And deliver us for Thy name’s sake. Prayer. O God, who desirest not the death but the repentance of sinners: mercifully turn Thy people to Thee, we beseech Thee; that, while they are devoted to Thee, Thou mayest take away from them the scourges of Thine anger. Through Christ our Lord. ℟. Amen.'),
+ ('Si Procéssio fiat contra Turcas et Hæréticos, dicátur:', 'If the procession is made against the Turks and heretics, there is said:', 'turcas',
+  '℣. Mitte nobis Dómine auxílium de Sancto. ℟. Et de Sion tuére nos: Orátio. Omnípotens sempitérne Deus, in cujus manu sunt ómnium potestátes et ómnium jura regnórum: réspice in auxílium Christianórum † ut gentes Turcárum atque Hæreticórum, quæ in sua feritáte confídunt, déxteræ tuæ poténtia conterántur: Per Christum Dóminum nostrum. ℟. Amen.',
+  '℣. Send us help, O Lord, from the sanctuary. ℟. And defend us out of Sion. Prayer. Almighty and everlasting God, in whose hand are the powers of all and the rights of all kingdoms: look upon Christians to help them; that the nations of the Turks and of the heretics, who trust in their own fierceness, may be crushed by the power of Thy right hand. Through Christ our Lord. ℟. Amen.'),
+ ('Si Procéssio fiat pro summo Pontífice, dicátur:', 'If the procession is made for the Sovereign Pontiff, there is said:', 'papa',
+  '℣. Orémus pro Dómino Papa. ℟. Dóminus consérvet eum, et vivíficet eum, et beátum fáciat eum in terra † et non tradat eum in ánimam inimicórum ejus. Orátio. Deus, ómnium fidélium pastor et rector † fámulum tuum N. quem Pastórem Ecclésiæ tuæ præésse voluísti, propítius réspice: da ei, quǽsumus, verbo et exémplo quibus præest profícere † ut ad vitam una cum grege sibi crédito pervéniat sempitérnam: Per Christum Dóminum nostrum. ℟. Amen.',
+  '℣. Let us pray for our Lord the Pope. ℟. The Lord preserve him, and give him life, and make him blessed upon the earth, and deliver him not up to the will of his enemies. Prayer. O God, the shepherd and ruler of all the faithful, look mercifully upon Thy servant N., whom Thou hast willed to set over Thy Church as its shepherd: grant him, we beseech Thee, so to profit by word and example those over whom he is set, that together with the flock entrusted to him he may come to everlasting life. Through Christ our Lord. ℟. Amen.'),
+ ('Si Procéssio fiat pro Rege, Duce, vel Príncipe, dicátur:', 'If the procession is made for the King, Duke or Prince, there is said:', 'rege',
+  '℣. Salvum fac servum tuum. ℟. Deus meus, sperántem in te: Orátio. Quǽsumus, omnípotens Deus: ut fámulus tuus N. Rex (vel Dux, vel Princeps) noster, qui tua miseratióne suscépit Regni (vel Ducátus, vel Principátus) gubernácula † virtútum étiam ómnium percípiat increménta: quibus decénter ornátus, et vitiórum monstra devitáre † et ad te, qui via, véritas et vita es, gratiósus váleat perveníre: Per Christum Dóminum nostrum. ℟. Amen.',
+  '℣. Save Thy servant. ℟. Who hopeth in Thee, O my God. Prayer. We beseech Thee, almighty God, that Thy servant N., our King (or Duke, or Prince), who by Thy mercy has taken up the government of the kingdom (or duchy, or principality), may also receive an increase of all virtues; that, fittingly adorned with them, he may be able both to shun the enormities of vice and to come in Thy grace to Thee, who art the way, the truth and the life. Through Christ our Lord. ℟. Amen.'),
+]
+for _la, _en, _id, _tla, _ten in _EXOCC:
+    _EXO += [('rub', _la, _en), ('gabc', 'ex_' + _id, '', ''), ('txt', _tla, _ten)]
+_at('extraordinariae', _r('Póstea subjúngat álium'), _EXO, after=True)

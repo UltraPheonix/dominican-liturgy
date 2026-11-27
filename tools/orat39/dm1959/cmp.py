@@ -1,9 +1,10 @@
+import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from dmpaths import *
 import pickle, re, difflib
-LEX=pickle.load(open('/tmp/dmv/lex.pkl','rb'))
-exec(open('/tmp/dmv/lex.py').read().split('R=')[0])
+LEX=pickle.load(open(W_('lex.pkl'),'rb'))
+exec(open(os.path.join(D,'lex.py')).read().split('R=')[0])
 def N(w):
     w=re.sub(r'(.)\1+',r'\1',w)
-    w=w.replace('ch','c').replace('th','t').replace('ph','f').replace('intelleg','intellig').replace('mpn','mn')
+    w=w.replace('ch','c').replace('th','t').replace('ph','f').replace('inteleg','intelig').replace('mpn','mn').replace('mici','mii').replace('nicil','niil').replace('cotidi','quotidi').replace('genetri','genitri')
     w=re.sub(r'ci(?=[aeiou])','ti',w)
     return w
 LEXN={}

@@ -685,7 +685,7 @@
     var bits = [];
     others.forEach(function (m) {
       bits.push(el('button', {type: 'button', class: 'da-link', onclick: function () { showMass(m.key); markChips(m.key); }},
-        [(m.label ? m.label.replace(/^Conventual Mass: /, '') + ': ' : ''), el('span', {class: 'da-t', text: clean(D.masses[m.key].title).replace(/^\d+ [A-Za-z.]+ — /, '')})]));
+        [(m.label ? m.label.replace(/^Conventual Mass: /, '') + ': ' : ''), el('span', {class: 'da-t', text: clean(m.anniv && m.title ? m.title : D.masses[m.key].title).replace(/^\d+ [A-Za-z.]+ — /, '')})]));
     });
     rr.missing.forEach(function (m) {
       bits.push(el('span', {class: 'da-miss', text: (m.label ? m.label + ': ' : '') + (m.title || m.key || '') + ' (in the Missal, not yet on this site)'}));
@@ -760,11 +760,18 @@
     if (cls === 3) return 'VI';
     return R.gloria ? 'VI' : 'VIII';
   }
-  // In Paschaltide the Easter Kyrie (IV) on feasts of the I and II class not of Our Lady, and on Sundays
+  // In Paschaltide the Easter Kyrie (IV): Graduale O.P. (1928), Kyriale p. 129*, "IV. Tempore Paschali in Dominicis et
+  // Duplicibus et supra"; p. 155*, "neque Tempore Paschali in Ordinariis de B. M. V. ..., neque in Semiduplicibus et infra".
+  // A feast goes by its 1939 rank on the day (Duplex, Totum Duplex, an octave day), not by its class in the Mass list.
   function paschalKyrie(key, d) {
     if (!paschaltide(d) || isMarian(key) || key === 'Quad6s') return false;
-    var cls = isTemporal(key) ? temporalClass(key, d) : feastClass(key);
-    return cls <= 2 || (d && d.getDay() === 0);
+    if (d && d.getDay() === 0) return true;
+    if (!isTemporal(key) || key === 'Pasc2w') {
+      var o = null; try { o = window.OPMissalRank ? mr().day(d).office : null; } catch (e) { o = null; }
+      if (o && o.key === key) return /(^|\s)(Totum )?Duplex/.test(o.rank || '') || o.kind === 'octday';
+      if (!isTemporal(key)) return feastClass(key) <= 2;
+    }
+    return temporalClass(key, d) <= 2;
   }
   function ordinaryIds() {
     var o = {}, R = rubricsOf(state.key, state.date), d = state.date;
@@ -963,7 +970,7 @@
     D.kyriale.forEach(function (id) { if (D.chants[id].i === (solemn ? 'Ad Praefationem in tono solemni' : 'Ad Praefationem in tono feriali')) dialogue = id; });
     var box = el('section', {class: 'part preface', 'data-part': 'pf'});
     box.appendChild(el('div', {class: 'part-head hide-print'}, [el('h2', {text: 'Praefatio'}), el('span', {class: 'incipit', text: P.name}),
-      el('span', {class: 'mode', text: solemn ? 'tono solemni' : 'tono feriali'})]));
+      state.ordo === 'low' ? null : el('span', {class: 'mode', text: solemn ? 'tono solemni' : 'tono feriali'})]));   // no tone at Low Mass (qc_ui W17)
     box.appendChild(el('h2', {class: 'print-only', text: 'Praefatio · ' + P.name}));
     var PC = prefaceChant(name, key, d);
     if (PC && state.ordo !== 'low') {
@@ -979,7 +986,7 @@
     // when the Preface is sung the chant already carries the Latin: only the English is added
     var sungPf = !!((PC || dialogue) && state.ordo !== 'low');
     box.appendChild(el('div', {class: 'r-cols pf-text' + (sungPf ? ' pf-sung' : '')}, [sungPf ? null : el('p', {class: 'la', lang: 'la', text: P.la}), el('p', {class: 'en-text', lang: 'en', text: P.tr})]));
-    if (!sungPf) box.appendChild(el('p', {class: 'pf-sanctus', text: 'Sanctus, Sanctus, Sanctus…'}));
+    if (!sungPf && !state.ordo) box.appendChild(el('p', {class: 'pf-sanctus', text: 'Sanctus, Sanctus, Sanctus…'}));   // the Order of Mass prints the Sanctus (qc_ui C9)
     return box;
   }
 
@@ -996,7 +1003,7 @@
   // the Gradual, Alleluia or Tract and Sequence; the Gospel; Credo; Offertory; Sanctus, Agnus Dei; Communion; dismissal
   function massSequence(m, parts) {
     var HT = window.HW_TEXT && HW_TEXT[state.hwr] && HW_TEXT[state.hwr][state.key];
-    var HW0 = window.HOLYWEEK && HOLYWEEK[state.key], skip = (HW0 && HW0.skipChants) || [];
+    var HW0 = state.hwr !== '1939' && window.HOLYWEEK && HOLYWEEK[state.key], skip = (HW0 && HW0.skipChants) || [];   // 1959 data: only in the 1959 form
     var HW = state.hwr !== '1939' && window.HOLYWEEK && HOLYWEEK[state.key];
     var rs = seasonalReadings(state.key, state.date) || (HW && HW.readings) || m33Readings(state.key, m.readings) || [], pre = rs.filter(function (r) { return r.type !== 'Gospel'; }), gos = rs.filter(function (r) { return r.type === 'Gospel'; });
     var q = [], ch = function (p) { (parts[p] || []).forEach(function (c, i) { if (skip.indexOf(c.id) < 0) q.push({t: 'chant', p: p, i: i, c: c}); }); };
@@ -1025,13 +1032,21 @@
         else if (/^(ky|gl|cr|sa|ag)$/.test(x)) { if (!(x === 'ag' && m.noAgnus)) ord(x); }
         else if (x === 'gradualEnd') { if (O && O !== 'low') od('chalice'); }
         else if (x === 'offer') od('offerDial');
+        // Holy Saturday: "Non dicatur Credo, nec Offertorium, sed tantum Dóminus vobíscum. Orémus." (Missale O.P. 1939, p. 188)
+        else if (x === 'offerNoOff' || x === 'offertoryNoOff') { if (O) q.push({t: 'ordo', k: x === 'offerNoOff' ? 'offerDial' : 'offertory', noOff: true}); }
         else if (x === 'pref') q.push({t: 'pref'});
         else if (x === 'canon') { od('canon'); od('pater'); ord('ag'); od('communion'); }
         else if (x === 'dismiss') { if (O === 'low') od('dismiss'); else q.push({t: 'ord', k: 'it'}); }
         else if (x === 'endNoGospel') od('endNoGospel');
         else if (x === 'canonNoAg') { od('canon'); od('pater'); od('communion'); }
+        // Holy Saturday: the Canon and Pater (with Pax Domini), then the Missal's rubric "sed Agnus Dei non dicatur, nec pax
+        // detur" (pp. 189-190), then (X: communion) the priest's communion
+        else if (x === 'canonPater') { od('canon'); od('pater'); }
         else od(x);
       };
+      // with the Order of Mass on, the proper Communicantes / Hanc igitur / Qui pridie go inside its Canon (drawOrdo), once:
+      // their copy under "Infra Canonem" in the propers is then left out
+      var c39 = O ? hwCanon39() : null, hide = c39 ? c39.hide : [];
       HT.forEach(function (sec, n) {
         var chunk = [], started = false;
         var flush = function () {
@@ -1039,7 +1054,7 @@
           q.push({t: 'hwtext', s: {la: sec.la, en: sec.en, src: sec.src, blocks: chunk, cont: started}, n: n});
           started = true; chunk = [];
         };
-        sec.blocks.forEach(function (b) { if (b.t === 'X') { flush(); X(b.x); } else chunk.push(b); });
+        sec.blocks.forEach(function (b) { if (b.t === 'X') { flush(); X(b.x); } else if (hide.indexOf(b) < 0) chunk.push(b); });
         flush();
       });
       return q;
@@ -1066,7 +1081,7 @@
       var ptr = m.ptr != null ? m.ptr : tr, k = 0;
       pre.forEach(function (r, i) {
         if (i === m.prophecies) { ord('ky'); ord('gl'); od('collect'); orat('or'); od('collectEnd'); }
-        q.push({t: 'read', r: r});
+        q.push({t: 'read', r: r, pro: i < pre.length - 1});
         if (i < m.prophecies && i >= m.prophecies - ptr) take('tr', k++);
         hw('lesson' + i);
         if (i === pre.length - 1) { ch('al'); for (var j = k; j < tr; j++) take('tr', j); }
@@ -1076,7 +1091,7 @@
       // m.grAt: the lesson after which each gradual (or hymn) is sung, where the Graduale lacks some of them
       var gi = 0, at = m.grAt || null, al = (parts.al || []).length, ai = 0;
       pre.forEach(function (r, i) {
-        q.push({t: 'read', r: r});
+        q.push({t: 'read', r: r, pro: i < pre.length - 1});
         var last = i === pre.length - 1;
         if (at) { at.forEach(function (li, j) { if (li === i && j < gr) take('gr', j); }); if (last) gi = gr; }
         else if (!last && gi < gr) take('gr', gi++);
@@ -1116,6 +1131,10 @@
   function rubricLine(R) {
     var pn = prefaceOf(state.key, state.date), P = pn ? PREFACES[pn] : null, num = state.ord && state.ord !== 'none' ? state.ord : autoKyriale(state.key, state.date);
     if (state.key === 'Quad6f') return 'Lessons and Tracts · the Passion · the Solemn Prayers · the Adoration of the Cross · the Mass of the Presanctified';
+    // Holy Saturday, 1939 form: the Kyrie and Gloria the Triduum O.P. (1927) prints, p. 281 (Kyriale IV and II), the Sanctus of the
+    // day's Mass, no Agnus Dei (Missale O.P. 1939, p. 190), and Ite, missa est, allelúia (Triduum p. 288)
+    if (state.key === 'Quad6s' && state.hwr === '1939') return 'Kyrie IV · Gloria II (Triduum O.P. 1927, p. 281) · no Credo' + (P ? ' · ' + P.en : '') +
+      (function () { var sa = ordinaryIds().sa; return sa && D.chants[sa] ? ' · ' + clean(D.chants[sa].i) : ''; })() + ' · no Agnus Dei · Ite, missa est, alleluia, alleluia';
     if (R.requiem) return 'Mass for the Dead · Kyrie (Requiem) · without Gloria or Credo · Sequence Dies iræ · Preface for the Dead · Agnus Dei with dona eis requiem · Requiescant in pace';
     var kyr = num === 'VIII' ? 'VIII (Profestis diebus)' : num;
     if (!state.ord && paschalKyrie(state.key, state.date)) kyr += ', Kyrie IV';
@@ -1212,6 +1231,12 @@
       if (OWN[w0] && fold(latin).indexOf(fold(w0)) < 0 && english) english = OWN[w0] + english;
       latin = ot;
     }
+    var at0 = state.key === 'S1113' ? annivOf(state.date) : null;
+    if (at0) {
+      latin = clean(at0);   // as the Kalendarium names it
+      english = /Patrum/.test(at0) ? 'Anniversary of our fathers and mothers' : /C(œ|oe)meteri/i.test(at0) ? 'Anniversary of those buried in our cemeteries'
+        : /Benefact/.test(at0) ? 'Anniversary of the relatives and benefactors of the Order' : 'Anniversary of all the deceased brethren and sisters of the Order';
+    }
     mhead.appendChild(el('header', {class: 'mass-head'}, [
       el('h1', {text: latin}),
       english && english !== latin ? el('p', {class: 'en', text: english}) : null
@@ -1241,10 +1266,10 @@
         el('p', {class: 'pend-la', lang: 'la', text: it.x.la}),
         it.x.en ? el('p', {class: 'pend-en m-tr', lang: 'en', text: it.x.en}) : null]));
       else if (it.t === 'hwnote') main.appendChild(el('p', {class: 'hint rubric', text: 'This day of Holy Week is still being transcribed from the Missale O.P. (1939); its chants follow.'}));
-      else if (it.t === 'ordo') { var os = drawOrdo(it.k, R); if (os) main.appendChild(os); }
+      else if (it.t === 'ordo') { var os = drawOrdo(it.k, R, it); if (os) main.appendChild(os); }
       else {
         if (!readHead) { readHead = true; }
-        main.appendChild(drawReading(it.r));
+        main.appendChild(drawReading(it.r, it.pro));
       }
     });
     if (false) {
@@ -1318,7 +1343,31 @@
     return null;
   }
   // a section of the Order of Mass: rubrics in red, the priest's and ministers' parts with their translation
-  function drawOrdo(k, R) {
+  // Holy Week, 1939 form: what the Missale O.P. (1939) prints for the Order of Mass, in place of the 1959 data (data/holyweek.js)
+  var HW39 = {
+    Quad6: {lastGospel: 'Matthæus 21: 1-9'},   // "Si Missa privata legitur, in fine dicatur Evangelium Cum appropinquásset Jesus" (p. 146)
+    Quad6s: {alleluiaDismiss: true}            // "Ite missa est, allelúia, allelúia" (p. 190)
+  };
+  // the proper Communicantes, Hanc igitur and Qui pridie of the 1939 form (Thursday p. 163, Saturday p. 189), from HW_TEXT's
+  // "Infra Canonem": {canon: {incipit: [la, en, cut]}, hide: [the blocks they come from]}
+  function hwCanon39() {
+    var HT = state.hwr === '1939' && window.HW_TEXT && HW_TEXT['1939'] && HW_TEXT['1939'][state.key];
+    if (!HT) return null;
+    var canon = {}, hide = [], KEY = {COMMUNICANTES: 'Communicántes', HANC: 'Hanc ígitur', QUI: 'Qui prídie'};
+    HT.forEach(function (sec) {
+      var on = false;
+      sec.blocks.forEach(function (b) {
+        if (b.t === 'L') { on = /^Infra Canonem/.test(b.la); if (on) hide.push(b); return; }
+        if (!on) return;
+        if (b.t === 'X') { on = false; return; }
+        var m = b.t === 'T' && /^\^(COMMUNICANTES|HANC|QUI)\b/.exec(b.la);
+        if (m) { var w = KEY[m[1]]; canon[w] = [w.split(' ')[0] + b.la.slice(m[0].length), b.en || '', /et réliqua/.test(b.la)]; hide.push(b); }
+        else if (b.t === 'R' && /^Item\.?$/.test(b.la)) hide.push(b);
+      });
+    });
+    return Object.keys(canon).length ? {canon: canon, hide: hide} : null;
+  }
+  function drawOrdo(k, R, it) {
     var O = window.ORDO, sec, lines;
     if (k === 'dismiss') { sec = {la: R.requiem ? 'Requiescant in pace' : R.dismiss === 'ite' ? 'Ite, missa est' : 'Benedicamus Domino', en: 'Dismissal'}; lines = O.dismiss[R.requiem ? 'req' : R.dismiss === 'ite' ? 'ite' : 'ben']; }
     else if (k === 'endNoGospel') { sec = O.end; var el0 = secLines(O.end); lines = el0.slice(0, el0.findIndex(function (l) { return /^At the Gospel side/.test(l.r || ''); })); }
@@ -1331,15 +1380,30 @@
       if (c0 >= 0 && c1 > c0) lines = lines.slice(0, c0).concat(rep, lines.slice(c1 + 1));
     }
     if (R.requiem && k === 'communion') lines = lines.filter(function (l) { return !/^Pax tibi/.test(l.la || '') && !/^He kisses the lip of the chalice/.test(l.r || ''); });
-    var HWk = window.HOLYWEEK && HOLYWEEK[state.key];
+    // Maundy Thursday "Dicatur Agnus Dei, sed pax non detur" (p. 163); Holy Saturday "nec pax detur" (p. 190)
+    if (k === 'communion' && state.hwr === '1939' && /^Quad6[hs]$/.test(state.key)) lines = lines.filter(function (l) { return !/^Pax tibi/.test(l.la || '') && !/^He kisses the lip of the chalice|\bthe Pax\b/.test(l.r || ''); });
+    // Holy Saturday: no Offertory (p. 188)
+    if (it && it.noOff) lines = lines.filter(function (l) { return !/(reads|says) the Offertory/.test(l.r || ''); }).map(function (l) {
+      return l.r ? {r: l.r.replace(/^Then he says Oremus, and the Offertory\.$/, 'Then he says Oremus; the Offertory is not said.').replace(/^The Offertory said, raising/, 'Raising'), m: l.m, 'if': l['if'], ref: l.ref} : l;
+    });
+    // the 1959 data only in the 1959 form; the 1939 form has its own (HW39, and the Canon from HW_TEXT)
+    var HWk = state.hwr !== '1939' ? window.HOLYWEEK && HOLYWEEK[state.key] : HW39[state.key];
     if (k === 'dismiss' && HWk && HWk.alleluiaDismiss) lines = lines.map(function (l) { return {w: l.w, la: l.la.replace(/\.$/, ', allelúia, allelúia.'), en: l.en.replace(/\.$/, ', alleluia, alleluia.')}; });
     // at a private Mass of Palm Sunday the Gospel of the blessing is the last Gospel
-    var HW = window.HOLYWEEK && HOLYWEEK[state.key];
+    var HW = HWk;
+    if (k === 'canon' && state.hwr === '1939') { var c39 = hwCanon39(); if (c39) HW = {canon: c39.canon}; }
     if (k === 'canon' && !(HW && HW.canon)) { var pc = properCanon(state.key, state.date); if (pc) HW = {canon: pc}; }
     if (k === 'canon' && HW && HW.canon) {
       lines = lines.map(function (l) {
         var hit = l.la && Object.keys(HW.canon).filter(function (w) { return l.la.indexOf(w) === 0; })[0];
-        return hit ? {w: 'P', la: HW.canon[hit][0], en: HW.canon[hit][1]} : l;
+        if (!hit) return l;
+        var v = HW.canon[hit];
+        // "Qui prídie … hódie, accépit panem, et réliqua ut in Canone" (p. 163): the proper opening, then the Canon's words
+        if (v[2]) {
+          var pa = v[0].indexOf('accépit panem'), a = l.la.indexOf('accépit panem'), pe = v[1].indexOf('took bread'), e = l.en.indexOf('took bread');
+          if (pa > 0 && a > 0) return {w: 'P', la: v[0].slice(0, pa) + l.la.slice(a), en: pe > 0 && e > 0 ? v[1].slice(0, pe) + l.en.slice(e) : v[1]};
+        }
+        return {w: 'P', la: v[0], en: v[1]};
       });
     }
     if (k === 'end' && HW && HW.lastGospel && state.ordo === 'low') {
@@ -1517,21 +1581,24 @@
     if (/^m:/.test(id)) {
       var key = id.slice(2), x = window.ORATIONS && ORATIONS[key];
       if (!x || !x[k] || !D.masses[key]) return null;
-      var p = splitConcl(x[k][0], x[k][1]); p.title = 'Commemoration: ' + massLabel(key); return p;
+      var p = splitConcl(x[k][0], x[k][1]); p.s = (x.en_src || {})[k]; p.title = 'Commemoration: ' + massLabel(key); return p;
     }
     if (/^x:/.test(id)) {
       var Mm = window.MEMORIAE && MEMORIAE[id.slice(2)];
       if (!Mm || !Mm[k]) return null;
-      var r = splitConcl(Mm[k][0], Mm[k][1]); r.title = 'Commemoration: ' + Mm.la; return r;
+      var r = splitConcl(Mm[k][0], Mm[k][1]); r.s = (Mm.en_src || {})[k]; r.title = 'Commemoration: ' + Mm.la; return r;
     }
     var S = window.ADDIV && ADDIV.sets[id];
     if (!S || !S[k]) return null;
     var q = {}; for (var f in S[k]) q[f] = S[k][f];
-    q.title = S.en + (S.n ? ' (n. ' + S.n + ')' : '') + ' · ' + S.inc; return q;
+    // the label names the intention only: the prayer itself is printed beneath it, and in the Secret and Postcommunion
+    // an incipit of the Collect would not match (qc_ui W2, C1, C3)
+    var t = S.en.replace(/\s*\((another|Advent|Christmastide|Paschaltide|through the year)\)/, '');
+    q.title = t.charAt(0).toLowerCase() + t.slice(1); return q;
   }
   function moreAllowed(m) {
     var R = rubricsOf(state.key, state.date);
-    return (!R.requiem || state.key === 'C114s') && !m.prophecies && !/^Quad6[hfs]?$/.test(state.key) && !!(window.ORATIONS && ORATIONS[state.key] && ORATIONS[state.key].or);
+    return (!R.requiem || state.key === 'C114s' || state.key === 'S1113') && !m.prophecies && !/^Quad6[hfs]?$/.test(state.key) && !!(window.ORATIONS && ORATIONS[state.key] && ORATIONS[state.key].or);
   }
   // the 2nd and 3rd prayers the Missal prescribes for the day (Rubr. gen. X.1; the Missal prints them in the Masses of the
   // Time from the First Sunday of each season): ids of ADDIV sets or 'm:KEY' commemorations; 'lib' = at the priest's choice
@@ -1594,13 +1661,31 @@
       var memo = P.some(function (x) { return /^m:/.test(x); });
       P = P.map(function (x) { return BVM_SETS[x] || x === 'd2' ? (memo ? 'lib' : 'd7') : x; });
     }
+    // a week with no free day for the Mass for the dead: the conventual Mass of the least solemn day adds Omnipotens pro
+    // vivis et defunctis after the prayers prescribed (Rubr. gen. VI.2; js/mrank.js omnipotensDay) (qc_ui W6)
+    var d = state.date;
+    if (d && window.OPMissalRank && moreAllowed(m) && P.indexOf('d38') < 0 && mr().omnipotensDay && mr().omnipotensDay(d) === iso(d) && mr().day(d).win === state.key) P = P.concat(['d38']);
     return P;
+  }
+  // the Order's four Anniversaries (Kalendarium; js/mrank.js): the one kept on this date, transferred or not
+  function annivOf(d) {
+    if (!d || !window.OPMissalRank) return null;
+    var a = mr().day(d).masses.filter(function (x) { return x.anniv && x.title; })[0];
+    return a ? a.title : null;
   }
   function prescribed0(m) {
     if (!moreAllowed(m)) return [];
     // the weekly Mass for the brethren, familiars and benefactors (Rubr. gen. VI.2, XII.6): Deus, veniae largitor (the Mass's
     // own), Deus, qui nos patrem (Orationes diversae pro Defunctis n. 8), Omnipotens ... qui vivorum (ad diversa n. 38)
     if (state.key === 'C114s') return ['defPM', 'd38'];
+    // the Order's four Anniversaries, Rubr. gen. XII.7: "prima Oratio erit Deus Indulgentiarum, in plurali numero; secunda
+    // et tertia ut supra num. 4 [Deus, veniae largitor; Omnipotens ... qui vivorum], praeterquam in duobus, in quibus
+    // secunda Oratio in mense Februario erit Deus, qui nos Patrem, et in mense Julio secunda erit Deus, cujus miseratione,
+    // tertia vero non mutatur"; so the Ordo 1944 (4 Feb., 12 Jul., 5 Sept., 10 Nov.): three prayers, not one (XII.1)
+    if (state.key === 'S1113') {
+      var at = annivOf(state.date) || '', mo = state.date ? state.date.getMonth() + 1 : 0;
+      return [/Patrum et Matrum/.test(at) || (!at && mo === 2) ? 'defPM' : /C(œ|oe)meteri/i.test(at) || (!at && mo === 7) ? 'defMis' : 'defFr', 'd38'];
+    }
     var d = state.date, dr = dayRank(state.key, d), sp = seasonPrayers(d), mem = memoriasOf(d), md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
     // no commemoration of Our Lady in a Mass of Our Lady (Vigil of the Assumption on a Saturday)
     if (isMarian(state.key)) { var hi = mem.high; mem = mem.filter(function (x) { return !BVM_SETS[x]; }); mem.high = hi; }
@@ -1693,6 +1778,15 @@
     return box;
   }
 
+  // a prayer sung by the priest at Mass: the Mass oration tone of the Processionarium O.P. (1913), pp. 404-406
+  // (Lead B's OPMassTones.orationProc), or Harrison (1920) pp. 66-67 until it is there. Returns GABC or null.
+  function tonePrayer(la, oremus) {
+    if (!window.OPMassTones) return null;
+    try {
+      if (OPMassTones.orationProc) return OPMassTones.orationProc(la, {tone: 'mass', dv: false, oremus: !!oremus});
+      return OPMassTones.oration(la, {noOremus: !oremus});
+    } catch (e) { console.warn('tone', e); return null; }
+  }
   function drawOratio(it) {
     if (it.extra) return drawMore(it);
     var name = {or: ['Oratio', 'Collect'], se: ['Secreta', 'Secret'], pc: ['Postcommunio', 'Postcommunion'], sp: ['Oratio super populum', 'Prayer over the People']}[it.k];
@@ -1703,16 +1797,21 @@
     // Missale O.P. 1939 (Feria IV Cinerum): "Flectamus genua, et Levate, quotidie in Quadragesima in Missa de tempore:
     // exceptis Dominicis, et die Cenae, et Sabbato Paschae"; the deacon sings them after Oremus, before the Collect
     if (it.k === 'or' && flectamusDay(state.key, state.date)) {
-      box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: 'Orémus. ℣. Flectámus génua. ℟. Leváte.'}), el('p', {class: 'en-text', lang: 'en', text: 'Let us pray. ℣. Let us kneel. ℟. Arise.'})]));
-      if (isSung()) box.appendChild(chantBox('op-m39-flectamus', {noDrop: true}));
+      // sung: Orémus has just been sung (Order of Mass); the deacon's Flectámus génua, Leváte (Missal Appendix p. 34)
+      if (isSung()) { box.appendChild(chantBox('op-m39-flectamus', {noDrop: true})); box.appendChild(el('p', {class: 'en-text tone-en', lang: 'en', text: 'Let us kneel. ℟. Arise.'})); }
+      else box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: 'Orémus. ℣. Flectámus génua. ℟. Leváte.'}), el('p', {class: 'en-text', lang: 'en', text: 'Let us pray. ℣. Let us kneel. ℟. Arise.'})]));
     }
-    // Lenten ferias: after the Postcommunion the priest says Oremus and the deacon Humiliate capita vestra Deo
-    if (it.k === 'sp' && isSung()) box.appendChild(chantBox('op-m39-humiliate', {noDrop: true}));
-    if (it.k === 'sp') box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: 'Orémus. ℣. Humiliáte cápita vestra Deo.'}), el('p', {class: 'en-text', lang: 'en', text: 'Let us pray. ℣. Bow down your heads before God.'})]));
+    // Lenten ferias: after the Postcommunion the priest sings Orémus (Proc. O.P. 1913, p. 405) and the deacon
+    // Humiliáte cápita vestra Deo (Missal Appendix p. 34)
+    if (it.k === 'sp' && isSung()) {
+      box.appendChild(chantBox('op-h-oremus', {noDrop: true}));
+      box.appendChild(chantBox('op-m39-humiliate', {noDrop: true}));
+      box.appendChild(el('p', {class: 'en-text tone-en', lang: 'en', text: 'Let us pray. ℣. Bow down your heads before God.'}));
+    } else if (it.k === 'sp') box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: 'Orémus. ℣. Humiliáte cápita vestra Deo.'}), el('p', {class: 'en-text', lang: 'en', text: 'Let us pray. ℣. Bow down your heads before God.'})]));
     // at a Sung or Solemn Mass the Collect, Postcommunion and Prayer over the People are sung in the tone of the
-    // prayers (Harrison 1920, pp. 66-67; Orémus is sung just before); the Secret is said in a low voice
+    // prayers (tonePrayer; Orémus is sung just before); the Secret is said in a low voice
     var og = null;
-    if (isSung() && it.k !== 'se' && window.OPMassTones) { try { og = OPMassTones.oration(it.x[0], {noOremus: true}); } catch (e) { console.warn('tone', e); } }
+    if (isSung() && it.k !== 'se') og = tonePrayer(it.x[0], false);
     if (og) {
       box.appendChild(gabcBox(og));
       var amen = og.indexOf('A(g)men') >= 0;
@@ -1733,23 +1832,24 @@
   // a 2nd or 3rd prayer: Orémus before the 2nd; the conclusion only on the last; at the Secret of a sung Mass,
   // "Per omnia saecula saeculorum" of the last is sung at the beginning of the Preface
   // the text of a 2nd or 3rd prayer: its conclusion only on the last (also used by the booklets)
+  var NTH = {2: '2nd', 3: '3rd'};
   function moreText(it, sung) {
     var p = it.p, la = p.la, en = p.en, lc = it.last ? p.lc : '', ec = it.last ? p.ec : '';
     if (it.k === 'se' && sung && it.last) { lc = lc.replace(/,?\s*per ómnia sǽcula sæculórum\.?\s*$/i, ','); ec = ec.replace(/,?\s*world without end\.?\s*$/i, ','); }
     if (lc) { la = la.replace(/[\s.]+$/, '') + ' ' + lc; en = en.replace(/[\s.;:,]+$/, '') + (p.cont ? ', ' : '; ') + ec.charAt(0).toLowerCase() + ec.slice(1); }
     else { la = la.replace(/[\s:;,]+$/, '') + (/[.!?]$/.test(la.trim()) ? '' : '.'); en = en.replace(/[\s:;,.]+$/, '') + '.'; }
-    return {la: la, en: en, label: (it.extra === 2 ? '2nd prayer' : '3rd prayer') + ' · ' + p.title};
+    return {la: la, en: en, label: (NTH[it.extra] || it.extra + 'th') + ' prayer · ' + p.title};
   }
   function drawMore(it) {
     var p = it.p, box = el('section', {class: 'part ordo oratio cont o-extra', 'data-part': 'oratio', 'data-k': it.k});
     if (it.extra === 2) box.appendChild(el('div', {class: 'r-cols o-line'}, [el('p', {class: 'la', lang: 'la', text: 'Orémus.'}), el('p', {class: 'en-text', lang: 'en', text: 'Let us pray.'})]));
-    box.appendChild(el('p', {class: 'o-xlab', text: (it.extra === 2 ? '2nd prayer' : '3rd prayer') + ' · ' + p.title}));
+    box.appendChild(el('p', {class: 'o-xlab', text: (NTH[it.extra] || it.extra + 'th') + ' prayer · ' + p.title}));
     var mt = moreText(it, isSung()), la = mt.la, en = mt.en;
     var src = p.s === 'ai' ? el('span', {class: 'tr-src tr-ai', text: 'AI translation'}) : (p.s === 'dm' ? el('span', {class: 'tr-src', text: 'After the St Dominic Missal (1959)'}) : null);
     // at a sung Mass the Collect and Postcommunion are sung in the tone of the prayers (Harrison 1920, pp. 66-67), Orémus
     // before the second, the conclusion and Amen only on the last; the Secret is said in a low voice
     var og = null;
-    if (isSung() && it.k !== 'se' && window.OPMassTones) { try { og = OPMassTones.oration(la, {noOremus: it.extra !== 2}); } catch (e) { console.warn('tone', e); } }
+    if (isSung() && it.k !== 'se') og = tonePrayer(la, it.extra === 2);
     if (og) {
       if (it.extra === 2) { var orl = box.querySelector('.o-line'); if (orl) box.removeChild(orl); }   // Orémus is sung with the tone
       box.appendChild(gabcBox(og));
@@ -1834,7 +1934,7 @@
     if (k === 'ag' && rubricsOf(state.key, state.date).requiem && !findKyriale('Agnus (Requiem)'))
       slot.appendChild(el('p', {class: 'hint rubric', text: 'At a Mass for the Dead: “dona eis requiem” twice, and the third time “dona eis requiem sempiternam”.'}));
     if (k === 'ky' && id === findKyriale('Kyrie IV') && state.ord !== 'IV')
-      slot.appendChild(el('p', {class: 'hint rubric', text: 'In Paschaltide the Easter Kyrie is sung on Sundays and on feasts of the I and II class.'}));
+      slot.appendChild(el('p', {class: 'hint rubric', text: 'In Paschaltide the Easter Kyrie is sung on Sundays and on Doubles and above (Graduale O.P. 1928, Kyriale p. 129*).'}));
     box.appendChild(el('p', {class: 'loading', text: 'Loading…'}));
     if (k === 'as') slot.appendChild(drawAspergesPrayers());
     loadGabc(id).then(function (t) { var g = splitGabc(t); if (k === 'as') g.body = aspergesGabc(g.body); renderInto(box, k === 'it' ? dismissGabc(g.body, rubricsOf(state.key, state.date).dismiss === 'ben') : g.body, g.header, null); }, function (e) { showError(box, e); });
@@ -1865,19 +1965,28 @@
     var L = [
       {la: '℣. Osténde nobis, Dómine, misericórdiam tuam.' + tp, en: '℣. Show us, O Lord, Thy mercy.' + tpe},
       {la: '℟. Et salutáre tuum da nobis.' + tp, en: '℟. And grant us Thy salvation.' + tpe},
-      {la: '℣. Dómine, exáudi oratiónem meam.', en: '℣. O Lord, hear my prayer.'},
+      {la: '℣. Dómine exáudi oratiónem meam.', en: '℣. O Lord, hear my prayer.'},
       {la: '℟. Et clamor meus ad te véniat.', en: '℟. And let my cry come unto Thee.'},
       {la: '℣. Dóminus vobíscum.', en: '℣. The Lord be with you.'},
       {la: '℟. Et cum spíritu tuo.', en: '℟. And with thy spirit.'},
-      {la: 'Orémus. Exáudi nos, Dómine sancte, Pater omnípotens, ætérne Deus: et míttere dignéris sanctum Angelum tuum de cælis; qui custódiat, fóveat, prótegat, vísitet, atque deféndat omnes habitántes in hoc habitáculo. Per Christum Dóminum nostrum.',
+      {la: 'Orémus. Exáudi nos, Dómine sancte, Pater omnípotens, ætérne Deus: et míttere dignéris sanctum Angelum tuum de cælis; qui custódiat, fóveat, prótegat, vísitet, atque deféndat omnes habitántes in hoc habitáculo: Per Christum Dóminum nostrum.',
        en: 'Let us pray. Hear us, O holy Lord, almighty Father, everlasting God: and vouchsafe to send Thy holy Angel from heaven, to guard, cherish, protect, visit and defend all that dwell in this house. Through Christ our Lord.'},
       {la: '℟. Amen.', en: '℟. Amen.'}];
     var box = el('div', {class: 'asp-after'});
-    box.appendChild(el('p', {class: 'hint rubric', text: 'When the antiphon is finished, the priest, standing before the steps, says (Missale O.P. 1939, p. 33):'}));
+    box.appendChild(el('p', {class: 'hint rubric', text: 'When the antiphon is finished, the priest, standing before the steps, says (Missale O.P. 1939, p. 33: “Postea dicat Sacerdos”; p. 40, De officio ministrorum altaris 2: “stando ante gradus presbyterii … dicat ℣. Ostende nobis, etc. Dominus vobiscum. Oremus. Exaudi nos”):'}));
     var mk = function (t, cls, lang) {
       var m = /^(℣\.|℟\.)\s*/.exec(t);
       return el('p', {class: cls, lang: lang}, m ? [el('span', {class: 'o-mark', text: m[1] + ' '}), t.slice(m[0].length)] : [t]);
     };
+    // sung: the versicles in the tone "quotiescumque dicitur ℣. a Sacerdote" (Proc. O.P. 1913, pp. 395-396), the prayer
+    // (not "de corpore Missae") in the tone of the prayers at the Hours (pp. 407-408): gabc/op-tone-asperges-*
+    if (isSung()) {
+      box.appendChild(chantBox(tp ? 'op-tone-asperges-v-tp' : 'op-tone-asperges-v', {noDrop: true}));
+      box.appendChild(el('p', {class: 'en-text tone-en', lang: 'en', text: L.slice(0, 4).map(function (l) { return l.en; }).join(' ')}));
+      box.appendChild(chantBox('op-tone-asperges-or', {noDrop: true}));
+      box.appendChild(el('p', {class: 'en-text tone-en', lang: 'en', text: L.slice(4).map(function (l) { return l.en; }).join(' ')}));
+      return box;
+    }
     L.forEach(function (l) { box.appendChild(el('div', {class: 'r-cols o-line'}, [mk(l.la, 'la', 'la'), mk(l.en, 'en-text', 'en')])); });
     return box;
   }
@@ -1942,15 +2051,28 @@
     var gos = M.filter(g).length ? M.filter(g).map(pick) : rs.filter(g);
     return pre.concat(gos);
   }
-  function drawReading(r) {
+  // a reading sung at a Sung or Solemn Mass: [title gabc or null, body gabc] or null. Processionarium O.P. (1913):
+  // the prophecies (every lesson before the last one in the Epistle's place) in the tone of the lessons, pp. 408-413;
+  // the Epistle (or the lesson in its place), pp. 414-419; the Gospel, pp. 424-426 (Lead B's OPMassTones.*Proc).
+  // Until those are there, Harrison (1920) ch. VI 5-6. pro: the reading is a prophecy.
+  function toneReading(la, r, pro) {
+    var T = window.OPMassTones, gos = r.type === 'Gospel';
+    if (!T || !la) return null;
+    try {
+      if (gos && T.gospelProc) return [null, T.gospelProc(la, {book: (r.ref || '').split(' ')[0], dv: false})];
+      if (!gos && pro && T.lessonProc) return [null, T.lessonProc(la, {title: r.title || ''})];
+      if (!gos && T.epistleProc) return [null, T.epistleProc(la, {title: r.title || ''})];
+      return [gos || !r.title ? null : T.epistleTitle(r.title), T.reading(la, gos)];
+    } catch (e) { console.warn('tone', e); return null; }
+  }
+  function drawReading(r, pro) {
     var la = el('p', {class: 'la'}), en = el('p', {class: 'en-text'});
     var box = el('section', {class: 'reading', 'data-part': 'reading'}, [
       el('h3', null, [READ_LA[r.type], el('span', {class: 'ref', text: r.ref}), r.roman ? el('span', {class: 'badge warn', title: 'Reference from the Roman Missal (jgabc); not read from the Dominican Missal', text: 'Roman ref.'}) : null]),
       el('div', {class: 'r-cols'}, [la, en])]);
     var psTitle = function (t) { return r.type === 'Psalmus' ? t.replace(/^(Ipsi David[^.]*|Canticum graduum|Psalmus David[^.]*|A Psalm for David[^.]*|A gradual canticle|A psalm of David[^.]*)\.\s*/i, '') : t; };
     if (r.la && isSung() && window.OPMassTones && /^(Lesson|Epistle|Gospel)$/.test(r.type) && !r.passion) {
-      var gos = r.type === 'Gospel', tg = null, rg = null;
-      try { tg = gos || !r.title ? null : OPMassTones.epistleTitle(r.title); rg = OPMassTones.reading(r.la, gos); } catch (e) { console.warn('tone', e); }
+      var gos = r.type === 'Gospel', tr = toneReading(r.la, r, pro), tg = tr && tr[0], rg = tr && tr[1];
       if (rg) {
         box.querySelector('.r-cols').remove();
         if (tg) box.appendChild(gabcBox(tg));
@@ -2099,6 +2221,8 @@
   // the Masses of a date, the one said first (the conventual Mass in choir), with the others the Rubrics allow
   function massesOf(d) {
     var r = mr().day(d), alts = r.masses.filter(function (m) { return m.key && D.masses[m.key]; });
+    // the Masses at midnight and at dawn belong to 25 December only, not to the days within the octave
+    if (!(d.getMonth() === 11 && d.getDate() === 25)) alts = alts.filter(function (m) { return !/^Dec25_[12]$/.test(m.key); });
     var win = alts.length ? alts[0].key : (temporaleKey(d).filter(function (k) { return D.masses[k]; })[0] || null);
     return {win: win, alts: alts, missing: r.masses.filter(function (m) { return !m.key || !D.masses[m.key]; }), day: r,
       temp: temporaleKey(d).filter(function (k) { return D.masses[k]; }), feasts: [], beati: []};
@@ -2110,6 +2234,8 @@
     if (o.kind === 'octday') return 'Octave day';
     if (o.kind === 'temporal') {
       var t = r.temporal;
+      // "ejus Officium transferatur in diem 30 Decembris" (Missal, Dominica infra Oct. Nativitatis)
+      if (o.key === 'Nat1' && t.kind !== 'sunday') return 'Sunday within the octave (transferred to 30 Dec.)';
       if (t.kind === 'sunday') return t.pv >= 96 ? 'Sunday of the I class' : (t.pv >= 88 ? 'Sunday of the II class' : 'Sunday');
       if (t.kind === 'vigil') return 'Vigil';
       if (t.pv >= 100) return 'Totum Duplex, I class';
@@ -2263,7 +2389,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {D: D, moreText: moreText, dismissGabc: dismissGabc, solemnDay: solemnDay, flectamusDay: flectamusDay, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
+  window.ProprOP = {D: D, moreText: moreText, tonePrayer: tonePrayer, toneReading: toneReading, dismissGabc: dismissGabc, solemnDay: solemnDay, flectamusDay: flectamusDay, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
 
   function start() {
     if (!document.getElementById('selMass')) return;   // loaded as a library (e.g. by the Office page)

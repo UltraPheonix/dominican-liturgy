@@ -397,7 +397,7 @@
         var mx = A.moreText(it, sung);
         rubric(mx.label, {left: true});
         var ogx = null;
-        try { ogx = sung && it.k !== 'se' && window.OPMassTones ? OPMassTones.oration(J(mx.la), {noOremus: it.extra !== 2}) : null; } catch (e) { console.warn('tone', e); }
+        ogx = sung && it.k !== 'se' ? A.tonePrayer(J(mx.la), it.extra === 2) : null;   // the Mass oration tone (js/app.js tonePrayer)
         if (ogx) { gabcInline(ogx, {size: 14, glyph: 1 / 19}); return; }
         if (it.extra === 2) para('Orémus.', {cls: 'pr'});
         para(mx.la, {cls: 'pr'}); if (it.last) para('℟. Amen.', {cls: 'pr'}); return;
@@ -408,9 +408,8 @@
           if (sung) chant('op-m39-flectamus', {noDrop: true, glyph: 1 / 19, size: 14}); else para('Orémus. ℣. Flectámus génua. ℟. Leváte.', {cls: 'pr'});
         }
         if (it.k === 'sp') { heading('Oratio super populum', null); if (sung) chant('op-h-oremus', {noDrop: true, glyph: 1 / 19, size: 14}); else para('Orémus.', {cls: 'pr'}); rubric('The deacon sings:', {left: true}); if (sung) chant('op-m39-humiliate', {noDrop: true, glyph: 1 / 19, size: 14}); else para('℣. Humiliáte cápita vestra Deo.', {cls: 'pr'}); }
-        // sung in the solemn tone of the prayers (Harrison 1920); said at a Low Mass
-        var og = null;
-        try { og = sung && window.OPMassTones ? OPMassTones.oration(J(it.x[0]), {noOremus: true}) : null; } catch (e) { console.warn('tone', e); }
+        // sung in the Mass oration tone (js/app.js tonePrayer: Proc. O.P. 1913 pp. 404-406); said at a Low Mass
+        var og = sung ? A.tonePrayer(J(it.x[0]), false) : null;
         if (og) { gabcInline(og, {size: 14, glyph: 1 / 19}); return; }
         para(it.x[0], {cls: 'pr'}); para('℟. Amen.', {cls: 'pr'}); return;
       }
@@ -442,7 +441,7 @@
         }
         return;
       }
-      if (it.t === 'read') { reading(it.r, false); return; }
+      if (it.t === 'read') { reading(it.r, false, it.pro); return; }
       if (it.t === 'pref') { preface(); return; }
     });
     curCols = 2;
@@ -466,7 +465,7 @@
       return A.renderInto(box, g, {}, null, chantCtx({width: w, size: 14, glyph: 1 / 19, noDrop: true}));
     }));
   }
-  function reading(r, cong) {
+  function reading(r, cong, pro) {
     var v = TX['r:' + r.ref] || ['', ''], h = readingHead(r), gos = r.type === 'Gospel';
     var laT = v[0] || '', enT = v[1] || '';
     var dupOpen = h.open && laT.replace(/[^A-Za-z ]/g, '').toLowerCase().indexOf(h.open.replace(/[^A-Za-z ]/g, '').toLowerCase().trim()) === 0;
@@ -475,9 +474,8 @@
       heading(gos ? 'Evangelium' : (r.type === 'Lesson' ? 'Lectio' : 'Epistola'), shortRef(r.ref));
       // the Gospel's greeting and title are in the Order of Mass just before
       if (BOOK === 'priest' && S.ordo !== 'low' && window.OPMassTones && la) {
-        // the Epistle and Gospel tones of the Order (Harrison 1920, ch. VI 5-6)
-        var tg = null, rg = null;
-        try { tg = gos ? null : OPMassTones.epistleTitle(J(h.la)); rg = OPMassTones.reading(J(la), gos); } catch (e) { console.warn('tone', e); }
+        // the lesson, Epistle and Gospel tones (js/app.js toneReading: Proc. O.P. 1913 pp. 408-426)
+        var tr = A.toneReading(J(la), {type: r.type, ref: r.ref, title: J(h.la || '')}, pro), tg = tr && tr[0], rg = tr && tr[1];
         if (tg) gabcInline(tg, {size: 14, glyph: 1 / 19});
         if (rg) gabcInline(rg, {size: 14, glyph: 1 / 19}); else para(la, {cls: 'pr', max: 360});
       } else {

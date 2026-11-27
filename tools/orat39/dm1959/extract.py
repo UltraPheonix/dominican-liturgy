@@ -1,6 +1,7 @@
+import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from dmpaths import *
 import fitz, re, json, sys, statistics, difflib, warnings
 warnings.filterwarnings('ignore')
-PDF='/tmp/en_sources/dl/musicasacra/dm.pdf'
+PDF=PDF
 doc=fitz.open(PDF)
 def rows_of(page):
     d=page.get_text('dict'); objs=[]

@@ -44,7 +44,6 @@ open(R + '/data/orations.js', 'w', encoding='utf8').write(h + json.dumps(O, ensu
 # ---- the 2nd prayer as a set of the Orationes ad diversa (the 3rd is d38, Pro vivis et defunctis alia)
 h, A, t = load('/data/addiv.js', 'window.ADDIV = ')
 def part(la, en): return {'la': la, 'lc': LC, 'en': en.rstrip(';'), 'ec': EC[0].upper() + EC[1:], 's': 'ai'}
-A['sets'].pop('defFr', None)
 PM = {'or': ('Deus, qui nos patrem et matrem honoráre præcepísti: miserére cleménter animábus paréntum nostrórum: eorúmque peccáta dimítte; nosque eos in ætérnæ claritátis gáudio fac vidére:',
              'O God, You have commanded us to honor our father and mother; in Your loving kindness have mercy on the souls of our parents; forgive them their sins, and bring us to see them in the joy of eternal light;'),
       'se': ('Súscipe sacrifícium Dómine, quod tibi pro animábus paréntum nostrórum offérimus: eísque gáudium sempitérnum in regióne vivórum concéde; nosque cum illis felicitáti Sanctórum coniúnge.',
@@ -53,6 +52,19 @@ PM = {'or': ('Deus, qui nos patrem et matrem honoráre præcepísti: miserére c
              'We beseech You, O Lord, that this heavenly sacrament of which we have partaken may obtain for the souls of our parents rest and light everlasting; and may Your grace crown us with them for evermore;')}
 A['sets']['defPM'] = {'n': 0, 'la': 'Pro patre et matre simul', 'en': 'For our fathers and mothers', 'or': part(*PM['or']), 'se': part(*PM['se']), 'pc': part(*PM['pc']),
                       'inc': 'Deus, qui nos patrem', 'src': 'Missale O.P. (1939), Orationes diversae pro Defunctis n. 8, p. 124*; English after the St Dominic Missal (1959), in the plural'}
+# the 2nd prayers of the Order's four Anniversaries (Rubr. XII.7; Ordo 1944, 4 Feb., 12 Jul., 5 Sept., 10 Nov.): in February
+# Deus, qui nos patrem (defPM), in July Deus, cujus miseratione (defMis, Orationes diversae pro Defunctis n. 9, p. 124*),
+# in September and November Deus, veniae largitor in the Order's form (defFr, In Missis quotidianis, Secunda Oratio, p. 119*)
+A['sets']['defFr'] = {'n': 0, 'la': FR['la'], 'en': FR['en'], 'or': part(*FR['or']), 'se': part(*FR['se']), 'pc': part(*FR['pc']),
+                      'inc': 'Deus, véniæ largítor', 'src': 'Missale O.P. (1939), In Missis quotidianis Defunctorum, Secunda Oratio, p. 119* (the Secret and Postcommunion as at the weekly Mass)'}
+MIS = {'or': ('Deus, cuius miseratióne ánimæ fidélium requiéscunt: fámulis et famulábus tuis ómnibus, hic et ubíque in Christo quiescéntibus, da propítius véniam peccatórum; ut a cunctis reátibus absolúti, tecum sine fine læténtur:',
+              'O God, by whose mercy the souls of the faithful find rest, mercifully grant to all Your servants and handmaids who rest in Christ, here and everywhere, the pardon of their sins, that, set free from all guilt, they may rejoice with You without end;'),
+       'se': ('Pro animábus famulórum famularúmque tuárum, et ómnium catholicórum hic et ubíque in Christo dormiéntium, hóstiam Dómine súscipe benígnus oblátam: ut hoc sacrifício singulári, vínculis horréndæ mortis exútæ, vitam mereántur ætérnam.',
+              'For the souls of Your servants and handmaids, and of all Catholics who sleep in Christ here and everywhere, receive graciously, O Lord, the sacrifice we offer, that, loosed by this singular sacrifice from the bonds of dreadful death, they may deserve eternal life;'),
+       'pc': ('Deus, fidélium lumen animárum, adésto supplicatiónibus nostris: et da fámulis et famulábus tuis, quorum córpora hic et ubíque in Christo requiéscunt; refrigérii sedem, quiétis beatitúdinem, et lúminis claritátem:',
+              'O God, the light of faithful souls, be present to our supplications, and grant to Your servants and handmaids, whose bodies rest here and everywhere in Christ, a place of refreshment, the happiness of rest and the brightness of light;')}
+A['sets']['defMis'] = {'n': 0, 'la': 'Pro his, qui in cœmeterio requiescunt', 'en': 'For those who rest in the cemetery', 'or': part(*MIS['or']), 'se': part(*MIS['se']), 'pc': part(*MIS['pc']),
+                       'inc': 'Deus, cuius miseratióne', 'src': 'Missale O.P. (1939), Orationes diversae pro Defunctis n. 9, p. 124* (Latin read from the scan); English: AI translation'}
 open(R + '/data/addiv.js', 'w', encoding='utf8').write(h + json.dumps(A, ensure_ascii=False, separators=(',', ':')) + t)
 # ---- readings
 h, RD, t = load('/data/readings33.js', 'var READINGS33 = ')
@@ -69,7 +81,8 @@ open(R + '/data/readings33.js', 'w', encoding='utf8').write(h + json.dumps(RD, e
 # ---- masses
 h, D, t = load('/data/masses.js', 'var DOMINICAN = ')
 M = D['masses']; q = M['C114s']
-q['title'] = 'Missa pro Defunctis (in Missis quotidianis)'; q['en'] = 'Mass for the Dead (daily and conventual)'
+# one name everywhere (qc_ui W7): the weekly conventual Mass for the brethren, relatives and benefactors (Rubr. VI.2, XII.6)
+q['title'] = 'Missa pro Defunctis (conventualis)'; q['en'] = 'Conventual Requiem for the brethren, relatives and benefactors'
 q['page'] = '114*-121*'; q['conf'] = 'missal'
 q['note'] = ('Missale O.P. (1939), pp. 118*-121*: In Missis quotidianis Defunctorum. For several (and at the conventual Mass): '
              'Responsorium Requiem with V. Animae eorum and Tract Absolve; for one only: Si ambulem and Sicut cervus. '

@@ -431,18 +431,36 @@
     annivCache[y] = out;
     return out;
   }
-  function requiemDay(d) {
-    var ws = weekStart(d);
+  // the weeks without the Mass for the dead (Rubr. VI.2: All Souls, Easter, Pentecost, Holy Week, Christmas, the Anniversaries)
+  function requiemExempt(ws) {
     for (var k = 0; k < 7; k++) {
       var x = addDays(ws, k), E = easter(x.getFullYear()), f = diffDays(x, E), md = mmdd(x);
-      if (anniversaries(x.getFullYear())[iso(x)]) return null;
-      if ((f >= -7 && f <= 6) || (f >= 49 && f <= 55) || md === '1102' || md === '1225') return null;
+      if (anniversaries(x.getFullYear())[iso(x)]) return true;
+      if ((f >= -7 && f <= 6) || (f >= 49 && f <= 55) || md === '1102' || md === '1225') return true;
     }
+    return false;
+  }
+  function requiemDay(d) {
+    var ws = weekStart(d);
+    if (requiemExempt(ws)) return null;
     for (var j = 1; j < 7; j++) {
       var z = addDays(ws, j), o = officeOf(z);
       if (o && freeFeria(o) && !bvmSaturday(o, z)) return iso(z);
     }
     return null;
+  }
+  // Rubr. VI.2: "Quod si Missa de Requiem ob continuas Festivitates vel dies supra relatos infra hebdomadam celebrari non
+  // possit, tunc alia hebdomadae die, minus solemni, in Missa conventuali ... additur Oratio Omnipotens pro Vivis et
+  // Defunctis post Orationes a Rubricis praescriptas": the least solemn weekday (the lowest rank; the first if equal)
+  function omnipotensDay(d) {
+    var ws = weekStart(d);
+    if (requiemExempt(ws) || requiemDay(d)) return null;
+    var best = null, bp = Infinity;
+    for (var j = 1; j < 7; j++) {
+      var z = addDays(ws, j), o = officeOf(z);
+      if (o && o.win && o.win.pv < bp) { bp = o.win.pv; best = iso(z); }
+    }
+    return best;
   }
 
   function label(c) {
@@ -523,8 +541,9 @@
     // conventual Mass for the dead suffices (Rubr. VI.2; Ordo 1944, 5 Sept.: Missa conv. unica de Anniversario)
     var a = anniversaries(d.getFullYear())[iso(d)];
     if (a && a.key) {
-      if (freeFeria(o) && !bvm) masses = masses.filter(function (m) { return m.key !== 'C114s'; }), masses.unshift({key: a.key, label: 'Conventual Mass: ' + a.title, anniv: true, missing: !has(a.key)});
-      else add(a.key, 'Second conventual Mass, sung: ' + a.title, {anniv: true});
+      // the label says which conventual Mass it is; the Anniversary's own title (Kalendarium) goes in title (qc_ui C10)
+      if (freeFeria(o) && !bvm) masses = masses.filter(function (m) { return m.key !== 'C114s'; }), masses.unshift({key: a.key, label: 'The one conventual Mass', title: a.title, anniv: true, missing: !has(a.key)});
+      else add(a.key, 'Second conventual Mass (sung)', {anniv: true, title: a.title});
     }
     // the Mass of an impeded Sunday resumed on this day (Rubr. III.3-4): on ferias, within octaves and on feasts and octave
     // days of three lessons one conventual Mass, of the Sunday; on other feasts two, the Sunday's in choir
@@ -583,6 +602,6 @@
       masses: masses, win: winKey, commems: commems, notes: notes, twoMasses: !!twoMass};
   }
 
-  return {day: day, temporaleKey: temporaleKey, easter: easter, temporal: temporal, rankShort: rankShort,
+  return {day: day, temporaleKey: temporaleKey, easter: easter, temporal: temporal, rankShort: rankShort, omnipotensDay: omnipotensDay,
     _office: officeOf, _cache: cache};
 });

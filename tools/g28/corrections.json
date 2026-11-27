@@ -226,6 +226,12 @@
 "ok": {
 "of": "27*",
 "co": "27*"
+},
+"src": "G28 pp. 25*-27*: In festo plurimorum Martyrum (extra tempus Paschale), Missa Intret: Alleluia V. Te Martyrum only; Sancti et justi belongs to the Paschaltide Mass Sancti tui (28*).",
+"set": {
+"al": [
+4992
+]
 }
 },
 "C30s": {
@@ -236,7 +242,10 @@
 "C51s": {
 "ok": {
 "co": "55*"
-}
+},
+"src": "G28 51*-57* / G50 51*: 'In Festo unius Virginis non Martyris' (the holy-women Mass, 59*, is this Mass with its own Tract).",
+"title": "Commune unius Virginis non Martyris",
+"en": "Common of a Virgin not a Martyr"
 },
 "C62s": {
 "ok": {
@@ -1212,5 +1221,146 @@
 "S1028": {
 "src": "English name completed (was cut at a comma)",
 "name_en": "SS. Simon and Jude, Apostles"
+},
+"S1002": {
+"src": "G28 pp. 567-571 (djvu 297-299): SS. Angelorum Custodum, proper Mass printed in full (typeset from the 1928 scan, second pass 27 Nov; = G50 pp. 582-586; Missale O.P. 1939, pp. 577-578). St Michael's chants were wrong.",
+"conf": "g28",
+"set": {
+"in": [
+"g28:angeli_in|Angelis suis|567-568 (1928)"
+],
+"gr": [
+"g28:angeli_gr|Laudate Dominum Deum nostrum|568-569 (1928)"
+],
+"al": [
+"g28:angeli_al|Immittet Angelus|570 (1928)"
+],
+"of": [
+"g28:angeli_of|Angeli sunt administratorii|570-571 (1928)"
+],
+"co": [
+"g28:angeli_co|Super muros tuos|571 (1928)"
+]
+},
+"page": "567-571",
+"note": "Graduale O.P. (1928), pp. 567-571 (= 1950, pp. 582-586): Officium Angelis suis, Responsorium Laudate Dominum Deum nostrum, Alleluia Immittet, Offertorium Angeli sunt, Communio Super muros (typeset from the scan for this site). Missale O.P. (1939), pp. 577-578."
+},
+"S0319": {
+"src": "G28 p. 426 (19 Mart.): Officium Justus ut palma, pag. 39*; Responsorium Justus ut palma, pag. 375; Tractus Desiderium, pag. 14*; Tempore Paschali Alleluia Joseph fili David, II. Alleluia In die. Missale O.P. (1939), pp. 398-399: the same; no Alleluia is printed outside Paschaltide (the main Alleluia Amavit eum had no source).",
+"drop": [
+"al"
+],
+"name_en": "St. Joseph, Spouse of the Blessed Virgin Mary"
+},
+"S0916": {
+"src": "G28 p. 560 (16 Sept.): COMMUNIO Gaudete justi in Domino: rectos decet collaudatio, printed in full without Alleluia (typeset from the 1928 scan); the site had the All Saints Communio with Alleluias (G50 p. 612).",
+"set": {
+"co": [
+"g28:gaudete_co|Gaudete justi|560 (1928)"
+]
+}
+},
+"S1009_2": {
+"src": "G28 p. 581 (9 Oct.): Communio Gaudete, pag. 560 (the short Communio without Alleluia, typeset from the 1928 scan).",
+"set": {
+"co": [
+"g28:gaudete_co|Gaudete justi|560 (1928)"
+]
+}
+},
+"S1031": {
+"src": "G28 p. 591 (31 Oct.): Communio Gaudete justi, pag. 560 (the short Communio without Alleluia, typeset from the 1928 scan).",
+"set": {
+"co": [
+"g28:gaudete_co|Gaudete justi|560 (1928)"
+]
+}
+},
+"S0508": {
+"src": "Missale O.P. (1939), pp. 455-456 (31 May): Responsorium Eccli. 24 In me gratia; Alleluia Salve Mater; Post Septuag. Tractus Ego sum radix; Temp. Resurr. II. Alleluia Surrexit Dominus et occurrens; Temp. Ascens. II. Alleluia Ascendens. G50 pp. 484-487.",
+"set": {
+"gr": [
+6822
+]
+},
+"season_set": {
+"lent": {
+"tr": [
+6712
+]
+}
+},
+"readings": [
+{
+"type": "Lesson",
+"ref": "Isaias 55: 1-5",
+"m39": true
+},
+{
+"type": "Gospel",
+"ref": "Joannes 19: 25-27",
+"m39": true
+}
+]
+},
+"S0428": {
+"src": "Missale O.P. (1939), pp. 420-421 and calendar: 'S. Pauli a Cruce Conf. Memoria.' The Mass of 28 Apr. is B. Ludovici M. Grignion de Montfort, 'Officium Os justi, ut in Comm. Conf. non Pont., pag. 23*, cum Evang. Designavit, pag. 25*', with the prayers De S. Paulo a Cruce as a commemoration; G28 (28 Apr.): Missa Os justi, pag. 42*. The 1959 chants (incl. St Peter Martyr's Alleluia and Communio) were wrong.",
+"set": {
+"in": [
+5885
+],
+"gr": [
+7142
+],
+"al": [
+6895
+],
+"of": [
+6021
+],
+"co": [
+4856
+]
+},
+"season": {
+"pasch": {
+"al": [
+6895,
+6824
+]
+},
+"asc": {
+"al": [
+5352
+]
+},
+"lent": {
+"tr": [
+7125
+]
+}
+},
+"conf": "missal",
+"page": "420-421",
+"title": "28 Apr. — S. Pauli a Cruce, C. (Memoria; Missa Os justi)",
+"en": "Apr 28 — St Paul of the Cross (Memoria; Mass Os justi)",
+"note": "S. Pauli a Cruce: Memoria (Missale O.P. 1939, pp. 420-421). The Mass of the day is that of B. Louis Grignion de Montfort, Os justi, de Communi Conf. non Pont. (Missal p. 23*, Gospel Designavit p. 25*; Graduale O.P. 1928, 42*), with the prayers of St Paul of the Cross as a commemoration.",
+"readings": [
+{
+"type": "Lesson",
+"ref": "Ecclesiasticus 31: 8-11",
+"m39": true
+},
+{
+"type": "Gospel",
+"ref": "Lucas 10: 1-9",
+"m39": true
+}
+]
+},
+"C7s": {
+"src": "G28 7* / G50 7*: 'In Festo unius Martyris et Pontificis', Missa Laetabitur (the title said only 'unius Martyris').",
+"title": "Commune unius Martyris et Pontificis",
+"en": "Common of One Martyr and Bishop"
 }
 }
