@@ -8,6 +8,8 @@
 
 ## Saints' Masses
 - **28 Apr:** the Mass is B. Louis Grignion de Montfort, Os justi. St Paul of the Cross has only a Memoria in the 1939 Missal (pp. 420-421).
+- **C1s "Commune Apostolorum" (Joseph, 27 Nov 21:40):** drop it. The 1939 Missal has no such Mass; "only use the Missal".
+- **All Souls Masses II and III (S1102_2, S1102_3) (Joseph, 27 Nov 21:40):** "use whatever is in the Missal": the Gradual Requiem with V. Animae eorum, as printed on M39 pp. 610-612 (G50 p. 115*), not In memoria.
 - **St Raphael:** the chant follows the Graduale (Alleluia In conspectu … Domine Deus meus). The note says that the Missal p. 596 prints a different verse.
 
 ## Chant: which book's pointing, which tone
@@ -27,6 +29,12 @@
 - **Holy Week Postcommunions:** each one carries its own sung Dóminus vobíscum and Orémus, hidden when the Order of Mass is shown.
 - **Maundy Thursday:** the Prime prayers and the Tenebrae lessons IV-IX are in scope for chant.
 - **Passion tones:** every Chronista final cadence takes the B flat, as Fr Innocent Smith does.
+- **Passion tones, C.md questions (Joseph, 27 Nov 21:50):**
+  1. Chronista final on a dactyl ("Dóminum"; Proc. p. 436 prints only spondees): Dó(g) mi(f) num(ed).
+  2. Christus (Proc. p. 437): always the full incipit (Scitis) for every sentence; do not use the alternative incipits Opus / Jam / Mittens.
+  3. Chronista B flat (pp. 435-436): flat in every final and in the cadence before Christ; natural in the mediation.
+  4. "nisi in brevioribus" (p. 435): no mediation when the member has fewer than 6 syllables.
+  5. The short stroke inside melismas (Voce ma-|gna, Trá-|didit, Con-|tra, Scitis|): a divisio minima, as Fr Smith.
 
 ## Litanies
 - **Litanies:** Sancte Joseph takes the general formula. Keep "Regina in caelum assumpta" and "Ut omnes errantes", labelled as added after 1913.
@@ -41,7 +49,7 @@
   - To fix: re-punctuate their Latin against the M39 scan. This is a text job for Lead E's area.
   - Example: Adv1 should read "quǽsumus Dómine … erípi; te liberánte … Patre; in unitáte Spíritus Sancti Deus :".
 - **Convention from W-B6 for Holy Week day workers:** put the Postcommunion's sung Dóminus vobíscum·Orémus G: line right next to its "L: Postcommunio" line, and give it an id containing dv, vobiscum or oremus (e.g. op-hw-quad6m-pc-dv). app.js hides such blocks when the Order of Mass is on.
-- **Spelling (coordinator, after the audit):** convert consonantal i → j in data/orations.js (and addiv/memoriae) to the 1939 Missal's spelling (ejus, Jesum, cujus, majestas…), taking each word's form from the Missal, by script.
+- **Spelling: CANCELLED by Joseph (27 Nov 21:46, "don't worry about the i to j"). Do not run it.** (Was: convert consonantal i → j in data/orations.js (and addiv/memoriae) to the 1939 Missal's spelling (ejus, Jesum, cujus, majestas…), taking each word's form from the Missal, by script.
 - **Holy Saturday Sanctus (Joseph):** Sanctus I, by the first-class rule, is correct.
 
 - **Standing instruction (Joseph, 27 Nov):** whenever a corrected text can easily be set to chant (Collects, Introits and the like), set it straight away; no need to ask.

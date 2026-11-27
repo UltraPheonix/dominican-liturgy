@@ -94,5 +94,149 @@
   "new": "In illo témpore: Misérunt Judǽi ab Jerosólymis sacerdótes et Levítas ad Joánnem, ut interrogárent eum: Tu quis es? Et conféssus est, et non negávit: Et conféssus est, Quia non sum ego Christus. Et interrogavérunt eum: Quid ergo? Elías es tu? Et dixit: Non sum. Prophéta es tu? Et respóndit: Non. Dixérunt ergo ei: Quis es, ut respónsum demus his, qui misérunt nos? Quid dicis de teípso? Ait: Ego vox clamántis in desérto: Dirígite viam Dómini, sicut dixit Isaías prophéta. Et qui missi fúerant, erant ex Pharisǽis. Et interrogavérunt eum, et dixérunt ei: Quid ergo baptízas, si tu non es Christus, neque Elías, neque prophéta? Respóndit eis Joánnes, dicens: Ego baptízo in aqua: médius autem vestrum stetit, quem vos nescítis. Ipse est, qui post me ventúrus est, qui ante me factus est: cujus ego non sum dignus ut solvam ejus corrígiam calceaménti. Hæc in Dóminum. Bethánia facta sunt trans Jordánem, ubi erat Joánnes baptízans.",
   "src": "M39 pp. 5-6 (pdf 36-37)",
   "why": "punct 3, case 1 as printed"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Adv2",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Cum audísset Joánnes in vínculis ópera Christi, mittens duos de discípulis suis, ait illi: Tu es, qui ventúrus es, an álium exspectámus? Et respóndens Jesus ait illis: Eúntes renuntiáte Joánni quæ audístis, et vidístis. Cæci vident, claudi ámbulant, leprósi mundántur, surdi áudiunt, mórtui resúrgunt, páuperes evangelizántur: et beátus est, qui non fúerit scandalizátus in me. Illis autem abeúntibus, cœpit Jesus dícere ad turbas de Joánne: Quid exístis in desértum vidére? Arúndinem vento agitátam? Sed quid exístis vidére? Hóminem móllibus vestítum? Ecce qui móllibus vestiúntur, in dómibus regum sunt. Sed quid exístis vidére? Prophétam? Etiam dico vobis, et plus quam prophétam. Hic est enim, de quo scriptum est: Ecce ego mitto ángelum meum ante fáciem tuam, qui præparábit viam tuam ante te.",
+  "new": "In illo témpore: Cum audísset Joánnes in vínculis ópera Christi, mittens duos de discípulis suis, ait illi: Tu es, qui ventúrus es, an álium exspectámus? Et respóndens Jesus, ait illis: Eúntes renuntiáte Joánni, quæ audístis, et vidístis. Cæci vident, claudi ámbulant, leprósi mundántur, surdi áudiunt, mórtui resúrgunt, páuperes evangelizántur: et beátus est, qui non fúerit scandalizátus in me. Illis autem abeúntibus, cœpit Jesus dícere ad turbas de Joánne: Quid exístis in desértum vidére? Arúndinem vento agitátam? Sed quid exístis vidére? Hóminem móllibus vestítum? Ecce qui móllibus vestiúntur, in dómibus regum sunt. Sed quid exístis vidére? Prophétam? Etiam dico vobis, et plus quam prophétam. Hic est enim, de quo scriptum est: Ecce ego mitto ángelum meum ante fáciem tuam, qui præparábit viam tuam ante te.",
+  "src": "M39 p. 4 (pdf 36)",
+  "why": "punct 2 as printed"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Adv3w",
+   "or",
+   0
+  ],
+  "old": "Præsta, quǽsumus, omnípotens Deus: ut redemptiónis nostræ ventúra sollémnitas et præséntis nobis vitæ subsídia cónferat, et ætérnæ beatitúdinis prǽmia largiátur. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "new": "Præsta, quǽsumus omnípotens Deus: ut redemptiónis nostræ ventúra solémnitas, et præséntis nobis vitæ subsídia cónferat; et ætérnæ beatitúdinis prǽmia largiátur: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 6 (pdf 37)",
+  "why": "punct 3, spelling 1 as printed"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Adv3w",
+   "se",
+   0
+  ],
+  "old": "Acépta tibi sint, quǽsumus, Dómine, nostra ieiúnia: quæ et expiándo nos tua grátia dignos effíciant, et ad sempiterna promíssa perdúcant. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "new": "Accépta tibi sint, quǽsumus, Dómine, nostra ieiúnia, quæ et expiándo nos tua grátia dignos effíciant, et ad sempiterna promíssa perdúcant. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 8 (pdf 38)",
+  "why": "punct 1, spelling 1 as printed"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Adv3w",
+   "pc",
+   0
+  ],
+  "old": "Salutáris tui, Dómine, munere satiáti, súpplices deprecámur: ut, cuius lætámur gustu, renovémur efféctu. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "new": "Salutáris tui Dómine múnere satiáti, súpplices deprecámur: ut cuius lætámur gustu; renovémur efféctu: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 8 (pdf 38)",
+  "why": "punct 5, accent 1 as printed"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Adv3w",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Dixit Isaías prophéta: Erit in novíssimis diébus præparátus mons domus Dómini in vértice móntium, et elevábitur super colles, et fluent ad eum omnes gentes. Et ibunt pópuli multi, et dicent: Veníte, et ascendámus ad montem Dómini, et ad domum Dei Jacob, et docébit nos vias suas, et ambulábimus in sémitis ejus: quia de Sion exíbit lex, et verbum Dómini de Jerúsalem. Et judicábit gentes, et árguet pópulos multos: et conflábunt gládios suos in vómeres, et lánceas suas in falces: non levábit gens contra gentem gládium, nec exercebúntur ultra ad prœ́lium. Domus Jacob veníte, et ambulémus in lúmine Dómini.",
+  "new": "In diébus illis: Dixit Isaías prophéta: Erit in novíssimis diébus præparátus mons domus Dómini in vértice móntium, et elevábitur super colles, et fluent ad eum omnes gentes. Et ibunt pópuli multi, et dicent: Veníte et ascendámus ad montem Dómini, et ad domum Dei Jacob, et docébit nos vias suas, et ambulábimus in sémitis ejus: quia de Sion exíbit lex, et verbum Dómini de Jerúsalem. Et judicábit gentes, et árguet pópulos multos: Et conflábunt gládios suos in vómeres, et lánceas suas in falces: Non levábit gens contra gentem gládium, nec exercebúntur ultra ad prœ́lium. Domus Jacob veníte, et ambulémus in lúmine Dómini Dei nostri.",
+  "src": "M39 pp. 6-7 (pdf 37)",
+  "why": "punct 1, case 2, reading cut at end 1 as printed"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Adv3w",
+   1,
+   "la"
+  ],
+  "old": "In diébus illis: Locútus est Dóminus ad Achaz, dicens: Pete tibi signum a Dómino Deo tuo, in profúndum inférni, sive in excélsum supra. Et dixit Achaz: Non petam, et non tentábo Dóminum. Et dixit: Audíte ergo domus David: Numquid parum vobis est moléstos esse homínibus, quia molésti estis et Deo meo? Propter hoc dabit Dóminus ipse vobis signum. Ecce virgo concípiet, et páriet fílium, et vocábitur nomen ejus Emmánuel. Butýrum et mei cómedet, ut sciat reprobáre malum, et elígere bonum.",
+  "new": "In diébus illis: Locútus est Dóminus ad Achaz, dicens: Pete tibi signum a Dómino Deo tuo in profúndum inférni, sive in excélsum supra. Et dixit Achaz: Non petam, et non tentábo Dóminum. Et dixit: Audíte ergo domus David: Numquid parum vobis est, moléstos esse homínibus, quia molésti estis et Deo meo? Propter hoc dabit Dóminus ipse vobis signum. Ecce virgo concípiet, et páriet fílium, et vocábitur nomen ejus Emmánuel. Butýrum et mel cómedet, ut sciat reprobáre malum, et elígere bonum.",
+  "src": "M39 p. 7 (pdf 37)",
+  "why": "punct 2, word 1 as printed"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Adv3w",
+   2,
+   "la"
+  ],
+  "old": "In illo témpore: Missus est ángelus Gábriel a Deo in civitátem Galilǽæ, cui nomen Názareth, ad vírginem desponsátam viro, cui nomen erat Joseph, de domo David: et nomen vírginis María. Et ingréssus ángelus ad eam dixit: Ave grátia plena: Dóminus tecum: benedícta tu in muliéribus. Quæ cum audísset, turbáta est in sermóne ejus, et cogitábat qualis esset ista salutátio. Et ait ángelus ei: Ne tímeas María: invenísti enim grátiam apud Deum. Ecce concípies in útero, et páries fílium, et vocábis nomen ejus Jesum. Hic erit magnus, et Fílius Altíssimi vocábitur, et dabit illi Dóminus Deus sedem David patris ejus: et regnábit in domo Jacob in ætérnum, et regni ejus non erit finis. Dixit autem María ad ángelum: Quómodo fiet istud, quóniam virum non cognósco? Et respóndens ángelus dixit ei: Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi. Ideóque et quod nascétur ex te sanctum, vocábitur Fílius Dei. Et ecce Elísabeth cognáta tua, et ipsa concépit fílium in senectúte sua: et hic mensis sextus est illi, quæ vocátur stérilis: quia non erit impossíbile apud Deum omne verbum. Dixit autem María: Ecce ancílla Dómini: fiat mihi secúndum verbum tuum.",
+  "new": "In illo témpore: Missus est Ángelus Gábriel a Deo in civitátem Galilǽæ, cui nomen Názareth, ad vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen vírginis María. Et ingréssus Ángelus ad eam, dixit: Ave grátia plena: Dóminus tecum: Benedícta tu in muliéribus. Quæ cum audísset, turbáta est in sermóne ejus, et cogitábat qualis esset ista salutátio. Et ait Ángelus ei: Ne tímeas María, invenísti enim grátiam apud Deum: Ecce concípies in útero, et páries fílium, et vocábis nomen ejus Jesum. Hic erit magnus, et fílius Altíssimi vocábitur, et dabit illi Dóminus Deus sedem David patris ejus: Et regnábit in domo Jacob in ætérnum, et regni ejus non erit finis. Dixit autem María ad Ángelum: Quómodo fiet istud, quóniam virum non cognósco? Et respóndens Ángelus, dixit ei: Spíritus Sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi. Ideóque et quod nascétur ex te Sanctum, vocábitur Fílius Dei. Et ecce Elísabeth cognáta tua, et ipsa concépit fílium in senectúte sua: Et hic mensis sextus est illi, quæ vocátur stérilis: quia non erit impossíbile apud Deum omne verbum. Dixit autem María: Ecce ancílla Dómini, fiat mihi secúndum verbum tuum.",
+  "src": "M39 pp. 7-8 (pdf 37-38)",
+  "why": "punct 6, case 11 as printed"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Adv3f",
+   "or",
+   0
+  ],
+  "old": "Excita, quǽsumus, Dómine, poténtiam tuam, et veni: ut hi, qui in tua pietáte confídunt, ab omni cítius adversitáte liberéntur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.",
+  "new": "Excita, quǽsumus Dómine, poténtiam tuam, et veni: ut hi, qui in tua pietáte confídunt; ab omni cítius adversitáte liberéntur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 9 (pdf 38)",
+  "why": "punct 2 as printed"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Adv3f",
+   "se",
+   0
+  ],
+  "old": "Munéribus nostris, quaesumus, Dómine, precibúsque suscéptis: et caeléstibus nos munda mystériis, et cleménter exáudi. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "new": "Munéribus nostris, quǽsumus Dómine, precibúsque suscéptis: et cæléstibus nos munda mystériis, et cleménter exáudi. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 10 (pdf 39)",
+  "why": "punct 1, spelling 2 as printed"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Adv3f",
+   "pc",
+   0
+  ],
+  "old": "Tui nos, Dómine, sacraménti libátio sancta restáuret: et a vetustáte purgátos, in mystérii salutáris fáciat transíre consórtium. Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "new": "Tui nos, Dómine, sacraménti libátio sancta restáuret; et a vetustáte purgátos, in mystérii salutáris fáciat transíre consórtium: Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 10 (pdf 39)",
+  "why": "punct 2 as printed"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Adv3f",
+   0,
+   "la"
+  ],
+  "old": "Hæc dicit Dóminus Deus: Egrediétur virga de radíce Jesse, et nos de radíce ejus ascéndet. Et requiéscet super eum spíritus Dómini: spíritus sapiéntiæ et intelléctus, spíritus consílii et fortitúdinis, spíritus sciéntiæ et pietátis: et replébit eum spíritus timóris Dómini. Non secúndum visiónem oculórum judicábit, neque secúndum audítum áurium árguet: sed judicábit injustítia páuperes, et árguet in æquitáte pro mansuétis terræ: et percútiet terram virga oris sui, et spíritu labiórum suórum interfíciet ímpium. Et erit justítia cíngulum lumbórum ejus, et fides cinctórium renum ejus.",
+  "new": "Hæc dicit Dóminus Deus: Egrediétur virga de radíce Jesse, et flos de radíce ejus ascéndet. Et requiéscet super eum spíritus Dómini: spíritus sapiéntiæ, et intelléctus, spíritus consílii, et fortitúdinis, spíritus sciéntiæ, et pietátis, et replébit eum spíritus timóris Dómini: Non secúndum visiónem oculórum judicábit, neque secúndum audítum áurium árguet: sed judicábit in justítia páuperes, et árguet in æquitáte pro mansuétis terræ: et percútiet terram virga oris sui, et spíritu labiórum suórum interfíciet ímpium. Et erit justítia cíngulum lumbórum ejus: et fides cinctórium renum ejus.",
+  "src": "M39 p. 9 (pdf 38)",
+  "why": "punct 6, word 2 as printed"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Adv3f",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Exsúrgens María, ábiit in montána cum festinatióne, in civitátem Juda: et intrávit in domum Zacharíæ, et salutávit Elísabeth. Et factum est, ut audívit salutatiónem Maríæ Elísabeth, exsultávit infans in útero ejus: et repléta est Spíritu sancto Elísabeth: et exclamávit voce magna, et dixit: Benedícta tu inter mulíeres, et benedíctus fructus ventris tui. Et unde hoc mihi, ut véniat mater Dómini mei ad me? Ecce enim ut facta est vox salutatiónis tuæ in áuribus meis, exsultávit in gáudio infans in útero meo. Et beáta, quæ credidísti, quóniam perficiéntur ea, quæ dicta sunt tibi a Dómino. Et ait María: Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo salutári meo.",
+  "new": "In illo témpore: Exsúrgens María, ábiit in montána cum festinatióne in civitátem Juda. et intrávit in domum Zacharíæ, et salutávit Elísabeth. Et factum est, ut audívit salutatiónem Maríæ Elísabeth, exsultávit infans in útero ejus: et repléta est Spíritu sancto Elísabeth: et exclamávit voce magna, et dixit: Benedícta tu inter mulíeres, et benedíctus fructus ventris tui. Et unde hoc mihi ut véniat mater Dómini mei ad me? Ecce enim ut facta est vox salutatiónis tuæ in áuribus meis, exsultávit in gáudio infans in útero meo: Et beáta, quæ credidísti, quóniam perficiéntur ea, quæ dicta sunt tibi a Dómino. Et ait María: Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo salutári meo.",
+  "src": "M39 pp. 9-10 (pdf 38-39)",
+  "why": "punct 4 as printed"
  }
 ]

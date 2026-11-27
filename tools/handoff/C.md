@@ -14,7 +14,8 @@
 - p. 440 NOT finished: "crucifige eum. Crucifigatur." (raw reader output only, clef unconfirmed) and the
   Lamentation-tone ending "Altera autem die ... custodibus" (not read).
 
-## Open questions for Joseph (book silent)
+## Questions for Joseph: ANSWERED 27 Nov 21:50 (see RULINGS.md). Q1 yes; Q2 ALWAYS the full incipit (Scitis), not the proposal; Q3 flat in finals and before Christ, natural in mediation; Q4 yes (<6 syllables); Q5 yes (divisio minima).
+## (original questions)
 1. Chronista final with a dactyl ("Dóminum"): the book prints only spondees (p. 436). Proposed Dó(g) mi(f) num(ed).
 2. Christus later sentences: the book gives three incipits that "possunt" be used (p. 437: Opus / Jam / Mittens).
    Which one when? Proposed: monosyllabic first word -> Jam; otherwise alternate Mittens/Opus; full incipit

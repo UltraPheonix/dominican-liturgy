@@ -25,7 +25,8 @@ Read tools/handoff/RULINGS.md (all of Joseph's decisions) before anything else.
    - Reports: tools/audit/A1-A5.md. Scripts: tools/audit/scripts/A*/. Groups: tools/audit/groups.json. Restart brief: "Auditor brief" below.
    - Fixes go in tools/audit/fixes/*.json and are applied with tools/audit/apply_fixes.py.
    - Then:
-     - convert consonantal i→j to the Missal's spelling (script);
+     - ~~convert consonantal i→j~~: CANCELLED by Joseph, 27 Nov 21:46;
+     - C1s dropped from the Commons menu (Joseph, 27 Nov 21:40: the 1939 Missal has no Commune Apostolorum);
      - re-punctuate the orations that came from Divinum Officium;
      - fix the cut readings (W-E3.md, plus about 30 more found by A1);
      - fix the wrong prayers, readings and chants the auditors listed: C1s, C39s, C51s, C55s, S0603 and S0524 readings, S0531 (1956), All Souls II/III Gradual, the Beati using C7s chants, etc.
