@@ -611,3 +611,8 @@ html[data-theme="dark"] .jump a.on, html[data-theme="dark"] .hours .sbtn.on, htm
 .site-foot { max-width: 46rem; margin: 2.5rem auto 1.5rem; padding: 0 1rem; font-size: .82rem; line-height: 1.45; color: var(--muted); text-align: center; font-style: italic; }
 .site-foot a { color: inherit; }
 .about-note { border-left: 3px solid var(--rubric); padding: .2rem 0 .2rem 1rem; margin: 1.2rem 0; }
+.site-foot .support-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 0 0 1rem; font-style: normal; }
+.site-foot .support-btn { display: inline-block; padding: 9px 18px; border: 1px solid var(--rubric); border-radius: 999px; background: var(--rubric); color: #fff;
+  font-family: var(--caps); font-size: .95rem; letter-spacing: .06em; text-decoration: none; }
+.site-foot .support-btn.alt { background: none; color: var(--rubric); }
+.site-foot .support-btn:hover { filter: brightness(1.1); }

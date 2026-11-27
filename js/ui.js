@@ -211,7 +211,9 @@
   function siteFoot() {
     if (document.querySelector('.site-foot') || /booklet\.html$/.test(location.pathname)) return;
     var f = document.createElement('footer'); f.className = 'site-foot hide-print';
-    f.innerHTML = 'For private devotion and as a resource, not an authoritative liturgical text: if celebrating the Dominican rite, please consult the liturgical books. ' +
+    f.innerHTML = '<div class="support-links"><a class="support-btn" href="https://dominicanfriars.org/donate" target="_blank" rel="noopener">Support the Dominican Friars</a>' +
+      '<a class="support-btn alt" href="http://www.lulu.com/spotlight/athompsonatdsptdotcom" target="_blank" rel="noopener">Buy the Order\u2019s books</a></div>' +
+      'For private devotion and as a resource, not an authoritative liturgical text: if celebrating the Dominican rite, please consult the liturgical books. ' +
       'A private project, not affiliated with the Order of Preachers. ' +
       '<a href="about.html#disclaimer">About</a> · <a href="about.html#support">Books &amp; support the Order</a>';
     (document.querySelector('.content') || document.body).appendChild(f);
