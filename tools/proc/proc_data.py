@@ -234,3 +234,42 @@ SECTIONS.insert(0, {'id': 'ascensio', 'la': 'In Ascensione Domini ad Processione
 S = {s['id']: s for s in SECTIONS}
 order = ['ascensio', 'purificatio', 'salve', 'lauretanae', 'rogationes', 'litaniae', 'extraordinariae']
 SECTIONS[:] = [S[k] for k in order] + [s for s in SECTIONS if s['id'] not in order]
+
+# ---- the chant, typeset from the scan (tools/proc/gabc; each file read note by note, see its header)
+def _at(sec, pred, items, after=False):
+    it = S[sec]['items']
+    i = next(n for n, x in enumerate(it) if pred(x))
+    it[i + (1 if after else 0):i + (1 if after else 0)] = items
+_t = lambda p: (lambda x: x[0] == 'txt' and x[1].startswith(p))
+_r = lambda p: (lambda x: x[0] == 'rub' and x[1].startswith(p))
+_at('salve', _t('Ant. Salve'), [('gabc', 'salve_regina', 'Ant.', '1')])
+_at('lauretanae', lambda x: x[0] == 'lit', [
+    ('h', 'Tonus Litaniarum (pp. 91-94)', 'The tone of the Litany: the Kyrie, then each kind of invocation as printed'),
+    ('gabc', 'lor_kyrie', '', '6'),
+    ('rub', 'Pater de cælis Deus, Fili Redémptor mundi Deus, Spíritus sancte Deus, Sancta Trínitas unus Deus:', 'The invocations of the Holy Trinity:'),
+    ('gabc', 'lor_invocation_miserere', '', ''),
+    ('rub', 'Sancta María … Virgo fidélis:', 'Holy Mary to Virgin most faithful (the shorter lines leave out notes of the recitation):'),
+    ('gabc', 'lor_invocation_maria', '', ''),
+    ('rub', 'Spéculum justítiæ … Auxílium Christianórum:', 'Mirror of justice to Help of Christians:'),
+    ('gabc', 'lor_invocation_speculum', '', ''),
+    ('rub', 'Regína Angelórum … Regína sine labe origináli concépta:', 'Queen of Angels to Queen conceived without original sin:'),
+    ('gabc', 'lor_invocation_regina', '', ''),
+    ('gabc', 'lor_agnus', '', '')])
+_at('lauretanae', _t('Invioláta'), [('gabc', 'inviolata', 'Prosa', '6')])
+_at('lauretanae', _r('Póterit étiam'), [('gabc', 'regina_caeli', 'Ant.', '5')], after=True)
+_at('rogationes', _t('Ant. Exsúrge'), [('gabc', 'rog_exsurge', 'Ant.', '2')])
+_at('litaniae', lambda x: x[0] == 'lit', [
+    ('h', 'Tonus Litaniarum (pp. 126-130)', 'The tone of the Litany: each kind of invocation as printed; the others are sung like the first of their kind'),
+    ('gabc', 'lit_kyrie', '', ''), ('gabc', 'lit_christe_audi', '', ''), ('gabc', 'lit_miserere', '', ''),
+    ('rub', 'Sancta María, Sancta Dei Génitrix, Sancta Virgo vírginum; et sic de céteris:', 'Holy Mary, Holy Mother of God, Holy Virgin of virgins; and so the other saints:'),
+    ('gabc', 'lit_ora', '', ''),
+    ('rub', 'Sancte Míchaël, Sancte Gábriel, Sancte Ráphaël:', 'St Michael, St Gabriel, St Raphael:'),
+    ('gabc', 'lit_ora_michael', '', ''),
+    ('rub', 'Omnes sancti Ángeli et Archángeli; et sic de céteris in plurali:', 'All ye holy Angels and Archangels; and so the others in the plural:'),
+    ('gabc', 'lit_orate', '', ''), ('gabc', 'lit_propitius', '', ''),
+    ('rub', 'A damnatióne perpétua … In die judícii:', 'From everlasting damnation … In the day of judgement:'),
+    ('gabc', 'lit_libera', '', ''),
+    ('rub', 'Peccatóres … Fili Dei:', 'We sinners … Son of God:'),
+    ('gabc', 'lit_rogamus', '', ''), ('gabc', 'lit_agnus', '', ''),
+    ('h', 'Litaniæ', 'The Litany in full (texts)')])
+_at('extraordinariae', _r('Si cantándæ'), [('gabc', 'lit_extra_kyrie', '', ''), ('gabc', 'lit_extra_pater', '', '')], after=True)

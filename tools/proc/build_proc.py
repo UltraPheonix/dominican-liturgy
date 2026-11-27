@@ -12,8 +12,8 @@ def pair(la, en, cls=''):
     return '<div class="pr-pair%s"><p lang="la">%s</p><p class="pr-en" lang="en">%s</p></div>' % (cls, la, en)
 def vr(s): return re.sub(r'(℣\.|℟\.|Ant\.)', r'<span class="r">\1</span>', E(s))
 out = ['<div class="content"><div class="inner">', '  <main class="prose">', '    <h1>Processionarium</h1>',
-       '    <p class="pr-src">From the <i>Processionarium juxta ritum Sacri Ordinis Praedicatorum</i> (Rome, 1913, ed. Cormier). The chant is shown as printed, '
-       'page by page (scan by the Church Music Association of America); the texts are given beneath in Latin and English.</p>',
+       '    <p class="pr-src">From the <i>Processionarium juxta ritum Sacri Ordinis Praedicatorum</i> (Rome, 1913, ed. Cormier). The chant is typeset '
+       'from the book (scan by the Church Music Association of America), note by note; the texts are given beneath in Latin and English.</p>',
        '    <p class="ai-note">The English is an AI translation from the Latin, not yet checked by a human translator.</p>',
        '    <ol class="pr-toc">' + ''.join('<li><a href="#%s">%s <span class="pr-toc-en">%s</span></a></li>' % (s['id'], E(s['la']), E(s['en'])) for s in SECTIONS) + '</ol>']
 for s in SECTIONS:
