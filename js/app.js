@@ -114,7 +114,7 @@
     if (state.serv) bits.push('serv=' + state.serv);
     if (state.rub) bits.push('rub=' + state.rub);
     if (state.o2) bits.push('o2=' + state.o2);
-    if (state.o2 && state.o3) bits.push('o3=' + state.o3);
+    if (state.o3) bits.push('o3=' + state.o3);
     if (HWP || state.hwr !== '1939') bits.push('hw=' + state.hwr);
     history.replaceState(null, '', '#' + bits.join('&'));
   }
@@ -618,7 +618,7 @@
   function showMass(key, over) {
     var m = D.masses[key];
     if (!m) return;
-    if (state.key && state.key !== key) { if (/^m:/.test(state.o2)) { state.o2 = state.o3; state.o3 = ''; } if (/^m:/.test(state.o3)) state.o3 = ''; if (/^m:/.test(state.o2)) state.o2 = ''; }
+    if (state.key && state.key !== key) { state.o2 = ''; state.o3 = ''; }   // the priest's changes belong to the Mass they were made for
     state.key = key;
     state.edited = {};
     // a Mass picked from the list is shown for the next day it is said (a Sunday Mass on its Sunday, with its Alleluia
@@ -1378,9 +1378,36 @@
     var R = rubricsOf(state.key, state.date);
     return !R.requiem && !m.prophecies && !/^Quad6/.test(state.key) && state.key !== 'Pent0v' && !!(window.ORATIONS && ORATIONS[state.key] && ORATIONS[state.key].or);
   }
+  // the 2nd and 3rd prayers the Missal prescribes for the day (Rubr. gen. X.1; the Missal prints them in the Masses of the
+  // Time from the First Sunday of each season): ids of ADDIV sets or 'm:KEY' commemorations; 'lib' = at the priest's choice
+  function memoriasOf(d) {
+    if (!d || !window.KAL39) return [];
+    var md = ('0' + (d.getMonth() + 1)).slice(-2) + ('0' + d.getDate()).slice(-2);
+    return (KAL39[md] || []).filter(function (e) { return e[2] && e[2] !== state.key && /Memoria|Simplex/.test(e[1]) && window.ORATIONS && ORATIONS[e[2]]; })
+      .map(function (e) { return 'm:' + e[2]; });
+  }
+  function prescribed(m) {
+    if (!moreAllowed(m)) return [];
+    var d = state.date, dr = dayRank(state.key, d), sp = seasonPrayers(d), mem = memoriasOf(d), md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
+    if (/^(Pasc0|Pent0|Dec25|Jan1$)/.test(state.key) || /I classis/.test(dr.rank)) return [];
+    if (state.key === 'Jan5a') return ['bvmNat', 'd11'];                       // the Vigil of the Epiphany, as printed
+    if (sp && sp.o2 === 'bvmNat') return mem.concat(md === 104 ? ['bvmNat', 'd6'] : ['bvmNat']).slice(0, 3);   // daily, after the other Memoriae (X.1 b)
+    if (dr.dup) return mem.slice(0, 2);                                        // Doubles: only the Memoriae
+    if (!sp) return mem.slice(0, 2);
+    if (mem.length >= 2) return mem.slice(0, 2).concat(sp.with3 === 'cruce' ? ['cruce'] : []);   // X.1 c, e
+    if (mem.length === 1) return [mem[0], sp.with3 || 'lib'];
+    return [sp.o2, sp.o3 || 'lib'];
+  }
+  // what is said: the priest's choice where he has made one ('none' leaves the place empty), otherwise the Missal's
+  function chosen(m) {
+    var P = prescribed(m), o2 = state.o2 || P[0] || '', o3 = state.o3 || P[1] || '';
+    if (o2 === 'none') o2 = ''; if (o3 === 'none' || o3 === 'lib') o3 = '';
+    if (!o2) o3 = '';
+    return [o2, o3];
+  }
   function morePrayers(k, m) {
     if (!moreAllowed(m)) return [];
-    var out = [], a = prayerOf(state.o2, k), b = state.o2 ? prayerOf(state.o3, k) : null;
+    var c = chosen(m), out = [], a = prayerOf(c[0], k), b = prayerOf(c[1], k);
     if (a) out.push(a); if (b) out.push(b);
     return out;
   }
@@ -1406,10 +1433,13 @@
   function moreControls() {
     var box = el('div', {class: 'o-more hide-print'});
     if (!window.ADDIV) return box;
+    var m = D.masses[state.key], P = prescribed(m), C = chosen(m);
     var groups = [['Of the season', ['bvmAdv', 'bvmNat', 'cruce', 'd15', 'd2', 'd6']], ['Orationes ad diversa', Object.keys(ADDIV.sets).filter(function (k) { return /^d\d+$/.test(k); })]];
     var mk = function (name, n) {
-      var sel = el('select', {'aria-label': name, 'data-o': 'o' + n});
-      sel.appendChild(el('option', {value: '', text: '—'}));
+      var sel = el('select', {'aria-label': name, 'data-o': 'o' + n}), p = P[n - 2];
+      // the first option is what the Missal prescribes for the day
+      sel.appendChild(el('option', {value: '', text: !state.date ? 'Choose a date to see the Missal’s prayers' : p && p !== 'lib' ? 'As in the Missal: ' + setName(p) : p === 'lib' ? 'At the priest’s choice: none' : 'None (the Missal adds none)'}));
+      if (p && p !== 'lib') sel.appendChild(el('option', {value: 'none', text: 'None'}));
       groups.forEach(function (g) {
         var og = el('optgroup', {label: g[0]});
         g[1].forEach(function (id) {
@@ -1424,23 +1454,16 @@
         .forEach(function (x) { oc.appendChild(el('option', {value: 'm:' + x[0], text: x[1]})); });
       sel.appendChild(oc);
       sel.value = state['o' + n] || '';
-      sel.addEventListener('change', function () {
-        state['o' + n] = sel.value; if (n === 2 && !sel.value) state.o3 = '';
-        drawMass(); writeHash();
-      });
-      return el('label', {class: 'o-pick'}, [el('span', {text: name}), sel]);
+      if (sel.selectedIndex < 0) sel.value = '';
+      sel.addEventListener('change', function () { state['o' + n] = sel.value; drawMass(); writeHash(); });
+      return el('label', {class: 'o-pick' + (state['o' + n] ? ' o-changed' : '')}, [el('span', {text: name}), sel]);
     };
     var p2 = mk('2nd prayer', 2), p3 = mk('3rd prayer', 3);
-    if (!state.o2) p3.querySelector('select').disabled = true;
+    if (!C[0]) p3.querySelector('select').disabled = true;
     box.appendChild(el('div', {class: 'o-picks'}, [p2, p3]));
-    var sp = seasonPrayers(state.date), dr = dayRank(state.key, state.date);
-    if (sp && !dr.dup) {
-      var txt = 'Of the season (' + sp.name + '): 2nd ' + setName(sp.o2) + ', 3rd ' + (sp.o3 ? setName(sp.o3) : 'at choice') + '.' +
-                (sp.with3 ? ' With a commemoration: it is 2nd, ' + setName(sp.with3) + ' 3rd.' : '');
-      var use = el('button', {type: 'button', class: 'o-use', text: 'Use'});
-      use.addEventListener('click', function () { state.o2 = sp.o2; state.o3 = sp.o3; drawMass(); writeHash(); });
-      box.appendChild(el('p', {class: 'o-hint'}, [el('span', {text: txt + ' '}), (state.o2 === sp.o2 && state.o3 === sp.o3) ? null : use]));
-    }
+    var why = P.length ? (P[1] === 'lib' ? 'Missal, Rubr. gen. X: the 3rd prayer is at the priest’s choice today.' : 'Missal, Rubr. gen. X: the prayers set for today; change them only where the rubrics allow.')
+                       : 'Missal, Rubr. gen. X: no prayer is added today; one may be added where the rubrics allow.';
+    box.appendChild(el('p', {class: 'o-hint', text: why + ' (The rank of the day is approximate until the classification of days is built.)'}));
     return box;
   }
   function drawOratio(it) {
