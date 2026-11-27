@@ -30,7 +30,14 @@ def dump(obj, orig):
 # Joseph, 27 Nov 22:35: every expanded conclusion is pointed "Fílium tuum; qui tecum" (the Missal's printed pointing,
 # e.g. pp. 245, 247, 472-473). canon() applies it to every string, so entries written before or after the change agree.
 def canon(v):
-    if isinstance(v, str): return v.replace('Fílium tuum: qui tecum', 'Fílium tuum; qui tecum').replace('Fílium tuum: Qui tecum', 'Fílium tuum; qui tecum')
+    if isinstance(v, str):
+        v = v.replace('Fílium tuum: qui tecum', 'Fílium tuum; qui tecum').replace('Fílium tuum: Qui tecum', 'Fílium tuum; qui tecum')
+        # the rest of the printed pointing of the full conclusion (M39 pp. 16, and e.g. "Sancti Deus : per omnia",
+        # "cum Deo Patre; in unitate"): ':' before "per ómnia", ';' before "in unitáte" after "Deo Patre"
+        v = re.sub(r'Spíritus Sancti,? Deus[,:]? per ómnia', 'Spíritus Sancti Deus: per ómnia', v)
+        v = re.sub(r'Spíritus Sancti Deus per ómnia', 'Spíritus Sancti Deus: per ómnia', v)
+        v = re.sub(r'cum Deo Patre,? in unitáte', 'cum Deo Patre; in unitáte', v)
+        return v
     if isinstance(v, list): return [canon(x) for x in v]
     if isinstance(v, dict): return {k: canon(x) for k, x in v.items()}
     return v

@@ -23,6 +23,12 @@
 - S0904b: the readings of the Mass the Missal names (Gaudeamus, Common p. 30*), not the proper ones.
 - Dedication Secret for S1109 and S1118: the "extra ecclesiam dedicatam" form (p. 3*), confirmed.
 
+## Answers 27 Nov 22:45 (Joseph)
+- Step 2 (calendar/selection logic, ordo44_diff.md) starts NOW, in parallel with the text audit; the coordinator fixes js/ rule by rule, quoting each rubric.
+- Dec24 Gospel: "desponsáta" (the Vulgate); the Missal's "deponsáta" (p. 17) is a printer's slip.
+- After this round: an independent checker re-reads a random 1-in-10 sample of the audit fixes on the scan.
+- Conclusions: the whole printed pointing of the full conclusion is applied everywhere by canon() in apply_fixes.py: "Fílium tuum; qui tecum", "cum Deo Patre; in unitáte", "Spíritus Sancti Deus: per ómnia" (M39 p. 16 and passim).
+
 ## Saints' Masses
 - **28 Apr:** the Mass is B. Louis Grignion de Montfort, Os justi. St Paul of the Cross has only a Memoria in the 1939 Missal (pp. 420-421).
 - **C1s "Commune Apostolorum" (Joseph, 27 Nov 21:40):** drop it. The 1939 Missal has no such Mass; "only use the Missal".
