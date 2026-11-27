@@ -1,9 +1,50 @@
 # >>> START HERE (state at 27 Nov 2026, 17:35, Joseph out of credits) <<<
 
-Live: v226 plus the "everything finished" push of 17:35 (sung prayers in the Proc. 1913 tones on the Mass page + booklets incl. Asperges;
+Live: v228 (v226 plus the "everything finished" push of 17:35 (sung prayers in the Proc. 1913 tones on the Mass page + booklets incl. Asperges;
 Holy Week tone engine js/mtones.js, Good Friday prayers/lessons in chant, Holy Week QC fixes, Passion text corrections (55);
 site fixes from Lead F/W-F2; litanies & processions (v225); G28 saints' Masses (v226)).
 Read tools/handoff/RULINGS.md (all of Joseph's decisions) before anything else.
+
+
+## ONE MERGED TO-DO LIST (Joseph, 27 Nov 17:52): Mass first, then Office
+The Office chat is closed, so this chat owns the whole site.
+- The old "never touch the Office files" rule is VOID.
+- Do NO Office work until the Mass is done AND Joseph says so.
+- Office material is on the branch origin/commons1909-v2 (it contains main as of 27 Nov 17:10; ignore the branches commons1909 and commons-1909-and-orations).
+- Bring it in with `git fetch origin commons1909-v2 && git merge origin/commons1909-v2` on a LOCAL branch, not main: don't publish the Office yet. tools/push_files.sh pushes only the files you list, from origin/main.
+- Then read, in this order:
+  1. tools/OFFICE_HANDOFF.md;
+  2. the Office sections of tools/HANDOFF.md (from "B5 IN PROGRESS");
+  3. tools/TODO.md;
+  4. tools/b09/fix/REPORTS.md;
+  5. tools/b09/EYEPASS.md;
+  6. the LOG in tools/ENGINE.md.
+- Log in tools/ENGINE.md that the Office chat's engine steps 4-5 are now ours.
+
+**MASS (do these first):**
+1. Text audit: finish all 496 Masses (tools/audit/A1-A5.md; only 31 done). Then do the i→j conversion, re-punctuate the Divinum Officium prayers, and finish the cut readings (W-E3.md).
+2. Calendar fixes from tools/handoff/ordo44_diff.md; December still to be checked.
+3. The chant corrections found by the audit (in A*.md), the Commons' Paschal second Alleluias (D.md), and the remaining site fixes (W-F2.md, F.md).
+4. Holy Week chant: Palm Sunday–Wednesday (W-B2.md), Holy Saturday (W-B5.md), Maundy Thursday (W-B3.md).
+5. The Passions (tools/passion/TONES.md, tools/handoff/C.md).
+6. The 1959 English (E.md); then a final whole-Mass QC; then the offline download.
+
+**OFFICE (only after the Mass, and when Joseph says so; tools/OFFICE_HANDOFF.md §3; rules in §1):**
+- **Rules (§1):** the page image is the only authority for the 1909 texts; show eye-checked text as the page prints it; show only eye-verified saints' text; publish checked days as they are done; send a status message after each day checked; no subagents unless Joseph asks.
+- **Scans:** the 1909 Breviary scans are not in the repo. Fetch Breviarium-1909-1/2-optimized.pdf from the CMAA Dominican page to /tmp/b09/b1.pdf and b2.pdf, or ask Joseph to attach them.
+
+7. First merge to live: normalise propers_fix.json and fix/a00.json to the page spelling; rebuild; run the audits and the browser test; merge; push.
+8. Saints: finish the eye check (the Nov 27–Feb 23 gaps, then about 185 feasts from 02-25 to 11-26).
+9. Saints: place the parts that are transcribed but not yet placed (Little Hours, Compline antiphons, blessings, Lauds, hymns, T.P. forms, commemorations, rubrics).
+10. Commons: an eye check of every Common; the "N." days; the doubtful readings; Matins lessons and homilies; English.
+11. Proper of the Season: re-OCR, then the eye pass from Advent through the Ember days and vigils.
+12. Psalter and Ordinary: the psalter, preces, suffrages, Prime's chapter office, the Marian antiphons.
+13. Other Offices: the Little Office B.V.M., the Saturday B.V.M., the Office of the Dead, St Dominic, psalms, litanies, blessings.
+14. Ranking engine 1909 (tools/ENGINE.md steps 4-5; the '1939' rule set waits on a 1930-52 Breviary or Ordo from Joseph).
+15. Clean-up: drop the "in preparation" notes; full-year automatic check; read-through by Joseph.
+16. Office chant: the Jandel 1862 Antiphonary and the 1933 books; the Nocturnale; the tones.
+
+**Later:** the 1959 Holy Week; an App Store app.
 
 ## Joseph's priority order (27 Nov)
 1. **Mass TEXTS exactly as the Missale O.P. 1939 prints them. Nothing else until this is done.**
