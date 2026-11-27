@@ -43,10 +43,14 @@ K = json.load(open(H + '/corrections.json', encoding='utf8'))
 for k, c in K.items():
     if k.startswith('_') or k not in D['masses']: continue
     m = D['masses'][k]
+    for p in c.get('drop', []):
+        m['parts'].pop(p, None)
+        if p in m.get('req', []): m['req'].remove(p)
     for p, ids in c.get('set', {}).items():
         m['parts'][p] = [{'id': i, 'm39': 'G50', 'v50': c['src']} for i in ids]
         if p not in m.get('req', []): m.setdefault('req', []).append(p)
-    if c.get('set') and k.startswith('S'): m['conf'] = 'g50'
+    if c.get('conf'): m['conf'] = c['conf']
+    elif c.get('set') and k.startswith('S') and k[1:5].isdigit(): m['conf'] = 'g50'
     if c.get('page'): m['page'] = c['page']
     if c.get('note'): m['note'] = c['note']
     for p, pg in c.get('ok', {}).items():

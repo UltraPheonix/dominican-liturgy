@@ -254,5 +254,350 @@
 "al": "95*",
 "of": "97*"
 }
+},
+"Quad2": {
+"src": "G28 p. 93-95 (djvu 57/1-58/1): Dominica II in Quadragesima, Officium Reminiscere, TRACTUS I. De necessitatibus, TRACTUS II. Confitemini (no Responsorium)",
+"set": {
+"tr": [
+7055,
+4695
+]
+},
+"drop": [
+"gr"
+]
+},
+"Pent0s": {
+"src": "G28 p. 262: after the Epistle 'Alleluia. Laudate Dominum omnes gentes' (semel), not a Tract",
+"drop": [
+"tr"
+]
+},
+"G494": {
+"src": "G50 pp. 494-495: Officium Ne timeas, Responsorium Fuit homo, Offertorium Gloria et honore 17*, Communio Magna est 11* (no Alleluia: Vigil)",
+"drop": [
+"al"
+]
+},
+"C68s": {
+"src": "G50 pp. 68*-72*: the Alleluia is V. Ave, Rex noster (printed; not yet typeset), Tract Vere languores infra Septuagesimam",
+"drop": [
+"al"
+]
+},
+"G505": {
+"src": "G50 p. 506: Responsorium Qui operatus est, pag. 404. Alleluia, V. Magnus, pag. 405. II. Offertorium Mihi autem, pag. 5*. Communio Amen, dico vobis, pag. 41*",
+"set": {
+"co": [
+4856
+]
+},
+"ok": {
+"gr": "506",
+"al": "506",
+"of": "506"
+}
+},
+"G587": {
+"src": "G50 pp. 587-590: S. P. Francisci (4 Oct.), as S1004 (the Dionysius chants were wrong)",
+"set": {
+"in": [
+4292
+],
+"al": [
+"op-g50-o-patriarcha-al"
+],
+"of": [
+"op-g50-magnificabitur-of"
+],
+"gr": [
+"op-g50-quasi-stella-fr-gr"
+],
+"co": [
+"op-g50-non-sunt-co"
+],
+"se": [
+"op-g50-sanctitatis-se"
+]
+}
+},
+"Adv3w": {
+"ok": {
+"co": "23 (G28 p. 16/0)"
+}
+},
+"Adv3f": {
+"ok": {
+"of": "6 (G28 16/1)"
+}
+},
+"Jan5a": {
+"ok": {
+"al": "29 (Omnia ut in Missa Aurorae)",
+"of": "29"
+}
+},
+"Epi4": {
+"ok": {
+"gr": "53 (Dom. II-V post Oct. Epiph.)"
+}
+},
+"Epi5": {
+"ok": {
+"gr": "53"
+}
+},
+"Quad1h": {
+"ok": {
+"gr": "306 (G28 55/1)"
+}
+},
+"Quad1f": {
+"ok": {
+"tr": "72 (G28 56/0)"
+}
+},
+"Quad1s": {
+"ok": {
+"of": "262 (G28 57/0)"
+}
+},
+"Quad2h": {
+"ok": {
+"of": "313 (G28 62/1)"
+}
+},
+"Quad3m": {
+"ok": {
+"tr": "72 (G28 67/0)"
+}
+},
+"Quad3f": {
+"ok": {
+"gr": "309 (G28 70/0)",
+"tr": "72"
+}
+},
+"Quad4m": {
+"ok": {
+"tr": "72 (G28 73/1)"
+}
+},
+"Quad4h": {
+"ok": {
+"gr": "316 (G28 76/0)"
+}
+},
+"Quad5h": {
+"ok": {
+"of": "342 (G28 84/0)"
+}
+},
+"Quad6m": {
+"ok": {
+"tr": "72 (G28 91/0)"
+}
+},
+"Pent0m": {
+"ok": {
+"co": "254 (G28 138/0)"
+}
+},
+"Pent0f": {
+"ok": {
+"of": "226 (G28 141/1)"
+}
+},
+"Pent7": {
+"ok": {
+"of": "299"
+}
+},
+"Pent8": {
+"ok": {
+"gr": "300"
+}
+},
+"Pent9": {
+"ok": {
+"of": "109 (G28 160/0)"
+}
+},
+"Pent11": {
+"ok": {
+"of": "73 (G28 163/0)"
+}
+},
+"Pent16": {
+"ok": {
+"gr": "53 (G28 170/1)"
+}
+},
+"Pent18": {
+"ok": {
+"gr": "122 (G28 176/0)"
+}
+},
+"EmbFriSept": {
+"ok": {
+"gr": "296 (G28 174/1)",
+"of": "90",
+"co": "333"
+}
+},
+"EmbSatSept": {
+"ok": {
+"tr": "193 (G28 175/0)",
+"of": "262"
+}
+},
+"EmbSatSeptS": {
+"ok": {
+"tr": "193"
+}
+},
+"G369": {
+"ok": {
+"gr": "370"
+}
+},
+"G499": {
+"ok": {
+"gr": "499"
+}
+},
+"ChristusRex": {
+"ok": {
+"gr": "608",
+"al": "609",
+"of": "610",
+"co": "610"
+}
+},
+"S0110b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 55*-57*)",
+"set": {
+"gr": [
+"op-g50-dilexisti-gr"
+],
+"al": [
+5784
+],
+"of": [
+5009
+],
+"co": [
+6027
+]
+},
+"conf": "guess"
+},
+"S0704b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 55*-57*)",
+"set": {
+"gr": [
+"op-g50-dilexisti-gr"
+],
+"al": [
+5784
+],
+"of": [
+5009
+],
+"co": [
+6027
+]
+},
+"conf": "guess"
+},
+"S1209b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 55*-57*)",
+"set": {
+"gr": [
+"op-g50-dilexisti-gr"
+],
+"al": [
+5784
+],
+"of": [
+5009
+],
+"co": [
+6027
+]
+},
+"conf": "guess"
+},
+"S0401b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 11*-17*)",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+},
+"conf": "guess"
+},
+"S0708b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 11*-17*)",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+},
+"conf": "guess"
+},
+"S0718b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 42*)",
+"set": {
+"gr": [
+7142
+]
+},
+"conf": "guess"
+},
+"S0906b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 42*)",
+"set": {
+"gr": [
+7142
+]
+},
+"conf": "guess"
+},
+"S1006b": {
+"src": "Beatified/canonized after 1950: not in the Graduale O.P. 1928/1950; the Common named by its Introit, as the Graduale gives it (pag. 42*)",
+"set": {
+"gr": [
+7142
+]
+},
+"conf": "guess"
+},
+"S0508b": {
+"ok": {
+"of": "29* (Common Intret, 25*)",
+"co": "25*"
+}
+},
+"S0228b": {
+"ok": {
+"co": "55* (G50: Missa Gaudeamus, de Communi unius S. Mulieris, pag. 59*)"
+}
+},
+"S0808b": {
+"ok": {
+"co": "55* (G50 p. 541: Missa Gaudeamus, ut in Communi unius sanctae Mulieris)"
+}
+},
+"S0703_2": {
+"ok": {
+"of": "31* (G28 265/0: Missa Sacerdotes tui, de Communi unius Confessoris et Pontificis)"
+}
 }
 }
