@@ -1,0 +1,258 @@
+{
+"_note": "Inferred chants checked against the Graduale O.P. 1950 (OCR, tools/g50/ocr.tgz; page index of the G50 GABC set) and 1928 (/tmp/rev2.txt), and the Missale O.P. 1939 (tools/orat39/m39lin.txt). 'set' replaces a part (the chant was wrong); 'ok' confirms the inferred chant (page cited).",
+"S0207": {
+"src": "G50 p. 418 / G28 p. 219: Missa Os justi, de Communi unius Abbatis, pag. 44* (Alleluia Amavit eum 44*, Communio Amen dico 41*)",
+"set": {
+"al": [
+7042
+],
+"co": [
+4856
+]
+},
+"ok": {
+"gr": "40*"
+}
+},
+"S0214": {
+"src": "G50 / G28 p. 225; M39 p. 384: Missa Os justi, de Communi unius Conf. non Pont., pag. 42*",
+"set": {
+"gr": [
+7142
+],
+"co": [
+4856
+]
+}
+},
+"S0215": {
+"src": "G50 / G28 p. 225: Missa Os justi, pag. 42*",
+"set": {
+"gr": [
+7142
+]
+}
+},
+"S0515": {
+"src": "G50 / G28 p. 248: Missa Os justi, pag. 42*",
+"set": {
+"gr": [
+7142
+]
+}
+},
+"S0728b": {
+"src": "G28 p. 273: Missa Os justi, pag. 42*",
+"set": {
+"gr": [
+7142
+]
+}
+},
+"S1005": {
+"src": "G28 p. 304; M39 p. 582: Officium Os justi, de Communi Confessoris non Pontificis",
+"set": {
+"gr": [
+7142
+],
+"co": [
+4856
+]
+}
+},
+"S0905b": {
+"src": "M39 (3 Sept.): Officium Sacerdotes, ut in Communi Conf. Pont., pag. 17* (G50 pp. 30*-32*)",
+"set": {
+"in": [
+5925
+],
+"gr": [
+6727
+],
+"al": [
+4966
+],
+"tr": [
+6463
+],
+"of": [
+7170
+],
+"co": [
+5854
+]
+},
+"page": "30*-32*",
+"note": "Missale O.P. (1939), 3 Sept.: Officium Sacerdotes, ut in Communi Conf. Pont. (Graduale O.P. 1950, pp. 30*-32*)."
+},
+"S1121": {
+"src": "G50 p. 648 / G28 p. 316: Missa Gaudeamus, ut in Nativitate B. M. V., pag. 566, cum nomine Praesentationis; M39 p. 628",
+"set": {
+"in": [
+4289
+],
+"gr": [
+6293
+],
+"al": [
+"7550s"
+],
+"of": [
+8151
+],
+"co": [
+7543
+]
+},
+"page": "566-569",
+"note": "Graduale O.P. (1950), p. 648: Missa Gaudeamus, ut in Nativitate B. M. V., pag. 566, cum nomine Praesentationis (Alleluia, V. Solemnitas). Missale O.P. (1939), p. 628."
+},
+"S1127b": {
+"src": "G50 p. 59*: Missa Gaudeamus, ut in Festo Virg. non Mart., pag. 51* (Communio Diffusa est, 55*)",
+"set": {
+"co": [
+6238
+]
+}
+},
+"C39s": {
+"src": "G50 / G28 p. 41*: Alleluia, V. Laetabitur, pag. 9*",
+"set": {
+"al": [
+6582
+]
+}
+},
+"C28s": {
+"src": "G50 pp. 28*-30*: Alleluia, V. Sancti et justi (28*); Communio Justorum animae (30*)",
+"set": {
+"al": [
+5648
+],
+"co": [
+6276
+]
+}
+},
+"C48s": {
+"src": "G28 p. 49*: Responsorium Specie tua, pag. 46*",
+"set": {
+"gr": [
+5634
+]
+},
+"ok": {
+"al": "49*"
+}
+},
+"S0120": {
+"ok": {
+"of": "401",
+"co": "401"
+}
+},
+"S0624": {
+"ok": {
+"of": "498"
+}
+},
+"S0629": {
+"ok": {
+"co": "505"
+}
+},
+"S0710": {
+"ok": {
+"of": "520"
+}
+},
+"S0802": {
+"ok": {
+"gr": "529"
+}
+},
+"S0910": {
+"ok": {
+"co": "592"
+}
+},
+"S0919": {
+"ok": {
+"of": "599"
+}
+},
+"S1106": {
+"ok": {
+"co": "643"
+}
+},
+"S0711": {
+"ok": {
+"co": "25*"
+}
+},
+"S0816": {
+"ok": {
+"co": "549"
+}
+},
+"S0103b": {
+"ok": {
+"co": "55*"
+}
+},
+"C18s": {
+"ok": {
+"gr": "19*"
+}
+},
+"C25s": {
+"ok": {
+"of": "27*",
+"co": "27*"
+}
+},
+"C30s": {
+"ok": {
+"of": "31*"
+}
+},
+"C51s": {
+"ok": {
+"co": "55*"
+}
+},
+"C62s": {
+"ok": {
+"gr": "62*",
+"al": "62*",
+"of": "62*",
+"co": "62*"
+}
+},
+"C64s": {
+"ok": {
+"co": "66*"
+}
+},
+"C75s": {
+"ok": {
+"gr": "76*",
+"al": "76*",
+"of": "76*",
+"co": "76*"
+}
+},
+"C89s": {
+"ok": {
+"co": "93*"
+}
+},
+"C93s": {
+"ok": {
+"gr": "94*",
+"al": "95*",
+"of": "97*"
+}
+}
+}

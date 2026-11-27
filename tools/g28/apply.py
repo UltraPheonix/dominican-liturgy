@@ -37,4 +37,19 @@ for k, ps in C.items():
     for p, pg in ps.items():
         for x in D['masses'][k]['parts'].get(p, []):
             if isinstance(x, dict) and (x.get('inferred') or x.get('v28')): x.pop('inferred', None); x['v28'] = pg
+
+# inferred chants corrected or confirmed from the Graduale of 1950/1928 and the Missal of 1939 (tools/g28/corrections.json)
+K = json.load(open(H + '/corrections.json', encoding='utf8'))
+for k, c in K.items():
+    if k.startswith('_') or k not in D['masses']: continue
+    m = D['masses'][k]
+    for p, ids in c.get('set', {}).items():
+        m['parts'][p] = [{'id': i, 'm39': 'G50', 'v50': c['src']} for i in ids]
+        if p not in m.get('req', []): m.setdefault('req', []).append(p)
+    if c.get('set') and k.startswith('S'): m['conf'] = 'g50'
+    if c.get('page'): m['page'] = c['page']
+    if c.get('note'): m['note'] = c['note']
+    for p, pg in c.get('ok', {}).items():
+        for x in m['parts'].get(p, []):
+            if isinstance(x, dict) and (x.get('inferred') or x.get('v50')): x.pop('inferred', None); x['v50'] = 'G50 p. ' + pg
 open(F, 'w', encoding='utf8').write(head + 'var DOMINICAN = ' + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + ';\n')
