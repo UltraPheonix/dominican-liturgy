@@ -73,7 +73,7 @@ Read tools/handoff/RULINGS.md (all of Joseph's decisions) before anything else.
 ### LATER
 - The complete 1959 Holy Week; an App Store app (needs a Mac).
 
-## Joseph's priority order (27 Nov)
+## (older, superseded by THE ORDER OF WORK above) Joseph's priority order (27 Nov 17:16)
 1. **Mass TEXTS exactly as the Missale O.P. 1939 prints them. Nothing else until this is done.**
    - **Audit of all 496 Masses:** five auditors started 17:19 and were stopped 17:33.
      - State: tools/audit/A1..A5.md, fixes in tools/audit/fixes/A*.json, their scripts in tools/audit/scripts/A*/.
@@ -120,7 +120,7 @@ Every paused job has its own note in this folder:
 | proc_tones.md | Processions: versicles and prayers in tone | **Done and live** (reference only) |
 | qc_mass.md, qc_ui.md, qc_hw.md | The three QC reports | Partly fixed (see the to-do list below) |
 
-## When Joseph says "continue": start a swarm, organised in a hierarchy
+## (SUPERSEDED: max 5 agents now; leads cannot spawn agents) old swarm plan
 Joseph asked (27 Nov) that "continue" launches a swarm of agents to finish the Mass work, organised hierarchically. Each
 larger task has one **lead agent** that reports to the coordinator (the main chat). The lead spawns and directs **worker
 agents** beneath it and gives regular status reports.
@@ -238,7 +238,7 @@ nohup python3 -m http.server 8768 >/dev/null 2>&1 &   # mass_sweep.py needs this
   - Footer buttons "Support the Dominican Friars" and "Buy the Order's books".
   - Cloudflare Web Analytics, token in js/ui.js, dominicanrite.com only.
 
-## To-do, in order
+## (older, superseded) To-do, in order
 1. **Litanies fully in chant** (litanies.md).
    - Run `tools/proc/gen_lit.js`, gregorio-check the output, do the second pass against Proc. pp. 91–95 and 124–134, then wire it in with `_at()`.
    - Add the pp. 132–134 texts (with English) to 'extraordinariae'.
