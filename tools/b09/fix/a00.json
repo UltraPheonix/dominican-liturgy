@@ -429,5 +429,177 @@
   "v2.ant": "Domum tuam Dómine decet sanctitúdo in longitúdinem diérum.",
   "v2.magn": "O quam metuéndus est locus iste! Vere non est hic áliud nisi domus Dei, et porta cæli.",
   "note": "Rubric: Hodie in utrisque Vesperis et Laudibus omittitur Memoria de Octava Immaculatæ Conceptionis. Psalmi trium Nocturnorum ut in Conceptione immaculata B. M. V. (p. 704 ff.). Lessons i-iii: De libro tértio Regum, cap. 8. II Nocturn: Sermo S. Bernárdi Abbátis (Serm. 52. de divers.). III Nocturn: Homilía sancti Bernárdi Abbátis (Hom. 1. super Missus est.); lesson viii (Ex hom. 2. super eodem loco.); lesson ix (Ex Hom. 3. super eodem loco.). Blessings as on 8 Dec. NOT YET PLACED BY THE BUILD: I Vespers psalms Laudáte púeri cum ceteris (p. 145), hymn Ave maris stella (p. 703); Compline (both): Aña Virgo María and the two last strophes María Mater grátiæ, Glória tibi Dómine (also at Prime, Terce, Sext, None) as on 8 Dec; Ad Nunc dimittis Aña. Sub tuum præsídium confúgimus sancta Dei Génitrix: nostras deprecatiónes ne despícias in necessitátibus: sed a perículis cunctis líbera nos semper Virgo benedícta. Lauds: Capitulum In ómnibus réquiem; V. Domus mea. R. Domus oratiónis vocábitur. Prime: R. Jesu Christe. V. Qui natus es de Vírgine María. Terce: Capitulum In ómnibus réquiem; R. br. Domum tuam Dómine decet sanctitúdo, * Allelúia, allelúia. V. In longitúdinem diérum; V. Hæc est domus Dómini fírmiter ædificáta. R. Bene fundáta est supra firmam petram. Sext: Capitulum Eccli. 24 Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.; R. br. Hæc est domus Dómini fírmiter ædificáta, * Allelúia, allelúia. V. Bene fundáta est supra firmam petram; V. Beáti qui hábitant in domo tua Dómine. R. In sæcula sæculórum laudábunt te. None: Capitulum Eccli. 24 Sicut cinnamómum, et bálsamum aromatízans odórem dedi: quasi myrrha elécta dedi suavitátem odóris.; R. br. Beáti qui hábitant in domo tua Dómine, * Allelúia, allelúia. V. In sæcula sæculórum laudábunt te; V. Domus mea. R. Domus oratiónis vocábitur. II Vespers: Psalmus Dixit Dóminus cum ceteris ut in Communi unius Virginis (p. 96*); Capitulum In ómnibus réquiem; Hymnus Ave maris stella; V. Domum tuam Dómine decet sanctitúdo. R. In longitúdinem diérum. Also on pdf 810: DIE XI. DECEMBRIS. S. DAMASI Papæ et Confessoris. Memoria in I. Vesp. et Laud. Oratio: Da, quæsumus omnípotens Deus: ut beáti Dámasi Confessóris tui atque Pontíficis, veneránda solémnitas et devotiónem nobis áugeat, et salútem. Per."
+ },
+ "S. Lúciæ Virg. et Mart.": {
+  "pages": "v1 pdf 810-815 (book pp. 724-729)",
+  "v1.ant": "Veniénte Sponso, prudens Virgo præparáta introívit cum eo ad núptias.",
+  "v1.cap": [
+   "Eccli. 51",
+   "Confitébor tibi Dómine rex, et collaudábo te Deum salvatórem meum. Confitébor nómini tuo: quóniam adjútor et protéctor factus es mihi, et liberásti corpus meum a perditióne."
+  ],
+  "v1.resp": [
+   "Rogávi Dóminum meum Jesum Christum ut ignis iste non dominétur mihi:",
+   "Et impetrávi a Dómino indúcias martýrii mei.",
+   "Ut credéntibus timórem áuferam passiónis, et non credéntibus vocem insultatiónis.",
+   "Et impetrávi.",
+   "Et impetrávi."
+  ],
+  "v1.hymn": [
+   "Vírginis Proles opiféxque Matris, / Virgo quem gessit, peperítque Virgo, / Vírginis festum cánimus trophæum, / Accipe votum.",
+   "Hæc tua Virgo dúplici beáta / Sorte, dum gestit frágilem domáre / Córporis sexum, dómuit cruéntum / Córpore sæclum.",
+   "Unde nec mortem, nec amíca mortis / Sæva pœnárum génera pavéscens, / Sánguine fuso méruit sacráta / Scándere cælum.",
+   "Hujus obténtu Deus alme nostris / Parce jam culpis, vítia remíttens: / Quo tibi puri resonémus almum / Péctoris hymnum.",
+   "Glória Patri, genitæque Proli, / Et tibi compar utriúsque semper / Spíritus alme, Deus unus, omni / Témpore sæcli. / Amen."
+  ],
+  "mat.hymn": [
+   "Vírginis Proles opiféxque Matris, / Virgo quem gessit, peperítque Virgo, / Vírginis festum cánimus trophæum, / Accipe votum.",
+   "Hæc tua Virgo dúplici beáta / Sorte, dum gestit frágilem domáre / Córporis sexum, dómuit cruéntum / Córpore sæclum.",
+   "Unde nec mortem, nec amíca mortis / Sæva pœnárum génera pavéscens, / Sánguine fuso méruit sacráta / Scándere cælum.",
+   "Hujus obténtu Deus alme nostris / Parce jam culpis, vítia remíttens: / Quo tibi puri resonémus almum / Péctoris hymnum.",
+   "Glória Patri, genitæque Proli, / Et tibi compar utriúsque semper / Spíritus alme, Deus unus, omni / Témpore sæcli. / Amen."
+  ],
+  "v2.hymn": [
+   "Vírginis Proles opiféxque Matris, / Virgo quem gessit, peperítque Virgo, / Vírginis festum cánimus trophæum, / Accipe votum.",
+   "Hæc tua Virgo dúplici beáta / Sorte, dum gestit frágilem domáre / Córporis sexum, dómuit cruéntum / Córpore sæclum.",
+   "Unde nec mortem, nec amíca mortis / Sæva pœnárum génera pavéscens, / Sánguine fuso méruit sacráta / Scándere cælum.",
+   "Hujus obténtu Deus alme nostris / Parce jam culpis, vítia remíttens: / Quo tibi puri resonémus almum / Péctoris hymnum.",
+   "Glória Patri, genitæque Proli, / Et tibi compar utriúsque semper / Spíritus alme, Deus unus, omni / Témpore sæcli. / Amen."
+  ],
+  "v1.vr": [
+   "Diffúsa est grátia in lábiis tuis.",
+   "Proptérea benedíxit te Deus in ætérnum."
+  ],
+  "v1.magn": "In tua patiéntia possedísti ánimam tuam Lúcia sponsa Christi: odísti quæ in mundo sunt, et corúscas cum ángelis: sánguine próprio inimícum vicísti.",
+  "oratio": "Exáudi nos Deus salutáris noster: ut sicut de beátæ Lúciæ Vírginis et Mártyris tuæ festivitáte gaudémus, ita piæ devotiónis erudiámur afféctu. Per Dóminum.",
+  "mat.invit": "Agnum sponsum vírginum * Veníte adorémus Dóminum Jesum Christum.",
+  "lessons": {
+   "1": "De virgínibus præcéptum Dómini non hábeo: consílium autem do, tamquam misericórdiam consecútus a Dómino, ut sim fidélis. Exístimo ergo hoc bonum esse propter instántem necessitátem, quóniam bonum est hómini sic esse. Alligátus es uxóri? noli quærere solutiónem. Solútus es ab uxóre? noli quærere uxórem. Si autem accéperis uxórem, non peccásti. Et si núpserit virgo, non peccávit: tribulatiónem tamen carnis habébunt hujúsmodi.",
+   "2": "Ego autem vobis parco. Hoc ítaque dico, fratres: Tempus breve est: réliquum est, ut et qui habent uxóres, tamquam non habéntes sint: et qui flent, tamquam non flentes: et qui gaudent, tamquam non gaudéntes: et qui emunt, tamquam non possidéntes: et qui utúntur hoc mundo, tamquam non utántur: prǽterit enim figúra hujus mundi.",
+   "3": "Volo autem vos sine sollicitúdine esse. Qui sine uxóre est, sollícitus est quæ Dómini sunt, quómodo pláceat Deo. Qui autem cum uxóre est, sollícitus est quæ sunt mundi, quómodo pláceat uxóri, et divísus est. Et múlier innúpta, et virgo cógitat quæ Dómini sunt, ut sit sancta córpore, et spíritu. Quæ autem nupta est, cógitat quæ sunt mundi, quómodo pláceat viro.",
+   "4": "Lúcia Virgo Syracusána, génere et christiána fide ab infántia nóbilis, una cum matre Eutýchia, quæ sánguinis fluxu laborábat, Cátanam ad venerándum corpus beátæ Agathæ venit: quæ ad ejus sepúlcrum cum supplíciter orásset, Agathæ intercessióne matri sanitátem impetrávit. Statim vero matrem exorávit ut quam dotem sibi datúra esset, Christi paupéribus tríbui paterétur. Ut ígitur Syracúsas rédiit, omnem pecúniam, quam ex facultátibus vénditis redégerat, paupéribus distríbuit.",
+   "5": "Quod ubi rescivísset is, cui eam paréntes contra Vírginis voluntátem despónderant, apud Paschásium præféctum Lúciam, quod Christiána esset, accusávit. Quam ille cum nec précibus, nec minis ad cultum idolórum posset perdúcere: immo tanto magis incénsam vidéret ad celebrándas christiánæ fídei laudes, quanto magis ipse eam a senténtia avértere conabátur: Cessábunt, inquit, verba, cum ventum erit ad vérbera. Cui Virgo: Dei servis verba deésse non possunt, quibus a Christo Dómino dictum est: Cum stetéritis ante reges, et prǽsides, nolíte cogitáre quómodo, aut quid loquámini: dábitur enim vobis in illa hora, quid loquámini: non enim vos estis, qui loquímini, sed Spíritus sanctus, qui lóquitur in vobis.",
+   "6": "Quam cum Paschásius interrogásset, Estne in te Spíritus sanctus? respóndit: Caste et pie vivéntes templum sunt Spíritus sancti. At ille: Jubébo te ad lupánar duci, ut te Spíritus sanctus déserat. Cui Virgo: Si invítam jússeris violári, cástitas mihi duplicábitur ad corónam. Quare Paschásius ira inflammátus, Lúciam eo trahi jussit, ubi ejus virgínitas violarétur: sed divínitus factum est, ut firma Virgo ita consísteret, ut nulla vi de loco dimovéri posset. Quam ob rem præféctus circum ipsam, pice, resína, ac fervénti óleo perfúsam, ignem accéndi imperávit: sed cum ne flamma quidem eam lǽderet, multis torméntis excruciátæ guttur gládio transfígitur. Quo vúlnere accépto, Lúcia prædícens Ecclésiæ tranquillitátem, quæ futúra erat Diocletiáno et Maximiáno mórtuis, Idibus Decémbris spíritum Deo réddidit. Cujus corpus Syracúsis sepúltum, deínde Constantinópolim, postrémo Venétias translátum est.",
+   "7": "Cælórum regnum, fratres caríssimi, idcírco terrénis rebus símile dícitur, ut ex his, quæ ánimus novit, surgat ad incógnita, quæ non novit: quátenus exémplo visibílium se ad invisibília rápiat, et per ea, quæ usu dídicit, quasi confricátus incaléscat: ut per hoc, quod scit notum dilígere, discat et incógnita amáre. Ecce enim cælórum regnum thesáuro abscóndito in agro comparátur. Qua in re notándum est, quod invéntus thesáurus abscónditur, ut servétur: quia stúdium cæléstis desidérii a malígnis spirítibus custodíre non súfficit, qui hoc ab humánis láudibus non abscóndit. In præsénti étenim vita quasi in via sumus, qua ad pátriam pérgimus: malígni autem spíritus iter nostrum quasi quidam latrúnculi óbsident.",
+   "8": "Deprædári ergo desíderat, qui thesáurum públice portat in via. Hoc autem dico, non ut próximi ópera nostra bona non vídeant: sed ut sic sit opus in público, quátenus inténtio máneat in occúlto. Rursum cæléste regnum negotiatóri hómini símile dícitur, qui bonas margarítas quærit, sed unam pretiósam ínvenit, quam vidélicet invéntam, ómnia vendens, emit: quia qui cæléstis vitæ dulcédinem, in quantum possibílitas admíttit, perfécte cognóverit: ea, quæ in terrénis amáverat, libénter cuncta derelínquit.",
+   "9": "Recte per Salomónem dícitur: Fortis est ut mors diléctio: quia sicut mors corpus intérimit, sic ab amóre rerum corporálium ætérnæ vitæ cáritas occídit. Nam quem perfécte absorbúerit, ad terréna foris desidéria velut insensíbilem reddit. Nec enim Sancta hæc, cujus hódie natalítia celebrámus, mori pro Dómino potuísset in córpore, si prius a terrénis desidériis mórtua non fuísset in mente. Eréctus namque in virtútis cúlmine ánimus torménta despéxit, prǽmia calcávit. Quid inter hæc nos barbáti et débiles dícimus, qui ire ad regna cæléstia puéllas per ferrum vidémus, quos ira súperat, supérbia inflat, ambítio pertúrbat, luxúria ínquinat? Qui si adipísci regna cælórum per bella persecutiónum non póssumus, hoc ipsum nobis turpe sit, quod Deum nólumus saltem per pacem sequi."
+  },
+  "gospel7": "In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile est regnum cælórum thesáuro abscóndito in agro: quem qui ínvenit homo, abscóndit, et præ gáudio illíus vadit, et vendit univérsa quæ habet, et emit agrum illum. Et réliqua.",
+  "homily7": "Homilía sancti Gregórii Papæ.",
+  "resp": {
+   "1": [
+    "Veni sponsa Christi, áccipe corónam, quam tibi Dóminus præparávit:",
+    "Pro cujus amóre sánguinem tuum fudísti, et cum ángelis in paradísum introísti.",
+    [
+     "Veni elécta mea, et ponam in te thronum meum, quia concupívit rex spéciem tuam."
+    ],
+    [
+     "Pro cujus.",
+     false
+    ]
+   ],
+   "2": [
+    "Propter veritátem et mansuetúdinem, et justítiam:",
+    "Et dedúcet te mirabíliter déxtera tua.",
+    [
+     "Audi fília, et vide, et inclína aurem tuam."
+    ],
+    [
+     "Et dedúcet te.",
+     false
+    ]
+   ],
+   "3": [
+    "Spécie tua et pulchritúdine tua",
+    "Inténde, Próspere procéde, et regna.",
+    [
+     "Diffúsa est grátia in lábiis tuis: proptérea benedíxit te Deus in ætérnum."
+    ],
+    [
+     "Inténde.",
+     "Próspere procéde."
+    ]
+   ],
+   "4": [
+    "Grata facta est a Dómino in certámine, quia apud Deum et apud hómines glorificáta est: in conspéctu príncipum loquebátur sapiéntiam,",
+    "Et Dóminus ómnium diléxit eam.",
+    [
+     "Erécta namque in virtútis cúlmine, torménta derísit, præmia calcávit."
+    ],
+    [
+     "Et Dóminus ómnium.",
+     false
+    ]
+   ],
+   "5": [
+    "Hæc est Virgo sápiens, quam Dóminus vigilántem ínvenit: quæ accéptis lampádibus, sumpsit secum óleum:",
+    "Et veniénte Dómino, introívit cum eo ad núptias.",
+    [
+     "Ista est una de número prudéntum, quæ aptávit lámpades suas."
+    ],
+    [
+     "Et veniénte Dómino.",
+     false
+    ]
+   ],
+   "6": [
+    "Afferéntur regi vírgines post eam: próximæ ejus afferéntur tibi",
+    "In lætítia et exsultatióne.",
+    [
+     "Prudéntes vírgines aptáte lámpades vestras: ecce sponsus venit, exíte óbviam ei."
+    ],
+    [
+     "In lætítia.",
+     "In lætítia."
+    ]
+   ],
+   "7": [
+    "Audívi vocem de cælo veniéntem: veníte omnes vírgines sapientíssimæ,",
+    "Oleum recóndite in vasis vestris, dum sponsus advénerit.",
+    [
+     "Média nocte clamor factus est: Ecce sponsus venit."
+    ],
+    [
+     "Oleum recóndite.",
+     false
+    ]
+   ],
+   "8": [
+    "Veni elécta mea, et ponam in te thronum meum:",
+    "Quia concupívit rex spéciem tuam.",
+    [
+     "Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
+    ],
+    [
+     "Quia concupívit rex.",
+     false
+    ]
+   ],
+   "9": [
+    "Rogávi Dóminum meum Jesum Christum ut ignis iste non dominétur mihi:",
+    "Et impetrávi a Dómino indúcias martýrii mei.",
+    [
+     "Ut credéntibus timórem áuferam passiónis, et non credéntibus vocem insultatiónis."
+    ],
+    [
+     "Et impetrávi.",
+     "Et impetrávi."
+    ]
+   ]
+  },
+  "al": [
+   "Ora pro nobis beáta Lúcia.",
+   "Ut digni efficiámur promissiónibus Christi."
+  ],
+  "laud.ant": [
+   "Oránte sancta Lúcia, appáruit ei beáta Agatha, et consolabátur ancíllam Christi.",
+   "Lúcia Virgo, quid a me petis, quod ipsa póteris præstáre contínuo matri tuæ?",
+   "Per te, Lúcia Virgo, cívitas Syracusána decorábitur a Dómino Jesu Christo.",
+   "Benedíco te Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo.",
+   "Soror mea Lúcia, Virgo Deo devóta, quid a me petis, quod ipsa póteris præstáre contínuo matri tuæ?"
+  ],
+  "laud.bened": "Colúmna es immóbilis Lúcia sponsa Christi: quia omnis plebs te exspéctat, ut accípias corónam vitæ, allelúia.",
+  "v2.ant": "Oránte sancta Lúcia, appáruit ei beáta Agatha, et consolabátur ancíllam Christi.",
+  "v2.magn": "Tanto póndere eam fixit Spíritus sanctus, ut Virgo Dómini immóbilis permanéret.",
+  "note": "Rubric: In tribus Nocturnis Psalmi, Antiphonæ et VV. de Communi unius Virginis et Martyris (p. 88*); Lectiones et RR. ut infra. Lessons i-iii: De Epístola prima beáti Pauli Apóstoli ad Corínthios, cap. 7. II Nocturn (Ex sinceris Actis et Rom. Brev.). III Nocturn: Léctio sancti Evangélii secúndum Matthǽum, cap. 13; Homilía sancti Gregórii Papæ (Homil. 11. in Evang.). I Vespers psalms Laudáte púeri cum ceteris (p. 145). Lauds: Capitulum Confitébor tibi (as I Vespers); Hymnus Jesu, coróna vírginum (4 strophes printed: Jesu, coróna vírginum, Quem Mater illa cóncipit, Quæ sola virgo párturit, Hæc vota clemens áccipe. / Qui pascis inter lília, Septus choréis vírginum, Sponsas décorans glória, Sponsísque reddens præmia. / Quocúmque pergis vírgines Sequúntur, atque láudibus Post te canéntes cúrsitant, Hymnósque dulces pérsonant. / Te deprecámur, lárgius Nostris adáuge sénsibus Nescíre prorsus ómnia Corruptiónis vúlnera.) then María Mater… Glória tibi (p. 713, within the Octave of the Conception); if the feast is transferred the hymn ends: Sit Christe Rex piíssime Tibi Patríque glória, Cum Spíritu Paráclito, In sempitérna sæcula. Amen. V. Adducéntur regi vírgines post eam. R. Próximæ ejus afferéntur tibi. Terce, Sext, None: Capitula, RR. et VV. de Communi unius Virginis (p. 96*). II Vespers: Psalmi de Communi unius Virginis (p. 96*); Capitulum Confitébor tibi; Hymnus Vírginis Proles; V. Diffúsa est grátia in lábiis tuis. R. Proptérea benedíxit te Deus in ætérnum. The page prints æ unaccented (trophæum, sæclum, præmia, lædere): typed ǽ only in prǽterit, prǽsides, lǽderet, prǽmia (lesson ix), Matthǽum — to normalise with the accent decision."
  }
 }
