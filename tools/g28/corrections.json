@@ -638,5 +638,58 @@
 ]
 },
 "conf": "missal"
+},
+"S1009": {
+"src": "G28 pp. 582-585 (djvu 305-306): S. Ludovici Bertrandi, proper Mass printed in full (typeset from the 1928 scan; = G50 pp. 597-600; Missale O.P. 1939, p. 587). The Dionysius chants were wrong.",
+"conf": "g28",
+"set": {
+"in": [
+"g28:bertrand_in|Convertisti|582 (1928)"
+],
+"gr": [
+"g28:bertrand_gr|Populus quem non cognovi|583 (1928)"
+],
+"al": [
+"g28:bertrand_al|Diligam te|584 (1928)"
+],
+"of": [
+"g28:bertrand_of|Virga tua|585 (1928)"
+],
+"co": [
+"g28:bertrand_co|Ecce dedi te|585 (1928)"
+]
+},
+"season": {
+"pasch": {
+"al": [
+"op-g28-bertrand-al",
+6843
+]
+},
+"asc": {
+"al": [
+5352
+]
+},
+"lent": {
+"tr": [
+7081
+]
+}
+},
+"page": "582-585",
+"note": "Graduale O.P. (1928), pp. 582-585 (= 1950, pp. 597-600): Officium Convertisti, Responsorium Populus, Alleluia Diligam te, Offertorium Virga tua, Communio Ecce dedi te; Tempore Resurrectionis II. Alleluia Oportebat pati, Tempore Ascensionis II. Alleluia Ascendit; infra Septuagesimam Tractus Quasi stella, pag. 37*. Missale O.P. (1939), p. 587.",
+"readings": [
+{
+"type": "Epistle",
+"ref": "Ad Romanos 10: 10-18",
+"m39": true
+},
+{
+"type": "Gospel",
+"ref": "Marcus 16: 15-18",
+"m39": true
+}
+]
 }
 }

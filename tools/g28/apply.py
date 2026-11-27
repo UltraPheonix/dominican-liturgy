@@ -60,6 +60,9 @@ for k, c in K.items():
         if p not in m.get('req', []): m.setdefault('req', []).append(p)
     if c.get('conf'): m['conf'] = c['conf']
     elif c.get('set') and k.startswith('S') and k[1:5].isdigit(): m['conf'] = 'g50'
+    if c.get('season'):
+        m['season'] = {sk: {p: [{'id': i} for i in ids] for p, ids in sv.items()} for sk, sv in c['season'].items()}
+    if c.get('readings'): m['readings'] = c['readings']
     if c.get('title'): m['title'] = c['title']
     if c.get('en'): m['en'] = c['en']
     if c.get('page'): m['page'] = c['page']
