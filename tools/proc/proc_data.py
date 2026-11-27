@@ -346,7 +346,7 @@ _EXOCC = [
 ]
 # ecclesia, pestilentia, turcas, rege: a versicle ends on a monosyllable with ':' (no flexa sign); the tone of p. 395 has
 # no example of that ending, so their gabc (ex_<id>.gabc, marked DRAFT) is not wired in until the reading is decided
-_EXDRAFT = ('ecclesia', 'pestilentia', 'turcas', 'rege')
+_EXDRAFT = ()  # Joseph 27 Nov: monosyllable endings before ':' are recited through (recto)
 for _la, _en, _id, _tla, _ten in _EXOCC:
     _EXO += [('rub', _la, _en)] + ([] if _id in _EXDRAFT else [('gabc', 'ex_' + _id, '', '')]) + [('txt', _tla, _ten)]
 _at('extraordinariae', _r('Póstea subjúngat álium'), _EXO, after=True)

@@ -255,6 +255,24 @@
   }
   function incipit(id) { var c = D.chants[id]; return c ? A.clean(c.i).replace(/\.\.\..*$/, '').replace(/\s*\(.*$/, '') : ''; }
 
+  // ================================================================== ASPERGES (both books, Sundays)
+  // Missale O.P. 1939, p. 33 (Ad aspersionem aquæ benedictæ in diebus Dominicis ante Missam) and p. 40 (De officio
+  // ministrorum 2: "Cantoribus incipientibus Antiphonam Asperges me ... dicat ℣. Ostende nobis, etc. Dominus vobiscum.
+  // Oremus. Exaudi nos"); the antiphon as on the Mass page (aspergesGabc), the versicles and prayer in their tones
+  // (gabc/op-tone-asperges-*: Proc. O.P. 1913, pp. 395-396 and 407-408)
+  function aspergesUnits(priest) {
+    var id = ORD && ORD.as; if (!id || S.ordo === 'low') return;
+    var vidi = /^Vidi/.test(ordName(id)), f = A.diffDays(S.date, A.easter(S.date.getFullYear())), tp = f >= 0 && f <= 49;
+    var so = priest ? {noDrop: true, glyph: 1 / 19, size: 14} : {noDrop: true};
+    var h = heading(vidi ? 'Vidi aquam' : 'Asperges', ordSub(id));
+    if (!priest) h.toc = tocEntry(ordName(id), h);
+    rubric('Before the principal Mass on Sundays the cantors begin the antiphon, while the priest sprinkles the altar, the ministers and the brethren (Missale O.P. 1939, pp. 33, 40).', {left: !!priest});
+    chant(id, {part: null, noDrop: !!priest, glyph: so.glyph, size: so.size, fix: function (b) { return A.aspergesGabc ? A.aspergesGabc(b) : b; }});
+    rubric('When the antiphon is finished, the priest, standing before the steps, sings:', {left: !!priest});
+    chant(tp ? 'op-tone-asperges-v-tp' : 'op-tone-asperges-v', so);
+    chant('op-tone-asperges-or', so);
+  }
+
   // ================================================================== CHOIR BOOK
   var TOC = [];
   function tocEntry(label, it) { var e = {label: label, it: it}; TOC.push(e); return e; }
@@ -262,6 +280,7 @@
     curCols = 1;
     var gloriaPatri = function (id) { return /Gl[oó]ria Patri/.test(TX['c:' + id] || ''); };
     var ini = {in: 'init_g_dominic', al: 'init_a_angel'};
+    aspergesUnits(false);
     seq.forEach(function (it) {
       if (it.t === 'chant') {
         var p = it.p, id = it.c.id; if (!id) return;
@@ -357,6 +376,7 @@
       });
     };
     var sung = S.ordo !== 'low';
+    aspergesUnits(true);
     seq.forEach(function (it) {
       if (it.t === 'ordo') {
         if (it.k === 'canon') { canonPages(); curCols = 2; return; }

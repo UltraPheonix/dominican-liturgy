@@ -1,0 +1,2835 @@
+
+######## Quad5s | Sabbato post Dominicam Passionis
+  segment lines 21630-21855, @@PAGE 100 (pdf 101, printed 134): SABBATO / Statio ad S. Joannem / ante portam Latinam / Officium
+  sections: Officium@21633, Oratio@21647, Lectio Jeremiae Prophetae,@21656, Offertorium Ps. 118 Bene­@21816, Secreta@21822, Communio Ps. 26 Ne tradi­@21830, Postcommunio@21836, Humiliate@21845, Oratio super populum@21848
+  == ['Quad5s', 'or', 0] @@PAGE 100-100 (pdf 101, p.134) line 21648 ratio 0.900
+     before: vobiscum . Oremus . Flectamus genua . Levate . Oratio
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  fit grátior , tanto  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Quad5s', 'se', 0] @@PAGE 101-101 (pdf 102, p.136) line 21823 ratio 0.872
+     before: superbis : et respondebo exprobrantibus mihi verbum . Secreta Acunctis
+     start? A cunctis  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  propitiátus absólve : quos  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Quad5s', 'pc', 0] @@PAGE 101-101 (pdf 102, p.136) line 21837 ratio 0.811
+     before: testes iniqui , et mentita est iniquitas sibi . Postcommunio
+     punct  , quǽsumus , Dómine  ||  ∅
+     eol?   , Dómine , Deus  ||  kept
+     punct  Deus noster : ut  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Quad5s', 'sp', 0] @@PAGE 101-101 (pdf 102, p.136) line 21849 ratio 1.000
+     before: , pag . Oremus . Humiliate capita vestra Deo .
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Quad5s', 0, 'la'] @@PAGE 100-101 (pdf 101, p.134) line 21658 ratio 0.974
+     before: Oratio , pag . Lectio Jeremiae Prophetae , c .
+     case   fiant  ||  Fiant
+     split? prœ lio  ||  proelio
+     punct  latrónem repénte , quia  ||  :
+     case   ne  ||  Ne
+     case   fiant  ||  Fiant
+     WORD   tui abútere eis .  ||   => , Dómine Deus noster
+     after : JUL . Ps . Pacifice loquebantur mihi inimici m e i : et in
+  == ['Quad5s', 1, 'la'] @@PAGE 101-101 (pdf 102, p.136) line 21713 ratio 0.981
+     before: me . Sequentia sancti Evangelii secundum Joannem . c .
+     punct  Jesus Jerosólymam , accepérunt  ||  :
+     split? clamábant  ||  clam abant
+     case   rex  ||  Rex
+     split? est  ||  e s t
+     punct  de eo , et  ||  :
+     case   et  ||  Et
+     WORD   : quia audiérunt fecísse hoc signum  ||   => eum
+     case   ecce  ||  Ecce
+     punct  Bethsáida Galilǽæ , et  ||  :
+     case   si  ||  Si
+     case   et  ||  Et
+     case   et  ||  Et
+     punct  est mundi : nunc  ||  ,
+     punct  Et ego , si  ||  ∅
+     case   et  ||  Et
+     punct  tu dicis : Opórtet  ||  ,
+     case   quis  ||  Quis
+     case   et  ||  Et
+     after : Offertorium Ps . Benedictus es Domine , doce me justificationes tuas , et non
+
+######## Quad6 | Dominica in Palmis
+  segment lines 22045-22095, @@PAGE 102 (pdf 103, printed 138): AD MISSAM / Statio ad S. Joannem in Laterano / Officium / Ps. 21
+  sections: Officium@22047, Oratio@22059, Lectio Epistolae beati Pauli@22077
+  == ['Quad6', 'or', 0] @@PAGE 102-102 (pdf 103, p.138) line 22060 ratio 0.857
+     before: mea verba delictorum meorum . Domine ne longe . Oratio
+     punct  humáno géneri , ad  ||  ∅
+     punct  subíre fecísti : concéde  ||  ;
+     punct  concéde propítius ; ut  ||  :
+     WORD   resurrectiónis consórtia mereámur .  ||   => : Per eúmdem Dóminum
+     concl: site[Per eúndem Dóminum nos] missal[Per eúmdem]
+  == ['Quad6', 'se', 0] @@PAGE 106-106 (pdf 107, p.146) line 22722 ratio 0.939 (outside segment)
+     before: , et in siti mea potaverunt me aceto . Secreta
+     WORD   Concéde , quǽsumus , Dómine :  ||   => Dómine
+     WORD   , quǽsumus , Dómine : ut óculis tuæ  ||  Dómine : => 
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Quad6', 'pc', 0] @@PAGE 106-106 (pdf 107, p.146) line 22734 ratio 0.821 (outside segment)
+     before: transire nisi bibam illum , fiat voluntas tua . Postcommunio
+     punct  operatiónem mystérii : et  ||  ,
+     punct  nostra purgéntur , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Quad6', 0, 'la'] @@PAGE 103-103 (pdf 104, p.140) line 22079 ratio 0.955
+     before: Lectio Epistolae beati Pauli Apostoli ad Philippenses , c .
+     case   qui  ||  Qui
+     punct  semetípsum exinanívit , formam  ||  ∅
+     WORD   in similitúdinem hóminum prædo . Factus , et  ||  prædo . => 
+     case   Factus  ||  factus
+     WORD   est super omne nomen : ut in  ||  nomen => nom¿ en : Hic genuflectitur¿
+     punct  lingua confiteátur , quia  ||  ∅
+     after : Ps . Tenuisti manum dexteram meam : et in voluntate tua deduxisti me ,
+  == ['Quad6', 1, 'la'] @@PAGE 103-106 (pdf 104, p.140) line 22169 ratio 0.959 (outside segment)
+     before: . Christi secundum Matthaeum , c . et r l
+     start? In  ||  
+     punct  senióres pópuli , in  ||  ∅
+     punct  indignáti sunt , dicéntes  ||  ∅
+     case   Jesus  ||  jesus
+     punct  corpus meum , ad  ||  :
+     case   azymórum  ||  Azymórum
+     case   væ  ||  Væ
+     case   bonum  ||  Bonum
+     WORD   Tu dixísti . Cœnántibus autem eis ,  ||  Cœnántibus => C Cenantibus¿
+     case   hoc  ||  Hoc
+     case   corpus  ||  Corpus
+     punct  accípiens cálicem , grátias  ||  ∅
+     split? egit  ||  e g it
+     case   sanguis  ||  Sanguis
+     case   montem  ||  Montem
+     WORD   Et si omnes Amen dico tibi ,  ||  Amen => scandalizáti fúerint in te , ego nunquam scandalizabor¿ . C Ait illi Jesus : Arnen
+     punct  hac nocte , ántequam  ||  ∅
+     VAR?   cœpit  ||  ccepit
+     case   sustinéte  ||  Sustinéte
+     punct  calix iste : verúmtamen  ||  .
+     case   verúmtamen  ||  Verúmtamen
+     punct  eos dormiéntes , et  ||  :
+     VAR?   fiat  ||  liat
+     case   erant  ||  Erant
+     case   ecce  ||  Ecce
+     case   ecce  ||  Ecce
+     VAR?   percútiens  ||  percudens
+     punct  locum suum : omnes  ||  .
+     case   omnes  ||  Omnes
+     split? plus quam  ||  plusquam
+     case   angelórum  ||  Angelórum
+     case   quotídie  ||  Quotídie
+     eol?   omne concílium , quærébant  ||  kept
+     case   et  ||  Et
+     case   quid  ||  Quid
+     case   quid  ||  Quid
+     punct  eum cecidérunt , álii  ||  :
+     case   et  ||  Et
+     WORD   quid dicis . Exeúnte autem illo jánuam  ||  Exeúnte => C Cxeunte¿
+     split? ibi  ||  ib i
+     punct  cum juraménto : Quia  ||  ,
+     VAR?   cœpit  ||  ccepit
+     punct  quod díxerat : Priúsquam  ||  ,
+     VAR?   prǽsidi  ||  pncsidi
+     punct  damnátus esset , pœniténtia  ||  ;
+     case   Ager  ||  ager
+     VAR?   prǽsidem  ||  prNesidem
+     case   rex  ||  Rex
+     punct  justo illi : multa  ||  .
+     case   multa  ||  Multa
+     WORD   . Tunc mílites prǽsidis suscipiéntes Jesum in  ||  prǽsidis => p residis¿
+     case   et  ||  Et
+     case   rex  ||  Rex
+     case   hunc  ||  Hunc
+     VAR?   mistum  ||  mixtum
+     case   prophétam  ||  Prophétam
+     punct  ipsíus scriptam : Hic  ||  ,
+     case   rex  ||  Rex
+     case   salva  ||  Salva
+     case   si  ||  Si
+     case   scribis  ||  Scribis
+     case   si  ||  Si
+     split? ei  ||  e i
+     case   confídit  ||  Confídit
+     case   dixit  ||  Dixit
+     punct  dixit enim : Quia  ||  ,
+     junk   Prred .  ||  
+     punct  ex eis , accéptam  ||  ∅
+     punct  : Sine , videámus  ||  ∅
+     junk   . Hic pausatur aliquantulum , et genuflectitur  ||  
+     punct  usque deórsum : et  ||  .
+     case   et  ||  Et
+     case   Jesum  ||  jesum
+     case   inter  ||  Inter
+     punct  erat Jesu : hic  ||  .
+     case   hic  ||  Hic
+     WORD   et ábiit . Erant autem ibi María  ||  Erant => Erat
+     punct  adhuc vivens : Post  ||  ,
+     punct  dicant plebi : Surréxit  ||  ,
+     case   et  ||  Et
+     after : Hic Sacerdos non signet seipsum , nec librum , neque eum osculetur : quod
+
+######## Quad6m | Feria II Hebdomadæ Sanctæ
+  segment lines 22743-22898, @@PAGE 106 (pdf 107, printed 146): FERIA SECUNDA / Statio ad S. Praxedem / Officium / Ps. 34
+  sections: Officium@22745, Oratio@22758, Lectio Isaiae Prophetae, c. 50@22768, Tractus Ps. 102 Domine non@22807, Sequentia sancti Evangelii@22822, Offertorium Ps. 142 Eripe@22859, Secreta@22867, Communio Ps. 34 Erube­@22875, Postcommunio@22881, Humiliate capita@22890, Oratio super populum@22892
+  == ['Quad6m', 'or', 0] @@PAGE 106-106 (pdf 107, p.146) line 22759 ratio 0.958
+     before: vobiscum . Oremus . Flectamus genua . Levate . Oratio
+     punct  , quǽsumus , omnípotens  ||  ∅
+     punct  : ut , qui  ||  ∅
+     concl: site[Qui tecum vivit et reg] missal[Qui tecum vivit]
+  == ['Quad6m', 'se', 0] @@PAGE 107-107 (pdf 108, p.148) line 22868 ratio 0.971
+     before: tuam , quia Deus meus es tu . Secreta HjeC
+     start? Hæc  ||  
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Quad6m', 'pc', 0] @@PAGE 107-107 (pdf 108, p.148) line 22882 ratio 0.857
+     before: et reverentia , qui maligna loquuntur adversus me . Postcommunio
+     punct  sancta fervórem : quo  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Quad6m', 'sp', 0] @@PAGE 107-107 (pdf 108, p.148) line 22893 ratio 1.000
+     before: , pag . Oremus . Humiliate capita vestra Deo .
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Quad6m', 0, 'la'] @@PAGE 106-106 (pdf 107, p.146) line 22769 ratio 0.972
+     before: , pag . Lectio Isaiae Prophetae , c . N
+     start? In  ||  
+     VAR?   percutiéntibus  ||  percudentibus
+     case   fáciem  ||  Fáciem
+     punct  Stemus simul : quis  ||  ,
+     case   quis  ||  Quis
+     punct  vestiméntum conteréntur : tínea  ||  ,
+     after : L . Ps . Exsurge Domine , et intende judicio meo : Deus meus
+  == ['Quad6m', 1, 'la'] @@PAGE 106-106 (pdf 107, p.146) line 22825 ratio 0.983
+     before: tuum . Sequentia sancti Evangelii secundum Joannem . c .
+     VAR?   cœnam  ||  cenam
+     punct  illic est , et  ||  :
+     after : Offertorium Ps . Eripe me de inimicis meis Domine , ad te confugi :
+
+######## Quad6t | Feria III Hebdomadæ Sanctæ
+  segment lines 22898-23449, @@PAGE 107 (pdf 108, printed 148): FERIA TERTIA / Statio ad sanctam Priscam / Officium / Gal. 6
+  sections: Officium@22900, Oratio@22915, Lectio Jeremiae Prophetae,@22928, Passio Domini nostri Jesu@22960, Offertorium Ps. 139 Custodi@23405, Secreta@23409, Communio Ps. 68 Adversum@23417, Postcommunio@23428, Humiliate capita@23438, Oratio super populum@23440
+  == ['Quad6t', 'or', 0] @@PAGE 107-107 (pdf 108, p.148) line 22917 ratio 0.833
+     before: . Levate . Oratio Om n ipo t en s
+     start? Omnípotens  ||  
+     punct  sempitérne Deus : da  ||  ∅
+     WORD   indulgéntiam percípere mereámur .  ||   => : Per eúmdem Dóminum
+     concl: site[Per eúndem Dóminum nos] missal[Per eúmdem]
+  == ['Quad6t', 'se', 0] @@PAGE 109-109 (pdf 110, p.152) line 23410 ratio 0.909
+     before: peccatoris : et ab hominibus iniquis eripe me . Secreta
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  ista restáurent : quæ  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Quad6t', 'pc', 0] @@PAGE 109-109 (pdf 110, p.152) line 23429 ratio 0.811
+     before: tempus beneplaciti Deus , in multitudine misericordiae tuae . Postcommunio
+     punct  omnípotens Deus : et  ||  ,
+     punct  nostra curéntur , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Quad6t', 'sp', 0] @@PAGE 109-109 (pdf 110, p.152) line 23441 ratio 1.000
+     before: , pag . Oremus . Humiliate capita vestra Deo .
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Quad6t', 0, 'la'] @@PAGE 107-107 (pdf 108, p.148) line 22930 ratio 0.957
+     before: Oratio , pag . Lectio Jeremiae Prophetae , c .
+     eol?   : Dómine , demonstrásti  ||  kept
+     split? víctimam  ||  victim am
+     case   tibi  ||  Tibi
+     WORD   revelávi causam meam .  ||   => , Dómine Deus meus
+     after : Ps . Ego autem , dum mihi molesti essent , induebam me cilicio ,
+  == ['Quad6t', 1, 'la'] @@PAGE 107-109 (pdf 108, p.148) line 22963 ratio 0.956
+     before: adjutorium mihi . Christi secundum Marcum , c . et
+     case   ázyma  ||  Ázyma
+     case   et  ||  Et
+     punct  et recúmberet , venit  ||  :
+     punct  spicáti pretiósi : et  ||  ,
+     case   póterat  ||  Póterat
+     punct  in me : semper  ||  .
+     case   semper  ||  Semper
+     case   me  ||  Me
+     case   Ubicúmque  ||  ubicúmque
+     VAR?   Evangélium  ||  Evangellum
+     punct  Judas Iscariótes , unus  ||  ∅
+     punct  de duódecim , ábiit  ||  ∅
+     split? sunt  ||  su n t
+     case   azymórum  ||  Azymórum
+     punct  in civitátem , et  ||  :
+     split? bájulans  ||  baj ulans
+     case   et  ||  Et
+     case   magíster  ||  Magíster
+     VAR?   cœnáculum  ||  cenaculum
+     case   væ  ||  Væ
+     punct  hóminis tradétur : bonum  ||  .
+     case   bonum  ||  Bonum
+     case   corpus  ||  Corpus
+     case   et  ||  Et
+     case   sanguis  ||  Sanguis
+     case   montem  ||  Montem
+     case   Olivárum  ||  olivárum
+     split? Jesus  ||  Jesu s
+     punct  in te , sed  ||  :
+     WORD   , cui nomen ait discípulis suis  ||   => Gethsémani . Et
+     VAR?   cœpit  ||  ccepit
+     case   sustinéte  ||  Sustinéte
+     punct  super terram , et  ||  :
+     punct  orábat ut , si  ||  ∅
+     punct  eo hora . Et  ||  :
+     split? dixit  ||  d ix it
+     punct  possibília sunt : transfer  ||  ,
+     case   sed  ||  Sed
+     punct  et oráte , ut  ||  ∅
+     punct  ábiens orávit , eúmdem  ||  ∅
+     punct  eórum graváti , et  ||  ∅
+     case   venit  ||  Venit
+     split? ait  ||  a it
+     junk   . C  ||  
+     case   et  ||  Et
+     punct  summi sacerdótis , et  ||  :
+     punct  morti tráderent : nec  ||  ,
+     WORD   factum , et tríduum áliud non  ||   => per
+     case   et  ||  Et
+     case   quid  ||  Quid
+     junk   . C  ||  
+     case   et  ||  Et
+     case   et  ||  Et
+     VAR?   cœpit  ||  ccepit
+     punct  dícere circumstántibus : Quia  ||  ,
+     VAR?   cœpit  ||  ccepit
+     punct  et juráre : Quia  ||  ,
+     punct  Petrus verbi , quod  ||  ∅
+     punct  ei Jesus : Priúsquam  ||  ,
+     VAR?   cœpit  ||  ccepit
+     case   rex  ||  Rex
+     VAR?   petíssent  ||  petiissent
+     case   regem  ||  Regem
+     case   regi  ||  Regi
+     split? clamavérunt  ||  clam averunt
+     case   rex  ||  Rex
+     punct  patrem Alexándri , et  ||  ∅
+     case   salvum  ||  Salvum
+     punct  salvos fecit : seípsum  ||  ,
+     case   rex  ||  Rex
+     VAR?   convitiabántur  ||  conviciabantur
+     WORD   Deus meus , ut quid dereliquísti me  ||  ut => ul¿
+     junk   . Hic pausatur aliquantulum , et genuflectitur  ||  
+     split? ait  ||  a it
+     VAR?   Galilǽa  ||  Galikca
+     WORD   ascénderant Jerosólymam . Cum jam sero  ||   => Et
+     case   Cum  ||  cum
+     case   parascéve  ||  Parascéve
+     punct  ante sábbatum , venit  ||  ∅
+     after : Offertorium Ps . Custodi me Domine de manu peccatoris : et ab hominibus iniquis
+
+######## Quad6w | Feria IV Hebdomadæ Sanctæ
+  segment lines 23449-24138, @@PAGE 110 (pdf 111, printed 154): FERIA QUARTA / Statio ad S. Mariam Majorem / Officium / Phil. 2
+  sections: Officium@23451, Oratio@23468, Lectio Isaiae Prophetae,@23475, Oratio@23525, Lectio Isaiae Prophetae, c. 53@23535, Tractus Ps.@23601, Passio Domini nostri Jesu@23621, Offertorium Ps. 101 Domine@24094, Secreta@24098, Communio Ps. 101 Potum@24108, Postcommunio@24116, Humiliate@24127, Oratio super populum@24130
+  == ['Quad6w', 'or', 0] @@PAGE 110-110 (pdf 111, p.154) line 23469 ratio 0.905
+     before: , sed Oremus . Flectamus genua . Levate . Oratio
+     eol?   , quǽsumus , omnípotens  ||  kept
+     punct  : ut , qui  ||  ∅
+     punct  incessánter afflígimur , per  ||  ;
+     concl: site[Qui tecum vivit et reg] missal[Qui tecum vivit]
+  == ['Quad6w', 'se', 0] @@PAGE 113-113 (pdf 114, p.160) line 24099 ratio 0.893
+     before: perveniat : ne avertas faciem tuam a me . Secreta
+     punct  , quǽsumus , Dómine  ||  ∅
+     punct  dignánter operáre : ut  ||  ,
+     punct  : ut , quod  ||  ∅
+     punct  Fílii tui , Dómini  ||  ∅
+     eol?   Dómini nostri , mystério  ||  kept
+     concl: site[Per eúndem Dóminum nos] missal[Per eumdem Dominum]
+  == ['Quad6w', 'pc', 0] @@PAGE 113-113 (pdf 114, p.160) line 24117 ratio 0.877
+     before: misereberis Sion , quia venit tempus miserendi ejus . Postcommunio
+     punct  : ut , per  ||  ∅
+     punct  veneránda testántur , vitam  ||  ;
+     WORD   dedísse perpétuam confidámus .  ||   => : Per eúmdem Dóminum
+     concl: site[Per eúndem Dóminum nos] missal[Per eúmdem]
+  == ['Quad6w', 'sp', 0] @@PAGE 113-113 (pdf 114, p.160) line 24131 ratio 1.000
+     before: , pag . Oremus . Humiliate capita vestra Deo .
+     concl: site[Qui tecum vivit et reg] missal[Qui tecum vivit]
+  == ['Quad6w', 0, 'la'] @@PAGE 110-110 (pdf 111, p.154) line 23477 ratio 0.987
+     before: vivit . Lectio Isaiae Prophetae , c . et HJEC
+     start? Hæc  ||  
+     case   Salvátor  ||  salvátor
+     punct  cum eo , Quis  ||  .
+     case   calcávi  ||  Calcávi
+     case   et  ||  Et
+     case   et  ||  Et
+     WORD   réddidit nobis Dóminus .  ||   => Deus noster
+     after : Ps . Ne avertas faciem tuam a puero tuo : quoniam tribulor , velociter
+  == ['Quad6w', 1, 'la'] @@PAGE 110-110 (pdf 111, p.154) line 23536 ratio 0.970
+     before: , pag . Lectio Isaiae Prophetae , c . N
+     start? In  ||  
+     VAR?   Isaías  ||  Isalas
+     case   Et  ||  et
+     case   non  ||  Non
+     case   et  ||  Et
+     case   et  ||  Et
+     case   et  ||  Et
+     punct  iniquitátes nostras : attrítus  ||  ,
+     case   disciplína  ||  Disciplína
+     case   sicut  ||  Sicut
+     case   generatiónem  ||  Generatiónem
+     case   propter  ||  Propter
+     punct  morte sua , eo  ||  :
+     punct  in infirmitáte . Si  ||  :
+     punct  et saturábitur . In  ||  :
+     punct  ei plúrimos , et  ||  :
+     split? est ,  ||  e s t :
+     case   et  ||  Et
+     after : Tractus Ps . exaudi orationem meam : et clamor meus ad te veniat .
+  == ['Quad6w', 2, 'la'] @@PAGE 110-113 (pdf 111, p.154) line 23624 ratio 0.955
+     before: miserendi ejus . Christi secundum Lucam , c . et
+     case   azymórum  ||  Azymórum
+     case   timébant  ||  Timébant
+     case   Sátanas  ||  sátanas
+     punct  de duódecim : et  ||  .
+     case   et  ||  Et
+     punct  Et spopóndit , et  ||  .
+     case   et  ||  Et
+     case   azymórum  ||  Azymórum
+     case   pascha  ||  Pascha
+     case   pascha  ||  Pascha
+     case   sequímini  ||  Sequímini
+     case   pascha  ||  Pascha
+     VAR?   cœnáculum  ||  cenaculum
+     case   pascha  ||  Pascha
+     case   apóstoli  ||  Apóstoli
+     case   pascha  ||  Pascha
+     WORD   impleátur in regno ei . Et accépto  ||  ei => Dei
+     split? dixit  ||  d ix it
+     case   corpus  ||  Corpus
+     case   hoc  ||  Hoc
+     VAR?   cœnávit  ||  cenavit
+     case   sánguine  ||  Sánguine
+     case   verúmtamen  ||  Verúmtamen
+     case   sed  ||  Sed
+     case   et  ||  Et
+     split? minístrat  ||  m inistrat
+     case   vos  ||  Vos
+     punct  tentatiónibus meis . Et  ||  :
+     punct  regno meo , et  ||  :
+     case   Sátanas  ||  sátanas
+     case   ego  ||  Ego
+     case   et  ||  Et
+     punct  Dico tibi , Petre  ||  ∅
+     junk   i  ||  
+     eol?   , tollat : simíliter  ||  kept
+     case   et  ||  Et
+     junk   : C  ||  
+     case   montem  ||  Montem
+     case   Olivárum  ||  olivárum
+     case   verúmtamen  ||  Verúmtamen
+     case   ángelus  ||  Ángelus
+     punct  antecedébat eos , et  ||  :
+     case   et  ||  Et
+     case   sed  ||  Sed
+     split? dixit  ||  d ix it
+     split? ait  ||  a it
+     punct  respéxit Petrum , et  ||  .
+     case   et  ||  Et
+     punct  sicut díxerat : Quia  ||  ,
+     case   si  ||  Si
+     split? ait  ||  a it
+     case   regem  ||  Regem
+     WORD   , dicens : Tu es rex Judæórum  ||  Tu => S T v
+     case   rex  ||  Rex
+     case   nam  ||  Nam
+     punct  Pilátus autem , convocátis  ||  ∅
+     case   nam  ||  Nam
+     WORD   . Emendátum ergo dimíttam . Necésse  ||   => illum
+     junk   . C  ||  
+     case   qui  ||  Qui
+     case   corrípiam  ||  Corrípiam
+     case   et  ||  Et
+     punct  quem petébant : Jesum  ||  ,
+     junk   i  ||  
+     punct  dícere móntibus : Cádite  ||  ,
+     punct  et cóllibus : Operíte  ||  ,
+     VAR?   duo  ||  auo
+     case   et  ||  Et
+     case   rex  ||  Rex
+     case   græcis  ||  Græcis
+     case   latínis  ||  Latínis
+     case   hebráicis  ||  Hebráicis
+     punct  et hebráicis : Hic  ||  ,
+     case   rex  ||  Rex
+     punct  est sol , et  ||  :
+     case   et  ||  Et
+     junk   . Hic pausatur aliquantulum , et genujlectitur  ||  
+     punct  a longe , et  ||  :
+     VAR?   Galilǽa  ||  Galibea
+     WORD   Galilǽa , hæc ecce vir nómine  ||   => vidéntes . T
+     junk   E  ||  
+     punct  áctibus eórum : ab  ||  ∅
+     VAR?   Arimathǽa  ||  Arimathzea
+     VAR?   Judǽæ  ||  Judseae
+     punct  regnum Dei : hic  ||  .
+     case   hic  ||  Hic
+     case   et  ||  Et
+     after : Offertorium Ps . Domine exaudi orationem meam , et clamor meus ad te perveniat
+
+######## Quad6h | Feria V in Cena Domini
+  segment lines 24676-26043, @@PAGE 116 (pdf 117, printed 166): IN PARASCEVE / Statio ad S . Crucem in Jerusalem / DUM Sexta et Nona cantantur, / Prior et ministri induant se ad
+  sections: Officium, et Sacrista superficiem@24680, Tractus Ilabacuc 3 Domine@24732, Oratio@24752, Lectionis, sequens Lectio@24772, Tractus Ps. 139 Eripe me@24824, Oratio@25274, Oratio@25298, Oratio@25319, Oratio@25344, Oratio@25372, Oratio@25396, Oratio@25417, Oratio@25442, Oratio@25791
+  == ['Quad6h', 'or', 0] @@PAGE 116-116 (pdf 117, p.166) line 24753 ratio 0.932
+     before: genua , praemisso tantum Oremus , dicat Orationem . Oratio
+     punct  prǽmium sumpsit , concéde  ||  ;
+     punct  : ut , sicut  ||  ∅
+     eol?   Iesus Christus , Dóminus  ||  kept
+     punct  Dóminus noster , divérsa  ||  ∅
+     concl: site[Qui tecum vivit et reg] missal[Qui tecum vivit]
+  == ['Quad6h', 'se', 0] @@PAGE 114-114 (pdf 115, p.162) line 24347 ratio 0.987 (outside segment)
+     before: , sed vivam , et narrabo opera Domini . Secreta
+     punct  Iesus Christus , Fílius  ||  ∅
+     concl: site[Qui tecum vivit et reg] missal[Qui tecum vivit]
+  == ['Quad6h', 'pc', 0] @@PAGE 115-115 (pdf 116, p.164) line 24526 ratio 0.816 (outside segment)
+     before: reversus ad librum dicat more solito : Oremus . Fostcommunio
+     punct  , quǽsumus , Dómine  ||  ∅
+     punct  , Dómine , Deus  ||  ∅
+     punct  : ut , quod  ||  ∅
+     punct  mortalitátis exséquimur , immortalitátis  ||  ;
+     WORD   tuæ múnere consequámur .  ||   => : Per Dóminum nostrum
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Quad6h', 0, 'la'] @@PAGE 113-114 (pdf 114, p.160) line 24213 ratio 0.970 (outside segment)
+     before: Epistolae beati Pauli Apostoli ad Corinthios . , c .
+     VAR?   cœnam  ||  cenam
+     VAR?   cœnam  ||  cenam
+     case   aut  ||  Aut
+     case   in  ||  In
+     split? dixit  ||  d ixit
+     case   hoc  ||  Hoc
+     case   corpus  ||  Corpus
+     VAR?   cœnávit  ||  cenavit
+     case   sánguine  ||  Sánguine
+     punct  cálicem bibétis , mortem  ||  :
+     punct  Dómini indígne , reus  ||  :
+     case   córporis  ||  Córporis
+     case   sánguinis  ||  Sánguinis
+     case   corpus  ||  Corpus
+     after : Phil . Christus factus est pro nobis obediens usque ad mortem , mortem autem
+  == ['Quad6h', 1, 'la'] @@PAGE 114-114 (pdf 115, p.162) line 24283 ratio 0.971 (outside segment)
+     before: nomen . Sequentia sancti Evangelii secundum Joannem . c .
+     VAR?   cœna  ||  cena
+     VAR?   cœna  ||  cena
+     case   et  ||  Et
+     split? Petrus  ||  P etrus
+     punct  nescis modo : scies  ||  ,
+     split? Jesus  ||  Jesu s
+     punct  proptérea dixit : Non  ||  ,
+     punct  vestiménta sua , cum  ||  :
+     punct  et Dómine , et  ||  :
+     case   sum  ||  Sum
+     after : Credo . Offertorium Ps . Dextera Domini fecit virtutem , dextera Domini exaltavit me
+
+######## Quad6f | Feria VI in Parasceve
+
+######## Quad6s | Sabbatum Sanctum
+
+######## Pasc0 | Dominica Resurrectionis
+  segment lines 29476-29607, @@PAGE 143 (pdf 144, printed 210): DOMINICA / RESURRECTIONIS / Totum Duplex I classis cum Octava solemnissima / Statio ad S . Mariam majorem
+  sections: Officium@29480, Oratio@29494, Lectio Epistolae beati Pauli@29504, Sequentia@29525, Offertorium Ps.@29577, Secreta@29581, Communio 1 Cor. 5 Pascha@29593, Postcommunio@29598
+  == ['Pasc0', 'or', 0] @@PAGE 143-143 (pdf 144, p.210) line 29495 ratio 0.862
+     before: . Gloria Patri . Gloria in excelsis Deo . Oratio
+     punct  nobis áditum , devícta  ||  ∅
+     punct  devícta morte , reserásti  ||  ∅
+     punct  præveniéndo aspíras , étiam  ||  ;
+     WORD   étiam adiuvándo proséquere .  ||   => : Per eúmdem
+     concl: site[Per eúndem Dóminum nos] missal[Per eúmdem]
+  == ['Pasc0', 'se', 0] @@PAGE 144-144 (pdf 145, p.212) line 29582 ratio 0.964
+     before: , dum resurgeret in judicio Deus , alleluia . Secreta
+     eol?   , quǽsumus , Dómine  ||  kept
+     eol?   : ut , Paschálibus  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc0', 'pc', 0] @@PAGE 144-144 (pdf 145, p.212) line 29599 ratio 0.864
+     before: et veritatis , alleluia , alleluia , alleluia . Postcommunio
+     eol?   : ut , quos  ||  kept
+     case   paschálibus  ||  Paschálibus
+     punct  paschálibus satiásti , tua  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc0', 0, 'la'] @@PAGE 143-143 (pdf 144, p.210) line 29507 ratio 0.989
+     before: Epistolae beati Pauli Apostoli ad Corinthios . , c .
+     case   non  ||  Non
+     punct  ferménto véteri , neque  ||  ∅
+     case   sed  ||  Sed
+     after : Ps . Haec dies , quam fecit Dominus : exsultemus , et laetemur in
+  == ['Pasc0', 1, 'la'] @@PAGE 144-144 (pdf 145, p.212) line 29552 ratio 0.984
+     before: Alleluia . Sequentia sancti Evangelii secundum Marcum , c .
+     WORD   monuméntum , orto sole . Et  ||   => jam
+     case   surréxit  ||  Surréxit
+     case   ibi  ||  Ibi
+     after : Credo . Offertorium Ps . Terra tremuit et quievit , dum resurgeret in judicio
+
+######## Pasc0m | Feria II in Oct Paschæ
+  segment lines 29607-29796, @@PAGE 144 (pdf 145, printed 212): FERIA SECUNDA / Totum Duplex I classis / Statio ad S . Petrum / Officium
+  sections: Officium@29610, Oratio@29621, Lectio Actuum Apostolorum,@29633, Sequentia sancti Evangelii@29684, Offertorium Matth. 28 Ange­@29772, Secreta@29777, Communio Luc. 24 Surrexit@29786, Postcommunio@29789
+  == ['Pasc0m', 'or', 0] @@PAGE 144-144 (pdf 145, p.212) line 29622 ratio 0.788
+     before: ejus . Gloria Patri . Gloria in excelsis . Oratio
+     WORD   Deus , qui sollemnitáte pascháli , mundo  ||  sollemnitáte => solemnitáte
+     case   pascháli  ||  Pascháli
+     eol?   sollemnitáte pascháli , mundo  ||  kept
+     punct  remédia contulísti : pópulum  ||  ;
+     WORD   , quǽsumus , cœlésti dono proséquere ;  ||  cœlésti => cælésti
+     punct  dono proséquere ; ut  ||  :
+     punct  consequi mereátur , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc0m', 'se', 0] @@PAGE 145-145 (pdf 146, p.214) line 29778 ratio 0.964
+     before: quaeritis , surrexit , sicut dixit , alleluia . Secreta
+     eol?   , quǽsumus , Dómine  ||  kept
+     eol?   : ut , paschálibus  ||  kept
+     case   paschálibus  ||  Paschálibus
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc0m', 'pc', 0] @@PAGE 145-145 (pdf 146, p.214) line 29790 ratio 0.864
+     before: . Surrexit Dominus , et apparuit Petro alleluia . Postcommunio
+     eol?   : ut , quos  ||  kept
+     case   paschálibus  ||  Paschálibus
+     punct  paschálibus satiásti , tua  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc0m', 0, 'la'] @@PAGE 144-144 (pdf 145, p.212) line 29635 ratio 0.991
+     before: : Per Dominum . Lectio Actuum Apostolorum , c .
+     case   Vos  ||  vos
+     case   sancto  ||  Sancto
+     punct  regióne Judæórum , et  ||  ∅
+     eol?   maniféstum fíeri , non  ||  kept
+     after : Tt . Ps . Haec dies , quam fecit Dominus : exsultemus , et
+  == ['Pasc0m', 1, 'la'] @@PAGE 144-145 (pdf 145, p.212) line 29687 ratio 0.982
+     before: pag . Sequentia sancti Evangelii secundum Lucam . c .
+     case   óculi  ||  Óculi
+     split? dixit  ||  d ix it
+     case   et  ||  Et
+     punct  crucifixérunt eum : nos  ||  .
+     case   nos  ||  Nos
+     case   et  ||  Et
+     case   angelórum  ||  Angelórum
+     WORD   ad eos : stulti , et  ||   => O
+     case   et  ||  Et
+     punct  , dicéntes : Quod  ||  ,
+     split? via ,  ||  v ia :
+     after : Credo . Offertorium Matth . Angelus Domini descendit de caelo , et dixit mulieribus
+
+######## Pasc0t | Feria III in Oct Paschæ
+  segment lines 29796-29944, @@PAGE 145 (pdf 146, printed 214): FERIA TERTIA / Totum Duplex I classis / Statio ad S . Paulum / Officium
+  sections: Officium@29799, Oratio@29813, Lectio Actuum Apostolorum,@29820, Sequentia sancti Evangelii@29872, Offertorium Ps. 17 Intonuit@29916, Secreta@29921, Communio Coi. 3 Si consur­@29932, Postcommunio@29938
+  == ['Pasc0t', 'or', 0] @@PAGE 145-145 (pdf 146, p.214) line 29814 ratio 0.816
+     before: ejus . Gloria Patri . Gloria in excelsis . Oratio
+     WORD   tuam novo semper fœtu multíplicas : concéde  ||  fœtu => fetu
+     punct  fámulis tuis ; ut  ||  ,
+     punct  vivéndo téneant , quod  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc0t', 'se', 0] @@PAGE 145-145 (pdf 146, p.214) line 29922 ratio 0.933
+     before: suam , et apparuerunt fontes aquarum , alleluia . Secreta
+     punct  : ut , per  ||  ∅
+     WORD   offícia , ad cœléstem glóriam transeámus .  ||  cœléstem => cæléstem
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum nostrum]
+  == ['Pasc0t', 'pc', 0] @@PAGE 146-146 (pdf 147, p.216) line 29939 ratio 0.842
+     before: sedens : quae sursum sunt sapite , alleluia . Postcommunio
+     eol?   , quǽsumus , omnípotens  ||  kept
+     case   paschális  ||  Paschális
+     punct  percéptio sacraménti , contínua  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc0t', 0, 'la'] @@PAGE 145-145 (pdf 146, p.214) line 29822 ratio 0.951
+     before: : Per Dominum . Lectio Actuum Apostolorum , c .
+     case   qui  ||  Qui
+     WORD   Jerúsalem : qui Et nos vobis  ||   => usque nunc sunt testes ejus ad plebem .
+     split? est  ||  e s t
+     WORD   nostris resúscitans Jesum .  ||   => Christum Dóminum nostrum
+     after : Ps . Haec dies , quam fecit Dominus : exsultemus , et laetemur in
+  == ['Pasc0t', 1, 'la'] @@PAGE 145-145 (pdf 146, p.214) line 29875 ratio 0.977
+     before: p . Sequentia sancti Evangelii secundum Lucam . c .
+     case   ego  ||  Ego
+     junk   post Pascha  ||  
+     case   palpáte  ||  Palpáte
+     split? man ; ducétur  ||  manducetur
+     WORD   locútus sum ad cum adhuc essem  ||   => vos ,
+     case   prophétis  ||  Prophétis
+     case   psalmis  ||  Psalmis
+     after : Credo . Offertorium Ps . Intonuit de caelo Dominus , et Altissimus dedit vocem
+
+######## Pasc0w | Feria IV in Oct Paschæ
+  segment lines 29944-30092, @@PAGE 146 (pdf 147, printed 216): FERIA QUARTA / Statio ad S. Laurentium extra muros / Officium / Matth. 25
+  sections: Officium@29946, Oratio@29961, Lectio Actuum Apostolorum,@29969, Sequentia sancti Evangelii@30007, Offertorium Ps. 77 Portas@30069, Secreta@30075, Communio Rom. 6 Christus@30081, Postcommunio@30086
+  == ['Pasc0w', 'or', 0] @@PAGE 146-146 (pdf 147, p.216) line 29962 ratio 0.857
+     before: ejus . Gloria Patri . Gloria in excelsis . Oratio
+     WORD   Resurrectiónis Domínicæ ánnua solemnitáte lætíficas : concéde  ||  solemnitáte => solemn . aate¿
+     punct  concéde propítius ; ut  ||  ,
+     punct  quæ ágimus , perveníre  ||  ;
+     concl: site[Per eúndem Dóminum nos] missal[Per eumdem .]
+  == ['Pasc0w', 'se', 0] @@PAGE 146-146 (pdf 147, p.216) line 30076 ratio 0.914
+     before: eis : panem Angelorum manducavit homo , alleluia . Secreta
+     case   paschálibus  ||  Paschálibus
+     punct  gáudiis immolámus : quibus  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc0w', 'pc', 0] @@PAGE 146-146 (pdf 147, p.216) line 30087 ratio 0.900
+     before: illi ultra non dominabitur , alleluia , alleluia . Postcommunio
+     punct  , quǽsumus , Dómine  ||  .
+     punct  vetustáte purgátos : sacraménti  ||  ;
+     concl: site[Qui vivis et regnas cu] missal[Qui vivis .]
+  == ['Pasc0w', 0, 'la'] @@PAGE 146-146 (pdf 147, p.216) line 29971 ratio 0.980
+     before: . Per eumdem . Lectio Actuum Apostolorum , c .
+     split? dixit  ||  d ixit
+     case   Audíte  ||  audíte
+     eol?   quidem tradidístis , et  ||  kept
+     eol?   fáciem Piláti , judicánte  ||  kept
+     case   auctórem  ||  Auctórem
+     after : TBl . Ps . Haec dies , quam fecit Dominus : exsultemus , et
+  == ['Pasc0w', 1, 'la'] @@PAGE 146-146 (pdf 147, p.216) line 30010 ratio 0.972
+     before: Alleluia . Sequentia sancti Evangelii secundum Joannem . c .
+     case   erant  ||  Erant
+     VAR?   Galilǽæ  ||  Galiheae
+     VAR?   Zebedǽi  ||  Zebedaii
+     VAR?   líttore  ||  litore
+     junk   Feria quinta post Pascha  ||  
+     punct  : Púeri , numquid  ||  ∅
+     punct  navígii rete , et  ||  :
+     eol?   cúbitis ducéntis , trahéntes  ||  kept
+     punct  interrogáre eum : Tu  ||  ,
+     after : Credo . Offertorium Ps . Portas cael : aperuit Dominus : et pluit illis
+
+######## Pasc0h | Feria V in Oct Paschæ
+  segment lines 30092-30272, @@PAGE 146 (pdf 147, printed 216): FERIA QUINTA / Statio ad SS . duodecim Apostolos / Officium / Sap. 1 0
+  sections: Officium@30094, Oratio@30112, Lectio Actuum Apostolorum,@30121, Offertorium Exo. 13 In die@30243, Secreta@30247, Communio 1 Petr. 2 Populus@30258, Postcommunio@30263
+  == ['Pasc0h', 'or', 0] @@PAGE 146-146 (pdf 147, p.216) line 30113 ratio 0.873
+     before: ejus . Gloria Patri . Gloria in excelsis . Oratio
+     case   géntium  ||  Géntium
+     punct  : da , ut  ||  ∅
+     punct  fides méntium , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc0h', 'se', 0] @@PAGE 147-147 (pdf 148, p.218) line 30248 ratio 0.936
+     before: in terram fluentem lac et mei , alleluia . Secreta
+     eol?   , quǽsumus , Dómine  ||  kept
+     eol?   : ut , confessióne  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc0h', 'pc', 0] @@PAGE 147-147 (pdf 148, p.218) line 30264 ratio 0.917
+     before: tenebris vocavit in admirabile lumen suum , alleluia . Postcommunio
+     punct  Exáudi , Dómine  ||  ∅
+     punct  , Dómine , preces  ||  ∅
+     punct  præséntis auxílium , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc0h', 0, 'la'] @@PAGE 146-147 (pdf 147, p.216) line 30123 ratio 0.959
+     before: : Per Dominum . Lectio Actuum Apostolorum , c .
+     VAR?   Æthiops  ||  yEthiops
+     VAR?   Æthíopum  ||  Ethiopum
+     punct  gazas ejus , vénerat  ||  :
+     split? ait  ||  a it
+     split? est  ||  e s t
+     after : ejus quis enarrabit , quoniam tolletur de terra vita ejus ? Respondens autem eunuchus
+  == ['Pasc0h', 1, 'la'] @@PAGE 147-147 (pdf 148, p.218) line 30205 ratio 0.958
+     before: . p Sequentia sancti Evangelii secundum Joannem . c .
+     punct  ergo fleret , inclinávit  ||  :
+     case   et  ||  Et
+     case   ángelos  ||  Ángelos
+     WORD   Illa exístimans quia hortulánus esset , dicit  ||  hortulánus => horFeria¿ sexta post Pascha tulanus¿
+     split? ei  ||  e i
+     eol?   : Dómine , si  ||  kept
+     punct  posuísti eum , et  ||  :
+     case   vade  ||  Vade
+     punct  annúntians discípulis : Quia  ||  ,
+     after : Credo . Offertorium Exo . In die solemnitatis vestrae , dicit Dominus , inducam
+
+######## Pasc0f | Feria VI in Oct Paschæ
+  segment lines 30272-30382, @@PAGE 147 (pdf 148, printed 218): FERIA SEXTA / Statio ad S . Mariam ad Martyres / Officium / Ps. 7 7
+  sections: Officium@30274, Oratio@30284, Lectio Epistolae beati Petri@30293, Offertorium Exo. 1 2 Erit vo­@30354, Secreta@30361, Communio Matth. 28 Data@30368, Postcommunio@30375
+  == ['Pasc0f', 'or', 0] @@PAGE 147-147 (pdf 148, p.218) line 30285 ratio 0.800
+     before: mei . Gloria Patri . Gloria in excelsis . Oratio
+     case   paschále  ||  Paschále
+     split? fœ dere  ||  foedere
+     punct  méntibus nostris ; ut  ||  ,
+     punct  ; ut , quod  ||  ∅
+     punct  professióne celebrámus , imitémur  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc0f', 'se', 0] @@PAGE 148-148 (pdf 149, p.220) line 30362 ratio 0.889
+     before: sempiternum diem , alleluia , alleluia , alleluia . Secreta
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  placátus assúme : quas  ||  ;
+     WORD   et pro acceleratióne cœléstis auxílii .  ||  cœléstis => cæléstis
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc0f', 'pc', 0] @@PAGE 148-148 (pdf 149, p.220) line 30376 ratio 0.857
+     before: , et Spiritus Sancti , alleluia , alleluia . Postcommunio
+     eol?   , quǽsumus , Dómine  ||  kept
+     eol?   : et , quem  ||  kept
+     punct  renováre mystériis , a  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc0f', 0, 'la'] @@PAGE 147-147 (pdf 148, p.218) line 30296 ratio 0.986
+     before: . Lectio Epistolae beati Petri Apostoli . , c .
+     WORD   símilis formæ salvos fecit baptísma : non  ||  fecit => facit
+     punct  Jesu Christi . Dómini  ||  ∅
+     case   Qui  ||  qui
+     after : Ps . Haec dies , quam fecit Dominus : exsultemus , et laetemur in
+  == ['Pasc0f', 1, 'la'] @@PAGE 148-148 (pdf 149, p.220) line 30333 ratio 0.989
+     before: Alleluia . Sequentia sancti Evangelii secundum Matthaeum , c .
+     WORD   omnes gentes : Deus : baptizántes eos in  ||  Deus : => 
+     case   sancti  ||  Sancti
+     case   et  ||  Et
+     after : Credo . Offertorium Exo . Erit vobis haec dies memorialis , alleluia : et
+
+######## Pasc0s | Sabbato in Oct Paschæ
+  segment lines 30382-30548, @@PAGE 148 (pdf 149, printed 220): SABBATO / Statio ad S . Joannem in Laterano / Officium / Ps. 104
+  sections: Officium@30384, Oratio@30395, Lectio Epistolae beati Petri@30402, Sequentia sancti Evangelii@30479, Offertorium Ps. 117 Bene­@30522, Secreta@30528, Communio Gal. 3 Omnes qui@30536, Postcommunio@30542
+  == ['Pasc0s', 'or', 0] @@PAGE 148-148 (pdf 149, p.220) line 30396 ratio 0.851
+     before: ejus . Gloria Patri . Gloria in excelsis . Oratio
+     eol?   , quǽsumus , omnípotens  ||  kept
+     punct  : ut , qui  ||  ∅
+     case   paschália  ||  Paschália
+     punct  venerándo égimus , per  ||  :
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc0s', 'se', 0] @@PAGE 149-149 (pdf 150, p.222) line 30529 ratio 0.960
+     before: , et illuxit nobis , alleluia , alleluia . Secreta
+     eol?   , quǽsumus , Dómine  ||  kept
+     case   paschália  ||  Paschália
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc0s', 'pc', 0] @@PAGE 149-149 (pdf 150, p.222) line 30543 ratio 0.714
+     before: Christo baptizati estis , Christum induistis , alleluia . Postcommunio
+     WORD   nostræ múnere vegetáti , quǽsumus ,  ||   => ; quǽsumus Dómine
+     WORD   múnere vegetáti , quǽsumus , Dómine : ut , hoc  ||  quǽsumus , Dómine : => 
+     punct  : ut , hoc  ||  ∅
+     punct  salútis auxílio , fides  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc0s', 0, 'la'] @@PAGE 148-148 (pdf 149, p.220) line 30405 ratio 0.985
+     before: . Lectio Epistolae beati Petri Apostoli . , c .
+     WORD   omnem malítiam , omnem dolum ,  ||   => et
+     punct  reprobavérunt ædificántes : hic  ||  ,
+     punct  caput ánguli , et  ||  :
+     case   qui  ||  Qui
+     after : Alleluia , alleluia . Ps . Haec dies , quam fecit Dominus : exsultemus
+  == ['Pasc0s', 1, 'la'] @@PAGE 148-149 (pdf 149, p.220) line 30482 ratio 0.994
+     before: signantur . Sequentia sancti Evangelii secundum Joannem . c .
+     punct  pósita linteámina : non  ||  ,
+     case   nondum  ||  Nondum
+     after : Credo . Offertorium Ps . Benedictus qui venit in nomine Domini : benediximus vobis
+
+######## Pasc1 | Dominica in Albis (in Oct Paschæ)
+  segment lines 30548-30704, @@PAGE 149 (pdf 150, printed 222): DOMINICA IN ALBIS / in Octava Paschae / Statio ad sanctum Pancratium / Officium
+  sections: Officium@30551, Oratio@30564, Lectio Epistolae beati Joannis@30571, Offertorium Matth. 28 An­@30673, Secreta@30678, Communio Joan. 20 Mitte@30687, Postcommunio@30692
+  == ['Pasc1', 'or', 0] @@PAGE 149-149 (pdf 150, p.222) line 30565 ratio 0.936
+     before: Jacob . Gloria Patri . Gloria in excelsis . Oratio
+     punct  : ut , qui  ||  ∅
+     case   paschália  ||  Paschália
+     punct  festa perégimus , hæc  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc1', 'se', 0] @@PAGE 149-149 (pdf 150, p.222) line 30679 ratio 0.571
+     before: Quem quaeritis , surrexit sicut dixit , alleluia . Secreta
+     !!! LOW RATIO — manual
+  == ['Pasc1', 'pc', 0] @@PAGE 149-149 (pdf 150, p.222) line 30693 ratio 0.943
+     before: , sed fidelis , alleluia , alleluia . Postcommunio QUiESUMUS
+     start? Quǽsumus  ||  
+     punct  , Dómine , Deus  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc1', 0, 'la'] @@PAGE 149-149 (pdf 150, p.222) line 30574 ratio 1.000
+     before: . Lectio Epistolae beati Joannis Apostoli . , c .
+     case   et  ||  Et
+     case   Fílius  ||  fílius
+     case   non  ||  Non
+     case   sanctus  ||  Sanctus
+     case   et  ||  Et
+     case   quóniam  ||  Quóniam
+     after : A lleluia , alleluia . K . Joan . Post dies octo , januis
+  == ['Pasc1', 1, 'la'] @@PAGE 149-149 (pdf 150, p.222) line 30620 ratio 0.979
+     before: . Ji Sequentia sancti Evangelii secundum Joannem . c .
+     WORD   , et fores omnípotens essent clausæ ,  ||  omnípotens => 
+     split? eis  ||  e is
+     punct  , insufflávit , et  ||  :
+     case   sanctum  ||  Sanctum
+     case   quorum  ||  Quorum
+     punct  ejus intus , et  ||  :
+     split? meum  ||  m eum
+     punct  : beáti , qui  ||  ∅
+     after : Credo . Offertorium Matth . Angelus Domini descendit de caelo , et dixit mulieribus
+
+######## Pasc2 | II post Pascha
+  segment lines 30704-30877, @@PAGE 150 (pdf 151, printed 224): DOMINICA PRIMA / post Octavam Paschae / Officium / Ps. 32
+  sections: Officium@30706, Oratio@30717, Lectio Epistolae beati Petri@30753, Offertorium Ps.@30812, Secreta@30817, Communio Joan. 1 0 Ego sum@30840, Postcommunio@30846
+  == ['Pasc2', 'or', 0] @@PAGE 150-150 (pdf 151, p.224) line 30718 ratio 0.812
+     before: collaudatio . Gloria Patri . Gloria in excelsis . Oratio
+     punct  mundum erexísti : fidélibus  ||  ;
+     punct  concéde lætítiam ; ut  ||  :
+     eol?   ; ut , quos  ||  kept
+     punct  eripuísti cásibus , gáudiis  ||  ;
+     WORD   fácias pérfrui sempitérnis .  ||   => : Per eúmdem Dóminum
+     concl: site[Per eúndem Dóminum nos] missal[Per eúmdem]
+  == ['Pasc2', 'se', 0] @@PAGE 150-150 (pdf 151, p.224) line 30818 ratio 0.947
+     before: manus meas , alleluia . Secreta Bened ictio n em
+     start? Benedictiónem  ||  
+     punct  : ut , quod  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc2', 'pc', 0] @@PAGE 150-150 (pdf 151, p.224) line 30847 ratio 0.727
+     before: cognoscunt me meae , alleluia , alleluia . Postcommunio PRESTA
+     start? Præsta  ||  
+     eol?   , quǽsumus , omnípotens  ||  kept
+     split? Deus  ||  D eu s
+     eol?   : ut , vivificatiónis  ||  kept
+     punct  grátiam consequéntes , in  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc2', 0, 'la'] @@PAGE 150-150 (pdf 151, p.224) line 30756 ratio 0.983
+     before: . Lectio Epistolae beati Petri Apostoli . , c .
+     punct  vestígia ejus : qui  ||  .
+     case   qui  ||  Qui
+     case   qui  ||  Qui
+     case   cum  ||  Cum
+     case   tradébat  ||  Tradébat
+     after : Alleluia , alleluia . Joan . Ego sum pastor bonus , et cognosco oves
+  == ['Pasc2', 1, 'la'] @@PAGE 150-150 (pdf 151, p.224) line 30786 ratio 1.000
+     before: Alleluia . Sequentia sancti Evangelii secundum Joannem . c .
+     case   et  ||  Et
+     case   mercenárius  ||  Mercenárius
+     case   et  ||  Et
+     after : Credo . Offertorium Ps . Deus Deus meus , ad te de luce vigilo
+
+######## Pasc2w | Solemnitas S. Joseph
+  segment lines 39162-39665, @@PAGE 195 (pdf 196, printed 314): IN SOLEMNITATE / S. JOSEPH SPONSI B. MARLE V. / Totum Duplex I classis cum Octava solemni / Officium
+  sections: Officium@39165, Oratio@39177, Postcommunio@39193, Lectio Libri Genesis, c. 49@39204, Sequentia sancti Evangelii@39261, Offertorium Ps. 147 Lauda@39278, Secreta@39283, Communio Matth.@39295, Postcommunio@39301, Officium@39313, Oratio@39328, Lectio Libri Sapientiae.@39340, Tractus Luc.@39369, Offertorium Judith 15 Quia@39417, Secreta@39423, Postcommunio@39464, Oratio@39637, Secreta@39648, Postcommunio@39655
+  == ['Pasc2w', 'or', 0] @@PAGE 195-195 (pdf 196, p.314) line 39178 ratio 0.844
+     before: Joseph . Gloria Patri . Gloria in excelsis . Oratio
+     WORD   beátum Ioseph sanctíssimæ Genetrícis tuæ sponsum elígere  ||  Genetrícis => Genitrícis
+     WORD   es : præsta , quǽsumus ;  ||   => quǽsumus
+     WORD   : præsta , quǽsumus ; ut , quem  ||  quǽsumus ; => 
+     punct  ; ut , quem  ||  ∅
+     punct  in terris , intercessórem  ||  ;
+     WORD   habére mereámur in cœlis :  ||  cœlis => cælis
+     concl: site[Qui vivis et regnas cu] missal[Qui vivis et]
+  == ['Pasc2w', 'se', 0] @@PAGE 196-196 (pdf 197, p.316) line 39285 ratio 0.947
+     before: . P . Alleluia . Secreta Sanctissim a Genitricis tus
+     start? Sanctíssimæ Genetrícis tuæ  ||  
+     concl: site[Qui vivis et regnas cu] missal[Qui vivis .]
+  == ['Pasc2w', 'pc', 0] @@PAGE 196-196 (pdf 197, p.316) line 39302 ratio 0.870
+     before: . T . P . Alleluia , alleluia . Postcommunio
+     punct  , quǽsumus , Dómine  ||  ∅
+     eol?   , Dómine , Deus  ||  kept
+     punct  : ut , sicut  ||  ∅
+     punct  ; ita , eius  ||  ∅
+     WORD   et intercessióne , cœléstis glóriæ fácias esse  ||  cœléstis => cæléstis
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc2w', 0, 'la'] @@PAGE 195-196 (pdf 196, p.314) line 39205 ratio 0.986
+     before: et regnas . Lectio Libri Genesis , c . FLIUS
+     start? Fílius  ||  
+     case   fíliæ  ||  Fíliæ
+     case   inde  ||  Inde
+     punct  patrum ejus , donec  ||  :
+     case   fiant  ||  Fiant
+     after : Alleluia , alleluia . . De quacumque tribulatione clamaverint ad me , exaudiam eos
+  == ['Pasc2w', 1, 'la'] @@PAGE 196-196 (pdf 197, p.316) line 39264 ratio 1.000
+     before: suos . Sequentia sancti Evangelii secundum Lucam . c .
+     case   sanctus  ||  Sanctus
+     case   et  ||  Et
+     after : Credo . Offertorium Ps . Lauda Jerusalem Dominum : quoniam confortavit seras portarum tuarum
+
+######## Pasc3 | III post Pascha
+  segment lines 30877-31028, @@PAGE 151 (pdf 152, printed 226): DOMINICA SECUNDA / post Octavam Paschae / Officium / Ps. 65
+  sections: Officium@30879, Oratio@30895, Lectio Epistolae beati Petri@30910, Offertorium Ps. 145 Lauda@31002, Secreta@31007, Communio Joan. 16 Modi­@31015, Postcommunio@31020
+  == ['Pasc3', 'or', 0] @@PAGE 151-151 (pdf 152, p.226) line 30896 ratio 0.851
+     before: tuae . Gloria Patri . Gloria in excelsis . Oratio
+     split? iustítiæ ,  ||  ju stitiae
+     case   christiána  ||  Christiána
+     split? inimíca  ||  inim ica
+     split? nómini  ||  nom ini
+     WORD   apta , sectári .  ||   => : P er¿ Dóminum
+     concl: site[Per Dóminum nostrum Ie] missal[Alias Orationes ,]
+  == ['Pasc3', 'se', 0] @@PAGE 151-151 (pdf 152, p.226) line 31008 ratio 0.914
+     before: : psallam Deo meo quamdiu ero , alleluia . Secreta
+     eol?   , quo , terréna  ||  kept
+     WORD   , discámus amáre cœléstia .  ||  cœléstia => cæléstia
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc3', 'pc', 0] @@PAGE 151-151 (pdf 152, p.226) line 31021 ratio 0.800
+     before: quia vado ad Patrem , alleluia , alleluia . Postcommunio
+     WORD   súmpsimus , quǽsumus , Dómine :  ||   => Dómine
+     WORD   , quǽsumus , Dómine : et spirituálibus nos  ||  Dómine : => 
+     punct  instáurent aliméntis , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc3', 0, 'la'] @@PAGE 151-151 (pdf 152, p.226) line 30913 ratio 0.959
+     before: . Lectio Epistolae beati Petri Apostoli . , c .
+     punct  Caríssimi , óbsecro  ||  :
+     case   óbsecro  ||  Óbsecro
+     junk   i  ||  
+     case   quia  ||  Quia
+     case   quasi  ||  Quasi
+     split? timéte  ||  tim ete
+     WORD   est enim grátia .  ||   => : In Christo Jesu Dómino nostro
+     after : Alleluia , alleluia . TP . Joan . Modicum , et non videbitis me
+  == ['Pasc3', 1, 'la'] @@PAGE 151-151 (pdf 152, p.226) line 30961 ratio 0.961
+     before: Alleluia . Sequentia sancti Evangelii secundum Joannem . c .
+     punct  dicit nobis : Módicum  ||  ,
+     punct  quod dicit : Módicum  ||  ,
+     punct  dixit eis : De  ||  ;
+     punct  quia dixi : Módicum  ||  ,
+     split? me  ||  m e
+     case   vos  ||  Vos
+     case   cum  ||  Cum
+     punct  propter gáudium , quia  ||  :
+     case   et  ||  Et
+     after : Credo . Offertorium Ps . Lauda anima mea Dominum , laudabo Dominum in vita
+
+######## Pasc4 | IV post Pascha
+  segment lines 31028-31158, @@PAGE 151 (pdf 152, printed 226): DOMINICA TERTIA / post Octavam Paschae / Officium / Ps. 9 7
+  sections: Officium@31030, Oratio@31041, Lectio Epistolae beati Jacobi@31052, Sequentia sancti Evangelii@31086, Offertorium Ps. 65 Jubilate@31122, Secreta@31129, Communio Joan. 16 Cum ve­@31142, Postcommunio@31147
+  == ['Pasc4', 'or', 0] @@PAGE 151-151 (pdf 152, p.226) line 31042 ratio 0.895
+     before: Patri . Gloria in excelsis . Oratio De u s
+     start? Deus  ||  
+     punct  éfficis voluntátis : da  ||  ;
+     punct  sint corda , ubi  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc4', 'se', 0] @@PAGE 152-152 (pdf 153, p.228) line 31130 ratio 0.848
+     before: , quanta fecit Dominus animae meae , alleluia . Secreta
+     punct  qui nos , per  ||  ∅
+     split? commércia  ||  com m ercia
+     WORD   effecísti : præsta , quǽsumus ;  ||   => quǽsumus
+     WORD   : præsta , quǽsumus ; ut , sicut  ||  quǽsumus ; => 
+     punct  ; ut , sicut  ||  ∅
+     punct  móribus assequámur :  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[. Per Dominum]
+  == ['Pasc4', 'pc', 0] @@PAGE 152-152 (pdf 153, p.228) line 31148 ratio 0.873
+     before: , et de judicio , alleluia , alleluia . Postcommunio
+     eol?   , Dómine , Deus  ||  kept
+     punct  fidéliter súmpsimus , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc4', 0, 'la'] @@PAGE 151-151 (pdf 152, p.226) line 31055 ratio 0.989
+     before: prima Dominica , pag . Apostoli . c . CARISSIMI
+     start? Dilectíssimi  ||  
+     after : Alleluia , alleluia . D . Joan . Vado ad eum , qui misit
+  == ['Pasc4', 1, 'la'] @@PAGE 152-152 (pdf 153, p.228) line 31089 ratio 0.934
+     before: Alleluia . Sequentia sancti Evangelii secundum Joannem . c .
+     VAR?   suis  ||  siiis
+     punct  misit me : et  ||  ;
+     punct  intérrogat me : Quo  ||  ,
+     case   si  ||  Si
+     case   si  ||  Si
+     punct  peccáto quidem , quia  ||  :
+     punct  in me . De  ||  :
+     punct  justítia vero , quia  ||  :
+     punct  Patrem vado , et  ||  :
+     punct  vidébitis me . De  ||  :
+     punct  judício autem , quia  ||  :
+     punct  vobis dícere , sed  ||  :
+     punct  omnem veritátem : non  ||  .
+     case   non  ||  Non
+     punct  a semetípso , sed  ||  :
+     after : Credo . Offertorium Ps . Jubilate Deo universa terra , psalmum dicite nomini ejus
+
+######## Pasc5 | V post Pascha
+  segment lines 31158-31290, @@PAGE 152 (pdf 153, printed 228): DOMINICA QUARTA / post Octavam Paschae / Officium / Isai. 48
+  sections: Officium@31160, Oratio@31172, Lectio Epistolae beati Jacobi@31183, Offertorium Ps. 65 Benedi­@31255, Secreta@31265, Communio Ps. 95 Cantate Do­@31274, Postcommunio@31282
+  == ['Pasc5', 'or', 0] @@PAGE 152-152 (pdf 153, p.228) line 31173 ratio 0.881
+     before: ejus . Gloria Patri . Gloria in excelsis . Oratio
+     punct  cuncta procédunt , largíre  ||  :
+     punct  supplícibus tuis : ut  ||  ;
+     punct  recta sunt ; et  ||  ,
+     eol?   ; et , te  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc5', 'se', 0] @@PAGE 152-152 (pdf 153, p.228) line 31266 ratio 0.864
+     before: , et misericordiam suam a me , alleluia . Secreta
+     punct  : ut , per  ||  ∅
+     VAR?   piæ  ||  pise
+     punct  devotiónis offícia , ad  ||  ∅
+     WORD   offícia , ad cœléstem glóriam transeámus .  ||  cœléstem => cæléstem
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc5', 'pc', 0] @@PAGE 153-153 (pdf 154, p.230) line 31283 ratio 0.800
+     before: in diem salutare ejus , alleluia , alleluia . Postcommunio
+     split? cæléstis  ||  cae lestis
+     punct  virtúte satiátis : et  ||  ;
+     punct  et desideráre , quæ  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc5', 0, 'la'] @@PAGE 152-152 (pdf 153, p.228) line 31186 ratio 0.981
+     before: om inica quarta post Octavam Paschae Apostoli . c .
+     case   considerávit  ||  Considerávit
+     punct  perféctam libertátis , et  ||  ∅
+     split? est  ||  e s t
+     case   Visitáre  ||  visitáre
+     after : Alleluia , alleluia . Joan . Usque modo non petistis quidquam in nomine meo
+  == ['Pasc5', 1, 'la'] @@PAGE 152-152 (pdf 153, p.228) line 31225 ratio 0.988
+     before: Alleluia . Sequentia sancti Evangelii secundum Joannem . c .
+     case   pétite  ||  Pétite
+     case   et  ||  Et
+     case   ipse  ||  Ipse
+     punct  nullum dicis : nunc  ||  .
+     case   nunc  ||  Nunc
+     case   in  ||  In
+     after : Credo . Offertorium Ps . Benedicite gentes Dominum Deum nostrum , et obaudite vocem
+
+######## Litaniis | In Litaniis Majoribus et Minoribus
+  segment lines 31464-31661, @@PAGE 153 (pdf 154, printed 230): AD MISSAM / Officium / Ps. 17 / Ex a u d iv it de templo san­
+  sections: Officium@31465, Oratio@31476, Lectio Epistolae beati Jacobi@31514, Offertorium Ps. 108 Confi­@31585, Secreta@31592, Communio Luc.@31616
+  == ['Litaniis', 'or', 0] @@PAGE 153-153 (pdf 154, p.230) line 31477 ratio 0.909
+     before: meum , et liberator meus . Gloria Patri . Oratio
+     eol?   , quǽsumus , omnípotens  ||  kept
+     punct  : ut , qui  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Litaniis', 'se', 0] @@PAGE 154-154 (pdf 155, p.232) line 31593 ratio 0.889
+     before: faceret a persequentibus animam meam , alleluia . Secreta HAX
+     start? Hæc  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  , Dómine , et  ||  ∅
+     punct  dona concílient :  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[. Per Dominum]
+  == ['Litaniis', 'pc', 0] @@PAGE 154-154 (pdf 155, p.232) line 31624 ratio 0.877
+     before: , invenit , et pulsanti aperietur , alleluia . Postcommunic
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  : ut , dum  ||  ∅
+     punct  tribulatióne percípimus , de  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Litaniis', 0, 'la'] @@PAGE 154-154 (pdf 155, p.232) line 31517 ratio 0.995
+     before: eumdem . Apostoli . c . CA R ISSIM I
+     start? Caríssimi  ||  
+     case   multum  ||  Multum
+     after : Alleluia . Ps . Confitemini Domino quoniam bonus : quoniam in saeculum misericordia ejus
+  == ['Litaniis', 1, 'la'] @@PAGE 154-154 (pdf 155, p.232) line 31546 ratio 0.951
+     before: Alleluia . Sequentia sancti Evangelii secundum Lucam . c .
+     punct  dicet illi : Amíce  ||  ,
+     punct  ante illum , et  ||  :
+     split? deíntus  ||  de intus
+     punct  respóndens dicat : Noli  ||  ,
+     punct  in cubíli : non  ||  ,
+     punct  dare tibi . Et  ||  ?
+     split? etsi  ||  et si
+     case   quǽrite  ||  Quǽrite
+     case   pulsáte  ||  Pulsáte
+     punct  Aut piscem , numquid  ||  :
+     punct  petíerit ovum , numquid  ||  :
+     punct  ergo vos , cum  ||  ∅
+     case   Spíritum  ||  spíritum
+     after : Offertorium Ps . Confitebor Domino nimis in ore meo , et in medio multorum
+
+######## Asc | Ascensio
+  segment lines 31860-32014, @@PAGE 156 (pdf 157, printed 237): AD MISSAM / Statio ad S . Petrum / Officium / Act. 1
+  sections: Officium@31862, Oratio@31875, Lectio Actuum Apostolorum,@31884, Sequentia sancti Evangelii@31943, Offertorium Act. 1 Viri Gali­@31975, Secreta@31982, Communio Ps. 67 Psallite@31997, Postcommunio@32004
+  == ['Asc', 'or', 0] @@PAGE 156-156 (pdf 157, p.237) line 31876 ratio 0.814
+     before: albis . Gloria Patri . Gloria in excelsis . Oratio
+     eol?   , quǽsumus , omnípotens  ||  kept
+     punct  : ut , qui  ||  ∅
+     eol?   Unigénitum tuum , Redemptórem  ||  kept
+     punct  Redemptórem nostrum , ad  ||  ∅
+     WORD   nostrum , ad cœlos ascendísse crédimus ;  ||  cœlos => cælos
+     WORD   quoque mente in cœléstibus habitémus .  ||  cœléstibus => cæléstibus
+     WORD   in cœléstibus habitémus .  ||   => : Per eúmdem
+     concl: site[Per eúndem Dóminum nos] missal[Per eúmdem]
+  == ['Asc', 'se', 0] @@PAGE 156-156 (pdf 157, p.237) line 31983 ratio 0.877
+     before: , alleluia . Secreta Su s c i p e
+     start? Súscipe ,  ||  
+     punct  , Dómine , múnera  ||  ∅
+     punct  Ascensióne deférimus : et  ||  ;
+     punct  concéde propítius ; ut  ||  ,
+     concl: site[Per eúndem Dóminum nos] missal[Per eumdem Dominum]
+  == ['Asc', 'pc', 0] @@PAGE 157-157 (pdf 158, p.238) line 32005 ratio 0.878
+     before: caelorum , ad orientem , alleluia . Postcommunio PR ESTA
+     start? Præsta  ||  
+     eol?   , quǽsumus , omnípotens  ||  kept
+     punct  : ut , quæ  ||  ∅
+     punct  suménda percépimus , invisíbili  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum nostrum]
+  == ['Asc', 0, 'la'] @@PAGE 156-156 (pdf 157, p.237) line 31886 ratio 0.970
+     before: tantum Oratio dicatur . Lectio Actuum Apostolorum , c .
+     punct  de ómnibus , o  ||  ∅
+     case   sanctum  ||  Sanctum
+     case   quibus  ||  Quibus
+     split? meum  ||  m eum
+     case   quia  ||  Quia
+     case   sancto  ||  Sancto
+     WORD   dicéntes : Dómine si in témpore  ||   => , In die Ascensionis¿ Dómini
+     case   sancti  ||  Sancti
+     split? est  ||  e s t
+     punct  Viri Galilǽi , quid  ||  ∅
+     after : Alleluia , alleluia . Ps . Ascendit Deus in jubilatione , et Dominus in
+  == ['Asc', 1, 'la'] @@PAGE 156-156 (pdf 157, p.237) line 31946 ratio 0.996
+     before: Alleluia . Sequentia sancti Evangelii secundum Marcum , c .
+     case   qui  ||  Qui
+     case   et  ||  Et
+     case   super  ||  Super
+     after : Credo . Offertorium Act . Viri Galilaei quid admiramini aspicientes in caelum ? hic
+
+######## Pasc6 | in Oct Ascensione Domini
+  segment lines 32014-32133, @@PAGE 157 (pdf 158, printed 238): DOMINICA INFRA / OCTAVAM / ASCENSIONIS / Officium
+  sections: Officium@32017, Oratio@32031, Lectio Epistolae beati Petri@32039, Sequentia sancti Evangelii@32071, Offertorium Ps. 46 Ascendit@32095, Secreta@32100, Communio Joan. 17 Pater,@32110, Postcommunio@32117
+  == ['Pasc6', 'or', 0] @@PAGE 157-157 (pdf 158, p.238) line 32032 ratio 0.844
+     before: timebo ? Gloria Patri . Gloria in excelsis . Oratio
+     split? Deus  ||  D eu s
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc6', 'se', 0] @@PAGE 157-157 (pdf 158, p.238) line 32101 ratio 0.938
+     before: jubilatione , et Dominus in voce tubae , alleluia .
+     punct  immaculáta puríficent : et  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc6', 'pc', 0] @@PAGE 157-157 (pdf 158, p.238) line 32118 ratio 0.789
+     before: serves eos a malo , alleluia , alleluia . Postcommunio
+     punct  munéribus sacris : da  ||  ;
+     WORD   sacris : da , quǽsumus ;  ||   => quǽsumus
+     WORD   : da , quǽsumus ; ut in gratiárum  ||  quǽsumus ; => 
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pasc6', 0, 'la'] @@PAGE 157-157 (pdf 158, p.238) line 32042 ratio 0.975
+     before: . Lectio Epistolae beati Petri Apostoli . , c .
+     punct  sine murmuratióne . Unusquísque  ||  :
+     case   si  ||  Si
+     WORD   per Jesum Christum .  ||   => Dóminum nostrum
+     after : Alleluia , alleluia . . Ps . Ascendit Deus in jubilatione , et Dominus
+  == ['Pasc6', 1, 'la'] @@PAGE 157-157 (pdf 158, p.238) line 32074 ratio 0.977
+     before: . Sequentia sancti Evangelii secundum Joannem . c . et
+     case   et  ||  Et
+     case   sed  ||  Sed
+     punct  sum vobis , ut  ||  :
+     WORD   vénerit hora eórum , reminiscámini quia  ||   => reminiscámini
+     WORD   hora eórum , reminiscámini quia ego dixi  ||  reminiscámini => 
+     after : Credo . Offertorium Ps . Ascendit Deus in jubilatione , et Dominus in voce
+
+######## Pasc6s | Sabbato in Vigilia Pentecostes
+  segment lines 32133-32662, @@PAGE 159 (pdf 160, printed 242): IN VIGILIA / PENTECOSTES / Statio ad S. Joannem in Laterano / Di c t a Nona, Lectiones sequen­
+  sections: Lectiones, ac Orationes dicat, sicut@32144, Lectio prima@32146, Oratio@32238, Lectio secunda@32249, Tractus Deut. 32 Attende cae­@32295, Oratio@32310, Lectio tertia@32319, Tractus Isa. 5 Vinea facta@32357, Oratio@32368, Lectio quarta@32377, Oratio@32474, Tractus Ps. 41 Sicut cervus@32483, Oratio@32497, Oratio@32524, Lectio Actuum Apostolorum,@32533, Tractus Ps. 116 Laudate Do­@32575, Offertorium Ps. 103 Emitte@32616, Secreta@32621, Communio Joan. 7 Ultimo@32629, Postcommunio@32636, Officium@32646
+  == ['Pasc6s', 'or', 0] @@PAGE 159-159 (pdf 160, p.242) line 32525 ratio 0.941
+     before: excelsis , Sacerdos dicat : Dominus vobiscum . Oremus Oratio
+     split? Deus  ||  D eu s
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc6s', 'se', 0] @@PAGE 160-160 (pdf 161, p.244) line 32622 ratio 0.938
+     before: saecula , alleluia . Secreta Mu n e r a
+     start? Múnera  ||  
+     punct  , Dómine , obláta  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pasc6s', 'pc', 0] @@PAGE 160-160 (pdf 161, p.244) line 32637 ratio 1.000
+     before: erant credentes in eum , alleluia , alleluia . Postcommunio
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum nostrum]
+
+######## Pent0 | Dominica Pentecostes
+  segment lines 32662-32856, @@PAGE 160 (pdf 161, printed 244): DOMINICA / PENTECOSTES / Totum Duplex I classis cum Octava solemnissima / Statio ad S. Petrum
+  sections: Officium@32666, Oratio@32678, Lectio Actuum Apostolorum,@32691, Sequentia@32753, Offertorium Ps. 67 Confirma@32822, Secreta@32827, Communio Act. 2 Factus est@32840, Postcommunio@32847
+  == ['Pent0', 'or', 0] @@PAGE 160-160 (pdf 161, p.244) line 32679 ratio 0.761
+     before: Jerusalem . Gloria Patri . Gloria in excelsis . Oratio
+     WORD   semper consolatióne gaudére .  ||   => : Per Dóminum nostrum Iesum Christum Fílium tuum ; qui tecum vivit et regnat in unitáte eiúsdem
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent0', 'se', 0] @@PAGE 161-161 (pdf 162, p.246) line 32828 ratio 0.875
+     before: munera , alleluia . Secreta Mu n e r a
+     start? Múnera  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  obláta sanctífica : et  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent0', 'pc', 0] @@PAGE 161-161 (pdf 162, p.246) line 32849 ratio 0.600
+     before: alleluia , alleluia . Postcommunio Sa n c t i
+     start? Sancti  ||  
+     punct  mundet infúsio : et  ||  ;
+     WORD   íntima aspersióne fecúndet .  ||   => : Per Dóminum nostrum Iesum Christum Fílium tuum ; qui tecum vivit et regnat in unitáte eiúsdem
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent0', 0, 'la'] @@PAGE 160-160 (pdf 161, p.244) line 32693 ratio 0.978
+     before: unitate ejusdem . Lectio Actuum Apostolorum , c . CUM
+     WORD   Compleréntur dies Pentecóstes , erant omnes  ||  Pentecóstes => Peni¿ tecostes¿
+     case   et  ||  Et
+     case   et  ||  Et
+     case   sancto  ||  Sancto
+     case   sanctus  ||  Sanctus
+     VAR?   Ælamítæ  ||  Elamitae
+     VAR?   Ægýptum  ||  Egyptum
+     punct  circa Cyrénen : et  ||  ,
+     after : Alleluia , alleluia . . Ps . Emitte Spiritum tuum , et creabuntur :
+  == ['Pent0', 1, 'la'] @@PAGE 161-161 (pdf 162, p.246) line 32785 ratio 0.981
+     before: . f Sequentia sancti Evangelii secundum Joannem . c .
+     case   qui  ||  Qui
+     eol?   díligit me , sermónes  ||  kept
+     case   sanctus  ||  Sanctus
+     case   non  ||  Non
+     WORD   do vobis . Sion turbétur cor vestrum  ||  Sion => Non
+     punct  dixi vobis : Vado  ||  ,
+     punct  loquar vobíscum : venit  ||  .
+     case   venit  ||  Venit
+     after : Credo . Offertorium Ps . Confirma hoc Deus , quod operatus es in nobis
+
+######## Pent0m | Feria II in Oct Pentecostes
+  segment lines 32856-32972, @@PAGE 161 (pdf 162, printed 246): FERIA SECUNDA / Totum Duplex I classis / Statio ad S. Petrum ad Vincula / Officium
+  sections: Officium@32859, Oratio@32868, Lectio Actuum Apostolorum,@32876, Offertorium Ps. 17 Intonuit@32949, Secreta@32954, Communio Joan. 14 Spiritus@32961, Postcommunio@32965
+  == ['Pent0m', 'or', 0] @@PAGE 161-161 (pdf 162, p.246) line 32869 ratio 0.906
+     before: Patri . Gloria in excelsis . Oratio De u s
+     start? Deus  ||  
+     punct  ; ut , quibus  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent0m', 'se', 0] @@PAGE 162-162 (pdf 163, p.248) line 32955 ratio 0.468
+     before: , alleluia . Secreta Pr o p it iu s
+     !!! LOW RATIO — manual
+  == ['Pent0m', 'pc', 0] @@PAGE 162-162 (pdf 163, p.248) line 32966 ratio 0.762
+     before: alleluia , alleluia . Postcommunio Ad e s t o
+     start? Adésto  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  : et , quem  ||  ∅
+     WORD   , quem mystériis cœléstibus imbuísti , ab  ||  cœléstibus => cæléstibus
+     punct  cœléstibus imbuísti , ab  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent0m', 0, 'la'] @@PAGE 161-161 (pdf 162, p.246) line 32878 ratio 0.989
+     before: in unitate ejusdem . Lectio Actuum Apostolorum , c .
+     VAR?   illis  ||  iliis
+     case   sanctus  ||  Sanctus
+     case   sancti  ||  Sancti
+     case   sanctum  ||  Sanctum
+     after : Alleluia , alleluia . . Spiritus Sanctus procedens a throno . Apostolorum pectora invisibili
+  == ['Pent0m', 1, 'la'] @@PAGE 161-162 (pdf 162, p.246) line 32920 ratio 0.987
+     before: . f Sequentia sancti Evangelii secundum Joannem . c .
+     case   qui  ||  Qui
+     split? est  ||  e s t
+     case   erant  ||  Erant
+     case   qui  ||  Qui
+     after : Credo . Offertorium Ps . Intonuit de caelo Dominus , et Altissimus dedit vocem
+
+######## Pent0t | Feria III in Oct Pentecostes
+  segment lines 32972-33089, @@PAGE 162 (pdf 163, printed 248): FERIA TERTIA / Totum Duplex I classis / Statio ad S . Anastasiam / Officium
+  sections: Officium@32975, Oratio@32989, Lectio Actuum Apostolorum,@32999, Offertorium Ps. 77 Portas@33066, Secreta@33072, Communio Joan. 15 Spiritus,@33078, Postcommunio@33082
+  == ['Pent0t', 'or', 0] @@PAGE 162-162 (pdf 163, p.248) line 32991 ratio 0.840
+     before: . Gloria in excelsis . Oratio Ad s i t
+     start? Adsit  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  cleménter expúrget , et  ||  ;
+     WORD   ómnibus tueátur advérsis .  ||   => : Per Dóminum nostrum
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent0t', 'se', 0] @@PAGE 162-162 (pdf 163, p.248) line 33073 ratio 0.909
+     before: eis , panem Angelorum manducavit homo , alleluia . Secreta
+     eol?   , quǽsumus . Dómine  ||  kept
+     punct  præséntis oblátio : et  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent0t', 'pc', 0] @@PAGE 162-162 (pdf 163, p.248) line 33083 ratio 0.829
+     before: alleluia , alleluia . Postcommunio Me n t e s
+     start? Mentes  ||  
+     punct  , quǽsumus , Dómine  ||  ∅
+     punct  réparet sacraméntis : quia  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent0t', 0, 'la'] @@PAGE 162-162 (pdf 163, p.248) line 33001 ratio 0.985
+     before: in unitate ejusdem . Lectio Actuum Apostolorum , c .
+     punct  et Joánnem . Qui  ||  :
+     case   sanctum  ||  Sanctum
+     case   nondum  ||  Nondum
+     case   sanctum  ||  Sanctum
+     after : Alleluia , alleluia . Act . Loquebantur variis linguis Apostoli magnalia Dei . Alleluia
+  == ['Pent0t', 1, 'la'] @@PAGE 162-162 (pdf 163, p.248) line 33032 ratio 0.979
+     before: Pentecostes . Sequentia sancti Evangelii secundum Joannem . c .
+     VAR?   Pharisǽis  ||  Pharisans
+     punct  ascéndit aliúnde , ille  ||  :
+     punct  eis Jesus : illi  ||  .
+     case   illi  ||  Illi
+     after : Credo . Offertorium Ps . Portas caeli aperuit Dominus , et pluit illis manna
+
+######## Pent0w | Feria Quarta IV Temp. Pentecostes
+  segment lines 33089-33246, @@PAGE 162 (pdf 163, printed 248): FERIA QUARTA / Quatuor Temporum / Statio ad S. Mariam majorem / Officium
+  sections: Officium@33092, Oratio@33107, Lectio Actuum Apostolorum,@33118, Oratio@33157, Lectio Actuum Apostolorum@33165, Sequentia sancti Evangelii@33193, Offertorium Ps. 118 Medi­@33224, Secreta@33229, Communio Joan. 14 Pacem@33235, Postcommunio@33239
+  == ['Pent0w', 'or', 0] @@PAGE 162-162 (pdf 163, p.248) line 33108 ratio 0.926
+     before: vobiscum , sed Oremus Oratio Me n t e s
+     start? Mentes  ||  
+     punct  , quǽsumus , Dómine  ||  ∅
+     punct  , illúminet : et  ||  ;
+     concl: site[Qui tecum vivit et reg] missal[Qui tecum .]
+  == ['Pent0w', 'se', 0] @@PAGE 163-163 (pdf 164, p.250) line 33230 ratio 0.702
+     before: ad mandata tua , quae dilexi , alleluia . Secreta
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  dignánter operáre ; ut  ||  ,
+     punct  ; ut , quod  ||  ∅
+     WORD   piis afféctibus celebrémus :  ||   => . Per Dóminum . Commúnio Joan . Pacem meam do vobis , allelúja
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent0w', 'pc', 0] @@PAGE 163-163 (pdf 164, p.250) line 33240 ratio 0.923
+     before: : pacem relinquo vobis , alleluia , alleluia . Postcommunio
+     WORD   , Dómine , cœléstia sacraménta , quǽsumus  ||  cœléstia => cæléstia
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent0w', 0, 'la'] @@PAGE 163-163 (pdf 164, p.250) line 33120 ratio 0.986
+     before: in unitate ejusdem . Lectio Actuum Apostolorum , c .
+     punct  novíssimis diébus , dicit  ||  ∅
+     punct  dicit Dóminus , effúndam  ||  ∅
+     case   et  ||  Et
+     punct  ancíllas meas , in  ||  ∅
+     case   et  ||  Et
+     eol?   , sánguinem , et  ||  kept
+     punct  et ignem , et  ||  ∅
+     case   sol  ||  Sol
+     after : Alleluia . TP . Sap . Spiritus Domini replevit orbem terrarum : et hoc
+  == ['Pent0w', 1, 'la'] @@PAGE 163-163 (pdf 164, p.250) line 33167 ratio 1.000
+     before: . in unitate ejusdem . Lectio Actuum Apostolorum c .
+     after : Alleluia , alleluia . P . Act . Factus est repente de caelo sonus
+  == ['Pent0w', 2, 'la'] @@PAGE 163-163 (pdf 164, p.250) line 33196 ratio 0.981
+     before: Alleluia . Sequentia sancti Evangelii secundum Joannem . c .
+     case   et  ||  Et
+     junk   Feria quinta post Pentecosten  ||  
+     case   et  ||  Et
+     after : Credo . Offertorium Ps . Meditabor in mandatis tuis , quae dilexi valde :
+
+######## Pent0h | Feria V infra Oct. Pentecostes
+  segment lines 32662-32856, @@PAGE 160 (pdf 161, printed 244): DOMINICA / PENTECOSTES / Totum Duplex I classis cum Octava solemnissima / Statio ad S. Petrum
+  sections: Officium@32666, Oratio@32678, Lectio Actuum Apostolorum,@32691, Sequentia@32753, Offertorium Ps. 67 Confirma@32822, Secreta@32827, Communio Act. 2 Factus est@32840, Postcommunio@32847
+  == ['Pent0h', 'or', 0] @@PAGE 160-160 (pdf 161, p.244) line 32679 ratio 0.761
+     before: Jerusalem . Gloria Patri . Gloria in excelsis . Oratio
+     WORD   semper consolatióne gaudére .  ||   => : Per Dóminum nostrum Iesum Christum Fílium tuum ; qui tecum vivit et regnat in unitáte eiúsdem
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent0h', 'se', 0] @@PAGE 161-161 (pdf 162, p.246) line 32828 ratio 0.875
+     before: munera , alleluia . Secreta Mu n e r a
+     start? Múnera  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  oblata sanctífica : et  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent0h', 'pc', 0] @@PAGE 161-161 (pdf 162, p.246) line 32849 ratio 0.600
+     before: alleluia , alleluia . Postcommunio Sa n c t i
+     start? Sancti  ||  
+     punct  mundet infúsio : et  ||  ;
+     WORD   íntima aspersióne fecúndet .  ||   => : Per Dóminum nostrum Iesum Christum Fílium tuum ; qui tecum vivit et regnat in unitáte eiúsdem
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent0h', 0, 'la'] @@PAGE 163-163 (pdf 164, p.250) line 33272 ratio 1.000 (outside segment)
+     before: in unitate ejusdem . Lectio Actuum Apostolorum , c .
+     after : Alleluia , alleluia . P . Ps . Emitte Spiritum tuum , et creabuntur
+  == ['Pent0h', 1, 'la'] @@PAGE 163-164 (pdf 164, p.250) line 33301 ratio 0.995 (outside segment)
+     before: . f Sequentia sancti Evangelii secundum Lucam . c .
+     after : Credo . Offertorium Ps . Confirma hoc Deus , quod operatus es in nobis
+
+######## Pent0f | Feria Sexta IV Temp. Pentecostes
+  segment lines 33350-33486, @@PAGE 164 (pdf 165, printed 252): FERIA SEXTA / Quatuor Temporum / Statio ad S S . duodecim Apostolos / Officium
+  sections: Officium@33353, Oratio@33366, Lectio Joelis Prophetae, c. 2@33373, Offertorium Ps. 145 Lauda@33455, Secreta@33460, Communio Joan. 3 Spiritus@33470, Postcommunio@33475
+  == ['Pent0f', 'or', 0] @@PAGE 164-164 (pdf 165, p.252) line 33367 ratio 0.837
+     before: me . Gloria Patri . Gloria in excelsis . Oratio
+     punct  Ecclésiæ tuæ , miséricors  ||  ∅
+     punct  miséricors Deus : ut  ||  ;
+     eol?   : ut , Sancto  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent0f', 'se', 0] @@PAGE 164-164 (pdf 165, p.252) line 33461 ratio 0.920
+     before: : psallam Deo meo quamdiu ero , alleluia . Secreta
+     VAR?   absúmat  ||  assumat
+     punct  discipulórum Christi , Fílii  ||  ∅
+     punct  Fílii tui , per  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per eumdem .]
+  == ['Pent0f', 'pc', 0] @@PAGE 164-164 (pdf 165, p.252) line 33476 ratio 0.868
+     before: quo vadat , alleluia , alleluia , alleluia . Postcommunio
+     punct  dona mystérii : humíliter  ||  ,
+     punct  humíliter deprecántes ; ut  ||  :
+     punct  ; ut , quæ  ||  ∅
+     punct  fácere præcepísti , in  ||  ;
+     concl: site[Qui vivis et regnas cu] missal[Qui vivis .]
+  == ['Pent0f', 0, 'la'] @@PAGE 164-164 (pdf 165, p.252) line 33374 ratio 0.990
+     before: unitate ejusdem . Lectio Joelis Prophetae , c . HJEc
+     start? Hæc  ||  
+     punct  et serótinum , sicut  ||  ∅
+     case   et  ||  Et
+     after : Ait Dominus omnipotens . Alleluia , alleluia . Act . Dum complerentur dies Pentecostes
+  == ['Pent0f', 1, 'la'] @@PAGE 164-164 (pdf 165, p.252) line 33411 ratio 0.975
+     before: . f Sequentia sancti Evangelii secundum Lucam . c .
+     WORD   Factum est in Luna diérum , et  ||  Luna => una
+     VAR?   summisérunt  ||  submiserunt
+     case   scribæ  ||  Scribæ
+     punct  facílius dícere : Dimittúntur  ||  ,
+     punct  an dícere : Surge  ||  ,
+     case   tibi  ||  Tibi
+     WORD   tulit lectum , quo jacébat :  ||   => in
+     punct  , dicéntes : Quia  ||  ,
+     after : Credo . Offertorium Ps . Lauda anima mea Dominum , laudabo Dominum in vita
+
+######## Pent0s | Sabbato IV Temp. Pentecostes
+  segment lines 33486-33793, @@PAGE 165 (pdf 166, printed 254): SABBATO / Quatuor Temporum / Statio ad S. Petrum / Officium
+  sections: Officium@33489, Oratio@33503, Lectio Joelis Prophetae, c. 2@33511, Oratio@33536, Lectio Libri Levitici.@33544, Oratio@33586, Lectio Libri Deuteronomii,@33594, Oratio@33634, Lectio Libri Levitici.@33641, Oratio@33690, Lectio Danielis Prophetae, c. 3@33696, Oratio@33726, Lectio Epistolae beati Pauli@33732, Offertorium Ps. 87 Domine@33790
+  == ['Pent0s', 'or', 0] @@PAGE 165-165 (pdf 166, p.254) line 33504 ratio 0.826
+     before: sine Dominus vobiscum . . . sed dicatur Oremus Oratio
+     punct  , quǽsumus , Dómine  ||  ∅
+     VAR?   Sanctum  ||  Samctum
+     punct  cónditi sumus , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent0s', 'se', 0] @@PAGE 166-166 (pdf 167, p.256) line 33815 ratio 0.772 (outside segment)
+     before: oratio mea in conspectu tuo Domine , alleluia . Secreta
+     punct  , quǽsumus ; huius  ||  ,
+     WORD   tibi pectus offérre :  ||   => . Per Dóminum . Commúnio Joam¿ . Non vos relínquam órphanos
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent0s', 'pc', 0] @@PAGE 166-166 (pdf 167, p.256) line 33827 ratio 0.923 (outside segment)
+     before: et gaudebit cor vestrum , alleluia , alleluia . Postcommunio
+     punct  sancta fervórem : quo  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum nostrum]
+  == ['Pent0s', 0, 'la'] @@PAGE 165-165 (pdf 166, p.254) line 33512 ratio 0.974
+     before: . Lectio Joelis Prophetae , c . H ; EC
+     start? Hæc  ||  
+     case   senes  ||  Senes
+     punct  in cælo , et  ||  ∅
+     punct  , sánguinem , et  ||  ∅
+     punct  et ignem , et  ||  ∅
+     punct  Dómini magnus , et  ||  ∅
+     after : Alleluia . Ps . Emitte Spiritum tuum , et creabuntur : et renovabis faciem
+  == ['Pent0s', 1, 'la'] @@PAGE 165-165 (pdf 166, p.254) line 33546 ratio 0.974
+     before: in unitate ejusdem . Lectio Libri Levitici . c .
+     split? messis  ||  m essis
+     punct  messis vestræ , ad  ||  ∅
+     case   qui  ||  Qui
+     split? acceptábile  ||  accepta bile
+     eol?   id est , quinquagínta  ||  kept
+     case   omne  ||  Omne
+     after : Dicit Dominus omnipotens . bantur variis linguis Apostoli magnalia Dei . Oremus Oratio DEUS
+  == ['Pent0s', 2, 'la'] @@PAGE 165-165 (pdf 166, p.254) line 33596 ratio 0.986
+     before: : Per Dominum . Lectio Libri Deuteronomii , c .
+     case   terram  ||  Terram
+     case   accedésque  ||  Accedésque
+     VAR?   Ægýpto  ||  Egypto
+     case   terram  ||  Terram
+     VAR?   melle  ||  meile
+     case   terræ  ||  Terræ
+     after : Alleluia . H . Act . Factus est repente de caelo sonus advenientis spiritus
+  == ['Pent0s', 3, 'la'] @@PAGE 165-166 (pdf 166, p.254) line 33643 ratio 0.984
+     before: : Per Dominum . Lectio Libri Levitici . c .
+     split? seméntem  ||  sem entem
+     case   et  ||  Et
+     case   dormiétis  ||  Dormiétis
+     punct  malas béstias , et  ||  :
+     case   cadent  ||  Cadent
+     case   multiplicabímini  ||  Multiplicabímini
+     after : Dicit Dominus omnipotens . Alleluia . . Hic genuflectitur : VENI SANCTE SPIRITUS :
+  == ['Pent0s', 4, 'la'] @@PAGE 166-166 (pdf 167, p.256) line 33697 ratio 0.795
+     before: Per Dominum . Lectio Danielis Prophetae , c . N
+     start? In  ||  
+     WORD   illis : Ángelus Dómini descéndit cum Azaría  ||  Dómini => DoI¿ mini¿
+     WORD   ventum roris flantem , et non  ||   => . Flamma autem effundebatur¿ super fornácem cúbitis quadragínta novem : et erupit¿
+     WORD   roris flantem , et non tétigit  ||   => et incéndit quos reperit¿ juxta fornácem de Chaldaeis¿ , minístros regis , qui eam incendebant¿ .
+     case   et  ||  Et
+     punct  et glorificábant , et  ||  ∅
+     after : Alleluia . . Dan . Benedictus es Domine Deus patrum nostrorum : et laudabilis
+  == ['Pent0s', 5, 'la'] @@PAGE 166-166 (pdf 167, p.256) line 33734 ratio 1.000
+     before: Lectio Epistolae beati Pauli Apostoli ad Romanos , c .
+     case   per  ||  Per
+     case   sanctum  ||  Sanctum
+     after : Alleluia . . Ps . Laudate Dominum omnes gentes , et collaudate eum omnes
+  == ['Pent0s', 6, 'la'] @@PAGE 166-166 (pdf 167, p.256) line 33758 ratio 0.981
+     before: Alleluia . Sequentia sancti Evangelii secundum Lucam . c .
+     case   et  ||  Et
+     punct  et dicéntia : Quia  ||  ,
+     split? Dei  ||  D e i
+     case   et  ||  Et
+     after : Credo . Offertorium Ps . Domine Deus salutis meae , in die clamavi ,
+
+######## Pent1 | Sanctissimæ Trinitatis
+  segment lines 72882-75059, @@PAGE 386 (pdf 387, printed None): IN EODEM FESTO / alia Missa / Officium / Ps. 44
+  sections: Officium@72884, Oratio@72897, Lectio Epistolae beati Pauli@72904, Sequentia sancti Evangelii@72983, Offertorium Ps. 44 Diffusa@73022, Secreta@73027, Communio Matth. 25 Quin­@73036, Postcommunio@73044, Officium@73053, Oratio@73065, Lectio Libri Sapientiae.@73077, Sequentia sancti Evangelii@73142, Offertorium Ps. 44 Diffusa@73180, Secreta@73185, Communio Ps. 118 Principes@73191, Postcommunio@73195, Officium@73205, Oratio@73218, Lectio Epistolae beati Pauli@73228, Sequentia sancti Evangelii@73305, Offertorium Ps. 44 Afferen­@73351, Secreta@73357, Communio Matth. 25 Quin­@73367, Postcommunio@73375, Officium@73385, Oratio@73398, Lectio Libri Sapientiae.@73410, Offertorium Ps. 44 Filia; re­@73545, Secreta@73550, Communio Ps. 44 Diffusa est@73556, Postcommunio@73560, Officium@73612, Oratio@73625, Lectio Epistolae beati Pauli@73641, Sequentia sancti Evangelii@73687, Offertorium Tob. 12 Benedi­@73710, Secreta@73716, Communio Tob. 12 Benedici­@73727, Postcommunio@73732, Officium@73745, Oratio@73758, Lectio Epistolae beati Pauli@73767, Offertorium Lev. 21 Sacer­@73856, Secreta@73862, Communio 1 Cor. 11 Quo­@73870, Postcommunio@73879, Officium@73889, Oratio@73903, Lectio Epistolae beati Pauli@73917, Sequentia sancti EvangeJii@73986, Offertorium Hebr. 10 Chri­@74013, Secreta@74020, Communio 1 Cor. 11 Hoc@74027, Postcommunio@74038, Officium@74058, Oratio@74070, Lectio Epistolae beati Pauli@74078, Sequentia sancti Evangelii@74142, Offertorium 1 Paralip. 29@74178, Secreta@74186, Communio Ps. 33 Gustate et@74199, Postcommunio@74203, Officium@74217, Oratio@74231, Lectio Zachariae Prophetae.@74244, Sequentia sancti Evangelii@74308, Offertorium Insurrexerunt in@74344, Secreta@74352, Communio Ps. 21 Foderunt@74363, Postcommunio@74367, Officium@74378, Oratio@74403, Lectio Isaiae Prophetae. c. 53@74416, Offertorium Ps. 68 Impro­@74574, Secreta@74583, Communio Ps. 21 Foderunt@74597, Postcommunio@74601, Officium@74614, Oratio@74629, Lectio Actuum Apostolorum,@74639, Offertorium Mal. 1 Ab ortu@74703, Secreta@74711, Communio Ps. 102 Benedic@74726, Postcommunio@74730, Officium@74743, Oratio@74759, Oratio@74772, Lectio Epistolae beati Pauli@74784, Offertorium Protege Domine@74845, Secreta@74854, Secreta@74863, Communio Per lignum servi@74874, Postcommunio@74883, Postcommunio@74890, Officium@74900, Oratio@74913, Lectio Actuum Apostolorum,@74921, Offertorium Ps. 67 Confirma@75003, Secreta@75008, Communio Act. 2 Factus est@75018, Postcommunio@75025, Officium@75033, Tractus Ps. 67 Caeli distilla-@75046
+  == ['Pent1', 'or', 0] @@PAGE 386-386 (pdf 387, p.None) line 73626 ratio 0.875
+     before: . Gloria in excelsis , si regulariter dicitur . Oratio
+     punct  glóriam agnóscere , et  ||  :
+     case   Unitátem  ||  unitátem
+     punct  adoráre Unitátem : quǽsumus  ||  ;
+     punct  : quǽsumus ; ut  ||  ,
+     punct  ; ut , eiúsdem  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent1', 'se', 0] @@PAGE 387-387 (pdf 388, p.None) line 73718 ratio 0.943
+     before: . T . P . Alleluia . Secreta S ANCTIFICA
+     start? Sanctífica  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  , Dómine , Deus  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent1', 'pc', 0] @@PAGE 387-387 (pdf 388, p.None) line 73734 ratio 0.852
+     before: . T . P . Alleluia . Postcommunio F IOFICIAT
+     start? Profíciat  ||  
+     punct  , Dómine , Deus  ||  ∅
+     punct  sacraménti suscéptio : et  ||  ;
+     case   Unitátis  ||  unitátis
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent1', 0, 'la'] @@PAGE 166-167 (pdf 167, p.256) line 33845 ratio 0.976 (outside segment)
+     before: Epistolae beati Pauli Apostoli ad Romanos , c . OALTITUDO
+     start? Altitúdo  ||  
+     after : TBi . Dan . Benedictus es Domine , qui intueris abyssos , et sedes
+  == ['Pent1', 1, 'la'] @@PAGE 386-386 (pdf 387, p.None) line 73508 ratio 0.276
+     before: Alleluia . Sequentia sancti Evangelii secundum Matthaeum . c .
+     !!! LOW RATIO — manual
+
+######## CorpusChristi | Corpus Christi
+  segment lines 24177-24675, @@PAGE 115 (pdf 116, printed 164): AD MISSAM / Static ad S. Joannem in Laterano / Officium / Gal. 6
+  sections: Officium@24179, Oratio@24195, Lectio Epistolae beati Pauli@24210, Sequentia sancti Evangelii@24280, Offertorium Ps. 117 Dextera@24341, Secreta@24346, Communio Joan. 13 Dominus@24494, Communione, accedat ad medium@24518, Oratio@24591
+  == ['CorpusChristi', 'or', 0] @@PAGE 115-115 (pdf 116, p.164) line 24592 ratio 0.986
+     before: Omne delectamentum , et Prior erectus subjungat : Oremus Oratio
+     concl: site[Qui vivis et regnas cu] missal[Qui vivis et]
+  == ['CorpusChristi', 'se', 0] @@PAGE 169-169 (pdf 170, p.262) line 34269 ratio 0.976 (outside segment)
+     before: vitae transferat actionem . Per Dominum . De Octava Secreta
+     eol?   , quǽsumus , Dómine  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['CorpusChristi', 'pc', 0] @@PAGE 168-168 (pdf 169, p.260) line 34134 ratio 0.933 (outside segment)
+     before: erit Corporis , et Sanguinis Domini , alleluia . Postcommunio
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  fruitióne repléri : quam  ||  ;
+     concl: site[Qui vivis et regnas cu] missal[Qui vivis .]
+  == ['CorpusChristi', 0, 'la'] @@PAGE 113-114 (pdf 114, p.160) line 24230 ratio 0.957
+     before: vobis ? Laudo vos ? In hoc non laudo .
+     start? Fratres :  ||  
+     split? dixit  ||  d ixit
+     case   hoc  ||  Hoc
+     case   corpus  ||  Corpus
+     VAR?   cœnávit  ||  cenavit
+     case   sánguine  ||  Sánguine
+     punct  cálicem bibétis , mortem  ||  :
+     punct  Dómini indígne , reus  ||  :
+     case   córporis  ||  Córporis
+     case   sánguinis  ||  Sánguinis
+     case   corpus  ||  Corpus
+     after : Ideo inter vos multi infirmi et imbecilles , et dormiunt multi . Quod si
+  == ['CorpusChristi', 1, 'la'] @@PAGE 168-168 (pdf 169, p.260) line 34091 ratio 0.979 (outside segment)
+     before: Alleluia . Sequentia sancti Evangelii secundum Joannem . c .
+     punct  Caro mea , vere  ||  ∅
+     punct  sanguis meus , vere  ||  ∅
+     punct  est potus : qui  ||  .
+     case   qui  ||  Qui
+     case   carnem  ||  Carnem
+     case   sánguinem  ||  Sánguinem
+     case   patres  ||  Patres
+     after : Credo . Offertorium Lev . Sacerdotes Domini incensum et panes offerunt Deo : et
+
+######## Pent2 | Dominica in Octavam Sme Corporis Christi
+  segment lines 34144-34434, @@PAGE 168 (pdf 169, printed 260): DOMINICA INFRA OCT. / CORPORIS CHRISTI / Officium / Ps. 17
+  sections: Officium@34146, Oratio@34157, Oratio@34167, Lectio Epistolae beati Joannis@34179, Sequentia sancti Evangelii@34221, Offertorium Ps. 6 Domine@34257, Secreta@34261, Secreta@34268, Communio Ps. 12 Cantabo@34274, Postcommunio@34280, Officium@34291, Oratio@34303, Lectio Epistolae beati Pauli@34311, Postcommunio@34320, Sequentia sancti Evangelii@34365, Offertorium 1 Paralip. 29@34398, Secreta@34406, Communio Ps. 33 Gustate,@34419, Postcommunio@34423
+  == ['Pent2', 'or', 0] @@PAGE 168-168 (pdf 169, p.260) line 34158 ratio 0.915
+     before: meus . Gloria Patri . Gloria in excelsis . Oratio
+     punct  gubernatióne destítuis , quos  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent2', 'se', 0] @@PAGE 169-169 (pdf 170, p.262) line 34262 ratio 0.567
+     before: propter misericordiam tuam . Secreta Ob l a t io
+     !!! LOW RATIO — manual
+  == ['Pent2', 'pc', 0] @@PAGE 169-169 (pdf 170, p.262) line 34281 ratio 0.667
+     before: Domini altissimi . Postcommunio Su m pt is m uneribus
+     start? Sumptis munéribus  ||  
+     WORD   Sumptis munéribus sacris , quǽsumus ,  ||   => ; quǽsumus Dómine
+     WORD   munéribus sacris , quǽsumus , Dómine : ut cum frequentatióne  ||  quǽsumus , Dómine : => 
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent2', 0, 'la'] @@PAGE 169-169 (pdf 170, p.262) line 34182 ratio 0.987
+     before: . Lectio Epistolae beati Joannis Apostoli . , c .
+     VAR?   scimus  ||  sciinus
+     case   omnis  ||  Omnis
+     after : . Ps . Ad Dominum cum tribularer clamavi : et exaudivit me . P
+  == ['Pent2', 1, 'la'] @@PAGE 169-169 (pdf 170, p.262) line 34224 ratio 0.867
+     before: pag . Sequentia sancti Evangelii secundum Lucam . c .
+     VAR?   Pharisǽis  ||  Pharisseis
+     VAR?   cœnam  ||  cenam
+     VAR?   cœnæ  ||  cenae
+     eol?   ut venírent , quia  ||  kept
+     case   rogo  ||  Rogo
+     case   rogo  ||  Rogo
+     WORD   , dixit servo suo .  ||  suo => su¿ o : Exi cito in platéas , et vicos civitátis : et páuperes , ac debiles¿ , et caecos¿ , et claudos¿ introduc¿ huc
+     after : Et ait servus : Domine , factum est ut imperasti , et adhuc locus
+
+######## SCJ | Sacratissimum Cor Jesu
+  segment lines 68588-70030, @@PAGE 361 (pdf 362, printed 6): IN MISSIONIBUS / Die 3 Octobris / Virginis / Totum Duplex I classis
+  sections: Offertorium Luc. 1 Magni­@68660, Secreta@68667, Communio Deut. 32 Circum­@68675, Postcommunio@68682, Oratio@68865, Secreta@68876, Postcommunio@68900, Officium@68918, Oratio@68932, Lectio Epistolae@68945, Tractus@69006, Sequentia sancti Evange-@69035, Offertorium Psalm. 18 Prae­@69079, Secreta@69084, Communio Matth. 13 Si­@69098, Postcommunio@69105, Officium@69117, Oratio@69133, Oratio@69147, Lectio Libri Sapientiae.Eccli. 24@69159, Tractus Prov. 8 Nunc ergo,@69201, Sequentia sancti Evange-@69234, Offertorium Luc. 1 Exsul­@69249, Secreta@69254, Secreta@69270, Communio Joann. 19 Dixit@69285, Postcommunio@69306, Officium@69318, Oratio@69330, Lectio Epistolae beati Pauli@69343, Tractus Ps. 102 Misericors@69400, Offertorium Ps. 68 Impro­@69460, Offertorium Ps. 39 Holo­@69468, Secreta@69478, Communio Joann. 19 Unus@69490, Communio Joann. 7 Si quis@69496, Postcommunio@69499, Oratio@69511, Officium@69531, Oratio@69552, Tractus Psalm. 20 Deside­@69629, Sequentia sancti Evange-@69638, Offertorium Ps. 89 Bonitas@69665, Secreta@69671, Communio Matth. 13 Unde@69681, Postcommunio@69686, Officium@69701, Oratio@69717, Oratio@69728, Sequentia sancti Evange-@69789, Offertorium Regali ex pro­@69822, Secreta@69827, Secreta@69841, Communio@69852, Officium@69896, Oratio@69906, Lectio Libri Sapientiae, c. 10@69917, Sequentia sancti Evangelii@69956, Offertorium Psalm. 123 Ani­@69995, Secreta@70000, Communio Psalm. 78 Posue­@70012, Postcommunio@70019
+  == ['SCJ', 'or', 0] @@PAGE 361-361 (pdf 362, p.6) line 69331 ratio 0.878
+     before: collaudatio . Gloria Patri . Gloria in excelsis . Oratio
+     punct  , quǽsumus ; ut  ||  ,
+     punct  ; ut , illi  ||  ∅
+     punct  præstántes obséquium , dignæ  ||  ;
+     WORD   satisfactiónis exhibeámus offícium .  ||   => : Per eúmdem Dóminum
+     concl: site[Per eúndem Dóminum nos] missal[Per eúmdem]
+  == ['SCJ', 'se', 0] @@PAGE 362-362 (pdf 363, p.8) line 69479 ratio 0.929
+     before: et legem tuam in medio Cordis mei , alleluia .
+     WORD   nostrórum expiátio delictórum .  ||   => : Per eúmdem Dóminum
+     concl: site[Per eúndem Dóminum nos] missal[Per eúmdem]
+  == ['SCJ', 'pc', 0] @@PAGE 362-362 (pdf 363, p.8) line 69500 ratio 0.885
+     before: ad me et bibat , alleluia , alleluia . Postcommunio
+     punct  suavitáte percépta ; discámus  ||  ,
+     punct  terréna despícere , et  ||  ;
+     WORD   , et amáre cœléstia :  ||  cœléstia => cæléstia
+     concl: site[Qui vivis et regnas cu] missal[Qui vivis .]
+  == ['SCJ', 0, 'la'] @@PAGE 361-361 (pdf 362, p.6) line 69346 ratio 0.939
+     before: Lectio Epistolae beati Pauli Apostoli ad Ephesios . c .
+     punct  divítias Christi , et  ||  :
+     eol?   in Deo , qui  ||  kept
+     punct  innotéscat principátibus , et  ||  ∅
+     eol?   per Ecclésiam , multifórmis  ||  kept
+     punct  sapiéntia Dei , secúndum  ||  :
+     punct  præfinitiónem sæculórum , quam  ||  ∅
+     punct  Dómino nostro : in  ||  ,
+     punct  habémus fidúciam , et  ||  ∅
+     eol?   in cælis , et  ||  kept
+     punct  terra nominátur , ut  ||  :
+     punct  interiórem hóminem , Christum  ||  :
+     punct  caritáte radicáti , et  ||  ∅
+     punct  et fundáti , ut  ||  :
+     after : R . Ps . Dulcis et rectus Dominus , propter hoc legem dabit delinquentibus
+  == ['SCJ', 1, 'la'] @@PAGE 362-362 (pdf 363, p.8) line 69434 ratio 0.933
+     before: Alleluia . Sequentia sancti Evangelii secundum Joannem . c .
+     WORD   Judǽi , quóniam Para parascéve erat ut  ||  Para => 
+     case   parascéve  ||  Parascéve
+     punct  eórum crura , et  ||  ∅
+     punct  ergo mílites : et  ||  ,
+     punct  fregérunt crura , et  ||  ∅
+     punct  et altérius , qui  ||  ∅
+     punct  ejus crura , sed  ||  :
+     punct  exívit sanguis , et  ||  ∅
+     punct  qui vidit , testimónium  ||  ∅
+     punct  vera dicit : ut  ||  ,
+     WORD   . Et íterum Scriptúra dicit :  ||   => ália
+     WORD   Vidébunt in quem transfixérunt .  ||  transfixérunt => transfixi¿ runt¿
+     after : Credo . Offertorium Ps . Improperium exspectavit Cor meum et miseriam , et sustinui
+
+######## Pent3 | Dominica in Octavam Sme Cordis Jesu
+  segment lines 34434-34579, @@PAGE 170 (pdf 171, printed 264): DOMINICA INFRA OCT. / SS. CORDIS JESU / et I post Octavam Trinitatis / Officium
+  sections: Officium@34437, Oratio@34452, Lectio Epistolae beati Petri@34464, Offertorium Ps. 9 Sperent in@34546, Secreta@34556, Communio Ps. 16 Ego cla­@34564, Postcommunio@34568
+  == ['Pent3', 'or', 0] @@PAGE 170-170 (pdf 171, p.264) line 34453 ratio 0.867
+     before: non erubescam . Gloria Patri . Gloria in excelsis .
+     punct  te sperántium , Deus  ||  ∅
+     punct  nihil sanctum : multíplica  ||  ;
+     punct  misericórdiam tuam ; ut  ||  :
+     punct  ; ut , te  ||  ∅
+     punct  bona temporália , ut  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent3', 'se', 0] @@PAGE 171-171 (pdf 172, p.266) line 34557 ratio 0.867
+     before: Sion , quoniam non est oblitus orationem pauperum . Secreta
+     punct  Réspice , Dómine  ||  ∅
+     punct  , Dómine , múnera  ||  ∅
+     punct  supplicántis Ecclésiæ : et  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent3', 'pc', 0] @@PAGE 171-171 (pdf 172, p.266) line 34569 ratio 0.848
+     before: inclina aurem tuam , et exaudi verba mea . Postcommunio
+     punct  sumpta vivíficent : et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent3', 0, 'la'] @@PAGE 170-170 (pdf 171, p.264) line 34467 ratio 0.981
+     before: . Lectio Epistolae beati Petri Apostoli . , c .
+     case   omnem  ||  Omnem
+     case   círcuit  ||  Círcuit
+     case   cui  ||  Cui
+     WORD   in sǽcula sæculórum . Amen .  ||   => : Arnen
+     WORD   sǽcula sæculórum . Amen .  ||  Amen => Ps¿
+     after : Jacta cogitatum tuum in Domino , et ipse te enutriet . P . Dum
+  == ['Pent3', 1, 'la'] @@PAGE 170-170 (pdf 171, p.264) line 34506 ratio 0.983
+     before: . E Sequentia sancti Evangelii secundum Lucam . c .
+     VAR?   Pharisǽi  ||  Pharisau
+     case   scribæ  ||  Scribæ
+     punct  centum oves , et  ||  :
+     case   et  ||  Et
+     punct  Dico vobis , quod  ||  ∅
+     case   ángelis  ||  Ángelis
+     after : Credo . Offertorium Ps . Sperent in te omnes qui noverunt nomen tuum Domine
+
+######## PurCordisBMV | Purissimi Cordis B. Mariæ Virg. (Sabbato post Octavam Corporis Christi)
+  segment lines 39162-39665, @@PAGE 196 (pdf 197, printed 316): IN SOLEMNITATE / S. JOSEPH SPONSI B. MARLE V. / Totum Duplex I classis cum Octava solemni / Officium
+  sections: Officium@39165, Oratio@39177, Postcommunio@39193, Lectio Libri Genesis, c. 49@39204, Sequentia sancti Evangelii@39261, Offertorium Ps. 147 Lauda@39278, Secreta@39283, Communio Matth.@39295, Postcommunio@39301, Officium@39313, Oratio@39328, Lectio Libri Sapientiae.@39340, Tractus Luc.@39369, Offertorium Judith 15 Quia@39417, Secreta@39423, Postcommunio@39464, Oratio@39637, Secreta@39648, Postcommunio@39655
+  == ['PurCordisBMV', 'or', 0] @@PAGE 196-196 (pdf 197, p.316) line 39329 ratio 1.000
+     before: regi . Gloria Patri . Gloria in excelsis . Oratio
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['PurCordisBMV', 'se', 0] @@PAGE 197-197 (pdf 198, p.318) line 39424 ratio 0.981
+     before: . Secreta Ma j e s t a t i
+     start? Majestáti  ||  
+     concl: site[Per eúndem Dóminum nos] missal[Per eumdem .]
+  == ['PurCordisBMV', 'pc', 0] @@PAGE 197-197 (pdf 198, p.318) line 39465 ratio 1.000
+     before: gutturi meo . T . P , Alleluia . Postcommunio
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['PurCordisBMV', 0, 'la'] @@PAGE 196-196 (pdf 197, p.316) line 39342 ratio 0.942
+     before: in unitate ejusdem . Lectio Libri Sapientiae . Cant .
+     punct  mors diléctio , dura  ||  :
+     punct  inférnus æmulátio : lámpades  ||  ,
+     punct  óbruent illam . Si  ||  :
+     after : . Sap . Nihil inquinatum in eam incurrit : candor est lucis aeternae ,
+  == ['PurCordisBMV', 1, 'la'] @@PAGE 196-196 (pdf 197, p.316) line 39398 ratio 0.994
+     before: Alleluia . Sequentia sancti Evangelii secundum Lucam . c .
+     case   ecce  ||  Ecce
+     case   nesciebátis  ||  Nesciebátis
+     after : Credo . Offertorium Judith Quia fecisti viriliter , et confortatum est cor tuum :
+
+######## Pent4 | 4 post Pentecosten
+  segment lines 34579-34768, @@PAGE 171 (pdf 172, printed 266): DOMINICA SECUNDA / post Octavam Trinitatis / Officium / Ps. 26
+  sections: Officium@34581, Oratio@34593, Sequentia sancti Evangelii@34667, Offertorium Ps. 12 Illumina@34716, Secreta@34721, Communio Ps. 17 Dominus@34736, Postcommunio@34743
+  == ['Pent4', 'or', 0] @@PAGE 171-171 (pdf 172, p.266) line 34594 ratio 0.979
+     before: meum . Gloria Patri . Gloria in excelsis . Oratio
+     eol?   , quǽsumus , Dómine  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent4', 'se', 0] @@PAGE 171-171 (pdf 172, p.266) line 34722 ratio 0.895
+     before: Praevalui adversus eum . Secreta Obla tio n ibu s
+     start? Oblatiónibus  ||  
+     punct  , quǽsumus , Dómine  ||  ∅
+     punct  placáre suscéptis : et  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent4', 'pc', 0] @@PAGE 172-172 (pdf 173, p.268) line 34745 ratio 0.774
+     before: adjutor meus . Postcommunio My s t e r ia
+     start? Mystéria  ||  
+     eol?   , Dómine , quǽsumus  ||  kept
+     punct  sumpta puríficent : et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent4', 0, 'la'] @@PAGE 171-171 (pdf 172, p.266) line 34629 ratio 0.951
+     before: Romanos , c . Fr a t r e s
+     start? Fratres  ||  
+     case   quia  ||  Quia
+     WORD   redemptiónem córporis nostri .  ||   => : In Christo Jesu Dómino nostro
+     after : TSi . P s . Propitius esto Domine peccatis nostris : ne quando dicant
+  == ['Pent4', 1, 'la'] @@PAGE 171-171 (pdf 172, p.266) line 34670 ratio 0.992
+     before: Alleluia . Sequentia sancti Evangelii secundum Lucam . c .
+     punct  multitúdinem copiósam : rumpebátur  ||  ,
+     case   simíliter  ||  Simíliter
+     punct  relíctis ómnibus , secúti  ||  ∅
+     after : Credo . Offertorium Ps . Illumina oculos meos ne umquam obdormiam in m orte
+
+######## Pent5 | 5 post Pentecosten
+  segment lines 34768-34897, @@PAGE 172 (pdf 173, printed 268): DOMINICA TERTIA / post Octavam Trinitatis / Officium / Ps. 26
+  sections: Officium@34770, Oratio@34785, Lectio Epistolae beati Petri@34797, Sequentia sancti Evangelii@34843, Offertorium Ps. 15 Benedi­@34870, Secreta@34876, Communio Ps. 26 Unam petii@34886, Postcommunio@34890
+  == ['Pent5', 'or', 0] @@PAGE 172-172 (pdf 173, p.268) line 34786 ratio 0.861
+     before: Patri . Gloria in excelsis . Oratio De u s
+     start? Deus  ||  
+     punct  invisibília præparásti : infúnde  ||  ;
+     punct  amóris afféctum ; ut  ||  :
+     punct  ómnia diligéntes , promissiónes  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent5', 'se', 0] @@PAGE 172-172 (pdf 173, p.268) line 34877 ratio 0.762
+     before: commovear . Secreta Pr o p it ia r e
+     start? Propitiáre ,  ||  
+     eol?   , Dómine , supplicatiónibus  ||  kept
+     punct  supplicatiónibus nostris : et  ||  ,
+     split? assúme ;  ||  assum e :
+     punct  ; ut , quod  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent5', 'pc', 0] @@PAGE 172-172 (pdf 173, p.268) line 34891 ratio 0.816
+     before: inhabitem in domo Domini imnibus diebus vitae meae . Postcommunio
+     WORD   Quos cœlésti , Dómine ,  ||  cœlésti => cælésti
+     WORD   satiásti : præsta , quǽsumus ;  ||   => quǽsumus
+     WORD   : præsta , quǽsumus ; ut a nostris  ||  quǽsumus ; => 
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent5', 0, 'la'] @@PAGE 172-172 (pdf 173, p.268) line 34800 ratio 0.990
+     before: . Lectio Epistolae beati Petri Apostoli . , c .
+     split? húmiles  ||  hum iles
+     case   non  ||  Non
+     case   quia  ||  Quia
+     case   inquírat  ||  Inquírat
+     case   quia  ||  Quia
+     case   vultus  ||  Vultus
+     after : Ps . Protector noster aspice Deus : et respice super servos tuos . ?
+  == ['Pent5', 1, 'la'] @@PAGE 172-172 (pdf 173, p.268) line 34845 ratio 0.992
+     before: Alleluia . Sequentia sancti Evangelii secundum Matthaeum , c .
+     case   scribárum  ||  Scribárum
+     case   qui  ||  Qui
+     case   et  ||  Et
+     after : Credo . Offertorium Ps . Benedicam Dominum , qui tribuit mihi intellectum : providebam
+
+######## Pent6 | 6 post Pentecosten
+  segment lines 34897-35038, @@PAGE 172 (pdf 173, printed 268): DOMINICA QUARTA / post Octavam Trinitatis / Officium / Ps. 27
+  sections: Officium@34899, Oratio@34913, Lectio Epistolae beati Pauli@34927, Offertorium Ps. 16 Perfice@35006, Secreta@35013, Communio Ps. 26 Circuibo,@35024, Postcommunio@35031
+  == ['Pent6', 'or', 0] @@PAGE 172-172 (pdf 173, p.268) line 34914 ratio 0.837
+     before: Patri . Gloria in excelsis . Oratio De u s
+     start? Deus  ||  
+     punct  est óptimum : ínsere  ||  ,
+     punct  tui nóminis , et  ||  ;
+     punct  religiónis augméntum ; ut  ||  :
+     punct  ; ut , quæ  ||  ∅
+     punct  , nútrias , ac  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent6', 'se', 0] @@PAGE 173-173 (pdf 174, p.270) line 35014 ratio 0.729
+     before: qui salvos facis sperantes in te , Domine . Secreta
+     punct  : et , ut  ||  ∅
+     punct  , præsta ; ut  ||  ,
+     punct  ; ut , quod  ||  ∅
+     WORD   , efficáciter consequámur :  ||   => . Per Dóminum . Álias Secretas¿ , p a g¿ Commúnio Ps¿ . Circuíbo , et immolabo¿ in tabernáculo ejus hóstiam jubilationis¿
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent6', 'pc', 0] @@PAGE 173-173 (pdf 174, p.270) line 35032 ratio 0.870
+     before: jubilationis : cantabo , et psalmum dicam Domino . Postcommunio
+     punct  , quǽsumus ; ut  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent6', 0, 'la'] @@PAGE 172-173 (pdf 173, p.268) line 34929 ratio 0.978
+     before: Romanos , c . Fr a t r e s
+     start? Fratres  ||  
+     punct  baptizáti sumus ? Consepúlti  ||  .
+     punct  cum Christo , crédimus  ||  :
+     case   sciéntes  ||  Sciéntes
+     case   quod  ||  Quod
+     punct  autem Deo , in  ||  :
+     case   in  ||  In
+     after : Ps . Convertere Domine aliquantulum : et deprecare super servos tuos . K .
+  == ['Pent6', 1, 'la'] @@PAGE 173-173 (pdf 174, p.270) line 34975 ratio 0.975
+     before: Alleluia . Sequentia sancti Evangelii secundum Marcum . c .
+     punct  multa esset , cum  ||  ∅
+     punct  quod manducárent , convocátis  ||  :
+     split? mandúcent  ||  m anducent
+     case   et  ||  Et
+     case   quidam  ||  Quidam
+     WORD   Erant autem qui manducavérunt , quasi quátuor  ||  manducavérunt => manducáverant
+     after : Credo . Offertorium Ps . Perfice gressus meos in semitis tuis , ut non
+
+######## Pent7 | 7 post Pentecosten
+  segment lines 35038-35154, @@PAGE 173 (pdf 174, printed 270): DOMINICA QUINTA / post Octavam Trinitatis / Officium / Ps. 46
+  sections: Officium@35040, Oratio@35050, Lectio Epistolae beati Pauli@35060, Sequentia sancti Evangelii@35094, Offertorium Dan. 3 Sicut in@35124, Secreta@35132, Communio Ps. 30 Inclina@35144, Postcommunio@35147
+  == ['Pent7', 'or', 0] @@PAGE 173-173 (pdf 174, p.270) line 35051 ratio 0.857
+     before: Patri . Gloria in excelsis . Oratio DE U S
+     start? Deus  ||  
+     punct  non fállitur : te  ||  ;
+     punct  súpplices exorámus ; ut  ||  :
+     punct  cuncta submóveas , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent7', 'se', 0] @@PAGE 174-174 (pdf 175, p.272) line 35133 ratio 0.941
+     before: confidentibus in te , Domine . Secreta De u s
+     start? Deus  ||  
+     split? sanxísti  ||  san xisti
+     punct  ; ut , quod  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent7', 'pc', 0] @@PAGE 174-174 (pdf 175, p.272) line 35148 ratio 0.906
+     before: Inclina aurem tuam , accelera ut eripias nos . Postcommunio
+     punct  cleménter expédiat , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent7', 0, 'la'] @@PAGE 173-173 (pdf 174, p.270) line 35062 ratio 0.990
+     before: Lectio Epistolae beati Pauli Apostoli ad Romanos , c .
+     case   sicut  ||  Sicut
+     punct  vita ætérna , in  ||  :
+     case   in  ||  In
+     after : . Ps . Venite filii , audite me : timorem Domini docebo vos .
+  == ['Pent7', 1, 'la'] @@PAGE 173-173 (pdf 174, p.270) line 35096 ratio 0.992
+     before: Alleluia . Sequentia sancti Evangelii secundum Matthaeum , c .
+     case   a  ||  A
+     punct  fructus fácere . Omnis  ||  :
+     after : Credo . Offertorium Dan . Sicut in holocaustis arietum et taurorum , et sicut
+
+######## Pent8 | 8 post Pentecosten
+  segment lines 35154-35285, @@PAGE 174 (pdf 175, printed 272): DOMINICA SEXTA / post Octavam Trinitatis / Officium / Ps. 47
+  sections: Officium@35156, Oratio@35168, Lectio Epistolae beati Pauli@35178, Offertorium Ps. 17 Populum@35255, Secreta@35260, Communio Ps. 33 Gustate,@35274, Postcommunio@35278
+  == ['Pent8', 'or', 0] @@PAGE 174-174 (pdf 175, p.272) line 35169 ratio 0.862
+     before: Gloria in excelsis . Oratio La r g ir e
+     start? Largíre  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  : ut , qui  ||  ∅
+     punct  non póssumus , secúndum  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent8', 'se', 0] @@PAGE 174-174 (pdf 175, p.272) line 35261 ratio 0.961
+     before: humiliabis : quoniam quis Deus praeter te Domine . Secreta
+     eol?   , quǽsumus , Dómine  ||  kept
+     junk   Prsed .  ||  
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent8', 'pc', 0] @@PAGE 174-174 (pdf 175, p.272) line 35279 ratio 0.864
+     before: : beatus vir , qui sperat in eo . Postcommunio
+     punct  : ut , cuius  ||  ∅
+     punct  exséquimur cultum , sentiámus  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent8', 0, 'la'] @@PAGE 174-174 (pdf 175, p.272) line 35180 ratio 0.972
+     before: , c . Fr a t r e s :
+     start? Fratres ,  ||  
+     case   debitóres  ||  Debitóres
+     case   si  ||  Si
+     punct  quo clamámus : Abba  ||  ,
+     case   herédes  ||  Herédes
+     after : Ps . Esto mihi in Deum protectorem : et in locum refugii , ut
+  == ['Pent8', 1, 'la'] @@PAGE 174-174 (pdf 175, p.272) line 35214 ratio 0.983
+     before: . i Sequentia sancti Evangelii secundum Lucam . c .
+     case   jam  ||  Jam
+     split? ait  ||  a it
+     VAR?   sǽculi  ||  sseculi
+     case   fácite  ||  Fácite
+     after : Credo . Offertorium Ps . Populum humilem salvum facies Domine , et oculos superborum
+
+######## Pent9 | 9 post Pentecosten
+  segment lines 19622-19935, @@PAGE 91 (pdf 92, printed 116): FERIA QUARTA / Statio ad sanctum Paulum / Officium / Ezech. 36
+  sections: Officium@19624, Oratio@19642, Lectio Ezechielis Prophetae,@19653, Oratio@19698, Lectio Isaiae Prophetae,@19707, Tractus Ps. 102 Domine non@19733, Offertorium Ps. 65 Benedi­@19892, Secreta@19901, Communio Joan. 9 Lutum@19910, Postcommunio@19914, Humiliate capita@19926, Oratio super populum@19928
+  == ['Pent9', 'or', 0] @@PAGE 91-91 (pdf 92, p.116) line 19929 ratio 0.585
+     before: , pag . Oremus . Humiliate capita vestra Deo .
+     !!! LOW RATIO — manual
+  == ['Pent9', 'se', 0] @@PAGE 175-175 (pdf 176, p.274) line 35395 ratio 0.958 (outside segment)
+     before: favum : nam et servus tuus custodit ea . Secreta
+     eol?   , quǽsumus , Dómine  ||  kept
+     eol?   : quia , quóties  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent9', 'pc', 0] @@PAGE 175-175 (pdf 176, p.274) line 35410 ratio 0.789 (outside segment)
+     before: post Octavam Trinitatis adjicientur vobis , dicit Dominus . Postcommunio
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  commúnio sacraménti , et  ||  :
+     punct  purificatiónem cónferat , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent9', 0, 'la'] @@PAGE 175-175 (pdf 176, p.274) line 35314 ratio 0.969 (outside segment)
+     before: Apostoli ad Corinthios . , c . Fi AT RES
+     start? Fratres  ||  
+     punct  pópulus manducáre , et  ||  ∅
+     VAR?   vigínti  ||  viglnti
+     punct  tentémus Christum , sicut  ||  :
+     case   scripta  ||  Scripta
+     case   fidélis  ||  Fidélis
+     after : Ps . Domine Dominus noster , quam admirabile est nomen tuum in universa terra
+  == ['Pent9', 1, 'la'] @@PAGE 175-175 (pdf 176, p.274) line 35361 ratio 0.986 (outside segment)
+     before: Alleluia . Sequentia sancti Evangelii secundum Lucam . c .
+     punct  pacem tibi : nunc  ||  ,
+     case   et  ||  Et
+     punct  oratiónis est : vos  ||  .
+     case   vos  ||  Vos
+     after : Credo . Offertorium Ps . Justitiae Domini rectae , laetificantes corda , et judicia
+
+######## Pent10 | 10 post Pentecosten
+  segment lines 35416-35557, @@PAGE 175 (pdf 176, printed 274): DOMINICA OCTAVA / post Octavam Trinitatis / Officium / Ps. 54
+  sections: Officium@35418, Oratio@35433, Lectio Epistolae beati Pauli@35444, Sequentia sancti Evangelii@35498, Offertorium Ps. 24 Ad te Do­@35530, Secreta@35537, Communio Ps. 50 Acceptabis@35545
+  == ['Pent10', 'or', 0] @@PAGE 175-175 (pdf 176, p.274) line 35434 ratio 0.794
+     before: me . Gloria Patri . Gloria in excelsis . Oratio
+     punct  miserándo maniféstas : multíplica  ||  ;
+     punct  misericórdiam tuam ; ut  ||  :
+     punct  ; ut , ad  ||  ∅
+     WORD   tua promíssa curréntes , cœléstium bonórum fácias esse  ||  , cœléstium => ; cæléstium
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent10', 'se', 0] @@PAGE 176-176 (pdf 177, p.276) line 35538 ratio 0.957
+     before: universi , qui te exspectant , non confundentur . Secreta
+     punct  Tibi , Dómine  ||  ∅
+     punct  , Dómine , sacrifícia  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent10', 'pc', 0] @@PAGE 176-176 (pdf 177, p.276) line 35550 ratio 0.791
+     before: super altare tuum Domine . Pos communio QI ESim us
+     start? Quǽsumus ,  ||  
+     punct  , Dómine , Deus  ||  ∅
+     punct  : ut , quos  ||  ∅
+     punct  désinis sacraméntis , tuis  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent10', 0, 'la'] @@PAGE 175-175 (pdf 176, p.274) line 35447 ratio 0.993
+     before: Epistolae beati Pauli Apostoli ad Corinthios . , c .
+     punct  Fratres . Scitis  ||  :
+     case   sancto  ||  Sancto
+     case   et  ||  Et
+     case   et  ||  Et
+     case   álteri  ||  Álteri
+     case   álii  ||  Álii
+     case   álii  ||  Álii
+     after : . Ps . Custodi me Domine , ut pupillam oculi : sub umbra alarum
+  == ['Pent10', 1, 'la'] @@PAGE 175-176 (pdf 176, p.274) line 35501 ratio 0.948
+     before: Alleluia . Sequentia sancti Evangelii secundum Lucam . c .
+     VAR?   Pharisǽus  ||  pharisreus
+     split? , vel ut  ||  : velut
+     punct  hic publicánus : jejúno  ||  .
+     case   jejúno  ||  Jejúno
+     punct  in sábbato , décimas  ||  :
+     case   quia  ||  Quia
+     punct  , humiliábitur , et  ||  :
+     after : Credo . Offertorium Ps . Ad te Domine levavi animam meam : Deus meus
+
+######## Pent11 | 11 post Pentecosten
+  segment lines 35557-35690, @@PAGE 176 (pdf 177, printed 276): DOMINICA NONA / post Octavam Trinitatis / Officium / Ps. 67
+  sections: Officium@35559, Oratio@35571, Lectio Epistolae beati Pauli@35583, Sequentia sancti Evangelii@35631, Offertorium Ps. 29 Exaltabo@35660, Secreta@35665, Communio Prov. 3 Honora@35673, Postcommunio@35679
+  == ['Pent11', 'or', 0] @@PAGE 176-176 (pdf 177, p.276) line 35573 ratio 0.795
+     before: . Oratio Om n ip o t e n s
+     start? Omnípotens  ||  
+     punct  , qui , abundántia  ||  ∅
+     punct  pietátis tuæ , et  ||  ∅
+     punct  et vota : effúnde  ||  ;
+     punct  misericórdiam tuam ; ut  ||  :
+     punct  consciéntia métuit , et  ||  ;
+     VAR?   adícias  ||  adjicias
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent11', 'se', 0] @@PAGE 176-176 (pdf 177, p.276) line 35666 ratio 0.920
+     before: Domine clamavi ad te , et sanasti me . Secreta
+     eol?   , Dómine , quǽsumus  ||  kept
+     punct  : ut , quod  ||  ∅
+     WORD   et sit nostræ fragilitátis subsidium .  ||  fragilitátis => fragilitáti
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent11', 'pc', 0] @@PAGE 176-176 (pdf 177, p.276) line 35680 ratio 0.846
+     before: redundabunt . Postcommunio Se n t ia m u s
+     start? Sentiámus  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  et córporis : ut  ||  ;
+     punct  : ut , in  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent11', 0, 'la'] @@PAGE 176-176 (pdf 177, p.276) line 35586 ratio 0.997
+     before: . , c . Fr a t r e s
+     start? Fratres  ||  
+     case   deínde  ||  Deínde
+     case   deínde  ||  Deínde
+     case   novíssime  ||  Novíssime
+     after : . Ps . In Deo speravit cor meum , et adjutus sum : et
+  == ['Pent11', 1, 'la'] @@PAGE 176-176 (pdf 177, p.276) line 35634 ratio 0.977
+     before: Alleluia . Sequentia sancti Evangelii secundum Marcum . c .
+     case   mare  ||  Mare
+     case   et  ||  Et
+     WORD   ingémuit , et ait illi :  ||   => Octavam Trinitátis
+     WORD   ait illi : Ephphétha , quod est  ||  Ephphétha => Ephpheta
+     eol?   quod est , Adaperíre  ||  kept
+     case   Adaperíre  ||  adaperíre
+     after : Credo . Offertorium Ps . Exaltabo te Domine , quoniam suscepisti me , nec
+
+######## Pent12 | 12 post Pentecosten
+  segment lines 35690-35847, @@PAGE 177 (pdf 178, printed 278): DOMINICA DECIMA / post Octavam Trinitatis / Officium / Ps. 69
+  sections: Officium@35692, Oratio@35704, Lectio Epistolae beati Pauli@35715, Sequentia sancti Evangelii@35750, Offertorium Exo. 32 Preca­@35812, Secreta@35825, Communio Ps. 103 De fructu@35833, Postcommunio@35840
+  == ['Pent12', 'or', 0] @@PAGE 177-177 (pdf 178, p.278) line 35705 ratio 0.901
+     before: mala . Gloria Patri . Gloria in excelsis . Oratio
+     punct  laudabíliter serviátur : tríbue  ||  ;
+     punct  , nobis ; ut  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent12', 'se', 0] @@PAGE 177-177 (pdf 178, p.278) line 35826 ratio 0.958
+     before: de malignitate , quam dixit facere populo suo . Secreta
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  : ut , nobis  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent12', 'pc', 0] @@PAGE 177-177 (pdf 178, p.278) line 35841 ratio 0.837
+     before: in oleo , et panis cor hominis confirmet . Postcommunio
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  sancta mystérii : et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent12', 0, 'la'] @@PAGE 177-177 (pdf 178, p.278) line 35718 ratio 0.959
+     before: Epistolae beati Pauli Apostoli ad Corinthios . , c .
+     split? est  ||  e s t
+     case   qui  ||  Qui
+     case   líttera  ||  Líttera
+     case   spíritus  ||  Spíritus
+     split? est  ||  e s t
+     after : Ps . Benedicam Dominum in omni tem pore : semper laus ejus in ore
+  == ['Pent12', 1, 'la'] @@PAGE 177-177 (pdf 178, p.278) line 35753 ratio 0.978
+     before: Alleluia . Sequentia sancti Evangelii secundum Lucam . c .
+     split? dixit  ||  , d ix it
+     case   hoc  ||  Hoc
+     VAR?   despoliavérunt  ||  despoiaverunt
+     WORD   locum , et vidéret eum , pertránsiit  ||  vidéret => v : deret¿
+     case   et  ||  Et
+     split? ait  ||  a it
+     case   et  ||  Et
+     after : Credo . Offertorium Exo . Precatus est Moyses in conspectu Domini Dei sui ,
+
+######## Pent13 | 13 post Pentecosten
+  segment lines 35847-35984, @@PAGE 177 (pdf 178, printed 278): DOMINICA UNDECIMA / post Octavam Trinitatis / Officium / Ps. 73
+  sections: Officium@35849, Oratio@35863, Lectio Epistolae beati Pauli@35873, Offertorium Ps. 30 In te spe­@35955, Secreta@35959, Communio Sap. 16 Panem@35967, Postcommunio@35972
+  == ['Pent13', 'or', 0] @@PAGE 177-177 (pdf 178, p.278) line 35864 ratio 0.877
+     before: tuae ? Gloria Patri . Gloria in excelsis . Oratio
+     punct  : et , ut  ||  ∅
+     punct  quod promíttis , fac  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent13', 'se', 0] @@PAGE 178-178 (pdf 179, p.280) line 35960 ratio 0.913
+     before: Deus meus , in manibus tuis tempora mea . Secreta
+     punct  Propitiáre , Dómine  ||  ∅
+     punct  , Dómine , pópulo  ||  ∅
+     punct  : ut , hac  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent13', 'pc', 0] @@PAGE 178-178 (pdf 179, p.280) line 35973 ratio 0.737
+     before: , habentem omne delectamentum et omnem saporem suavitatis . Postcommunio
+     WORD   , Dómine , cœléstibus sacraméntis : ad  ||  cœléstibus => cæléstibus
+     punct  cœléstibus sacraméntis : ad  ||  ;
+     WORD   , proficiámus augméntum .  ||   => : Per Dóminum nostrum Iesum Christum
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent13', 0, 'la'] @@PAGE 177-178 (pdf 178, p.278) line 35876 ratio 0.977
+     before: Lectio Epistolae beati Pauli Apostoli ad Galatas . c .
+     punct  Non dicit : Et  ||  ,
+     punct  in uno : Et  ||  ,
+     punct  evacuándam promissiónem . Nam  ||  ∅
+     punct  veníret semen , cui  ||  ∅
+     case   ángelos  ||  Ángelos
+     after : Ps . Respice Domine in testamentum tuum : et animas pauperum tuorum ne obliviscaris
+  == ['Pent13', 1, 'la'] @@PAGE 178-178 (pdf 179, p.280) line 35924 ratio 0.983
+     before: . I Sequentia sancti Evangelii secundum Lucam . c .
+     VAR?   Galilǽam  ||  Galikeam
+     eol?   a longe : et  ||  kept
+     case   et  ||  Et
+     case   et  ||  Et
+     punct  , dixit : Nonne  ||  .
+     after : Credo . Offertorium Ps . In te speravi Domine : dixi , Tu es
+
+######## Pent14 | 14 post Pentecosten
+  segment lines 35984-36133, @@PAGE 178 (pdf 179, printed 280): DOMINICA DUODECIMA / post Octavam Trinitatis / Officium / Ps. 83
+  sections: Officium@35986, Oratio@35998, Lectio Epistolae beati Pauli@36009, Sequentia sancti Evangelii@36057, Offertorium Ps. 33 Immittet@36108, Secreta@36113, Communio Joan. 6 Panis,@36123, Postcommunio@36126
+  == ['Pent14', 'or', 0] @@PAGE 178-178 (pdf 179, p.280) line 35999 ratio 0.909
+     before: Domini . Gloria Patri . Gloria in excelsis . Oratio
+     eol?   , Dómine , quǽsumus  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent14', 'se', 0] @@PAGE 179-179 (pdf 180, p.282) line 36115 ratio 0.930
+     before: est Dominus . Secreta Co n c e d e
+     start? Concéde  ||  
+     eol?   , Dómine , quǽsumus  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent14', 'pc', 0] @@PAGE 179-179 (pdf 180, p.282) line 36127 ratio 0.800
+     before: vita . Postcommunio Pu r if ic e n t
+     start? Puríficent  ||  
+     eol?   sacraménta nos , Deus  ||  kept
+     punct  , Deus : et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent14', 0, 'la'] @@PAGE 178-178 (pdf 179, p.280) line 36012 ratio 0.984
+     before: Lectio Epistolae beati Pauli Apostoli ad Galatas . c .
+     case   hæc  ||  Hæc
+     punct  ínvicem adversántur , ut  ||  :
+     split? carnis  ||  cam is
+     after : Ps . Bonum est confiteri Domino : et psallere nomini tuo Altissime . P
+  == ['Pent14', 1, 'la'] @@PAGE 178-179 (pdf 179, p.280) line 36059 ratio 0.982
+     before: Alleluia . Sequentia sancti Evangelii secundum Matthaeum , c .
+     case   aut  ||  Aut
+     punct  quam esca , et  ||  :
+     case   non  ||  Non
+     punct  sic vestit , quanto  ||  :
+     after : Credo . Offertorium Ps . Immittet Angelus Domini in circuitu timentium eum , et
+
+######## Pent15 | 15 post Pentecosten
+  segment lines 36133-36270, @@PAGE 179 (pdf 180, printed 282): DOMINICA / DECIMA TERTIA / post Octavam Trinitatis / Officium
+  sections: Officium@36136, Oratio@36150, Lectio Epistolae beati Pauli@36159, Sequentia sancti Evangelii@36211, Offertorium Ps. 39 Exspe­@36242, Secreta@36248, Communio Joan. 6 Qui man­@36254, Postcommunio@36259
+  == ['Pent15', 'or', 0] @@PAGE 179-179 (pdf 180, p.282) line 36151 ratio 0.868
+     before: excelsis . Oratio Ec c l e s ia m
+     start? Ecclésiam  ||  
+     split? múniat  ||  m uniat
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent15', 'se', 0] @@PAGE 179-179 (pdf 180, p.282) line 36249 ratio 0.897
+     before: canticum novum , hymnum Deo nostro . Secreta Tu a
+     start? Tua  ||  
+     punct  sacramenta custodiant : et  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent15', 'pc', 0] @@PAGE 179-179 (pdf 180, p.282) line 36260 ratio 0.821
+     before: , dicit Dominus . Postcommunio Me n t e s
+     start? Mentes  ||  
+     punct  , quǽsumus , Dómine  ||  ∅
+     WORD   Dómine , doni cœléstis operátio : ut  ||  cœléstis => cæléstis
+     punct  in nobis , sed  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent15', 0, 'la'] @@PAGE 179-179 (pdf 180, p.282) line 36162 ratio 0.974
+     before: , c . et Fr a t r e s
+     start? Fratres  ||  
+     VAR?   teípsum  ||  telpsum
+     WORD   , et sic adimplébitis legem Christi .  ||  adimplébitis => adimpleDominica¿ décima tértia bitis¿
+     VAR?   catechízat  ||  catechlzat
+     case   qui  ||  Qui
+     after : Ps . Bonum est confidere in Domino , quam confidere in homine . IV
+  == ['Pent15', 1, 'la'] @@PAGE 179-179 (pdf 180, p.282) line 36214 ratio 0.974
+     before: Alleluia . Sequentia sancti Evangelii secundum Lucam . c .
+     case   et  ||  Et
+     split? erat  ||  e ra t
+     WORD   vídua erat : et turba civitátis  ||   => post Octavam Trinitátis
+     after : Credo . Offertorium Ps . Exspectans exspectavi Dominum , et respexit me : et
+
+######## Pent16 | 16 post Pentecosten
+  segment lines 36270-36414, @@PAGE 180 (pdf 181, printed 284): DOMINICA / DECIMA QUARTA / post Octavam Trinitatis / Officium
+  sections: Officium@36273, Oratio@36285, Lectio Epistolae beati Pauli@36293, Offertorium Ps. 39 Domine,@36382, Secreta@36387, Communio Ps. 70 Domine@36397, Postcommunio@36403
+  == ['Pent16', 'or', 0] @@PAGE 180-180 (pdf 181, p.284) line 36286 ratio 0.851
+     before: ego . Gloria Patri . Gloria in excelsis . Oratio
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  et sequátur : ac  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent16', 'se', 0] @@PAGE 180-180 (pdf 181, p.284) line 36389 ratio 0.864
+     before: , ut auferant eam . Secreta Mu n d a
+     start? Munda  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  præséntis efféctu : et  ||  ;
+     punct  in nobis ; ut  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent16', 'pc', 0] @@PAGE 180-180 (pdf 181, p.284) line 36404 ratio 0.807
+     before: senectam et senium , Deus ne derelinquas me . Postcommunio
+     eol?   , quǽsumus , Dómine  ||  kept
+     WORD   , et rénova cœléstibus sacraméntis : ut  ||  cœléstibus => cæléstibus
+     punct  cœléstibus sacraméntis : ut  ||  ;
+     WORD   córporum præsens páriter et futúrum capiámus  ||   => post Octavam Trinitátis
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent16', 0, 'la'] @@PAGE 180-180 (pdf 181, p.284) line 36296 ratio 0.983
+     before: Ephesios , c . Fr a t r e s
+     start? Fratres  ||  
+     case   in  ||  In
+     case   scire  ||  Scire
+     VAR?   secúndum  ||  secunduni
+     after : Ps . Timebunt gentes nomen tuum Domine , et omnes reges terrae gloriam tuam
+  == ['Pent16', 1, 'la'] @@PAGE 180-180 (pdf 181, p.284) line 36342 ratio 0.976
+     before: Alleluia . Sequentia sancti Evangelii secundum Lucam . c .
+     WORD   , dicens ad illos : Cum  ||   => Dominica décima quinta¿
+     punct  ab illo . Et  ||  ,
+     case   Et  ||  et
+     punct  dicat tibi : Da  ||  ,
+     case   quia  ||  Quia
+     after : Credo . Offertorium Ps . Domine , in auxilium meum respice : confundantur ,
+
+######## Pent17 | 17 post Pentecosten
+  segment lines 36414-36543, @@PAGE 180 (pdf 181, printed 284): DOMINICA / DECIMA QUINTA / post Octavam Trinitatis / Officium
+  sections: Officium@36417, Oratio@36427, Lectio Epistolae beati Pauli@36437, Offertorium Dan. 9 Oravi@36510, Secreta@36520, Communio Ps. 75 Vovete, et@36528, Postcommunio@36535
+  == ['Pent17', 'or', 0] @@PAGE 180-180 (pdf 181, p.284) line 36428 ratio 0.857
+     before: Domini . Gloria Patri . Gloria in excelsis . Oratio
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  vitáre contágia : et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent17', 'se', 0] @@PAGE 181-181 (pdf 182, p.286) line 36521 ratio 0.958
+     before: Secreta Ma j e s t a t e m
+     start? Maiestátem  ||  
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent17', 'pc', 0] @@PAGE 181-181 (pdf 182, p.286) line 36537 ratio 0.833
+     before: t if ic a t io n ib u s
+     start? Sanctificatiónibus  ||  
+     punct  nostra curéntur , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent17', 0, 'la'] @@PAGE 180-180 (pdf 181, p.284) line 36440 ratio 1.000
+     before: Lectio Epistolae beati Pauli Apostoli ad Ephesios , c .
+     case   spíritus  ||  Spíritus
+     case   spíritus  ||  Spíritus
+     after : Qui est benedictus in saecula saeculorum . Amen . T . Ps . Beata
+  == ['Pent17', 1, 'la'] @@PAGE 181-181 (pdf 182, p.286) line 36475 ratio 0.971
+     before: Alleluia . Sequentia sancti Evangelii secundum Matthaeum , c .
+     split? illi Jesus  ||  illijesus
+     VAR?   teípsum  ||  telpsum
+     case   Spíritu  ||  spíritu
+     WORD   vocat eum Dóminum , dicens :  ||   => dicens
+     WORD   eum Dóminum , dicens : Dixit Dóminus Dómino  ||  dicens : => 
+     case   Sede  ||  sede
+     WORD   Et nemo póterat ei respondére verbum  ||   => Témporum Septembris¿
+     after : Credo . Offertorium Dan . Oravi Deum meum ego Daniel , dicens : Exaudi
+
+######## EmbWedSept | Feria Quarta IV Temporum Septembris
+  segment lines 36543-36806, @@PAGE 181 (pdf 182, printed 286): FERIA QUARTA / Quatuor Temporum / Statio ad S. Mariam Majorem / Officium
+  sections: Officium@36546, Oratio@36566, Lectio Amos Prophetae,@36573, Oratio@36602, Lectio Libri Esdrae. 2 Esd. 8@36630, Sequentia sancti Evangelii@36694, Offertorium Ps. 118 Medi­@36755, Secreta@36760, Communio 2 Esd. 8 Come­@36776, Postcommunio@36783
+  == ['EmbWedSept', 'or', 0] @@PAGE 181-181 (pdf 182, p.286) line 36567 ratio 0.826
+     before: ut infra . Oremus sine Dominus voblscum . Oratio MISERICORDLE
+     start? Misericórdiæ  ||  
+     punct  , quǽsumus , Dómine  ||  ∅
+     eol?   : ut , quæ  ||  kept
+     punct  conditióne attéritur , tua  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['EmbWedSept', 'se', 0] @@PAGE 182-182 (pdf 183, p.288) line 36761 ratio 0.955
+     before: meas ad mandata tua , quae dilexi . Secreta HJEC
+     start? Hæc  ||  
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['EmbWedSept', 'pc', 0] @@PAGE 182-182 (pdf 183, p.288) line 36784 ratio 0.857
+     before: contristari : gaudium etenim Domini est fortitudo nostra . Postcommunio
+     WORD   Dómine , dona cœléstia , supplíciter deprecámur  ||  cœléstia => cæléstia
+     punct  : ut , quæ  ||  ∅
+     punct  , gérimus , dignis  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['EmbWedSept', 0, 'la'] @@PAGE 181-181 (pdf 182, p.286) line 36575 ratio 0.972
+     before: Per Dominum . Lectio Amos Prophetae , c . Hjec
+     start? Hæc  ||  
+     case   et  ||  Et
+     case   et  ||  Et
+     case   et  ||  Et
+     punct  humum suam , et  ||  :
+     punct  dedi eis , dicit  ||  :
+     case   dicit  ||  Dicit
+     after : Ps . Beata gens , cujus est Dominus , Deus eorum : populus ,
+  == ['EmbWedSept', 1, 'la'] @@PAGE 181-182 (pdf 182, p.286) line 36631 ratio 0.955
+     before: ad libitum . Lectio Libri Esdrae . Esd . N
+     start? In  ||  
+     case   librum  ||  Librum
+     VAR?   cunctísque  ||  cunctlsque
+     VAR?   intellígere  ||  intelllgere
+     punct  in platéa , quæ  ||  ∅
+     case   et  ||  Et
+     case   librum  ||  Librum
+     punct  ad loquéndum : et  ||  .
+     case   et  ||  Et
+     WORD   loquéndum : et librum coram omni  ||   => apéruit
+     case   librum  ||  Librum
+     case   super  ||  Super
+     case   et  ||  Et
+     case   et  ||  Et
+     punct  manus suas : et  ||  .
+     case   et  ||  Et
+     eol?   Porro Levítæ , siléntium  ||  kept
+     case   pópulus  ||  Pópulus
+     case   libro  ||  Libro
+     punct  Deo nostro : nolíte  ||  ,
+     split? sibi  ||  sib i
+     case   gáudium  ||  Gáudium
+     after : Ps . Quis sicut Dominus Deus noster , qui in altis habitat , et
+  == ['EmbWedSept', 2, 'la'] @@PAGE 182-182 (pdf 183, p.288) line 36697 ratio 0.974
+     before: pauperem . Sequentia sancti Evangelii secundum Marcum . c .
+     punct  , dixit : ad  ||  ∅
+     WORD   , áttuli fílium meum ad te  ||   => Témporum Septembris¿
+     case   qui  ||  Qui
+     case   et  ||  Et
+     split? dixit  ||  d ix it
+     WORD   , dixit : generátio incrédula ,  ||   => O
+     case   Quámdiu  ||  quámdiu
+     split? ait  ||  a it
+     case   et  ||  Et
+     punct  eum pérderet : sed  ||  .
+     case   sed  ||  Sed
+     after : Offertorium Ps . Meditabor in mandatis tuis , quae dilexi valde : et levabo
+
+######## EmbFriSept | Feria Sexta IV Temporum Septembris
+  segment lines 36806-36968, @@PAGE 182 (pdf 183, printed 288): FERIA SEXTA / Quatuor Temporum / Statio ad SS. duodecim Apostolos / Officium
+  sections: Officium@36809, Oratio@36821, Lectio Osee Prophetae, c. 14@36830, Sequentia sancti Evangelii@36876, Offertorium Ps. 102 Benedic@36940, Secreta@36945, Communio Ps. 118 Aufer a@36954, Postcommunio@36959
+  == ['EmbFriSept', 'or', 0] @@PAGE 182-182 (pdf 183, p.288) line 36822 ratio 0.826
+     before: annuntiate inter gentes opera ejus . Gloria Patri . Oratio
+     eol?   , quǽsumus , omnípotens  ||  kept
+     eol?   : ut , observatiónes  ||  kept
+     punct  devotióne recoléntes , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['EmbFriSept', 'se', 0] @@PAGE 183-183 (pdf 184, p.290) line 36946 ratio 0.962
+     before: juventus tua . Secreta Ac c e p t a
+     start? Accépta  ||  
+     eol?   , Dómine , quǽsumus  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['EmbFriSept', 'pc', 0] @@PAGE 183-183 (pdf 184, p.290) line 36960 ratio 0.800
+     before: nam et testimonia tua , meditatio mea est . Postcommunio
+     eol?   Quǽsumus , omnípotens  ||  kept
+     punct  : ut , de  ||  ∅
+     punct  grátias exhibéntes , benefícia  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['EmbFriSept', 0, 'la'] @@PAGE 182-183 (pdf 183, p.288) line 36831 ratio 0.970
+     before: , pag . Lectio Osee Prophetae , c . JEC
+     WORD   Dóminus Deus . Convértere Israël ad  ||   => H¿
+     punct  ad Dóminum : et  ||  ,
+     split? ei  ||  e i
+     punct  dicémus ultra : Dii  ||  ,
+     punct  glória ejus , et  ||  :
+     case   memoriále  ||  Memoriále
+     case   ex  ||  Ex
+     case   Intélligens  ||  intélligens
+     WORD   , et sciet hac ? Quia rectæ  ||  hac => hæc
+     after : Ps . Convertere Domine aliquantulum : et deprecare super servos tuos . X .
+  == ['EmbFriSept', 1, 'la'] @@PAGE 183-183 (pdf 184, p.290) line 36879 ratio 0.968
+     before: progenie . Sequentia sancti Evangelii secundum Lucam . c .
+     case   et  ||  Et
+     VAR?   lácrymis  ||  lacrimis
+     eol?   sui tergébat , et  ||  kept
+     VAR?   fœneratóri  ||  feneratori
+     case   unus  ||  Unus
+     VAR?   Æstimo  ||  Estimo ,
+     VAR?   hæc  ||  Hatc
+     VAR?   lácrymis  ||  lacrimis
+     split? unxísti  ||  un xisti
+     split? tibi  ||  tib i
+     case   remittúntur  ||  Remittúntur
+     after : anima mea Domino , et noli oblivisci omnes retributiones ejus : et renovabitur sicut
+
+######## EmbSatSept | Sabbato IV Temporum Septembris
+  segment lines 36968-37466, @@PAGE 183 (pdf 184, printed 290): SABBATO / Quatuor Temporum / Statio ad S. Petrum / Officium
+  sections: Officium@36971, Oratio@36985, Lectio Libri Levitici. c. 23@37002, Oratio@37045, Lectio Libri Levitici. c. 23@37052, Oratio@37095, Lectio Michaeae Prophetae, c. 7@37101, Oratio@37133, Lectio Zachariae Prophetae,@37141, Oratio@37182, Lectio Danielis Prophetae,@37190, Oratio@37264, Lectio Epistolae beati Pauli@37283, Tractus Ps. 116 Laudate Do­@37351, Sequentia sancti Evangelii@37358, Offertorium Ps. 87 Domine@37413, Secreta@37418, Communio Lev. 23 Mense@37438, Postcommunio@37447
+  == ['EmbSatSept', 'or', 0] @@PAGE 183-183 (pdf 184, p.290) line 36986 ratio 0.841
+     before: dicantur sine Dominus vobiscum , sed dicatur : Oremus Oratio
+     punct  et méntibus : maiestátem  ||  ;
+     punct  súpplices exorámus ; ut  ||  :
+     punct  ; ut , pia  ||  ∅
+     punct  deprecatióne placátus , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['EmbSatSept', 'se', 0] @@PAGE 185-185 (pdf 186, p.294) line 37419 ratio 0.939
+     before: , Domine . Secreta Co n c e d e
+     start? Concéde  ||  
+     eol?   , quǽsumus , omnípotens  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['EmbSatSept', 'pc', 0] @@PAGE 186-186 (pdf 187, p.296) line 37448 ratio 0.857
+     before: de Terra Egypti , ego Dominus Deus vester . Postcommunio
+     punct  , Dómine , quǽsumus  ||  ∅
+     eol?   : ut , quæ  ||  kept
+     punct  spécie gérimus , rerum  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['EmbSatSept', 0, 'la'] @@PAGE 183-183 (pdf 184, p.290) line 37003 ratio 0.980
+     before: , pag . Lectio Libri Levitici . c . IX
+     start? In  ||  
+     WORD   Locútus est Dóminus Móysen , dicens  ||   => ad
+     case   affligetísque  ||  Affligetísque
+     case   et  ||  Et
+     VAR?   quíppiam  ||  quidpiam
+     case   legítimum  ||  Legítimum
+     after : Dicit Dominus omnipotens . Ps . Propitius esto Domine peccatis nostris : nequando dicant
+  == ['EmbSatSept', 1, 'la'] @@PAGE 184-184 (pdf 185, p.292) line 37053 ratio 0.960
+     before: : Per Dominum . Lectio Libri Levitici . c .
+     punct  septem diébus : die  ||  .
+     case   die  ||  Die
+     WORD   erit sábbatum , id est , réquies  ||  id => d
+     punct  id est , réquies  ||  ∅
+     punct  per annum : legítimum  ||  .
+     case   legítimum  ||  Legítimum
+     punct  septem diébus : omnis  ||  .
+     case   omnis  ||  Omnis
+     case   terra  ||  Terra
+     VAR?   Ægýpti  ||  Lgypti
+     after : P s . Protector noster aspice Deus : et respice super servos tuos .
+  == ['EmbSatSept', 2, 'la'] @@PAGE 184-184 (pdf 185, p.292) line 37102 ratio 0.958
+     before: Per Dominum . Lectio Michaeae Prophetae , c . OMINE
+     start? Dómine  ||  
+     WORD   noster , pasce pópulum tuum in  ||   => D
+     punct  fortitúdine sua : Quis  ||  .
+     case   depónet  ||  Depónet
+     WORD   a diébus antíquis .  ||   => , Dómine Deus noster
+     after : Ps . Dirigatur oratio mea sicut incensum in conspectu tuo , Domine . P
+  == ['EmbSatSept', 3, 'la'] @@PAGE 184-184 (pdf 185, p.292) line 37143 ratio 0.982
+     before: vitiis irruentibus pariter jejunemus : Per Dominum . c .
+     case   nolíte  ||  Nolíte
+     punct  córdibus vestris , et  ||  :
+     case   ómnia  ||  Ómnia
+     split? et jejúnium  ||  etjejunium
+     case   veritátem  ||  Veritátem
+     after : Ps . Convertere Domine aliquantulum : et deprecare super servos tuos . TP .
+  == ['EmbSatSept', 4, 'la'] @@PAGE 184-184 (pdf 185, p.292) line 37192 ratio 0.827
+     before: : Per Dominum . Lectio Danielis Prophetae , c .
+     WORD   ventum roris flantem , et non  ||   => . Flamma autem effundebatur¿ super fornácem cúbitis quadragínta novem : et erupit¿
+     WORD   roris flantem , et non tétigit  ||   => et incéndit quos reperit¿ juxta fornácem de Chaldaeis¿ , minístros regis , qui eam incendebant¿ .
+     case   et  ||  Et
+     after : Hymnus Dan . Be n e d ic t u s es Domine Deus
+  == ['EmbSatSept', 5, 'la'] @@PAGE 185-185 (pdf 186, p.294) line 37286 ratio 0.980
+     before: Lectio Epistolae beati Pauli Apostoli ad Hebraeos , c .
+     eol?   proposítio panum , quæ  ||  kept
+     eol?   autem secúndum , tabernáculum  ||  kept
+     case   chérubim  ||  Chérubim
+     punct  ita compósitis , in  ||  :
+     case   in  ||  In
+     VAR?   pópuli  ||  pepuli
+     case   sancto  ||  Sancto
+     punct  habénte statum : quæ  ||  .
+     case   quæ  ||  Quæ
+     eol?   perféctius tabernáculum , non  ||  kept
+     case   sánguinem  ||  Sánguinem
+     after : minum omnes gentes : et collaudate eum omnes populi . . Quoniam confirmata est
+  == ['EmbSatSept', 6, 'la'] @@PAGE 185-185 (pdf 186, p.294) line 37361 ratio 0.993
+     before: aeternum . Sequentia sancti Evangelii secundum Lucam . c .
+     case   succíde  ||  Succíde
+     case   ut  ||  Ut
+     punct  mittam stércora , et  ||  :
+     case   et  ||  Et
+     case   sin  ||  Sin
+     punct  curásset Jesus , dicébat  ||  :
+     case   in  ||  In
+     case   Sátanas  ||  sátanas
+     case   et  ||  Et
+     after : Offertorium Ps . Domine Deus salutis meae , in die clamavi , et nocte
+
+######## EmbSatSeptS | Sabbato IV Temporum (forma brevior)
+  segment lines 36968-37466, @@PAGE 183 (pdf 184, printed 290): SABBATO / Quatuor Temporum / Statio ad S. Petrum / Officium
+  sections: Officium@36971, Oratio@36985, Lectio Libri Levitici. c. 23@37002, Oratio@37045, Lectio Libri Levitici. c. 23@37052, Oratio@37095, Lectio Michaeae Prophetae, c. 7@37101, Oratio@37133, Lectio Zachariae Prophetae,@37141, Oratio@37182, Lectio Danielis Prophetae,@37190, Oratio@37264, Lectio Epistolae beati Pauli@37283, Tractus Ps. 116 Laudate Do­@37351, Sequentia sancti Evangelii@37358, Offertorium Ps. 87 Domine@37413, Secreta@37418, Communio Lev. 23 Mense@37438, Postcommunio@37447
+  == ['EmbSatSeptS', 'or', 0] @@PAGE 183-183 (pdf 184, p.290) line 36986 ratio 0.841
+     before: dicantur sine Dominus vobiscum , sed dicatur : Oremus Oratio
+     punct  et méntibus : maiestátem  ||  ;
+     punct  súpplices exorámus ; ut  ||  :
+     punct  ; ut , pia  ||  ∅
+     punct  deprecatióne placátus , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['EmbSatSeptS', 'se', 0] @@PAGE 185-185 (pdf 186, p.294) line 37419 ratio 0.939
+     before: , Domine . Secreta Co n c e d e
+     start? Concéde  ||  
+     eol?   , quǽsumus , omnípotens  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['EmbSatSeptS', 'pc', 0] @@PAGE 186-186 (pdf 187, p.296) line 37448 ratio 0.857
+     before: de Terra Egypti , ego Dominus Deus vester . Postcommunio
+     punct  , Dómine , quǽsumus  ||  ∅
+     eol?   : ut , quæ  ||  kept
+     punct  spécie gérimus , rerum  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['EmbSatSeptS', 0, 'la'] @@PAGE 183-183 (pdf 184, p.290) line 37003 ratio 0.980
+     before: , pag . Lectio Libri Levitici . c . IX
+     start? In  ||  
+     WORD   Locútus est Dóminus Móysen , dicens  ||   => ad
+     case   affligetísque  ||  Affligetísque
+     case   et  ||  Et
+     VAR?   quíppiam  ||  quidpiam
+     case   legítimum  ||  Legítimum
+     after : Dicit Dominus omnipotens . Ps . Propitius esto Domine peccatis nostris : nequando dicant
+  == ['EmbSatSeptS', 1, 'la'] @@PAGE 184-184 (pdf 185, p.292) line 37053 ratio 0.960
+     before: : Per Dominum . Lectio Libri Levitici . c .
+     punct  septem diébus : die  ||  .
+     case   die  ||  Die
+     WORD   erit sábbatum , id est , réquies  ||  id => d
+     punct  id est , réquies  ||  ∅
+     punct  per annum : legítimum  ||  .
+     case   legítimum  ||  Legítimum
+     punct  septem diébus : omnis  ||  .
+     case   omnis  ||  Omnis
+     case   terra  ||  Terra
+     VAR?   Ægýpti  ||  Lgypti
+     after : P s . Protector noster aspice Deus : et respice super servos tuos .
+  == ['EmbSatSeptS', 2, 'la'] @@PAGE 184-184 (pdf 185, p.292) line 37102 ratio 0.958
+     before: Per Dominum . Lectio Michaeae Prophetae , c . OMINE
+     start? Dómine  ||  
+     WORD   noster , pasce pópulum tuum in  ||   => D
+     punct  fortitúdine sua : Quis  ||  .
+     case   depónet  ||  Depónet
+     WORD   a diébus antíquis .  ||   => , Dómine Deus noster
+     after : Ps . Dirigatur oratio mea sicut incensum in conspectu tuo , Domine . P
+  == ['EmbSatSeptS', 3, 'la'] @@PAGE 184-184 (pdf 185, p.292) line 37143 ratio 0.982
+     before: vitiis irruentibus pariter jejunemus : Per Dominum . c .
+     case   nolíte  ||  Nolíte
+     punct  córdibus vestris , et  ||  :
+     case   ómnia  ||  Ómnia
+     split? et jejúnium  ||  etjejunium
+     case   veritátem  ||  Veritátem
+     after : Ps . Convertere Domine aliquantulum : et deprecare super servos tuos . TP .
+  == ['EmbSatSeptS', 4, 'la'] @@PAGE 184-184 (pdf 185, p.292) line 37192 ratio 0.827
+     before: : Per Dominum . Lectio Danielis Prophetae , c .
+     WORD   ventum roris flantem , et non  ||   => . Flamma autem effundebatur¿ super fornácem cúbitis quadragínta novem : et erupit¿
+     WORD   roris flantem , et non tétigit  ||   => et incéndit quos reperit¿ juxta fornácem de Chaldaeis¿ , minístros regis , qui eam incendebant¿ .
+     case   et  ||  Et
+     after : Hymnus Dan . Be n e d ic t u s es Domine Deus
+  == ['EmbSatSeptS', 5, 'la'] @@PAGE 185-185 (pdf 186, p.294) line 37286 ratio 0.980
+     before: Lectio Epistolae beati Pauli Apostoli ad Hebraeos , c .
+     eol?   proposítio panum , quæ  ||  kept
+     eol?   autem secúndum , tabernáculum  ||  kept
+     case   chérubim  ||  Chérubim
+     punct  ita compósitis , in  ||  :
+     case   in  ||  In
+     VAR?   pópuli  ||  pepuli
+     case   sancto  ||  Sancto
+     punct  habénte statum : quæ  ||  .
+     case   quæ  ||  Quæ
+     eol?   perféctius tabernáculum , non  ||  kept
+     case   sánguinem  ||  Sánguinem
+     after : minum omnes gentes : et collaudate eum omnes populi . . Quoniam confirmata est
+  == ['EmbSatSeptS', 6, 'la'] @@PAGE 185-185 (pdf 186, p.294) line 37361 ratio 0.993
+     before: aeternum . Sequentia sancti Evangelii secundum Lucam . c .
+     case   succíde  ||  Succíde
+     case   ut  ||  Ut
+     punct  mittam stércora , et  ||  :
+     case   et  ||  Et
+     case   sin  ||  Sin
+     punct  curásset Jesus , dicébat  ||  :
+     case   in  ||  In
+     case   Sátanas  ||  sátanas
+     case   et  ||  Et
+     after : Offertorium Ps . Domine Deus salutis meae , in die clamavi , et nocte
+
+######## Pent18 | 18 post Pentecosten
+  segment lines 37466-37578, @@PAGE 186 (pdf 187, printed 296): DOMINICA / DECIMA SEXTA / post Octavam Trinitatis / Officium
+  sections: Officium@37469, Oratio@37480, Lectio Epistolae beati Pauli@37488, Sequentia sancti Evangelii@37517, Offertorium Exo. 24 Sancti-@37548, Secreta@37556, Communio Ps. 95 Tollite@37566, Postcommunio@37570
+  == ['Pent18', 'or', 0] @@PAGE 186-186 (pdf 187, p.296) line 37481 ratio 0.857
+     before: ibimus . Gloria Patri . Gloria in excelsis . Oratio
+     punct  , quǽsumus , Dómine  ||  ∅
+     punct  miseratiónis operátio : quia  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent18', 'se', 0] @@PAGE 186-186 (pdf 187, p.296) line 37557 ratio 0.923
+     before: odorem suavitatis Domino Deo in conspectu filiorum Israel . Secreta
+     punct  qui nos , per  ||  ∅
+     WORD   éfficis : præsta , quǽsumus ;  ||   => quǽsumus
+     WORD   : præsta , quǽsumus ; ut , sicut  ||  quǽsumus ; => 
+     punct  ; ut , sicut  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent18', 'pc', 0] @@PAGE 186-186 (pdf 187, p.296) line 37571 ratio 0.889
+     before: ejus : adorate Dominum in aula sancta ejus . Postcommunio
+     punct  múnere vegetáti : tuam  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent18', 0, 'la'] @@PAGE 186-186 (pdf 187, p.296) line 37491 ratio 1.000
+     before: Epistolae beati Pauli Apostoli ad Corinthios . , c .
+     after : Ps . Laetatus sum in his , quae dicta sunt mihi : In domum
+  == ['Pent18', 1, 'la'] @@PAGE 186-186 (pdf 187, p.296) line 37519 ratio 0.953
+     before: Alleluia . Sequentia sancti Evangelii secundum Matthaeum , c .
+     case   scribis  ||  Scribis
+     split? dixit  ||  d ix it
+     WORD   Quid est facílius dícere : Dimittúntur  ||   => Dominica décima séptima post Octavam Trinitátis
+     punct  facílius dícere : Dimittúntur  ||  ,
+     punct  an dícere : Surge  ||  ,
+     after : Credo . Offertorium Exo . Sanctificavit Moyses altare Domino , offerens super illud holocausta
+
+######## Pent19 | 19 post Pentecosten
+  segment lines 37578-37714, @@PAGE 186 (pdf 187, printed 296): DOMINICA / DECIMA SEPTIMA / post Octavam Trinitatis / Officium
+  sections: Officium@37581, Oratio@37592, Lectio Epistolae beati Pauli@37602, Sequentia sancti Evangelii@37635, Offertorium Ps. 137 Si am­@37684, Secreta@37691, Communio Ps. 118 Tu man­@37699, Postcommunio@37704
+  == ['Pent19', 'or', 0] @@PAGE 186-186 (pdf 187, p.296) line 37593 ratio 0.909
+     before: mei , Gloria Patri . Gloria in excelsis . Oratio
+     punct  páriter expedíti , quæ  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent19', 'se', 0] @@PAGE 187-187 (pdf 188, p.298) line 37692 ratio 0.941
+     before: , et salvum me faciet dextera tua . Secreta HJEC
+     start? Hæc  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum nostrum]
+  == ['Pent19', 'pc', 0] @@PAGE 187-187 (pdf 188, p.298) line 37705 ratio 0.894
+     before: utinam dirigantur viae meae ad custodiendas justificationes tuas . Postcommunio
+     punct  cleménter expédiat , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent19', 0, 'la'] @@PAGE 186-187 (pdf 187, p.296) line 37605 ratio 1.000
+     before: Lectio Epistolae beati Pauli Apostoli ad Ephesios , c .
+     case   sol  ||  Sol
+     case   qui  ||  Qui
+     case   magis  ||  Magis
+     after : T . Ps . Dirigatur oratio mea sicut incensum in conspectu tuo , Domine
+  == ['Pent19', 1, 'la'] @@PAGE 187-187 (pdf 188, p.298) line 37637 ratio 0.988
+     before: Alleluia . Sequentia sancti Evangelii secundum Matthseum . c .
+     VAR?   Pharisǽis  ||  Pharisseis
+     case   et  ||  Et
+     case   réliqui  ||  Réliqui
+     case   et  ||  Et
+     case   et  ||  Et
+     eol?   vidéret discumbéntes , et  ||  kept
+     WORD   obmútuit . Tunc dicit rex minístris :  ||  dicit => dixit
+     case   ibi  ||  Ibi
+     after : Credo . Offertorium Ps . Si ambulavero in medio tribulationis , vivificabis me Domine
+
+######## Pent20 | 20 post Pentecosten
+  segment lines 37714-37834, @@PAGE 187 (pdf 188, printed 298): DOMINICA / DECIMA OCTAVA / post Octavam Trinitatis / Officium
+  sections: Officium@37717, Oratio@37730, Lectio Epistolae beati Pauli@37740, Offertorium Ps. 136 Super@37811, Secreta@37815, Communio Ps. 118 Memento@37822, Postcommunio@37827
+  == ['Pent20', 'or', 0] @@PAGE 187-187 (pdf 188, p.298) line 37731 ratio 0.889
+     before: Domini . Gloria Patri . Gloria in excelsis . Oratio
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  mundéntur offénsis , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent20', 'se', 0] @@PAGE 188-188 (pdf 189, p.300) line 37816 ratio 0.882
+     before: et flevimus : dum recordaremur tui Sion . Secreta CAELESTEM
+     start? Cœléstem  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  , medicínam : et  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent20', 'pc', 0] @@PAGE 188-188 (pdf 189, p.300) line 37828 ratio 0.698
+     before: : haec me consolata est in humilitate mea . Postcommunio
+     punct  Ut sacris , Dómine  ||  .
+     punct  digni munéribus : fac  ||  ;
+     WORD   fac nos , qu ; sumus , tuis semper  ||  qu ; sumus => quǽsumus
+     WORD   , tuis semper obœdíre mandátis .  ||  obœdíre => obedíre
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent20', 0, 'la'] @@PAGE 187-187 (pdf 188, p.298) line 37743 ratio 0.942
+     before: Lectio Epistolae beati Pauli Apostoli ad Ephesios , c .
+     case   rediméntes  ||  Rediméntes
+     VAR?   fíeri  ||  fleri
+     punct  fíeri imprudéntes , sed  ||  :
+     case   sancto  ||  Sancto
+     WORD   . Subjécti ínvicem in timóre Christi .  ||  in => : n
+     junk   , Ps  ||  
+     after : Oculi omnium in te sperant Domine : et tu das illis escam in tempore
+  == ['Pent20', 1, 'la'] @@PAGE 187-187 (pdf 188, p.298) line 37776 ratio 0.972
+     before: Alleluia . Sequentia sancti Evangelii secundum Joannem . c .
+     VAR?   audísset  ||  audlsset
+     case   incipiébat  ||  Incipiébat
+     split? ei  ||  e i
+     punct  ei Jesus : Fílius  ||  ,
+     case   et  ||  Et
+     WORD   : et crédidit et domus ejus  ||   => ipse ,
+     after : Credo . Offertorium Ps . Super flumina Babylonis , illic sedimus et flevimus :
+
+######## Pent21 | 21 post Pentecosten
+  segment lines 37834-37988, @@PAGE 188 (pdf 189, printed 300): DOMINICA DECIMA NONA / post Octavam Trinitatis / Officium / Esth. 13
+  sections: Officium@37836, Oratio@37849, Lectio Epistolae beati Pauli@37859, Offertorium Job 1 Vir erat@37952, Secreta@37962, Communio Ps. 118 In salu­@37969, Postcommunio@37978
+  == ['Pent21', 'or', 0] @@PAGE 188-188 (pdf 189, p.300) line 37850 ratio 0.933
+     before: Patri . Gloria in excelsis . Oratio Fam ilia m
+     start? Famíliam  ||  
+     eol?   , quǽsumus , Dómine  ||  kept
+     punct  sit líbera , et  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent21', 'se', 0] @@PAGE 188-188 (pdf 189, p.300) line 37963 ratio 0.895
+     before: filios : carnem quoque ejus gravi ulcere vulneravit . Secreta
+     punct  Suscipe , Dómine  ||  ∅
+     punct  , Dómine , propítius  ||  ∅
+     punct  propítius hóstias : quibus  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent21', 'pc', 0] @@PAGE 188-188 (pdf 189, p.300) line 37979 ratio 0.703
+     before: sunt me , adjuva me Domine Deus meus . Postcommunio
+     WORD   Immortalitátis alimóniam consecúti , quǽsumus ,  ||   => : quǽsumus Dómine
+     WORD   alimóniam consecúti , quǽsumus , Dómine : ut , quod  ||  quǽsumus , Dómine : => 
+     punct  : ut , quod  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent21', 0, 'la'] @@PAGE 188-188 (pdf 189, p.300) line 37862 ratio 0.687
+     before: Ephesios , c . Fr a t r e s
+     start? Fratres  ||  
+     WORD   Fratres : De cétero confortámini in Dómino  ||  De cétero => 
+     case   confortámini  ||  Confortámini
+     punct  insídias diáboli : quóniam  ||  .
+     case   quóniam  ||  Quóniam
+     case   in  ||  In
+     VAR?   exstínguere  ||  extinguere
+     case   et  ||  Et
+     punct  salútis assúmite , et  ||  :
+     WORD   est verbum Dei , per omnem  ||   => . Ps¿ . Dómine
+     WORD   verbum Dei , per omnem oratiónem , et obsecratiónem  ||  per omnem oratiónem => refúgium factus es nobis : a generatióne et progenie¿ . i . Priúsquam montes fierent¿ , aut formaretur¿ terra
+     WORD   oratiónem , et obsecratiónem orántes omni témpore in spíritu  ||  obsecratiónem orántes omni => orbis : a sǽculo et usque in sǽculum tu es Deus . Allelúja , allelúja . W¿ : Ps¿ . De profundis¿ clamavi¿ ad te Dómine : Dómine exáudi vocem meam . Allelúja . Sequéntia sancti Evangélii secúndum Matthǽum , c . In illo
+     WORD   orántes omni témpore in spíritu : et in  ||  in spíritu => 
+     WORD   in spíritu : et in ipso vigilántes in omni instántia , et obsecratióne  ||  et in ipso vigilántes in omni instántia => Dixit Jesus discípulis suis parábolam hanc : Assimilátum est regnum cælórum hómini regi
+     WORD   omni instántia , et obsecratióne pro ómnibus sanctis .  ||  et obsecratióne pro ómnibus sanctis . => 
+     after : qui voluit rationem ponere cum servis suis . Et cum coepisset rationem ponere ,
+  == ['Pent21', 1, 'la'] @@PAGE 188-188 (pdf 189, p.300) line 37902 ratio 0.989
+     before: Alleluia . Sequentia sancti Evangelii secundum Matthaeum , c .
+     case   et  ||  Et
+     VAR?   suffocávit  ||  suffocabat
+     case   et  ||  Et
+     punct  suo ómnia , quæ  ||  ∅
+     case   nonne  ||  Nonne
+     after : Credo . Offertorium Job Vir erat in Terra Hus , nomine Job , simplex
+
+######## Pent22 | 22 post Pentecosten
+  segment lines 37988-38103, @@PAGE 189 (pdf 190, printed 302): DOMINICA VIGESIMA / post Octavam Trinitatis / Officium / Ps. 129
+  sections: Officium@37990, Oratio@38002, Lectio Epistolae beati Pauli@38011, Offertorium Esth. 14 Recor­@38074, Secreta@38082, Communio Luc. 15 Dico vo­@38090, Postcommunio@38094
+  == ['Pent22', 'or', 0] @@PAGE 189-189 (pdf 190, p.302) line 38003 ratio 0.767
+     before: meam . Gloria Patri . Gloria in excelsis . Oratio
+     punct  Deus , refúgium  ||  ∅
+     punct  et virtus : adésto  ||  ;
+     punct  ipse pietátis , et  ||  :
+     punct  et præsta ; ut  ||  ,
+     punct  ; ut , quod  ||  ∅
+     punct  fidéliter pétimus , efficáciter  ||  ;
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['Pent22', 'se', 0] @@PAGE 189-189 (pdf 190, p.302) line 38083 ratio 0.913
+     before: in conspectu principis . Dominica vigesima prima post Octavam Trinitatis
+     punct  Da , miséricors  ||  ∅
+     punct  miséricors Deus : ut  ||  ,
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent22', 'pc', 0] @@PAGE 189-189 (pdf 190, p.302) line 38095 ratio 0.923
+     before: agente . Postcommunio Su m p s im u s
+     start? Súmpsimus  ||  
+     punct  : ut , quæ  ||  ∅
+     punct  fácere præcepísti , in  ||  ;
+     concl: site[Qui vivis et regnas cu] missal[Qui vivis .]
+  == ['Pent22', 0, 'la'] @@PAGE 189-189 (pdf 190, p.302) line 38014 ratio 0.987
+     before: Lectio Epistolae beati Pauli Apostoli ad Philippenses , c .
+     punct  Christi Jesu : sicut  ||  .
+     case   sicut  ||  Sicut
+     punct  hoc oro , ut  ||  ∅
+     after : et laudem Dei . Ps . Ecce quam bonum , et quam jucundum habitare
+  == ['Pent22', 1, 'la'] @@PAGE 189-189 (pdf 190, p.302) line 38049 ratio 1.000
+     before: Alleluia . Sequentia sancti Evangelii secundum Matthaeum , c .
+     case   non  ||  Non
+     case   dic  ||  Dic
+     after : Credo . Offertorium Esth . Recordare mei Domine , omni potentatui dominans : et
+
+######## ChristusRex | Domini Nostri Jesu Christi Regis
+  segment lines 65909-66088, @@PAGE 340 (pdf 341, printed 604): IN FESTO / D. N. JESU CHRISTI REGIS / Totum Duplex I classis / Officium
+  sections: Officium@65912, Oratio@65927, Communio Joann. 15 Ego@65940, Postcommunio@65944, Lectio Epistolae beati Pauli@65957, Sequentia sancti Evangelii@66004, Offertorium Ps. 2 Postula@66032, Secreta@66036, Communio Ps. 28 Sedebit@66049, Postcommunio@66053, Tractus Ps. 88 Ipse invocabit@66069
+  == ['ChristusRex', 'or', 0] @@PAGE 340-340 (pdf 341, p.604) line 65928 ratio 0.396
+     before: Regis . Gloria Patri . Gloria in excelsis . Oratio
+     !!! LOW RATIO — manual
+  == ['ChristusRex', 'se', 0] @@PAGE 340-340 (pdf 341, p.604) line 66037 ratio 1.000
+     before: hereditatem tuam , et possessionem tuam terminos terrae . Secreta
+     concl: site[Qui tecum vivit et reg] missal[Qui tecum .]
+  == ['ChristusRex', 'pc', 0] @@PAGE 340-340 (pdf 341, p.604) line 66054 ratio 1.000
+     before: aeternum : Dominus benedicet populo suo in pace . Postcommunio
+     concl: site[Qui tecum vivit et reg] missal[Qui tecum .]
+  == ['ChristusRex', 0, 'la'] @@PAGE 340-340 (pdf 341, p.604) line 65959 ratio 0.936
+     before: Lectio Epistolae beati Pauli Apostoli ad Colossenses , c .
+     punct  in lúmine : qui  ||  ,
+     punct  remissiónem peccatórum : qui  ||  .
+     case   qui  ||  Qui
+     punct  omnis creatúræ : quóniam  ||  ;
+     eol?   in cælis , et  ||  kept
+     punct  ex mórtuis : ut  ||  ,
+     punct  primátum tenens : quia  ||  ,
+     punct  ipso complácuit , omnem  ||  ∅
+     punct  plenitúdinem inhabitáre : et  ||  ,
+     punct  crucis ejus , sive  ||  ∅
+     WORD   in cælis sunt .  ||   => , in Christo Jesu Dómino nostro
+     after : Ps . Dominabitur a mari usque ad mare , et a flumine usque ad
+  == ['ChristusRex', 1, 'la'] @@PAGE 340-340 (pdf 341, p.604) line 66007 ratio 0.931
+     before: Alleluia . Sequentia sancti Evangelii secundum Joannem . c .
+     case   rex  ||  Rex
+     WORD   Respóndit Jesus : temetípso hoc dicis ,  ||  temetípso => A temetfpso¿
+     punct  Gens tua , et  ||  ∅
+     punct  te mihi : quid  ||  ;
+     WORD   Respóndit Jesus : Regnum meum non est de hoc mundo . Si  ||  Regnum meum non est de hoc => 
+     punct  tráderer Judǽis : nunc  ||  ;
+     case   rex  ||  Rex
+     case   rex  ||  Rex
+     punct  perhíbeam veritáti : omnis  ||  ;
+     punct  : omnis , qui  ||  ∅
+     after : Credo . Offertorium Ps . Postula a me , et dabo tibi Gentes hereditatem
+
+######## Pent23 | 23 post Pentecosten
+  segment lines 38103-38289, @@PAGE 189 (pdf 190, printed 302): DOMINICA / VIGESIMA PRIMA / post Octavam Trinitatis / Si haec Dominica fuerit ultima,
+  sections: Officium@38111, Oratio@38126, Lectio Epistolae beati Pauli@38136, Offertorium Ps. 129 De pro­@38222, Secreta@38228, Communio Mare. 1 1 Arnen@38236, Postcommunio@38240
+  == ['Pent23', 'or', 0] @@PAGE 189-189 (pdf 190, p.302) line 38127 ratio 1.000
+     before: Jacob . Gloria Patri . Gloria in excelsis . Oratio
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent23', 'se', 0] @@PAGE 190-190 (pdf 191, p.304) line 38229 ratio 1.000
+     before: ad te Domine : Domine exaudi orationem meam . Secreta
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent23', 'pc', 0] @@PAGE 190-190 (pdf 191, p.304) line 38242 ratio 0.970
+     before: et fiet vobis . Postcommunio Qu aesu m u s
+     start? Quǽsumus  ||  
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Pent23', 0, 'la'] @@PAGE 189-189 (pdf 190, p.302) line 38139 ratio 0.965
+     before: c . . et Fr a t r e s
+     start? Fratres  ||  
+     split? est  ||  e s t
+     split? est  ||  e s t
+     case   unde  ||  Unde
+     punct  et te , germáne  ||  ∅
+     after : Dominica vigesima prima post Octavam Trinitatis IBi . Ps . Liberasti nos Domine ex
+  == ['Pent23', 1, 'la'] @@PAGE 190-190 (pdf 191, p.304) line 38188 ratio 0.988
+     before: Alleluia . Sequentia sancti Evangelii secundum Matthaeum , c .
+     punct  vestiméntum ejus , salva  ||  :
+     case   non  ||  Non
+     eol?   manum ejus , et  ||  kept
+     case   et  ||  Et
+     after : Credo . Offertorium Ps . De profundis clamavi ad te Domine : Domine exaudi
+
+######## AscVig | In Vigilia Ascensionis
+  segment lines 31158-31290, @@PAGE 152 (pdf 153, printed 228): DOMINICA QUARTA / post Octavam Paschae / Officium / Isai. 48
+  sections: Officium@31160, Oratio@31172, Lectio Epistolae beati Jacobi@31183, Offertorium Ps. 65 Benedi­@31255, Secreta@31265, Communio Ps. 95 Cantate Do­@31274, Postcommunio@31282
+  == ['AscVig', 'or', 0] @@PAGE 152-152 (pdf 153, p.228) line 31173 ratio 0.839
+     before: ejus . Gloria Patri . Gloria in excelsis . Oratio
+     punct  cuncta procédunt , largíre  ||  :
+     punct  supplícibus tuis : ut  ||  ;
+     punct  recta sunt ; et  ||  ,
+     eol?   ; et , te  ||  kept
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['AscVig', 'se', 0] @@PAGE 152-152 (pdf 153, p.228) line 31266 ratio 0.864
+     before: , et misericordiam suam a me , alleluia . Secreta
+     punct  : ut , per  ||  ∅
+     VAR?   piæ  ||  pise
+     punct  devotiónis offícia , ad  ||  ∅
+     WORD   offícia , ad cœléstem glóriam transeámus .  ||  cœléstem => cæléstem
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['AscVig', 'pc', 0] @@PAGE 153-153 (pdf 154, p.230) line 31283 ratio 0.800
+     before: in diem salutare ejus , alleluia , alleluia . Postcommunio
+     WORD   , Dómine , cœléstis mensæ virtúte satiátis  ||  cœléstis => cae¿ lestis¿
+     punct  virtúte satiátis : et  ||  ;
+     punct  et desideráre , quæ  ||  ∅
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dóminum]
+  == ['AscVig', 0, 'la'] @@PAGE 155-155 (pdf 156, p.234) line 31707 ratio 0.966 (outside segment)
+     before: Lectio Epistolae beati Pauli Apostoli ad Ephesios , c .
+     eol?   in altum , captívam  ||  kept
+     WORD   et qui ascéndit superpónes cælos , ut  ||  superpónes => super omnes
+     case   apóstolos  ||  Apóstolos
+     case   prophétas  ||  Prophétas
+     case   evangelístas  ||  Evangelístas
+     punct  et doctóres , ad  ||  ∅
+     split? Christi  ||  C hristi
+     after : Alleluia . . joan . Exivi a Patre , et veni in mundum :
+  == ['AscVig', 1, 'la'] @@PAGE 155-155 (pdf 156, p.234) line 31738 ratio 0.963 (outside segment)
+     before: Alleluia . Sequentia sancti Evangelii secundum Joannem . c .
+     punct  venit hora : clarífica  ||  ,
+     case   sicut  ||  Sicut
+     case   et  ||  Et
+     punct  me tu , Pater  ||  ∅
+     eol?   , Pater , apud  ||  kept
+     WORD   esset , apud e . Manifestávi nomen  ||  e => te
+     case   tui  ||  Tui
+     split? sunt  ||  su n t
+     case   et  ||  Et
+     case   non  ||  Non
+     case   et  ||  Et
+     split? eis .  ||  e is :
+     after : Offertorium Ps . Ascendit Deus in jubilatione , et Dominus in voce tubae ,
+
+######## Dedicatio | In Dedicatione Ecclesiae
+  segment lines 70128-70392, @@PAGE 368 (pdf 369, printed 21): IN ANNIVERSARIO / DEDICATIONIS ECCLESLE / Officium / Gen. 28
+  sections: Officium@70130, Oratio@70142, Lectio Libri Apocalypsis beati@70153, Tractus Matth. 21 Domus@70188, Offertorium 1 Par. 29 Domi­@70249, Secreta@70257, Secreta@70271, Communio@70278, Postcommunio@70288, Oratio@70320, Secreta@70335, Postcommunio@70346, Oratio@70358, Secreta@70367, Postcommunio@70377
+  == ['Dedicatio', 'or', 0] @@PAGE 368-368 (pdf 369, p.21) line 70143 ratio 0.966
+     before: Domini . Gloria Patri . Gloria in excelsis . Oratio
+     split? tui  ||  tu i
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Dedicatio', 'se', 0] @@PAGE 368-368 (pdf 369, p.21) line 70258 ratio 1.000
+     before: . Alleluia . In ipsa ecclesia dedicata dicatur : Secreta
+     concl: site[Per Dóminum nostrum Ie] missal[Per Dominum .]
+  == ['Dedicatio', 'pc', 0] @@PAGE 368-368 (pdf 369, p.21) line 70289 ratio 1.000
+     before: . T . P . Alleluia , alleluia . Postcommunio
+     concl: site[Qui vivis et regnas cu] missal[Qui vivis .]
+  == ['Dedicatio', 0, 'la'] @@PAGE 368-368 (pdf 369, p.21) line 70156 ratio 0.995
+     before: . Lectio Libri Apocalypsis beati Joannis Apostoli . c .
+     case   et  ||  Et
+     after : Locus iste a Deo factus est , inaestimabile sacramentum , irreprehensibilis est . P
+  == ['Dedicatio', 1, 'la'] @@PAGE 368-368 (pdf 369, p.21) line 70216 ratio 0.977
+     before: Alleluia . Sequentia sancti Evangelii secundum Lucam . c .
+     case   et  ||  Et
+     split? esset  ||  esse t
+     punct  : Zachǽe , festínans  ||  ∅
+     split? est  ||  e s t
+     after : Credo . Offertorium Par . Domine Deus , in simplicitate cordis mei laetus obtuli

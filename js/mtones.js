@@ -278,6 +278,9 @@
   // a colon after the words that bring in direct speech ends the verse (p. 411, n. 6; p. 417, 4°)
   var SAYS = /\b(dicit|dixit|dixérunt|dixerunt|dicunt|dicens|dicéntes|dicentes|ait|aiunt|inquit|respóndit|respondit|respondérunt|respondens|respóndens|clamábant|clamavérunt|clamávit|loquútus|locútus|dícite|dicite|dicat|dicam|dico|dicébant|interrogávit|exclamávit|orávit|dicéntem|scriptum est|clamans|clamávit)\b[^:]*:$/i;
   function speech(member, next) { return !!next && SAYS.test(member) && /^[A-ZÀ-ÝÆŒǼ]/.test(next.replace(/^[^A-Za-zÀ-ÿǽ]+/, '')); }
+  // a conclusion run into the prayer ("…adoráre Dóminum nostrum Jesum Christum Fílium tuum: qui tecum vivit…"): the
+  // body then ends on the flexio of "Fílium tuum" (p. 406)
+  var CONCL2 = /\s(qui (?:tecum vivit|vivit et regnat|vivis et regnas|cum Patre|cum eódem)\b.*sæculórum\.?)$/;
   // split the conclusion from the body of a prayer
   var CONCL = /\s((?:Per (?:eúndem |eúmdem |eumdem |eundem )?(?:Dóminum|Dominum|Christum)|Per (?:eúndem|eúmdem|eumdem|eundem)(?=\.)|Qui (?:tecum|vivis|cum Patre|vivit|venturus|cum Deo))\b.*)$/;
 
@@ -339,8 +342,12 @@
     if (/^Qui vivis et regnas per ómnia/.test(c)) return III ? 'Qui(h) vi(h)vis(h) et(h) reg(h)nas(h) per(h) óm(h)ni(h)a(h) sǽ(h)cu(h)la(h) sæ(h)cu(h)ló(h)rum.(f)'
       : 'Qui(h) vi(h)vis(h) et(h) reg(h)nas(h) per(h) óm(i)ni(h)a(h) sǽ(h)cu(h)la(h) sæ(g)cu(g)ló(h)rum.(h)';
     // long conclusions (p. 406, 3°; p. 408): [flexio] ; [elevatio] Deus : per ómnia sǽcula sæculórum.
+    // the formula as Proc. p. 406 prints it, whatever the source's commas: flexio at "Fílium tuum" / "Deo Patre",
+    // elevatio at "Sancti Deus", then per ómnia
+    c = c.replace(/\b(tuum|suum|Patre)\s*[,:;]?\s+(?=(qui|in unitáte)\b)/, '$1; ').replace(/Sancti\s*,\s*Deus/, 'Sancti Deus')
+      .replace(/\bDeus\s*[,:;]?\s*(?=per ómnia)/, 'Deus: ');
     var TERM = III ? 'per(h) óm(h)ni(h)a(h) sǽ(h)cu(h)la(h) sæ(h)cu(h)ló(h)rum.(f)' : 'per(h) óm(i)ni(h)a(h) sǽ(h)cu(g)la(g) sæ(g)cu(h)ló(hg)rum.(g)';
-    var k = c.search(/\s*:?\s*per ómnia sǽcula sæculórum\.?$/);
+    var k = c.search(/\s*[,:;]?\s*per ómnia sǽcula sæculórum\.?$/);
     if (k < 0 && /\bDeus\.?$/.test(c)) {    // written out up to "Deus." (the Per ómnia follows in the Preface tone)
       var ps0 = c.replace(/\.$/, '').split(/[;,]\s*(?=qui )/);
       return (ps0.length > 1 ? flexO(ps0[0] + ';', III) + ' (,) ' : '') + elevO(ps0[ps0.length - 1] + '.', III);
@@ -359,8 +366,9 @@
     o = o || {};
     var III = o.tone === 'hours' || o.tone === 'III';
     var t = plain(String(text || '').replace(/\s*[†‡]/g, ';')).replace(/\s*\.\s*$/, '.');
-    var b = t, c = '', cm = CONCL.exec(t);
+    var b = t, c = '', cm = CONCL.exec(t), midFlex = false;
     if (cm) { b = t.slice(0, cm.index).trim(); c = expandConcl(cm[1], b); }
+    else if ((cm = CONCL2.exec(t))) { b = t.slice(0, cm.index).trim(); c = cm[1]; midFlex = true; }   // "…Fílium tuum: qui tecum vivit…
     var g = '(f3) ';
     if (o.dv) g += III ? 'Dó(h)mi(h)nus(h) vo(h)bís(h)cum.(f) (::) <sp>R/</sp>. Et(g) cum(g) spí(g)ri(g)tu(g) tu(g)o.(h) (::) '
       : 'Dó(g)mi(h)nus(h) vo(gh)bís(hg)cum.(g) (::) <sp>R/</sp>. Et(g) cum(h) spí(h)ri(g)tu(g) tu(h)o.(h) (::) ';
@@ -370,7 +378,7 @@
     // the body: commas take no inflexion; ; and : and a full stop inside the prayer divide it (p. 405, 2°)
     var ms = pieces(b, ':;.?!');
     if (ms.length > 1 && ms[ms.length - 1].t.split(' ').length < 3) { var z = ms.pop(); ms[ms.length - 1].t += ' ' + z.t; }
-    g += body(ms, III, o.pointing === 'book', o.final === 'flex');
+    g += body(ms, III, o.pointing === 'book', o.final === 'flex' || midFlex);
     if (c) {
       g += conclO(c, III) + ' (::)';
       if (o.amen !== false && !/\bDeus\.$/.test(c)) g += ' <sp>R/</sp>. A(g)men.(h) (::)';   // "...Deus." : Per ómnia follows in the Preface tone

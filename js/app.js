@@ -1046,7 +1046,16 @@
       };
       // with the Order of Mass on, the proper Communicantes / Hanc igitur / Qui pridie go inside its Canon (drawOrdo), once:
       // their copy under "Infra Canonem" in the propers is then left out
-      var c39 = O ? hwCanon39() : null, hide = c39 ? c39.hide : [];
+      var c39 = O ? hwCanon39() : null, hide = c39 ? c39.hide.slice() : [];
+      // Joseph's ruling (27 Nov): each Postcommunion carries its own sung Dóminus vobíscum · Orémus (a G block, id with dv /
+      // vobiscum / oremus, right before or after "L: Postcommunio"); with the Order of Mass shown, its dialogue is used instead
+      if (O) HT.forEach(function (sec) {
+        var bl = sec.blocks;
+        bl.forEach(function (b, i) {
+          if (b.t !== 'L' || !/^Postcommunio/.test(b.la)) return;
+          [bl[i - 1], bl[i + 1]].forEach(function (g) { if (g && g.t === 'G' && /dv|vobiscum|oremus/i.test(g.id)) hide.push(g); });
+        });
+      });
       HT.forEach(function (sec, n) {
         var chunk = [], started = false;
         var flush = function () {
@@ -2390,7 +2399,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {D: D, moreText: moreText, tonePrayer: tonePrayer, toneReading: toneReading, dismissGabc: dismissGabc, solemnDay: solemnDay, flectamusDay: flectamusDay, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
+  window.ProprOP = {D: D, moreText: moreText, aspergesGabc: aspergesGabc, tonePrayer: tonePrayer, toneReading: toneReading, dismissGabc: dismissGabc, solemnDay: solemnDay, flectamusDay: flectamusDay, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
 
   function start() {
     if (!document.getElementById('selMass')) return;   // loaded as a library (e.g. by the Office page)

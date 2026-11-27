@@ -1,0 +1,21 @@
+## C11s rd0 Ad Corinthios 2 1: 3-7 pdf371  after: ps . inveni david servum meum , oleo sancto meo unxi eum
+   M ('replace', 'ter', 'pater', 371, ': benedictus deus et')
+   M ('insert', '', ': in christo iesu domino nostro', 371, 'sic eritis et consolationis')
+## C11s rd1 Matthæus 16: 24-27 pdf371  after: offertorium ps . gloria et honore coronasti eum : et constituisti eum
+   P ('replace', [':'], ['.'], 'facere , perdet eam')
+## C15s rd0 Sapientia 5: 1-5 pdf372  after: alleluia , alleluia . p . ps . iustus ut palma florebit
+   P ('delete', [','], [], 'improperii . nos insensati')
+## C15s rd1 Joannes 15: 1-7 pdf372  after: offertorium ps . gloria et honore coronasti eum : et constituisti eum
+   P ('replace', [','], [':'], 'ego sum vitis vera')
+   P ('replace', [','], [':'], '. manete in me')
+   P ('replace', [','], [':'], 'in me non manserit')
+   P ('replace', [','], [':'], 'mea in vobis manserint')
+   M ('replace', 'multum ,', 'm ultum :', 372, ', hic fert fructum')
+## C18s rd0 Sapientia 10: 10-14 pdf373  after: ps . posuisti domine super caput eius coronam de lapide pretioso .
+   P ('replace', [':'], [','], 'a seductoribus tutavit illum')
+   M ('replace', 'affuit', 'adfuit', 373, 'in fraude circumvenientium illum')
+   M ('insert', '', ', dominus deus noster', 373, 'dedit illi claritatem aeternam')
+## C18s rd1 Matthæus 10: 34-42 pdf373  after: offertorium ps . in virtute tua , domine , laetabitur iustus ,
+   P ('insert', [], [','], 'suis : nolite arbitrari')
+   P ('replace', [':'], ['.'], 'mittere , sed gladium')
+   P ('replace', [':'], ['.'], 'non est me dignus')

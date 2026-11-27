@@ -1362,5 +1362,74 @@
 "src": "G28 7* / G50 7*: 'In Festo unius Martyris et Pontificis', Missa Laetabitur (the title said only 'unius Martyris').",
 "title": "Commune unius Martyris et Pontificis",
 "en": "Common of One Martyr and Bishop"
+},
+"S1024": {
+"src": "G28 pp. 589-590 (djvu 308-309): S. Raphaelis Archangeli: 'Officium Benedicite, pag. 433'; RESPONSORIUM Laudate Dominum de caelis, V. Laudate eum omnes Angeli ejus, printed in full; 'Alleluia, V. In conspectu, pag. 470. Offertorium Stetit Angelus, pag. 436'; COMMUNIO Angeli, Archangeli printed in full (Resp. and Comm. typeset from the 1928 scan; = G50 pp. 604-605). Missale O.P. (1939), pp. 596-597. The Responsorium Benedicite Dominum omnes was wrong.",
+"conf": "g28",
+"set": {
+"gr": [
+"g28:raphael_gr|Laudate Dominum de caelis|589-590 (1928)"
+],
+"co": [
+"g28:raphael_co|Angeli, Archangeli|590 (1928)"
+]
+},
+"page": "589-590",
+"note": "Graduale O.P. (1928), pp. 589-590 (= 1950, pp. 604-605): Officium Benedicite (p. 433), Responsorium Laudate Dominum de caelis and Communio Angeli, Archangeli (typeset from the scan for this site), Alleluia In conspectu (p. 470) and Offertorium Stetit Angelus (p. 436), as at St Michael. The Missale O.P. (1939), p. 596, prints the Alleluia verse as Ps. 137 'In conspectu Angelorum psallam tibi: adorabo ad templum sanctum tuum, et confitebor nomini tuo'; the chant is sung as the Graduale gives it. Missale O.P. (1939), pp. 596-597."
+},
+"S1015": {
+"src": "G28 pp. 586-588 (djvu 307-308): S. Teresiae, Virginis, proper Mass printed in full (typeset from the 1928 scan, checked staff by staff; = G50 pp. 601-603). Missale O.P. (1939), pp. 590-591: Officium Dedit ei Dominus, Resp. Danti mihi, Alleluia Declaratio, Off. Factus est, Comm. Misericordias. The Common of Doctors chants were wrong.",
+"conf": "g28",
+"set": {
+"in": [
+"g28:teresia_in|Dedit ei Dominus|586-587 (1928)"
+],
+"gr": [
+"g28:teresia_gr|Danti mihi sapientiam|587 (1928)"
+],
+"al": [
+"g28:teresia_al|Declaratio sermonum|588 (1928)"
+],
+"of": [
+"g28:teresia_of|Factus est in corde meo|588 (1928)"
+],
+"co": [
+"g28:teresia_co|Misericordias Domini|588 (1928)"
+]
+},
+"page": "586-588",
+"note": "Graduale O.P. (1928), pp. 586-588 (= 1950, pp. 601-603): Officium Dedit ei Dominus, Responsorium Danti mihi sapientiam, Alleluia Declaratio sermonum, Offertorium Factus est in corde meo, Communio Misericordias Domini (typeset from the scan for this site). Missale O.P. (1939), pp. 590-591."
+},
+"S1115": {
+"src": "Supplement S.R.C. 9 June 1933 bound in the G28 copy (leaf pp. 1-2, djvu 314-315) = G50 pp. 616-617: 'Missa In medio, in Festo unius Doctoris, pag. 35*, praeter sequentia': Resp. Ecce sacerdos magnus, V. Inventus est justus; Alleluia V. Vere magnus est in caelis Albertus (typeset from the scan). Missale O.P. (1939), pp. 622-624: Officium In medio, Resp. Eccli. 44 Ecce Sacerdos, Alleluia Vere magnus, Off. Veritas mea, Comm. Domine quinque talenta; votive: infra Septuag. Tractus Quasi stella; Temp. Resur. II. Alleluia Angelus Domini; Temp. Ascens. II. Alleluia Ascendens. The Common's Os justi and Posui were wrong.",
+"conf": "g28",
+"set": {
+"gr": [
+"g28:albertus_gr|Ecce sacerdos magnus|suppl. 1933, p. 1"
+],
+"al": [
+"g28:albertus_al|Vere magnus est in caelis|suppl. 1933, p. 2"
+]
+},
+"season": {
+"lent": {
+"tr": [
+7081
+]
+},
+"pasch": {
+"al": [
+"op-g28-albertus-al",
+6824
+]
+},
+"asc": {
+"al": [
+5526
+]
+}
+},
+"page": "35*",
+"note": "Missa In medio, de Communi unius Doctoris, Graduale O.P. p. 35*, praeter sequentia (Supplementum S.R.C., 9 June 1933, bound in the 1928 Graduale; = Graduale O.P. 1950, pp. 616-617): Responsorium Ecce sacerdos magnus and Alleluia Vere magnus est in caelis Albertus (typeset from the scan for this site); Offertorium Veritas mea, Communio Domine quinque talenta. Missale O.P. (1939), pp. 622-624."
 }
 }
