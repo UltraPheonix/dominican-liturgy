@@ -1,0 +1,220 @@
+{
+ "_about": "Eye pass by the main session (same format as the other fix files; EYEPASS.md). Extra keys here: v1.oratio (a different prayer at I Vespers), psalms (the feast's own Matins psalms by nocturn), hymns/hours noted in 'note' until the build can place them. Hymns: 'mat.hymn' / 'v1.hymn' / 'laud.hymn' / 'v2.hymn' = [strophe, …] with ' / ' between the lines, as printed.",
+ "Ordinátio S. Ambrósii Ep. Conf. et Eccl. Doct.": {
+  "pages": "v1 pdf 787-788 (book pp. 701-702)",
+  "oratio": "Deus mundi auctor et cónditor, qui hodiérnæ festivitátis diem beáti Ambrósii sacerdótii electióne consecrásti: præsta pópulo tuo ut cujus ánnua celebritáte devótis resúltat obséquiis, ejus suffrágiis tuæ pietátis consequátur auxílium. Per Dóminum.",
+  "lessons": {
+   "4": "Ambrósius Epíscopus Mediolanénsis, Ambrósii civis Románi fílius, patre Gálliæ præfécto natus est. In hujus infántis ore exámen apum consedísse dícitur: quæ res divínam viri eloquéntiam præmonstrábat. Romæ liberálibus disciplínis erudítus est. Post, a Probo præfécto, Ligúriæ et Æmíliæ præpósitus; inde póstea ejúsdem Probi jussu cum potestáte Mediolánum venit: ubi, mórtuo Auxéntio Ariáno epíscopo, pópulus de successóre deligéndo dissidébat.",
+   "5": "Quare Ambrósius, pro offícii sui múnere, ecclésiam ingréssus, ut commótam seditiónem sedáret, cum multa de quiéte et tranquillitáte reipúblicæ præcláre dixísset, repénte púero Ambrósium Epíscopum exclamánte, univérsi pópuli vox erúpit, Ambrósium Epíscopum deposcéntis. Recusánte illo, et eórum précibus resisténte, ardens pópuli stúdium ad Valentiniánum imperatórem delátum est: cui gratíssimum fuit, a se deléctos júdices ad sacerdótium postulári.",
+   "6": "Fuit id étiam Probo præfécto jucúndum, qui Ambrósio proficiscénti quasi divínans díxerat: Vade, age, non ut judex, sed ut epíscopus. Itaque cum ad pópuli desidérium imperatóris volúntas accéderet, Ambrósius baptizátus (erat enim catechúmenus) sacrísque initiátus, ac servátis ómnibus ex institúto Ecclésiæ Ordinum grádibus, octávo die, qui fuit séptimo Idus Decémbris, episcopále onus suscépit."
+  },
+  "note": "In I Vesperis and Matins: Hymnus Iste Conféssor Dómini sacrátus Sóbrius, castus… (p. 68*). I Nocturn: Lectiones Fidélis sermo, de Communi unius Confessoris Pontificis, p. 70*. II Nocturn headed (Ex Paulino amanuensi S. Ambrosii et ex Rom. Brev.). III Nocturn: Homilia in Evangelium Vos estis sal terræ, ut in Communi unius Doctoris, p. 80*. After the Advent memoria: Memoria de Octava S. Andreæ (nisi transferenda fuerit): In j. Vesperis Aña. Ambulans Jesus juxta mare Galilææ vidit Petrum et Andréam fratrem ejus, et ait illis: Veníte post me, fáciam vos fíeri piscatóres hóminum. At illi, relíctis rétibus et navi, secúti sunt eum. V. Diléxit Andréam Dóminus. R. In odórem suavitátis. Oratio: Prótegat nos Dómine sæpius beáti Andréæ Apóstoli tui repetíta solémnitas: ut cujus patrocínia sine intermissióne recólimus, perpétuam defensiónem sentiámus. Per. In Laudibus Aña. Concéde nobis hóminem justum, redde nobis hóminem sanctum: ne interfícias hóminem Deo carum, justum, mansuétum et pium. V. Annuntiavérunt ópera Dei. R. Et facta ejus intellexérunt. Oratio Prótegat."
+ },
+ "Concéptio immaculáta B. Maríæ Virg.": {
+  "pages": "v1 pdf 789-800 (book pp. 703-714)",
+  "v1.ant": "Tota pulchra es María, et mácula originális non est in te.",
+  "v1.cap": [
+   "Prov. 8",
+   "Dóminus possédit me in inítio viárum suárum, ántequam quidquam fáceret a princípio. Ab ætérno ordináta sum, et ex antíquis ántequam terra fíeret. Nondum erant abýssi, et ego jam concépta eram."
+  ],
+  "v1.resp": [
+   "Elégit Maríam Deus, et præelégit eam, et creávit eam in Spíritu sancto:",
+   "Ideo nihil inquinátum in eam incúrrit.",
+   "Dedit Maríæ Dóminus protectiónem salútis suæ, et déxtera sua suscépit eam.",
+   "Ideo.",
+   "Ideo."
+  ],
+  "v1.vr": [
+   "Immaculáta Concéptio est hódie sanctæ Maríæ Vírginis.",
+   "Quæ serpéntis caput virgíneo pede contrívit."
+  ],
+  "v1.magn": "Beátam me dicent omnes generatiónes: quia fecit mihi magna qui potens est, allelúia.",
+  "v1.oratio": "Deus, qui Unigéniti tui Matrem ab origináli culpa in sua Conceptióne mirabíliter præservásti: da, quæsumus, ut sua nos intercessióne munítos, corde mundos fácias suæ interésse festivitáti. Per eúndem.",
+  "oratio": "Deus, qui per immaculátam Vírginis Conceptiónem dignum Fílio tuo habitáculum præparásti: quæsumus ut qui ex morte ejúsdem Fílii tui prævísa eam ab omni labe præservásti, nos quoque mundos ejus intercessióne ad te perveníre concédas. Per eúndem.",
+  "mat.invit": "Immaculátam Conceptiónem Vírginis Maríæ celebrémus: * Christum ejus Fílium adorémus Dóminum.",
+  "psalms": [
+   [
+    8,
+    18,
+    23
+   ],
+   [
+    44,
+    45,
+    86
+   ],
+   [
+    95,
+    96,
+    97
+   ]
+  ],
+  "mat.nants": [
+   [
+    "Admirábile est nomen tuum Dómine in univérsa terra: quia in Vírgine María dignum tibi habitáculum præparásti.",
+    "In sole pósuit Deus tabernáculum suum.",
+    "In Conceptióne sua accépit María benedictiónem a Dómino, et misericórdiam a Deo salutári suo."
+   ],
+   [
+    "Diffúsa est grátia in Conceptióne ejus, et speciósa appáruit inter fílias hóminum.",
+    "Adjúvit eam Deus mane dilúculo: sanctificávit tabernáculum suum Altíssimus.",
+    "Gloriósa dicta sunt de te Cívitas Dei: fundávit te Dóminus in móntibus sanctis."
+   ],
+   [
+    "Sanctimónia et magnificéntia in Conceptióne ejus: annuntiáte in ómnibus pópulis glóriam ejus.",
+    "Lætámini omnes in Dómino: et confitémini memóriæ sanctitátis ejus.",
+    "Notum fecit Dóminus opus suum: in conspéctu géntium revelávit glóriam Genitrícis suæ."
+   ]
+  ],
+  "mat.nvr": [
+   [
+    "Deus omnípotens præcínxit me virtúte.",
+    "Et pósuit immaculátam viam meam."
+   ],
+   [
+    "In hoc cognóvi quóniam voluísti me.",
+    "Quóniam non gaudébit inimícus meus super me."
+   ],
+   [
+    "Exaltábo te Dómine, quóniam suscepísti me.",
+    "Nec delectásti inimícos meos super me."
+   ]
+  ],
+  "lessons": {
+   "1": "Serpens erat cállidior cunctis animántibus terræ quæ fécerat Dóminus Deus. Qui dixit ad mulíerem: Cur præcépit vobis Deus ut non comederétis de omni ligno paradísi? Cui respóndit múlier: De fructu lignórum, quæ sunt in paradíso, véscimur: de fructu vero ligni, quod est in médio paradísi, præcépit nobis Deus ne comederémus: et ne tangerémus illud, ne forte moriámur. Dixit autem serpens ad mulíerem: Nequáquam morte moriémini. Scit enim Deus quod in quocúmque die comedéritis ex eo, aperiéntur óculi vestri: et éritis sicut dii, sciéntes bonum et malum.",
+   "2": "Vidit ígitur múlier quod bonum esset lignum ad vescéndum, et pulchrum óculis, aspectúque delectábile: et tulit de fructu illíus, et comédit: dedítque viro suo, qui comédit. Et apérti sunt óculi ambórum: cumque cognovíssent se esse nudos, consuérunt fólia ficus, et fecérunt sibi perizómata. Et cum audíssent vocem Dómini Dei deambulántis in paradíso ad auram post merídiem, abscóndit se Adam et uxor ejus a fácie Dómini Dei in médio ligni paradísi.",
+   "3": "Vocavítque Dóminus Deus Adam, et dixit ei: Ubi es? Qui ait: Vocem tuam audívi in paradíso: et tímui, eo quod nudus essem, et abscóndi me. Cui dixit: Quis enim indicávit tibi quod nudus esses, nisi quod ex ligno de quo præcéperam tibi ne coméderes, comedísti? Dixítque Adam: Múlier, quam dedísti mihi sóciam, dedit mihi de ligno, et comédi. Et dixit Dóminus Deus ad mulíerem: Quare hoc fecísti? Quæ respóndit: Serpens decépit me, et comédi. Et ait Dóminus Deus ad serpéntem: Quia fecísti hoc, maledíctus es inter ómnia animántia, et béstias terræ: super pectus tuum gradiéris, et terram cómedes cunctis diébus vitæ tuæ. Inimicítias ponam inter te et mulíerem, et semen tuum et semen illíus: ipsa cónteret caput tuum, et tu insidiáberis calcáneo ejus.",
+   "4": "Qualis et quanta esset beáta et gloriósa semper Virgo María, ab Angelo divínitus declarátur, cum dícitur: Ave grátia plena: Dóminus tecum: benedícta tu in muliéribus. Tálibus namque decébat Vírginem oppignorári munéribus, ut esset grátia plena: quæ dedit cælis glóriam, terris Dóminum, pacémque refúdit, fidem géntibus, finem vítiis, vitæ órdinem, móribus disciplínam. Et bene plena, quia céteris per partes præstátur: Maríæ vero simul se tota infúndit plenitúdo grátiæ. Vere plena, quia etsi in sanctis Pátribus et Prophétis grátia fuísse créditur, non tamen eátenus plena: in Maríam vero totíus grátiæ, quæ in Christo est, plenitúdo venit, quamquam áliter. Et ídeo inquit: Benedícta tu in muliéribus: id est plus benedícta quam omnes mulíeres. Ac per hoc quidquid maledictiónis infúsum est per Hevam, totum ábstulit benedíctio Maríæ. De ipsa Sálomon in Cánticis, quasi in laudem ejus: Veni, inquit, colúmba mea, immaculáta mea. Jam enim hiems tránsiit, imber ábiit, et recéssit. Ac deínde inquit: Veni de Líbano, veni, coronáberis.",
+   "5": "Non immérito ígitur veníre de Líbano jubétur: quia Líbanus Candidátio interpretátur. Erat enim candidáta multis meritórum virtútibus, et dealbáta nive candídior, Spíritus sancti munéribus, simplicitátem colúmbæ in ómnibus repræséntans: quóniam quidquid in ea gestum est, totum púritas et simplícitas, totum véritas et grátia fuit; totum misericórdia et justítia, quæ de cælo prospéxit: et ídeo immaculáta, quia in nullo corrúpta. Circúmdedit enim virum in útero, sicut Jeremías sanctus testátur, et non aliúnde accépit. Fáciet, inquit, Dóminus novum super terram, et múlier circúmdabit virum. Vere novum, et ómnium novitátum superéminens nóvitas virtútum, quando Deus (quem ferre non potest mundus, neque vidére áliquis, ut vívere possit) sic ingréssus est hospítium ventris, ut córporis claustrum nescíret: sicque gestátus, ut totus Deus in eo esset: et sic exívit inde, ut esset (sicut Ezéchiel fatétur) porta omníno clausa. Unde cánitur in eísdem Cánticis de ea: Hortus conclúsus, fons signátus, emissiónes tuæ paradísus. Vere hortus deliciárum, in quo cónsita sunt univérsa florum génera, et odoraménta virtútum: sicque conclúsus, ut nésciat violári, neque corrúmpi ullis insidiárum fráudibus. Fons ítaque signátus sigíllo totíus Trinitátis.",
+   "6": "Deíparæ autem Vírginis in sua Conceptióne de tetérrimo humáni géneris hoste victóriam, quam divína elóquia, veneránda tradítio, perpétuus Ecclésiæ sensus, singuláris Episcopórum ac fidélium conspirátio, insígnia quoque summórum Pontíficum acta atque constitutiónes mirífice jam illustrábant: Pius Nonus Póntifex Máximus, totíus Ecclésiæ votis ánnuens, státuit suprémo suo atque infallíbili oráculo solémniter proclamáre. Itaque sexto Idus Decémbris anni millésimi octingentésimi quinquagésimi quarti, in basílica Vaticána, ingénti sanctæ Románæ Ecclésiæ Patrum Cardinálium et Episcopórum ex díssitis étiam regiónibus astánte cœtu, universóque plaudénte orbe, solémniter pronuntiávit ac definívit: Doctrínam, quæ tenet beatíssimam Vírginem Maríam in primo instánti suæ Conceptiónis fuísse, singulári Dei privilégio, ab omni originális culpæ labe præservátam immúnem, esse a Deo revelátam, ac proínde ab ómnibus fidélibus fírmiter constantérque credéndam.",
+   "7": "Ave María, grátia plena, sanctis sánctior, et cælis excélsior, et Chérubim gloriósior, et Séraphim honorabílior, et super omnem creatúram venerabílior. Ave colúmba, quæ nobis et fructum fers olívæ, et Servatórem a spiritáli dilúvio, ac portum salútis annúntias: cujus pennæ deargentátæ, et posterióra dorsi in pallóre auri, sanctíssimi et illuminántis Spíritus fulgóre irradiántur. Ave amœníssimus et rationális Dei paradísus, benevolentíssima et omnipoténti ejúsdem déxtera hódie ad oriéntem plantátus, et ipsi suáve olens lílium, et rosam immarcescíbilem gérminans in eórum medélam, qui pestíferam animæque exitiálem amaritúdinem mortis ad occidéntem ebíberant: paradísus, in quo ad veritátis agnitiónem lignum vivíficum effloréscit, e quo qui gustáverint, immortalitátem consequúntur. Ave sacrosáncte ædificátum, immaculátum, purissimúmque Dei summi Regis palátium, ejúsdem Dei Regis magnificéntia circumornátum, omnésque hospítio recípiens, ac mýsticis refíciens delíciis; in quo non manufáctus, et vário decóre nitens, situs est spirituális Sponsi thálamus; in quo Verbum, errántem humánam stirpem revocáre volens, carnem sibi desponsávit, ut eos, qui voluntáte própria extórres facti fúerant, Patri reconciliáret.",
+   "8": "Ave Dei mons præpínguis et umbrósus, in quo enutrítus Agnus rationális, peccáta atque infirmitátes nostras portávit: mons, e quo devolútus ille nulla manu præcísus lapis contrívit aras idolórum, et factus est in caput ánguli, mirábilis in óculis nostris. Ave sanctus Dei thronus, divínum donárium, domus glóriæ, perpúlchrum ornaméntum, cimélium eléctum, et totíus orbis propitiatórium, cælúmque Dei glóriam enárrans. Ave urna ex auro puro confláta, et suavíssimam animárum nostrárum dulcédinem, Christum scílicet, qui manna est, cóntinens. O puríssima, et omni laude et obséquio digníssima Virgo, Deo dicátum donárium omni creaturárum conditióni præcéllens, terra non secta, inaráta ager, vitis floridíssima, fons aquas effúndens, virgo génerans, et mater viri néscia, innocéntiæ thesáurus abscónditus, et sanctimóniæ decus; acceptíssimis tuis ac matérna auctoritáte válidis précibus ad Dóminum ac Deum ómnium conditórem, Fílium tuum, ex te sine patre génitum, ecclesiástici órdinis gubernácula fac dírigas, et ad portum tranquíllum perdúcas.",
+   "9": "Sacerdótes justítia, et probátæ, immaculátæ ac sincéræ fídei exsultatióne splendidíssime indúito. Orthodóxis princípibus, qui præ omni púrpuræ aut auri splendóre, et præ margarítis ac lapídibus pretiósis, te nacti sunt diadéma et induméntum ac firmíssimum regni sui ornaméntum, in tranquíllo ac próspero statu sceptra dírige. Malefídas natiónes, in te ac Deum ex te génitum blasphemántes, eórum pédibus sternens subjícito: subjectúmque pópulum, ut secúndum Dei præcéptum in suávi obediéntiæ obséquio persevéret, confirmáto. Tuam hanc civitátem, quæ te tamquam turrim ac fundaméntum habet, victóriæ triúmphis coronáto, et fortitúdine circumcíngens custódito. Dei habitatiónem, templi decórem semper conserváto. Laudatóres tuos ab omni discrímine et ánimi angóre éxime. Captívis redemptiónem tribúito: peregrínis tecto et quovis præsídio destitútis solámen te exhíbe. Univérso mundo auxiliatrícem manum tuam pórrige, ut in lætítia et exsultatióne solemnitátes tuas simul cum ista, quam modo celebrámus, festivitáte splendidíssimo éxitu transigámus, in Christo Jesu universórum Rege ac vero Deo nostro, cui glória et fortitúdo una cum sancto vitæque princípio Patre, et coætérno et consubstantiáli et conregnánte Spíritu, nunc et semper et in sæcula sæculórum. Amen."
+  },
+  "gospel7": "In illo témpore: Missus est Angelus Gábriel a Deo in civitátem Galilææ, cui nomen Názareth, ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen Vírginis María. Et réliqua.",
+  "homily7": "Homilía sancti Germáni Epíscopi.",
+  "resp": {
+   "1": [
+    "Per unum hóminem peccátum in hunc mundum intrávit, in quo omnes peccavérunt.",
+    "Ne tímeas María, invenísti grátiam apud Deum.",
+    [
+     "Erípuit Dóminus ánimam tuam de morte, et contra inimícum factus est protéctor tuus."
+    ],
+    [
+     "Ne tímeas María.",
+     false
+    ]
+   ],
+   "2": [
+    "Transíte ad me omnes, qui concupíscitis me:",
+    "Et narrábo vobis quanta fecit Deus ánimæ meæ.",
+    [
+     "Vivit Dóminus, quóniam adimplévit in me misericórdiam suam."
+    ],
+    [
+     "Et narrábo vobis.",
+     false
+    ]
+   ],
+   "3": [
+    "Elécta mea cándida sicut nix in Líbano; sicut favus distíllans lábia ejus:",
+    "Mel et lac sub lingua illíus.",
+    [
+     "Veni de Líbano, sponsa mea, veni, coronáberis coróna gratiárum."
+    ],
+    [
+     "Mel et lac sub lingua illíus.",
+     "Mel et lac sub lingua illíus."
+    ]
+   ],
+   "4": [
+    "Ego ex ore Altíssimi prodívi, primogénita ante omnem creatúram: ego feci in cælis ut orirétur lumen indefíciens.",
+    "Nondum erant abýssi, et ego jam concépta eram.",
+    [
+     "Deus enim creávit me in justítia, et apprehéndit manum meam, et servávit me."
+    ],
+    [
+     "Nondum erant abýssi.",
+     false
+    ]
+   ],
+   "5": [
+    "Nihil inquinátum in eam incúrrit:",
+    "Candor est lucis ætérnæ et spéculum sine mácula.",
+    [
+     "Est enim hæc speciósior sole, et luci comparáta invenítur púrior."
+    ],
+    [
+     "Candor est lucis ætérnæ.",
+     false
+    ]
+   ],
+   "6": [
+    "Signum magnum appáruit in cælo: Múlier amícta sole, et luna sub pédibus ejus:",
+    "Et in cápite ejus coróna stellárum duódecim.",
+    [
+     "Induit eam Dóminus vestiméntis salútis, induménto justítiæ, et quasi sponsam ornávit eam monílibus suis."
+    ],
+    [
+     "Et in cápite ejus.",
+     "Et in cápite ejus."
+    ]
+   ],
+   "7": [
+    "Hortus conclúsus, soror mea sponsa, hortus conclúsus, fons signátus:",
+    "Emissiónes tuæ paradísus, o María.",
+    [
+     "Aperi mihi soror mea, amíca mea, colúmba mea, immaculáta mea."
+    ],
+    [
+     "Emissiónes tuæ.",
+     false
+    ]
+   ],
+   "8": [
+    "Magníficat ánima mea Dóminum:",
+    "Quia fecit mihi magna qui potens est, et sanctum nomen ejus.",
+    [
+     "Ecce enim ex hoc beátam me dicent omnes generatiónes."
+    ],
+    [
+     "Quia fecit mihi.",
+     false
+    ]
+   ],
+   "9": [
+    "Elégit Maríam Deus, et præelégit eam, et creávit eam in Spíritu sancto:",
+    "Ideo nihil inquinátum in eam incúrrit.",
+    [
+     "Dedit Maríæ Dóminus protectiónem salútis suæ, et déxtera sua suscépit eam."
+    ],
+    [
+     "Ideo nihil inquinátum in eam incúrrit.",
+     "Ideo nihil inquinátum in eam incúrrit."
+    ]
+   ]
+  },
+  "al": [
+   "In Conceptióne tua immaculáta, Dei Génitrix Virgo.",
+   "Cæli et terra læténtur."
+  ],
+  "laud.ant": [
+   "Tota pulchra es María et mácula originális non est in te.",
+   "Vestiméntum tuum cándidum quasi nix, et fácies tua sicut sol.",
+   "Tu glória Jerúsalem, tu lætítia Israel, tu honorificéntia pópuli nostri.",
+   "Benedícta es tu Virgo María a Dómino Deo excélso, præ ómnibus muliéribus super terram.",
+   "Trahe nos Virgo immaculáta: post te currémus in odórem unguentórum tuórum."
+  ],
+  "laud.bened": "Ait Dóminus Deus ad serpéntem: Inimicítias ponam inter te et mulíerem, et semen tuum et semen illíus: ipsa cónteret caput tuum, allelúia.",
+  "v2.ant": "Tota pulchra es María, et mácula originális non est in te.",
+  "v2.magn": "Hódie egréssa est virga de radíce Jesse: hódie sine ulla peccáti labe concépta est María: hódie contrítum est ab ea caput serpéntis antíqui, allelúia.",
+  "note": "NOT YET PLACED BY THE BUILD (transcribed here from the page): I Vespers psalms Laudáte púeri cum ceteris (p. 145); hymn Ave maris stella (genuflection from the start to 'Sumens illud Ave'), with the two strophes María Mater grátiæ … Glória tibi Dómine, Qui natus es de Vírgine, Cum Patre et sancto Spíritu In sempitérna sæcula. Amen., said at the end of every hymn through the Octave except Ave maris stella and Præclára custos vírginum (rubric p. 704). Compline: Super Psalmos Aña. Virgo María, non est tibi símilis nata in mundo inter mulíeres, florens ut rosa, fragrans sicut lílium: ora pro nobis sancta Dei Génitrix. Ad Nunc dimittis Aña. Corde et ánimo Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genitrícis Dei Maríæ. (so through the Octave, with exceptions, p. 704). Matins hymn Præclára custos vírginum (5 strophes, p. 704). Blessings proper before each lesson (Alma Virgo vírginum …; Sancta Dei Génitrix …; Nos cum Prole pia …; Ab hoste malígno …; Jesus Maríæ Fílius …; Stella María maris …; Evangélica léctio …; In omni tribulatióne …; Ad societátem cívium …). Lessons i-iii: De libro Génesis, cap. 3. II Nocturn: Sermo sancti Hierónymi Presbýteri (De Assumpt. B. M. V.); lesson vi (Ex Actis Pii Papæ Noni). Lauds: Capitulum Dóminus possédit me (as I Vespers); Hymnus O gloriósa Dómina with María Mater grátiæ and Glória tibi Dómine; V. Immaculáta Concéptio est hódie sanctæ Maríæ Vírginis. R. Quæ serpéntis caput virgíneo pede contrívit. The Lauds prayer is said also at Terce, Sext, None and II Vespers. Prime: R. Jesu Christe. V. Qui natus es de Vírgine María (through the Octave unless the Office is of the Season). Terce: Capitulum Dóminus possédit me; R. br. Deus omnípotens præcínxit me virtúte, * Allelúia, allelúia. V. Et pósuit immaculátam viam meam; V. In hoc cognóvi quóniam voluísti me. R. Quóniam non gaudébit inimícus meus super me. Sext: Capitulum Ezech. 44 Porta hæc clausa erit: non aperiétur, et vir non intrábit per eam: quóniam Dóminus Deus Israel ingréssus est per eam, erítque clausa príncipi. Princeps ipse sedébit in ea.; R. br. In hoc cognóvi quóniam voluísti me, * Allelúia, allelúia. V. Quóniam non gaudébit inimícus meus super me; V. Exaltábo te Dómine, quóniam suscepísti me. R. Nec delectásti inimícos meos super me. None: Capitulum Apoc. 12 Signum magnum appáruit in cælo: Múlier amícta sole, et luna sub pédibus ejus, et in cápite ejus coróna stellárum duódecim.; R. br. Exaltábo te Dómine, quóniam suscepísti me, * Allelúia, allelúia. V. Nec delectásti inimícos meos super me; V. Immaculáta Concéptio tua Dei Génitrix Virgo. R. Gáudium annuntiávit univérso mundo. II Vespers: Psalmus Dixit Dóminus cum ceteris ut in Communi unius Virginis (p. 96*); Capitulum, Hymnus Ave maris stella and V. as at I Vespers. The Octave (pdf 800 ff.) is not transcribed.",
+  "mat.hymn": [
+   "Præclára custos vírginum, / Intácta Mater Núminis, / Cæléstis aulæ jánua, / Spes nostra, cæli gáudium:",
+   "Inter rubéta lílium, / Colúmba formosíssima, / Virga e radíce gérminans / Nostro medélam vúlneri:",
+   "Turris dracóni impérvia, / Amíca stella náufragis, / Tuére nos a fráudibus, / Tuáque luce dírige.",
+   "Erróris umbras díscute, / Syrtes dolósas ámove: / Fluctus tot inter dévios / Tutam reclúde sémitam.",
+   "Jesu tibi sit glória, / Qui natus es de Vírgine: / Cum Patre et almo Spíritu, / In sempitérna sæcula. / Amen."
+  ]
+ }
+}

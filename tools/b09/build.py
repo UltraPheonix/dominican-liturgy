@@ -1076,10 +1076,18 @@ def with_proper(F, o, title):
                 if k == 'resp' and v[4] is False: v = list(v[:4]) + [v[3]]
                 F[sec] = dict(F[sec], **{k: tuple(v) if k in ('resp', 'vr') else v})
     if X.get('al'): F['al'] = tuple(X['al'])
+    for sec in ('v1', 'mat', 'laud', 'v2'):       # a hymn printed in the feast itself (verified by eye)
+        hy = X.get(sec + '.hymn')
+        if hy and isinstance(F.get(sec), dict):
+            inc = hy[0].split(' / ')[0].rstrip(',.:;')
+            CM.HYMN_TEXT[inc] = (CM._hy(hy), CM._hy(hy))
+            F[sec] = dict(F[sec], hymn=inc)
     M_ = dict(F['mat']); tp = F.get('_tp')
     iv = get('mat', 'invit')
     if iv and len(iv) < 220 and '*' in iv: M_['invit'] = iv
     na = get('mat', 'nants')
+    if X.get('psalms') and not tp and len(M_.get('noct', [])) == 3 and len(X['psalms']) == 3:   # the feast prints its own Matins psalms
+        M_['noct'] = [(list(X['psalms'][i]),) + tuple(M_['noct'][i][1:]) for i in range(3)]
     if na and not tp and len(M_.get('noct', [])) == 3 and len(na) == 3:
         nv = X.get('mat.nvr') or (P.get('mat') or {}).get('nvr') or [None] * 3
         nv = list(nv) + [None] * (3 - len(nv))
@@ -1227,13 +1235,13 @@ def main():
         dn = d + datetime.timedelta(days=1); TX = feast_day(dn) if not hard_proper(dn) else None
         rt, rn = day_rank(d), day_rank(dn)
         if TX and TX['fe']['rank'] != 'Memoria' and (rn > rt or (rn == rt and not FX)):
-            Fn = TX['F']; orn = feast_oratio(dn, TX['fe'], Fn)
+            Fn = TX['F']; orn = (PFIX.get(re.sub(r'\s*\(translatum\)', '', TX['fe']['title'])) or {}).get('v1.oratio') or feast_oratio(dn, TX['fe'], Fn)
             cmv = comm_rows(([dict(FX['fe'], _d=d)] if FX else []) + others(d, FX['fe']['title'] if FX else ''))
             NMT[0] = TX['fe']['title']   # I Vespers of tomorrow's feast: its name
             H['Vespera'] = feast_vespers(d, office_season(dn, season(dn)[0]), w, Fn, TX['fe'], TX['o'], 1, orn, cmv)
             NMT[0] = FX['fe']['title'] if FX else None
         elif FX and TX and rn == rt and FX['fe']['rank'] != 'Tres Lectiones':
-            Fn = TX['F']; orn = feast_oratio(dn, TX['fe'], Fn)
+            Fn = TX['F']; orn = (PFIX.get(re.sub(r'\s*\(translatum\)', '', TX['fe']['title'])) or {}).get('v1.oratio') or feast_oratio(dn, TX['fe'], Fn)
             cmv = comm_rows([dict(FX['fe'], _d=d)] + others(d, FX['fe']['title']))
             H['Vespera'] = feast_vespers(d, office_season(d, s), w, FX['F'], FX['fe'], FX['o'], 2, None, cmv, ants_l, split_from=(Fn, TX['fe'], TX['o'], orn))
         elif FX and FX['fe']['rank'] != 'Tres Lectiones' and rt >= rn:
