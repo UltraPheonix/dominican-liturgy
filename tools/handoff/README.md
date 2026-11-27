@@ -140,6 +140,13 @@ nohup python3 -m http.server 8768 >/dev/null 2>&1 &   # mass_sweep.py needs this
    - Use two oration tones (Proc. pp. 404–406 and 407–408) and the lesson/prophecy tone (pp. 408–413).
    - Stays text: the fire blessing ("legendo sine nota"), the Secrets and Canon, and the Mandatum prayers ("humili voce").
    - Sung: the Thursday Sermo Domini, in the Gospel tone.
+2b. **Holy Week: every prayer and blessing in chant (Joseph, 27 Nov, explicit).** Lead B must cover all of them, day by day:
+    - **Palm Sunday:** the blessing of palms and all its prayers; the prayers of the procession; the Collect, Postcommunion, Gospel of the blessing.
+    - **Monday–Wednesday:** Collects; the Oratio super populum after "Humiliate capita"; Postcommunions.
+    - **Maundy Thursday:** the Mass prayers; the absolution prayers (if a Dominican tone is found); the prayer at the altar of repose (2nd oration tone, Proc. p. 407); the Mandatum's concluding prayer.
+    - **Good Friday:** the lessons and their prayers; all nine Solemn Prayers with their "Oremus, dilectissimi" biddings; the prayers of the Mass of the Presanctified.
+    - **Holy Saturday:** the blessings of the new fire, the incense grains and the candle; the prayers after each prophecy; the blessing of the font, including its Preface-tone "Vere dignum" (Missal Appendix pp. 147*-150*), set to the Dominican Preface tone of the 1939 Missal appendix; the Mass prayers.
+    - **Where the 1939 Missal says a text is read "sine nota" or said "humili voce"** (e.g. the fire blessing "legendo sine nota"): still give the chant in the proper tone, as Joseph asked. Keep the Missal's rubric quoted above it, so the user sees that the Missal has it read.
 3. **1959 English** (english_1959.md).
    - Use the DM text wherever a match exists, replacing the Divinum Officium English too. Keep the DO English only where there is no DM match, labelled; label anything still AI as "AI translation".
    - Needs the one-line `prayerOf` change in js/app.js for commemoration labels.
