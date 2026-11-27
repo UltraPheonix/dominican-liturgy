@@ -1,4 +1,4 @@
-# Mass chat — where to resume (27 Nov 2026, after v182)
+# Mass chat — where to resume (27 Nov 2026, after v184)
 
 Standing rules: pre-1955 Dominican rite only; never infer chant; terse; status after each substep; `git pull --rebase`,
 bump sw.js, headless Chrome test, commit as UltraPheonix, `bash tools/push.sh`; do not touch the Office files.
@@ -49,6 +49,11 @@ bump sw.js, headless Chrome test, commit as UltraPheonix, `bash tools/push.sh`; 
     Sunday, S. Irenaeus with the octave of St John and the vigil, S. Silvester with the Nativity, Christmas 2nd Mass of St Anastasia,
     Ember Wednesday of Advent 'Festina', the octave day of St Lawrence, Rogations in all Masses, 7-8 Mar.), and rule 8898
     ('semper fit Memoria de Feria majori Adventus, Quadragesimae, Quatuor Temporum et Rogationum').
+  * DONE 1a (v184): all 76 printed/referred temporal 2nd/3rd prayers checked (by collect text and position): every one fits the
+    seasonal rule in prescribed(); the Epiphany's 'Infra Octavam additur Secunda Oratio Deus qui salutis' = rule X.1 b.
+    Holy Week Mon-Wed print 'Secunda et tertia Oratio, pag. 63' but render via the Holy Week text (data/holyweek_text.js):
+    the two prayers must be inserted there (not yet).
+  * Joseph: the day-ranking engine is to be built twice, one for the Missal, one for the Breviary (the Office chat owns the Office files).
   * then prescribed() uses the table first, the seasonal rule second; KAL39 Memoriae without prayers in the data need their
     orations (from M39). Footnotes 39623-39631 (Saturday BVM, votive BVM, Joseph/Peter-Paul/Dominic omitted from A cunctis).
 

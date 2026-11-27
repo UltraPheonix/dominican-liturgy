@@ -1376,7 +1376,7 @@
   }
   function moreAllowed(m) {
     var R = rubricsOf(state.key, state.date);
-    return !R.requiem && !m.prophecies && !/^Quad6/.test(state.key) && state.key !== 'Pent0v' && !!(window.ORATIONS && ORATIONS[state.key] && ORATIONS[state.key].or);
+    return !R.requiem && !m.prophecies && !/^Quad6[hfs]?$/.test(state.key) && !!(window.ORATIONS && ORATIONS[state.key] && ORATIONS[state.key].or);
   }
   // the 2nd and 3rd prayers the Missal prescribes for the day (Rubr. gen. X.1; the Missal prints them in the Masses of the
   // Time from the First Sunday of each season): ids of ADDIV sets or 'm:KEY' commemorations; 'lib' = at the priest's choice
@@ -1389,7 +1389,7 @@
   function prescribed(m) {
     if (!moreAllowed(m)) return [];
     var d = state.date, dr = dayRank(state.key, d), sp = seasonPrayers(d), mem = memoriasOf(d), md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
-    if (/^(Pasc0|Pent0|Dec25|Jan1$)/.test(state.key) || /I classis/.test(dr.rank)) return [];
+    if (/^(Pasc0|Pent0|Dec25|Jan1$)/.test(state.key) || /I classis/.test(dr.rank) || /I classis/.test(KALRANK && KALRANK[state.key] || '') || (isTemporal(state.key) && temporalClass(state.key, d) === 1)) return [];
     if (state.key === 'Jan5a') return ['bvmNat', 'd11'];                       // the Vigil of the Epiphany, as printed
     if (sp && sp.o2 === 'bvmNat') return mem.concat(md === 104 ? ['bvmNat', 'd6'] : ['bvmNat']).slice(0, 3);   // daily, after the other Memoriae (X.1 b)
     if (dr.dup) return mem.slice(0, 2);                                        // Doubles: only the Memoriae
