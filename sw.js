@@ -1,6 +1,6 @@
 /* Offline support: the site's own files are kept, and every chant, reading and page that has been
    opened once stays available without a connection. Bump VERSION when the site changes. */
-var VERSION = 'propria-v217';
+var VERSION = 'propria-v218';
 var SHELL = ['./', 'index.html', 'about.html', 'rubrics.html', 'processions.html', 'style.css', 'versiculum.css', 'js/app.js', 'js/mrank.js', 'data/kalendar39.js', 'js/exsurge.min.js', 'js/chant.js', 'js/psalm.js', 'js/tones.js', 'js/mtones.js', 'data/chant/office.json',
   'data/masses.js', 'data/prefaces.js', 'data/ordinary.js', 'data/ordo.js', 'data/orations.js', 'data/addiv.js', 'data/memoriae.js', 'data/readings33.js', 'data/introit_gp.js', 'data/holyweek.js', 'data/holyweek_text.js', 'office.html', 'holyweek.html', 'js/office.js', 'js/ui.js', 'js/cal.js', 'data/office/common.json', 'data/office/range.json', 'manifest.webmanifest', 'icon.svg', 'fonts/versiculum.ttf'];
 self.addEventListener('install', function (e) {

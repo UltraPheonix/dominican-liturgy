@@ -219,4 +219,13 @@
     (document.querySelector('.content') || document.body).appendChild(f);
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', siteFoot); else siteFoot();
+
+  // Cloudflare Web Analytics: anonymous page counts, no cookies (see About). Added here so that every page that loads ui.js
+  // is counted without editing each page; not on a local copy.
+  (function () {
+    if (!/^(www\.)?dominicanrite\.com$/.test(location.hostname) || document.querySelector('script[data-cf-beacon]')) return;
+    var s = document.createElement('script'); s.defer = true; s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    s.setAttribute('data-cf-beacon', '{"token": "526dd2ddf79f492ab8d98e1598f6d9ed"}');
+    document.head.appendChild(s);
+  })();
 })();
