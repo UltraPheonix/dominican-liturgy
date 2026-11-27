@@ -423,7 +423,7 @@
       ['in', 'of', 'co'].forEach(function (p) { if (se.pasch[p]) parts[p] = se.pasch[p].slice(); });
     }
     if (s !== 'lent' && !temporal) parts.tr = parts.al.length ? [] : parts.tr;
-    if (s === 'lent') parts.al = [];   // from Septuagesima no Alleluia at all; the Tract (if any) takes its place (XIII, 7)
+    if (s === 'lent' && key !== 'Quad6s') parts.al = [];   // from Septuagesima no Alleluia at all; the Tract (if any) takes its place (XIII, 7)
     // "Quandocumque autem Tractus dicitur, numquam dicitur Sequentia (nisi in Compassione B. Virginis Mariae)" (XIII, 8):
     // e.g. the Purification infra Septuagesimam (G50 p. 416: omissis Alleluia, V. et Sequentia)
     if (s === 'lent' && !temporal && parts.tr.length && !/Compassio|Septem Dolor/i.test(m.title || '')) parts.se = [];
