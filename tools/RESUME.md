@@ -75,7 +75,19 @@ tit. IV ferias and vigils: in Lent ferias, Ember days, common vigils with a feas
 Totum Duplex I/II cl. and the privileged octaves of Epiphany and Corpus Christi, otherwise the feria); private Masses ad libitum.
 To build: the Missal ranking engine (Joseph: separate engines for Missal and Breviary).
 
-## Next
+## Missal ranking engine: reference = Ordo O.P. 1944 (Prov. Poloniae), archive.org dlibra.kul.pl.34313_V-6842_Ordo-Divini-Officii-
+(pdf + djvu OCR in /home/claude/dl/ordo44). tools/ordo44/parse.py -> ordo1944.json (one entry per day; 285 of 366 found, the rest to
+read from the pdf); compare.py vs tools/check/day_audit.py run for 1944 -> compare_1944.txt: 117 days differ. Causes:
+ A. octaves missing altogether (Epiphany, Ascension, Corpus Christi, SS. Cordis, St John Baptist, SS. Peter and Paul, St Dominic,
+    Assumption, All Saints, Dedication, Immaculate Conception, Christmas): 'Missa infra Octavas ... sicut in die' (Rubr. II.1);
+ B. Blessed of the Order are Semiduplex/Duplex feasts, not ad libitum (Andrew of Peschiera, Marcolinus, Osanna, Innocent V,
+    Benedict XI, James of Voragine, Antony della Chiesa, Joan of Aza, Aimo, Emily Bicchieri, Bertrand, Spadafora ...);
+ C. transfer of impeded feasts (Ordo prints '(23 Maji)', '(17 Jul.)' etc.) and the leap-year shift of February (24 Feb.);
+ D. Saturday of Our Lady only when no Simplex or higher... (Ordo: Officium B.M.V. in Sabbato over S. Gorgonius, Simplex, 9 Sept.;
+    a Blessed (Semid.) wins over it);
+ E. II class feasts over minor Sundays (Visitation 2 Jul. 1944, Gorcum martyrs 9 Jul.), Lent: Duplex feasts in Lent (Ordo gives
+    the feast as the Office; Missal IV.2: conventual in choir = feria, private Masses ad libitum);
+ F. Polish provincial feasts (Stanislaus, Andrew Bobola, Hedwig, John Cantius, Cunegundis, Chocim): ignore.
 1. Processions (#42) continued, in this order: Palm Sunday (20, compare with Holy Week page), Easter (34, 42), Corpus Christi (51, 55),
    Assumption (77), St Dominic (73, 97), processions of the Order's saints (97-110), Te Deum (120), Asperges (2), then the rest.
    Chant: GregoBase source 20 has only 11 chants of this book; transcribe to GABC only from the page, never by analogy.
