@@ -137,7 +137,7 @@
   function fullIntroit(body, header, key) {
     var GP = window.INTROIT_GP; if (!GP || !body) return body;
     var clef = (/^\s*\(([cf]b?[1-4])\)/.exec(body) || [])[1]; if (!clef) return body;
-    if (/repetitur|<i>[^<]*Ant\.?<\/i>/i.test(body)) return body;                   // the book already shows the repetition
+    if (/repetitur|<i>[^<]*(Ant|Repet)\.?<\/i>/i.test(body)) return body;                   // the book already shows the repetition
     var vm = /(<sp>V\/<\/sp>\.?|\bV\/\.|<i>Ps\.<\/i>)/.exec(body), ant;
     var g = /\(::\)\s*(?:<eu>)?\s*Gl[oó]\([^)]*\)\s*ri\([^)]*\)\s*a[.,]?\(/.exec(body);
     if (vm) ant = body.slice(0, vm.index).replace(/\s*\(::\)\s*$/, '');
@@ -549,6 +549,7 @@
     if (o.kind === 'bvmSat') return t.season !== 'sept';
     if (o.kind === 'vigil') return false;
     if (t.kind === 'sunday') return !/^(adv|sept|quad|pass)$/.test(t.season);
+    if (t.key === 'Epi') return true;                                // the Epiphany, Totum Duplex I cl. (Ordo 1944, 6 Jan.)
     return /^(Pasc0|Pent0|Dec25)/.test(t.key);                    // the octaves of Easter and Pentecost, Christmas
   }
   function ownFeriaMass(key) {
@@ -567,6 +568,8 @@
           g0 = key !== 'C64s' && !(inSeptLent(d)); c0 = credoDay(r, d);
         } else { g0 = teDeumDay(r); c0 = credoDay(r, d); }
         // the Holy Innocents on a weekday: no Gloria (Ordo 1944, 28 Dec.: Missa sine Gloria ... dic. Credo ... Bened. Domino)
+        // a violet Mass of the season (e.g. the Sunday's Mass resumed on Our Lady's Saturday) never has the Gloria
+        if (isTemporal(key) && /^(Adv|7a|6a|5a|Quad)/.test(key)) g0 = false;
         if (key === 'S1228' && d.getMonth() === 11 && d.getDate() === 28 && d.getDay() !== 0) g0 = false;
         return {gloria: g0, credo: c0, dismiss: g0 ? 'ite' : 'ben'};
       }
