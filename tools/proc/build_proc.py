@@ -21,6 +21,11 @@ for s in SECTIONS:
     for it in s['items']:
         if it[0] == 'rub': out.append(pair(E(it[1]), E(it[2]), ' pr-rub'))
         elif it[0] == 'txt': out.append(pair(vr(it[1]), vr(it[2])))
+        elif it[0] == 'gabc':
+            # ('gabc', file in tools/proc/gabc, label, mode): typeset from the Processionarium, drawn with js/chant.js
+            g = open(H + '/gabc/' + it[1] + '.gabc', encoding='utf8').read().split('%%', 1)[1].strip()
+            out.append('<div class="chant pc-gabc" data-label="%s" data-mode="%s"><script type="text/gabc">%s</script></div>' % (
+                E(it[2] if len(it) > 2 else ''), E(str(it[3]) if len(it) > 3 else ''), g.replace('</script', '<\\/script')))
         elif it[0] == 'h': out.append('<h3 class="pc-h">%s<span class="pr-h-en">%s</span></h3>' % (E(it[1]), E(it[2])))
         elif it[0] == 'scan':
             pg = it[1]
@@ -33,6 +38,12 @@ for s in SECTIONS:
                 rows.append('<div class="pc-row"><p lang="la">%s <span class="pc-resp">%s</span></p><p class="pr-en" lang="en">%s <span class="pc-resp">%s</span></p></div>' % (E(la), E(rl), E(en), E(re_)))
             out.append('<div class="pc-lit">' + ''.join(rows) + '</div>')
 out.append('  ')
+RENDER = ('<script src="js/exsurge.min.js"></script><script src="js/chant.js"></script><script>'
+          'document.querySelectorAll(".pc-gabc").forEach(function(b){var g=b.querySelector("script").textContent;'
+          'OPChant.render(b,g,{label:b.getAttribute("data-label")||"",mode:b.getAttribute("data-mode")||"",keepTP:true,dropCap:!!b.getAttribute("data-label")});});</script>')
+if any(it[0] == 'gabc' for s_ in SECTIONS for it in s_['items']):
+    tail = tail.replace('</body>', RENDER + '\n</body>', 1)
+    head = head.replace('<link rel="stylesheet" href="style.css">', '<link rel="stylesheet" href="versiculum.css">\n<link rel="stylesheet" href="style.css">', 1)
 page = head + '\n'.join(out) + tail
 page = page.replace('href="processions.html"', 'href="processions.html" aria-current="page"', 1)
 open(R + '/processions.html', 'w', encoding='utf8').write(page)
