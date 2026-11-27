@@ -1,4 +1,4 @@
-# Mass chat — where to resume (27 Nov 2026, after v173)
+# Mass chat — where to resume (27 Nov 2026, after v175)
 
 Standing rules: pre-1955 Dominican rite only; never infer chant; terse; status after each substep; `git pull --rebase`,
 bump sw.js, headless Chrome test, commit as UltraPheonix, `bash tools/push.sh`; do not touch the Office files.
@@ -30,12 +30,11 @@ bump sw.js, headless Chrome test, commit as UltraPheonix, `bash tools/push.sh`; 
   'rub' / 'txt' / 'scan' [printed pages] / 'lit' rows). Source: Processionarium O.P. 1913 (Cormier), CMAA scan
   media.churchmusicassociation.org/dominican/processionarium-1913-Cormier.pdf -> /home/claude/dl/proc/p.pdf; pdf page = printed page + 15.
   Page images: art/proc/<page>.png (1-bit PNG, ~25 KB; script in the v173 session: render 2.1x gray, trim, threshold 150).
-  OCR: tesseract -l ita --psm 4 on 3x renders, then proof against the image. Done: Rogations pp. 124-126, Litany of the Saints
-  pp. 126-130, extraordinary processions p. 131. Index of the book: pdf pages 459-461 (printed index).
+  OCR: tesseract -l ita --psm 4 on 3x renders, then proof against the image. Done: Salve Regina procession pp. 89-91 (+ O lumen p. 76),
+  Litany of Loreto + Inviolata pp. 91-95, Rogations pp. 124-126, Litany of the Saints pp. 126-130, extraordinary processions p. 131. Index of the book: pdf pages 459-461 (printed index).
 
 ## Next
-1. Processions (#42) continued, in this order: Litany of Loreto and the Saturday procession of Our Lady after Compline (pp. 89-96);
-   Purification (66), Palm Sunday (20, compare with Holy Week page), Easter (34, 42), Ascension (46), Corpus Christi (51, 55),
+1. Processions (#42) continued, in this order: Purification (66), Palm Sunday (20, compare with Holy Week page), Easter (34, 42), Ascension (46), Corpus Christi (51, 55),
    Assumption (77), St Dominic (73, 97), processions of the Order's saints (97-110), Te Deum (120), Asperges (2), then the rest.
    Chant: GregoBase source 20 has only 11 chants of this book; transcribe to GABC only from the page, never by analogy.
 2. Open from the review: 168 'inferred' chants in data/masses.js to check against the Graduale; 43 orations without Latin conclusion.
