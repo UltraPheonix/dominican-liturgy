@@ -548,7 +548,7 @@
     var pushC = function (c, kind) {
       if (!c || c === win) return;
       if (commems.some(function (x) { return x.title === c.title && x.key === c.key; })) return;
-      commems.push({key: c.key || null, title: c.title || '', rank: c.rank || '', kind: kind || c.kind});
+      commems.push({key: c.key || null, title: c.title || '', rank: c.rank || '', kind: kind || c.kind, pv: c.pv || 0});
     };
     if (win.kind !== 'temporal' && t.kind === 'sunday') pushC({key: t.key, title: 'Dominica', rank: ''}, 'sunday');
     if (win.kind !== 'temporal' && t.major) pushC({key: tKey, title: 'Feria', rank: ''}, 'feria');

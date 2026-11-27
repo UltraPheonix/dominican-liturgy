@@ -1460,6 +1460,11 @@
       if (!x || !x[k] || !D.masses[key]) return null;
       var p = splitConcl(x[k][0], x[k][1]); p.title = 'Commemoration: ' + massLabel(key); return p;
     }
+    if (/^x:/.test(id)) {
+      var Mm = window.MEMORIAE && MEMORIAE[id.slice(2)];
+      if (!Mm || !Mm[k]) return null;
+      var r = splitConcl(Mm[k][0], Mm[k][1]); r.title = 'Commemoration: ' + Mm.la; return r;
+    }
     var S = window.ADDIV && ADDIV.sets[id];
     if (!S || !S[k]) return null;
     var q = {}; for (var f in S[k]) q[f] = S[k][f];
@@ -1481,10 +1486,22 @@
     if (state.key !== r.office.key && r.office.kind !== 'temporal' && !(r.office.kind === 'octave' && D.masses[state.key] && state.key === r.office.key)) {
       if (!r.masses.some(function (m) { return m.key === state.key; })) return [];
     }
-    return r.commems.filter(function (c) {
+    var keep = r.commems.filter(function (c) {
       if (c.kind === 'bvm') return !c.privateOnly;
-      return !c.privateOnly && c.key && c.key !== state.key && window.ORATIONS && ORATIONS[c.key] && D.masses[c.key];
-    }).map(function (c) { return c.kind === 'bvm' ? bvmSet(d) : 'm:' + c.key; });
+      if (!c.key || !(window.ORATIONS && ORATIONS[c.key] && D.masses[c.key])) return !c.privateOnly && !!memoriaId(c, d);
+      return !c.privateOnly && c.key !== state.key;
+    });
+    var out = keep.map(function (c) { return c.kind === 'bvm' ? bvmSet(d) : c.key && window.ORATIONS && ORATIONS[c.key] && D.masses[c.key] ? 'm:' + c.key : memoriaId(c, d); });
+    // a Commemoration of a feast Totum Duplex or Duplex, or of a solemn Octave, leaves no prayer to be added (Rubr. X.1)
+    out.high = keep.some(function (c) { return /^(Totum Duplex|Duplex)/.test(c.rank || '') || (c.kind === 'octave' && c.pv >= 25); });
+    return out;
+  }
+  // the prayers of a Memoria of the Kalendarium (data/memoriae.js), by its title (the month breaks a tie)
+  function memoriaId(c, d) {
+    if (!window.MEMORIAE || !c.title) return null;
+    var best = null, m = d.getMonth() + 1;
+    for (var k in MEMORIAE) if (MEMORIAE[k].la === c.title) { if (!best || +MEMORIAE[k].md.slice(0, 2) === m) best = k; }
+    return best ? 'x:' + best : null;
   }
   // the prayer of Our Lady for her commemoration on Saturdays (Brev. § XXI.3; Missal, De S. Maria in Sabbato I-III):
   // in Advent Deus, qui de beatae; from Christmas to the Purification Deus, qui salutis; else Concede nos famulos
@@ -1509,13 +1526,20 @@
   function prescribed0(m) {
     if (!moreAllowed(m)) return [];
     var d = state.date, dr = dayRank(state.key, d), sp = seasonPrayers(d), mem = memoriasOf(d), md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
+    // no commemoration of Our Lady in a Mass of Our Lady (Vigil of the Assumption on a Saturday)
+    if (isMarian(state.key)) { var hi = mem.high; mem = mem.filter(function (x) { return !BVM_SETS[x]; }); mem.high = hi; }
     if (/^(Pasc0|Pent0|Dec25|Jan1$)/.test(state.key)) return [];
-    if (/I classis/.test(dr.rank) || /I classis/.test(KALRANK && KALRANK[state.key] || '') || (isTemporal(state.key) && temporalClass(state.key, d) === 1)) return mem.slice(0, 2);
+    // a day within a simple octave is of the Simplex rite: three prayers (X.1)
+    var od = d && window.OPMissalRank ? mr().day(d) : null;
+    var inSimpleOct = od && od.office.kind === 'octave' && od.office.key === state.key && od.office.pv < 25;
+    if (inSimpleOct) dr = {rank: 'Simplex', dup: false};
+    else if (/I classis/.test(dr.rank) || /I classis/.test(KALRANK && KALRANK[state.key] || '') || (isTemporal(state.key) && temporalClass(state.key, d) === 1)) return mem.slice();
     if (state.key === 'Jan5a') return ['bvmNat', 'd11'];                       // the Vigil of the Epiphany, as printed
     if (sp && sp.o2 === 'bvmNat') return mem.concat(md === 104 ? ['bvmNat', 'd6'] : ['bvmNat']).slice(0, 3);   // daily, after the other Memoriae (X.1 b)
-    if (dr.dup) return mem.slice(0, 2);                                        // Doubles: only the Memoriae
-    if (!sp) return mem.slice(0, 2);
-    if (mem.length >= 2) return mem.slice(0, 2).concat(sp.with3 === 'cruce' ? ['cruce'] : []);   // X.1 c, e
+    if (dr.dup) return mem.slice();                                            // Doubles: only the Memoriae (as many as at Lauds)
+    if (!sp) return mem.slice();
+    if (mem.high) return mem.slice();                                          // X.1: after a Duplex or solemn Octave, none added
+    if (mem.length >= 2) return mem.concat(sp.with3 === 'cruce' && mem.indexOf('cruce') < 0 ? ['cruce'] : []);   // X.1 c, e
     if (mem.length === 1) {
       // Our Lady commemorated on a Saturday: A cunctis is left out; the 3rd prayer is at the priest's choice through the
       // year, Deus, qui caritatis from Septuagesima to Maundy Thursday, de Cruce in Paschaltide (Missal p. 320, nn. 1, 3;
@@ -1530,12 +1554,13 @@
     var P = prescribed(m), o2 = state.o2 || P[0] || '', o3 = state.o3 || P[1] || '';
     if (o2 === 'none') o2 = ''; if (o3 === 'none' || o3 === 'lib') o3 = '';
     if (!o2) o3 = '';
-    return [o2, o3];
+    // the 4th and later prayers the Commemorations require (Rubr. X), unless the priest has changed the 2nd or 3rd
+    return [o2, o3].concat(!state.o2 && !state.o3 && o3 ? P.slice(2).filter(function (x) { return x && x !== 'lib'; }) : []);
   }
   function morePrayers(k, m) {
     if (!moreAllowed(m)) return [];
-    var c = chosen(m), out = [], a = prayerOf(c[0], k), b = prayerOf(c[1], k);
-    if (a) out.push(a); if (b) out.push(b);
+    var out = [];
+    chosen(m).forEach(function (id) { var p = prayerOf(id, k); if (p) out.push(p); });
     return out;
   }
   function massLabel(key) { var m = D.masses[key]; return clean(m.title || '').replace(/[,.\s]+$/, ''); }
@@ -1555,6 +1580,7 @@
   function setName(id) {
     if (!id) return '';
     if (/^m:/.test(id)) return D.masses[id.slice(2)] ? massLabel(id.slice(2)) : '';
+    if (/^x:/.test(id)) return window.MEMORIAE && MEMORIAE[id.slice(2)] ? MEMORIAE[id.slice(2)].la : '';
     var S = window.ADDIV && ADDIV.sets[id]; return S ? (S.inc || S.la) : '';
   }
   function moreControls() {

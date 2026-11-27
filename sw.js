@@ -1,8 +1,8 @@
 /* Offline support: the site's own files are kept, and every chant, reading and page that has been
    opened once stays available without a connection. Bump VERSION when the site changes. */
-var VERSION = 'propria-v194';
+var VERSION = 'propria-v195';
 var SHELL = ['./', 'index.html', 'about.html', 'rubrics.html', 'style.css', 'versiculum.css', 'js/app.js', 'js/mrank.js', 'data/kalendar39.js', 'js/exsurge.min.js', 'js/chant.js', 'js/psalm.js', 'js/tones.js', 'js/mtones.js', 'data/chant/office.json',
-  'data/masses.js', 'data/prefaces.js', 'data/ordinary.js', 'data/ordo.js', 'data/orations.js', 'data/addiv.js', 'data/readings33.js', 'data/introit_gp.js', 'data/holyweek.js', 'data/holyweek_text.js', 'office.html', 'holyweek.html', 'js/office.js', 'js/ui.js', 'js/cal.js', 'data/office/common.json', 'data/office/range.json', 'manifest.webmanifest', 'icon.svg', 'fonts/versiculum.ttf'];
+  'data/masses.js', 'data/prefaces.js', 'data/ordinary.js', 'data/ordo.js', 'data/orations.js', 'data/addiv.js', 'data/memoriae.js', 'data/readings33.js', 'data/introit_gp.js', 'data/holyweek.js', 'data/holyweek_text.js', 'office.html', 'holyweek.html', 'js/office.js', 'js/ui.js', 'js/cal.js', 'data/office/common.json', 'data/office/range.json', 'manifest.webmanifest', 'icon.svg', 'fonts/versiculum.ttf'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(VERSION).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));
 });
