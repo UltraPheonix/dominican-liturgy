@@ -283,3 +283,16 @@ _at('purificatio', _t('Ant. Ave, grátia'), [('gabc', 'pur_ave', 'Ant.', '1')])
 _at('purificatio', _t('Ant. Adórna'), [('gabc', 'pur_adorna', 'Ant.', '5')])
 _at('purificatio', _t('Ant. Respónsum'), [('gabc', 'pur_responsum', 'Ant.', '2')])
 _at('purificatio', _t('Ant. Hódie'), [('gabc', 'pur_hodie', 'Ant.', '2')])
+
+# tones (prayers and versicles): versicles in the tone of Art. II § IV 3° (pp. 395-396, "in Processionibus"), prayers in the
+# tone of the Orationes ad Horas, Art. III § III (pp. 407-408); each gabc file (tools/proc/gabc/tone_*.gabc) names the rule applied
+_at('ascensio', _t('℣. Ascéndit'), [('gabc', 'tone_asc_versus', '', '')])
+_at('ascensio', _t('Orémus. Deus, cujus'), [('gabc', 'tone_asc_oratio', '', '')])
+_at('purificatio', _t('℣. Dóminus vobíscum'), [('gabc', 'tone_pur_omnipotens', '', '')])
+_at('purificatio', _t('℣. Post partum'), [('gabc', 'tone_pur_versus', '', '')])
+_at('purificatio', _t('Orémus. Erúdi'), [('gabc', 'tone_pur_erudi', '', '')])
+_at('salve', _t('℣. Dignáre'), [('gabc', 'tone_salve_dignare', '', '')])
+_at('salve', _t('Orémus. Concéde nos'), [('gabc', 'tone_salve_concede', '', '')])
+_at('salve', _t('℣. Ora pro nobis, beáte'), [('gabc', 'tone_salve_dominice', '', ''), ('gabc', 'tone_salve_dominici', '', '')])
+_at('lauretanae', _t('℣. Ora pro nobis, sancta'), [('gabc', 'tone_lor_genitrix', '', ''), ('gabc', 'tone_lor_gratiam', '', '')])
+_at('lauretanae', _t('℣. Post partum'), [('gabc', 'tone_lor_postpartum', '', ''), ('gabc', 'tone_lor_protege', '', '')])
