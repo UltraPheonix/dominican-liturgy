@@ -200,9 +200,15 @@ nohup python3 -m http.server 8768 >/dev/null 2>&1 &   # mass_sweep.py needs this
       - Label each one: "set to the Dominican Passion tones, Processionarium O.P. 1913, pp. 435–440".
       - Then add them to the Holy Week pages.
     - The earlier note in tools/hw39/PROGRESS.md ("no Dominican source") is out of date.
+11b. **Every sung prayer in chant, in its proper tone (Joseph, 27 Nov), everywhere on the site.**
+    - **Mass page, Sung/Solemn/Conventual:** Dominus vobiscum; Oremus; the Collects (with the 2nd and 3rd prayers) and Postcommunions in the Mass oration tone (Proc. 1913 pp. 404-406, which differs from Harrison/mtones in places: see hw_tones.md); the Secret's ending "Per omnia saecula" and the Preface dialogue; the Pater and Pax; Ite / Benedicamus / Requiescant; the Epistle and Gospel tones with their intonations.
+    - **Also:** processions and Holy Week (items 1, 2, 11), the Asperges prayers, and the booklets (choir and priest).
+    - **Quiet parts stay text:** prayers said secreto or "humili voce" by rubric.
+    - Each tone file or function cites its book and page.
 12. **Offline download** (agreed with Joseph, not started).
     - Generate a manifest of all site files on each push.
     - Add an Options button "Download for offline use" with a progress bar, offering Mass only (about 15 MB stored) or everything (about 65 MB).
     - After a push, update only the files that changed.
     - Call `navigator.storage.persist()`.
 13. **Later, if wanted:** an App Store app via Capacitor. Needs a Mac, Xcode, a $99 developer account, and native features (for example a today's-feast widget).
+14. **The reformed (1959) Holy Week, complete in the same way (Joseph: "can wait until way after").** Every rite of the 1959 Dominican Holy Week (Hebdomada Sancta O.P. 1959; Officium Hebdomadae Sanctae 1965) with all its chant and tones, as complete as the 1939 form. It stays behind the 1939/1959 switch. Do this only after everything above.
