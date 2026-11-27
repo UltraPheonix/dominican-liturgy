@@ -1,6 +1,7 @@
+import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from dmpaths import *
 import pickle, re, json, difflib, collections, unicodedata, sys
-sys.path.insert(0,'/tmp'); from dmv_load import loadjs
-pairs,_,_=pickle.load(open('/tmp/dmv/pairs.pkl','rb'))
+from dmv_load import loadjs
+pairs,_,_=pickle.load(open(W_('pairs.pkl'),'rb'))
 CL=re.compile(r'(Per\s+(Dominum|D[o0]min|eumdem|eundem|Christum|eund|eumd)|Qui\s+(vivis|tecum|vivit|cum\s+Deo|cum\s+Patre|vivi)|J>er Dominum)')
 CLS=re.compile(r'\s*(Per (?:Dóminum|eúndem|eúmdem|Christum)|Qui (?:vivis|tecum|vivit)|qui tecum vivit|Dóminum nostrum I[eé]sum Christum Fílium tuum: Qui)\b(?!.*\b(?:Per Dóminum|Per eúndem|Qui vivis)\b).*$')
 def F(s):

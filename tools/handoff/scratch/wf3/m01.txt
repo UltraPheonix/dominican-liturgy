@@ -1,0 +1,467 @@
+======== 1944-01-01 [Ordo p.7]
+Sabb. C ircu m cisio D om ini. Tot. Dupl. Alb.
+2 . cl — Offic. festiv.
+(A. G. R.) I. P. N. et 0.
+In bym n. ultim a stro pha propr. et in Prim aV.
+Qui natus, usque ad Vig. Eptph. inclusive.
+RR. Hor. cum dupl. Allel. usque ad diem oct.
+Epiph. incl.
+In Missa Credo, Praef. et, Conimunic. de Nativ.
+Hodie non perm itt. Missa eant. Salve Radix.
+Vesp. seq., nulla mem. — Compl. de Nat.
+  >> SITE office: tfeast | Circumcisio Domini | Totum Duplex II classis | two=False
+  >> commems: [] missing: []
+  >> MASS Jan1 [] Octava Nativitatis (Circumcisione Domini) | white | G=Y C=Y | Pf=Nativitate | Ky=I | ite | prayers=[]
+======== 1944-01-02 [Ordo p.7]
+Dom. (vacat) SS. N om inis Jesu . Tot. Alb.
+Dupl i. cl —Offic. fest.—m. B. Stephanae
+de Q. V. 0. N. (Semid. imped.) — In
+Prima V. Qui natus.
+De die oct. S. Steph. hoc anno nihil fit.
+In Missa m. B. Stephana«; Credo et Praef. Nativ.
+—In Missa conv. et cant. om itt. m. B. Steph.
+In Vesp. m. seq. ttm ,—Compl. de Nativ.
+Processio SS. Rosarii (I. P. R.)
+NOTA. — Conclusio Orat. SS. Nominis in Brev.
+debet esse: Per eumdem. (S. R. C. D. 3244).
+
+6 JANUARIUS
+  >> SITE office: tfeast | SS. Nominis Jesu | Totum Duplex I classis | two=False
+  >> commems: [('Dominica', '', ''), ('B. Stephanæ de Quinzanis Virg. O. P.', 'Semiduplex', 'priv'), ('Octava S. Stephani Protomartyris', 'Memoria', 'priv')] missing: []
+  >> MASS Nat2 [] Sanctissimi Nominis Jesu | white | G=Y C=Y | Pf=Nativitate | Ky=II | ite | prayers=['Deus, qui salútis']
+======== 1944-01-03 [Ordo p.8]
+Fer. 2. В. Zed isla vaeMa tr. 0 . N. Se- Alb.
+mid. (28 Nov.) — Ps. fer. — LL. Ii N. de
+Ep. ad Rom.: An non habet, cum RR.
+ut in Brev.—m. diei oct. S. Joan., SS.
+Innoc. et B.M.V^—RR. Hor. cum dupl.
+Allel. — In Prima Preces.
+In M. mem. ut in L.; Praef. N at.
+ARCH ID . POSNAN .—A nniv. Consecr. Archiep.
+— In omn. Miss. dic. Or. pro Eo.
+Hodie et cras proh ibentu r Missae lectae tam vot.
+quam quotid. Defunct.
+VF. (de festo), m. seq., diei oct. S. Joan. et
+В. М. V. — Compl. de Nat. (Ps. Dom.);
+Preces.
+  >> SITE office: feast | B. Zedislavæ Berkianæ Matronæ O. P. | Semiduplex | two=False
+  >> commems: [('Octava S. Joannis Ap. et Ev.', 'Memoria', '')] missing: []
+  >> MASS S0103b [] 3 Ian. — B. Zedislavæ Berkianæ, O.P. Matronæ | white | G=Y C=n | Pf=Nativitate | Ky=VI | ite | prayers=['Octava S. Joannis Ap. et Ev.', 'Deus, qui salútis']
+======== 1944-01-04 [Ordo p.8]
+Fer. 3. D ies oct. SS. In no ce n tiu mMm. Rb.
+3 Lect. — Ps. fer.—Invit. (Ps. Venite, ab
+uno) et Hymn. ut in festo. — In Matut.
+9 Ps. et 9 ant. sub unico Noct.; V. ter­
+tius.—Lect. 1-a et 2-a de Ep. ad Rom.:
+Dico ergo...; Lect. 3-a propr.: Dicunt.;
+RR. ut in Brev. — Te Deum — m. В. V.
+—In Pręt. de Reguła.—In Prima Preces.
+— RR. Hor. cum dupl. Allel.
+In Missa (cum Gloria et Alleluia, sed sine Credo)
+2*a Or. В. V., 3*a pro Papa. — Praef. Nat. — Ite
+Missa est
+VF. (de die oct.), m. В. V. — Compl. de
+Nat. (Ps. Dom.); Preces.
+  >> SITE office: octday | Octava SS. Innocentium MM. | Tres Lectiones | two=False
+  >> commems: [] missing: []
+  >> MASS S1228 [Octave day] 28 Dec. — Ss. Innocentium Martyrum | red | G=Y C=n | Pf=Nativitate | Ky=III | ite | prayers=[]
+======== 1944-01-05 [Ordo p.8]
+Fer. 4. V ig ilia Ep ip han ia e (priv.). De Alb.
+ea. (Omit. Preces et Prostr.)—Off. fest.
+ut in Brev.—Ps. Venite, ab uno,—nulla
+mem.—In Pret. Evang. propr.
+
+JANUARIUS 7
+
+
+M issa propr. ciim O rat, ut in M iseali; Praef. Nat.
+(Om itt. Collectae).
+P rohibentur Missae lectae et eant, tam vot. (etiam
+SS. Rosarii) quam quotid. D efunctorum.
+Vesp. seq. (Ps. Laudate., Orat. Vigil.) —
+Compl. Dom. per totam oct. cum an-
+tiph. et ult. stroph. hym n. propr.
+NOTAI -a — In Conven tib usNov itia tu sacS tu d io rumpub lic e
+le gatur , in fr aOc ta vamEp ip ban ia e ,
+„Statutum pro Missionibus FF. Praedicatorum"
+( Exs ta tAnalect . Ord . anni 1933, pag . 193 et зеЯ-)
+NOTA2 -a —In conven tib usOrd in is unaquo ta nn is M is saconv .
+proM is s io nar iis in M is s io ne la boran tib usce le br . ( Ac ta Cap ,
+Gen . 1938, n . 103).
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [] missing: []
+  >> MASS Jan5a [] In Vigilia Epiphaniæ | violet | G=n C=n | Pf=Nativitate | Ky=VIII | ben | prayers=['Deus, qui salútis', 'Corda famulórum tuórum, Dómine']
+======== 1944-01-06 [Ordo p.9]
+Fer. 5. Ep ip han ia D om ini. Tot. Dupl. Alb.
+i. cl. cum oct. solemniss. (priv.) — Offic.
+fest. In Mat. omitt. Invit. et Hymn. —
+— In Prima V. propr. per tot. oct.
+(A. G. R.) I. P. R. et 0 .
+Missa propr. cum Sequentia et Credo. — P er tot.
+oct. Praef. et Communic. propr. —
+NOTA — In M is saso le mni in Evang . adverba ; Etprociden ­
+tes . .. , D ia conusve rs us lib rum . Sace rd osa liiq ueomnes (ex -
+cept. Aco ly t. etC ru c if.) ve rs usAltaregenuf le ct. un ic ogenu ;
+Fra tr es in Chorou tr umquegenuf le c ta nt.
+
+P er to t. oct. prohib. Missae vot. (etiam SS. R osa­
+rii) et Missae quaelibet defanct.; perm itt. ta nt.
+Missa sive eant, sive unica lecta, praes, cada­
+vere.
+In Vesp. nulla mem.
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('Epiphania Domini', 'Totum Duplex I classis', '')] missing: []
+  >> MASS Epi [] Epiphania | white | G=Y C=Y | Pf=Epiphania | Ky=I | ite | prayers=[]
+======== 1944-01-07 [Ordo p.9]
+Fer. 6. De oct. l- o —Omnia ut in Brev. Alb.
+per oct. Epiph.; super 9 Ps. antiph.
+A jferte. — V., Bened. et RR. ex 2-o
+Noct. — In Laud. super omn. Ps. 1-a
+ant. — m. В. V.
+
+& JANUARIUS
+
+
+Per tot. oct. Offic. ut in fe sto ; lnvit. Christus;
+Psal. Venite dicit, a duobus. — Ps. 7us Funda­
+m enta.— In Laud. et Ног. Ps. festivi cum ant.
+de fe s to ; RR. Hor. cum dupl. Allel. — Omitt.
+Preces.—In P ret. Ev. festi.—In Compl. Ps. Dom.
+cum ant. propr.
+In Missa (sine Sequentia) m. В. V.; Credo, Praef.
+et Communic. de oct. (Omitt. Collectae).
+Hodieproh ib . M is savot. SS . Cord is Jesu , sed in un ic aM issa
+d ie i ( e ts icunven tu a li) permi tt . e ju smemor ia subun ic a
+conci, ( s in ea lia mem .) cumOr . fes ti.
+  >> SITE office: octave | Epiphania Domini |  | two=False
+  >> commems: [] missing: []
+  >> MASS Epi [Within the octave] Epiphania | white | G=Y C=Y | Pf=Epiphania | Ky=VI | ite | prayers=[]
+======== 1944-01-08 [Ordo p.10]
+Sabb. De oct. 2-o — Super Ps. ant. Flu­ Alb.
+minis.; V., Bened. et RR. ex 3-o Noct.
+— m. В. V.
+Missa ut feria 6.
+NOTA.—Hodie non p erm ittitu r Missa can tata Salve
+Radix.
+Vesp. seq. (Ps. Laudate.), m. oct.—Compl.
+de oct. (Ps. Dom.) cum conci, hymn. propr.
+  >> SITE office: octave | Epiphania Domini |  | two=False
+  >> commems: [] missing: []
+  >> MASS Epi [Within the octave] Epiphania | white | G=Y C=Y | Pf=Epiphania | Ky=VI | ite | prayers=[]
+======== 1944-01-09 [Ordo p.10]
+Dom. in fra oct. E piph. (de qua nihil). Alb.
+—S. Fam ilia eJesu , Ma ria e , Jo sep h .
+Tot. Dupl. — Offic. festiv. — m. oct. —
+In Prima V. propr.; ad Horas conci,
+hymn. propr.
+Missa propr. cura m em . oct.; Credo, Praef. et
+Communic. de oct. (Omitt. Collectae).
+In Vesp. m. oct.—Compl. ut heri.
+Processio SS. Nominis (I. P. N.)
+D IQEC. CZĘSTO CHOW . — idem Festum Tit. prine.
+Eecl. Cathedr. Tot. Dupl. i. cl.
+LEOPOLl.—Solemn. externa B. Mariae Virg. aS.
+Hyac. cum Indulg. plen. (Ciem. VIII. 20 Jul.
+1759, Pius IX. 2 Maji 1856).
+
+JANUARIUS 9
+  >> SITE office: tfeast | Sanctae Familiae Jesu, Mariae, Joseph | Totum Duplex | two=False
+  >> commems: [('Dominica', '', ''), ('Epiphania Domini', '', '')] missing: []
+  >> MASS Epi1 [] I post Epiphaniam (Sanctæ Familiæ) | white | G=Y C=Y | Pf=Epiphania | Ky=II | ite | prayers=['Epiphania', 'Deus, qui salútis']
+======== 1944-01-10 [Ordo p.11]
+10 Fer. 2. De oct. 3-o—Super Ps. ant. Psal­ Alb.
+lite.; V., Bened. et RR. ex l-o Noct. —
+ш. В. V.
+Missa ut feria 6. praeced.
+Vesp. de oct., m. В. М. V.
+  >> SITE office: octave | Epiphania Domini |  | two=False
+  >> commems: [] missing: []
+  >> MASS Epi [Within the octave] Epiphania | white | G=Y C=Y | Pf=Epiphania | Ky=VI | ite | prayers=[]
+======== 1944-01-11 [Ordo p.11]
+11 Fer. 3. De oct. 4-o — Super Ps. antiph. Alb.
+Omnis terra...; V., Benedict. et RR. ex
+2-o Noct. — m. В. V.
+Missa ut feria 6-a praecedenti.
+Vesp. de oct., m. В. V.
+  >> SITE office: octave | Epiphania Domini |  | two=False
+  >> commems: [] missing: []
+  >> MASS Epi [Within the octave] Epiphania | white | G=Y C=Y | Pf=Epiphania | Ky=VI | ite | prayers=[]
+======== 1944-01-12 [Ordo p.11]
+12 Fer. 4. De oct. S-o — Super Ps. antiph. Alb.
+Reges Tharsis.; V., Benedict. et RR. ex
+3-0 Noct. Щш . В. V.
+Missa ut feria 6-a praecedenti.
+A RC H 1D . LEOPOL .—A nniv. Consecr. Archiep.
+— In omn. Miss. dic. Or. pro Eo.
+Vesp. (sine R.) seq. (ant. ad Magn. et Orat,
+propr.), nulla mem. — Compl. de oct.
+  >> SITE office: octave | Epiphania Domini |  | two=False
+  >> commems: [] missing: []
+  >> MASS Epi [Within the octave] Epiphania | white | G=Y C=Y | Pf=Epiphania | Ky=VI | ite | prayers=[]
+======== 1944-01-13 [Ordo p.11]
+13 Fer. 5. D ies oct. Ep ip han ia e . Solem- Alb.
+niss. — Ps. fest.; Omnia ut in Brev. —
+Ps. Venite, a duobus). — nulla mem.—
+In Pret. Evang. propr.
+Missa propr. cum Credo et ab sq uem em .; Praef.
+et Communic. oct. (Omitt. Collectae).
+In Vesp. m. seq. et S. Felicis Presb. et
+M. — Compl. de oct.
+  >> SITE office: octday | Dies octava: Epiphania Domini | Octava | two=False
+  >> commems: [] missing: []
+  >> MASS EpiOct [Octave day] In Octava Epiphaniæ | white | G=Y C=Y | Pf=Epiphania | Ky=VI | ite | prayers=['A cunctis', '(ad lib.)']
+======== 1944-01-14 [Ordo p.11]
+14 Fer. 6. S. H ila rii E. C. etE. D. Dupl. Alb.
+— Ps. fer. — Lect 1-i Noct. de Apost.:
+Et ego. cum RR. fer. 6-ae post Dom. I.
+P. 0. Epiph. — m. S. Felicis.—In Prima
+V. Qui sedes. •—
+
+10 JANUARIUS
+
+
+In .Missa nem . S. Felicis, Credo.
+VF. a cap. seq., m. praec., S. Mauri Abb.
+et S. Pauli C. (antiph. Iste sanctus.) —
+Compl. fer.; ad Nunc dimittis antiph.
+Salva nos.
+  >> SITE office: feast | S. Hilarii Ep., Conf. et Eccl. Doct. | Duplex | two=False
+  >> commems: [('S. Felicis Presb. et Mart.', 'Memoria', '')] missing: []
+  >> MASS S0114 [] 14 Ian. — S. Hilarii, E. C. D. | white | G=Y C=Y | Pf=Communis | Ky=VI | ite | prayers=['S. Felicis Presb. et Mart.']
+======== 1944-01-15 [Ordo p.12]
+Sabb. B. F ra nc isc i de C ap illas M. 0 .
+N. Dupl. — Ps. fer. — Lect. Ii Noct.
+de Apost.: Audet aliquis... cum HR- Sabb.
+post Dom. I. Р. О. E. — m. S. Mauri et
+S. Pauli.
+In Missa mem. S. M auri et S. Pauli.
+VF. Dom. (cum R.) seq., m. praec., B. Gun-
+disalvi C. 0 . N. (Semid. imped.) et S.
+Marcelli P. M.
+  >> SITE office: feast | B. Francisci de Capillas Mart. O. P. | Duplex | two=False
+  >> commems: [('S. Mauri Abbatis', 'Memoria', ''), ('S. Pauli primi Eremitæ Conf.', 'Memoria', '')] missing: []
+  >> MASS S0115 [] 15 Ian. — Ss. Francisci de Capillas, O.P. M. | red | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['S. Mauri Abbatis', 'S. Pauli primi Eremitæ Conf.']
+======== 1944-01-16 [Ordo p.12]
+Dom. I. P. O. E .—De ea —Ut in Psalt.
+et Propr. — m. B. Gundisalvi, S. Mar­
+celli- et В. V. — In Prima Ps. Confite­
+mini. (Q.).
+In Missa 2-a, Or. B. G undisalvi, 3-aS. Marcelli,
+4-aA cunctis ; Credo, Praef. T rinit. (Omitt. Coli.).
+NOTA. — Conclusio O rationis B. G undisalvi in
+M issali debet esse Per Dominum., ut in Brev.
+In Vesp. m. seq. et B. Gundisalvi.
+Processio SS. Sacram. (I. P. 0.).
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('B. Gundisalvi Conf. O. P.', 'Semiduplex', ''), ('S. Marcelli I Papæ et Mart.', 'Memoria', '')] missing: []
+  >> MASS Epi2 [] I post Octavam Epiphaniæ | green | G=Y C=Y | Pf=SS. Trinitate | Ky=II | ite | prayers=['16 Ian. — B. Gundisalvi O.P. C', 'S. Marcelli I Papæ et Mart.']
+======== 1944-01-17 [Ordo p.12]
+Fer. 2. S. An to n ii A bb. Dupl. — Ps.
+fer. — Lect.' 1-i Noct. propr. cum RR.
+de Comm.
+Vesp. seq. (Ps. Laudate.), m. praec. et S.
+Priscae V. M. — Compl. Dom.
+
+JANUARIUS 11
+  >> SITE office: feast | S. Antonii Abbatis | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0117 [] 17 Ian. — S. Antonii, Abb. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-01-18 [Ordo p.13]
+18 Fer. 3. Ca th ed ra Rom an aS. Pe tri Лр. Alb.
+t Tot. Dupl. — Offic. fest. — m. S. Priscae.
+In M issa mem. S. P riscae; Credo et Praef. A post.
+In Vesp. m. seq.
+  >> SITE office: feast | Cathedra Romana S. Petri | Totum Duplex | two=False
+  >> commems: [('S. Priscæ Virg. et Mart.', 'Memoria', '')] missing: []
+  >> MASS S0118_2 [] 18 Ian. — Cathedra S. Petri qua Romæ primum sedit | white | G=Y C=Y | Pf=Apostolis | Ky=III | ite | prayers=['S. Priscæ Virg. et Mart.']
+======== 1944-01-19 [Ordo p.13]
+19 Fer. 4. B. And re aeaP ise. C. 0 . N. Alb..
+Semid. — Ps. fer. — In Prima Preces. *
+In Missa 2-a Orat. A cunctis., 3-a ad libitum . +
+YF. a cap. seq:, m. praec.
+  >> SITE office: feast | S. Margaritæ ab Hungaria Virg. O. P. | Totum Duplex II classis | two=False
+  >> commems: [('B. Andreæ a Piscaria Conf. O. P.', 'Semiduplex', 'priv')] missing: []
+  >> MASS S0118 [] 18 Ian. — S. Margaritæ ab Hungariæ O.P. V. | white | G=Y C=Y | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-01-20 [Ordo p.13]
+20 Fer. 5. SS. Fab ia ni et Sebas tia niMm . Rb.
+Dupl. — Ps. fer.
+YF. a cap. seq,, m. praec.—Compl. fer.
+  >> SITE office: feast | SS. Fabiani Papæ et Sebastiani MM. | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0120 [] 20 Ian. — Ss. Fabiani et Sebastiani, Mm. | red | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-01-21 [Ordo p.13]
+21 Fer. 6. S. Agne tis V. M . Dupl. — Rb.
+Matut. propr. cum Ps. et VV. de Comm.
+—Ad Laud. Ps. fest. cum antiph. propr.
+— Ad Horas min. Ps. et antiph. fer.
+Vesp. seq. (Ps. Laudate?), m. praec. —
+Compl. fer.
+  >> SITE office: feast | S. Agnetis Virg. et Mart. | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0121 [] 21 Ian. — S. Agnetis, V. M. | red | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-01-22 [Ordo p.13]
+22 Sabb. S. V in cen tii M . Tot. Dupl. — Rb.
+Matut. propr. cum Ps. et VV. de Comm.
+—Ad Laud. Ps. fest. cum antiph. propr.
+— Ad Horas min. ‘Ps. et antiph. fer.
+Vesp. seq. (Ps. Laudate), m. praec. et
+Dom. — Compl. Dom.
+  >> SITE office: feast | S. Vincentii Mart. | Totum Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0122 [] 22 Ian. — S. Vincentii, M. | red | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-01-23 [Ordo p.13]
+23 Dom. II. Р . О. E. S. R aym undi С. O. N. Alb.-
+Tot. Dupl. 2 . cl. — Offic. festiv. — m.
+Dom. et S. Emerentianae V. M.
+| . P. 0.)
+In MisBa m. Т)ощг et S. Em ere n tian ae; Credo,
+Praef. T rinit., ult. Ev. Dom.
+
+12 JANUARIUS
+
+
+In Missa conv. et .cant. om itt. mem. S. Emeren-
+tianae.
+In Vesp. (de festo) m. seq. et Dom. ttm.
+— Compl. Dom.
+  >> SITE office: feast | S. Raymundi Conf. O. P. | Totum Duplex II classis | two=False
+  >> commems: [('Dominica', '', ''), ('S. Emerentianæ Virg. et Mart.', 'Memoria', 'priv')] missing: []
+  >> MASS S0123 [] 23 Ian. — S. Raymundi de Pennafort O.P. C. | white | G=Y C=Y | Pf=Communis | Ky=II | ite | prayers=['II post Octavam Epiphaniæ']
+======== 1944-01-24 [Ordo p.14]
+24 Fer. 2. B. M arco lin iC.O.N. Semid. — Alb.
+Ps. fer. — Homil.- Dom. praec. cum RR.
+3-i Noct. Dom. I. P.O.E. (ult. R. Abscon­
+di.) — m. S. Timothei E. M. — ln Pret.
+Ev. Dom. — In Prima Preces.
+1-a Missa conv. in Choro de Dom. praec. (absque
+CredoI cum. 2-a Or. -A cunctis., 3-a ad libit.
+— Praef. comm. — Vir.
+2-a Missa conv. extra Chorum de festo 'absque
+Credo) cum 2-a Or. S. Tim othei, 3-aA cunctis.
+— Praef. comm. et Ev. S. Joan. in fine.
+Ubi b ab etur unica Missa conv., dic. de Dom.
+(absque Credo) cum 2-a Or. festi, 3-aS. Timo­
+thei. — Praef. comm. Vir.
+Missae privatae ad libitu m : au t de Dom. (ut
+Missa conv. unica)— aut de festo cum 2-a Or.
+Dom., 3-aS. Tim othei; Ev. S. Joan. in fine,
+Prohib. Missae lectae et eant, tam vot. (etiam
+SS. Ros.), quam quotid. Defunct.
+Vesp. seq. (Ps. Laudate), m. praec. —
+Compl. Dom.
+•25 Fer. 3. C onversio S. Paulli Др. Tot. Alb.
+Dupl. — Offic. fest.
+In Missa Credo, Praef. Apost.
+In Vesp. m. seq. et S. Polycarpi E. M.
+  >> SITE office: feast | B. Marcolini Conf. O. P. | Semiduplex | two=False
+  >> commems: [('S. Timothei Ep. et Mart.', 'Memoria', '')] missing: []
+  >> MASS S0124b [] 24 Ian. — B. Marcolini O.P. C. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['S. Timothei Ep. et Mart.', 'A cunctis']
+======== 1944-01-25 [Ordo p.None]
+(not parsed: see previous day)
+  >> SITE office: feast | Conversio S. Pauli Apostoli | Totum Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0125 [] 25 Ian. — Conversio S. Pauli | white | G=Y C=Y | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-01-26 [Ordo p.14]
+26 Fer. 4. B. Ma rg a rita e ab Hu ng. V. Alb.
+O. N. Semid.—Ps. fer.—m. S. Polycarpi. *
+— In Prima Preces. +
+
+JANUARIUS 13
+
+
+In M artyrologio (de die 27 Jan.) p onatur vox
+Memoria post elogium S. Ju lian i Ep., et d elea tu r
+post elogium S. Juliani Mart.
+In Missa 2-aO rat. S. Polycarpi, 3-aA cunotis.
+VF. a cap. seq., m. praec. et S. Juliani E. C.
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('S. Polycarpi Ep. et Mart.', 'Memoria', '')] missing: []
+  >> MASS Epi3 [Mass of the Sunday (resumed, Rubr. III.3)] II post Octavam Epiphaniæ | green | G=n C=n | Pf=Communis | Ky=VIII | ben | prayers=['S. Polycarpi Ep. et Mart.', 'A cunctis']
+======== 1944-01-27 [Ordo p.15]
+27 Fer. 5. S. Joann is Ch ry so st. E. C. et Alb.
+E. D. Dupl.—Ps. fer.—m. S.'Juliani.—
+Pro Brev. Theissling ad Lect. VI adda tu r: Hunc
+vero praeclarissimum universae Ecclesiae Docto-
+rem Pius Decimus Pontifex M aximus caelestem
+oratorum sacrorum patronum declaravit atque
+constituit.
+In M artyrologio l-o loco elogium S. P etri Nolasci
+(de die 31 Ja n .); deleatu r elog. B. Mariae
+Mancini.
+In Missa m. S. Ju lia ni; Credo.
+VF. a cap. seq., m. praec. et S. Agnetis
+V. M. secundo.
+  >> SITE office: feast | S. Joannis Chrysostomi Ep., Conf. et Eccl. Doct. | Duplex | two=False
+  >> commems: [('S. Juliani Ep. et Conf.', 'Memoria', '')] missing: []
+  >> MASS S0127 [] 27 Ian. — S. Ioannis Chrysostomi E. C. D. | white | G=Y C=Y | Pf=Communis | Ky=VI | ite | prayers=['S. Juliani Ep. et Conf.']
+======== 1944-01-28 [Ordo p.15]
+28 Fer. 6. S. Pe tri N olasci C. Dupl. (31.
+Jan.) — Ps. fer. — m. S. Agnetis.
+In Missa mem. S. A gnetis.
+VF. a cap. seq., m. praec.
+  >> SITE office: feast | S. Petri Nolasco Conf. | Duplex | two=False
+  >> commems: [('S. Agnetis secundo', 'Memoria', '')] missing: []
+  >> MASS S0128 [] 28 Ian. — S. Petri Nolasco, C. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['S. Agnetis secundo']
+======== 1944-01-29 [Ordo p.15]
+29 Sabb. S. F ra nc is ciSa le sii. E . C. et A lb .
+E. D. Dupl. — Ps. fer.
+In M artyrologio l-o loco elogium B. M ariae Man­
+cini (de die 28 Jan .); 2-o loco elogium S.
+M artinae (Memoria).
+In Missa Credo.
+VF. Dom. (sine R.) seq., m. praec., B.
+Mariae Mane. Vid. 0. N. (Semid. imped.)
+et S. Martinae V. M.
+
+14 FEBRUARIUS
+  >> SITE office: feast | S. Francisci Salesii Ep., Conf. et Eccl. Doct. | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0129 [] 29 Ian. — S. Francisci Salesii, E. C. D. | white | G=Y C=Y | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-01-30 [Ordo p.16]
+30 Dom. III. Р . О. Е .—De ea—Ut in Psalt. Vr.
+et Propr.—RR. Dom. I. Р. О. E. (R. IX
+Honor.) — m. B. Mariae Mane., S. Mar-
+tinae et В. V.—In Prima Ps. Confitemi­
+ni. (Q.)
+In M artyrologio l-o loco elog. S. Jo an n is Bosco
+(ut in Suppi. B rev .); delea tu r elogium S. Pe tri
+Nolasci.
+In Missa 2-a Or. B. Mariae Mane., 3-aS. M artinae,
+4-aA cunctis.; Credo, Praef. Trin. (Omitt. Coli.).
+In Vesp. m. seq. et B. Mariae Mane.
+N ota l-o — Incipit hodie E xercitium sex Dom.
+festum S. Thomae Aq. praec.—Reliqua vide in
+Calend. anni praeteriti.
+N ota 2-o—Hac hebdom ada hab etu rA nniversarium .
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('B. Mariæ Mancini Vid. O. P.', 'Semiduplex', ''), ('S. Martinæ Virg. et Mart.', 'Memoria', '')] missing: []
+  >> MASS Epi4 [] III post Octavam Epiphaniæ | green | G=Y C=Y | Pf=SS. Trinitate | Ky=II | ite | prayers=['30 Ian. — B. Mariæ Mancini O.P. Vid', 'S. Martinæ Virg. et Mart.']
+======== 1944-01-31 [Ordo p.16]
+31 Fer. 2. S. Joann is Bosco C. Dupl. — Alb.
+(Suppi, noviss.) — Ps. fer.
+VF. a cap.' seq., m. praec.
+
+FEBRUAR IU S
+l Fer. 3. S. Igna tii E. M. Dupl.—Ps. fer. Rb.
+Vesp. seq. (Ps. Laudate.), m. praec. —
+Compl. В. М. V. (Ps. Dom.) cum antiph.
+et conci, hymni propr.
+:2 | Fer. 4. Pu rific a tio В. М . V. Tot. Dupl. Alb.
+2. cl.— Offic. festiv. — In Prima V. Qui
+natus.; ad Horas conci, hymn. propr.
+(A. G. R.) I. P. R. et 0.
+AnteM is samso le mn . bened ic unturcande la e , Fra tr ib usstanti ­
+busve rs is vu ltib usadA lta re ; de in de fit Process io . Fra tr es
+in Cho ro te neantcande la saccensas in man ib usquousQue
+fu er in tof fe rendae .
+
+FEBRUARIUS 15
+
+
+In Missa Sequentia, Credo et Praef. N ativ.
+D IO EC . C ZĘSTO CH . — Anniv. Consecr. Episc.
+— In omn. Miss. die. Or. pro Eo.
+In Vesp. nulla теш . — Compl. ut heri.
+  >> SITE office: feast | S. Joannis Bosco Conf. | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S0131 [] 31 Ian. — S. Ioannis Bosco, C. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=[]

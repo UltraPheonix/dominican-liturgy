@@ -255,6 +255,24 @@
   }
   function incipit(id) { var c = D.chants[id]; return c ? A.clean(c.i).replace(/\.\.\..*$/, '').replace(/\s*\(.*$/, '') : ''; }
 
+  // ================================================================== ASPERGES (both books, Sundays)
+  // Missale O.P. 1939, p. 33 (Ad aspersionem aquæ benedictæ in diebus Dominicis ante Missam) and p. 40 (De officio
+  // ministrorum 2: "Cantoribus incipientibus Antiphonam Asperges me ... dicat ℣. Ostende nobis, etc. Dominus vobiscum.
+  // Oremus. Exaudi nos"); the antiphon as on the Mass page (aspergesGabc), the versicles and prayer in their tones
+  // (gabc/op-tone-asperges-*: Proc. O.P. 1913, pp. 395-396 and 407-408)
+  function aspergesUnits(priest) {
+    var id = ORD && ORD.as; if (!id || S.ordo === 'low') return;
+    var vidi = /^Vidi/.test(ordName(id)), f = A.diffDays(S.date, A.easter(S.date.getFullYear())), tp = f >= 0 && f <= 49;
+    var so = priest ? {noDrop: true, glyph: 1 / 19, size: 14} : {noDrop: true};
+    var h = heading(vidi ? 'Vidi aquam' : 'Asperges', ordSub(id));
+    if (!priest) h.toc = tocEntry(ordName(id), h);
+    rubric('Before the principal Mass on Sundays the cantors begin the antiphon, while the priest sprinkles the altar, the ministers and the brethren (Missale O.P. 1939, pp. 33, 40).', {left: !!priest});
+    chant(id, {part: null, noDrop: !!priest, glyph: so.glyph, size: so.size, fix: function (b) { return A.aspergesGabc ? A.aspergesGabc(b) : b; }});
+    rubric('When the antiphon is finished, the priest, standing before the steps, sings:', {left: !!priest});
+    chant(tp ? 'op-tone-asperges-v-tp' : 'op-tone-asperges-v', so);
+    chant('op-tone-asperges-or', so);
+  }
+
   // ================================================================== CHOIR BOOK
   var TOC = [];
   function tocEntry(label, it) { var e = {label: label, it: it}; TOC.push(e); return e; }
@@ -262,6 +280,7 @@
     curCols = 1;
     var gloriaPatri = function (id) { return /Gl[oó]ria Patri/.test(TX['c:' + id] || ''); };
     var ini = {in: 'init_g_dominic', al: 'init_a_angel'};
+    aspergesUnits(false);
     seq.forEach(function (it) {
       if (it.t === 'chant') {
         var p = it.p, id = it.c.id; if (!id) return;
@@ -357,6 +376,7 @@
       });
     };
     var sung = S.ordo !== 'low';
+    aspergesUnits(true);
     seq.forEach(function (it) {
       if (it.t === 'ordo') {
         if (it.k === 'canon') { canonPages(); curCols = 2; return; }
@@ -397,7 +417,7 @@
         var mx = A.moreText(it, sung);
         rubric(mx.label, {left: true});
         var ogx = null;
-        try { ogx = sung && it.k !== 'se' && window.OPMassTones ? OPMassTones.oration(J(mx.la), {noOremus: it.extra !== 2}) : null; } catch (e) { console.warn('tone', e); }
+        ogx = sung && it.k !== 'se' ? A.tonePrayer(J(mx.la), it.extra === 2) : null;   // the Mass oration tone (js/app.js tonePrayer)
         if (ogx) { gabcInline(ogx, {size: 14, glyph: 1 / 19}); return; }
         if (it.extra === 2) para('Orémus.', {cls: 'pr'});
         para(mx.la, {cls: 'pr'}); if (it.last) para('℟. Amen.', {cls: 'pr'}); return;
@@ -408,9 +428,8 @@
           if (sung) chant('op-m39-flectamus', {noDrop: true, glyph: 1 / 19, size: 14}); else para('Orémus. ℣. Flectámus génua. ℟. Leváte.', {cls: 'pr'});
         }
         if (it.k === 'sp') { heading('Oratio super populum', null); if (sung) chant('op-h-oremus', {noDrop: true, glyph: 1 / 19, size: 14}); else para('Orémus.', {cls: 'pr'}); rubric('The deacon sings:', {left: true}); if (sung) chant('op-m39-humiliate', {noDrop: true, glyph: 1 / 19, size: 14}); else para('℣. Humiliáte cápita vestra Deo.', {cls: 'pr'}); }
-        // sung in the solemn tone of the prayers (Harrison 1920); said at a Low Mass
-        var og = null;
-        try { og = sung && window.OPMassTones ? OPMassTones.oration(J(it.x[0]), {noOremus: true}) : null; } catch (e) { console.warn('tone', e); }
+        // sung in the Mass oration tone (js/app.js tonePrayer: Proc. O.P. 1913 pp. 404-406); said at a Low Mass
+        var og = sung ? A.tonePrayer(J(it.x[0]), false) : null;
         if (og) { gabcInline(og, {size: 14, glyph: 1 / 19}); return; }
         para(it.x[0], {cls: 'pr'}); para('℟. Amen.', {cls: 'pr'}); return;
       }
@@ -442,7 +461,7 @@
         }
         return;
       }
-      if (it.t === 'read') { reading(it.r, false); return; }
+      if (it.t === 'read') { reading(it.r, false, it.pro); return; }
       if (it.t === 'pref') { preface(); return; }
     });
     curCols = 2;
@@ -466,7 +485,7 @@
       return A.renderInto(box, g, {}, null, chantCtx({width: w, size: 14, glyph: 1 / 19, noDrop: true}));
     }));
   }
-  function reading(r, cong) {
+  function reading(r, cong, pro) {
     var v = TX['r:' + r.ref] || ['', ''], h = readingHead(r), gos = r.type === 'Gospel';
     var laT = v[0] || '', enT = v[1] || '';
     var dupOpen = h.open && laT.replace(/[^A-Za-z ]/g, '').toLowerCase().indexOf(h.open.replace(/[^A-Za-z ]/g, '').toLowerCase().trim()) === 0;
@@ -475,9 +494,8 @@
       heading(gos ? 'Evangelium' : (r.type === 'Lesson' ? 'Lectio' : 'Epistola'), shortRef(r.ref));
       // the Gospel's greeting and title are in the Order of Mass just before
       if (BOOK === 'priest' && S.ordo !== 'low' && window.OPMassTones && la) {
-        // the Epistle and Gospel tones of the Order (Harrison 1920, ch. VI 5-6)
-        var tg = null, rg = null;
-        try { tg = gos ? null : OPMassTones.epistleTitle(J(h.la)); rg = OPMassTones.reading(J(la), gos); } catch (e) { console.warn('tone', e); }
+        // the lesson, Epistle and Gospel tones (js/app.js toneReading: Proc. O.P. 1913 pp. 408-426)
+        var tr = A.toneReading(J(la), {type: r.type, ref: r.ref, title: J(h.la || '')}, pro), tg = tr && tr[0], rg = tr && tr[1];
         if (tg) gabcInline(tg, {size: 14, glyph: 1 / 19});
         if (rg) gabcInline(rg, {size: 14, glyph: 1 / 19}); else para(la, {cls: 'pr', max: 360});
       } else {

@@ -1,0 +1,497 @@
+======== 1944-11-01 [Ordo p.127]
+Fer. 4. Fes tiv ita sOm nium Sanc to ru m . Alb.
+Tot. Dupl. i. cl. cum oct. solemni. — Offic.
+festiv.
+(A. G. R.) I. P. O.
+
+122 NOVEM BER
+
+
+
+In Missa Credo et Praef. comm.
+In Vesp. nulla mem. — Compl. Dom.; R.
+In manus, cum Allel.
+F in itis Vesp . Sanc to rums ta tim fn c ip . so le mn ite rVesp . De -
+fu nct. etreassumun tu rCappae .
+In O ffic io De fu nct., e tia m in Vesp ., dumPsa lm idicun tu rs te nt
+Cho ri a lte rn a tim modoconsue to . — Vesp . etMa tu t. in cho ­
+an tu r in Cho ro dextro ; VV . Noct. dicun tu raduobus in
+med io Chori; an tip h . etRR . d ic . abuno . '
+Vel die 2-a Nov. vel subsequenti die dominica
+(A.A.S. 1939, p. 23), am eridie diei praeceden­
+tis, Indulg. plen. toties quoties lucranda pro de­
+functis tantum . Quoad preces in unaquaque
+visitatione solvendas, oportet et sufficit recitare
+sex Pater, Ave et Gloria. (S. Poenit. Ap. 1938,
+n. 544).
+  >> SITE office: feast | Festivitas Omnium Sanctorum | Totum Duplex I classis | two=False
+  >> commems: [] missing: []
+  >> MASS S1101 [] 1 Nov. — FESTIVITAS OMNIUM SANCTORUM | white | G=Y C=Y | Pf=Communis | Ky=I | ite | prayers=[]
+======== 1944-11-02 [Ordo p.128]
+Fer. 5. C om m em orat. Om nium F id e ­ Nr.
+lium D efunctorum . 9 Lect. — Omnia
+ut in Officio Defunct., praeter Lect.,
+quae sunt propr. (post Lect. fit incl.
+prof. a lectore inter pulp. et Altare:
+Caer. n. 766).—In Pret. (quae dic. more
+solito cum Gloria P atri) Ev. propr. —
+Ad Horas min. Ps. festivi sine Gloria.;
+in fine 3-i Ps. dic. ant. Requiem., V.
+A porta., Or. Fidelium, et Requiescant.
+—Post Nonam tantum dic. Pater., Salve
+Regina, cum VV. et Orat.
+NOTA . — L ic etomn ib us in Ecc le s ia un iv ersaSace rd o tib us ,
+hod ie te rsac ru mfacere . (BENED IC TUSPP . XV , Conś tit.
+Incruen tu m , d ie i 10 Augus ti 1915, N . I.).
+1-o. Unatan tu m ex h is M issis app lic aripotestad lib . Sace rd o ­
+tis ; a lte raen im in su ffra g iu momn iu m fid e liu mde fu nc to ru m ,
+tert ia admen te mSummiPon tif ic is app lic aridebet.
+2-o. M is saeut in M is sa li nov iss im o , in an tiq u io rib usve ro p rim a
+M is saeritquaep ro d ie Commemora tio n is hod ie rnae in scri­
+bi tu r in M is sa li; a lte raquaep ro Ann iv e rs ar io , sedcum
+Sequen tia D ie sirae , etOra tio n ib usprop riis ; te rt ia quae
+le g itu r in M is s is quo tid ia n is cumSequen tia etOra tio n ib us
+prop ris ( S .R .C . Decret. Urb is etOrbisd ie i 14 Aug . 1915).
+
+NOVEM BER 123
+
+
+
+3-0. Quiunamtan tu mmodoM is samce le brareve lit, eam le gat
+quae in Commemora tio neomn iu m fid e liu minscr ib itur ;
+eamdemadh ib eatquiM is samconv . ce le bra tu russ it, fac ta
+eipotesta te an ti c ip andaea lte r iu setter tia e . ( Const. quae
+sup ra . III).
+4 -o . Sihacdiece le brandas it M is saexequ ia lis co rp oreprae ­
+sen te , haeceritut in d ie Comm . omn iu mf id . defunct.,
+add it asubunaconci. Or . prodefunc to , ut in d ie ob itu s .
+De modo ter peragendi sacrum , vide notam in
+Missa prim aN ativitatis Domini.
+VF. a cap. seq., m. oct. — Compl. fer.;
+R. In manus, cum Allel. per tot. oct.
+  >> SITE office: feast | Commemoratio Omnium Fidelium Defunctorum | Duplex | two=False
+  >> commems: [('Festivitas Omnium Sanctorum', '', 'priv')] missing: []
+  >> MASS S1102 [] 2 Nov. — COMMEMORATIO OMNIUM FIDELIUM DEFUNCTORUM | black | G=n C=n | Pf=Defunctorum | Ky=Req | req | prayers=[]
+  >> MASS S1102_2 [Second Mass] 2 Nov. — Omnium Fidelium Defunctorum: Ad secundam Missam | black | G=n C=n | Pf=Defunctorum | Ky=Req | req | prayers=[]
+  >> MASS S1102_3 [Third Mass] 2 Nov. — Omnium Fidelium Defunctorum: Ad tertiam Missam | black | G=n C=n | Pf=Defunctorum | Ky=Req | req | prayers=[]
+======== 1944-11-03 [Ordo p.129]
+Fer. 6. B. S im on is B ali. C.O.N. Semid. Alb.
+— Ps. fer. — m. oct. — In Prima omitt. *
+Preces. — RR. Hor. cum dupl. Allel. +
+per tot. oct.
+In Missa m. oct.
+Hod ie pennitt . un ic aM is savot. SS . Cord is JesucumGlor ia ,
+un ic aOr ., CredoetPraef . Nat. ( Om itt. Co li.) — A lb .
+
+VF. a cap. seq., m. praec., oct. et SS.
+Vitalis et Agricolae Mm.
+  >> SITE office: feast | B. Simonis Ballacchii Conf. O. P. | Semiduplex | two=False
+  >> commems: [('Festivitas Omnium Sanctorum', '', '')] missing: []
+  >> MASS S1103b [] 3 Nov. — B. Simonis Ballacchii, O.P. C. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['1 Nov. — Festivitas Omnium Sanctorum']
+======== 1944-11-04 [Ordo p.129]
+4 Sabb. S. Ca ro li B orrom . E. C. Dupl. Alb.
+tp — Ps. fer. — m. oct. et SS. Vitalis et
+Agricolae.
+In Missa 2-a Or. oct., 3-a SS. V italis et Agrico­
+lae Mm.
+VF. Dom. (sine R.) seq., m. praec., B. Martini
+de Porres C.O.N. (Dupl. imped.) et oct.
+(simplif.) — In Compl. R. In manus.
+sine Allel.
+  >> SITE office: feast | S. Caroli Ep. et Conf. | Duplex | two=False
+  >> commems: [('Festivitas Omnium Sanctorum', '', ''), ('SS. Vitalis et Agricolæ MM.', 'Memoria', '')] missing: []
+  >> MASS S1104 [] 4 Nov. — S. Caroli Borromæo, E. C. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['1 Nov. — Festivitas Omnium Sanctorum', 'SS. Vitalis et Agricolæ MM.']
+======== 1944-11-05 [Ordo p.129]
+Dom. XXI. Р . О. T . (2-a Nov.) De ea. Vr.
+— Ut in Psalt. et Propr. — RR. Dom.
+l-ae Nov. (ult. R. Honor.)—m. B. Mar­
+tini et oct. — In Prima Ps. Confitemini.
+
+124 NOV EM B ER
+
+
+In Missa 2-a Or. B. Martini; 3-a oct.; Credo, Praef. I
+Trin.
+In Vesp. m. seq., B. Martini et oct.
+Processio SS. Rosarii (I. P. R.).
+NOTA . — Hachebdomadahabe tu rAnn iv e rs ar iu m .
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('Festivitas Omnium Sanctorum', '', ''), ('B. Martini de Porres Conf. O. P.', 'Duplex', '')] missing: []
+  >> MASS Pent23 [] XXI post Octavam Trinitatis | green | G=Y C=Y | Pf=SS. Trinitate | Ky=II | ite | prayers=['1 Nov. — Festivitas Omnium Sanctorum', '5 Nov. — S. Martini de Porres, O.P., C']
+======== 1944-11-06 [Ordo p.130]
+6 Fer. 2. BB. H ie ro nymi, Va le n tin i, Rb.
+F ra nc is ci, Hyac in th i et Soc. Mm .
+O. N. Dupl. — Ps. fer. — m. oct.
+In Missa m. oct.
+VF. (de festo), m. seq. et oct.
+  >> SITE office: feast | BB. Hieronymi, Valentini, Francisci, Hyacinthi et Sociorum MM. O. P. | Duplex | two=False
+  >> commems: [('Festivitas Omnium Sanctorum', '', '')] missing: []
+  >> MASS S1106 [] 6 Nov. — Ss. Hieronymi, Valentini, Francisci, Hyacinthi et s | red | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['1 Nov. — Festivitas Omnium Sanctorum']
+======== 1944-11-07 [Ordo p.130]
+Fer. 3. B. Pe tr iaR uffia M . O. N. Rb.
+Semid. — Ps. fer. — m. oct. — In Prima *
+omitt. Preces. +
+In Missa m. oct.
+VF. a cap. (sine R.) seq., m. praec: et SS.
+Quatuor Coronat. Mm. —- Compl. fer.
+  >> SITE office: feast | B. Petri de Ruffia Mart. O. P. | Semiduplex | two=False
+  >> commems: [('Festivitas Omnium Sanctorum', '', '')] missing: []
+  >> MASS S1107b [] 7 Nov. — B. Petri a Rodulphia O.P. M. | red | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['1 Nov. — Festivitas Omnium Sanctorum']
+======== 1944-11-08 [Ordo p.130]
+Fer. 4. D ies oct. Om nium S an cto ru m . Alb.
+Solemnis. — Ps.' fer. — Invit. et Hymn.
+ut in festo; — Lect. omnes propr., RR.
+ut in festo.—m. SS. Coronatorum Mm.
+(V. Justi autem). — In Pret. Ev. festi.
+In Missa (ut in die sine Credo) m. SS. Coronat.
+Vesp. seq. (Ps. Laudate), m. praec. ttm.
+— Compl. Dom.
+Fef5. D edicatio Ba silica e SS. Sa lv a ­ Alb.
+to ris . Tot. Dupl. 2. cl. (12 Nov.). —
+Offic. festiv. — m. S. Theodori M.
+In Missa m. S. Theodori, Credo, Praef. comm.—In
+Secreta Missae om itt. parenthesis. — In Missa
+conv. vel eant, om itt. m. S. Theodori.
+In Vesp. m. seq. — Compl. Dom.
+
+NO VEM BER 125
+  >> SITE office: octday | Octava Omnium Sanctorum | Octava solemnis | two=False
+  >> commems: [('SS. Quatuor Coronatorum MM.', 'Memoria', '')] missing: []
+  >> MASS S1101 [Octave day] 1 Nov. — FESTIVITAS OMNIUM SANCTORUM | white | G=Y C=n | Pf=Communis | Ky=I | ite | prayers=['SS. Quatuor Coronatorum MM.']
+======== 1944-11-09 [Ordo p.None]
+(not parsed: see previous day)
+  >> SITE office: feast | Dedicatio Basilicæ SS. Salvatoris | Totum Duplex II classis | two=False
+  >> commems: [('S. Theodori Mart.', 'Memoria', 'priv')] missing: []
+  >> MASS S1109 [] 9 Nov. — Dedicatio Archibasilicæ SS. Salvatoris | white | G=Y C=Y | Pf=Communis | Ky=III | ite | prayers=[]
+======== 1944-11-10 [Ordo p.131]
+10 Fer. 6. S. S ta n is la iKo stk aС. P . P. Alb.
+t Tot. Dupl. — Ps. fer.
+H odie h ab en tu r2 Missae convent. in Choro: una
+de die, alia de A nniversario. - Ubi Missa an-
+nivers. non cantetur, add. Or. Omnipotens, in
+Missa diei.
+Annivers. Omnium FFr. et Soror. Defunct. 0. N.
+p Lect. Ц-: In Officio (quod obligat etiam extra
+Chorum in heboom ada) 1 -a Or; Detis indulg.,
+2-a Deus veniae., 3-a Fidelium. — In Missa eant.
+1-a et 2- a . Ora t. ut supra, 3-a Omnipotens. —
+In Processione 1-a Or. Deus indulg., 2-a Deus,
+cuius miserat. — N igr.
+SiM is saconv . fuer it le c ta , d ic . Orat, utsupra in M is saeant,
+cu mSequen tia .
+NOTA . — Off ic . Defunct. in qua tu orAnn iv e rs . O .N . in Cho ro
+perso lv idebetin te rVesp . dieiM is samp ro Defunc tis prae -
+ced . etipsamM issam * ( Rubr. B re v . § XL IIl).
+1. P . 'pro Ann iv e rs ar io utd ie 4Febr.
+
+Vesp. seq. (Ps. Laudate.), m. praec. •—
+Compl. fer.
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [] missing: []
+  >> MASS S1113 [Conventual Mass: Anniversarium Omnium Fratrum et Sororum defunctorum O. N.] 13 Nov. — Anniversarium Omnium Fratrum et Sororum Ordinis | black | G=n C=n | Pf=Defunctorum | Ky=Req | req | prayers=[]
+  >> MASS Pent23 [Mass of the preceding Sunday] XXI post Octavam Trinitatis | green | G=n C=n | Pf=Communis | Ky=VIII | ben | prayers=['A cunctis', '(ad lib.)']
+======== 1944-11-11 [Ordo p.131]
+11 Sabb. S. Ma rtin iE.C. Tot. Dupl. (com­ Alb.
+mune)—Matut. propr. cum Ps. de Comm.
+—Ad Laud. Ps, festivi cum ant. propr.
+—- m. S. Mennae M .'— Ad Horas min.
+Ps. et ant. fer.
+In Missa mem. S. M ennae M.
+Vesp. seq. (Ps. Laudate.), m. praec. et
+  >> SITE office: feast | S. Martini Ep. et Conf. | Totum Duplex | two=False
+  >> commems: [('S. Mennæ Mart.', 'Memoria', '')] missing: []
+  >> MASS S1111 [] 11 Nov. — S. Martini, E. C. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['S. Mennæ Mart.']
+======== 1944-11-12 [Ordo p.131]
+Dom. (ant. Qui caelorum., От. Dom. IV.
+P.O.E.) — Compl. Dom.
+  >> SITE office: feast | Festivitas Omnium Sanctorum O. P. | Totum Duplex II classis | two=False
+  >> commems: [('Dominica', '', '')] missing: []
+  >> MASS S1112 [] 12 Nov. — FestivitaS Omnium Sanctorum O.P. | white | G=Y C=Y | Pf=Dominico | Ky=II | ite | prayers=['Dominica IV quæ superfuit post Octavam Epiphaniæ']
+======== 1944-11-13 [Ordo p.132]
+13 Fer. 2. Pa tro c in iu mS. Thom ae Aq. Alb.
+in S cholas C atholicas. Tot. Dupl. 1. cl.
+(Pro Brev. Theissling Lect. НГ Noct. in
+Suppi.) — Offic. festiv. — In Laud. l-a
+ant. Collaudetur, (quae dic. etiam ad
+Primam).
+In Missa Credo.
+In Vesp. (super Ps. ant. Collaudetur.), m.
+seq. — Compl. Dom.
+  >> SITE office: feast | Patrocinium S. Thomæ Aq. in Scholas catholicas | Totum Duplex I classis | two=False
+  >> commems: [] missing: []
+  >> MASS S0307 [] 7 Mart. — S. THOMÆ AQUINATIS O.P. C. D. | white | G=Y C=Y | Pf=S. Thoma Aquinate | Ky=I | ite | prayers=[]
+======== 1944-11-14 [Ordo p.132]
+14 Fer. 3. B. Joann is L icc. C.O.N. Semid. Alb.
+—Ps. fer.—Hom. Dom. praec. (IV. P.O.
+E.) cum RR. III Noct. Dom 1-ae Nov.
+(R. IX Laudabilis.) — m. S. Britii E.C.
+—In Pret. Ev. Dom. —In Prima Preces.
+NOTA. — Hodie in Martyr ologio sic pronuntiatur
+festum sequentis diei: Coloniae Agrippinae sancti
+Alberti, Episcopi quondam Ratisbonensis et
+Confessoris ex Ordine P raedicatorum , cogno­
+m ento Magni: qui morum sanctitate, salutis
+anim arum zelo et praecellenti doctrina refu l­
+gens, catholicam illustrav it Ecclesiam; atque a
+Pio Papa Undecimo Doctor Ecclesiae Univer­
+salis declaratas est. — Festum Totum Duplex
+1 classis.
+l -а Missa conv. in Choro de Dom. (IV. Р. О. E.)
+cum 2-a Or. A cunctis., 3-a ad libitum ; Praef.
+comm. — Vir.
+
+NOVEM BER 12?
+
+
+2-a Missa conv. extra Chorum de festo cum 2-a
+Or. S. Britii, 3-aA cunctis.
+Ubi h ab etu r nnica Missa conv., dic. de Dom. cum
+2-a Or. festi, 3-aS. Britii; Praef. com m .— Vtr.
+Missae priv. ad libitum: au t de Dom. (ut Missa
+conv. un ica);— au t de festo cum 2-a Or. Dom.,
+3-aS. B ritii et Ev. S. Joan. in fine.
+Prohib. Missae lectae et eant, tam vot. (etiam
+SS. Ros.) quam quotid. Defunct.
+Vesp. seq. (Ps. Laudate), nulla mem.
+  >> SITE office: feast | B. Joannis Liccii Conf. O. P. | Semiduplex | two=True
+  >> commems: [('S. Britii Ep. et Conf.', 'Memoria', '')] missing: []
+  >> MASS Epi5r [In choir: the Sunday (resumed, Rubr. III.4)] Dominica IV quæ superfuit post Octavam Epiphaniæ | green | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['A cunctis', '(ad lib.)']
+  >> MASS S1114b [Outside choir: the feast] 14 Nov. — B. Ioannis Liccii O.P. C. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['S. Britii Ep. et Conf.', 'A cunctis']
+======== 1944-11-15 [Ordo p.133]
+15 Fer. 4. S. A lb e rti MagniE. C. O. N. Alb.
+et E . D. Tot. Dupl. 1. cl.—Offic. festiv.
+(Suppi.).
+In Missa Credo.
+In Vesp. m. seq.
+  >> SITE office: feast | S. Alberti Magni Ep., Conf. et Eccl. Doct. O. P. | Totum Duplex I classis | two=False
+  >> commems: [] missing: []
+  >> MASS S1115 [] 15 Nov. — S. Alberti Magni O.P. E. C. D. | white | G=Y C=Y | Pf=Communis | Ky=III | ite | prayers=[]
+======== 1944-11-16 [Ordo p.133]
+16 Fer. 5. B. L uciae V. O. N. Semid. (15 Alb.
+t Nov.) — Ps. fer. — In Prima Preces. $
+In Missa 2-a Or. A cunctis., 3-a ad libitum . +
+VF. (de festo), m. seq. — In Compl. Preces.
+17 IFer. 6. S. G re go rii Thaum . E.C. Simpl. Alb.
+- Ps. fer. — In Prima Preces. *
+In Missa 2-a Or. A cunctis., 3-a ad libitum . +
+D IO EC . LUBL IN . — Anniv. Consecr. Episc. —
+In omn. Miss. add. Or. pro Eo.
+Vesp. seq. (Ps. Laudate), m. praec. —
+Compl. Dom.
+  >> SITE office: feast | B. Luciæ a Narnia Virg. O. P. | Semiduplex | two=False
+  >> commems: [] missing: []
+  >> MASS S1116b [] 16 Nov. — B. Luciæ a Narnia O.P. V. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['A cunctis', '(ad lib.)']
+======== 1944-11-17 [Ordo p.None]
+(not parsed: see previous day)
+  >> SITE office: feast | S. Gregorii Thaumaturgi Ep. et Conf. | Simplex | two=False
+  >> commems: [] missing: []
+  >> MASS S1117 [] 17 Nov. — S. Gregorii Thaumaturgi, E. C. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=['A cunctis', '(ad lib.)']
+======== 1944-11-18 [Ordo p.133]
+18 Sabb. D edicat. Ba silic a ru m SS. Pe tri Alb.
+tetPau li A pp. Tot. Dupl.—Off. festiv.
+In Missa Credo et Praef. comm. (In Secreta om itt.
+parenthesis).
+
+128 NOV EM B ER
+
+
+
+In Vesp. m. Dom. (ant. Sustinuimus., Or.
+Praesta, de Dom. V. P. O. E.) et S. Eli-
+sabeth Vid. (Dupl. imped.).—Compl. Dom.
+  >> SITE office: feast | Dedicatio Basilicarum SS. Petri et Pauli Apostolorum | Totum Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S1118 [] 18 Nov. — Dedicatio Basilicarum Ss. Petri et Pauli | white | G=Y C=Y | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-11-19 [Ordo p.134]
+19 Dom. XX III (quae est V.P .O .E ) P.O .T. Vr.
+(4-a Nov.) De ea. —* Ut in Psalt. et
+Propr. — RR. Dom. 1-ae Nov. (R. IX.
+Honor.) — m. S. Elisabeth. — In Prima
+Ps. Confitemini.
+In Missa m. S. E lisabeth; Credo, Praef. Trinit.
+In Vesp. m/ seq. et S. Elisabeth.
+Processio SS. Sacramenti (I.P.O.).
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('S. Elisabeth Viduæ', 'Duplex', '')] missing: []
+  >> MASS Epi6r [] Dominica V quæ superfuit post Octavam Epiphaniæ | green | G=Y C=Y | Pf=SS. Trinitate | Ky=II | ite | prayers=['19 Nov. — S. Elizabeth, Vid']
+======== 1944-11-20 [Ordo p.134]
+20 Fer. 2. S. Fe lic is de V alois C. Dupl. Alb.
+— Ps. fer.
+Vesp. seq. (Ps. Laudate), m. praec. —
+Compl. В. М. V. (Ps. Dom.) cum ant. et
+conci, hymni propr.
+  >> SITE office: feast | S. Felicis de Valois Conf. | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S1120 [] 20 Nov. — S. Felicis de Valois, C. | white | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-11-21 [Ordo p.134]
+21 Fer. 3. P ra esen ta tio B.M .V. Tot Dupl. Alb.
+tt Offic. festiv. — In Prima V. Qui natus.;
+ad Horas conci, hymn. propr.
+A. G. R.
+In Missa Cfedo, Praef. B.M .V . Et te in Praesenta-
+tióne.
+In Vesp. m. seq. — Compl. ut heri.
+  >> SITE office: feast | Præsentatio B. Mariæ V. | Totum Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S1121 [] 21 Nov. — Præsentatio B. Mariæ Virg. | white | G=Y C=Y | Pf=B. Maria Virgine | Ky=V | ite | prayers=[]
+======== 1944-11-22 [Ordo p.134]
+22 Fer. 4. S. C aeciliae V .M . Dupl.— Mat. Rb.
+propr.—Ad Laud. Ps. festivi; ad Horas
+min. Ps. et ant. fer.
+Vesp. (Ps. de Comm. cum 1-a ant. Laud.)
+a cap. seq., m. praec. — Compl. fer.
+
+NOV EM B ER 129
+  >> SITE office: feast | S. Cæciliæ Virg. et Mart. | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S1122 [] 22 Nov. — S. Cæciliæ, V. M. | red | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-11-23 [Ordo p.135]
+23 Fer. 5. S. C lem entis P . M . Dupl. — Rb.
+Ps. fer.—Ad Laud. ant. propr., Ps. festiv.
+— Ad Horas min. Ps. et ant. fer.
+NOTA. — Hodie in M artyrologio sic annun tiatu r
+festum diei sequentis: Sancti Joannis a Cruce
+Presbyteri, Confessoris et Ecclesiae Doctoris etc.
+Vesp. (Ps. de Comm. cum i-a ant. Laud.)
+a cap. seq., m. praec. et S. Chrysogoni
+M. — Compl. fer.
+NOTA . — Ora tio tS . Joann is aCruces ic in c ip it: Deus , qui
+sanctumJoannem , Confessoremtuuma tq ueDoctorem
+e tc .
+  >> SITE office: feast | S. Clementis I Papæ et Mart. | Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S1123 [] 23 Nov. — S. Clementis I, P. M. | red | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-11-24 [Ordo p.135]
+24 Fer. 6. S. Joann is aC ruce C. et Б. D. Alb.
+Dupl. — Ps. fer. — Homil. Vos estis.
+de Comm. Doct. — m. S. Chrysogoni.
+NOTA. — Pro Brev. Theissling. in 6-a Lectione
+post ultim a verba add an tu r sequentia: ... et
+P ius Undecimus ex Sacrorum Rituum Congre­
+gationis consulto, universalis Ecclesiae Doctorem
+declaravit. — (ex Brev. noviss.).
+Missa In medio, de Comm. Doct. (cum Orat, ut
+in Offic.); m. S. Chrysogoni. — Credo.
+Vesp. seq. (Ps. Laudate.), m. praec. —
+Compl. fer.
+  >> SITE office: feast | S. Joannis a Cruce Conf. et Eccl. Doct. | Duplex | two=False
+  >> commems: [('S. Chrysogoni Mart.', 'Memoria', '')] missing: []
+  >> MASS S1124 [] 24 Nov. — S. Ioannis a Cruce, C. D. | white | G=Y C=Y | Pf=Communis | Ky=VI | ite | prayers=['S. Chrysogoni Mart.']
+======== 1944-11-25 [Ordo p.135]
+25 Sabb. S. Ca th a rin aeV. M. Tot. Dupl. Rb.
+— Ps. fer. — Lect. et RR. propr. — Ad
+Laud, Ps. festivi cum ant. propr. — Ad
+Horas min. Ps. et ant. fer.
+D IO EC . PREM IS L . — Anniv. Transi. Episc. —
+In omn. Missis dic. Or. pro Eo.
+VF. Dom. (sine R.) seq., m. praec. et B.
+Jacobi de Benef. E. C. O.N. (Semid. im-
+ped.).—Compl. Sabb.; R. In manus, sine
+Allel.
+
+130 МОУемйёй
+  >> SITE office: feast | S. Catharinæ Virg. et Mart. | Totum Duplex | two=False
+  >> commems: [] missing: []
+  >> MASS S1125 [] 25 Nov. — S. Catherinæ, V. M. | red | G=Y C=n | Pf=Communis | Ky=VI | ite | prayers=[]
+======== 1944-11-26 [Ordo p.136]
+Dom. XX IV . (quae est XXII ) Р. О. T.
+(5-a Nov.) De ea .—Omnia ut in Psalt.
+et Propr. — Lect. II et III Noct. ut in
+Dom. XXII Р. О. T.; RR. Dom. l-ae Nov.
+(R. IX. Honor.) — m. B. Jacobi et
+B.M.V.—In Prima Ps. Confitemini. (Q.).
+In Missa 2-a Or. B. Jacobi, 3-aA cunctis.; Credo
+et Praef. Trinit.
+In Vesp. m. B. Jacobi et В. М. V.
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [('B. Jacobi de Benefactis Ep. et Conf. O. P.', 'Semiduplex', '')] missing: []
+  >> MASS Pent24 [] Dominica ultima post Octavam Trinitatis | green | G=Y C=Y | Pf=SS. Trinitate | Ky=II | ite | prayers=['26 Nov. — B. Iacobi de Benefactis O.P. Ep., C', 'A cunctis']
+======== 1944-11-27 [Ordo p.136]
+Fer. 2. De ea. — (Preces et Prostr. ad
+omnes Horas). |— Ps. fer.— Omnia ut
+in Psalt. per annum. — In Matut. (Ps.
+Venite, ab uno) 9 Ps. et 9 ant. sub
+unico Noct.; V. tertius.—Omitt. Te Deum,
+nec repet, ult. R. — Ad Benedictus ant.'
+fer. cum Orat. Dom. praec. (etiam ad
+Horas).—In Pret. de R eg u la — In Prima
+Capit. Pacem., Or. Domine Deus.
+Missa conv. nnica de Requiem; 1-a Or. Deus ve­
+niae., 2-a Deus, qui Hos patrem.j3-a Omnipo­
+tens. — Dic. Sequentia, etiam si Missa conv. fu ­
+erit tantum lecta. — (Prostr.) — N igr.
+Missae privatae de Dom. praec. cum 2-a Or. A
+cunctis., 3-a ad libitum ; om itt. Gloria, Credo et
+Alleluja cum suo Versu. — Praef. comm. et in
+fine Bened. Domino.
+ARCH ID . C RA COV . — Anniv. Praeconis. Prine.
+Archiep. — In omn. Miss. dic. Or. pro -Eo. .
+VF. (omnia ut in Psalt.; ad Magn. ant.
+Magnificat anima., Or. Dom. praec.).
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [] missing: []
+  >> MASS C114s [Conventual Mass for the dead (the week's first free feria)] Missa pro Defunctis (in Missis quotidianis) | black | G=n C=n | Pf=Defunctorum | Ky=Req | req | prayers=['Deus, qui nos patrem', 'Omnípotens sempitérne Deus, qui']
+  >> MASS Pent24 [Mass of the preceding Sunday] Dominica ultima post Octavam Trinitatis | green | G=n C=n | Pf=Communis | Ky=VIII | ben | prayers=['A cunctis', '(ad lib.)']
+======== 1944-11-28 [Ordo p.136]
+Fer. 3. De ea. — (Preces et Prostr. ad
+omnes Horas). — Omnia ut heri.
+In Ma rty ro lo g io ( ded ie 29 Nov .) pona tu rvoxMemor ia post
+e lo g iu mS. Sa tu rn in iM ., etde le a tu rposte lo g iu mS. Sa ­
+tu rn in iEp . .etM .
+
+NO VEM BER.
+
+
+
+Missa conv. potest esse: vel de Dom. praec. ut
+Missa priv ata (Prostr.);—vel de S. P.Domiriico
+(ut in Missa votiva) cum 2-a Or. Dom. praec.,
+3-aA cunctis, (in qua om itt. nom en S. P. N.
+Dom.'; dic. Gloria et Allel. cum Versu etc. —
+Praef. S. Dominici et Ev. S. Joan. in fine.
+(Omitt. P rostr.) — Alb.
+M issae privatae de Dom. praec. cum 2-a Or. A
+cunctis., 3-a ad lib. (om itt. Gloria, Credo et
+Allel. cum sao V ersu), Praef. comm. et Bened.
+Domino.
+YF. ut heri (ad Magn. ant. Exsultavit.).
+  >> SITE office: temporal |  |  | two=False
+  >> commems: [] missing: []
+  >> MASS Pent24 [Mass of the preceding Sunday] Dominica ultima post Octavam Trinitatis | green | G=n C=n | Pf=Communis | Ky=VIII | ben | prayers=['A cunctis', '(ad lib.)']
+======== 1944-11-29 [Ordo p.137]
+29 Fer. 4. V ig ilia S. And re aeAp .— De VI.
+ea. — (Preces et Prostr. usque ad No­
+nam exclus.) — Ps. fer. — Omnia ut in
+Psalt. per annum.—In Mat. (Ps. Venite.
+ab uno) 9 ,Ps. et 9 ant. (tres ult. Ps. de
+2-o loco) sub unico Noct., V. tertius.—
+Bened. ex III Noct. — Homil. Vigil, cum
+RR. fer. 4-ae. — Omitt. Te Deum, nec
+rep. ult. R. — Ad Laudes Ps. 2-o loco.
+— Ad Bened. ant. fer. cum Or. Dom.
+praec. (etiam ad Horas);— m. S. Satur­
+nini M. — In Pretiosa de Regula. — In
+Prima 4-us Ps., Capit. Pacem.; Or. Do­
+mine. Deus.
+Missa ab om nibus de Vigilia (sine Gloria) cum
+2-a Or. S. Saturnini, 3-aA cunctis.; Praef. comm.,
+Bened. Domino (Prostr.). — Viol.
+Prohib. Missae lectae tam vot. (etiam SS. Ros.)
+quam quotid. Defunct.
+Vesp. seq. (Ps. Laudate., Or. Vigil.); nulla
+mem. — Compl. Dom.
+
+132 DEC EM B ER
+  >> SITE office: vigil | Vigilia S. Andreæ | Vigilia | two=False
+  >> commems: [('S. Saturnini Ep. et Mart.', 'Memoria', '')] missing: []
+  >> MASS S1129v [Vigil] 29 Nov. — In Vigilia S. Andreæ Apostoli | violet | G=n C=n | Pf=Communis | Ky=VIII | ben | prayers=['S. Saturnini Ep. et Mart.', 'A cunctis']
+======== 1944-11-30 [Ordo p.138]
+30 Fer. 5. S. And re aeAp. Tot. Dupl. 2. cl. Rb.
+cum oct. solius mem. — Offic. festiv.
+In Missa Credo, Praef. Ap.
+In Vesp. m. seq. — Compl. Dom.
+
+DECEM BER
+  >> SITE office: feast | S. Andreæ Apostoli | Totum Duplex II classis | two=False
+  >> commems: [] missing: []
+  >> MASS S1130 [] 30 Nov. — S. Andreæ Apostoli | red | G=Y C=Y | Pf=Apostolis | Ky=III | ite | prayers=[]

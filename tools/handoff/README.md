@@ -1,3 +1,42 @@
+# >>> START HERE (state at 27 Nov 2026, 17:35, Joseph out of credits) <<<
+
+Live: v226 plus the "everything finished" push of 17:35 (sung prayers in the Proc. 1913 tones on the Mass page + booklets incl. Asperges;
+Holy Week tone engine js/mtones.js, Good Friday prayers/lessons in chant, Holy Week QC fixes, Passion text corrections (55);
+site fixes from Lead F/W-F2; litanies & processions (v225); G28 saints' Masses (v226)).
+Read tools/handoff/RULINGS.md (all of Joseph's decisions) before anything else.
+
+## Joseph's priority order (27 Nov)
+1. **Mass TEXTS exactly as the Missale O.P. 1939 prints them. Nothing else until this is done.**
+   - **Audit of all 496 Masses:** five auditors started 17:19 and were stopped 17:33.
+     - State: tools/audit/A1..A5.md, fixes in tools/audit/fixes/A*.json, their scripts in tools/audit/scripts/A*/.
+     - The groups are in tools/audit/groups.json. Instructions for restarting them: /tmp/audit_prompt.txt is gone, so see "Auditor brief" below.
+   - **Applying fixes:** `python3 tools/audit/apply_fixes.py` (idempotent; re-run after any data rebuild), then sweep and push.
+   - **Then:**
+     - consonantal i → j in data/orations.js / addiv / memoriae, taking each word from the Missal (script);
+     - re-punctuate the 163 Masses whose orations still have Divinum Officium punctuation (part of the audit);
+     - the calendar fixes in tools/handoff/ordo44_diff.md (2nd/3rd prayers, A cunctis, commemorations, Gloria/Credo, Prefaces, colours, weekly votives, Kyriale by G28 ranks, resumed Sundays; December not checked);
+     - the cut readings (tools/handoff/W-E3.md);
+     - the remaining site fixes (tools/handoff/W-F2.md, F.md).
+   - **Easy chant follows automatically** (Joseph's standing instruction). Orations and readings take their tone from the text; for wrong chants, switch to the right id or read the chant from the Graduale.
+2. **Finish the chants:**
+   - Holy Week: Palm Sunday–Wednesday (W-B2.md: 26 gabc to regenerate, check and wire in), Holy Saturday (W-B5.md), Maundy Thursday (W-B3.md: first retranscribe the Sermo Domini from the Triduum, pp. 122-130).
+   - The Commons' Paschal second Alleluias (D.md).
+3. **The Passions:**
+   - tools/passion/TONES.md (pp. 435-439 done; p. 440 to finish) and tools/handoff/C.md (5 questions).
+   - The texts are already corrected (C0_passion_texts.md).
+4. **Later:** the 1959 English (E.md), the final QC, the offline download, the 1959 Holy Week.
+
+## Auditor brief (for restarting the text audit)
+Each auditor takes one group in groups.json. For every Mass, check against the M39 scan (/home/claude/dl/missal/M39.pdf; text layer tools/orat39/m39lin.txt, scan page = @@PAGE+1):
+- the title: only wrong words, keeping the calendar style;
+- the orations: word by word and with the Missal's punctuation; keep the expanded conclusions, but check their type; fold i/j;
+- the readings: full text and reference;
+- the chants: the right chant for the Mass;
+- the English: only that it matches its Latin.
+
+Fixes go only as entries in tools/audit/fixes/<G>.json (format in the apply_fixes.py docstring), each with a page. The report goes in tools/audit/<G>.md, one line per Mass.
+
+----
 # Handoff: Mass chat, paused 27 Nov 2026 (site v218)
 
 Start here. Then read tools/RESUME.md (history) and the note for whichever item you pick up.

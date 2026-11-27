@@ -1,0 +1,286 @@
+Adv1 rd.0 Ad Romanos 13: 11-14 | HEAD: et de Oratione. Lectio Epistolae beati Pauli Apostoli ad Romanos, c. 13 || Fratres: Sciéntes, quia hora est jam nos de somno 
+     TAIL:  æmulatióne: sed induímini Dóminum Jesum Christum. || JSi. Psalm. 24 Universi, qui te exspectant, non confundentur Domine. Vias
+Adv1 rd.1 Lucas 21: 25-33 | HEAD: tantum Responsorium cum suo Versu. Sequentia sancti Evangelii secundum Lucam. c. 21 || In illo témpore: Dixit Jesus discípulis suis: Erun
+     TAIL:  terra transíbunt: verba autem mea non transíbunt. || Credo. Offertorium Ps. 24 Ad te Domine levavi animam m eam:
+Adv2 rd.0 Ad Romanos 15: 4-13 | HEAD: Lectio Epistolae beati Pauli Apostoli ad Romanos, c. 15 ratres: Quacumque F || Fratres: Quæcúmque scripta sunt, ad nostram doctrí
+     TAIL: : ut abundétis in spe, et virtúte Spíritus Sancti. || TU. Ps. 49 Ex Sion species decoris ejus: Deus manifeste veniet.?
+Adv2 rd.1 Matthæus 11: 2-10 | HEAD: Domini ibimus. Alleluia. ►E Sequentia sancti E1 ingelii secundum Matthaeum. c. 11 || In illo témpore: Cum audísset Joánnes in vínculis 
+     TAIL: nte fáciem tuam, qui præparábit viam tuam ante te. || Credo. Offertorium Ps. 84 Deus tu convertens vivificabis nos, et plebs
+Adv3 rd.0 Ad Philippenses 4: 4-7 | HEAD: Apostoli ad Philippenses, c. 4 F r a t r e s: || Fratres: Gaudéte in Dómino semper: íterum dico gau
+     TAIL: vestra, et intelligéntias vestras in Christo Jesu. || Domino nostro. 7&. Ps. 79 Qui sedes. Domine, super Cherubim, excita
+Adv3 rd.1 Joannes 1: 19-28 | HEAD: ut salvos facias nos. Alleluia. Sequentia sancti Evangelii secundum Joannem. c. 1 || In illo témpore: Misérunt Judǽi ab Jerosólymis sac
+     TAIL: a sunt trans Jordánem, ubi erat Joánnes baptízans. || Credo. Offertorium Ps. 84 Benedixisti Domine terram tuam: avertisti captivitatem Jacob:
+Adv3w rd.0 Isaias 2: 2-5 | HEAD: et aeternae beatitudinis praemia largiatur: Per Dominum. Lectio Isaiae Prophetae, c. 2 || In diébus illis: Dixit Isaías prophéta: Erit in no
+     TAIL: Domus Jacob veníte, et ambulémus in lúmine Dómini. || Dei nostri. Ps. 23 Tollite portas principes vestras, et elevamini portae
+Adv3w rd.1 Isaias 7: 10-15 | HEAD: dilectione perficiant: Per Dominum... in unitate ejusdem. Lectio Isaiae Prophetae, c. 7 || In diébus illis: Locútus est Dóminus ad Achaz, dic
+     TAIL: medet, ut sciat reprobáre malum, et elígere bonum. || Ps. 144 Prope est Dominus omnibus invocantibus eum: omnibus, qui invocant
+Adv3w rd.2 Lucas 1: 26-38 | HEAD: omnis caro nomen sanctum ejus. Sequentia sancti Evangelii secundum Lucam. c. 1 || In illo témpore: Missus est ángelus Gábriel a Deo 
+     TAIL: ce ancílla Dómini: fiat mihi secúndum verbum tuum. || Offertorium Luc. 1 Ave Maria gratia plena: Dominus tecum: benedicta tu
+Adv3f rd.0 Isaias 11: 1-5 | HEAD: tota dilectione perficiant: Per Dominum... ejusdem. Lectio Isaiae Prophetae, c. 11 HJEC || Hæc dicit Dóminus Deus: Egrediétur virga de radíce
+     TAIL: lum lumbórum ejus, et fides cinctórium renum ejus. || TBi. P s. 84 Ostende nobis Domine misericordiam tuam: et salutare
+Adv3f rd.1 Lucas 1: 39-47 | HEAD: terram tuam: avertisti captivitatem Jacob. Sequentia sancti Evangelii secundum Lucam. c. 1 || In illo témpore: Exsúrgens María, ábiit in montána
+     TAIL: : et exsultávit spíritus meus in Deo salutári meo. || Offertorium Ps. 84 Deus tu convertens vivificabis nos, et plebs tua
+Adv3s rd.0 Isaias 19: 20-22 | HEAD: in Missa festi, si hac die occurrerit. Lectio Isaiae Prophetae, c. 19 || In diébus illis: Clamábunt ad Dóminum a fácie trib
+     TAIL: tur ad Dóminum, et placábitur eis, et sanábit eos. || Dominus Deus noster. Ps. 18 A summo caelo egressio ejus: et
+Adv3s rd.1 Isaias 35: 1-7 | HEAD: tui nova nativitate, liberemur: Qui tecum. Lectio Isaiae Prophetae, c. 35 HJEC || Dicit Dóminus: Lætábitur desérta et ínvia, et exsu
+     TAIL: da, erit in stagnum, et sítiens in fontes aquárum. || Ait Dominus omnipotens. Ps. 18 In sole posuit tabernaculum suum: et
+Adv3s rd.2 Isaias 40: 9-11 | HEAD: tui adventu laetifica: Qui tecum. Lectio Isaiae Prophetae, c. 40 HJE C || Dicit Dóminus: Super montem excélsum ascénde tu, q
+     TAIL: hio suo congregábit agnos, et in sinu suo levábit. || Dominus Deus noster. J&. Ps. 79 Domine Deus virtutum converte nos:
+Adv3s rd.3 Isaias 45: 1-8 | HEAD: et praemia aeterna concedat: Per eumdem. Lectio Isaiae Prophetae, c. 45 H^C || Hæc dicit Dóminus: Christo meo Cyro, cujus apprehé
+     TAIL: et justítia oriátur simul: ego Dóminus creávi eum. || Ps. 79 Excita Domine potentiam tuam, et veni, ut salvos facias
+Adv3s rd.4 Daniel 3: 49-51 | HEAD: pietatis tuae visitatione console| mur: Qui vivis. Lectio Danielis Prophetae, c. 3! || In diébus illis: Ángelus Dómini descéndit cum Azar
+     TAIL: cábant, et benedicébant Deum in fornáce, dicéntes. || Hymnus Dan. 3 B e n e d ic t u
+Adv3s rd.5 Lucas 3: 1-6 | HEAD: ut salvos facias nos. ►3« Sequentia sancti Evangelii secundum Lucam. c. 3 || Anno quintodécimo impérii Tibérii Cǽsaris, procurá
+     TAIL: n vias planas: et vidébit omnis caro salutáre Dei. || Offertorium Zac. 9 Exsulta satis filia Sion, praedica filia Jerusalem: ecce
+Adv4 rd.0 Ad Corinthios 1 4: 1-5 | HEAD: pag. 1 Lectio Epistolae beati Pauli Apostoli ad Corinthios. 1, c. 4 || Fratres: Sic nos exístimet homo ut minístros Chris
+     TAIL: nsília córdium: et tunc laus erit unicuíque a Deo. || 7&. Ps. 144 Prope est Dominus omnibus invocantibus eum: omnibus, qui
+Adv4 rd.1 Lucas 3: 1-6 | HEAD: facinora plebis tuae Israel. Alleluia. Sequentia sancti Evangelii secundum Lucam. c. 3 || Anno quintodécimo impérii Tibérii Cǽsaris, procurá
+     TAIL: n vias planas: et vidébit omnis caro salutáre Dei. || Credo. Offertorium Isa. 35 Confortamini, et jam nolite timere: ecce enim
+Dec24 rd.0 Isaias 62: 1-4 | HEAD: fiet Memoria Dominicae in Missis privatis. Lectio Isaiae Prophetae, c. 62 HJEC || Hæc dicit Dóminus Deus: Propter Sion non tacébo, e
+     TAIL: erra tua Inhabitáta: quia complácuit Dómino in te. || Deinde sine intervallo dicatur Lectio Epistolae beati Pauli Apostoli ad Romanos,
+Dec24 rd.1 Ad Romanos 1: 1-6 | HEAD: sine intervallo dicatur Lectio Epistolae beati Pauli Apostoli ad Romanos, c. 1 || Paulus, servus Jesu Christi, vocátus Apóstolus, se
+     TAIL: us estis et vos vocáti Jesu Christi Dómini nostri. || Exo. 16 Hodie scietis, quia veniet Dominus, et salvabit nos: et
+Dec24 rd.2 Matthæus 1: 18-21 | HEAD: nos Salvator mundi. Alleluia. 2 Sequentia sancti Evangelii secundum Matthaeum, c. 1 || Cum esset desponsáta mater Jesu María Joseph, ánte
+     TAIL:  enim salvum fáciet pópulum suum a peccátis eórum. || Non dicitur Credo, nisi Dominica fuerit. Offertorium Ps. 23 Tollite portas
+Dec25_1 rd.0 Isaias 9: 2, 6-7 | HEAD: in unitate Spiritus Sancti Deus. Lectio Isaiae Prophetae, c. 9 H jEC || Hæc dicit Dóminus: Pópulus, qui ambulábat in téneb
+     TAIL: udício et justítia, ámodo et usque in sempitérnum. || Deinde sine intervallo dicatur Lectio Epistolae beati Pauli Apostoli ad Titum.
+Dec25_1 rd.1 Ad Titum 2: 11-15 | HEAD: intervallo dicatur Lectio Epistolae beati Pauli Apostoli ad Titum. c. 2 ARISSIME: || Caríssime: Appáruit grátia Dei Salvatóris nostri ó
+     TAIL: uere, et exhortáre: In Christo Jesu Dómino nostro. || Ps. 109 Tecum principium in die virtutis tuae: in splendoribus sanctorum,
+Dec25_1 rd.2 Lucas 2: 1-14 | HEAD: hodie genui te. Alleluia. >3« Sequentia sancti Evangelii secundum Lucam. c. 2 || In illo témpore: Exiit edíctum a Cǽsare Augústo, u
+     TAIL: is Deo, et in terra pax homínibus bonæ voluntátis. || Credo. Offertorium Ps. 95 Laetentur caeli, et exsultet terra ante faciem
+Dec25_2 rd.0 Isaias 61: 1-3, 62: 11-12 | HEAD: us: Per Dominum. Lectio Isalae Prophetae, c. 61 et 62 H ^ec || Dicit Dóminus: Spíritus Dómini super me, eo quod ú
+     TAIL:  vocábunt eos, Pópulus sanctus, redémpti a Dómino. || Deo nostro. Deinde sine intervallo dicatur Lectio Epistolae beati Pauli Apostoli
+Dec25_2 rd.1 Ad Titum 3: 5-7 | HEAD: sine intervallo dicatur Lectio Epistolae beati Pauli Apostoli ad Titum. c. 3 || Caríssime: A humánitas! Non ex opéribus justítiæ, 
+     TAIL: a ipsíus, herédes simus secúndum spem vitæ ætérnæ. || In Christo Jesu Domino nostro. T8i. Ps. 117 Benedictus qui venit
+Dec25_2 rd.2 Lucas 2: 15-20 | HEAD: et praecinxit se virtute. Alleluia. Sequentia sancti Evangelii secundum Lucam. c. 2 || In illo témpore: Pastóres loquebántur ad ínvicem: 
+     TAIL: audíerant, et víderant, sicut dictum est ad illos. || Credo. Offertorium Ps. 92 Deus firmavit orbem terrae, qui non commovebitur:
+Dec25_3 rd.0 Isaias 52: 6-10 | HEAD: jugo vetusta servitus tenet: Per eumdem. Lectio Isaiae Prophetae, c. 52 HJEC || Hæc dicit Dóminus: Propter hoc sciet pópulus meus 
+     TAIL: et vidébunt omnes fines terræ salutáre Dei nostri. || Deinde sine intervallo dicatur Lectio Epistolae beati Pauli Apostoli ad Hebraeos,
+Dec25_3 rd.1 Ad Hebræos 1: 1-12 | HEAD: beati Pauli Apostoli ad Hebraeos, c. 1 u ltifa r ia m, || Multifáriam, multísque modis olim Deus loquens pát
+     TAIL:  tu autem idem ipse es, et anni tui non defícient. || 7&. Ps. 97 Viderunt omnes fines terrae salutare Dei nostri: jubilate
+Dec25_3 rd.2 Joannes 1: 1-14 | HEAD: considera: ipsum genuit puerpera. Alleluia. Initium sancti Evangelii secundum Joannem. c. 1 || In princípio erat Verbum, et Verbum erat apud Deum
+     TAIL: asi Unigéniti a Patre plenum grátiæ, et veritátis. || Credo. Offertorium Ps. 88 Tui sunt caeli, et tua est terra:
+Nat1 rd.0 Ad Galatas 4: 1-7 | HEAD: fateatur: Per Dominum. Lectio Epistolae beati Pauli Apostoli ad Galatas, c. 4 || Fratres: Quanto témpore heres párvulus est, nihil 
+     TAIL: bba, Pater. Itaque jam non est servus, sed fílius. || Quod si filius: et heres per Deum. Ps. 44 Speciosus forma
+Nat1 rd.1 Lucas 2: 33-40 | HEAD: praecinxit se virtute. Alleluia. ►i* Sequentia sancti Evangelii secundum Lucam. c. 2 || In illo témpore: Erat Joseph, et María mater Jesu 
+     TAIL: átur plenus sapiéntia: et grátia Dei erat in illo. || Credo. Offertorium Ps. 92 Deus firmavit orbem terrae, qui non commovebitur:
+Jan1 rd.0 Ad Titum 2: 11-15 | HEAD: vivit. Aliae Postcommuniones de Sanctis, ut in praecedenti Missa. DOMINI II classis || Caríssime: Appáruit grátia Dei Salvatóris nostri ó
+     TAIL: uere, et exhortáre: In Christo Jesu Dómino nostro. || J8t. Ps. 97 Viderunt omnes fines terrae salutare Dei nostri: jubilate
+Jan1 rd.1 Lucas 2: 21 | HEAD: nobis in Filio suo. Alleluia. Sequentia sancti Evangelii secundum Lucam. c. 2 || In illo témpore: Postquam consummáti sunt dies oct
+     TAIL: tum est ab ángelo priúsquam in útero conciperétur. || Credo. Offertorium Ps. 88 Tui sunt caeli, et tua est terra:
+Nat2 rd.0 Actus Apostolorum 4: 8-12 | HEAD: propitius, ut cujus sanctum Nomen veneramur in terris; ejus quoque aspectu perfruamur || In diébus illis: Petrus replétus Spíritu sancto di
+     TAIL: datum homínibus, in quo opórteat nos salvos fíeri. || Ps. 112 Laudate pueri Dominum: laudate nomen Domini. 10. Sit nomen
+Nat2 rd.1 Lucas 2: 21 | HEAD: currit justus, et exaltabitur. Alleluia. Sequentia sancti Evangelii secundum Lucam. c. 2 || In illo témpore: Postquam consummáti sunt dies oct
+     TAIL: tum est ab ángelo priúsquam in útero conciperétur. || Credo. Offertorium Mal. 1 Ab ortu solis usque ad occasum, magnum
+Jan5a rd.0 Ad Galatas 4: 1-7 | HEAD: fateatur: Per Dominum. Lectio Epistolae beati Pauli Apostoli ad Galatas, c. 4 || Fratres: Quanto témpore heres párvulus est, nihil 
+     TAIL: us, sed fílius: quod si fílius, et heres per Deum. || Ps. 44 Speciosus forma prae filiis hominum, diffusa est gratia in
+Jan5a rd.1 Matthæus 2: 19-23 | HEAD: et praecinxit se virtute. Alleluia. Sequentia sancti Evangelii secundum Matthaeum, c. 2 || In illo témpore: Defúncto Heróde, ecce ángelus Dóm
+     TAIL: tum est per prophétas: Quóniam Nazarǽus vocábitur. || Non dicitur Credo, nisi Dominica fuerit. Offertorium Ps. 92 Deus firmavit
+Epi rd.0 Isaias 60: 1-7 | HEAD: tuum; qui tecum vivit. cum Octava solemnissima Lectio Isaiae Prophetae, c. 60 || Surge illumináre Jerúsalem: quia venit lumen tuum,
+     TAIL: us deferéntes, et laudem Dómino annuntiántes. Omne || Isa. 60 Omnes de Saba venient, aurum et thus deferentes, et
+Epi rd.1 Matthæus 2: 1-12 | HEAD: Loco Evangelii In principio, dicitur: Sequentia sancti Evangelii secundum Matthaeum, c. 2 || Cum natus esset Jesus in Béthlehem Juda in diébus 
+     TAIL: dem, per áliam viam revérsi sunt in regiónem suam. || Si festum Nativitatis Domini, S. Stephani, vel S. Joannis Evangelistse, vel
+EpiOct rd.0 Isaias 60: 1-6 | HEAD: intus reformari mereamur: Qui tecum. Nulla memoria Lectio Isaiae Prophetae, c. 60 || Surge illumináre Jerúsalem: quia venit lumen tuum,
+     TAIL: et thus deferéntes, et laudem Dómino annuntiántes. || Isa. 60 Omnes de Saba venient, aurum et thus deferentes, et
+EpiOct rd.1 Joannes 1: 29-34 | HEAD: cum muneribus adorare Dominum. Alleluia. Sequentia sancti Evangelii secundum Joannem. c. 1 || In illo témpore: Vidit Joánnes Jesum veniéntem ad 
+     TAIL: : et testimónium perhíbui quia hic est Fílius Dei. || Credo. Offertorium Ps. 71 Reges Tharsis, et insulae munera offerent: reges
+Epi1 rd.0 Ad Colossenses 3: 12-17 | HEAD: Memoria Octavae Epiphaniae. Lectio Epistolae beati Pauli Apostoli ad Colossenses, c. 3 || Fratres: Indúite vos sicut elécti Dei, sancti, et 
+     TAIL: u Christi, grátias agéntes Deo et Patri per ipsum. || Ps. 26 Unam petii a Domino, hanc requiram, ut inhabitem in
+Epi1 rd.1 Lucas 2: 42-52 | HEAD: cum Christo in Deo. Alleluia. Sequentia sancti Evangelii secundum Lucam. c. 2 || Cum factus esset Jesus annórum duódecim, ascendént
+     TAIL: iéntia, et ætáte, et grátia apud Deum, et hómines. || Credo. Offertorium Luc. 2 Tulerunt Jesum parentes ejus in Jeriisalem, ut
+Epi2 rd.0 Joannes 2: 1-11 | HEAD: omnes virtutes ejus. Alleluia. ►p Sequentia sancti Evangelii secundum Joannem. c. 2 || In illo témpore: Núptiæ factæ sunt in Cana Galilǽæ
+     TAIL: lóriam suam, et credidérunt in eum discípuli ejus. || Credo. Offertorium Ps. 65 Jubilate Deo universa terra, psalmum dicite nomini
+Epi3 rd.0 Ad Romanos 12: 16-21 | HEAD: Lectio Epistolae beati Pauli Apostoli ad Romanos, c. 1 2 F ratres: || Fratres: Nolíte esse prudéntes apud vosmetípsos: n
+     TAIL:  ejus. Noli vinci a malo, sed vince in bono malum. || Ps. 43 Liberasti nos Domine ex affligentibus nos: et eos, qui
+Epi3 rd.1 Matthæus 8: 1-13 | HEAD: adipe frumenti satiat te. Alleluia. Sequentia sancti Evangelii secundum Matthaeum, c. 8 || In illo témpore: Cum descendísset Jesus de monte, 
+     TAIL: ísti, fiat tibi. Et sanátus est puer in illa hora. || Credo. Offertorium Ps. 129 De profundis clamavi ad te Domine Domine
+Epi4 rd.0 Ad Romanos 13: 8-10 | HEAD: Dominica, pag. 40 Lectio Epistolae beati Pauli Apostoli ad Romanos, c. 13 || Fratres: Némini quidquam debeátis, nisi ut ínvicem
+     TAIL: m non operátur. Plenitúdo ergo legis est diléctio. || T3t. Ps. 101 Timebunt gentes nomen tuum Domine, et omnes reges
+Epi4 rd.1 Matthæus 8: 23-27 | HEAD: terra: laetentur insulae multae. Alleluia. Sequentia sancti Evangelii secundum Matthaeum, c. 8 || In illo témpore: Ascendénte Jesu in navículam, sec
+     TAIL: s: Qualis est hic, quia venti et mare obédiunt ei? || Credo. Offertorium Ps. 117 Dextera Domini fecit virtutem, dextera Domini exaltavit
+Epi5 rd.0 Ad Colossenses 3: 12-17 | HEAD: Dominica, pag. 40 Lectio Epistolae beati Pauli Apostoli ad Colossenses, c. 3: || Fratres: Indúite vos sicut elécti Dei, sancti, et 
+     TAIL: u Christi, grátias agéntes Deo et Patri per ipsum. || Jesum Christum Dominum nostrum. 1&. Ps. 101 Timebunt gentes nomen tuum
+Epi5 rd.1 Matthæus 13: 24-30 | HEAD: terra: laetentur insulae multae. Alleluia. Sequentia sancti Evangelii secundum Matthaeum, c. 13 || In illo témpore: Dixit Jesus turbis parábolam hanc
+     TAIL: réndum: tríticum autem congregáte in hórreum meum. || Credo. Offertorium Ps. 117 Dextera Domini fecit virtutem, dextera Domini exaltavit
+Epi6 rd.0 Ad Thessalonicenses 1 1: 2-10 | HEAD: pag. 40 Lectio Epistolae beati Pauli Apostoli ad Thessalonicenses. 1, c. 1 || Fratres: Grátias ágimus Deo semper pro ómnibus vob
+     TAIL: ex mórtuis) Jesum, qui erípuit nos ab ira ventúra. || Ps. 101 Timebunt gentes nomen tuum Domine, et omnes reges terrae
+Epi6 rd.1 Matthæus 13: 31-35 | HEAD: terra: laetentur insulae multae. Alleluia. Sequentia sancti Evangelii secundum Matthaeum, c. 13 || In illo témpore: Dixit Jesus turbis parábolam hanc
+     TAIL: s meum, eructábo abscóndita a constitutióne mundi. || Credo. Offertorium Ps. 117 Dextera Domini fecit virtutem, dextera Domini exaltavit
+7a rd.0 Ad Corinthios 1 9: 24-27, 10: 1-5 | HEAD: Epistolae beati Pauli Apostoli ad Corinthios. 1, c. r9 et 10 ratres: || Fratres: Nescítis quod ii, qui in stádio currunt, 
+     TAIL: ): sed non in plúribus eórum beneplácitum est Deo. || Ps. 9 Adjutor in opportunitatibus, in tribulatione: sperent in te, qui
+7a rd.1 Matthæus 20: 1-16 | HEAD: legem tuam sustinui te Domine. Sequentia sancti Evangelii secundum Matthaeum, c. 20 || In illo témpore: Dixit Jesus discípulis suis paráb
+     TAIL: íssimi. Multi enim sunt vocáti, pauci vero elécti. || Credo. Offertorium Ps. 91 Bonum est confiteri Domino: et psallere nomini
+6a rd.0 Ad Corinthios 2 11: 19-33, 12: 1-9 | HEAD: 2, c. 11 et 12 F r a t r e s: || Fratres: Libénter suffértis insipiéntes, cum sitis
+     TAIL: mitátibus meis, ut inhábitet in me virtus Christi. || Ps. 82 Sciant gentes quoniam nomen tibi Deus: tu solus Altissimus
+6a rd.1 Lucas 8: 4-15 | HEAD: arcus: ut liberentur electi tui. Sequentia sancti Evangelii secundum Lucam. c. 8 || In illo témpore: Cum turba plúrima convenírent, et
+     TAIL: verbum rétinent, et fructum áfferunt in patiéntia. || Credo. Offertorium Ps. 16 Perfice gressus meos in semitis tuis, ut
+5a rd.0 Ad Corinthios 1 13: 1-13 | HEAD: pag. 47 Lectio Epistolae beati Pauli Apostoli ad Corinthios. 1, c. 13: || Fratres: Si linguis hóminum loquar, et angelórum, 
+     TAIL:  cáritas, tria hæc: major autem horum est cáritas. || P s. 76 Tu es Deus, qui facis mirabilia solus: notam
+5a rd.1 Lucas 18: 31-43 | HEAD: ejus, et oves pascuae ejus. Sequentia sancti Evangelii secundum Lucam. c. 18 || In illo témpore: Assúmpsit Jesus duódecim, et ait 
+     TAIL: s Deum. Et omnis plebs ut vidit, dedit laudem Deo. || Credo. Offertorium Ps. 118 Benedictus es Domine, doce me justificationes tuas:
+5aw rd.0 Joel 2: 12-19 | HEAD: veneranda solemnia, et congrua pietate suscipiant; et secura devotione percurrant: Per Dominum. || Secúnda et tértia Orátio, dicit Dóminus: Convertím
+     TAIL: eis: et non dabo vos ultra oppróbrium in géntibus. || Dicit Dominus omnipotens. Ps. 56 Miserere mei Deus, miserere m e
+5aw rd.1 Matthæus 6: 16-21 | HEAD: peccatis nostris propter nomen tuum. Sequentia sancti Evangelii secundum Matthaeum, c. 6 || In illo témpore: Dixit Jesus discípulis suis: Cum 
+     TAIL:  Ubi enim est thesáurus tuus, ibi est et cor tuum. || Offertorium Ps. 29 Exaltabo te Domine, quoniam suscepisti me, nec delectasti
+5ah rd.0 Isaias 38: 1-6 | HEAD: Dominum. Secunda et tertia Oratio, pag. 47 Lectio Isaire Prophetae, c. 38 || In diébus illis: Ægrotávit Ezechías usque ad morte
+     TAIL: rum éruam te, et civitátem istam, et prótegam eam. || Ait Dominus omnipotens. TSt. Ps. 54 Jacta cogitatum tuum in Domino,
+5ah rd.1 Matthæus 8: 5-13 | HEAD: ab his, qui appropinquant mihi. Sequentia sancti Evangelii secundum Matthreum. c. 8 || In illo témpore: Cum introísset Jesus Caphárnaum, 
+     TAIL: ísti, fiat tibi. Et sanátus est puer in illa hora. || Offertorium Ps. 24 Ad te Domine levavi animam m eam: Deus
+5af rd.0 Isaias 57: 21, 58: 1-9 | HEAD: Secunda et tertia Oratio, pag. 47 Lectio Isaire Prophetae, c. 58 jEC || Dicit Dóminus Deus. Clama, ne cesses, quasi tuba e
+     TAIL:  Dóminus exáudiet: clamábis, et dicet: Ecce adsum. || Quia misericors sum, Dominus Deus tuus. Ps. 26 Unam petii a
+5af rd.1 Matthæus 5: 43-48, 6: 1-4 | HEAD: propter nomen tuum. Sequentia sancti Evangelii secundum Matthaeum, c. 5 et 6 || In illo témpore: Dixit Jesus discípulis suis: Audí
+     TAIL:  Pater tuus, qui videt in abscóndito, reddet tibi. || Offertorium Ps. 118 Domine, vivifica me secundum eloquium tuum: ut sciam
+5as rd.0 Isaias 58: 9-14 | HEAD: Secunda et tertia Oratio, pag. 47 Lectio Isaiae Prophetae, c. 58 HJEC || Hæc dicit Dóminus Deus: Si abstúleris de médio tui
+     TAIL: táte Jacob patris tui: os enim Dómini locútum est. || Ps. 26 Unam petii a Domino, hanc requiram, ut inhabitem in
+5as rd.1 Marcus 6: 47-56 | HEAD: a templo sancto ejus. >3« Sequentia sancti Evangelii secundum Marcum. c. 5 || In illo témpore: Cum sero esset, erat navis in méd
+     TAIL: ngerent, et quotquot tangébant eum, salvi fiébant. || Offertorium Ps. 118 Domine, vivifica me secundum 1 eloquium tuum: ut
+Quad1 rd.0 Ad Corinthios 2 6: 1-10 | HEAD: ad Corinthios. 2, c. 6 F r a t r e s: || Fratres: Hortamur vos, ne in vácuum grátiam Dei re
+     TAIL: tes: tamquam nihil habéntes, et ómnia possidéntes. || JH. Ps. 90 Angelis suis Deus mandavit de te: ut custodiant
+Quad1 rd.1 Matthæus 4: 1-11 | HEAD: et ostendam illi salutare meum. Sequentia sancti Evangelii secundum Matthaeum, c. 4 || In illo témpore: Ductus est Jesus in desértum a Sp
+     TAIL: s: et ecce ángeli accessérunt, et ministrábant ei. || Credo. Offertorium Ps. 90 Scapulis suis obumbrabit tibi Dominus, et sub
+Quad1m rd.0 Ezechiel 34: 11-16 | HEAD: Secunda et tertia Oratio, pag. 63 Lectio Ezechielis Prophetae, c. 34 H/EC || Hæc dicit Dóminus Deus: Ecce ego ipse requíram ove
+     TAIL: ue et forte custódiam: et pascam illas in judício. || Dicit Dominus omnipotens. Ps. 83 Protector noster aspice Deus: et respice
+Quad1m rd.1 Matthæus 25: 31-46 | HEAD: peccatis nostris propter nomen tuum. Sequentia sancti Evangelii secundum Matthaeum, c. 25 || In illo témpore: Dixit Jesus discípulis suis: Cum 
+     TAIL:  supplícium ætérnum: justi autem in vitam ætérnam. || Offertorium Ps. 118 Levabo oculos meos, et considerabo mirabilia tua Domine,
+Quad1t rd.0 Isaias 55: 6-11 | HEAD: Secunda et tertia Oratio, pag. 63 i ictio Isaiae Prophetae, c. 55 || In diébus illis: Locútus est Isaías Prophéta, dice
+     TAIL: vólui, et prosperábitur in his, ad quæ misi illud. || Ait Dominus omnipotens. Ps. 140 Dirigatur oratio mea sicut incensum in
+Quad1t rd.1 Matthæus 21: 10-17 | HEAD: Elevatio manuum mearum sacrificium vespertinum. Sequentia sancti Evangelii secundum Matthaeum, c. 21 || In illo témpore: Cum intrásset Jesus Jerosólymam, 
+     TAIL: foras extra civitátem in Bethániam: ibíque mansit. || Offertorium Ps. 30 In te spe: ravi Domine: dixi: Tu es
+Quad1w rd.0 Exodus 24: 12-18 | HEAD: in Missa festi, si hac die occurrerit. Lectio Libri Exodi, c. 24 || In diébus illis: Dixit Dóminus ad Móysen: Ascénde 
+     TAIL: t ibi quadragínta diébus, et quadragínta nóctibus. || Ps. 24 Tribulationes cordis mei dilatatae sunt: de necessitatibus meis eripe
+Quad1w rd.1 Regum 3 19: 3-8 | HEAD: Secunda et tertia Oratio, pag. 63 Lectio Libri Regum. 3, c. 19 || In diébus illis: Venit Elías in Bersabée Juda, et 
+     TAIL: t quadragínta nóctibus, usque ad montem Dei Horeb. || Tractus Ps. 24 De necessitatibus meis eripe me Domine: vide humilitatem
+Quad1w rd.2 Matthæus 12: 38-50 | HEAD: hodie Tract. Domine non secundum. Sequentia sancti Evangelii secundum Matthaeum, c. 12 || In illo témpore: Respondérunt Jesu quidam de scrib
+     TAIL: lis est: ipse meus frater, et soror, et mater est. || Offertorium Ps. 118 Meditabor in mandatis tuis, quae dilexi valde: et
+Quad1h rd.0 Ezechiel 18: 1-9 | HEAD: Dominum. Secunda et tertia Oratio, pag. 63 Lectio Ezechielis Prophetae, c. 18 || In diébus illis: Factus est sermo Dómini ad me, di
+     TAIL: veritátem: hic justus est, vita vivet, ait Dóminus || omnipotens. Ps. 16 Custodi me Domine, ut pupillam oculi: sub umbra
+Quad1h rd.1 Matthæus 15: 21-28 | HEAD: prodeat: oculi tui videant aequitatem. Sequentia sancti Evangelii secundum Matthaeum, c. 15 || In illo témpore: Egréssus Jesus secéssit in partes
+     TAIL:  sicut vis. Et sanáta est fília ejus ex illa hora. || Offertorium Ps. 33 Immittet Angelus Domini in circuitu timentium eum, et
+Quad1f rd.0 Ezechiel 18: 20-27 | HEAD: Secunda et tertia Oratio, pag. 63 Lectio Ezechielis Prophetae, c. 18 H^EC || Hæc dicit Dóminus Deus: Anima, quæ peccáverit, ips
+     TAIL: , moriétur in moriétur. Et cum avérterit se ímpius || ab impietate sua, quam operatus est, et fecerit judicium, et justitiam:
+Quad1f rd.1 Joannes 5: 1-7 | HEAD: peccatis nostris propter nomen tuum. Sequentia sancti Evangelii secundum Joannem. c. 5 || In illo témpore: Erat dies festus Judæórum, et asc
+     TAIL: e, hóminem non hábeo, ut, cum turbáta fúerit aqua. || mittat me in piscinam: Dum venio enim ego, alius ante me
+Quad1s rd.0 Deuteronomium 26: 15-19 | HEAD: in Missa festi, si hac die occurrerit. Lectio Libri Deuteronomii. c. 26 || In diébus illis: Locútus est Móyses ad Dóminum, di
+     TAIL: pópulus sanctus Dómini Dei tui, sicut locútus est. || tibi. Ut. Ps. 78 Propitius esto Domine peccatis nostris: nequando dicant
+Quad1s rd.1 Deuteronomium 11: 22-25 | HEAD: nostris patimur; te adjuvante vincamus: Per Dominum. Lectio Libri Deuteronomii, c. 11 || In diébus illis: Dixit Móyses fíliis Israël: Si cu
+     TAIL: ram quam calcatúri estis, sicut locútus est vobis. || Dominus Deus vester. Hfc. Ps. 83 Protector noster aspice Deus: et
+Quad1s rd.2 Machabæorum 2 1: 23-27 | HEAD: libera tibi mente famulemur: Per Dominum. Lectio Libri Machabaeorum. 2, c. 1 || In diébus illis: Oratiónem faciébant omnes sacerdó
+     TAIL: nctífica. Ut sciant gentes quia tu es Deus noster. || Convertere DoT$L. P s. 89 mine aliquantulum: et deprecare super servos
+Quad1s rd.3 Ecclesiasticus 36: 1-10 | HEAD: humiles; et inter adversa securi: Per Dominum. Lectio Libri Sapientiae. Eccli. 36 || Miserére nostri Deus ómnium, et réspice nos, et os
+     TAIL: mpus, et meménto finis, ut enárrent mirabília tua. || Domine Deus noster. jBt. Ps. 140 Dirigatur oratio mea sicut incensum
+Quad1s rd.4 Daniel 3: 49-51 | HEAD: tui nominis gloria misericorditer liberemur: Per Dominum. Lectio Danielis Prophetae, c. 3 || In diébus illis: Ángelus Dómini descéndit cum Azar
+     TAIL: cábant, et benedicébant Deum in fornáce, dicéntes. || Hymnus Dan. 3 B enedictus es Domine Deus patrum nostrorum: et
+Quad1s rd.5 Matthæus 17: 1-9 | HEAD: veritas Domini manet in aeternum. Sequentia sancti Evangelii secundum Matthaeum, c. 17 || In illo témpore: Assúmpsit, Jesus Petrum, et Jacób
+     TAIL: visiónem, donec Fílius hóminis a mórtuis resúrgat. || Offertorium Ps. 87 Domine Deus salutis meae, in die clamavi, et
+Quad2 rd.0 Matthæus 17: 1-9 | HEAD: visita nos in salutari tuo. Sequentia sancti Evangelii secundum Matthaeum. c. U7 || In illo témpore: Assúmpsit Jesus Petrum, et Jacóbu
+     TAIL: visiónem, donec Fílius hóminis a mórtuis resúrgat. || Credo. Offertorium Ps. 118 Meditabor in mandatis tuis, quae dilexi valde:
+Quad2m rd.0 Daniel 9: 15-19 | HEAD: Dominum. Secunda et tertia Oratio, pag. 63 Lectio Danielis Prophetae, c. 9 || In diébus illis: Orávit Dániel Dóminum, dicens: Dó
+     TAIL: vocátum est super civitátem et super pópulum tuum. || Domine Deus noster. 7%L. P s. 69 Adjutor meus, et liberator
+Quad2m rd.1 Joannes 8: 21-29 | HEAD: peccatis nostris propter nomen tuum. Sequentia sancti Evangelii secundum Joannem. c. 8 || In illo témpore: Dixit Jesus turbis Judæórum: Ego 
+     TAIL: solum: quia ego quæ plácita sunt ei, fácio semper. || Offertorium Ps. 15 Benedicam Dominum, qui tribuit mihi intellectum: providebam Dominum
+Quad2t rd.0 Regum 3 17: 8-16 | HEAD: tertia Oratio, pag. 63 Lectio Libri Regum. 3, c. 17 r r || In diébus illis: Factus est sermo Dómini ad Elíam 
+     TAIL: a verbum Dómini, quod locútus fúerat in manu Elíæ. || H&. Ps. 54 Jacta cogitatum tuum in Domino, et ipse te
+Quad2t rd.1 Matthæus 23: 1-12 | HEAD: ab his, qui appropinquant mihi. Sequentia sancti Evangelii secundum Matthaeum, c. 23 || In illo témpore: Locútus est Jesus ad turbas, et a
+     TAIL: humiliábitur: et qui se humiliáverit, exaltábitur. || Offertorium Ps. 50 Miserere mei Domine, secundum magnam misericordiam tuam: dele
+Quad2w rd.0 Esther 13: 9-11, 15-17 | HEAD: et tertia Oratio, pag. 63 Lectio Libri Esther. c. 13 r r || In diébus illis: Orávit Mardochǽus ad Dóminum, dic
+     TAIL: nomen tuum Dómine, et ne claudas ora te canéntium. || Domine Deus noster. Ps. 27 Salvum fac populum tuum Domine, et
+Quad2w rd.1 Matthæus 20: 17-28 | HEAD: peccatis nostris propter nomen tuum. Sequentia sancti Evangelii secundum Matthaeum, c. 20 || In illo témpore: Ascéndens Jesus Jerosólymam, assú
+     TAIL: ráre, et dare ánimam suam redemptiónem pro multis. || Offertorium Ps. 24 Ad te Domine levavi animam meam: Deus meus
+Quad2h rd.0 Jeremias 17: 5-6 | HEAD: Oratio, pag. 63 Lectio Jeremiae Prophetae, c. 17 HJEC dicit Dominus Deus || Maledíctus homo, qui confídit in hómine, et ponit 
+     TAIL: t: æquitátem habitábit in siccitáte in desérto, in || terra salsuginis, et inhabitabili. Benedictus vir, qui confidit in Domino, et
+Quad2h rd.1 Lucas 16: 19-31 | HEAD: nominis tui Domine libera nos. Sequentia sancti Evangelii secundum Lucam. c. 16 || In illo témpore: Dixit Jesus Pharisǽis: Homo quida
+     TAIL: t, neque si quis ex mórtuis resurréxerit, credent. || Offertorium Exodi 32 Precatus est Moyses in conspectu Domini Dei sui,
+Quad2f rd.0 Genesis 37: 6-22 | HEAD: Dominum. Secunda et tertia Oratio, pag. 63 Lectio Libri Genesis. c. 37 || In diébus illis: Dixit Joseph frátribus suis: Audí
+     TAIL: rípere eum de mánibus eórum, et réddere patri suo. || B. Ps. 119 Ad Dominum cum tribularer clamavi: et exaudivit me.
+Quad2f rd.1 Matthæus 21: 33-46 | HEAD: peccatis nostris propter nomen tuum. Sequentia sancti Evangelii secundum Matthaeum, c. 21 || In illo témpore: Dixit Jesus turbis Judæórum, et p
+     TAIL: runt turbas: quóniam sicut prophétam eum habébant. || Offertorium Ps. 39 Domine, in auxilium meum respice: confundantur et revereantur,
+Quad2s rd.0 Genesis 27: 6-40 | HEAD: Dominum. Secunda et tertia Oratio, pag. 63 Lectio Libri Genesis. c. 27 || In diébus illis: Dixit Rebécca fílio suo Jacob: Au
+     TAIL: erræ, et in rore cæli désuper erit benedíctio tua. || Ps. 91 Bonum est con: fiteri Domino: et psallere nomini tuo
+Quad2s rd.1 Lucas 15: 11-32 | HEAD: et veritatem tuam per noctem. Sequentia sancti Evangelii secundum Lucam. c. 15 || In illo témpore: Dixit Jesus Pharisǽis, et Scribis
+     TAIL: rtuus erat, et revíxit: períerat, et invéntus est. || Offertorium Ps. 12 Illumina oculos meos, ne umquam obdormiam in morte:
+Quad3 rd.0 Ad Ephesios 5: 1-9 | HEAD: Oratio, pag. 63 Lectio Epistolae beati Pauli Apostoli ad Ephesios, c. 5 || Fratres: Estóte imitatóres Dei, sicut fílii caríss
+     TAIL: is est in omni bonitáte, et justítia, et veritáte. || 7&. Ps. 9 Exsurge Domine, non praevaleat homo: judicentur gentes in
+Quad3 rd.1 Lucas 11: 14-28 | HEAD: Miserere nobis Domine, miserere nobis. Sequentia sancti Evangelii secundum Lucam. c. 11 || In illo témpore: Erat Jesus ejíciens dæmónium, et 
+     TAIL: eáti, qui áudiunt verbum Dei, et custódiunt illud. || Credo. Offertorium Ps. 18 Justitiae Domini rectae, laetificantes corda, et judicia
+Quad3m rd.0 Regum 4 5: 1-15 | HEAD: Secunda et tertia Oratio, pag. 63 Lectio Libri Regum. 4, c. 5 || In diébus illis: Náaman princeps milítiæ regis Sýr
+     TAIL: ius Deus in univérsa terra, nisi tantum in Israël. || 7&. Ps. 55 Deus, vitam meam annuntiavi tibi: posuisti lacrymas meas
+Quad3m rd.1 Lucas 4: 23-30 | HEAD: peccatis nostris propter nomen tuum. Sequentia sancti Evangelii secundum Lucam. c. 4 || In illo témpore: Dixit Jesus Pharisǽis: Utique dic
+     TAIL: um. Ipse autem tránsiens per médium illórum, ibat. || Offertorium Ps. 54 Exaudi Deus orationem meam, et ne despexeris deprecationem
+Quad3t rd.0 Regum 4 4: 1-7 | HEAD: Secunda et tertia Oratio, pag. 63 Lectio Libri Regum. 4, c. 4 || In diébus illis: Múlier quædam clamábat ad Eliséum
+     TAIL: óri tuo: tu autem, et fílii tui vívite de réliquo. || Ps. 18 Ab occultis meis munda me Domine: et ab alienis
+Quad3t rd.1 Matthæus 18: 15-22 | HEAD: et emundabor a delicto maximo. Sequentia sancti Evangelii secundum Matthseum. c. 18 || In illo témpore: Dixit Jesus discípulis suis: Si p
+     TAIL:  tibi usque sépties: sed usque septuágies sépties. || Offertorium Ps. 117 Dextera Domini fecit virtutem, dextera Domini exaltavit me:
+Quad3w rd.0 Exodus 20: 12-24 | HEAD: et tertia Oratio, pag. 63 Lectio Libri Exodi. c. 20 H jec || Hæc dicit Dóminus Deus: Honóra patrem tuum et matr
+     TAIL: es in omni loco in quo memória fúerit nóminis mei. || Ps. 6 Miserere mei Domine, quoniam infirmus su m: sana me
+Quad3w rd.1 Matthæus 15: 1-20 | HEAD: peccatis nostris propter nomen tuum. Sequentia sancti Evangelii secundum Matthaeum, c. 15 || In illo témpore: Accessérunt ad Jesum ab Jerosólym
+     TAIL: s autem mánibus manducáre, non coínquinat hóminem. || Offertorium Ps. 108 Domine, fac mecum misericordiam tuam propter nomen tuum:
+Quad3h rd.0 Jeremias 7: 1-7 | HEAD: Dominum. Secunda et tertia Oratio, pag. 63 Lectio Jeremiae Prophetae, c. 7 || In diébus illis: Factum est verbum Dómini ad me, d
+     TAIL: edi pátribus vestris a sǽculo et usque in sǽculum. || Ait Dominus omnipotens. Ps. 144 Oculi omnium in te sperant Domine:
+Quad3h rd.1 Lucas 4: 38-44 | HEAD: et imples omne animal benedictione. Sequentia sancti Evangelii secundum Lucam. c. 4 || In illo témpore: Surgens Jesus de synagóga, introí
+     TAIL: issus sum. Et erat prǽdicans in synagógis Galilǽæ. || Offertorium Ps. 137 Si ambulavero in medio tribulationis, vivificabis me Domine:
+Quad3f rd.0 Numeri 20: 2-13 | HEAD: Dominum. Secunda et tertia Oratio, pag. 63 Lectio Libri Numeri, c. 20 || In diébus illis: Convenérunt fílii Israël advérsum
+     TAIL: sraël contra Dóminum, et sanctificátus est in eis. || Ps. 27 In Deo speravit cor meum, et adjutus sum: et
+Quad3f rd.1 Joannes 4: 5-42 | HEAD: peccatis nostris propter nomen tuum. Sequentia sancti Evangelii secundum Joannem. c. 4 || In illo témpore: Venit Jesus in civitátem Samaríæ,
+     TAIL: vimus, et scimus quia hic est vere Salvátor mundi. || Offertorium Ps. 5 Intende voci orationis meae, rex meus et Deus
+Quad3s rd.0 Daniel 13: 1-9, 15-17, 19-30, 33-62 | HEAD: Dominum. Secunda et tertia Oratio, pag. 63 Lectio Danielis Prophetae, c. 13 || In diébus illis: Erat vir hábitans in Babylóne, et
+     TAIL: eos, et salvátus est sanguis innóxius in die illa. || Ps. 22 Si ambulem in medio umbrae mortis, non timebo mala:
+Quad3s rd.1 Joannes 8: 1-11 | HEAD: tuus: ipsa me consolata sunt. Sequentia sancti Evangelii secundum Joannem. c. 2 || In illo témpore: Perréxit Jesus in montem Olivéti:
+     TAIL:  te condemnábo: vade, et jam ámplius noli peccáre. || Offertorium Ps. 118 Gressus meos dirige secundum eloquium tuum: ut non
+Quad4 rd.0 Ad Galatas 4: 22-31 | HEAD: Pauli Apostoli ad Galatas. c. 4 r a t r e s: || Fratres: Scriptum est, Quóniam Abraham duos fílios
+     TAIL:  sed líberæ: qua libertáte Christus nos liberávit. || 7&. Ps. 121 Laetatus sum in his, quae dicta sunt mihi
+Quad4 rd.1 Joannes 6: 1-15 | HEAD: nunc et usque in saeculum. Sequentia sancti Evangelii secundum Joannem. c. 6 || In illo témpore: Ábiit Jesus trans mare Galilǽæ, q
+     TAIL: rent eum regem, fugit íterum in montem ipse solus. || Credo. Offertorium Ps. 1 3 4 Laudate Dominum, quia benignus e
+Quad4m rd.0 Regum 3 3: 16-28 | HEAD: Secunda et tertia Oratio, pag. 63 Lectio Libri Regum. 3, c. 3 || In diébus illis: Venérunt duæ e mulíeres meretríce
+     TAIL: s sapiéntiam Dei esse in eo ad faciéndum judícium. || Ps. 30 Esto mihi in Deum protectorem: et in locum refugii,
+Quad4m rd.1 Joannes 2: 13-25 | HEAD: peccatis nostris propter nomen tuum. Sequentia sancti Evangelii secundum Joannem. c. 2 || In illo témpore: Prope erat Pascha Judæórum, et as
+     TAIL: de hómine: ipse enim sciébat quid esset in hómine. || Offertorium Ps. 99 Jubilate Deo omnis terra, servite Domino in laetitia:
+Quad4t rd.0 Exodus 32: 7-14 | HEAD: Dominum. Secunda et tertia Oratio, pag. 63 Lectio Libri Exodi. c. 32 || In diébus illis: Locútus est Dóminus ad Móysen, di
+     TAIL: t malum quod locútus fúerat advérsus pópulum suum. || Ps. 43 Exsurge Domine, fer opem nobis: et libera nos propter
+Quad4t rd.1 Joannes 7: 14-31 | HEAD: eorum, et in diebus antiquis. Sequentia sancti Evangelii secundum Joannem. c. 7 || In illo témpore: Jam die festo mediánte, ascéndit 
+     TAIL: ora ejus. De turba autem multi credidérunt in eum. || Offertorium Ps. 39 Exspectans exspectavi Dominum, et respexit me: et exaudivit
+Quad4w rd.0 Ezechiel 36: 23-28 | HEAD: issa festi, si hac die occurrerit. Lectio Ezechielis Prophetae, c. 36 HJEC || Hæc dicit Dóminus Deus: Sanctificábo nomen meum ma
+     TAIL:  éritis mihi in pópulum, et ego ero vobis in Deum. || Dicit Dominus omnipotens. $L Ps. 33 Venite filii, audite me: timorem
+Quad4w rd.1 Isaias 1: 16-19 | HEAD: Secunda et tertia Oratio, pag. 63 Lectio Isaiae Prophetae, c. 1 H^EC || Hæc dicit Dóminus Deus: Lavámini, mundi estóte, au
+     TAIL: oluéritis, et audiéritis me, bona terræ comedétis. || Dicit Dominus omnipotens. i. Ps. 32 Beata gens, cujus est Dominus,
+Quad4w rd.2 Joannes 9: 1-38 | HEAD: peccatis nostris propter nomen tuum. Sequentia sancti Evangelii secundum Joannem. c. 9 || In illo témpore: Prætériens Jesus vidit hóminem cæ
+     TAIL: ille ait: Credo Dómine. Et prócidens adorávit eum. || Offertorium Ps. 65 Benedicite gentes Dominum Deum nostrum, et obaudite vocem
+Quad4h rd.0 Regum 4 4: 25-38 | HEAD: Secunda et tertia Oratio, pag. 63 Lectio Libri Regum. 4, c. 4 || In diébus illis: Venit múlier Sunamítis ad Eliséum
+     TAIL: t egréssa est. Et Eliséus revérsus est in Gálgala. || T&. Ps. 73 Respice Domine in testamentum tuum: et animas pauperum
+Quad4h rd.1 Lucas 7: 11-16 | HEAD: memor esto opprobrii servorum tuorum. Sequentia sancti Evangelii secundum Lucam. c. 7 || In illo témpore: Ibat Jesus in civitátem, quæ vocá
+     TAIL: éxit in nobis: et quia Deus visitávit plebem suam. || Offertorium Ps. 69 Domine ad adjuvandum me festina: confundantur omnes, qui
+Quad4f rd.0 Regum 3 17: 17-24 | HEAD: et tertia Oratio, p ag. 63 Lectio Libri Regum. 3, c. 17 || In diébus illis: Ægrotávit fílius mulíeris matris 
+     TAIL:  Dei es tu, et verbum Dómini in ore tuo verum est. || Ps. 117 Bonum est confidere in Domino, quam confidere in homine.
+Quad4f rd.1 Joannes 11: 1-45 | HEAD: nostris propter nomen tuum. Sequentia sancti Evangelii secundum Joannem. c. 11 r. || In illo témpore: Erat quidam languens Lázarus a Be
+     TAIL: , et víderant quæ fecit Jesus, credidérunt in eum. || Offertorium Ps. 17 Populum humilem salvum facies Domine, et oculos superborum
+Quad4s rd.0 Isaias 49: 8-15 | HEAD: Secunda et tertia Oratio, pag. 63 Lectio Isaiae Prophetae, c. 49 H^EC || Hæc dicit Dóminus: In témpore plácito exaudívi te,
+     TAIL:  illa oblíta fúerit, ego tamen non oblivíscar tui. || Dicit Dominus omnipotens. T3L. Ps. 9 Tibi Domine derelictus est pauper:
+Quad4s rd.1 Joannes 8: 12-20 | HEAD: dum superbit impius, incenditur pauper. Sequentia sancti Evangelii secundum Joannem. c. 8 || In illo témpore: Locútus est Jesus turbis Judæórum
+     TAIL: mo apprehéndit eum, quia necdum vénerat hora ejus. || Offertorium Ps. 17 Factus est Dominus firmamentum meum, et refugium meum,
+Quad5 rd.0 Ad Hebræos 9: 11-15 | HEAD: Oratio, pag. 63 Lectio Epistolae beati Pauli Apostoli ad Hebraeos, c. 9 || Fratres: Christus assístens póntifex futurórum bon
+     TAIL: ónem accípiant qui vocáti sunt ætérnæ hereditátis. || In Christo Jesu Domino nostro. Ps. 142 Eripe me Domine de
+Quad5 rd.1 Joannes 8: 46-59 | HEAD: Dominus justus concidet cervices peccatorum. Sequentia sancti Evangelii secundum Joannem. c. 8 || In illo témpore: Dicébat Jesus turbis Judæórum: Qu
+     TAIL: um: Jesus autem abscóndit se, et exívit de templo. || Credo. Offertorium Ps. 118 Confitebor tibi Domine in toto corde meo:
+Quad5m rd.0 Jonas 3: 1-10 | HEAD: Dominum. Secunda et tertia Oratio, pag. 63 Lectio Jonae Prophetae. c. 3 || In diébus illis: Factum est verbum Dómini ad Jonam
+     TAIL: uia convérsi sunt de via sua mala: et misértus est || populo suo Dominus Deus noster. Ps. 53 Deus exaudi orationem meam:
+Quad5m rd.1 Joannes 7: 32-39 | HEAD: peccatis nostris propter nomen tuum. Sequentia sancti Evangelii secundum Joannem. c. 7 || In illo témpore: Misérunt príncipes, et Pharisǽi m
+     TAIL: de Spíritu, quem acceptúri erant credéntes in eum. || Offertorium Ps. 6 Domine convertere, et eripe animam meam: salvum me
+Quad5t rd.0 Daniel 14: 28-42 | HEAD: Dominum. Secunda et tertia Oratio, pag. 63 Lectio Danielis Prophetae, c. 14 || In diébus illis: Congregáti sunt Babylónii ad rege
+     TAIL: a in terra: qui liberávit Daniélem de lacu leónum. || Ps. 42 Discerne causam meam Domine: ab homine iniquo, et doloso
+Quad5t rd.1 Joannes 7: 1-13 | HEAD: adduxerunt in montem sanctum tuum.: Sequentia sancti Evangelii secundum Joannem. c. 7 || In illo témpore: Ambulábat Jesus in Galilǽam: non 
+     TAIL: n palam loquebátur de illo propter metum Judæórum. || Offertorium Ps. 9 Sperent in te omnes qui noverunt nomen tuum
+Quad5w rd.0 Leviticus 19: 1-2, 10-19 | HEAD: Dominum. Secunda et tertia Oratio, pag. 63 Lectio Libri Levitici. c. 19 || In diébus illis: Locútus est Dóminus ad Móysen, di
+     TAIL:  sicut teípsum. Ego Dóminus. Leges meas custodíte. || Ego enim sum Dominus Deus vester. Ps. 29 Exaltabo te Domine,
+Quad5w rd.1 Joannes 10: 22-38 | HEAD: nostris propter nomen tuum. ►J* Sequentia sancti Evangelii secundum Joannem. c. 10 || In illo témpore: Facta sunt Encǽnia in Jerosólymis
+     TAIL: et credátis quia Pater in me est, et ego in Patre. || Offertorium Ps. 58 Eripe me de inimicis meis Deus meus: et
+Quad5h rd.0 Daniel 3: 34-45 | HEAD: Secunda et tertia Oratio, p ag. 63 Lectio Danielis Prophetae, c. 3 || In diébus illis: Orávit Azarías Dóminum, dicens: D
+     TAIL: nus Deus solus, et gloriósus super orbem terrárum. || Domine Deus noster. 1&. Ps. 95 Tollite hostias, et introite in
+Quad5h rd.1 Lucas 7: 36-50 | HEAD: templo ejus omnes dicent gloriam. Sequentia sancti Evangelii secundum Lucam. c. 7 || In illo témpore: Rogábat Jesum quidam de Pharisǽis
+     TAIL: mulíerem: Fides tua te salvam fecit: vade in pace. || Offertorium Ps. 136 Super flumina Babylonis, illic sedimus et flevimus: dum
+Quad5fe rd.0 Jeremias 17: 13-18 | HEAD: Dominum. Secunda et tertia Oratio, pag. 63 Lectio Jeremiae Prophetae, c. 17 || In diébus illis: Dixit Jeremías: Dómine: omnes, qu
+     TAIL:  afflictiónis, et dúplici contritióne cóntere eos. || Domine Deus noster. Ps. 34 Pacifice loquebantur mihi inimici m e
+Quad5fe rd.1 Joannes 11: 47-54 | HEAD: nostris propter nomen tuum. ►J* Sequentia sancti Evangelii secundum Joannem. c. 11 || In illo témpore: Collegérunt pontífices, et Pharis
+     TAIL: itur Ephrem, et ibi morabátur cum discípulis suis. || Offertorium Ps. 118 Benedictus es Domine, doce me justificationes tuas, et
+Quad5f rd.0 Judith 13: 22-25 | HEAD: vivis. Lectio Libri Judith. c. 13 e n e d ix it || Benedíxit te Dóminus in virtúte sua, quia per te a
+     TAIL: , sed subvenísti ruínæ ante conspéctum Dei nostri. || 7£. Dolorosa et lacrymabilis es Virgo Maria, stans juxta Crucem Domini
+Quad5f rd.1 Joannes 19: 25-27 | HEAD: B. M. V. additur Alleluia. Sequentia sancti Evangelii secundum Joannem. c. 19 || In illo témpore: Stabant juxta crucem Jesu mater e
+     TAIL: ua. Et ex illa hora accépit eam discípulus in sua. || Credo. Offertorium Recordare Virgo mater, dum steteris in conspectu Dei, ut

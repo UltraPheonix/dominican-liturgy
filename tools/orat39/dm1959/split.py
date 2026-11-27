@@ -1,7 +1,8 @@
+import os, sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from dmpaths import *
 import fitz, re, json, sys, warnings
 warnings.filterwarnings('ignore')
 import importlib.util
-exec(open('/tmp/dmv/extract.py').read().split('for pno in map')[0])
+exec(open(os.path.join(D,'extract.py')).read().split('for pno in map')[0])
 EN=set('the and of to you we that your our may us who which in be by with for his her is are o lord god through this those they he she them all which have has from as on'.split())
 LA=set('et ut in nos qui quae quod tua tuam tuae tui nobis quaesumus domine deus per est ad cum sunt eius ejus te tibi atque ac dominum nostri nostrae nostra sicut non quia'.split())
 def score(row):
