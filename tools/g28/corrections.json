@@ -978,13 +978,18 @@
 }
 },
 "S0603": {
-"src": "G50: Missa Sancti tui, de Communi plurimorum Martyrum, pag. 28* (Communio Justorum animae, 30*)",
+"src": "G50: Missa Sancti tui, de Communi plurimorum Martyrum, pag. 28* (Communio Justorum animae, 30*) | Text audit A4: M39, one Alleluia outside Paschaltide",
 "season_set": {
 "pasch": {
 "co": [
 6276
 ]
 }
+},
+"set": {
+"al": [
+4992
+]
 }
 },
 "S0428b": {
@@ -1431,5 +1436,26 @@
 },
 "page": "35*",
 "note": "Missa In medio, de Communi unius Doctoris, Graduale O.P. p. 35*, praeter sequentia (Supplementum S.R.C., 9 June 1933, bound in the 1928 Graduale; = Graduale O.P. 1950, pp. 616-617): Responsorium Ecce sacerdos magnus and Alleluia Vere magnus est in caelis Albertus (typeset from the scan for this site); Offertorium Veritas mea, Communio Domine quinque talenta. Missale O.P. (1939), pp. 622-624."
+},
+"S0525": {
+"src": "Text audit A4: M39 p. 450, Paschaltide one verse (Justus)",
+"season_set": {
+"pasch": {
+"al": [
+5678
+]
+}
+}
+},
+"G481": {
+"src": "Text audit A4: M39, Paschaltide second Alleluia Concaluit",
+"season_set": {
+"pasch": {
+"al": [
+6501,
+5437
+]
+}
+}
 }
 }
