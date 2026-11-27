@@ -88,9 +88,13 @@ Test: node tools/ordo44/engine_dump.js 1944 > /tmp/e44.json; tools/ordo44/compar
 Polish feasts, post-1944 supplements, parse) and compare_mass.py (conventual Mass named in the Ordo: all agree except resumed Sundays).
 Ordo re-read from the PDF text layer: tools/ordo44/parse2.py -> ordo1944b.json (324 days; 42 still to read from page images).
 OPEN:
- - Resumed Sunday Mass (Rubr. III.3: on the first free day "in qua legitur Homilia Dominicae") depends on the Breviary's lessons;
-   the page offers it, does not choose it (Ordo 1944: 24 Jan, 2 May, 15 Jul, 9 Aug, 25 Oct, 30 Oct).
- - Asked Joseph for: Breviarium S.O.P. Rubricae generales 1923-54 (occurrence table), more Ordos 1939-54 (non-Polish), a Graduale scan.
+ - DONE (v189): Joseph supplied the Breviarium S.O.P. 1924 (Theissling; Drive '346_Breviarium...zip', djvu, text via djvutxt ->
+   /tmp/b24.txt; /home/claude/dl/brev346). Its Rubricae generales (§ II, VII, XXI, XXVIII-XXX) now ground mrank.js: classes of
+   Sundays/ferias/vigils, occurrence within octaves, transfers (to a day free of I/II class, Sunday, privileged vigil), feasts of
+   the Lord on minor Sundays, All Souls, Circumcision, Saturday of Our Lady (also in Advent), and the resumed Sunday: the least
+   solemn vacant day (§ VII.2); tools/b24/homily.py lists the Saints' Offices with a proper III-Nocturn Homily or Responsories
+   (homily.json, 123 days not vacant). Matches the Ordo 1944 (2 May, 15 Jul, 9 Aug, 25 Oct, 30 Oct, 14 Nov).
+ - Still wanted: more Ordos 1939-54 (non-Polish) to test; a Graduale O.P. scan (chants of the missing Masses).
  - Masses missing on the site (M39 has them): vigils of Matthias, James, Laurence, Bartholomew, Matthew, Simon & Jude, All Saints,
    Andrew, Imm. Conception, Thomas; Purissimi Cordis B.M.V. (pp. 316-317); In Octava Epiphaniae (own Mass, line 12265);
    Feria VI post Dom. Passionis (site Quad5f is the Seven Sorrows Mass). S0910_2 has no Introit/Gradual.

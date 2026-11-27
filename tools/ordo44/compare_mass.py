@@ -19,6 +19,7 @@ def eng_kind(r):
     if k == 'C114s': return 'requiem'
     if ms[0].get('anniv'): return 'anniv'
     if any(m.get('anniv') for m in ms): return 'feast+anniv'
+    if 'Sunday (resumed' in lab: return 'choir:dom' if r['twoMasses'] else 'dom'
     if r['twoMasses']:
         if lab.startswith('In choir: the feast'): return 'choir:fest'
         if 'vigil' in lab: return 'choir:vigi'
@@ -31,7 +32,7 @@ for o in O:
     ok = ordo_kind(o['text'])
     if not ok: continue
     ek = eng_kind(E[o['date']])
-    same = ek == ok or (ok == 'choir:dom.' and ek.startswith('single')) 
+    same = ek == ok or (ok == 'choir:dom' and ek == 'choir:dom') or (ok.startswith('choir:fe') and ek == 'choir:feri') or (ok == 'choir:dom.' and ek.startswith('single')) 
     if ok in ('choir:feri', 'choir:fer.') and ek == 'choir:feri': same = True
     if not same:
         bad += 1

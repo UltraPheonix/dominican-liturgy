@@ -1873,7 +1873,10 @@
       var t = r.temporal;
       if (t.kind === 'sunday') return t.pv >= 96 ? 'Sunday of the I class' : (t.pv >= 88 ? 'Sunday of the II class' : 'Sunday');
       if (t.kind === 'vigil') return 'Vigil';
-      if (t.pv >= 97) return 'Privileged day';
+      if (t.pv >= 100) return 'Totum Duplex, I class';
+      if (t.pv >= 99) return 'Privileged feria';
+      if (t.pv >= 98) return 'Within the octave, I class';
+      if (t.pv >= 97) return 'Within the octave';
       return t.pv >= 21 ? 'Major feria' : 'Feria';
     }
     return rk;

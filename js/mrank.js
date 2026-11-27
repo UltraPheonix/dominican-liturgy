@@ -45,9 +45,19 @@
   // Celestine 19 May, B. Columba 20 May, B. Hosanna 20 Jun), and beat Tres Lectiones (Gervase and Protase, 19 Jun);
   // days within solemn octaves yield even to Simplex (Damasus within the octave of the Immaculate Conception).
   var RANK_PV = {'Totum Duplex I classis': 90, 'Totum Duplex II classis': 80, 'Totum Duplex': 60, 'Duplex': 50,
-    'Semiduplex': 40, 'Simplex': 30, 'Tres Lectiones': 20, 'Octava solemnissima': 79, 'Octava solemnis': 55, 'Memoria': 5};
-  var PV = {feriaMajor: 21.6, feriaAdv: 21, vigil: 21.5, bvmSat: 22, inOctSimplex: 22, inOctSolemn: 25, inOctPrivLow: 35, inOctPriv: 87,
-    sundayMinor: 70, sundayII: 88, sundayI: 96};
+    'Semiduplex': 40, 'Simplex': 30, 'Tres Lectiones': 20, 'Octava solemnissima': 79, 'Octava solemnis': 79, 'Memoria': 5};
+  // Breviarium S.O.P. 1924 (Theissling), Rubricae generales (tools/b24): § II (Sundays of the I class yield to no feast, of
+  // the II class to Totum Duplex I classis only; privileged ferias to none, the others only beat Tres Lectiones; the Vigils of
+  // Christmas and Pentecost to none, of the Epiphany to the I and II class and feasts of the Lord); § XXIX.3 (minor Sundays
+  // yield to the I and II class and to feasts of the Lord of nine lessons, not to octave days); § XXIX.10 (the octaves of
+  // Easter and Pentecost beat every feast; within those of the Epiphany and Corpus Christi only the I class wins, and on their
+  // octave day only the I class of the universal Church; within the octave of Christmas, the Ascension and all solemn
+  // octaves only Tres Lectiones and days within simple octaves lose, on their octave day every feast below the II class)
+  var PV = {feriaMajor: 21.6, feriaAdv: 21, vigil: 21.5, bvmSat: 22, inOctSimplex: 22, inOctSolemn: 25, inOctPrivLow: 25, inOctPriv: 87,
+    sundayMinor: 79.5, sundayII: 88, sundayI: 96, octDay: 79, octDayPriv: 89.5, orderI: 89, lordOnSunday: 79.7, vigEpi: 78};
+  // Offices of the Saints with a proper Homily or proper Responsories (Breviarium S.O.P. 1924, Proprium Sanctorum, read by
+  // tools/b24/homily.py): on these days the Homily of an impeded Sunday is not read, nor its Mass resumed (§ VII.2)
+  var NOT_VACANT = {}; '0102 0103 0104 0115 0117 0118 0121 0122 0123 0125 0126 0130 0201 0202 0205 0211 0212 0213 0222 0223 0307 0308 0312 0318 0319 0322 0324 0325 0327 0401 0404 0405 0411 0414 0425 0429 0503 0510 0520 0601 0611 0614 0618 0624 0628 0629 0630 0701 0702 0705 0706 0709 0710 0712 0722 0725 0729 0801 0804 0806 0807 0808 0810 0811 0815 0816 0817 0822 0824 0825 0827 0828 0829 0830 0902 0908 0912 0914 0915 0917 0919 0921 0924 0925 0929 0930 1002 1004 1006 1010 1014 1015 1018 1024 1028 1101 1102 1103 1106 1108 1109 1111 1112 1117 1118 1119 1121 1122 1123 1125 1130 1203 1206 1207 1208 1210 1215 1221 1226 1227 1228 1229 1231'.split(' ').forEach(function (k) { NOT_VACANT[k] = 1; });
   function rankShort(r) {
     return {'Totum Duplex I classis': 'Totum Duplex, I class', 'Totum Duplex II classis': 'Totum Duplex, II class'}[r] || r;
   }
@@ -152,7 +162,7 @@
     if (key === '5aw' || /^Quad6[mtw]$/.test(key)) { t.pv = 99; t.ownMass = true; }
     if (key === 'Dec24') { t.pv = 95; t.kind = 'vigil'; t.ownMass = true; }
     if (key === 'Pasc6s') { t.pv = 95; t.kind = 'vigil'; t.ownMass = true; }
-    if (key === 'Jan5a') { t.pv = 85; t.kind = 'vigil'; t.ownMass = true; }
+    if (key === 'Jan5a') { t.pv = PV.vigEpi; t.kind = 'vigil'; t.ownMass = true; }
     // Lent ferias from Thursday after Ash Wednesday, Passiontide ferias before Palm Sunday, Ember days, Rogations,
     // the Vigil of the Ascension ("feria major", Rubr. IV.2): major ferias with a Mass of their own
     if (!sunday && (t.season === 'quad' || t.season === 'pass') && fromE > -46 && fromE < -7) { t.pv = PV.feriaMajor; t.major = true; t.ownMass = true; t.lent = true; }
@@ -165,7 +175,8 @@
     if (!sunday && t.season === 'adv' && !t.ember && key !== 'Dec24') { t.pv = PV.feriaAdv; t.major = true; }
     // the temporal feasts and their octaves
     var tf = null;
-    if (md === '0101') tf = {key: 'Jan1', rank: 'Totum Duplex II classis', title: 'Circumcisio Domini'};
+    // the Circumcision beats every feast, even of the I class (§ XXIX.10)
+    if (md === '0101') tf = {key: 'Jan1', rank: 'Totum Duplex II classis', title: 'Circumcisio Domini', pv: 100};
     if (key === 'Nat2' && (sunday || md === '0102')) tf = {key: 'Nat2', rank: 'Totum Duplex I classis', title: 'SS. Nominis Jesu'};
     if (md === '0106') tf = {key: 'Epi', rank: 'Totum Duplex I classis', title: 'Epiphania Domini', pv: 100};
     if (fromE === 39) tf = {key: 'Asc', rank: 'Totum Duplex I classis', title: 'Ascensio Domini', pv: 92};
@@ -198,14 +209,14 @@
       if (n === 7 && octday) out.push({key: key, title: 'Dies octava: ' + title, day: 7, pv: octday, of: key, octday: true});
     };
     add(new Date(y - (d.getMonth() === 0 ? 1 : 0), 11, 25), 'Dec25_3', 'Nativitas Domini', PV.inOctPrivLow, 0);
-    add(new Date(y, 0, 6), 'Epi', 'Epiphania Domini', PV.inOctPriv, RANK_PV['Octava solemnissima']);
-    add(addDays(E, 39), 'Asc', 'Ascensio Domini', PV.inOctPrivLow, RANK_PV['Octava solemnissima']);
-    add(addDays(E, 56), 'Pent1', 'SS. Trinitas', PV.inOctSolemn, RANK_PV['Octava solemnis']);
-    add(addDays(E, 60), 'CorpusChristi', 'SS. Corpus Christi', PV.inOctPriv, RANK_PV['Octava solemnissima']);
-    add(addDays(E, 68), 'SCJ', 'SS. Cor Jesu', PV.inOctPrivLow, RANK_PV['Octava solemnissima']);
-    add(addDays(E, 17), 'Pasc2w', 'Solemnitas S. Joseph', PV.inOctSolemn, RANK_PV['Octava solemnis']);
+    add(new Date(y, 0, 6), 'Epi', 'Epiphania Domini', PV.inOctPriv, PV.octDayPriv);
+    add(addDays(E, 39), 'Asc', 'Ascensio Domini', PV.inOctPrivLow, PV.octDay);
+    add(addDays(E, 56), 'Pent1', 'SS. Trinitas', PV.inOctSolemn, PV.octDay);
+    add(addDays(E, 60), 'CorpusChristi', 'SS. Corpus Christi', PV.inOctPriv, PV.octDayPriv);
+    add(addDays(E, 68), 'SCJ', 'SS. Cor Jesu', PV.inOctPrivLow, PV.octDay);
+    add(addDays(E, 17), 'Pasc2w', 'Solemnitas S. Joseph', PV.inOctSolemn, PV.octDay);
     var o1 = new Date(y, 9, 1), ros = addDays(o1, (7 - o1.getDay()) % 7);
-    add(ros, 'S1007', 'SS. Rosarium B. M. V.', PV.inOctSolemn, RANK_PV['Octava solemnis']);
+    add(ros, 'S1007', 'SS. Rosarium B. M. V.', PV.inOctSolemn, PV.octDay);
     return out;
   }
 
@@ -243,6 +254,7 @@
   }
 
   function cand(o) { return o; }
+  var LORD = /\bDomini\b|D\. ?N\. ?J\. ?C|Salvatoris|S\. Crucis|Sanguinis|Jesu\b/;
   // the candidates of a date before transfers: {kind, key, title, rank, pv, ...}
   function candidates(d) {
     var t = temporal(d), out = [];
@@ -266,7 +278,13 @@
       else if (/^Octava/.test(rank) || /^Octava /.test(e[0])) {
         var b = octaveBase(d); c.kind = 'octday'; c.key = c.key || (b && b.e[2]); c.of = b && b.e[2];
       }
-      if (/^Commemoratio Omnium Fidelium/.test(e[0])) { c.kind = 'feast'; c.pv = 89; c.allSouls = true; }
+      // All Souls excludes every feast (§ XXIX.8)
+      if (/^Commemoratio Omnium Fidelium/.test(e[0])) { c.kind = 'feast'; c.pv = 94; c.allSouls = true; }
+      // the Order's feasts of the I class yield to those of the universal Church (§ XXVIII.1) and to the octave day of
+      // the Epiphany and of Corpus Christi (§ XXIX.10)
+      if (rank === 'Totum Duplex I classis' && /O\. ?P\.|S\. P\. N\.|Ordinis|Patrocinium S\. Thom/.test(e[0])) c.pv = PV.orderI;
+      // a feast of the Lord of nine lessons takes a minor Sunday (§ XXIX.3), except within the privileged octaves
+      if (t.kind === 'sunday' && t.pv === PV.sundayMinor && c.kind === 'feast' && c.pv >= 30 && c.pv < 80 && LORD.test(e[0])) c.pv = PV.lordOnSunday;
       out.push(c);
     });
     return out;
@@ -296,10 +314,10 @@
       // not a Sunday (St Joseph to Monday 20 Mar. 1944; St Vincent Ferrer from Holy Wednesday to 17 Apr.; Catherine de'
       // Ricci from Sexagesima to 14 Feb.)
       var top = Math.max.apply(null, cs.map(function (c) { return c.pv; }));
-      // a transferred feast also displaces a lesser feast of the II class, which is then transferred in its turn (the
-      // Annunciation from Maundy Thursday 2027 to Monday 5 April, St Vincent Ferrer to the 6th)
+      // "in proximiorem insequentem diem, quae libera sit ab alio Festo Toto Duplici I et II classis, a Dominica occurrenti,
+      // a Vigilia privilegiata, et ab aliis Officiis, quae hujusmodi Festa respective excludant" (Brev. 1924, § XXIX.4)
       queue.sort(function (a, b) { return b.c.pv - a.c.pv; });
-      if (queue.length && !isSunday(d) && top < 85 && queue[0].c.pv > top) {
+      if (queue.length && !isSunday(d) && top < 80 && !(t.kind === 'vigil') && queue[0].c.pv > top) {
         var q = queue.shift(); q.c.transferredFrom = q.from; cs.push(q.c);
       }
       cs.sort(function (a, b) { return b.pv - a.pv || (a.kind === 'temporal' ? -1 : 0) || (a.order || 0) - (b.order || 0); });
@@ -311,8 +329,46 @@
       });
       res[iso(d)] = {date: new Date(d), cands: cs, win: win, t: t};
     }
+    markResumptions(res);
     cache[y] = res;
     return res;
+  }
+  // the Homily of an impeded Sunday is read within its week on the least solemn vacant day (the earlier, if equal): Tota
+  // Duplicia communia and below without a proper Homily or Responsories, all octaves, and ferias without a Homily of their
+  // own (Brev. 1924, § VII.2); on that day the Missal resumes the Sunday's Mass (Rubr. III.3-4). Not resumed: the Sunday
+  // before the Ascension impeded by a feast of the I or II class or of the Lord (§ VII.6), the Vigil of Christmas on a
+  // Sunday (§ VII.1), the Sundays of 25-28 December (30 Dec., p. 28) and of 1-6 January (§ XXIX.3).
+  function solemnityForHomily(o, d) {
+    var w = o.win, t = o.t;
+    // a free Saturday has the Office of Our Lady, given up only when the Homily can be read on no other day (§ XXI.1)
+    if (w.kind === 'temporal') return t.kind === 'feria' && !t.ownMass && !o.cands.some(function (c) { return c.kind === 'vigil'; }) && t.pv < 85 ? (d.getDay() === 6 && bvmSaturday(o, d) ? 10 : 0) : null;
+    if (w.kind === 'octave') return 1;
+    if (w.kind === 'octday') return w.pv >= 79 ? 6.5 : 2;
+    if (w.kind === 'feast') {
+      if (w.pv >= 80 || NOT_VACANT[w.md]) return null;   // a vigil under a feast does not prevent it (Ordo 1944, 9 Aug.)
+      return {'Tres Lectiones': 2, 'Simplex': 3, 'Semiduplex': 4, 'Duplex': 5, 'Totum Duplex': 6}[w.rank];
+    }
+    return null;
+  }
+  function markResumptions(res) {
+    Object.keys(res).forEach(function (k) {
+      var o = res[k], d = o.date, t = o.t;
+      if (!isSunday(d) || t.kind !== 'sunday' || o.win.kind === 'temporal' || t.pv >= PV.sundayI) return;
+      var md = mmdd(d);
+      if (/^(Nat1|Nat2|Epi1|Pent1|Dec24|Adv4)$/.test(t.key) && (md === '1224' || t.key !== 'Adv4')) return;
+      if ((md >= '1225' && md <= '1228') || (md >= '0101' && md <= '0106')) return;
+      if (t.key === 'Pasc5') return;
+      if (o.win.kind === 'tfeast' && o.win.key === t.key) return;
+      var best = null;
+      for (var j = 1; j < 7; j++) {
+        var z = res[iso(addDays(d, j))];
+        if (!z) break;
+        var sc = solemnityForHomily(z, z.date);
+        // Saturday only when no other day of the week is vacant (§ XXI.1: then no Office of Our Lady)
+        if (sc != null && (best == null || sc < best.sc)) best = {o: z, sc: sc};
+      }
+      if (best) best.o.resume = {key: t.key, from: k};
+    });
   }
 
   // ------------------------------------------------------------------ the day
@@ -322,6 +378,7 @@
   // is d a free feria (no feast of three lessons or above, no octave, no feria or vigil with its own Mass)?
   function freeFeria(o) {
     var w = o.win, t = o.t;
+    if (o.resume) return false;
     if (w.kind !== 'temporal' || t.kind !== 'feria') return false;
     if (t.ownMass || t.pv > PV.feriaMajor || o.cands.some(function (c) { return c.kind === 'vigil'; })) return false;
     return !o.cands.some(function (c) { return c !== w && c.pv >= 20 && c.kind !== 'temporal'; });
@@ -330,9 +387,11 @@
     // the Office of Our Lady on Saturday: on a free Saturday outside Advent and Lent, Ember days, vigils and octaves
     // (Ordo 1944, 9 Sept.: Offic. B.M.V. in Sabbato over St Gorgonius, Tres Lectiones; every Saturday with a Simplex
     // or higher feast has the feast with a commemoration of Our Lady)
-    if (d.getDay() !== 6) return false;
+    // (Brev. 1924, § XXI.1: every Saturday except in Lent, on Ember days, within octaves and on octave days, on Simplex feasts
+    // and above, on vigils with a Mass of their own, and when the Sunday Homily can be read on no other day)
+    if (d.getDay() !== 6 || o.resume) return false;
     var t = o.t;
-    if (t.season === 'adv' || t.season === 'quad' || t.season === 'pass' || t.ember || /^(5a|Quad|Pasc0|Pent0)/.test(t.key) || t.key === 'Pasc6s') return false;
+    if (t.season === 'quad' || t.season === 'pass' || t.ember || /^(5a|Quad|Pasc0|Pent0)/.test(t.key) || t.key === 'Pasc6s' || t.key === 'Dec24') return false;
     if (o.cands.some(function (c) { return c.kind === 'vigil' || ((c.kind === 'octave' || c.kind === 'octday') && c.pv >= 20); })) return false;
     return o.win.pv < 30;
   }
@@ -443,6 +502,10 @@
     } else {
       add(win.key, win.kind === 'octday' ? 'Octave day' : '');
     }
+    // All Souls: three Masses (Rubr. VI.1)
+    if (win.allSouls) { add('S1102_2', 'Second Mass'); add('S1102_3', 'Third Mass'); }
+    // Christmas: three Masses
+    if (win.kind === 'temporal' && /^Dec25/.test(tKey)) { add('Dec25_1', 'At midnight'); add('Dec25_2', 'At dawn'); }
     // Rogation days and 25 April with a feast of the I or II class: the Mass of the Rogations too (Rubr. IV.4)
     if (t.rogation && !twoMass && /classis/.test(priv)) add('Litaniis', 'Rogations (with the procession)');
     // the Order's four Anniversaries: sung besides the conventual Mass of the day, or alone on a free feria, where the one
@@ -452,14 +515,23 @@
       if (freeFeria(o) && !bvm) masses = masses.filter(function (m) { return m.key !== 'C114s'; }), masses.unshift({key: a.key, label: 'Conventual Mass: ' + a.title, anniv: true, missing: !has(a.key)});
       else add(a.key, 'Second conventual Mass, sung: ' + a.title, {anniv: true});
     }
-    // the Mass of an impeded Sunday, resumed within the week (Rubr. III.3); the day depends on the Breviary (where the
-    // Sunday homily is read), so it is offered, not chosen
-    var ws = weekStart(d);
-    if (d.getDay() !== 0) {
-      var so = officeOf(ws);
-      if (so && so.t.kind === 'sunday' && so.t.pv === PV.sundayMinor && so.t.key !== 'Nat1' && so.win.kind !== 'temporal' && so.win.key !== so.t.key && win.pv < 80 && !t.ownMass)
-        add(so.t.key, 'Mass of the Sunday (resumed this week, Rubr. III.3)', {resumed: true});
+    // the Mass of an impeded Sunday resumed on this day (Rubr. III.3-4): on ferias, within octaves and on feasts and octave
+    // days of three lessons one conventual Mass, of the Sunday; on other feasts two, the Sunday's in choir
+    if (o.resume && has(o.resume.key)) {
+      var rk = o.resume.key, single = win.kind === 'temporal' || win.kind === 'octave' || win.rank === 'Tres Lectiones' || (win.kind === 'octday' && win.pv < 79);
+      var rest = masses.filter(function (m) { return m.key !== rk && !m.anniv; }), an = masses.filter(function (m) { return m.anniv; });
+      masses = [];
+      if (single) {
+        add(rk, 'Mass of the Sunday (resumed, Rubr. III.3)');
+        rest.forEach(function (m) { if (m.key !== 'C114s') add(m.key, 'Private Masses may be of the day', {title: m.title}); });
+      } else {
+        add(rk, 'In choir: the Sunday (resumed, Rubr. III.4)');
+        rest.forEach(function (m) { add(m.key, 'Outside choir: ' + (m.label ? m.label.replace(/^(In|Outside) choir: /, '') : 'the feast'), {title: m.title}); });
+      }
+      an.forEach(function (m) { masses.push(m); });
+      twoMass = !single;
     }
+
     // what is commemorated (in the order of the Rubrics: Sunday, privileged feria, octave, feasts, memoriae)
     var commems = [];
     var pushC = function (c, kind) {
