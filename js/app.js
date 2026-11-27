@@ -759,8 +759,8 @@
     var find = function (name) { var r = null; D.kyriale.forEach(function (id) { if (D.chants[id].i === name) r = id; }); return r; };
     // Asperges before the principal Mass on Sundays; Vidi aquam from Easter to Pentecost
     var asp = state.asp;
-    // (not on Palm Sunday: the blessing of palms takes its place)
-    if (!asp && d && d.getDay() === 0 && !R.requiem && state.key !== 'Quad6') { var f = diffDays(d, easter(d.getFullYear())); asp = (f >= 0 && f <= 49) ? 'vidi' : 'asperges'; }
+    // (also on Passion and Palm Sunday, with 'Et secundum' for the Gloria Patri: Missale O.P. 1939, p. 33)
+    if (!asp && d && d.getDay() === 0 && !R.requiem) { var f = diffDays(d, easter(d.getFullYear())); asp = (f >= 0 && f <= 49) ? 'vidi' : 'asperges'; }
     if (asp && asp !== 'none') o.as = asp === 'vidi' ? D.front[1] : D.front[0];
     if (state.ord === 'none') { if (R.credo && state.credo && state.credo !== 'none') o.cr = find('Credo ' + state.credo); return o; }
     if (R.requiem) { o.ky = find('Kyrie (Requiem)'); o.sa = find('Sanctus (Requiem)') || find('Sanctus VIII'); o.ag = find('Agnus (Requiem)') || find('Agnus VIII'); o.it = find('Requiescant'); o.req = true; return o; }
@@ -1772,8 +1772,50 @@
     if (k === 'ky' && id === findKyriale('Kyrie IV') && state.ord !== 'IV')
       slot.appendChild(el('p', {class: 'hint rubric', text: 'In Paschaltide the Easter Kyrie is sung on Sundays and on feasts of the I and II class.'}));
     box.appendChild(el('p', {class: 'loading', text: 'Loading…'}));
-    loadGabc(id).then(function (t) { var g = splitGabc(t); renderInto(box, k === 'it' ? dismissGabc(g.body, rubricsOf(state.key, state.date).dismiss === 'ben') : g.body, g.header, null); }, function (e) { showError(box, e); });
+    if (k === 'as') slot.appendChild(drawAspergesPrayers());
+    loadGabc(id).then(function (t) { var g = splitGabc(t); if (k === 'as') g.body = aspergesGabc(g.body); renderInto(box, k === 'it' ? dismissGabc(g.body, rubricsOf(state.key, state.date).dismiss === 'ben') : g.body, g.header, null); }, function (e) { showError(box, e); });
     return slot;
+  }
+
+  // the Asperges as the Missale O.P. (1939), p. 33 orders it: Ps. Miserere and Gloria Patri, then the antiphon again; on
+  // Passion and Palm Sunday "loco Gloria dicitur Et secundum multitudinem"; in Paschaltide Vidi aquam with the verse Haec dies
+  // (Easter Day), Confitemini (the other Sundays to Pentecost exclusive) or Emitte (Pentecost). The Graduale prints the variants
+  // one after another: only the day's is shown.
+  function aspergesGabc(b) {
+    var d = state.date, f = d ? diffDays(d, easter(d.getFullYear())) : 999;
+    b = b.replace(/<alt>[\s\S]*?<\/alt>/g, '');
+    if (/Vi\(ef\)di/.test(b)) {
+      var parts = b.split(/(?=<sp>V\/<\/sp>\.)/), ant = parts[0], vs = parts.slice(1);
+      var want = f === 0 ? /^<sp>V\/<\/sp>\.\s*Hæc/ : f === 49 ? /^<sp>V\/<\/sp>\.\s*E\(/ : /^<sp>V\/<\/sp>\.\s*Con\(/;
+      var v = vs.filter(function (x) { return want.test(x); })[0] || vs[0] || '';
+      return ant + v;
+    }
+    var i1 = b.search(/Gló\(cfe\)ri/), i2 = b.search(/<sp>V\/<\/sp>\.\s*Et\(cfe\)\s*se/);
+    if (i1 < 0 || i2 < 0) return b;
+    if (f === -14 || f === -7) return b.slice(0, i1) + b.slice(i2).replace(/^<sp>V\/<\/sp>\.\s*/, '');
+    return b.slice(0, i2);
+  }
+  // "Postea dicat Sacerdos" (Missale O.P. 1939, p. 33): the versicles and the prayer after the Asperges
+  function drawAspergesPrayers() {
+    var d = state.date, f = d ? diffDays(d, easter(d.getFullYear())) : 999, tp = f >= 0 && f <= 49 ? ' Allelúia.' : '', tpe = tp ? ' Alleluia.' : '';
+    var L = [
+      {la: '℣. Osténde nobis, Dómine, misericórdiam tuam.' + tp, en: '℣. Show us, O Lord, Thy mercy.' + tpe},
+      {la: '℟. Et salutáre tuum da nobis.' + tp, en: '℟. And grant us Thy salvation.' + tpe},
+      {la: '℣. Dómine, exáudi oratiónem meam.', en: '℣. O Lord, hear my prayer.'},
+      {la: '℟. Et clamor meus ad te véniat.', en: '℟. And let my cry come unto Thee.'},
+      {la: '℣. Dóminus vobíscum.', en: '℣. The Lord be with you.'},
+      {la: '℟. Et cum spíritu tuo.', en: '℟. And with thy spirit.'},
+      {la: 'Orémus. Exáudi nos, Dómine sancte, Pater omnípotens, ætérne Deus: et míttere dignéris sanctum Angelum tuum de cælis; qui custódiat, fóveat, prótegat, vísitet, atque deféndat omnes habitántes in hoc habitáculo. Per Christum Dóminum nostrum.',
+       en: 'Let us pray. Hear us, O holy Lord, almighty Father, everlasting God: and vouchsafe to send Thy holy Angel from heaven, to guard, cherish, protect, visit and defend all that dwell in this house. Through Christ our Lord.'},
+      {la: '℟. Amen.', en: '℟. Amen.'}];
+    var box = el('div', {class: 'asp-after'});
+    box.appendChild(el('p', {class: 'hint rubric', text: 'When the antiphon is finished, the priest, standing before the steps, says (Missale O.P. 1939, p. 33):'}));
+    var mk = function (t, cls, lang) {
+      var m = /^(℣\.|℟\.)\s*/.exec(t);
+      return el('p', {class: cls, lang: lang}, m ? [el('span', {class: 'o-mark', text: m[1] + ' '}), t.slice(m[0].length)] : [t]);
+    };
+    L.forEach(function (l) { box.appendChild(el('div', {class: 'r-cols o-line'}, [mk(l.la, 'la', 'la'), mk(l.en, 'en-text', 'en')])); });
+    return box;
   }
 
   // ---------------------------------------------------------------- readings
