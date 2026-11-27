@@ -30,4 +30,11 @@ for key, S in SETS.items():
     m.pop('pending', None)
     m['note'] = S['note']; m['page'] = S['page']; m['conf'] = 'g28'
     print(key, list(parts))
+# the 'inferred' chants the Graduale of 1928 names for the same Mass (tools/g28/confirmed.json)
+C = json.load(open(H + '/confirmed.json', encoding='utf8'))
+for k, ps in C.items():
+    if k.startswith('_') or k not in D['masses']: continue
+    for p, pg in ps.items():
+        for x in D['masses'][k]['parts'].get(p, []):
+            if isinstance(x, dict) and (x.get('inferred') or x.get('v28')): x.pop('inferred', None); x['v28'] = pg
 open(F, 'w', encoding='utf8').write(head + 'var DOMINICAN = ' + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + ';\n')

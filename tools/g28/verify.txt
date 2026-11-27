@@ -1,0 +1,161 @@
+NOSEC Adv3w    co | Ecce Virgo | Feria Quarta IV Temporum in Adventu
+NOSEC Adv3f    of | Deus tu convertens | Feria Sexta IV Temporum in Adventu
+NOSEC Nat1     of | Deus firmavit | Dominica in Oct Nativitatis
+DIFF Jan5a    al | Dominus regnavit decorem | g28 p.32/0 | 
+OK   Jan5a    co | Tolle puerum | g28 p.32/0 | Communio Tolle plerum // Communio Tolle plerum, ut supra, pag. 38.
+DIFF Jan5a    of | Deus firmavit | g28 p.32/0 | * s*• vB n•] • •• v • m m - - 2 • • *• v p. • • t aa'i V•f 5 • r«
+NOSEC Epi4     gr | Timebunt gentes | IV post Epiphaniam
+NOSEC Epi5     gr | Timebunt gentes | V post Epiphaniam
+NOSEC 5ah      gr | Jacta cogitatum | Feria V post Cinerum
+NOSEC 5ah      of | Ad te Domine | Feria V post Cinerum
+NOSEC 5ah      co | Acceptabis | Feria V post Cinerum
+NOSEC 5af      tr | Domine non secundum | Feria VI post Cinerum
+OK   Quad1m   tr | Domine non secundum | g28 p.53/0 | Tractus Ddmine // Tractus Ddmine, non secandum, pag. 72.
+DIFF Quad1h   gr | Custodi me | g28 p.55/1 | e r .bi •A * • —i .8 • 1 M • •• • —a Z J
+NOSEC Quad1f   tr | Domine non secundum | Feria Sexta IV Temporum in Quadragesima
+NOSEC Quad1s   of | Domine Deus salutis | Sabbato IV Temporum in Quadragesima
+DIFF Quad2    gr | Tribulationes cordis | g28 p.57/1 | 
+OK   Quad2m   tr | Domine non secundum | g28 p.59/1 | Tractus D6mine // Tractus D6mine, non secandum, pag. 72. Offertorium Benedicam, ut
+OK   Quad2m   of | Benedicam Dominum | g28 p.59/1 | Offertorium Benedicam
+OK   Quad2t   gr | Jacta cogitatum | g28 p.60/1 | Responsorium Jacta // Responsorium Jacta, ut in Dom. I post Octavam Trinitatis.
+OK   Quad2w   tr | Domine non secundum | g28 p.61/1 | Tractus Ddmine // Tractus Ddmine, non secundum, pag. 72. Offertorium Ad te, Ddmine,
+OK   Quad2w   of | Ad te Domine | g28 p.61/1 | Offertorium Ad te
+OK   Quad2h   gr | Propitius esto | g28 p.62/1 | Responsorium Propitius // Responsorium Ad D6minum
+DIFF Quad2h   of | Precatus est | g28 p.62/1 | Offertorium Ddmine
+OK   Quad2h   co | Qui manducat | g28 p.62/1 | Communio Qui manducat // HI : leni Tu D<5- mi- ne serva- bis nos : et cust6- di- es •—•-
+OK   Quad2f   gr | Ad Dominum | g28 p.62/1 | Responsorium Ad D6minum // Responsorium Ad D6minum, ut in Dom. infra Octavam SS. Corporis
+OK   Quad2f   tr | Domine non secundum | g28 p.62/1 | Tractus Domine
+OK   Quad2f   of | Domine in auxilium | g28 p.62/1 | Offertorium Ddmine
+OK   Quad2s   of | Illumina | g28 p.63/0 | Offertorium Illumina // Offertorium Illumina, ut in Dom. II post Octavam Trinitatis.
+OK   Quad3m   tr | Domine non secundum | g28 p.59/1 | Tractus D6mine // Tractus D6mine, non secandum, pag. 72. Offertorium Benedicam, ut
+OK   Quad3t   of | Dextera Domini | g28 p.67/1 | Offertorium Dextera // Offertorium Dextera, p ag. 54
+OK   Quad3w   tr | Domine non secundum | g28 p.68/1 | Tractus D6mine // Tractus D6mine, non secundum, pag. 72.
+OK   Quad3h   gr | Oculi omnium | g28 p.69/1 | Responsorium Oculi // Responsorium In Deo
+OK   Quad3h   of | Si ambulavero | g28 p.69/1 | Offertorium Si ambulavero // ink • Inten- de vo- ci o-ra-ti- <5- nis me- æ,
+OK   Quad3h   co | Tu mandasti | g28 p.69/1 | Communio Tu mandasti // r.—s v» a I Qui bf-be-rit aquam, quam e-go dabo e- i, di-cit d.. i••- 
+OK   Quad3f   gr | In Deo speravit | g28 p.62/1 | Responsorium Ad D6minum // Responsorium Ad D6minum, ut in Dom. infra Octavam SS. Corporis
+OK   Quad3f   tr | Domine non secundum | g28 p.62/1 | Tractus Domine
+OK   Quad4m   tr | Domine non secundum | g28 p.53/0 | Tractus Ddmine // Tractus Ddmine, non secandum, pag. 72.
+OK   Quad4w   tr | Domine non secundum | g28 p.75/0 | Tractus D6mine
+OK   Quad4w   co | Lutum fecit | g28 p.75/0 | r.: VI it- i—- Lu-tum fecit ex spu to D<5mi-nus, et li-nf-vit <5cu- 3
+DIFF Quad4h   gr | Respice Domine | g28 p.75/1 | 
+OK   Quad4f   gr | Bonum est confiteri | g28 p.76/0 | Responsorium Bonum est // Responsorium Bonum est, ut in Dom. XIII post Octavam Trini-
+OK   Quad4f   tr | Domine non secundum | g28 p.76/0 | Tractus D6mine
+OK   Quad4f   of | Populum humilem | g28 p.76/0 | Offertorium P6pulum
+OK   Quad5m   tr | Domine non secundum | g28 p.80/1 | Tractus D6mine // Tractus D6mine, non secandum, pag. 72. Offertorium Domine, con-
+OK   Quad5t   of | Sperent in te | g28 p.81/1 | Offertorium Sperent // Offertorium Sperent, ut in Dom. / post Octavam Trinitatis.
+OK   Quad5w   tr | Domine non secundum | g28 p.82/0 | Tractus D6mine // Tractus D6mine, non secandum, pag. 72.
+OK   Quad5h   gr | Tollite hostias | g28 p.84/0 | e M—» T<51- li- te h<5- sti- as, et in- tro- A // i v a—fe- t - ni—
+OK   Quad5h   of | Super flumina | g28 p.84/0 | Offertorium et Communio sicut in Dom // Offertorium et Communio sicut supra proxima Feria VI
+DIFF Quad6m   tr | Domine non secundum | g28 p.90/0 | Tractus Dfimine // Tractus Dfimine, non secandum, p ag. 72.
+OK   Quad6t   gr | Ego autem dum mihi | g28 p.91/1 | •""ii -a* IV Ego au- tem, dum mi- hi mo- le- sti es- •V ••'•i
+OK   Quad6t   of | Custodi me | g28 p.91/1 | e- • M Custodi me, D <5- mi- de ne, IN-
+OK   Quad6t   co | Adversum me | g28 p.91/1 | vi i'. • ••• * Adversum me exerce- bantur qui se-de-bant in 3=P E:» is
+NOSEC Quad6h   of | Dextera Domini | Feria V in Cena Domini
+NOSEC Pasc1    of | Angelus Domini descendit | Dominica in Albis (in Oct Paschæ)
+NOSEC Pent0m   co | Spiritus Sanctus | Feria II in Oct Pentecostes
+NOSEC Pent0f   of | Lauda anima mea | Feria Sexta IV Temp. Pentecostes
+NOSEC Pent0s   tr | Laudate... omnes gentes | Sabbato IV Temp. Pentecostes
+DIFF Pent7    of | Sicut in holocaustis | g28 p.57/0 | 
+DIFF Pent8    gr | Esto mihi | g28 p.57/0 | 
+DIFF Pent9    of | Justitiae Domini | g28 p.57/0 | 
+DIFF Pent11   of | Exaltabo te | g28 p.57/0 | 
+DIFF Pent16   gr | Timebunt gentes | g28 p.57/0 | 
+NOSEC EmbFriSept gr | Convertere | Feria Sexta IV Temporum Septembris
+NOSEC EmbFriSept of | Benedic anima mea | Feria Sexta IV Temporum Septembris
+NOSEC EmbFriSept co | Aufer a me | Feria Sexta IV Temporum Septembris
+NOSEC EmbSatSept tr | Laudate... omnes gentes | Sabbato IV Temporum Septembris
+NOSEC EmbSatSept of | Domine Deus salutis | Sabbato IV Temporum Septembris
+NOSEC EmbSatSeptS tr | Laudate... omnes gentes | Sabbato IV Temporum (forma brevior)
+DIFF Pent18   gr | Laetatus sum | g28 p.57/0 | 
+NOSEC ChristusRex gr | Dominabitur | Domini Nostri Jesu Christi Regis
+NOSEC ChristusRex al | Potestas ejus | Domini Nostri Jesu Christi Regis
+NOSEC ChristusRex of | Postula a me | Domini Nostri Jesu Christi Regis
+NOSEC ChristusRex co | Sedebit Dominus | Domini Nostri Jesu Christi Regis
+NOSEC C18s     gr | Posuisti Domine (Resp. Grad.) | Commune unius Martyris (alia Missa)
+NOSEC C25s     of | Mirabilis Deus | Commune plurimorum Martyrum (alia Missa)
+NOSEC C25s     co | Posuerunt | Commune plurimorum Martyrum (alia Missa)
+NOSEC C28s     al | Sancti tui | Commune plurimorum Martyrum Tempore Paschali
+NOSEC C28s     co | Posuerunt | Commune plurimorum Martyrum Tempore Paschali
+NOSEC C30s     of | Veritas mea | Commune Confessoris Pontificis (alia Missa)
+NOSEC C39s     al | Beatus vir qui suffert | Commune Confessoris non Pontificis
+NOSEC C48s     gr | Adjuvabit eam | Commune Virginis et Martyris (alia Missa)
+NOSEC C48s     al | Adducentur | Commune Virginis et Martyris (alia Missa)
+NOSEC C51s     co | Diffusa est | Commune Sanctarum Mulierum
+NOSEC C62s     gr | Oculi omnium | Missa votiva de SS. Sacramento
+NOSEC C62s     al | Caro mea vere | Missa votiva de SS. Sacramento
+NOSEC C62s     of | Sacerdotes Domini | Missa votiva de SS. Sacramento
+NOSEC C62s     co | Quotiescumque | Missa votiva de SS. Sacramento
+NOSEC C64s     co | Hoc corpus | Missa votiva de D.N.J.C. Summo et Aeterno Sacerdote
+NOSEC C68s     al | Justus germinabit | Missa votiva de Passione Domini
+DIFF C75s     gr | Beata gens | g28 p.75/0 | 
+DIFF C75s     al | Veni Sancte Spiritus | g28 p.75/0 | 
+DIFF C75s     of | Confirma hoc | g28 p.75/0 | 
+DIFF C75s     co | Factus est repente | g28 p.75/0 | r.: VI it- i—- Lu-tum fecit ex spu to D<5mi-nus, et li-nf-vit <5cu- 3
+NOSEC C89s     co | Veste sancta | Missa in electione Summi Pontificis
+NOSEC C93s     gr | Confiteantur tibi | Missa pro Fidei propagatione
+NOSEC C93s     al | Jubilate Deo | Missa pro Fidei propagatione
+NOSEC C93s     of | Afferte | Missa pro Fidei propagatione
+NOSEC C110s    of | In te speravi | Missa pro Sponso et Sponsa
+OK   S0120    of | Laetamini in Domino (Off.) | g28 p.211/1 | Offertorium Veritas // • • M •v Læta- mi- ni in D<5- mino, et ex- -fe
+OK   S0120    co | Multitudo languentium | g28 p.211/1 | Communio Fidelis servus // tJS1 V •—I Multi-tu- do languenti- um et qui ve-xa-ban- <: -a— A f- ==
+DIFF S0207    gr | Domine praevenisti | g28 p.219/0 | g Flo- res appa-ru- e runt in ter-ra no- stra, - •:
+DIFF S0207    co | Fidelis servus... alleluia | g28 p.219/0 | Vi-si-tasti ter-ram, et inebri- asti e- am, multi- plicasti lo-cuple-t
+OK   S0214    gr | Justus ut palma | g28 p.225/1 | Responsorium Nimis // Responsorium Juravit
+OK   S0215    gr | Justus ut palma | g28 p.226/0 | Responsorium Juravit // Responsorium Justum ut palma
+DIFF S0319    al | Amavit eum | g28 p.227/0 | 
+DIFF S0515    gr | Justus ut palma | g28 p.248/0 | Responsorium Unam petii // Responsorium Posuisti
+DIFF S0531    of | Ave Regina caelorum | g28 p.253/0 | Offertorium Viritas mea // Offertorium In omnem
+OK   S0624    of | Justus ut palma | g28 p.257/1 | Offertorium Justus ut palma // Offertorium Justus ut palma, pag. 34*.
+NOSEC S0629    co | Tu est Petrus | 29 Iun. — SS. PETRI ET PAULI, APOSTOLORUM
+OK   S0710    of | Anima nostra | g28 p.269/0 | Offertorium Anima // Offertorium Veritas mea
+NOSEC S0711    co | Posuerunt | 11 Iul. — Ss. Ignatii Delgado et Soc., O.P., Martyrum in Tunquino
+DIFF S0802    gr | Memor fui | g28 p.274/0 | 
+OK   S0816    co | Fidelis servus... alleluia | g28 p.284/0 | Communio Fidelis servus // Communio Fidilis servus
+NOSEC S0910    co | Posuerunt | 10 Sept. — S. Alphonsi Navarrete et Soc., O.P., Martyrum in Iaponia
+OK   S0919    of | Mirabilis Deus | g28 p.295/0 | Offertorium Mirabilis // Offertorium Gloria et honore
+OK   S1005    co | Beatus servus | g28 p.304/0 | Communio Gaudete // Communio Beatus
+DIFF S1009    gr | Gloriosus | g28 p.304/1 | Responsorium Inveni // • • r .v P6- pu-lus, quem non co-gn<5- vi,
+DIFF S1106    co | Posuerunt | g28 p.313/0 | Communio Fidelis servus // Communio Beatus servus
+DIFF S1121    co | Ave Regina caelorum | g28 p.316/0 | Communio Beatus servus // : A 5 f. Confundantur su-per- bi, qui- a injuste
+DIFF S1125    co | Diffusa est | g28 p.317/0 | IV Mr r. 3=S Fe-ci ju-di- ci- um, et ju-stf-ti- am, Domi-
+NOSEC S0110b   gr | Specie tua | 10 Ian. — B. Annæ de Angelis Monteagudo O.P. V. (1985*)
+NOSEC S0110b   al | Adducentur | 10 Ian. — B. Annæ de Angelis Monteagudo O.P. V. (1985*)
+NOSEC S0110b   of | Filiae regum | 10 Ian. — B. Annæ de Angelis Monteagudo O.P. V. (1985*)
+NOSEC S0401b   of | Inveni David | 1 Apr. — B. Iosephi Girotti O.P. M. (2014)
+NOSEC S0401b   co | Posuisti Domine (Com.) | 1 Apr. — B. Iosephi Girotti O.P. M. (2014)
+NOSEC S0508b   of | Mirabilis Deus | 8 Maii — B. Petri Claverie et Sociorum, Mm. (2018)
+NOSEC S0508b   co | Posuerunt | 8 Maii — B. Petri Claverie et Sociorum, Mm. (2018)
+DIFF S0704b   gr | Specie tua | g28 p.265/0 | Responsorium Constitues // 5— :aa -a—a- Te-stis mi- hi est De- us quomodo cu- pi- am
+DIFF S0704b   al | Adducentur | g28 p.265/0 | 
+DIFF S0704b   of | Filiae regum | g28 p.265/0 | Offertorium In omnem // N sVK •Pr " p." In conspe-ctu Ange- Æ.' fe
+NOSEC S0708b   of | Inveni David | 8 Iul. — B. Adriani Fortescue O.P. M. (1983)
+NOSEC S0708b   co | Posuisti Domine (Com.) | 8 Iul. — B. Adriani Fortescue O.P. M. (1983)
+DIFF S0718b   gr | Justus ut palma | g28 p.270/1 | Responsorium Os justi // Responsorium Constitues
+DIFF S0728b   gr | Justus ut palma | g28 p.4/1 | E T S" •—Ns^——hi S^-i 1 1
+OK   S0813b   gr | Justorum animae | g28 p.282/1 | Responsorium Justarum // Responsorium Benedicta
+DIFF S0813b   al | Mirabilis Dominus | g28 p.282/1 | 
+OK   S0813b   of | Anima nostra | g28 p.282/1 | Offertorium Anima nostra // Offertorium Anima nostra, p ag. 24*. Alleluia dicitur semel ante et po
+DIFF S0905b   gr | Justus ut palma | g28 p.289/0 | Responsorium Propter veritatem // Responsorium Propter veritatem, pag. 53*.
+OK   S0905b   co | Beatus servus | g28 p.289/0 | -m—m- li Be-a-ta visæ- ra Ma-rf-æ Vir- gi-nis, quæ por- fe:
+DIFF S0906b   gr | Justus ut palma | g28 p.289/1 | Responsorium Propter veritatem // Responsorium Propter veritatem, pag. 53*.
+DIFF S1006b   gr | Justus ut palma | g28 p.304/0 | Responsorium Gloriosus // Responsorium Inveni
+DIFF S1127b   co | Ave Regina caelorum | g28 p.205/0 | * a• HFaa"i vili «. i . %1 iI" aIa - // mWAAN • • • s• II' 2 3• • • • J AB • • • •
+NOSEC S1209b   gr | Specie tua | 9 Dec. — S. Narcissæ a Iesu Martillo Moran O.P. V. (1992)
+NOSEC S1209b   al | Adducentur | 9 Dec. — S. Narcissæ a Iesu Martillo Moran O.P. V. (1992)
+NOSEC S1209b   of | Filiae regum | 9 Dec. — S. Narcissæ a Iesu Martillo Moran O.P. V. (1992)
+NOSEC G369     gr | Nimis honorati sunt | Missa «Dominus secus mare» (c. 29 Nov.)
+NOSEC G494     al | Justus germinabit | 23 Iun. — Vigilia S. Ioannis Baptistae
+NOSEC G499     gr | Ecce quam bonum. V. Sicut | Missa «Multae tribulationes» (c. 26 Iun.)
+NOSEC G502_3   gr | In omnem terram | 28 Iun. — Vigilia Ss. Petri et Pauli
+NOSEC G502_3   of | Mihi autem nimis | 28 Iun. — Vigilia Ss. Petri et Pauli
+NOSEC G505     gr | Qui operatus est | Missa «Scio cui credidi»
+NOSEC G505     al | Magnus sanctus Paulus | Missa «Scio cui credidi»
+NOSEC G505     of | Mihi autem nimis | Missa «Scio cui credidi»
+NOSEC G505     co | Amen dico vobis quidquid | Missa «Scio cui credidi»
+NOSEC G587     gr | Gloriosus | Missa «Gaudeamus... beati Francisci» (c. 9 Oct.)
+DIFF S0103b   co | Diffusa est | g28 p.209/1 | Communio Beatus servus // Communio Fidelis servus
+NOSEC S0228b   co | Diffusa est | 28 Feb. — B. Villanæ de Bottis, O.P. Matronæ
+DIFF S0703_2  of | Veritas mea | g28 p.265/0 | Offertorium In omnem // N sVK •Pr " p." In conspe-ctu Ange- Æ.' fe
+DIFF S0808b   co | Diffusa est | g28 p.280/0 | Communio Qui vult venire // Communio Qui vult venire, pag. 17*.
+{"ok": 47, "ref": 0, "diff": 40, "nosec": 73}

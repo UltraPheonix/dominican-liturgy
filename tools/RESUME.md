@@ -127,3 +127,9 @@ empty sections, Canon present).
 - Saturday commemoration of Our Lady: engine pushes {kind:'bvm'} (Brev. § XXI.3 exceptions) after feasts, before Memoriae; app maps it to bvmAdv / bvmNat (25 Dec-1 Feb) / bvm (new ADDIV set, Concede nos, Missal p. 58*). 3rd prayer: ad lib per annum, d15 Septuagesima-Cena, cruce Paschaltide (Missal p. 320 nn. 1, 3). Votive BVM (C79s, C82s): d7 for BVM/A cunctis without Memoria, else ad lib (n. 2). Checked against Ordo 1944: 19/26 Feb, 11 Mar, 22 Apr, 15/29 Jul, 9/16/23 Sep, 21 Oct, 16/23 Dec.
 - Fixed: September Ember days are after the Exaltation of the Cross (Missal Quatuor Tempora), not after the 3rd Sunday of September.
 - Drive: Cantus Passionis (Chronista/Christus/Synagoga) is the Roman Vatican edition - not usable. Officium Hebd. Sanctae O.P. 1890 (Larroca): text only, /home/claude/dl/hs247/x, text in /tmp/hs1890.txt.
+
+## Graduale O.P. 1928 (Paredes) -- Drive 351_Graduale...zip, /home/claude/dl/grad351/x (djvu, text layer)
+- tools/g28: purcordis_*.gabc (Purest Heart, pp. 369-371), apply.py (re-run after any rebuild of data/masses.js), blobs.py
+  (note heads measured against local staff lines: python3 blobs.py PAGE.pnm X0 X1 L1,L2,L3,L4), staff.py (grid crops),
+  verify.py (+ /tmp/g28pages.json built from the text layer) -> verify.txt; confirmed.json = 40 'inferred' chants confirmed.
+- 120 chants still 'inferred': sanctoral/common/votive and Ember days need page-by-page reading (the day sections hold several Masses).
