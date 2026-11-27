@@ -62,6 +62,9 @@ for k, c in K.items():
     elif c.get('set') and k.startswith('S') and k[1:5].isdigit(): m['conf'] = 'g50'
     if c.get('season'):
         m['season'] = {sk: {p: [{'id': i} for i in ids] for p, ids in sv.items()} for sk, sv in c['season'].items()}
+    for sk, sv in c.get('season_set', {}).items():
+        m.setdefault('season', {}).setdefault(sk, {})
+        for p, ids in sv.items(): m['season'][sk][p] = [{'id': i, 'm39': 'G50'} for i in ids]
     if c.get('readings'): m['readings'] = c['readings']
     if c.get('title'): m['title'] = c['title']
     if c.get('en'): m['en'] = c['en']

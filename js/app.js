@@ -424,6 +424,9 @@
     }
     if (s !== 'lent' && !temporal) parts.tr = parts.al.length ? [] : parts.tr;
     if (s === 'lent') parts.al = [];   // from Septuagesima no Alleluia at all; the Tract (if any) takes its place (XIII, 7)
+    // "Quandocumque autem Tractus dicitur, numquam dicitur Sequentia (nisi in Compassione B. Virginis Mariae)" (XIII, 8):
+    // e.g. the Purification infra Septuagesimam (G50 p. 416: omissis Alleluia, V. et Sequentia)
+    if (s === 'lent' && !temporal && parts.tr.length && !/Compassio|Septem Dolor/i.test(m.title || '')) parts.se = [];
     if (s !== 'lent' && parts.al.length && parts.tr.length && !isEmber(key)) parts.tr = [];   // the Tract is only for Septuagesima-Lent (SCJ)
     if (s !== 'pasch' && !temporal && parts.al.length > 1 && !/Tempore Paschali/.test(m.title || '')) parts.al = parts.al.slice(0, 1);   // the second Alleluia is the Paschal one
     var d = state.date;

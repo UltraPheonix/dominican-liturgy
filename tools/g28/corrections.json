@@ -26,10 +26,22 @@
 }
 },
 "S0215": {
-"src": "G50 / G28 p. 225: Missa Os justi, pag. 42*",
+"src": "G50 p. 433 / G28 p. 226 (2 Mar.): Missa Justus, de Communi unius Confessoris non Pontificis, pag. 39* (the Os justi line was B. Jordan's)",
 "set": {
 "gr": [
 7142
+],
+"in": [
+4283
+],
+"al": [
+6582
+],
+"of": [
+5857
+],
+"co": [
+4856
 ]
 }
 },
@@ -253,6 +265,12 @@
 "gr": "94*",
 "al": "95*",
 "of": "97*"
+},
+"src": "G50 98*: COMMUNIO Laudate Dominum omnes gentes, printed in full",
+"set": {
+"co": [
+4900
+]
 }
 },
 "Quad2": {
@@ -592,6 +610,14 @@
 "S0228b": {
 "ok": {
 "co": "55* (G50: Missa Gaudeamus, de Communi unius S. Mulieris, pag. 59*)"
+},
+"src": "G50 59*: Missa Gaudeamus ... praeter seq.: Tractus Veni, sponsa Christi",
+"season_set": {
+"lent": {
+"tr": [
+6032
+]
+}
 }
 },
 "S0808b": {
@@ -691,5 +717,472 @@
 "m39": true
 }
 ]
+},
+"S0127": {
+"src": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine, quinque talenta, 39*; M39 Commune Doctorum)",
+"set": {
+"co": [
+5425
+]
+}
+},
+"S0129": {
+"src": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine, quinque talenta, 39*; M39 Commune Doctorum)",
+"set": {
+"co": [
+5425
+]
+}
+},
+"S0223": {
+"src": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine, quinque talenta, 39*; M39 Commune Doctorum)",
+"set": {
+"co": [
+5425
+]
+}
+},
+"S0307": {
+"src": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine, quinque talenta, 39*; M39 Commune Doctorum)",
+"set": {
+"co": [
+5425
+]
+}
+},
+"S0527": {
+"src": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine, quinque talenta, 39*; M39 Commune Doctorum)",
+"set": {
+"co": [
+5425
+]
+}
+},
+"S1124": {
+"src": "G50: Missa In medio, de Communi unius Doctoris, pag. 35* (Communio Domine, quinque talenta, 39*; M39 Commune Doctorum)",
+"set": {
+"co": [
+5425
+]
+}
+},
+"S0116b": {
+"src": "G50 p. 394: Missa Justus, de Communi unius Confessoris non Pontificis, pag. 39* (Alleluia Laetabitur, 9*)",
+"set": {
+"al": [
+6582
+]
+}
+},
+"S0823b": {
+"src": "G50 p. 560: Missa Justus, pag. 39* (Alleluia Laetabitur, 9*)",
+"set": {
+"al": [
+6582
+]
+}
+},
+"S1203": {
+"src": "G50 p. 373: Alleluia V. Beatus vir, qui suffert tentationem (printed)",
+"set": {
+"al": [
+6890
+]
+}
+},
+"S0121": {
+"src": "G50 p. 402: Missa Me exspectaverunt, de Communi unius Virg. et Mart., pag. 48* (Responsorium Specie tua 46*; infra Septuag. Tractus Qui seminant 23*)",
+"set": {
+"gr": [
+5634
+]
+},
+"season_set": {
+"lent": {
+"tr": [
+4978
+]
+}
+}
+},
+"S0202": {
+"src": "G50 p. 416: Alleluia V. Adorabo, pag. 354. Sequentia Laetabundus, pag. 33 (infra Septuagesimam omissis Alleluia et Sequentia)",
+"set": {
+"se": [
+4214
+]
+}
+},
+"S0212": {
+"src": "G50 p. 426: Infra Septuagesimam Tractus Qui seminant, pag. 23*",
+"season_set": {
+"lent": {
+"tr": [
+4978
+]
+}
+}
+},
+"S0222": {
+"src": "G50 p. 432: Missa ut in festo Cathedrae Romanae ejusdem, pag. 395; M39: Officium Statuit, et reliqua ut in Cathedra Romana",
+"set": {
+"in": [
+5417
+],
+"gr": [
+5552
+],
+"al": [
+6296
+],
+"of": [
+7170
+],
+"co": [
+5396
+]
+},
+"season_set": {
+"lent": {
+"tr": [
+7023
+]
+}
+}
+},
+"S0409b": {
+"src": "G50 18*-20*: Missa Laetabitur, de Communi unius Martyris non Pontificis: ut pag. 7*, praeter Offertorium Gloria, pag. 17*, et Communionem Qui vult, pag. 17*",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+}
+},
+"S0410b": {
+"src": "G50 18*-20*: Missa Laetabitur, de Communi unius Martyris non Pontificis: ut pag. 7*, praeter Offertorium Gloria, pag. 17*, et Communionem Qui vult, pag. 17*",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+}
+},
+"S0909": {
+"src": "G50 18*-20*: Missa Laetabitur, de Communi unius Martyris non Pontificis: ut pag. 7*, praeter Offertorium Gloria, pag. 17*, et Communionem Qui vult, pag. 17*",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+}
+},
+"S1107b": {
+"src": "G50 18*-20*: Missa Laetabitur, de Communi unius Martyris non Pontificis: ut pag. 7*, praeter Offertorium Gloria, pag. 17*, et Communionem Qui vult, pag. 17*",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+}
+},
+"S0423": {
+"src": "G50 p. 452: Missa Protexisti, de Communi unius Martyris non Pontificis, pag. 19* (Offertorium Confitebuntur, Communio Laetabitur 20*; Tempore Resurrectionis II. Alleluia Angelus, pag. 214)",
+"set": {
+"of": [
+5269
+],
+"co": [
+6576
+]
+},
+"season_set": {
+"pasch": {
+"al": [
+5678,
+6824
+],
+"of": [
+5269
+],
+"co": [
+6576
+]
+}
+}
+},
+"S0516": {
+"src": "G50 p. 476: Missa Protexisti, pag. 19*. Post Trinitatem Missa Laetabitur, pag. 18*",
+"set": {
+"of": [
+5797
+],
+"co": [
+6924
+]
+},
+"season_set": {
+"pasch": {
+"al": [
+5678,
+6824
+],
+"of": [
+5269
+],
+"co": [
+6576
+]
+}
+}
+},
+"S0529b": {
+"src": "G50: Missa Sancti tui, de Communi plurimorum Martyrum, pag. 28* (Communio Justorum animae, 30*)",
+"season_set": {
+"pasch": {
+"co": [
+6276
+]
+}
+}
+},
+"S0602b": {
+"src": "G50: Missa Sancti tui, de Communi plurimorum Martyrum, pag. 28* (Communio Justorum animae, 30*)",
+"season_set": {
+"pasch": {
+"co": [
+6276
+]
+}
+}
+},
+"S0603": {
+"src": "G50: Missa Sancti tui, de Communi plurimorum Martyrum, pag. 28* (Communio Justorum animae, 30*)",
+"season_set": {
+"pasch": {
+"co": [
+6276
+]
+}
+}
+},
+"S0428b": {
+"src": "G50 p. 456 / 42*: Missa Os justi; Tempore Resurrectionis II. Alleluia Angelus, pag. 214; Tempore Ascensionis Ascendit Deus, pag. 240",
+"season_set": {
+"pasch": {
+"al": [
+6895,
+6824
+]
+},
+"asc": {
+"al": [
+5352
+]
+}
+}
+},
+"S0610b": {
+"src": "G50 34*: Tempore Resurrectionis II. Alleluia Angelus, pag. 214. Tempore Ascensionis II. Ascendens, pag. 240",
+"season_set": {
+"pasch": {
+"al": [
+6785,
+6824
+]
+},
+"asc": {
+"al": [
+5526
+]
+}
+}
+},
+"S0613": {
+"src": "G50 p. 490: Missa In medio, de Communi unius Doctoris (I. Alleluia Posui; Tempore Ascens. Ascendens Christus)",
+"season_set": {
+"pasch": {
+"al": [
+6959,
+6824
+]
+},
+"asc": {
+"al": [
+5526
+]
+}
+}
+},
+"S0502": {
+"src": "G50 p. 466: Missa In medio, pag. 35*, praeter Offertorium Meditabor",
+"set": {
+"gr": [
+4733
+]
+}
+},
+"S0514b": {
+"src": "G50 p. 476: Missa Os justi, pag. 42*",
+"set": {
+"gr": [
+7142
+]
+}
+},
+"S0702": {
+"src": "G50 p. 509: Missa Gaudeamus, ut in Nativitate B. M. V., cum nomine Visitationis, pag. 566",
+"set": {
+"in": [
+4289
+]
+}
+},
+"S0703": {
+"src": "G50 p. 502 (28 June): S. Irenaei, his own Mass printed in full: Lex veritatis, Propter fratres, In multitudine, Doctrinam, Videte quoniam",
+"set": {
+"in": [
+6167
+],
+"gr": [
+5864
+],
+"al": [
+7206
+],
+"of": [
+5922
+],
+"co": [
+6938
+]
+}
+},
+"S0715": {
+"src": "G50 p. 520: Missa Os justi, de Communi unius Confessoris non Pontificis, pag. 42*",
+"set": {
+"gr": [
+7142
+]
+}
+},
+"S0720": {
+"src": "G50 p. 523: Responsorium Deriventur fontes tui, printed in full",
+"set": {
+"gr": [
+5879
+]
+}
+},
+"S1010b": {
+"src": "G50 p. 595: Missa Os justi, pag. 42*",
+"set": {
+"gr": [
+7142
+],
+"al": [
+6895
+]
+}
+},
+"S1111": {
+"src": "G50 p. 614: Officium Statuit, pag. 32*. Responsorium Inveni David, pag. 12*",
+"set": {
+"gr": [
+6727
+]
+}
+},
+"S1117": {
+"src": "G50 p. 617: Officium Statuit. Responsorium Inveni David, 12*. Alleluia Posuisti, 13*. Offertorium Veritas mea, 31*. Communio Beatus servus",
+"set": {
+"gr": [
+6727
+],
+"al": [
+4966
+],
+"of": [
+7170
+]
+}
+},
+"S1126b": {
+"src": "G50 p. 620: Missa Statuit, de Communi unius Conf. et Pont., pag. 32* (Communio Beatus servus)",
+"set": {
+"co": [
+5854
+]
+}
+},
+"S1202": {
+"src": "G50 p. 371: Officium Me exspectaverunt, pag. 48*. Reliqua ex Missa Loquebar, pag. 45*",
+"set": {
+"in": [
+5273
+]
+}
+},
+"S0111b": {
+"src": "G50 p. 432: Missa Os justi, de Communi unius Conf. non Pont., pag. 42*",
+"set": {
+"in": [
+5885
+],
+"gr": [
+7142
+],
+"al": [
+6895
+],
+"of": [
+6021
+],
+"co": [
+4856
+]
+},
+"season_set": {
+"lent": {
+"tr": [
+7125
+]
+}
+}
+},
+"S0303b": {
+"src": "G50 p. 434: Missa Os justi, de Communi unius Conf. non Pont., pag. 42*; M39 Officium Os justi",
+"set": {
+"in": [
+5885
+],
+"gr": [
+7142
+],
+"al": [
+6895
+],
+"of": [
+6021
+],
+"co": [
+4856
+]
+},
+"season_set": {
+"lent": {
+"tr": [
+7125
+]
+}
+}
 }
 }
