@@ -75,19 +75,27 @@ tit. IV ferias and vigils: in Lent ferias, Ember days, common vigils with a feas
 Totum Duplex I/II cl. and the privileged octaves of Epiphany and Corpus Christi, otherwise the feria); private Masses ad libitum.
 To build: the Missal ranking engine (Joseph: separate engines for Missal and Breviary).
 
-## Missal ranking engine: reference = Ordo O.P. 1944 (Prov. Poloniae), archive.org dlibra.kul.pl.34313_V-6842_Ordo-Divini-Officii-
-(pdf + djvu OCR in /home/claude/dl/ordo44). tools/ordo44/parse.py -> ordo1944.json (one entry per day; 285 of 366 found, the rest to
-read from the pdf); compare.py vs tools/check/day_audit.py run for 1944 -> compare_1944.txt: 117 days differ. Causes:
- A. octaves missing altogether (Epiphany, Ascension, Corpus Christi, SS. Cordis, St John Baptist, SS. Peter and Paul, St Dominic,
-    Assumption, All Saints, Dedication, Immaculate Conception, Christmas): 'Missa infra Octavas ... sicut in die' (Rubr. II.1);
- B. Blessed of the Order are Semiduplex/Duplex feasts, not ad libitum (Andrew of Peschiera, Marcolinus, Osanna, Innocent V,
-    Benedict XI, James of Voragine, Antony della Chiesa, Joan of Aza, Aimo, Emily Bicchieri, Bertrand, Spadafora ...);
- C. transfer of impeded feasts (Ordo prints '(23 Maji)', '(17 Jul.)' etc.) and the leap-year shift of February (24 Feb.);
- D. Saturday of Our Lady only when no Simplex or higher... (Ordo: Officium B.M.V. in Sabbato over S. Gorgonius, Simplex, 9 Sept.;
-    a Blessed (Semid.) wins over it);
- E. II class feasts over minor Sundays (Visitation 2 Jul. 1944, Gorcum martyrs 9 Jul.), Lent: Duplex feasts in Lent (Ordo gives
-    the feast as the Office; Missal IV.2: conventual in choir = feria, private Masses ad libitum);
- F. Polish provincial feasts (Stanislaus, Andrew Bobola, Hedwig, John Cantius, Cunegundis, Chocim): ignore.
+## Missal ranking engine (BUILT 2026-11-27): js/mrank.js, window.OPMissalRank(KAL39, masses).day(date)
+Joseph: separate engines for Missal and Breviary (this one is the Missal's; tools/ENGINE.md shared plan superseded for the Mass).
+Decisions (Joseph 27 Nov): 1939 calendar + supplements to 1954, Polish provincial feasts ignored; on Lent ferias / Ember days /
+vigils / Rogations with a feast the page shows the choir conventual Mass first (feria; the feast for I and II class).
+Rules: precedence values in mrank.js read from the Ordo O.P. 1944 (cited per rule); M39 Rubr. gen. I-VIII; Christmas Sunday (p. 28);
+Holy Family (p. 39); vigils on Sunday anticipated (27 Jun., 14 Aug.); leap year; transfers (I/II class, displacing lesser II class);
+Requiem conventual on the week's first free feria (VI.2); the four Anniversaries; BVM Saturday; commemorations with VIII.2 limits.
+app.js: massesOf/temporaleKey/memoriasOf now from the engine; header and pills print the 1939 rank; "Also today" line under the
+date (other Masses, and Masses the Missal sets that the site lacks). rubricsOf (Gloria/Credo) still uses feastClass/temporalClass.
+Test: node tools/ordo44/engine_dump.js 1944 > /tmp/e44.json; tools/ordo44/compare_engine.py (office: 33/324 differ, all explained:
+Polish feasts, post-1944 supplements, parse) and compare_mass.py (conventual Mass named in the Ordo: all agree except resumed Sundays).
+Ordo re-read from the PDF text layer: tools/ordo44/parse2.py -> ordo1944b.json (324 days; 42 still to read from page images).
+OPEN:
+ - Resumed Sunday Mass (Rubr. III.3: on the first free day "in qua legitur Homilia Dominicae") depends on the Breviary's lessons;
+   the page offers it, does not choose it (Ordo 1944: 24 Jan, 2 May, 15 Jul, 9 Aug, 25 Oct, 30 Oct).
+ - Asked Joseph for: Breviarium S.O.P. Rubricae generales 1923-54 (occurrence table), more Ordos 1939-54 (non-Polish), a Graduale scan.
+ - Masses missing on the site (M39 has them): vigils of Matthias, James, Laurence, Bartholomew, Matthew, Simon & Jude, All Saints,
+   Andrew, Imm. Conception, Thomas; Purissimi Cordis B.M.V. (pp. 316-317); In Octava Epiphaniae (own Mass, line 12265);
+   Feria VI post Dom. Passionis (site Quad5f is the Seven Sorrows Mass). S0910_2 has no Introit/Gradual.
+ - Gloria/Credo/Preface by the 1939 rank (rubricsOf still 1960-based); Saturday commemoration of Our Lady (Missal p. 40).
+
 1. Processions (#42) continued, in this order: Palm Sunday (20, compare with Holy Week page), Easter (34, 42), Corpus Christi (51, 55),
    Assumption (77), St Dominic (73, 97), processions of the Order's saints (97-110), Te Deum (120), Asperges (2), then the rest.
    Chant: GregoBase source 20 has only 11 chants of this book; transcribe to GABC only from the page, never by analogy.

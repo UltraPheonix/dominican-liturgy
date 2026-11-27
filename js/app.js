@@ -460,6 +460,8 @@
     var dd = d || state.date, d0IsSunday = function () { return !dd || dd.getDay() === 0; };
     var m = D.masses[key], t = clean(m.title || '').replace(/^\d+ [A-Za-z.]+ — /, '') + ' ' + clean(m.en || '').replace(/^[A-Za-z]+ \d+ — /, '');
     if (/^(Adv3|Quad4)$/.test(key)) return 'rose';
+    // the octave day of the Holy Innocents is in red (Ordo O.P. 1944, 4 Jan.: Dies oct. SS. Innocentium, Rb.)
+    if (key === 'S1228' && dd && !(dd.getMonth() === 11 && dd.getDate() === 28)) return 'red';
     if (m.color) return m.color;
     if (/Vigilia|Vigil of/.test(t) && !/Pasch|Pentecost|Nativ/.test(t)) return 'violet';
     if (/^(Adv|7a|6a|5a|Quad|EmbWed|EmbFri|EmbSat|Litaniis|Dec24)/.test(key) && !/Quad6h|Quad5f/.test(key)) return key === 'Quad6f' ? 'black' : 'violet';
@@ -600,16 +602,40 @@
     box.innerHTML = '';
     var dot = el('span', {class: 'dot' + (col === 'white' ? ' white' : ''), 'aria-hidden': 'true'});
     dot.style.background = COLORS[col];
-    var cls = m.rank || (isTemporal(state.key) ? ['', 'I', 'II', 'III', 'IV'][temporalClass(state.key, state.date)] : '');
-    var bits = [COLOR_LA[col]];
-    if (cls) bits.push(cls + ' class');
+    var bits = [COLOR_LA[col]], rr = state.date ? massesOf(state.date) : null;
+    if (rr && rr.alts.some(function (x) { return x.key === state.key; })) {
+      var me = rr.alts.filter(function (x) { return x.key === state.key; })[0];
+      var lab = state.key === rr.day.office.key || (rr.day.office.kind === 'temporal' && state.key === rr.day.temporal.key) || !me.label ? dayRankLabel(rr.day) : me.label;
+      if (lab) bits.push(lab);
+    }
     if (!isTemporal(state.key)) bits.push({annum: 'Per annum', lent: 'Septuagesima–Lent', pasch: 'Paschaltide'}[currentSeason()]);
     box.appendChild(dot);
     box.appendChild(document.createTextNode(bits.join(' · ')));
+    drawDayAlts(rr);
+  }
+  // the other Masses of the day, under the date: on the days of two conventual Masses, the Anniversaries, the Mass of an
+  // impeded Sunday, and the Masses the Missal sets that this site does not have yet
+  function drawDayAlts(rr) {
+    var box = $('#dayAlts');
+    if (!box) return;
+    box.innerHTML = '';
+    if (!rr) return;
+    var others = rr.alts.filter(function (m) { return m.key !== state.key; });
+    var bits = [];
+    others.forEach(function (m) {
+      bits.push(el('button', {type: 'button', class: 'da-link', onclick: function () { showMass(m.key); markChips(m.key); }},
+        [(m.label ? m.label.replace(/^Conventual Mass: /, '') + ': ' : ''), el('span', {class: 'da-t', text: clean(D.masses[m.key].title).replace(/^\d+ [A-Za-z.]+ — /, '')})]));
+    });
+    rr.missing.forEach(function (m) {
+      bits.push(el('span', {class: 'da-miss', text: (m.label ? m.label + ': ' : '') + (m.title || m.key || '') + ' (in the Missal, not yet on this site)'}));
+    });
+    if (!bits.length) return;
+    box.appendChild(el('span', {class: 'da-h', text: 'Also today'}));
+    bits.forEach(function (x) { box.appendChild(x); });
   }
 
   // ---------------------------------------------------------------- the page
-  function occursOn(key, d) { var r = massesOf(d); return r.temp.concat(r.feasts, r.beati).indexOf(key) >= 0; }
+  function occursOn(key, d) { var r = massesOf(d); return r.temp.indexOf(key) >= 0 || r.alts.some(function (m) { return m.key === key; }); }
   function nextDateOf(key) {
     var d0 = new Date(); d0.setHours(12, 0, 0, 0);
     for (var i = 0; i < 400; i++) { var d = addDays(d0, i); if (occursOn(key, d)) return d; }
@@ -1380,16 +1406,25 @@
   }
   // the 2nd and 3rd prayers the Missal prescribes for the day (Rubr. gen. X.1; the Missal prints them in the Masses of the
   // Time from the First Sunday of each season): ids of ADDIV sets or 'm:KEY' commemorations; 'lib' = at the priest's choice
+  // the commemorations of the day (js/mrank.js), as 'm:KEY' where the site has their prayers; none in the Mass of the
+  // feria or vigil on the days of two conventual Masses ("altera de Feria aut Vigilia, sine Memoria Officii diei",
+  // Rubr. IV.2), and only those the Rubrics allow at the conventual and sung Mass (VIII.2)
   function memoriasOf(d) {
-    if (!d || !window.KAL39) return [];
-    var md = ('0' + (d.getMonth() + 1)).slice(-2) + ('0' + d.getDate()).slice(-2);
-    return (KAL39[md] || []).filter(function (e) { return e[2] && e[2] !== state.key && /Memoria|Simplex/.test(e[1]) && window.ORATIONS && ORATIONS[e[2]]; })
-      .map(function (e) { return 'm:' + e[2]; });
+    if (!d || !window.OPMissalRank) return [];
+    var r = mr().day(d);
+    if (r.twoMasses && state.key !== r.office.key) return [];
+    if (state.key !== r.office.key && r.office.kind !== 'temporal' && !(r.office.kind === 'octave' && D.masses[state.key] && state.key === r.office.key)) {
+      if (!r.masses.some(function (m) { return m.key === state.key; })) return [];
+    }
+    return r.commems.filter(function (c) {
+      return !c.privateOnly && c.key && c.key !== state.key && window.ORATIONS && ORATIONS[c.key] && D.masses[c.key];
+    }).map(function (c) { return 'm:' + c.key; });
   }
   function prescribed(m) {
     if (!moreAllowed(m)) return [];
     var d = state.date, dr = dayRank(state.key, d), sp = seasonPrayers(d), mem = memoriasOf(d), md = d ? (d.getMonth() + 1) * 100 + d.getDate() : 0;
-    if (/^(Pasc0|Pent0|Dec25|Jan1$)/.test(state.key) || /I classis/.test(dr.rank) || /I classis/.test(KALRANK && KALRANK[state.key] || '') || (isTemporal(state.key) && temporalClass(state.key, d) === 1)) return [];
+    if (/^(Pasc0|Pent0|Dec25|Jan1$)/.test(state.key)) return [];
+    if (/I classis/.test(dr.rank) || /I classis/.test(KALRANK && KALRANK[state.key] || '') || (isTemporal(state.key) && temporalClass(state.key, d) === 1)) return mem.slice(0, 2);
     if (state.key === 'Jan5a') return ['bvmNat', 'd11'];                       // the Vigil of the Epiphany, as printed
     if (sp && sp.o2 === 'bvmNat') return mem.concat(md === 104 ? ['bvmNat', 'd6'] : ['bvmNat']).slice(0, 3);   // daily, after the other Memoriae (X.1 b)
     if (dr.dup) return mem.slice(0, 2);                                        // Doubles: only the Memoriae
@@ -1813,112 +1848,35 @@
   function diffDays(a, b) { return Math.round((Date.UTC(a.getFullYear(), a.getMonth(), a.getDate()) - Date.UTC(b.getFullYear(), b.getMonth(), b.getDate())) / DAY); }
   var WD = ['', 'm', 't', 'w', 'h', 'f', 's'];
 
+  // the Missal ranking engine (js/mrank.js): the Mass of a date by the Dominican rite before 1955
+  var MR = null;
+  function mr() { return MR || (MR = window.OPMissalRank(window.KAL39 || {}, D.masses)); }
   // the Temporale key for a date (the Mass of the day, or of the preceding Sunday on a free feria)
-  function temporaleKey(d) {
-    var y = d.getFullYear(), dow = d.getDay();
-    var E = easter(y), fromE = diffDays(d, E);
-    var nat = new Date(y, 11, 25), adv1 = addDays(nat, -((nat.getDay() || 7) + 21));
-    var candidates = [];
-    if (d >= adv1 && d < nat) {
-      var w = Math.floor(diffDays(d, adv1) / 7) + 1;
-      if (w === 3 && dow === 3) candidates.push('Adv3w');
-      if (w === 3 && dow === 5) candidates.push('Adv3f');
-      if (w === 3 && dow === 6) candidates.push('Adv3s');
-      if (d.getMonth() === 11 && d.getDate() === 24) candidates.push('Dec24');
-      candidates.push('Adv' + Math.min(w, 4));
-      return candidates;
-    }
-    var md = (d.getMonth() + 1) * 100 + d.getDate();
-    if (md === 1225) return ['Dec25_3', 'Dec25_1', 'Dec25_2'];
-    if (md > 1225) return dow === 0 ? ['Nat1'] : ['Dec25_3'];
-    if (md === 101) return ['Jan1'];
-    if (md >= 102 && md <= 105) {
-      var sunIn = [2, 3, 4, 5].some(function (dd) { return new Date(y, 0, dd).getDay() === 0; });
-      if (dow === 0 || (md === 102 && !sunIn)) return ['Nat2'];
-      return ['Jan1', 'Nat2'];
-    }
-    if (md === 106) return ['Epi'];
-    var sept = addDays(E, -63);
-    if (md > 106 && d < sept) {
-      var epi = new Date(y, 0, 6), epi1 = addDays(epi, 7 - epi.getDay());
-      if (d < epi1) return ['Epi'];
-      return ['Epi' + Math.min(Math.floor(diffDays(d, epi1) / 7) + 1, 6)];
-    }
-    if (fromE >= -63 && fromE < -46) return [['7a', '6a', '5a'][Math.floor((fromE + 63) / 7)]];
-    if (fromE >= -46 && fromE < -42) return ['5a' + WD[dow]];
-    if (fromE >= -42 && fromE < 0) {
-      var q = Math.floor((fromE + 42) / 7) + 1;
-      return D.masses['Quad' + q + WD[dow]] ? ['Quad' + q + WD[dow]] : ['Quad' + q];
-    }
-    if (fromE >= 0 && fromE < 7) return ['Pasc0' + WD[dow]];
-    if (fromE === 39) return ['Asc'];
-    if (fromE === 48) return ['Pasc6s'];
-    if (fromE >= 7 && fromE < 49) {
-      var p = Math.floor(fromE / 7);
-      if (fromE === 36 || fromE === 37) return ['Pasc5', 'Litaniis'];
-      if (fromE === 38) return ['AscVig', 'Litaniis'];
-      // the Solemnity of St Joseph (Wednesday after Easter II) was replaced in 1955 by St Joseph the Worker: an option only
-      if (p === 2 && dow === 3) return ['Pasc2', 'Pasc2w'];
-      return ['Pasc' + p + WD[dow], 'Pasc' + p];
-    }
-    if (fromE >= 49 && fromE < 56) return ['Pent0' + WD[dow], 'Pent0'];
-    if (fromE === 60) return ['CorpusChristi'];
-    if (fromE === 68) return ['SCJ'];
-    if (fromE >= 56) {
-      var adv1n = addDays(new Date(y, 11, 25), -((new Date(y, 11, 25).getDay() || 7) + 21));
-      var weeksLeft = Math.floor(diffDays(adv1n, d) / 7);
-      var n = Math.floor((fromE - 49) / 7);
-      var keys = [];
-      // Christ the King: last Sunday of October
-      var oct31 = new Date(y, 9, 31), ck = addDays(oct31, -oct31.getDay());
-      if (diffDays(d, ck) === 0) keys.push('ChristusRex');
-      // September Ember days: Wednesday, Friday, Saturday after the third Sunday of September
-      var s1 = new Date(y, 8, 1), sun3 = addDays(s1, ((7 - s1.getDay()) % 7) + 14), ed = diffDays(d, sun3);
-      if (ed === 3) keys.push('EmbWedSept'); if (ed === 5) keys.push('EmbFriSept'); if (ed === 6) keys.push('EmbSatSept');
-      // the last Sunday (Dominica ultima post Octavam Trinitatis) has its own Mass; the Sundays between the
-      // twenty-first after the Octave of Trinity and the last take the prayers and lessons of the Sundays left
-      // over after the Epiphany, the chants of the twenty-first (Missale O.P. 1939)
-      var dS = diffDays(adv1n, d) + dow;
-      if (n === 1 || fromE < 63) keys.push('Pent1');
-      else if (dS <= 7) keys.push('Pent24');
-      else if (n >= 24) keys.push('Epi' + Math.max(3, Math.min(6, 8 - Math.round(dS / 7))) + 'r');
-      else keys.push('Pent' + Math.min(n, 23));
-      return keys;
-    }
-    return [];
-  }
+  function temporaleKey(d) { return mr().temporaleKey(d); }
 
   function iso(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
   function fromIso(v) { var p = v.split('-').map(Number); return new Date(p[0], p[1] - 1, p[2]); }
 
-  // the Masses of a date, the one taking precedence first (classes of the rubrics of 1960)
+  // the Masses of a date, the one said first (the conventual Mass in choir), with the others the Rubrics allow
   function massesOf(d) {
-    var seen = {}, temp = temporaleKey(d).filter(function (k) { if (!D.masses[k] || seen[k]) return false; seen[k] = 1; return true; });
-    var feasts = [];
-    D.sections.forEach(function (s) {
-      if (s.id !== 'sanctorum') return;
-      s.items.forEach(function (k) {
-        var m = D.masses[k];
-        if (k === 'S0325' || k === 'S0319') { if (diffDays(d, feastDate(k, d.getFullYear())) === 0) feasts.push(k); return; }
-        if (m.month === d.getMonth() && m.day === d.getDate()) {
-          if (VIGIL_CLASS[k] && d.getDay() === 0) return;      // a vigil falling on Sunday is omitted
-          feasts.push(k);
-        }
-      });
-    });
-    var beati = (D.sections.filter(function (s) { return s.id === 'beati'; })[0] || {items: []}).items
-      .filter(function (k) { var m = D.masses[k]; return m.month === d.getMonth() && m.day === d.getDate(); });
-    var tk = temp[0], tc = tk ? temporalClass(tk, d) : 9;
-    feasts.sort(function (a, b) { return feastClass(a) - feastClass(b); });
-    var fk = feasts[0], fc = fk ? feastClass(fk) : 9;
-    // the higher class wins; at equal class a Sunday or privileged feria wins, otherwise the feast
-    var lentFeria = tk && /^(5a.|Quad)/.test(tk) && d.getDay() !== 0;
-    var win = !fk ? tk : (!tk ? fk : (fc >= 4 ? tk : (fc < tc ? fk : (tc < fc ? tk : (d.getDay() === 0 || tc <= 1 || lentFeria ? tk : fk)))));
-    // a free Saturday outside Advent and Lent: the Mass of Our Lady on Saturday
-    if (d.getDay() === 6 && win === tk && tc >= 4 && !/^(Adv|5a|Quad|7a|6a)/.test(tk || '') && D.masses.C79s) {
-      temp = temp.concat(['C79s']); win = 'C79s';
+    var r = mr().day(d), alts = r.masses.filter(function (m) { return m.key && D.masses[m.key]; });
+    var win = alts.length ? alts[0].key : (temporaleKey(d).filter(function (k) { return D.masses[k]; })[0] || null);
+    return {win: win, alts: alts, missing: r.masses.filter(function (m) { return !m.key || !D.masses[m.key]; }), day: r,
+      temp: temporaleKey(d).filter(function (k) { return D.masses[k]; }), feasts: [], beati: []};
+  }
+  function dayRankLabel(r) {
+    var o = r.office, rk = o.rank ? mr().rankShort(o.rank) : '';
+    if (o.kind === 'bvmSat') return 'Saturday of Our Lady';
+    if (o.kind === 'octave') return 'Within the octave';
+    if (o.kind === 'octday') return 'Octave day';
+    if (o.kind === 'temporal') {
+      var t = r.temporal;
+      if (t.kind === 'sunday') return t.pv >= 96 ? 'Sunday of the I class' : (t.pv >= 88 ? 'Sunday of the II class' : 'Sunday');
+      if (t.kind === 'vigil') return 'Vigil';
+      if (t.pv >= 97) return 'Privileged day';
+      return t.pv >= 21 ? 'Major feria' : 'Feria';
     }
-    return {win: win, temp: temp, feasts: feasts, beati: beati};
+    return rk;
   }
 
   function onDate(d, keepMass) {
@@ -1930,11 +1888,14 @@
       return el('button', {type: 'button', 'data-k': k, class: 'alt' + (k === r.win ? ' win' : ''), onclick: function () { showMass(k); markChips(k); }},
         [el('small', {text: label}), clean(D.masses[k].title).replace(/^\d+ [A-Za-z.]+ — /, '')]);
     };
-    var all = r.temp.concat(r.feasts).concat(r.beati);
-    if (all.length > 1) {
-      r.temp.forEach(function (k, i) { box.appendChild(mk(k, i ? 'or' : 'Temporale')); });
-      r.feasts.forEach(function (k) { box.appendChild(mk(k, D.masses[k].rank ? D.masses[k].rank + ' class' : 'Feast')); });
-      r.beati.forEach(function (k) { box.appendChild(mk(k, 'Blessed (ad libitum)')); });
+    var R = r.day, head = dayRankLabel(R);
+    if (R.office.transferredFrom) head += ' (transferred from ' + R.office.transferredFrom.slice(8) + '.' + R.office.transferredFrom.slice(5, 7) + ')';
+    if (r.alts.length > 1 || r.missing.length) {
+      r.alts.forEach(function (m, i) { box.appendChild(mk(m.key, m.label || (i ? 'or' : head))); });
+      r.missing.forEach(function (m) {
+        box.appendChild(el('span', {class: 'alt missing', title: 'This Mass is in the Missal but not yet on this site'},
+          [el('small', {text: (m.label || '') + ' — not yet on this site'}), m.title || (m.key || '')]));
+      });
     }
     if (!keepMass && r.win) showMass(r.win);
     else { drawRing(); drawPills(); writeHash(); }
@@ -1990,7 +1951,7 @@
     var m = D.masses[state.key], box = $('#cong'), d = state.date || new Date(), jobs = [];
     box.innerHTML = '';
     var col = massColor(state.key);
-    var cls = m.rank || (isTemporal(state.key) ? ['', 'I', 'II', 'III', 'IV'][temporalClass(state.key, state.date)] : '');
+    var rr = massesOf(d), cls = rr.alts.some(function (x) { return x.key === state.key; }) && (state.key === rr.day.office.key || rr.day.office.kind === 'temporal') ? dayRankLabel(rr.day) : '';
     var title = clean(m.title).replace(/^\d+ [A-Za-z.]+ — /, '');
     var en = m.name_en || (isTemporal(state.key) ? clean(m.en || '') : '');
     box.appendChild(el('header', {class: 'c-head'}, [
@@ -1999,7 +1960,7 @@
       el('h1', {text: title}),
       en && en !== title ? el('div', {class: 'c-en', text: en}) : null,
       el('div', {class: 'c-date', text: WEEKDAYS[d.getDay()] + ', ' + d.getDate() + ' ' + MONTHS[d.getMonth()] + ' ' + d.getFullYear() +
-        (cls ? ' · ' + cls + ' class' : '') + ' · ' + COLOR_LA[col]})
+        (cls ? ' · ' + cls : '') + ' · ' + COLOR_LA[col]})
     ]));
     var sec = function (labLa, labEn, ref, isReading) {
       var la = el('div', {class: 'c-la', lang: 'la'}), enb = el('div', {class: 'c-en-text', lang: 'en'});

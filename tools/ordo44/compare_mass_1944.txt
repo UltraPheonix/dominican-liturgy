@@ -1,0 +1,19 @@
+1944-01-24 Ordo: choir:dom | engine: single:feast ['S0124b', 'Epi3'] B. Marcolini Conf. O. P.
+1944-02-26 Ordo: choir:fer | engine: choir:feri ['5as', 'S0225b'] B. Constantii a Fabriano Conf. O. P.
+1944-03-07 Ordo: choir:feri | engine: choir:fest ['S0307', 'Quad2t'] S. Thomæ Aquinatis Conf. et Eccl. Doct. 
+1944-03-23 Ordo: choir:fe | engine: choir:feri ['Quad4h', 'S0323b'] B. Sibyllinæ de Biscossis Virg. O. P.
+1944-03-30 Ordo: choir:feri | engine: single:temporal ['Quad5h'] 
+1944-04-01 Ordo: choir:fe | engine: choir:feri ['Quad5s', 'S0430'] Impressio SS. Stigmatum S. Catharinæ Sen
+1944-05-02 Ordo: choir:dom | engine: single:feast ['S0502', 'Pasc3'] S. Athanasii Ep., Conf. et Eccl. Doct.
+1944-05-13 Ordo: choir:roga | engine: single:feast ['S0513b'] B. Imeldæ Virg. O. P.
+1944-05-17 Ordo: choir:vig | engine: choir:roga ['AscVig', 'S0517b'] B. Andreæ Abellonii Conf. O. P.
+1944-07-03 Ordo: dom | engine: single:feast ['S0703_2', 'Pent5'] S. Leonis II Papæ et Conf.
+1944-07-15 Ordo: choir:dom | engine: single:feast ['S0715', 'Pent6'] S. Henrici Imperatoris Conf.
+1944-08-09 Ordo: choir:dom | engine: choir:vigi [None, 'S0811b', 'Pent10'] B. Joannis de Salerno Conf. O. P.
+1944-10-01 Ordo: choir:dom | engine: single:tfeast ['S1007'] SS. Rosarii B. Mariae V.
+1944-10-17 Ordo: requiem | engine: single:temporal ['Pent20'] 
+1944-10-25 Ordo: dom | engine: single:octave ['Dedicatio', 'Pent21'] In Ecclesiis consecratis: Dedicatio prop
+1944-10-30 Ordo: choir:dom | engine: single:feast ['S1030b', 'Pent22'] B. Benvenutæ Bojani Virg. O. P.
+1944-11-10 Ordo: feast+anniv | engine: anniv ['S1113', 'Pent23'] 
+1944-12-21 Ordo: choir:feri | engine: single:feast ['S1221'] S. Thomæ Apostoli
+18 differ

@@ -1,0 +1,34 @@
+X 01-05 W | Ordo: V ig ilia E p ip h a n ia e (priv.). De Alb. ea. (Omit. Prec | engine: temporal  [] -> Jan5a
+X 01-19 W | Ordo: B. A n d re a e a P ise. C. 0 . N. Alb.. Semid. — Ps. fer. — | engine: feast S. Margaritæ ab Hungaria Virg. O. P. [Totum Duplex II classis] -> S0118
+X 01-26 W | Ordo: B. M a rg a rita e ab H u ng. V. Alb. O. N. Semid.—Ps. fer.— | engine: temporal  [] -> C114s,Epi3
+X 04-27 T | Ordo: B. H osftnnae de C atharo V.O N. Alb-. Semid. — Ps. In Mat.  | engine: feast B. Hosannæ de Catharo V. O. P. [Semiduplex] -> S0427b
+X 05-03 W | Ordo: B. M a ria e V irg . R. P . Tot. Alb. Dupl. 2 cl. (ARCHID. L | engine: feast Inventio S. Crucis [Totum Duplex II classis] -> S0503
+X 05-04 T | Ordo: In v en tio S. C rucis. Tfit. Dupl. Rb. 2 cl. (ex heri assig | engine: feast S. Monicæ Vid. [Duplex] -> S0504,Pasc3
+X 05-05 F | Ordo: S. P ii Q uinti Р. С. O. N. Tot. Alb. Dupl. 2. cl. — Offic.  | engine: feast S. Pii V Papæ et Conf. O. P. [Totum Duplex II classis] -> S0505
+X 05-08 M | Ordo: S. S ta n is la i E.M . P a tf. p rin e. Rb. PoL Tot. Dupl.  | engine: feast Apparitio S. Michaelis Arch. [Totum Duplex] -> S0508_2
+X 05-16 T | Ordo: Rogat. (J.C.) S. A n d re a e Bobola M. Rb. f P . P. Tot. Du | engine: feast S. Joannis Nepomuceni Mart. [Duplex] -> Litaniis,S0516
+X 05-31 W | Ordo: (Q. T.—J. E. cum abst.) De oc­ Rb. ta v a .—Ps. festivi.—Iu  | engine: temporal  [] -> Pent0w
+X 06-04 S | Ordo: SS. T r in ita tis . Tot. Dupl. 1. cl. Alb. cum oct. solemni | engine: tfeast Festum SS. Trinitatis [Totum Duplex I classis] -> Pent1
+X 06-08 T | Ordo: SS. C orporis C h risti. Tot. Alb. Dupl. Ł cl. cum oct. sole | engine: tfeast Festum SS. Corporis Christi [Totum Duplex I classis] -> CorpusChristi
+X 06-16 F | Ordo: SS. C ordis J e s u . Tot. Dupl. t.'A lb . f cl. cum oct. so | engine: tfeast Festum SS. Cordis Jesu [Totum Duplex I classis] -> SCJ
+X 06-20 T | Ordo: B. B o sa n n a e V. 0 . N. Semid. ^/b. tt — Ps. fer. — Lect | engine: feast B. Hosannæ Mantuanæ Virg. O. P. [Semiduplex] -> S0620b
+X 07-15 S | Ordo: S. H e u ric i Im p er. C. Simpl. — Alb. Ps. fer. — Lect. II | engine: feast S. Henrici Imperatoris Conf. [Simplex] -> S0715,Pent6
+X 07-17 M | Ordo: De e a .—(Preces et Prostr. usque Vr. ad Nonam exclus.)—Omni | engine: feast B. Ceslai Conf. O. P. [Semiduplex] -> S0717b
+X 07-20 T | Ordo: B. C eslai C.O.N. Dupl. (17 Jul.) Alb. t — Ps. fer. — Lect.  | engine: feast S. Hieronymi Æmiliani Conf. [Duplex] -> S0720
+X 07-27 T | Ordo: B. C u n e g u n d is V. P . P. Tot. Alb. t Dupl. — Ps. fer. | engine: feast BB. Josephi, Melchioris Episcoporum O. P [Duplex] -> S0727
+X 08-06 S | Ordo: ttm. — Compl. Dom. cum conci, hymni propr. G RÓ D E K .—Idem | engine: feast Transfiguratio Domini [Totum Duplex II classis] -> S0806
+X 08-18 F | Ordo: B. A lm o n is C. O. N. Semid. Alb. (21 Febr.) — Ps. fer. —  | engine: feast B. Aimonis Taparelli Conf. O. P. [Semiduplex] -> S0818b
+X 08-22 T | Ordo: D ies oct. A ssu m p t. В. М. V. Alb. Solemnis,—Ps. fer. — B | engine: feast Immaculati Cordis B. Mariæ V. [Totum Duplex II classis] -> S0822
+X 08-26 S | Ordo: B. M a ria e V irg . C laro m o n tan ae. Alb. Tot, Dupl. (M | engine: bvmSat Officium B. Mariae V. in Sabbato [] -> C79s,Pent12
+X 09-25 M | Ordo: Comm. S. P . N. D om inici in Alb. S u ria n o . Tot. Dupl.  | engine: feast Commemoratio S. P. N. Dominici in Surian [Totum Duplex] -> S0925
+X 10-01 S | Ordo: X V I. P . O. T . (l-a Oct.) Ss. R o­ Alb. s a rii B .M .V . | engine: tfeast SS. Rosarii B. Mariae V. [Totum Duplex I classis] -> S1007
+X 10-02 M | Ordo: SS. D ionysii E p. et Soc. M m. Rb. . Dupl. — Ps. fer. — Lec | engine: feast SS. Angelorum Custodum [Totum Duplex] -> S1002,Pent18
+X 10-12 T | Ordo: G ra tia ru m actio pro viet. Cho­ Alb. cim . Tot. Dupl. — M | engine: temporal  [] -> C114s,Pent19
+X 10-16 M | Ordo: S. H e d v ig is V id. P . P . Dupl,— Alb. Ps. fer. OCTOBER  | engine: temporal  [] -> C114s,Pent20
+X 10-20 F | Ordo: S. J o a n n is C ant. С. P. P. Tot. Alb. Dupl. — Ps. fer. 1 | engine: temporal  [] -> Pent20
+X 10-29 S | Ordo: ttm. — Compl. Dom.                                           | engine: tfeast D. N. Jesu Christi Regis [Totum Duplex I classis] -> ChristusRex
+X 10-31 T | Ordo: Vigil. (J. E. cum abst.) S a c ra ­ Rb ru m R e liq u ia ru  | engine: feast Commemoratio Sanctorum, quorum Reliquiæ  [Totum Duplex] -> -,S1031,Pent22
+X 11-10 F | Ordo: S. S ta n is la i K o stk a С. P . P. Alb. t Tot. Dupl. — Ps | engine: temporal  [] -> S1113,Pent23
+X 11-12 S | Ordo: (ant. Qui caelorum., От. Dom. IV. P.O.E.) — Compl. Dom.      | engine: feast Festivitas Omnium Sanctorum O. P. [Totum Duplex II classis] -> S1112
+X 12-23 S | Ordo: Q. T. (J. E. cum abst.) B. M a r­ Alb. t g a rita e de S ab. | engine: feast B. Margaritæ de Sabaudia Vid. O. P. [Semiduplex] -> Adv3s,S1127b
+33 days differ (of 324 read)
