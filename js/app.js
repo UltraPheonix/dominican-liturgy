@@ -1701,7 +1701,7 @@
     // no commemoration of Our Lady in a Mass of Our Lady (Vigil of the Assumption on a Saturday)
     if (isMarian(state.key)) { var hi = mem.high; mem = mem.filter(function (x) { return !BVM_SETS[x]; }); mem.high = hi; }
     if (state.key === 'Dec25_2') return ['x:1225|S. Anastasiæ Mart.'];   // "Memoria de S. Anastasia" (Missal pp. 21-22)
-    if (/^(Pasc0|Pent0|Dec25(_\d)?|Jan1)$/.test(state.key)) return [];   // the days themselves; not the days within their octaves
+    if (/^(Pasc0|Pent0|Dec25(_\d)?|Jan1)$/.test(state.key) && !(/^Dec25/.test(state.key) && md !== 1225)) return [];   // the days themselves; not the days within their octaves (30 Dec.: "cum Or. ut in Laud.")
     var od0 = d && window.OPMissalRank ? mr().day(d) : null;
     var idOf = function (c) { return c.kind === 'bvm' ? bvmSet(d) : c.key && window.ORATIONS && ORATIONS[c.key] && D.masses[c.key] ? 'm:' + c.key : memoriaId(c, d); };
     // the Mass of a Sunday resumed on a weekday (Rubr. III.3-4): the octave, the vigil and the Memoriae of the day are
@@ -1729,6 +1729,20 @@
     if (od0 && od0.twoMasses && state.key !== od0.office.key && isEmber(state.key)) {
       var vg = od0.commems.filter(function (c) { return c.kind === 'vigil' && c.key && ORATIONS[c.key] && D.masses[c.key]; }).map(function (c) { return 'm:' + c.key; });
       if (vg.length) return vg.concat(['d2']);
+    }
+    // the Mass of a vigil in choir on a day of two conventual Masses in Advent commemorates the feria, then Deus qui caritatis
+    // in a Mass of Our Lady, else the prayer of Our Lady (Ordo 1944, 7 Dec.: "de Vigilia ... 2-a Or. fer., 3-a Deus, qui
+    // caritatis"; X.1 a)
+    if (od0 && od0.twoMasses && state.key !== od0.office.key && od0.temporal.season === 'adv' && od0.commems.some(function (c) { return c.kind === 'vigil' && c.key === state.key; })) {
+      var fk = od0.temporal.key;
+      return (ORATIONS[fk] && D.masses[fk] ? ['m:' + fk] : []).concat([isMarian(state.key) ? 'd15' : 'bvmAdv']);
+    }
+    // the Sundays of Advent II-IV: the printed pair of Advent I without a Memoria (Ordo 1944, 17 Dec. "2-a et 3-a Or. Dom. I");
+    // with the Memoria of the octave of Our Lady, then Deus qui caritatis (X.1 a; 10 Dec. "2-a Or. oct., 3-a Deus, qui caritatis")
+    if (/^Adv[234]$/.test(state.key) && d && d.getDay() === 0) {
+      var am = memoriasOf(d);
+      if (!am.length) return ['bvmAdv', 'd15'];
+      if (am.length === 1 && od0 && od0.commems.some(function (c) { return c.kind === 'octave' && /Concept|Mari/.test(c.title || ''); })) return am.concat(['d15']);
     }
     // Dominica in Ramis Palmarum and the Vigil of Pentecost: "una tantum dicitur Oratio, etiamsi quae ad Laudes facta fuerit
     // Memoria" (Rubr. gen. X.1 f; VIII.2)

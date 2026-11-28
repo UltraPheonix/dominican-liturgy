@@ -569,9 +569,12 @@
     var pushC = function (c, kind) {
       if (!c || c === win || (c.transferring && c.kind === 'feast')) return;
       if (commems.some(function (x) { return x.title === c.title && x.key === c.key; })) return;
-      commems.push({key: c.key || null, title: c.title || '', rank: c.rank || '', kind: kind || c.kind, pv: c.pv || 0});
+      commems.push({key: c.key || null, title: c.title || '', rank: c.rank || '', kind: kind || c.kind, pv: c.pv || 0, okind: c.kind});
     };
     if (win.kind !== 'temporal' && t.kind === 'sunday') pushC({key: t.key, title: 'Dominica', rank: ''}, 'sunday');
+    // in Advent a solemn octave (the Immaculate Conception) is commemorated before the feria (Ordo 1944, 11 Dec. "In Missa
+    // mem. oct. et fer."; 13 Dec. "2-a Or. oct., 3-a fer.")
+    if (t.season === 'adv') cs.forEach(function (c) { if (c.kind === 'octave' && c !== win && c.pv >= 25) pushC(c, 'octave'); });
     if (win.kind !== 'temporal' && t.major) pushC({key: tKey, title: 'Feria', rank: ''}, 'feria');
     if (vigil && win !== vigil && !(/I classis/.test(priv))) pushC(vigil, 'vigil');
     // the octaves: a privileged octave is commemorated before the impeded feast of the day, any other after it (Ordo 1944,
@@ -618,15 +621,21 @@
     // "m. S. Isidori"; 13-14 Apr., 31 May-3 Jun. "m. B. ..."), save the feasts of the Lord of the Time and Easter and
     // Pentecost Monday and Tuesday ("nihil fit"). "I classis" must not match "II classis" (14 Feb., 17 Apr.).
     var winFeast = win.kind === 'feast' || win.kind === 'tfeast' ||
-      (win.kind === 'temporal' && /^(Dec25(_\d)?|Jan1|Epi|Pasc0[mt]?|Asc|Pent0[mt]?|Pent1|CorpusChristi|SCJ|ChristusRex)$/.test(win.key || ''));
+      (win.kind === 'temporal' && /^(Dec25(_\d)?|Jan1|Epi|Pasc0[mt]?|Asc|Pent0[mt]?|Pent1|CorpusChristi|SCJ|ChristusRex|Adv1|Quad1|Quad5|Pasc1)$/.test(win.key || ''));
+    // (the Sundays of the I class likewise: Ordo 1944, 3 Dec., Advent I: no Memoria of St Francis Xavier in the Mass)
     var I = winFeast && (/(^|[^I])I classis/.test(win.rank || '') || win.pv >= 90), II = winFeast && /II classis/.test(win.rank || '');
     commems.forEach(function (c) {
-      var pv = RANK_PV[c.rank] || (c.kind === 'memoria' ? 5 : 0);
+      // an octave has no rank of its own in the data: its weight is its pv (the Christmas octave, 25, is kept on 26-28 Dec.:
+      // Ordo 1944 "In Missa m. Nativ.")
+      var pv = RANK_PV[c.rank] || (c.kind === 'memoria' ? 5 : (c.kind === 'octave' ? c.pv : 0));
       // the Sunday and a major feria are always commemorated, even on a feast of the I class (Missal, after the First Sunday of Advent, scan p. 34: "semper fit
       // Memoria de Feria majori Adventus, Quadragesimae, Quatuor Temporum et Rogationum"; Ordo 1944, 8 Dec.: "In Missa m. fer.")
       if (c.kind === 'feria' || c.kind === 'sunday') { if (twoMass && c.kind === 'feria') c.privateOnly = true; return; }
       if (I && ((c.kind === 'feast' && pv <= 60) || c.kind === 'memoria' || (c.kind === 'octave' && !/^(Epi|CorpusChristi|Asc|SCJ|Dec25)/.test(c.key || '')))) c.privateOnly = true;
       if (II && (pv <= 20 || c.kind === 'memoria')) c.privateOnly = true;
+      // a feast of the II class makes no commemoration of a day within a non-privileged octave, but does of an octave day
+      // (Ordo 1944: 29 Apr., 10 Aug., 17 Aug. "In Missa nulla mem."; 3 May "m. diei oct. S. Joseph"; 26-28 Dec. "m. Nativ.")
+      if (II && c.kind === 'octave' && c.okind === 'octave' && !PRIV_OCT.test(c.key || '')) c.privateOnly = true;
       // within the octaves of Easter and Pentecost the Ordo makes no Memoria (Simplex) at the conventual Mass (Ordo 1944,
       // 14 Apr. "m. B. Petri" without SS. Tiburtius etc.; 2 Jun. "m. BB. Sadoc" without SS. Marcellinus and Peter)
       if (c.kind === 'memoria' && win.kind === 'temporal' && /^(Pasc0[whfs]|Pent0[whfs])$/.test(win.key || '')) c.privateOnly = true;

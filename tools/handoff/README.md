@@ -14,8 +14,8 @@ each rule commented with its rubric and the Ordo's words. Test: `python3 tools/c
 Not done / open:
 - OPEN QUESTION for Joseph: the weekly "Omnipotens" (Rubr. VI.2, added in weeks without a free day for the Requiem, js/mrank.js
   omnipotensDay) is added on ~30 weekdays of 1944, but the Ordo 1944 never prints it on any weekday. Keep (rubric) or drop (Ordo)?
-- December was never compared with the Ordo (29 and 31 Dec now commemorate the octaves of SS. Stephen, John, Innocents by the
-  rule the Ordo shows on 3 Jan: unverified for December).
+- December compared with the Ordo on 28 Nov and fixed (Advent I no Memoria; 7, 10, 11, 13, 17 Dec.; 26-28 Dec. m. Nativ.; 30 Dec.).
+  29-31 Dec. follow the Ordo's "Orat. ut in Laud." by the rule it shows on 3 Jan. (octaves of SS. Stephen, John, Innocents).
 - The weekly Requiem day differs from the Ordo in July (Ordo 17 Jul.) and October (Ordo 17 Oct.; app 12 and 16 Oct.).
 - Not modelled: the year-dependent "pro Papa" on the Pope's anniversaries (2 and 12 Mar. 1944), Mission Sunday; D 07-05 (doubtful).
 - Step 2 remainder: Gloria/Credo (I), Prefaces (J), colours (K), weekly votives (L), Kyriale (M) in ordo44_diff.md.
