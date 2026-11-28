@@ -97,7 +97,7 @@ button { cursor: pointer; }
 .chant-select { flex: 1; min-width: 200px; max-width: 420px; width: auto; font-size: 15px; padding: 4px 8px; border: 1px solid var(--line); background: #fff; }
 .linkbtn { border: 0; background: none; padding: 4px 6px; color: var(--rubric); text-decoration: underline; font-size: 15px; min-height: 32px; }
 .chant { margin: 10px 0 0; min-height: 40px; }
-.chant svg { width: 100%; height: auto; display: block; }
+.chant svg { width: 100%; height: auto; display: block; overflow: visible; }   /* Safari measures text a little differently: never clip a note at the edge of its staff line (iPhone, 28 Nov) */
 .chant .line { break-inside: avoid; page-break-inside: avoid; }
 .gabc { width: 100%; font: 13px/1.4 ui-monospace, Menlo, Consolas, monospace; border: 1px solid var(--line); padding: 8px; }
 .meta { color: var(--muted); font-size: 14px; margin: 2px 0 0; }
