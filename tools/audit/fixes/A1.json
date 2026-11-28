@@ -3186,5 +3186,1093 @@
   "src": "M39 pp. 81-82 (pdf 74-75)",
   "why": "punctuation 1, case 3 as printed",
   "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2t",
+   "or",
+   0
+  ],
+  "old": "Pérfice, quǽsumus, Dómine, benígnus in nobis observántiæ sanctæ subsídium: ut, quæ te auctóre faciénda cognóvimus, te operánte impleámus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Pérfice, quǽsumus Dómine, benígnus in nobis observántiæ sanctæ subsídium: ut quæ te auctóre faciénda cognóvimus; te operánte impleámus: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 82 (pdf 75)",
+  "why": "punctuation as printed ('cognóvimus;' flexa, ':' before the conclusion; Proc. 1913 p. 405)",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2t",
+   "se",
+   0
+  ],
+  "old": "Sanctificatiónem tuam nobis, Dómine, his mystériis operáre placátus: quæ nos et a terrénis purget vítiis, et ad cœléstia dona perdúcat. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Sanctificatiónem tuam nobis, Dómine, his mystériis operáre placátus: quæ nos et a terrénis purget vítiis, et ad cæléstia dona perdúcat. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 84 (pdf 76)",
+  "why": "spelling 'cæléstia' as printed (the print ends 'perdúcat. Per Dóminum.')",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2t",
+   "pc",
+   0
+  ],
+  "old": "Ut sacris, Dómine, reddámur digni munéribus: fac nos tuis, quǽsumus, semper obœdíre mandátis. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Ut sacris, Dómine, reddámur digni munéribus; fac nos tuis, quǽsumus, semper obedíre mandátis: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 84 (pdf 76)",
+  "why": "punctuation and 'obedíre' as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2t",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Factus est sermo Dómini ad Elíam Thesbíten, dicens: Surge, et vade in Saréphta Sidoniórum, et manébis ibi: præcépi enim ibi mulíeri víduæ ut pascat te. Surréxit, et ábiit in Saréphta. Cumque venísset ad portam civitátis, appáruit ei múlier vídua cólligens ligna, et vocávit eam, dixítque ei: Da mihi páululum aquæ in vase ut bibam. Cumque illa pérgeret ut afférret, clamávit post tergum ejus, dicens: Affer mihi, óbsecro, et buccéllam panis in manu tua. Quæ respóndit: Vivit Dóminus Deus tuus, quia non hábeo panem, nisi quantum pugíllus cápere potest farínæ in hýdria, et páululum ólei in lécytho: en cólligo duo ligna ut ingrédiar et fáciam illum mihi et fílio meo, ut comedámus, et moriámur. Ad quam Elías ait: Noli timére, sed vade, et fac sicut dixísti: verúmtamen mihi primum fac de ipsa farínula subcinerícium panem párvulum, et affer ad me: tibi autem et fílio tuo fácies póstea. Hæc autem dicit Dóminus Deus Israël: Hýdria farínæ non defíciet, nec lécythus ólei minuétur, usque ad diem in qua Dóminus datúrus est plúviam super fáciem terræ. Quæ ábiit, et fecit juxta verbum Elíæ: et comédit ipse, et illa, et domus ejus: et ex illa die hýdria farínæ non defécit, et lécythus ólei non est imminútus, juxta verbum Dómini, quod locútus fúerat in manu Elíæ.",
+  "new": "In diébus illis: Factus est sermo Dómini ad Elíam Thesbíten, dicens: Surge, et vade in Saréphta Sidoniórum, et manébis ibi: Præcépi enim ibi mulíeri víduæ ut pascat te. Surréxit, et ábiit in Saréphta. Cumque venísset ad portam civitátis, appáruit ei múlier vídua cólligens ligna, et vocávit eam, dixítque ei: Da mihi páululum aquæ in vase, ut bibam. Cumque illa pérgeret ut afférret, clamávit post tergum ejus, dicens: Affer mihi, óbsecro, et buccéllam panis in manu tua. Quæ respóndit: Vivit Dóminus Deus tuus, quia non hábeo panem, nisi quantum pugíllus cápere potest farínæ in hýdria, et páululum ólei in lécytho: En cólligo duo ligna, ut ingrédiar, et fáciam illud mihi et fílio meo, ut comedámus, et moriámur. Ad quam Elías ait: Noli timére, sed vade, et fac sicut dixísti: Verúmtamen mihi primum fac de ipsa farínula subcinerícium panem párvulum, et affer ad me: Tibi autem et fílio tuo fácies póstea. Hæc autem dicit Dóminus Deus Israël: Hýdria farínæ non defíciet, nec lécythus ólei minuétur, usque ad diem, in qua Dóminus datúrus est plúviam super fáciem terræ. Quæ ábiit, et fecit juxta verbum Elíæ: Et comédit ipse, et illa, et domus ejus: Et ex illa die hýdria farínæ non defécit, et lécythus ólei non est imminútus, juxta verbum Dómini, quod locútus fúerat in manu Elíæ.",
+  "src": "M39 pp. 82-83 (pdf 75)",
+  "why": "'illum' -> 'illud' as printed; punctuation 4; capitals after the colon as printed (Præcépi, En, Verúmtamen, Tibi, Et, Et)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2t",
+   0,
+   "en"
+  ],
+  "old": "In those days: Then the word of the Lord came to him, saying: Arise, and go to Sarephta of the Sidonians, and dwell there: for I have commanded a widow woman there to feed thee. He arose, and went to Sarephta. And when he was come to the gate of the city, he saw the widow woman gathering sticks, and he called her, and said to her: Give me a little water in a vessel, that I may drink. And when she was going to fetch it he called after her, saying: Bring me also, I beseech thee, a morsel of bread in thy hand. And she answered: As the Lord thy God liveth, I have no bread, but only a handful of meal in a pot, and a little oil in a cruse: behold I am gathering two sticks that I may go in and dress it, for me and my son, that we may eat it, and die. And Elias said to her: Fear not, but go, and do as thou hast said: but first make for me of the same meal a little hearth cake, and bring it to me: and after make for thyself and thy son. For thus saith the Lord the God of Israel: The pot of meal shall not waste, nor the cruse of oil be diminished, until the day wherein the Lord will give rain upon the face of the earth. She went and did according to the word of Elias: and he ate, and she, and her house: and from that day The pot of meal wasted not, and the cruse of oil was not diminished, according to the word of the Lord, which he spoke in the hand of Elias.",
+  "new": "In those days: The word of the Lord came to Elias the Thesbite, saying: Arise, and go to Sarephta of the Sidonians, and dwell there: for I have commanded a widow woman there to feed thee. He arose, and went to Sarephta. And when he was come to the gate of the city, he saw the widow woman gathering sticks, and he called her, and said to her: Give me a little water in a vessel, that I may drink. And when she was going to fetch it he called after her, saying: Bring me also, I beseech thee, a morsel of bread in thy hand. And she answered: As the Lord thy God liveth, I have no bread, but only a handful of meal in a pot, and a little oil in a cruse: behold I am gathering two sticks that I may go in and dress it, for me and my son, that we may eat it, and die. And Elias said to her: Fear not, but go, and do as thou hast said: but first make for me of the same meal a little hearth cake, and bring it to me: and after make for thyself and thy son. For thus saith the Lord the God of Israel: The pot of meal shall not waste, nor the cruse of oil be diminished, until the day wherein the Lord will give rain upon the face of the earth. She went and did according to the word of Elias: and he ate, and she, and her house: and from that day The pot of meal wasted not, and the cruse of oil was not diminished, according to the word of the Lord, which he spoke in the hand of Elias.",
+  "src": "M39 p. 82 (pdf 75); bible/en 3 Kings 17: 8-16",
+  "why": "English to the Latin: the Missal reads 'Factus est sermo Dómini ad Elíam Thesbíten' (Vulgate 'Factus est ergo sermo Domini ad eum'): AI translation of the clause, labelled in src",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad2t",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en 3 Kings 17: 8-16); AI translation (Missal departs from the Vulgate): \"The word of the Lord came to Elias the Thesbite\" (Missal \"Factus est sermo Dómini ad Elíam Thesbíten\")",
+  "src": "M39 p. 82 (pdf 75)",
+  "why": "English source label (new key)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2t",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Locútus est Jesus ad turbas, et ad discípulos suos, dicens: Super cáthedram Móysi sedérunt scribæ, et Pharisǽi. Omnia ergo quæcúmque díxerint vobis, serváte, et fácite: secúndum ópera vero eórum nolíte fácere: dicunt enim, et non fáciunt. Alligant enim ónera grávia, et importabília, et impónunt in húmeros hóminum: dígito autem suo nolunt ea movére. Omnia vero ópera sua fáciunt ut videántur ab homínibus: dilátant enim phylactéria sua, et magníficant fímbrias. Amant autem primos recúbitus in cœnis, et primas cáthedras in synagógis, et salutatiónes in foro, et vocári ab homínibus Rabbi. Vos autem nolíte vocári Rabbi: unus est enim magíster vester, omnes autem vos fratres estis. Et patrem nolíte vocáre vobis super terram: unus est enim Pater vester, qui in cælis est. Nec vocémini magístri: quia magíster vester unus est, Christus. Qui major est vestrum, erit miníster vester. Qui autem se exaltáverit, humiliábitur: et qui se humiliáverit, exaltábitur.",
+  "new": "In illo témpore: Locútus est Jesus ad turbas, et ad discípulos suos, dicens: Super cáthedram Móysi sedérunt Scribæ, et Pharisǽi. Omnia ergo quæcúmque díxerint vobis, serváte, et fácite: Secúndum ópera vero eórum nolíte fácere: Dicunt enim, et non fáciunt. Alligant enim ónera grávia, et importabília, et impónunt in húmeros hóminum: dígito autem suo nolunt ea movére. Omnia vero ópera sua fáciunt, ut videántur ab homínibus: Dilátant enim phylactéria sua, et magníficant fímbrias. Amant autem primos recúbitus in cenis, et primas cáthedras in synagógis, et salutatiónes in foro, et vocári ab homínibus Rabbi. Vos autem nolíte vocári Rabbi. Unus est enim Magíster vester, omnes autem vos fratres estis. Et patrem nolíte vocáre vobis super terram: Unus est enim Pater vester, qui in cælis est. Nec vocémini magístri: quia Magíster vester unus est, Christus. Qui major est vestrum, erit miníster vester. Qui autem se exaltáverit, humiliábitur: et qui se humiliáverit, exaltábitur.",
+  "src": "M39 p. 83 (pdf 75)",
+  "why": "punctuation 2, 'cenis', case 7 (Scribæ, Secúndum, Dicunt, Dilátant, Unus, Magíster x2) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2w",
+   "or",
+   0
+  ],
+  "old": "Pópulum tuum, quǽsumus, Dómine, propítius réspice: et, quos ab escis carnálibus prǽcipis abstinére, a nóxiis quoque vítiis cessáre concéde. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Pópulum tuum, quǽsumus Dómine, propítius réspice: et quos ab escis carnálibus prǽcipis abstinére; a nóxiis quoque vítiis cessáre concéde: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 84 (pdf 76)",
+  "why": "punctuation as printed ('abstinére;' flexa, ':' before the conclusion; Proc. 1913 p. 405)",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2w",
+   "se",
+   0
+  ],
+  "old": "Hóstias, Dómine, quas tibi offérimus, propítius réspice: et, per hæc sancta commércia, víncula peccatórum nostrórum absólve. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Hóstias, Dómine, quas tibi offérimus, propítius réspice: et per hæc sancta commércia, víncula peccatórum nostrórum absólve. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 85 (pdf 76)",
+  "why": "punctuation as printed (no comma after 'et'; the print ends 'absólve. Per Dóminum.')",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2w",
+   "pc",
+   0
+  ],
+  "old": "Sumptis, Dómine, sacraméntis: ad redemptiónis ætérnæ, quǽsumus, proficiámus augméntum. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Sumptis, Dómine, sacraméntis; ad redemptiónis ætérnæ, quǽsumus, proficiámus augméntum: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 85 (pdf 76)",
+  "why": "punctuation as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2w",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Orávit Mardochǽus ad Dóminum, dicens: Dómine Dómine rex omnípotens, in ditióne enim tua cuncta sunt pósita, et non est qui possit tuæ resístere voluntáti, si decréveris salváre Israël. Tu fecísti cælum et terram, et quidquid cæli ámbitu continétur. Dóminus ómnium es, nec est qui resístat majestáti tuæ. Et nunc Dómine rex Deus Abraham miserére pópuli tui, quia volunt nos inimíci nostri pérdere, et hereditátem tuam delére. Ne despícias partem tuam, quam redemísti tibi de Ægýpto. Exáudi deprecatiónem meam, et propítius esto sorti et funículo tuo, et convérte luctum nostrum in gáudium, ut vivéntes laudémus nomen tuum Dómine, et ne claudas ora te canéntium.",
+  "new": "In diébus illis: Orávit Mardochǽus ad Dóminum, dicens: Dómine, Dómine rex omnípotens, in ditióne enim tua cuncta sunt pósita, et non est qui possit tuæ resístere voluntáti, si decréveris salváre Israël. Tu fecísti cælum et terram, et quidquid cæli ámbitu continétur. Dóminus ómnium es, nec est qui resístat majestáti tuæ. Et nunc Dómine rex, Deus Abraham, miserére pópuli tui, quia volunt nos inimíci nostri pérdere, et hereditátem tuam delére. Ne despícias partem tuam, quam redemísti tibi de Ægýpto. Exáudi deprecatiónem meam, et propítius esto sorti et funículo tuo, et convérte luctum nostrum in gáudium, ut vivéntes laudémus nomen tuum Dómine, et ne claudas ora te canéntium, Dómine Deus noster.",
+  "src": "M39 pp. 84-85 (pdf 76)",
+  "why": "cut ending ', Dómine Deus noster.' restored as printed; punctuation 3 as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2w",
+   0,
+   "en"
+  ],
+  "old": "In those days: Said: O Lord, Lord, almighty king, for all things are in thy power, and there is none that can resist thy will, if thou determine to save Israel. Thou hast made heaven and earth, and all things that are under the cope of heaven. Thou art Lord of all, and there is none that can resist thy majesty. And now, O Lord, O king, O God of Abraham, have mercy on thy people, because our enemies resolve to destroy us, and extinguish thy inheritance. Despise not thy portion, which thou hast redeemed for thyself out of Egypt. Hear my prayer, and be merciful to thy lot and inheritance, and turn our mourning into joy, that we may live and praise thy name, O Lord, and shut not the mouths of them that sing to thee.",
+  "new": "In those days: Mardochai prayed to the Lord, saying: O Lord, Lord, almighty king, for all things are in thy power, and there is none that can resist thy will, if thou determine to save Israel. Thou hast made heaven and earth, and all things that are under the cope of heaven. Thou art Lord of all, and there is none that can resist thy majesty. And now, O Lord, O king, O God of Abraham, have mercy on thy people, because our enemies resolve to destroy us, and extinguish thy inheritance. Despise not thy portion, which thou hast redeemed for thyself out of Egypt. Hear my prayer, and be merciful to thy lot and inheritance, and turn our mourning into joy, that we may live and praise thy name, O Lord, and shut not the mouths of them that sing to thee, O Lord our God.",
+  "src": "M39 pp. 84-85 (pdf 76); bible/en Esther 13: 9-17",
+  "why": "English to the Latin: the Missal begins 'Orávit Mardochǽus ad Dóminum, dicens' (Douay v. 9 has only 'And said') and ends 'Dómine Deus noster': AI translation of both, labelled in src",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad2w",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Esther 13: 9-11, 15-17); AI translation (Missal departs from the Vulgate): \"Mardochai prayed to the Lord, saying:\" (Missal \"Orávit Mardochǽus ad Dóminum, dicens\"); \", O Lord our God\" at the end (Missal \"Dómine Deus noster\")",
+  "src": "M39 pp. 84-85 (pdf 76)",
+  "why": "English source label (new key)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2w",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Ascéndens Jesus Jerosólymam, assúmpsit duódecim discípulos secréto, et ait illis: Ecce ascéndimus Jerosólymam, et Fílius hóminis tradétur princípibus sacerdótum, et scribis, et condemnábunt eum morte, et tradent eum géntibus ad illudéndum, et flagellándum, et crucifigéndum, et tértia die resúrget. Tunc accéssit ad eum mater filiórum Zebedǽi cum fíliis suis, adórans et petens áliquid ab eo. Qui dixit ei: Quid vis? Ait illi: Dic ut sédeant hi duo fílii mei, unus ad déxteram tuam, et unus ad sinístram in regno tuo. Respóndens autem Jesus, dixit: Nescítis quid petátis. Potéstis bíbere cálicem, quem ego bibitúrus sum? Dicunt ei: Póssumus. Ait illis: Cálicem quidem meum bibétis: sedére autem ad déxteram meam vel sinístram non est meum dare vobis, sed quibus parátum est a Patre meo. Et audiéntes decem, indignáti sunt de duóbus frátribus. Jesus autem vocávit eos ad se, et ait: Scitis quia príncipes géntium dominántur eórum: et qui majóres sunt, potestátem exércent in eos. Non ita erit inter vos: sed quicúmque volúerit inter vos major fíeri, sit vester miníster: et qui volúerit inter vos primus esse, erit vester servus. Sicut Fílius hóminis non venit ministrári, sed ministráre, et dare ánimam suam redemptiónem pro multis.",
+  "new": "In illo témpore: Ascéndens Jesus Jerosólymam, assúmpsit duódecim discípulos secréto, et ait illis: Ecce ascéndimus Jerosólymam, et Fílius hóminis tradétur princípibus sacerdótum, et Scribis, et condemnábunt eum morte, et tradent eum Géntibus ad illudéndum, et flagellándum, et crucifigéndum, et tértia die resúrget. Tunc accéssit ad eum mater filiórum Zebedǽi cum fíliis suis, adórans, et petens áliquid ab eo. Qui dixit ei: Quid vis? Ait illi: Dic ut sédeant hi duo fílii mei, unus ad déxteram tuam, et unus ad sinístram in regno tuo. Respóndens autem Jesus, dixit: Nescítis quid petátis. Potéstis bíbere cálicem, quem ego bibitúrus sum? Dicunt ei: Póssumus. Ait illis: Cálicem quidem meum bibétis: sedére autem ad déxteram meam vel sinístram non est meum dare vobis, sed quibus parátum est a Patre meo. Et audiéntes decem, indignáti sunt de duóbus frátribus. Jesus autem vocávit eos ad se, et ait: Scitis quia príncipes géntium dominántur eórum: et qui majóres sunt, potestátem exércent in eos. Non ita erit inter vos: Sed quicúmque volúerit inter vos major fíeri, sit vester miníster: Et qui volúerit inter vos primus esse, erit vester servus. Sicut Fílius hóminis non venit ministrári, sed ministráre, et dare ánimam suam, redemptiónem pro multis.",
+  "src": "M39 p. 85 (pdf 76)",
+  "why": "punctuation 2, case 4 (Scribis, Géntibus, Sed, Et) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2h",
+   "or",
+   0
+  ],
+  "old": "Præsta nobis, quǽsumus, Dómine, auxílium grátiæ tuæ: ut, ieiúniis et oratiónibus conveniénter inténti, liberémur ab hóstibus mentis et córporis. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Præsta nobis, quǽsumus Dómine, auxílium grátiæ tuæ: ut ieiúniis et oratiónibus conveniénter inténti; liberémur ab hóstibus mentis et córporis: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 86 (pdf 77)",
+  "why": "punctuation as printed ('inténti;' flexa, ':' before the conclusion; Proc. 1913 p. 405)",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2h",
+   "se",
+   0
+  ],
+  "old": "Præsénti sacrifício, nómini tuo nos, Dómine, ieiúnia dicáta sanctíficent: ut, quod observántia nostra profitétur extérius, intérius operétur efféctu. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Præsénti sacrifício nómini tuo nos, Dómine, ieiúnia dicáta sanctíficent: ut quod observántia nostra profitétur extérius, intérius operétur efféctu. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 87 (pdf 77)",
+  "why": "punctuation as printed (the print ends 'efféctu. Per Dóminum.')",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2h",
+   "pc",
+   0
+  ],
+  "old": "Grátia tua nos, quǽsumus, Dómine, non derelínquat: quæ et sacræ nos déditos fáciat servitúti, et tuam nobis opem semper acquírat. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Grátia tua nos, quǽsumus Dómine, non derelínquat: quæ et sacræ nos déditos fáciat servitúti; et tuam nobis opem semper acquírat: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 87 (pdf 77)",
+  "why": "punctuation as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2h",
+   0,
+   "la"
+  ],
+  "old": "Maledíctus homo, qui confídit in hómine, et ponit carnem bráchium suum, et a Dómino recédit cor ejus. Erit enim quasi myrícæ in desérto, et mi non vidébit cum vénerit bonum: sed et justítiam diléxit: æquitátem habitábit in siccitáte in desérto, in",
+  "new": "Hæc dicit Dóminus Deus: Maledíctus homo, qui confídit in hómine, et ponit carnem bráchium suum, et a Dómino recédit cor ejus. Erit enim quasi myrícæ in desérto, et non vidébit cum vénerit bonum: sed habitábit in siccitáte in desérto, in terra salsúginis, et inhabitábili. Benedíctus vir, qui confídit in Dómino, et erit Dóminus fidúcia ejus. Et erit quasi lignum quod transplantátur super aquas, quod ad humórem mittit radíces suas: et non timébit cum vénerit æstus. Et erit fólium ejus víride, et in témpore siccitátis non erit sollícitum, nec aliquándo désinet fácere fructum. Pravum est cor ómnium, et inscrutábile: Quis cognóscet illud? Ego Dóminus scrutans cor, et probans renes: qui do unicuíque juxta viam suam, et juxta fructum adinventiónum suárum. Dicit Dóminus omnípotens.",
+  "src": "M39 p. 86 (pdf 77)",
+  "why": "reading garbled ('et mi', 'sed et justítiam diléxit: æquitátem') and cut after v. 6 (readings_cut.md): retaken whole from the scan, Jer 17: 5-10, beginning 'Hæc dicit Dóminus Deus:' and ending 'Dicit Dóminus omnípotens.' as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2h",
+   0,
+   "ref"
+  ],
+  "old": "Jeremias 17: 5-6",
+  "new": "Jeremias 17: 5-10",
+  "src": "M39 p. 86 (pdf 77)",
+  "why": "reference to the printed text (vv. 5-10; masses.js already has 17: 5-10)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2h",
+   0,
+   "en"
+  ],
+  "old": "Thus saith the Lord: Cursed be the man that trusteth in man, and maketh flesh his arm, and whose heart departeth from the Lord. For he shall be like tamaric in the desert, and he shall not see when good shall come: but he shall dwell in dryness in the desert in a salt land, and not inhabited.",
+  "new": "Thus saith the Lord God: Cursed be the man that trusteth in man, and maketh flesh his arm, and whose heart departeth from the Lord. For he shall be like tamaric in the desert, and he shall not see when good shall come: but he shall dwell in dryness in the desert in a salt land, and not inhabited. Blessed be the man that trusteth in the Lord, and the Lord shall be his confidence. And he shall be as a tree that is planted by the waters, that spreadeth out its roots towards moisture: and it shall not fear when the heat cometh. And the leaf thereof shall be green, and in the time of drought it shall not be solicitous, neither shall it cease at any time to bring forth fruit. The heart is perverse above all things, and unsearchable, who can know it? I am the Lord who search the heart and prove the reins: who give to every one according to his way, and according to the fruit of his devices, saith the Lord almighty.",
+  "src": "M39 p. 86 (pdf 77); bible/en Jer 17: 5-10",
+  "why": "English for the whole printed reading (was vv. 5-6 only): Douay verbatim, with 'God' (Missal 'Dóminus Deus') and ', saith the Lord almighty' (Missal 'Dicit Dóminus omnípotens') as AI translation, labelled in src",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad2h",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Jer 17: 5-10); AI translation (Missal departs from the Vulgate): \"God\" in \"Thus saith the Lord God\" (Missal \"Hæc dicit Dóminus Deus\"); \", saith the Lord almighty\" at the end (Missal \"Dicit Dóminus omnípotens\")",
+  "src": "M39 p. 86 (pdf 77)",
+  "why": "English source label (new key)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2h",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus Pharisǽis: Homo quidam erat dives, qui induebátur púrpura et bysso, et epulabátur quotídie spléndide. Et erat quidam mendícus, nómine Lázarus, qui jacébat ad jánuam ejus, ulcéribus plenus, cúpiens saturári de micis, quæ cadébant de mensa dívitis, et nemo illi dabat: sed et canes veniébant, et lingébant úlcera ejus. Factum est autem ut morerétur mendícus, et portarétur ab ángelis in sinum Abrahæ. Mórtuus est autem et dives, et sepúltus est in inférno. Elevans autem óculos suos, cum esset in torméntis, vidit Abraham a longe, et Lázarum in sinu ejus: et ipse clamans dixit: Pater Abraham, miserére mei, et mitte Lázarum ut intíngat extrémum dígiti sui in aquam, ut refrígeret linguam meam, quia crúcior in hac flamma. Et dixit illi Abraham: Fili, recordáre quia recepísti bona in vita tua, et Lázarus simíliter mala: nunc autem hic consolátur, tu vero cruciáris: et in his ómnibus inter nos, et vos chaos magnum firmátum est: ut hi, qui volunt hinc transíre ad vos, non possint, neque inde huc transmeáre. Et ait: Rogo ergo te pater ut mittas eum in domum patris mei: hábeo enim quinque fratres: ut testétur illis, ne et ipsi véniant in hunc locum tormentórum. Et ait illi Abraham: Habent Móysen, et prophétas: áudiant illos. At ille dixit: Non, pater Abraham: sed si quis ex mórtuis íerit ad eos, pœniténtiam agent. Ait autem illi: Si Móysen, et prophétas non áudiunt, neque si quis ex mórtuis resurréxerit, credent.",
+  "new": "In illo témpore: Dixit Jesus Pharisǽis: Homo quidam erat dives, qui induebátur púrpura, et bysso: et epulabátur quotídie spléndide. Et erat quidam mendícus, nómine Lázarus, qui jacébat ad jánuam ejus, ulcéribus plenus, cúpiens saturári de micis, quæ cadébant de mensa dívitis, et nemo illi dabat: Sed et canes veniébant, et lingébant úlcera ejus. Factum est autem ut morerétur mendícus, et portarétur ab Angelis in sinum Abrahæ. Mórtuus est autem et dives, et sepúltus est in inférno. Elevans autem óculos suos, cum esset in torméntis, vidit Abraham a longe, et Lázarum in sinu ejus: Et ipse clamans dixit: Pater Abraham, miserére mei, et mitte Lázarum ut intíngat extrémum dígiti sui in aquam, ut refrígeret linguam meam, quia crúcior in hac flamma. Et dixit illi Abraham: Fili, recordáre quia recepísti bona in vita tua, et Lázarus simíliter mala: Nunc autem hic consolátur, tu vero cruciáris. Et in his ómnibus, inter nos et vos chaos magnum firmátum est: ut hi, qui volunt hinc transíre ad vos, non possint, neque inde huc transmeáre. Et ait: Rogo ergo te pater, ut mittas eum in domum patris mei. Hábeo enim quinque fratres, ut testétur illis, ne et ipsi véniant in hunc locum tormentórum. Et ait illi Abraham: Habent Móysen et prophétas: áudiant illos. At ille dixit: Non, pater Abraham: sed si quis ex mórtuis íerit ad eos, pœniténtiam agent. Ait autem illi: Si Móysen et prophétas non áudiunt, neque si quis ex mórtuis resurréxerit, credent.",
+  "src": "M39 pp. 86-87 (pdf 77)",
+  "why": "punctuation 10, case 6 (Sed, Angelis, Et, Nunc, Et, Hábeo) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2f",
+   "or",
+   0
+  ],
+  "old": "Da, quǽsumus, omnípotens Deus: ut, sacro nos purificánte ieiúnio, sincéris méntibus ad sancta ventúra fácias perveníre. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Da, quǽsumus omnípotens Deus: ut sacro nos purificánte ieiúnio; sincéris méntibus ad sancta ventúra fácias perveníre: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 88 (pdf 78)",
+  "why": "punctuation as printed ('ieiúnio;' flexa, ':' before the conclusion; Proc. 1913 p. 405)",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2f",
+   "pc",
+   0
+  ],
+  "old": "Fac nos, quǽsumus, Dómine: accépto pígnore salútis ætérnæ, sic téndere congruénter; ut ad eam perveníre possímus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Fac nos, quǽsumus Dómine, accépto pígnore salútis ætérnæ, sic téndere congruénter; ut ad eam perveníre possímus: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 89 (pdf 78)",
+  "why": "punctuation as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2f",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Dixit Joseph frátribus suis: Audíte sómnium meum quod vidi: putábam nos ligáre manípulos in agro: et quasi consúrgere manípulum meum, et stare, vestrósque manípulos circumstántes adoráre manípulum meum. Respondérunt fratres ejus: Numquid rex noster eris? Aut subjiciémur ditióni tuæ? Hæc ergo causa somniórum atque sermónum, invídiæ et ódii fómitem ministrávit. Aliud quoque vidit sómnium, quod narrans frátribus, ait: Vidi per sómnium, quasi solem, et lunam, et stellas úndecim adoráre me. Quod cum patri suo, et frátribus retulísset, increpávit eum pater suus, et dixit: Quid sibi vult hoc sómnium quod vidísti? Num ego et mater tua, et fratres tui adorábimus te super terram? Invidébant ei ígitur fratres sui: pater vero rem tácitus considerábat. Cumque fratres illíus in pascéndis grégibus patris moraréntur in Sichem, dixit ad eum Israël: Fratres tui pascunt oves in Síchimis: veni, mittam te ad eos. Quo respondénte, Præsto sum, ait ei: Vade, et vide si cuncta próspera sint erga fratres tuos, et pécora: et renúntia mihi quid agátur. Missus de valle Hebron, venit in Sichem: invenítque eum vir errántem in agro, et interrogávit quid quǽreret. At ille respóndit: Fratres meos quæro: índica mihi ubi pascant greges. Dixítque ei vir: Recessérunt de loco isto: audívi autem eos dicéntes: Eámus in Dóthain. Perréxit ergo Joseph post fratres suos, et invénit eos in Dóthain. Qui cum vidíssent eum procul, ántequam accéderet ad eos, cogitavérunt illum occídere: et mútuo loquebántur: Ecce somniátor venit: veníte, occidámus eum, et mittámus in cistérnam véterem: dicemúsque: Fera péssima devorávit eum: et tunc apparébit quid illi prosint sómnia sua. Audiens autem hoc Ruben, nitebátur liberáre eum de mánibus eórum, et dicébat: Non interficiátis ánimam ejus, nec effundátis sánguinem: sed projícite eum in cistérnam hanc, quæ est in solitúdine, manúsque vestras serváte innóxias: hoc autem dicébat, volens erípere eum de mánibus eórum, et réddere patri suo.",
+  "new": "In diébus illis: Dixit Joseph frátribus suis: Audíte sómnium meum quod vidi: Putábam nos ligáre manípulos in agro: et quasi consúrgere manípulum meum, et stare, vestrósque manípulos circumstántes adoráre manípulum meum. Respondérunt fratres ejus: Numquid rex noster eris? aut subjiciémur ditióni tuæ? Hæc ergo causa somniórum atque sermónum, invídiæ et ódii fómitem ministrávit. Aliud quoque vidit sómnium, quod narrans frátribus, ait: Vidi per sómnium, quasi solem, et lunam, et stellas úndecim adoráre me. Quod cum patri suo, et frátribus retulísset, increpávit eum pater suus, et dixit: Quid sibi vult hoc sómnium quod vidísti? Num ego, et mater tua, et fratres tui adorábimus te super terram? Invidébant ei ígitur fratres sui: pater vero rem tácitus considerábat. Cumque fratres illíus in pascéndis grégibus patris moraréntur in Sichem, dixit ad eum Israël: Fratres tui pascunt oves in Síchimis: veni, mittam te ad eos. Quo respondénte, Præsto sum, ait ei: Vade, et vide si cuncta próspera sint erga fratres tuos, et pécora: et renúntia mihi quid agátur. Missus de Valle Hebron, venit in Sichem; invenítque eum vir errántem in agro, et interrogávit quid quǽreret. At ille respóndit: Fratres meos quæro, índica mihi ubi pascant greges. Dixítque ei vir: Recessérunt de loco isto: Audívi autem eos dicéntes, Eámus in Dóthain. Perréxit ergo Joseph post fratres suos, et invénit eos in Dóthain. Qui cum vidíssent eum procul, ántequam accéderet ad eos, cogitavérunt illum occídere: et mútuo loquebántur: Ecce somniátor venit: veníte, occidámus eum, et mittámus in cistérnam véterem: dicemúsque, Fera péssima devorávit eum: Et tunc apparébit, quid illi prosint sómnia sua. Audiens autem hoc Ruben, nitebátur liberáre eum de mánibus eórum, et dicébat: Non interficiátis ánimam ejus, nec effundátis sánguinem: sed projícite eum in cistérnam hanc, quæ est in solitúdine, manúsque vestras serváte innóxias: Hoc autem dicébat, volens erípere eum de mánibus eórum, et réddere patri suo.",
+  "src": "M39 pp. 88-89 (pdf 78)",
+  "why": "punctuation 6, case 6 (Putábam, aut, Valle, Audívi, Et, Hoc) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2f",
+   0,
+   "en"
+  ],
+  "old": "In those days: He said to them: Hear my dream which I dreamed. I thought we were binding sheaves in the field: and my sheaf arose as it were, and stood, and your sheaves standing about, bowed down before my sheaf. His brethren answered: Shalt thou be our king? or shall we be subject to thy dominion? Therefore this matter of his dreams and words ministered nourishment to their envy and hatred. He dreamed also another dream, which he told his brethren, saying: I saw in a dream, as it were the sun, and the moon, and eleven stars worshipping me. And when he had told this to his father and brethren, his father rebuked him, and said: What meaneth this dream that thou hast dreamed? shall I and thy mother, and thy brethren worship thee upon the earth? His brethren therefore envied him: but his father considered the thing with himself. And when his brethren abode in Sichem feeding their father’s flocks, Israel said to him: Thy brethren feed the sheep in Sichem: come, I will send thee to them. And when he answered: I am ready: he said to him: Go, and see if all things be well with thy brethren, and the cattle: and bring me word again what is doing. So being sent from the vale of Hebron, he came to Sichem: And a man found him there wandering in the field, and asked what he sought. But he answered: I seek my brethren; tell me where they feed the flocks. And the man said to him: They are departed from this place: for I heard them say: Let us go to Dothain. And Joseph went forward after his brethren, and found them in Dothain. And when they saw him afar off, before he came nigh them, they thought to kill him. And said one to another: Behold the dreamer cometh. Come, let us kill him, and cast him into some old pit: and we will say: Some evil beast hath devoured him: and then it shall appear what his dreams avail him: And Ruben hearing this, endeavoured to deliver him out of their hands, and said: Do not take away his life, nor shed his blood: but cast him into this pit, that is in the wilderness, and keep your hands harmless: now he said this, being desirous to deliver him out of their hands and to restore him to his father.",
+  "new": "In those days: Joseph said to his brethren: Hear my dream which I dreamed. I thought we were binding sheaves in the field: and my sheaf arose as it were, and stood, and your sheaves standing about, bowed down before my sheaf. His brethren answered: Shalt thou be our king? or shall we be subject to thy dominion? Therefore this matter of his dreams and words ministered nourishment to their envy and hatred. He dreamed also another dream, which he told his brethren, saying: I saw in a dream, as it were the sun, and the moon, and eleven stars worshipping me. And when he had told this to his father and brethren, his father rebuked him, and said: What meaneth this dream that thou hast dreamed? shall I and thy mother, and thy brethren worship thee upon the earth? His brethren therefore envied him: but his father considered the thing with himself. And when his brethren abode in Sichem feeding their father’s flocks, Israel said to him: Thy brethren feed the sheep in Sichem: come, I will send thee to them. And when he answered: I am ready: he said to him: Go, and see if all things be well with thy brethren, and the cattle: and bring me word again what is doing. So being sent from the vale of Hebron, he came to Sichem: And a man found him there wandering in the field, and asked what he sought. But he answered: I seek my brethren; tell me where they feed the flocks. And the man said to him: They are departed from this place: for I heard them say: Let us go to Dothain. And Joseph went forward after his brethren, and found them in Dothain. And when they saw him afar off, before he came nigh them, they thought to kill him. And said one to another: Behold the dreamer cometh. Come, let us kill him, and cast him into some old pit: and we will say: Some evil beast hath devoured him: and then it shall appear what his dreams avail him: And Ruben hearing this, endeavoured to deliver him out of their hands, and said: Do not take away his life, nor shed his blood: but cast him into this pit, that is in the wilderness, and keep your hands harmless: now he said this, being desirous to deliver him out of their hands and to restore him to his father.",
+  "src": "M39 p. 88 (pdf 78); bible/en Gen 37: 6-22",
+  "why": "English to the Latin: the Missal begins 'Dixit Joseph frátribus suis' (Douay v. 6 'He said to them'): AI translation of the clause, labelled in src",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad2f",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Gen 37: 6-22); AI translation (Missal departs from the Vulgate): \"Joseph said to his brethren\" (Missal \"Dixit Joseph frátribus suis\")",
+  "src": "M39 p. 88 (pdf 78)",
+  "why": "English source label (new key)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2f",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus turbis Judæórum, et princípibus sacerdótum parábolam hanc: Homo erat paterfamílias, qui plantávit víneam, et sepem circúmdedit ei, et fodit in ea tórcular, et ædificávit turrim, et locávit eam agrícolis, et péregre proféctus est. Cum autem tempus frúctuum appropinquásset, misit servos suos ad agrícolas, ut accíperent fructus ejus. Et agrícolæ, apprehénsis servis ejus, álium cecidérunt, álium occidérunt, álium vero lapidavérunt. Iterum misit álios servos plures prióribus, et fecérunt illis simíliter. Novíssime autem misit ad eos fílium suum, dicens: Verebúntur fílium meum. Agrícolæ autem vidéntes fílium dixérunt intra se: Hic est heres, veníte, occidámus eum, et habébimus hereditátem ejus. Et apprehénsum eum ejecérunt extra víneam, et occidérunt. Cum ergo vénerit dóminus víneæ, quid fáciet agrícolis illis? Ajunt illi: Malos male perdet: et víneam suam locábit áliis agrícolis, qui reddant ei fructum tempóribus suis. Dicit illis Jesus: Numquam legístis in Scriptúris: Lápidem, quem reprobavérunt ædificántes, hic factus est in caput ánguli: a Dómino factum est istud, et est mirábile in óculis nostris? Ideo dico vobis, quia auferétur a vobis regnum Dei, et dábitur genti faciénti fructus ejus. Et qui cecíderit super lápidem istum, confringétur: super quem vero cecíderit, cónteret eum. Et cum audíssent Glória Patri, príncipes sacerdótum, et Pharisǽi parábolas ejus, cognovérunt quod de mus génua. Leváte. Ipsis díceret. Et quæréntes eum tenére, timuérunt turbas: quóniam sicut prophétam eum habébant.",
+  "new": "In illo témpore: Dixit Jesus turbis Judæórum, et princípibus sacerdótum parábolam hanc: Homo erat paterfamílias, qui plantávit víneam, et sepem circúmdedit ei, et fodit in ea tórcular, et ædificávit turrim, et locávit eam agrícolis, et péregre proféctus est. Cum autem tempus frúctuum appropinquásset, misit servos suos ad agrícolas, ut accíperent fructus ejus. Et agrícolæ, apprehénsis servis ejus, álium cecidérunt, álium occidérunt, álium vero lapidavérunt. Iterum misit álios servos plures prióribus, et fecérunt illis simíliter. Novíssime autem misit ad eos fílium suum, dicens: Verebúntur fílium meum. Agrícolæ autem vidéntes fílium, dixérunt intra se: Hic est heres, veníte, occidámus eum, et habébimus hereditátem ejus. Et apprehénsum eum ejecérunt extra víneam, et occidérunt. Cum ergo vénerit Dóminus víneæ, quid fáciet agrícolis illis? Ajunt illi: Malos male perdet: et víneam suam locábit áliis agrícolis, qui reddant ei fructum tempóribus suis. Dicit illis Jesus: Numquam legístis in Scriptúris, Lápidem, quem reprobavérunt ædificántes, hic factus est in caput ánguli: a Dómino factum est istud, et est mirábile in óculis nostris? Ideo dico vobis, quia auferétur a vobis regnum Dei, et dábitur genti faciénti fructus ejus. Et qui cecíderit super lápidem istum, confringétur: Super quem vero cecíderit, cónteret eum. Et cum audíssent príncipes sacerdótum, et Pharisǽi parábolas ejus, cognovérunt quod de ipsis díceret. Et quæréntes eum tenére, timuérunt turbas: quóniam sicut prophétam eum habébant.",
+  "src": "M39 p. 89 (pdf 78)",
+  "why": "OCR junk removed ('Glória Patri,' and 'mus génua. Leváte.' inside the text; 'Ipsis' -> 'ipsis'); punctuation 2, case 2 (Dóminus, Super) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2s",
+   "or",
+   0
+  ],
+  "old": "Da, quǽsumus, Dómine, nostris efféctum ieiúniis salutárem: ut castigátio carnis assúmpta, ad nostrárum vegetatiónem tránseat animárum. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Da, quǽsumus Dómine, nostris efféctum ieiúniis salutárem; ut castigátio carnis assúmpta ad nostrárum vegetatiónem tránseat animárum: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 90 (pdf 79)",
+  "why": "punctuation as printed ('salutárem;' flexa, ':' before the conclusion; Proc. 1913 p. 405)",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2s",
+   "se",
+   0
+  ],
+  "old": "His sacrifíciis, Dómine, concéde placátus: ut, qui própriis orámus absólvi delíctis, non gravémur extérnis. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "His sacrifíciis, Dómine, concéde placátus: ut qui própriis orámus absólvi delíctis, non gravémur extérnis. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 92 (pdf 80)",
+  "why": "punctuation as printed (the print ends 'extérnis. Per Dóminum.')",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2s",
+   "pc",
+   0
+  ],
+  "old": "Sacraménti tui, Dómine, divína libátio, penetrália nostri cordis infúndat: et sui nos partícipes poténter effíciat. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Sacraménti tui, Dómine, divína libátio penetrália nostri cordis infúndat; et sui nos partícipes poténter effíciat: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 93 (pdf 80)",
+  "why": "punctuation as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2s",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Dixit Rebécca fílio suo Jacob: Audívi patrem tuum loquéntem cum Esau fratre tuo, et dicéntem ei: Affer mihi de venatióne tua, et fac cibos ut cómedam, et benedícam tibi coram Dómino ántequam móriar. Nunc ergo fili mi, acquiésce consíliis meis: et pergens ad gregem, affer mihi duos hædos óptimos, ut fáciam ex eis escas patri tuo, quibus libénter véscitur: quas cum intúleris, et coméderit, benedícat tibi priúsquam moriátur. Cui ille respóndit: Nosti quod Esau frater meus homo pilósus sit, et ego lenis: si attrectáverit me pater meus, et sénserit, tímeo ne putet me sibi voluísse illúdere, et indúcam Sume maledictiónem pro benedictióne. Ad quem mater: In me sit, ait, ista maledíctio, fili mi: tantum audi vocem meam, et pergens affer quæ dixi. Abiit, et áttulit, dedítque matri. Parávit illa cibos, sicut velle nóverat patrem illíus. Et véstibus Esau valde bonis, quas apud se habébat domi, índuit eum: pelliculásque hædórum circúmdedit mánibus, et colli nuda protéxit: dedítque pulméntum, et panes, quos cóxerat, trádidit. Quibus illátis, dixit: Pater mi? At ille respóndit: Audio. Quis es tu fili mi? Dixítque Jacob: Ego sum primogénitus tuus Esau: feci sicut præcepísti mihi: surge, sede, et cómede de venatióne mea, ut benedícat mihi ánima tua. Rursúmque Isaac ad fílium suum: Quómodo, inquit, tam cito inveníre potuísti, fili mi? Qui respóndit: Volúntas Dei fuit ut cito occúrreret mihi quod volébam. Dixítque Isaac: Accéde huc, ut tangam te, fili mi, et probem utrum tu sis fílius meus Esau, an non. Accéssit ille ad patrem, et palpáto eo, dixit Isaac: Vox quidem, vox Jacob est: sed manus, manus sunt Esau. Et non cognóvit eum, quia pilósæ manus similitúdinem majóris exprésserant. Benedícens ergo illi, ait: Tu es fílius meus Esau? Respóndit: Ego sum. At ille: Affer mihi, inquit, cibos de venatióne tua, fili mi, ut benedícat tibi ánima mea. Quos cum oblátos comedísset, óbtulit ei étiam vinum. Quo hausto, dixit ad eum: Accéde ad me, et da mihi ósculum, fili mi. Accéssit, et osculátus est eum. Statímque ut sensit vestimentórum illíus fragrántiam, benedícens illi, ait: Ecce odor fílii mei sicut odor agri pleni, cui benedíxit Dóminus. Det tibi Deus de rore cæli, et de pinguédine terræ abundántiam fruménti et vini. Et sérviant tibi pópuli, et adórent te tribus: esto dóminus fratrum tuórum, et incurvéntur ante te fílii matris tuæ: qui maledíxerit tibi, sit ille maledíctus: et qui benedíxerit tibi, benedictiónibus repleátur. Vix Isaac sermónem impléverat, et egrésso Jacob foras, venit Esau, coctósque de venatióne cibos íntulit patri, dicens: Surge, pater mi, et cómede de venatióne fílii tui, ut benedícat mihi ánima tua. Dixítque illi Isaac: Quis enim es tu? Qui respóndit: Ego sum fílius tuus primogénitus Esau. Expávit Isaac stupóre veheménti: et ultra quam credi potest admírans, ait: Quis ígitur ille est qui dudum captam venatiónem áttulit mihi, et comédi ex ómnibus priúsquam tu veníres? Benedixíque ei, et erit benedíctus. Audítis Esau sermónibus patris, irrúgiit clamóre magno: et consternátus, ait: Bénedic étiam et mihi, pater mi. Qui ait: Venit germánus tuus fraudulénter, et accépit benedictiónem tuam. At ille subjúnxit: Juste vocátum est nomen ejus Jacob: supplantávit enim me en áltera vice: primogénita mea ante tulit, et nunc secúndo surrípuit benedictiónem meam. Rursúmque ad patrem: Numquid non reservásti, ait, et mihi benedictiónem? Respóndit Isaac: Dóminum tuum illum constítui, et omnes fratres ejus servitúti illíus subjugávi: fruménto et vino stabilívi eum, et tibi post hæc, fili mi, ultra quid fáciam? Cui Esau: Num unam, inquit, tantum benedictiónem habes, pater? Mihi quoque óbsecro ut benedícas. Cumque ejulátu magno fleret, motus Isaac, a dixit ad eum: In pinguédine terræ, et in rore cæli désuper erit benedíctio tua.",
+  "new": "In diébus illis: Dixit Rebécca fílio suo Jacob: Audívi patrem tuum loquéntem cum Esau fratre tuo, et dicéntem ei: Affer mihi de venatióne tua, et fac cibos ut cómedam, et benedícam tibi coram Dómino ántequam móriar. Nunc ergo fili mi, acquiésce consíliis meis: et pergens ad gregem, affer mihi duos hædos óptimos, ut fáciam ex eis escas patri tuo, quibus libénter véscitur: Quas cum intúleris, et coméderit, benedícat tibi priúsquam moriátur. Cui ille respóndit: Nosti quod Esau frater meus homo pilósus sit, et ego lenis: Si attrectáverit me pater meus, et sénserit, tímeo ne putet me sibi voluísse illúdere, et indúcam super me maledictiónem pro benedictióne. Ad quem mater: In me sit, ait, ista maledíctio, fili mi: tantum audi vocem meam, et pergens affer quæ dixi. Abiit, et áttulit, dedítque matri. Parávit illa cibos, sicut velle nóverat patrem illíus. Et véstibus Esau valde bonis, quas apud se habébat domi, índuit eum: Pelliculásque hædórum circúmdedit mánibus, et colli nuda protéxit. Dedítque pulméntum, et panes, quos cóxerat, trádidit. Quibus illátis, dixit: Pater mi? At ille respóndit: Audio. Quis es tu fili mi? Dixítque Jacob: Ego sum primogénitus tuus Esau: feci sicut præcepísti mihi: Surge, sede, et cómede de venatióne mea, ut benedícat mihi ánima tua. Rursúmque Isaac ad fílium suum: Quómodo, inquit, tam cito inveníre potuísti, fili mi? Qui respóndit: Volúntas Dei fuit, ut cito occúrreret mihi quod volébam. Dixítque Isaac: Accéde huc, ut tangam te, fili mi, et probem utrum tu sis fílius meus Esau, an non. Accéssit ille ad patrem, et palpáto eo, dixit Isaac: Vox quidem, vox Jacob est: sed manus, manus sunt Esau. Et non cognóvit eum, quia pilósæ manus similitúdinem majóris exprésserant. Benedícens ergo illi, ait: Tu es fílius meus Esau? Respóndit: Ego sum. At ille: Affer mihi, inquit, cibos de venatióne tua, fili mi, ut benedícat tibi ánima mea. Quos cum oblátos comedísset, óbtulit ei étiam vinum. Quo hausto, dixit ad eum: Accéde ad me, et da mihi ósculum, fili mi. Accéssit, et osculátus est eum. Statímque ut sensit vestimentórum illíus fragrántiam, benedícens illi, ait: Ecce odor fílii mei sicut odor agri pleni, cui benedíxit Dóminus. Det tibi Deus de rore cæli, et de pinguédine terræ abundántiam fruménti et vini. Et sérviant tibi pópuli, et adórent te tribus: Esto Dóminus fratrum tuórum, et incurvéntur ante te fílii matris tuæ. Qui maledíxerit tibi, sit ille maledíctus: et qui benedíxerit tibi, benedictiónibus repleátur. Vix Isaac sermónem impléverat: et egrésso Jacob foras, venit Esau, coctósque de venatióne cibos íntulit patri, dicens: Surge pater mi, et cómede de venatióne fílii tui, ut benedícat mihi ánima tua. Dixítque illi Isaac: Quis enim es tu? Qui respóndit: Ego sum fílius tuus primogénitus Esau. Expávit Isaac stupóre veheménti: et ultra quam credi potest, admírans, ait: Quis ígitur ille est, qui dudum captam venatiónem áttulit mihi, et comédi ex ómnibus priúsquam tu veníres? Benedixíque ei, et erit benedíctus. Audítis Esau sermónibus patris, irrúgiit clamóre magno: et consternátus, ait: Bénedic étiam et mihi, pater mi. Qui ait: Venit germánus tuus fraudulénter, et accépit benedictiónem tuam. At ille subjúnxit: Juste vocátum est nomen ejus Jacob: supplantávit enim me en áltera vice: Primogénita mea ante tulit, et nunc secúndo surrípuit benedictiónem meam. Rursúmque ad patrem: Numquid non reservásti, ait, et mihi benedictiónem? Respóndit Isaac: Dóminum tuum illum constítui, et omnes fratres ejus servitúti illíus subjugávi: Fruménto et vino stabilívi eum, et tibi post hæc, fili mi, ultra quid fáciam? Cui Esau: Num unam, inquit, tantum benedictiónem habes, pater? Mihi quoque óbsecro ut benedícas. Cumque ejulátu magno fleret, motus Isaac, dixit ad eum: In pinguédine terræ, et in rore cæli désuper erit benedíctio tua.",
+  "src": "M39 pp. 90-91 (pdf 79)",
+  "why": "OCR junk 'Sume' -> 'super me' and stray 'a' removed; punctuation 7, case 9 (Quas, Si, Pelliculásque, Dedítque, Surge, Esto Dóminus, Qui, Primogénita, Fruménto) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2s",
+   0,
+   "en"
+  ],
+  "old": "In those days: She said to her son Jacob: I heard thy father talking with Esau thy brother, and saying to him: Bring me of thy hunting, and make me meats that I may eat, and bless thee in the sight of the Lord, before I die. Now, therefore, my son, follow my counsel: And go thy way to the flock, bring me two kids of the best, that I may make of them meat for thy father, such as he gladly eateth: Which when thou hast brought in, and he hath eaten, he may bless thee before he die. And he answered her: Thou knowest that Esau my brother is a hairy man, and I am smooth. If my father shall feel me, and perceive it, I fear lest he will think I would have mocked him, and I shall bring upon me a curse instead of a blessing. And his mother said to him: Upon me be this curse, my son: only hear thou my voice, and go, fetch me the things which I have said. He went, and brought, and gave them to his mother. She dressed meats, such as she knew his father liked. And she put on him very good garments of Esau, which she had at home with her: And the little skins of the kids she put about his hands, and covered the bare of his neck. And she gave him the savoury meat, and delivered him bread that she had baked. Which when he had carried in, he said: My father? But he answered: I hear. Who art thou, my son? And Jacob said: I am Esau thy firstborn: I have done as thou didst command me: arise, sit, and eat of my venison, that thy soul may bless me. And Isaac said to his son: How couldst thou find it so quickly, my son? He answered: It was the will of God, that what I sought came quickly in my way. And Isaac said: Come hither, that I may feel thee, my son, and may prove whether thou be my son Esau, or not. He came near to his father, and when he had felt him, Isaac said: The voice indeed is the voice of Jacob; but the hands are the hands of Esau. And he knew him not, because his hairy hands made him like to the elder. Then blessing him, He said: Art thou my son Esau? He answered: I am. Then he said: Bring me the meats of thy hunting, my son, that my soul may bless thee. And when they were brought, and he had eaten, he offered him wine also, which after he had drunk, He said to him: Come near me, and give me a kiss, my son. He came near, and kissed him. And immediately as he smelled the fragrant smell of his garments, blessing him, he said: Behold the smell of my son is as the smell of a plentiful field, which the Lord hath blessed. God give thee the dew of heaven, and of the fatness of the earth, abundance of corn and wine. And let peoples serve thee, and tribes worship thee: be thou lord of thy brethren, and let thy mother’s children bow down before thee. Cursed be he that curseth thee: and let him that blesseth thee be filled with blessings. Isaac had scarce ended his words, when Jacob being now gone out abroad, Esau came, And brought in to his father meats made of what he had taken in hunting, saying: Arise, my father, and eat of thy son’s venison; that thy soul may bless me. And Isaac said to him: Why! who art thou? He answered: I am thy firstborn son Esau. Isaac was struck with fear, and astonished exceedingly: and wondering beyond what can be believed, said Who is he then that even now brought me venison that he had taken, and I ate of all before thou camest? and I have blessed him, and he shall be blessed. Esau having heard his father’s words, roared out with a great cry: and being in a great consternation, said: Bless me also, my father. And he said: Thy brother came deceitfully and got thy blessing. But he said again: Rightly is his name called Jacob; for he hath supplanted me lo this second time: my first birthright he took away before, and now this second time he hath stolen away my blessing. And again he said to his father: Hast thou not reserved me also a blessing? Isaac answered: I have appointed him thy lord, and have made all his brethren his servants: I have established him with corn and wine, and after this, what shall I do more for thee, my son? And Esau said to him: Hast thou only one blessing, father? I beseech thee bless me also. And when he wept with a loud cry, Isaac being moved, said to him: In the fat of the earth, and in the dew of heaven from above, Shall thy blessing be. Thou shalt live by the sword and shalt serve thy brother: and the time shall come, when thou shalt shake off and loose his yoke from thy neck.",
+  "new": "In those days: Rebecca said to her son Jacob: I heard thy father talking with Esau thy brother, and saying to him: Bring me of thy hunting, and make me meats that I may eat, and bless thee in the sight of the Lord, before I die. Now, therefore, my son, follow my counsel: And go thy way to the flock, bring me two kids of the best, that I may make of them meat for thy father, such as he gladly eateth: Which when thou hast brought in, and he hath eaten, he may bless thee before he die. And he answered her: Thou knowest that Esau my brother is a hairy man, and I am smooth. If my father shall feel me, and perceive it, I fear lest he will think I would have mocked him, and I shall bring upon me a curse instead of a blessing. And his mother said to him: Upon me be this curse, my son: only hear thou my voice, and go, fetch me the things which I have said. He went, and brought, and gave them to his mother. She dressed meats, such as she knew his father liked. And she put on him very good garments of Esau, which she had at home with her: And the little skins of the kids she put about his hands, and covered the bare of his neck. And she gave him the savoury meat, and delivered him bread that she had baked. Which when he had carried in, he said: My father? But he answered: I hear. Who art thou, my son? And Jacob said: I am Esau thy firstborn: I have done as thou didst command me: arise, sit, and eat of my venison, that thy soul may bless me. And Isaac said to his son: How couldst thou find it so quickly, my son? He answered: It was the will of God, that what I sought came quickly in my way. And Isaac said: Come hither, that I may feel thee, my son, and may prove whether thou be my son Esau, or not. He came near to his father, and when he had felt him, Isaac said: The voice indeed is the voice of Jacob; but the hands are the hands of Esau. And he knew him not, because his hairy hands made him like to the elder. Then blessing him, He said: Art thou my son Esau? He answered: I am. Then he said: Bring me the meats of thy hunting, my son, that my soul may bless thee. And when they were brought, and he had eaten, he offered him wine also, which after he had drunk, He said to him: Come near me, and give me a kiss, my son. He came near, and kissed him. And immediately as he smelled the fragrant smell of his garments, blessing him, he said: Behold the smell of my son is as the smell of a plentiful field, which the Lord hath blessed. God give thee the dew of heaven, and of the fatness of the earth, abundance of corn and wine. And let peoples serve thee, and tribes worship thee: be thou lord of thy brethren, and let thy mother’s children bow down before thee. Cursed be he that curseth thee: and let him that blesseth thee be filled with blessings. Isaac had scarce ended his words, when Jacob being now gone out abroad, Esau came, And brought in to his father meats made of what he had taken in hunting, saying: Arise, my father, and eat of thy son’s venison; that thy soul may bless me. And Isaac said to him: Why! who art thou? He answered: I am thy firstborn son Esau. Isaac was struck with fear, and astonished exceedingly: and wondering beyond what can be believed, said Who is he then that even now brought me venison that he had taken, and I ate of all before thou camest? and I have blessed him, and he shall be blessed. Esau having heard his father’s words, roared out with a great cry: and being in a great consternation, said: Bless me also, my father. And he said: Thy brother came deceitfully and got thy blessing. But he said again: Rightly is his name called Jacob; for he hath supplanted me lo this second time: my first birthright he took away before, and now this second time he hath stolen away my blessing. And again he said to his father: Hast thou not reserved me also a blessing? Isaac answered: I have appointed him thy lord, and have made all his brethren his servants: I have established him with corn and wine, and after this, what shall I do more for thee, my son? And Esau said to him: Hast thou only one blessing, father? I beseech thee bless me also. And when he wept with a loud cry, Isaac being moved, said to him: In the fat of the earth, and in the dew of heaven from above, Shall thy blessing be.",
+  "src": "M39 pp. 90-91 (pdf 79); bible/en Gen 27: 6-40",
+  "why": "English to the Latin: the Missal begins 'Dixit Rebécca fílio suo Jacob' (Douay v. 6 'She said'; AI translation of the name, labelled) and ends 'désuper erit benedíctio tua.', so the rest of Douay v. 40 ('Thou shalt live by the sword … from thy neck') is dropped",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad2s",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Gen 27: 6-40a); AI translation (Missal departs from the Vulgate): \"Rebecca said to her son Jacob\" (Missal \"Dixit Rebécca fílio suo Jacob\")",
+  "src": "M39 p. 90 (pdf 79)",
+  "why": "English source label (new key)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2s",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus Pharisǽis, et Scribis parábolam istam: Homo quidam hábuit duos fílios: et dixit adolescéntior ex illis patri: Pater, da mihi portiónem substántiæ, quæ me contíngit. Et divísit illis substántiam. Et non post multos dies, congregátis ómnibus, adolescéntior fílius péregre proféctus est in regiónem longínquam, et ibi dissipávit substántiam suam vivéndo luxurióse. Et postquam ómnia consummásset, facta est fames válida in regióne illa, et ipse cœpit egére. Et ábiit, et adhǽsit uni cívium regiónis illíus: et misit illum in villam suam ut pásceret porcos. Et cupiébat implére ventrem suum de síliquis, quas porci manducábant: et nemo illi dabat. In se autem revérsus, dixit: Quanti mercenárii in domo patris mei abúndant pánibus, ego autem hic fame péreo! Surgam, et ibo ad patrem meum, et dicam ei: Pater, peccávi in cælum, et coram te: jam non sum dignus vocári fílius tuus: fac me sicut unum de mercenáriis tuis. Et surgens venit ad patrem suum. Cum autem adhuc longe esset, vidit illum pater ipsíus, et misericórdia motus est, et accúrrens cécidit super collum ejus, et osculátus est eum. Dixítque ei fílius: Pater, peccávi in cælum, et coram te: jam non sum dignus vocári fílius tuus. Dixit autem pater ad servos suos: Cito proférte stolam primam, et indúite illum, et date ánnulum in manum ejus, et calceaménta in pedes ejus: et addúcite vítulum saginátum, et occídite, et manducémus, et epulémur: quia hic fílius meus mórtuus erat, et revíxit: períerat, et invéntus est. Et cœpérunt epulári. Erat autem fílius ejus sénior in agro: et cum veníret, et appropinquáret dómui, audívit symphóniam, et chorum: et vocávit unum de servis, et interrogávit quid hæc essent. Isque dixit illi: Frater tuus venit, et occídit pater tuus vítulum saginátum, quia salvum illum recépit. Indignátus est autem, et nolébat introíre. Pater ergo illíus egréssus, cœpit rogáre illum. At ille respóndens, dixit patri suo: Ecce tot annis sérvio tibi, et numquam mandátum tuum præterívi: et numquam dedísti mihi hædum ut cum amícis meis epulárer. Sed postquam fílius tuus hic, qui devorávit substántiam suam cum meretrícibus, venit, occidísti illi vítulum saginátum. At ipse dixit illi: Fili, tu semper mecum es, et ómnia mea tua sunt: epulári autem, et gaudére oportébat, quia frater tuus hic mórtuus erat, et revíxit: períerat, et invéntus est.",
+  "new": "In illo témpore: Dixit Jesus Pharisǽis et Scribis parábolam istam. Homo quidam hábuit duos fílios: et dixit adolescéntior ex illis patri: Pater, da mihi portiónem substántiæ, quæ me contíngit. Et divísit illis substántiam. Et non post multos dies, congregátis ómnibus, adolescéntior fílius péregre proféctus est in regiónem longínquam, et ibi dissipávit substántiam suam, vivéndo luxurióse. Et postquam ómnia consummásset, facta est fames válida in regióne illa, et ipse cœpit egére. Et ábiit, et adhǽsit uni cívium regiónis illíus. Et misit illum in villam suam, ut pásceret porcos. Et cupiébat implére ventrem suum de síliquis, quas porci manducábant: et nemo illi dabat. In se autem revérsus, dixit: Quanti mercenárii in domo patris mei abúndant pánibus, ego autem hic fame péreo! Surgam, et ibo ad patrem meum, et dicam ei: Pater, peccávi in cælum, et coram te: jam non sum dignus vocári fílius tuus: fac me sicut unum de mercenáriis tuis. Et surgens, venit ad patrem suum. Cum autem adhuc longe esset, vidit illum pater ipsíus, et misericórdia motus est, et accúrrens cécidit super collum ejus, et osculátus est eum. Dixítque ei fílius: Pater, peccávi in cælum, et coram te, jam non sum dignus vocári fílius tuus. Dixit autem pater ad servos suos: Cito proférte stolam primam, et indúite illum, et date ánulum in manum ejus, et calceaménta in pedes ejus: Et addúcite vítulum saginátum, et occídite, et manducémus, et epulémur: quia hic fílius meus mórtuus erat, et revíxit: períerat, et invéntus est. Et cœpérunt epulári. Erat autem fílius ejus sénior in agro: Et cum veníret, et appropinquáret dómui, audívit symphóniam, et chorum: Et vocávit unum de servis, et interrogávit quid hæc essent. Isque dixit illi: Frater tuus venit, et occídit pater tuus vítulum saginátum, quia salvum illum recépit. Indignátus est autem, et nolébat introíre. Pater ergo illíus egréssus, cœpit rogáre illum. At ille respóndens, dixit patri suo: Ecce tot annis sérvio tibi, et numquam mandátum tuum præterívi, et numquam dedísti mihi hædum, ut cum amícis meis epulárer: Sed postquam fílius tuus hic, qui devorávit substántiam suam cum meretrícibus, venit, occidísti illi vítulum saginátum. At ipse dixit illi: Fili, tu semper mecum es, et ómnia mea tua sunt: Epulári autem, et gaudére oportébat, quia frater tuus hic, mórtuus erat, et revíxit: Períerat, et invéntus est.",
+  "src": "M39 pp. 91-92 (pdf 79-80)",
+  "why": "punctuation 11, 'ánulum', case 6 (Et x3, Epulári, Períerat) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3",
+   "or",
+   0
+  ],
+  "old": "Quǽsumus, omnípotens Deus, vota humílium réspice: atque, ad defensiónem nostram, déxteram tuæ maiestátis exténde. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Quǽsumus omnípotens Deus, vota humílium réspice; atque ad defensiónem nostram déxteram tuæ maiestátis exténde: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 93 (pdf 80)",
+  "why": "punctuation as printed ('QUǼSUMUS omnípotens Deus,'; 'réspice;' flexa, ':' before the conclusion; Proc. 1913 p. 405)",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3",
+   "se",
+   0
+  ],
+  "old": "Hæc hóstia, Dómine, quǽsumus, emúndet nostra delícta: et, ad sacrifícium celebrándum, subditórum tibi córpora mentésque sanctíficet. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Hæc hóstia, Dómine quǽsumus, emúndet nostra delícta: et ad sacrifícium celebrándum, subditórum tibi córpora mentésque sanctíficet. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 94 (pdf 81)",
+  "why": "punctuation as printed (the print ends 'sanctíficet. Per Dóminum.')",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3",
+   "pc",
+   0
+  ],
+  "old": "A cunctis nos, quǽsumus, Dómine, reátibus et perículis propitiátus absólve: quos tanti mystérii tríbuis esse partícipes. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "A cunctis nos, quǽsumus Dómine, reátibus et perículis propitiátus absólve; quos tanti mystérii tríbuis esse partícipes: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 94 (pdf 81)",
+  "why": "punctuation as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Estóte imitatóres Dei, sicut fílii caríssimi: et ambuláte in dilectióne, sicut et Christus diléxit nos, et trádidit semetípsum pro nobis oblatiónem, et hóstiam Deo in odórem suavitátis. Fornicátio autem, et omnis immundítia, aut avarítia, nec nominétur in vobis, sicut decet sanctos: aut turpitúdo, aut stultilóquium, aut scurrílitas, quæ ad rem non pértinet: sed magis gratiárum áctio. Hoc enim scitóte intelligéntes: quod omnis fornicátor, aut immúndus, aut avárus, quod est idolórum sérvitus, non habet hereditátem in regno Christi, et Dei. Nemo vos sedúcat inánibus verbis: propter hæc enim venit ira Dei in fílios diffidéntiæ. Nolíte ergo éffici partícipes eórum. Erátis enim aliquándo ténebræ: nunc autem lux in Dómino. Ut fílii lucis ambuláte: fructus enim lucis est in omni bonitáte, et justítia, et veritáte.",
+  "new": "Fratres: Estóte imitatóres Dei, sicut fílii caríssimi: et ambuláte in dilectióne, sicut et Christus diléxit nos, et trádidit semetípsum pro nobis oblatiónem et hóstiam Deo in odórem suavitátis. Fornicátio autem, et omnis immundítia, aut avarítia nec nominétur in vobis, sicut decet sanctos: aut turpitúdo, aut stultilóquium, aut scurrílitas, quæ ad rem non pértinet: sed magis gratiárum áctio. Hoc enim scitóte intelligéntes: quod omnis fornicátor, aut immúndus, aut avárus, quod est idolórum sérvitus, non habet hereditátem in regno Christi, et Dei. Nemo vos sedúcat inánibus verbis: Propter hæc enim venit ira Dei in fílios diffidéntiæ. Nolíte ergo éffici partícipes eórum. Erátis enim aliquándo ténebræ: nunc autem lux in Dómino. Ut fílii lucis ambuláte: Fructus enim lucis est in omni bonitáte, et justítia, et veritáte.",
+  "src": "M39 p. 93 (pdf 80)",
+  "why": "punctuation 2, case 2 (Propter, Fructus) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3",
+   0,
+   "en"
+  ],
+  "old": "Brethren: Be ye therefore followers of God, as most dear children; And walk in love, as Christ also hath loved us, and hath delivered himself for us, an oblation and a sacrifice to God for an odour of sweetness. But fornication, and all uncleanness, or covetousness, let it not so much as be named among you, as becometh saints: Or obscenity, or foolish talking, or scurrility, which is to no purpose; but rather giving of thanks. For know you this and understand, that no fornicator, or unclean, or covetous person (which is a serving of idols), hath inheritance in the kingdom of Christ and of God. Let no man deceive you with vain words. For because of these things cometh the anger of God upon the children of unbelief. Be ye not therefore partakers with them. For you were heretofore darkness, but now light in the Lord. Walk then as children of the light. For the fruit of the light is in all goodness, and justice, and truth;",
+  "new": "Brethren: Be ye followers of God, as most dear children; And walk in love, as Christ also hath loved us, and hath delivered himself for us, an oblation and a sacrifice to God for an odour of sweetness. But fornication, and all uncleanness, or covetousness, let it not so much as be named among you, as becometh saints: Or obscenity, or foolish talking, or scurrility, which is to no purpose; but rather giving of thanks. For know you this and understand, that no fornicator, or unclean, or covetous person (which is a serving of idols), hath inheritance in the kingdom of Christ and of God. Let no man deceive you with vain words. For because of these things cometh the anger of God upon the children of unbelief. Be ye not therefore partakers with them. For you were heretofore darkness, but now light in the Lord. Walk then as children of the light. For the fruit of the light is in all goodness, and justice, and truth.",
+  "src": "M39 p. 93 (pdf 80); bible/en Eph 5: 1-9",
+  "why": "English to the Latin: the Missal begins 'Estóte imitatóres Dei' (no 'ergo'), so Douay's 'therefore' is dropped (labelled in src); the reading ends at v. 9",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad3",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Eph 5: 1-9), without \"therefore\" in v. 1 (the Missal reads \"Estóte imitatóres Dei\", without the Vulgate's \"ergo\")",
+  "src": "M39 p. 93 (pdf 80)",
+  "why": "English source label (new key)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Erat Jesus ejíciens dæmónium, et illud erat mutum. Et cum ejecísset dæmónium, locútus est mutus, et admirátæ sunt turbæ. Quidam autem ex eis dixérunt: In Beélzebub príncipe dæmoniórum éjicit dæmónia. Et álii tentántes, signum de cælo quærébant ab eo. Ipse autem ut vidit cogitatiónes eórum, dixit eis: Omne regnum in seípsum divísum desolábitur, et domus supra domum cadet. Si autem et Sátanas in seípsum divísus est, quómodo stabit regnum ejus? Quia dícitis in Beélzebub me ejícere dæmónia. Si autem ego in Beélzebub ejício dæmónia: fílii vestri in quo ejíciunt? Ideo ipsi júdices vestri erunt. Porro si in dígito Dei ejício dæmónia: profécto pervénit in vos regnum Dei. Cum fortis armátus custódit átrium suum, in pace sunt ea, quæ póssidet. Si autem fórtior eo supervéniens vícerit eum, univérsa arma ejus áuferet, in quibus confidébat, et spólia ejus distríbuet. Qui non est mecum, contra me est: et qui non cólligit mecum, dispérgit. Cum immúndus spíritus exíerit de hómine, ámbulat per loca inaquósa, quærens réquiem: et non invéniens dicit: Revértar in domum meam unde exívi. Et cum vénerit, ínvenit eam scopis mundátam, et ornátam. Tunc vadit, et assúmit septem álios spíritus secum, nequióres se, et ingréssi hábitant ibi. Et fiunt novíssima hóminis illíus pejóra prióribus. Factum est autem, cum hæc díceret: extóllens vocem quædam múlier de turba dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. At ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud.",
+  "new": "In illo témpore: Erat Jesus ejíciens dæmónium, et illud erat mutum. Et cum ejecísset dæmónium, locútus est mutus, et admirátæ sunt turbæ. Quidam autem ex eis dixérunt: In Beélzebub príncipe dæmoniórum éjicit dæmónia. Et álii tentántes, signum de cælo quærébant ab eo. Ipse autem ut vidit cogitatiónes eórum, dixit eis: Omne regnum in seípsum divísum desolábitur, et domus supra domum cadet. Si autem et sátanas in seípsum divísus est, quómodo stabit regnum ejus? Quia dícitis in Beélzebub me ejícere dæmónia. Si autem ego in Beélzebub ejício dæmónia: fílii vestri in quo ejíciunt? Ideo ipsi júdices vestri erunt. Porro si in dígito Dei ejício dæmónia: profécto pervénit in vos regnum Dei. Cum fortis armátus custódit átrium suum, in pace sunt ea, quæ póssidet. Si autem fórtior eo supervéniens vícerit eum, univérsa arma ejus áuferet, in quibus confidébat, et spólia ejus distríbuet. Qui non est mecum, contra me est: Et qui non cólligit mecum, dispérgit. Cum immúndus spíritus exíerit de hómine, ámbulat per loca inaquósa, quærens réquiem: et non invéniens, dicit: Revértar in domum meam, unde exívi. Et cum vénerit, ínvenit eam scopis mundátam, et ornátam. Tunc vadit, et assúmit septem álios spíritus secum, nequióres se, et ingréssi hábitant ibi. Et fiunt novíssima hóminis illíus pejóra prióribus. Factum est autem, cum hæc díceret: extóllens vocem quædam múlier de turba, dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. At ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud.",
+  "src": "M39 p. 94 (pdf 81)",
+  "why": "punctuation 3, case 2 ('sátanas' lower case, 'Et') as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3m",
+   "or",
+   0
+  ],
+  "old": "Córdibus nostris, quǽsumus, Dómine, grátiam tuam benígnus infúnde: ut, sicut ab escis carnálibus abstinémus; ita sensus quoque nostros a nóxiis retrahámus excéssibus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Córdibus nostris, quǽsumus Dómine, grátiam tuam benígnus infúnde: ut sicut ab escis carnálibus abstinémus; ita sensus quoque nostros a nóxiis retrahámus excéssibus: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 95 (pdf 81)",
+  "why": "punctuation as printed (':' before the conclusion; Proc. 1913 p. 405)",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3m",
+   "se",
+   0
+  ],
+  "old": "Munus, quod tibi, Dómine, nostræ servitútis offérimus, tu salutáre nobis pérfice sacraméntum. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Munus, quod tibi Dómine, nostræ servitútis offérimus, tu salutáre nobis pérfice sacraméntum. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 96 (pdf 82)",
+  "why": "punctuation as printed (the print ends 'sacraméntum. Per Dóminum.')",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3m",
+   "pc",
+   0
+  ],
+  "old": "Præsta, quǽsumus, omnípotens et miséricors Deus: ut, quod ore contíngimus, pura mente capiámus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Præsta, quǽsumus omnípotens et miséricors Deus: ut quod ore contígimus; pura mente capiámus: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 97 (pdf 82)",
+  "why": "'contígimus' (perfect, as printed; site 'contíngimus') and punctuation as printed ('contígimus;' flexa, ':' before the conclusion)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3m",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Náaman princeps milítiæ regis Sýriæ erat vir magnus apud dóminum suum, et honorátus: per illum enim dedit Dóminus salútem Sýriæ: erat autem vir fortis et dives, sed leprósus. Porro de Sýria egréssi fúerant latrúnculi, et captívam dúxerant de terra Israël puéllam párvulam, quæ erat in obséquio uxóris Náaman, quæ ait ad dóminam suam: Utinam fuísset dóminus meus ad prophétam, qui est in Samaría: profécto curásset eum a lepra, quam habet. Ingréssus est ítaque Náaman ad dóminum suum, et nuntiávit ei, dicens: Sic et sic locúta est puélla de terra Israël. Dixítque ei rex Sýriæ: Vade, et mittam lítteras ad regem Israël. Qui cum proféctus esset, et tulísset secum decem talénta argénti, et sex míllia áureos, et decem mutatória vestimentórum, détulit lítteras ad regem Israël, in hæc verba: Cum accéperis epístolam hanc, scito quod míserim ad te Náaman servum meum, ut cures eum a lepra sua. Cumque legísset rex Israël lítteras, scidit vestiménta sua, et ait: Numquid Deus ego sum, ut occídere possim et vivificáre, quia iste misit ad me, ut curem hóminem a lepra sua? Animadvértite, et vidéte quod occasiónes quærat advérsum me. Quod cum audísset Eliséus vir Dei, scidísse vidélicet regem Israël vestiménta sua, misit ad eum, dicens: Quare scidísti vestiménta tua? Véniat ad me, et sciat esse prophétam in Israël. Venit ergo Náaman cum equis, et cúrribus, et stetit ad óstium domus Eliséi: misítque ad eum Eliséus núntium, dicens: Vade, et laváre sépties in Jordáne, et recípiet sanitátem caro tua, atque mundáberis. Irátus Náaman recedébat, dicens: Putábam quod egrederétur ad me, et stans invocáret nomen Dómini Dei sui, et tángeret manu sua locum lepræ, et curáret me. Numquid non melióres sunt Abana et Pharphar, flúvii Damásci, ómnibus aquis Israël, ut laver in eis, et munder? Cum ergo vertísset se, et abíret indígnans, accessérunt ad eum servi sui, et locúti sunt ei: Pater, et si rem grandem dixísset tibi prophéta, certe fácere debúeras: quanto magis quia nunc dixit tibi: Laváre, et mundáberis? Descéndit, et lavit in Jordáne sépties juxta sermónem viri Dei: et restitúta est caro ejus sicut caro púeri párvuli, et mundátus est. Reversúsque ad virum Dei cum univérso comitátu suo, venit, et stetit coram eo, et ait: Vere scio, quod non sit álius Deus in univérsa terra, nisi tantum in Israël.",
+  "new": "In diébus illis: Náaman princeps milítiæ regis Sýriæ, erat vir magnus apud dóminum suum, et honorátus: Per illum enim dedit Dóminus salútem Sýriæ: Erat autem vir fortis et dives, sed leprósus. Porro de Sýria egréssi fúerant latrúnculi, et captívam dúxerant de terra Israël puéllam párvulam, quæ erat in obséquio uxóris Náaman, quæ ait ad dóminam suam: Utinam fuísset dóminus meus ad prophétam, qui est in Samaría: profécto curásset eum a lepra, quam habet. Ingréssus est ítaque Náaman ad dóminum suum, et nuntiávit ei, dicens: Sic et sic locúta est puélla de terra Israël. Dixítque ei rex Sýriæ: Vade, et mittam lítteras ad regem Israël. Qui cum proféctus esset, et tulísset secum decem talénta argénti, et sex míllia áureos, et decem mutatória vestimentórum, détulit lítteras ad regem Israël, in hæc verba: Cum accéperis epístolam hanc, scito quod míserim ad te Náaman servum meum, ut cures eum a lepra sua. Cumque legísset rex Israël lítteras, scidit vestiménta sua, et ait: Numquid Deus ego sum, ut occídere possim, et vivificáre, quia iste misit ad me, ut curem hóminem a lepra sua? Animadvértite, et vidéte, quod occasiónes quærat advérsum me. Quod cum audísset Eliséus vir Dei, scidísse vidélicet regem Israël vestiménta sua, misit ad eum, dicens: Quare scidísti vestiménta tua? Véniat ad me, et sciat esse prophétam in Israël. Venit ergo Náaman cum equis, et cúrribus, et stetit ad óstium domus Eliséi: Misítque ad eum Eliséus núntium, dicens: Vade, et laváre sépties in Jordáne, et recípiet sanitátem caro tua, atque mundáberis. Irátus Náaman recedébat, dicens: Putábam quod egrederétur ad me, et stans invocáret nomen Dómini Dei sui, et tángeret manu sua locum lepræ, et curáret me. Numquid non melióres sunt Abana, et Pharphar flúvii Damásci ómnibus aquis Israël, ut laver in eis, et munder? Cum ergo vertísset se, et abíret indígnans, accessérunt ad eum servi sui, et locúti sunt ei: Pater, et si rem grandem dixísset tibi prophéta, certe fácere debúeras: Quanto magis quia nunc dixit tibi, Laváre, et mundáberis? Descéndit, et lavit in Jordáne sépties juxta sermónem viri Dei, et restitúta est caro ejus, sicut caro púeri párvuli, et mundátus est. Reversúsque ad virum Dei cum univérso comitátu suo, venit, et stetit coram eo, et ait: Vere scio quod non sit álius Deus in univérsa terra, nisi tantum in Israël.",
+  "src": "M39 pp. 95-96 (pdf 81-82)",
+  "why": "punctuation 9, case 4 (Per, Erat, Misítque, Quanto) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3m",
+   0,
+   "en"
+  ],
+  "old": "In those days: Naaman, general of the army of the king of Syria, was a great man with his master, and honourable: for by him the Lord gave deliverance to Syria: and he was a valiant man and rich, but a leper. Now there had gone out robbers from Syria, and had led away captive out of the land of Israel a little maid, and she waited upon Naaman’s wife. And she said to her mistress: I wish my master had been with the prophet, that is in Samaria: he would certainly have healed him of the leprosy which he hath. Then Naaman went in to his lord, and told him, saying: Thus and thus said tile girl from the land of Israel. And the king of Syria sad to him: Go, and I will send a letter to the king of Israel. And he departed, and took with him ten talents of silver, and six thousand pieces of gold, and tell changes of raiment, And brought the letter to the king of Israel, in these words: When thou shalt receive this letter, know that I have sent to thee Naaman my servant, that thou mayest heal him of his leprosy. And when the king of Israel had read the letter, he rent his garments, and said: Am I God, to be able to kill and give life, that this man hath sent to me, to heal a man of his leprosy? mark, and see how he seeketh occasions against me. And when Eliseus the man of God had heard this, to wit, that the king of Israel had rent his garments, he sent to him, saying: Why hast thou rent thy garments? let him come to me, and let him know that there is a prophet in Israel. So Naaman came with his horses and chariots, and stood at the door of the house of Eliseus: And Eliseus sent a messenger to him, saying: Go, and wash seven times in the Jordan, and thy flesh shall recover health, and thee shalt be clean. Naaman was angry and went away, saying: I thought he would hare come out to me, and standing would hare invoked the name of the Lord his God, and touched with his hand the place of the leprosy, and healed me. Are not the Abana, and the Pharphar, rivers of Damascus, better than all the waters of Israel, that I may wash in them, and be made clean? So as he turned, and was going away with indignation, His servants came to him, and said to him: Father, if the prophet had bid thee do some great thing, surely thou shouldst have done it: how much rather what he now hath said to thee: Wash, and thou shalt he clean? Then he went down, and washed in the Jordan seven times: according to the word of the man of God, and his flesh was restored, like the flesh of a little child, and he was made clean. And returning to the man of God with all his train, be came, and stood before him, and said: In truth, I know there is no other God in all the earth, but only in Israel: I beseech thee therefore take a blessing of thy servant.",
+  "new": "In those days: Naaman, general of the army of the king of Syria, was a great man with his master, and honourable: for by him the Lord gave deliverance to Syria: and he was a valiant man and rich, but a leper. Now there had gone out robbers from Syria, and had led away captive out of the land of Israel a little maid, and she waited upon Naaman’s wife. And she said to her mistress: I wish my master had been with the prophet, that is in Samaria: he would certainly have healed him of the leprosy which he hath. Then Naaman went in to his lord, and told him, saying: Thus and thus said the girl from the land of Israel. And the king of Syria said to him: Go, and I will send a letter to the king of Israel. And he departed, and took with him ten talents of silver, and six thousand pieces of gold, and ten changes of raiment, And brought the letter to the king of Israel, in these words: When thou shalt receive this letter, know that I have sent to thee Naaman my servant, that thou mayest heal him of his leprosy. And when the king of Israel had read the letter, he rent his garments, and said: Am I God, to be able to kill and give life, that this man hath sent to me, to heal a man of his leprosy? mark, and see how he seeketh occasions against me. And when Eliseus the man of God had heard this, to wit, that the king of Israel had rent his garments, he sent to him, saying: Why hast thou rent thy garments? let him come to me, and let him know that there is a prophet in Israel. So Naaman came with his horses and chariots, and stood at the door of the house of Eliseus: And Eliseus sent a messenger to him, saying: Go, and wash seven times in the Jordan, and thy flesh shall recover health, and thou shalt be clean. Naaman was angry and went away, saying: I thought he would have come out to me, and standing would have invoked the name of the Lord his God, and touched with his hand the place of the leprosy, and healed me. Are not the Abana, and the Pharphar, rivers of Damascus, better than all the waters of Israel, that I may wash in them, and be made clean? So as he turned, and was going away with indignation, His servants came to him, and said to him: Father, if the prophet had bid thee do some great thing, surely thou shouldst have done it: how much rather what he now hath said to thee: Wash, and thou shalt be clean? Then he went down, and washed in the Jordan seven times: according to the word of the man of God, and his flesh was restored, like the flesh of a little child, and he was made clean. And returning to the man of God with all his train, he came, and stood before him, and said: In truth, I know there is no other God in all the earth, but only in Israel.",
+  "src": "M39 pp. 95-96 (pdf 81-82); bible/en 4 Kings 5: 1-15",
+  "why": "English to the Latin: the Missal ends 'nisi tantum in Israël.' (v. 15a), so 'I beseech thee therefore take a blessing of thy servant' is dropped; obvious OCR typos of the bible/en text corrected (tile, sad, tell, thee, hare x2, he, be), wording unchanged",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3m",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus Pharisǽis: Utique dicétis mihi hanc similitúdinem: Médice cura teípsum: quanta audívimus facta in Caphárnaum, fac et hic in pátria tua. Ait autem: Amen dico vobis, quia nemo prophéta accéptus est in pátria sua. In veritáte dico vobis, multæ víduæ erant in diébus Elíæ in Israël, quando clausum est cælum annis tribus, et ménsibus sex, cum facta esset fames magna in omni terra: et ad nullam illárum missus est Elías, nisi in Sarépta Sidóniæ, ad mulíerem víduam. Et multi leprósi erant in Israël sub Eliséo prophéta: et nemo eórum mundátus est nisi Náaman Syrus. Et repléti sunt omnes in synagóga ira, hæc audiéntes. Et surrexérunt, et ejecérunt illum extra civitátem: et duxérunt illum usque ad supercílium montis, super quem cívitas illórum erat ædificáta, ut præcipitárent eum. Ipse autem tránsiens per médium illórum, ibat.",
+  "new": "In illo témpore: Dixit Jesus Pharisǽis: Utique dicétis mihi hanc similitúdinem: Médice cura teípsum: Quanta audívimus facta in Caphárnaum, fac et hic in pátria tua. Ait autem: Amen dico vobis, quia nemo prophéta accéptus est in pátria sua. In veritáte dico vobis, multæ víduæ erant in diébus Elíæ in Israël, quando clausum est cælum annis tribus, et ménsibus sex: cum facta esset fames magna in omni terra: et ad nullam illárum missus est Elías, nisi in Saréphta Sidóniæ, ad mulíerem víduam. Et multi leprósi erant in Israël sub Eliséo prophéta: et nemo eórum mundátus est nisi Náaman Syrus. Et repléti sunt omnes in synagóga ira, hæc audiéntes. Et surrexérunt, et ejecérunt illum extra civitátem: et duxérunt illum usque ad supercílium montis, super quem cívitas illórum erat ædificáta, ut præcipitárent eum. Ipse autem tránsiens per médium illórum, ibat.",
+  "src": "M39 p. 96 (pdf 82)",
+  "why": "punctuation 1, 'Saréphta', case 1 (Quanta) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3t",
+   "or",
+   0
+  ],
+  "old": "Exáudi nos, omnípotens et miséricors Deus: et continéntiæ salutáris propítius nobis dona concéde. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Exáudi nos omnípotens et miséricors Deus; et continéntiæ salutáris propítius nobis dona concéde: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 97 (pdf 82)",
+  "why": "punctuation as printed ('Deus;' flexa, ':' before the conclusion; Proc. 1913 p. 405)",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3t",
+   "se",
+   0
+  ],
+  "old": "Per hæc véniat, quǽsumus, Dómine, sacraménta nostræ redemptiónis efféctus: qui nos et ab humánis rétrahat semper excéssibus, et ad salutária dona perdúcat. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Per hæc véniat, quǽsumus Dómine, sacraménta nostræ redemptiónis efféctus: qui nos et ab humánis rétrahat semper excéssibus, et ad salutária dona perdúcat. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 98 (pdf 83)",
+  "why": "punctuation as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3t",
+   "pc",
+   0
+  ],
+  "old": "Sacris, Dómine, mystériis expiáti: et véniam, quǽsumus, consequámur et grátiam. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Sacris, Dómine, mystériis expiáti; et véniam, quǽsumus, consequámur et grátiam. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 98 (pdf 83)",
+  "why": "punctuation as printed ('expiáti;' flexa; the print ends 'grátiam. Per Dóminum.')",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3t",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Múlier quædam clamábat ad Eliséum, prophétam, dicens: Servus tuus vir meus mórtuus est, et tu nosti quia servus tuus fuit timens Dóminum: et ecce créditor venit ut tollat duos fílios meos ad serviéndum sibi. Cui dixit Eliséus: Quid vis ut fáciam tibi? Dic mihi, quid habes in domo tua? At illa respóndit: Non hábeo ancílla tua quidquam in domo mea, nisi parum ólei, quo ungar. Cui ait: Vade, pete mútuo ab ómnibus vicínis tuis vasa vácua non pauca. Et ingrédere, et claude óstium tuum cum intrínsecus fúeris tu, et fílii tui: et mitte inde in ómnia vasa hæc, et cum plena fúerint, tolles. Ivit ítaque múlier, et clausit óstium super se, et super fílios suos: illi offerébant vasa, et illa infundébat. Cumque plena fuíssent vasa, dixit ad fílium suum: Affer mihi adhuc vas. Et ille respóndit: Non hábeo. Stetítque óleum. Venit autem illa, et indicávit hómini Dei. Et ille: Vade, inquit, vende óleum, et redde creditóri tuo: tu autem, et fílii tui vívite de réliquo.",
+  "new": "In diébus illis: Múlier quædam clamábat ad Eliséum prophétam, dicens: Servus tuus vir meus mórtuus est, et tu nosti quia servus tuus fuit timens Dóminum: Et ecce créditor venit, ut tollat duos fílios meos ad serviéndum sibi. Cui dixit Eliséus: Quid vis ut fáciam tibi? Dic mihi, quid habes in domo tua? At illa respóndit: Non hábeo ancílla tua quidquam in domo mea, nisi parum ólei, quo ungar. Cui ait: Vade, pete mútuo ab ómnibus vicínis tuis vasa vácua non pauca. Et ingrédere, et claude óstium tuum, cum intrínsecus fúeris tu, et fílii tui: et mitte inde in ómnia vasa hæc: et cum plena fúerint, tolles. Ivit ítaque múlier, et clausit óstium super se, et super fílios suos: Illi offerébant vasa, et illa infundébat. Cumque plena fuíssent vasa, dixit ad fílium suum: Affer mihi adhuc vas. Et ille respóndit: Non hábeo. Stetítque óleum. Venit autem illa, et indicávit hómini Dei. Et ille: Vade, inquit, vende óleum, et redde creditóri tuo: Tu autem, et fílii tui vívite de réliquo.",
+  "src": "M39 p. 97 (pdf 82)",
+  "why": "punctuation 4, case 3 (Et, Illi, Tu) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3t",
+   0,
+   "en"
+  ],
+  "old": "In those days: A certain woman of the wives of the prophets cried to Eliseus, saying: Thy servant my husband is dead, and thou knowest that thy servant was one that feared God, and behold the creditor is come to take away my two sons to serve him. And Eliseus said to her: What wilt thou have me to do for thee? Tell me, what hast thou in thy house? And she answered: I thy handmaid have nothing in my house but a little oil, to anoint me. And he said to her: Go, borrow of all thy neighbours empty vessels not a few. And go in, and shut thy door, when thou art within, and thy sons: and pour out thereof into all those vessels: and when they are full take them away. So the woman went, and shut the door upon her, and upon her sons: they brought her the vessels, and she poured in. And when the vessels were full, she said to her son: Bring me yet a vessel. And he answered: I have no more. And the oil stood. And she came, and told the man of God. And he said: Go, sell the oil, and pay thy creditor: and thou and thy sons live of the rest.",
+  "new": "In those days: A certain woman cried to Eliseus the prophet, saying: Thy servant my husband is dead, and thou knowest that thy servant was one that feared God, and behold the creditor is come to take away my two sons to serve him. And Eliseus said to her: What wilt thou have me to do for thee? Tell me, what hast thou in thy house? And she answered: I thy handmaid have nothing in my house but a little oil, to anoint me. And he said to her: Go, borrow of all thy neighbours empty vessels not a few. And go in, and shut thy door, when thou art within, and thy sons: and pour out thereof into all those vessels: and when they are full take them away. So the woman went, and shut the door upon her, and upon her sons: they brought her the vessels, and she poured in. And when the vessels were full, she said to her son: Bring me yet a vessel. And he answered: I have no more. And the oil stood. And she came, and told the man of God. And he said: Go, sell the oil, and pay thy creditor: and thou and thy sons live of the rest.",
+  "src": "M39 p. 97 (pdf 82); bible/en 4 Kings 4: 1-7",
+  "why": "English to the Latin: the Missal reads 'Múlier quædam clamábat ad Eliséum prophétam' (Vulgate 'mulier autem quaedam de uxoribus prophetarum clamabat ad Eliseum'): AI translation of the clause, labelled in src",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad3t",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en 4 Kings 4: 1-7); AI translation (Missal departs from the Vulgate): \"A certain woman cried to Eliseus the prophet\" (Missal \"Múlier quædam clamábat ad Eliséum prophétam\")",
+  "src": "M39 p. 97 (pdf 82)",
+  "why": "English source label (new key)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3t",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus discípulis suis: Si peccáverit in te frater tuus, vade, et córripe eum inter te, et ipsum solum: si te audíerit, lucrátus eris fratrem tuum. Si autem te non audíerit, ádhibe tecum adhuc unum, vel duos, ut in ore duórum, vel trium téstium stet omne verbum. Quod si non audíerit eos, dic Ecclésiæ: si autem Ecclésiam non audíerit, sit tibi sicut éthnicus, et publicánus. Amen dico vobis, quæcúmque alligavéritis super terram, erunt ligáta et in cælo: et quæcúmque solvéritis super terram, erunt solúta et in cælo. Iterum dico vobis, quia si duo ex vobis consénserint super terram, de omni re quamcúmque petíerint, fiet illis a Patre meo, qui in cælis est. Ubi enim sunt duo, vel tres congregáti in nómine meo, ibi sum in médio eórum. Tunc accédens Petrus ad eum, dixit: Dómine, quóties peccábit in me frater meus, et dimíttam ei? Usque sépties? Dicit illi Jesus: Non dico tibi usque sépties: sed usque septuágies sépties.",
+  "new": "In illo témpore: Dixit Jesus discípulis suis: Si peccáverit in te frater tuus, vade, et córripe eum inter te, et ipsum solum. Si te audíerit, lucrátus eris fratrem tuum. Si autem te non audíerit, ádhibe tecum adhuc unum, vel duos, ut in ore duórum, vel trium téstium stet omne verbum. Quod si non audíerit eos: dic ecclésiæ. Si autem ecclésiam non audíerit: sit tibi sicut éthnicus, et publicánus. Amen dico vobis, quæcúmque alligavéritis super terram, erunt ligáta et in cælo: Et quæcúmque solvéritis super terram, erunt solúta et in cælo. Iterum dico vobis, quia si duo ex vobis consénserint super terram, de omni re quamcúmque petíerint, fiet illis a Patre meo, qui in cælis est. Ubi enim sunt duo, vel tres congregáti in nómine meo, ibi sum in médio eórum. Tunc accédens Petrus ad eum, dixit: Dómine quóties peccábit in me frater meus, et dimíttam ei? Usque sépties? Dicit illi Jesus: Non dico tibi usque sépties: sed usque septuágies sépties.",
+  "src": "M39 pp. 97-98 (pdf 82-83)",
+  "why": "punctuation 5, case 4 ('ecclésiæ', 'ecclésiam' lower case, 'Si', 'Et') as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3w",
+   "or",
+   0
+  ],
+  "old": "Præsta nobis, quǽsumus, Dómine: ut salutáribus ieiúniis erudíti, a nóxiis quoque vítiis abstinéntes, propitiatiónem tuam facílius impetrémus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Præsta nobis, quǽsumus Dómine: ut salutáribus ieiúniis erudíti; a nóxiis quoque vítiis abstinéntes, propitiatiónem tuam facílius impetrémus: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 98 (pdf 83)",
+  "why": "punctuation as printed ('erudíti;' flexa, ':' before the conclusion; Proc. 1913 p. 405)",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3w",
+   "se",
+   0
+  ],
+  "old": "Súscipe, quǽsumus, Dómine, preces pópuli tui cum oblatiónibus hostiárum: et tua mystéria celebrántes, ab ómnibus nos defénde perículis. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Súscipe, quǽsumus Dómine, preces pópuli tui cum oblatiónibus hostiárum: et tua mystéria celebrántes, ab ómnibus nos defénde perículis. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 100 (pdf 84)",
+  "why": "punctuation as printed (the print ends 'perículis. Per Dóminum.')",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3w",
+   "pc",
+   0
+  ],
+  "old": "Sanctíficet nos, Dómine, qua pasti sumus, mensa cœléstis: et a cunctis erróribus expiátos, supérnis promissiónibus reddat accéptos. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Sanctíficet nos, Dómine, qua pasti sumus, mensa cæléstis: et a cunctis erróribus expiátos; supérnis promissiónibus reddat accéptos: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 100 (pdf 84)",
+  "why": "'cæléstis' and punctuation as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3w",
+   0,
+   "la"
+  ],
+  "old": "Hæc dicit Dóminus Deus: Honóra patrem tuum et matrem tuam, ut sis longǽvus super terram, quam Dóminus Deus tuus dabit tibi. Non occídes. Non mœcháberis. Non furtum fácies. Non loquéris contra próximum tuum falsum testimónium. Non concupísces domum próximi tui, nec desiderábis uxórem ejus, non servum, non ancíllam, non bovem, non ásinum, nec ómnia quæ illíus sunt. Cunctus autem pópulus vidébat voces et lámpades, et sónitum búccinæ, montémque fumántem: et pertérriti ac pavóre concússi, stetérunt procul, dicéntes Móysi: Lóquere tu nobis, et audiémus: non loquátur nobis Dóminus, ne forte moriámur. Et ait Móyses ad pópulum: Nolíte timére: ut enim probáret vos venit Deus, et ut terror illíus esset in vobis, et non peccarétis. Stetítque pópulus de longe. Móyses autem accéssit ad calíginem in qua erat Deus. Dixit prætérea Dóminus ad Móysen: Hæc dices fíliis Israël: Vos vidístis quod de cælo locútus sim vobis. Non faciétis deos argénteos, nec deos áureos faciétis vobis. Altáre de terra faciétis mihi, et offerétis super eo holocáusta et pacífica vestra, oves vestras et boves in omni loco in quo memória fúerit nóminis mei.",
+  "new": "Hæc dicit Dóminus Deus: Honóra patrem tuum et matrem tuam, ut sis longǽvus super terram, quam Dóminus Deus tuus dabit tibi. Non occídes. Non mœcháberis. Non furtum fácies. Non loquéris contra próximum tuum falsum testimónium. Non concupísces domum próximi tui: nec desiderábis uxórem ejus, non servum, non ancíllam, non bovem, non ásinum, nec ómnia quæ illíus sunt. Cunctus autem pópulus vidébat voces et lámpades, et sónitum búccinæ, montémque fumántem: Et pertérriti ac pavóre concússi, stetérunt procul, dicéntes Móysi: Lóquere tu nobis, et audiémus: Non loquátur nobis Dóminus, ne forte moriámur. Et ait Móyses ad pópulum: Nolíte timére: Ut enim probáret vos venit Deus, et ut terror illíus esset in vobis, et non peccarétis. Stetítque pópulus de longe. Móyses autem accéssit ad calíginem in qua erat Deus. Dixit prætérea Dóminus ad Móysen: Hæc dices fíliis Israël: Vos vidístis quod de cælo locútus sim vobis. Non faciétis deos argénteos, nec deos áureos faciétis vobis. Altáre de terra faciétis mihi, et offerétis super eo holocáusta et pacífica vestra, oves vestras et boves in omni loco in quo memória fúerit nóminis mei.",
+  "src": "M39 p. 99 (pdf 83)",
+  "why": "punctuation 1, case 3 (Et, Non, Ut) as printed; the print ends 'nóminis mei.' (no formula ending)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3w",
+   0,
+   "en"
+  ],
+  "old": "Thus saith the Lord God: honour thy father and thy mother, that thou mayest be longlived upon the land which the Lord thy God will give thee. Thou shalt not kill. Thou shalt not commit adultery. Thou shalt not steal. Thou shalt not bear false witness against thy neighbour. Thou shalt not covet thy neighbour’s house: neither shalt thou desire his wife, nor his servant, nor his handmaid, nor his ox, nor his ass, nor any thing that is his. And all the people saw the voices and the flames, and the sound of the trumpet, and the mount smoking: and being terrified and struck with fear, they stood afar off, Saying to Moses: Speak thou to us, and we will hear: let not the Lord speak to us, lest we die. And Moses said to the people: Fear not: for God is come to prove you, and that the dread of him might be in you, and you should not sin. And the people stood afar off. But Moses went to the dark cloud wherein God was. And the Lord said to Moses: Thus shalt thou say to the children of Israel: You have seen that I have spoken to you from heaven. You shall not make gods of silver, nor shall you make to yourselves gods of gold. You shall make an altar of earth unto me, and you shall offer upon it your holocausts and peace offerings, your sheep and oxen, in every place where the memory of my name shall be: I will come to thee, and will bless thee.",
+  "new": "Thus saith the Lord God: Honour thy father and thy mother, that thou mayest be longlived upon the land which the Lord thy God will give thee. Thou shalt not kill. Thou shalt not commit adultery. Thou shalt not steal. Thou shalt not bear false witness against thy neighbour. Thou shalt not covet thy neighbour’s house: neither shalt thou desire his wife, nor his servant, nor his handmaid, nor his ox, nor his ass, nor any thing that is his. And all the people saw the voices and the flames, and the sound of the trumpet, and the mount smoking: and being terrified and struck with fear, they stood afar off, Saying to Moses: Speak thou to us, and we will hear: let not the Lord speak to us, lest we die. And Moses said to the people: Fear not: for God is come to prove you, and that the dread of him might be in you, and you should not sin. And the people stood afar off. But Moses went to the dark cloud wherein God was. And the Lord said to Moses: Thus shalt thou say to the children of Israel: You have seen that I have spoken to you from heaven. You shall not make gods of silver, nor shall you make to yourselves gods of gold. You shall make an altar of earth unto me, and you shall offer upon it your holocausts and peace offerings, your sheep and oxen, in every place where the memory of my name shall be.",
+  "src": "M39 p. 99 (pdf 83); bible/en Ex 20: 12-24",
+  "why": "English to the Latin: the Missal ends 'in quo memória fúerit nóminis mei.' (v. 24a), so 'I will come to thee, and will bless thee' is dropped; capital as the Latin 'Honóra'",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3w",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Accessérunt ad Jesum ab Jerosólymis scribæ, et Pharisǽi, dicéntes: Quare discípuli tui transgrediúntur traditiónem seniórum? Non enim lavant manus suas cum panem mandúcant. Ipse autem respóndens ait illis: Quare et vos transgredímini mandátum Dei propter traditiónem vestram? Nam Deus dixit: Honóra patrem, et matrem: et, Qui maledíxerit patri, vel matri, morte moriátur. Vos autem dícitis: Quicúmque díxerit patri, vel matri: Munus, quodcúmque est ex me, tibi próderit: et non honorificábit patrem suum, aut matrem suam: et írritum fecístis mandátum Dei propter traditiónem vestram. Hypócritæ, bene prophetávit de vobis Isaías, dicens: Pópulus hic lábiis me honórat: cor autem eórum longe est a me. Sine causa autem colunt me, docéntes doctrínas, et mandáta hóminum. Et convocátis ad se turbis, dixit eis: Audíte, et intellígite. Non quod intrat in os, coínquinat hóminem: sed quod procédit ex ore, hoc coínquinat hóminem. Tunc accedéntes discípuli ejus, dixérunt ei: Scis quia Pharisǽi audíto verbo hoc, scandalizáti sunt? At ille respóndens ait: Omnis plantátio, quam non plantávit Pater meus cæléstis, eradicábitur. Sínite illos: cæci sunt, et duces cæcórum: cæcus autem si cæco ducátum præstet, ambo in fóveam cadunt. Respóndens autem Petrus dixit ei: Edíssere nobis parábolam istam. At ille dixit: Adhuc et vos sine intelléctu estis? Non intellígitis quia omne, quod in os intrat, in ventrem vadit, et in secéssum emíttitur? Quæ autem procédunt de ore, de corde éxeunt, et ea coínquinant hóminem: de corde enim éxeunt cogitatiónes malæ, homicídia, adultéria, fornicatiónes, furta, falsa testimónia, blasphémiæ: hæc sunt, quæ coínquinant hóminem. Non lotis autem mánibus manducáre, non coínquinat hóminem.",
+  "new": "In illo témpore: Accessérunt ad Jesum ab Jerosólymis Scribæ, et Pharisǽi, dicéntes: Quare discípuli tui transgrediúntur traditiónem seniórum? Non enim lavant manus suas, cum panem mandúcant. Ipse autem respóndens, ait illis: Quare et vos transgredímini mandátum Dei propter traditiónem vestram? Nam Deus dixit: Honóra patrem, et matrem, et, Qui maledíxerit patri, vel matri, morte moriátur. Vos autem dícitis: Quicúmque díxerit patri, vel matri, Munus quodcúmque est ex me, tibi próderit: et non honorificábit patrem suum, aut matrem suam: Et írritum fecístis mandátum Dei propter traditiónem vestram. Hypócritæ, bene prophetávit de vobis Isaías, dicens: Pópulus hic lábiis me honórat: cor autem eórum longe est a me. Sine causa autem colunt me, docéntes doctrínas, et mandáta hóminum. Et convocátis ad se turbis, dixit eis: Audíte, et intellígite. Non quod intrat in os, coínquinat hóminem: sed quod procédit ex ore, hoc coínquinat hóminem. Tunc accedéntes discípuli ejus, dixérunt ei: Scis quia Pharisǽi, audíto verbo hoc, scandalizáti sunt? At ille respóndens ait: Omnis plantátio, quam non plantávit Pater meus cæléstis, eradicábitur. Sínite illos: Cæci sunt, et duces cæcórum. Cæcus autem si cæco ducátum præstet, ambo in fóveam cadunt. Respóndens autem Petrus, dixit ei: Edíssere nobis parábolam istam. At ille dixit: Adhuc et vos sine intelléctu estis? Non intellígitis quia omne, quod in os intrat, in ventrem vadit, et in secéssum emíttitur? Quæ autem procédunt de ore, de corde éxeunt, et ea coínquinant hóminem: De corde enim éxeunt cogitatiónes malæ, homicídia, adultéria, fornicatiónes, furta, falsa testimónia, blasphémiæ. Hæc sunt, quæ coínquinant hóminem. Non lotis autem mánibus manducáre, non coínquinat hóminem.",
+  "src": "M39 pp. 99-100 (pdf 83-84)",
+  "why": "punctuation 9, case 6 (Scribæ, Et, Cæci, Cæcus, De, Hæc) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3h",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Factum est verbum Dómini ad me, dicens: Sta in porta domus Dómini, et prǽdica ibi verbum istud, et dic: Audíte verbum Dómini omnis Juda, qui ingredímini per portas has, ut adorétis Dóminum. Hæc dicit Dóminus exercítuum, Deus Israël: Bonas fácite vias vestras, et stúdia vestra: et habitábo vobíscum in loco isto. Nolíte confídere in verbis mendácii, dicéntes: Templum Dómini, templum Dómini, templum Dómini est. Quóniam si bene direxéritis vias vestras, et stúdia vestra: si fecéritis judícium inter virum et próximum ejus, ádvenæ, et pupíllo, et víduæ non fecéritis calúmniam, nec sánguinem innocéntem effudéritis in loco hoc, et post deos aliénos non ambulavéritis in malum vobismetípsis: habitábo vobíscum in loco isto: in terra, quam dedi pátribus vestris a sǽculo et usque in sǽculum.",
+  "new": "In diébus illis: Factum est verbum Dómini ad me, dicens: Sta in porta domus Dómini, et prǽdica ibi verbum istud, et dic: Audíte verbum Dómini omnis Juda, qui ingredímini per portas has, ut adorétis Dóminum. Hæc dicit Dóminus exercítuum Deus Israël: Bonas fácite vias vestras, et stúdia vestra: et habitábo vobíscum in loco isto. Nolíte confídere in verbis mendácii, dicéntes: Templum Dómini, templum Dómini, templum Dómini est. Quóniam si bene direxéritis vias vestras, et stúdia vestra: si fecéritis judícium inter virum et próximum ejus, ádvenæ, et pupíllo, et víduæ non fecéritis calúmniam, nec sánguinem innocéntem effudéritis in loco hoc, et post deos aliénos non ambulavéritis in malum vobismetípsis: habitábo vobíscum in loco isto: in terra, quam dedi pátribus vestris a sǽculo et usque in sǽculum. Ait Dóminus omnípotens.",
+  "src": "M39 p. 101 (pdf 84)",
+  "why": "cut ending 'Ait Dóminus omnípotens.' restored as printed; punctuation 1 as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3h",
+   0,
+   "en"
+  ],
+  "old": "In those days: The word that came to Jeremias from the Lord, saying: Stand in the gate of the house of the Lord, and proclaim there this word, and say: Hear ye the word of the Lord, all ye men of Juda, that enter in at these gates, to adore the Lord. Thus saith the Lord of hosts the God of Israel: Make your ways and your doings good: and I will dwell with you in this place. Trust not in lying words, saying: The temple of the Lord, the temple of the Lord, it is the temple of the Lord. For if you will order well your ways, and your doings: if you will execute judgement between a man and his neighbour, If you oppress not the stranger, the fatherless, and the widow, and shed not innocent blood in this place, and walk not after strange gods to your own hurt, I will dwell with you in this place: in the land, which I gave to your fathers from the beginning and for evermore.",
+  "new": "In those days: The word of the Lord came to me, saying: Stand in the gate of the house of the Lord, and proclaim there this word, and say: Hear ye the word of the Lord, all ye men of Juda, that enter in at these gates, to adore the Lord. Thus saith the Lord of hosts the God of Israel: Make your ways and your doings good: and I will dwell with you in this place. Trust not in lying words, saying: The temple of the Lord, the temple of the Lord, it is the temple of the Lord. For if you will order well your ways, and your doings: if you will execute judgement between a man and his neighbour, If you oppress not the stranger, the fatherless, and the widow, and shed not innocent blood in this place, and walk not after strange gods to your own hurt, I will dwell with you in this place: in the land, which I gave to your fathers from the beginning and for evermore, saith the Lord almighty.",
+  "src": "M39 p. 101 (pdf 84); bible/en Jer 7: 1-7",
+  "why": "English to the Latin: the Missal begins 'Factum est verbum Dómini ad me, dicens' (Vulgate 'Verbum quod factum est ad Jeremiam a Domino') and ends 'Ait Dóminus omnípotens': AI translation of both, labelled in src",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad3h",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Jer 7: 1-7); AI translation (Missal departs from the Vulgate): \"The word of the Lord came to me, saying\" (Missal \"Factum est verbum Dómini ad me, dicens\"); \", saith the Lord almighty\" at the end (Missal \"Ait Dóminus omnípotens\")",
+  "src": "M39 p. 101 (pdf 84)",
+  "why": "English source label (new key)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3h",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Surgens Jesus de synagóga, introívit in domum Simónis. Socrus autem Simónis tenebátur magnis fébribus: et rogavérunt illum pro ea. Et stans super illam imperávit febri: et dimísit illam. Et contínuo surgens, ministrábat illis. Cum autem sol occidísset: omnes, qui habébant infírmos váriis languóribus, ducébant illos ad eum. At ille síngulis manus impónens, curábat eos. Exíbant autem dæmónia a multis clamántia, et dicéntia: Quia tu es Fílius Dei: et íncrepans non sinébat ea loqui: quia sciébant ipsum esse Christum. Facta autem die egréssus ibat in desértum locum, et turbæ requirébant eum, et venérunt usque ad ipsum: et detinébant illum ne discéderet ab eis. Quibus ille ait: Quia et áliis civitátibus opórtet me evangelizáre regnum Dei: quia ídeo missus sum. Et erat prǽdicans in synagógis Galilǽæ.",
+  "new": "In illo témpore: Surgens Jesus de synagóga, introívit in domum Simónis. Socrus autem Simónis tenebátur magnis fébribus: Et rogavérunt illum pro ea. Et stans super illam imperávit febri: et dimísit illam. Et contínuo surgens, ministrábat illis. Cum autem sol occidísset: omnes, qui habébant infírmos váriis languóribus, ducébant illos ad eum. At ille síngulis manus impónens, curábat eos. Exíbant autem dæmónia a multis clamántia, et dicéntia, Quia tu es Fílius Dei. Et íncrepans non sinébat ea loqui: quia sciébant ipsum esse Christum. Facta autem die egréssus ibat in desértum locum, et turbæ requirébant eum, et venérunt usque ad ipsum: et detinébant illum ne discéderet ab eis. Quibus ille ait: Quia et áliis civitátibus opórtet me evangelizáre regnum Dei: quia ídeo missus sum. Et erat prǽdicans in synagógis Galilǽæ.",
+  "src": "M39 p. 101 (pdf 84)",
+  "why": "punctuation 2, case 2 (Et, Et) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3f",
+   "or",
+   0
+  ],
+  "old": "Ieiúnia nostra, quǽsumus, Dómine, benígno favóre proséquere: ut, sicut ab aliméntis abstinémus in córpore; ita a vítiis ieiunémus in mente. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Ieiúnia nostra, quǽsumus Dómine, benígno favóre proséquere: ut sicut ab aliméntis abstinémus in córpore; ita a vítiis ieiunémus in mente: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 102 (pdf 85)",
+  "why": "punctuation as printed (':' before the conclusion; Proc. 1913 p. 405)",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3f",
+   "se",
+   0
+  ],
+  "old": "Réspice, quǽsumus, Dómine, propítius ad múnera, quæ sacrámus: ut tibi grata sint, et nobis salutária semper exsístant. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Réspice, quǽsumus Dómine, propítius ad múnera, quæ sacrámus: ut tibi grata sint, et nobis salutária semper exsístant. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 104 (pdf 86)",
+  "why": "punctuation as printed (the print ends 'exsístant. Per Dóminum.')",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3f",
+   "pc",
+   0
+  ],
+  "old": "Huius nos, Dómine, percéptio sacraménti mundet a crimine: et ad cœléstia regna perdúcat. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Huius nos, Dómine, percéptio sacraménti mundet a crímine; et ad cæléstia regna perdúcat: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 104 (pdf 86)",
+  "why": "'crímine', 'cæléstia' and punctuation as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3f",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Convenérunt fílii Israël advérsum Móysen et Aaron: et versi in seditiónem, dixérunt: Utinam periissémus inter fratres nostros coram Dómino. Cur eduxístis ecclésiam Dómini in solitúdinem, ut et nos et nostra juménta moriámur? Quare nos fecístis ascéndere de Ægýpto, et adduxístis in locum istum péssimum, qui seri non potest, qui nec ficum gignit, nec víneas, nec malogranáta, ínsuper et aquam non habet ad bibéndum? Ingressúsque Móyses et Aaron, dimíssa multitúdine, tabernáculum fœ́deris, corruérunt proni in terram, clamaverúntque ad Dóminum, atque dixérunt: Dómine Deus, audi clamórem hujus pópuli, et áperi eis thesáurum tuum fontem aquæ vivæ, ut satiáti, cesset murmurátio eórum. Et appáruit glória Dómini super eos. Locutúsque est Dóminus ad Móysen, dicens: Tolle virgam, et cóngrega pópulum, tu et Aaron frater tuus, et loquímini ad petram coram eis, et illa dabit aquas. Cumque edúxeris aquam de petra, bibet omnis multitúdo et juménta ejus. Tulit ígitur Móyses virgam, quæ erat in conspéctu Dómini, sicut præcéperat ei, congregáta multitúdine ante petram, dixítque eis: Audíte rebélles et incréduli: Num de petra hac vobis aquam potérimus ejícere? Cumque elevásset Móyses manum, percútiens virga bis sílicem, egréssæ sunt aquæ largíssimæ, ita ut pópulus bíberet et juménta. Dixítque Dóminus ad Móysen et Aaron: Quia non credidístis mihi, ut sanctificarétis me coram fíliis Israël, non introducétis hos pópulos in terram, quam dabo eis. Hæc est aqua contradictiónis, ubi jurgáti sunt fílii Israël contra Dóminum, et sanctificátus est in eis.",
+  "new": "In diébus illis: Convenérunt fílii Israël advérsum Móysen et Aaron: et versi in seditiónem, dixérunt: Date nobis aquam, ut bibámus. Ingressúsque Móyses et Aaron, dimíssa multitúdine, tabernáculum fœ́deris, corruérunt proni in terram, clamaverúntque ad Dóminum, atque dixérunt: Dómine Deus audi clamórem hujus pópuli, et áperi eis thesáurum tuum fontem aquæ vivæ, ut satiáti, cesset murmurátio eórum. Et appáruit glória Dómini super eos. Locutúsque est Dóminus ad Móysen, dicens: Tolle virgam, et cóngrega pópulum, tu et Aaron frater tuus, et loquímini ad petram coram eis, et illa dabit aquas. Cumque edúxeris aquam de petra, bibet omnis multitúdo et juménta ejus. Tulit ígitur Móyses virgam, quæ erat in conspéctu Dómini, sicut præcéperat ei, congregáta multitúdine ante petram, dixítque eis: Audíte rebélles et incréduli: Num de petra hac vobis aquam potérimus ejícere? Cumque elevásset Móyses manum, percútiens virga bis sílicem, egréssæ sunt aquæ largíssimæ, ita ut pópulus bíberet, et juménta. Dixítque Dóminus ad Móysen et Aaron: Quia non credidístis mihi, ut sanctificarétis me coram fíliis Israël, non introducétis hos pópulos in terram, quam dabo eis. Hæc est aqua contradictiónis, ubi jurgáti sunt fílii Israël contra Dóminum, et sanctificátus est in eis.",
+  "src": "M39 p. 102 (pdf 85)",
+  "why": "the Missal's text: after 'dixérunt:' it prints only 'Date nobis aquam, ut bibámus.' (the site had the Vulgate's Num 20: 3b-5, 'Utinam periissémus … ad bibéndum?', which the Missal does not print); punctuation 2 as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3f",
+   0,
+   "en"
+  ],
+  "old": "In those days: The people wanting water, came together against Moses and Aaron: And making a sedition, they said: Would God we had perished among our brethren before the Lord. Why have you brought out the church of the Lord into the wilderness, that both we and our cattle should die? Why have you made us come up out of Egypt, and have brought us into this wretched place which cannot be sowed, nor bringeth forth figs, nor vines, nor pomegranates, neither is there any water to drink? And Moses and Aaron leaving the multitude, went into the tabernacle of the covenant, and fell flat upon the ground, and cried to the Lord, and said: O Lord God, hear the cry of this people, and open to them thy treasure, a fountain of living water, that being satisfied, they may cease to murmur. And the glory of the Lord appeared over them. And the Lord spoke to Moses, saying: Take the rod, and assemble the people together, thou and Aaron thy brother, and speak to the rock before them, and it shall yield waters. And when thou hast brought forth water out of the rock, all the multitude and their cattle shall drink. Moses therefore took the rod, which was before the Lord, as he had commanded him, And having gathered together the multitude before the rock, he said to them: Hear, ye rebellious and incredulous: Can we bring you forth water out of this rock? And when Moses had lifted up his hand, and struck the rock twice with the rod, there came forth water in great abundance, so that the people and their cattle drank, And the Lord said to Moses and Aaron: Because you have not believed me, to sanctify me before the children of Israel, you shall not bring these people into the land, which I will give them. This is the Water of contradiction, where the children of Israel strove with words against the Lord, and he was sanctified in them.",
+  "new": "In those days: The children of Israel came together against Moses and Aaron: and making a sedition, they said: Give us water, that we may drink. And Moses and Aaron leaving the multitude, went into the tabernacle of the covenant, and fell flat upon the ground, and cried to the Lord, and said: O Lord God, hear the cry of this people, and open to them thy treasure, a fountain of living water, that being satisfied, they may cease to murmur. And the glory of the Lord appeared over them. And the Lord spoke to Moses, saying: Take the rod, and assemble the people together, thou and Aaron thy brother, and speak to the rock before them, and it shall yield waters. And when thou hast brought forth water out of the rock, all the multitude and their cattle shall drink. Moses therefore took the rod, which was before the Lord, as he had commanded him, And having gathered together the multitude before the rock, he said to them: Hear, ye rebellious and incredulous: Can we bring you forth water out of this rock? And when Moses had lifted up his hand, and struck the rock twice with the rod, there came forth water in great abundance, so that the people and their cattle drank, And the Lord said to Moses and Aaron: Because you have not believed me, to sanctify me before the children of Israel, you shall not bring these people into the land, which I will give them. This is the Water of contradiction, where the children of Israel strove with words against the Lord, and he was sanctified in them.",
+  "src": "M39 p. 102 (pdf 85); bible/en Num 20: 2-13",
+  "why": "English to the Latin: the Missal reads 'Convenérunt fílii Israël advérsum Móysen et Aaron: et versi in seditiónem, dixérunt: Date nobis aquam, ut bibámus.' (not Vulgate vv. 2-5): AI translation of the opening, labelled in src; the rest Douay",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad3f",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Num 20: 6-13); AI translation (Missal departs from the Vulgate): the opening \"The children of Israel came together against Moses and Aaron: and making a sedition, they said: Give us water, that we may drink.\" (Missal \"Convenérunt fílii Israël advérsum Móysen et Aaron: et versi in seditiónem, dixérunt: Date nobis aquam, ut bibámus.\")",
+  "src": "M39 p. 102 (pdf 85)",
+  "why": "English source label (new key)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3f",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Venit Jesus in civitátem Samaríæ, quæ dícitur Sichar: juxta prǽdium, quod dedit Jacob Joseph fílio suo. Erat autem ibi fons Jacob. Jesus ergo fatigátus ex itínere, sedébat sic supra fontem. Hora erat quasi sexta. Venit múlier de Samaría hauríre aquam. Dicit ei Jesus: Da mihi bíbere. (Discípuli enim ejus abíerant in civitátem ut cibos émerent.) Dicit ergo ei múlier illa Samaritána: Quómodo tu, Judǽus cum sis, bíbere a me poscis, quæ sum múlier Samaritána? Non enim coutúntur Judǽi Samaritánis. Respóndit Jesus, et dixit ei: Si scires donum Dei, et quis est, qui dicit tibi: Da mihi bíbere, tu fórsitan petísses ab eo, et dedísset tibi aquam vivam. Dicit ei múlier: Dómine, neque in quo háurias habes, et púteus altus est: unde ergo habes aquam vivam? Numquid tu major es patre nostro Jacob, qui dedit nobis púteum, et ipse ex eo bibit, et fílii ejus, et pécora ejus? Respóndit Jesus, et dixit ei: Omnis, qui bibit ex aqua hac, sítiet íterum: qui autem bíberit ex aqua, quam ego dabo ei, non sítiet in ætérnum: sed aqua, quam ego dabo ei, fiet in eo fons aquæ saliéntis in vitam ætérnam. Dicit ad eum múlier: Dómine, da mihi hanc aquam, ut non sítiam, neque véniam huc hauríre. Dicit ei Jesus: Vade, voca virum tuum, et veni huc. Respóndit múlier, et dixit: Non hábeo virum. Dicit ei Jesus: Bene dixísti, quia non hábeo virum: quinque enim viros habuísti, et nunc, quem habes, non est tuus vir: hoc vere dixísti. Dicit ei múlier: Dómine, vídeo quia prophéta es tu. Patres nostri in monte hoc adoravérunt, et vos dícitis, quia Jerosólymis est locus, ubi adoráre opórtet. Dicit ei Jesus: Múlier, crede mihi, quia venit hora, quando neque in monte hoc, neque in Jerosólymis adorábitis Patrem. Vos adorátis quod nescítis: nos adorámus quod scimus, quia salus ex Judǽis est. Sed venit hora, et nunc est, quando veri adoratóres adorábunt Patrem in spíritu et veritáte. Nam et Pater tales quærit, qui adórent eum. Spíritus est Deus: et eos, qui adórant eum, in spíritu et veritáte opórtet adoráre. Dicit ei múlier: Scio quia Messías venit (qui dícitur Christus): cum ergo vénerit ille, nobis annuntiábit ómnia. Dicit ei Jesus: Ego sum, qui loquor tecum. Et contínuo venérunt discípuli ejus: et mirabántur quia cum mulíere loquebátur. Nemo tamen dixit: Quid quæris? Aut quid lóqueris cum ea? Relíquit ergo hýdriam suam múlier, et ábiit in civitátem, et dicit illis homínibus: Veníte, et vidéte hóminem, qui dixit mihi ómnia quæcúmque feci: numquid ipse est Christus? Exiérunt ergo de civitáte, et veniébant ad eum. Intérea rogábant eum discípuli, dicéntes: Rabbi, mandúca. Ille autem dicit eis: Ego cibum hábeo manducáre, quem vos nescítis. Dicébant ergo discípuli ad ínvicem: Numquid áliquis áttulit ei manducáre? Dicit eis Jesus: Meus cibus est ut fáciam voluntátem ejus, qui misit me, ut perfíciam opus ejus. Nonne vos dícitis, quod adhuc quátuor menses sunt, et messis venit? Ecce dico vobis: leváte óculos vestros, et vidéte regiónes, quia albæ sunt jam ad messem. Et qui metit, mercédem áccipit, et cóngregat fructum in vitam ætérnam: ut et qui séminat, simul gáudeat, et qui metit. In hoc enim est verbum verum: quia álius est qui séminat, et álius est qui metit. Ego misi vos métere quod vos non laborástis: álii laboravérunt, et vos in labóres eórum introístis. Ex civitáte autem illa multi credidérunt in eum Samaritanórum, propter verbum mulíeris testimónium perhibéntis: Quia dixit mihi ómnia quæcúmque feci. Cum veníssent ergo ad illum Samaritáni, rogavérunt eum ut ibi manéret. Et mansit ibi duos dies. Et multo plures credidérunt in eum propter sermónem ejus. Et mulíeri dicébant: Quia jam non propter tuam loquélam crédimus: ipsi enim audívimus, et scimus quia hic est vere Salvátor mundi.",
+  "new": "In illo témpore: Venit Jesus in civitátem Samaríæ, quæ dícitur Sichar: juxta prǽdium, quod dedit Jacob Joseph fílio suo. Erat autem ibi fons Jacob. Jesus ergo fatigátus ex itínere, sedébat sic supra fontem. Hora erat quasi sexta. Venit múlier de Samaría hauríre aquam. Dicit ei Jesus: Da mihi bíbere. (Discípuli enim ejus abíerant in civitátem, ut cibos émerent.) Dicit ergo ei múlier illa Samaritána: Quómodo tu Judǽus cum sis, bíbere a me poscis, quæ sum múlier Samaritána? Non enim coutúntur Judǽi Samaritánis. Respóndit Jesus, et dixit ei: Si scires donum Dei, et quis est, qui dicit tibi, Da mihi bíbere: tu fórsitan petiísses ab eo, et dedísset tibi aquam vivam. Dicit ei múlier: Dómine, neque in quo háurias habes, et púteus altus est: Unde ergo habes aquam vivam? Numquid tu major es patre nostro Jacob, qui dedit nobis púteum, et ipse ex eo bibit, et fílii ejus, et pécora ejus? Respóndit Jesus, et dixit ei: Omnis, qui bibit ex aqua hac, sítiet íterum: Qui autem bíberit ex aqua, quam ego dabo ei, non sítiet in ætérnum: sed aqua, quam ego dabo ei, fiet in eo fons aquæ saliéntis in vitam ætérnam. Dicit ad eum múlier: Dómine, da mihi hanc aquam, ut non sítiam: neque véniam huc hauríre. Dicit ei Jesus: Vade, voca virum tuum, et veni huc. Respóndit múlier, et dixit: Non hábeo virum. Dicit ei Jesus: Bene dixísti, quia non hábeo virum: Quinque enim viros habuísti, et nunc, quem habes, non est tuus vir: Hoc vere dixísti. Dicit ei múlier: Dómine, vídeo quia prophéta es tu. Patres nostri in monte hoc adoravérunt, et vos dícitis, quia Jerosólymis est locus, ubi adoráre opórtet. Dicit ei Jesus: Múlier, crede mihi, quia venit hora, quando neque in monte hoc, neque in Jerosólymis adorábitis Patrem. Vos adorátis quod nescítis: nos adorámus quod scimus, quia salus ex Judǽis est. Sed venit hora, et nunc est, quando veri adoratóres adorábunt Patrem in spíritu et veritáte. Nam et Pater tales quærit, qui adórent eum. Spíritus est Deus: et eos, qui adórant eum, in spíritu et veritáte opórtet adoráre. Dicit ei múlier: Scio quia Messías venit, (qui dícitur Christus.) Cum ergo vénerit ille, nobis annuntiábit ómnia. Dicit ei Jesus: Ego sum, qui loquor tecum. Et contínuo venérunt discípuli ejus: et mirabántur quia cum mulíere loquebátur. Nemo tamen dixit, Quid quæris, aut quid lóqueris cum ea? Relíquit ergo hýdriam suam múlier, et ábiit in civitátem, et dicit illis homínibus: Veníte, et vidéte hóminem, qui dixit mihi ómnia quæcúmque feci: Numquid ipse est Christus? Exiérunt ergo de civitáte, et veniébant ad eum. Intérea rogábant eum discípuli, dicéntes: Rabbi, mandúca. Ille autem dicit eis: Ego cibum hábeo manducáre, quem vos nescítis. Dicébant ergo discípuli ad ínvicem: Numquid áliquis áttulit ei manducáre? Dicit eis Jesus: Meus cibus est ut fáciam voluntátem ejus, qui misit me, ut perfíciam opus ejus. Nonne vos dícitis, quod adhuc quátuor menses sunt, et messis venit? Ecce dico vobis: leváte óculos vestros, et vidéte regiónes, quia albæ sunt jam ad messem. Et qui metit, mercédem áccipit, et cóngregat fructum in vitam ætérnam: ut, et qui séminat, simul gáudeat, et qui metit. In hoc enim est verbum verum: quia álius est qui séminat, et álius est qui metit. Ego misi vos métere quod vos non laborástis: Alii laboravérunt, et vos in labóres eórum introístis. Ex civitáte autem illa multi credidérunt in eum Samaritanórum, propter verbum mulíeris testimónium perhibéntis, Quia dixit mihi ómnia quæcúmque feci. Cum veníssent ergo ad illum Samaritáni, rogavérunt eum ut ibi manéret. Et mansit ibi duos dies. Et multo plures credidérunt in eum propter sermónem ejus. Et mulíeri dicébant, Quia jam non propter tuam loquélam crédimus: Ipsi enim audívimus, et scimus, quia hic est vere Salvátor mundi.",
+  "src": "M39 pp. 103-104 (pdf 85-86)",
+  "why": "'petiísses' as printed; punctuation 12, case 9 (Unde, Qui, Quinque, Hoc, Cum, aut, Numquid, Alii, Ipsi) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3s",
+   "or",
+   0
+  ],
+  "old": "Præsta, quǽsumus, omnípotens Deus: ut, qui se, affligéndo carnem, ab aliméntis ábstinent; sectándo iustítiam, a culpa ieiúnent. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Præsta, quǽsumus omnípotens Deus: ut qui se, affligéndo carnem, ab aliméntis ábstinent; sectándo iustítiam, a culpa ieiúnent: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 105 (pdf 86)",
+  "why": "punctuation as printed (':' before the conclusion; Proc. 1913 p. 405)",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3s",
+   "se",
+   0
+  ],
+  "old": "Concéde, quǽsumus, omnípotens Deus: ut huius sacrifícii munus oblátum, fragilitátem nostram ab omni malo purget semper et múniat. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Concéde, quǽsumus omnípotens Deus: ut huius sacrifícii munus oblátum, fragilitátem nostram ab omni malo purget semper, et múniat. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 108 (pdf 88)",
+  "why": "punctuation as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad3s",
+   "pc",
+   0
+  ],
+  "old": "Quǽsumus, omnípotens Deus: ut inter eius membra numerémur, cuius córpori communicámus et sánguini: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Quǽsumus, omnípotens Deus: ut inter eius membra numerémur; cuius córpori communicámus, et sánguini: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 108 (pdf 88)",
+  "why": "punctuation as printed ('numerémur;' flexa; the print ends 'sánguini: Qui tecum vivit et regnat.')",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3s",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Erat vir hábitans in Babylóne, et nomen ejus Jóakim: et accépit uxórem nómine Susánnam, fíliam Helcíæ, pulchram nimis, et timéntem Deum: paréntes enim illíus, cum essent justi, erudiérunt fíliam suam secúndum legem Móysi. Erat autem Jóakim dives valde, et erat ei pomárium vicínum dómui suæ: et ad ipsum confluébant Judǽi, eo quod esset honorabílior ómnium. Et constitúti sunt de pópulo duo senes júdices in illo anno, de quibus locútus est Dóminus: Quia egréssa est iníquitas de Babylóne a senióribus judícibus, qui videbántur régere pópulum. Isti frequentábant domum Jóakim, et veniébant ad eos omnes, qui habébant judícia. Cum autem pópulus revertísset per merídiem, ingrediebátur Susánna, et deambulábat in pomário viri sui. Et vidébant eam senes quotídie ingrediéntem, et deambulántem: et exarsérunt in concupiscéntiam ejus: et evertérunt sensum suum, et declinavérunt óculos suos ut non vidérent cælum, neque recordaréntur judiciórum justórum. Factum est autem, cum observárent diem aptum, ingréssa est aliquándo sicut heri et nudiustértius, cum duábus solis puéllis, voluítque lavári in pomário: æstus quippe erat: et non erat ibi quisquam, præter duos senes abscónditos, et contemplántes eam. Dixit ergo puéllis: Afférte mihi óleum, et smígmata, et óstia pomárii cláudite, ut laver. Cum autem egréssæ essent puéllæ, surrexérunt duo senes, et accurrérunt ad eam, et dixérunt: Ecce óstia pomárii clausa sunt, et nemo nos videt, et nos in concupiscéntia tui sumus: quam ob rem assentíre nobis, et commiscére nobíscum. Quod si nolúeris, dicémus contra te testimónium, quod fúerit tecum júvenis, et ob hanc causam emíseris puéllas a te. Ingémuit Susánna, et ait: Angústiæ sunt mihi úndique: si enim hoc égero, mors mihi est: si autem non égero, non effúgiam manus vestras. Sed mélius est mihi absque ópere incídere in manus vestras, quam peccáre in conspéctu Dómini. Et exclamávit voce magna Susánna: exclamavérunt autem et senes advérsus eam. Et cucúrrit unus ad óstia pomárii, et apéruit. Cum ergo audíssent clamórem fámuli domus in pomário, irruérunt per postícum ut vidérent quidnam esset. Postquam autem senes locúti sunt, erubuérunt servi veheménter: quia numquam dictus fúerat sermo hujuscémodi de Susánna. Et facta est dies crástina. Cumque venísset pópulus ad Jóakim virum ejus, venérunt et duo senióres pleni iníqua cogitatióne advérsus Susánnam ut interfícerent eam. Et dixérunt coram pópulo: Míttite ad Susánnam fíliam Helcíæ uxórem Jóakim. Et statim misérunt. Et venit cum paréntibus, et fíliis, et univérsis cognátis suis. Flebant ígitur sui, et omnes qui nóverant eam. Consurgéntes autem duo senióres in médio pópuli, posuérunt manus suas super caput ejus. Quæ flens suspéxit ad cælum: erat enim cor ejus fidúciam habens in Dómino. Et dixérunt senióres: Cum deambularémus in pomário soli, ingréssa est hæc cum duábus puéllis: et clausit óstia pomárii, et dimísit a se puéllas. Venítque ad eam adoléscens, qui erat abscónditus, et concúbuit cum ea. Porro nos cum essémus in ángulo pomárii, vidéntes iniquitátem, cucúrrimus ad eos, et vídimus eos páriter commiscéri. Et illum quidem non quívimus comprehéndere, quia fórtior nobis erat, et apértis óstiis exsilívit: hanc autem cum apprehendissémus, interrogávimus, quisnam esset adoléscens, et nóluit indicáre nobis: hujus rei testes sumus. Crédidit eis multitúdo quasi sénibus et judícibus pópuli, et condemnavérunt eam ad mortem. Exclamávit autem voce magna Susánna, et dixit: Deus ætérne, qui absconditórum es cógnitor, qui nosti ómnia ántequam fiant, tu scis quóniam falsum testimónium tulérunt contra me: et ecce mórior, cum nihil horum fécerim, quæ isti malitióse composuérunt advérsum me. Exaudívit autem Dóminus vocem ejus. Cumque ducerétur ad mortem, suscitávit Dóminus spíritum sanctum púeri junióris, cujus nomen Dániel: et exclamávit voce magna: Mundus ego sum a sánguine hujus. Et convérsus omnis pópulus ad eum, dixit: Quis est iste sermo, quem tu locútus es? Qui cum staret in médio eórum, ait: Sic fátui fílii Israël, non judicántes, neque quod verum est cognoscéntes, condemnástis fíliam Israël? Revertímini ad judícium, quia falsum testimónium locúti sunt advérsus eam. Revérsus est ergo pópulus cum festinatióne, Et dixit ad eos Dániel: Separáte illos ab ínvicem procul, et dijudicábo eos. Cum ergo divísi essent alter ab áltero, vocávit unum de eis, et dixit ad eum: Inveteráte diérum malórum, nunc venérunt peccáta tua, quæ operabáris prius: júdicans judícia injústa, innocéntes ópprimens, et dimíttens nóxios, dicénte Dómino: Innocéntem et justum non interfícies. Nunc ergo si vidísti eam, dic sub qua árbore víderis eos colloquéntes sibi. Qui ait: Sub schino. Dixit autem Dániel: Recte mentítus es in caput tuum: ecce enim ángelus Dei, accépta senténtia ab eo, scindet te médium. Et, amóto eo, jussit veníre álium, et dixit ei: Semen Chánaan, et non Juda, spécies decépit te, et concupiscéntia subvértit cor tuum: sic faciebátis filiábus Israël, et illæ timéntes loquebántur vobis: sed fília Juda non sustínuit iniquitátem vestram. Nunc ergo dic mihi, sub qua árbore comprehénderis eos loquéntes sibi. Qui ait: Sub prino. Dixit autem ei Dániel: Recte mentítus es et tu in caput tuum: manet enim ángelus Dómini, gládium habens, ut secet te médium, et interfíciat vos. Exclamávit ítaque omnis cœtus voce magna, et benedixérunt Deum, qui salvat sperántes in se. Et consurrexérunt advérsus duos senióres (convícerat enim eos Dániel ex ore suo falsum dixísse testimónium), fecerúntque eis sicut male égerant advérsus próximum, et interfecérunt eos, et salvátus est sanguis innóxius in die illa.",
+  "new": "In diébus illis: Erat vir hábitans in Babylóne, et nomen ejus Jóakim: Et accépit uxórem nómine Susánnam, fíliam Helcíæ, pulchram nimis, et timéntem Deum: Paréntes enim illíus, cum essent justi, erudiérunt fíliam suam secúndum legem Móysi. Erat autem Jóakim dives valde, et erat ei pomárium vicínum dómui suæ: Et ad ipsum confluébant Judǽi, eo quod esset honorabílior ómnium. Et constitúti sunt de pópulo duo senes júdices in illo anno: de quibus locútus est Dóminus, Quia egréssa est iníquitas de Babylóne a senióribus judícibus, qui videbántur régere pópulum. Isti frequentábant domum Jóakim, et veniébant ad eos omnes, qui habébant judícia. Cum autem pópulus revertísset per merídiem, ingrediebátur Susánna, et deambulábat in pomário viri sui. Et vidébant eam senes quotídie ingrediéntem, et deambulántem: et exarsérunt in concupiscéntiam ejus: Et evertérunt sensum suum, et declinavérunt óculos suos ut non vidérent cælum, neque recordaréntur judiciórum justórum. Factum est autem, cum observárent diem aptum, ingréssa est aliquándo sicut heri et nudiustértius, cum duábus solis puéllis, voluítque lavári in pomário: Æstus quippe erat: Et non erat ibi quisquam, præter duos senes abscónditos, et contemplántes eam. Dixit ergo puéllis: Afférte mihi óleum, et smígmata, et óstia pomárii cláudite, ut laver. Cum autem egréssæ essent puéllæ, surrexérunt duo senes, et accurrérunt ad eam, et dixérunt: Ecce óstia pomárii clausa sunt, et nemo nos videt, et nos in concupiscéntia tui sumus: Quamóbrem assentíre nobis, et commiscére nobíscum. Quod si nolúeris, dicémus contra te testimónium, quod fúerit tecum júvenis, et ob hanc causam emíseris puéllas a te. Ingémuit Susánna, et ait: Angústiæ sunt mihi úndique: Si enim hoc égero, mors mihi est: si autem non égero, non effúgiam manus vestras. Sed mélius est mihi absque ópere incídere in manus vestras, quam peccáre in conspéctu Dómini. Et exclamávit voce magna Susánna: Exclamavérunt autem et senes advérsus eam. Et cucúrrit unus ad óstia pomárii, et apéruit. Cum ergo audíssent clamórem fámuli domus in pomário, irruérunt per postícum ut vidérent quidnam esset. Postquam autem senes locúti sunt, erubuérunt servi veheménter: quia nunquam dictus fúerat sermo hujuscémodi de Susánna. Et facta est dies crástina. Cumque venísset pópulus ad Jóakim virum ejus, venérunt et duo senióres pleni iníqua cogitatióne advérsus Susánnam, ut interfícerent eam. Et dixérunt coram pópulo: Míttite ad Susánnam fíliam Helcíæ, uxórem Jóakim. Et statim misérunt. Et venit cum paréntibus, et fíliis, et univérsis cognátis suis. Flebant ígitur sui, et omnes qui nóverant eam. Consurgéntes autem duo senióres in médio pópuli, posuérunt manus suas super caput ejus. Quæ flens suspéxit ad cælum: Erat enim cor ejus fidúciam habens in Dómino. Et dixérunt senióres: Cum deambularémus in pomário soli, ingréssa est hæc cum duábus puéllis: et clausit óstia pomárii, et dimísit a se puéllas. Venítque ad eam adoléscens, qui erat abscónditus, et concúbuit cum ea. Porro nos cum essémus in ángulo pomárii, vidéntes iniquitátem, cucúrrimus ad eos, et vídimus eos páriter commiscéri. Et illum quidem non quívimus comprehéndere, quia fórtior nobis erat, et apértis óstiis exsilívit: Hanc autem cum apprehendissémus, interrogávimus, quisnam esset adoléscens, et nóluit indicáre nobis: Hujus rei testes sumus. Crédidit eis multitúdo quasi sénibus et judícibus pópuli, et condemnavérunt eam ad mortem. Exclamávit autem voce magna Susánna, et dixit: Deus ætérne, qui absconditórum es cógnitor, qui nosti ómnia ántequam fiant, tu scis quóniam falsum testimónium tulérunt contra me: Et ecce mórior, cum nihil horum fécerim, quæ isti malitióse composuérunt advérsum me. Exaudívit autem Dóminus vocem ejus. Cumque ducerétur ad mortem, suscitávit Dóminus spíritum sanctum púeri junióris, cujus nomen Dániel: Et exclamávit voce magna: Mundus ego sum a sánguine hujus. Et convérsus omnis pópulus ad eum, dixit: Quis est iste sermo, quem tu locútus es? Qui cum staret in médio eórum, ait: Sic fátui fílii Israël, non judicántes, neque quod verum est cognoscéntes, condemnástis fíliam Israël? Revertímini ad judícium, quia falsum testimónium locúti sunt advérsus eam. Revérsus est ergo pópulus cum festinatióne. Et dixit ad eos Dániel: Separáte illos ab ínvicem procul, et dijudicábo eos. Cum ergo divísi essent alter ab áltero, vocávit unum de eis, et dixit ad eum: Inveteráte diérum malórum, nunc venérunt peccáta tua, quæ operabáris prius: júdicans judícia injústa, innocéntes ópprimens, et dimíttens nóxios, dicénte Dómino, Innocéntem et justum non interfícies. Nunc ergo si vidísti eam, dic sub qua árbore víderis eos colloquéntes sibi. Qui ait: Sub schino. Dixit autem Dániel: Recte mentítus es in caput tuum: Ecce enim Angelus Dei, accépta senténtia ab eo, scindet te médium. Et, amóto eo, jussit veníre álium, et dixit ei: Semen Chánaan, et non Juda, spécies decépit te, et concupiscéntia subvértit cor tuum: Sic faciebátis filiábus Israël, et illæ timéntes loquebántur vobis: Sed fília Juda non sustínuit iniquitátem vestram. Nunc ergo dic mihi, sub qua árbore comprehénderis eos loquéntes sibi? Qui ait: Sub prino. Dixit autem ei Dániel: Recte mentítus es et tu in caput tuum: Manet enim Angelus Dómini, gládium habens, ut secet te médium, et interfíciat vos. Exclamávit ítaque omnis cœtus voce magna, et benedixérunt Deum, qui salvat sperántes in se. Et consurrexérunt advérsus duos senióres (convícerat enim eos Dániel ex ore suo falsum dixísse testimónium), fecerúntque eis sicut male égerant advérsus próximum: Et interfecérunt eos, et salvátus est sanguis innóxius in die illa.",
+  "src": "M39 pp. 105-107 (pdf 86-87)",
+  "why": "'quam ob rem' -> 'Quamóbrem', 'numquam' -> 'nunquam' as printed; punctuation 9; case 20 (capitals after ':' and 'Æstus', 'Angelus' x2) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3s",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Perréxit Jesus in montem Olivéti: et dilúculo íterum venit in templum, et omnis pópulus venit ad eum, et sedens docébat eos. Addúcunt autem scribæ, et Pharisǽi mulíerem in adultério deprehénsam: et statuérunt eam in médio, et dixérunt ei: Magíster, hæc múlier modo deprehénsa est in adultério. In lege autem Móyses mandávit nobis hujúsmodi lapidáre. Tu ergo quid dicis? Hoc autem dicébant tentántes eum, ut possent accusáre eum. Jesus autem inclínans se deórsum, dígito scribébat in terra. Cum ergo perseverárent interrogántes eum, eréxit se, et dixit eis: Qui sine peccáto est vestrum, primus in illam lápidem mittat. Et íterum se inclínans, scribébat in terra. Audiéntes autem unus post unum exíbant, incipiéntes a senióribus: et remánsit solus Jesus, et múlier in médio stans. Erigens autem se Jesus, dixit ei: Múlier, ubi sunt, qui te accusábant? Nemo te condemnávit? Quæ dixit: Nemo, Dómine. Dixit autem Jesus: Nec ego te condemnábo: vade, et jam ámplius noli peccáre.",
+  "new": "In illo témpore: Perréxit Jesus in montem Olivéti: et dilúculo íterum venit in templum, et omnis pópulus venit ad eum, et sedens docébat eos. Addúcunt autem Scribæ, et Pharisǽi mulíerem in adultério deprehénsam: et statuérunt eam in médio, et dixérunt ei: Magíster, hæc múlier modo deprehénsa est in adultério. In lege autem Móyses mandávit nobis hujúsmodi lapidáre. Tu ergo quid dicis? Hoc autem dicébant tentántes eum, ut possent accusáre eum. Jesus autem inclínans se deórsum, dígito scribébat in terra. Cum ergo perseverárent interrogántes eum, eréxit se, et dixit eis: Qui sine peccáto est vestrum, primus in illam lápidem mittat. Et íterum se inclínans, scribébat in terra. Audiéntes autem unus post unum exíbant, incipiéntes a senióribus: Et remánsit solus Jesus, et múlier in médio stans. Erigens autem se Jesus, dixit ei: Múlier, ubi sunt, qui te accusábant? Nemo te condemnávit? Quæ dixit: Nemo, Dómine. Dixit autem Jesus: Nec ego te condemnábo: Vade, et jam ámplius noli peccáre.",
+  "src": "M39 pp. 107-108 (pdf 87-88)",
+  "why": "case 3 (Scribæ, Et, Vade) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad3s",
+   0,
+   "en"
+  ],
+  "old": "In those days: There was a man that dwelt in Babylon, and his name was Joakim: And he took a wife whose name was Susanna, the daughter of Helcias, a very beautiful woman, and one that feared God. For her parents being just, had instructed their daughter according to the law of Moses. Now Joakim was very rich, and had an orchard near his house: and the Jews resorted to him, because he was the most honourable of them all. And there were two of the ancients of the people appointed judges that year, of whom the Lord said: Iniquity came out from Babylon from the ancient judges, that seemed to govern the people. These men frequented the house of Joakim, and all that had any matters of judgment came to them. And when the people departed away at noon, Susanna went in, and walked in her husband’s orchard. And the old men saw her going in every day, and walking: and they were inflamed with lust towards her: And they perverted their own mind and turned away their eyes that they might not look unto heaven, nor remember just judgments. And it fell out, as they watched a fit day, she went in on a time, as yesterday and the day before, with two maids only, and was desirous to wash herself in the orchard: for it was hot weather. And there was nobody there, but the two old men that had hid themselves and were beholding her. So she said to the maids: Bring me oil, and washing balls, and shut the doors of the orchard, that I may wash me. Now when the maids were gone forth, the two elders arose, and ran to her, and said: Behold the doors of the orchard are shut, and nobody seeth us, and we are in love with thee: wherefore consent to us, and lie with us. But if thou wilt not, we will bear witness against thee, that a young man was with thee, and therefore thou didst send away thy maids from thee. Susanna sighed, and said: I am straitened on every side: for if I do this thing, it is death to me: and if I do it not, I shall not escape your hands. But it is better for me to fall into your hands without doing it, than to sin in the sight of the Lord. With that Susanna cried out with a loud voice: and the elders also cried out against her. And one of them ran to the door of the orchard, and opened it. So when the servants of the house heard the cry in the orchard, they rushed in by the back door to see what was the matter. But after the old men had spoken, the servants were greatly ashamed: for never had there been any such word said of Susanna. And on the next day, When the people were come to Joakim her husband, the two elders also came full of wicked device against Susanna, to put her to death. And they said before the people: Send to Susanna daughter of Helcias the wife of Joakim. And presently they sent. And she came with her parents, and children, and all her kindred. Therefore her friends and all her acquaintance wept. But the two elders rising up in the midst of the people, laid their hands upon her head. And she weeping looked up to heaven, for her heart had confidence in the Lord. And the elders said: As we walked in the orchard alone, this woman came in with two maids, and shut the doors of the orchard, and sent away the maids from her. Then a young man that was there hid came to her, and lay with her. But we that were in a corner of the orchard, seeing this wickedness, ran up to them, and we saw them lie together. And him indeed we could not take, because he was stronger than us, and opening the doors he leaped out: But having taken this woman, we asked who the young man was, but she would not tell us: of this thing we are witnesses. The multitude believed them as being the elders and the judges of the people, and they condemned her to death. Then Susanna cried out with a loud voice, and said: O eternal God, who knowest hidden things, who knowest all things before they come to pass, Thou knowest that they have borne false witness against me: and behold I must die, whereas I have done none of these things, which these men have maliciously forged against me. And the Lord heard her voice. And when she was led to be put to death, the Lord raised up the holy spirit of a young boy, whose name was Daniel. And he cried out with a loud voice I am clear from the blood of this woman. Then all the people turning themselves towards him, said: What meaneth this word that thou hast spoken? But he standing in the midst of them, said: Are ye so foolish, ye children of Israel, that without examination or knowledge of the truth, you have condemned a daughter of Israel? Return to judgment, for they have borne false witness against her. So all the people turned again in haste, and the old men said to him: Come, and sit thou down among us, and shew it us: seeing God hath given thee the honour of old age. And Daniel said to the people: Separate these two far from one another, and I will examine them. So when they were put asunder one from the other, he called one of them, and said to him: O thou that art grown old in evil days, now are thy sins come out, which thou hast committed before: In judging unjust judgments, oppressing the innocent, and letting the guilty to go free, whereas the Lord saith: The innocent and the just thou shalt not kill. Now then, if thou sawest her, tell me under what tree thou sawest them conversing together. He said: Under a mastic tree. And Daniel said: Well hast thou lied against thy own head: for behold the angel of God having received the sentence of him, shall cut thee in two. And having put him aside, he commanded that the other should come, and he said to him: O thou seed of Chanaan, and not of Juda, beauty hath deceived thee, and lust hath perverted thy heart: Thus did you do to the daughters of Israel, and they for fear conversed with you: but a daughter of Juda would not abide your wickedness. Now therefore tell me, under what tree didst thou take them conversing together. And he answered: Under a holm tree. And Daniel said to him: Well hast thou also lied against thy own head: for the angel of the Lord waiteth with a sword to cut thee in two, and to destroy you. With that all the assembly cried out with a loud voice, and they blessed God, who saveth them that trust in him. And they rose up against the two elders, (for Daniel had convicted them of false witness by their own mouth,) and they did to them as they had maliciously dealt against their neighbour, To fulfill the law of Moses: and they put them to death, and innocent blood was saved in that day.",
+  "new": "In those days: There was a man that dwelt in Babylon, and his name was Joakim: And he took a wife whose name was Susanna, the daughter of Helcias, a very beautiful woman, and one that feared God. For her parents being just, had instructed their daughter according to the law of Moses. Now Joakim was very rich, and had an orchard near his house: and the Jews resorted to him, because he was the most honourable of them all. And there were two of the ancients of the people appointed judges that year, of whom the Lord said: Iniquity came out from Babylon from the ancient judges, that seemed to govern the people. These men frequented the house of Joakim, and all that had any matters of judgment came to them. And when the people departed away at noon, Susanna went in, and walked in her husband’s orchard. And the old men saw her going in every day, and walking: and they were inflamed with lust towards her: And they perverted their own mind and turned away their eyes that they might not look unto heaven, nor remember just judgments. And it fell out, as they watched a fit day, she went in on a time, as yesterday and the day before, with two maids only, and was desirous to wash herself in the orchard: for it was hot weather. And there was nobody there, but the two old men that had hid themselves and were beholding her. So she said to the maids: Bring me oil, and washing balls, and shut the doors of the orchard, that I may wash me. Now when the maids were gone forth, the two elders arose, and ran to her, and said: Behold the doors of the orchard are shut, and nobody seeth us, and we are in love with thee: wherefore consent to us, and lie with us. But if thou wilt not, we will bear witness against thee, that a young man was with thee, and therefore thou didst send away thy maids from thee. Susanna sighed, and said: I am straitened on every side: for if I do this thing, it is death to me: and if I do it not, I shall not escape your hands. But it is better for me to fall into your hands without doing it, than to sin in the sight of the Lord. With that Susanna cried out with a loud voice: and the elders also cried out against her. And one of them ran to the door of the orchard, and opened it. So when the servants of the house heard the cry in the orchard, they rushed in by the back door to see what was the matter. But after the old men had spoken, the servants were greatly ashamed: for never had there been any such word said of Susanna. And on the next day, When the people were come to Joakim her husband, the two elders also came full of wicked device against Susanna, to put her to death. And they said before the people: Send to Susanna daughter of Helcias the wife of Joakim. And presently they sent. And she came with her parents, and children, and all her kindred. Therefore her friends and all her acquaintance wept. But the two elders rising up in the midst of the people, laid their hands upon her head. And she weeping looked up to heaven, for her heart had confidence in the Lord. And the elders said: As we walked in the orchard alone, this woman came in with two maids, and shut the doors of the orchard, and sent away the maids from her. Then a young man that was there hid came to her, and lay with her. But we that were in a corner of the orchard, seeing this wickedness, ran up to them, and we saw them lie together. And him indeed we could not take, because he was stronger than us, and opening the doors he leaped out: But having taken this woman, we asked who the young man was, but she would not tell us: of this thing we are witnesses. The multitude believed them as being the elders and the judges of the people, and they condemned her to death. Then Susanna cried out with a loud voice, and said: O eternal God, who knowest hidden things, who knowest all things before they come to pass, Thou knowest that they have borne false witness against me: and behold I must die, whereas I have done none of these things, which these men have maliciously forged against me. And the Lord heard her voice. And when she was led to be put to death, the Lord raised up the holy spirit of a young boy, whose name was Daniel. And he cried out with a loud voice I am clear from the blood of this woman. Then all the people turning themselves towards him, said: What meaneth this word that thou hast spoken? But he standing in the midst of them, said: Are ye so foolish, ye children of Israel, that without examination or knowledge of the truth, you have condemned a daughter of Israel? Return to judgment, for they have borne false witness against her. So all the people turned again in haste, and the old men said to him: Come, and sit thou down among us, and shew it us: seeing God hath given thee the honour of old age. And Daniel said to the people: Separate these two far from one another, and I will examine them. So when they were put asunder one from the other, he called one of them, and said to him: O thou that art grown old in evil days, now are thy sins come out, which thou hast committed before: In judging unjust judgments, oppressing the innocent, and letting the guilty to go free, whereas the Lord saith: The innocent and the just thou shalt not kill. Now then, if thou sawest her, tell me under what tree thou sawest them conversing together. He said: Under a mastic tree. And Daniel said: Well hast thou lied against thy own head: for behold the angel of God having received the sentence of him, shall cut thee in two. And having put him aside, he commanded that the other should come, and he said to him: O thou seed of Chanaan, and not of Juda, beauty hath deceived thee, and lust hath perverted thy heart: Thus did you do to the daughters of Israel, and they for fear conversed with you: but a daughter of Juda would not abide your wickedness. Now therefore tell me, under what tree didst thou take them conversing together. And he answered: Under a holm tree. And Daniel said to him: Well hast thou also lied against thy own head: for the angel of the Lord waiteth with a sword to cut thee in two, and to destroy you. With that all the assembly cried out with a loud voice, and they blessed God, who saveth them that trust in him. And they rose up against the two elders, (for Daniel had convicted them of false witness by their own mouth,) and they did to them as they had maliciously dealt against their neighbour: and they put them to death, and innocent blood was saved in that day.",
+  "src": "M39 p. 107 (pdf 87); bible/en Dan 13",
+  "why": "English to the Latin: the Missal's v. 62 has no 'ut ágerent secúndum legem Móysi' ('fecerúntque eis sicut male égerant advérsus próximum: Et interfecérunt eos'), so 'To fulfill the law of Moses' is dropped",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad4",
+   "or",
+   0
+  ],
+  "old": "Concéde, quǽsumus, omnípotens Deus: ut, qui ex mérito nostræ actiónis afflígimur, tuæ grátiæ consolatióne respirémus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Concéde, quǽsumus omnípotens Deus: ut qui ex mérito nostræ actiónis afflígimur; tuæ grátiæ consolatióne respirémus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 108 (pdf 88)",
+  "why": "punctuation as printed ('afflígimur;' flexa; the print ends 'respirémus. Per Dóminum.')",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad4",
+   "se",
+   0
+  ],
+  "old": "Sacrifíciis præséntibus, Dómine, quǽsumus, inténde placátus: ut et devotióni nostræ profíciant et salúti. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Sacrifíciis præséntibus, Dómine quǽsumus, inténde placátus: ut devotióni nostræ profíciant, et salúti. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 110 (pdf 89)",
+  "why": "the print has no 'et' before 'devotióni' ('ut devotióni nostræ profíciant, et salúti'); punctuation as printed",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad4",
+   "pc",
+   0
+  ],
+  "old": "Da nobis, quǽsumus, miséricors Deus: ut sancta tua, quibus incessánter explémur, sincéris tractémus obséquiis, et fidéli semper mente sumámus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Da nobis, quǽsumus miséricors Deus: ut sancta tua, quibus incessánter explémur, sincéris tractémus obséquiis; et fidéli semper mente sumámus: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 110 (pdf 89)",
+  "why": "punctuation as printed ('obséquiis;' flexa, ':' before the conclusion)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad4",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Scriptum est, Quóniam Abraham duos fílios hábuit: unum de ancílla, et unum de líbera. Sed qui de ancílla, secúndum carnem natus est: qui autem de líbera, per repromissiónem: quæ sunt per allegoríam dicta. Hæc enim sunt duo testaménta. Unum quidem in monte Sina, in servitútem génerans, quæ est Agar: Sina enim mons est in Arábia, qui conjúnctus est ei, quæ nunc est Jerúsalem, et servit cum fíliis suis. Illa autem, quæ sursum est Jerúsalem, líbera est, quæ est mater nostra. Scriptum est enim: Lætáre stérilis, quæ non paris: erúmpe, et clama, quæ non párturis: quia multi fílii desértæ, magis quam ejus, quæ habet virum. Nos autem fratres secúndum Isaac promissiónis fílii sumus. Sed quómodo tunc is, qui secúndum carnem natus fúerat, persequebátur eum, qui secúndum spíritum: ita et nunc. Sed quid dicit Scriptúra? Ejice ancíllam, et fílium ejus: non enim heres erit fílius ancíllæ cum fílio líberæ. Itaque, fratres, non sumus ancíllæ fílii, sed líberæ: qua libertáte Christus nos liberávit.",
+  "new": "Fratres: Scriptum est, Quóniam Abraham duos fílios hábuit: unum de ancílla, et unum de líbera. Sed qui de ancílla, secúndum carnem natus est: Qui autem de líbera, per repromissiónem: Quæ sunt per allegoríam dicta. Hæc enim sunt duo testaménta. Unum quidem in monte Sina, in servitútem génerans: quæ est Agar: Sina enim mons est in Arábia, qui conjúnctus est ei, quæ nunc est Jerúsalem, et servit cum fíliis suis. Illa autem, quæ sursum est Jerúsalem, líbera est, quæ est mater nostra. Scriptum est enim: Lætáre stérilis, quæ non paris: erúmpe, et clama, quæ non párturis: quia multi fílii desértæ, magis quam ejus, quæ habet virum. Nos autem fratres, secúndum Isaac promissiónis fílii sumus. Sed quómodo tunc is, qui secúndum carnem natus fúerat, persequebátur eum, qui secúndum spíritum: ita et nunc. Sed quid dicit Scriptúra? Ejice ancíllam, et fílium ejus: Non enim heres erit fílius ancíllæ cum fílio líberæ. Itaque, fratres, non sumus ancíllæ fílii, sed líberæ: Qua libertáte Christus nos liberávit.",
+  "src": "M39 p. 108 (pdf 88)",
+  "why": "punctuation 2, case 4 (Qui, Quæ, Non, Qua) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad4",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Abiit Jesus trans mare Galilǽæ, quod est Tiberíadis: et sequebátur eum multitúdo magna, quia vidébant signa, quæ faciébat super his, qui infirmabántur. Súbiit ergo in montem Jesus: et ibi sedébat cum discípulis suis. Erat autem próximum Pascha dies festus Judæórum. Cum sublevásset ergo óculos Jesus, et vidísset quia multitúdo máxima venit ad eum, dixit ad Philíppum: Unde emémus panes, ut mandúcent hi? Hoc autem dicébat tentans eum: ipse enim sciébat quid esset factúrus. Respóndit ei Philíppus: Ducentórum denariórum panes non suffíciunt eis, ut unusquísque módicum quid accípiat. Dicit ei unus ex discípulis ejus, Andréas frater Simónis Petri: Est puer unus hic, qui habet quinque panes hordeáceos, et duos pisces: sed hæc quid sunt inter tantos? Dixit ergo Jesus: Fácite hómines discúmbere. Erat autem fœnum multum in loco. Discubuérunt ergo viri, número quasi quinque míllia. Accépit ergo Jesus panes: et cum grátias egísset, distríbuit discumbéntibus: simíliter et ex píscibus quantum volébant. Ut autem impléti sunt, dixit discípulis suis: Collígite quæ superavérunt fragménta, ne péreant. Collegérunt ergo, et implevérunt duódecim cóphinos fragmentórum ex quinque pánibus hordeáceis, quæ superfuérunt his, qui manducáverant. Illi ergo hómines cum vidíssent quod Jesus fécerat signum, dicébant: Quia hic est vere prophéta, qui ventúrus est in mundum. Jesus ergo cum cognovísset quia ventúri essent ut ráperent eum, et fácerent eum regem, fugit íterum in montem ipse solus.",
+  "new": "In illo témpore: Abiit Jesus trans mare Galilǽæ, quod est Tiberíadis: et sequebátur eum multitúdo magna, quia vidébant signa, quæ faciébat super his, qui infirmabántur. Súbiit ergo in montem Jesus: et ibi sedébat cum discípulis suis. Erat autem próximum Pascha, dies festus Judæórum. Cum sublevásset ergo óculos Jesus, et vidísset quia multitúdo máxima venit ad eum, dixit ad Philíppum: Unde emémus panes, ut mandúcent hi? Hoc autem dicébat tentans eum: Ipse enim sciébat quid esset factúrus. Respóndit ei Philíppus: Ducentórum denariórum panes non suffíciunt eis, ut unusquísque módicum quid accípiat. Dicit ei unus ex discípulis ejus, Andréas frater Simónis Petri: Est puer unus hic, qui habet quinque panes hordeáceos, et duos pisces: Sed hæc quid sunt inter tantos? Dixit ergo Jesus: Fácite hómines discúmbere. Erat autem fœnum multum in loco. Discubuérunt ergo viri, número quasi quinque míllia. Accépit ergo Jesus panes: et cum grátias egísset, distríbuit discumbéntibus: Simíliter et ex píscibus quantum volébant. Ut autem impléti sunt, dixit discípulis suis: Collígite quæ superavérunt fragménta, ne péreant. Collegérunt ergo, et implevérunt duódecim cóphinos fragmentórum ex quinque pánibus hordeáceis, quæ superfuérunt his, qui manducáverant. Illi ergo hómines cum vidíssent quod Jesus fécerat signum, dicébant: Quia hic est vere prophéta, qui ventúrus est in mundum. Jesus ergo cum cognovísset quia ventúri essent ut ráperent eum, et fácerent eum regem, fugit íterum in montem ipse solus.",
+  "src": "M39 p. 109 (pdf 88)",
+  "why": "punctuation 1, case 3 (Ipse, Sed, Simíliter) as printed",
+  "s4": true
  }
 ]

@@ -2292,7 +2292,14 @@
     D.kyriale.forEach(function (id) { var m = /^Credo\s+([IVX]+)$/.exec(D.chants[id].i); if (m) sc.appendChild(el('option', {value: m[1], text: 'Credo ' + m[1]})); });
   }
 
-  // exposed for testing and for the browser console
+  // exposed for testing and for the browser console (tools/check/prayers44.py): the 2nd/3rd prayers of the Mass shown
+  window.OPTest = {
+    key: function () { return state.key; },
+    prescribed: function () { return D.masses[state.key] ? prescribed(D.masses[state.key]) : null; },
+    names: function () { return (D.masses[state.key] ? prescribed(D.masses[state.key]) : []).map(function (x) { return x === 'lib' ? 'ad lib.' : setName(x) || x; }); },
+    day: function () { var r = mr().day(state.date); return {office: r.office.key, rank: r.office.rank, kind: r.office.kind, win: r.win,
+      commems: r.commems.map(function (c) { return (c.privateOnly ? '(priv) ' : '') + (c.title || c.key || c.kind); })}; }
+  };
   // ---------------------------------------------------------------- the two PDFs
   // the words of a chant, from its GABC
   function gabcText(body) {

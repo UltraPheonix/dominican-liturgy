@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Coordinator: give each Gospel's English the opening its Latin has ("In illo témpore: Dixit Jesus discípulis suis:" →
 "At that time: Jesus said to his disciples:"). Joseph's ruling: the English follows the Missal's Latin.
-Prints the proposed changes; with --write appends them to tools/audit/fixes/C0.json."""
+Prints the proposed changes; with --write appends them to tools/audit/fixes/C0.json.
+28 Nov: the first version used a generic lead-in pattern and cut real text (Luke 10:16-17a; "Going, preach, saying") and turned
+"Then shall the kingdom" into "Shall the kingdom" (CHECK.md session 2); corrected by later C0 entries. Now only the lead-ins in
+LEADS (each reviewed) are replaced, and "Then shall the kingdom of heaven be like" becomes "The kingdom of heaven shall be like"."""
 import json, re, sys, os
 R0 = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
 def load(fn):
@@ -25,7 +28,12 @@ MAP = [  # Latin incipit (after "In illo témpore:") → English
  ('Dixit Jesus Simóni Petro', 'Jesus said to Simon Peter'),
  ('Dixit Jesus Petro', 'Jesus said to Peter'),
 ]
-LEAD = re.compile(r"^([^:]{0,170}?\b(?:said|saith|saying|spoke|proposed|parable|similitude)\b(?:\s+(?:(?:to|unto)\s+)?(?:him|them|her|all|(?:his|the)\s+\w+(?:\s+of\s+the\s+Jews)?|[A-Z]\w+(?:\s+[A-Z]\w+)?))?(?:,\s*saying)?\s*,?\s*):\s*", re.I)
+LEADS = ['Then Peter answering, said to him: ', 'Another parable he proposed unto them, saying: ', 'Another parable he proposed to them, saying: ',
+ 'Then Jesus said to his disciples: ', 'He said to them: ', 'He spoke also this parable: ', 'Jesus answered, and said to him: ',
+ 'Again therefore Jesus said to them: ', 'Then Jesus spoke to the multitudes and to his disciples, Saying: ', 'Again therefore, Jesus spoke to them, saying: ',
+ 'Turning to his disciples, he said: ', 'Pilate therefore went into the hall again, and called Jesus, and said to him: ', 'He said to all: ', 'And he said to all: ',
+ 'This he said, signifying by what death he should glorify God. And when he had said this, he saith to him: ', 'When therefore they had dined, Jesus saith to Simon Peter: ']
+_OLD_LEAD = re.compile(r"^([^:]{0,170}?\b(?:said|saith|saying|spoke|proposed|parable|similitude)\b(?:\s+(?:(?:to|unto)\s+)?(?:him|them|her|all|(?:his|the)\s+\w+(?:\s+of\s+the\s+Jews)?|[A-Z]\w+(?:\s+[A-Z]\w+)?))?(?:,\s*saying)?\s*,?\s*):\s*", re.I)
 R = load('data/readings33.js'); out = []
 for k, L in R.items():
     if not isinstance(L, list): continue
@@ -39,10 +47,9 @@ for k, L in R.items():
         if re.sub(r'^(Then|And)\s+', '', body).lower().startswith(inc.lower()) and not body.lower().startswith(inc.lower()):
             pass  # e.g. "Then Jesus said to his disciples:" → normalised below by LEAD
         elif body.lower().startswith(inc.lower()): continue
-        lm = LEAD.match(body)
-        if lm: body = body[lm.end():]
-        rest_la = m.group(2)
-        if not re.match(r'(Tunc|Et|Ítem|Iterum)\b', rest_la): body = re.sub(r'^(Then|And)\s+', '', body)
+        for L0 in LEADS:
+            if body.startswith(L0): body = body[len(L0):]; break
+        body = re.sub(r'^Then shall the kingdom of heaven be like', 'The kingdom of heaven shall be like', body)
         body = body[:1].upper() + body[1:]
         new = f'At that time: {inc}: {body}'
         out.append({"file": "data/readings33.js", "path": [k, i, 'en'], "old": en, "new": new,

@@ -3576,5 +3576,317 @@
   "new": "ai",
   "src": "label",
   "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "C48s",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "C51s",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0121",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0210",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0213",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0505",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus said to his disciples: Lord, the devils also are subject to us in thy name. And he said to them: I saw Satan like lightning falling from heaven. Behold, I have given you power to tread upon serpents and scorpions, and upon all the power of the enemy: and nothing shall hurt you. But yet rejoice not in this, that spirits are subject unto you; but rejoice in this, that your names are written in heaven.",
+  "new": "At that time: Jesus said to his disciples: He that heareth you, heareth me; and he that despiseth you, despiseth me; and he that despiseth me, despiseth him that sent me. And the seventy-two returned with joy, saying: Lord, the devils also are subject to us in thy name. And he said to them: I saw Satan like lightning falling from heaven. Behold, I have given you power to tread upon serpents and scorpions, and upon all the power of the enemy: and nothing shall hurt you. But yet rejoice not in this, that spirits are subject unto you; but rejoice in this, that your names are written in heaven.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis: Qui vos audit,",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0812",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0817",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus said to his disciples: The kingdom of heaven is at hand. Heal the sick, raise the dead, cleanse the lepers, cast out devils: freely have you received, freely give. Do not possess gold, nor silver, nor money in your purses: Nor scrip for your journey, nor two coats, nor shoes, nor a staff; for the workman is worthy of his meat.",
+  "new": "At that time: Jesus said to his disciples: Going, preach, saying: The kingdom of heaven is at hand. Heal the sick, raise the dead, cleanse the lepers, cast out devils: freely have you received, freely give. Do not possess gold, nor silver, nor money in your purses: Nor scrip for your journey, nor two coats, nor shoes, nor a staff; for the workman is worthy of his meat.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis: Eúntes prædicá",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1122",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1125",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0102b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0323b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0413b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0414b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus said to his disciples: The kingdom of heaven is at hand. Heal the sick, raise the dead, cleanse the lepers, cast out devils: freely have you received, freely give. Do not possess gold, nor silver, nor money in your purses: Nor scrip for your journey, nor two coats, nor shoes, nor a staff; for the workman is worthy of his meat.",
+  "new": "At that time: Jesus said to his disciples: Going, preach, saying: The kingdom of heaven is at hand. Heal the sick, raise the dead, cleanse the lepers, cast out devils: freely have you received, freely give. Do not possess gold, nor silver, nor money in your purses: Nor scrip for your journey, nor two coats, nor shoes, nor a staff; for the workman is worthy of his meat.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis: Eúntes prædicá",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0427b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0503b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0512b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0520b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0620b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0723b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0904b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1030b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1116b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "G470",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus said to his disciples: Lord, the devils also are subject to us in thy name. And he said to them: I saw Satan like lightning falling from heaven. Behold, I have given you power to tread upon serpents and scorpions, and upon all the power of the enemy: and nothing shall hurt you. But yet rejoice not in this, that spirits are subject unto you; but rejoice in this, that your names are written in heaven.",
+  "new": "At that time: Jesus said to his disciples: He that heareth you, heareth me; and he that despiseth you, despiseth me; and he that despiseth me, despiseth him that sent me. And the seventy-two returned with joy, saying: Lord, the devils also are subject to us in thy name. And he said to them: I saw Satan like lightning falling from heaven. Behold, I have given you power to tread upon serpents and scorpions, and upon all the power of the enemy: and nothing shall hurt you. But yet rejoice not in this, that spirits are subject unto you; but rejoice in this, that your names are written in heaven.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis: Qui vos audit,",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0615",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus said to his disciples: Lord, the devils also are subject to us in thy name. And he said to them: I saw Satan like lightning falling from heaven. Behold, I have given you power to tread upon serpents and scorpions, and upon all the power of the enemy: and nothing shall hurt you. But yet rejoice not in this, that spirits are subject unto you; but rejoice in this, that your names are written in heaven.",
+  "new": "At that time: Jesus said to his disciples: He that heareth you, heareth me; and he that despiseth you, despiseth me; and he that despiseth me, despiseth him that sent me. And the seventy-two returned with joy, saying: Lord, the devils also are subject to us in thy name. And he said to them: I saw Satan like lightning falling from heaven. Behold, I have given you power to tread upon serpents and scorpions, and upon all the power of the enemy: and nothing shall hurt you. But yet rejoice not in this, that spirits are subject unto you; but rejoice in this, that your names are written in heaven.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis: Qui vos audit,",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0609b",
+   1,
+   "en"
+  ],
+  "old": "At that time: Jesus spoke this parable to his disciples: Shall the kingdom of heaven be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
+  "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
+  "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
  }
 ]
