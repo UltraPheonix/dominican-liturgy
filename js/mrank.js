@@ -335,7 +335,9 @@
       var win = cs[0];
       // Totum Duplex I and II classis impeded: transferred (Rubr. VII.4 and the Ordo); lesser feasts commemorated
       cs.slice(1).forEach(function (c) {
-        if ((c.kind === 'feast') && c.pv >= 80 && !c.transferredFrom) queue.push({c: c, from: iso(d)});
+        // a Totum Duplex I or II classis impeded is transferred, and is not commemorated on the day it leaves (Ordo 1944,
+        // 13 Feb. Sexagesima, 19 Mar. Laetare, 5 Apr. Holy Wednesday: "2-a et 3-a Or. ut in Missali" / "Dom. I. Quadrag.")
+        if ((c.kind === 'feast') && c.pv >= 80 && !c.transferredFrom) { c.transferring = true; queue.push({c: c, from: iso(d)}); }
         if (c.transferredFrom && c !== win) queue.unshift({c: c, from: c.transferredFrom});
       });
       res[iso(d)] = {date: new Date(d), cands: cs, win: win, t: t};
@@ -565,7 +567,7 @@
     // what is commemorated (in the order of the Rubrics: Sunday, privileged feria, octave, feasts, memoriae)
     var commems = [];
     var pushC = function (c, kind) {
-      if (!c || c === win) return;
+      if (!c || c === win || (c.transferring && c.kind === 'feast')) return;
       if (commems.some(function (x) { return x.title === c.title && x.key === c.key; })) return;
       commems.push({key: c.key || null, title: c.title || '', rank: c.rank || '', kind: kind || c.kind, pv: c.pv || 0});
     };
@@ -585,7 +587,13 @@
     cs.forEach(function (c) { if (c.kind === 'memoria') pushC(c, 'memoria'); });
     // at the conventual and sung Mass of a feast of the I class nothing is made of common Totum Duplex feasts and below,
     // nor of non-privileged octaves; of the II class nothing of Tres Lectiones and below (Rubr. VIII.2)
-    var I = /I classis/.test(win.rank) || win.pv >= 90, II = /II classis/.test(win.rank);
+    // VIII.2 speaks of feasts ("in Festis I classis ... in Festis II classis"): ferias, Sundays, vigils and days within
+    // octaves are not restricted (Ordo 1944: Ash Wed. "2-a Orat. B. Petri Dam."; 12 Mar. "2-a Or. S. Gregorii"; 4 Apr.
+    // "m. S. Isidori"; 13-14 Apr., 31 May-3 Jun. "m. B. ..."), save the feasts of the Lord of the Time and Easter and
+    // Pentecost Monday and Tuesday ("nihil fit"). "I classis" must not match "II classis" (14 Feb., 17 Apr.).
+    var winFeast = win.kind === 'feast' || win.kind === 'tfeast' ||
+      (win.kind === 'temporal' && /^(Dec25(_\d)?|Jan1|Epi|Pasc0[mt]?|Asc|Pent0[mt]?|Pent1|CorpusChristi|SCJ|ChristusRex)$/.test(win.key || ''));
+    var I = winFeast && (/(^|[^I])I classis/.test(win.rank || '') || win.pv >= 90), II = winFeast && /II classis/.test(win.rank || '');
     commems.forEach(function (c) {
       var pv = RANK_PV[c.rank] || (c.kind === 'memoria' ? 5 : 0);
       // the Sunday and a major feria are always commemorated, even on a feast of the I class (Missal, after the First Sunday of Advent, scan p. 34: "semper fit
@@ -593,6 +601,9 @@
       if (c.kind === 'feria' || c.kind === 'sunday') { if (twoMass && c.kind === 'feria') c.privateOnly = true; return; }
       if (I && ((c.kind === 'feast' && pv <= 60) || c.kind === 'memoria' || (c.kind === 'octave' && !/^(Epi|CorpusChristi|Asc|SCJ|Dec25)/.test(c.key || '')))) c.privateOnly = true;
       if (II && (pv <= 20 || c.kind === 'memoria')) c.privateOnly = true;
+      // within the octaves of Easter and Pentecost the Ordo makes no Memoria (Simplex) at the conventual Mass (Ordo 1944,
+      // 14 Apr. "m. B. Petri" without SS. Tiburtius etc.; 2 Jun. "m. BB. Sadoc" without SS. Marcellinus and Peter)
+      if (c.kind === 'memoria' && win.kind === 'temporal' && /^(Pasc0[whfs]|Pent0[whfs])$/.test(win.key || '')) c.privateOnly = true;
       // on the days of two conventual Masses the Mass of the feast is said without the feria or vigil, which private
       // Masses commemorate (Rubr. IV.2; Ordo 1944, 27 Mar.: "2-a Missa conv. extra Chorum de festo sine mem.")
       if (twoMass && (c.kind === 'feria' || c.kind === 'vigil')) c.privateOnly = true;

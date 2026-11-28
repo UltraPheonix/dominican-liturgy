@@ -1699,7 +1699,7 @@
     // no commemoration of Our Lady in a Mass of Our Lady (Vigil of the Assumption on a Saturday)
     if (isMarian(state.key)) { var hi = mem.high; mem = mem.filter(function (x) { return !BVM_SETS[x]; }); mem.high = hi; }
     if (state.key === 'Dec25_2') return ['x:1225|S. Anastasiæ Mart.'];   // "Memoria de S. Anastasia" (Missal pp. 21-22)
-    if (/^(Pasc0|Pent0|Dec25|Jan1$)/.test(state.key)) return [];
+    if (/^(Pasc0|Pent0|Dec25(_\d)?|Jan1)$/.test(state.key)) return [];   // the days themselves; not the days within their octaves
     // Dominica in Ramis Palmarum and the Vigil of Pentecost: "una tantum dicitur Oratio, etiamsi quae ad Laudes facta fuerit
     // Memoria" (Rubr. gen. X.1 f; VIII.2)
     if (/^(Quad6|Pasc6s)$/.test(state.key)) return [];
@@ -1717,6 +1717,9 @@
     // Mar., 3 and 5 Apr.: "2-a et 3-a Or. (Dom. I. Quadrag.) ut in Missali". With a Memoria, only the Memoria (VIII.1:
     // "omittenda est tertia Oratio"; Ordo 12 Mar. "2-a Or. S. Gregorii"; 4 Apr. "m. S. Isidori ttm")
     if (/^(Quad[1-5]|Quad6[mtw])$/.test(state.key)) return mem.length ? mem.slice() : (state.key === 'Quad6t' ? [] : ['d15', 'd2']);
+    // Ash Wednesday, a feria: with a Memoria, A cunctis follows (X.1 d; Ordo 1944, 23 Feb. "2-a Orat. B. Petri Dam., 3-a A cunctis")
+    // (even after a Duplex: St Peter Damian, Doctor, is followed by A cunctis in the Ordo)
+    if (state.key === '5aw') return mem.length ? mem.concat(['d2']) : ['d15', 'd2'];
     // the Feast of the Holy Family: no prayer of Our Lady (X.1 b "praeterquam in festo S. Familiae"; Ordo 9 Jan. 1944
     // "Missa propr. cum mem. oct.")
     if (state.key === 'Epi1') return mem.filter(function (x) { return !BVM_SETS[x]; });
