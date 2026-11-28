@@ -1,0 +1,85 @@
+[
+{
+"file": "data/orations.js",
+"path": [
+"Quad5t",
+"or",
+0
+],
+"new": "Nostra tibi, Dómine quǽsumus, sint accépta ieiúnia: quæ nos et expiándo grátia tua dignos effíciant; et ad remédia perdúcant ætérna: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 127 (pdf 97)",
+"why": "punctuation as printed ('Dómine quǽsumus,'; ':' before the conclusion; Proc. 1913 p. 405)"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad5t",
+"se",
+0
+],
+"new": "Hóstias tibi, Dómine, deférimus immolándas, quæ temporálem consolatiónem signíficent, ut promíssa non desperémus ætérna. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 129 (pdf 98)",
+"why": "punctuation as printed (the print ends 'ætérna. Per Dóminum.')"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad5t",
+"pc",
+0
+],
+"new": "Da, quǽsumus omnípotens Deus: ut quæ divína sunt iúgiter exsequéntes; donis mereámur cæléstibus propinquáre: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 129 (pdf 98)",
+"why": "'cæléstibus' and punctuation as printed ('exsequéntes;' flexa, ':' before the conclusion)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5t",
+0,
+"la"
+],
+"new": "In diébus illis: Congregáti sunt Babylónii ad regem, et dixérunt ei: Trade nobis Daniélem, qui Bel destrúxit, et dracónem interfécit: Alióquin interficiémus te, et domum tuam. Vidit ergo rex quod irrúerent in eum veheménter: et necessitáte compúlsus trádidit eis Daniélem. Qui misérunt eum in lacum leónum, et erat ibi diébus sex. Porro in lacu erant leónes septem, et dabántur eis duo córpora quotídie, et duæ oves: Et tunc non data sunt eis, ut devorárent Daniélem. Erat autem Hábacuc prophéta in Judǽa, et ipse cóxerat pulméntum, et intríverat panes in alvéolo: et ibat in campum ut ferret messóribus. Dixítque Angelus Dómini ad Hábacuc: Fer prándium, quod habes, in Babylónem Daniéli, qui est in lacu leónum. Et dixit Hábacuc: Dómine, Babylónem non vidi, et lacum néscio. Et apprehéndit eum Angelus Dómini in vértice ejus, et portávit eum capíllo cápitis sui, posuítque eum in Babylóne supra lacum in ímpetu spíritus sui. Et clamávit Hábacuc, dicens: Dániel serve Dei, tolle prándium, quod misit tibi Deus. Et ait Dániel: Recordátus es mei Deus, et non dereliquísti diligéntes te. Surgénsque Dániel comédit. Porro Angelus Dómini restítuit Hábacuc conféstim in loco suo. Venit ergo rex die séptimo, ut lugéret Daniélem: Et venit ad lacum, et introspéxit, et ecce Dániel sedens in médio leónum. Et exclamávit voce magna rex, dicens: Magnus es Dómine Deus Daniélis. Et extráxit eum de lacu leónum. Porro illos, qui perditiónis ejus causa fúerant, intromísit in lacum, et devoráti sunt in moménto coram eo. Tunc rex ait: Páveant omnes habitántes in univérsa terra Deum Daniélis: quia ipse est Salvátor, fáciens signa, et mirabília in terra: Qui liberávit Daniélem de lacu leónum.",
+"src": "M39 pp. 127-128 (pdf 97-98)",
+"why": "missing words restored as printed: 'qui Bel destrúxit, et dracónem interfécit:' and 'et necessitáte' (readings leads); punctuation 2, case 8 (Alióquin, Et, Angelus x3, Et, Salvátor, Qui)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5t",
+1,
+"la"
+],
+"new": "In illo témpore: Ambulábat Jesus in Galilǽam, non enim volébat in Judǽam ambuláre: quia quærébant eum Judǽi interfícere. Erat autem in próximo dies festus Judæórum, Scenopégia. Dixérunt autem ad eum fratres ejus: Transi hinc, et vade in Judǽam, ut et discípuli tui vídeant ópera tua, quæ facis. Nemo quippe in occúlto quid facit, et quærit ipse in palam esse: Si hæc facis, manifésta teípsum mundo. Neque enim fratres ejus credébant in eum. Dicit ergo eis Jesus: Tempus meum nondum advénit: tempus autem vestrum semper est parátum. Non potest mundus odísse vos: Me autem odit: quia ego testimónium perhíbeo de illo quod ópera ejus mala sunt. Vos ascéndite ad diem festum hunc, ego autem non ascéndo ad diem festum istum: quia meum tempus nondum implétum est. Hæc cum dixísset, ipse mansit in Galilǽa. Ut autem ascendérunt fratres ejus, tunc et ipse ascéndit ad diem festum non maniféste, sed quasi in occúlto. Judǽi ergo quærébant eum in die festo, et dicébant: Ubi est ille? Et murmur multum erat in turba de eo. Quidam enim dicébant, Quia bonus est. Alii autem dicébant, Non, sed sedúcit turbas. Nemo tamen palam loquebátur de illo propter metum Judæórum.",
+"src": "M39 pp. 128-129 (pdf 98)",
+"why": "punctuation 6, case 2 (Si, Me) as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5t",
+0,
+"en"
+],
+"subs": [
+[
+"In those days: They came to the king, and said: Deliver us Daniel, or else we will destroy",
+"In those days: The Babylonians gathered together to the king, and said: Deliver us Daniel, who destroyed Bel, and killed the dragon: or else we will destroy"
+]
+],
+"src": "M39 p. 127 (pdf 97); bible/en Dan 14: 28-42",
+"why": "English to the Latin: the Missal begins 'Congregáti sunt Babylónii ad regem, et dixérunt ei: Trade nobis Daniélem, qui Bel destrúxit, et dracónem interfécit' (Vulgate v. 28 has neither): AI translation of the clause, labelled in src"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad5t",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Dan 14: 28-42); AI translation (Missal departs from the Vulgate): \"The Babylonians gathered together to the king\" and \"who destroyed Bel, and killed the dragon\" (Missal \"Congregáti sunt Babylónii ad regem … qui Bel destrúxit, et dracónem interfécit\")",
+"src": "M39 p. 127 (pdf 97)",
+"why": "English source label (new key)"
+}
+]

@@ -1,0 +1,59 @@
+[
+{
+"file": "data/orations.js",
+"path": [
+"Quad5f",
+"se",
+0
+],
+"new": "Offérimus tibi preces et hóstias, Dómine Iesu Christe, humíliter supplicántes: ut qui transfixiónem dulcíssimi spíritus beátæ Maríæ Matris tuæ précibus recensémus; suo suorúmque sub cruce Sanctórum consórtium multiplicáto piíssimo intervéntu, méritis mortis tuæ, méritum cum Beátis habeámus. Qui vivis et regnas cum Deo Patre; in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 pp. 314-315 (pdf 196)",
+"why": "punctuation before the conclusion as printed ('méritum cum Beátis habeámus. Qui vivis et regnas.')"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5f",
+0,
+"la"
+],
+"new": "Benedíxit te Dóminus in virtúte sua, quia per te ad níhilum redégit inimícos nostros. Benedícta es tu fília a Dómino Deo excélso, præ ómnibus muliéribus super terram. Benedíctus Dóminus, qui creávit cælum et terram: quia hódie nomen tuum ita magnificávit, ut non recédat laus tua de ore hóminum, qui mémores fúerint virtútis Dómini in ætérnum, pro quibus non pepercísti ánimæ tuæ propter angústias et tribulatiónes géneris tui, sed subvenísti ruínæ ante conspéctum Dei nostri.",
+"src": "M39 p. 313 (pdf 195)",
+"why": "'tribulatiónes' (plural, as printed); punctuation 2 as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5f",
+1,
+"la"
+],
+"new": "In illo témpore: Stabant juxta crucem Jesu Mater ejus, et soror Matris ejus, María Cléophæ, et María Magdaléne. Cum vidísset ergo Jesus Matrem, et discípulum stantem, quem diligébat, dicit Matri suæ: Múlier, ecce fílius tuus. Deínde dicit discípulo: Ecce mater tua. Et ex illa hora accépit eam discípulus in sua.",
+"src": "M39 p. 314 (pdf 196)",
+"why": "case 4 (Mater, Matris, Matrem, Matri) as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5f",
+0,
+"en"
+],
+"subs": [
+[
+"They all adored the Lord, and said to her: The Lord hath blessed thee",
+"The Lord hath blessed thee"
+],
+[
+"to nought. And Ozias the prince of the people of Israel, said to her: Blessed art thou",
+"to nought. Blessed art thou"
+],
+[
+"Blessed be the Lord who made heaven and earth, who hath directed thee to the cutting off the head of the prince of our enemies. Because he hath so magnified",
+"Blessed be the Lord who made heaven and earth: because he hath so magnified"
+]
+],
+"src": "M39 p. 313 (pdf 195); bible/en Judith 13: 22-25",
+"why": "English to the Latin: the Missal's text (p. 313) has neither 'Et adoraverunt omnes Dominum, et dixerunt ad eam', nor 'Et Ozias princeps populi Israel dixit ad eam', nor 'qui direxit te in vulnera capitis principis inimicorum nostrorum'; those Douay clauses are dropped, the rest Douay verbatim"
+}
+]

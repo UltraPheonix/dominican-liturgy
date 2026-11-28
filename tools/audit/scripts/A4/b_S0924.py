@@ -1,0 +1,5 @@
+# ---- S0924 B.M.V. de Mercede (Totum Duplex) p. 568-569 (pdf 323) + "Officium Gaudeámus, ut in Festis beatæ Mariæ Virginis, pag. 1*" (pdf 368)
+import copy
+assert 'S0924' not in F.A.RD
+FX.append({"file":"data/readings33.js","op":"add","path":["S0924"],"old":None,"new":copy.deepcopy(F.A.RD['S0805']),"src":"M39 p. 568 \"Officium Gaudeámus, ut in Festis beatæ Mariæ Virginis, pag. 1*\"; p. 1* (pdf 368)","why":"readings33 had no entry, so the app showed a Bible text: the Common of the B.V.M. p. 1* prints Lesson Eccli 24:14-16 \"Ab inítio\" and Gospel Luc 11:27-28 \"Loquénte Jesu\" (the texts of S0716/S0805, checked on p. 1*)"})
+FX.append({"file":"data/masses.js","op":"add","path":["masses","S0924","parts","in",0,"m39text"],"old":None,"new":F.A.D['masses']['S0805']['parts']['in'][0]['m39text'],"src":"M39 p. 568; p. 1* (pdf 368)","why":"Joseph (27 Nov): print the Missal's text with the name; p. 1* prints \"beátæ Maríæ Vírginis, de cujus solemnitáte\"; the site's 4289 sings another feast's word (G50 p. 566); no Dominican source prints the melody with this text. app.js must show this text, unnotated"})

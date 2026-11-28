@@ -1,0 +1,167 @@
+[
+{
+"file": "data/orations.js",
+"path": [
+"Quad2h",
+"or",
+0
+],
+"subs": [
+[
+"Præsta nobis, quǽsumus, Dómine,",
+"Præsta nobis, quǽsumus Dómine,"
+],
+[
+"tuæ: ut, ieiúniis et oratiónibus conveniénter inténti, liberémur",
+"tuæ: ut ieiúniis et oratiónibus conveniénter inténti; liberémur"
+],
+[
+"et córporis. Per",
+"et córporis: Per"
+]
+],
+"src": "M39 p. 86 (pdf 77)",
+"why": "punctuation as printed ('inténti;' flexa, ':' before the conclusion; Proc. 1913 p. 405)"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad2h",
+"se",
+0
+],
+"subs": [
+[
+"Præsénti sacrifício, nómini",
+"Præsénti sacrifício nómini"
+],
+[
+"sanctíficent: ut, quod observántia nostra profitétur extérius, intérius",
+"sanctíficent: ut quod observántia nostra profitétur extérius, intérius"
+]
+],
+"src": "M39 p. 87 (pdf 77)",
+"why": "punctuation as printed (the print ends 'efféctu. Per Dóminum.')"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad2h",
+"pc",
+0
+],
+"subs": [
+[
+"Grátia tua nos, quǽsumus, Dómine,",
+"Grátia tua nos, quǽsumus Dómine,"
+],
+[
+"servitúti, et tuam",
+"servitúti; et tuam"
+],
+[
+"semper acquírat. Per",
+"semper acquírat: Per"
+]
+],
+"src": "M39 p. 87 (pdf 77)",
+"why": "punctuation as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad2h",
+0,
+"la"
+],
+"new": "Hæc dicit Dóminus Deus: Maledíctus homo, qui confídit in hómine, et ponit carnem bráchium suum, et a Dómino recédit cor ejus. Erit enim quasi myrícæ in desérto, et non vidébit cum vénerit bonum: sed habitábit in siccitáte in desérto, in terra salsúginis, et inhabitábili. Benedíctus vir, qui confídit in Dómino, et erit Dóminus fidúcia ejus. Et erit quasi lignum quod transplantátur super aquas, quod ad humórem mittit radíces suas: et non timébit cum vénerit æstus. Et erit fólium ejus víride, et in témpore siccitátis non erit sollícitum, nec aliquándo désinet fácere fructum. Pravum est cor ómnium, et inscrutábile: Quis cognóscet illud? Ego Dóminus scrutans cor, et probans renes: qui do unicuíque juxta viam suam, et juxta fructum adinventiónum suárum. Dicit Dóminus omnípotens.",
+"src": "M39 p. 86 (pdf 77)",
+"why": "reading garbled ('et mi', 'sed et justítiam diléxit: æquitátem') and cut after v. 6 (readings_cut.md): retaken whole from the scan, Jer 17: 5-10, beginning 'Hæc dicit Dóminus Deus:' and ending 'Dicit Dóminus omnípotens.' as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad2h",
+0,
+"ref"
+],
+"new": "Jeremias 17: 5-10",
+"src": "M39 p. 86 (pdf 77)",
+"why": "reference to the printed text (vv. 5-10; masses.js already has 17: 5-10)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad2h",
+0,
+"en"
+],
+"new": "Thus saith the Lord God: Cursed be the man that trusteth in man, and maketh flesh his arm, and whose heart departeth from the Lord. For he shall be like tamaric in the desert, and he shall not see when good shall come: but he shall dwell in dryness in the desert in a salt land, and not inhabited. Blessed be the man that trusteth in the Lord, and the Lord shall be his confidence. And he shall be as a tree that is planted by the waters, that spreadeth out its roots towards moisture: and it shall not fear when the heat cometh. And the leaf thereof shall be green, and in the time of drought it shall not be solicitous, neither shall it cease at any time to bring forth fruit. The heart is perverse above all things, and unsearchable, who can know it? I am the Lord who search the heart and prove the reins: who give to every one according to his way, and according to the fruit of his devices, saith the Lord almighty.",
+"src": "M39 p. 86 (pdf 77); bible/en Jer 17: 5-10",
+"why": "English for the whole printed reading (was vv. 5-6 only): Douay verbatim, with 'God' (Missal 'Dóminus Deus') and ', saith the Lord almighty' (Missal 'Dicit Dóminus omnípotens') as AI translation, labelled in src"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad2h",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Jer 17: 5-10); AI translation (Missal departs from the Vulgate): \"God\" in \"Thus saith the Lord God\" (Missal \"Hæc dicit Dóminus Deus\"); \", saith the Lord almighty\" at the end (Missal \"Dicit Dóminus omnípotens\")",
+"src": "M39 p. 86 (pdf 77)",
+"why": "English source label (new key)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad2h",
+1,
+"la"
+],
+"subs": [
+[
+"induebátur púrpura et bysso, et epulabátur",
+"induebátur púrpura, et bysso: et epulabátur"
+],
+[
+"dabat: sed et canes",
+"dabat: Sed et canes"
+],
+[
+"ab ángelis in sinum",
+"ab Angelis in sinum"
+],
+[
+"in sinu ejus: et ipse clamans",
+"in sinu ejus: Et ipse clamans"
+],
+[
+"mala: nunc autem",
+"mala: Nunc autem"
+],
+[
+"tu vero cruciáris: et in his ómnibus inter nos, et vos chaos",
+"tu vero cruciáris. Et in his ómnibus, inter nos et vos chaos"
+],
+[
+"Rogo ergo te pater ut mittas",
+"Rogo ergo te pater, ut mittas"
+],
+[
+"patris mei: hábeo enim quinque fratres: ut testétur",
+"patris mei. Hábeo enim quinque fratres, ut testétur"
+],
+[
+"Habent Móysen, et prophétas:",
+"Habent Móysen et prophétas:"
+],
+[
+"Si Móysen, et prophétas non",
+"Si Móysen et prophétas non"
+]
+],
+"src": "M39 pp. 86-87 (pdf 77)",
+"why": "punctuation 10, case 6 (Sed, Angelis, Et, Nunc, Et, Hábeo) as printed"
+}
+]

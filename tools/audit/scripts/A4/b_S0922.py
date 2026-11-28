@@ -1,0 +1,4 @@
+# ---- S0922 SS. Maurice and companions (3 LL.) pp. 566-568 (pdf 322-323)
+SUB('data/readings33.js',['S0922',0,'la'],[('In diébus illis: Et respóndit','In diébus illis: Respóndit'),('super illos: non esúrient','super illos: Non esúrient'),('ámplius, nec cadet','ámplius, neque cadet')],'M39 p. 567 (pdf 323)','as printed: "In diébus illis : Respóndit unus" (no "Et"); ": Non esúrient"; "neque cadet super illos sol"')
+EN('S0922',0,[('In those days: And one of the ancients','In those days: One of the ancients')],'M39 p. 567 (pdf 323)','the Latin has no "Et" (as printed)')
+P('S0922','r1',[0,1,3,4,5,7,8,9,10,11,12],'M39 p. 567 (pdf 323)',manual={0:'prǽlia',3:'injícient'},why='as printed: "prǽlia" (æ); "terréri : Opórtet"; "injícient"; "synagógas et custódias, trahéntes ad reges et prǽsides"; ": Contínget"; "respondeátis. Ego enim"; "os et sapiéntiam"; ": Et éritis"; ": Et capíllus"')

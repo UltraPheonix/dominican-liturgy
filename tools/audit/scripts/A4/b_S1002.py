@@ -1,0 +1,9 @@
+# ---- S1002 Guardian Angels (t. d.) pp. 577-578 (pdf 327-328)
+import json as _j
+_G=[e for e in _j.load(open(OUT)) if e['path']==['S0929',1,'la']][-1]['new']
+SUB('data/orations.js',['S1002','or',0],[('societáte gaudére. Per','societáte gaudére: Per')],'M39 p. 577 (pdf 327)','as printed: "societáte gaudére : Per Dóminum"')
+SUB('data/orations.js',['S1002','se',0],[('Súscipe, Dómine, múnera,','Súscipe Dómine múnera,'),('concéde propítius; ut, perpétuis','concéde propítius, ut perpétuis'),('perículis liberémur et ad','perículis liberémur, et ad')],'M39 p. 578 (pdf 328)','the site had the Divinum Officium pointing; as printed: "Súscipe Dómine múnera"; "concéde propítius, ut perpétuis eórum præsídiis"; "liberémur, et ad vitam"')
+SUB('data/orations.js',['S1002','pc',0],[('lætántes: quǽsumus; ut','lætántes: quǽsumus, ut'),('liberémur insídiis, et contra','liberémur insídiis; et contra'),('muniámur. Per','muniámur: Per')],'M39 p. 578 (pdf 328)','the site had the Divinum Officium pointing; as printed: ": quǽsumus, ut"; "insídiis; et contra"; "muniámur : Per Dóminum"')
+RAW('data/orations.js',['S1002','src'],'Sancti/10-02','Missale O.P. (1939), p. 577-578','M39 pp. 577-578 (pdf 327-328)','source of the orations (checked on the scan)')
+SUB('data/readings33.js',['S1002',0,'la'],[('mittam ángelum meum','mittam Angelum meum'),('affligéntes te. Præcedétque te ángelus meus.','affligéntes te: Præcedétque te Angelus meus.')],'M39 p. 577 (pdf 327)','as printed: "Angelum meum"; "affligéntes te : Præcedétque te Angelus meus."')
+RAW('data/readings33.js',['S1002',1,'la'],F.A.RD['S1002'][1]['la'],_G,'M39 p. 578 (pdf 328)','as printed (the same text and points as S0929, p. 572): "me súscipit. Qui autem"; "enim, ut"; ": Verúmtamen"; "scandalízat te : abscíde"; ": Bonum" (twice); ": Dico"; "Angeli"')

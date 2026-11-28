@@ -1,0 +1,130 @@
+[
+{
+"file": "data/orations.js",
+"path": [
+"Quad2m",
+"or",
+0
+],
+"subs": [
+[
+"Præsta, quǽsumus, omnípotens",
+"Præsta, quǽsumus omnípotens"
+],
+[
+"ábstinet: sectándo",
+"ábstinet; sectándo"
+],
+[
+"ieiúnet. Per",
+"ieiúnet: Per"
+]
+],
+"src": "M39 p. 81 (pdf 74)",
+"why": "punctuation as printed (Proc. 1913 p. 405: ';' flexa, ':' before the conclusion)"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad2m",
+"pc",
+0
+],
+"subs": [
+[
+"crímine: et cœléstis",
+"crímine; et cæléstis"
+],
+[
+"consórtes. Per",
+"consórtes: Per"
+]
+],
+"src": "M39 p. 82 (pdf 75)",
+"why": "punctuation and spelling 'cæléstis' as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad2m",
+0,
+"la"
+],
+"subs": [
+[
+"iniquitátem fécimus Dómine in omnem justítiam tuam: avertátur óbsecro ira tua",
+"iniquitátem fécimus, Dómine, in omnem justítiam tuam: Avertátur, óbsecro, ira tua"
+],
+[
+"et civitátem super quam invocátum est nomen tuum: neque enim",
+"et civitátem, super quam invocátum est nomen tuum: Neque enim"
+],
+[
+"atténde et fac: ne moréris",
+"atténde et fac: Ne moréris"
+],
+[
+"super civitátem et super pópulum tuum.",
+"super civitátem, et super pópulum tuum, Dómine Deus noster."
+]
+],
+"src": "M39 p. 81 (pdf 74)",
+"why": "cut ending ', Dómine Deus noster.' restored as printed; punctuation 5, case 3 (Avertátur, Neque, Ne) as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad2m",
+0,
+"en"
+],
+"subs": [
+[
+"In those days: Now, O Lord our God,",
+"In those days: Daniel prayed to the Lord, saying: O Lord our God,"
+],
+[
+"and upon thy people.",
+"and upon thy people, O Lord our God."
+]
+],
+"src": "M39 p. 81 (pdf 74); bible/en Dan 9: 15-19",
+"why": "English to the Latin: the Missal begins 'Orávit Dániel Dóminum, dicens: Dómine Deus noster' (no 'Et nunc', so 'Now,' dropped; 'Daniel prayed to the Lord, saying:' AI translation) and ends ', Dómine Deus noster' ('O Lord our God': Douay wording of the same Latin in v. 15)"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad2m",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Dan 9: 15-19); AI translation (Missal departs from the Vulgate): \"Daniel prayed to the Lord, saying:\" (Missal \"Orávit Dániel Dóminum, dicens\"); \", O Lord our God\" at the end (Missal \"Dómine Deus noster\")",
+"src": "M39 p. 81 (pdf 74)",
+"why": "English source label (new key)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad2m",
+1,
+"la"
+],
+"subs": [
+[
+"in peccátis vestris: si enim",
+"in peccátis vestris: Si enim"
+],
+[
+"loqui, et judicáre: sed qui",
+"loqui, et judicáre. Sed qui"
+],
+[
+"hæc loquor: et qui me misit",
+"hæc loquor: Et qui me misit"
+]
+],
+"src": "M39 pp. 81-82 (pdf 74-75)",
+"why": "punctuation 1, case 3 as printed"
+}
+]

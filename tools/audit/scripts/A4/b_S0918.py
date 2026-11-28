@@ -1,0 +1,8 @@
+# ---- S0918 B. John Massias (d.) p. 562 (pdf 320): Officium Os justi, Comm. Conf. non Pont. p. 23* (alia Missa pp. 23*-24*, pdf 379-380)
+RAW('data/readings33.js',['S0918',0,'la'],F.A.RD['S0918'][0]['la'],F.A.RD['S0715'][0]['la'],'M39 pp. 23*-24* (pdf 379-380)','capitals after ":" as printed ("Qui pótuit", "Ideo", "Ecclésia"); the same text as S0715')
+RAW('data/readings33.js',['S0918',1,'la'],F.A.RD['S0918'][1]['la'],F.A.RD['S0715'][1]['la'],'M39 p. 24* (pdf 380)','punctuation and capital as printed ("suum, quando"; "vénerit, et pulsáverit"; ": Amen dico"); the same text as S0715')
+EN('S0918',0,[('Blessed is the rich man that','Blessed is the man that')],'M39 p. 23* (pdf 379), Os justi alia Missa','the Missal prints "Beátus vir" (Vulgate Eccli 31:8 "Beatus dives"): the English follows the Missal\'s Latin (Joseph\'s ruling on Q6)')
+FX.append({"file":"data/readings33.js","op":"add","path":["S0918",0,"en_src"],"old":None,"new":"ai","src":"M39 p. 23* (pdf 379), Os justi alia Missa","why":"label: the English is adapted to the Missal's Latin \"Beátus vir\" (Joseph's ruling on Q6: labelled AI translation)"})
+SUB('data/masses.js',['masses','S0918','title'],[('S. Ioannis Massias','B. Ioannis Massias')],'M39 p. 562 (pdf 320)','the Missal: "B. JOANNIS MASSIAS Conf. Ord. Præd. (d.)" (Beatus in 1939)')
+SUB('data/masses.js',['masses','S0918','en'],[('S. Ioannis Massias','B. Ioannis Massias')],'M39 p. 562 (pdf 320)','as the Latin title')
+SUB('data/masses.js',['masses','S0918','name_en'],[('St. John Massias','Bl. John Massias')],'M39 p. 562 (pdf 320)','Beatus in the 1939 Missal')

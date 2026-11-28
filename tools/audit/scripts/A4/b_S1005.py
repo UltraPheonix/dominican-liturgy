@@ -1,0 +1,6 @@
+# ---- S1005 B. Raymund of Capua (d.) p. 582 (pdf 330) + Os justi pp. 23*-24*;  S1006 St Bruno (d.) pp. 582-583 (pdf 330) + Os justi
+for k in ('S1005','S1006'):
+    RAW('data/readings33.js',[k,0,'la'],F.A.RD[k][0]['la'],F.A.RD['S0715'][0]['la'],'M39 pp. 23*-24* (pdf 379-380)','capitals after ":" as printed ("Qui pótuit", "Ideo", "Ecclésia"); the same text as S0715/S0918')
+    RAW('data/readings33.js',[k,1,'la'],F.A.RD[k][1]['la'],F.A.RD['S0715'][1]['la'],'M39 p. 24* (pdf 380)','punctuation and capital as printed ("suum, quando"; "vénerit, et pulsáverit"; ": Amen dico"); the same text as S0715/S0918')
+RAW('data/masses.js',['masses','S1005','readings'],F.A.D['masses']['S1005']['readings'],[{'type':'Lesson','ref':'Ecclesiasticus 31: 8-11','m39':True},{'type':'Gospel','ref':'Lucas 12: 35-40','m39':True}],'M39 p. 582 "Officium Os justi, de Communi Confessoris non Pontificis, pag. 23*"; pp. 23*-24*','the refs were Hebr 10 / Luc 12:1-8 (another Common); readings33 already has the Os justi texts')
+SUB('data/masses.js',['masses','S1006','note'],[('Chants as assigned by the St. Dominic Missal (1959), Common No. 14.','Missale O.P. (1939), p. 582: "Officium Os justi, ut in Communi Confessoris non Pontificis, pag. 23*", with proper prayers.')],'M39 p. 582 (pdf 330)','the note now cites the Missal')

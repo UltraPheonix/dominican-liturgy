@@ -18,20 +18,22 @@ for key in keys:
             if v is None and batch.garble(c): v='skip'
             if v=='skip': skip.add(i)
             elif isinstance(v,str): over[i]=v
+        cskip=set(i for i in range(len(d.get('cd',[]))) if D.get('%s#C%d'%(fid,i))=='skip')
         fp=None
         if d['kind']=='or':
             v=D.get(fid+'#F')
             if v=='skip': fp=d['sitefp']
             elif isinstance(v,str): fp=v
-        new=batch.build(d,skip,over,fp)
+        new=batch.build(d,skip,over,fp,cskip)
         for a,b in SUB.get(fid,[]):
             assert a in new, (fid,a); new=new.replace(a,b)
+        new=new.translate(str.maketrans({'Á':'A','É':'E','Í':'I','Ó':'O','Ú':'U','Ý':'Y','Ǽ':'Æ'}))
         if new!=d['old']:
             if d['path'][0]=='MEM': path=d['path'][1:]; fn='data/memoriae.js'
             elif d['kind']=='or': path=[key,fid.split('.')[1],0]; fn='data/orations.js'
             else: path=[key,int(fid.split('.r')[1]),'la']; fn='data/readings33.js'
             p=d['at'].split(', line')[0]
-            fixes.append({'file':fn,'path':path,'old':d['old'],'new':new,'src':'M39 '+p.replace('pdf ','pdf. ').replace('pdf. ','pdf ') ,'why':'words and punctuation as printed (checked on the scan)'})
+            fixes.append({'file':fn,'path':path,'old':d['old'],'new':new,'src':'M39 '+p.replace('pdf ','pdf. ').replace('pdf. ','pdf ') ,'why':'words, punctuation and capitals as printed (checked on the scan)'})
 json.dump(fixes,open('/tmp/A3/fx_%s.json'%keys[0],'w'),ensure_ascii=False,indent=1)
 print(len(fixes),'fixes')
 for f in fixes:

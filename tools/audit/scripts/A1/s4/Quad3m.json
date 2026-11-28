@@ -1,0 +1,178 @@
+[
+{
+"file": "data/orations.js",
+"path": [
+"Quad3m",
+"or",
+0
+],
+"subs": [
+[
+"Córdibus nostris, quǽsumus, Dómine,",
+"Córdibus nostris, quǽsumus Dómine,"
+],
+[
+"infúnde: ut, sicut ab escis",
+"infúnde: ut sicut ab escis"
+],
+[
+"retrahámus excéssibus. Per",
+"retrahámus excéssibus: Per"
+]
+],
+"src": "M39 p. 95 (pdf 81)",
+"why": "punctuation as printed (':' before the conclusion; Proc. 1913 p. 405)"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad3m",
+"se",
+0
+],
+"subs": [
+[
+"Munus, quod tibi, Dómine,",
+"Munus, quod tibi Dómine,"
+]
+],
+"src": "M39 p. 96 (pdf 82)",
+"why": "punctuation as printed (the print ends 'sacraméntum. Per Dóminum.')"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad3m",
+"pc",
+0
+],
+"subs": [
+[
+"Præsta, quǽsumus, omnípotens et miséricors Deus: ut, quod ore contíngimus, pura mente capiámus. Per",
+"Præsta, quǽsumus omnípotens et miséricors Deus: ut quod ore contígimus; pura mente capiámus: Per"
+]
+],
+"src": "M39 p. 97 (pdf 82)",
+"why": "'contígimus' (perfect, as printed; site 'contíngimus') and punctuation as printed ('contígimus;' flexa, ':' before the conclusion)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad3m",
+0,
+"la"
+],
+"subs": [
+[
+"regis Sýriæ erat vir",
+"regis Sýriæ, erat vir"
+],
+[
+"et honorátus: per illum",
+"et honorátus: Per illum"
+],
+[
+"salútem Sýriæ: erat autem",
+"salútem Sýriæ: Erat autem"
+],
+[
+"ut occídere possim et vivificáre",
+"ut occídere possim, et vivificáre"
+],
+[
+"Animadvértite, et vidéte quod",
+"Animadvértite, et vidéte, quod"
+],
+[
+"domus Eliséi: misítque",
+"domus Eliséi: Misítque"
+],
+[
+"sunt Abana et Pharphar, flúvii Damásci, ómnibus",
+"sunt Abana, et Pharphar flúvii Damásci ómnibus"
+],
+[
+"debúeras: quanto magis quia nunc dixit tibi: Laváre",
+"debúeras: Quanto magis quia nunc dixit tibi, Laváre"
+],
+[
+"juxta sermónem viri Dei: et restitúta est caro ejus sicut",
+"juxta sermónem viri Dei, et restitúta est caro ejus, sicut"
+],
+[
+"Vere scio, quod non",
+"Vere scio quod non"
+]
+],
+"src": "M39 pp. 95-96 (pdf 81-82)",
+"why": "punctuation 9, case 4 (Per, Erat, Misítque, Quanto) as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad3m",
+0,
+"en"
+],
+"subs": [
+[
+"said tile girl",
+"said the girl"
+],
+[
+"king of Syria sad to him",
+"king of Syria said to him"
+],
+[
+"and tell changes of raiment",
+"and ten changes of raiment"
+],
+[
+"and thee shalt be clean",
+"and thou shalt be clean"
+],
+[
+"he would hare come out to me, and standing would hare invoked",
+"he would have come out to me, and standing would have invoked"
+],
+[
+"thou shalt he clean?",
+"thou shalt be clean?"
+],
+[
+"with all his train, be came,",
+"with all his train, he came,"
+],
+[
+"but only in Israel: I beseech thee therefore take a blessing of thy servant.",
+"but only in Israel."
+]
+],
+"src": "M39 pp. 95-96 (pdf 81-82); bible/en 4 Kings 5: 1-15",
+"why": "English to the Latin: the Missal ends 'nisi tantum in Israël.' (v. 15a), so 'I beseech thee therefore take a blessing of thy servant' is dropped; obvious OCR typos of the bible/en text corrected (tile, sad, tell, thee, hare x2, he, be), wording unchanged"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad3m",
+1,
+"la"
+],
+"subs": [
+[
+"Médice cura teípsum: quanta audívimus",
+"Médice cura teípsum: Quanta audívimus"
+],
+[
+"et ménsibus sex, cum facta",
+"et ménsibus sex: cum facta"
+],
+[
+"nisi in Sarépta Sidóniæ",
+"nisi in Saréphta Sidóniæ"
+]
+],
+"src": "M39 p. 96 (pdf 82)",
+"why": "punctuation 1, 'Saréphta', case 1 (Quanta) as printed"
+}
+]

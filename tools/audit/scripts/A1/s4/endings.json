@@ -1,0 +1,282 @@
+[
+{
+"file": "data/readings33.js",
+"path": [
+"5aw",
+0,
+"la"
+],
+"subs": [
+[
+"Secúnda et tértia Orátio, dicit Dóminus: Convertímini",
+"Hæc dicit Dóminus: Convertímini"
+]
+],
+"src": "M39 p. 56 (pdf 62)",
+"why": "OCR junk at the start: the rubric 'Secunda et tertia Oratio' (which precedes the lesson title) had replaced the opening 'Hæc'; the print begins 'HÆC dicit Dóminus: Convertímini'"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"5aw",
+0,
+"en"
+],
+"subs": [
+[
+"Now therefore saith the Lord: Be converted",
+"Thus saith the Lord: Be converted"
+],
+[
+"a reproach among the nations.",
+"a reproach among the nations, saith the Lord almighty."
+]
+],
+"src": "M39 pp. 56-57 (pdf 62); bible/en Joel 2: 12-19",
+"why": "English to the Latin: the Missal begins 'Hæc dicit Dóminus' (Vulgate 'Nunc ergo, dicit Dominus') and ends 'Dicit Dóminus omnípotens' (restored ending): AI translation of both, labelled in src"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"5aw",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Joel 2: 12-19); AI translation (Missal departs from the Vulgate): \"Thus saith the Lord\" (Missal \"Hæc dicit Dóminus\"); \", saith the Lord almighty\" at the end (Missal \"Dicit Dóminus omnípotens\")",
+"src": "M39 pp. 56-57 (pdf 62)",
+"why": "English source label (new key)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"5ah",
+0,
+"en"
+],
+"subs": [
+[
+"and I will protect it.",
+"and I will protect it, saith the Lord almighty."
+]
+],
+"src": "M39 p. 58 (pdf 63); bible/en Is 38: 1-6",
+"why": "English to the Latin: the Missal ends 'Ait Dóminus omnípotens' (restored ending): AI translation, labelled in src"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"5ah",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Is 38: 1-6); AI translation: \", saith the Lord almighty\" at the end (Missal \"Ait Dóminus omnípotens\")",
+"src": "M39 p. 58 (pdf 63)",
+"why": "English source label (new key)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad1m",
+0,
+"en"
+],
+"subs": [
+[
+"Thus saith the Lord God: for thus saith the Lord God: Behold I myself",
+"Thus saith the Lord God: Behold I myself"
+],
+[
+"and I will feed them in judgment.",
+"and I will feed them in judgment, saith the Lord almighty."
+]
+],
+"src": "M39 p. 66 (pdf 67); bible/en Ez 34: 11-16",
+"why": "English to the Latin: the Missal has 'Hæc dicit Dóminus Deus: Ecce ego ipse' once (the English had 'for thus saith the Lord God' twice) and ends 'Dicit Dóminus omnípotens' (restored ending): AI translation of the ending, labelled in src"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad1m",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Ez 34: 11-16); AI translation: \", saith the Lord almighty\" at the end (Missal \"Dicit Dóminus omnípotens\")",
+"src": "M39 p. 66 (pdf 67)",
+"why": "English source label (new key)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad1t",
+0,
+"en"
+],
+"subs": [
+[
+"In those days: Seek ye the Lord,",
+"In those days: Isaias the prophet spoke, saying: Seek ye the Lord,"
+],
+[
+"in the things for which I sent it.",
+"in the things for which I sent it, saith the Lord almighty."
+]
+],
+"src": "M39 p. 68 (pdf 68); bible/en Is 55: 6-11",
+"why": "English to the Latin: the Missal begins 'Locútus est Isaías Prophéta, dicens' and ends 'Ait Dóminus omnípotens' (restored ending): AI translation of both, labelled in src"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad1t",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Is 55: 6-11); AI translation (Missal departs from the Vulgate): \"Isaias the prophet spoke, saying:\" (Missal \"Locútus est Isaías Prophéta, dicens\"); \", saith the Lord almighty\" at the end (Missal \"Ait Dóminus omnípotens\")",
+"src": "M39 p. 68 (pdf 68)",
+"why": "English source label (new key)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad1h",
+0,
+"en"
+],
+"subs": [
+[
+"he shall surely live, saith the Lord God.",
+"he shall surely live, saith the Lord almighty."
+]
+],
+"src": "M39 pp. 71-72 (pdf 69-70); bible/en Ez 18: 1-9",
+"why": "English to the Latin: the Missal ends 'vita vivet. Ait Dóminus omnípotens.' (Vulgate 'ait Dominus Deus'): AI translation of the ending, labelled in src"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad1h",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Ez 18: 1-9); AI translation: \"saith the Lord almighty\" at the end (Missal \"Ait Dóminus omnípotens\"; Douay \"saith the Lord God\")",
+"src": "M39 p. 72 (pdf 70)",
+"why": "English source label (new key)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad1s",
+0,
+"en"
+],
+"subs": [
+[
+"In those days: Look from thy sanctuary,",
+"In those days: Moses spoke to the Lord, saying: Look, O Lord, from thy sanctuary,"
+],
+[
+"a land flowing with milk and honey. This day the Lord thy God",
+"a land flowing with milk and honey. Hear, O Israel: This day the Lord thy God"
+],
+[
+"a holy people of the Lord thy God, as he hath spoken.",
+"a holy people of the Lord thy God, as he hath spoken to thee."
+]
+],
+"src": "M39 p. 75 (pdf 71); bible/en Deut 26: 15-19",
+"why": "English to the Latin: the Missal begins 'Locútus est Móyses ad Dóminum, dicens: Réspice Dómine', has 'Audi Israël:' (restored) and ends 'sicut locútus est tibi': AI translation of these words, labelled in src"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad1s",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Deut 26: 15-19); AI translation (Missal departs from the Vulgate): \"Moses spoke to the Lord, saying:\", \"O Lord\", \"Hear, O Israel:\", \"to thee\" at the end (Missal \"Locútus est Móyses ad Dóminum, dicens: Réspice Dómine … Audi Israël … sicut locútus est tibi\")",
+"src": "M39 p. 75 (pdf 71)",
+"why": "English source label (new key)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad1s",
+1,
+"en"
+],
+"subs": [
+[
+"In those days: If you keep the commandments",
+"In those days: Moses said to the children of Israel: If you keep the commandments"
+],
+[
+"that you shall tread upon, as he hath spoken to you.",
+"that you shall tread upon, as the Lord your God hath spoken to you."
+]
+],
+"src": "M39 p. 76 (pdf 72); bible/en Deut 11: 22-25",
+"why": "English to the Latin: the Missal begins 'Dixit Móyses fíliis Israël' and ends 'sicut locútus est vobis Dóminus Deus vester' (restored ending): AI translation, labelled in src"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad1s",
+1,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Deut 11: 22-25); AI translation (Missal departs from the Vulgate): \"Moses said to the children of Israel:\" and \"the Lord your God\" at the end (Missal \"Dixit Móyses fíliis Israël … sicut locútus est vobis Dóminus Deus vester\")",
+"src": "M39 p. 76 (pdf 72)",
+"why": "English source label (new key)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad1s",
+2,
+"en"
+],
+"subs": [
+[
+"and preserve thy own portion, and sanctify it. Gather together our scattered people, deliver them that are slaves to the Gentiles, and look upon them that are despised and abhorred: that the Gentiles may know",
+"and preserve thy own portion, and sanctify it: that the Gentiles may know"
+]
+],
+"src": "M39 p. 76 (pdf 72); bible/en 2 Mach 1: 23-27",
+"why": "English to the Latin: the Missal goes from v. 26 'et sanctífica' straight to 'ut sciant gentes, quia tu es Deus noster' (no 'Congrega dispersionem nostram … abominatos respice'), so those Douay words are dropped"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad1s",
+3,
+"en"
+],
+"subs": [
+[
+"that they may declare thy wonderful works.",
+"that they may declare thy wonderful works, O Lord our God."
+]
+],
+"src": "M39 pp. 76-77 (pdf 72); bible/en Ecclus 36: 1-10",
+"why": "English to the Latin: the Missal ends 'ut enárrent mirabília tua, Dómine Deus noster' (restored ending): AI translation, labelled in src"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad1s",
+3,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Ecclus 36: 1-10); AI translation: \", O Lord our God\" at the end (Missal \"Dómine Deus noster\")",
+"src": "M39 p. 77 (pdf 72)",
+"why": "English source label (new key)"
+}
+]

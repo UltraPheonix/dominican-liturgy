@@ -1,0 +1,89 @@
+[
+{
+"file": "data/orations.js",
+"path": [
+"Quad4t",
+"or",
+0
+],
+"new": "Sacræ nobis, quǽsumus Dómine, observatiónis ieiúnia; et piæ conversatiónis augméntum, et tuæ propitiatiónis contínuum præstent auxílium: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 112 (pdf 90)",
+"why": "punctuation as printed ('ieiúnia;' flexa, ':' before the conclusion; Proc. 1913 p. 405)"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad4t",
+"se",
+0
+],
+"new": "Hæc hóstia, Dómine quǽsumus, emúndet nostra delícta; et ad sacrifícium celebrándum, subditórum tibi córpora mentésque sanctíficet. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 114 (pdf 91)",
+"why": "punctuation as printed"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad4t",
+"pc",
+0
+],
+"new": "Huius nos, Dómine, percéptio sacraménti mundet a crímine; et ad cæléstia regna perdúcat: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 114 (pdf 91)",
+"why": "punctuation as printed ('crímine;' flexa, ':' before the conclusion)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad4t",
+0,
+"la"
+],
+"new": "In diébus illis: Locútus est Dóminus ad Móysen, dicens: Descénde de monte: peccávit pópulus tuus, quem eduxísti de terra Ægýpti. Recessérunt cito de via, quam ostendísti eis: fecerúntque sibi vítulum conflátilem, et adoravérunt, atque immolántes ei hóstias, dixérunt: Isti sunt dii tui Israël, qui te eduxérunt de terra Ægýpti. Rursúmque ait Dóminus ad Móysen: Cerno quod pópulus iste duræ cervícis sit: dimítte me, ut irascátur furor meus contra eos, et déleam eos, faciámque te in gentem magnam. Móyses autem orábat Dóminum Deum suum, dicens: Cur, Dómine, iráscitur furor tuus contra pópulum tuum, quem eduxísti de terra Ægýpti, in fortitúdine magna, et in manu robústa? Ne quæso dicant Ægýptii, Cállide edúxit eos, ut interfíceret in móntibus, et deléret e terra: Quiéscat ira tua, et esto placábilis super nequítia pópuli tui. Recordáre Abraham, Isaac, et Israël servórum tuórum, quibus jurásti per temetípsum, dicens: Multiplicábo semen vestrum sicut stellas cæli: et univérsam terram hanc, de qua locútus sum, dabo sémini vestro, et possidébitis eam semper. Placatúsque est Dóminus, ne fáceret malum, quod locútus fúerat advérsus pópulum suum.",
+"src": "M39 pp. 112-113 (pdf 90)",
+"why": "punctuation 5, case 1 (Quiéscat) as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad4t",
+1,
+"la"
+],
+"new": "In illo témpore: Jam die festo mediánte, ascéndit Jesus in templum, et docébat. Et mirabántur Judǽi, dicéntes: Quómodo hic lítteras scit, cum non didícerit? Respóndit eis Jesus, et dixit: Mea doctrína non est mea, sed ejus, qui misit me. Si quis volúerit voluntátem ejus fácere: cognóscet de doctrína, utrum ex Deo sit, an ego a me ipso loquar. Qui a semetípso lóquitur, glóriam própriam quærit. Qui autem quærit glóriam ejus, qui misit eum, hic verax est, et injustítia in illo non est. Nonne Móyses dedit vobis legem: et nemo ex vobis facit legem? Quid me quǽritis interfícere? Respóndit turba, et dixit: Dæmónium habes: Quis te quærit interfícere? Respóndit Jesus, et dixit eis: Unum opus feci, et omnes mirámini. Proptérea Móyses dedit vobis circumcisiónem: (non quia ex Móyse est, sed ex pátribus) et in sábbato circumcíditis hóminem. Si circumcisiónem áccipit homo in sábbato, ut non solvátur lex Móysi: mihi indignámini, quia totum hóminem sanum feci in sábbato? Nolíte judicáre secúndum fáciem, sed justum judícium judicáte. Dicébant ergo quidam ex Jerosólymis: Nonne hic est, quem quærunt interfícere? Et ecce palam lóquitur, et nihil ei dicunt. Numquid vere cognovérunt príncipes quia hic est Christus? Sed hunc scimus unde sit: Christus autem cum vénerit, nemo scit unde sit. Clamábat ergo Jesus in templo docens, et dicens: Et me scitis, et unde sim scitis: et a me ipso non veni, sed est verus, qui misit me, quem vos nescítis. Ego scio eum: quia ab ipso sum, et ipse me misit. Quærébant ergo eum apprehéndere: et nemo misit in illum manus, quia nondum vénerat hora ejus. De turba autem multi credidérunt in eum.",
+"src": "M39 p. 113 (pdf 90)",
+"why": "punctuation 6 (incl. 'circumcisiónem: (non quia … ex pátribus) et in sábbato'), case 2 (Qui, Quis) as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad4t",
+0,
+"en"
+],
+"subs": [
+[
+"I will give to you seed,",
+"I will give to your seed,"
+]
+],
+"src": "M39 p. 113 (pdf 90); bible/en Ex 32: 13",
+"why": "obvious typo of the bible/en text ('you seed'; Latin 'sémini vestro'), wording unchanged"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad4t",
+1,
+"en"
+],
+"subs": [
+[
+"But of the people many believed in him, and said: When the Christ cometh, shall he do more miracles, than these which this man doth?",
+"But of the people many believed in him."
+]
+],
+"src": "M39 p. 113 (pdf 90); bible/en John 7: 14-31",
+"why": "English to the Latin: the Missal ends 'De turba autem multi credidérunt in eum.' (v. 31a), so 'and said: When the Christ cometh … this man doth?' is dropped"
+}
+]

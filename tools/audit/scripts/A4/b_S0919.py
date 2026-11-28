@@ -1,0 +1,4 @@
+# ---- S0919 SS. Januarius et soc. Mm. (d.) pp. 562-563 (pdf 320)
+P('S0919','r0',[3],'M39 p. 563 (pdf 320)',why='as printed: "non tardábit : Justus autem"')
+P('S0919','r1',[0,1,2,3,4,5,6,7],'M39 p. 563 (pdf 320)',manual={3:'prǽlia',4:'præliórum'},why='as printed: "super Montem olivéti"; "dicéntes, Ego sum"; "prǽlia, et opiniónes præliórum" (æ, not œ); "turbémini. Opórtet"; no comma in "ínvicem tradent et ódio"')
+RAW('data/masses.js',['masses','S0919','readings'],F.A.D['masses']['S0919']['readings'],[{'type':'Epistle','ref':'Ad Hebræos 10: 32-38','m39':True},{'type':'Gospel','ref':'Matthæus 24: 3-13','m39':True}],'M39 pp. 562-563 (pdf 320)','the Missal prints the proper Epistle Hebr. 10 "Rememorámini" and Gospel Matth. 24 "Sedénte Jesu"; the refs were the Common\'s (Sap 5 / Matth 5); readings33 already has the right texts')

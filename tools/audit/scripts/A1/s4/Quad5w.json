@@ -1,0 +1,105 @@
+[
+{
+"file": "data/orations.js",
+"path": [
+"Quad5w",
+"or",
+0
+],
+"new": "Sanctificáto hoc ieiúnio, Deus, tuórum corda fidélium miserátor illústra: et quibus devotiónis præstas afféctum; præbe supplicántibus pium benígnus audítum: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 129 (pdf 98)",
+"why": "punctuation as printed ('afféctum;' flexa, ':' before the conclusion; Proc. 1913 p. 405)"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad5w",
+"se",
+0
+],
+"new": "Annue miséricors Deus, ut hóstias placatiónis et laudis sincéro tibi deferámus obséquio. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 131 (pdf 99)",
+"why": "punctuation as printed ('ANNUE miséricors Deus, ut'; the print ends 'obséquio. Per Dóminum.')"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad5w",
+"pc",
+0
+],
+"new": "Cæléstis doni benedictióne percépta, súpplices te Deus omnípotens deprecámur; ut hoc idem nobis et sacraménti causa sit, et salútis: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 131 (pdf 99)",
+"why": "'Cæléstis' and punctuation as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5w",
+1,
+"la"
+],
+"new": "In illo témpore: Facta sunt Encǽnia in Jerosólymis: et hiems erat. Et ambulábat Jesus in templo, in pórticu Salomónis. Circumdedérunt ergo eum Judǽi, et dicébant ei: Quoúsque ánimam nostram tollis? Si tu es Christus, dic nobis palam. Respóndit eis Jesus: Loquor vobis, et non créditis. Opera, quæ ego fácio in nómine Patris mei, hæc testimónium pérhibent de me: sed vos non créditis, quia non estis ex óvibus meis. Oves meæ vocem meam áudiunt: et ego cognósco eas, et sequúntur me: Et ego vitam ætérnam do eis: et non períbunt in ætérnum, et non rápiet eas quisquam de manu mea. Pater meus quod dedit mihi, majus ómnibus est: et nemo potest rápere de manu Patris mei. Ego, et Pater unum sumus. Sustulérunt ergo lápides Judǽi, ut lapidárent eum. Respóndit eis Jesus: Multa bona ópera osténdi vobis ex Patre meo, propter quod eórum opus me lapidátis? Respondérunt ei Judǽi: De bono ópere non lapidámus te, sed de blasphémia: et quia tu homo cum sis, facis teípsum Deum. Respóndit eis Jesus: Nonne scriptum est in lege vestra: quia, Ego dixi, dii estis? Si illos dixit deos, ad quos sermo Dei factus est, et non potest solvi Scriptúra: quem Pater sanctificávit, et misit in mundum, vos dícitis, Quia blasphémas: quia dixi, Fílius Dei sum? Si non fácio ópera Patris mei, nolíte crédere mihi. Si autem fácio: et si mihi non vultis crédere, opéribus crédite, ut cognoscátis, et credátis quia Pater in me est, et ego in Patre.",
+"src": "M39 pp. 130-131 (pdf 99)",
+"why": "punctuation 9, case 3 (Opera, Et, 'quia, Ego') as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5w",
+0,
+"la"
+],
+"subs": [
+[
+"Leges meas custodíte.",
+"Leges meas custodíte. Ego enim sum Dóminus Deus vester."
+]
+],
+"src": "M39 p. 130 (pdf 99)",
+"why": "cut ending 'Ego enim sum Dóminus Deus vester.' restored as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5w",
+0,
+"ref"
+],
+"new": "Leviticus 19: 1-2, 11-19, 25",
+"src": "M39 pp. 129-130 (pdf 98-99)",
+"why": "reference to the printed text (vv. 1-2a, 11-19a, ending of v. 25), as masses.js has it; the site had '10-19' but the Missal has nothing of v. 10"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5w",
+0,
+"en"
+],
+"subs": [
+[
+"and thou shalt say to them: Be ye holy, because I the Lord your God am holy. Neither shalt thou gather the bunches and grapes that fall down in thy vineyard, but shalt leave them to the poor and the strangers to take. I am the Lord your God. You shall not steal.",
+"and thou shalt say to them: I am the Lord your God. You shall not steal."
+],
+[
+"Keep ye my laws. Thou shalt not make thy cattle to gender with beasts of any other kind. Thou shalt not sow thy field with different seeds. Thou shalt not wear a garment that is woven of two sorts.",
+"Keep ye my laws. For I am the Lord your God."
+]
+],
+"src": "M39 pp. 129-130 (pdf 98-99); bible/en Lev 19: 1-2, 10-11, 19, 25",
+"why": "English to the Latin: the Missal has 'et dices ad eos: Ego Dóminus Deus vester. Non faciétis furtum' (no 'Be ye holy …' nor v. 10) and ends 'Leges meas custodíte. Ego enim sum Dóminus Deus vester.' (not v. 19b): Douay wording 'I am the Lord your God' (v. 10/25), 'For' added for 'enim' (AI, labelled)"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad5w",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Lev 19: 1-2, 11-19, 25, the Missal's selection); AI translation: \"For\" in the last sentence \"For I am the Lord your God\" (Missal \"Ego enim sum Dóminus Deus vester\")",
+"src": "M39 p. 130 (pdf 99)",
+"why": "English source label (new key)"
+}
+]

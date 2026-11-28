@@ -1,0 +1,35 @@
+[
+{
+"file": "data/orations.js",
+"path": [
+"Quad5f",
+"se",
+0
+],
+"new": "Offérimus tibi preces et hóstias, Dómine Iesu Christe, humíliter supplicántes: ut qui transfixiónem dulcíssimi spíritus beátæ Maríæ Matris tuæ précibus recensémus; suo suorúmque sub cruce Sanctórum consórtium multiplicáto piíssimo intervéntu, méritis mortis tuæ, méritum cum Beátis habeámus. Qui vivis et regnas cum Deo Patre; in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "",
+"why": ""
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5f",
+0,
+"la"
+],
+"new": "Benedíxit te Dóminus in virtúte sua, quia per te ad níhilum redégit inimícos nostros. Benedícta es tu fília a Dómino Deo excélso, præ ómnibus muliéribus super terram. Benedíctus Dóminus, qui creávit cælum et terram: quia hódie nomen tuum ita magnificávit, ut non recédat laus tua de ore hóminum, qui mémores fúerint virtútis Dómini in ætérnum, pro quibus non pepercísti ánimæ tuæ propter angústias et tribulatiónem géneris tui, sed subvenísti ruínæ ante conspéctum Dei nostri.",
+"src": "",
+"why": ""
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5f",
+1,
+"la"
+],
+"new": "In illo témpore: Stabant juxta crucem Jesu Mater ejus, et soror Matris ejus, María Cléophæ, et María Magdaléne. Cum vidísset ergo Jesus Matrem, et discípulum stantem, quem diligébat, dicit Matri suæ: Múlier, ecce fílius tuus. Deínde dicit discípulo: Ecce mater tua. Et ex illa hora accépit eam discípulus in sua.",
+"src": "",
+"why": ""
+}
+]

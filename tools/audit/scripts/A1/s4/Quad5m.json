@@ -1,0 +1,105 @@
+[
+{
+"file": "data/orations.js",
+"path": [
+"Quad5m",
+"or",
+0
+],
+"new": "Sanctífica, quǽsumus Dómine, nostra ieiúnia; et cunctárum nobis indulgéntiam propítius largíre culpárum: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 126 (pdf 97)",
+"why": "punctuation as printed ('ieiúnia;' flexa, ':' before the conclusion; Proc. 1913 p. 405)"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad5m",
+"se",
+0
+],
+"new": "Concéde nobis, Dómine Deus noster: ut hæc hóstia salutáris, et nostrórum fiat purgátio delictórum, et tuæ propitiátio maiestátis. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 127 (pdf 97)",
+"why": "punctuation as printed (the print ends 'majestátis. Per Dóminum.')"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad5m",
+"pc",
+0
+],
+"new": "Sacraménti tui, quǽsumus Dómine, participátio salutáris; et purificatiónem nobis tríbuat, et medélam: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 127 (pdf 97)",
+"why": "punctuation as printed ('salutáris;' flexa, ':' before the conclusion)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5m",
+0,
+"la"
+],
+"new": "In diébus illis: Factum est verbum Dómini ad Jonam prophétam secúndo, dicens: Surge, et vade in Níniven civitátem magnam: et prǽdica in ea prædicatiónem, quam ego loquor ad te. Et surréxit Jonas, et ábiit in Níniven juxta verbum Dómini: Et Nínive erat cívitas magna itínere trium diérum. Et cœpit Jonas introíre in civitátem itínere diéi uníus: et clamávit, et dixit: Adhuc quadragínta dies, et Nínive subvertétur. Et credidérunt viri Ninivítæ in Deum: et prædicavérunt jejúnium, et vestíti sunt saccis a majóre usque ad minórem. Et pervénit verbum ad regem Nínive: et surréxit de sólio suo, et abjécit vestiméntum suum a se, et indútus est sacco, et sedit in cínere. Et clamávit, et dixit in Nínive ex ore regis et príncipum ejus, dicens: Hómines, et juménta, et boves, et pécora non gustent quidquam: nec pascántur, et aquam non bibant. Et operiántur saccis hómines, et juménta, et clament ad Dóminum in fortitúdine, et convertátur vir a via sua mala, et ab iniquitáte, quæ est in mánibus eórum. Quis scit si convertátur, et ignóscat Deus: et revertátur a furóre iræ suæ, et non períbimus? Et vidit Deus ópera eórum, quia convérsi sunt de via sua mala: Et misértus est pópulo suo Dóminus Deus noster.",
+"src": "M39 p. 126 (pdf 97)",
+"why": "cut ending restored as printed ('Et misértus est pópulo suo Dóminus Deus noster.', readings_cut.md); punctuation 3, case 2 (Et, Et)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5m",
+1,
+"la"
+],
+"new": "In illo témpore: Misérunt príncipes, et Pharisǽi minístros, ut apprehénderent Jesum. Dixit ergo eis Jesus: Adhuc módicum tempus vobíscum sum: et vado ad eum, qui me misit. Quærétis me, et non inveniétis: et ubi ego sum, vos non potéstis veníre. Dixérunt ergo Judǽi ad semetípsos: Quo hic itúrus est, quia non inveniémus eum? Numquid in dispersiónem géntium itúrus est, et doctúrus gentes? Quis est hic sermo, quem dixit, Quærétis me, et non inveniétis: et ubi sum ego, vos non potéstis veníre? In novíssimo autem die magno festivitátis stabat Jesus, et clamábat, dicens: Si quis sitit, véniat ad me, et bibat. Qui credit in me, sicut dicit Scriptúra, flúmina de ventre ejus fluent aquæ vivæ. Hoc autem dixit de Spíritu, quem acceptúri erant credéntes in eum.",
+"src": "M39 pp. 126-127 (pdf 97)",
+"why": "punctuation 2 as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5m",
+0,
+"en"
+],
+"subs": [
+[
+"came to Jonas the second time, saying:",
+"came to Jonas the prophet the second time, saying:"
+],
+[
+"and God had mercy with regard to the evil which he had said that he would do to them, and he did it not.",
+"and the Lord our God had mercy on his people."
+]
+],
+"src": "M39 p. 126 (pdf 97); bible/en Jon 3: 1-10",
+"why": "English to the Latin: the Missal reads 'ad Jonam prophétam' and ends 'Et misértus est pópulo suo Dóminus Deus noster' (Vulgate v. 10b 'et misertus est Deus super malitiam … et non fecit'): AI translation of both, labelled in src"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad5m",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Jon 3: 1-10a); AI translation (Missal departs from the Vulgate): \"the prophet\" (Missal \"ad Jonam prophétam\"); the ending \"and the Lord our God had mercy on his people\" (Missal \"Et misértus est pópulo suo Dóminus Deus noster\")",
+"src": "M39 p. 126 (pdf 97)",
+"why": "English source label (new key)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad5m",
+1,
+"en"
+],
+"subs": [
+[
+"who believed in him: for as yet the Spirit was not given, because Jesus was not yet glorified.",
+"who believed in him."
+]
+],
+"src": "M39 p. 127 (pdf 97); bible/en John 7: 32-39",
+"why": "English to the Latin: the Missal ends 'quem acceptúri erant credéntes in eum.' (v. 39a), so 'for as yet the Spirit was not given …' is dropped (the opening is left to the coordinator's script)"
+}
+]

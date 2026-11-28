@@ -1,0 +1,4 @@
+# ---- S1024 St Raphael (Totum Duplex) pp. 596-597 (pdf 337)
+SUB('data/readings33.js',['S1024',0,'la'],[('auri recóndere: quóniam','auri recóndere: Quóniam'),('orábas cum lácrymis','orábas cum lácrimis'),('Ráphaël ángelus, unus ex septem, qui adstámus','Ráphaël Angelus, unus ex septem, qui astámus')],'M39 p. 596 (pdf 337)','as printed: ": Quóniam"; "lácrimis"; "Ráphaël Angelus"; "astámus"')
+EN('S1024',0,[('In those days: It is good to hide','In those days: The Angel Raphael said to Tobias: For it is good to hide')],'M39 p. 596 (pdf 337)','the Latin begins "Dixit Angelus Ráphaël ad Tobíam: Etenim" (the Missal\'s incipit); the English had only v. 7 ("It is good"); now with the incipit and Douay\'s "For" (Etenim)')
+SUB('data/readings33.js',['S1024',1,'la'],[('Jerosólymis probática','Jerosólymis Probática'),('cognominátur hebráice','cognominátur Hebráice')],'M39 pp. 596-597 (pdf 337)','as printed: "Probática piscína, quæ cognominátur Hebráice"')

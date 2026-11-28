@@ -1,0 +1,85 @@
+[
+{
+"file": "data/orations.js",
+"path": [
+"Quad4s",
+"or",
+0
+],
+"new": "Fiat, Dómine, quǽsumus, per grátiam tuam fructuósus nostræ devotiónis afféctus: quia tunc nobis próderunt suscépta ieiúnia; si tuæ sint plácita pietáti: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 122 (pdf 95)",
+"why": "punctuation as printed ('ieiúnia;' flexa, ':' before the conclusion; Proc. 1913 p. 405)"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad4s",
+"se",
+0
+],
+"new": "Oblatiónibus nostris, quǽsumus Dómine, placáre suscéptis, et ad te nostras étiam rebélles compélle propítius voluntátes. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 123 (pdf 95)",
+"why": "punctuation as printed"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad4s",
+"pc",
+0
+],
+"new": "Tua nos, quǽsumus Dómine, sancta puríficent; et operatióne sua tibi plácitos esse perfíciant: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+"src": "M39 p. 123 (pdf 95)",
+"why": "punctuation as printed ('puríficent;' flexa, ':' before the conclusion)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad4s",
+0,
+"la"
+],
+"new": "Hæc dicit Dóminus: In témpore plácito exaudívi te, et in die salútis auxiliátus sum tui: Et servávi te, et dedi te in fœdus pópuli, ut suscitáres terram, et possidéres hereditátes dissipátas: ut díceres his, qui vincti sunt, Exíte: et his, qui in ténebris, Revelámini. Super vias pascéntur, et in ómnibus planis páscua eórum. Non esúrient, neque sítient, et non percútiet eos æstus et sol: quia miserátor eórum reget eos, et ad fontes aquárum potábit eos. Et ponam omnes montes meos in viam, et sémitæ meæ exaltabúntur. Ecce isti de longe vénient, et ecce illi ab Aquilóne et mari, et isti de terra austráli. Laudáte cæli, et exsúlta terra, jubiláte montes laudem: quia consolátus est Dóminus pópulum suum, et páuperum suórum miserébitur. Et dixit Sion: Derelíquit me Dóminus, et Dóminus oblítus est mei. Numquid oblivísci potest múlier infántem suum, ut non misereátur fílio úteri sui? Et si illa oblíta fúerit, ego tamen non oblivíscar tui. Dicit Dóminus omnípotens.",
+"src": "M39 pp. 122-123 (pdf 95)",
+"why": "cut ending 'Dicit Dóminus omnípotens.' restored; punctuation 4, case 2 (Et, Aquilóne) as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad4s",
+1,
+"la"
+],
+"new": "In illo témpore: Locútus est Jesus turbis Judæórum, dicens: Ego sum lux mundi: Qui séquitur me, non ámbulat in ténebris, sed habébit lumen vitæ. Dixérunt ergo ei Pharisǽi: Tu de teípso testimónium pérhibes: testimónium tuum non est verum. Respóndit Jesus, et dixit eis: Et si ego testimónium perhíbeo de meípso, verum est testimónium meum: quia scio unde veni, et quo vado: Vos autem nescítis unde vénio, aut quo vado. Vos secúndum carnem judicátis: ego non júdico quemquam: Et si júdico ego, judícium meum verum est, quia solus non sum: sed ego, et qui misit me, Pater. Et in lege vestra scriptum est, quia duórum hóminum testimónium verum est. Ego sum, qui testimónium perhíbeo de meípso: et testimónium pérhibet de me, qui misit me, Pater. Dicébant ergo ei: Ubi est Pater tuus? Respóndit Jesus: Neque me scitis, neque Patrem meum: Si me scirétis, fórsitan et Patrem meum scirétis. Hæc verba locútus est Jesus in gazophylácio, docens in templo: Et nemo apprehéndit eum, quia necdum vénerat hora ejus.",
+"src": "M39 p. 123 (pdf 95)",
+"why": "case 5 (Qui, Vos, Et, Si, Et) as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad4s",
+0,
+"en"
+],
+"subs": [
+[
+"yet will not I forget thee.",
+"yet will not I forget thee, saith the Lord almighty."
+]
+],
+"src": "M39 p. 123 (pdf 95); bible/en Is 49: 8-15",
+"why": "English to the Latin: the Missal ends 'Dicit Dóminus omnípotens' (AI translation, labelled in src)"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad4s",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Is 49: 8-15); AI translation: \", saith the Lord almighty\" at the end (Missal \"Dicit Dóminus omnípotens\")",
+"src": "M39 p. 123 (pdf 95)",
+"why": "English source label (new key)"
+}
+]

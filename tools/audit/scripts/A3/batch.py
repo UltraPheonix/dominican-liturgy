@@ -1,6 +1,6 @@
 import json,sys,re,os
 from load import *
-import eng, crop
+import eng, crop, caps
 from eng import stream, where
 O=load('data/orations.js'); MEM=load('data/memoriae.js'); R=load('data/readings33.js'); D=load('data/masses.js'); M=D['masses']
 ACC=json.load(open(ROOT+'/tools/orat39/accdict.json'))
@@ -35,7 +35,8 @@ def analyse(key):
         if not mr: out.append(dict(fid=fid,notfound=True)); continue
         r,inr=mr
         new,ch=eng.propose(b1,S,r,ACC)
-        d=dict(fid=fid,path=path,kind=kind,old=text,b1=b1,b0=b0,concl=concl,S=S,r=r,inr=inr,ch=ch,score=r[0],at=where(r[3]))
+        cd=caps.capdiffs(S,r)
+        d=dict(fid=fid,path=path,kind=kind,old=text,b1=b1,b0=b0,concl=concl,S=S,r=r,inr=inr,ch=ch,cd=cd,score=r[0],at=where(r[3]))
         if kind=='or':
             end=r[1]; nxt=stream[end:end+6]
             fp=nxt[0][1] if nxt and not nxt[0][0][0].isalpha() else ''
@@ -43,8 +44,9 @@ def analyse(key):
             d['mnext']=' '.join(t[1] for t in nxt)
         out.append(d)
     return out
-def build(d, skip=(), over=None, fp=None):
-    new,_=eng.propose(d['b1'],d['S'],d['r'],ACC,skip,over)
+def build(d, skip=(), over=None, fp=None, cskip=()):
+    b1=caps.apply(d['b1'], eng.spans(d['b1']), d.get('cd',[]), cskip)
+    new,_=eng.propose(b1,d['S'],d['r'],ACC,skip,over)
     if d['kind']=='or':
         f=d['fp'] if fp is None else fp
         return new+f+(' '+d['concl'] if d['concl'] else '')
@@ -54,6 +56,7 @@ def garble(c):
     tag,sa,mb,k=c
     if tag=='insert' and re.fullmatch(r'[A-Z]|[a-z]',mb.strip()): return True
     if tag!='replace': return False
+    if len(mb.strip())==1 and mb.strip().isalpha() and len(sa.strip())>1: return True
     sw=sa.split(); mw=mb.split()
     if len(sw)!=1 or not sw[0][0].isalpha(): return False
     f=eng.fold(sw[0]); g=eng.fold(''.join(mw))
@@ -85,6 +88,10 @@ if __name__=='__main__':
                 g=garble(c)
                 rep.append('   %s %s%s [%s] -> [%s] @%s'%(cid,'~GARBLE~ ' if g else '',c[0],c[1],c[2],where(c[3])))
                 if not g and (('-p' not in sys.argv[0:1]) and (c[1].strip() not in ',:;.' or c[2].strip() not in ',:;.' ) or SHOWP): allc.append((cid, stream[c[3]][3], ctx_words(c[3])))
+            for i,c in enumerate(d.get('cd',[])):
+                cid='%s#C%d'%(d['fid'],i)
+                rep.append('   %s CASE [%s] -> [%s] @%s'%(cid,c[1],c[2],where(c[3])))
+                allc.append((cid, stream[c[3]][3], ctx_words(c[3])))
             if d['kind']=='or' and d['sitefp']!=d['fp']:
                 cid='%s#F'%d['fid']; k=d['r'][1]
                 rep.append('   %s final [%s] -> [%s]'%(cid,d['sitefp'],d['fp']))

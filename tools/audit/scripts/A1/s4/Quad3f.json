@@ -1,0 +1,186 @@
+[
+{
+"file": "data/orations.js",
+"path": [
+"Quad3f",
+"or",
+0
+],
+"subs": [
+[
+"Ieiúnia nostra, quǽsumus, Dómine,",
+"Ieiúnia nostra, quǽsumus Dómine,"
+],
+[
+"proséquere: ut, sicut ab",
+"proséquere: ut sicut ab"
+],
+[
+"ieiunémus in mente. Per",
+"ieiunémus in mente: Per"
+]
+],
+"src": "M39 p. 102 (pdf 85)",
+"why": "punctuation as printed (':' before the conclusion; Proc. 1913 p. 405)"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad3f",
+"se",
+0
+],
+"subs": [
+[
+"Réspice, quǽsumus, Dómine,",
+"Réspice, quǽsumus Dómine,"
+]
+],
+"src": "M39 p. 104 (pdf 86)",
+"why": "punctuation as printed (the print ends 'exsístant. Per Dóminum.')"
+},
+{
+"file": "data/orations.js",
+"path": [
+"Quad3f",
+"pc",
+0
+],
+"subs": [
+[
+"mundet a crimine: et ad cœléstia regna perdúcat. Per",
+"mundet a crímine; et ad cæléstia regna perdúcat: Per"
+]
+],
+"src": "M39 p. 104 (pdf 86)",
+"why": "'crímine', 'cæléstia' and punctuation as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad3f",
+0,
+"la"
+],
+"subs": [
+[
+"dixérunt: Utinam periissémus inter fratres nostros coram Dómino. Cur eduxístis ecclésiam Dómini in solitúdinem, ut et nos et nostra juménta moriámur? Quare nos fecístis ascéndere de Ægýpto, et adduxístis in locum istum péssimum, qui seri non potest, qui nec ficum gignit, nec víneas, nec malogranáta, ínsuper et aquam non habet ad bibéndum? Ingressúsque",
+"dixérunt: Date nobis aquam, ut bibámus. Ingressúsque"
+],
+[
+"Dómine Deus, audi clamórem",
+"Dómine Deus audi clamórem"
+],
+[
+"pópulus bíberet et juménta",
+"pópulus bíberet, et juménta"
+]
+],
+"src": "M39 p. 102 (pdf 85)",
+"why": "the Missal's text: after 'dixérunt:' it prints only 'Date nobis aquam, ut bibámus.' (the site had the Vulgate's Num 20: 3b-5, 'Utinam periissémus … ad bibéndum?', which the Missal does not print); punctuation 2 as printed"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad3f",
+0,
+"en"
+],
+"subs": [
+[
+"In those days: The people wanting water, came together against Moses and Aaron: And making a sedition, they said: Would God we had perished among our brethren before the Lord. Why have you brought out the church of the Lord into the wilderness, that both we and our cattle should die? Why have you made us come up out of Egypt, and have brought us into this wretched place which cannot be sowed, nor bringeth forth figs, nor vines, nor pomegranates, neither is there any water to drink? And Moses",
+"In those days: The children of Israel came together against Moses and Aaron: and making a sedition, they said: Give us water, that we may drink. And Moses"
+]
+],
+"src": "M39 p. 102 (pdf 85); bible/en Num 20: 2-13",
+"why": "English to the Latin: the Missal reads 'Convenérunt fílii Israël advérsum Móysen et Aaron: et versi in seditiónem, dixérunt: Date nobis aquam, ut bibámus.' (not Vulgate vv. 2-5): AI translation of the opening, labelled in src; the rest Douay"
+},
+{
+"file": "data/readings33.js",
+"op": "add",
+"path": [
+"Quad3f",
+0,
+"src"
+],
+"new": "English: Douay-Rheims (bible/en Num 20: 6-13); AI translation (Missal departs from the Vulgate): the opening \"The children of Israel came together against Moses and Aaron: and making a sedition, they said: Give us water, that we may drink.\" (Missal \"Convenérunt fílii Israël advérsum Móysen et Aaron: et versi in seditiónem, dixérunt: Date nobis aquam, ut bibámus.\")",
+"src": "M39 p. 102 (pdf 85)",
+"why": "English source label (new key)"
+},
+{
+"file": "data/readings33.js",
+"path": [
+"Quad3f",
+1,
+"la"
+],
+"subs": [
+[
+"abíerant in civitátem ut cibos",
+"abíerant in civitátem, ut cibos"
+],
+[
+"Quómodo tu, Judǽus cum sis",
+"Quómodo tu Judǽus cum sis"
+],
+[
+"qui dicit tibi: Da mihi bíbere, tu fórsitan petísses ab eo",
+"qui dicit tibi, Da mihi bíbere: tu fórsitan petiísses ab eo"
+],
+[
+"altus est: unde ergo",
+"altus est: Unde ergo"
+],
+[
+"sítiet íterum: qui autem",
+"sítiet íterum: Qui autem"
+],
+[
+"ut non sítiam, neque véniam",
+"ut non sítiam: neque véniam"
+],
+[
+"non hábeo virum: quinque enim",
+"non hábeo virum: Quinque enim"
+],
+[
+"tuus vir: hoc vere",
+"tuus vir: Hoc vere"
+],
+[
+"Messías venit (qui dícitur Christus): cum ergo",
+"Messías venit, (qui dícitur Christus.) Cum ergo"
+],
+[
+"Nemo tamen dixit: Quid quæris? Aut quid",
+"Nemo tamen dixit, Quid quæris, aut quid"
+],
+[
+"ómnia quæcúmque feci: numquid ipse",
+"ómnia quæcúmque feci: Numquid ipse"
+],
+[
+"in vitam ætérnam: ut et qui",
+"in vitam ætérnam: ut, et qui"
+],
+[
+"non laborástis: álii laboravérunt",
+"non laborástis: Alii laboravérunt"
+],
+[
+"testimónium perhibéntis: Quia dixit",
+"testimónium perhibéntis, Quia dixit"
+],
+[
+"mulíeri dicébant: Quia jam",
+"mulíeri dicébant, Quia jam"
+],
+[
+"crédimus: ipsi enim audívimus, et scimus quia hic",
+"crédimus: Ipsi enim audívimus, et scimus, quia hic"
+]
+],
+"src": "M39 pp. 103-104 (pdf 85-86)",
+"why": "'petiísses' as printed; punctuation 12, case 9 (Unde, Qui, Quinque, Hoc, Cum, aut, Numquid, Alii, Ipsi) as printed"
+}
+]

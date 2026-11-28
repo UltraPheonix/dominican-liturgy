@@ -1,0 +1,7 @@
+# ---- S1014 St Callistus (d.) pp. 589-590 (pdf 333-334);  S1015 St Teresa of Jesus (d.) pp. 590-591 (pdf 334)
+SUB('data/readings33.js',['S1014',0,'la'],[('pro peccátis: qui condolére','pro peccátis: Qui condolére')],'M39 p. 589 (pdf 333)','as printed: "peccátis : Qui condolére"')
+SUB('data/readings33.js',['S1014',1,'la'],[('potest et ánimam, et corpus','potest et ánimam et corpus')],'M39 p. 590 (pdf 334)','as printed: "qui potest et ánimam et corpus pérdere"')
+SUB('data/readings33.js',['S1015',0,'la'],[('spíritus sapiéntiæ: et præpósui','spíritus sapiéntiæ: Et præpósui'),('lápidem pretiósum, quóniam omne aurum in comparatióne illíus aréna','lápidem pretiósum: quóniam omne aurum in comparatióne illíus, aréna')],'M39 pp. 590-591 (pdf 334)','as printed: ": Et præpósui"; "pretiósum : quóniam"; "illíus, aréna est exígua"')
+SUB('data/readings33.js',['S1015',1,'la'],[('Confíteor tibi Pater,','Confíteor tibi, Pater,')],'M39 p. 591 (pdf 334)','as printed: "Confíteor tibi, Pater"')
+SUB('data/masses.js',['masses','S1015','title'],[('de Avila, V. D.','de Avila, V.')],'M39 p. 590 (pdf 334)','the Missal: "S. TERESIÆ A JESU Virg. (d.)" (she was declared a Doctor only in 1970)')
+SUB('data/masses.js',['masses','S1015','en'],[('de Avila, V. D.','de Avila, V.')],'M39 p. 590 (pdf 334)','as the Latin title')
