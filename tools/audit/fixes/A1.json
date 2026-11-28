@@ -3107,5 +3107,84 @@
   "src": "M39 pp. 74-77 (pdf 71-73)",
   "why": "NEW FIELD \"inter\": the collects the Missal prints between the lessons (Ember day), each after the lesson whose 0-based index in readings33[Quad1s] is \"after\"; Latin read from the scan crops, conclusions expanded by type as printed (Rubr. gen. XI.2, M39 p. 52: \"Si Oratio dirigatur ad Patrem, concluditur Per Dominum nostrum; et si ad Filium, Qui vivis et regnas cum Deo Patre; si in principio Orationis fiat mentio Filii, terminatur Per eumdem Dominum nostrum; si in fine Orationis fiat ejus mentio, terminatur per Qui tecum vivit\"); \"pre\" = what the Missal prints before it; \"rubric\"/\"note\" = the Missal's rubrics there",
   "s3": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2m",
+   "or",
+   0
+  ],
+  "old": "Præsta, quǽsumus, omnípotens Deus: ut família tua, quæ se, affligéndo carnem, ab aliméntis ábstinet: sectándo iustítiam, a culpa ieiúnet. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Præsta, quǽsumus omnípotens Deus: ut família tua, quæ se, affligéndo carnem, ab aliméntis ábstinet; sectándo iustítiam, a culpa ieiúnet: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 81 (pdf 74)",
+  "why": "punctuation as printed (Proc. 1913 p. 405: ';' flexa, ':' before the conclusion)",
+  "s4": true
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "Quad2m",
+   "pc",
+   0
+  ],
+  "old": "Hæc nos commúnio, Dómine, purget a crímine: et cœléstis remédii fáciat esse consórtes. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Hæc nos commúnio, Dómine, purget a crímine; et cæléstis remédii fáciat esse consórtes: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 82 (pdf 75)",
+  "why": "punctuation and spelling 'cæléstis' as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2m",
+   0,
+   "la"
+  ],
+  "old": "In diébus illis: Orávit Dániel Dóminum, dicens: Dómine Deus noster, qui eduxísti pópulum tuum de terra Ægýpti in manu forti, et fecísti tibi nomen secúndum diem hanc: peccávimus, iniquitátem fécimus Dómine in omnem justítiam tuam: avertátur óbsecro ira tua, et furor tuus a civitáte tua Jerúsalem, et monte sancto tuo. Propter peccáta enim nostra, et iniquitátes patrum nostrórum, Jerúsalem, et pópulus tuus in oppróbrium sunt ómnibus per circúitum nostrum. Nunc ergo exáudi Deus noster oratiónem servi tui, et preces ejus: et osténde fáciem tuam super sanctuárium tuum, quod desértum est, propter temetípsum. Inclína Deus meus aurem tuam, et audi: áperi óculos tuos, et vide desolatiónem nostram, et civitátem super quam invocátum est nomen tuum: neque enim in justificatiónibus nostris prostérnimus preces ante fáciem tuam, sed in miseratiónibus tuis multis. Exáudi Dómine, placáre Dómine: atténde et fac: ne moréris propter temetípsum Deus meus: quia nomen tuum invocátum est super civitátem et super pópulum tuum.",
+  "new": "In diébus illis: Orávit Dániel Dóminum, dicens: Dómine Deus noster, qui eduxísti pópulum tuum de terra Ægýpti in manu forti, et fecísti tibi nomen secúndum diem hanc: peccávimus, iniquitátem fécimus, Dómine, in omnem justítiam tuam: Avertátur, óbsecro, ira tua, et furor tuus a civitáte tua Jerúsalem, et monte sancto tuo. Propter peccáta enim nostra, et iniquitátes patrum nostrórum, Jerúsalem, et pópulus tuus in oppróbrium sunt ómnibus per circúitum nostrum. Nunc ergo exáudi Deus noster oratiónem servi tui, et preces ejus: et osténde fáciem tuam super sanctuárium tuum, quod desértum est, propter temetípsum. Inclína Deus meus aurem tuam, et audi: áperi óculos tuos, et vide desolatiónem nostram, et civitátem, super quam invocátum est nomen tuum: Neque enim in justificatiónibus nostris prostérnimus preces ante fáciem tuam, sed in miseratiónibus tuis multis. Exáudi Dómine, placáre Dómine: atténde et fac: Ne moréris propter temetípsum Deus meus: quia nomen tuum invocátum est super civitátem, et super pópulum tuum, Dómine Deus noster.",
+  "src": "M39 p. 81 (pdf 74)",
+  "why": "cut ending ', Dómine Deus noster.' restored as printed; punctuation 5, case 3 (Avertátur, Neque, Ne) as printed",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2m",
+   0,
+   "en"
+  ],
+  "old": "In those days: Now, O Lord our God, who hast brought forth thy people out of the land of Egypt with a strong hand, and hast made thee a name as at this day: we have sinned, we have committed iniquity, O Lord, against all thy justice: let thy wrath and thy indignation be turned away, I beseech thee, from thy city Jerusalem, and from thy holy mountain. For by reason of our sins, and the iniquities of our fathers, Jerusalem, and thy people are a reproach to all that are round about us. Now therefore, O our God, hear the supplication of thy servant, and his prayers: and shew thy face upon thy sanctuary which is desolate, for thy own sake. Incline, O my God, thy ear, and hear: open thy eyes, and see our desolation, and the city upon which thy name is called: for it is not for our justifications that we present our prayers before thy face, but for the multitude of thy tender mercies. O Lord, hear: O Lord, be appeased: hearken and do: delay not for thy own sake, O my God: because thy name is invocated upon thy city, and upon thy people.",
+  "new": "In those days: Daniel prayed to the Lord, saying: O Lord our God, who hast brought forth thy people out of the land of Egypt with a strong hand, and hast made thee a name as at this day: we have sinned, we have committed iniquity, O Lord, against all thy justice: let thy wrath and thy indignation be turned away, I beseech thee, from thy city Jerusalem, and from thy holy mountain. For by reason of our sins, and the iniquities of our fathers, Jerusalem, and thy people are a reproach to all that are round about us. Now therefore, O our God, hear the supplication of thy servant, and his prayers: and shew thy face upon thy sanctuary which is desolate, for thy own sake. Incline, O my God, thy ear, and hear: open thy eyes, and see our desolation, and the city upon which thy name is called: for it is not for our justifications that we present our prayers before thy face, but for the multitude of thy tender mercies. O Lord, hear: O Lord, be appeased: hearken and do: delay not for thy own sake, O my God: because thy name is invocated upon thy city, and upon thy people, O Lord our God.",
+  "src": "M39 p. 81 (pdf 74); bible/en Dan 9: 15-19",
+  "why": "English to the Latin: the Missal begins 'Orávit Dániel Dóminum, dicens: Dómine Deus noster' (no 'Et nunc', so 'Now,' dropped; 'Daniel prayed to the Lord, saying:' AI translation) and ends ', Dómine Deus noster' ('O Lord our God': Douay wording of the same Latin in v. 15)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "op": "add",
+  "path": [
+   "Quad2m",
+   0,
+   "src"
+  ],
+  "old": null,
+  "new": "English: Douay-Rheims (bible/en Dan 9: 15-19); AI translation (Missal departs from the Vulgate): \"Daniel prayed to the Lord, saying:\" (Missal \"Orávit Dániel Dóminum, dicens\"); \", O Lord our God\" at the end (Missal \"Dómine Deus noster\")",
+  "src": "M39 p. 81 (pdf 74)",
+  "why": "English source label (new key)",
+  "s4": true
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Quad2m",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Dixit Jesus turbis Judæórum: Ego vado, et quærétis me, et in peccáto vestro moriémini. Quo ego vado, vos non potéstis veníre. Dicébant ergo Judǽi: Numquid interfíciet semetípsum, quia dixit: Quo ego vado, vos non potéstis veníre? Et dicébat eis: Vos de deórsum estis, ego de supérnis sum. Vos de mundo hoc estis, ego non sum de hoc mundo. Dixi ergo vobis quia moriémini in peccátis vestris: si enim non credidéritis quia ego sum, moriémini in peccáto vestro. Dicébant ergo ei: Tu quis es? Dixit eis Jesus: Princípium, qui et loquor vobis. Multa hábeo de vobis loqui, et judicáre: sed qui me misit, verax est: et ego quæ audívi ab eo, hæc loquor in mundo. Et non cognovérunt quia Patrem ejus dicébat Deum. Dixit ergo eis Jesus: Cum exaltavéritis Fílium hóminis, tunc cognoscétis quia ego sum, et a meípso fácio nihil, sed sicut dócuit me Pater, hæc loquor: et qui me misit, mecum est, et non relíquit me solum: quia ego quæ plácita sunt ei, fácio semper.",
+  "new": "In illo témpore: Dixit Jesus turbis Judæórum: Ego vado, et quærétis me, et in peccáto vestro moriémini. Quo ego vado, vos non potéstis veníre. Dicébant ergo Judǽi: Numquid interfíciet semetípsum, quia dixit: Quo ego vado, vos non potéstis veníre? Et dicébat eis: Vos de deórsum estis, ego de supérnis sum. Vos de mundo hoc estis, ego non sum de hoc mundo. Dixi ergo vobis quia moriémini in peccátis vestris: Si enim non credidéritis quia ego sum, moriémini in peccáto vestro. Dicébant ergo ei: Tu quis es? Dixit eis Jesus: Princípium, qui et loquor vobis. Multa hábeo de vobis loqui, et judicáre. Sed qui me misit, verax est: et ego quæ audívi ab eo, hæc loquor in mundo. Et non cognovérunt quia Patrem ejus dicébat Deum. Dixit ergo eis Jesus: Cum exaltavéritis Fílium hóminis, tunc cognoscétis quia ego sum, et a meípso fácio nihil, sed sicut dócuit me Pater, hæc loquor: Et qui me misit, mecum est, et non relíquit me solum: quia ego quæ plácita sunt ei, fácio semper.",
+  "src": "M39 pp. 81-82 (pdf 74-75)",
+  "why": "punctuation 1, case 3 as printed",
+  "s4": true
  }
 ]

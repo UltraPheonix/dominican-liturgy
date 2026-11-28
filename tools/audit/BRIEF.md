@@ -45,3 +45,18 @@ a rubric (e.g. the type of conclusion, whether a verse is said), quote the rubri
 
 ## 4. When you finish (or after about 40 Masses, whichever is first)
 Reply with: Masses done (keys), number of fix entries added, open items, and the QUESTIONS FOR JOSEPH, each with the rubric/page it concerns.
+
+## 5. Lessons from 27 Nov (coordinator, 28 Nov 07:20). These override anything above.
+- **Never edit an entry that may already be applied.** To correct yourself, add a NEW entry whose "old" is the current data.
+- **Re-read every "new" value for OCR junk** (¿, "., ", stray running heads, split words) before saving. Junk went live once.
+- **Conclusions are normalised centrally** by canon() in apply_fixes.py ("Iesum Christum Fílium tuum; qui tecum … cum Deo Patre;
+  in unitáte Spíritus Sancti Deus: per ómnia"). Write no conclusion-pointing entries. The mark BEFORE the conclusion
+  ("mente : Per Dóminum") is yours to check.
+- **English:** never from memory. Douay verbatim from bible/en/<Book>.txt (tab-separated chapter, verse, text). The St Dominic
+  Missal 1959 for prayers: tools/orat39/dm_prayers.json and tools/orat39/dm1959/ (check there BEFORE using AI). AI translation,
+  labelled (en_src "ai"), only where no 1959 text exists, or where the Missal's Latin departs from the Vulgate.
+  Do not add Gospel incipits ("Jesus said to his disciples"): the coordinator does that by script.
+- **Accented capitals:** the Missal prints none ("Angelus", "Anima"); write capitals without accents. The coordinator normalises the rest.
+- "op": "add" (old: null) adds missing readings/keys; copy the shape of existing entries exactly.
+- Ember days: collects between the lessons go in ORATIONS[key].inter (see A1.md / A2.md for the shape).
+- Joseph's goal: every prayer, reading and proper the Missal prints must be on the site, word and mark as printed.

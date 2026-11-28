@@ -4198,5 +4198,89 @@
   "src": "M39 p. 287 (pdf 182R)",
   "why": "new field \"inter\": the collect after Lesson I and the Responsory Beata gens, preceded by \"Dóminus vobíscum. Orémus\"; the Missal prints \"Secunda Oratio\" A cunctis after it (the commemorations follow this collect) and \"Oratio sequens non est dicenda pro memoria Q. T. in Missa festi … sed dici debet Oratio subsequens Præsta\". English: St Dominic Missal 1959 (DM pdf p. 592), conclusion expanded",
   "op": "add"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "EmbFriSept",
+   "or",
+   0
+  ],
+  "old": "Præsta, quǽsumus, omnípotens Deus: ut, observatiónes sacras ánnua devotióne recoléntes, et córpore tibi placeámus et mente. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Præsta, quǽsumus omnípotens Deus: ut observatiónes sacras ánnua devotióne recoléntes; et córpore tibi placeámus, et mente: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 289 (pdf 183R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "EmbFriSept",
+   "se",
+   0
+  ],
+  "old": "Accépta tibi sint, Dómine, quǽsumus, nostri dona ieiúnii: quæ et expiándo nos tua grátia dignos effíciant, et ad sempitérna promíssa perdúcant. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Accépta tibi sint, Dómine quǽsumus, nostri dona ieiúnii: quæ et expiándo nos tua grátia dignos effíciant, et ad sempitérna promíssa perdúcant. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 291 (pdf 184R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/orations.js",
+  "path": [
+   "EmbFriSept",
+   "pc",
+   0
+  ],
+  "old": "Quǽsumus, omnípotens Deus: ut, de percéptis munéribus grátias exhibéntes, benefícia potióra sumámus. Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "new": "Quǽsumus omnípotens Deus: ut de percéptis munéribus grátias exhibéntes; benefícia potióra sumámus: Per Dóminum nostrum Iesum Christum Fílium tuum; qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum.",
+  "src": "M39 p. 291 (pdf 184R)",
+  "why": "punctuation, capitals and words as printed (checked on scan)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "EmbFriSept",
+   0,
+   "la"
+  ],
+  "old": "Dicit Dóminus Deus. Convértere Israël ad Dóminum Deum tuum: quóniam corruísti in iniquitáte tua. Tóllite vobíscum verba, et convertímini ad Dóminum: et dícite ei: Omnem aufer iniquitátem, áccipe bonum: et reddémus vítulos labiórum nostrórum. Assur non salvábit nos, super equum non ascendémus, nec dicémus ultra: Dii nostri ópera mánuum nostrárum: quia ejus, qui in te est, miseréberis pupílli. Sanábo contritiónes eórum, díligam eos spontánee: quia avérsus est furor meus ab eis. Ero quasi ros, Israël germinábit sicut lílium, et erúmpet radix ejus ut Líbani. Ibunt rami ejus, et erit quasi olíva glória ejus, et odor ejus ut Líbani. Converténtur sedéntes in umbra ejus: vivent trítico, et germinábunt quasi vínea: memoriále ejus sicut vinum Líbani. Ephraim quid mihi ultra idóla? Ego exáudiam, et dírigam eum ego ut abiétem viréntem: ex me fructus tuus invéntus est. Quis sápiens, et intélliget ista? Intélligens, et sciet hac? Quia rectæ viæ Dómini, et justi ambulábunt in eis: prævaricatóres vero córruent in eis.",
+  "new": "Hæc dicit Dóminus Deus. Convértere Israël ad Dóminum Deum tuum: quóniam corruísti in iniquitáte tua. Tóllite vobíscum verba, et convertímini ad Dóminum, et dícite ei: Omnem aufer iniquitátem, áccipe bonum: et reddémus vítulos labiórum nostrórum. Assur non salvábit nos, super equum non ascendémus, nec dicémus ultra, Dii nostri ópera mánuum nostrárum: quia ejus, qui in te est, miseréberis pupílli. Sanábo contritiónes eórum, díligam eos spontánee: quia avérsus est furor meus ab eis. Ero quasi ros, Israël germinábit sicut lílium, et erúmpet radix ejus ut Líbani. Ibunt rami ejus, et erit quasi olíva glória ejus: et odor ejus ut Líbani. Converténtur sedéntes in umbra ejus: vivent trítico, et germinábunt quasi vínea: Memoriále ejus sicut vinum Líbani. Ephraïm quid mihi ultra idóla? Ego exáudiam, et dírigam eum ego ut abíetem viréntem: Ex me fructus tuus invéntus est. Quis sápiens, et intélliget ista? intélligens, et sciet hæc? Quia rectæ viæ Dómini, et justi ambulábunt in eis: prævaricatóres vero córruent in eis.",
+  "src": "M39 pp. 289-290 (pdf 183R-184L)",
+  "why": "punctuation, capitals and words as printed (checked on scan) (the Lesson begins \"Hæc dicit Dóminus Deus.\"; Ephraïm; abíetem)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "EmbFriSept",
+   0,
+   "en"
+  ],
+  "old": "Return, O Israel, to the Lord thy God: for thou hast fallen down by thy iniquity. Take with you words, and return to the Lord, and say to him: Take away all iniquity, and receive the good: and we will render the calves of our lips. Assyria shall not save us, we will not ride upon horses, neither will we say any more: The works of our hands are our gods, for thou wilt have mercy on the fatherless that is in thee. I will heal their breaches, I will love them freely: for my wrath is turned away from them. I will be as the dew, Israel shall spring as the lily, and his root shall shoot forth as that of Libanus. His branches shall spread, and his glory shall be as the olive tree: and his smell as that of Libanus. They shall be converted that sit under his shadow: they shall live upon wheat, and they shall blossom as a vine: his memorial shall be as the wine of Libanus. Ephraim shall say, What have I to do any more with idols? I will hear him, and I will make him flourish like a green fir tree: from me is thy fruit found. Who is wise, and he shall understand these things? prudent, and he shall know these things? for the ways of the Lord are right, and the just shall walk in them: but the transgressors shall fall in them.",
+  "new": "Thus saith the Lord God: Return, O Israel, to the Lord thy God: for thou hast fallen down by thy iniquity. Take with you words, and return to the Lord, and say to him: Take away all iniquity, and receive the good: and we will render the calves of our lips. Assyria shall not save us, we will not ride upon horses, neither will we say any more: The works of our hands are our gods, for thou wilt have mercy on the fatherless that is in thee. I will heal their breaches, I will love them freely: for my wrath is turned away from them. I will be as the dew, Israel shall spring as the lily, and his root shall shoot forth as that of Libanus. His branches shall spread, and his glory shall be as the olive tree: and his smell as that of Libanus. They shall be converted that sit under his shadow: they shall live upon wheat, and they shall blossom as a vine: his memorial shall be as the wine of Libanus. Ephraim shall say, What have I to do any more with idols? I will hear him, and I will make him flourish like a green fir tree: from me is thy fruit found. Who is wise, and he shall understand these things? prudent, and he shall know these things? for the ways of the Lord are right, and the just shall walk in them: but the transgressors shall fall in them.",
+  "src": "M39 p. 289 (pdf 183R)",
+  "why": "the Latin begins \"Hæc dicit Dóminus Deus\"; English opening as elsewhere on the site (\"Thus saith the Lord God:\")"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "EmbFriSept",
+   1,
+   "la"
+  ],
+  "old": "In illo témpore: Rogábat Jesum quidam de Pharisǽis, ut manducáret cum illo. Et ingréssus domum Pharisǽi discúbuit. Et ecce múlier, quæ erat in civitáte peccátrix, ut cognóvit quod accubuísset in domo Pharisǽi, áttulit alabástrum unguénti: et stans retro secus pedes ejus, lácrymis cœpit rigáre pedes ejus, et capíllis cápitis sui tergébat, et osculabátur pedes ejus, et unguénto ungébat. Videns autem Pharisǽus, qui vocáverat eum, ait intra se dicens: Hic si esset prophéta, sciret útique, quæ, et qualis est múlier, quæ tangit eum: quia peccátrix est. Et respóndens Jesus, dixit ad illum: Simon, hábeo tibi áliquid dícere. At ille ait: Magíster, dic. Duo debitóres erant cuídam fœneratóri: unus debébat denários quingéntos, et álius quinquagínta. Non habéntibus illis unde rédderent, donávit utrísque. Quis ergo eum plus díligit? Respóndens Simon dixit: Æstimo quia is, cui plus donávit. At ille dixit ei: Recte judicásti. Et convérsus ad mulíerem, dixit Simóni: Vides hanc mulíerem? Intrávi in domum tuam, aquam pédibus meis non dedísti: hæc autem lácrymis rigávit pedes meos, et capíllis suis tersit. Osculum mihi non dedísti: hæc autem ex quo intrávit, non cessávit osculári pedes meos. Oleo caput meum non unxísti: hæc autem unguénto unxit pedes meos. Propter quod dico tibi: remittúntur ei peccáta multa, quóniam diléxit multum. Cui autem minus dimíttitur, minus díligit. Dixit autem ad illam: Remittúntur tibi peccáta. Et cœpérunt qui simul accumbébant, dícere intra se: Quis est hic, qui étiam peccáta dimíttit? Dixit autem ad mulíerem: Fides tua te salvam fecit: vade in pace.",
+  "new": "In illo témpore: Rogábat Jesum quidam de Pharisǽis, ut manducáret cum illo. Et ingréssus domum Pharisǽi, discúbuit. Et ecce múlier, quæ erat in civitáte peccátrix, ut cognóvit quod accubuísset in domo Pharisǽi, áttulit alabástrum unguénti: Et stans retro secus pedes ejus, lácrimis cœpit rigáre pedes ejus, et capíllis cápitis sui tergébat, et osculabátur pedes ejus, et unguénto ungébat. Videns autem Pharisǽus, qui vocáverat eum, ait intra se dicens: Hic si esset prophéta, sciret útique, quæ, et qualis est múlier, quæ tangit eum: quia peccátrix est. Et respóndens Jesus, dixit ad illum: Simon, hábeo tibi áliquid dícere. At ille ait: Magíster, dic. Duo debitóres erant cuídam feneratóri: Unus debébat denários quingéntos, et álius quinquagínta. Non habéntibus illis unde rédderent, donávit utrísque. Quis ergo eum plus díligit? Respóndens Simon, dixit: Æstimo, quia is, cui plus donávit. At ille dixit ei: Recte judicásti. Et convérsus ad mulíerem, dixit Simóni: Vides hanc mulíerem? Intrávi in domum tuam, aquam pédibus meis non dedísti: Hæc autem lácrimis rigávit pedes meos, et capíllis suis tersit. Osculum mihi non dedísti: hæc autem ex quo intrávit, non cessávit osculári pedes meos. Oleo caput meum non unxísti: hæc autem unguénto unxit pedes meos. Propter quod dico tibi: Remittúntur ei peccáta multa, quóniam diléxit multum. Cui autem minus dimíttitur, minus díligit. Dixit autem ad illam: Remittúntur tibi peccáta. Et cœpérunt qui simul accumbébant, dícere intra se: Quis est hic, qui étiam peccáta dimíttit? Dixit autem ad mulíerem: Fides tua te salvam fecit: vade in pace.",
+  "src": "M39 p. 290 (pdf 184L)",
+  "why": "punctuation, capitals and words as printed (checked on scan) (lácrimis, feneratóri as printed; same text as S0722, A4)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "EmbFriSept",
+   1,
+   "en"
+  ],
+  "old": "At that time: One of the Pharisees desired him to eat with him. And he went into the house of the Pharisee, and sat down to meat. And behold a woman that was in the city, a sinner, when she knew that he sat at meat in the Pharisee’s house, brought an alabaster box of ointment; And standing behind at his feet, she began to wash his feet, with tears, and wiped them with the hairs of her head, and kissed his feet, and anointed them with the ointment. And the Pharisee, who had invited him, seeing it, spoke within himself, saying: This man, if he were a prophet, would know surely who and what manner of woman this is that toucheth him, that she is a sinner. And Jesus answering, said to him: Simon, I have somewhat to say to thee. But he said: Master, say it. A certain creditor had two debtors, the one who owed five hundred pence, and the other fifty. And whereas they had not wherewith to pay, he forgave them both. Which therefore of the two loveth him most? Simon answering, said: I suppose that he to whom he forgave most. And he said to him: Thou hast judged rightly. And turning to the woman, he said unto Simon: Dost thou see this woman? I entered into thy house, thou gavest me no water for my feet; but she with tears hath washed my feet, and with her hairs hath wiped them. Thou gavest me no kiss; but she, since she came in, hath not ceased to kiss my feet. My head with oil thou didst not anoint; but she with ointment hath anointed my feet. Wherefore I say to thee: Many sins are forgiven her, because she hath loved much. But to whom less is forgiven, he loveth less. And he said to her: Thy sins are forgiven thee. And they that sat at meat with him began to say within themselves: Who is this that forgiveth sins also? And he said to the woman: Thy faith hath made thee safe, go in peace.",
+  "new": "At that time: One of the Pharisees desired Jesus to eat with him. And he went into the house of the Pharisee, and sat down to meat. And behold a woman that was in the city, a sinner, when she knew that he sat at meat in the Pharisee’s house, brought an alabaster box of ointment; And standing behind at his feet, she began to wash his feet, with tears, and wiped them with the hairs of her head, and kissed his feet, and anointed them with the ointment. And the Pharisee, who had invited him, seeing it, spoke within himself, saying: This man, if he were a prophet, would know surely who and what manner of woman this is that toucheth him, that she is a sinner. And Jesus answering, said to him: Simon, I have somewhat to say to thee. But he said: Master, say it. A certain creditor had two debtors, the one who owed five hundred pence, and the other fifty. And whereas they had not wherewith to pay, he forgave them both. Which therefore of the two loveth him most? Simon answering, said: I suppose that he to whom he forgave most. And he said to him: Thou hast judged rightly. And turning to the woman, he said unto Simon: Dost thou see this woman? I entered into thy house, thou gavest me no water for my feet; but she with tears hath washed my feet, and with her hairs hath wiped them. Thou gavest me no kiss; but she, since she came in, hath not ceased to kiss my feet. My head with oil thou didst not anoint; but she with ointment hath anointed my feet. Wherefore I say to thee: Many sins are forgiven her, because she hath loved much. But to whom less is forgiven, he loveth less. And he said to her: Thy sins are forgiven thee. And they that sat at meat with him began to say within themselves: Who is this that forgiveth sins also? And he said to the woman: Thy faith hath made thee safe, go in peace.",
+  "src": "M39 p. 290 (pdf 184L)",
+  "why": "English to name Jesus as the Latin does (\"Rogábat Jesum quidam de Pharisǽis\")"
  }
 ]
