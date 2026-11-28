@@ -405,6 +405,7 @@ body.sheet-open { overflow: hidden; }
 .prose .dedication { border-left: 3px solid var(--rubric); padding: 4px 0 4px 16px; margin: 0 0 28px; color: var(--ink); }
 /* reading titles head their own column; the source is a small note on the reference line */
 .reading .r-title { display: block; font-style: italic; margin-bottom: .35em; }
+.reading .r-rub { color: var(--rubric); font-style: italic; }   /* a rubric printed inside a reading (Missal p. 428) */
 .reading h3 .src { font-family: var(--serif); font-size: 13px; letter-spacing: 0; color: var(--muted); margin-left: .6em; }
 /* the sung parts of the priest and ministers (tones), with the translation under them */
 .ordo .chant, .reading .chant.tone { margin: 6px 0 2px; }

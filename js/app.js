@@ -2114,6 +2114,16 @@
       return [gos || !r.title ? null : T.epistleTitle(r.title), T.reading(la, gos)];
     } catch (e) { console.warn('tone', e); return null; }
   }
+  // a rubric printed inside a reading (e.g. Phil 2, "Hic genuflectitur :", Missal p. 428; Joseph 28 Nov): marked ⟦…⟧ in
+  // data/readings33.js; shown in red, left out of the sung tone, kept as plain words elsewhere
+  var RUB_IN = /⟦([^⟧]*)⟧\s*/g;
+  function rubOut(t) { return (t || '').replace(RUB_IN, ''); }
+  function rubPlain(t) { return (t || '').replace(/⟦([^⟧]*)⟧/g, '$1'); }
+  function rubNodes(t) {
+    var out = [], last = 0, m; RUB_IN.lastIndex = 0;
+    while ((m = RUB_IN.exec(t || ''))) { if (m.index > last) out.push(document.createTextNode(t.slice(last, m.index))); out.push(el('span', {class: 'r-rub', text: m[1]})); out.push(document.createTextNode(' ')); last = RUB_IN.lastIndex; }
+    out.push(document.createTextNode((t || '').slice(last))); return out;
+  }
   function drawReading(r, pro) {
     var la = el('p', {class: 'la'}), en = el('p', {class: 'en-text'});
     var box = el('section', {class: 'reading', 'data-part': 'reading'}, [
@@ -2121,19 +2131,19 @@
       el('div', {class: 'r-cols'}, [la, en])]);
     var psTitle = function (t) { return r.type === 'Psalmus' ? t.replace(/^(Ipsi David[^.]*|Canticum graduum|Psalmus David[^.]*|A Psalm for David[^.]*|A gradual canticle|A psalm of David[^.]*)\.\s*/i, '') : t; };
     if (r.la && isSung() && window.OPMassTones && /^(Lesson|Epistle|Gospel)$/.test(r.type) && !r.passion) {
-      var gos = r.type === 'Gospel', tr = toneReading(r.la, r, pro), tg = tr && tr[0], rg = tr && tr[1];
+      var gos = r.type === 'Gospel', tr = toneReading(rubOut(r.la), r, pro), tg = tr && tr[0], rg = tr && tr[1];
       if (rg) {
         box.querySelector('.r-cols').remove();
         if (tg) box.appendChild(gabcBox(tg));
         box.appendChild(gabcBox(rg));
-        box.appendChild(el('p', {class: 'en-text tone-en', lang: 'en'}, [el('span', {class: 'r-title', text: gos ? '' : (r.title_en || '')}), r.en || '']));
+        box.appendChild(el('p', {class: 'en-text tone-en', lang: 'en'}, [el('span', {class: 'r-title', text: gos ? '' : (r.title_en || '')}), rubPlain(r.en || '')]));
         return box;
       }
     }
     if (r.la) {
       // the title heads each column (Latin over the Latin, English over the English); the source goes on the reference line
-      la.appendChild(el('span', {class: 'r-title', text: r.title || ''})); la.appendChild(document.createTextNode(r.la));
-      en.appendChild(el('span', {class: 'r-title', text: r.title_en || ''})); en.appendChild(document.createTextNode(r.en || ''));
+      la.appendChild(el('span', {class: 'r-title', text: r.title || ''})); rubNodes(r.la).forEach(function (n) { la.appendChild(n); });
+      en.appendChild(el('span', {class: 'r-title', text: r.title_en || ''})); rubNodes(r.en || '').forEach(function (n) { en.appendChild(n); });
       return box;
     }
     readingText('la', r.ref).then(function (t) { la.textContent = psTitle(t); }, function () { la.textContent = ''; });
@@ -2403,7 +2413,7 @@
     };
     var readSec = function (r) {
       var o = sec(READ_LA[r.type], READ_EN[r.type], r.ref, true);
-      if (r.la) { o.la.textContent = r.la; o.en.textContent = r.en || ''; return; }   // as printed in the Missale O.P. (1933)
+      if (r.la) { o.la.textContent = rubPlain(r.la); o.en.textContent = rubPlain(r.en || ''); return; }   // as printed in the Missale O.P. (1933)
       jobs.push(readingText('la', r.ref).then(function (t) { o.la.textContent = t; }, function () {}));
       jobs.push(readingText('en', r.ref).then(function (t) { o.en.textContent = t; }, function () {}));
     };
@@ -2445,7 +2455,7 @@
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
-  window.ProprOP = {D: D, moreText: moreText, aspergesGabc: aspergesGabc, tonePrayer: tonePrayer, toneReading: toneReading, dismissGabc: dismissGabc, solemnDay: solemnDay, flectamusDay: flectamusDay, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
+  window.ProprOP = {D: D, rubPlain: rubPlain, moreText: moreText, aspergesGabc: aspergesGabc, tonePrayer: tonePrayer, toneReading: toneReading, dismissGabc: dismissGabc, solemnDay: solemnDay, flectamusDay: flectamusDay, PART_NAME: PART_NAME, clean: clean, prefaceText: prefaceText, prefaceChant: prefaceChant, seasonalReadings: seasonalReadings, chantLatin: chantLatin, trimTPText: trimTPText, paschal: function () { return paschal(); }, stripTP: stripTP, seasonalGabc: seasonalGabc, prefaceChant: prefaceChant, findKyriale: findKyriale, iso: iso, diffDays: diffDays, addDays: addDays, exsurgeGabc: exsurgeGabc, prefaceOf: prefaceOf, autoKyriale: autoKyriale, isMarian: isMarian, paschalKyrie: paschalKyrie, ordinaryIds: ordinaryIds, rubricsOf: rubricsOf, massSequence: massSequence, buildCongregation: buildCongregation, printAs: printAs, gabcText: gabcText, renderInto: renderInto, loadGabc: loadGabc, splitGabc: splitGabc, temporaleKey: temporaleKey, showMass: showMass, massesOf: massesOf, massColor: massColor, massParts: massParts, readingText: readingText, m33Readings: m33Readings, fullIntroit: fullIntroit, state: function () { return state; }, easter: easter, titleText: titleText, feastClass: feastClass, temporalClass: temporalClass, isTemporal: isTemporal};
 
   function start() {
     if (!document.getElementById('selMass')) return;   // loaded as a library (e.g. by the Office page)

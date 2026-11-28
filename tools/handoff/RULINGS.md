@@ -41,6 +41,12 @@
 - Pent23 Epistle (p. 303): show the asterisk before "Itaque fratres mei caríssimi" as printed.
 - Coordinator: the Gospel-opening script (scripts/C0/incipits.py) now replaces only reviewed Douay lead-ins; its first run's damage was corrected in v246.
 
+## Answers 28 Nov 08:45 (Joseph)
+- Printer's slips (like "deponsáta"): Quad4f Gospel "tibi"/"et" (p. 120) → Vulgate "ibi"/"ei"; St Anselm's Collect "tuæ" (p. 415) → "tuo" as the Common p. 20*.
+- Where the 1959 English lacks a clause the 1939 Latin has (Quad4w/Quad4h "ipsa quoque devótio sancta lætíficet", pp. 115, 117): the 1959 wording plus the missing clause, labelled AI translation.
+- 3 Oct stays St Teresa of the Child Jesus (although the Missal prints her only "In Missionibus", p. 634).
+- S0428 (duplicate of S0428b) dropped from the menu. Red rubrics printed inside a reading (S0503 Phil 2, p. 428 "Hic genuflectitur :") are shown as rubric lines inside the reading.
+
 ## Saints' Masses
 - **28 Apr:** the Mass is B. Louis Grignion de Montfort, Os justi. St Paul of the Cross has only a Memoria in the 1939 Missal (pp. 420-421).
 - **C1s "Commune Apostolorum" (Joseph, 27 Nov 21:40):** drop it. The 1939 Missal has no such Mass; "only use the Missal".
