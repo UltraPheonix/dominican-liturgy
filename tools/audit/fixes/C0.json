@@ -3888,5 +3888,17 @@
   "new": "At that time: Jesus spoke this parable to his disciples: The kingdom of heaven shall be like to ten virgins, who taking their lamps went out to meet the bridegroom and the bride. And five of them were foolish, and five wise. But the five foolish, having taken their lamps, did not take oil with them: But the wise took oil in their vessels with the lamps. And the bridegroom tarrying, they all slumbered and slept. And at midnight there was a cry made: Behold the bridegroom cometh, go ye forth to meet him. Then all those virgins arose and trimmed their lamps. And the foolish said to the wise: Give us of your oil, for our lamps are gone out. The wise answered, saying: Lest perhaps there be not enough for us and for you, go ye rather to them that sell, and buy for yourselves. Now whilst they went to buy, the bridegroom came: and they that were ready, went in with him to the marriage, and the door was shut. But at last come also the other virgins, saying: Lord, Lord, open to us. But he answering said: Amen I say to you, I know you not. Watch ye therefore, because you know not the day nor the hour.",
   "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis parábolam hanc:",
   "why": "correcting the incipit script (CHECK.md session 2): restore the Douay text it wrongly cut; 'Símile erit regnum cælórum' = 'The kingdom of heaven shall be like'"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "Pent23",
+   0,
+   "la"
+  ],
+  "old": "Fratres: Imitatóres mei estóte, et observáte eos qui ita ámbulant, sicut habétis formam nostram. Multi enim ámbulant, quos sæpe dicébam vobis (nunc autem et flens dico) inimícos crucis Christi: quorum finis intéritus: quorum Deus venter est: et glória in confusióne ipsórum, qui terréna sápiunt. Nostra autem conversátio in cælis est: Unde étiam Salvatórem exspectámus Dóminum nostrum Jesum Christum, qui reformábit corpus humilitátis nostræ, configurátum córpori claritátis suæ, secúndum operatiónem, qua étiam possit subjícere sibi ómnia. Itaque fratres mei caríssimi, et desideratíssimi, gáudium meum, et coróna mea: sic state in Dómino, caríssimi. Evódiam rogo, et Sýntychen déprecor, idípsum sápere in Dómino. Etiam rogo et te germáne compar, ádjuva illas, quæ mecum laboravérunt in Evangélio cum Cleménte, et céteris adjutóribus meis, quorum nómina sunt in libro vitæ.",
+  "new": "Fratres: Imitatóres mei estóte, et observáte eos qui ita ámbulant, sicut habétis formam nostram. Multi enim ámbulant, quos sæpe dicébam vobis (nunc autem et flens dico) inimícos crucis Christi: quorum finis intéritus: quorum Deus venter est: et glória in confusióne ipsórum, qui terréna sápiunt. Nostra autem conversátio in cælis est: Unde étiam Salvatórem exspectámus Dóminum nostrum Jesum Christum, qui reformábit corpus humilitátis nostræ, configurátum córpori claritátis suæ, secúndum operatiónem, qua étiam possit subjícere sibi ómnia. * Itaque fratres mei caríssimi, et desideratíssimi, gáudium meum, et coróna mea: sic state in Dómino, caríssimi. Evódiam rogo, et Sýntychen déprecor, idípsum sápere in Dómino. Etiam rogo et te germáne compar, ádjuva illas, quæ mecum laboravérunt in Evangélio cum Cleménte, et céteris adjutóribus meis, quorum nómina sunt in libro vitæ.",
+  "src": "M39 p. 303 (pdf 190)",
+  "why": "the print has 'sibi ómnia. * Itaque fratres' (seen on the scan); Joseph 28 Nov 08:10: show the asterisk as printed"
  }
 ]

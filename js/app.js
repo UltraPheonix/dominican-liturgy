@@ -1700,22 +1700,61 @@
     if (isMarian(state.key)) { var hi = mem.high; mem = mem.filter(function (x) { return !BVM_SETS[x]; }); mem.high = hi; }
     if (state.key === 'Dec25_2') return ['x:1225|S. Anastasiæ Mart.'];   // "Memoria de S. Anastasia" (Missal pp. 21-22)
     if (/^(Pasc0|Pent0|Dec25|Jan1$)/.test(state.key)) return [];
+    // Dominica in Ramis Palmarum and the Vigil of Pentecost: "una tantum dicitur Oratio, etiamsi quae ad Laudes facta fuerit
+    // Memoria" (Rubr. gen. X.1 f; VIII.2)
+    if (/^(Quad6|Pasc6s)$/.test(state.key)) return [];
+    // the rank is that of the day's office when this Mass is the office of the day (Ordo 1944 diff A: the rank of the Mass
+    // key is wrong inside octaves and for Temporal days without a Kalendarium entry)
+    var od = d && window.OPMissalRank ? mr().day(d) : null, isOff = !!(od && od.office.key === state.key);
+    var orank = isOff ? (od.office.rank || '') : '', okind = isOff ? od.office.kind : '';
+    var cls1 = function (r) { return /(^|[^I])I classis/.test(r || ''); };   // "I classis", not "II classis"
     // a day within a simple octave is of the Simplex rite: three prayers (X.1)
-    var od = d && window.OPMissalRank ? mr().day(d) : null;
     var inSimpleOct = od && od.office.kind === 'octave' && od.office.key === state.key && od.office.pv < 25;
     if (inSimpleOct) dr = {rank: 'Simplex', dup: false};
-    else if (/I classis/.test(dr.rank) || /I classis/.test(KALRANK && KALRANK[state.key] || '') || (isTemporal(state.key) && temporalClass(state.key, d) === 1)) return mem.slice();
-    if (state.key === 'Jan5a') return ['bvmNat', 'd11'];                       // the Vigil of the Epiphany, as printed
-    if (sp && sp.o2 === 'bvmNat') return mem.concat(md === 104 ? ['bvmNat', 'd6'] : ['bvmNat']).slice(0, 3);   // daily, after the other Memoriae (X.1 b)
-    if (dr.dup) return mem.slice();                                            // Doubles: only the Memoriae (as many as at Lauds)
+    if (state.key === 'Jan5a') return ['bvmNat', 'd11'];                       // the Vigil of the Epiphany, as printed (X.1 f)
+    // the Sundays of Lent and Passiontide and the Monday and Wednesday of Holy Week, though of the I class, take the 2nd and
+    // 3rd prayers printed in the Missal (Dom. I Quadr., p. 65: Deus qui caritatis, A cunctis); Ordo 1944, 27 Feb., 5 and 26
+    // Mar., 3 and 5 Apr.: "2-a et 3-a Or. (Dom. I. Quadrag.) ut in Missali". With a Memoria, only the Memoria (VIII.1:
+    // "omittenda est tertia Oratio"; Ordo 12 Mar. "2-a Or. S. Gregorii"; 4 Apr. "m. S. Isidori ttm")
+    if (/^(Quad[1-5]|Quad6[mtw])$/.test(state.key)) return mem.length ? mem.slice() : (state.key === 'Quad6t' ? [] : ['d15', 'd2']);
+    // the Feast of the Holy Family: no prayer of Our Lady (X.1 b "praeterquam in festo S. Familiae"; Ordo 9 Jan. 1944
+    // "Missa propr. cum mem. oct.")
+    if (state.key === 'Epi1') return mem.filter(function (x) { return !BVM_SETS[x]; });
+    // a feast of the I class (the office's rank, or the Kalendarium's): only the Memoriae the Rubrics allow (VIII.2)
+    var c1 = isOff ? cls1(orank) : (cls1(dr.rank) || cls1(KALRANK && KALRANK[state.key]));
+    if (c1 || (isTemporal(state.key) && temporalClass(state.key, d) === 1 && !(od && od.office.kind === 'octave'))) return mem.slice();
+    // 4 January: "2a Oratio erit de B. M. V., 3a pro Papa" (X.1 b); 2 Jan. to the octave day exclusive, daily after the other
+    // Memoriae, Deus qui salutis (X.1 b; Ordo 1944, 7-12 Jan. "In Missa (sine Sequentia) m. B. V.")
+    if (md === 104) return ['bvmNat', 'd6'];
+    if (sp && sp.o2 === 'bvmNat') return mem.concat(mem.indexOf('bvmNat') < 0 ? ['bvmNat'] : []);
+    // an octave day of a solemn octave (the Octave of the Epiphany "absque mem.", 13 Jan.; SS. Peter and Paul, 6 Jul.), a
+    // Duplex or Totum Duplex: only the Memoriae (X.1: "nisi facta fuerit Memoria Totius Duplicis, Duplicis vel Octavae
+    // solemnis"; the rite of the Mass is Semiduplex and below)
+    if (isOff && (okind === 'octday' && /Octava/.test(orank))) return mem.slice();
+    if (dr.dup || (isOff && /^(Totum Duplex|Duplex)/.test(orank))) return mem.slice();   // Doubles: only the Memoriae (as many as at Lauds)
     if (!sp) return mem.slice();
+    // a Mass of Our Lady with one Memoria (the Vigil of the Assumption): the 3rd prayer is ad libitum (X.1 d "nisi dicenda
+    // occurrat Memoria de B. Maria V. ... quia in hoc casu 3a Oratio erit ad libitum"; Ordo 14 Aug. "2-a Or. S. Eusebii, 3-a ad lib.")
+    if (isMarian(state.key) && mem.length === 1 && !mem.high) return [mem[0], sp.with3 === 'cruce' ? 'cruce' : sp.with3 === 'd15' ? 'd15' : 'lib'];
+    // a Sunday: Lauds end with the suffrage of Our Lady, so after the Memoriae A cunctis follows (X, preamble: "tot Orationes
+    // dicuntur, quot memoriae in Laudibus dictae fuerint"; Ordo 1944, 16 and 30 Jan., 14 May, 23 Jul.: "4-a A cunctis"),
+    // unless a Totum Duplex, Duplex or solemn Octave was commemorated (VIII.1: "omittenda est tertia Oratio")
+    var sunday = d && d.getDay() === 0 && isTemporal(state.key);
+    if (sunday && mem.length && !mem.high) return mem.concat(sp.with3 === 'cruce' && mem.indexOf('cruce') < 0 ? ['cruce'] : []).concat(mem.indexOf('d2') < 0 ? ['d2'] : []);
     if (mem.high) return mem.slice();                                          // X.1: after a Duplex or solemn Octave, none added
     if (mem.length >= 2) return mem.concat(sp.with3 === 'cruce' && mem.indexOf('cruce') < 0 ? ['cruce'] : []);   // X.1 c, e
+    // Septuagesima to Ash Wednesday: a feast with no Memoria takes A cunctis and a prayer ad libitum, as through the year
+    // (Ordo 1944, 16 Feb., B. Bernard Scammacca, Semid.: "2-a Orat. A cunctis., 3-a ad libitum"; scan p. 19)
+    if (!mem.length && sp.with3 === 'd15' && !isTemporal(state.key) && d && diffDays(d, easter(d.getFullYear())) < -46) return ['d2', 'lib'];
     if (mem.length === 1) {
       // Our Lady commemorated on a Saturday: A cunctis is left out; the 3rd prayer is at the priest's choice through the
       // year, Deus, qui caritatis from Septuagesima to Maundy Thursday, de Cruce in Paschaltide (Missal p. 320, nn. 1, 3;
       // Ordo 1944, 23 Sept.: "2-a Or. Concede., 3-a ad libitum"); in Advent she is the season's prayer
       if (BVM_SETS[mem[0]]) return mem[0] === sp.o2 ? [sp.o2, sp.o3 || 'lib'] : [mem[0], sp.with3 === 'd2' ? 'lib' : sp.with3 || 'lib'];
+      // with one Memoria the 3rd prayer is A cunctis also from Septuagesima to Maundy Thursday: Deus qui caritatis replaces
+      // only the prayer ad libitum after a Memoria of Our Lady or All Saints (X.1 d; Ordo 1944, 6 Feb. "2-a Or. SS. Vedasti
+      // et Amandi, 3-a A cunctis"; 1 Mar. "2-a Or. S. Albini, 3-a A cunctis")
+      if (sp.with3 === 'd15') return [mem[0], 'd2'];
       return [mem[0], sp.with3 || 'lib'];
     }
     return [sp.o2, sp.o3 || 'lib'];

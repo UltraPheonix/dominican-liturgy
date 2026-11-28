@@ -36,6 +36,11 @@
 - Readings whose Latin departs from the Vulgate (e.g. Sap 10 pp. 539, 541; Hebr 11 p. 526): the English follows the Missal's Latin, labelled "AI translation".
 - Coordinator under the rulings above: S0113 (13 Jan "Commemoratio Baptismatis", not in the 1939 Missal, duplicates EpiOct, unused by the calendar) is dropped like C1s; Gospel English gets "At that time Jesus said to his disciples" etc. wherever the Latin has the incipit (follow the Latin).
 
+## Answers 28 Nov 08:10 (Joseph)
+- EmbSatSeptS ("Sabbato IV Temporum, forma brevior", from the 1959 Missal; the 1939 Missal pp. 291-296 prints only the full Mass): dropped from the menu.
+- Pent23 Epistle (p. 303): show the asterisk before "Itaque fratres mei caríssimi" as printed.
+- Coordinator: the Gospel-opening script (scripts/C0/incipits.py) now replaces only reviewed Douay lead-ins; its first run's damage was corrected in v246.
+
 ## Saints' Masses
 - **28 Apr:** the Mass is B. Louis Grignion de Montfort, Os justi. St Paul of the Cross has only a Memoria in the 1939 Missal (pp. 420-421).
 - **C1s "Commune Apostolorum" (Joseph, 27 Nov 21:40):** drop it. The 1939 Missal has no such Mass; "only use the Missal".
