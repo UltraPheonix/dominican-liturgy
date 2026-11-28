@@ -2,6 +2,24 @@
 
 Live: v242+ (see git log). Read tools/handoff/RULINGS.md first: Joseph gave ~25 new rulings tonight (top sections).
 
+
+## 28 Nov 2026, ~09:45: state (Joseph short of credits; all agents stopped)
+**Texts:** all 496 Masses audited once against the M39 scan (A1-A6). Paused with their work saved: A7 (tools/audit/A7.md:
+checker findings + the Commune readings copied into other Masses, e.g. Os justi Lesson p. 23* in ~40 Masses), E1 (prayer
+English vs the 1959 Missal), R1 (rubrics inside readings: the app shows ⟦…⟧ in red; the data is not yet in), checker round 3.
+`apply_fixes.py --dry` shows a few CONFLICTs (auditor entries edited after being applied): resolve before the next apply.
+**2nd/3rd prayers (step 2, ordo44_diff.md A-H): DONE for 1944**, in js/app.js prescribed0()/prescribed() and js/mrank.js day(),
+each rule commented with its rubric and the Ordo's words. Test: `python3 tools/check/prayers44.py 1944-01-01 1944-12-31`
+(page hook window.OPTest) and compare day by day; every day the diff names now gives what the Ordo prints.
+Not done / open:
+- OPEN QUESTION for Joseph: the weekly "Omnipotens" (Rubr. VI.2, added in weeks without a free day for the Requiem, js/mrank.js
+  omnipotensDay) is added on ~30 weekdays of 1944, but the Ordo 1944 never prints it on any weekday. Keep (rubric) or drop (Ordo)?
+- December was never compared with the Ordo (29 and 31 Dec now commemorate the octaves of SS. Stephen, John, Innocents by the
+  rule the Ordo shows on 3 Jan: unverified for December).
+- The weekly Requiem day differs from the Ordo in July (Ordo 17 Jul.) and October (Ordo 17 Oct.; app 12 and 16 Oct.).
+- Not modelled: the year-dependent "pro Papa" on the Pope's anniversaries (2 and 12 Mar. 1944), Mission Sunday; D 07-05 (doubtful).
+- Step 2 remainder: Gloria/Credo (I), Prefaces (J), colours (K), weekly votives (L), Kyriale (M) in ordo44_diff.md.
+
 ## Where Phase 1 stands
 **Step 1, text audit (tools/audit/):** brief = tools/audit/BRIEF.md (every auditor reads it). Fixes = tools/audit/fixes/A1-A6.json,
 applied by `python3 tools/audit/apply_fixes.py` (idempotent; handles chained entries, "op":"add" for missing items, and canon():
