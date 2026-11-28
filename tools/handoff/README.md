@@ -13,9 +13,10 @@ Resume points (each group's report has a "Where I stopped" line):
 - A3 Sanctorale Nov-May: see A3.md (was continuing from S0317).
 - A4 Sanctorale May-Oct: see A4.md (was continuing from S0901).
 - A5 + A6 (Commune, Votives, Beati, Requiem, memoriae.js): DONE (A5.md, A6.md).
-- addiv.js (2nd/3rd prayer texts, coordinator, tools/audit/scripts/C0/): the 38 ad diversa match M39 pp. 100*-113* except 3 points
-  still to confirm on the scan (d6.or and d15.pc final '.' vs ':' before Per Dóminum; d22.pc a comma) and bvmNat se/pc, defFr.or,
-  d33.pc to locate on the scan. Crop helper: tools/audit/scripts/C0/crop.py PDFPAGE WORD NLINES OUT.png.
+- addiv.js (2nd/3rd prayer texts): DONE 28 Nov 07:45, every set compared with M39 pp. 100*-124*, 32-33 and 636-638; the
+  differences were read on the scan; 3 fixes (d6.or, d15.pc, defPM.or) in fixes/C0.json. Crop helper: tools/audit/scripts/C0/crop.py.
+- 28 Nov coordinator (fixes/C0.json): the checker's 11 disagreements fixed; 197 Gospel English openings (scripts/C0/incipits.py);
+  41 Eccli 31 "Blessed is the man" (AI-labelled); canon() also drops accents on capitals and the dead la_fixed field.
 - Final resume points (all stopped 23:10): A1 next Quad2m (Quad2m-Quad5f not audited; Quad4w inter collect; English for the restored
   formula endings of 5aw/5ah/Quad1m/t/h). A2 next EmbWedSept chants, then EmbFriSept to Dedicatio (inter for EmbSatSept/S).
   A3 next S0327 (partial: see its line), then G446 + 27 more. A4 next S0918.

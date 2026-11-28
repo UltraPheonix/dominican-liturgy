@@ -2512,5 +2512,1069 @@
   "new": "At that time: Jesus said to his disciples: You are the salt of the earth. But if the salt lose its savour, wherewith shall it be salted? It is good for nothing any more but to be cast out, and to be trodden on by men. You are the light of the world. A city seated on a mountain cannot be hid. Neither do men light a candle and put it under a bushel, but upon a candlestick, that it may shine to all that are in the house. So let your light shine before men, that they may see your good works, and glorify your Father who is in heaven. Do not think that I am come to destroy the law, or the prophets. I am not come to destroy, but to fulfill. For amen I say unto you, till heaven and earth pass, one jot, or one tittle shall not pass of the law, till all be fulfilled. He therefore that shall break one of these least commandments, and shall so teach men, shall be called the least in the kingdom of heaven. But he that shall do and teach, he shall be called great in the kingdom of heaven.",
   "src": "the Missal's Latin incipit: In illo témpore: Dixit Jesus discípulis suis: Vos estis sal ",
   "why": "Joseph's ruling (27 Nov): the English follows the Missal's Latin; Gospel incipit added (coordinator script C0/incipits.py)"
+ },
+ {
+  "file": "data/addiv.js",
+  "path": [
+   "sets",
+   "d6",
+   "or",
+   "la"
+  ],
+  "old": "Deus ómnium fidélium pastor et rector, fámulum tuum N. quem pastórem Ecclésiæ tuæ præésse voluísti, propítius réspice: da ei, quǽsumus, verbo et exémplo, quibus præest, profícere; ut ad vitam, una cum grege sibi crédito, pervéniat sempitérnam: Per Dóminum.",
+  "new": "Deus ómnium fidélium pastor et rector, fámulum tuum N. quem pastórem Ecclésiæ tuæ præésse voluísti, propítius réspice: da ei, quǽsumus, verbo et exémplo, quibus præest, profícere; ut ad vitam, una cum grege sibi crédito, pervéniat sempitérnam. Per Dóminum.",
+  "src": "M39 p. 102* (pdf 419)",
+  "why": "the print has \"pervéniat sempitérnam. Per Dóminum.\" (seen on the scan, coordinator)"
+ },
+ {
+  "file": "data/addiv.js",
+  "path": [
+   "sets",
+   "d15",
+   "pc",
+   "la"
+  ],
+  "old": "Divína libántes mystéria, quǽsumus Dómine, ut hæc salutária sacraménta illis profíciant ad prosperitátem et pacem; pro quorum quarúmque dilectióne hæc tuæ obtúlimus maiestáti: Per Dóminum.",
+  "new": "Divína libántes mystéria, quǽsumus Dómine, ut hæc salutária sacraménta illis profíciant ad prosperitátem et pacem; pro quorum quarúmque dilectióne hæc tuæ obtúlimus maiestáti. Per Dóminum.",
+  "src": "M39 pp. 104*-105* (pdf 420)",
+  "why": "the print has \"obtúlimus majestáti. Per Dóminum.\" (seen on the scan, coordinator)"
+ },
+ {
+  "file": "data/addiv.js",
+  "path": [
+   "sets",
+   "defPM",
+   "or",
+   "la"
+  ],
+  "old": "Deus, qui nos patrem et matrem honoráre præcepísti: miserére cleménter animábus paréntum nostrórum: eorúmque peccáta dimítte; nosque eos in ætérnæ claritátis gáudio fac vidére:",
+  "new": "Deus, qui nos patrem et matrem honoráre præcepísti; miserére cleménter animábus paréntum nostrórum: eorúmque peccáta dimítte; nosque eos in ætérnæ claritátis gáudio fac vidére:",
+  "src": "M39 p. 124* (pdf 430)",
+  "why": "the print has \"honoráre præcepísti; miserére\" (seen on the scan, coordinator)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "C42s",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "C42s",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0208",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0208",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0214",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0214",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0308",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0308",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0515",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0515",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0918",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0918",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1005",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1005",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1006",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1006",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0119b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0119b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0124b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0124b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0216b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0216b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0219b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0219b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0225b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0225b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0301b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0301b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0322b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0322b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0514b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0514b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0517b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0517b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0605b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0605b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0612b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0612b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0724b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0724b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0728b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0728b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0818b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0818b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0819b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0819b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0923b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0923b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0926b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0926b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0928b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0928b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1010b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1010b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1011b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1011b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1021b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1021b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1026b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1026b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1103b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1103b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1114b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1114b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1216b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1216b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0217b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0217b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0304",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0304",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0320b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0320b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0717b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0717b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0730b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0730b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0906b_2",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0906b_2",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0428b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S0428b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1201b",
+   0,
+   "en"
+  ],
+  "old": "Blessed is the rich man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "new": "Blessed is the man that is found without blemish: and that hath not gone after gold, nor put his trust in money nor in treasures. Who is he, and we will praise him? for he hath done wonderful things in his life. Who hath been tried thereby, and made perfect, he shall have glory everlasting. He that could have transgressed, and hath not transgressed: and could do evil things, and hath not done them: Therefore are his goods established in the Lord, and all the church of the saints shall declare his alms.",
+  "src": "the Missal's Latin \"Beátus vir\" (Eccli 31:8; the Vulgate has \"Beatus dives\")",
+  "why": "Joseph's ruling 27 Nov 23:00: the English follows the Missal's Latin, labelled AI translation (as A4 did for S0604)"
+ },
+ {
+  "file": "data/readings33.js",
+  "path": [
+   "S1201b",
+   0,
+   "en_src"
+  ],
+  "op": "add",
+  "old": null,
+  "new": "ai",
+  "src": "label",
+  "why": "English adapted to the Missal's Latin: AI translation (ruling)"
  }
 ]
