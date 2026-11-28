@@ -51,12 +51,17 @@ Each Mass records how its chants were found (`conf`), and the site shows this as
 
 ### Known gaps
 
-- 129 saints' days take a Common chosen from the saint's title. These are marked *Common: check Ordo*.
+- 17 saints' Masses still take their chants from a Common chosen from the saint's title, marked *Common: check Ordo*
+  (S0519, S0614, S0920, S1206, S0110b, S0401b, S0417b, S0508b, S0516b, S0521b, S0704b, S0708b, S0718b, S0906b, S0907b,
+  S1006b, S1209b). Their readings and prayers have been checked against the Missale O.P. 1939.
 - Proper chants a saint shares with a neighbouring feast appear under *Other chants printed on these pages*, not
   in the Mass itself.
-- The Alleluia *Laetatus sum* (p. 5) has not been transcribed on GregoBase.
-- Holy Saturday chants are not in the GregoBase source.
-- Precedence (Sunday vs. feast) is not computed.
+- The Holy Week chants (Palm Sunday to Holy Saturday) are on the site but not yet checked against the Graduale O.P. 1928.
+- The order of the day is computed (js/mrank.js, from the Missal 1939 and the Ordo O.P. 1944), and the 2nd and 3rd prayers
+  match the Ordo 1944 on every day it spells out. Still being compared with the Ordo: the Gloria and Credo, the Preface,
+  the colour and the Kyriale; the day of the weekly Requiem in a few weeks.
+- Rubrics printed inside a reading ("Hic genuflectitur") are not yet all marked; the English of some prayers is still
+  being checked against the St Dominic Missal (1959).
 
 ## Credits and licence
 
