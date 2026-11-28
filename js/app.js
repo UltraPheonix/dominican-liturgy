@@ -1673,7 +1673,9 @@
     // a week with no free day for the Mass for the dead: the conventual Mass of the least solemn day adds Omnipotens pro
     // vivis et defunctis after the prayers prescribed (Rubr. gen. VI.2; js/mrank.js omnipotensDay) (qc_ui W6)
     var d = state.date;
-    if (d && window.OPMissalRank && moreAllowed(m) && P.indexOf('d38') < 0 && mr().omnipotensDay && mr().omnipotensDay(d) === iso(d) && mr().day(d).win === state.key) P = P.concat(['d38']);
+    // (not where the Ordo says "tantum" or "sine mem.": a resumed Sunday, the Vigil of the Ascension in choir)
+    var dd0 = d && window.OPMissalRank ? mr().day(d) : null, noAdd = !!(dd0 && ((dd0.resumed === state.key && (dd0.office.kind === 'octave' || dd0.commems.some(function (c) { return c.kind === 'octave' || c.kind === 'vigil'; }))) || state.key === 'AscVig'));
+    if (d && window.OPMissalRank && !noAdd && moreAllowed(m) && P.indexOf('d38') < 0 && mr().omnipotensDay && mr().omnipotensDay(d) === iso(d) && mr().day(d).win === state.key) P = P.concat(['d38']);
     return P;
   }
   // the Order's four Anniversaries (Kalendarium; js/mrank.js): the one kept on this date, transferred or not
@@ -1700,6 +1702,34 @@
     if (isMarian(state.key)) { var hi = mem.high; mem = mem.filter(function (x) { return !BVM_SETS[x]; }); mem.high = hi; }
     if (state.key === 'Dec25_2') return ['x:1225|S. Anastasiæ Mart.'];   // "Memoria de S. Anastasia" (Missal pp. 21-22)
     if (/^(Pasc0|Pent0|Dec25(_\d)?|Jan1)$/.test(state.key)) return [];   // the days themselves; not the days within their octaves
+    var od0 = d && window.OPMissalRank ? mr().day(d) : null;
+    var idOf = function (c) { return c.kind === 'bvm' ? bvmSet(d) : c.key && window.ORATIONS && ORATIONS[c.key] && D.masses[c.key] ? 'm:' + c.key : memoriaId(c, d); };
+    // the Mass of a Sunday resumed on a weekday (Rubr. III.3-4): the octave, the vigil and the Memoriae of the day are
+    // commemorated, the feast of the day is not (it has its own Mass outside choir), and nothing is added; within the octaves
+    // of the Solemnity of St Joseph and of the Rosary "sine mem." (Ordo 1944: 2 May "de Dom. ... sine mem."; 3 Oct. "sine
+    // ulla mem."; 4 Jul. "cum m. oct. ttm"; 9 Aug. "cum m. Vigil. ttm"; 25 Oct. "2-a Or. Dedic., 3-a SS. Mm.")
+    // (only within an octave or with a vigil: otherwise the usual prayers, Ordo 1944 15 Jul., 30 Oct., 14 Nov.; 24 Jan.
+    // "de Dom. praec. ... cum 2-a Or. A cunctis, 3-a ad libit.")
+    var resOct = od0 && od0.resumed === state.key && od0.office.key !== state.key &&
+      (od0.office.kind === 'octave' || od0.commems.some(function (c) { return c.kind === 'octave' || c.kind === 'vigil'; }));
+    if (resOct) {
+      // (and not of St Dominic's octave: 9 Aug. "cum m. Vigil. ttm")
+      var NOOCT = /^(Pasc2w|S1007|S0804)$/;
+      return (od0.office.kind === 'octave' && !NOOCT.test(od0.office.key || '') && ORATIONS[od0.office.key] ? ['m:' + od0.office.key] : [])
+        .concat(od0.commems.filter(function (c) {
+          if (c.kind === 'octave') return !NOOCT.test(c.key || '') && !/Solemnitas S\. Joseph|Rosarium|Dominici/.test(c.title || '');
+          return c.kind === 'vigil' || c.kind === 'memoria';
+        }).map(idOf)).filter(function (x, i, a) { return !!x && a.indexOf(x) === i; });
+    }
+    // the Mass of the Vigil of the Ascension in choir commemorates the Rogations, then the prayer of the Cross (Ordo 1944,
+    // 17 May: "de Vig. (sine Gloria) cum 2-a Or. Rogat., 3-a Crucis"; Rubr. X.1 c)
+    if (state.key === 'AscVig' && ORATIONS.Litaniis) return ['m:Litaniis', 'cruce'];
+    // the Mass of an Ember feria in choir on a day of two conventual Masses commemorates a vigil falling that day, then
+    // A cunctis (Ordo 1944, 20 Sept.: "cum 2-a Or. Vigil. (S. Matthaei), 3-a A cunctis")
+    if (od0 && od0.twoMasses && state.key !== od0.office.key && isEmber(state.key)) {
+      var vg = od0.commems.filter(function (c) { return c.kind === 'vigil' && c.key && ORATIONS[c.key] && D.masses[c.key]; }).map(function (c) { return 'm:' + c.key; });
+      if (vg.length) return vg.concat(['d2']);
+    }
     // Dominica in Ramis Palmarum and the Vigil of Pentecost: "una tantum dicitur Oratio, etiamsi quae ad Laudes facta fuerit
     // Memoria" (Rubr. gen. X.1 f; VIII.2)
     if (/^(Quad6|Pasc6s)$/.test(state.key)) return [];

@@ -574,8 +574,23 @@
     if (win.kind !== 'temporal' && t.kind === 'sunday') pushC({key: t.key, title: 'Dominica', rank: ''}, 'sunday');
     if (win.kind !== 'temporal' && t.major) pushC({key: tKey, title: 'Feria', rank: ''}, 'feria');
     if (vigil && win !== vigil && !(/I classis/.test(priv))) pushC(vigil, 'vigil');
-    cs.forEach(function (c) { if ((c.kind === 'octave' || c.kind === 'octday') && c !== win && c.pv >= 20) pushC(c, 'octave'); });
+    // the octaves: a privileged octave is commemorated before the impeded feast of the day, any other after it (Ordo 1944,
+    // 11 Jun. "cum mem. oct. [Corp. Chr.] et S. Barnabae"; but 9 Jun. "mem. BB. Dianae ac Sod. et Trinit.", 20 Aug. "2-a S.
+    // Bernardi, 3-a Assumpt.", 5 Nov. "2-a B. Martini, 3-a oct."). The octave day of the Trinity is not commemorated
+    // (Ordo 11 Jun.: the Trinity on 9 and 10 Jun., not on its octave day)
+    var PRIV_OCT = /^(Epi|CorpusChristi|Asc|SCJ|Dec25|Pasc0|Pent0)/;
+    var octs = cs.filter(function (c) { return (c.kind === 'octave' || c.kind === 'octday') && c !== win && c.pv >= 20 && !(c.kind === 'octday' && c.key === 'Pent1'); });
+    // (an octave DAY keeps its place before the feast: Ordo 1944, 8 Oct., the octave day of the Rosary before St Birgitta)
+    octs.forEach(function (c) { if (PRIV_OCT.test(c.key || '') || c.kind === 'octday') pushC(c, 'octave'); });
     cs.forEach(function (c) { if ((c.kind === 'feast' || c.kind === 'tfeast') && c !== win && c.pv >= 20) pushC(c, 'feast'); });
+    // the Office of Our Lady on Saturday: the feast of three lessons it displaces is commemorated (Ordo 1944, 9 Sept.:
+    // "(Salve sancta Parens) ... 2-a Or. S. Gorgonii, 3-a ad libitum")
+    if (bvm && win.kind === 'feast') pushC({key: win.key, title: win.title, rank: win.rank, pv: win.pv, kind: 'feast'}, 'feast');
+    // the ferias between the octave day of the Ascension and the Vigil of Pentecost are commemorated with the prayer of
+    // the preceding Sunday (Ordo 1944, 26 May, St Philip Neri: "In Missa m. fer. (Or. Dom. praec.)")
+    var fE = diffDays(d, easter(d.getFullYear()));
+    if (win.kind !== 'temporal' && fE >= 47 && fE <= 47 + 7 && t.kind === 'feria' && d.getDay() !== 6) pushC({key: tKey, title: 'Feria', rank: ''}, 'feria');
+    octs.forEach(function (c) { if (!PRIV_OCT.test(c.key || '') && c.kind !== 'octday') pushC(c, 'octave'); });
     // Our Lady on a Saturday whose Office of her is impeded (Brev. 1924, § XXI.3): not on Doubles and above, within
     // solemnissima and solemn octaves and on their octave days, from 2 to 13 January, nor on All Souls; after the feasts,
     // before the Memoriae (Ordo 1944, 15 Jul.: "2-a Or. festi, 3-a Concede. (B.V.)"; 29 Jul.: "2-a Or. Concede. (B.M.V.),
@@ -585,6 +600,17 @@
         !cs.some(function (c) { return c.kind === 'octday' || (c.kind === 'octave' && c.pv >= PV.inOctSolemn); }))
       pushC({key: null, title: 'S. Maria in Sabbato', rank: ''}, 'bvm');
     cs.forEach(function (c) { if (c.kind === 'memoria') pushC(c, 'memoria'); });
+    // the days within the octaves of three lessons of St Stephen, St John and the Holy Innocents (Kalendarium: "oct=Tres
+    // Lectiones"; their octave days are in the Kalendarium) are commemorated as Memoriae (Ordo 1944, 3 Jan.: "In M. mem.
+    // ut in L." = the octave day of St John, SS. Innocentium, B.M.V.)
+    [['S1226', 'Octava S. Stephani Protomartyris', 26], ['S1227', 'Octava S. Joannis Ap. et Ev.', 27], ['S1228', 'Octava SS. Innocentium MM.', 28]].forEach(function (x) {
+      var b0 = new Date(d.getMonth() === 0 ? d.getFullYear() - 1 : d.getFullYear(), 11, x[2]), n = diffDays(d, b0);
+      if (n >= 1 && n <= 6 && win.key !== x[0] && !commems.some(function (c) { return c.title === x[1]; })) pushC({key: x[0], title: 'Infra Octavam: ' + x[1].replace(/^Octava /, ''), rank: 'Memoria', pv: -1, kind: 'memoria'}, 'memoria');
+    });
+    // within the octaves of the Ascension, Corpus Christi and the Sacred Heart and on their octave days "nihil fit" of a
+    // Memoria or a feast of three lessons, in any Mass (Ordo 1944, 19 and 25 May, 9, 12, 15, 18 and 19 Jun.)
+    var inSolOct = [win].concat(cs).some(function (c) { return (c.kind === 'octave' || c.kind === 'octday') && /^(Asc|CorpusChristi|SCJ)$/.test(c.key || ''); });
+    if (inSolOct) commems = commems.filter(function (c) { return !(c.kind === 'memoria' || (c.kind === 'feast' && (RANK_PV[c.rank] || 0) <= (RANK_PV['Tres Lectiones'] || 20))); });
     // at the conventual and sung Mass of a feast of the I class nothing is made of common Totum Duplex feasts and below,
     // nor of non-privileged octaves; of the II class nothing of Tres Lectiones and below (Rubr. VIII.2)
     // VIII.2 speaks of feasts ("in Festis I classis ... in Festis II classis"): ferias, Sundays, vigils and days within
@@ -610,7 +636,7 @@
     });
     var winKey = masses.length ? masses[0].key : tKey;
     return {date: iso(d), temporal: {key: tKey, keys: t.keys, kind: t.kind, season: t.season, pv: t.pv}, office: office,
-      masses: masses, win: winKey, commems: commems, notes: notes, twoMasses: !!twoMass};
+      masses: masses, win: winKey, commems: commems, notes: notes, twoMasses: !!twoMass, resumed: o.resume ? o.resume.key : null};
   }
 
   return {day: day, temporaleKey: temporaleKey, easter: easter, temporal: temporal, rankShort: rankShort, omnipotensDay: omnipotensDay,
